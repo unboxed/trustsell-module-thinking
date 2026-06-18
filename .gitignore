@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Editor / OS noise
+*.swp
+*~
+
+# Node (root-level safety net; blueprint/ has its own .gitignore)
+node_modules/

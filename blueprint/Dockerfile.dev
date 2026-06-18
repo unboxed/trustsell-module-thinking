@@ -1,0 +1,7 @@
+# Dev image for the Sales Amplifier blueprint viewer.
+# Dependencies + the Next dev server are run by docker-compose against the
+# bind-mounted source, so the container always reflects the live module docs.
+FROM node:20-alpine
+WORKDIR /work/blueprint
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
