@@ -25,7 +25,9 @@ export type IconName =
 
 export interface NodeDef {
   id: ModuleId;
-  /** card title (curated, from the UI brief) */
+  /** short consistent label, shown as the card eyebrow */
+  name: string;
+  /** friendly "Your ___" heading */
   title: string;
   /** one-line "what it does" (curated, from the UI brief) */
   blurb: string;
@@ -47,7 +49,8 @@ export const CARD = { width: 300, height: 188 } as const;
 export const NODES: NodeDef[] = [
   {
     id: "00-spine",
-    title: "The brain",
+    name: "Brain",
+    title: "Your goals",
     blurb: "Holds your goals and decides the one thing worth doing next.",
     icon: "brain",
     x: 800,
@@ -55,7 +58,8 @@ export const NODES: NodeDef[] = [
   },
   {
     id: "01-integrations",
-    title: "Connections",
+    name: "Connections",
+    title: "Your connections",
     blurb: "Plug in your accounts once; it carries messages in and out.",
     icon: "cable",
     x: 800,
@@ -63,7 +67,8 @@ export const NODES: NodeDef[] = [
   },
   {
     id: "02-relationships",
-    title: "People",
+    name: "People",
+    title: "Your people",
     blurb:
       "Keeps every contact, conversation and connection organised — and digs to find who matters.",
     icon: "users",
@@ -72,7 +77,8 @@ export const NODES: NodeDef[] = [
   },
   {
     id: "03-offerings",
-    title: "What you offer",
+    name: "Offerings",
+    title: "Your offerings",
     blurb: "Each product, who it suits, and the answers to the usual worries.",
     icon: "package",
     x: 425,
@@ -80,6 +86,7 @@ export const NODES: NodeDef[] = [
   },
   {
     id: "04-organization",
+    name: "Organisation",
     title: "Your organisation",
     blurb: "Your proof, your guardrails, your house voice.",
     icon: "building",
@@ -89,7 +96,8 @@ export const NODES: NodeDef[] = [
   },
   {
     id: "05-persona-you",
-    title: "You",
+    name: "Voice",
+    title: "Your voice",
     blurb: "How you write, so every message sounds like you.",
     icon: "pen",
     x: 640,

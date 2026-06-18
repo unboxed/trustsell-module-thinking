@@ -46,7 +46,7 @@ export function NodeCard({ node }: { node: NodeDef }) {
       )}
     >
       <div className="flex items-center justify-between">
-        <span className="flex size-10 items-center justify-center rounded-xl bg-slate-900/[0.05]">
+        <span className="flex size-10 items-center justify-center rounded-full bg-slate-900/[0.05]">
           <Icon className="size-5 text-slate-600" strokeWidth={1.75} />
         </span>
         {node.optional && (
@@ -56,10 +56,13 @@ export function NodeCard({ node }: { node: NodeDef }) {
         )}
       </div>
 
-      <h2 className="mt-4 text-[19px] leading-tight font-semibold tracking-[-0.01em] text-ink-title">
+      <p className="mt-3.5 text-[11px] font-semibold tracking-[0.1em] text-slate-400 uppercase">
+        {node.name}
+      </p>
+      <h2 className="mt-0.5 text-[19px] leading-tight font-semibold tracking-[-0.01em] text-ink-title">
         {node.title}
       </h2>
-      <p className="mt-1.5 line-clamp-3 text-[13.5px] leading-[1.45] text-ink-body">
+      <p className="mt-1.5 line-clamp-2 text-[13px] leading-[1.45] text-ink-body">
         {node.blurb}
       </p>
     </article>
