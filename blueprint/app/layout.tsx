@@ -1,23 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+// No fonts wired up on purpose. The blueprint's mono + penciled serif are gone;
+// the new type (see docs/ui-foundation.md) is the build's to set up.
 
 export const metadata: Metadata = {
-  title: "Sales Amplifier — Blueprint",
-  description:
-    "A living blueprint of the Sales Amplifier modules — read straight from the thinking docs.",
+  title: "Sales Amplifier",
+  description: "A living map of the modules.",
 };
 
 export default function RootLayout({
@@ -26,11 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full">{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
