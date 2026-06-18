@@ -1,12 +1,12 @@
-// The UI is being rebuilt from scratch — see docs/ui-foundation.md (the single
-// source of truth). Build the six-node canvas here.
-//
-// Available to build with:
-//   - lib/modules.ts        readModuleBodies() — reads each module's CLAUDE.md live
-//   - lib/blueprint.config.ts  ALL_MODULE_IDS — the six module ids, in order
-//
-// This is an intentionally empty slate. Nothing of the old "blueprint" UI remains.
+import { Canvas } from "@/components/canvas/canvas";
 
+// The canvas is a static map of curated nodes for now. The live per-request read
+// of each module's CLAUDE.md (lib/modules.ts → readModuleBodies) returns when the
+// detail panels land, where it has something to render.
 export default function Home() {
-  return <main className="min-h-screen" />;
+  return (
+    <main className="h-dvh w-dvw overflow-hidden">
+      <Canvas />
+    </main>
+  );
 }

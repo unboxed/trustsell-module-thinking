@@ -1,12 +1,153 @@
 @import "tailwindcss";
 
-/*
- * Intentionally bare. The old blueprint theme (drafting palette, blueprint grid,
- * mono + penciled type) has been removed. The new design system — palette, type,
- * shapes — is defined in docs/ui-foundation.md and is the build's to set up.
- */
+/* ---------------------------------------------------------------------------
+ * Design tokens
+ *
+ * Two layers live here:
+ *   1. The shadcn/radix-nova semantic tokens the bundled UI components expect
+ *      (background, foreground, card, popover, primary, …, ring + the radius
+ *      scale). They were stripped when the UI was reset; without them shadcn
+ *      renders unstyled. Restored here, tuned to a clean neutral slate palette.
+ *   2. The canvas + frosted-card tokens this build adds on top.
+ * ------------------------------------------------------------------------- */
 
-html,
-body {
-  height: 100%;
+:root {
+  /* shadcn semantic — light */
+  --background: #f4f6f8;
+  --foreground: #0f172a; /* slate-900 */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #2563eb; /* blue-600 — interaction only */
+  --primary-foreground: #ffffff;
+  --secondary: #eef2f6;
+  --secondary-foreground: #0f172a;
+  --muted: #eef2f6;
+  --muted-foreground: #64748b; /* slate-500 */
+  --accent: #eef2f6;
+  --accent-foreground: #0f172a;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0; /* slate-200 */
+  --input: #e2e8f0;
+  --ring: #2563eb;
+  --radius: 0.75rem;
+
+  /* canvas + frosted card */
+  --canvas-base: #e9ebef;
+  --dot: rgba(15, 23, 42, 0.14);
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: rgba(2, 6, 23, 0.1);
+  --ink-title: #0f172a; /* slate-900 */
+  --ink-body: #475569; /* slate-600 */
+  --ink-eyebrow: #94a3b8; /* slate-400 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* custom utilities for the canvas + cards */
+  --color-canvas: var(--canvas-base);
+  --color-ink-title: var(--ink-title);
+  --color-ink-body: var(--ink-body);
+  --color-ink-eyebrow: var(--ink-eyebrow);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* fonts (wired via next/font/local in app/layout.tsx) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    background-color: var(--canvas-base);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer components {
+  /* The pannable stage surface: a faint dot grid (the canvas affordance, à la
+     Figma/Miro) over a soft tonal wash. The wash gives the frosted cards real
+     tonal variation to refract — glass over a flat fill reads as nothing. */
+  .canvas-surface {
+    background-color: var(--canvas-base);
+    background-image:
+      radial-gradient(var(--dot) 1.4px, transparent 1.7px),
+      radial-gradient(60% 70% at 15% 8%, rgba(255, 255, 255, 0.55), transparent 66%),
+      radial-gradient(65% 80% at 88% 96%, rgba(15, 23, 42, 0.12), transparent 72%),
+      linear-gradient(140deg, #e6e9ef 0%, #c9cfd9 100%);
+    background-size:
+      24px 24px,
+      100% 100%,
+      100% 100%,
+      100% 100%;
+  }
+
+  /* Frosted, floating node card. Blur kept moderate (12px) so text contrast
+     never suffers. Solid fallbacks for no-backdrop-filter and for users who
+     ask the OS to reduce transparency. */
+  .glass-card {
+    background-color: var(--glass-bg);
+    /* faint top-only sheen — keep most of the pane see-through */
+    background-image: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.28) 0%,
+      rgba(255, 255, 255, 0) 42%
+    );
+    -webkit-backdrop-filter: blur(4px) saturate(1.2);
+    backdrop-filter: blur(4px) saturate(1.2);
+    border: 1px solid var(--glass-border);
+    box-shadow:
+      /* soft shadow — a little lift, not floating */
+      0 5px 16px -8px rgba(2, 6, 23, 0.16),
+      /* top rim light + faint bottom edge = glass thickness */
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.8),
+      inset 0 -1px 0 0 rgba(15, 23, 42, 0.04);
+  }
+
+  @supports not (
+    (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+  ) {
+    .glass-card {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  /* Note: we deliberately do NOT force solid cards under
+     prefers-reduced-transparency — the glass look is the point of this viewer.
+     (Re-add a legible fallback here if transparency ever becomes a problem.) */
 }
