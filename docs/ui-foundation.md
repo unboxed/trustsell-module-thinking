@@ -13,17 +13,20 @@ the home.
 
 ## What it shows — the nodes
 
-The whole point is to show the six modules as nodes. Each node reads its own module's
-notes live (`lib/modules.ts`), so the map always reflects the current thinking.
+The whole point is to show the six modules as nodes. Each node carries a consistent
+short **name** and a **title** (the friendly "Your ___" form), plus a one-line summary
+of what it does — curated copy that lives in `lib/canvas-layout.ts`. Each module's own
+live notes (`lib/modules.ts`) feed its **panel** when panels land, so the detail layer
+reflects the current thinking.
 
-| Module | Title | What it does |
-|---|---|---|
-| `00-spine` | The brain | Holds your goals and decides the one thing worth doing next. |
-| `01-integrations` | Connections | Plug in your accounts once; it carries messages in and out. |
-| `02-relationships` | People | Keeps every contact, conversation and connection organised — and digs to find who matters. |
-| `03-offerings` | What you offer | Each product, who it suits, and the answers to the usual worries. |
-| `04-organization` | Your organisation | Your proof, your guardrails, your house voice. Optional. |
-| `05-persona-you` | You | How you write, so every message sounds like you. |
+| Module | Name | Title | What it does |
+|---|---|---|---|
+| `00-spine` | Brain | Your goals | Holds your goals and decides the one thing worth doing next. |
+| `01-integrations` | Connections | Your connections | Plug in your accounts once; it carries messages in and out. |
+| `02-relationships` | People | Your people | Keeps every contact, conversation and connection organised — and digs to find who matters. |
+| `03-offerings` | Offerings | Your offerings | Each product, who it suits, and the answers to the usual worries. |
+| `04-organization` | Organisation | Your organisation | Your proof, your guardrails, your house voice. Optional. |
+| `05-persona-you` | Voice | Your voice | How you write, so every message sounds like you. |
 
 How the nodes and canvas look and lay out — and what each panel becomes — is the
 designer's call.
