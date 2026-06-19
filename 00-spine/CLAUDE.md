@@ -33,6 +33,11 @@ connects:
 ## What it doesn't
 Hold facts — people, products, proof — or write the final message. Those live in the experts.
 
+## Turning a goal into a strategy
+A goal arrives as a human sentence or two — *"sell this to councils; it's a tough, multi-year sell; find the early adopters who feel the legacy-tech pain; land a partial adoption now and grow it."* Brain's first real act is to make that explicit enough to act on: the offering and the finish line, the tempo (here, patient — never push), the shape of a good target (often a *mindset*, not a tidy category), whether you're winning one person or a whole coalition, and the board you're starting from.
+
+It can't do this cold. Before Brain can synthesise, it needs the goal shaped well enough — it may come back with a few questions to fill gaps (*"what counts as engaged?", "what's the easy first yes?"*) — the modules' starting material in place (the pitch in Offerings, the accounts connected, your seed list of who to chase), and a **first baseline scan** so it knows where every relationship currently stands. Only then can it turn the strategy into the standing routines below. The whole chain is worked through, outcome-first, in `docs/scenario-councils.md`.
+
 ## Its routines
 Routines are standing jobs drawn from the strategy. Brain is the source of every *other* module's routines, and it works with each module three ways:
 - **Briefs** them — hands each a strategy-driven job ("watch these councils, find the decision-makers").
@@ -49,7 +54,7 @@ Some work spans several modules around a **decision Brain has to make in the mid
 The canonical play is the recommendation itself: a goal fires (or a module pushes a trigger up); Brain leans toward that goal's kind of work and runs the play — asks People for warm paths and history, Offerings for the entry use-case and fit-shape, Organisation for the matching case study and the fence; assembles *act on Person P at Council X, because […], leading with […]*; and hands a brief to You to render. The draft is surfaced for approval, never auto-sent.
 
 ## The three kinds of work
-Sustain (keep relationships alive), Advance (move open deals), and Expand (find and grow) aren't modes you switch into — they're the three **categories** every routine and action falls into. All three run at once; your strategy just tilts where the emphasis goes. A goal like "30 councils on BOPS" is *expand-flavoured*, so the work leans that way — while you still sustain existing relationships and advance any open deals underneath.
+Sustain (keep relationships alive), Advance (move open deals), and Expand (find and grow) aren't modes you switch into — they're the three **categories** every routine and action falls into. All three run at once; your strategy just tilts where the emphasis goes. A goal like "30 councils on BOPS" is *expand-flavoured*, so the work leans that way — while you still sustain existing relationships and advance any open deals underneath. And the tilt can be subtle: when the target list is fixed — a set shortlist of organisations — *expand* turns inward, and stops meaning "find new logos" and starts meaning "widen the coalition inside an org you already have."
 
 ## Still open (the *how*, deferred)
-- How a goal is represented, and how Brain prioritises across several goals into one worklist.
+- How a goal is represented in detail, and how Brain prioritises — across several goals, and across a big, slow board of many contacts — into one daily worklist. (The goal-to-strategy step is now sketched above and worked in `docs/scenario-councils.md`; what stays open is the precise representation and the triage itself.)

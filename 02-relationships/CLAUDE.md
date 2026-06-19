@@ -26,7 +26,7 @@ connects:
 - **People and organisations** you sell to: who they are, their role, and who knows whom — the relationship web.
 - **Conversation memory:** what was discussed, what you promised (open loops), where a deal stands.
 - **All relationship history** — the plain facts *and* the personal colour ("you and Jane go way back, she trusts you"). You only borrows this at write-time; it lives here.
-- **Investigation:** finding the real decision-maker, finding a warm path into a target.
+- **Investigation:** mapping the buying group inside a target — who the players are, what part each plays (decider, influencer, champion, blocker) and who sways whom — and finding a warm path in. The unit of work isn't a lone decision-maker but a small **coalition**: some people decide, others only influence, and the holes (a budget-holder you haven't met yet) are flagged as honestly as the knowns.
 - **A browseable record** — it serves you directly, not just Brain: look up any contact and find the whole picture, a timeline, the web, and conversations filed by offering.
 
 ## What it doesn't
@@ -38,6 +38,8 @@ Sensing is two steps, and the split matters because only the second one is "inte
 
 1. **The facts (deterministic).** Connections fetches raw records from your connected accounts — a new Gmail message or thread, a calendar event, a Slack message, a web/Tavily result. These are just *facts*: "a reply landed on the Jane thread at 9:03," "the recurring sync dropped off the calendar," "a tender appeared on Council X's site." No judgement, and Connections never reads them on its own (see `01`).
 2. **The reading (non-deterministic).** People reads those facts *against the brief* and decides what they mean: "this reply is a live buying question," "Jane has gone quiet, not just gone on holiday," "this tender fits BOPS," "a colleague just revealed a warm path." This is the judgement call — the same raw fact means different things under different goals.
+
+**Disposition is read, not tagged.** *Who a person is to you* — a champion, an enthusiast, someone going cold, a blocker — is itself one of these readings, inferred from a pattern of behaviour, never a label you apply by hand. A champion *looks like* a pattern: they reply fast and at length, write first instead of only responding, use ownership language ("once we've rolled this out"), pull colleagues into threads, and do work for you when you're not in the room. People reads that pattern and draws the conclusion; you only confirm or correct it. That inference is the heart of what makes this module intelligent rather than a filing cabinet.
 
 **The surfacing rule.** People pushes a reading up to Brain only when it both clears the strategy's bar *and* points at a plausible next action — because the tool's whole output is *who to act on, why, and a draft to approve*. A fact that leads nowhere stays filed; it isn't a signal.
 
@@ -71,4 +73,4 @@ Under an *expand* goal the beat tilts toward hunting new prospects and warm intr
 - Reaches the world — mail, calendar, Slack and research — *through* **Connections**.
 
 ## Still open (the *how*, deferred)
-The reading's *thresholds* — how long is "gone quiet," how strong a reply must be to clear the bar — and how it pins down the real decision-maker. The shape of the job is settled above; these knobs wait for real use. (It's the heaviest module — worth watching it stays a focused people-expert.)
+The reading's *thresholds* — how long is "gone quiet," how strong a reply must be to clear the bar, and how confident a disposition read (champion, cooling) must be before it's acted on. Building the buying-group map is settled in shape above; what's deferred is these knobs. (It's the heaviest module — worth watching it stays a focused people-expert.)

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Layers } from "lucide-react";
+
 import { CARD, NODES } from "@/lib/canvas-layout";
 import { readModules } from "@/lib/modules";
 import type { CanvasNode } from "@/lib/blueprint.config";
@@ -46,8 +49,15 @@ export default async function Home() {
   }
 
   return (
-    <main className="h-dvh w-dvw overflow-hidden">
+    <main className="relative h-dvh w-dvw overflow-hidden">
       <RfCanvas initialNodes={rfNodes} rawEdges={rawEdges} docs={docs} />
+      <Link
+        href="/assembly"
+        className="glass-card absolute top-5 right-5 z-20 inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[12.5px] font-medium text-slate-600 transition-transform duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none motion-reduce:transition-none"
+      >
+        <Layers className="size-3.5 text-blue-600" strokeWidth={2} />
+        Assembly
+      </Link>
     </main>
   );
 }
