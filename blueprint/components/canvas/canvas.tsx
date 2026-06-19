@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 import { CANVAS, NODES } from "@/lib/canvas-layout";
 import { usePan } from "@/lib/use-pan";
 import { NodeCard } from "./node-card";
+import { RouteLayer } from "./route-layer";
+import { IntegrationsCluster } from "./integrations-cluster";
 
 /**
  * The home screen: a pannable stage holding the six module nodes. The stage is
@@ -36,9 +38,13 @@ export function Canvas() {
           willChange: "transform",
         }}
       >
-        {NODES.map((node) => (
+        {/* Routes first, so they paint beneath the cards and read through the glass. */}
+        <RouteLayer />
+        {/* Connections renders as the integration cluster, not a card. */}
+        {NODES.filter((node) => node.id !== "01-integrations").map((node) => (
           <NodeCard key={node.id} node={node} />
         ))}
+        <IntegrationsCluster />
       </div>
     </div>
   );

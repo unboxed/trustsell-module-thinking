@@ -23,13 +23,13 @@ const ICONS: Record<IconName, LucideIcon> = {
 };
 
 /**
- * One module node: a uniform frosted card floating over the canvas. Same size
- * and treatment for all six — only its position on the stage and its content
- * differ. Icon on top, then title, then what it does.
+ * One module node: a uniform frosted card floating over the canvas. Same size,
+ * position-driven placement, and glass treatment. (Connections is the exception —
+ * it renders as the integration cluster, not a card, so it isn't passed here.)
+ * Icon badge on top, then name, title, and what it does.
  */
 export function NodeCard({ node }: { node: NodeDef }) {
   const Icon = ICONS[node.icon];
-
   return (
     <article
       style={{

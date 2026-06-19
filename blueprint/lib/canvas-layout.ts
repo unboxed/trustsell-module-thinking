@@ -6,10 +6,12 @@ import type { ModuleId } from "./blueprint.config";
  * screen-space) and mark the *center* of each card, so the ring reads cleanly
  * regardless of card size.
  *
- * The brain (00-spine) sits at the center; the other five form a balanced ring
- * around it (the brain gathers from them). Titles and one-line descriptions are
- * the curated copy from docs/ui-foundation.md — the card face. Each module's
- * live CLAUDE.md still feeds the future detail panel.
+ * The brain (00-spine) sits up top. Below it, the four assistants it leans on —
+ * Offerings, People, Voice, Organisation, left to right — line up in a row, each
+ * with a route running up to the brain. Connections (the port) sits below that
+ * row. Titles and one-line descriptions are the curated copy from
+ * docs/ui-foundation.md — the card face. Each module's live CLAUDE.md still feeds
+ * the future detail panel.
  *
  * Tune positions here; the canvas and cards read from this and nothing else.
  */
@@ -54,7 +56,7 @@ export const NODES: NodeDef[] = [
     blurb: "Holds your goals and decides the one thing worth doing next.",
     icon: "brain",
     x: 800,
-    y: 540,
+    y: 270,
   },
   {
     id: "01-integrations",
@@ -63,7 +65,7 @@ export const NODES: NodeDef[] = [
     blurb: "Plug in your accounts once; it carries messages in and out.",
     icon: "cable",
     x: 800,
-    y: 285,
+    y: 850,
   },
   {
     id: "02-relationships",
@@ -72,8 +74,8 @@ export const NODES: NodeDef[] = [
     blurb:
       "Keeps every contact, conversation and connection organised — and digs to find who matters.",
     icon: "users",
-    x: 1175,
-    y: 540,
+    x: 630,
+    y: 560,
   },
   {
     id: "03-offerings",
@@ -81,8 +83,8 @@ export const NODES: NodeDef[] = [
     title: "Your offerings",
     blurb: "Each product, who it suits, and the answers to the usual worries.",
     icon: "package",
-    x: 425,
-    y: 540,
+    x: 290,
+    y: 560,
   },
   {
     id: "04-organization",
@@ -90,8 +92,8 @@ export const NODES: NodeDef[] = [
     title: "Your organisation",
     blurb: "Your proof, your guardrails, your house voice.",
     icon: "building",
-    x: 960,
-    y: 790,
+    x: 1310,
+    y: 560,
     optional: true,
   },
   {
@@ -100,7 +102,7 @@ export const NODES: NodeDef[] = [
     title: "Your voice",
     blurb: "How you write, so every message sounds like you.",
     icon: "pen",
-    x: 640,
-    y: 790,
+    x: 970,
+    y: 560,
   },
 ];
