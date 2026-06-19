@@ -11,19 +11,31 @@
   border: 0;
 }
 
-/* The optional "flow" look: marching-ants dashes drifting along the wire (toggled by
-   EDGE_ANIMATED). Applied to the edge path via className on <BaseEdge>. */
+/* The "flow" look: marching-ants dashes drifting along the wire. Used by the
+   legacy EDGE_ANIMATED toggle and, while tracing the flow, by every lit leg —
+   .rf-flow drifts source→target (forward), .rf-flow-rev the other way, so the
+   dashes always march in the direction the flow is travelling. */
 .rf-flow {
   stroke-dasharray: 6 5;
   animation: rf-dash 0.6s linear infinite;
+}
+.rf-flow-rev {
+  stroke-dasharray: 6 5;
+  animation: rf-dash-rev 0.6s linear infinite;
 }
 @keyframes rf-dash {
   to {
     stroke-dashoffset: -11;
   }
 }
+@keyframes rf-dash-rev {
+  to {
+    stroke-dashoffset: 11;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
-  .rf-flow {
+  .rf-flow,
+  .rf-flow-rev {
     animation: none;
   }
 }

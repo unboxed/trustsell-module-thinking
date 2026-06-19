@@ -1,7 +1,7 @@
 "use client";
 
 import { Calendar, Cloud, Hash, Mail, Telescope, type LucideIcon } from "lucide-react";
-import { Handle, Position } from "@xyflow/react";
+import { Handle, Position, type NodeProps } from "@xyflow/react";
 
 import { cn } from "@/lib/utils";
 
@@ -21,9 +21,17 @@ const INTEGRATIONS: Integration[] = [
   { label: "Salesforce", icon: Cloud, connected: false },
 ];
 
-export function RfIntegrationsNode() {
+export function RfIntegrationsNode({ data }: NodeProps) {
+  const trace = (data as { trace?: "active" | "dim" })?.trace;
   return (
-    <div className="relative flex flex-col items-center">
+    <div
+      className={cn(
+        "relative flex flex-col items-center",
+        "transition-opacity duration-300 motion-reduce:transition-none",
+        trace === "active" && "drop-shadow-[0_0_18px_rgba(37,99,235,0.5)]",
+        trace === "dim" && "opacity-35 saturate-50",
+      )}
+    >
       <Handle type="target" position={Position.Top} className="rf-hidden-handle" />
       <Handle type="source" position={Position.Bottom} className="rf-hidden-handle" />
 

@@ -34,5 +34,5 @@ This is the worked version of Brain's canonical **play** (`00-spine`); it ties t
 - **Provide** (step 4): each module's piece, handed back when Brain asks.
 - **Brief → render** (steps 6–7): Brain decides; You writes; Organisation gates.
 
-## TODO — visualise this flow (for a future agent)
-Design a way to *show* this sequence — strategy → routines → a play firing → gather → decide → render → the surfaced action → learning. Likely a **timeline**, or an **animated trace** that lights up the path across the canvas (Brain → the experts it calls → You), building on the route lines already drawn and the "not drawn yet — routines & plays" note in `ui-foundation.md`. This doc is the thinking to work from.
+## Visualised — "Trace the flow"
+This sequence is now playable on the canvas. A **step timeline / scrubber** ("Trace the flow") steps through all eight stages turn-by-turn: each lights the nodes and the directional wires it touches (reusing the route lines already drawn, marching in the flow direction) and shows that step's line. The choreography — which nodes and legs light per step — lives in `blueprint/lib/flow-trace.ts`, with the *words* mirrored from this doc; **keep the two in sync.** The framing follows the canvas's GPS metaphor (a route traced across the map) and the "play = a path that lights up across nodes" note in `ui-foundation.md`.

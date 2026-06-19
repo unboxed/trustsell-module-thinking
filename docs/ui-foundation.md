@@ -55,16 +55,20 @@ calendar). The canvas (React Flow) **auto-routes one wire per link** from these
 declarations — no hand-placed geometry — with an arrow at each end: request out,
 provide back.
 
-## Not drawn yet — routines & plays (a future direction)
+## Routines & plays
 
-The model now has two things the canvas doesn't show: **routines** (a module's standing
+The model has two things beyond the static wiring: **routines** (a module's standing
 jobs) and **plays** (a brain-conducted choreography across several modules — see
-`00-spine`). When they earn their place, the likely shapes: a **routine** sits *on* its
-owning node (in the node's panel, or as a small count), since it has one owner; a **play**
-reads as a **path that lights up across nodes** — Brain → the experts it calls → You —
-reusing the route lines already on the canvas. Exactly how is the designer's call; noted
-here so it isn't lost. The **end-to-end flow** these would trace — strategy → routines →
-play → action — is mapped in `flow.md`.
+`00-spine`).
+
+A **play is now drawn** — as the "Trace the flow" timeline. The canonical end-to-end play
+(`flow.md`) plays back as a **path that lights up across nodes** — Brain → the experts it
+calls → You — reusing the route lines already on the canvas, marching in the flow
+direction; a scrubber steps through the eight stages. The choreography lives in
+`blueprint/lib/flow-trace.ts` (words mirrored from `flow.md`).
+
+Still **not drawn: routines.** Likely shape when they earn their place: a routine sits *on*
+its owning node (in the node's panel, or as a small count), since it has one owner.
 
 How the nodes and canvas look and lay out — and what each panel becomes — is the
 designer's call.

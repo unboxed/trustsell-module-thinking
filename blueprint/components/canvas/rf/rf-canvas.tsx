@@ -19,13 +19,17 @@ import {
 
 import { cn } from "@/lib/utils";
 import type { CanvasNode, ModuleId } from "@/lib/blueprint.config";
+import { FLOW_STEPS, legToEdge } from "@/lib/flow-trace";
 import { RfNodeCard } from "./rf-node-card";
 import { RfIntegrationsNode } from "./rf-integrations-node";
 import { FloatingEdge } from "./floating-edge";
+import { FlowTimeline } from "./flow-timeline";
 import { ModulePanel } from "../module-panel";
 
 /** Arrowheads a touch more solid than the wire so direction reads. */
 const MARKER_COLOR = "#64748b"; // slate-500
+/** The lit-route colour — --primary / blue-600, the system's interaction blue. */
+const ROUTE_BLUE = "#2563eb";
 /** The wire look. "bezier" is what we shipped; "smoothstep" / "straight" also work. */
 const EDGE_VARIANT = "bezier" as const;
 const EDGE_ANIMATED = false;
@@ -51,36 +55,86 @@ function Flow({
   rawEdges: RawEdge[];
   docs: CanvasNode[];
 }) {
-  const [nodes, , onNodesChange] = useNodesState(initialNodes as Node[]);
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes as Node[]);
   const [openId, setOpenId] = useState<ModuleId | null>(null);
+  // null = the static blueprint; 1..N = "flow mode" parked on that step.
+  const [traceStep, setTraceStep] = useState<number | null>(null);
   const rf = useReactFlow();
 
-  const edges: Edge[] = useMemo(
-    () =>
-      rawEdges.map((e) => ({
-        id: e.id,
-        source: e.source,
-        target: e.target,
-        type: "floating",
-        markerStart: { type: MarkerType.ArrowClosed, color: MARKER_COLOR, width: 16, height: 16 },
-        markerEnd: { type: MarkerType.ArrowClosed, color: MARKER_COLOR, width: 16, height: 16 },
-        data: { variant: EDGE_VARIANT, animated: EDGE_ANIMATED },
+  // Edges carry trace flags per step: the lit legs become a single directional,
+  // blue, marching wire and everything else dims back. Off-trace it's the
+  // neutral two-arrow route, exactly as before.
+  const edges: Edge[] = useMemo(() => {
+    const step = traceStep ? FLOW_STEPS[traceStep - 1] : null;
+    const legDir = new Map<string, "fwd" | "rev">();
+    if (step) {
+      for (const leg of step.legs) {
+        const { id, direction } = legToEdge(leg);
+        legDir.set(id, direction);
+      }
+    }
+    return rawEdges.map((e) => {
+      const base = { id: e.id, source: e.source, target: e.target, type: "floating" as const };
+      if (!step) {
+        const arrow = { type: MarkerType.ArrowClosed, color: MARKER_COLOR, width: 16, height: 16 };
+        return { ...base, markerStart: arrow, markerEnd: arrow, data: { variant: EDGE_VARIANT, animated: EDGE_ANIMATED } };
+      }
+      const direction = legDir.get(e.id);
+      if (direction) {
+        const arrow = { type: MarkerType.ArrowClosed, color: ROUTE_BLUE, width: 18, height: 18 };
+        return {
+          ...base,
+          markerStart: direction === "rev" ? arrow : undefined,
+          markerEnd: direction === "fwd" ? arrow : undefined,
+          data: { variant: EDGE_VARIANT, active: true, direction },
+        };
+      }
+      return { ...base, data: { variant: EDGE_VARIANT, dim: true } };
+    });
+  }, [rawEdges, traceStep]);
+
+  // Paint the trace flag onto each node's data. Spreading the node keeps React
+  // Flow's measured dims, which the floating edges read for their geometry.
+  useEffect(() => {
+    const step = traceStep ? FLOW_STEPS[traceStep - 1] : null;
+    const lit = new Set<string>(step ? step.nodes : []);
+    setNodes((nds) =>
+      nds.map((n) => ({
+        ...n,
+        data: { ...n.data, trace: step ? (lit.has(n.id) ? "active" : "dim") : undefined },
       })),
-    [rawEdges],
-  );
+    );
+  }, [traceStep, setNodes]);
 
   const openNode = docs.find((d) => d.id === openId) ?? null;
   const recenter = useCallback(() => rf.fitView({ padding: 0.22, duration: 400 }), [rf]);
+  // Entering flow mode opens on step 1 and frames the whole route.
+  const startTrace = useCallback(() => {
+    setTraceStep(1);
+    rf.fitView({ padding: 0.22, duration: 400 });
+  }, [rf]);
 
-  // "Press 0 to recenter" — matches the original canvas. No text inputs on the
-  // canvas, so a window listener is safe.
+  // Keyboard: 0 recenters always; in flow mode, arrows/space step and Esc exits.
+  // No text inputs on the canvas, so a window listener is safe.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "0") recenter();
+      if (e.key === "0") {
+        recenter();
+        return;
+      }
+      if (traceStep == null) return;
+      if (e.key === "ArrowRight" || e.key === " ") {
+        e.preventDefault();
+        setTraceStep((s) => Math.min((s ?? 1) + 1, FLOW_STEPS.length));
+      } else if (e.key === "ArrowLeft") {
+        setTraceStep((s) => Math.max((s ?? 1) - 1, 1));
+      } else if (e.key === "Escape") {
+        setTraceStep(null);
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [recenter]);
+  }, [recenter, traceStep]);
 
   return (
     <div className="canvas-atmosphere relative h-full w-full">
@@ -124,6 +178,15 @@ function Flow({
       >
         <Crosshair className="size-5" strokeWidth={1.75} />
       </button>
+
+      {/* Trace the flow — the turn-by-turn route bar (or its idle entry pill). */}
+      <FlowTimeline
+        step={traceStep}
+        steps={FLOW_STEPS}
+        onStart={startTrace}
+        onStep={setTraceStep}
+        onExit={() => setTraceStep(null)}
+      />
 
       <ModulePanel node={openNode} onClose={() => setOpenId(null)} />
     </div>

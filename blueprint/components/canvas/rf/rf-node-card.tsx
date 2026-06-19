@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 
+import { cn } from "@/lib/utils";
 import { CARD } from "@/lib/canvas-layout";
 import type { IconName } from "@/lib/blueprint.config";
 
@@ -30,6 +31,8 @@ export type RfCardData = {
   blurb: string;
   icon: IconName;
   optional: boolean;
+  /** Set while tracing the flow: this card is on the lit route, or faded back. */
+  trace?: "active" | "dim";
 };
 
 /**
@@ -45,7 +48,13 @@ export function RfNodeCard({ data }: NodeProps) {
   return (
     <div
       style={{ width: CARD.width, height: CARD.height }}
-      className="glass-card flex flex-col rounded-[18px] p-5"
+      className={cn(
+        "glass-card flex flex-col rounded-[18px] p-5",
+        "transition-[opacity,box-shadow] duration-300 motion-reduce:transition-none",
+        d.trace === "active" &&
+          "ring-1 ring-blue-600/50 shadow-[0_0_22px_-2px_rgba(37,99,235,0.55)]",
+        d.trace === "dim" && "opacity-35 saturate-50",
+      )}
     >
       <Handle type="target" position={Position.Top} className="rf-hidden-handle" />
       <Handle type="source" position={Position.Bottom} className="rf-hidden-handle" />
