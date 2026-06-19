@@ -100,21 +100,25 @@
 }
 
 @layer components {
-  /* The pannable stage surface: a faint dot grid (the canvas affordance, à la
-     Figma/Miro) over a soft tonal wash. The wash gives the frosted cards real
-     tonal variation to refract — glass over a flat fill reads as nothing. */
-  .canvas-surface {
+  /* Fixed "lighting", anchored to the viewport (it never pans). The soft tonal
+     wash gives the frosted cards real variation to refract — glass over a flat
+     fill reads as nothing. Edgeless: it fills whatever the viewport is, so there
+     are no sheet corners to pan into. */
+  .canvas-atmosphere {
     background-color: var(--canvas-base);
     background-image:
-      radial-gradient(var(--dot) 1.4px, transparent 1.7px),
       radial-gradient(60% 70% at 15% 8%, rgba(255, 255, 255, 0.55), transparent 66%),
       radial-gradient(65% 80% at 88% 96%, rgba(15, 23, 42, 0.12), transparent 72%),
       linear-gradient(140deg, #e6e9ef 0%, #c9cfd9 100%);
-    background-size:
-      24px 24px,
-      100% 100%,
-      100% 100%,
-      100% 100%;
+  }
+
+  /* The endless dot grid (the canvas affordance, à la Figma/Miro). The 24px dot
+     tile repeats forever; its `background-position` is driven by the pan offset
+     (inline style in canvas.tsx) so it scrolls under the content and never shows
+     an edge. */
+  .canvas-grid {
+    background-image: radial-gradient(var(--dot) 1.4px, transparent 1.7px);
+    background-size: 24px 24px;
   }
 
   /* Frosted, floating node card. Blur kept moderate (12px) so text contrast

@@ -41,8 +41,11 @@ export interface NodeDef {
   optional?: boolean;
 }
 
-/** Stage size in canvas-space — only modestly larger than a viewport, so the
- *  pan stays gentle. */
+/**
+ * Drawing extent of the static composition — sizes the route SVG and the content
+ * plane the nodes sit on. NOT a pan boundary: the canvas pans as an endless plane
+ * (see use-pan.ts); this just bounds where the baked-in nodes + routes live.
+ */
 export const CANVAS = { width: 1600, height: 1080 } as const;
 
 /** Uniform card footprint (all six identical). Ratio ≈ 1.6. */
@@ -52,7 +55,7 @@ export const NODES: NodeDef[] = [
   {
     id: "00-spine",
     name: "Brain",
-    title: "Your goals",
+    title: "Your deal lead",
     blurb: "Holds your goals and decides the one thing worth doing next.",
     icon: "brain",
     x: 800,
@@ -70,7 +73,7 @@ export const NODES: NodeDef[] = [
   {
     id: "02-relationships",
     name: "People",
-    title: "Your people",
+    title: "Your relationships",
     blurb:
       "Keeps every contact, conversation and connection organised — and digs to find who matters.",
     icon: "users",
@@ -99,10 +102,23 @@ export const NODES: NodeDef[] = [
   {
     id: "05-persona-you",
     name: "Voice",
-    title: "Your voice",
+    title: "Your profile",
     blurb: "How you write, so every message sounds like you.",
     icon: "pen",
     x: 970,
     y: 560,
   },
 ];
+
+/**
+ * Center of the node cluster in canvas-space — derived from the node extents, so
+ * it tracks layout changes. Used to frame the map on load and to power the
+ * recenter control (use-pan.ts). The plane itself is endless; this is just where
+ * "home" is.
+ */
+const NODE_XS = NODES.map((n) => n.x);
+const NODE_YS = NODES.map((n) => n.y);
+export const CONTENT_CENTER = {
+  x: (Math.min(...NODE_XS) + Math.max(...NODE_XS)) / 2,
+  y: (Math.min(...NODE_YS) + Math.max(...NODE_YS)) / 2,
+} as const;
