@@ -4,11 +4,12 @@ import "@xyflow/react/dist/base.css";
 import "./rf-canvas.css";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Crosshair } from "lucide-react";
+import { Crosshair, Minus, Plus } from "lucide-react";
 import {
   Background,
   BackgroundVariant,
   MarkerType,
+  PanOnScrollMode,
   ReactFlow,
   ReactFlowProvider,
   useNodesState,
@@ -39,6 +40,14 @@ const EDGE_ANIMATED = false;
 // Module scope (stable identity) so React Flow doesn't warn about re-created maps.
 const NODE_TYPES = { module: RfNodeCard, port: RfIntegrationsNode, artifact: ArtifactToken };
 const EDGE_TYPES = { floating: FloatingEdge };
+
+/** Shared look for the floating canvas controls (zoom in / out / fit). */
+const CONTROL_BTN = cn(
+  "glass-card flex size-11 items-center justify-center rounded-full",
+  "text-slate-600 transition-transform duration-200 ease-out hover:-translate-y-0.5",
+  "focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
+  "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
+);
 
 /** Node centres (canvas-space) — where the travelling artifact rests per step. */
 const NODE_CENTER: Record<string, { x: number; y: number }> = Object.fromEntries(
@@ -152,6 +161,14 @@ function Flow({
         recenter();
         return;
       }
+      if (e.key === "+" || e.key === "=") {
+        rf.zoomIn({ duration: 200 });
+        return;
+      }
+      if (e.key === "-" || e.key === "_") {
+        rf.zoomOut({ duration: 200 });
+        return;
+      }
       if (traceStep == null) return;
       if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
@@ -164,7 +181,7 @@ function Flow({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [recenter, traceStep]);
+  }, [recenter, traceStep, rf]);
 
   return (
     <div className="canvas-atmosphere relative h-full w-full">
@@ -180,12 +197,14 @@ function Flow({
         edgeTypes={EDGE_TYPES}
         fitView
         fitViewOptions={{ padding: 0.22 }}
-        minZoom={1}
+        minZoom={0.35}
         maxZoom={1}
         zoomOnScroll={false}
-        zoomOnPinch={false}
+        zoomOnPinch
         zoomOnDoubleClick={false}
-        panOnScroll={false}
+        zoomActivationKeyCode={["Meta", "Control"]}
+        panOnScroll
+        panOnScrollMode={PanOnScrollMode.Free}
         panOnDrag
         nodesDraggable={false}
         nodesConnectable={false}
@@ -195,22 +214,40 @@ function Flow({
         <Background variant={BackgroundVariant.Dots} gap={24} size={1.5} color="rgba(15,23,42,0.1)" />
       </ReactFlow>
 
-      {/* Recenter — frame the map again from anywhere (button, or press 0). */}
-      <button
-        type="button"
-        onClick={recenter}
-        onPointerDown={(e) => e.stopPropagation()}
-        aria-label="Recenter the map"
-        title="Recenter (press 0)"
-        className={cn(
-          "glass-card absolute right-5 bottom-5 flex size-11 items-center justify-center rounded-full",
-          "text-slate-600 transition-transform duration-200 ease-out hover:-translate-y-0.5",
-          "focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-          "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
-        )}
-      >
-        <Crosshair className="size-5" strokeWidth={1.75} />
-      </button>
+      {/* Zoom + fit — Figma-style controls. Also: scroll/two-finger to pan,
+          pinch or ⌘/Ctrl-scroll to zoom, and +/−/0 on the keyboard. */}
+      <div className="absolute right-5 bottom-5 flex flex-col gap-2">
+        <button
+          type="button"
+          onClick={() => rf.zoomIn({ duration: 200 })}
+          onPointerDown={(e) => e.stopPropagation()}
+          aria-label="Zoom in"
+          title="Zoom in (+)"
+          className={CONTROL_BTN}
+        >
+          <Plus className="size-5" strokeWidth={1.75} />
+        </button>
+        <button
+          type="button"
+          onClick={() => rf.zoomOut({ duration: 200 })}
+          onPointerDown={(e) => e.stopPropagation()}
+          aria-label="Zoom out"
+          title="Zoom out (−)"
+          className={CONTROL_BTN}
+        >
+          <Minus className="size-5" strokeWidth={1.75} />
+        </button>
+        <button
+          type="button"
+          onClick={recenter}
+          onPointerDown={(e) => e.stopPropagation()}
+          aria-label="Fit the map to view"
+          title="Fit to view (press 0)"
+          className={CONTROL_BTN}
+        >
+          <Crosshair className="size-5" strokeWidth={1.75} />
+        </button>
+      </div>
 
       {/* Trace the flow — the turn-by-turn route bar (or its idle entry pill). */}
       <FlowTimeline
