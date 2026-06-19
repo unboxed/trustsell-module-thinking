@@ -1,19 +1,45 @@
-# 03 · Offerings (The Product Expert)
+---
+name: "Offerings"
+title: "Your offerings"
+blurb: "Each product, who it suits, and the answers to the usual worries."
+icon: package
+optional: false
+tier: assistant
+modes: [advance, expand]
+connects:
+  - to: "00-spine"
+    provides: "answers the brain's product questions, and the fit-shape of a good customer"
+  - to: "02-relationships"
+    requests: "the worry 02 has on record that needs answering"
+    provides: "the rebuttal to it"
+  - to: "04-organization"
+    requests: "the actual proof from the library"
+    provides: "which kind of proof a claim needs"
+  - to: "01-integrations"
+    requests: "market / competitor research and enrichment"
+---
 
-**Role:** A **per-product expert**. The user adds a product — BOPS, say — and 03 becomes the expert on it. It *reasons to answer*: it holds knowledge, not goals. (The *goal* about a product — "30 councils" — belongs to the brain, even though the user may type it while setting the product up here.)
+# 03 · Offerings
 
-## It helps you *define* the product, not just store it
+**Purpose:** The expert on each thing you sell — who it suits, how it's priced, and how to answer the usual objections. It also helps you *build* that profile in the first place, even proposing answers for you to react to when you don't know.
 
-03 isn't a filing cabinet you fill in. The user brings the raw material ("here's BOPS"); 03 helps **organise** it — prompting for the target customer, the pricing, the common objections — and where the user doesn't know something (like exactly who the ideal customer is), 03 will **propose an answer to react to** rather than leave a blank box. It is a **researcher**: it can dig the open web (through `01`) to ground those suggestions, much as `02` does.
+## What it owns
+- **What each offering is** and the easy way in (the entry use-case).
+- **The fit-shape** — who a good customer looks like.
+- **Pricing and packaging** — the price points and the *menu* of levers.
+- **Objections** — for each, the rebuttal and *what kind* of proof backs it.
+- **The sales motion** — land-and-expand vs one-and-done, and the usual next step.
 
-So 03 has two gears:
-- **Setup (active, especially early):** co-author the product profile with the user.
-- **Day-to-day (steady):** answer the brain's questions about the product, and proactively flag a fit — *"this prospect looks right for BOPS."*
+## What it doesn't
+Decide the move for a real deal (Brain), hold the actual proof documents or the authority to discount (Organisation), or remember who said what (People). It knows the *general* playbook; "what to do about Jane today" is Brain's.
 
-## What 03 is responsible for
-What each offering *is*, who it fits, and the easy way in (the entry use-case); pricing and packaging (the price points and the *menu* of levers); for a given objection, the rebuttal and *what kind* of proof backs it up; and the product's natural sales motion (land-and-expand vs one-and-done) and usual next step.
+## Its routines
+- **Setup (active, especially early):** co-author the product profile with you — prompting for the target customer, pricing, the common objections — and researching the open web (through Connections) to ground its suggestions.
+- **Day-to-day:** keep the profile sharp, refresh market and competitor intel, and prep rebuttals and proof for active deals.
+- **On request:** hand over the **fit-shape** when People goes hunting. Offerings *defines* a good customer; it can't *scan* for them — it holds no contacts. People does the scan; Brain sets the intent.
 
-## Boundaries
-- **vs the spine:** 03 knows the *general* playbook for a product; the brain decides the *specific* next move for *this* deal. "How BOPS sells in general" is 03; "what to do about Jane today" is the brain. (That settles the old question of where motion ends and tactics begin.)
-- **vs `04` (Organization):** 03 knows *which kind* of proof to reach for and the *menu* of pricing levers; `04` holds the actual case studies and the *authority* to actually discount or bring in an exec sponsor.
-- **vs `02` (Relationships):** 02 remembers that *"Jane raised a price concern"*; 03 supplies the rebuttal.
+## Who it works with
+- Answers **Brain**'s product questions and supplies the fit-shape.
+- Takes a worry from **People** and hands back the rebuttal.
+- Tells **Organisation** which *kind* of proof a claim needs, and takes the actual proof back.
+- Does its research *through* **Connections**.

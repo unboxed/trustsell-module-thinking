@@ -1,20 +1,32 @@
-# 01 · Integrations (The Switchboard)
+---
+name: "Connections"
+title: "Your connections"
+blurb: "Plug in your accounts once; it carries messages in and out."
+icon: cable
+optional: false
+tier: connector
+# No modes or connects: 01 has no initiative and no reasoning — every module
+# reaches *through* it, so its links are drawn from the others, not declared here.
+---
 
-**Role:** A **port**, and nothing more. Think of it as a switchboard or a junction box: the user plugs their accounts into it once — they log into their Google account, say — and from then on it simply holds those connections and carries messages through them, in and out. It is the wires, not the brain.
+# 01 · Connections
 
-## What it does — and doesn't
+**Purpose:** The single doorway to everything *outside* the tool. You connect your accounts once, and from then on Connections just carries information in and out for whichever module needs it. It's the wiring, not a thinker.
 
-01 has **no agency**. It never reads an email, never decides anything is important, never interprets content. The *act* of pulling Jane's conversation history is `02-relationships` reaching **through** 01; the *act* of sending an approved message is the decision/render flow reaching through 01. The switchboard just provides the connection.
+## What it owns
+- **Your accounts** — email, calendar, and the like. Connect once; it holds the connection.
+- **The tool's research reach** — web search and enrichment live here too, so any module can look things up through the same doorway.
+- **Smoothing over providers** — connect Gmail today and a work Outlook next year, and a module just asks for "emails with Jane" without caring which account they came from.
+- **A place you return to** — it's a real screen, not one-time setup: see what's connected, add accounts, check a connection is healthy.
 
-It is **shared plumbing**, not a one-way input stage. Any module can borrow its connections for whatever that module needs — `02` to fetch a contact's past emails and meetings, the send step to deliver a draft the user has approved. And it reaches more than the user's own inbox: research tools (web search, Tavily, enrichment) live here too, which is how `02` and `03` do their investigating.
+## What it doesn't
+Read, interpret, decide, or notice anything. "A new reply landed" or "Jane's gone quiet" is People's job, reaching *through* Connections to look — never Connections noticing on its own.
 
-One useful job it *should* do is **hide the differences between providers.** If the user connects Gmail today and a work Outlook account next year, a module just asks for "emails with Jane" without caring which account they came from. 01 smooths that over.
+## Its routines
+**None.** Routines are about initiative, and Connections has none — it only ever moves when another module reaches through it. It's the one module that's pure infrastructure rather than an expert.
 
-## What is explicitly NOT 01's job
-
-**Noticing that something matters** — a new reply landed, a customer has gone quiet — is the brain's and `02`'s job, never the switchboard's. 01 only carries whatever comes down the wire; deciding it's important happens upstairs.
-
-> Correction from earlier drafts: 01 used to be described as "the pipe that brings 360° context in" and "often the trigger source." That was backwards. Modules reach *through* 01; the active verb belongs to `02`. Triggers are detected by `02` (real events) and the spine (goal-derived), not by the port.
+## Who it works with
+Everyone reaches *through* it, so the links belong to the modules that use it, not here: People pulls a person's mail, calendar and research through it; the render step sends an approved message out through it. In and out.
 
 ## Still open
-- Bidirectional is settled — it carries both in and out. The deeper mechanics (polling vs. push for new events) are deferred; either way, *interpreting* whatever arrives stays with `02`.
+Whether new events arrive by polling or push is deferred — either way, *interpreting* whatever arrives stays with People.

@@ -1,46 +1,54 @@
-# 00 · Spine (The Brain)
+---
+name: "Brain"
+title: "Your deal lead"
+blurb: "Holds your goals and decides the one thing worth doing next."
+icon: brain
+optional: false
+tier: brain
+modes: [sustain, advance, expand]
+connects:
+  - to: "02-relationships"
+    requests: "watch these accounts, find the decision-makers, flag when a champion goes quiet"
+    provides: "the standing brief drawn from the goal, plus follow-up questions"
+  - to: "03-offerings"
+    requests: "the product playbook, proof strategy and pricing levers for a deal"
+  - to: "04-organization"
+    requests: "the matching case study and the compliance fence"
+  - to: "05-persona-you"
+    requests: "render the brief into the user's voice"
+    provides: "the brief — who to act on and why — to render at message time"
+---
 
-**Role:** The spine is the only part of the system that *reasons to decide*. Everything else is an expert it consults; the spine is the one that holds intent, picks who to act on, and assembles the recommendation. If the rest of the tool is a team of specialists, the spine is the lead who sets the agenda.
+# 00 · Brain
 
-## What the spine holds: strategy as goals
+**Purpose:** Brain holds your goals and decides the single most useful thing to do next — and *why* — then hands it down for the experts to flesh out and you to approve. It's the only part that *decides*; everything else is an expert it consults.
 
-Strategy here isn't an abstract "who we target" statement living off to the side — it's a short list of concrete **goals, each attached to an offering**. The user declares them: *"For BOPS, my goal is 30 councils as early adopters by Q1."* Each goal quietly carries two things the spine uses: a **default mode** (that BOPS example is an *Expand* goal) and a **target shape** (councils that fit the early-adopter profile).
+## What it owns
+- **The strategy** — a short list of goals, each pinned to an offering ("BOPS → 30 councils by Q1"). Brain doesn't just store these; it **helps you shape them**, back and forth, offering by offering. It's a thinking partner, not a form you fill in.
+- **The routines** — it turns the strategy into standing jobs and hands one to each module to focus on (see below).
+- **Prioritising** — it weighs everything the modules surface into what *you* should focus on next.
+- **The brief** — for any action it assembles the what + why and hands it to the render step. It decides; it doesn't write the words.
+- **Outcome attribution** — the one bit of learning it keeps: it stamps each recommendation with what it leaned on, and when a result comes back, routes the credit (or blame) to the module that should learn from it. (Everything else learns in its own domain.)
 
-A note on where things live versus where they're typed: when the user adds a product they'll often enter the product details *and* the goal in one sitting. Behind the scenes those go to different homes — the product facts settle into `03-offerings`, while the *goal* is owned here in the brain. Where you type something is not the same as which module owns it.
+## What it doesn't
+Hold facts — people, products, proof — or write the final message. Those live in the experts.
 
-## How the spine works with the assistants
+## Its routines
+Routines are standing jobs drawn from the strategy. Brain is the source of every *other* module's routines, and it works with each module three ways:
+- **Briefs** them — hands each a strategy-driven job ("watch these councils, find the decision-makers").
+- **Receives** what they push up — *"Jane's gone quiet," "Council X viewed the pricing page."* These can wake Brain.
+- **Asks** them follow-ups on demand — *"who else is in that account?"*
 
-The spine doesn't just fire one-off questions. It works with each assistant (`02`–`05`) three ways:
+So it's push *and* pull. A routine always has **one owner** — the module that does the work. It may *pull* ingredients from another module (People's fit-scan pulls the "good-customer shape" from Offerings), but that other module is a **supplier**, never a co-owner.
 
-1. **It briefs them.** From a goal, the spine hands an assistant standing instructions — *"watch these council accounts, find the decision-makers, tell me if a champion goes quiet."*
-2. **It receives their reports.** The assistants work their beat and volunteer what the brief flags — *"Jane's gone quiet," "I found the likely decision-maker at Council X."* Those reports are themselves triggers that can wake the spine.
-3. **It asks them follow-ups.** *"Tell me more about Jane." "Who else is in that account?"*
+## Plays
+Some work spans several modules around a **decision Brain has to make in the middle** — that's a **play**, not any single module's routine. The litmus is simple: *is there a decision in the middle?* No → it's one module's routine. Yes → it's a Brain play. Plays live here, with Brain, because Brain is the only conductor — modules can't direct each other, they only request and provide.
 
-## Routing: a recipe per mode
+The canonical play is the recommendation itself: a goal fires (or a module pushes a trigger up); Brain leans toward that goal's kind of work and runs the play — asks People for warm paths and history, Offerings for the entry use-case and fit-shape, Organisation for the matching case study and the fence; assembles *act on Person P at Council X, because […], leading with […]*; and hands a brief to You to render. The draft is surfaced for approval, never auto-sent.
 
-When the spine needs to act, it works through a **default recipe** for the chosen mode — an ordered checklist of which assistant to ask. Independent questions run together; a question that depends on an earlier answer waits for it.
-
-Worked example — an *Expand* goal for BOPS:
-1. A goal fires, or a trigger arrives (e.g. `02` reports "Council X viewed the BOPS pricing page").
-2. The spine sets the mode to **Expand**.
-3. It asks `02`: warm paths into councils that fit the early-adopter profile? Any council contact gone quiet?
-4. It asks `02` again — waiting on step 3 — for our history with the top target and any open loop.
-5. In parallel it asks `03` (the BOPS entry use-case and the proof point that lands for a council) and `04` (the matching case study and the brand/compliance guardrails).
-6. It assembles the **what + why**: act on Person P at Council X, because [warm path + fits profile + viewed pricing], leading with [use-case + case study].
-7. It emits a **brief**, which the render step turns into a draft — `05` for the voice, `04` for the fence. The draft is surfaced for approval, never auto-sent.
-
-The three modes are the same recipe machine with different weightings: *Sustain* mutes `03` and leans on decay and open loops from `02`; *Advance* leans hard on `03` (stage + objection → rebuttal + proof); *Expand* leans on the `02` relationship web.
-
-## The spine emits a brief, not prose
-
-The spine decides; it does not write the message. It hands down a **brief** — the intent, the target, the what+why, the key points, and any guardrails — and a separate render step composes the actual words (`05` personal voice, inside `04`'s brand/compliance fence). This keeps the spine a decider rather than a copywriter.
-
-## Learning
-
-Learning is **distributed** — each assistant tunes itself in its own domain (`05` from the edits the user makes to drafts, `03` from which rebuttals precede a deal advancing, `02` from a contact's real rhythm). The spine keeps only one learning job: **outcome attribution.** It stamps each recommendation with what it leaned on, and when an outcome comes back in, it routes the credit (or blame) to the assistant that should learn from it.
-
-The rhythm of learning follows a curve: **active at cold-start** (ask more while onboarding), **passive once warm**, and **reactive on drift** — an assistant only starts asking again when it notices it needs re-tuning (for example, the user suddenly editing `05`'s drafts heavily again).
+## The three kinds of work
+Sustain (keep relationships alive), Advance (move open deals), and Expand (find and grow) aren't modes you switch into — they're the three **categories** every routine and action falls into. All three run at once; your strategy just tilts where the emphasis goes. A goal like "30 councils on BOPS" is *expand-flavoured*, so the work leans that way — while you still sustain existing relationships and advance any open deals underneath.
 
 ## Still open (the *how*, deferred)
-- How a goal is represented, and how the spine prioritises across several goals into one daily worklist.
-- The trigger model: cadence-based, event-based, or both.
+- How a goal is represented, and how Brain prioritises across several goals into one worklist.
+- The trigger model: what actually wakes Brain — cadence, events, or both.

@@ -1,0 +1,29 @@
+/* Styles for the React Flow canvas. Scoped to .rf-* classes so nothing here touches
+   the glass-card tokens or the rest of the app. */
+
+/* Handles exist only so wires can attach; the floating edge computes its own
+   geometry, so the handles themselves are invisible. */
+.rf-hidden-handle {
+  opacity: 0;
+  pointer-events: none;
+  min-width: 1px;
+  min-height: 1px;
+  border: 0;
+}
+
+/* The optional "flow" look: marching-ants dashes drifting along the wire (toggled by
+   EDGE_ANIMATED). Applied to the edge path via className on <BaseEdge>. */
+.rf-flow {
+  stroke-dasharray: 6 5;
+  animation: rf-dash 0.6s linear infinite;
+}
+@keyframes rf-dash {
+  to {
+    stroke-dashoffset: -11;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rf-flow {
+    animation: none;
+  }
+}

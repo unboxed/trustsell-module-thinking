@@ -1,22 +1,43 @@
-# 04 · Organization (The Company You Represent)
+---
+name: "Organisation"
+title: "Your organisation"
+blurb: "Your proof, your guardrails, your house voice."
+icon: building
+optional: true
+tier: assistant
+modes: [advance, expand]
+connects:
+  - to: "00-spine"
+    provides: "the matching case study and the compliance fence, on request"
+  - to: "03-offerings"
+    requests: "which kind of proof a claim needs"
+    provides: "the proof library and pricing authority"
+  - to: "05-persona-you"
+    provides: "the hard limits — compliance, legal, brand — the voice must write inside"
+---
 
-**Role:** The expert on **the organisation the user represents** — the *inside*, where `02` is the *outside* world. It *reasons to answer*, holding knowledge, not goals. (Strategy used to be listed here; it isn't anymore — strategy is now a set of goals owned by the brain.)
+# 04 · Organisation
 
-## It's optional
+**Purpose:** Your company's shared layer — what's true for everyone who represents it. It holds the **proof** you can point to and the **lines you can't cross**. Optional: barely there for a solo operator, substantial for a real or regulated company.
 
-If the user *is* the company — a solo operator — 04 barely exists; it folds into the person and their voice (`05`). The moment there's a real company behind the user, especially a large or regulated one, 04 becomes its own substantial thing. So its scope is deliberately flexible: a container that can be nearly empty or quite full, and the user doesn't need to know its full extent up front.
+## What it owns
+Two faces:
+- **A source** — the organisation's materials, pulled *into* messages: case studies, an "about us," collateral, positioning. It holds the proof **library** (tagged by product, segment, and the objection it answers) and the **authority** to actually discount or bring in an exec sponsor.
+- **A fence** — the hard limits a message must stay inside: compliance, legal, brand tone. The fence works in two beats: it hands You the rules up front, and does a **final compliance pass** on the draft before it reaches you. So it's a quiet shelf most of the time, and a gate at write-time. (It flags rather than hard-blocks — you still decide.)
 
-## Two faces
+## What it doesn't
+Hold the personal layer — your voice, your relationships, your preferences. Those are per-person (You and People). And it owns the proof *library*; *which kind* of proof to use is Offerings' call.
 
-When 04 does have substance, it plays two roles:
-- **A source** — the organisation's *materials*, pulled *into* messages: case studies, an "about us," collateral, positioning.
-- **A fence** — the organisation's *hard limits* a message must not cross: compliance, legal, and brand tone.
+## For a solo operator
+If you *are* the company, Organisation simply switches off — there's no real proof or compliance layer, so You writes free, with no fence. It doesn't fold its jobs into You; there just aren't any. The moment there's a real company behind you, it becomes its own substantial thing.
 
-That fence is the clearest reason 04 has to be separate from `05`. As the user put it, *compliance and legal really don't fall onto the user themselves* — they aren't personal preferences, they're the organisation's rules. Like `03`, 04 helps the user build this profile, and can research to do so.
+## Its routines
+For now, a **setup** thing: you build the profile and come back when something changes — no proactive beat. (A richer version — keeping proof fresh, watching for compliance changes, minting a case study from a won deal — is a future vision, not today.)
 
-## Boundaries
-- **vs `03` (Offerings):** 04 holds the proof **library** (the actual case studies, tagged by product, segment, and the kind of objection they answer) and the pricing **authority**; `03` holds the proof *strategy* (which kind of proof to use) and the lever menu.
-- **vs `05` (You):** the fence wins **only** where there's a hard limit (compliance, legal, brand); everywhere else the personal voice writes freely, using 04's source materials. For a solo user there's no real fence, so the personal voice simply runs free.
+## Who it works with
+- Gives **Brain** the matching case study and the compliance fence on request.
+- Gives **Offerings** the actual proof from the library, and the pricing authority.
+- Gives **You** the hard limits to write inside.
 
 ## Vision (not today)
-04 is also the natural home for **team membership** — Slack-style, where people create or join an organisation. That makes 04 the **shared** tier (proof, brand, compliance, and the members themselves, shared across a team), while `05` (voice) and `02` (relationships) are the **personal** tier, one per member. This is a future direction, not a today feature — but it's why 04 earns its place as a separate module even when it feels thin.
+Organisation is the natural home for **team membership** — Slack-style, where people create or join an organisation. That makes it the **shared** tier (proof, brand, compliance, and the members themselves), while You (voice) and People (relationships) stay **personal**, one per member. A future direction — but it's why Organisation earns its place even when it feels thin.

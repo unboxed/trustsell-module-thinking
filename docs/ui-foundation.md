@@ -15,19 +15,56 @@ the home.
 ## What it shows — the nodes
 
 The whole point is to show the six modules as nodes. Each node carries a consistent
-short **name** and a **title** (the friendly "Your ___" form), plus a one-line summary
-of what it does — curated copy that lives in `lib/canvas-layout.ts`. Each module's own
-live notes (`lib/modules.ts`) feed its **panel** when panels land, so the detail layer
-reflects the current thinking.
+short **name**, a **title** (the friendly "Your ___" form), and a one-line **blurb** of
+what it does. These per-module facts now live in **each module's own `CLAUDE.md`
+frontmatter** — that is the single source of truth, so editing a module updates its
+card with no other change. The blueprint reads them live per request
+(`lib/modules.ts`); `lib/canvas-layout.ts` now holds only the hand-placed node
+**positions**, which the canvas merges with the live facts. Each module's narrative
+**body** feeds its detail panel, so the detail layer reflects the current thinking too.
 
-| Module | Name | Title | What it does |
-|---|---|---|---|
-| `00-spine` | Brain | Your deal lead | Holds your goals and decides the one thing worth doing next. |
-| `01-integrations` | Connections | Your connections | Plug in your accounts once; it carries messages in and out. |
-| `02-relationships` | People | Your relationships | Keeps every contact, conversation and connection organised — and digs to find who matters. |
-| `03-offerings` | Offerings | Your offerings | Each product, who it suits, and the answers to the usual worries. |
-| `04-organization` | Organisation | Your organisation | Your proof, your guardrails, your house voice. Optional. |
-| `05-persona-you` | Voice | Your profile | How you write, so every message sounds like you. |
+The frontmatter scheme each module carries (the *keys*, not the values — the values
+live in the modules):
+
+| Key | Meaning |
+|---|---|
+| `name` | the card eyebrow (Brain, People, …) |
+| `title` | the friendly "Your ___" heading |
+| `blurb` | one-line "what it does" |
+| `icon` | lucide icon name |
+| `optional` | shows the "optional" treatment (only `04`) |
+| `tier` | `brain` · `assistant` · `connector` (semantic; not drawn yet) |
+| `modes` | which categories of work it serves — sustain / advance / expand (semantic; not drawn yet) |
+| `connects` | two-way links to other modules — see below; the canvas auto-routes one wire per link |
+
+A connection is **not one undirected road**. Every link carries two flows, and the
+frontmatter names them from the **owning module's point of view**:
+
+```yaml
+connects:
+  - to: "<module-id>"
+    requests: "<what this module asks the other to do / hand over>"   # the out-flow
+    provides: "<what this module hands to the other>"                 # the give-back
+```
+
+Either side may be omitted when a module only pulls or only answers (e.g. `02` asks
+nothing of the brain, so its `00-spine` edge carries only `provides`). The connector
+`01` declares no `connects` of its own — it has no initiative, so the modules that
+reach *through* it declare the link (e.g. `02 → 01` requests a person's mail +
+calendar). The canvas (React Flow) **auto-routes one wire per link** from these
+declarations — no hand-placed geometry — with an arrow at each end: request out,
+provide back.
+
+## Not drawn yet — routines & plays (a future direction)
+
+The model now has two things the canvas doesn't show: **routines** (a module's standing
+jobs) and **plays** (a brain-conducted choreography across several modules — see
+`00-spine`). When they earn their place, the likely shapes: a **routine** sits *on* its
+owning node (in the node's panel, or as a small count), since it has one owner; a **play**
+reads as a **path that lights up across nodes** — Brain → the experts it calls → You —
+reusing the route lines already on the canvas. Exactly how is the designer's call; noted
+here so it isn't lost. The **end-to-end flow** these would trace — strategy → routines →
+play → action — is mapped in `flow.md`.
 
 How the nodes and canvas look and lay out — and what each panel becomes — is the
 designer's call.

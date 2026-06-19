@@ -35,8 +35,8 @@
   --radius: 0.75rem;
 
   /* canvas + frosted card */
-  --canvas-base: #e9ebef;
-  --dot: rgba(15, 23, 42, 0.14);
+  --canvas-base: #f1f3f6;
+  --dot: rgba(15, 23, 42, 0.1);
   --glass-bg: rgba(255, 255, 255, 0.3);
   --glass-border: rgba(255, 255, 255, 0.5);
   --glass-shadow: rgba(2, 6, 23, 0.1);
@@ -107,9 +107,9 @@
   .canvas-atmosphere {
     background-color: var(--canvas-base);
     background-image:
-      radial-gradient(60% 70% at 15% 8%, rgba(255, 255, 255, 0.55), transparent 66%),
-      radial-gradient(65% 80% at 88% 96%, rgba(15, 23, 42, 0.12), transparent 72%),
-      linear-gradient(140deg, #e6e9ef 0%, #c9cfd9 100%);
+      radial-gradient(60% 70% at 15% 8%, rgba(255, 255, 255, 0.7), transparent 66%),
+      radial-gradient(65% 80% at 88% 96%, rgba(15, 23, 42, 0.03), transparent 72%),
+      linear-gradient(140deg, #f5f7fa 0%, #e6e9ef 100%);
   }
 
   /* The endless dot grid (the canvas affordance, à la Figma/Miro). The 24px dot
@@ -117,7 +117,7 @@
      (inline style in canvas.tsx) so it scrolls under the content and never shows
      an edge. */
   .canvas-grid {
-    background-image: radial-gradient(var(--dot) 1.4px, transparent 1.7px);
+    background-image: radial-gradient(var(--dot) 0.9px, transparent 1.2px);
     background-size: 24px 24px;
   }
 
@@ -154,4 +154,100 @@
   /* Note: we deliberately do NOT force solid cards under
      prefers-reduced-transparency — the glass look is the point of this viewer.
      (Re-add a legible fallback here if transparency ever becomes a problem.) */
+
+  /* The module detail panel renders a CLAUDE.md body with react-markdown. No
+     typography plugin here, so style the rendered elements directly — tuned to
+     the same ink/border tokens the cards use. */
+  .module-doc {
+    color: var(--ink-body);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .module-doc > :first-child {
+    margin-top: 0;
+  }
+  .module-doc h1 {
+    color: var(--ink-title);
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .module-doc h2 {
+    color: var(--ink-title);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 1.4rem 0 0.4rem;
+  }
+  .module-doc h3 {
+    color: var(--ink-title);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 1.1rem 0 0.35rem;
+  }
+  .module-doc p {
+    margin: 0.6rem 0;
+  }
+  .module-doc strong {
+    color: var(--ink-title);
+    font-weight: 600;
+  }
+  .module-doc em {
+    font-style: italic;
+  }
+  .module-doc ul,
+  .module-doc ol {
+    margin: 0.6rem 0;
+    padding-left: 1.25rem;
+  }
+  .module-doc ul {
+    list-style: disc;
+  }
+  .module-doc ol {
+    list-style: decimal;
+  }
+  .module-doc li {
+    margin: 0.3rem 0;
+  }
+  .module-doc a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .module-doc code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8em;
+    background: var(--muted);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    color: var(--ink-title);
+  }
+  .module-doc blockquote {
+    margin: 0.8rem 0;
+    padding: 0.4rem 0 0.4rem 0.9rem;
+    border-left: 3px solid var(--border);
+    color: var(--muted-foreground);
+  }
+  .module-doc table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.8rem 0;
+    font-size: 0.82rem;
+  }
+  .module-doc th,
+  .module-doc td {
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.6rem;
+    text-align: left;
+  }
+  .module-doc th {
+    background: var(--muted);
+    color: var(--ink-title);
+    font-weight: 600;
+  }
+  .module-doc hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 1.2rem 0;
+  }
 }

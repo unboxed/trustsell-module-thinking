@@ -1,20 +1,43 @@
-# 05 · Persona (You)
+---
+name: "You"
+title: "Your profile"
+blurb: "Everything personal to you — your voice and your preferences — so every message sounds like you."
+icon: pen
+optional: false
+tier: assistant
+modes: [sustain, advance, expand]
+connects:
+  - to: "00-spine"
+    provides: "the brief rendered into words in the user's voice"
+  - to: "02-relationships"
+    requests: "relationship history, to pitch the right closeness and register"
+  - to: "04-organization"
+    requests: "the organisation's hard limits, to write inside them"
+---
 
-**Role:** The **personal layer** — one per individual — applied at the moment a message is written. Its single job is to make the message sound like *you*. It is not a separate reasoning loop; it's the voice and judgement that shape the final words.
+# 05 · You
 
-This is the **moat and the landmine**: voice is what makes the output unmistakably yours, and getting it almost-but-not-quite right is worse than not trying — an output that's 80% you is worse than 0% you.
+**Purpose:** Makes every message sound like you. You is the personal layer — one per individual — applied at the moment a message is written: it takes Brain's brief and turns it into words in your voice.
 
-## What 05 holds
+## What it owns
 - **Your voice:** tone, rhythm, the words you'd actually use, how formal you are.
-- **Your comfort with automation:** how much you trust the tool to act versus show you a draft first.
+- **Your preferences:** how much you trust the tool to act versus show you a draft first.
 
-## What 05 deliberately does *not* hold
-It stores **no relationship history** — that all lives in `02`. When it's time to write, 05 *reads* the history from `02` to judge how close you are to someone and pitch the register accordingly. And it always writes **inside `04`'s fence** — free everywhere except the organisation's hard limits (compliance, legal, brand).
+That's it, on purpose — it stays narrow. Your role or selling angle ride *inside* your voice; they aren't separate furniture here.
 
-So the flow at render time is: the brain hands down a brief → 05 reads the relationship from `02` → stays inside `04`'s guardrails → and writes the message in your voice.
+This is the **moat and the landmine**: voice is what makes the output unmistakably yours, and almost-but-not-quite is worse than not trying — 80% you is worse than 0% you.
+
+## What it doesn't
+Store any relationship history — that all lives in People; You only *reads* it at write-time to judge closeness. And it never overrides the company's hard limits — it writes inside Organisation's fence (and for a solo, where there's no fence, it writes free).
+
+## Its routines
+One, and it's a default: **it learns from your edits** — keen at the start, quiet once it's confident, attentive again only if your edits show it has drifted. No strategy-driven routines — You is about who you are, not what the strategy is chasing.
+
+## Who it works with (the render flow)
+Brain hands down a brief → You reads the relationship from People → stays inside Organisation's guardrails → and writes the message in your voice.
 
 ## The guiding principle: people as the fulcrum, AI as the lever
-The human works the *verbs* — decide, approve, send. The AI works the *nouns* — the target, the draft, the proof. The AI always **suggests**; you make the final call. This is why 05 biases hard to **draft, don't auto-send** — nothing goes out without you pulling the trigger, at least for now.
+You work the *verbs* — decide, approve, send. The AI works the *nouns* — the target, the draft, the proof. The AI always **suggests**; you make the final call. That's why You biases hard to **draft, don't auto-send** — nothing goes out without you pulling the trigger, at least for now.
 
 ## Still open (the *how*, deferred)
-Exactly how your voice is captured — from writing samples, a written style spec, or learned from the messages you send and edit — is left for later. The leaning so far (from how learning works across the tool) is that 05 learns mostly by watching what you change in its drafts: keen at the start, quiet once it's confident, and attentive again only if your edits show it has drifted.
+Exactly how your voice is captured — from writing samples, a style spec, or learned from what you send and edit. The leaning so far: mostly learned from your edits.

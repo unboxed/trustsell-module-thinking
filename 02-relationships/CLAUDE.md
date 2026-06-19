@@ -1,28 +1,48 @@
-# 02 · Relationships (The People Expert)
+---
+name: "People"
+title: "Your relationships"
+blurb: "Keeps every contact, conversation and connection organised — and digs to find who matters."
+icon: users
+optional: false
+tier: assistant
+modes: [sustain, expand]
+connects:
+  - to: "00-spine"
+    provides: "reports what the brief flags — 'Jane went quiet', 'found the DM' — and answers follow-ups"
+  - to: "03-offerings"
+    requests: "which offering a conversation relates to, and the rebuttal to a worry on record"
+    provides: "the worry it has on record, for 03 to answer"
+  - to: "05-persona-you"
+    provides: "relationship history — plain facts and personal colour — read at write time"
+  - to: "01-integrations"
+    requests: "a person's email + calendar history; web / Tavily research on a target"
+---
 
-**Role:** The expert on people and accounts — equal parts **librarian** and **private investigator**. It *reasons to answer*: the brain sets its objectives, and it has no goals of its own. But it is not passive — it works its beat, digs things up, and proactively tells the brain what matters.
+# 02 · People
 
-It serves **two audiences**, not one: the brain that queries it, *and the user directly*. The librarian half is as important as the investigator half — the user can look up any contact and find the whole picture already organised: full context, a timeline of every interaction, who-knows-whom, and conversations filed by the offering they relate to.
+**Purpose:** The expert on everyone you deal with — who they are, your history with them, who-knows-whom — that digs to find who actually matters and notices when something changes. (Part librarian, part investigator.)
 
-It reaches the world through `01`: both the user's own channels (email, calendar) **and** external research tools (web search, Tavily, enrichment). Importantly, **how** it investigates is its own call — the brain briefs the goal ("find the decision-maker at Council X"), and 02 decides where to look and what to chase. We don't hand it a search recipe; that's the whole point of it being the expert.
+## What it owns
+- **People and organisations** you sell to: who they are, their role, and who knows whom — the relationship web.
+- **Conversation memory:** what was discussed, what you promised (open loops), where a deal stands.
+- **All relationship history** — the plain facts *and* the personal colour ("you and Jane go way back, she trusts you"). You only borrows this at write-time; it lives here.
+- **Investigation:** finding the real decision-maker, finding a warm path into a target.
+- **A browseable record** — it serves you directly, not just Brain: look up any contact and find the whole picture, a timeline, the web, and conversations filed by offering.
 
-## What 02 is responsible for
-- **People and organisations** the user sells to: who they are, their role, and who knows whom (the relationship web).
-- **Conversation memory:** what was discussed, what the user promised (open loops), and where a deal stands.
-- **Investigation and enrichment:** finding the real decision-maker, finding a warm path into a target.
-- **Sensing:** noticing change — someone's gone quiet, changed jobs, just re-engaged — and flagging what the brief cares about. (This "sensing" is 02's job, not `01`'s.)
-- **Keeping it organised and look-up-able:** a contact's context and timeline at a glance, the relationship web, and conversations grouped by offering — a tidy record the user can browse, not just a store the brain queries.
+## What it doesn't
+Hold the goals (Brain), what you sell (Offerings), your own company's proof (Organisation), or your writing voice (You).
 
-## What 02 is NOT responsible for
-The goals (the brain), what we sell (`03`), the user's own company's proof/brand/team (`04`), and the user's personal writing voice (`05`).
+## Its routines
+The routine-heaviest module.
+- **Default beat (always on):** keep contacts and conversations organised, and watch for change — someone gone quiet, changed jobs, just re-engaged — flagging what the strategy cares about.
+- **Strategy-driven focus:** e.g. under an *expand* goal, prioritise hunting new prospects and warm intros. In fit-matching it owns **the scan** — Offerings defines the shape of a good customer, and People matches that shape against the real contacts (and digs up new ones).
+- *How* it investigates is its own call — Brain sets the goal; People decides where to look.
 
-## Boundaries
-- **vs `03` (Offerings):** 02 remembers *"Jane was worried about price"* — the record of who said what. `03` knows what the product is and how to answer that worry. And when 02 files conversations *by offering*, it's organising its own record against the offerings `03` defines — 02 owns the filing, `03` owns the product.
-- **vs `04` (Organization):** 02 is the **outside** world — the user's customers and prospects. `04` is **us** — our own proof, team, and brand.
-- **vs `05` (You):** all relationship history lives **here**, both the plain facts (met three times, discussed X) and the personal colour (you and Jane go back years, she trusts you). `05` stores none of it — at the moment a message is written, `05` *reads* this history from 02 to judge the right closeness and register.
-
-## A note on load
-Because 02 owns relationships, conversation memory, investigation, *and* sensing, it's the heaviest module. Worth watching that it stays a focused people-expert and doesn't quietly absorb jobs that belong elsewhere.
+## Who it works with
+- Reports to **Brain** what the brief flags, and answers its follow-ups.
+- Hands **Offerings** the worry it has on record, and takes back the rebuttal.
+- Lets **You** read relationship history at write-time.
+- Reaches the world — mail, calendar, research — *through* **Connections**.
 
 ## Still open (the *how*, deferred)
-How 02 decides who the real decision-maker is, and how it decides someone has "gone quiet," are deliberately left for a later use-case pass. For now what matters is that *02 owns these jobs*.
+How it decides who the real decision-maker is, and when someone has "gone quiet." For now, what matters is that People owns these jobs. (It's the heaviest module — worth watching it stays a focused people-expert.)
