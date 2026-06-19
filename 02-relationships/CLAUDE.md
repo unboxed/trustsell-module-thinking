@@ -15,7 +15,7 @@ connects:
   - to: "05-persona-you"
     provides: "relationship history — plain facts and personal colour — read at write time"
   - to: "01-integrations"
-    requests: "a person's email + calendar history; web / Tavily research on a target"
+    requests: "a person's email, calendar and Slack history; web / Tavily research on a target"
 ---
 
 # 02 · People
@@ -32,17 +32,43 @@ connects:
 ## What it doesn't
 Hold the goals (Brain), what you sell (Offerings), your own company's proof (Organisation), or your writing voice (You).
 
-## Its routines
-The routine-heaviest module.
-- **Default beat (always on):** keep contacts and conversations organised, and watch for change — someone gone quiet, changed jobs, just re-engaged — flagging what the strategy cares about.
-- **Strategy-driven focus:** e.g. under an *expand* goal, prioritise hunting new prospects and warm intros. In fit-matching it owns **the scan** — Offerings defines the shape of a good customer, and People matches that shape against the real contacts (and digs up new ones).
-- *How* it investigates is its own call — Brain sets the goal; People decides where to look.
+## How it senses — facts first, then reading
+
+Sensing is two steps, and the split matters because only the second one is "intelligent":
+
+1. **The facts (deterministic).** Connections fetches raw records from your connected accounts — a new Gmail message or thread, a calendar event, a Slack message, a web/Tavily result. These are just *facts*: "a reply landed on the Jane thread at 9:03," "the recurring sync dropped off the calendar," "a tender appeared on Council X's site." No judgement, and Connections never reads them on its own (see `01`).
+2. **The reading (non-deterministic).** People reads those facts *against the brief* and decides what they mean: "this reply is a live buying question," "Jane has gone quiet, not just gone on holiday," "this tender fits BOPS," "a colleague just revealed a warm path." This is the judgement call — the same raw fact means different things under different goals.
+
+**The surfacing rule.** People pushes a reading up to Brain only when it both clears the strategy's bar *and* points at a plausible next action — because the tool's whole output is *who to act on, why, and a draft to approve*. A fact that leads nowhere stays filed; it isn't a signal.
+
+What People can actually see today comes from the **connected** accounts — Gmail, Calendar, Slack, and web/Tavily research — so the signals are the ones those sources can yield:
+
+| Kind | Raw fact (from Connections) | People's reading | The action it sets up |
+|---|---|---|---|
+| Advance | Gmail: a reply asking "what would this cost us?" | a live buying question | draft: the entry use-case + the proof that lands |
+| Sustain | Gmail + Calendar: no reply in three weeks, and the recurring sync fell off | a champion going cold | draft: a light re-engage |
+| Expand | Web/Tavily: Council X published a digital-services tender | a relevant trigger event | draft: outreach that references it |
+| Expand | Slack: a colleague in #deals mentions they know Council X's CTO | a warm path to the decision-maker | draft: an ask-for-intro |
+
+(A connected CRM or LinkedIn would add more — a stage change, a job move — but neither is connected yet, so People doesn't lean on them today. They're on the board for later.)
+
+## Its routine, in agent terms
+
+People is the routine-heaviest module. Concretely, its standing job is:
+
+- **Trigger** — a default **beat** (a regular sweep of watched accounts' new mail, calendar and Slack, plus a periodic web/Tavily check on live targets) *and* **events** (a reply lands, a thread goes quiet, a meeting is booked or just happened, a target is named in Slack, a trigger turns up on the web). Both, not one — see the trigger note in `00`.
+- **Inputs it pulls** — the "good-customer shape" from Offerings (its supplier here), so a fit-scan has something to match against.
+- **The job** — turn raw facts into readings (above), filed by person and offering, and judge which are worth Brain's attention.
+- **Push-condition** — clears the strategy bar *and* maps to an action (the surfacing rule).
+- **Output** — a short, specific push: *"Jane's gone quiet," "Council X replied asking about pricing," "found a warm path to the DM via Slack"* — each already carrying the action it implies.
+
+Under an *expand* goal the beat tilts toward hunting new prospects and warm intros; in fit-matching People owns **the scan** (Offerings defines the shape; People matches it against real contacts and digs up new ones). *How* it investigates is its own call — Brain sets the goal, People decides where to look.
 
 ## Who it works with
 - Reports to **Brain** what the brief flags, and answers its follow-ups.
 - Hands **Offerings** the worry it has on record, and takes back the rebuttal.
 - Lets **You** read relationship history at write-time.
-- Reaches the world — mail, calendar, research — *through* **Connections**.
+- Reaches the world — mail, calendar, Slack and research — *through* **Connections**.
 
 ## Still open (the *how*, deferred)
-How it decides who the real decision-maker is, and when someone has "gone quiet." For now, what matters is that People owns these jobs. (It's the heaviest module — worth watching it stays a focused people-expert.)
+The reading's *thresholds* — how long is "gone quiet," how strong a reply must be to clear the bar — and how it pins down the real decision-maker. The shape of the job is settled above; these knobs wait for real use. (It's the heaviest module — worth watching it stays a focused people-expert.)

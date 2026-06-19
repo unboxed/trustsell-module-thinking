@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Waypoints, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { PHASE_NAMES, type FlowStep } from "@/lib/flow-trace";
+import { FORM_META, isRawForm } from "./artifact-token";
 
 /**
  * The "Trace the flow" instrument. Two states living in one overlay:
@@ -54,6 +55,9 @@ export function FlowTimeline({
   const current = steps[step - 1];
   const total = steps.length;
   const phases: FlowStep["phase"][] = ["A", "B"];
+  const form = current.artifact.form;
+  const FormIcon = FORM_META[form].icon;
+  const rawForm = isRawForm(form);
 
   return (
     <div
@@ -97,6 +101,22 @@ export function FlowTimeline({
             <ChevronRight className="size-4" strokeWidth={2} />
           </StepButton>
         </div>
+      </div>
+
+      {/* The travelling parcel's current form — grey while raw, blue once a mind has read it. */}
+      <div className="mt-2 flex items-center gap-2">
+        <span className="text-[10px] font-semibold tracking-[0.12em] text-slate-400 uppercase">
+          Now
+        </span>
+        <span
+          className={cn(
+            "inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium",
+            rawForm ? "bg-slate-900/[0.05] text-slate-500" : "bg-blue-600/10 text-blue-700",
+          )}
+        >
+          <FormIcon className="size-3.5" strokeWidth={2} />
+          {FORM_META[form].word}
+        </span>
       </div>
 
       {/* Detail — distilled from flow.md. */}

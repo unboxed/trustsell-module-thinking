@@ -72,9 +72,10 @@ export function FloatingEdge({ source, target, markerStart, markerEnd, data }: E
   const className = d.active ? flowClass : d.animated ? "rf-flow" : undefined;
   const style: React.CSSProperties = d.active
     ? {
+        // A touch softer than before, so the travelling parcel stays the hero.
         stroke: ROUTE_BLUE,
-        strokeWidth: 2.4,
-        filter: "drop-shadow(0 0 4px rgba(37, 99, 235, 0.55))",
+        strokeWidth: 2.1,
+        filter: "drop-shadow(0 0 3px rgba(37, 99, 235, 0.4))",
         transition: "stroke 0.3s ease, stroke-width 0.3s ease",
       }
     : {

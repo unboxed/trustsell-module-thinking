@@ -39,3 +39,56 @@
     animation: none;
   }
 }
+
+/* The travelling parcel. React Flow sets the node's transform per step; ease it so
+   the parcel glides between rest points, and pop the pill in when its form changes. */
+.react-flow__node-artifact {
+  transition: transform 0.55s ease;
+}
+.artifact-pop {
+  animation: rf-artifact-pop 0.32s ease-out;
+}
+@keyframes rf-artifact-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* A mind at work: a soft blue halo pulsing on the node that transforms the parcel. */
+.rf-think-halo {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.5),
+    0 0 26px 2px rgba(37, 99, 235, 0.35);
+  animation: rf-think 1.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes rf-think {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .react-flow__node-artifact {
+    transition: none;
+  }
+  .artifact-pop {
+    animation: none;
+  }
+  .rf-think-halo {
+    animation: none;
+    opacity: 0.7;
+  }
+}

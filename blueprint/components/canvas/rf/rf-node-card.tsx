@@ -33,6 +33,8 @@ export type RfCardData = {
   optional: boolean;
   /** Set while tracing the flow: this card is on the lit route, or faded back. */
   trace?: "active" | "dim";
+  /** True on the step where this node's mind transforms the parcel (think-pulse). */
+  reasoning?: boolean;
 };
 
 /**
@@ -49,13 +51,14 @@ export function RfNodeCard({ data }: NodeProps) {
     <div
       style={{ width: CARD.width, height: CARD.height }}
       className={cn(
-        "glass-card flex flex-col rounded-[18px] p-5",
+        "glass-card relative flex flex-col rounded-[18px] p-5",
         "transition-[opacity,box-shadow] duration-300 motion-reduce:transition-none",
-        d.trace === "active" &&
-          "ring-1 ring-blue-600/50 shadow-[0_0_22px_-2px_rgba(37,99,235,0.55)]",
+        // Dialed back a notch from the original bloom so the travelling parcel reads as the hero.
+        d.trace === "active" && "ring-1 ring-blue-600/40 shadow-[0_0_16px_-4px_rgba(37,99,235,0.4)]",
         d.trace === "dim" && "opacity-35 saturate-50",
       )}
     >
+      {d.reasoning && <span aria-hidden className="rf-think-halo" />}
       <Handle type="target" position={Position.Top} className="rf-hidden-handle" />
       <Handle type="source" position={Position.Bottom} className="rf-hidden-handle" />
 

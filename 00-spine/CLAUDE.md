@@ -36,10 +36,12 @@ Hold facts — people, products, proof — or write the final message. Those liv
 ## Its routines
 Routines are standing jobs drawn from the strategy. Brain is the source of every *other* module's routines, and it works with each module three ways:
 - **Briefs** them — hands each a strategy-driven job ("watch these councils, find the decision-makers").
-- **Receives** what they push up — *"Jane's gone quiet," "Council X viewed the pricing page."* These can wake Brain.
+- **Receives** what they push up — *"Jane's gone quiet," "Council X replied asking about pricing."* These can wake Brain.
 - **Asks** them follow-ups on demand — *"who else is in that account?"*
 
 So it's push *and* pull. A routine always has **one owner** — the module that does the work. It may *pull* ingredients from another module (People's fit-scan pulls the "good-customer shape" from Offerings), but that other module is a **supplier**, never a co-owner.
+
+**In agent terms, a routine is a small spec:** a *trigger* (a default beat, events, or both), the *inputs* it pulls from suppliers, the *job* it does, a *push-condition* (when it's worth waking Brain), and the *output* it pushes up. The trigger model is **both** — a default beat keeps the standing jobs ticking, and events fire in between. People's routine is worked out in full in `02` (it's the heaviest); Offerings and Organisation run lighter ones — mostly keeping their material current and answering on request — and Connections has none, since it holds no initiative.
 
 ## Plays
 Some work spans several modules around a **decision Brain has to make in the middle** — that's a **play**, not any single module's routine. The litmus is simple: *is there a decision in the middle?* No → it's one module's routine. Yes → it's a Brain play. Plays live here, with Brain, because Brain is the only conductor — modules can't direct each other, they only request and provide.
@@ -51,4 +53,3 @@ Sustain (keep relationships alive), Advance (move open deals), and Expand (find 
 
 ## Still open (the *how*, deferred)
 - How a goal is represented, and how Brain prioritises across several goals into one worklist.
-- The trigger model: what actually wakes Brain — cadence, events, or both.

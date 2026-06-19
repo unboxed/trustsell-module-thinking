@@ -61,10 +61,12 @@ The model has two things beyond the static wiring: **routines** (a module's stan
 jobs) and **plays** (a brain-conducted choreography across several modules — see
 `00-spine`).
 
-A **play is now drawn** — as the "Trace the flow" timeline. The canonical end-to-end play
-(`flow.md`) plays back as a **path that lights up across nodes** — Brain → the experts it
-calls → You — reusing the route lines already on the canvas, marching in the flow
-direction; a scrubber steps through the eight stages. The choreography lives in
+A **play is now drawn** — as the "Trace the flow" timeline, which **follows the artifact**.
+The canonical end-to-end play (`flow.md`) plays back as a single **parcel riding the lit route**
+— Brain → the experts it calls → You — that **changes form only where a mind reasons**
+(fact → signal → brief → draft → action). It stays **grey while it's a raw fetched record and
+turns blue once a mind has read it**, so the deterministic→non-deterministic boundary shows on
+the canvas itself. A scrubber steps through the eight stages; the choreography lives in
 `blueprint/lib/flow-trace.ts` (words mirrored from `flow.md`).
 
 Still **not drawn: routines.** Likely shape when they earn their place: a routine sits *on*
