@@ -34,8 +34,8 @@ connects:
 Decide the move for a real deal (Brain), hold the actual proof documents or the authority to discount (Organisation), or remember who said what (People). It knows the *general* playbook; "what to do about Jane today" is Brain's.
 
 ## Its routines
-- **Setup (active, especially early):** co-author the product profile with you — prompting for the target customer, pricing, the common objections — and researching the open web (through Connections) to ground its suggestions.
-- **Day-to-day:** keep the profile sharp, refresh market and competitor intel, and prep rebuttals and proof for active deals.
+- **Setup (active, especially early):** co-author the product profile with you — the pitch, the fit-shape, pricing, the common objections. Its knowledge arrives three ways: **told** (what only you can give — the product, the pricing, a deck), **fetched** (researched on the open web through Connections, to ground its suggestions), and **supplied** (handed over by another module — the actual proof comes from Organisation). When you don't yet know an answer — your fit-shape, say — it doesn't stall: it **researches** a starting point, **proposes a draft for you to react to**, or **flags it** if the thing is genuinely only in your head. That propose-and-confirm move is the same one People makes reading a disposition off behaviour — the tool drafts the answer, you confirm or correct — only pointed at your own product instead of a contact. (Worked in `docs/how-modules-collaborate.md`.)
+- **Day-to-day:** keep the profile sharp, refresh market and competitor intel, and prep rebuttals and proof for active deals. Over time it can also learn *what's landing* — which rebuttal and which proof tend to move a buyer — fed back by Brain when an outcome comes in (lighter than People's learning today).
 - **On request:** hand over the **fit-shape** when People goes hunting. Offerings *defines* a good customer; it can't *scan* for them — it holds no contacts. People does the scan; Brain sets the intent.
 
 ## Who it works with

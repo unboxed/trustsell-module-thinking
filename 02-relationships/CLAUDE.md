@@ -25,19 +25,22 @@ connects:
 ## What it owns
 - **People and organisations** you sell to: who they are, their role, and who knows whom — the relationship web.
 - **Conversation memory:** what was discussed, what you promised (open loops), where a deal stands.
-- **All relationship history** — the plain facts *and* the personal colour ("you and Jane go way back, she trusts you"). You only borrows this at write-time; it lives here.
+- **All relationship history** — the plain facts *and* the personal colour ("you and Jane go way back, she trusts you"). Profile only borrows this at write-time; it lives here.
 - **Investigation:** mapping the buying group inside a target — who the players are, what part each plays (decider, influencer, champion, blocker) and who sways whom — and finding a warm path in. The unit of work isn't a lone decision-maker but a small **coalition**: some people decide, others only influence, and the holes (a budget-holder you haven't met yet) are flagged as honestly as the knowns.
 - **A browseable record** — it serves you directly, not just Brain: look up any contact and find the whole picture, a timeline, the web, and conversations filed by offering.
 
 ## What it doesn't
-Hold the goals (Brain), what you sell (Offerings), your own company's proof (Organisation), or your writing voice (You).
+Hold the goals (Brain), what you sell (Offerings), your own company's proof (Organisation), or your writing voice (Profile).
 
-## How it senses — facts first, then reading
+## How it senses — facts, then counting, then reading
 
-Sensing is two steps, and the split matters because only the second one is "intelligent":
+Sensing is three steps, not two, and the split matters because only the last one is "intelligent" — it's the one place a judgement enters:
 
-1. **The facts (deterministic).** Connections fetches raw records from your connected accounts — a new Gmail message or thread, a calendar event, a Slack message, a web/Tavily result. These are just *facts*: "a reply landed on the Jane thread at 9:03," "the recurring sync dropped off the calendar," "a tender appeared on Council X's site." No judgement, and Connections never reads them on its own (see `01`).
-2. **The reading (non-deterministic).** People reads those facts *against the brief* and decides what they mean: "this reply is a live buying question," "Jane has gone quiet, not just gone on holiday," "this tender fits BOPS," "a colleague just revealed a warm path." This is the judgement call — the same raw fact means different things under different goals.
+1. **The facts (fetched, deterministic).** Connections fetches raw records from your connected accounts — a new Gmail message or thread, a calendar event, a Slack message, a web/Tavily result. These are just *facts*: "a reply landed on the Jane thread at 9:03," "the recurring sync dropped off the calendar," "a tender appeared on Council X's site." No judgement, and Connections never reads them on its own (see `01`).
+2. **The counting (still deterministic).** People does plain arithmetic over those facts: "the last reply from Jane was three weeks ago," "she started four of the last six threads," "her replies used to take a day and now take an hour." There is still no opinion here — anyone counting the same records gets the same numbers. People does this, not Connections, because *what's worth counting* is set by the goal ("days since last reply" only matters because the strategy cares about momentum). This is the **checkable** floor: you can see the dates and redo the sum yourself.
+3. **The reading (non-deterministic).** People reads those counts *against the brief* and decides what they mean: "this reply is a live buying question," "Jane has gone quiet, not just gone on holiday," "this tender fits BOPS," "a colleague just revealed a warm path." This is the judgement call — the same count means different things under different goals.
+
+**Where the opinion starts.** The deterministic-to-non-deterministic line isn't the handoff from Connections to People — it sits one notch higher, *inside* People, between the counting and the reading. People does both; only the reading is arguable. Connections stays dumb throughout. (Worked end to end, with several of a salesperson's questions traced down to this floor and the gaps named, in `docs/tracing-back.md`.)
 
 **Disposition is read, not tagged.** *Who a person is to you* — a champion, an enthusiast, someone going cold, a blocker — is itself one of these readings, inferred from a pattern of behaviour, never a label you apply by hand. A champion *looks like* a pattern: they reply fast and at length, write first instead of only responding, use ownership language ("once we've rolled this out"), pull colleagues into threads, and do work for you when you're not in the room. People reads that pattern and draws the conclusion; you only confirm or correct it. That inference is the heart of what makes this module intelligent rather than a filing cabinet.
 
@@ -45,7 +48,7 @@ Sensing is two steps, and the split matters because only the second one is "inte
 
 What People can actually see today comes from the **connected** accounts — Gmail, Calendar, Slack, and web/Tavily research — so the signals are the ones those sources can yield:
 
-| Kind | Raw fact (from Connections) | People's reading | The action it sets up |
+| Kind | What's fetched and counted (the checkable floors) | People's reading (the opinion) | The action it sets up |
 |---|---|---|---|
 | Advance | Gmail: a reply asking "what would this cost us?" | a live buying question | draft: the entry use-case + the proof that lands |
 | Sustain | Gmail + Calendar: no reply in three weeks, and the recurring sync fell off | a champion going cold | draft: a light re-engage |
@@ -69,7 +72,7 @@ Under an *expand* goal the beat tilts toward hunting new prospects and warm intr
 ## Who it works with
 - Reports to **Brain** what the brief flags, and answers its follow-ups.
 - Hands **Offerings** the worry it has on record, and takes back the rebuttal.
-- Lets **You** read relationship history at write-time.
+- Lets **Profile** read relationship history at write-time.
 - Reaches the world — mail, calendar, Slack and research — *through* **Connections**.
 
 ## Still open (the *how*, deferred)

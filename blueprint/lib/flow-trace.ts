@@ -79,7 +79,7 @@ export const FLOW_STEPS: FlowStep[] = [
     phase: "A",
     title: "Brief the modules",
     artifact: { form: "routines", label: "a standing job, one each", at: "00-spine" },
-    text: "Brain turns the strategy into routines and briefs each module with a standing job — People, Offerings, Organisation and You.",
+    text: "Brain turns the strategy into routines and briefs each module with a standing job — People, Offerings, Organisation and Profile.",
     nodes: ["00-spine", "02-relationships", "03-offerings", "04-organization", "05-persona-you"],
     legs: [
       { from: "00-spine", to: "02-relationships" },
@@ -127,7 +127,7 @@ export const FLOW_STEPS: FlowStep[] = [
     phase: "B",
     title: "Render in your voice",
     artifact: { form: "draft", label: "a message in your voice", at: "05-persona-you", reasoned: true },
-    text: "Brain hands a brief to You, who renders it in your voice — reading your closeness to Person P from People, inside Organisation’s compliance fence.",
+    text: "Brain hands a brief to Profile, who renders it in your voice — reading your closeness to Person P from People, inside Organisation’s compliance fence.",
     nodes: ["00-spine", "05-persona-you", "02-relationships", "04-organization"],
     legs: [
       { from: "00-spine", to: "05-persona-you" },
@@ -149,7 +149,7 @@ export const FLOW_STEPS: FlowStep[] = [
     phase: "B",
     title: "Learn from the outcome",
     artifact: { form: "lesson", label: "what the reply taught us", at: "02-relationships" },
-    text: "The outcome loops back. Brain routes the lesson to the module that should learn — People — and You learns from any edits you made to the draft.",
+    text: "The outcome loops back. Brain routes the lesson to the module that should learn — People — and Profile learns from any edits you made to the draft.",
     nodes: ["00-spine", "02-relationships", "05-persona-you"],
     legs: [{ from: "00-spine", to: "02-relationships" }],
   },

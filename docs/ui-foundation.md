@@ -63,7 +63,7 @@ jobs) and **plays** (a brain-conducted choreography across several modules — s
 
 A **play is now drawn** — as the "Trace the flow" timeline, which **follows the artifact**.
 The canonical end-to-end play (`flow.md`) plays back as a single **parcel riding the lit route**
-— Brain → the experts it calls → You — that **changes form only where a mind reasons**
+— Brain → the experts it calls → Profile — that **changes form only where a mind reasons**
 (fact → signal → brief → draft → action). It stays **grey while it's a raw fetched record and
 turns blue once a mind has read it**, so the deterministic→non-deterministic boundary shows on
 the canvas itself. A scrubber steps through the eight stages; the choreography lives in

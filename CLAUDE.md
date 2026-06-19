@@ -56,5 +56,5 @@ A **port**, nothing more. The user connects their accounts to it once; from then
 - `02-relationships/` — the people expert (relationships, conversation history, sensing)
 - `03-offerings/` — the product expert (what we sell, per offering)
 - `04-organization/` — the organisation you represent (proof, brand, compliance — optional)
-- `05-persona-you/` — you (the personal layer: your voice and your preferences)
+- `05-persona-you/` — Profile (the personal layer: your voice and your preferences)
 - `_scratch/open-questions.md` — running parking lot

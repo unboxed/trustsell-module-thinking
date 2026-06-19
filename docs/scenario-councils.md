@@ -38,7 +38,7 @@ Everything below is what it took to produce that one card.
 - *why now* — the live question and the warming pattern, Relationships' reading
 - *what to lead with* — the records-import answer and the partial-rollout first step
   (Offerings), and the Borsetshire case study (Organisation)
-- *the words themselves* — rendered in your voice (You), inside the compliance fence
+- *the words themselves* — rendered in your voice (Profile), inside the compliance fence
   (Organisation)
 - *the fact it was chosen today, over everything else* — Brain's triage
 
@@ -83,12 +83,12 @@ small reading, and the brief is what you get when you combine them:
   buyer.
 - **Organisation** handed up: the Borsetshire County case study (a comparable council
   already live) and the compliance fence the message must stay inside.
-- **You** handed up: the voice the message is written in, and the preference to see it
+- **Profile** handed up: the voice the message is written in, and the preference to see it
   before it sends.
 
 Brain compounded those into the **brief**: *act on Tom, because he's your advocate and
 he's opening a technical door; lead with the records answer and the Borsetshire story;
-offer the partial rollout; keep it warm, not salesy.* You then rendered the brief into
+offer the partial rollout; keep it warm, not salesy.* Profile then rendered the brief into
 the actual words, and Organisation did a final compliance pass.
 
 So the brief is a **compounded** thing: its ingredients are other modules' readings,
@@ -166,7 +166,7 @@ The other modules run lighter routines:
 - **Offerings** keeps the council pitch sharp and ready — the entry step, the proof, the
   objection answers — and doesn't go hunting; it answers when asked.
 - **Organisation** keeps the case study and the compliance fence current.
-- **You** stands ready to render in voice.
+- **Profile** stands ready to render in voice.
 - **Connections** has no routine at all. It only moves when another module reaches
   through it to fetch or to send.
 

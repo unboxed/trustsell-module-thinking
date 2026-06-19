@@ -23,21 +23,21 @@ connects:
 ## What it owns
 Two faces:
 - **A source** — the organisation's materials, pulled *into* messages: case studies, an "about us," collateral, positioning. It holds the proof **library** (tagged by product, segment, and the objection it answers) and the **authority** to actually discount or bring in an exec sponsor.
-- **A fence** — the hard limits a message must stay inside: compliance, legal, brand tone. The fence works in two beats: it hands You the rules up front, and does a **final compliance pass** on the draft before it reaches you. So it's a quiet shelf most of the time, and a gate at write-time. (It flags rather than hard-blocks — you still decide.)
+- **A fence** — the hard limits a message must stay inside: compliance, legal, brand tone. The fence works in two beats: it hands Profile the rules up front, and does a **final compliance pass** on the draft before it reaches you. So it's a quiet shelf most of the time, and a gate at write-time. (It flags rather than hard-blocks — you still decide.)
 
 ## What it doesn't
-Hold the personal layer — your voice, your relationships, your preferences. Those are per-person (You and People). And it owns the proof *library*; *which kind* of proof to use is Offerings' call.
+Hold the personal layer — your voice, your relationships, your preferences. Those are per-person (Profile and People). And it owns the proof *library*; *which kind* of proof to use is Offerings' call.
 
 ## For a solo operator
-If you *are* the company, Organisation simply switches off — there's no real proof or compliance layer, so You writes free, with no fence. It doesn't fold its jobs into You; there just aren't any. The moment there's a real company behind you, it becomes its own substantial thing.
+If you *are* the company, Organisation simply switches off — there's no real proof or compliance layer, so Profile writes free, with no fence. It doesn't fold its jobs into Profile; there just aren't any. The moment there's a real company behind you, it becomes its own substantial thing.
 
 ## Its routines
-For now, a **setup** thing: you build the profile and come back when something changes — no proactive beat. (A richer version — keeping proof fresh, watching for compliance changes, minting a case study from a won deal — is a future vision, not today.)
+For now, a **setup** thing: you build the profile and come back when something changes — no proactive beat. Its knowledge is almost all **told** or uploaded, and it mostly **supplies** — proof to Offerings, the case study and fence to Brain and Profile — rather than going hunting; its memory is the **shared** one (the proof library), one per company. (A richer version — keeping proof fresh, watching for compliance changes, minting a case study from a won deal — is a future vision, not today.) Its place in the supply-side picture, and the shared-versus-personal memory tiers, are worked in `docs/how-modules-collaborate.md`.
 
 ## Who it works with
 - Gives **Brain** the matching case study and the compliance fence on request.
 - Gives **Offerings** the actual proof from the library, and the pricing authority.
-- Gives **You** the hard limits to write inside.
+- Gives **Profile** the hard limits to write inside.
 
 ## Vision (not today)
-Organisation is the natural home for **team membership** — Slack-style, where people create or join an organisation. That makes it the **shared** tier (proof, brand, compliance, and the members themselves), while You (voice) and People (relationships) stay **personal**, one per member. A future direction — but it's why Organisation earns its place even when it feels thin.
+Organisation is the natural home for **team membership** — Slack-style, where people create or join an organisation. That makes it the **shared** tier (proof, brand, compliance, and the members themselves), while Profile (voice) and People (relationships) stay **personal**, one per member. A future direction — but it's why Organisation earns its place even when it feels thin.

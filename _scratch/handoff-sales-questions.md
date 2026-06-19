@@ -97,7 +97,7 @@ Each group with its **answer path** (fetched / told / inferred) and its **shape*
 - **Track and prioritise** — Q18 (did they reply), Q22 (what did I promise — open loops),
   Q21 (who's most urgent). *Fetched* facts and open loops feeding Brain's **triage** play.
 - **Write it** — Q20 (what to say), Q23 (tone), Q26 (formal or informal). Shape: the
-  **render** — You's voice, reading closeness from People, inside Organisation's fence.
+  **render** — Profile's voice, reading closeness from People, inside Organisation's fence.
 
 ### The frontiers (the misfits — where the real work is)
 1. **Forecasting.** Q16 ("are those barriers *likely* to be removed?"), and the predictive
