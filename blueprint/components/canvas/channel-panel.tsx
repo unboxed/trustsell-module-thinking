@@ -5,17 +5,25 @@ import { XIcon } from "lucide-react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { recordDescription } from "@/lib/channel-records";
+import { parseRecord, type RecordField } from "@/lib/channel-records";
 import type { Channel } from "@/lib/blueprint.config";
 import { MetaPill } from "./module-panel";
 
 /**
  * The channel detail panel: a modal that reveals one channel's RAW DATA. The node
  * face stays compact; clicking a plug opens this. Each record is a chip (its label,
- * from the frontmatter) beside its one-line field description (paired back from the
- * module body via recordDescription). A section not yet written degrades to a quiet
- * placeholder. Open is controlled by `channel`; null = closed.
+ * from the frontmatter) beside its fields — themselves discrete chips, parsed back
+ * from the module body via parseRecord. A field's real provider name (or "derived")
+ * shows on hover. A record not yet written degrades to a quiet placeholder. Open is
+ * controlled by `channel`; null = closed.
  */
 export function ChannelPanel({
   channel,
@@ -79,31 +87,83 @@ export function ChannelPanel({
               </div>
 
               <ScrollArea className="min-h-0 flex-1">
-                <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
-                  {channel.records.map((label) => {
-                    const desc = recordDescription(body, label);
-                    return (
-                      <li key={label} className="flex flex-col gap-1.5 py-3.5 sm:flex-row sm:gap-4">
-                        <div className="sm:w-40 sm:shrink-0">
-                          <MetaPill>{label}</MetaPill>
-                        </div>
-                        <p
-                          className={cn(
-                            "text-[13px] leading-[1.5]",
-                            desc ? "text-ink-body" : "text-muted-foreground italic",
-                          )}
+                <TooltipProvider>
+                  <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
+                    {channel.records.map((label) => {
+                      const rec = parseRecord(body, label);
+                      const empty = !rec || (!rec.gloss && rec.fields.length === 0);
+                      return (
+                        <li
+                          key={label}
+                          className="flex flex-col gap-1.5 py-3.5 sm:flex-row sm:gap-4"
                         >
-                          {desc ?? "Field list coming soon."}
-                        </p>
-                      </li>
-                    );
-                  })}
-                </ul>
+                          <div className="sm:w-40 sm:shrink-0">
+                            <MetaPill>{label}</MetaPill>
+                          </div>
+                          <div className="flex min-w-0 flex-col gap-2">
+                            {rec?.gloss && (
+                              <p className="text-[13px] leading-[1.5] text-ink-body">
+                                {rec.gloss}
+                              </p>
+                            )}
+                            {rec && rec.fields.length > 0 && (
+                              <div className="flex flex-wrap gap-1.5">
+                                {rec.fields.map((f) => (
+                                  <FieldChip key={f.label} field={f} />
+                                ))}
+                              </div>
+                            )}
+                            {empty && (
+                              <p className="text-[13px] leading-[1.5] text-muted-foreground italic">
+                                Field list coming soon.
+                              </p>
+                            )}
+                            {rec?.note && (
+                              <p className="text-[11px] leading-[1.4] text-muted-foreground">
+                                {rec.note}
+                              </p>
+                            )}
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </TooltipProvider>
               </ScrollArea>
             </>
           )}
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>
     </DialogPrimitive.Root>
+  );
+}
+
+/**
+ * One raw-data field, rendered as a quiet chip subordinate to the uppercase record
+ * pill. A field that names its provider gets a hover tooltip; a `derived` field reads
+ * as a dashed, muted chip so "this isn't a raw field the API hands over" is legible.
+ */
+function FieldChip({ field }: { field: RecordField }) {
+  const derived = field.name?.toLowerCase() === "derived";
+  const chip = (
+    <Badge
+      variant="secondary"
+      className={cn(
+        "font-normal",
+        derived &&
+          "border border-dashed border-border bg-transparent text-muted-foreground",
+      )}
+    >
+      {field.label}
+    </Badge>
+  );
+
+  if (!field.name) return chip;
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{chip}</TooltipTrigger>
+      <TooltipContent>{derived ? "derived — not a raw field" : field.name}</TooltipContent>
+    </Tooltip>
   );
 }

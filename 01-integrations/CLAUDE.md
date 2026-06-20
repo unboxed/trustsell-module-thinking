@@ -102,11 +102,11 @@ as of June 2026.
 ### Connections — the accounts you connect
 
 #### Gmail
-`Email message` — sender · recipients (to/cc/bcc) · subject · body · snippet · timestamp · thread id · in-reply-to · direction (sent or received) · read/unread · labels · starred · importance · has-attachments
-`Email thread` — participants · subject · message count · first and last activity
-`Draft` — an unsent message in progress · to · subject · body
-`Label` — a Gmail label/folder a message is filed under · name · type (system or user) · message count
-`Attachment` — filename · type · size · content
+`Email message` — sender [From] · to [To] · cc [Cc] · bcc [Bcc] · subject [Subject] · body [payload parts] · snippet [snippet] · timestamp [internalDate] · thread id [threadId] · in-reply-to [In-Reply-To] · direction (sent or received) [derived] · read/unread [UNREAD label] · labels [labelIds] · starred [STARRED label] · importance [IMPORTANT label] · has-attachments [derived]
+`Email thread` — participants [derived] · subject [first message Subject] · message count [derived] · first and last activity [derived]
+`Draft` — an unsent message in progress: to [To] · subject [Subject] · body [payload parts]
+`Label` — a Gmail label/folder a message is filed under: name [name] · type (system or user) [type] · message count [messagesTotal]
+`Attachment` — filename [filename] · type [mimeType] · size [body.size] · content [attachmentId]
 
 #### Calendar
 `Calendar event` — title · description · attendees (with accepted / declined / tentative) · organiser · start and end · all-day flag · recurrence · location · video link (Meet) · visibility · reminders · created/updated
