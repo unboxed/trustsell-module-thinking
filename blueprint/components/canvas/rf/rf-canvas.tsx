@@ -226,12 +226,29 @@ function Flow({
   }, [traceStep, setNodes]);
 
   const openNode = docs.find((d) => d.id === openId) ?? null;
-  const recenter = useCallback(() => rf.fitView(FIT_TWEEN), [rf]);
+
+  // At zoom = 1 the viewport transform should land text on the pixel grid, but d3 leaves
+  // a fractional pan offset and the browser keeps the actively-panned viewport on a
+  // composite layer — so it gets resampled and text softens. Round the pan offset to
+  // whole device pixels once a move settles to re-crisp it; zoom is untouched and x/y
+  // shift by under a pixel, so there's no visible jump. The differ-guard keeps it from
+  // looping when setViewport echoes back through onMoveEnd.
+  const snapViewport = useCallback(() => {
+    const { x, y, zoom } = rf.getViewport();
+    const dpr = window.devicePixelRatio || 1;
+    const rx = Math.round(x * dpr) / dpr;
+    const ry = Math.round(y * dpr) / dpr;
+    if (rx !== x || ry !== y) rf.setViewport({ x: rx, y: ry, zoom });
+  }, [rf]);
+
+  const recenter = useCallback(() => {
+    rf.fitView(FIT_TWEEN).then(snapViewport);
+  }, [rf, snapViewport]);
   // Entering flow mode opens on step 1 and frames the whole route.
   const startTrace = useCallback(() => {
     setTraceStep(1);
-    rf.fitView(FIT_TWEEN);
-  }, [rf]);
+    rf.fitView(FIT_TWEEN).then(snapViewport);
+  }, [rf, snapViewport]);
 
   // Keyboard: 0 recenters always; in flow mode, arrows/space step and Esc exits.
   // No text inputs on the canvas, so a window listener is safe.
@@ -242,11 +259,11 @@ function Flow({
         return;
       }
       if (e.key === "+" || e.key === "=") {
-        rf.zoomIn(ZOOM_TWEEN);
+        rf.zoomIn(ZOOM_TWEEN).then(snapViewport);
         return;
       }
       if (e.key === "-" || e.key === "_") {
-        rf.zoomOut(ZOOM_TWEEN);
+        rf.zoomOut(ZOOM_TWEEN).then(snapViewport);
         return;
       }
       if (traceStep == null) return;
@@ -261,7 +278,7 @@ function Flow({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [recenter, traceStep, rf]);
+  }, [recenter, traceStep, rf, snapViewport]);
 
   // Tame pinch / ⌘-scroll zoom sensitivity. React Flow zooms via d3, which
   // over-amplifies trackpad-pinch deltas (they arrive as ctrl+wheel), so a tiny
@@ -317,6 +334,7 @@ function Flow({
           setHoveredId(n.id);
         }}
         onNodeMouseLeave={() => setHoveredId(null)}
+        onMoveEnd={snapViewport}
         nodeTypes={NODE_TYPES}
         edgeTypes={EDGE_TYPES}
         fitView
@@ -343,7 +361,7 @@ function Flow({
       <div className="absolute right-5 bottom-5 flex flex-col gap-2">
         <button
           type="button"
-          onClick={() => rf.zoomIn(ZOOM_TWEEN)}
+          onClick={() => rf.zoomIn(ZOOM_TWEEN).then(snapViewport)}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom in"
           title="Zoom in (+)"
@@ -353,7 +371,7 @@ function Flow({
         </button>
         <button
           type="button"
-          onClick={() => rf.zoomOut(ZOOM_TWEEN)}
+          onClick={() => rf.zoomOut(ZOOM_TWEEN).then(snapViewport)}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom out"
           title="Zoom out (−)"
