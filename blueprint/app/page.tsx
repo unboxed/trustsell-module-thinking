@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Layers } from "lucide-react";
 
-import { CARD, NODES } from "@/lib/canvas-layout";
+import { CARD, NODES, channelLayout } from "@/lib/canvas-layout";
 import { readModules } from "@/lib/modules";
 import type { CanvasNode } from "@/lib/blueprint.config";
 import { RfCanvas, type RawEdge, type RfNodeInit } from "@/components/canvas/rf/rf-canvas";
@@ -21,17 +21,45 @@ export default async function Home() {
   });
 
   // React Flow positions by top-left; our layout positions by card centre. The port
-  // has no card — centre its plug cluster by a rough half-extent.
-  const rfNodes: RfNodeInit[] = docs.map((n) => {
-    const isPort = n.id === "01-integrations";
-    return {
-      id: n.id,
-      type: isPort ? "port" : "module",
-      position: isPort
-        ? { x: n.x - 322, y: n.y - 55 }
-        : { x: n.x - CARD.width / 2, y: n.y - CARD.height / 2 },
-      data: { name: n.name, title: n.title, blurb: n.blurb, icon: n.icon, optional: n.optional },
-    };
+  // is a *group*: a frame centred on its position, holding one compact child node per
+  // channel (positioned relative to the group's top-left). The group keeps the id
+  // "01-integrations" so the wires + flow-trace resolve to it; the children are the
+  // clickable plugs. Every other module is a single card.
+  const rfNodes: RfNodeInit[] = docs.flatMap((n) => {
+    if (n.id === "01-integrations") {
+      const channels = n.channels ?? [];
+      const layout = channelLayout(channels);
+      const group: RfNodeInit = {
+        id: n.id,
+        type: "port",
+        position: { x: n.x - layout.width / 2, y: n.y - layout.height / 2 },
+        data: {
+          width: layout.width,
+          height: layout.height,
+          clusterLabels: layout.clusterLabels,
+          brands: layout.brands,
+        },
+        style: { width: layout.width, height: layout.height },
+        selectable: false,
+      };
+      const children: RfNodeInit[] = channels.map((ch) => ({
+        id: `${n.id}:${ch.id}`,
+        type: "channel",
+        parentId: n.id,
+        extent: "parent",
+        position: layout.pos[ch.id] ?? { x: 0, y: 0 },
+        data: { channel: ch },
+      }));
+      return [group, ...children];
+    }
+    return [
+      {
+        id: n.id,
+        type: "module" as const,
+        position: { x: n.x - CARD.width / 2, y: n.y - CARD.height / 2 },
+        data: { name: n.name, title: n.title, blurb: n.blurb, icon: n.icon, optional: n.optional },
+      },
+    ];
   });
 
   // One wire per connection: walk every module's `connects` and dedupe reciprocal

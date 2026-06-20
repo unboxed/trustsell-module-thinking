@@ -26,16 +26,22 @@ card with no other change. The blueprint reads them live per request
 The frontmatter scheme each module carries (the *keys*, not the values — the values
 live in the modules):
 
-| Key | Meaning |
-|---|---|
-| `name` | the card eyebrow (Brain, People, …) |
-| `title` | the friendly "Your ___" heading |
-| `blurb` | one-line "what it does" |
-| `icon` | lucide icon name |
-| `optional` | shows the "optional" treatment (only `04`) |
-| `tier` | `brain` · `assistant` · `connector` (semantic; not drawn yet) |
-| `modes` | which categories of work it serves — sustain / advance / expand (semantic; not drawn yet) |
-| `connects` | two-way links to other modules — see below; the canvas auto-routes one wire per link |
+The card and wires (read by the app today):
+- `name` — the card eyebrow (Brain, People, …)
+- `title` — the friendly "Your ___" heading
+- `blurb` — one-line "what it does"
+- `icon` — lucide icon name
+- `optional` — shows the "optional" treatment (only `04`)
+- `tier` — `brain`, `assistant`, or `connector` (semantic; not drawn yet)
+- `modes` — which categories of work it serves: sustain, advance, expand (semantic; not drawn yet)
+- `connects` — two-way links to other modules; the canvas auto-routes one wire per link (see below)
+
+The badge facets (short labels now, drawn as chips later):
+- `values` — the principles the module holds
+- `inputs` — what the user supplies: `inputs.current` (today's tool) and `inputs.suggested` (the model's ask)
+- `routines` — the module's standing single-owner jobs; sits *on* its node when drawn
+- `plays` — the Brain-conducted choreographies across modules (on `00-spine` only)
+- `open_questions` — the module's still-unsettled design questions
 
 A connection is **not one undirected road**. Every link carries two flows, and the
 frontmatter names them from the **owning module's point of view**:
@@ -54,6 +60,17 @@ reach *through* it declare the link (e.g. `02 → 01` requests a person's mail +
 calendar). The canvas (React Flow) **auto-routes one wire per link** from these
 declarations — no hand-placed geometry — with an arrow at each end: request out,
 provide back.
+
+**Every facet is two layers, and values show as badges.** `connects` set the pattern: the
+actual values as a short list in frontmatter, and a narrative in the body that explains them.
+The rest of the badge facets (`values`, `inputs`, `routines`, `plays`) follow it. So the
+**detail panel** does not render one undifferentiated blob of prose. It renders the module's
+body as a set of named **facets** (purpose, values, system prompt, inputs, routines, memory,
+open questions), and for the badge facets it shows each value as a **badge** (a chip you can
+add, change, or remove) beside its one-line description. The reader (`lib/modules.ts`) surfaces
+only the keys it already knows; the badge keys are **defined now, drawn later**, the same way
+`connects` predated the wires. The writing and badge rules live in
+`_scratch/handoff-clarity-pass.md`.
 
 ## Routines & plays
 

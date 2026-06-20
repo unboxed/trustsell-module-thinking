@@ -4,7 +4,11 @@ import path from "path";
 import matter from "gray-matter";
 import {
   ALL_MODULE_IDS,
+  CHANNEL_ICON_NAMES,
   ICON_NAMES,
+  type Channel,
+  type ChannelIcon,
+  type ChannelSource,
   type IconName,
   type ModuleConnection,
   type ModuleId,
@@ -30,6 +34,7 @@ export interface ModuleDoc {
 
 const ID_SET = new Set<string>(ALL_MODULE_IDS);
 const ICON_SET = new Set<string>(ICON_NAMES);
+const CHANNEL_ICON_SET = new Set<string>(CHANNEL_ICON_NAMES);
 const TIERS = new Set<string>(["brain", "assistant", "connector"]);
 const MODES = new Set<string>(["sustain", "advance", "expand"]);
 
@@ -62,6 +67,30 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
         .filter(Boolean) as ModuleConnection[])
     : undefined;
 
+  const channels = Array.isArray(data.channels)
+    ? (data.channels
+        .map((c): Channel | null => {
+          const o = c as Record<string, unknown>;
+          if (typeof o?.id !== "string" || typeof o?.name !== "string") return null;
+          const rawIcon = typeof o.icon === "string" && o.icon.length ? o.icon : "globe";
+          const records = Array.isArray(o.records)
+            ? o.records.filter((r): r is string => typeof r === "string")
+            : [];
+          const source: ChannelSource = o.source === "builtin" ? "builtin" : "account";
+          return {
+            id: o.id,
+            name: o.name,
+            // keep allow-listed icons; otherwise pass the raw string through as a glyph fallback
+            icon: CHANNEL_ICON_SET.has(rawIcon) ? (rawIcon as ChannelIcon) : rawIcon,
+            source,
+            brand: typeof o.brand === "string" ? o.brand : undefined,
+            connected: o.connected === true,
+            records,
+          };
+        })
+        .filter(Boolean) as Channel[])
+    : undefined;
+
   return {
     name: str(data.name, id),
     title: str(data.title),
@@ -71,6 +100,7 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
     tier: TIERS.has(data.tier as string) ? (data.tier as ModuleTier) : undefined,
     modes: modes?.length ? modes : undefined,
     connects: connects?.length ? connects : undefined,
+    channels: channels?.length ? channels : undefined,
   };
 }
 

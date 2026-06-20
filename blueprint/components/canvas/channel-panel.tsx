@@ -1,33 +1,37 @@
 "use client";
 
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { Dialog as DialogPrimitive } from "radix-ui";
 import { XIcon } from "lucide-react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import type { CanvasNode } from "@/lib/blueprint.config";
+import { recordDescription } from "@/lib/channel-records";
+import type { Channel } from "@/lib/blueprint.config";
+import { MetaPill } from "./module-panel";
 
 /**
- * The detail panel: a centered overlay window (a modal dialog) that shows a
- * module's live thinking. It opens at a fixed, comfortably large size and the
- * body scrolls inside — the canvas behind dims but stays put. The header is the
- * same card face (name, title, blurb); the body is the module's CLAUDE.md
- * narrative rendered straight from disk, so editing a doc and reloading updates
- * it. Open is controlled by `node`; null = closed. Esc or the backdrop closes.
+ * The channel detail panel: a modal that reveals one channel's RAW DATA. The node
+ * face stays compact; clicking a plug opens this. Each record is a chip (its label,
+ * from the frontmatter) beside its one-line field description (paired back from the
+ * module body via recordDescription). A section not yet written degrades to a quiet
+ * placeholder. Open is controlled by `channel`; null = closed.
  */
-export function ModulePanel({
-  node,
+export function ChannelPanel({
+  channel,
+  body,
   onClose,
 }: {
-  node: CanvasNode | null;
+  channel: Channel | null;
+  body: string;
   onClose: () => void;
 }) {
+  const eyebrow = channel?.source === "builtin" ? "Tools library" : "Connections";
+  const ghost = channel?.source === "account" && !channel.connected;
+
   return (
     <DialogPrimitive.Root
-      open={node !== null}
+      open={channel !== null}
       onOpenChange={(open) => {
         if (!open) onClose();
       }}
@@ -42,34 +46,29 @@ export function ModulePanel({
         <DialogPrimitive.Content
           className={cn(
             "fixed top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2",
-            "flex h-[min(80vh,720px)] w-[min(880px,92vw)] flex-col overflow-hidden",
+            "flex h-[min(78vh,640px)] w-[min(640px,92vw)] flex-col overflow-hidden",
             "rounded-2xl border border-border/70 bg-popover text-popover-foreground shadow-2xl",
             "duration-200 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95",
             "data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
           )}
         >
-          {node && (
+          {channel && (
             <>
               <div className="flex items-start justify-between gap-4 border-b border-border/70 p-6">
                 <div className="flex flex-col gap-1">
                   <p className="text-[11px] font-semibold tracking-[0.1em] text-ink-eyebrow uppercase">
-                    {node.name}
+                    {eyebrow}
                   </p>
                   <DialogPrimitive.Title className="font-heading text-xl font-semibold tracking-[-0.01em] text-ink-title">
-                    {node.title}
+                    {channel.name}
                   </DialogPrimitive.Title>
                   <DialogPrimitive.Description className="text-sm text-ink-body">
-                    {node.blurb}
+                    The raw data this channel can pull in — carried as-is.
                   </DialogPrimitive.Description>
-                  {(node.tier || node.modes?.length || node.optional) && (
-                    <div className="mt-1 flex flex-wrap gap-1.5">
-                      {node.tier && <MetaPill>{node.tier}</MetaPill>}
-                      {node.modes?.map((m) => (
-                        <MetaPill key={m}>{m}</MetaPill>
-                      ))}
-                      {node.optional && <MetaPill>optional</MetaPill>}
-                    </div>
-                  )}
+                  <div className="mt-1 flex flex-wrap gap-1.5">
+                    <MetaPill>{channel.records.length} records</MetaPill>
+                    {ghost && <MetaPill>not connected yet</MetaPill>}
+                  </div>
                 </div>
                 <DialogPrimitive.Close asChild>
                   <Button variant="ghost" size="icon-sm" className="-mt-1 -mr-1 shrink-0">
@@ -80,35 +79,31 @@ export function ModulePanel({
               </div>
 
               <ScrollArea className="min-h-0 flex-1">
-                <div className="module-doc p-6">
-                  {node.body ? (
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                      {node.body}
-                    </ReactMarkdown>
-                  ) : (
-                    <p className="text-sm text-muted-foreground">
-                      No notes yet for this module.
-                    </p>
-                  )}
-                </div>
+                <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
+                  {channel.records.map((label) => {
+                    const desc = recordDescription(body, label);
+                    return (
+                      <li key={label} className="flex flex-col gap-1.5 py-3.5 sm:flex-row sm:gap-4">
+                        <div className="sm:w-40 sm:shrink-0">
+                          <MetaPill>{label}</MetaPill>
+                        </div>
+                        <p
+                          className={cn(
+                            "text-[13px] leading-[1.5]",
+                            desc ? "text-ink-body" : "text-muted-foreground italic",
+                          )}
+                        >
+                          {desc ?? "Field list coming soon."}
+                        </p>
+                      </li>
+                    );
+                  })}
+                </ul>
               </ScrollArea>
             </>
           )}
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>
     </DialogPrimitive.Root>
-  );
-}
-
-export function MetaPill({ children }: { children: React.ReactNode }) {
-  return (
-    <span
-      className={cn(
-        "rounded-full border border-slate-300/70 px-2 py-0.5",
-        "text-[10px] font-medium tracking-wider text-slate-400 uppercase",
-      )}
-    >
-      {children}
-    </span>
   );
 }

@@ -58,9 +58,57 @@ export interface ModuleConnection {
 }
 
 /**
+ * A channel is a sub-item of `01-integrations` — one source of raw data. Two kinds:
+ * `account` (a tool the user connects, e.g. Gmail, Slack) and `builtin` (a tool
+ * shipped with the product, always on, e.g. web search). Each owns a list of
+ * raw-data record LABELS; the field-level descriptions live once in the module body
+ * (paired back by `recordDescription` in lib/modules.ts).
+ */
+export type ChannelSource = "account" | "builtin";
+
+/** lucide icon name for a channel plug; mapped to a component in rf-channel-node.tsx. */
+export type ChannelIcon =
+  | "mail"
+  | "calendar"
+  | "hard-drive"
+  | "contact-round"
+  | "video"
+  | "hash"
+  | "telescope"
+  | "globe"
+  | "cloud";
+
+export const CHANNEL_ICON_NAMES: ChannelIcon[] = [
+  "mail",
+  "calendar",
+  "hard-drive",
+  "contact-round",
+  "video",
+  "hash",
+  "telescope",
+  "globe",
+  "cloud",
+];
+
+export interface Channel {
+  id: string;
+  name: string;
+  /** an allow-listed ChannelIcon, or a raw glyph string fallback (e.g. "in"). */
+  icon: ChannelIcon | string;
+  source: ChannelSource;
+  /** the labelled square this service sits in (e.g. "Google" holds Gmail, Calendar, …).
+   * One brand may hold several services or just one; defaults to the channel name. */
+  brand?: string;
+  connected: boolean;
+  /** raw-data record-type labels; descriptions are paired from the body. */
+  records: string[];
+}
+
+/**
  * The facts a module declares in its CLAUDE.md frontmatter — the card face plus
  * a few semantic fields. `name`/`title`/`blurb`/`icon`/`optional` are rendered
- * today; `tier`/`modes`/`connects` are documented now and drawn later.
+ * today; `tier`/`modes`/`connects` are documented now and drawn later. `channels`
+ * is `01-integrations`-only — its per-channel raw data, drawn as the plug cluster.
  */
 export interface ModuleMeta {
   name: string;
@@ -71,6 +119,7 @@ export interface ModuleMeta {
   tier?: ModuleTier;
   modes?: string[];
   connects?: ModuleConnection[];
+  channels?: Channel[];
 }
 
 /** A node ready to render: its live frontmatter + body, placed at a position. */

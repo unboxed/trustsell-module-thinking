@@ -3,7 +3,7 @@
 import "@xyflow/react/dist/base.css";
 import "./rf-canvas.css";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Crosshair, Minus, Plus } from "lucide-react";
 import {
   Background,
@@ -19,15 +19,17 @@ import {
 } from "@xyflow/react";
 
 import { cn } from "@/lib/utils";
-import type { CanvasNode, ModuleId } from "@/lib/blueprint.config";
+import type { CanvasNode, Channel, ModuleId } from "@/lib/blueprint.config";
 import { CARD, NODES } from "@/lib/canvas-layout";
 import { FLOW_STEPS, legToEdge } from "@/lib/flow-trace";
 import { RfNodeCard } from "./rf-node-card";
-import { RfIntegrationsNode } from "./rf-integrations-node";
+import { RfConnectionsGroup } from "./rf-integrations-node";
+import { RfChannelNode } from "./rf-channel-node";
 import { ArtifactToken } from "./artifact-token";
 import { FloatingEdge } from "./floating-edge";
 import { FlowTimeline } from "./flow-timeline";
 import { ModulePanel } from "../module-panel";
+import { ChannelPanel } from "../channel-panel";
 
 /** Arrowheads a touch more solid than the wire so direction reads. */
 const MARKER_COLOR = "#64748b"; // slate-500
@@ -38,7 +40,12 @@ const EDGE_VARIANT = "bezier" as const;
 const EDGE_ANIMATED = false;
 
 // Module scope (stable identity) so React Flow doesn't warn about re-created maps.
-const NODE_TYPES = { module: RfNodeCard, port: RfIntegrationsNode, artifact: ArtifactToken };
+const NODE_TYPES = {
+  module: RfNodeCard,
+  port: RfConnectionsGroup,
+  channel: RfChannelNode,
+  artifact: ArtifactToken,
+};
 const EDGE_TYPES = { floating: FloatingEdge };
 
 /** Shared look for the floating canvas controls (zoom in / out / fit). */
@@ -49,6 +56,19 @@ const CONTROL_BTN = cn(
   "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
 );
 
+/** A gentle accelerate-then-settle curve, shared by every animated viewport move
+    so zoom steps and framing glide in and out instead of snapping. */
+const easeInOutCubic = (t: number) =>
+  t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+/** Button / keyboard zoom step — curved, smooth-arc interpolated, not too long. */
+const ZOOM_TWEEN = { duration: 300, ease: easeInOutCubic, interpolate: "smooth" } as const;
+/** Trackpad-pinch / ⌘-scroll zoom speed, as a fraction of React Flow's default.
+    d3 over-amplifies pinch deltas, so a tiny pinch flew through the whole range;
+    0.2 = a fifth as fast. Lower = gentler. Plain two-finger scroll (pan) is untouched. */
+const PINCH_SENSITIVITY = 0.2;
+/** Framing the whole map (recenter / enter-trace) — same curve, a touch longer. */
+const FIT_TWEEN = { padding: 0.22, duration: 420, ease: easeInOutCubic, interpolate: "smooth" } as const;
+
 /** Node centres (canvas-space) — where the travelling artifact rests per step. */
 const NODE_CENTER: Record<string, { x: number; y: number }> = Object.fromEntries(
   NODES.map((n) => [n.id, { x: n.x, y: n.y }]),
@@ -56,9 +76,14 @@ const NODE_CENTER: Record<string, { x: number; y: number }> = Object.fromEntries
 
 export type RfNodeInit = {
   id: string;
-  type: "module" | "port";
+  type: "module" | "port" | "channel";
   position: { x: number; y: number };
   data: Record<string, unknown>;
+  /** channel children declare their group parent + stay clamped within it */
+  parentId?: string;
+  extent?: "parent";
+  style?: Record<string, unknown>;
+  selectable?: boolean;
 };
 export type RawEdge = { id: string; source: string; target: string };
 
@@ -73,8 +98,13 @@ function Flow({
 }) {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes as Node[]);
   const [openId, setOpenId] = useState<ModuleId | null>(null);
+  // A channel plug is selected: its raw-data records open in their own panel.
+  const [openChannel, setOpenChannel] = useState<Channel | null>(null);
+  // The integrations body holds each record's field description (paired in the panel).
+  const integrationsBody = docs.find((d) => d.id === "01-integrations")?.body ?? "";
   // null = the static blueprint; 1..N = "flow mode" parked on that step.
   const [traceStep, setTraceStep] = useState<number | null>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const rf = useReactFlow();
 
   // Edges carry trace flags per step: the lit legs become a single directional,
@@ -120,14 +150,19 @@ function Flow({
     setNodes((nds) => {
       const base = nds
         .filter((n) => n.id !== "artifact")
-        .map((n) => ({
-          ...n,
-          data: {
-            ...n.data,
-            trace: step ? (lit.has(n.id) ? "active" : "dim") : undefined,
-            reasoning: art?.reasoned && art.at === n.id ? true : undefined,
-          },
-        }));
+        .map((n) => {
+          // Channel plugs inherit the Connections group's trace state (key off the
+          // parent), so the whole band lights or dims together at the port step.
+          const traceKey = (n.parentId as string | undefined) ?? n.id;
+          return {
+            ...n,
+            data: {
+              ...n.data,
+              trace: step ? (lit.has(traceKey) ? "active" : "dim") : undefined,
+              reasoning: art?.reasoned && art.at === n.id ? true : undefined,
+            },
+          };
+        });
       if (!art) return base;
       const c = NODE_CENTER[art.at] ?? { x: 0, y: 0 };
       const artifactNode: Node = {
@@ -146,11 +181,11 @@ function Flow({
   }, [traceStep, setNodes]);
 
   const openNode = docs.find((d) => d.id === openId) ?? null;
-  const recenter = useCallback(() => rf.fitView({ padding: 0.22, duration: 400 }), [rf]);
+  const recenter = useCallback(() => rf.fitView(FIT_TWEEN), [rf]);
   // Entering flow mode opens on step 1 and frames the whole route.
   const startTrace = useCallback(() => {
     setTraceStep(1);
-    rf.fitView({ padding: 0.22, duration: 400 });
+    rf.fitView(FIT_TWEEN);
   }, [rf]);
 
   // Keyboard: 0 recenters always; in flow mode, arrows/space step and Esc exits.
@@ -162,11 +197,11 @@ function Flow({
         return;
       }
       if (e.key === "+" || e.key === "=") {
-        rf.zoomIn({ duration: 200 });
+        rf.zoomIn(ZOOM_TWEEN);
         return;
       }
       if (e.key === "-" || e.key === "_") {
-        rf.zoomOut({ duration: 200 });
+        rf.zoomOut(ZOOM_TWEEN);
         return;
       }
       if (traceStep == null) return;
@@ -183,14 +218,52 @@ function Flow({
     return () => window.removeEventListener("keydown", onKey);
   }, [recenter, traceStep, rf]);
 
+  // Tame pinch / ⌘-scroll zoom sensitivity. React Flow zooms via d3, which
+  // over-amplifies trackpad-pinch deltas (they arrive as ctrl+wheel), so a tiny
+  // pinch blows through the whole range. We catch the zoom wheel events early,
+  // shrink the delta, and re-emit a softened copy — React Flow still does the real
+  // zoom-to-cursor, just slower. Plain (non-ctrl/meta) scroll falls through to pan.
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+    const tamed = new WeakSet<WheelEvent>();
+    const onWheel = (e: WheelEvent) => {
+      if (!(e.ctrlKey || e.metaKey)) return; // plain scroll keeps panning
+      if (tamed.has(e)) return; // our own softened echo — let it reach React Flow
+      e.preventDefault();
+      e.stopPropagation();
+      const softer = new WheelEvent("wheel", {
+        deltaX: e.deltaX,
+        deltaY: e.deltaY * PINCH_SENSITIVITY,
+        deltaMode: e.deltaMode,
+        clientX: e.clientX,
+        clientY: e.clientY,
+        ctrlKey: true, // route through React Flow's zoom-to-cursor path
+        bubbles: true,
+        cancelable: true,
+        view: window,
+      });
+      tamed.add(softer);
+      e.target?.dispatchEvent(softer);
+    };
+    el.addEventListener("wheel", onWheel, { capture: true, passive: false });
+    return () => el.removeEventListener("wheel", onWheel, { capture: true });
+  }, []);
+
   return (
-    <div className="canvas-atmosphere relative h-full w-full">
+    <div ref={wrapperRef} className="canvas-atmosphere relative h-full w-full">
       <ReactFlow
         nodes={nodes}
         edges={edges}
         onNodesChange={onNodesChange}
         onNodeClick={(_, n) => {
-          if (n.id === "artifact") return;
+          if (n.id === "artifact" || n.id === "01-integrations") return;
+          // a channel plug → its raw-data panel; any module card → its doc panel
+          if (n.id.startsWith("01-integrations:")) {
+            const ch = (n.data as { channel?: Channel }).channel;
+            if (ch) setOpenChannel(ch);
+            return;
+          }
           setOpenId(n.id as ModuleId);
         }}
         nodeTypes={NODE_TYPES}
@@ -219,7 +292,7 @@ function Flow({
       <div className="absolute right-5 bottom-5 flex flex-col gap-2">
         <button
           type="button"
-          onClick={() => rf.zoomIn({ duration: 200 })}
+          onClick={() => rf.zoomIn(ZOOM_TWEEN)}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom in"
           title="Zoom in (+)"
@@ -229,7 +302,7 @@ function Flow({
         </button>
         <button
           type="button"
-          onClick={() => rf.zoomOut({ duration: 200 })}
+          onClick={() => rf.zoomOut(ZOOM_TWEEN)}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom out"
           title="Zoom out (−)"
@@ -259,6 +332,11 @@ function Flow({
       />
 
       <ModulePanel node={openNode} onClose={() => setOpenId(null)} />
+      <ChannelPanel
+        channel={openChannel}
+        body={integrationsBody}
+        onClose={() => setOpenChannel(null)}
+      />
     </div>
   );
 }

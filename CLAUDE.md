@@ -20,6 +20,30 @@ face**. Edit a module and the blueprint reflects it live — the UI is a read-on
 **mirror** of these docs, never the store. The frontmatter scheme is catalogued in
 `docs/ui-foundation.md`.
 
+**Two layers per facet, with values shown as badges.** Each facet has a **narrative** in the
+body that explains it. Where the facet is a list of things, those things also show as
+**badges**: a short label in `backticks`, followed by a dash and a one-line description. The
+same short labels are stored in the frontmatter, so the future UI can render them as chips you
+add, change, or remove. `connects` is the original of this pattern; the list-facets that follow
+it are `values`, `inputs` (`current` and `suggested`), `routines`, `plays` (on `00` only) and
+`open_questions`.
+
+Which facets use badges:
+- **Badge facets** (short labels in frontmatter, badges in the body): Values, Inputs, Routines,
+  Connections, Plays.
+- **Plain facets** (prose only): Purpose, System prompt, What it owns, What it doesn't own, Memory.
+- **Open questions** stays a plain bulleted list — a question is not a label.
+
+Keep the frontmatter labels short (the badge text), put each description once in the body, and
+keep the two in sync. The YAML is hand-edited, so keep it shallow. The blueprint reads only the
+keys it knows today (`coerceMeta` in `blueprint/lib/modules.ts`); the newer keys parse
+harmlessly and will surface in the UI once that reader is extended. `03-offerings/CLAUDE.md` is
+the worked example to copy; the full clarity-and-badges spec is in
+`_scratch/handoff-clarity-pass.md`.
+
+The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that
+sit above this are written up in `README.md`.
+
 ## The model so far
 
 A three-tier system, not a swarm. The clearest way to picture it: **one brain, a team of expert assistants, and a single shared connector to the outside world.**

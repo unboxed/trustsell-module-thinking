@@ -14,30 +14,38 @@ connects:
     provides: "the proof library and pricing authority"
   - to: "05-persona-you"
     provides: "the hard limits — compliance, legal, brand — the voice must write inside"
+raw_data: []
 ---
 
 # 04 · Organisation
 
-**Purpose:** Your company's shared layer — what's true for everyone who represents it. It holds the **proof** you can point to and the **lines you can't cross**. Optional: barely there for a solo operator, substantial for a real or regulated company.
+Your company's shared layer: the proof you can point to and the lines you cannot cross.
 
-## What it owns
-Two faces:
-- **A source** — the organisation's materials, pulled *into* messages: case studies, an "about us," collateral, positioning. It holds the proof **library** (tagged by product, segment, and the objection it answers) and the **authority** to actually discount or bring in an exec sponsor.
-- **A fence** — the hard limits a message must stay inside: compliance, legal, brand tone. The fence works in two beats: it hands Profile the rules up front, and does a **final compliance pass** on the draft before it reaches you. So it's a quiet shelf most of the time, and a gate at write-time. (It flags rather than hard-blocks — you still decide.)
+> **Focus right now:** the raw data below. Everything else is TBD.
 
-## What it doesn't
-Hold the personal layer — your voice, your relationships, your preferences. Those are per-person (Profile and People). And it owns the proof *library*; *which kind* of proof to use is Offerings' call.
+## Raw data
 
-## For a solo operator
-If you *are* the company, Organisation simply switches off — there's no real proof or compliance layer, so Profile writes free, with no fence. It doesn't fold its jobs into Profile; there just aren't any. The moment there's a real company behind you, it becomes its own substantial thing.
+None from the connected channels. Organisation's material is uploaded by you — case studies,
+collateral, the brand and compliance rules — so it lives under User input (TBD), not here. A
+future version might watch the web for compliance changes, but that is not connected today.
 
-## Its routines
-For now, a **setup** thing: you build the profile and come back when something changes — no proactive beat. Its knowledge is almost all **told** or uploaded, and it mostly **supplies** — proof to Offerings, the case study and fence to Brain and Profile — rather than going hunting; its memory is the **shared** one (the proof library), one per company. (A richer version — keeping proof fresh, watching for compliance changes, minting a case study from a won deal — is a future vision, not today.) Its place in the supply-side picture, and the shared-versus-personal memory tiers, are worked in `docs/how-modules-collaborate.md`.
+## Principles
+_TBD_
 
-## Who it works with
-- Gives **Brain** the matching case study and the compliance fence on request.
-- Gives **Offerings** the actual proof from the library, and the pricing authority.
-- Gives **Profile** the hard limits to write inside.
+## System prompt
+_TBD_
 
-## Vision (not today)
-Organisation is the natural home for **team membership** — Slack-style, where people create or join an organisation. That makes it the **shared** tier (proof, brand, compliance, and the members themselves), while Profile (voice) and People (relationships) stay **personal**, one per member. A future direction — but it's why Organisation earns its place even when it feels thin.
+## User input
+_TBD (proof materials, proof tags, the fence, discount authority)_
+
+## Reasoning
+_TBD_
+
+## Output
+_TBD_
+
+## Memory
+_TBD_
+
+## Open questions
+_TBD_

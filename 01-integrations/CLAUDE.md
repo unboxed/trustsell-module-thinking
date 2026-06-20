@@ -7,26 +7,176 @@ optional: false
 tier: connector
 # No modes or connects: 01 has no initiative and no reasoning — every module
 # reaches *through* it, so its links are drawn from the others, not declared here.
+#
+# Channels are the sub-items of this module. Two kinds sit here:
+#   source: account  — a tool the user connects (authorises once)
+#   source: builtin  — a tool shipped with the product (always on, never connected)
+# Each channel names a `brand` — the labelled square it sits in on the canvas. A brand
+# may hold several services (Google → Gmail, Calendar, …) or just one (Slack → Slack).
+# Each channel owns its own raw_data. The record LABELS live here; the field-level
+# descriptions live once in the body, under the matching `### <channel>` section.
+channels:
+  - id: gmail
+    name: Gmail
+    icon: mail
+    source: account
+    brand: Google
+    connected: true
+    records: ["Email message", "Email thread", "Draft", "Label", "Attachment"]
+  - id: calendar
+    name: Calendar
+    icon: calendar
+    source: account
+    brand: Google
+    connected: true
+    records: ["Calendar event", "Free / busy", "Calendar list", "Status event"]
+  - id: drive
+    name: Drive
+    icon: hard-drive
+    source: account
+    brand: Google
+    connected: true
+    records: ["File", "Folder", "File content", "Comment", "Shared drive"]
+  - id: contacts
+    name: Contacts
+    icon: contact-round
+    source: account
+    brand: Google
+    connected: true
+    records: ["Contact", "Other contact", "Contact group"]
+  - id: meet
+    name: Meet
+    icon: video
+    source: account
+    brand: Google
+    connected: true
+    records: ["Meeting", "Participant", "Recording", "Transcript", "Smart notes"]
+  - id: slack
+    name: Slack
+    icon: hash
+    source: account
+    brand: Slack
+    connected: true
+    records: ["Slack message", "Slack channel", "Slack user", "Slack file", "Canvas", "List"]
+  - id: web
+    name: Web / Tavily
+    icon: telescope
+    source: builtin
+    brand: Tavily
+    connected: true
+    records: ["Web result", "Page content", "Site map", "Research report", "Enrichment"]
+  - id: linkedin
+    name: LinkedIn
+    icon: in
+    source: account
+    brand: LinkedIn
+    connected: false
+    records: ["Profile", "Job change", "Mutual connections"]
+  - id: salesforce
+    name: Salesforce
+    icon: cloud
+    source: account
+    brand: Salesforce
+    connected: false
+    records: ["CRM record"]
 ---
 
 # 01 · Connections
 
-**Purpose:** The single doorway to everything *outside* the tool. You connect your accounts once, and from then on Connections just carries information in and out for whichever module needs it. It's the wiring, not a thinker.
+The single doorway to everything outside the tool. It owns the **channels**, so this is the
+master list of every raw record they can produce. Other modules pull a subset of it.
 
-## What it owns
-- **Your accounts** — connected today: **Gmail, Calendar, and Slack**. Connect once; it holds the connection. Others are on the board but **not connected yet** — a CRM (Salesforce) and LinkedIn — so no module leans on them until they're plugged in.
-- **The tool's research reach** — **web search and enrichment (Tavily)** live here too, so any module can look things up through the same doorway.
-- **Smoothing over providers** — connect Gmail today and a work Outlook next year, and a module just asks for "emails with Jane" without caring which account they came from.
-- **A place you return to** — it's a real screen, not one-time setup: see what's connected, add accounts, check a connection is healthy.
+Two kinds of channel sit here. The **Connections** are the accounts you authorise once — your
+Google services, your Slack, and (later) LinkedIn and Salesforce. The **Tools library** holds
+the tools that ship with the product and are always on; you never connect them — today that's
+web search and enrichment.
 
-## What it doesn't
-Read, interpret, decide, or notice anything. What it hands back are **raw records — plain facts** ("a message from Jane at 9:03," "an event on Thursday"); turning those into a *reading* ("a buying question," "gone quiet") is People's job, reaching *through* Connections to look — never Connections noticing on its own. It is deterministic carry: the same request in, the same records out.
+> **Focus right now:** the raw data below, per channel. Everything else is TBD.
 
-## Its routines
-**None.** Routines are about initiative, and Connections has none — it only ever moves when another module reaches through it. It's the one module that's pure infrastructure rather than an expert.
+## Raw data
 
-## Who it works with
-Everyone reaches *through* it, so the links belong to the modules that use it, not here: People pulls a person's mail, calendar and research through it; the render step sends an approved message out through it. In and out.
+The full catalogue, grouped by channel. These are plain records, carried as-is — the field
+list after each label is what that record holds. Researched against the current provider APIs
+as of June 2026.
 
-## Still open
-Whether new records arrive by polling or push is deferred — either way, *interpreting* whatever arrives stays with People. The connected set will grow (a CRM, LinkedIn) and widen what can be sensed, without changing the port's dumb-carry role.
+### Connections — the accounts you connect
+
+#### Gmail
+`Email message` — sender · recipients (to/cc/bcc) · subject · body · snippet · timestamp · thread id · in-reply-to · direction (sent or received) · read/unread · labels · starred · importance · has-attachments
+`Email thread` — participants · subject · message count · first and last activity
+`Draft` — an unsent message in progress · to · subject · body
+`Label` — a Gmail label/folder a message is filed under · name · type (system or user) · message count
+`Attachment` — filename · type · size · content
+
+#### Calendar
+`Calendar event` — title · description · attendees (with accepted / declined / tentative) · organiser · start and end · all-day flag · recurrence · location · video link (Meet) · visibility · reminders · created/updated
+`Free / busy` — booked or open windows for a person, across their calendars
+`Calendar list` — the calendars a person owns or subscribes to · name · colour · access role
+`Status event` — focus-time, out-of-office or working-location blocks · type · time range · auto-decline *(now first-class event types in the Calendar API)*
+
+#### Drive
+`File` — name · type (mime) · size · owner · created/modified · starred · shared-with · web link · parent folder
+`Folder` — name · contents · sharing
+`File content` — the exported text of a Doc, Sheet or Slide
+`Comment` — author · text · anchor · resolved flag · replies (on a file)
+`Shared drive` — a team/shared drive · name · members · org unit
+
+#### Contacts
+`Contact` — name · emails · phones · organisation · job title · photo *(Google People API)*
+`Other contact` — an address you've corresponded with but never saved · name · email
+`Contact group` — a label grouping contacts · name · members
+
+#### Meet
+`Meeting` — a conference record · the meeting space · start and end · organiser
+`Participant` — who joined · their join/leave sessions · full or companion mode
+`Recording` — the recorded video of a meeting · Drive link · duration
+`Transcript` — the spoken transcript as timestamped entries · speaker · text · time *(retained ~30 days)*
+`Smart notes` — AI-generated meeting notes, where the workspace enables them
+
+#### Slack
+`Slack message` — channel · author · text · timestamp · thread · mentions · reactions · edited flag · permalink
+`Slack channel` — name · topic · purpose · members · public or private
+`Slack user` — name · real name · title · timezone · status · presence
+`Slack file` — filename · type · size · content
+`Canvas` — a Slack canvas doc · title · content · linked channel
+`List` — a Slack list · its rows/fields · linked channel
+*(Huddle audio is not reachable through Slack's official API.)*
+
+#### LinkedIn *(not connected yet)*
+`Profile` — headline · role · company · location · experience
+`Job change` — a move to a new role or company
+`Mutual connections` — shared connections that warm a path
+*(LinkedIn's API access for this is restricted — treat as aspirational.)*
+
+#### Salesforce *(not connected yet)*
+`CRM record` — stage · owner · amount · close date · account · contact · activity
+
+### Tools library — built in, always on
+
+#### Web / Tavily
+`Web result` — source URL · title · snippet · relevance score · published date *(/search)*
+`Page content` — the cleaned text, tables and images extracted from a page *(/extract)*
+`Site map` — a structured graph of the URLs on a site *(/map · /crawl)*
+`Research report` — a synthesised, multi-search answer with its sources *(the research endpoint)*
+`Enrichment` — company (name · domain · industry · size · location) · person (role · company) · trigger event (a published tender, a leadership change, funding)
+
+## Principles
+_TBD_
+
+## System prompt
+_TBD_
+
+## User input
+_TBD (which accounts you connect)_
+
+## Reasoning
+_TBD (none — Connections does no reasoning)_
+
+## Output
+_TBD_
+
+## Memory
+_TBD_
+
+## Open questions
+_TBD_
