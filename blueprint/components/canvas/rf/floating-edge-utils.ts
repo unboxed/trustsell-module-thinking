@@ -1,5 +1,7 @@
 import { Position, type InternalNode, type Node } from "@xyflow/react";
 
+import { pickSide } from "@/lib/canvas-layout";
+
 /**
  * Edge geometry that snaps each wire to a **fixed connector port** — the midpoint
  * of whichever side of the card faces the other node — rather than a free-floating
@@ -40,19 +42,19 @@ function getSideAnchor(node: InternalNode<Node>, other: InternalNode<Node>) {
   const o = getNodeCenter(other);
   const w = (node.measured.width ?? 0) / 2;
   const h = (node.measured.height ?? 0) / 2;
-  const dx = o.x - c.x;
-  const dy = o.y - c.y;
 
-  // Whichever axis reaches the card edge first wins the side; ties favour the
-  // horizontal (left/right) ports for a tidier look on near-diagonal links.
-  if (Math.abs(dx) * h >= Math.abs(dy) * w) {
-    return dx >= 0
-      ? { x: c.x + w, y: c.y, pos: Position.Right }
-      : { x: c.x - w, y: c.y, pos: Position.Left };
+  // Same facing-side decision the static port pass uses (see pickSide), so a wire
+  // always lands on a dot the card actually draws.
+  switch (pickSide(o.x - c.x, o.y - c.y, w, h)) {
+    case "right":
+      return { x: c.x + w, y: c.y, pos: Position.Right };
+    case "left":
+      return { x: c.x - w, y: c.y, pos: Position.Left };
+    case "bottom":
+      return { x: c.x, y: c.y + h, pos: Position.Bottom };
+    default:
+      return { x: c.x, y: c.y - h, pos: Position.Top };
   }
-  return dy >= 0
-    ? { x: c.x, y: c.y + h, pos: Position.Bottom }
-    : { x: c.x, y: c.y - h, pos: Position.Top };
 }
 
 /**

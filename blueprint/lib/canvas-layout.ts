@@ -36,6 +36,21 @@ export const CANVAS = { width: 1600, height: 1080 } as const;
 /** Uniform card footprint (all six identical). Ratio ≈ 1.6. */
 export const CARD = { width: 300, height: 188 } as const;
 
+/** A card side, lowercased to match the `.rf-port-*` classes. */
+export type Side = "top" | "right" | "bottom" | "left";
+
+/**
+ * The side of a card (half-width `w`, half-height `h`) that faces a point offset
+ * `(dx, dy)` from its centre. Ties favour the horizontal ports for tidier
+ * near-diagonal links. Shared by the live wire geometry (`getSideAnchor` in
+ * floating-edge-utils) and the static port-visibility pass (app/page.tsx), so the
+ * dots a card draws always match the sides its wires actually land on.
+ */
+export function pickSide(dx: number, dy: number, w: number, h: number): Side {
+  if (Math.abs(dx) * h >= Math.abs(dy) * w) return dx >= 0 ? "right" : "left";
+  return dy >= 0 ? "bottom" : "top";
+}
+
 export const NODES: NodePosition[] = [
   { id: "00-spine", x: 800, y: 200 },
   { id: "01-integrations", x: 800, y: 940 },

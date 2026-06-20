@@ -12,10 +12,12 @@ import {
 
 import { getEdgeParams } from "./floating-edge-utils";
 
-/** Neutral wire ink — slate-600 @ ~55% (no blue; the palette reserves blue for interaction). */
+/** Neutral wire ink — slate-600 @ ~55% (the resting / receded wire). */
 const ROUTE_INK = "rgba(71, 85, 105, 0.55)";
-/** The lit-route blue — --primary / blue-600. Used only while tracing the flow. */
+/** The lit-route blue — --primary / blue-600. The loud one: + glow + marching, trace only. */
 const ROUTE_BLUE = "#2563eb";
+/** The calm hover blue — blue-500, one notch lighter. Static, no glow: trace stays the hero. */
+const ROUTE_BLUE_SOFT = "#3b82f6";
 
 /**
  * One wire per connection, floating between two cards. The path shape (bezier /
@@ -34,6 +36,10 @@ export type FloatingEdgeData = {
   direction?: "fwd" | "rev";
   /** a channel→module inflow arrow: drawn lighter + dashed, apart from peer wires. */
   source?: boolean;
+  /** hovering a node this wire touches: surfaced to full, focused ink. */
+  highlight?: boolean;
+  /** hovering some *other* node: this wire recedes to the background. */
+  faded?: boolean;
 };
 
 export function FloatingEdge({ source, target, markerStart, markerEnd, data }: EdgeProps) {
@@ -77,23 +83,52 @@ export function FloatingEdge({ source, target, markerStart, markerEnd, data }: E
   // Otherwise the neutral wire (optionally the legacy "animated" look).
   const flowClass = d.direction === "rev" ? "rf-flow-rev" : "rf-flow";
   const className = d.active ? flowClass : d.animated ? "rf-flow" : undefined;
-  const style: React.CSSProperties = d.active
-    ? {
-        // A touch softer than before, so the travelling parcel stays the hero.
-        stroke: ROUTE_BLUE,
-        strokeWidth: 2.1,
-        filter: "drop-shadow(0 0 3px rgba(37, 99, 235, 0.4))",
-        transition: "stroke 0.3s ease, stroke-width 0.3s ease",
-      }
-    : {
-        // Source (channel → module) wires read apart from peer wires: a touch
-        // thinner and dashed. Same neutral ink — blue stays reserved for the trace.
-        stroke: ROUTE_INK,
-        strokeWidth: d.source ? 1.4 : 1.6,
-        strokeDasharray: d.source ? "4 4" : undefined,
-        opacity: d.dim ? 0.15 : 1,
-        transition: "opacity 0.3s ease, stroke 0.3s ease",
-      };
+
+  // Source (channel → module) wires read apart from peer wires: a touch thinner
+  // and dashed. These base traits carry across every resting sub-state below.
+  const dash = d.source ? "4 4" : undefined;
+  const transition = "opacity 0.3s ease, stroke 0.3s ease, stroke-width 0.3s ease";
+
+  let style: React.CSSProperties;
+  if (d.active) {
+    // Lit leg of a trace: luminous blue, a touch softer so the parcel stays the hero.
+    style = {
+      stroke: ROUTE_BLUE,
+      strokeWidth: 2.1,
+      filter: "drop-shadow(0 0 3px rgba(37, 99, 235, 0.4))",
+      transition,
+    };
+  } else if (d.highlight) {
+    // Hovered neighbourhood: surface in the calm hover blue, a hair thicker. No glow,
+    // no marching — the loud blue-600 + animation stays the trace's signature.
+    style = {
+      stroke: ROUTE_BLUE_SOFT,
+      strokeWidth: d.source ? 1.8 : 2.0,
+      strokeDasharray: dash,
+      opacity: 1,
+      transition,
+    };
+  } else if (d.faded) {
+    // Hovering elsewhere: recede to the background so the focus reads.
+    style = {
+      stroke: ROUTE_INK,
+      strokeWidth: d.source ? 1.4 : 1.6,
+      strokeDasharray: dash,
+      opacity: 0.12,
+      transition,
+    };
+  } else {
+    // Resting: neutral ink, faint. Every wire — channel substrate and peer alike —
+    // recedes so the cards lead and only a hovered neighbourhood asserts (in blue).
+    // `dim` is the deeper off-route fade during a trace.
+    style = {
+      stroke: ROUTE_INK,
+      strokeWidth: d.source ? 1.4 : 1.6,
+      strokeDasharray: dash,
+      opacity: d.dim ? 0.15 : 0.45,
+      transition,
+    };
+  }
 
   return (
     <BaseEdge

@@ -24,6 +24,39 @@ export default async function Home() {
     return { ...doc.meta, id: pos.id, x: pos.x, y: pos.y, body: doc.body };
   });
 
+  // One wire per connection: walk every module's `connects` and dedupe reciprocal
+  // pairs (00↔02 is declared on both sides) into a single undirected edge.
+  const seen = new Set<string>();
+  const rawEdges: RawEdge[] = [];
+  for (const n of docs) {
+    for (const c of n.connects ?? []) {
+      const [a, b] = [n.id, c.to].sort();
+      const id = `${a}--${b}`;
+      if (seen.has(id)) continue;
+      seen.add(id);
+      rawEdges.push({ id, source: a, target: b, kind: "peer" });
+    }
+  }
+
+  // Channel → module inflow arrows: each module's `draws_from` names the channel
+  // plugs it pulls raw data through. The source is the channel child node
+  // ("01-integrations:<id>"), the target the module — a single arrow flowing in.
+  // Validate ids against the real channel list so a typo never makes a dangling edge.
+  const validChannels = new Set(
+    (byId.get("01-integrations")?.meta.channels ?? []).map((c) => c.id),
+  );
+  for (const n of docs) {
+    for (const chId of n.drawsFrom ?? []) {
+      if (!validChannels.has(chId)) continue;
+      rawEdges.push({
+        id: `src:${chId}->${n.id}`,
+        source: `01-integrations:${chId}`,
+        target: n.id,
+        kind: "source",
+      });
+    }
+  }
+
   // React Flow positions by top-left; our layout positions by card centre. The port
   // is a *group*: a frame centred on its position, holding one compact child node per
   // channel (positioned relative to the group's top-left). The group keeps the id
@@ -70,39 +103,6 @@ export default async function Home() {
       },
     ];
   });
-
-  // One wire per connection: walk every module's `connects` and dedupe reciprocal
-  // pairs (00↔02 is declared on both sides) into a single undirected edge.
-  const seen = new Set<string>();
-  const rawEdges: RawEdge[] = [];
-  for (const n of docs) {
-    for (const c of n.connects ?? []) {
-      const [a, b] = [n.id, c.to].sort();
-      const id = `${a}--${b}`;
-      if (seen.has(id)) continue;
-      seen.add(id);
-      rawEdges.push({ id, source: a, target: b, kind: "peer" });
-    }
-  }
-
-  // Channel → module inflow arrows: each module's `draws_from` names the channel
-  // plugs it pulls raw data through. The source is the channel child node
-  // ("01-integrations:<id>"), the target the module — a single arrow flowing in.
-  // Validate ids against the real channel list so a typo never makes a dangling edge.
-  const validChannels = new Set(
-    (byId.get("01-integrations")?.meta.channels ?? []).map((c) => c.id),
-  );
-  for (const n of docs) {
-    for (const chId of n.drawsFrom ?? []) {
-      if (!validChannels.has(chId)) continue;
-      rawEdges.push({
-        id: `src:${chId}->${n.id}`,
-        source: `01-integrations:${chId}`,
-        target: n.id,
-        kind: "source",
-      });
-    }
-  }
 
   return (
     <main className="relative h-dvh w-dvw overflow-hidden">

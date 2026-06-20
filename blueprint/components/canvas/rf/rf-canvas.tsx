@@ -35,6 +35,8 @@ import { ChannelPanel } from "../channel-panel";
 const MARKER_COLOR = "#64748b"; // slate-500
 /** The lit-route colour — --primary / blue-600, the system's interaction blue. */
 const ROUTE_BLUE = "#2563eb";
+/** The calm hover blue — blue-500, for arrowheads on the surfaced (hovered) wires. */
+const ROUTE_BLUE_SOFT = "#3b82f6";
 /** The wire look. "bezier" is what we shipped; "smoothstep" / "straight" also work. */
 const EDGE_VARIANT = "bezier" as const;
 const EDGE_ANIMATED = false;
@@ -113,6 +115,9 @@ function Flow({
   const integrationsBody = docs.find((d) => d.id === "01-integrations")?.body ?? "";
   // null = the static blueprint; 1..N = "flow mode" parked on that step.
   const [traceStep, setTraceStep] = useState<number | null>(null);
+  // The node the pointer rests on (a module id, or a "01-integrations:<channel>" plug
+  // id). Its wires surface and everything else recedes — focus+context. Inert in trace.
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const rf = useReactFlow();
 
@@ -136,7 +141,17 @@ function Flow({
       // *behind* the cards while the plugs they start from still read on top.
       const base = { id: e.id, source: e.source, target: e.target, type: "floating" as const };
       if (!step) {
-        const arrow = { type: MarkerType.ArrowClosed, color: MARKER_COLOR, width: 16, height: 16 };
+        // Hover focus: a wire touching the hovered node surfaces; the rest recede.
+        // The same test covers both directions — for a module it catches its peer
+        // wires and its channel inflow; for a plug it catches the wires it originates.
+        const related = hoveredId ? e.source === hoveredId || e.target === hoveredId : null;
+        // Arrowhead follows the line: the calm blue on a surfaced wire, slate otherwise.
+        const arrow = {
+          type: MarkerType.ArrowClosed,
+          color: related ? ROUTE_BLUE_SOFT : MARKER_COLOR,
+          width: 16,
+          height: 16,
+        };
         // Source edges read as a single inflow arrow (channel → module): one
         // arrowhead at the module, dashed + lighter (styled in FloatingEdge). Peer
         // edges keep both arrowheads — request out, provide back.
@@ -144,7 +159,13 @@ function Flow({
           ...base,
           markerStart: isSource ? undefined : arrow,
           markerEnd: arrow,
-          data: { variant: EDGE_VARIANT, animated: EDGE_ANIMATED, source: isSource },
+          data: {
+            variant: EDGE_VARIANT,
+            animated: EDGE_ANIMATED,
+            source: isSource,
+            highlight: related === true,
+            faded: related === false,
+          },
         };
       }
       const direction = legDir.get(e.id);
@@ -161,7 +182,7 @@ function Flow({
       // dimmed but keeping its dashed source look.
       return { ...base, data: { variant: EDGE_VARIANT, dim: true, source: isSource } };
     });
-  }, [rawEdges, traceStep]);
+  }, [rawEdges, traceStep, hoveredId]);
 
   // Paint the trace flag onto each node, and float the travelling artifact at the
   // step's resting node. Spreading the module nodes keeps React Flow's measured
@@ -290,6 +311,12 @@ function Flow({
           }
           setOpenId(n.id as ModuleId);
         }}
+        onNodeMouseEnter={(_, n) => {
+          if (traceStep != null) return; // trace owns the wires; hover stays inert
+          if (n.id === "artifact" || n.id === "01-integrations") return; // skip artifact + group
+          setHoveredId(n.id);
+        }}
+        onNodeMouseLeave={() => setHoveredId(null)}
         nodeTypes={NODE_TYPES}
         edgeTypes={EDGE_TYPES}
         fitView
