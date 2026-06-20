@@ -227,12 +227,19 @@ function Flow({
 
   const openNode = docs.find((d) => d.id === openId) ?? null;
 
-  // At zoom = 1 the viewport transform should land text on the pixel grid, but d3 leaves
-  // a fractional pan offset and the browser keeps the actively-panned viewport on a
-  // composite layer — so it gets resampled and text softens. Round the pan offset to
-  // whole device pixels once a move settles to re-crisp it; zoom is untouched and x/y
-  // shift by under a pixel, so there's no visible jump. The differ-guard keeps it from
-  // looping when setViewport echoes back through onMoveEnd.
+  // Crisp text at any *resting* zoom. React Flow zooms with one CSS transform on the
+  // viewport, so the browser stretches a snapshot rasterized at a single scale — text
+  // softens at any zoom ≠ 1. Fix: keep the layer promoted (will-change) *during* a move
+  // for smoothness, then drop it on settle, which tears the cached layer down and
+  // repaints at the resting scale → text re-rasterizes sharp at whatever zoom you land
+  // on. (A brief softness remains *while* the motion plays; only WebGL removes that.)
+  const viewportEl = useCallback(
+    () => wrapperRef.current?.querySelector<HTMLElement>(".react-flow__viewport") ?? null,
+    [],
+  );
+
+  // Round the pan offset to whole device pixels so the resting transform lands on the
+  // pixel grid. The differ-guard keeps setViewport from looping back through onMoveEnd.
   const snapViewport = useCallback(() => {
     const { x, y, zoom } = rf.getViewport();
     const dpr = window.devicePixelRatio || 1;
@@ -241,14 +248,32 @@ function Flow({
     if (rx !== x || ry !== y) rf.setViewport({ x: rx, y: ry, zoom });
   }, [rf]);
 
-  const recenter = useCallback(() => {
-    rf.fitView(FIT_TWEEN).then(snapViewport);
-  }, [rf, snapViewport]);
+  // Promote the viewport before a move (smooth); on settle drop the promotion to force a
+  // crisp repaint at the resting scale, then snap to the pixel grid.
+  const lift = useCallback(() => {
+    const el = viewportEl();
+    if (el) el.style.willChange = "transform";
+  }, [viewportEl]);
+  const settle = useCallback(() => {
+    const el = viewportEl();
+    if (el) el.style.willChange = "auto";
+    snapViewport();
+  }, [viewportEl, snapViewport]);
+  // Run a programmatic viewport move through the same lift→settle path as a gesture.
+  const animate = useCallback(
+    (run: () => Promise<unknown>) => {
+      lift();
+      return run().then(settle);
+    },
+    [lift, settle],
+  );
+
+  const recenter = useCallback(() => animate(() => rf.fitView(FIT_TWEEN)), [animate, rf]);
   // Entering flow mode opens on step 1 and frames the whole route.
   const startTrace = useCallback(() => {
     setTraceStep(1);
-    rf.fitView(FIT_TWEEN).then(snapViewport);
-  }, [rf, snapViewport]);
+    animate(() => rf.fitView(FIT_TWEEN));
+  }, [animate, rf]);
 
   // Keyboard: 0 recenters always; in flow mode, arrows/space step and Esc exits.
   // No text inputs on the canvas, so a window listener is safe.
@@ -259,11 +284,11 @@ function Flow({
         return;
       }
       if (e.key === "+" || e.key === "=") {
-        rf.zoomIn(ZOOM_TWEEN).then(snapViewport);
+        animate(() => rf.zoomIn(ZOOM_TWEEN));
         return;
       }
       if (e.key === "-" || e.key === "_") {
-        rf.zoomOut(ZOOM_TWEEN).then(snapViewport);
+        animate(() => rf.zoomOut(ZOOM_TWEEN));
         return;
       }
       if (traceStep == null) return;
@@ -278,7 +303,7 @@ function Flow({
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [recenter, traceStep, rf, snapViewport]);
+  }, [recenter, traceStep, rf, animate]);
 
   // Tame pinch / ⌘-scroll zoom sensitivity. React Flow zooms via d3, which
   // over-amplifies trackpad-pinch deltas (they arrive as ctrl+wheel), so a tiny
@@ -334,7 +359,8 @@ function Flow({
           setHoveredId(n.id);
         }}
         onNodeMouseLeave={() => setHoveredId(null)}
-        onMoveEnd={snapViewport}
+        onMoveStart={lift}
+        onMoveEnd={settle}
         nodeTypes={NODE_TYPES}
         edgeTypes={EDGE_TYPES}
         fitView
@@ -361,7 +387,7 @@ function Flow({
       <div className="absolute right-5 bottom-5 flex flex-col gap-2">
         <button
           type="button"
-          onClick={() => rf.zoomIn(ZOOM_TWEEN).then(snapViewport)}
+          onClick={() => animate(() => rf.zoomIn(ZOOM_TWEEN))}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom in"
           title="Zoom in (+)"
@@ -371,7 +397,7 @@ function Flow({
         </button>
         <button
           type="button"
-          onClick={() => rf.zoomOut(ZOOM_TWEEN).then(snapViewport)}
+          onClick={() => animate(() => rf.zoomOut(ZOOM_TWEEN))}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom out"
           title="Zoom out (−)"
