@@ -67,6 +67,12 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
         .filter(Boolean) as ModuleConnection[])
     : undefined;
 
+  // The channel ids this module draws raw data through (validated against the real
+  // channel list later, where the port doc is in hand — see app/page.tsx).
+  const drawsFrom = Array.isArray(data.draws_from)
+    ? (data.draws_from.filter((c): c is string => typeof c === "string") as string[])
+    : undefined;
+
   const channels = Array.isArray(data.channels)
     ? (data.channels
         .map((c): Channel | null => {
@@ -101,6 +107,7 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
     modes: modes?.length ? modes : undefined,
     connects: connects?.length ? connects : undefined,
     channels: channels?.length ? channels : undefined,
+    drawsFrom: drawsFrom?.length ? drawsFrom : undefined,
   };
 }
 

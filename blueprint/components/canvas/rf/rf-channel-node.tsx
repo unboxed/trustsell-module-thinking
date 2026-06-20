@@ -12,7 +12,7 @@ import {
   Video,
   type LucideIcon,
 } from "lucide-react";
-import { type NodeProps } from "@xyflow/react";
+import { Handle, Position, type NodeProps } from "@xyflow/react";
 
 import { cn } from "@/lib/utils";
 import { CHANNEL } from "@/lib/canvas-layout";
@@ -62,6 +62,11 @@ export function RfChannelNode({ data, selected }: NodeProps) {
       )}
       title={ghost ? `${ch.name} — not connected yet` : ch.name}
     >
+      {/* Hidden handles so the channel→module inflow wires can anchor; the floating
+          edge computes geometry from the plug's rect, so Position is cosmetic. */}
+      <Handle type="source" position={Position.Top} className="rf-hidden-handle" />
+      <Handle type="target" position={Position.Bottom} className="rf-hidden-handle" />
+
       <span
         style={{ width: CHANNEL.disc, height: CHANNEL.disc }}
         className={cn(

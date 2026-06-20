@@ -35,6 +35,7 @@ The card and wires (read by the app today):
 - `tier` — `brain`, `assistant`, or `connector` (semantic; not drawn yet)
 - `modes` — which categories of work it serves: sustain, advance, expand (semantic; not drawn yet)
 - `connects` — two-way links to other modules; the canvas auto-routes one wire per link (see below)
+- `draws_from` — the channels (sub-items of `01`) a module pulls raw data through; the canvas draws a single **inflow arrow** from each named channel plug into the module (see below)
 
 The badge facets (short labels now, drawn as chips later):
 - `values` — the principles the module holds
@@ -60,6 +61,14 @@ reach *through* it declare the link (e.g. `02 → 01` requests a person's mail +
 calendar). The canvas (React Flow) **auto-routes one wire per link** from these
 declarations — no hand-placed geometry — with an arrow at each end: request out,
 provide back.
+
+A **`draws_from`** link is the other half of how `01` is wired. Where `connects` joins two
+*reasoning* peers (two-way), `draws_from` joins a module to a **channel plug** it pulls raw data
+through — and a channel has no initiative, so it only *provides*. The canvas draws these as a
+**single inflow arrow** (channel → module), styled apart from the two-headed peer wires (a
+lighter, dashed line) so "a data source feeds this module" reads differently from "two peers
+converse". A module lists the channel ids it draws from (`draws_from: [gmail, slack, …]`),
+mirroring the `### <channel>` sections in its body.
 
 **Every facet is two layers, and values show as badges.** `connects` set the pattern: the
 actual values as a short list in frontmatter, and a narrative in the body that explains them.

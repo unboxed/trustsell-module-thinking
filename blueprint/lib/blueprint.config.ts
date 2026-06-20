@@ -109,6 +109,8 @@ export interface Channel {
  * a few semantic fields. `name`/`title`/`blurb`/`icon`/`optional` are rendered
  * today; `tier`/`modes`/`connects` are documented now and drawn later. `channels`
  * is `01-integrations`-only — its per-channel raw data, drawn as the plug cluster.
+ * `drawsFrom` lists the channel ids a module pulls raw data through, drawn as a
+ * single inflow arrow from each channel plug into the module.
  */
 export interface ModuleMeta {
   name: string;
@@ -120,6 +122,8 @@ export interface ModuleMeta {
   modes?: string[];
   connects?: ModuleConnection[];
   channels?: Channel[];
+  /** channel ids (sub-items of `01-integrations`) this module pulls raw data from */
+  drawsFrom?: string[];
 }
 
 /** A node ready to render: its live frontmatter + body, placed at a position. */

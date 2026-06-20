@@ -15,6 +15,7 @@ connects:
   - to: "04-organization"
     requests: "the actual proof document"
     provides: "the kind of proof a claim needs"
+draws_from: [web, drive]
 raw_data:
   - "Competitor pricing"
   - "Market report"
@@ -32,8 +33,11 @@ answer the usual objections.
 
 ## Raw data
 
-Offerings only pulls from the web, through Connections — it holds no contacts, so it never
-touches mail, calendar, or Slack. It uses research to ground its suggestions.
+Offerings pulls from the web and from Drive, through Connections — it holds no contacts, so it
+never touches mail, calendar, or Slack. It uses web research to ground its suggestions, and Drive
+to find the files already sitting around each offering. The channels it draws from (`web`,
+`drive`) are mirrored in the `draws_from` frontmatter, which the canvas draws as an inflow arrow
+from each plug into this module.
 
 ### Web / Tavily
 `Competitor pricing` — a rival's public pricing or packaging page
@@ -41,6 +45,10 @@ touches mail, calendar, or Slack. It uses research to ground its suggestions.
 `Procurement pattern` — what a cautious public buyer tends to ask about new software
 `Product comparison` — third-party comparisons or roundups
 `Customer review` — public reviews of comparable products
+
+### Drive
+`File` — a document filed around an offering: a deck, one-pager, spec sheet or pricing doc · name · type · owner · modified
+`File content` — the exported text of that Doc, Sheet or Slide, so its claims and numbers can be read
 
 ## Principles
 _TBD_

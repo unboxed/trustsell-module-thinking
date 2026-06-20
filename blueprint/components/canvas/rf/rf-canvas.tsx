@@ -84,8 +84,17 @@ export type RfNodeInit = {
   extent?: "parent";
   style?: Record<string, unknown>;
   selectable?: boolean;
+  /** stacking order; cards sit above the (auto-elevated) channel→module wires */
+  zIndex?: number;
 };
-export type RawEdge = { id: string; source: string; target: string };
+export type RawEdge = {
+  id: string;
+  source: string;
+  target: string;
+  /** "peer" = a two-way module↔module wire; "source" = a one-way channel→module
+   * inflow arrow (raw data flowing in). Defaults to "peer". */
+  kind?: "peer" | "source";
+};
 
 function Flow({
   initialNodes,
@@ -120,10 +129,23 @@ function Flow({
       }
     }
     return rawEdges.map((e) => {
+      const isSource = e.kind === "source";
+      // Source edges touch a channel *child* node, which React Flow auto-elevates
+      // to z=1 — above the root-level cards. We don't fight that here; the cards are
+      // lifted above it instead (see CARD_Z in app/page.tsx), so every wire sits
+      // *behind* the cards while the plugs they start from still read on top.
       const base = { id: e.id, source: e.source, target: e.target, type: "floating" as const };
       if (!step) {
         const arrow = { type: MarkerType.ArrowClosed, color: MARKER_COLOR, width: 16, height: 16 };
-        return { ...base, markerStart: arrow, markerEnd: arrow, data: { variant: EDGE_VARIANT, animated: EDGE_ANIMATED } };
+        // Source edges read as a single inflow arrow (channel → module): one
+        // arrowhead at the module, dashed + lighter (styled in FloatingEdge). Peer
+        // edges keep both arrowheads — request out, provide back.
+        return {
+          ...base,
+          markerStart: isSource ? undefined : arrow,
+          markerEnd: arrow,
+          data: { variant: EDGE_VARIANT, animated: EDGE_ANIMATED, source: isSource },
+        };
       }
       const direction = legDir.get(e.id);
       if (direction) {
@@ -135,7 +157,9 @@ function Flow({
           data: { variant: EDGE_VARIANT, active: true, direction },
         };
       }
-      return { ...base, data: { variant: EDGE_VARIANT, dim: true } };
+      // Off-route during a trace — every source edge lands here (it's never a leg),
+      // dimmed but keeping its dashed source look.
+      return { ...base, data: { variant: EDGE_VARIANT, dim: true, source: isSource } };
     });
   }, [rawEdges, traceStep]);
 

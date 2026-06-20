@@ -5,6 +5,7 @@ import {
   getBezierPath,
   getSmoothStepPath,
   getStraightPath,
+  Position,
   useInternalNode,
   type EdgeProps,
 } from "@xyflow/react";
@@ -31,6 +32,8 @@ export type FloatingEdgeData = {
   active?: boolean;
   dim?: boolean;
   direction?: "fwd" | "rev";
+  /** a channel→module inflow arrow: drawn lighter + dashed, apart from peer wires. */
+  source?: boolean;
 };
 
 export function FloatingEdge({ source, target, markerStart, markerEnd, data }: EdgeProps) {
@@ -40,8 +43,12 @@ export function FloatingEdge({ source, target, markerStart, markerEnd, data }: E
   // Wait until both nodes are measured, else the geometry is undefined on first paint.
   if (!sourceNode?.measured?.width || !targetNode?.measured?.width) return null;
 
-  const { sx, sy, tx, ty, sourcePos, targetPos } = getEdgeParams(sourceNode, targetNode);
   const d = (data as FloatingEdgeData) ?? {};
+  // Channel wires leave the plug's top and always land on the card's Bottom dot, so
+  // they sit below the cards. Peer wires snap to whichever side faces the other card.
+  const { sx, sy, tx, ty, sourcePos, targetPos } = d.source
+    ? getEdgeParams(sourceNode, targetNode, { sourceSide: Position.Top, targetSide: Position.Bottom })
+    : getEdgeParams(sourceNode, targetNode);
   const variant = d.variant ?? "bezier";
 
   const [path] =
@@ -79,8 +86,11 @@ export function FloatingEdge({ source, target, markerStart, markerEnd, data }: E
         transition: "stroke 0.3s ease, stroke-width 0.3s ease",
       }
     : {
+        // Source (channel → module) wires read apart from peer wires: a touch
+        // thinner and dashed. Same neutral ink — blue stays reserved for the trace.
         stroke: ROUTE_INK,
-        strokeWidth: 1.6,
+        strokeWidth: d.source ? 1.4 : 1.6,
+        strokeDasharray: d.source ? "4 4" : undefined,
         opacity: d.dim ? 0.15 : 1,
         transition: "opacity 0.3s ease, stroke 0.3s ease",
       };

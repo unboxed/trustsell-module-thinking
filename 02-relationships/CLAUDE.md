@@ -14,6 +14,7 @@ connects:
     provides: "the worry it has on record, for 03 to answer"
   - to: "05-persona-you"
     provides: "relationship history — plain facts and personal colour — read at write time"
+draws_from: [gmail, calendar, slack, web]
 raw_data:
   - "Email message"
   - "Email thread"
@@ -35,7 +36,9 @@ The expert on everyone you deal with: who they are, your history, and who knows 
 ## Raw data
 
 Everything People can pull in from the connected channels, through Connections. These are plain
-records, before any reading. Grouped by channel.
+records, before any reading. Grouped by channel — the `### <channel>` sections below are the
+channels it draws from (`gmail`, `calendar`, `slack`, `web`), mirrored in the `draws_from`
+frontmatter so the canvas draws an inflow arrow from each plug into this module.
 
 ### Gmail
 `Email message` — sender · recipients (to/cc) · subject · body · snippet · timestamp · thread id · direction (sent or received) · read/unread · labels · has-attachments

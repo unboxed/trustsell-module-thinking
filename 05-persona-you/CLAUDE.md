@@ -13,6 +13,7 @@ connects:
     requests: "relationship history, to pitch the right closeness and register"
   - to: "04-organization"
     requests: "the organisation's hard limits, to write inside them"
+draws_from: [gmail, slack]
 raw_data:
   - "Sent email"
   - "Draft edit"
@@ -28,7 +29,9 @@ The personal layer: your voice and your preferences, so every message sounds lik
 ## Raw data
 
 What Profile can pull in from the connected channels to learn your voice. It reads what *you*
-write, not what others send you.
+write, not what others send you. The channels it draws from (`gmail` — your sent mail and watched
+drafts — and `slack`) are mirrored in the `draws_from` frontmatter, which the canvas draws as an
+inflow arrow from each plug into this module.
 
 ### Gmail (your sent mail)
 `Sent email` — recipient · subject · body · timestamp · greeting · sign-off · length · formality cues

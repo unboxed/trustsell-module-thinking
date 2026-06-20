@@ -11,6 +11,43 @@
   border: 0;
 }
 
+/* Connector ports — one small dot centred on each side of a module card, sitting
+   on the border line. The floating edge snaps every wire to the midpoint of the
+   facing side, so each wire lands square on the dot it points at (see
+   floating-edge-utils.ts). Decorative only; the hidden handles above are what
+   actually let wires attach. */
+.rf-port {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1.5px solid rgba(100, 116, 139, 0.55); /* slate-500 @ ~55%, the wire ink */
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+  z-index: 1;
+  pointer-events: none;
+}
+.rf-port-top {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rf-port-bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.rf-port-left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.rf-port-right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
 /* The "flow" look: marching-ants dashes drifting along the wire. Used by the
    legacy EDGE_ANIMATED toggle and, while tracing the flow, by every lit leg —
    .rf-flow drifts source→target (forward), .rf-flow-rev the other way, so the

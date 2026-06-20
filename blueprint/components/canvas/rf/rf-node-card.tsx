@@ -62,6 +62,13 @@ export function RfNodeCard({ data }: NodeProps) {
       <Handle type="target" position={Position.Top} className="rf-hidden-handle" />
       <Handle type="source" position={Position.Bottom} className="rf-hidden-handle" />
 
+      {/* Connector ports: a dot centred on each side. Wires snap to the facing
+          one (see floating-edge-utils.ts), so arrows land on a dot, not adrift. */}
+      <span aria-hidden className="rf-port rf-port-top" />
+      <span aria-hidden className="rf-port rf-port-right" />
+      <span aria-hidden className="rf-port rf-port-bottom" />
+      <span aria-hidden className="rf-port rf-port-left" />
+
       <div className="flex items-center justify-between">
         <span className="flex size-10 items-center justify-center rounded-full bg-slate-900/[0.05]">
           <Icon className="size-5 text-slate-600" strokeWidth={1.75} />

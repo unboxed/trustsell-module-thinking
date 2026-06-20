@@ -6,6 +6,10 @@ import { readModules } from "@/lib/modules";
 import type { CanvasNode } from "@/lib/blueprint.config";
 import { RfCanvas, type RawEdge, type RfNodeInit } from "@/components/canvas/rf/rf-canvas";
 
+/** Card stacking order — above the auto-elevated channel→module wires (z≈1), below
+ *  the travelling-artifact node (z=1000). So wires tuck behind the card faces. */
+const CARD_Z = 10;
+
 // The canvas is a live mirror of the module docs. Each module's CLAUDE.md is read
 // from disk per request (readModules → connection(), no caching); its frontmatter
 // (the card face) is merged onto the hand-placed positions, and the wires are
@@ -57,6 +61,11 @@ export default async function Home() {
         id: n.id,
         type: "module" as const,
         position: { x: n.x - CARD.width / 2, y: n.y - CARD.height / 2 },
+        // Lift cards above the channel→module wires. Those wires touch a channel
+        // *child* node, which React Flow auto-elevates to z=1, so without this they'd
+        // paint over the card faces. CARD_Z clears that band (and stays well under the
+        // travelling-artifact node at z=1000) so every wire tucks behind the cards.
+        zIndex: CARD_Z,
         data: { name: n.name, title: n.title, blurb: n.blurb, icon: n.icon, optional: n.optional },
       },
     ];
@@ -72,7 +81,26 @@ export default async function Home() {
       const id = `${a}--${b}`;
       if (seen.has(id)) continue;
       seen.add(id);
-      rawEdges.push({ id, source: a, target: b });
+      rawEdges.push({ id, source: a, target: b, kind: "peer" });
+    }
+  }
+
+  // Channel → module inflow arrows: each module's `draws_from` names the channel
+  // plugs it pulls raw data through. The source is the channel child node
+  // ("01-integrations:<id>"), the target the module — a single arrow flowing in.
+  // Validate ids against the real channel list so a typo never makes a dangling edge.
+  const validChannels = new Set(
+    (byId.get("01-integrations")?.meta.channels ?? []).map((c) => c.id),
+  );
+  for (const n of docs) {
+    for (const chId of n.drawsFrom ?? []) {
+      if (!validChannels.has(chId)) continue;
+      rawEdges.push({
+        id: `src:${chId}->${n.id}`,
+        source: `01-integrations:${chId}`,
+        target: n.id,
+        kind: "source",
+      });
     }
   }
 
