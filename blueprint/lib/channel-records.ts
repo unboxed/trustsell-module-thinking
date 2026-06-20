@@ -31,7 +31,9 @@ export interface ParsedRecord {
 
 export function parseRecord(body: string, label: string): ParsedRecord | null {
   const esc = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const m = body.match(new RegExp("`" + esc + "`\\s*[—–-]\\s*(.+)"));
+  // Anchor to the start of a line: a record line sits at column 0, so prose that
+  // mentions a `` `Label` — `` mid-sentence (e.g. this format's own docs) can't shadow it.
+  const m = body.match(new RegExp("^`" + esc + "`\\s*[—–-]\\s*(.+)", "m"));
   if (!m) return null;
 
   let raw = m[1].trim();

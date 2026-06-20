@@ -14,6 +14,7 @@ import {
   type ModuleId,
   type ModuleMeta,
   type ModuleTier,
+  type RecordNode,
 } from "./blueprint.config";
 
 /**
@@ -37,6 +38,25 @@ const ICON_SET = new Set<string>(ICON_NAMES);
 const CHANNEL_ICON_SET = new Set<string>(CHANNEL_ICON_NAMES);
 const TIERS = new Set<string>(["brain", "assistant", "connector"]);
 const MODES = new Set<string>(["sustain", "advance", "expand"]);
+
+/**
+ * Normalise the frontmatter `records` tree. Each entry is a bare string (a leaf) or
+ * `{ label, children: [...] }`; recurse so the children carry their own subtrees.
+ */
+function coerceRecords(x: unknown): RecordNode[] {
+  if (!Array.isArray(x)) return [];
+  return x
+    .map((item): RecordNode | null => {
+      if (typeof item === "string") return { label: item, children: [] };
+      if (item && typeof item === "object") {
+        const o = item as Record<string, unknown>;
+        if (typeof o.label !== "string") return null;
+        return { label: o.label, children: coerceRecords(o.children) };
+      }
+      return null;
+    })
+    .filter((r): r is RecordNode => r !== null);
+}
 
 /** Pull a clean ModuleMeta out of whatever the frontmatter parsed to. */
 function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
@@ -79,9 +99,7 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
           const o = c as Record<string, unknown>;
           if (typeof o?.id !== "string" || typeof o?.name !== "string") return null;
           const rawIcon = typeof o.icon === "string" && o.icon.length ? o.icon : "globe";
-          const records = Array.isArray(o.records)
-            ? o.records.filter((r): r is string => typeof r === "string")
-            : [];
+          const records = coerceRecords(o.records);
           const source: ChannelSource = o.source === "builtin" ? "builtin" : "account";
           return {
             id: o.id,

@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { parseRecord, type RecordField } from "@/lib/channel-records";
-import type { Channel } from "@/lib/blueprint.config";
+import type { Channel, RecordNode } from "@/lib/blueprint.config";
 import { MetaPill } from "./module-panel";
 
 /**
@@ -74,7 +74,7 @@ export function ChannelPanel({
                     The raw data this channel can pull in — carried as-is.
                   </DialogPrimitive.Description>
                   <div className="mt-1 flex flex-wrap gap-1.5">
-                    <MetaPill>{channel.records.length} records</MetaPill>
+                    <MetaPill>{countRecords(channel.records)} records</MetaPill>
                     {ghost && <MetaPill>not connected yet</MetaPill>}
                   </div>
                 </div>
@@ -89,44 +89,9 @@ export function ChannelPanel({
               <ScrollArea className="min-h-0 flex-1">
                 <TooltipProvider>
                   <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
-                    {channel.records.map((label) => {
-                      const rec = parseRecord(body, label);
-                      const empty = !rec || (!rec.gloss && rec.fields.length === 0);
-                      return (
-                        <li
-                          key={label}
-                          className="flex flex-col gap-1.5 py-3.5 sm:flex-row sm:gap-4"
-                        >
-                          <div className="sm:w-40 sm:shrink-0">
-                            <MetaPill>{label}</MetaPill>
-                          </div>
-                          <div className="flex min-w-0 flex-col gap-2">
-                            {rec?.gloss && (
-                              <p className="text-[13px] leading-[1.5] text-ink-body">
-                                {rec.gloss}
-                              </p>
-                            )}
-                            {rec && rec.fields.length > 0 && (
-                              <div className="flex flex-wrap gap-1.5">
-                                {rec.fields.map((f) => (
-                                  <FieldChip key={f.label} field={f} />
-                                ))}
-                              </div>
-                            )}
-                            {empty && (
-                              <p className="text-[13px] leading-[1.5] text-muted-foreground italic">
-                                Field list coming soon.
-                              </p>
-                            )}
-                            {rec?.note && (
-                              <p className="text-[11px] leading-[1.4] text-muted-foreground">
-                                {rec.note}
-                              </p>
-                            )}
-                          </div>
-                        </li>
-                      );
-                    })}
+                    {channel.records.map((node) => (
+                      <RecordRow key={node.label} node={node} body={body} />
+                    ))}
                   </ul>
                 </TooltipProvider>
               </ScrollArea>
@@ -135,6 +100,57 @@ export function ChannelPanel({
         </DialogPrimitive.Content>
       </DialogPrimitive.Portal>
     </DialogPrimitive.Root>
+  );
+}
+
+/** Total record count including nested children — for the panel header. */
+function countRecords(nodes: RecordNode[]): number {
+  return nodes.reduce((n, r) => n + 1 + countRecords(r.children), 0);
+}
+
+/**
+ * One record in the tree: its label pill beside its gloss + field chips (paired from
+ * the body by label), then any children nested one level in with a tree rail. Recurses,
+ * so Gmail's Thread → Message → Attachment renders as indented branches.
+ */
+function RecordRow({ node, body }: { node: RecordNode; body: string }) {
+  const rec = parseRecord(body, node.label);
+  const empty = !rec || (!rec.gloss && rec.fields.length === 0);
+  return (
+    <li className="py-3.5">
+      <div className="flex flex-col gap-1.5 sm:flex-row sm:gap-4">
+        <div className="sm:w-40 sm:shrink-0">
+          <MetaPill>{node.label}</MetaPill>
+        </div>
+        <div className="flex min-w-0 flex-col gap-2">
+          {rec?.gloss && (
+            <p className="text-[13px] leading-[1.5] text-ink-body">{rec.gloss}</p>
+          )}
+          {rec && rec.fields.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {rec.fields.map((f) => (
+                <FieldChip key={f.label} field={f} />
+              ))}
+            </div>
+          )}
+          {empty && (
+            <p className="text-[13px] leading-[1.5] text-muted-foreground italic">
+              Field list coming soon.
+            </p>
+          )}
+          {rec?.note && (
+            <p className="text-[11px] leading-[1.4] text-muted-foreground">{rec.note}</p>
+          )}
+        </div>
+      </div>
+      {node.children.length > 0 && (
+        <ul className="mt-2 ml-3 flex flex-col border-l border-border/60 pl-4 sm:ml-4 sm:pl-5">
+          {node.children.map((child) => (
+            <RecordRow key={child.label} node={child} body={body} />
+          ))}
+        </ul>
+      )}
+    </li>
   );
 }
 

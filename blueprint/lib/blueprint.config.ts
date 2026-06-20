@@ -90,6 +90,16 @@ export const CHANNEL_ICON_NAMES: ChannelIcon[] = [
   "cloud",
 ];
 
+/**
+ * A raw-data record type, nested into the provider's real parent/child tree
+ * (e.g. Gmail's Thread → Message → Attachment). The label keys back to the
+ * record's body line (gloss + fields) via parseRecord; children are containment.
+ */
+export interface RecordNode {
+  label: string;
+  children: RecordNode[];
+}
+
 export interface Channel {
   id: string;
   name: string;
@@ -100,8 +110,8 @@ export interface Channel {
    * One brand may hold several services or just one; defaults to the channel name. */
   brand?: string;
   connected: boolean;
-  /** raw-data record-type labels; descriptions are paired from the body. */
-  records: string[];
+  /** raw-data record types as a tree; descriptions are paired from the body. */
+  records: RecordNode[];
 }
 
 /**
