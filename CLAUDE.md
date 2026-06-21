@@ -51,6 +51,18 @@ use. Those badge keys survive only as a possible future frontmatter extension, n
 The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that
 sit above this are written up in `README.md`.
 
+**Migrating to a structured library (in progress).** The agent-anatomy-in-one-`CLAUDE.md` is being
+replaced by a per-module **library**, because the *catalog* parts of a module want to grow and be
+rendered, not sit in prose. The catalog floors become structured entries: **raw data** in
+`01-integrations/channels/*.md` (one doc per channel), **assemblies** in `<module>/assemblies/*.md`,
+**signals** in `<module>/signals/*.md`, each carrying its **lineage** (the `inputs` one floor down).
+The *operating prose* (Principles, System prompt, User input, Output, Memory, Open questions) moves
+to a slim **`<module>/module.md`**. The contract and the conversion workflow are in
+`docs/library-format.md`; the skeletons are in `_templates/`. **`02-relationships` is the worked
+example of the new format** (`module.md`, `assemblies/`, `signals/`, plus `01`'s `channels/gmail.md`
+are filled); the other modules follow, agent-produced, against the templates. New files are
+**additive**: the old `CLAUDE.md`s stay until a module's library is complete, then retire.
+
 ## The model so far
 
 A three-tier system, not a swarm. The clearest way to picture it: **one brain, a team of expert assistants, and a single shared connector to the outside world.**
