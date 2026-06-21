@@ -37,7 +37,7 @@ const ID_SET = new Set<string>(ALL_MODULE_IDS);
 const ICON_SET = new Set<string>(ICON_NAMES);
 const CHANNEL_ICON_SET = new Set<string>(CHANNEL_ICON_NAMES);
 const TIERS = new Set<string>(["brain", "assistant", "connector"]);
-const MODES = new Set<string>(["sustain", "advance", "expand"]);
+const MODES = new Set<string>(["plant", "grow", "nurture"]);
 
 /**
  * Normalise the frontmatter `records` tree. Each entry is a bare string (a leaf) or

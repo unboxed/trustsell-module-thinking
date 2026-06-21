@@ -33,7 +33,7 @@ The card and wires (read by the app today):
 - `icon` — lucide icon name
 - `optional` — shows the "optional" treatment (only `04`)
 - `tier` — `brain`, `assistant`, or `connector` (semantic; not drawn yet)
-- `modes` — which categories of work it serves: sustain, advance, expand (semantic; not drawn yet)
+- `modes` — which categories of work it serves: `plant`, `grow`, `nurture` — **Plant** (find & grow) · **Grow** (move deals forward) · **Nurture** (keep relationships alive). The app validates these against the `MODES` set in `lib/modules.ts` and renders them as chips in the module panel, so adding a new value means updating that set too.
 - `connects` — two-way links to other modules; the canvas auto-routes one wire per link (see below)
 - `draws_from` — the channels (sub-items of `01`) a module pulls raw data through; the canvas draws a single **inflow arrow** from each named channel plug into the module (see below)
 - `raw_data` — the record types a module pulls through those channels (detailed by channel in the body); read by the app and shown as chips

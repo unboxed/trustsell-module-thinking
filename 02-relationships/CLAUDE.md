@@ -5,7 +5,7 @@ blurb: "Keeps every contact, conversation and connection organised — and digs 
 icon: users
 optional: false
 tier: assistant
-modes: [sustain, expand]
+modes: [nurture, plant]
 connects:
   - to: "00-spine"
     provides: "reports what the brief flags — 'Jane went quiet', 'found the DM' — and answers follow-ups"
@@ -182,9 +182,9 @@ supplier module.
 - **Who's most urgent?** (Q21) — *triage*. That's the Brain weighing across People's signals, not
   a signal People raises.
 
-A handful of these (blocker, understanding gap) lean **Advance**, but they feed Offerings and the
-Brain, who own moving the deal; gone-quiet leans **Sustain**; warm-path and new-stakeholder lean
-**Expand**. People supplies reads into all three categories.
+A handful of these (blocker, understanding gap) lean **Grow**, but they feed Offerings and the
+Brain, who own moving the deal; gone-quiet leans **Nurture**; warm-path and new-stakeholder lean
+**Plant**. People supplies reads into all three categories.
 
 ### The threshold — where a count becomes an opinion
 
@@ -208,8 +208,8 @@ line** — and chasing one is a dead end. The yardstick is the relationship's *o
 People doesn't decide what to watch; the Brain **commissions** it. The strategy hands People a
 standing brief that sets three dials:
 - **Scope** — *who* to watch (the 30 council targets, not the whole address book).
-- **Which signals** — a Sustain tilt wants *decay* reads; Expand wants *opening* reads (a new
-  name, a warm path); Advance wants *deal-movement* reads (an objection, a stall).
+- **Which signals** — a Nurture tilt wants *decay* reads; Plant wants *opening* reads (a new
+  name, a warm path); Grow wants *deal-movement* reads (an objection, a stall).
 - **Sensitivity** — hair-trigger for a priority target mid-deal; only-if-dramatic for the long
   tail.
 
@@ -218,7 +218,7 @@ tracing-back's line, *"what's worth counting is set by the goal."*
 
 ### Worked: a cooling champion, traced to the floor
 
-A pure-Sustain case — one champion going quiet, no open deal — showing a single signal carrying
+A pure-Nurture case — one champion going quiet, no open deal — showing a single signal carrying
 its evidence all the way down.
 
 | Floor | What People has |

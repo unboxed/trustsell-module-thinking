@@ -72,14 +72,16 @@ A **port**, nothing more. The user connects their accounts to it once; from then
 
 **Autonomy — people as the fulcrum, AI as the lever.** The human works the *verbs* (decide, approve, send); the AI works the *nouns* (find the target, draft the message, gather the proof). The AI always **suggests**; the human makes the final call. Nothing goes out without a person pulling the trigger — at least for now.
 
-**Output of the tool:** a recommendation — *who to act on, why, and a ready-to-send draft in the user's voice.* The brain assembles the what+why from the assistants and hands down a **brief**; a final render step turns it into a message, with `05` supplying the personal voice and `04` supplying the brand/compliance guardrails it must stay inside.
+**Output of the tool:** not a single card but a living, paced **calendar** of prepared *nouns* — *who to act on, why, and a ready-to-send draft in the user's voice* — kept beside a goal **scoreboard** (where each target stands against the goal). The brain paces the calendar to how much time the user has, leaves a quiet day quiet, and works ahead so a thing is ready by its day; "the one thing worth doing next" is simply today's headline on it. For any one item the brain assembles the what+why from the assistants and hands down a **brief**; a final render step turns it into a message, with `05` supplying the personal voice and `04` supplying the brand/compliance guardrails it must stay inside. (The calendar/scoreboard reframe is worked in `00-spine`.)
 
 **Two tiers of memory — shared vs personal.** `04-organization` is the **shared** tier (proof, brand, compliance, and — as a future vision — the team that joins an org). `05-persona-you` and `02-relationships` are the **personal** tier: one personal layer (voice + preferences), and one set of relationships, per individual.
 
-**Sustain, Advance and Expand are not modes you switch into — they're the three *categories* every routine and action falls into.** All three run at once; the strategy just tilts where the emphasis goes:
-- **Sustain** — keep relationships alive (decay + events).
-- **Advance** — move open deals (stage + objections; leans on Offerings).
-- **Expand** — find / grow (warm paths + targets; leans on the People web).
+**Plant, Grow and Nurture are not modes you switch into — they're the three *categories* every routine and action falls into.** All three run at once; the strategy just tilts where the emphasis goes:
+- **Plant** — find new relationships, a new org *or* a new person inside one (warm paths + targets; leans on the People web).
+- **Grow** — move open deals (stage + objections; leans on Offerings).
+- **Nurture** — keep relationships alive (decay + events).
+
+These names are the one vocabulary used everywhere — and the `modes` enum each module carries. They're plain, garden-flavoured verbs; treat them as plain verbs, not a theme to extend beyond these three categories.
 
 ## Index
 - `00-spine/` — the brain (reasons to decide; holds the goals)

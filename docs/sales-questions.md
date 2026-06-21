@@ -45,11 +45,11 @@ Each group with its **answer path** (fetched / told / inferred) and its **owner*
 
 - **Define the need** — Q1–2. *Told*, tool co-authoring. Owner: **Offerings** (the fit-shape).
 - **Find the targets** — Q3–8. *Fetched + inferred*, pulling the fit-shape from Offerings.
-  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Expand.
+  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Plant.
 - **Reach them** — Q9. *Inferred* from where they actually respond. Owner: **People** (thin
   today — mostly email connected).
 - **Match the message to the person** — Q10–12, Q15, Q17, Q24–25. Owner: a Brain **play**
-  (People's read + Offerings' answers + Organisation's proof). Advance.
+  (People's read + Offerings' answers + Organisation's proof). Grow.
 - **Read their state** — Q13–14, Q16, Q19. *Inferred reads* — the soft, judgement end. Owner:
   **People** sensing.
 - **Track and prioritise** — Q18, Q21–22. *Fetched* facts and open loops feeding Brain's

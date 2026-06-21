@@ -1,13 +1,13 @@
 # The flow, end to end
 
-How the pieces move from a **strategy** to a **surfaced action** — *"Reach out to Person P, because …"* — worked through the running example: an *expand* goal, **BOPS → 30 councils by Q1**.
+How the pieces move from a **strategy** to a **surfaced action** — *"Reach out to Person P, because …"* — worked through the running example: a *plant* goal, **BOPS → 30 councils by Q1**.
 
 This is the worked version of Brain's canonical **play** (`00-spine`); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use — this is the *shape*, not the gospel.
 
 ## Phase A — strategy becomes standing work
 *Happens when you set or change the strategy.*
 
-1. **You and Brain shape the strategy.** Together you set a goal pinned to an offering: *"BOPS → 30 councils by Q1."* Brain reads it as **expand**-flavoured, with a target shape (early-adopter councils).
+1. **You and Brain shape the strategy.** Together you set a goal pinned to an offering: *"BOPS → 30 councils by Q1."* Brain reads it as **plant**-flavoured, with a target shape (early-adopter councils).
 2. **Brain turns the strategy into routines and briefs each module** with a standing job to focus on:
    - **People** — "find councils fitting the BOPS profile, surface warm paths, watch the ones we're courting."
    - **Offerings** — "keep BOPS's fit-shape, entry use-case and rebuttals sharp."

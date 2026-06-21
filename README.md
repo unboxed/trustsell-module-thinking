@@ -41,7 +41,7 @@ Where a thing lives falls straight out of this:
 
 ## Good first prompts
 - "Read the whole workspace and tell me where the modules contradict each other."
-- "Let's work only on the spine. Walk me through routing for one Advance example, end to end."
+- "Let's work only on the spine. Walk me through routing for one Grow example, end to end."
 - "Play devil's advocate on the three-tier split — what would collapse these into fewer modules?"
 
 ## Folders

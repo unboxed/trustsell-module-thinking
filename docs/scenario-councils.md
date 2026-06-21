@@ -1,7 +1,7 @@
 # Selling to councils — one scenario, reverse-engineered
 
 A worked walkthrough of a single real goal, run **backward**. Where `docs/flow.md`
-walks the BOPS expand goal forward in time, this one starts from a finished
+walks the BOPS Plant goal forward in time, this one starts from a finished
 recommendation and peels each layer back, asking *"what had to be true for this?"*
 until we reach the raw data and the handful of things you told the tool once.
 
@@ -203,10 +203,11 @@ Only once those are in place can Brain turn "sell to councils" into concrete sta
 work — *"Relationships, watch these 30 for these movements; Offerings, sharpen these
 answers"* — and the machine starts to tick.
 
-One twist this goal puts on the three kinds of work: because the shortlist is fixed,
-**expand** mostly doesn't mean "find new logos." It means widen the coalition inside an
-org you already have — find Tom's colleagues and win them too. Expansion turns inward,
-while sustain and advance carry most of the weight.
+One twist this goal puts on the three kinds of work: because the shortlist of *orgs* is fixed,
+**Plant** here mostly isn't new logos — it's planting new *people*, widening the coalition inside an
+org you already have (find Tom's colleagues and win them too). Planting counts whether the ground is
+new or one you already hold; *moving the deal forward* with the people already in it is Grow. So
+Plant turns inward, while nurture and grow carry most of the weight.
 
 ## Layer 7 — The raw-material floor
 
