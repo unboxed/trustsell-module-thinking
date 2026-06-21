@@ -19,8 +19,17 @@ record filed in Drive (`file`, and its exported `file-content`), each lined up w
 customer-type it fits, so the right proof can be found for a given claim or customer. *Everything the
 company can point to, on one shelf, labelled.*
 
-This is **floor, not reading**: nothing here is judged. It does not decide whether a proof will land
-or which case study wins a deal; it only gathers the documents and matches each to its told tag. The
+Each document arrives with its plain attributes attached: how recent it is (derived from the file's
+`created` and `modified` dates), whether its reference is named or anonymous and whether the proof is
+third-party or your own word (both told on the `proof-tag`). And because the shelf is keyed by claim, it
+naturally counts how many separate proofs stand behind one claim. These are facts, not judgements: the
+shelf surfaces them so that Offerings' `answer-gap` can judge how *strong* a piece of proof is. The
+shelf carries the attributes; Offerings does the reading.
+
+This is **floor, not reading**: nothing here is judged. It does not decide whether a proof will land,
+which case study wins a deal, or whether a proof is *strong enough* (that strength read is Offerings'
+`answer-gap`, working off the attributes this shelf surfaces); it only gathers the documents and
+matches each to its told tag. The
 only real work is identity and grouping, deciding which Drive file is the one a `proof-tag` names, and
 which shelf (company-general here, product-specific in Offerings) a file belongs on. That is
 arithmetic, not opinion. The Match job that reads this shelf, finding the best-fitting proof for a
@@ -30,7 +39,9 @@ Where a claim has a `proof-tag` but no Drive document behind it, the shelf shows
 proof gap named not faked, rather than implying a document that is not there.
 
 > Lineage note: `proof-tag` resolves to [`../told.md`](../told.md), the organisation's own told
-> source. `file` and `file-content` resolve to
-> [`channels/drive.md`](../../01-integrations/channels/drive.md). The split with Offerings is
-> responsibility, not access: both read the same Drive, but company-general proof is gathered here and
-> product-specific proof in Offerings' `offering-entry`.
+> source, including its reference-naming and proof-source attributes. `file` and `file-content` resolve
+> to [`channels/drive.md`](../../01-integrations/channels/drive.md); recency is derived from `file`'s
+> `created` and `modified` dates. The split with Offerings is responsibility, not access: both read the
+> same Drive, but company-general proof is gathered here and product-specific proof in Offerings'
+> `offering-entry`. The downstream that reads the attributes this shelf surfaces is Offerings'
+> [`answer-gap`](../../03-offerings/signals/answer-gap.md).

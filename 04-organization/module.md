@@ -8,12 +8,12 @@ tier: assistant
 modes: [grow, plant]
 connects:
   - to: "00-spine"
-    provides: "the matching case study and the compliance fence, on request"
+    provides: "the matching case study, the compliance fence, and the pricing fence, on request"
   - to: "03-offerings"
     requests: "which kind of proof a claim needs"
-    provides: "the proof library and pricing authority"
+    provides: "the proof library: the case study a claim needs, with its strength attributes"
   - to: "05-persona-you"
-    provides: "the hard limits (compliance, legal, brand) the voice must write inside"
+    provides: "the compliance fence to write inside, and the house voice guide to write toward"
 draws_from: [drive]
 ---
 
@@ -67,7 +67,8 @@ The **told** pile, what the company sets that no channel can fetch:
 - **Pricing authority.** How much discount is allowed, and who signs off beyond it.
 - **Proof tags.** Which document proves what, and for whom (this case study is about local
   government, that one about a large rollout), so the right proof can be found for a given claim
-  or customer.
+  or customer, plus two attributes you confirm so Offerings can judge a proof's *strength*: whether
+  the reference is named or anonymous, and whether the proof is third-party or your own word.
 - **The house voice.** The company's tone and brand wording, the band a message should sit
   within.
 
@@ -85,8 +86,14 @@ persona-agnostic; the reliance on it is not.
 ## Reasoning
 
 Organisation's thinking is lighter than People's or Offerings': it doesn't read behaviour or
-judge a situation, so it carries no signal floor. It does two plain jobs, both closer to looking
-something up and applying a rule than to the count-then-judge reading the other modules do:
+judge a situation, so it carries **no signal floor**, and that absence is deliberate. The test for
+whether something is a signal is whether the read, when it changes, points at a *move on a prospect*
+(which is why every signal answers one of the salesperson's 26 questions). Organisation never makes
+that kind of read: it only supplies material and gates a draft. The one judgement-shaped question it
+brushes against, *is this proof strong enough to carry the claim*, was handed up a floor to Offerings'
+[`answer-gap`](../03-offerings/signals/answer-gap.md), which judges strength off the attributes
+Organisation merely surfaces. So Organisation does two plain jobs and supplies two more gathered
+floors, none of it a signal:
 
 - **Match.** Find the right proof. Given the kind of proof a claim needs (from Offerings or the
   Brain) and who the customer is, it reads the [`proof-library`](assemblies/proof-library.md) and
@@ -96,17 +103,27 @@ something up and applying a rule than to the count-then-judge reading the other 
   the [`compliance-fence`](assemblies/compliance-fence.md) and either passes it or flags exactly
   what crosses a line. This is the last check before anything reaches you.
 
-Both stand on the deterministic gathers in [`assemblies/`](assemblies/); neither is a signal,
-because there is no behaviour to sense, just proof to fetch and limits to enforce.
+And it **supplies** two gathered floors it does no reading on, handing them to whoever asks:
+
+- The [`pricing-fence`](assemblies/pricing-fence.md), the org-level discount envelope (ceiling,
+  sign-off, floor), supplied to the **Brain** for its deferred deal-specific discount decision. (This
+  is the company governance, distinct from the per-offering price Offerings reads in `price-barrier`.)
+- The [`house-voice-guide`](assemblies/house-voice-guide.md), the positive brand style, supplied to
+  **Profile** to write *toward* at render, the partner to the fence it writes *inside*.
+
+All four stand on the deterministic gathers in [`assemblies/`](assemblies/); none is a signal,
+because there is no behaviour to sense, just proof to fetch, limits to enforce, and material to supply.
 
 ## Output
 
 What Organisation hands over:
 
-- **To the Brain.** The matching case study and the compliance fence, on request.
-- **To Offerings.** The company proof it asks for, and the pricing authority (how much room there
-  is to discount).
-- **To Profile.** The hard limits the voice must write inside.
+- **To the Brain.** The matching case study, the compliance fence, and the pricing fence (the
+  org-level discount envelope its deal-specific discount decision sits inside), on request.
+- **To Offerings.** The company proof it asks for, with the strength attributes (recency, named or
+  anonymous, third-party or your own word) that let its `answer-gap` judge how solid the proof is.
+- **To Profile.** The compliance fence the voice must write *inside*, and the house voice guide it
+  writes *toward*.
 - **The verdict on a draft.** Pass, or a plain list of what breaks the fence and why.
 
 All of it is shared across the team, and none of it decides anything: it backs a claim, or stops
@@ -114,9 +131,11 @@ a line being crossed.
 
 ## Memory
 
-Organisation holds the company's **shared** layer: the proof library (the general case studies
-and collateral, read from Drive and tagged for what they prove), the fence (the hard limits), the
-pricing authority, and the house voice.
+Organisation holds the company's **shared** layer as four gathered floors: the proof library (the
+general case studies and collateral, read from Drive and tagged for what they prove, with their
+strength attributes), the compliance fence (the hard limits a draft must sit inside), the pricing
+fence (the org-level discount envelope), and the house voice guide (the brand style the render writes
+toward).
 
 It's the one **shared** tier in the system, a single copy per company, drawn on by everyone on
 the team (the future vision is the team that joins an organisation). That's the opposite of
@@ -130,11 +149,13 @@ module's memory only by **asking**, like everyone else.
   that's both about a product *and* a flagship company win. Who tags and owns the in-between cases
   is worth a pass.
 - **House voice vs your voice.** Where the company's brand voice ends and your personal voice
-  (`05`) begins at render time: the two must agree, and the exact mechanism isn't drawn yet. A
-  direction is now proposed: the blend is **persona-dependent**. The render for someone who sells
-  only because their role needs it leans toward the house voice (a thin personal sales voice, more
-  guardrail), while an experienced seller's leans toward their own voice. *(The same seam is worked
-  from `05`'s side.)*
+  (`05`) begins at render time. The **structure** is now settled: the brand voice is its own
+  [`house-voice-guide`](assemblies/house-voice-guide.md) the render writes *toward*, kept apart from
+  the [`compliance-fence`](assemblies/compliance-fence.md) it writes *inside* (emulate vs gate). What
+  stays open is the **blend math**: the proposed direction is **persona-dependent**, leaning toward
+  the house voice for someone who sells only because their role needs it (a thin personal sales voice,
+  more guardrail) and toward their own voice for an experienced seller, but the exact mechanism isn't
+  drawn yet. *(The same seam is worked from `05`'s side.)*
 - **How the fence is set.** Whether the hard limits are typed in as rules, read from a
   brand/compliance document, or both, and how a limit that's really a judgement call ("don't sound
   pushy") gets enforced, is unsettled.

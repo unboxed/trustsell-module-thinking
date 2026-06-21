@@ -13,9 +13,15 @@
   primitive" below.
 - **`03` Offerings — DONE.** Staleness check clean; catalog expanded on the competitive and
   claim-integrity dimensions. Details under "03 Offerings — DONE" below.
-- **`04` → `05` — the rest**, in that order. The seed findings below still stand.
+- **`04` Organisation — DONE.** Confirmed signal-less (by a new **action test**); closed two cross-module
+  lineage gaps the `03` work left; split house voice out of the fence; added the pricing fence. Details
+  under "04 Organisation — DONE" below.
+- **`05` Profile — DONE.** Dials settled as **configuration, not signals** (same action test); voice
+  stays the one signal; render now pulls the house voice guide. Details under "05 Profile — DONE" below.
+- **The assistant catalogs are now all done** (`02`/`03`/`04`/`05`). Only `00` Brain remains.
 - **`00` Brain — deferred**, and it has grown: it now also owns **staging the deal** and the **signal
-  re-scoping** the deal work deferred (see Deferred, at the end).
+  re-scoping** the deal work deferred (see Deferred, at the end). It also inherits the **action test**
+  as the reusable rule for "is this a signal," and a ready `pricing-fence` to pull for deal-discount-room.
 
 ## Why now
 
@@ -27,7 +33,7 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 
 ## Order
 
-`02` ✓ done → `03` ✓ done → **`04`** (next) → `05`, one at a time. Then `00` Brain as its own dedicated session.
+`02` ✓ done → `03` ✓ done → `04` ✓ done → `05` ✓ done. All assistant catalogs complete. Next: **`00` Brain** as its own dedicated session.
 
 ## Method, per module
 
@@ -52,8 +58,8 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 |---|---|---|---|---|
 | `02` People ✓ | person-history, conversation-history, **meeting-history**, stakeholder-map, **deal** | champion, cooling-champion, warming, blocker, understanding-gap, new-stakeholder, champion-went-dark, warm-path, **loose-end** (was open-loop), **best-way-to-reach**, **missing-people**, **time-to-reconnect**, **one-sided**, **warmth-fading**, **buying-intent** | **yes** | DONE: expanded + renamed + deal primitive |
 | `03` Offerings ✓ | offering-entry, product-claims, price-position, objection-list, **competitor-field** | fit-match, price-barrier, **answer-gap** (now grades proof strength), recurring-objection, lead-with-this, **competitive-standing**, **unbacked-claim** | yes | DONE: expanded on competitive + claim-integrity |
-| `04` Organisation | proof-library, compliance-fence | **none, by design** | yes | matches proof, gates drafts; no behaviour to sense |
-| `05` Profile | writing-history | voice | yes | thinnest; most room to grow |
+| `04` Organisation ✓ | proof-library, compliance-fence, **pricing-fence**, **house-voice-guide** | **none, by design** (confirmed via the action test) | yes | DONE: split house voice out of the fence; added pricing fence; closed the proof-attributes lineage |
+| `05` Profile ✓ | writing-history | voice | yes | DONE: dials confirmed **configuration, not signals** (action test); render pulls the house voice guide; thin *by nature*, not a gap |
 
 (`02`'s `told.md` now exists, with `deal-seed` among its records. `00` Brain has no
 channels/assemblies/signals by design and still lacks a `told.md`; closing that one told source is a
@@ -128,18 +134,51 @@ needed rewriting. What was built:
   the Brain, see Deferred); collateral freshness (a tag not a read; its one useful atom `proof-recency`
   harvested into answer-gap). "What's landing" / forecasting remain parked, untouched.
 
-### 04 Organisation
-- **No signals, by design** (it matches proof and gates drafts). Confirm that still holds rather than
-  inventing a sensing floor. The interesting question is assemblies: are `proof-library` and
-  `compliance-fence` enough, or does the pricing authority want its own gather rather than sitting as a
-  told record?
+### The action test (cross-cutting, added this session)
+Deciding `04` and `05` needed a clean rule for *is this a signal*, because both modules are mostly
+configuration and support, not prospect-sensing. The rule, now recorded in both modules' prose and in
+`open-questions.md`:
+- **A signal is a read whose change points to a *move on a prospect*** (which is why every signal
+  answers one of the 26 sales questions). **A configuration is a read or setting that changes how the
+  tool works with *you*.**
+- It cleanly explains the thinness: `05`'s `voice` is a signal because it is operator data *applied to
+  the prospect*; the five dials are not, because they tune the tool↔you relationship. `04` has zero
+  signals because it only supplies and gates. The Brain session inherits this as the reusable test.
 
-### 05 Profile
-- Thinnest catalog. The big open question: the **operator dials** (sales fluency, cadence, style,
-  autonomy, coaching) are described as "inferred from behaviour" in prose but are **not modelled as
-  signals**. Decide whether each becomes a signal (a `cadence` read off engagement times, a `fluency`
-  read off edits, a `style` read off how many relationships are worked) or stays prose. The lone
-  `voice` signal uses `kind: style`, a value added to the enum for non-state reads; reuse it.
+### 04 Organisation — DONE
+Confirmed **signal-less by the action test** (it supplies and gates; the one judgement-shaped read,
+proof *strength*, was already handed to `03`'s `answer-gap`). The real work was assemblies and a
+cross-module lineage fix:
+- **New assembly `pricing-fence`** — gathers the org-level told `pricing-authority` (ceiling, sign-off,
+  floor) + an optional Drive pricing sheet, the discount **envelope** the Brain's deferred
+  deal-discount-room sits inside. Closes the orphaned told record (it was gathered by nothing) and
+  pre-wires the Brain. Kept explicitly distinct from `03`'s per-offering price (`price-barrier` reads
+  `03`'s own told, not this).
+- **Split house voice out of the fence** — new assembly `house-voice-guide` (the **positive** brand
+  style the render writes *toward*); `compliance-fence` reduced to pure hard walls (write *inside*).
+  Gives the open render seam a clean object: emulate vs gate. *(User chose the split.)*
+- **Closed the proof-attributes gap** the `03` work created — `answer-gap` now reads proof strength and
+  expects `04` to supply attributes. Added two told fields to `proof-tag` (named-vs-anonymous,
+  third-party-vs-self) and surfaced them + recency (from file dates) + proofs-per-claim in
+  `proof-library`. `answer-gap` needed no edit (its lineage note already pointed here).
+- **`module.md` rewired** — `connects`/Output corrected (pricing fence → Brain, not Offerings; house
+  voice guide → Profile); Reasoning records the no-signal *why*; house-voice open question marked
+  structure-settled, blend-math-open.
+
+### 05 Profile — DONE
+The dials decision settled (the user asked for the deciding principle, not a vote): **the dials stay
+configuration, not signals** (Option A), by the action test above. `voice` stays the one signal;
+`writing-history` confirmed enough; no new floors. What changed:
+- **`module.md` Reasoning** — added the action-test rationale plainly (why voice is the only signal,
+  why the dials aren't), framing `05`'s thinness as correct, not a gap. The dials are learned from
+  behaviour, but by a **learning loop** tuning a told seed (deferred), not a sensing floor.
+- **Render prose rewired to the `04` split** — now pulls Organisation's `house-voice-guide` to write
+  *toward* and stays inside its `compliance-fence` to write *inside* (two jobs, emulate vs gate);
+  `connects` and the "write inside the fence" principle updated to match. The house-voice open question
+  mirrors `04`'s (structure settled, blend math open).
+- *Not built* (deliberately, so it isn't re-litigated): no dial signals; no `cadence`/`activity-rhythm`
+  assembly. Cadence was the closest call (clean read, real consumer in the Brain's pacing) but still
+  fails the action test, so it stays a configuration dial fed by the learning loop.
 
 ## Deferred: 00 Brain, its own session
 
