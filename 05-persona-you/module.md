@@ -21,9 +21,10 @@ draws_from: [gmail, slack]
 The personal layer: your voice and your preferences, so every message sounds like you.
 
 > Profile's catalog floors live as libraries: raw data in
-> [`01-integrations/channels/`](../01-integrations/channels/), assemblies in
-> [`assemblies/`](assemblies/), signals in [`signals/`](signals/). This file holds only the
-> operating prose. See [`docs/library-format.md`](../docs/library-format.md).
+> [`01-integrations/channels/`](../01-integrations/channels/), what you tell it in
+> [`told.md`](told.md), assemblies in [`assemblies/`](assemblies/), signals in
+> [`signals/`](signals/). This file holds only the operating prose. See
+> [`docs/library-format.md`](../docs/library-format.md).
 
 ## Principles
 
@@ -63,22 +64,31 @@ Profile holds the **told** layer about *you*, but "told" here means a **seed, no
 give it a starting handful; from there it lives as memory, refined as the tool watches you work
 (see Reasoning and Memory). Nothing about you is frozen as a settings field.
 
-- **Who you are**, your **name**, your **email**, and a short **bio / "About you"** (what you
-  sell, how you see your job, anything that frames how you'd want to come across). This is the most
-  basic thing the whole tool needs: a message can't sound like you, or even address people as you,
-  without it. (Email also lets it bootstrap before any account is connected; the connected Google
-  account later confirms it.)
+- **Who you are**, your **name**, your **email**, and a short **bio / "About you"** (your role and
+  how you'd want to come across). This is the most basic thing the whole tool needs: a message can't
+  sound like you, or even address people as you, without it. (Email also lets it bootstrap before any
+  account is connected; the connected Google account later confirms it.) Note what it deliberately
+  leaves out: *what you sell* is Offerings' (`03`), not Profile's. Profile keeps only what's personal
+  to you and reaches to Offerings for the product, rather than restating it here.
 - **How the tool should work with you**, broader than a single setting. This is a set of
   **operator dials** that describe *what kind of seller you are*, and they tune the whole tool, not
-  just the wording:
+  just the wording. They are **seeded by a setup archetype**, a single choice between selling for a
+  living and selling only because your role needs it, which sets sensible starting positions; from
+  there each dial is adjustable and is refined by what you do (see Reasoning):
   - **Sales fluency**, an expert salesperson, or someone who simply has a product to sell and for
     whom this isn't really the job. This sets the **register the tool speaks to *you*** in: plain
-    English with a little coaching at one end, sales shorthand at the other.
+    English at one end, sales shorthand at the other.
   - **Time and cadence**, selling all day, or a few minutes now and then. This tells the **Brain**
     how to pace: how much to surface, how hard to push.
   - **Style**, a relationship owner nurturing a few, or a volume seller working many (the
-    Nurture/Plant tilt), and **how much autonomy** you're comfortable with (it always suggests;
-    this sets how far it drafts or acts before you step in).
+    Nurture/Plant tilt).
+  - **Autonomy**, how far it drafts or acts before you step in. It always suggests; this sets how
+    far ahead it works.
+  - **Coaching**, how much it teaches rather than just hands over: from "just give me the noun" to
+    "tell me *why* this person and *what* to say." This is the lever that most separates the two
+    kinds of seller. The accidental seller wants the tool to coach (the *why* and the talking
+    points); the experienced seller wants the bare next move. It is distinct from fluency: fluency
+    sets the *words* the tool speaks to you in, coaching sets *how much it explains*.
 - **Your voice**, optional **writing samples**, or it learns from your sent mail and your edits to
   its drafts (the raw data behind the libraries). Samples are a head start, not a requirement.
 
@@ -121,14 +131,15 @@ What Profile hands up, all as suggestions, like every module:
   autonomy allows.
 - **Your voice, on request**, the read itself (how you sound, with its evidence), for any module
   that needs to write or reason as you.
-- **Your identity and operator dials**, name, email, bio, plus the fluency, cadence, style and
-  autonomy dials, supplied outward to whoever needs them: the Brain reads your cadence to pace,
-  every module reads your fluency to choose plain words over sales jargon.
+- **Your identity and operator dials**, name, email, bio, plus the fluency, cadence, style,
+  autonomy and coaching dials, supplied outward to whoever needs them: the Brain reads your cadence
+  to pace, every module reads your fluency to choose plain words over sales jargon.
 
 ## Memory
 
 Profile holds the **personal layer**, everything the tool needs to be *you-shaped*: your identity
-(name, email, bio), your **operator dials** (fluency, cadence, style, autonomy), your **voice**
+(name, email, bio), your **operator dials** (fluency, cadence, style, autonomy, coaching, seeded by
+your setup archetype), your **voice**
 (built on the same three floors: the writing it's seen, the patterns it's counted, the read it's
 formed), and the standing **preferences and corrections** you've given. All of it is **seeded then
 kept alive**, told once, then refined from what you do, and held with its evidence so it can be
@@ -140,9 +151,10 @@ company-wide material lives in Organisation (`04`). Profile reaches another modu
 
 ## Open questions
 
-- **The operator dials, which ones, and how set.** Fluency, cadence, style and autonomy are the
-  obvious ones, but the full set is open ("whatever those sliders turn out to be"), as is how each
-  is fixed (told outright, inferred from behaviour, or a mix) and how plainly to expose them to you.
+- **The operator dials, which ones, and how set.** The working set is now five: fluency, cadence,
+  style, autonomy and coaching, seeded by a setup archetype and then inferred from behaviour. What's
+  still open is the calibration: how the archetype maps to starting positions, how fast behaviour
+  should override a told setting, and how plainly to expose the dials to you.
 - **How the Brain consumes the cadence dial.** The biggest downstream effect is the Brain pacing to
   your time (all-day seller vs a few minutes now and then); exactly how that changes what the Brain
   surfaces and how hard it pushes is sketched, not settled (`00-spine`).
@@ -153,5 +165,7 @@ company-wide material lives in Organisation (`04`). Profile reaches another modu
   terms: how many messages, edits, or sessions before a read is trustworthy enough to act on, and
   how a thin read degrades (lean on samples, or ask).
 - **House voice vs your voice.** Where the organisation's brand voice (`04`) ends and your personal
-  voice begins at render time: the two must agree, and the boundary isn't yet drawn. *(The same
-  seam is flagged from `04`'s side.)*
+  voice begins at render time: the two must agree, and the exact mechanism isn't yet drawn. A
+  direction is now proposed: the blend is **persona-dependent**, leaning toward the house voice for
+  someone selling only because their role needs it (a thin personal sales voice, more guardrail), and
+  toward your own voice for an experienced seller. *(The same seam is worked from `04`'s side.)*

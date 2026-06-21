@@ -1,6 +1,6 @@
 # Open Questions — Parking Lot
 
-Running list of unresolved decisions. We did a full module-by-module pass and settled the big structural questions (each now recorded in its module's `CLAUDE.md`). What remains here is mostly the **how** — deliberately deferred until we work through concrete use cases.
+Running list of unresolved decisions. We did a full module-by-module pass and settled the big structural questions (each now recorded in its module's `module.md` and libraries). What remains here is mostly the **how** — deliberately deferred until we work through concrete use cases.
 
 ## Resolved (now living in the module docs)
 - **Standing strategy** → it's **per-offering goals owned by the spine**; `04` holds no strategy.
@@ -22,7 +22,7 @@ Running list of unresolved decisions. We did a full module-by-module pass and se
 - **User input is the *told* layer — identity lives in `05`, supplied outward** → what only the user can supply (no fetched mail reveals it). The foundational case, **who you are** (name, role, "About you"), is owned once in `05` and *lent* to every module that writes or reasons about you, rather than each keeping a copy. Defined on the `02` pilot and in `05`.
 
 ### Resolved — rollout session (2026-06-21)
-- **The agent-anatomy rollout is complete** → all six modules are filled all the way down; `02` is the template. Recorded in each module's `CLAUDE.md`.
+- **The agent-anatomy rollout is complete** → all six modules are filled all the way down; `02` is the template. Recorded in each module's `module.md` and libraries (the per-module `CLAUDE.md`s have since been retired).
 - **Profile holds more than voice** → **operator dials** (sales fluency · time/cadence · style · autonomy) and **two voices** (writes *as you* to prospects; speaks *to you* plain vs sales-fluent). "Told" is a **seed**, refined as memory. Recorded in `05`.
 - **Offerings is shared when an org exists** → products belong to the org, so it learns across the team (personal only when solo). Recorded in `03`.
 - **Proof ownership split** → product-specific proof lives in `03`, company-general proof in `04`; both read the same **Drive** (ownership, not access — `04` now reads proof from Drive). Recorded in `03`/`04`.

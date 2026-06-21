@@ -5,7 +5,7 @@ blurb: "Keeps every contact, conversation and connection organised, and digs to 
 icon: users
 optional: false
 tier: assistant
-modes: [nurture, plant]
+modes: [nurture, plant, grow]
 connects:
   - to: "00-spine"
     provides: "reports what the brief flags ('Jane went quiet', 'found the DM') and answers follow-ups"

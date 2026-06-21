@@ -1,15 +1,17 @@
 # Handoff — the agent-anatomy rollout is complete; now work the Brain's frontiers
 
-> **This is the content/design track.** Since this was written, the docs are mid-migration into the
-> structured **library** format, and a parallel **library + UI** track has its own brief in
-> [`handoff-library-ui.md`](handoff-library-ui.md) (02 + 03 libraries done; next focus is rendering
-> them in the blueprint). The threads below (briefing · fuzzy target · triage) remain open.
+> **This is the content/design track**, written during the agent-anatomy phase. Since then the docs
+> have **fully migrated** to the structured **library** format: each module is now a slim `module.md`
+> plus its libraries (`channels/`, `told.md`, `assemblies/`, `signals/`), and the old per-module
+> `CLAUDE.md` files have been **retired** (the source of truth is `module.md` + the libraries; see
+> [`../docs/library-format.md`](../docs/library-format.md)). Read the per-module references below as
+> `module.md`, not `CLAUDE.md`. The threads below (briefing · fuzzy target · triage) remain open.
 
 *A brief for the next agent. This is a **brainstorm**, not a build — see the root `CLAUDE.md`:
 reason and pressure-test, don't write app code / schemas / UI unless explicitly asked. Brainstorm
 at **"who does what"** altitude, in **plain English** (the user is non-technical), and write module
 docs as **narrative**, not shorthand. When something gets decided, write it into the owning
-module's `CLAUDE.md`.*
+module's `module.md` (or its library files).*
 
 ## Where we are
 The **agent-anatomy fill is COMPLETE** — all six modules are now filled all the way down
@@ -77,8 +79,8 @@ Two foundational threads first, then the main event:
 
 ## Read these first
 - root `CLAUDE.md` — the model (note the widened "Output of the tool")
-- `00-spine/CLAUDE.md` — the new Brain (scoreboard + calendar)
-- `02-relationships/CLAUDE.md` — the worked template every module copies
+- `00-spine/module.md` — the Brain (scoreboard + calendar)
+- `02-relationships/module.md` (+ `assemblies/`, `signals/`) — the worked template every module copies
 - `docs/flow.md` + `docs/scenario-councils.md` — the canonical play forward, and the BOPS goal the
   role-play started from (the goal-in-the-user's-words is scenario lines 13–19)
 - `docs/how-modules-collaborate.md` — told / fetched / supplied; supplier chains vs Brain plays
@@ -90,7 +92,7 @@ Two foundational threads first, then the main event:
 - Brainstorm at **"who does what"** altitude, plain English, module docs as **narrative**.
 - **Flag contradictions** between modules rather than smoothing them over — boundary disputes are
   the most useful catch.
-- Module docs are the **source of truth**; write decisions into the owning module's `CLAUDE.md`.
+- Module docs are the **source of truth**; write decisions into the owning module's `module.md` (or its library files).
 - **Frontmatter** (name / title / blurb / icon / tier / modes / connects / draws_from / raw_data)
   is read by the blueprint app — keep it intact; the body is where the brainstorm lives.
 - Keep the **parked frontiers flagged, not faked**.

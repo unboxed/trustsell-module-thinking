@@ -4,64 +4,58 @@ This is a **design / brainstorming workspace, not an application**. There is no 
 
 ## How to work with me in here
 - **Brainstorm and pressure-test. Do NOT write application code, scaffold a project, or propose database/file schemas unless I explicitly ask.** If a request would start "building," pause and confirm first.
-- These `.md` files are the source of truth. When we make a decision, **update the relevant module's `CLAUDE.md`** so it persists between sessions.
-- When I explore one module, read that module's `CLAUDE.md`. For cross-cutting questions, read every module file involved before answering.
+- These `.md` files are the source of truth. When we make a decision, **update the relevant module's `module.md`** (or the matching library file under `channels/` / `told.md` / `assemblies/` / `signals/`) so it persists between sessions.
+- When I explore one module, read that module's `module.md` and its libraries. For cross-cutting questions, read every module file involved before answering.
 - Actively **flag contradictions** between modules (e.g. two modules claiming the same responsibility). Boundary disputes are the most useful thing to catch.
 - Keep this distinction sacred: the memory modules **reason to *answer*** — they serve what they know, and proactively flag what their brief cares about, but they hold **no goals of their own**. The brain **reasons to *decide*** — it sets intent, routes, and acts.
 
 ## Module doc format
 
-Each module's `CLAUDE.md` is **two layers in one file**: a thin **frontmatter** block of
-facts, then the **narrative body**. The body is the reasoning — the actual product of
-this workspace — and stays prose. The frontmatter holds only the small, schema-able
-slice the blueprint needs — `name`, `title`, `blurb`, `icon`, `optional`, the
-semantic `tier`/`modes`/`connects`, and `draws_from`/`raw_data` for the data a module
-pulls; it is the **single source of the node's card face**. Edit a module and the
-blueprint reflects it live — the UI is a read-only **mirror** of these docs, never the
-store. The keys are catalogued in `docs/ui-foundation.md`; the blueprint reads only the
-ones it knows today (`coerceMeta` in `blueprint/lib/modules.ts`).
+Each module is **a slim `module.md` plus its libraries**. `module.md` is two layers in one file:
+a thin **frontmatter** block of facts, then the **narrative body**. The frontmatter holds only the
+small, schema-able slice the blueprint needs — `name`, `title`, `blurb`, `icon`, `optional`, the
+semantic `tier`/`modes`/`connects`, and `draws_from`/`raw_data` for the data a module pulls; it is
+the **single source of the node's card face**. Edit a module and the blueprint reflects it live —
+the UI is a read-only **mirror** of these docs, never the store. The keys are catalogued in
+`docs/ui-foundation.md`; the blueprint reads only the ones it knows today (`coerceMeta` in
+`blueprint/lib/modules.ts`, which reads `module.md`).
 
-**The body follows a fixed agent-anatomy** — each module described the way you'd describe an
-agent, top to bottom:
+**The body holds the operating prose**, top to bottom:
 
-`Raw data` → `Principles` → `System prompt` → `User input` → `Reasoning` → `Output` →
-`Memory` → `Open questions`
+`Principles` → `System prompt` → `User input` → `Reasoning` → `Output` → `Memory` → `Open questions`
 
-- **Raw data** — the plain records it pulls from the connected channels, grouped by channel
-  (mirroring `draws_from`). A module with no channels says so.
 - **Principles** — how it works, one line each.
 - **System prompt** — its operating stance, in prose (brainstorm-level, not deployable wording).
 - **User input** — the *told* pile: what only the user can supply.
-- **Reasoning** — the heart: how it turns what it has into what it knows.
+- **Reasoning** — how it turns what it has into what it knows; a short section pointing at the
+  library floors below (or, for `00`/`01`, carrying the whole story, since they have no floors).
 - **Output** — what it hands up, and to whom.
 - **Memory** — what it keeps, and which tier (shared vs personal).
 - **Open questions** — a plain bulleted list of what's still unsettled.
 
-Write plain English in the blueprint's voice; fill top-down, and a section not yet worked reads
-`_TBD_`. Where a section is a **list of named things** (records, signals, principles), give each
-a short label and a one-line description, so the future UI can show them as **badges/chips** —
-`connects` and `raw_data` already render that way.
+**The catalog floors live as libraries**, not prose, because they want to grow and be rendered:
+**raw data** in `01-integrations/channels/*.md` (one doc per channel) plus a module's own **told
+source** in `<module>/told.md`; **assemblies** (deterministic gathers) in `<module>/assemblies/*.md`;
+**signals** (the first opinion) in `<module>/signals/*.md`. Each entry carries its **lineage** (the
+`inputs` one floor down), so a signal walks back to plain records. The contract is
+`docs/library-format.md`; the skeletons are in `_templates/`. Not every module has every floor
+(`01` is raw data only; `04-organization` has no signals; `00-spine` keeps a scoreboard and
+calendar, a different synthesis) — absence is information, don't invent a floor a module lacks.
 
-**`02-relationships/CLAUDE.md` is the worked example to copy** — the first module filled all the
-way down. (An earlier "badge-facet card" format — Purpose / Values / Routines / Plays as
-frontmatter chips — was sketched but never adopted; the agent-anatomy above is what the files
-use. Those badge keys survive only as a possible future frontmatter extension, noted in
-`docs/ui-foundation.md`.)
+Write plain English in the blueprint's voice. Where a section is a **list of named things**
+(records, signals, principles), give each a short label and a one-line description, so the UI can
+show them as **badges/chips** (`connects` and `raw_data` already render that way).
 
-The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that
-sit above this are written up in `README.md`.
+**`02-relationships` is the worked example to copy** — the first module filled all the way down
+(`module.md`, `assemblies/`, `signals/`); **`03-offerings`** is the worked example of the **told
+source** floor (`told.md`). The migration from the old one-prose-`CLAUDE.md`-per-module is
+**complete**: those per-module `CLAUDE.md` files have been retired, and `module.md` plus the
+libraries are the source of truth. (An earlier "badge-facet card" format — Purpose / Values /
+Routines / Plays as frontmatter chips — was sketched but never adopted; those badge keys survive
+only as a possible future frontmatter extension, noted in `docs/ui-foundation.md`.)
 
-**Migrating to a structured library (in progress).** The agent-anatomy-in-one-`CLAUDE.md` is being
-replaced by a per-module **library**, because the *catalog* parts of a module want to grow and be
-rendered, not sit in prose. The catalog floors become structured entries: **raw data** in
-`01-integrations/channels/*.md` (one doc per channel), **assemblies** in `<module>/assemblies/*.md`,
-**signals** in `<module>/signals/*.md`, each carrying its **lineage** (the `inputs` one floor down).
-The *operating prose* (Principles, System prompt, User input, Output, Memory, Open questions) moves
-to a slim **`<module>/module.md`**. The contract and the conversion workflow are in
-`docs/library-format.md`; the skeletons are in `_templates/`. **`02-relationships` is the worked
-example of the new format** (`module.md`, `assemblies/`, `signals/`, plus `01`'s `channels/gmail.md`
-are filled); the other modules follow, agent-produced, against the templates. New files are
-**additive**: the old `CLAUDE.md`s stay until a module's library is complete, then retire.
+The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that sit
+above this are written up in `README.md`.
 
 ## The model so far
 

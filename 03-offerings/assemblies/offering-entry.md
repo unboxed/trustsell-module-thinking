@@ -37,6 +37,6 @@ gap, where do we sit on price).
 > [`../told.md`](../told.md), the offering's own told source. `file` and `file-content` resolve to
 > [`channels/drive.md`](../../01-integrations/channels/drive.md); `research-report`, `enrichment` and
 > `web-result` resolve to [`channels/web.md`](../../01-integrations/channels/web.md). The five web
-> framings in the old `CLAUDE.md` (competitor pricing, market report, procurement pattern, product
-> comparison, customer review) are *search framings* over `web-result` and `research-report`, not
-> separate records.
+> framings once written up in 03's prose (competitor pricing, market report, procurement pattern,
+> product comparison, customer review) are *search framings* over `web-result` and
+> `research-report`, not separate records.

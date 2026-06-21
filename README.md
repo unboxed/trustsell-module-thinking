@@ -3,12 +3,12 @@
 A structured space to **keep brainstorming the architecture** of a sales-amplifier tool with Claude Code — *not* to build the app (yet).
 
 ## The idea
-Each module of the system gets a folder. Inside each is a `CLAUDE.md` describing that module's role, the questions it answers, and its open design questions. The root `CLAUDE.md` holds the overall model and tells Claude Code to act as a **design thinking partner** — to pressure-test and update these docs, and *not* to start writing application code.
+Each module of the system gets a folder. Inside each is a `module.md` describing that module's role and open design questions, plus its **libraries** (the catalog floors: `channels/`, `told.md`, `assemblies/`, `signals/`). The root `CLAUDE.md` holds the overall model and tells Claude Code to act as a **design thinking partner** — to pressure-test and update these docs, and *not* to start writing application code.
 
 ## How this workspace is organised
 Everything here is one of **three layers** — knowing which is which is the whole trick:
 
-1. **The model** — the durable definition of what each module *is* and *does*. This is the **source of truth**, and it lives in each module's `CLAUDE.md` (the module's *home*). Genuinely cross-module mechanism — the end-to-end flow, the Brain's plays — is model too.
+1. **The model** — the durable definition of what each module *is* and *does*. This is the **source of truth**, and it lives in each module's `module.md` and its libraries (the module's *home*). Genuinely cross-module mechanism — the end-to-end flow, the Brain's plays — is model too.
 2. **Scenarios** — one concrete case used to *illustrate* the model (e.g. the councils deal in `docs/scenario-councils.md`). A scenario is an example, **not a contract** — it's allowed to be rough or out of date.
 3. **Demos / views** — how the model is *shown* running on a scenario (the blueprint canvas, the "trace the flow" timeline). Presentation, not truth.
 
@@ -19,7 +19,7 @@ Everything here is one of **three layers** — knowing which is which is the who
 **The discipline:** when a scenario or a demo teaches you something durable about a module, write it back into the **module's home**. The scenario stays as the illustration; the home is the record — that's how nothing you brainstorm gets lost.
 
 Where a thing lives falls straight out of this:
-- **one module, settled** → that module's `CLAUDE.md`
+- **one module, settled** → that module's `module.md` (or a library entry under it)
 - **spans modules, settled** → `docs/`
 - **still being figured out** → `_scratch/`
 
@@ -35,8 +35,8 @@ Where a thing lives falls straight out of this:
    cd 02-relationships
    claude
    ```
-   Claude auto-loads that module's `CLAUDE.md` plus the root.
-4. As decisions firm up, ask Claude to update the relevant `CLAUDE.md`. The files are your memory between sessions.
+   The root `CLAUDE.md` is auto-loaded; ask Claude to read that module's `module.md` and its libraries.
+4. As decisions firm up, ask Claude to update the relevant `module.md` (or library file). The files are your memory between sessions.
 5. Use `_scratch/open-questions.md` as the parking lot.
 
 ## Good first prompts

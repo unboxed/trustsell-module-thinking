@@ -22,10 +22,10 @@ draws_from: [drive]
 Your company's shared layer: the proof you can point to and the lines you cannot cross.
 
 > Its catalog floors live as libraries: raw data in
-> [`01-integrations/channels/`](../01-integrations/channels/), assemblies in
-> [`assemblies/`](assemblies/). Organisation has **no signals**: it matches proof and gates
-> drafts, so there is no behaviour to sense. This file holds only the operating prose. See
-> [`docs/library-format.md`](../docs/library-format.md).
+> [`01-integrations/channels/`](../01-integrations/channels/), what the company tells it in
+> [`told.md`](told.md), assemblies in [`assemblies/`](assemblies/). Organisation has **no signals**:
+> it matches proof and gates drafts, so there is no behaviour to sense. This file holds only the
+> operating prose. See [`docs/library-format.md`](../docs/library-format.md).
 
 ## Principles
 
@@ -72,7 +72,32 @@ The **told** pile, what the company sets that no channel can fetch:
   within.
 
 Because Organisation is **shared**, these are set once for the whole team. Used solo it's empty,
-and the tool simply skips the proof-and-fence step.
+and the tool simply skips the proof-and-fence step. The full record list is the
+[`told.md`](told.md) library.
+
+The same told serves both kinds of seller: it does not change for an experienced salesperson or for
+someone selling only because their role needs the organisation to win clients. What changes is how
+much weight the tool puts on it. The accidental seller trips the fence more often, and leans on the
+proof shelf for case studies they don't carry in their head, so for them the fence is a real safety
+net and the proof does more of the work. The experienced seller rarely tests either. The input is
+persona-agnostic; the reliance on it is not.
+
+## Reasoning
+
+Organisation's thinking is lighter than People's or Offerings': it doesn't read behaviour or
+judge a situation, so it carries no signal floor. It does two plain jobs, both closer to looking
+something up and applying a rule than to the count-then-judge reading the other modules do:
+
+- **Match.** Find the right proof. Given the kind of proof a claim needs (from Offerings or the
+  Brain) and who the customer is, it reads the [`proof-library`](assemblies/proof-library.md) and
+  returns the company case study that fits best, or names the hole honestly when nothing on the
+  shelf matches.
+- **Gate.** Check against the fence. Given a finished draft (from Profile), it checks it against
+  the [`compliance-fence`](assemblies/compliance-fence.md) and either passes it or flags exactly
+  what crosses a line. This is the last check before anything reaches you.
+
+Both stand on the deterministic gathers in [`assemblies/`](assemblies/); neither is a signal,
+because there is no behaviour to sense, just proof to fetch and limits to enforce.
 
 ## Output
 
@@ -105,8 +130,11 @@ module's memory only by **asking**, like everyone else.
   that's both about a product *and* a flagship company win. Who tags and owns the in-between cases
   is worth a pass.
 - **House voice vs your voice.** Where the company's brand voice ends and your personal voice
-  (`05`) begins at render time: the two must agree, and the boundary isn't drawn yet. *(The same
-  seam is flagged from `05`'s side.)*
+  (`05`) begins at render time: the two must agree, and the exact mechanism isn't drawn yet. A
+  direction is now proposed: the blend is **persona-dependent**. The render for someone who sells
+  only because their role needs it leans toward the house voice (a thin personal sales voice, more
+  guardrail), while an experienced seller's leans toward their own voice. *(The same seam is worked
+  from `05`'s side.)*
 - **How the fence is set.** Whether the hard limits are typed in as rules, read from a
   brand/compliance document, or both, and how a limit that's really a judgement call ("don't sound
   pushy") gets enforced, is unsettled.

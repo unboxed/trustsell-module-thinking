@@ -86,10 +86,10 @@ Three things to keep true:
 - **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)
   already uses: the honest output is "tell me X and I can run this", and the module can offer to
   research a first version for the user to confirm.
-- **02, 05 and 00 will adopt one too.** People's seed list and corrections, Profile's dials and
-  identity, and the Brain's goals are all told piles living in their `module.md` User input today; each
-  grows a `told.md` of its own when its library is built. **03-offerings is the worked example of this
-  floor.**
+- **02 and 00 will adopt one too.** People's seed list and corrections and the Brain's goals are
+  told piles living in their `module.md` User input today; each grows a `told.md` of its own when its
+  library is built. **05-persona-you** now has one (identity, the operator dials, voice samples).
+  **03-offerings is the worked example of this floor.**
 
 ## Lineage, the spine
 
@@ -118,7 +118,9 @@ within their module (`pitch`, `fit-shape`). Assembly and signal ids are unique w
 
 ## How an agent produces a module's library
 
-Given a module's existing prose `CLAUDE.md`:
+All six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps
+below record how the conversion was done and guide any **new** module added later (working from a
+`module.md` draft rather than an old `CLAUDE.md`):
 
 1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);
    move Principles, System prompt, User input, Output, Memory and Open questions into the body
@@ -130,18 +132,17 @@ Given a module's existing prose `CLAUDE.md`:
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
    together, plus any records from the module's own `told.md`.
-4. **Raw data.** The shared channels (raw-data floor, 01 only): turn each channel's record and field
-   prose in `01-integrations/CLAUDE.md` `## Raw data` into a `channels/<id>.md` (card-face frontmatter,
-   then the records as a **field-per-row table**, `| Record | Field | Source |`). And, where a module
-   has facts the user states outright, a `<module>/told.md` of the same shape with `source: told` (see
-   *The told source* above).
+4. **Raw data.** The shared channels (raw-data floor, 01 only) live in
+   `01-integrations/channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row
+   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a
+   `<module>/told.md` of the same shape with `source: told` (see *The told source* above).
 5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly
    `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm
    nothing floats.
 
-These steps are **additive**. The new files sit beside the old `CLAUDE.md`, which stays until a
-module's library is complete, then retires. No app code changes; the old blueprint keeps reading
-`CLAUDE.md`.
+These steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's
+library was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are
+retired, and the blueprint reads `module.md` (`readModules` in `blueprint/lib/modules.ts`).
 
 ## The worked examples (the gold standard to imitate)
 
@@ -150,7 +151,7 @@ module's library is complete, then retires. No app code changes; the old bluepri
 - Signal: [`02-relationships/signals/cooling-champion.md`](../02-relationships/signals/cooling-champion.md)
 - Module overview: [`02-relationships/module.md`](../02-relationships/module.md)
 
-**02-relationships is the first module being converted**, so copy its shape.
+**02-relationships is the worked example**, so copy its shape.
 
 ## Deliberately deferred
 
@@ -159,4 +160,5 @@ module's library is complete, then retires. No app code changes; the old bluepri
   may graduate to their own doc-per-entry floor. Open question, not yet.
 - **The higher floors** (insights, briefs, actions) come once raw data, assemblies and signals prove
   out.
-- **Retiring the old `CLAUDE.md`s** and any UI that renders the library are separate, later efforts.
+- **The UI that renders the library** (the assemblies, signals and told floors) is a separate, later
+  effort. Retiring the old per-module `CLAUDE.md`s is **done**.

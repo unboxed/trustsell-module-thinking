@@ -13,7 +13,7 @@ inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve
 measures: [<count-id>, ...]      # the deterministic Floor-2 counts beneath the read (the checkable arithmetic)
 answers: [Q##, ...]              # which of the 26 sales questions (docs/sales-questions.md) it answers
 modes: [<plant|grow|nurture>]    # which category(ies) of work it serves
-kind: <opening|decay|deal-movement|risk>   # the family of read
+kind: <opening|decay|deal-movement|risk|style>   # the family of read (style = a non-state read like Profile's voice)
 confidence: <high|graded|low>    # graded means it depends on how much evidence stacks up (explain in the body)
 pull: <optional: a fact it borrows from a supplier, e.g. "Offerings' objection list to name the objection">
 ---

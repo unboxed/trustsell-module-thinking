@@ -1,5 +1,5 @@
 ---
-id: answer-coverage
+id: answer-gap
 floor: signal
 label: Answer gap
 blurb: A worry on record with no grounded answer yet, or an answer whose proof is missing.
@@ -41,8 +41,9 @@ capability claim a spec line), not invention. The `confidence` is **graded on gr
 the gap is total, softer when an answer exists but its proof is thin.
 
 **Where it can fail to reach ground.** The proof a claim needs may be the *organisation's*, not this
-offering's, a general track-record case study. That lives in Organisation (`04`), and until `04`'s
-proof library is built the pull dangles: Offerings can see the gap but not yet fill it from the shared
-shelf. That is a **told/data gap across modules**, named not faked. And if Drive is not connected,
-every "proof on file" check comes back empty and the read over-reports gaps, a **data gap** that
-lowers confidence rather than inventing coverage.
+offering's, a general track-record case study. That lives in Organisation (`04`), and the pull now
+resolves to its [`proof-library`](../../04-organization/assemblies/proof-library.md): Offerings asks,
+Organisation supplies the matching case study, or names the hole when the shelf has none. Where the
+organisation has tagged no proof for the claim, that is a **told/data gap across modules**, named not
+faked. And if Drive is not connected, every "proof on file" check comes back empty and the read
+over-reports gaps, a **data gap** that lowers confidence rather than inventing coverage.
