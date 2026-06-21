@@ -11,7 +11,7 @@ connects:
     provides: "reports what the brief flags ('Jane went quiet', 'found the DM') and answers follow-ups"
   - to: "03-offerings"
     requests: "which offering a conversation relates to, and the rebuttal to a worry on record"
-    provides: "the worry it has on record, for 03 to answer"
+    provides: "the worry it has on record (for 03 to answer) and a lead's situation (for 03 to judge fit)"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
 draws_from: [gmail, calendar, slack, web]

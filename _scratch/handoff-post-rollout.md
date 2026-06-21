@@ -1,5 +1,10 @@
 # Handoff — the agent-anatomy rollout is complete; now work the Brain's frontiers
 
+> **This is the content/design track.** Since this was written, the docs are mid-migration into the
+> structured **library** format, and a parallel **library + UI** track has its own brief in
+> [`handoff-library-ui.md`](handoff-library-ui.md) (02 + 03 libraries done; next focus is rendering
+> them in the blueprint). The threads below (briefing · fuzzy target · triage) remain open.
+
 *A brief for the next agent. This is a **brainstorm**, not a build — see the root `CLAUDE.md`:
 reason and pressure-test, don't write app code / schemas / UI unless explicitly asked. Brainstorm
 at **"who does what"** altitude, in **plain English** (the user is non-technical), and write module

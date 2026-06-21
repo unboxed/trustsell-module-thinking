@@ -43,7 +43,7 @@ The **granularity matches the floor**, so we write docs only where there is reas
 
 | Floor | Nature | Unit | Template |
 |---|---|---|---|
-| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service** | [`_templates/channel.md`](../_templates/channel.md) |
+| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service**, plus each module's own `told.md` | [`_templates/channel.md`](../_templates/channel.md) |
 | **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`_templates/assembly.md`](../_templates/assembly.md) |
 | **Signals** | the read, the first opinion | **rich doc per entry** | [`_templates/signal.md`](../_templates/signal.md) |
 | insights, briefs, actions | the higher floors | (none yet) | later |
@@ -63,11 +63,40 @@ signals** (it matches proof and gates drafts, so there is no behaviour to sense)
 has only raw data; **00-spine**'s "assemblies" are the scoreboard and calendar, a different kind of
 synthesis. Absence is information; do not invent a floor a module does not have.
 
+## The told source: a module's own raw data
+
+Raw data has two homes. Most of it is the shared **channels** in `01-integrations` (the accounts you
+connect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the
+user **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That
+**told** input is raw data too, and the most deterministic kind there is, because the user says it
+rather than the tool inferring it.
+
+Each reasoning module owns its own told source, so it sits **inside the module**, not in Connections
+(Connections stays strictly the doorway for external accounts). It lives at `<module>/told.md` (a
+`told/` folder only if a module grows several), and it is shaped exactly like a channel doc
+([`_templates/channel.md`](../_templates/channel.md)): a card-face frontmatter with `source: told`,
+then a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the
+label), and an assembly lists them in `inputs` exactly like channel records.
+
+Three things to keep true:
+
+- **It is elicited, not just waited for.** The module actively asks for it (the propose-a-draft,
+  you-confirm loop), and a record may be populated from a file the user uploads to Drive. The `Source`
+  column says which path each field comes in by.
+- **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)
+  already uses: the honest output is "tell me X and I can run this", and the module can offer to
+  research a first version for the user to confirm.
+- **02, 05 and 00 will adopt one too.** People's seed list and corrections, Profile's dials and
+  identity, and the Brain's goals are all told piles living in their `module.md` User input today; each
+  grows a `told.md` of its own when its library is built. **03-offerings is the worked example of this
+  floor.**
+
 ## Lineage, the spine
 
 Every entry names what it is built from, one floor down, by **id**:
 
-- an **assembly**'s `inputs` are **record ids** (and, optionally, other assembly ids);
+- an **assembly**'s `inputs` are **record ids** (a channel record, or a record from the module's own
+  `told.md`) and, optionally, other assembly ids;
 - a **signal**'s `inputs` are **assembly ids**, and its `measures` are the deterministic counts
   beneath the read.
 
@@ -84,7 +113,8 @@ This is the *track-back*: nothing the tool says should float. Two iron rules:
 Kebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives
 `email-message`); it lives in the body table's Record column, not in frontmatter. **Record ids are
 unique across all channels** (`email-message`, `calendar-event`, `slack-message`), so an assembly can
-name them without qualifying the channel. Assembly and signal ids are unique within their module.
+name them without qualifying the channel. A told source's records follow the same rule and are unique
+within their module (`pitch`, `fit-shape`). Assembly and signal ids are unique within their module.
 
 ## How an agent produces a module's library
 
@@ -99,10 +129,12 @@ Given a module's existing prose `CLAUDE.md`:
    earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
-   together.
-4. **Channels** (raw-data floor, 01 only). Turn each channel's record and field prose in
-   `01-integrations/CLAUDE.md` `## Raw data` into a `channels/<id>.md`: a card-face frontmatter, then
-   the records as a **field-per-row table** in the body (`| Record | Field | Source |`).
+   together, plus any records from the module's own `told.md`.
+4. **Raw data.** The shared channels (raw-data floor, 01 only): turn each channel's record and field
+   prose in `01-integrations/CLAUDE.md` `## Raw data` into a `channels/<id>.md` (card-face frontmatter,
+   then the records as a **field-per-row table**, `| Record | Field | Source |`). And, where a module
+   has facts the user states outright, a `<module>/told.md` of the same shape with `source: told` (see
+   *The told source* above).
 5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly
    `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm
    nothing floats.

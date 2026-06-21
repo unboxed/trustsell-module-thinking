@@ -10,7 +10,7 @@ connects:
   - to: "00-spine"
     provides: "answers Brain's questions about the product, and gives it the fit-shape"
   - to: "02-relationships"
-    requests: "a customer's worry that People has on record"
+    requests: "a customer's worry on record, and a lead's situation to judge against the fit-shape"
     provides: "the answer to that worry"
   - to: "04-organization"
     requests: "the actual proof document"
@@ -104,9 +104,13 @@ job stays Offerings'. Nobody decides anything in the middle.)
 What it can't do yet: it reads the present, not the future. Whether a buyer's blocker is *likely to
 lift* is a forecasting question, and that's parked, not Offerings' to guess.
 
-The raw data this stands on lives in the channels Offerings draws from (`web`, `drive`), in
-[`01-integrations/channels/`](../01-integrations/channels/). It holds no contacts, so it never
-touches mail, calendar, or Slack.
+The raw data this stands on has two homes. The channels Offerings draws from (`web`, `drive`) live in
+[`01-integrations/channels/`](../01-integrations/channels/). Its own [`told.md`](told.md) holds the
+facts you state outright (the pitch, the fit-shape, the use-cases, the pricing, the worries and
+answers), which is the most deterministic ground of all: you say it rather than the tool inferring it.
+Offerings is the worked example of that **told source** floor (see
+[`docs/library-format.md`](../docs/library-format.md)). It holds no contacts, so it never touches
+mail, calendar, or Slack.
 
 ## Output
 
@@ -140,6 +144,8 @@ Organisation (`04`), which is optional for the same reason.)
   asking, and how it tracks which version is in play, sketched, not settled.
 - **Learning what lands.** *That* it should notice which pitches and answers work is agreed; *how*
   it learns (quietly watching outcomes, or asking you) is part of the wider learning question
-  that's still open.
+  that's still open. Because of that, *what's landing* is deliberately **not yet a signal** in the
+  library: it is a parked frontier, the way People parks forecasting and triage, until the outcome
+  loop is wired. `lead-with-this` ranks by relevance today, not by track record.
 - **Forecasting is parked.** Reading whether a buyer's blocker is *likely to lift* (a future
   question) is deliberately out of scope for now.
