@@ -8,7 +8,7 @@
 id: <kebab-slug>                 # unique within this module's signals
 floor: signal
 label: <Display name>            # plain English, e.g. Cooling champion
-blurb: <one line: what this read means>
+blurb: <one line on what this read means>
 inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve to ../assemblies/*
 measures: [<count-id>, ...]      # the deterministic Floor-2 counts beneath the read (the checkable arithmetic)
 answers: [Q##, ...]              # which of the 26 sales questions (docs/sales-questions.md) it answers

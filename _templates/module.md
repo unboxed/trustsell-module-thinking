@@ -4,7 +4,7 @@
 # (channels/, assemblies/, signals/); this file holds everything else about the module.
 name: <Short name>            # the card eyebrow, e.g. People
 title: <Your ___>             # the friendly heading, e.g. Your relationships
-blurb: <one line: what it does>
+blurb: <one line on what it does>
 icon: <lucide name>           # e.g. users, package, building, pen, brain, cable
 optional: <true|false>        # true only for a module a solo user can skip (today: 04)
 tier: <brain|assistant|connector>

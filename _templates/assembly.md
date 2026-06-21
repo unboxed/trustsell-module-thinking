@@ -6,7 +6,7 @@
 id: <kebab-slug>              # unique within this module's assemblies
 floor: assembly
 label: <Display name>         # plain English, e.g. Person history (not jargon like "dossier")
-blurb: <one line: what this gathers>
+blurb: <one line on what this gathers>
 about: <a person|a conversation|an organisation>   # what a single instance is keyed on
 deterministic: true           # always true for an assembly; no opinion lives here
 inputs:                       # what it gathers, one floor down. Each id MUST resolve.

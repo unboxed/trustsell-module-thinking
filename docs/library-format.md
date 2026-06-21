@@ -55,7 +55,8 @@ operating prose and the card face.
 lists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable
 markdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's
 threshold and reasoning are prose under the worked example. A nested tree shoved into frontmatter
-renders as an unreadable blob, so keep it out.
+renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single
+quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.
 
 Not every module has every floor, and the library is meant to reveal that. **04-organisation has no
 signals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**
