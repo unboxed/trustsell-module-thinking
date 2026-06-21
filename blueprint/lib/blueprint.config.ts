@@ -1,6 +1,6 @@
 /**
  * The six modules of the system, in order. Each id maps to a folder whose
- * CLAUDE.md holds that module's current notes — read live by lib/modules.ts.
+ * module.md holds that module's current notes — read live by lib/modules.ts.
  *
  * A module doc is two layers in one file: a thin **frontmatter** block (the facts
  * below, in ModuleMeta) and a **narrative body**. The frontmatter is the single
@@ -58,11 +58,11 @@ export interface ModuleConnection {
 }
 
 /**
- * A channel is a sub-item of `01-integrations` — one source of raw data. Two kinds:
- * `account` (a tool the user connects, e.g. Gmail, Slack) and `builtin` (a tool
- * shipped with the product, always on, e.g. web search). Each owns a list of
- * raw-data record LABELS; the field-level descriptions live once in the module body
- * (paired back by `recordDescription` in lib/modules.ts).
+ * A channel is one source of raw data, described once in its own doc under
+ * `01-integrations/channels/<id>.md`. Two kinds: `account` (a tool the user connects,
+ * e.g. Gmail, Slack) and `builtin` (a tool shipped with the product, always on, e.g.
+ * web search). Each doc's `## Records` table — Record · Field · Source — is read into
+ * the records below (see `readChannels` / `parseRecordsTable`).
  */
 export type ChannelSource = "account" | "builtin";
 
@@ -91,13 +91,21 @@ export const CHANNEL_ICON_NAMES: ChannelIcon[] = [
 ];
 
 /**
- * A raw-data record type, nested into the provider's real parent/child tree
- * (e.g. Gmail's Thread → Message → Attachment). The label keys back to the
- * record's body line (gloss + fields) via parseRecord; children are containment.
+ * One field of a raw-data record: its plain name and the Source note from the doc's
+ * `## Records` table — the real API field, `derived`, or a not-connected reason.
  */
-export interface RecordNode {
+export interface RecordField {
   label: string;
-  children: RecordNode[];
+  source: string | null;
+}
+
+/**
+ * A raw-data record type and the fields it carries — one group of rows in a channel
+ * doc's `## Records` table (e.g. Gmail's "Email message" with its sender/subject/…).
+ */
+export interface ChannelRecord {
+  label: string;
+  fields: RecordField[];
 }
 
 export interface Channel {
@@ -110,17 +118,17 @@ export interface Channel {
    * One brand may hold several services or just one; defaults to the channel name. */
   brand?: string;
   connected: boolean;
-  /** raw-data record types as a tree; descriptions are paired from the body. */
-  records: RecordNode[];
+  /** the raw-data records this channel can pull, read from its doc's `## Records` table. */
+  records: ChannelRecord[];
 }
 
 /**
- * The facts a module declares in its CLAUDE.md frontmatter — the card face plus
- * a few semantic fields. `name`/`title`/`blurb`/`icon`/`optional` are rendered
- * today; `tier`/`modes`/`connects` are documented now and drawn later. `channels`
- * is `01-integrations`-only — its per-channel raw data, drawn as the plug cluster.
- * `drawsFrom` lists the channel ids a module pulls raw data through, drawn as a
- * single inflow arrow from each channel plug into the module.
+ * The facts a module declares in its frontmatter — the card face plus a few semantic
+ * fields. `name`/`title`/`blurb`/`icon`/`optional` are rendered today;
+ * `tier`/`modes`/`connects` are documented now and drawn later. `drawsFrom` lists the
+ * channel ids a module pulls raw data through, drawn as a single inflow arrow from each
+ * channel plug into the module. (The channel plugs themselves are read separately from
+ * `01-integrations/channels/*.md` — see `readChannels`.)
  */
 export interface ModuleMeta {
   name: string;
@@ -131,7 +139,6 @@ export interface ModuleMeta {
   tier?: ModuleTier;
   modes?: string[];
   connects?: ModuleConnection[];
-  channels?: Channel[];
   /** channel ids (sub-items of `01-integrations`) this module pulls raw data from */
   drawsFrom?: string[];
 }
@@ -142,6 +149,6 @@ export interface CanvasNode extends ModuleMeta {
   /** center of the card, in canvas-space (from canvas-layout.ts) */
   x: number;
   y: number;
-  /** the narrative body (frontmatter stripped) — feeds the detail panel */
+  /** the narrative body (frontmatter stripped) */
   body: string;
 }

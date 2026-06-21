@@ -7,7 +7,7 @@ import type { Channel, ModuleId } from "./blueprint.config";
  * regardless of card size.
  *
  * This file holds positions ONLY. A node's card face — name, title, blurb, icon,
- * optional — lives in that module's CLAUDE.md frontmatter and is read live by
+ * optional — lives in that module's module.md frontmatter and is read live by
  * lib/modules.ts; app/page.tsx merges the two. So editing a module updates its
  * card with no change here.
  *
@@ -75,10 +75,11 @@ export const CONTENT_CENTER = {
 
 /* ── Connections band ─────────────────────────────────────────────────────────
  * The port (`01-integrations`) is a *group* node: a decorative frame that holds one
- * compact child plug per channel. The frame is the wire/trace anchor (it keeps the id
+ * compact child plug per channel. The frame is the wire anchor (it keeps the id
  * "01-integrations"); the children are the clickable plugs. This derives the whole
- * band from the channel list, so editing the doc's `channels:` reflows it with no
- * change here. Child positions are RELATIVE to the group's top-left (React Flow's
+ * band from the channel list (read live from channels/*.md), so adding a channel doc
+ * reflows it with no change here. Child positions are RELATIVE to the group's top-left
+ * (React Flow's
  * parent/child convention).
  *
  * Three text tiers, each with a distinct treatment and clear air around it so the

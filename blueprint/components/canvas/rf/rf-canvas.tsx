@@ -19,22 +19,15 @@ import {
 } from "@xyflow/react";
 
 import { cn } from "@/lib/utils";
-import type { CanvasNode, Channel, ModuleId } from "@/lib/blueprint.config";
-import { CARD, NODES } from "@/lib/canvas-layout";
-import { FLOW_STEPS, legToEdge } from "@/lib/flow-trace";
+import type { Channel } from "@/lib/blueprint.config";
 import { RfNodeCard } from "./rf-node-card";
 import { RfConnectionsGroup } from "./rf-integrations-node";
 import { RfChannelNode } from "./rf-channel-node";
-import { ArtifactToken } from "./artifact-token";
 import { FloatingEdge } from "./floating-edge";
-import { FlowTimeline } from "./flow-timeline";
-import { ModulePanel } from "../module-panel";
 import { ChannelPanel } from "../channel-panel";
 
 /** Arrowheads a touch more solid than the wire so direction reads. */
 const MARKER_COLOR = "#64748b"; // slate-500
-/** The lit-route colour — --primary / blue-600, the system's interaction blue. */
-const ROUTE_BLUE = "#2563eb";
 /** The calm hover blue — blue-500, for arrowheads on the surfaced (hovered) wires. */
 const ROUTE_BLUE_SOFT = "#3b82f6";
 /** The wire look. "bezier" is what we shipped; "smoothstep" / "straight" also work. */
@@ -46,7 +39,6 @@ const NODE_TYPES = {
   module: RfNodeCard,
   port: RfConnectionsGroup,
   channel: RfChannelNode,
-  artifact: ArtifactToken,
 };
 const EDGE_TYPES = { floating: FloatingEdge };
 
@@ -68,13 +60,8 @@ const ZOOM_TWEEN = { duration: 300, ease: easeInOutCubic, interpolate: "smooth" 
     d3 over-amplifies pinch deltas, so a tiny pinch flew through the whole range;
     0.2 = a fifth as fast. Lower = gentler. Plain two-finger scroll (pan) is untouched. */
 const PINCH_SENSITIVITY = 0.2;
-/** Framing the whole map (recenter / enter-trace) — same curve, a touch longer. */
+/** Framing the whole map (recenter) — same curve, a touch longer. */
 const FIT_TWEEN = { padding: 0.22, duration: 420, ease: easeInOutCubic, interpolate: "smooth" } as const;
-
-/** Node centres (canvas-space) — where the travelling artifact rests per step. */
-const NODE_CENTER: Record<string, { x: number; y: number }> = Object.fromEntries(
-  NODES.map((n) => [n.id, { x: n.x, y: n.y }]),
-);
 
 export type RfNodeInit = {
   id: string;
@@ -101,38 +88,23 @@ export type RawEdge = {
 function Flow({
   initialNodes,
   rawEdges,
-  docs,
 }: {
   initialNodes: RfNodeInit[];
   rawEdges: RawEdge[];
-  docs: CanvasNode[];
 }) {
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes as Node[]);
-  const [openId, setOpenId] = useState<ModuleId | null>(null);
-  // A channel plug is selected: its raw-data records open in their own panel.
+  const [nodes, , onNodesChange] = useNodesState(initialNodes as Node[]);
+  // A channel plug is selected: its raw-data records open in their own panel. Clicking
+  // a module card does nothing today — its detail view was removed, to be redesigned.
   const [openChannel, setOpenChannel] = useState<Channel | null>(null);
-  // The integrations body holds each record's field description (paired in the panel).
-  const integrationsBody = docs.find((d) => d.id === "01-integrations")?.body ?? "";
-  // null = the static blueprint; 1..N = "flow mode" parked on that step.
-  const [traceStep, setTraceStep] = useState<number | null>(null);
   // The node the pointer rests on (a module id, or a "01-integrations:<channel>" plug
-  // id). Its wires surface and everything else recedes — focus+context. Inert in trace.
+  // id). Its wires surface and everything else recedes — focus + context.
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const rf = useReactFlow();
 
-  // Edges carry trace flags per step: the lit legs become a single directional,
-  // blue, marching wire and everything else dims back. Off-trace it's the
-  // neutral two-arrow route, exactly as before.
+  // Hover focus: a wire touching the hovered node surfaces (calm blue arrowhead) and
+  // everything else recedes. Off-hover it's the neutral two-arrow route.
   const edges: Edge[] = useMemo(() => {
-    const step = traceStep ? FLOW_STEPS[traceStep - 1] : null;
-    const legDir = new Map<string, "fwd" | "rev">();
-    if (step) {
-      for (const leg of step.legs) {
-        const { id, direction } = legToEdge(leg);
-        legDir.set(id, direction);
-      }
-    }
     return rawEdges.map((e) => {
       const isSource = e.kind === "source";
       // Source edges touch a channel *child* node, which React Flow auto-elevates
@@ -140,92 +112,33 @@ function Flow({
       // lifted above it instead (see CARD_Z in app/page.tsx), so every wire sits
       // *behind* the cards while the plugs they start from still read on top.
       const base = { id: e.id, source: e.source, target: e.target, type: "floating" as const };
-      if (!step) {
-        // Hover focus: a wire touching the hovered node surfaces; the rest recede.
-        // The same test covers both directions — for a module it catches its peer
-        // wires and its channel inflow; for a plug it catches the wires it originates.
-        const related = hoveredId ? e.source === hoveredId || e.target === hoveredId : null;
-        // Arrowhead follows the line: the calm blue on a surfaced wire, slate otherwise.
-        const arrow = {
-          type: MarkerType.ArrowClosed,
-          color: related ? ROUTE_BLUE_SOFT : MARKER_COLOR,
-          width: 16,
-          height: 16,
-        };
-        // Source edges read as a single inflow arrow (channel → module): one
-        // arrowhead at the module, dashed + lighter (styled in FloatingEdge). Peer
-        // edges keep both arrowheads — request out, provide back.
-        return {
-          ...base,
-          markerStart: isSource ? undefined : arrow,
-          markerEnd: arrow,
-          data: {
-            variant: EDGE_VARIANT,
-            animated: EDGE_ANIMATED,
-            source: isSource,
-            highlight: related === true,
-            faded: related === false,
-          },
-        };
-      }
-      const direction = legDir.get(e.id);
-      if (direction) {
-        const arrow = { type: MarkerType.ArrowClosed, color: ROUTE_BLUE, width: 18, height: 18 };
-        return {
-          ...base,
-          markerStart: direction === "rev" ? arrow : undefined,
-          markerEnd: direction === "fwd" ? arrow : undefined,
-          data: { variant: EDGE_VARIANT, active: true, direction },
-        };
-      }
-      // Off-route during a trace — every source edge lands here (it's never a leg),
-      // dimmed but keeping its dashed source look.
-      return { ...base, data: { variant: EDGE_VARIANT, dim: true, source: isSource } };
-    });
-  }, [rawEdges, traceStep, hoveredId]);
-
-  // Paint the trace flag onto each node, and float the travelling artifact at the
-  // step's resting node. Spreading the module nodes keeps React Flow's measured
-  // dims (the floating edges read them); the artifact is a separate, static node
-  // whose position React Flow eases via CSS (see .react-flow__node-artifact).
-  useEffect(() => {
-    const step = traceStep ? FLOW_STEPS[traceStep - 1] : null;
-    const lit = new Set<string>(step ? step.nodes : []);
-    const art = step?.artifact ?? null;
-    setNodes((nds) => {
-      const base = nds
-        .filter((n) => n.id !== "artifact")
-        .map((n) => {
-          // Channel plugs inherit the Connections group's trace state (key off the
-          // parent), so the whole band lights or dims together at the port step.
-          const traceKey = (n.parentId as string | undefined) ?? n.id;
-          return {
-            ...n,
-            data: {
-              ...n.data,
-              trace: step ? (lit.has(traceKey) ? "active" : "dim") : undefined,
-              reasoning: art?.reasoned && art.at === n.id ? true : undefined,
-            },
-          };
-        });
-      if (!art) return base;
-      const c = NODE_CENTER[art.at] ?? { x: 0, y: 0 };
-      const artifactNode: Node = {
-        id: "artifact",
-        type: "artifact",
-        // Anchor just above the card's top edge; the pill floats up from here.
-        position: { x: c.x, y: c.y - CARD.height / 2 - 18 },
-        data: { form: art.form, label: art.label, reasoned: art.reasoned, from: art.from },
-        draggable: false,
-        selectable: false,
-        focusable: false,
-        zIndex: 1000,
+      // The same test covers both directions — for a module it catches its peer
+      // wires and its channel inflow; for a plug it catches the wires it originates.
+      const related = hoveredId ? e.source === hoveredId || e.target === hoveredId : null;
+      // Arrowhead follows the line: the calm blue on a surfaced wire, slate otherwise.
+      const arrow = {
+        type: MarkerType.ArrowClosed,
+        color: related ? ROUTE_BLUE_SOFT : MARKER_COLOR,
+        width: 16,
+        height: 16,
       };
-      return [...base, artifactNode];
+      // Source edges read as a single inflow arrow (channel → module): one arrowhead
+      // at the module, dashed + lighter (styled in FloatingEdge). Peer edges keep both
+      // arrowheads — request out, provide back.
+      return {
+        ...base,
+        markerStart: isSource ? undefined : arrow,
+        markerEnd: arrow,
+        data: {
+          variant: EDGE_VARIANT,
+          animated: EDGE_ANIMATED,
+          source: isSource,
+          highlight: related === true,
+          faded: related === false,
+        },
+      };
     });
-  }, [traceStep, setNodes]);
-
-  const openNode = docs.find((d) => d.id === openId) ?? null;
+  }, [rawEdges, hoveredId]);
 
   // Crisp text at any *resting* zoom. React Flow zooms with one CSS transform on the
   // viewport, so the browser stretches a snapshot rasterized at a single scale — text
@@ -269,14 +182,9 @@ function Flow({
   );
 
   const recenter = useCallback(() => animate(() => rf.fitView(FIT_TWEEN)), [animate, rf]);
-  // Entering flow mode opens on step 1 and frames the whole route.
-  const startTrace = useCallback(() => {
-    setTraceStep(1);
-    animate(() => rf.fitView(FIT_TWEEN));
-  }, [animate, rf]);
 
-  // Keyboard: 0 recenters always; in flow mode, arrows/space step and Esc exits.
-  // No text inputs on the canvas, so a window listener is safe.
+  // Keyboard: 0 recenters; +/− zoom. No text inputs on the canvas, so a window
+  // listener is safe.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "0") {
@@ -291,19 +199,10 @@ function Flow({
         animate(() => rf.zoomOut(ZOOM_TWEEN));
         return;
       }
-      if (traceStep == null) return;
-      if (e.key === "ArrowRight" || e.key === " ") {
-        e.preventDefault();
-        setTraceStep((s) => Math.min((s ?? 1) + 1, FLOW_STEPS.length));
-      } else if (e.key === "ArrowLeft") {
-        setTraceStep((s) => Math.max((s ?? 1) - 1, 1));
-      } else if (e.key === "Escape") {
-        setTraceStep(null);
-      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [recenter, traceStep, rf, animate]);
+  }, [recenter, rf, animate]);
 
   // Tame pinch / ⌘-scroll zoom sensitivity. React Flow zooms via d3, which
   // over-amplifies trackpad-pinch deltas (they arrive as ctrl+wheel), so a tiny
@@ -344,18 +243,14 @@ function Flow({
         edges={edges}
         onNodesChange={onNodesChange}
         onNodeClick={(_, n) => {
-          if (n.id === "artifact" || n.id === "01-integrations") return;
-          // a channel plug → its raw-data panel; any module card → its doc panel
+          // Only channel plugs open a panel; a module card has no detail view today.
           if (n.id.startsWith("01-integrations:")) {
             const ch = (n.data as { channel?: Channel }).channel;
             if (ch) setOpenChannel(ch);
-            return;
           }
-          setOpenId(n.id as ModuleId);
         }}
         onNodeMouseEnter={(_, n) => {
-          if (traceStep != null) return; // trace owns the wires; hover stays inert
-          if (n.id === "artifact" || n.id === "01-integrations") return; // skip artifact + group
+          if (n.id === "01-integrations") return; // skip the Connections group frame
           setHoveredId(n.id);
         }}
         onNodeMouseLeave={() => setHoveredId(null)}
@@ -417,21 +312,7 @@ function Flow({
         </button>
       </div>
 
-      {/* Trace the flow — the turn-by-turn route bar (or its idle entry pill). */}
-      <FlowTimeline
-        step={traceStep}
-        steps={FLOW_STEPS}
-        onStart={startTrace}
-        onStep={setTraceStep}
-        onExit={() => setTraceStep(null)}
-      />
-
-      <ModulePanel node={openNode} onClose={() => setOpenId(null)} />
-      <ChannelPanel
-        channel={openChannel}
-        body={integrationsBody}
-        onClose={() => setOpenChannel(null)}
-      />
+      <ChannelPanel channel={openChannel} onClose={() => setOpenChannel(null)} />
     </div>
   );
 }
@@ -439,7 +320,6 @@ function Flow({
 export function RfCanvas(props: {
   initialNodes: RfNodeInit[];
   rawEdges: RawEdge[];
-  docs: CanvasNode[];
 }) {
   return (
     <ReactFlowProvider>

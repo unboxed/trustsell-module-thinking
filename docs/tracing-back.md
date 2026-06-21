@@ -141,26 +141,3 @@ sharpen it. Until you do, the fit-scan has nothing to match against, and a whole
 questions above it ("which *new* orgs look like the good ones?") stays unanswerable. The
 honest answer points at you: *"Tell me what a good-fit council looks like — the pain, the
 signs — and I can start matching."*
-
----
-
-## The picture this makes
-
-Forward-in-time, the machine looks like a route across a map (`docs/flow.md`). Taken apart
-and standing still, it looks like a pyramid built from the ground up (`docs/scenario-
-councils.md` and the Assembly view). Tracing a question back makes a third picture, and
-it's the one that was hard to name: a **radial tree**. Put the question — or the final
-suggestion — in the centre. Its supporting stack fans out around it: the readings nearest
-the middle, the counts further out, the plain facts on the rim. Pulled all the way open it
-closes into something like a circle, the outcome at the heart and the raw material around
-the edge.
-
-And the gaps draw themselves: a branch that runs out of ground is one that stops short of
-the rim, hanging in the open — a visible reminder that something is missing, and a label
-saying whether you'd close it by connecting a source or by telling the tool one more
-thing.
-
-That picture is **described here in words only**. The visual work is parked for now; when
-it resumes, this is the shape to reach for, and the existing views will need two new
-things — the counting floor made visible between the raw facts and the readings, and a way
-to draw a branch that stops in mid-air.

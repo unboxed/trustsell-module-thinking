@@ -1,22 +1,20 @@
-import Link from "next/link";
-import { Layers } from "lucide-react";
-
 import { CARD, NODES, channelLayout } from "@/lib/canvas-layout";
-import { readModules } from "@/lib/modules";
+import { readChannels, readModules } from "@/lib/modules";
 import type { CanvasNode } from "@/lib/blueprint.config";
 import { RfCanvas, type RawEdge, type RfNodeInit } from "@/components/canvas/rf/rf-canvas";
 
-/** Card stacking order — above the auto-elevated channel→module wires (z≈1), below
- *  the travelling-artifact node (z=1000). So wires tuck behind the card faces. */
+/** Card stacking order — above the auto-elevated channel→module wires (z≈1) so the
+ *  wires tuck behind the card faces. */
 const CARD_Z = 10;
 
-// The canvas is a live mirror of the module docs. Each module's CLAUDE.md is read
+// The canvas is a live mirror of the module docs. Each module's module.md is read
 // from disk per request (readModules → connection(), no caching); its frontmatter
 // (the card face) is merged onto the hand-placed positions, and the wires are
-// AUTO-ROUTED from each module's `connects`. Rendered with React Flow — see
+// AUTO-ROUTED from each module's `connects`. The channel plugs are read live from
+// 01-integrations/channels/*.md (readChannels). Rendered with React Flow — see
 // components/canvas/rf. Edit a doc and reload: cards and wiring update with no code.
 export default async function Home() {
-  const raw = await readModules();
+  const [raw, channels] = await Promise.all([readModules(), readChannels()]);
   const byId = new Map(raw.map((d) => [d.id, d]));
 
   const docs: CanvasNode[] = NODES.map((pos) => {
@@ -42,9 +40,7 @@ export default async function Home() {
   // plugs it pulls raw data through. The source is the channel child node
   // ("01-integrations:<id>"), the target the module — a single arrow flowing in.
   // Validate ids against the real channel list so a typo never makes a dangling edge.
-  const validChannels = new Set(
-    (byId.get("01-integrations")?.meta.channels ?? []).map((c) => c.id),
-  );
+  const validChannels = new Set(channels.map((c) => c.id));
   for (const n of docs) {
     for (const chId of n.drawsFrom ?? []) {
       if (!validChannels.has(chId)) continue;
@@ -60,11 +56,10 @@ export default async function Home() {
   // React Flow positions by top-left; our layout positions by card centre. The port
   // is a *group*: a frame centred on its position, holding one compact child node per
   // channel (positioned relative to the group's top-left). The group keeps the id
-  // "01-integrations" so the wires + flow-trace resolve to it; the children are the
+  // "01-integrations" so the peer + inflow wires resolve to it; the children are the
   // clickable plugs. Every other module is a single card.
   const rfNodes: RfNodeInit[] = docs.flatMap((n) => {
     if (n.id === "01-integrations") {
-      const channels = n.channels ?? [];
       const layout = channelLayout(channels);
       const group: RfNodeInit = {
         id: n.id,
@@ -96,8 +91,7 @@ export default async function Home() {
         position: { x: n.x - CARD.width / 2, y: n.y - CARD.height / 2 },
         // Lift cards above the channel→module wires. Those wires touch a channel
         // *child* node, which React Flow auto-elevates to z=1, so without this they'd
-        // paint over the card faces. CARD_Z clears that band (and stays well under the
-        // travelling-artifact node at z=1000) so every wire tucks behind the cards.
+        // paint over the card faces. CARD_Z clears that band so every wire tucks behind.
         zIndex: CARD_Z,
         data: { name: n.name, title: n.title, blurb: n.blurb, icon: n.icon, optional: n.optional },
       },
@@ -106,14 +100,7 @@ export default async function Home() {
 
   return (
     <main className="relative h-dvh w-dvw overflow-hidden">
-      <RfCanvas initialNodes={rfNodes} rawEdges={rawEdges} docs={docs} />
-      <Link
-        href="/assembly"
-        className="glass-card absolute top-5 right-5 z-20 inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[12.5px] font-medium text-slate-600 transition-transform duration-200 ease-out hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none motion-reduce:transition-none"
-      >
-        <Layers className="size-3.5 text-blue-600" strokeWidth={2} />
-        Assembly
-      </Link>
+      <RfCanvas initialNodes={rfNodes} rawEdges={rawEdges} />
     </main>
   );
 }

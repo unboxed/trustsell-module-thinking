@@ -9,8 +9,8 @@ import type { ChannelLayout } from "@/lib/canvas-layout";
  * The Connections port as a React Flow *group* node — a decorative frame that holds
  * one compact channel child per plug (see rf-channel-node.tsx). It owns no plugs of
  * its own; it draws the band's chrome and carries the hidden handles the module→port
- * wires attach to. It keeps the node id "01-integrations", so the wiring and the
- * flow-trace resolve to it unchanged.
+ * wires attach to. It keeps the node id "01-integrations", so the peer and inflow
+ * wires resolve to it unchanged.
  *
  * The chrome is two spaced label tiers so the hierarchy reads at a glance:
  *   • "Connections" / "Tools library" — the two sources (left-aligned section headers):

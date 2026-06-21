@@ -13,25 +13,20 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { parseRecord, type RecordField } from "@/lib/channel-records";
-import type { Channel, RecordNode } from "@/lib/blueprint.config";
-import { MetaPill } from "./module-panel";
+import type { Channel, ChannelRecord, RecordField } from "@/lib/blueprint.config";
 
 /**
- * The channel detail panel: a modal that reveals one channel's RAW DATA. The node
- * face stays compact; clicking a plug opens this. Each record is a chip (its label,
- * from the frontmatter) beside its fields — themselves discrete chips, parsed back
- * from the module body via parseRecord. A field's real provider name (or "derived")
- * shows on hover. A record not yet written degrades to a quiet placeholder. Open is
- * controlled by `channel`; null = closed.
+ * The channel detail panel: a modal that reveals one channel's RAW DATA, read from
+ * that channel's own doc (`01-integrations/channels/<id>.md`). Each record is a pill
+ * beside its fields — themselves discrete chips. A field's real provider name (or
+ * "derived") shows on hover. A channel with no records yet degrades to a quiet
+ * placeholder. Open is controlled by `channel`; null = closed.
  */
 export function ChannelPanel({
   channel,
-  body,
   onClose,
 }: {
   channel: Channel | null;
-  body: string;
   onClose: () => void;
 }) {
   const eyebrow = channel?.source === "builtin" ? "Tools library" : "Connections";
@@ -74,7 +69,7 @@ export function ChannelPanel({
                     The raw data this channel can pull in — carried as-is.
                   </DialogPrimitive.Description>
                   <div className="mt-1 flex flex-wrap gap-1.5">
-                    <MetaPill>{countRecords(channel.records)} records</MetaPill>
+                    <MetaPill>{channel.records.length} records</MetaPill>
                     {ghost && <MetaPill>not connected yet</MetaPill>}
                   </div>
                 </div>
@@ -88,11 +83,17 @@ export function ChannelPanel({
 
               <ScrollArea className="min-h-0 flex-1">
                 <TooltipProvider>
-                  <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
-                    {channel.records.map((node) => (
-                      <RecordRow key={node.label} node={node} body={body} />
-                    ))}
-                  </ul>
+                  {channel.records.length > 0 ? (
+                    <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
+                      {channel.records.map((record) => (
+                        <RecordRow key={record.label} record={record} />
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="p-6 pt-4 text-[13px] leading-[1.5] text-muted-foreground italic">
+                      Records coming soon.
+                    </p>
+                  )}
                 </TooltipProvider>
               </ScrollArea>
             </>
@@ -103,64 +104,42 @@ export function ChannelPanel({
   );
 }
 
-/** Total record count including nested children — for the panel header. */
-function countRecords(nodes: RecordNode[]): number {
-  return nodes.reduce((n, r) => n + 1 + countRecords(r.children), 0);
-}
-
 /**
- * One record in the tree: its label pill beside its gloss + field chips (paired from
- * the body by label), then any children nested one level in with a tree rail. Recurses,
- * so Gmail's Thread → Message → Attachment renders as indented branches.
+ * One record: its label pill beside its field chips, each chip naming the field with
+ * its provider / source on hover.
  */
-function RecordRow({ node, body }: { node: RecordNode; body: string }) {
-  const rec = parseRecord(body, node.label);
-  const empty = !rec || (!rec.gloss && rec.fields.length === 0);
+function RecordRow({ record }: { record: ChannelRecord }) {
   return (
     <li className="py-3.5">
       <div className="flex flex-col gap-1.5 sm:flex-row sm:gap-4">
         <div className="sm:w-40 sm:shrink-0">
-          <MetaPill>{node.label}</MetaPill>
+          <MetaPill>{record.label}</MetaPill>
         </div>
         <div className="flex min-w-0 flex-col gap-2">
-          {rec?.gloss && (
-            <p className="text-[13px] leading-[1.5] text-ink-body">{rec.gloss}</p>
-          )}
-          {rec && rec.fields.length > 0 && (
+          {record.fields.length > 0 ? (
             <div className="flex flex-wrap gap-1.5">
-              {rec.fields.map((f) => (
+              {record.fields.map((f) => (
                 <FieldChip key={f.label} field={f} />
               ))}
             </div>
-          )}
-          {empty && (
+          ) : (
             <p className="text-[13px] leading-[1.5] text-muted-foreground italic">
               Field list coming soon.
             </p>
           )}
-          {rec?.note && (
-            <p className="text-[11px] leading-[1.4] text-muted-foreground">{rec.note}</p>
-          )}
         </div>
       </div>
-      {node.children.length > 0 && (
-        <ul className="mt-2 ml-3 flex flex-col border-l border-border/60 pl-4 sm:ml-4 sm:pl-5">
-          {node.children.map((child) => (
-            <RecordRow key={child.label} node={child} body={body} />
-          ))}
-        </ul>
-      )}
     </li>
   );
 }
 
 /**
- * One raw-data field, rendered as a quiet chip subordinate to the uppercase record
- * pill. A field that names its provider gets a hover tooltip; a `derived` field reads
- * as a dashed, muted chip so "this isn't a raw field the API hands over" is legible.
+ * One raw-data field as a quiet chip subordinate to the record pill. A field that
+ * names its source gets a hover tooltip; a `derived` field reads as a dashed, muted
+ * chip so "this isn't a raw field the API hands over" is legible.
  */
 function FieldChip({ field }: { field: RecordField }) {
-  const derived = field.name?.toLowerCase() === "derived";
+  const derived = field.source?.toLowerCase() === "derived";
   const chip = (
     <Badge
       variant="secondary"
@@ -174,12 +153,26 @@ function FieldChip({ field }: { field: RecordField }) {
     </Badge>
   );
 
-  if (!field.name) return chip;
+  if (!field.source) return chip;
 
   return (
     <Tooltip>
       <TooltipTrigger asChild>{chip}</TooltipTrigger>
-      <TooltipContent>{derived ? "derived — not a raw field" : field.name}</TooltipContent>
+      <TooltipContent>{derived ? "derived — not a raw field" : field.source}</TooltipContent>
     </Tooltip>
+  );
+}
+
+/** A small uppercase pill used for record labels and channel counts. */
+export function MetaPill({ children }: { children: React.ReactNode }) {
+  return (
+    <span
+      className={cn(
+        "rounded-full border border-slate-300/70 px-2 py-0.5",
+        "text-[10px] font-medium tracking-wider text-slate-400 uppercase",
+      )}
+    >
+      {children}
+    </span>
   );
 }
