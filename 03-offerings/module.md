@@ -90,16 +90,25 @@ floor you can browse, just pointed at products instead of people:
   most, where you sit against a competitor's price, which answers you keep reaching for), earning
   their place by answering a real question in [`sales-questions.md`](../docs/sales-questions.md).
 
-Two jobs lean on that read. **Is this a good fit?** Given a customer's situation (which People
+Several jobs lean on that read. **Is this a good fit?** Given a customer's situation (which People
 hands over), Offerings checks it against the fit-shape and says how well it matches, and where it
 falls short. **How do we answer this worry?** Given a worry People has on record, Offerings finds
-or writes the answer. If the answer needs **proof**, where that proof lives depends on *what it
-proves*. A case study about **this offering** ("Council X rolled out this product and saw Y") is
-Offerings' own, and it keeps it. A case study about the **organisation in general** (its track
-record, who it's trusted by) belongs to Organisation, and Offerings asks for it. Either way the
-files sit in Drive, which both can read; the split isn't about who *can* open a file, it's about
-who's **responsible** for it. (When it asks Organisation, it asks, Organisation supplies, and the
-job stays Offerings'. Nobody decides anything in the middle.)
+or writes the answer, and judges whether the proof behind it is strong or thin. If the answer needs
+**proof**, where that proof lives depends on *what it proves*. A case study about **this offering**
+("Council X rolled out this product and saw Y") is Offerings' own, and it keeps it. A case study
+about the **organisation in general** (its track record, who it's trusted by) belongs to
+Organisation, and Offerings asks for it. Either way the files sit in Drive, which both can read; the
+split isn't about who *can* open a file, it's about who's **responsible** for it. (When it asks
+Organisation, it asks, Organisation supplies, and the job stays Offerings'. Nobody decides anything
+in the middle.)
+
+**Where do we stand against rivals?** Beside the fit and the worry, Offerings reads how an offering
+stands against the named field it's sold into: where you win, where a rival or the incumbent wins
+(including a capability a buyer asked for that you lack), and whether a competitor's lock-in is the
+real barrier to a switch. It keeps off **price**, which stays its own separate read, so the two
+competitive reads never judge the same thing twice. **Is our own pitch honest?** And it turns
+"back every claim" on itself, flagging a boast in your pitch that has nothing on file behind it
+before it ever reaches a draft, the guard that feeds the render and Organisation's compliance fence.
 
 What it can't do yet: it reads the present, not the future. Whether a buyer's blocker is *likely to
 lift* is a forecasting question, and that's parked, not Offerings' to guess.
@@ -149,3 +158,8 @@ Organisation (`04`), which is optional for the same reason.)
   loop is wired. `lead-with-this` ranks by relevance today, not by track record.
 - **Forecasting is parked.** Reading whether a buyer's blocker is *likely to lift* (a future
   question) is deliberately out of scope for now.
+- **Two reads belong to the Brain, not here.** Ranking which *offering* best fits a given lead (a
+  portfolio call across every offering) and judging how much to discount on *this* deal are both
+  **intent**: they depend on the goal and how hard you'll push. So they sit with the Brain, which
+  calls `fit-match` per offering and reads the told discount room, rather than becoming Offerings
+  signals. Noted here so they're not re-proposed as reads.
