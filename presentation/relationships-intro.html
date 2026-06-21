@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>People · Relationships Module — Ideation Intro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ----------------------------------------------------------------------
+     Tokens — borrowed from the blueprint canvas, modernized for a deck.
+     Slate ink scale · one blue accent · frosted glass · dot-grid.
+  ---------------------------------------------------------------------- */
+  :root{
+    --bg:#f4f6f8;
+    --canvas:#f1f3f6;
+    --ink-900:#0f172a;  /* slate-900 — titles      */
+    --ink-700:#334155;  /* slate-700               */
+    --ink-600:#475569;  /* slate-600 — body        */
+    --ink-500:#64748b;  /* slate-500 — muted       */
+    --ink-400:#94a3b8;  /* slate-400 — eyebrow      */
+    --line-200:#e2e8f0; /* slate-200 — borders     */
+    --line-100:#eef2f6;
+    --paper:#ffffff;
+    --blue-700:#1d4ed8;
+    --blue:#2563eb;     /* the single accent       */
+    --blue-400:#60a5fa;
+    --blue-50:#eff6ff;
+    --glow:rgba(37,99,235,.35);
+
+    --radius:20px;
+    --ease:cubic-bezier(.22,.72,.2,1);
+    --pad:clamp(28px,5vw,88px);
+    --maxw:64rem;
+    --font:'Inter',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  /* The whole deck scales with viewport height (crisp — font-size, not transform),
+     so content fills the page on any monitor without blurring text. */
+  html{height:100%;font-size:clamp(15px,2.3vh,40px)}
+  body{height:100%}
+  body{
+    font-family:var(--font);
+    color:var(--ink-900);
+    background:var(--canvas);
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* --- deck shell --- */
+  .deck{position:fixed;inset:0;overflow:hidden}
+
+  .slide{
+    position:absolute;inset:0;
+    /* content slides anchor top-left so the title + hairline sit in the corner;
+       the row fills the height so the body zone can grow. Dark slides re-center.
+       Extra bottom padding reserves a safe zone for the footer chrome. */
+    display:grid;grid-template-rows:1fr;justify-items:start;
+    padding:clamp(26px,5vh,72px) var(--pad) clamp(76px,10vh,124px);
+    opacity:0;visibility:hidden;
+    transform:translateY(22px) scale(.992);
+    transition:opacity .5s var(--ease), transform .6s var(--ease), visibility 0s linear .6s;
+    /* light slate canvas with soft radial washes + dot grid */
+    background:
+      radial-gradient(120% 90% at 14% 8%, rgba(255,255,255,.9), transparent 46%),
+      radial-gradient(120% 120% at 92% 96%, rgba(37,99,235,.06), transparent 44%),
+      var(--canvas);
+  }
+  .slide::before{ /* dot-grid affordance */
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(rgba(15,23,42,.07) .9px, transparent .9px);
+    background-size:26px 26px;
+    -webkit-mask-image:radial-gradient(120% 100% at 50% 40%, #000 55%, transparent 100%);
+            mask-image:radial-gradient(120% 100% at 50% 40%, #000 55%, transparent 100%);
+    opacity:.7;
+  }
+  .slide.active{opacity:1;visibility:visible;transform:none;transition-delay:0s,0s,0s}
+
+  .stage{position:relative;width:100%;max-width:var(--maxw);z-index:2}
+
+  /* Two-zone content slide: the title block sits top-left, the body grows to
+     fill the rest of the page so cards/diagrams use the whole canvas. */
+  .slide:not(.slide--dark) .stage{display:flex;flex-direction:column;height:100%;gap:clamp(1rem,3.4vh,2.6rem)}
+  .head{flex:0 0 auto}
+  .body{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:clamp(.9rem,2.6vh,1.7rem)}
+  .body--top{justify-content:flex-start}   /* prose slides: flow straight under the title */
+  /* grids tagged --fill grow their cards toward the body, but capped so they
+     stay substantial without becoming full-height empty panels */
+  .grid--fill{flex:1 1 auto;min-height:0;grid-auto-rows:minmax(0,1fr);max-height:clamp(200px,31vh,330px)}
+
+  /* dark "hero" slides — bookends + the HMW — stay centered */
+  .slide--dark{
+    place-items:center;align-content:center;
+    color:#e8eefc;
+    background:
+      radial-gradient(90% 70% at 30% 18%, rgba(37,99,235,.28), transparent 55%),
+      radial-gradient(80% 80% at 88% 92%, rgba(37,99,235,.16), transparent 50%),
+      #070b18;
+  }
+  .slide--dark::before{
+    background-image:radial-gradient(rgba(148,163,184,.16) .9px, transparent .9px);
+    background-size:30px 30px;opacity:.5;
+    -webkit-mask-image:radial-gradient(120% 100% at 50% 45%, #000 50%, transparent 100%);
+            mask-image:radial-gradient(120% 100% at 50% 45%, #000 50%, transparent 100%);
+  }
+
+  /* ----------------------------- type ----------------------------- */
+  .eyebrow{
+    font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--blue);display:inline-flex;align-items:center;gap:.6em;margin-bottom:1.4rem;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:currentColor;opacity:.6}
+  .slide--dark .eyebrow{color:var(--blue-400)}
+
+  h1{font-weight:700;letter-spacing:-.035em;line-height:1.02;
+     font-size:clamp(2.6rem,8vw,6rem)}
+  h2{font-weight:650;letter-spacing:-.03em;line-height:1.06;
+     font-size:clamp(1.9rem,4.6vw,3.5rem)}
+  .lede{font-size:clamp(1.05rem,1.9vw,1.42rem);line-height:1.5;color:var(--ink-600);
+     max-width:60ch;font-weight:400;margin-top:1.4rem}
+  .slide--dark .lede{color:#aebbd6}
+  .small{font-size:.92rem;color:var(--ink-500)}
+  .slide--dark .small{color:#7c89a6}
+  em{font-style:normal;color:var(--blue);font-weight:550}
+  .slide--dark em{color:var(--blue-400)}
+
+  /* ----------------------------- cards/chips ----------------------------- */
+  .row{display:flex;flex-wrap:wrap;gap:.85rem}
+  .grid{display:grid;gap:1.1rem}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:880px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media (max-width:620px){.g3,.g4{grid-template-columns:1fr}}
+
+  .card{
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(255,255,255,.9);
+    box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 10px 30px -18px rgba(15,23,42,.35);
+    border-radius:var(--radius);
+    padding:clamp(1.3rem,2.6vh,2.1rem) clamp(1.3rem,1.7vw,2rem);
+    backdrop-filter:blur(6px) saturate(1.15);
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .card .k{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-400);margin-bottom:.6rem}
+  .card .t{font-size:1.34rem;font-weight:600;letter-spacing:-.01em;color:var(--ink-900);margin-bottom:.55rem}
+  .card .d{font-size:1.05rem;line-height:1.55;color:var(--ink-600)}
+
+  .chip{
+    display:inline-flex;align-items:center;gap:.5em;
+    padding:.5em .9em;border-radius:999px;
+    font-size:.92rem;font-weight:500;color:var(--ink-700);
+    background:rgba(255,255,255,.7);border:1px solid var(--line-200);
+    box-shadow:0 6px 16px -14px rgba(15,23,42,.5);
+  }
+  .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ink-400)}
+  .chip--blue{color:var(--blue-700);background:var(--blue-50);border-color:#dbe5ff}
+  .chip--blue .dot{background:var(--blue)}
+
+  .pill{
+    display:inline-flex;align-items:center;gap:.55em;
+    padding:.5em .95em;border-radius:999px;font-size:.96rem;font-weight:500;
+    color:var(--ink-600);background:#fff;border:1px solid var(--line-200);
+  }
+  .slide--dark .pill{color:#aebbd6;background:rgba(255,255,255,.05);border-color:rgba(148,163,184,.22)}
+
+  /* lens cards (HMW lenses) */
+  .lens{position:relative;overflow:hidden}
+  .lens .tag{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:.9rem}
+  .lens .q{font-size:1.42rem;line-height:1.38;font-weight:500;color:var(--ink-900)}
+  .lens::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--blue),var(--blue-400))}
+
+  /* "going quiet" motif — an inbox fading into silence (slide 2) */
+  .quietlist{display:flex;flex-direction:column;gap:clamp(.85rem,2.4vh,1.4rem);max-width:24rem;margin-left:auto;width:100%}
+  .ql-row{display:flex;align-items:center;gap:.9rem}
+  .ql-dot{width:.95rem;height:.95rem;border-radius:50%;flex:none}
+  .ql-bar{height:.62rem;border-radius:99px;background:var(--line-200);min-width:0}
+  .ql-t{margin-left:auto;font-size:.92rem;font-weight:600;color:var(--ink-400);font-variant-numeric:tabular-nums;width:3ch;text-align:right;flex:none}
+  .ql-cap{margin-top:.4rem;font-size:.86rem;letter-spacing:.02em;color:var(--ink-400);font-style:italic}
+
+  .whatif{display:flex;flex-direction:column;gap:clamp(.7rem,2.2vh,1.35rem)}
+  .whatif li{list-style:none;display:flex;gap:.8em;align-items:baseline;
+     font-size:clamp(1.15rem,2.1vh,1.55rem);line-height:1.35;color:var(--ink-700)}
+  .whatif li b{color:var(--blue);font-weight:700;font-size:.9em}
+
+  /* ============================================================
+     THE SIGNATURE — a glowing blue read rising out of grey facts
+  ============================================================ */
+  .reading{display:flex;flex-direction:column;align-items:center;gap:0;width:100%;max-width:34rem}
+  .reading .read{
+    position:relative;
+    padding:.85em 1.25em;border-radius:16px;
+    font-size:clamp(1.15rem,2.4vw,1.7rem);font-weight:600;letter-spacing:-.01em;
+    color:#fff;
+    background:linear-gradient(180deg,#3b82f6,#2563eb);
+    box-shadow:0 0 0 6px rgba(37,99,235,.12), 0 18px 50px -12px var(--glow), 0 1px 0 rgba(255,255,255,.4) inset;
+    animation:breathe 3.4s var(--ease) infinite;
+  }
+  .reading .read .spark{color:#cfe0ff}
+  @keyframes breathe{
+    0%,100%{box-shadow:0 0 0 6px rgba(37,99,235,.12), 0 18px 50px -12px rgba(37,99,235,.30), 0 1px 0 rgba(255,255,255,.4) inset}
+    50%{box-shadow:0 0 0 8px rgba(37,99,235,.18), 0 26px 70px -8px rgba(37,99,235,.55), 0 1px 0 rgba(255,255,255,.4) inset}
+  }
+  .reading .riser{width:2px;height:46px;background:linear-gradient(#2563eb,rgba(100,116,139,.35));position:relative}
+  .reading .riser::after{content:"";position:absolute;left:-2px;right:-2px;top:0;bottom:0;
+     background:linear-gradient(#2563eb,transparent);filter:blur(4px);opacity:.5}
+  .reading .rule{position:relative;width:100%;height:1px;background:var(--line-200);margin:6px 0 18px}
+  .reading .rule .lbl{
+    position:absolute;right:0;top:-9px;transform:translateY(-100%);
+    font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-400);white-space:nowrap}
+  .reading .facts{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+  .reading .facts .chip{font-size:.84rem;padding:.42em .8em}
+  .reading .floor{font-size:.74rem;color:var(--ink-400);margin-top:14px;letter-spacing:.02em}
+
+  .slide--dark .reading .rule{background:rgba(148,163,184,.25)}
+  .slide--dark .reading .rule .lbl{color:#7c89a6}
+  .slide--dark .reading .chip{color:#c3cee6;background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.22)}
+  .slide--dark .reading .chip .dot{background:#64748b}
+  .slide--dark .reading .floor{color:#6b7794}
+
+  /* pulse / constellation svg strokes */
+  .svg-soft{filter:drop-shadow(0 6px 18px rgba(37,99,235,.25))}
+
+  /* ----------------------------- 3-tier mini-diagram ----------------------------- */
+  .tier{gap:.5rem;text-align:center;align-items:center}
+  .tier .ico{width:clamp(48px,5vh,68px);height:clamp(48px,5vh,68px);border-radius:16px;display:grid;place-items:center;margin:0 auto .8rem;
+     background:#fff;border:1px solid var(--line-200);box-shadow:0 8px 22px -16px rgba(15,23,42,.6)}
+  .tier .ico svg{width:55%;height:55%}
+  .tier.is-brain .ico{background:linear-gradient(180deg,#3b82f6,#2563eb);border-color:transparent;box-shadow:0 14px 36px -14px var(--glow)}
+  .tier .nm{font-weight:600;font-size:1.28rem}
+  .tier .ro{font-size:1.02rem;color:var(--ink-500)}
+
+  /* ----------------------------- chrome ----------------------------- */
+  .brand{position:fixed;left:var(--pad);bottom:24px;z-index:30;
+     font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-400);
+     display:flex;align-items:center;gap:.6em}
+  .brand b{color:var(--ink-700);font-weight:700}
+  .brand .mk{width:8px;height:8px;border-radius:2px;background:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.18)}
+  .slide--dark ~ .brand b, body.dark .brand b{color:#cdd7ee}
+
+  .counter{position:fixed;right:var(--pad);bottom:24px;z-index:30;
+     font-size:.78rem;font-weight:600;color:var(--ink-400);font-variant-numeric:tabular-nums}
+  .counter span{color:var(--ink-700)}
+
+  .progress{position:fixed;left:0;top:0;height:3px;z-index:40;width:0%;
+     background:linear-gradient(90deg,var(--blue),var(--blue-400));
+     box-shadow:0 0 12px var(--glow);transition:width .5s var(--ease)}
+
+  .nav{position:fixed;right:var(--pad);bottom:54px;z-index:30;display:flex;gap:8px}
+  .nav button{
+    width:38px;height:38px;border-radius:11px;cursor:pointer;
+    border:1px solid var(--line-200);background:rgba(255,255,255,.8);color:var(--ink-700);
+    display:grid;place-items:center;backdrop-filter:blur(6px);transition:.2s var(--ease)}
+  .nav button:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-1px)}
+  .nav button:active{transform:translateY(0)}
+
+  .hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:25;
+     font-size:.74rem;color:var(--ink-400);letter-spacing:.04em;display:flex;gap:1.4em;opacity:.9}
+  .hint kbd{font-family:var(--font);font-weight:600;color:var(--ink-600);
+     background:#fff;border:1px solid var(--line-200);border-bottom-width:2px;border-radius:6px;padding:.05em .45em;font-size:.72rem}
+  .hint.gone{opacity:0;transition:opacity 1.2s ease}
+
+  .edge{position:fixed;top:0;bottom:0;width:14vw;z-index:20;cursor:pointer}
+  .edge.l{left:0}.edge.r{right:0}
+
+  /* click-zones & chrome adapt on dark slides via body.dark */
+  body.dark .counter span{color:#cdd7ee}
+  body.dark .counter{color:#6b7794}
+  body.dark .brand{color:#6b7794}
+  body.dark .nav button{background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.25);color:#cdd7ee}
+  body.dark .nav button:hover{border-color:var(--blue-400);color:#fff}
+  body.dark .hint{color:#6b7794}
+  body.dark .hint kbd{background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.25);color:#cdd7ee}
+
+  /* staged reveal on slide entry */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s var(--ease), transform .7s var(--ease)}
+  .slide.active .reveal{opacity:1;transform:none}
+  .slide.active .reveal:nth-child(1){transition-delay:.06s}
+  .slide.active .reveal:nth-child(2){transition-delay:.14s}
+  .slide.active .reveal:nth-child(3){transition-delay:.22s}
+  .slide.active .reveal:nth-child(4){transition-delay:.30s}
+  .slide.active .reveal:nth-child(5){transition-delay:.38s}
+  .slide.active .reveal:nth-child(6){transition-delay:.46s}
+
+  /* overview grid */
+  .overview{position:fixed;inset:0;z-index:80;background:rgba(7,11,24,.92);
+     display:none;padding:clamp(20px,4vw,56px);overflow:auto}
+  .overview.on{display:block}
+  .ov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;max-width:1200px;margin:0 auto}
+  .ov-card{border:1px solid rgba(148,163,184,.25);border-radius:14px;padding:16px;cursor:pointer;
+     background:rgba(255,255,255,.04);color:#cdd7ee;transition:.18s var(--ease)}
+  .ov-card:hover{border-color:var(--blue-400);background:rgba(37,99,235,.12);transform:translateY(-2px)}
+  .ov-card .n{font-size:.72rem;color:#6b7794;font-weight:700;letter-spacing:.12em}
+  .ov-card .ttl{margin-top:.5rem;font-size:1rem;font-weight:600;line-height:1.25}
+  .ov-head{max-width:1200px;margin:0 auto 22px;color:#aebbd6;display:flex;justify-content:space-between;align-items:center}
+  .ov-head h3{font-size:1.1rem;font-weight:600;color:#fff}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .slide,.reveal,.progress{transition:opacity .25s linear!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="deck" id="deck">
+
+  <!-- 1 · COVER ---------------------------------------------------------- -->
+  <section class="slide slide--dark" data-title="Cover" data-dark>
+    <div class="stage" style="text-align:center;display:grid;justify-items:center;gap:8px">
+      <div class="eyebrow reveal" style="margin-bottom:.6rem">Ideation Session · 90 min</div>
+      <h1 class="reveal">People</h1>
+      <div class="reveal lede" style="color:#aebbd6;margin-top:.4rem;font-size:clamp(1.1rem,2.2vw,1.5rem)">
+        Your relationships — the module that knows everyone you deal&nbsp;with,<br>and <em>reads</em> where each one stands.
+      </div>
+      <div class="reveal" style="margin-top:42px">
+        <div class="reading">
+          <div class="read"><span class="spark">✦</span>&nbsp;“Tom is cooling”</div>
+          <div class="riser"></div>
+          <div class="rule"><span class="lbl">the read</span></div>
+          <div class="facts">
+            <span class="chip"><span class="dot"></span>silent 26 days</span>
+            <span class="chip"><span class="dot"></span>usually replies in a day</span>
+            <span class="chip"><span class="dot"></span>skipped the check-in</span>
+          </div>
+          <div class="floor">↑ a read · ↓ facts you could re-check yourself</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · WHY IT MATTERS -------------------------------------------------- -->
+  <section class="slide" data-title="Why it matters">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The problem</div>
+        <h2 class="reveal">Relationships don’t end with a bang.<br>They go quiet.</h2>
+      </div>
+      <div class="body body--top">
+        <div style="display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,4.5vw,80px);align-items:center;width:100%">
+          <div>
+            <p class="lede reveal" style="font-size:clamp(1.2rem,2.5vh,1.66rem);line-height:1.46;max-width:40ch">
+              A seller’s world is huge — hundreds of contacts spread across inbox, calendar and
+              Slack. Nobody <em>decides</em> to let one die. A champion just stops replying, a
+              warm intro never gets used, a worry sits unanswered — and it all decays in the gaps
+              between everything else.
+            </p>
+            <div class="row reveal" style="margin-top:clamp(20px,3.2vh,34px)">
+              <span class="chip"><span class="dot"></span>hundreds of contacts</span>
+              <span class="chip"><span class="dot"></span>scattered across email · calendar · slack</span>
+              <span class="chip"><span class="dot"></span>the decay is invisible</span>
+            </div>
+          </div>
+          <!-- on-theme motif: an inbox quietly going silent -->
+          <div class="reveal quietlist" aria-hidden="true">
+            <div class="ql-row" style="opacity:1">
+              <span class="ql-dot" style="background:var(--blue)"></span><span class="ql-bar" style="width:78%"></span><span class="ql-t">2d</span>
+            </div>
+            <div class="ql-row" style="opacity:.7">
+              <span class="ql-dot" style="background:#64748b"></span><span class="ql-bar" style="width:64%"></span><span class="ql-t">9d</span>
+            </div>
+            <div class="ql-row" style="opacity:.48">
+              <span class="ql-dot" style="background:#94a3b8"></span><span class="ql-bar" style="width:70%"></span><span class="ql-t">21d</span>
+            </div>
+            <div class="ql-row" style="opacity:.28">
+              <span class="ql-dot" style="background:#cbd5e1"></span><span class="ql-bar" style="width:58%"></span><span class="ql-t">40d</span>
+            </div>
+            <div class="ql-row" style="opacity:.14">
+              <span class="ql-dot" style="background:#cbd5e1"></span><span class="ql-bar" style="width:66%"></span><span class="ql-t">—</span>
+            </div>
+            <div class="ql-cap">quietly cooling, one by one</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · WHERE PEOPLE SITS ---------------------------------------------- -->
+  <section class="slide" data-title="Where People sits">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The system around it</div>
+        <h2 class="reveal" style="margin-bottom:8px">One brain. A team of experts. One connector.</h2>
+        <p class="lede reveal">Capability is <em>distributed</em>; intent is <em>centralized</em>.</p>
+      </div>
+      <div class="body">
+      <div class="grid g3 grid--fill reveal">
+        <div class="card tier is-brain">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M12 3a4 4 0 0 0-4 4 3 3 0 0 0-2 5 3 3 0 0 0 2 5 4 4 0 0 0 8 0 3 3 0 0 0 2-5 3 3 0 0 0-2-5 4 4 0 0 0-4-4Z"/></svg></div>
+          <div class="nm">The Brain</div>
+          <div class="ro">reasons to <em>decide</em> — holds the goals</div>
+        </div>
+        <div class="card tier">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9.5" r="2.2"/><path d="M14.5 19.5a4.6 4.6 0 0 1 6.8-2.4"/></svg></div>
+          <div class="nm">The Assistants</div>
+          <div class="ro">reason to <em>answer</em> — domain experts</div>
+        </div>
+        <div class="card tier">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.7"><path d="M7 8 3 12l4 4M17 8l4 4-4 4M14 4l-4 16"/></svg></div>
+          <div class="nm">The Connector</div>
+          <div class="ro">carries messages in and out</div>
+        </div>
+      </div>
+      <p class="lede reveal" style="font-size:1.18rem">
+        <strong style="color:var(--ink-900)">People</strong> is one of the assistants — the
+        <em>people expert</em>. It holds no goals of its own; it answers, and proactively reports
+        what its brief tells it to watch.
+      </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · WHAT PEOPLE IS -------------------------------------------------- -->
+  <section class="slide" data-title="What People is">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The module</div>
+        <h2 class="reveal">The expert on everyone you deal with.</h2>
+        <p class="lede reveal">It holds your whole <em>world</em> of people — and digs to find who matters.</p>
+      </div>
+      <div class="body">
+      <div class="grid g3 grid--fill reveal">
+        <div class="card">
+          <div class="k">Who they are</div>
+          <div class="d">Name, role, company, where they sit — pulled together from every trace, not typed in by you.</div>
+        </div>
+        <div class="card">
+          <div class="k">Your history</div>
+          <div class="d">Every thread, meeting and message with them, gathered into one picture — <em>Tom, and your whole history with him.</em></div>
+        </div>
+        <div class="card" style="position:relative;overflow:hidden">
+          <div class="k">Who knows whom</div>
+          <div class="d">The web between people — champions, deciders, blockers, and the <em>warm paths</em> in.</div>
+          <svg class="svg-soft" style="position:absolute;right:-6px;bottom:-8px;opacity:.5" width="120" height="84" viewBox="0 0 120 84" fill="none">
+            <line x1="30" y1="22" x2="74" y2="16" stroke="#94a3b8" stroke-width="1.2"/>
+            <line x1="74" y1="16" x2="96" y2="50" stroke="#2563eb" stroke-width="1.4"/>
+            <line x1="30" y1="22" x2="52" y2="58" stroke="#94a3b8" stroke-width="1.2"/>
+            <line x1="52" y1="58" x2="96" y2="50" stroke="#94a3b8" stroke-width="1.2"/>
+            <circle cx="30" cy="22" r="4" fill="#64748b"/>
+            <circle cx="74" cy="16" r="4" fill="#64748b"/>
+            <circle cx="52" cy="58" r="4" fill="#64748b"/>
+            <circle cx="96" cy="50" r="5.5" fill="#2563eb"/>
+          </svg>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · RAW MATERIAL ---------------------------------------------------- -->
+  <section class="slide" data-title="The raw material">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The raw material</div>
+        <h2 class="reveal">It starts from the traces you already leave.</h2>
+        <p class="lede reveal">Plain records, before any reading — the floor the reading stands on.</p>
+      </div>
+      <div class="body">
+        <div class="grid g4 grid--fill reveal">
+          <div class="card"><div class="t">✉&nbsp; Email</div><div class="d">Messages, threads, contacts — who, when, what was said, what’s unanswered.</div></div>
+          <div class="card"><div class="t">📅&nbsp; Calendar</div><div class="d">Meetings, who accepted or declined, recurring check-ins, free / busy.</div></div>
+          <div class="card"><div class="t">💬&nbsp; Slack</div><div class="d">Channels, messages, mentions — the back-channel and who’s in it.</div></div>
+          <div class="card"><div class="t">🌐&nbsp; Web</div><div class="d">Enrichment and trigger events — a new tender, a leadership change, funding.</div></div>
+        </div>
+        <p class="small reveal">It reaches these <em>through</em> the connector — it never holds the keys itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · SENSING (the signature) ---------------------------------------- -->
+  <section class="slide" data-title="Sensing — the heart">
+    <div class="stage" style="display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,4vw,72px);align-items:center;align-content:center;height:100%">
+      <div>
+        <div class="eyebrow reveal">The heart of it</div>
+        <h2 class="reveal">It doesn’t store relationships.<br>It <em>reads</em> them.</h2>
+        <p class="lede reveal">
+          First it <strong style="color:var(--ink-900)">assembles</strong> — tidies scattered facts into one picture.
+          Then it <strong style="color:var(--ink-900)">senses</strong> — reads meaning off that picture. The seam between
+          counting and judging always stays visible.
+        </p>
+        <div class="row reveal" style="margin-top:24px">
+          <span class="chip chip--blue"><span class="dot"></span>Infer, don’t tag</span>
+          <span class="chip chip--blue"><span class="dot"></span>Count before you judge</span>
+          <span class="chip chip--blue"><span class="dot"></span>Never let a read float</span>
+        </div>
+      </div>
+      <div class="reveal" style="display:grid;place-items:center">
+        <div class="reading">
+          <div class="read"><span class="spark">✦</span>&nbsp;“Tom is cooling”</div>
+          <div class="riser"></div>
+          <div class="rule"><span class="lbl">judging → the read</span></div>
+          <div class="facts">
+            <span class="chip"><span class="dot"></span>silent 26 days</span>
+            <span class="chip"><span class="dot"></span>last note 19d unanswered</span>
+            <span class="chip"><span class="dot"></span>check-in dropped</span>
+            <span class="chip"><span class="dot"></span>nothing explains it</span>
+          </div>
+          <div class="floor">counting → facts you could re-check yourself</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · THE THRESHOLD (pulse) ------------------------------------------ -->
+  <section class="slide" data-title="The threshold">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The threshold</div>
+        <h2 class="reveal">Is 26 days a lot? Only <em>for this person</em>.</h2>
+        <p class="lede reveal" style="max-width:64ch">
+          There’s no fixed “21 days = quiet” line. The yardstick is the relationship’s <em>own rhythm</em>.
+          If they reply within a day, 26 days screams. If they email twice a year, it’s nothing.
+          Most of what looks like judgement is really <em>deferred counting</em>.
+        </p>
+      </div>
+      <div class="body">
+      <div class="reveal" style="display:flex;justify-content:center">
+        <svg class="svg-soft" width="680" height="120" viewBox="0 0 680 120" fill="none" style="width:min(100%,42rem);height:auto">
+          <text x="0" y="16" fill="#64748b" font-size="12" font-family="Inter" font-weight="600">replies within a day</text>
+          <text x="680" y="16" text-anchor="end" fill="#94a3b8" font-size="12" font-family="Inter" font-weight="600">then — silence</text>
+          <!-- live heartbeat -->
+          <polyline points="0,72 40,72 60,40 80,96 100,72 150,72 170,44 190,92 210,72 260,72 280,46 300,90 320,72 360,72"
+            stroke="#2563eb" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          <!-- flatline -->
+          <line x1="360" y1="72" x2="672" y2="72" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+          <circle cx="360" cy="72" r="4.5" fill="#2563eb"/>
+          <text x="372" y="64" fill="#94a3b8" font-size="11.5" font-family="Inter" font-weight="600">26× their normal gap · no out-of-office on record</text>
+        </svg>
+      </div>
+
+      <div class="grid g3 reveal">
+        <div class="card"><div class="k">1 · Facts</div><div class="d">Dated emails with Tom · the monthly check-in · his replies.</div></div>
+        <div class="card"><div class="k">2 · Counts</div><div class="d">~1-day median, normally starts the threads · now 26 days silent · check-in dropped · innocent-explanation scan: <em>empty</em>.</div></div>
+        <div class="card" style="border-color:#dbe5ff;background:var(--blue-50)"><div class="k" style="color:var(--blue)">3 · The read</div><div class="d"><strong style="color:var(--ink-900)">“Tom is cooling.”</strong> A champion whose rhythm broke with nothing to explain it. <em>Confidence: high.</em></div></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · SIGNALS --------------------------------------------------------- -->
+  <section class="slide" data-title="Signals">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">What it produces</div>
+        <h2 class="reveal">Named reads, each carrying its evidence.</h2>
+        <p class="lede reveal">A <em>signal</em> is the unit — a reusable read that walks all the way back to a date in the inbox. They fall into three categories that all run at once.</p>
+      </div>
+      <div class="body">
+      <div class="grid g3 grid--fill reveal">
+        <div class="card">
+          <div class="t" style="color:var(--blue)">Nurture</div>
+          <div class="d" style="margin-bottom:12px">keep relationships alive</div>
+          <div class="row" style="gap:8px">
+            <span class="pill">Gone quiet / cooling</span>
+            <span class="pill">Open loop / promised</span>
+            <span class="pill">Champion went dark</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="t" style="color:var(--blue)">Grow</div>
+          <div class="d" style="margin-bottom:12px">move open deals</div>
+          <div class="row" style="gap:8px">
+            <span class="pill">Blocker / skeptic</span>
+            <span class="pill">Understanding gap</span>
+            <span class="pill">Warming</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="t" style="color:var(--blue)">Plant</div>
+          <div class="d" style="margin-bottom:12px">find &amp; sow new ground</div>
+          <div class="row" style="gap:8px">
+            <span class="pill">Warm path available</span>
+            <span class="pill">New stakeholder</span>
+            <span class="pill">Champion</span>
+          </div>
+        </div>
+      </div>
+      <p class="small reveal">Every signal earns its place by answering a real question a salesperson asks. The strategy just tilts where the emphasis goes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · GUARDRAILS ------------------------------------------------------ -->
+  <section class="slide" data-title="Guardrails">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The rules it plays by</div>
+        <h2 class="reveal">It suggests. You decide.</h2>
+      </div>
+      <div class="body">
+        <div class="grid g3 grid--fill reveal">
+          <div class="card"><div class="t">You work the verbs</div><div class="d">Decide, approve, send. The AI works the <em>nouns</em> — find the target, draft the message, gather the proof.</div></div>
+          <div class="card"><div class="t">Nothing goes out alone</div><div class="d">Every read is a suggestion. A human pulls the trigger — at least for now.</div></div>
+          <div class="card"><div class="t">Gaps named, not guessed</div><div class="d">When the ground isn’t there — a source unconnected, a fact only you know — it says what’s missing instead of inventing.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · HMW (hero) ----------------------------------------------------- -->
+  <section class="slide slide--dark" data-title="How might we" data-dark>
+    <div class="stage" style="text-align:center">
+      <div class="eyebrow reveal" style="justify-content:center">How might we</div>
+      <h2 class="reveal" style="font-size:clamp(2rem,4.4vw,3.7rem);max-width:18ch;margin:0 auto;color:#fff">
+        Make someone’s whole <span style="color:var(--blue-400)">world</span> of relationships visible —
+        so they always know who to <span style="color:var(--blue-400)">nurture</span>,
+        <span style="color:var(--blue-400)">grow</span>, and
+        <span style="color:var(--blue-400)">plant</span>?
+      </h2>
+      <p class="lede reveal" style="margin:28px auto 0;color:#aebbd6">That’s what we’re here to imagine — what this module looks like, living, <em>inside the app</em>.</p>
+    </div>
+  </section>
+
+  <!-- 11 · THREE LENSES --------------------------------------------------- -->
+  <section class="slide" data-title="Three lenses">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">Three lenses to ideate through</div>
+        <h2 class="reveal">Pick one. Or chase all three.</h2>
+      </div>
+      <div class="body">
+        <div class="grid g3 grid--fill reveal">
+          <div class="card lens">
+            <div class="tag">Nurture</div>
+            <div class="q">How might we make a <em>quietly-dying</em> relationship impossible to miss?</div>
+          </div>
+          <div class="card lens">
+            <div class="tag">Grow</div>
+            <div class="q">How might we show where a deal is <em>stuck</em> — and the worry behind the stall?</div>
+          </div>
+          <div class="card lens">
+            <div class="tag">Plant</div>
+            <div class="q">How might we reveal the <em>warm paths</em> and new faces worth reaching for?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · PROVOCATIONS --------------------------------------------------- -->
+  <section class="slide" data-title="What if…">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">Springboards</div>
+        <h2 class="reveal">What if…</h2>
+      </div>
+      <div class="body">
+        <ul class="whatif reveal">
+          <li><b>↗</b> every relationship had a <em>pulse</em> you could feel at a glance?</li>
+          <li><b>↗</b> you could see the <em>evidence</em> behind a read without ever leaving the view?</li>
+          <li><b>↗</b> the app showed the <em>gaps</em> — who you’re missing — as loudly as who you know?</li>
+          <li><b>↗</b> someone’s whole world fit on <em>one screen</em>: people, history, and where each stands?</li>
+          <li><b>↗</b> correcting a wrong read felt natural — and the app <em>remembered</em>?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · OVER TO YOU (close) ------------------------------------------- -->
+  <section class="slide slide--dark" data-title="Over to you" data-dark>
+    <div class="stage" style="text-align:center">
+      <div class="eyebrow reveal" style="justify-content:center">Over to you</div>
+      <h1 class="reveal" style="font-size:clamp(2.4rem,6vw,4.6rem);color:#fff">Now — give it a face.</h1>
+      <p class="lede reveal" style="margin:24px auto 0;color:#aebbd6">Sketch, argue, steal. Wild ideas welcome — we’ll cluster and pick at the end.</p>
+      <div class="reveal" style="margin-top:34px"><span class="pill">People · Relationships module · 90-min ideation</span></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- chrome -->
+<div class="edge l" id="edgeL" aria-label="previous"></div>
+<div class="edge r" id="edgeR" aria-label="next"></div>
+
+<div class="brand"><span class="mk"></span><span><b>People</b>&nbsp;·&nbsp;Relationships</span></div>
+<div class="counter"><span id="cur">1</span> / <span id="tot">13</span></div>
+<div class="nav">
+  <button id="prev" title="Previous (←)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 6-6 6 6 6"/></svg></button>
+  <button id="next" title="Next (→)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></button>
+</div>
+<div class="hint" id="hint">
+  <span><kbd>←</kbd> <kbd>→</kbd> move</span>
+  <span><kbd>F</kbd> fullscreen</span>
+  <span><kbd>O</kbd> overview</span>
+</div>
+
+<div class="overview" id="overview">
+  <div class="ov-head"><h3>All slides</h3><span class="small" style="color:#7c89a6">click to jump · <kbd style="color:#cdd7ee">Esc</kbd> to close</span></div>
+  <div class="ov-grid" id="ovGrid"></div>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0, n = slides.length;
+  var elCur = document.getElementById('cur'),
+      elTot = document.getElementById('tot'),
+      prog  = document.getElementById('progress'),
+      hint  = document.getElementById('hint'),
+      ov    = document.getElementById('overview');
+  elTot.textContent = n;
+
+  function render(){
+    slides.forEach(function(s,k){ s.classList.toggle('active', k===i); });
+    document.body.classList.toggle('dark', slides[i].hasAttribute('data-dark'));
+    elCur.textContent = i+1;
+    prog.style.width = (n>1 ? (i/(n-1))*100 : 100) + '%';
+    if(location.hash !== '#'+(i+1)) history.replaceState(null,'','#'+(i+1));
+  }
+  function go(d){ var t=Math.min(n-1,Math.max(0,i+d)); if(t!==i){ i=t; render(); } }
+  function jump(t){ i=Math.min(n-1,Math.max(0,t)); render(); }
+
+  // build overview
+  var ovGrid = document.getElementById('ovGrid');
+  slides.forEach(function(s,k){
+    var c=document.createElement('div'); c.className='ov-card';
+    c.innerHTML='<div class="n">'+String(k+1).padStart(2,'0')+'</div><div class="ttl">'+(s.dataset.title||'')+'</div>';
+    c.onclick=function(){ jump(k); ov.classList.remove('on'); };
+    ovGrid.appendChild(c);
+  });
+
+  document.getElementById('next').onclick=function(){go(1)};
+  document.getElementById('prev').onclick=function(){go(-1)};
+  document.getElementById('edgeR').onclick=function(){go(1)};
+  document.getElementById('edgeL').onclick=function(){go(-1)};
+
+  document.addEventListener('keydown', function(e){
+    var k=e.key;
+    if(ov.classList.contains('on')){ if(k==='Escape'||k==='o'||k==='O'){ ov.classList.remove('on'); } return; }
+    if(k==='ArrowRight'||k===' '||k==='PageDown'){ e.preventDefault(); go(1); }
+    else if(k==='ArrowLeft'||k==='PageUp'){ e.preventDefault(); go(-1); }
+    else if(k==='Home'){ jump(0); }
+    else if(k==='End'){ jump(n-1); }
+    else if(k==='f'||k==='F'){ if(!document.fullscreenElement){ (document.documentElement.requestFullscreen||function(){})(); } else { document.exitFullscreen(); } }
+    else if(k==='o'||k==='O'){ ov.classList.add('on'); }
+    else if(k==='Escape' && document.fullscreenElement){ document.exitFullscreen(); }
+  });
+
+  // fade the hint after a bit
+  setTimeout(function(){ hint.classList.add('gone'); }, 5200);
+
+  // deep-link via hash
+  var start = parseInt((location.hash||'').replace('#',''),10);
+  if(start>=1 && start<=n) i=start-1;
+  render();
+})();
+</script>
+</body>
+</html>
