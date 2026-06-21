@@ -52,7 +52,7 @@ Each group with its **answer path** (fetched / told / inferred) and its **owner*
   (People's read + Offerings' answers + Organisation's proof). Grow.
 - **Read their state** — Q13–14, Q16, Q19. *Inferred reads* — the soft, judgement end. Owner:
   **People** sensing.
-- **Track and prioritise** — Q18, Q21–22. *Fetched* facts and open loops feeding Brain's
+- **Track and prioritise** — Q18, Q21–22. *Fetched* facts and loose ends feeding Brain's
   **triage**.
 - **Write it** — Q20, Q23, Q26. The **render** — Profile's voice, closeness from People, inside
   Organisation's fence.

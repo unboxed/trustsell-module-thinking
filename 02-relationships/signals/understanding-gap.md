@@ -3,8 +3,8 @@ id: understanding-gap
 floor: signal
 label: Understanding gap
 blurb: They keep asking the same things, or use your own terms wrongly, so the product hasn't landed.
-inputs: [conversation-history]
-measures: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back]
+inputs: [conversation-history, meeting-history]
+measures: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]
 answers: [Q13]
 modes: [grow]
 kind: risk
@@ -44,8 +44,14 @@ Offerings' product claims and only flags the drift. The `confidence` is **graded
 answered questions repeat and a term plainly clashes with a claim; near the line it softens to "may
 not have fully landed" rather than calling the buyer confused on one stray phrase.
 
-**Where it can fail to reach ground.** Two ways. If Offerings can't supply the relevant product
+**Now reads confusion voiced aloud.** The muddle often surfaces on a call before it shows in mail.
+When a call was captured, `meeting-history` carries the `Transcript` and `Smart notes`, so the same
+question asked again on the call, or the product described wrongly out loud, counts toward the read
+(`confusion-voiced-on-call`) and is scored against Offerings' claims the same way.
+
+**Where it can fail to reach ground.** Three ways now. If Offerings can't supply the relevant product
 claim, the wrong-term check has nothing to score against and only the re-ask count survives, so
-confidence falls: that is a **told-by-a-supplier gap**, named not faked. And a buyer who understands
-fine but writes in shorthand can trip the term check, which is why the read leans on repetition (the
-same point coming back), not on a single loose word.
+confidence falls: a **told-by-a-supplier gap**. A buyer who understands fine but writes in shorthand
+can trip the term check, which is why the read leans on repetition, not a single loose word. And the
+call signal is there only when note-taking was on: an uncaptured call hides the confusion voiced in
+it, the conditional-content **data gap** [`meeting-history`](../assemblies/meeting-history.md) names.

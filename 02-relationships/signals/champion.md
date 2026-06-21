@@ -3,8 +3,8 @@ id: champion
 floor: signal
 label: Champion
 blurb: 'A contact who advocates for you inside their org: replies fast and long, and pulls colleagues in.'
-inputs: [person-history, conversation-history]
-measures: [reply-speed-vs-own-rhythm, reply-length-vs-own-baseline, colleagues-looped-in-count, internal-advocacy-mentions]
+inputs: [person-history, conversation-history, meeting-history]
+measures: [reply-speed-vs-own-rhythm, reply-length-vs-own-baseline, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
 answers: [Q4, Q5, Q6, Q14]
 modes: [grow]
 kind: opening
@@ -44,8 +44,14 @@ Procurement") rather than ordinary forwarding. The `confidence` is **graded**: h
 and clearly recruiting colleagues all stack; lower when only the reply behaviour is there and nobody
 new is being pulled in, where it softens to "engaged" rather than a confident "champion".
 
-**Where it can fail to reach ground.** Looping a colleague in only shows when it happens in a channel
-People can see. If the advocacy moves to a meeting, a phone call, or a LinkedIn message, the new name
-never lands on a `To` line we hold, and the count understates her. That is a **data gap**, named not
-faked: People reads the present off the messages it has, and an off-channel introduction is invisible
-until it surfaces in mail, Calendar, or Slack.
+**Now reads advocacy in the room.** Championing often happens out loud. When a call was captured,
+`meeting-history` carries the `Transcript` and `Smart notes`, so Dana vouching for the work on the
+call, or saying "you should talk to our Head of Procurement", counts as advocacy
+(`advocacy-voiced-on-call`) even when no new name has reached a `To` line yet.
+
+**Where it can fail to reach ground.** The off-channel gap is now **narrowed**, not closed. A captured
+meeting surfaces advocacy spoken in it; what stays invisible is advocacy on an *uncaptured* call (the
+conditional-content data gap [`meeting-history`](../assemblies/meeting-history.md) names), on a phone
+call outside Meet, or on **LinkedIn**, where who-vouches-for-whom never touches your mail. People reads
+the present off the records it has, so an introduction made on those routes understates her until it
+surfaces in mail, Calendar, Slack, or a captured call. That is a **data gap**, named not faked.

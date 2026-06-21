@@ -45,8 +45,11 @@ test Cooling champion uses, then graded down so it never reads as certain as a b
 
 **Where it can fail to reach ground.** The signal is only as good as its ability to tell a *broken
 channel* from *ordinary quiet*. The strong evidence lives in two specific records: the bounce
-(a mailer-daemon message) and the auto-reply body. If a departure happens silently, no bounce, no
-auto-reply, just a mailbox that quietly stops answering, the read thins to the same evidence Cooling
-champion has and can only say "went quiet, possibly left", not "went dark". That is a **data gap**:
-without a delivery failure or a departure note, a bounce cannot be told apart from a contact who is
-simply ignoring you, and the signal is named down accordingly rather than faked up.
+(a mailer-daemon message) and the auto-reply body. Reach is now read across calls too: because
+`person-history` carries the `Meeting` and its `Participant` list, a recent call with her counts as a
+live channel, so "went dark" will not fire on someone you spoke to last week. If a departure happens
+silently, no bounce, no auto-reply, just a mailbox (and a calendar) that quietly stops answering, the
+read thins to the same evidence Cooling champion has and can only say "went quiet, possibly left", not
+"went dark". That is a **data gap**: without a delivery failure or a departure note, a bounce cannot be
+told apart from a contact who is simply ignoring you, and the signal is named down accordingly rather
+than faked up.

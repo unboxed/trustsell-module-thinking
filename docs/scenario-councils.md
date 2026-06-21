@@ -76,7 +76,7 @@ Before Brain could decide, it gathered a piece from each expert. Each piece is i
 small reading, and the brief is what you get when you combine them:
 
 - **Relationships** handed up: *"Tom is a warming champion with a live question,"* plus
-  the open loop (his records-import question is still unanswered) and the stakeholder
+  the loose end (his records-import question is still unanswered) and the stakeholder
   picture at Council 14.
 - **Offerings** handed up: the answer to a records-import worry, the partial-rollout
   first step that's easy to say yes to, and the proof that reassures a cautious public
@@ -149,6 +149,11 @@ it:
 The map is the same kind of assembly as the reading: roles inferred from who appears,
 how they behave, and who they're copied alongside — with the holes called out as
 honestly as the knowns.
+
+(Here the deal and the coalition coincide, because everyone in this effort sits inside
+Council 14. In general the **deal** is the unit, and it can pull in people across
+organisations; this single-org coalition is just its simplest shape. See
+[`02-relationships/assemblies/deal.md`](../02-relationships/assemblies/deal.md).)
 
 ## Layer 5 — The routines that produced the reading
 

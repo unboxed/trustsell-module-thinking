@@ -8,13 +8,14 @@ tier: assistant
 modes: [nurture, plant, grow]
 connects:
   - to: "00-spine"
-    provides: "reports what the brief flags ('Jane went quiet', 'found the DM') and answers follow-ups"
+    requests: "the standing brief drawn from the goal"
+    provides: "reports what the brief flags ('Jane went quiet', 'found the DM'), answers follow-ups, and hands over the deal picture (a selling effort's people and conversations) for the Brain to stage"
   - to: "03-offerings"
     requests: "which offering a conversation relates to, and the rebuttal to a worry on record"
     provides: "the worry it has on record (for 03 to answer) and a lead's situation (for 03 to judge fit)"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
-draws_from: [gmail, calendar, slack, web]
+draws_from: [gmail, calendar, slack, contacts, meet, web]
 ---
 
 # 02 · People
@@ -81,7 +82,10 @@ People's reasoning is now its **libraries**, where the two moves above the raw d
 floor you can browse:
 
 - **Assembling** (deterministic, organising the facts so they can be seen) becomes the
-  [`assemblies/`](assemblies/) library: *person history, conversation history, stakeholder map*.
+  [`assemblies/`](assemblies/) library: *person history, conversation history, meeting history,
+  stakeholder map*, and the *deal*, the selling effort the others feed into (its people and
+  conversations gathered whole, across any org). The deal is the unit you sell into; People gathers it
+  goal-blind, and the Brain stages it.
 - **Sensing** (the reading, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
   counting then judging) becomes the [`signals/`](signals/) library. Each signal is a named, reusable
   read that carries its evidence, measured against the relationship's **own rhythm**, earning its
@@ -99,6 +103,10 @@ What People hands up, all as suggestions, nothing acting on its own:
 - **The assembled picture.** On request, the full history on a contact or thread.
 - **The stakeholder map.** Deciders, influencers, champions, blockers, *and the gaps* (a hole is
   surfaced as honestly as a known name).
+- **The deal picture.** On request, a whole selling effort: its people (across orgs) and its
+  conversations, gathered goal-blind for the Brain to place on a goal's ladder and prioritise. People
+  also **proposes new deals it detects**, clustering live conversations for you to confirm, split or
+  reject.
 - **Direct answers.** To a specific question from the Brain or another module ("what's our history
   with Council 14?", "what worry is on record here?").
 
@@ -107,7 +115,9 @@ What People hands up, all as suggestions, nothing acting on its own:
 People holds the **relationships**: the assembled history per contact, plus the dispositions it has
 *read* (kept with their evidence, so a read can be re-checked or revised, never frozen as a tag). It
 is built on the **same three floors** as the sensing: the facts it has fetched, the counts it keeps,
-the reads it has formed.
+the reads it has formed. It also holds the **deals** it has gathered, the groupings of people and
+conversations into selling efforts (goal-blind: the grouping is People's, the stage and priority are
+the Brain's).
 
 It is a **personal** tier: one set of relationships per individual, private to that user, not shared
 across an org (that is `04`). People reaches another module's memory only by **asking** (a supplier
@@ -122,5 +132,6 @@ pull), never by reaching in.
 - **The shape of the Brain's standing brief.** Goal-tuning sets *what* the brief does (scope, signal
   types, sensitivity); the exact form the Brain hands over is still open (`00-spine`).
 - **Catalog completeness.** The signal library covers the connected plumbing (Gmail, Calendar, Slack,
-  web). Whole families stay parked behind data gaps (warm paths thin without LinkedIn) and behind
-  frontiers (forecasting, triage). Worth a deliberate sweep as channels connect.
+  Contacts, Meet, web). Whole families stay parked behind data gaps (warm paths thin without LinkedIn,
+  call content thin when note-taking was off) and behind frontiers (forecasting, triage). Worth a
+  deliberate sweep as channels connect.

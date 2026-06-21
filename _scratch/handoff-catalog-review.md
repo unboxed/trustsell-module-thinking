@@ -6,6 +6,15 @@
 > pressure-test first, build the agreed entries after. The **Brain (`00`) is deferred** to its own
 > session (it is the most complex and the least brainstormed; see the end).
 
+## Status (updated 2026-06-21)
+
+- **`02` People — DONE.** Catalog expanded, the plain-English pass applied, and a new cross-cutting
+  primitive (the **deal**) added along the way. Details under "02 People — DONE" and "The deal
+  primitive" below.
+- **`03` → `04` → `05` — the rest**, in that order. The seed findings below still stand.
+- **`00` Brain — deferred**, and it has grown: it now also owns **staging the deal** and the **signal
+  re-scoping** the deal work deferred (see Deferred, at the end).
+
 ## Why now
 
 The structured libraries now exist for every assistant (`02`/`03`/`04`/`05`), the old per-module
@@ -16,7 +25,7 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 
 ## Order
 
-`02` → `03` → `04` → `05`, one at a time. Then `00` Brain as its own dedicated session.
+`02` ✓ done → **`03`** (next) → `04` → `05`, one at a time. Then `00` Brain as its own dedicated session.
 
 ## Method, per module
 
@@ -39,36 +48,53 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 
 | Module | Assemblies | Signals | told.md | Notes |
 |---|---|---|---|---|
-| `02` People | person-history, conversation-history, stakeholder-map | champion, cooling-champion, warming, blocker, understanding-gap, new-stakeholder, champion-went-dark, warm-path, open-loop | **missing** | richest catalog; the worked example |
+| `02` People ✓ | person-history, conversation-history, **meeting-history**, stakeholder-map, **deal** | champion, cooling-champion, warming, blocker, understanding-gap, new-stakeholder, champion-went-dark, warm-path, **loose-end** (was open-loop), **best-way-to-reach**, **missing-people**, **time-to-reconnect**, **one-sided**, **warmth-fading**, **buying-intent** | **yes** | DONE: expanded + renamed + deal primitive |
 | `03` Offerings | offering-entry, product-claims, price-position, objection-list | fit-match, price-barrier, answer-gap, recurring-objection, lead-with-this | yes | fairly solid |
 | `04` Organisation | proof-library, compliance-fence | **none, by design** | yes | matches proof, gates drafts; no behaviour to sense |
 | `05` Profile | writing-history | voice | yes | thinnest; most room to grow |
 
-(`00` Brain has no channels/assemblies/signals by design and still lacks a `told.md`; `02` also still
-lacks a `told.md`. Closing those two told sources is a small, mechanical parity pass, separate from
-this catalog work.)
+(`02`'s `told.md` now exists, with `deal-seed` among its records. `00` Brain has no
+channels/assemblies/signals by design and still lacks a `told.md`; closing that one told source is a
+small parity pass folded into the Brain session.)
 
 ## Seed findings (a running start, not the whole job)
 
 These came out of a first look. Treat them as leads to confirm and extend, not a finished list.
 
-### 02 People
-- **`draws_from` is out of sync.** It declares `[gmail, calendar, slack, web]`, but `stakeholder-map`
-  already pulls `contact` and `other-contact` from the **Contacts** channel. Contacts is used but not
-  declared; **Meet** is not used at all.
-- **Meet is unexploited, and it would close a named blind spot.** `blocker`, `understanding-gap`,
-  `open-loop` and `champion` all name "if it happened on a call, the thread shows only the stall" as a
-  data gap. The Meet channel (Meeting, Transcript, Smart notes) would close it. Candidate: a
-  **meeting/call history** assembly, feeding signals like *a commitment made on a call* or *an
-  objection raised on a call*.
-- **Q9 "best way to contact them" has no signal.** A **responsive-channel** read (where they actually
-  reply: email vs Slack vs meeting, and how fast on each) would answer it.
-- **The innocent-explanation scan leans on out-of-office**, but `person-history` does not list the
-  Calendar `status-event` (or `free-busy`) in its inputs, so that scan's lineage is thin. Wire it.
-- **More candidates to weigh:** coalition-complete / decider-gap (Q4-Q6, the stakeholder-map already
-  names the hole, a signal could fire on it); re-engagement opportunity (a dormant relationship worth
-  reviving, distinct from cooling, which is decay); reciprocity / engagement-balance (who is chasing
-  whom); a tone/sentiment shift read (distinct from blocker).
+### 02 People — DONE
+Everything the seed findings called for was built, plus more:
+- **Meet wired in.** New `meeting-history` assembly, in **two layers**: who-was-on-the-call is always
+  there; what-was-said only when note-taking was on (named as a data gap, not faked). `person-history`
+  now also pulls Meet (`meeting`, `participant`) and Calendar `status-event`/`free-busy`. The four call
+  gaps (`loose-end`, `blocker`, `understanding-gap`, `champion`) are **narrowed, not faked**.
+- **`draws_from` fixed** → `[gmail, calendar, slack, contacts, meet, web]` (Contacts was used-but-undeclared).
+- **New signals:** `best-way-to-reach` (Q9, previously unanswered), `missing-people` (Q4-6),
+  `time-to-reconnect` (Q19), `one-sided` (Q14), `warmth-fading` (Q14, low-confidence), `buying-intent`
+  (Q14/Q19, the deal-detection trigger).
+- **`told.md` created** (relationship-note, offline-touch, contact-preference, correction, seed-contact,
+  deal-seed).
+- **Plain-English pass:** coalition→`missing-people`, open-loop→`loose-end`,
+  responsive-channel→`best-way-to-reach`, reciprocity→`one-sided`, engagement-tone→`warmth-fading`.
+  (`champion`/`blocker`/`stakeholder`/`warm-path` kept, as common-enough domain terms.)
+- **Reviewed** (two independent focused passes): catalog is solid; small calibration fixes applied.
+- *Optional tidy not applied:* `blocker` still answers `Q13` (really `understanding-gap`'s question)
+  alongside `Q15`; drop `Q13` if you agree.
+
+### The deal primitive (cross-cutting, added this session)
+A bigger gap surfaced while reviewing 02: there was **no unit for what you actually sell into**. We
+added the **deal**, and it reaches across modules, so read this before continuing.
+- **What:** a deal is one selling effort (an offering + its conversations + the people on them), and it
+  can **span organisations** because *the conversation is the membrane* (members = whoever is on the
+  deal's threads/calls). The org stays the *account* (roster); the deal is the unit of progress.
+- **Where it lives:** **People gathers** the deal (`02/assemblies/deal.md`, goal-blind); the **Brain
+  stages** it (a scoreboard row is a deal, a calendar item is a person inside one). Capability gathers,
+  intent stages.
+- **Creation:** manual (a `deal-seed` told record) or **detected** (People clusters conversations and
+  *proposes* a deal-seed; never auto-commits). Detection is triggered by the `buying-intent` signal.
+  Separation: offering first, then people-cluster/account, then time; the same-org/same-offering
+  boundary is a judgement People asks about.
+- **Written into:** `02` (module, `assemblies/deal.md`, `told.md`), `00-spine/module.md`, root
+  `CLAUDE.md` model section, `docs/scenario-councils.md`, `_scratch/open-questions.md`.
 
 ### 03 Offerings
 - 4 assemblies / 5 signals, the most balanced catalog. **"What's landing" is deliberately parked** (no
@@ -98,6 +124,16 @@ and the **calendar**. Its open questions are the system's hardest: the **triage 
 keystone, the **shape of a brief**, and **reading the fuzzy target**. These deserve a dedicated
 session once the assistant catalogs are solid, because a richer signal set upstream changes what the
 Brain has to weigh. The deeper Brain-frontiers brief is [`handoff-post-rollout.md`](handoff-post-rollout.md).
+
+**The Brain session now also carries the deal's intent half** (see "The deal primitive" above):
+- **Stage and prioritise deals** on the goal's ladder (a scoreboard row is a deal). This is the triage
+  keystone, now deal-shaped.
+- **Re-scope the signals to the deal** — `missing-people` should read the deal's buying group (not the
+  org roster), and `champion`/`blocker`/`loose-end` should roll up per deal. Deferred here because it
+  only makes sense alongside staging.
+- **The deal's "how"** — clustering and grow thresholds (how much overlap merges two threads into one
+  deal), auto-propose vs always-ask sensitivity, and the deal-boundary judgement (same org + same
+  offering). All in [`open-questions.md`](open-questions.md).
 
 ## Guardrails and contract
 

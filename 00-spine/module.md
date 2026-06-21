@@ -8,7 +8,7 @@ tier: brain
 modes: [nurture, grow, plant]
 connects:
   - to: "02-relationships"
-    requests: "watch these accounts, find the decision-makers, flag when a champion goes quiet"
+    requests: "watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)"
     provides: "the standing brief drawn from the goal, plus follow-up questions"
   - to: "03-offerings"
     requests: "the product playbook, proof strategy and pricing levers for a deal"
@@ -97,12 +97,15 @@ reports rather than a deterministic gather, and they are described in Memory and
 
 What the Brain produces, two faces of the same thinking:
 
-- **The scoreboard** (the *picture*). Where the goal stands: each target on its rung, the gaps, the
-  tally. A *status* the tool never used to offer; you can glance at how the whole goal is going,
-  not just the next move.
+- **The scoreboard** (the *picture*). Where the goal stands: each **target (a deal)** on its rung, the
+  gaps, the tally. A target is a *deal*: the selling effort People gathers (its people and
+  conversations, which can span more than one organisation), which the Brain places on the goal's
+  ladder. The organisation is the *account* behind a deal, not the unit. A *status* the tool never used
+  to offer; you can glance at how the whole goal is going, not just the next move.
 - **The calendar** (the *plan*). A living, paced agenda of prepared **nouns**: today, tomorrow,
   later, re-shuffled as the world moves, quiet days allowed, items ripening from *forming* to
-  *ready*. "The one thing worth doing next" is just today's headline on it.
+  *ready*. Each item is a **person inside a deal**. "The one thing worth doing next" is just today's
+  headline on it.
 
 Underneath those, two more outputs aimed at the modules, not you:
 - **The standing briefs.** Each expert's job, drawn from the goal.
@@ -114,9 +117,9 @@ Everything it surfaces is a suggestion; the human acts.
 ## Memory
 
 The Brain holds the **intent** layer: your **strategy** (the goals, each pinned to an offering), the
-**scoreboard** (where every target sits on the ladder, and the tally), the **calendar** (the paced
-plan), and **outcome attribution** (what it leaned on, so the right lesson can go to the right
-module).
+**scoreboard** (where every target sits on the ladder, and the tally, a target being a **deal** that
+People gathers and the Brain stages), the **calendar** (the paced plan), and **outcome attribution**
+(what it leaned on, so the right lesson can go to the right module).
 
 It deliberately holds **none of the domain knowledge**. The relationships live in People, the
 product in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it

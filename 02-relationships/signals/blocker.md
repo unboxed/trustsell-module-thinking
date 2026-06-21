@@ -3,8 +3,8 @@ id: blocker
 floor: signal
 label: Blocker
 blurb: A skeptic who repeats the same objection, replies flat and short, and stalls after each ask.
-inputs: [conversation-history, person-history]
-measures: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match]
+inputs: [conversation-history, person-history, meeting-history]
+measures: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]
 answers: [Q13, Q15]
 modes: [grow]
 kind: risk
@@ -46,9 +46,15 @@ named by a supplier pull (Offerings' objection list) rather than by People inven
 shortened, and every ask stalled; it softens toward "pushing back" when the worries differ each time
 or the deal is still inching forward.
 
-**Where it can fail to reach ground.** If the worry is phrased loosely and does not match anything on
-Offerings' objection list, People can still see the *pattern* (a recurring concern, short replies,
-stalled asks) but cannot **name** the objection, so it reports an unnamed block and confidence falls.
-That is a **told gap** on Offerings' side, named not faked. And if the push-back lives on a call or in
-person rather than in mail or Slack, the thread shows only the stall, not the worry behind it, a
-**data gap** in what the channels can see.
+**Now reads objections raised aloud.** Push-back no longer has to be typed. When a call was captured,
+`meeting-history` carries the `Transcript` and `Smart notes`, so the same GDPR worry voiced on the
+call counts toward the recurring-objection pattern (`objection-raised-on-call`) and is still matched
+to Offerings' list to be named. The block reads across mail, Slack and the call as one.
+
+**Where it can fail to reach ground.** Two ways, and the second is now **narrowed**. If the worry is
+phrased loosely and does not match anything on Offerings' objection list, People can still see the
+*pattern* but cannot **name** the objection, so it reports an unnamed block and confidence falls: a
+**told gap** on Offerings' side. And if the push-back happens on a call, it is visible only when
+note-taking was on; an uncaptured call (or an in-person stand-off) still shows the stall without the
+worry behind it, the conditional-content **data gap** [`meeting-history`](../assemblies/meeting-history.md)
+names.

@@ -14,6 +14,8 @@ inputs:
   - other-contact
   - calendar-event
   - slack-user
+  - seed-contact
+  - relationship-note
 ---
 
 # Stakeholder map
@@ -41,6 +43,8 @@ champion or has gone cooling is a judgement, and that happens above, in the sign
 > [`channels/contacts.md`](../../01-integrations/channels/contacts.md) and
 > [`channels/calendar.md`](../../01-integrations/channels/calendar.md). `slack-user` and `enrichment`
 > resolve to [`channels/slack.md`](../../01-integrations/channels/slack.md) and
-> [`channels/web.md`](../../01-integrations/channels/web.md). The decider gap stays wide until
-> LinkedIn connects (role and reporting lines are a data gap), and the user can always override a
-> placement, which is a told fact the map keeps.
+> [`channels/web.md`](../../01-integrations/channels/web.md). `seed-contact` and `relationship-note`
+> are People's own told records, resolving to [`told.md`](../told.md): the targets you name and the
+> placement facts only you know ("he decides even though he's quiet") that the records cannot show. The
+> decider gap stays wide until LinkedIn connects (role and reporting lines are a data gap), and the
+> user can always override a placement, which is a told fact the map keeps.
