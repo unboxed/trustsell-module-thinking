@@ -36,8 +36,11 @@ The card and wires (read by the app today):
 - `modes` — which categories of work it serves: sustain, advance, expand (semantic; not drawn yet)
 - `connects` — two-way links to other modules; the canvas auto-routes one wire per link (see below)
 - `draws_from` — the channels (sub-items of `01`) a module pulls raw data through; the canvas draws a single **inflow arrow** from each named channel plug into the module (see below)
+- `raw_data` — the record types a module pulls through those channels (detailed by channel in the body); read by the app and shown as chips
 
-The badge facets (short labels now, drawn as chips later):
+The badge facets — **sketched, not yet adopted.** The live body uses the **agent-anatomy** in the
+root `CLAUDE.md` (Raw data → Principles → System prompt → User input → Reasoning → Output →
+Memory → Open questions), *not* these as frontmatter chips. Kept here as the likely future shape:
 - `values` — the principles the module holds
 - `inputs` — what the user supplies: `inputs.current` (today's tool) and `inputs.suggested` (the model's ask)
 - `routines` — the module's standing single-owner jobs; sits *on* its node when drawn
@@ -70,16 +73,14 @@ lighter, dashed line) so "a data source feeds this module" reads differently fro
 converse". A module lists the channel ids it draws from (`draws_from: [gmail, slack, …]`),
 mirroring the `### <channel>` sections in its body.
 
-**Every facet is two layers, and values show as badges.** `connects` set the pattern: the
-actual values as a short list in frontmatter, and a narrative in the body that explains them.
-The rest of the badge facets (`values`, `inputs`, `routines`, `plays`) follow it. So the
-**detail panel** does not render one undifferentiated blob of prose. It renders the module's
-body as a set of named **facets** (purpose, values, system prompt, inputs, routines, memory,
-open questions), and for the badge facets it shows each value as a **badge** (a chip you can
-add, change, or remove) beside its one-line description. The reader (`lib/modules.ts`) surfaces
-only the keys it already knows; the badge keys are **defined now, drawn later**, the same way
-`connects` predated the wires. The writing and badge rules live in
-`_scratch/handoff-clarity-pass.md`.
+**The detail panel renders the body as named facets, not one blob of prose.** It shows the
+module's **agent-anatomy** sections (raw data, principles, system prompt, user input, reasoning,
+output, memory, open questions) as distinct facets. Where a facet is a **list of named things** —
+the `connects` links, the raw-data records — each value can render as a **badge/chip** beside its
+one-line description; `connects` is the original of that pattern and `raw_data` already renders
+this way. Treating the other list-facets (a module's principles, signals, routines) as
+frontmatter badge-chips is a **possible future extension**, not yet adopted — the live source is
+the body. The reader (`lib/modules.ts`) surfaces only the keys it already knows.
 
 ## Routines & plays
 

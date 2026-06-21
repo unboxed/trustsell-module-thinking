@@ -30,7 +30,7 @@ This is the worked version of Brain's canonical **play** (`00-spine`); it ties t
 
 ## The concepts underneath
 - **Routine** (steps 2–3): a standing job with one owner; it may pull from a **supplier** (People pulls the fit-shape from Offerings).
-- **Play** (steps 4–6): the cross-module recipe Brain conducts, with the **decision in the middle** (step 5). Only Brain can own it.
+- **Play** (steps 4–6): the cross-module choreography Brain conducts, with the **decision in the middle** (step 5). Only Brain can own it.
 - **Provide** (step 4): each module's piece, handed back when Brain asks.
 - **Brief → render** (steps 6–7): Brain decides; Profile writes; Organisation gates.
 

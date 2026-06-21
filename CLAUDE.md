@@ -14,32 +14,39 @@ This is a **design / brainstorming workspace, not an application**. There is no 
 Each module's `CLAUDE.md` is **two layers in one file**: a thin **frontmatter** block of
 facts, then the **narrative body**. The body is the reasoning — the actual product of
 this workspace — and stays prose. The frontmatter holds only the small, schema-able
-slice the blueprint needs (`name`, `title`, `blurb`, `icon`, `optional`, plus the
-semantic `tier`/`modes`/`connects`); it is the **single source of the node's card
-face**. Edit a module and the blueprint reflects it live — the UI is a read-only
-**mirror** of these docs, never the store. The frontmatter scheme is catalogued in
-`docs/ui-foundation.md`.
+slice the blueprint needs — `name`, `title`, `blurb`, `icon`, `optional`, the
+semantic `tier`/`modes`/`connects`, and `draws_from`/`raw_data` for the data a module
+pulls; it is the **single source of the node's card face**. Edit a module and the
+blueprint reflects it live — the UI is a read-only **mirror** of these docs, never the
+store. The keys are catalogued in `docs/ui-foundation.md`; the blueprint reads only the
+ones it knows today (`coerceMeta` in `blueprint/lib/modules.ts`).
 
-**Two layers per facet, with values shown as badges.** Each facet has a **narrative** in the
-body that explains it. Where the facet is a list of things, those things also show as
-**badges**: a short label in `backticks`, followed by a dash and a one-line description. The
-same short labels are stored in the frontmatter, so the future UI can render them as chips you
-add, change, or remove. `connects` is the original of this pattern; the list-facets that follow
-it are `values`, `inputs` (`current` and `suggested`), `routines`, `plays` (on `00` only) and
-`open_questions`.
+**The body follows a fixed agent-anatomy** — each module described the way you'd describe an
+agent, top to bottom:
 
-Which facets use badges:
-- **Badge facets** (short labels in frontmatter, badges in the body): Values, Inputs, Routines,
-  Connections, Plays.
-- **Plain facets** (prose only): Purpose, System prompt, What it owns, What it doesn't own, Memory.
-- **Open questions** stays a plain bulleted list — a question is not a label.
+`Raw data` → `Principles` → `System prompt` → `User input` → `Reasoning` → `Output` →
+`Memory` → `Open questions`
 
-Keep the frontmatter labels short (the badge text), put each description once in the body, and
-keep the two in sync. The YAML is hand-edited, so keep it shallow. The blueprint reads only the
-keys it knows today (`coerceMeta` in `blueprint/lib/modules.ts`); the newer keys parse
-harmlessly and will surface in the UI once that reader is extended. `03-offerings/CLAUDE.md` is
-the worked example to copy; the full clarity-and-badges spec is in
-`_scratch/handoff-clarity-pass.md`.
+- **Raw data** — the plain records it pulls from the connected channels, grouped by channel
+  (mirroring `draws_from`). A module with no channels says so.
+- **Principles** — how it works, one line each.
+- **System prompt** — its operating stance, in prose (brainstorm-level, not deployable wording).
+- **User input** — the *told* pile: what only the user can supply.
+- **Reasoning** — the heart: how it turns what it has into what it knows.
+- **Output** — what it hands up, and to whom.
+- **Memory** — what it keeps, and which tier (shared vs personal).
+- **Open questions** — a plain bulleted list of what's still unsettled.
+
+Write plain English in the blueprint's voice; fill top-down, and a section not yet worked reads
+`_TBD_`. Where a section is a **list of named things** (records, signals, principles), give each
+a short label and a one-line description, so the future UI can show them as **badges/chips** —
+`connects` and `raw_data` already render that way.
+
+**`02-relationships/CLAUDE.md` is the worked example to copy** — the first module filled all the
+way down. (An earlier "badge-facet card" format — Purpose / Values / Routines / Plays as
+frontmatter chips — was sketched but never adopted; the agent-anatomy above is what the files
+use. Those badge keys survive only as a possible future frontmatter extension, noted in
+`docs/ui-foundation.md`.)
 
 The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that
 sit above this are written up in `README.md`.
@@ -59,7 +66,7 @@ A **port**, nothing more. The user connects their accounts to it once; from then
 
 **Principle:** capability is *distributed* (in the assistants); intent is *centralized* (in the brain).
 
-**Routines vs plays.** A **routine** is a standing job with a single owner — the module that does it (it may *pull* ingredients from others, who are just suppliers). A **play** is a brain-conducted recipe across several modules with a *decision in the middle* — it has no single-module owner, so it lives with the brain. The litmus: a decision in the middle ⇒ a play; otherwise a routine.
+**Routines vs plays.** A **routine** is a standing job with a single owner — the module that does it (it may *pull* ingredients from others, who are just suppliers). A **play** is a brain-conducted choreography across several modules with a *decision in the middle* — it has no single-module owner, so it lives with the brain. The litmus: a decision in the middle ⇒ a play; otherwise a routine.
 
 **Every connection is a request + a provide.** A link between two modules is never one undirected road: something is *asked for* going one way and *handed back* the other — the brain *requests* "find the decision-maker" and `02` *provides* the answer; `02` *requests* a person's mail history and `01` *provides* it. Each module names both sides in its `connects` frontmatter (`requests` / `provides`), and the blueprint draws them as twin directional lines — in and out.
 

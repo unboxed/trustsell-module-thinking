@@ -14,7 +14,7 @@ Everything here is one of **three layers** — knowing which is which is the who
 
 **The invariant:** a module's home is the single source of truth for everything the UI shows about that module — the card, the wires, and (in time) its routines and inputs. The UI is a **read-only mirror**: edit the doc, the UI reflects it; there is no second store. `connects` already works this way, and every facet follows it — a **narrative** in the body plus the **actual listed values** as frontmatter metadata.
 
-**Routines & recipes** follow the owner: a **routine** (one owner) lives in that module's home; a **recipe/play** (across modules, a decision in the middle) lives in the Brain. Defined **once**, then referenced by scenarios and demos.
+**Routines & plays** follow the owner: a **routine** (one owner) lives in that module's home; a **play** (across modules, a decision in the middle) lives in the Brain. Defined **once**, then referenced by scenarios and demos.
 
 **The discipline:** when a scenario or a demo teaches you something durable about a module, write it back into the **module's home**. The scenario stays as the illustration; the home is the record — that's how nothing you brainstorm gets lost.
 

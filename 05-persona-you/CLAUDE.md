@@ -50,7 +50,25 @@ _TBD_
 _TBD_
 
 ## User input
-_TBD (your trust level, optional writing samples)_
+
+Profile holds the **told** layer about *you* — the things no inbox reveals and every other
+module leans on. This is where the foundational identity lives:
+
+- **Who you are** — your **name**, your **role/title**, and a short **"About you"** (what you
+  sell, how you see your job, anything that frames how you'd want to come across). "Who you are"
+  is the most basic input the whole tool needs — a message can't sound like you, or even address
+  people as you, without it.
+- **Your voice** — optional **writing samples**, or it learns from your sent mail and your edits
+  to its drafts (the raw-data above). Samples are a head start, not a requirement.
+- **Your autonomy preference** — how much you want the tool to do before you step in (it always
+  suggests; this sets how far it drafts ahead). The cold/volume seller and the relationship owner
+  sit at different points here.
+
+These are **supplied outward**: every module that writes or reasons about you reaches Profile for
+them, rather than each holding its own copy. Identity is owned once, here, and lent to the rest.
+
+When something's missing, Profile degrades gracefully like the other modules — it can propose a
+draft "About you" from your sent mail for you to confirm, rather than stall.
 
 ## Reasoning
 _TBD_

@@ -62,7 +62,7 @@ opinion begins is half of trusting it.
 A salesperson carries a running list of things they want to know: *who makes the buying
 decision here? who should I chase first? have I promised anyone anything? do I know
 someone who could introduce me?* (MJ's list of twenty-six is written out in full in
-`_scratch/handoff-sales-questions.md`.)
+`docs/sales-questions.md`.)
 
 Each of those questions sits at the **top** of one of these stacks. Ask *"who makes the
 buying decision at Council 14?"* and underneath it is a stack that reads roles off who
