@@ -11,7 +11,9 @@
 - **`02` People — DONE.** Catalog expanded, the plain-English pass applied, and a new cross-cutting
   primitive (the **deal**) added along the way. Details under "02 People — DONE" and "The deal
   primitive" below.
-- **`03` → `04` → `05` — the rest**, in that order. The seed findings below still stand.
+- **`03` Offerings — DONE.** Staleness check clean; catalog expanded on the competitive and
+  claim-integrity dimensions. Details under "03 Offerings — DONE" below.
+- **`04` → `05` — the rest**, in that order. The seed findings below still stand.
 - **`00` Brain — deferred**, and it has grown: it now also owns **staging the deal** and the **signal
   re-scoping** the deal work deferred (see Deferred, at the end).
 
@@ -25,7 +27,7 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 
 ## Order
 
-`02` ✓ done → **`03`** (next) → `04` → `05`, one at a time. Then `00` Brain as its own dedicated session.
+`02` ✓ done → `03` ✓ done → **`04`** (next) → `05`, one at a time. Then `00` Brain as its own dedicated session.
 
 ## Method, per module
 
@@ -49,7 +51,7 @@ The first build aimed at parity, not completeness; this pass aims at completenes
 | Module | Assemblies | Signals | told.md | Notes |
 |---|---|---|---|---|
 | `02` People ✓ | person-history, conversation-history, **meeting-history**, stakeholder-map, **deal** | champion, cooling-champion, warming, blocker, understanding-gap, new-stakeholder, champion-went-dark, warm-path, **loose-end** (was open-loop), **best-way-to-reach**, **missing-people**, **time-to-reconnect**, **one-sided**, **warmth-fading**, **buying-intent** | **yes** | DONE: expanded + renamed + deal primitive |
-| `03` Offerings | offering-entry, product-claims, price-position, objection-list | fit-match, price-barrier, answer-gap, recurring-objection, lead-with-this | yes | fairly solid |
+| `03` Offerings ✓ | offering-entry, product-claims, price-position, objection-list, **competitor-field** | fit-match, price-barrier, **answer-gap** (now grades proof strength), recurring-objection, lead-with-this, **competitive-standing**, **unbacked-claim** | yes | DONE: expanded on competitive + claim-integrity |
 | `04` Organisation | proof-library, compliance-fence | **none, by design** | yes | matches proof, gates drafts; no behaviour to sense |
 | `05` Profile | writing-history | voice | yes | thinnest; most room to grow |
 
@@ -96,12 +98,35 @@ added the **deal**, and it reaches across modules, so read this before continuin
 - **Written into:** `02` (module, `assemblies/deal.md`, `told.md`), `00-spine/module.md`, root
   `CLAUDE.md` model section, `docs/scenario-councils.md`, `_scratch/open-questions.md`.
 
-### 03 Offerings
-- 4 assemblies / 5 signals, the most balanced catalog. **"What's landing" is deliberately parked** (no
-  outcome loop yet), so do not invent it as a signal here.
-- Candidates to weigh, watching for overlap with `price-barrier`: competitive displacement (incumbent
-  lock-in as its own read), proof strength (is the proof behind a claim strong or thin), deal-specific
-  discount room.
+### 03 Offerings — DONE
+Started from 4 assemblies / 5 signals (the most balanced catalog), now 5 / 7. Staleness check came back
+clean: `draws_from [web, drive]` matches what the assemblies pull, every `inputs`/`measures` id
+resolves, all `kind`s valid, "what's landing" and forecasting correctly parked. No existing prose
+needed rewriting. What was built:
+- **New assembly `competitor-field`** (about: an offering). Gathers the named rivals/incumbent: who
+  they are, what they claim, their lock-in bet, their public-review worries. Shares its web inputs with
+  `price-position` on purpose (price = numbers only; competitor-field = the fuller rival profile those
+  numbers sit inside); `objection-list` deliberately **not** an input, to avoid double-counting
+  review-worries. Gives the competitive read a floor to stand on (it had none).
+- **New signal `competitive-standing`** (kind: risk, `answers: [Q15]`). Where you win, where a rival or
+  incumbent wins (incl. a capability the buyer needs and you lack), and whether lock-in is a live
+  barrier. **Stays off price** (that's `price-barrier`'s single read); the "where we win" half is an
+  *angle* that feeds `lead-with-this`; it *feeds* Q12 (the Brain's message play) but doesn't claim it.
+  Lock-in measure is `incumbent-data-or-contract-lock` (present/absent), never a cost number.
+- **New signal `unbacked-claim`** (kind: risk, `answers: [Q11]`). Turns "back every claim" on the
+  user's own pitch: flags a claim with no spec line, no Drive file, no proof tag, before it reaches a
+  draft. `claim-source` (told vs researched-suggested) catches a sharper-pitch claim you never made.
+  Maps loosely to Q11 ("which of my info is *safe* to share"); its real downstream is the render and
+  `04`'s compliance fence (user accepted the looser fit).
+- **`answer-gap` extended, not duplicated** — proof *strength* folded in (user decision). Added measures
+  `proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted`; an
+  answer on thin proof (old/anonymous/self-asserted) now reads as a *partial* gap, not "covered". Keeps
+  one owner for "do we have a solid answer" and avoids placing a sensing floor on `04` (no signals by
+  design); `04` supplies the proof doc *and its attributes*, Offerings judges.
+- **Considered and deliberately NOT built** (so they aren't re-litigated): standalone `proof-strength`
+  (folded into answer-gap); **deal-specific discount room** and **best-fit-offering** (both deferred to
+  the Brain, see Deferred); collateral freshness (a tag not a read; its one useful atom `proof-recency`
+  harvested into answer-gap). "What's landing" / forecasting remain parked, untouched.
 
 ### 04 Organisation
 - **No signals, by design** (it matches proof and gates drafts). Confirm that still holds rather than
@@ -134,6 +159,15 @@ Brain has to weigh. The deeper Brain-frontiers brief is [`handoff-post-rollout.m
 - **The deal's "how"** — clustering and grow thresholds (how much overlap merges two threads into one
   deal), auto-propose vs always-ask sensitivity, and the deal-boundary judgement (same org + same
   offering). All in [`open-questions.md`](open-questions.md).
+
+**The Brain session also inherited two reads deferred out of `03` Offerings** (both are *intent*, not
+product sensing, so they belong here):
+- **Best-fit-offering** — given one lead, which of *all* the offerings best fits, and why the others
+  fit worse. This is a portfolio call (a Brain play that calls `fit-match` per offering and ranks),
+  not a new Offerings signal (which would just be `fit-match` run N times and sorted).
+- **Deal-specific discount room** — how far to discount on *this* deal to close it. Depends on the goal
+  and how hard you'll push, so it sits with staging; the *static* told discount room is already read by
+  `price-barrier`.
 
 ## Guardrails and contract
 
