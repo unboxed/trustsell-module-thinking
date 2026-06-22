@@ -2,7 +2,7 @@
 id: warmth-fading
 floor: signal
 label: Warmth fading
-blurb: "A drop in warmth: replies turning short and clipped, or a voice that went quiet on the last call."
+blurb: Replies turning short and cool, or quiet on the last call.
 inputs: [person-history, meeting-history]
 measures: [warmth-trend-in-replies, friendly-words-trend, talk-time-on-calls]
 answers: [Q14]

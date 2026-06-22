@@ -2,7 +2,7 @@
 id: meeting-history
 floor: assembly
 label: Meeting history
-blurb: 'One call, gathered whole: who was on it, and (if it was captured) what was said.'
+blurb: One call, who was on it, and what was said if it was recorded.
 about: a conversation
 deterministic: true
 inputs:

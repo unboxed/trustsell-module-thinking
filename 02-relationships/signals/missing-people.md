@@ -2,7 +2,7 @@
 id: missing-people
 floor: signal
 label: Missing people
-blurb: "A gap in who you're talking to: a key person you've never reached, or a deal resting on one contact."
+blurb: A key person you have never reached, or a deal resting on one contact.
 inputs: [stakeholder-map]
 measures: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]
 answers: [Q4, Q5, Q6]

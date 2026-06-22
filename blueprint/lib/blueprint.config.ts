@@ -152,3 +152,69 @@ export interface CanvasNode extends ModuleMeta {
   /** the narrative body (frontmatter stripped) */
   body: string;
 }
+
+/* ---------------------------------------------------------------------------
+ * The library floors — assemblies & signals
+ *
+ * Each assistant module is filled down into two kinds of "holdings", one doc
+ * per entry under `<module>/assemblies/*.md` and `<module>/signals/*.md`. Like
+ * a module doc, each is a frontmatter card face (the metas below) plus a long
+ * narrative body. Read live by `readLibrary` in lib/modules.ts.
+ * ------------------------------------------------------------------------- */
+
+/** The family a signal belongs to (`kind` in its frontmatter). */
+export type SignalKind = "opening" | "decay" | "deal-movement" | "risk" | "style";
+export const SIGNAL_KINDS: SignalKind[] = [
+  "opening",
+  "decay",
+  "deal-movement",
+  "risk",
+  "style",
+];
+
+/** How much a signal's read can be trusted (`confidence` in its frontmatter).
+ *  `graded` = it depends on how much evidence stacks up (explained in the body). */
+export type SignalConfidence = "high" | "graded" | "low";
+export const SIGNAL_CONFIDENCES: SignalConfidence[] = ["high", "graded", "low"];
+
+/** The categories of work an entry serves — the one vocabulary used everywhere. */
+export const MODE_NAMES: string[] = ["plant", "grow", "nurture"];
+
+/**
+ * An assembly: a DETERMINISTIC gather (a person, a conversation, a deal). Its
+ * `inputs` are the records and sibling assemblies it pulls together, one floor
+ * down. No opinion lives here.
+ */
+export interface AssemblyMeta {
+  id: string;
+  label: string;
+  blurb: string;
+  /** what a single instance is keyed on, e.g. "a person" / "a deal". */
+  about?: string;
+  deterministic: boolean;
+  /** record ids (channel/told) and, optionally, sibling assembly ids. */
+  inputs: string[];
+}
+
+/**
+ * A signal: the FIRST OPINION — a named read off an assembly that carries its
+ * evidence down to plain facts. Frontmatter holds only the flat facets (the
+ * chips); the worked example and threshold live in the body.
+ */
+export interface SignalMeta {
+  id: string;
+  label: string;
+  blurb: string;
+  /** the assembly ids it reads. */
+  inputs: string[];
+  /** the deterministic Floor-2 counts beneath the read. */
+  measures: string[];
+  /** which of the sales questions it answers (e.g. Q4, Q14). */
+  answers: string[];
+  /** which categories of work it serves (plant / grow / nurture). */
+  modes: string[];
+  kind?: SignalKind;
+  confidence?: SignalConfidence;
+  /** an optional fact it borrows from a supplier module. */
+  pull?: string;
+}

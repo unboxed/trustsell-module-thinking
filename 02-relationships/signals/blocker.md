@@ -2,7 +2,7 @@
 id: blocker
 floor: signal
 label: Blocker
-blurb: A skeptic who repeats the same objection, replies flat and short, and stalls after each ask.
+blurb: Someone who keeps raising the same objection and stalls the deal.
 inputs: [conversation-history, person-history, meeting-history]
 measures: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]
 answers: [Q13, Q15]

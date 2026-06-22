@@ -2,7 +2,7 @@
 id: deal
 floor: assembly
 label: Deal
-blurb: "One selling effort, gathered whole: the offering, its conversations, and the people on them, across any org."
+blurb: One selling effort, with its offering, its threads, and everyone in it.
 about: a deal
 deterministic: true
 inputs:

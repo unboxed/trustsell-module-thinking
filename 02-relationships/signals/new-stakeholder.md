@@ -2,7 +2,7 @@
 id: new-stakeholder
 floor: signal
 label: New stakeholder
-blurb: A name you have no history with joins the thread or calendar, often signing as a "Head of ...".
+blurb: A new person joins the conversation, often someone senior.
 inputs: [conversation-history, stakeholder-map]
 measures: [new-name-on-thread, new-attendee-on-event, head-of-signature-scan, prior-history-scan]
 answers: [Q5, Q6]

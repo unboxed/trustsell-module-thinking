@@ -2,7 +2,7 @@
 id: champion
 floor: signal
 label: Champion
-blurb: 'A contact who advocates for you inside their org: replies fast and long, and pulls colleagues in.'
+blurb: Someone inside the buyer who is selling for you.
 inputs: [person-history, conversation-history, meeting-history]
 measures: [reply-speed-vs-own-rhythm, reply-length-vs-own-baseline, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
 answers: [Q4, Q5, Q6, Q14]

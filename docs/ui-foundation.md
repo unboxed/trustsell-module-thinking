@@ -10,9 +10,10 @@ An app, not a web page. The screen is one **endless canvas** you drag to pan —
 zoom — with a **recenter** control (a button, or press `0`) to frame the nodes again
 from anywhere. It holds the module **nodes**; the canvas of nodes stays the home.
 
-> **Open — being redesigned.** How a node reveals its detail when you click it is
-> deliberately undecided right now. The earlier click-through views were torn out to start
-> fresh — treat this as a blank slate, not a settled pattern.
+> **Clicking a module node opens its library shelf.** A module card now routes to
+> `/library?module=<id>` — the filterable gallery of that module's assemblies and signals
+> (see *The library* below). Channel plugs keep their own behaviour (a raw-data panel). How a
+> node reveals any *other* detail is still open.
 
 ## What it shows — the nodes
 
@@ -62,5 +63,26 @@ lighter, dashed line) so "a data source feeds this module" reads differently fro
 converse". The channel plugs are read live from `01-integrations/channels/*.md`; clicking a plug
 opens that channel's raw-data records — the one node detail view in place today.
 
-How the nodes and canvas look and lay out — and how a node reveals its detail when you click
-it — is the designer's call.
+How the nodes and canvas look and lay out is the designer's call.
+
+## The library — the assemblies & signals gallery
+
+A second view, `/library`, mirrors the catalog floors the same way the canvas mirrors the module
+cards: a filterable gallery of every **assembly** and **signal** across the modules, read live from
+their `*.md` frontmatter (`readLibrary` in `lib/modules.ts`). You filter by **search**, **module**,
+**type** (assemblies / signals) and **mode**; clicking a module node on the canvas lands here
+pre-filtered to that module. Each card mirrors the frontmatter; the long body and clickable lineage
+open in an overlay.
+
+The frontmatter keys the library reads today:
+
+- Both floors — `id`, `label` (display name), `blurb` (the one-line card-face description), `inputs`
+  (lineage, one floor down — assembly `inputs` that resolve to a sibling assembly render as a
+  **clickable badge** that opens it).
+- Assemblies — `about` (what one instance is keyed on, e.g. "a person"), `deterministic`.
+- Signals — `modes` (plant / grow / nurture chips), `kind` (the family, shown in the eyebrow),
+  `confidence` (`high` / `graded` / `low`, drawn as a quiet weight), `answers` (sales-question
+  handles), `measures` (the counts beneath; shown in the overlay).
+
+Same invariant as the canvas: the docs are the single source of truth and the library is a read-only
+mirror, so editing a `blurb` or a facet updates its card with no other change.

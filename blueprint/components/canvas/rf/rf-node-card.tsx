@@ -52,7 +52,9 @@ export function RfNodeCard({ data }: NodeProps) {
       style={{ width: CARD.width, height: CARD.height }}
       className={cn(
         "glass-card relative flex flex-col rounded-[18px] p-5",
-        "transition-[opacity,box-shadow] duration-300 motion-reduce:transition-none",
+        // Clickable: the card opens its library shelf (see rf-canvas onNodeClick).
+        "cursor-pointer transition-[opacity,box-shadow,transform] duration-300 hover:-translate-y-0.5",
+        "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
         // Dialed back a notch from the original bloom so the travelling parcel reads as the hero.
         d.trace === "active" && "ring-1 ring-blue-600/40 shadow-[0_0_16px_-4px_rgba(37,99,235,0.4)]",
         d.trace === "dim" && "opacity-35 saturate-50",

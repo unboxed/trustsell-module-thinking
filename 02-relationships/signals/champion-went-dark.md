@@ -2,7 +2,7 @@
 id: champion-went-dark
 floor: signal
 label: Champion went dark
-blurb: 'A once-active contact you can no longer reach: a bounce, a "no longer with" auto-reply, or total silence.'
+blurb: An active contact you suddenly cannot reach at all.
 inputs: [person-history]
 measures: [bounce-back-detected, auto-reply-no-longer-with, silence-vs-own-rhythm, was-once-active]
 answers: [Q6, Q18]

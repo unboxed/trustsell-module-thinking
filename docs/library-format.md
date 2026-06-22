@@ -58,6 +58,12 @@ threshold and reasoning are prose under the worked example. A nested tree shoved
 renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single
 quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.
 
+**Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the
+`label` is the plain-English display name, and the `blurb` is the **one-line short description on the
+entry's card face** in the library viewer. Keep the `blurb` to a single plain sentence (the long body
+is revealed on click, so it does not belong in the blurb). The library at `/library` reads exactly
+these fields, so editing a `blurb` updates its card with no other change.
+
 Not every module has every floor, and the library is meant to reveal that. **04-organisation has no
 signals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**
 has only raw data; **00-spine**'s "assemblies" are the scoreboard and calendar, a different kind of
@@ -160,5 +166,7 @@ retired, and the blueprint reads `module.md` (`readModules` in `blueprint/lib/mo
   may graduate to their own doc-per-entry floor. Open question, not yet.
 - **The higher floors** (insights, briefs, actions) come once raw data, assemblies and signals prove
   out.
-- **The UI that renders the library** (the assemblies, signals and told floors) is a separate, later
-  effort. Retiring the old per-module `CLAUDE.md`s is **done**.
+- **The UI that renders the library.** A first cut now exists: `/library` in the blueprint viewer is
+  a filterable gallery of every assembly and signal (search · module · type · mode), each card
+  mirroring its `label` + `blurb` + facets, with the body and clickable lineage in an overlay. The
+  told floor is not rendered there yet. Retiring the old per-module `CLAUDE.md`s is **done**.

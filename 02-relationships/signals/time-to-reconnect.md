@@ -2,7 +2,7 @@
 id: time-to-reconnect
 floor: signal
 label: Time to reconnect
-blurb: "A good relationship that's gone quiet, with a fresh reason to get back in touch now."
+blurb: A good relationship gone quiet, with a fresh reason to reach out.
 inputs: [person-history]
 measures: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
 answers: [Q19]

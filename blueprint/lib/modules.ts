@@ -5,6 +5,9 @@ import matter from "gray-matter";
 import {
   ALL_MODULE_IDS,
   ICON_NAMES,
+  SIGNAL_CONFIDENCES,
+  SIGNAL_KINDS,
+  type AssemblyMeta,
   type Channel,
   type ChannelSource,
   type IconName,
@@ -12,6 +15,9 @@ import {
   type ModuleId,
   type ModuleMeta,
   type ModuleTier,
+  type SignalConfidence,
+  type SignalKind,
+  type SignalMeta,
 } from "./blueprint.config";
 import { parseRecordsTable } from "./channel-records";
 
@@ -35,6 +41,8 @@ const ID_SET = new Set<string>(ALL_MODULE_IDS);
 const ICON_SET = new Set<string>(ICON_NAMES);
 const TIERS = new Set<string>(["brain", "assistant", "connector"]);
 const MODES = new Set<string>(["plant", "grow", "nurture"]);
+const KIND_SET = new Set<string>(SIGNAL_KINDS);
+const CONFIDENCE_SET = new Set<string>(SIGNAL_CONFIDENCES);
 
 /** The workspace root: /work under docker compose, else the parent of this app. */
 const sourceRoot = () => process.env.MODULES_DIR ?? path.join(process.cwd(), "..");
@@ -157,4 +165,124 @@ export async function readChannels(): Promise<Channel[]> {
   );
 
   return channels.filter((c): c is Channel => c !== null);
+}
+
+/* ---------------------------------------------------------------------------
+ * The library floors — assemblies & signals, read across every module.
+ *
+ * One doc per entry under `<module>/assemblies/*.md` and `<module>/signals/*.md`:
+ * a frontmatter card face (the metas) plus a narrative body. Read live like the
+ * module + channel docs; a module missing a floor just contributes nothing.
+ * ------------------------------------------------------------------------- */
+
+/** An assembly entry ready to render: its module, frontmatter and body. */
+export interface AssemblyDoc {
+  moduleId: ModuleId;
+  meta: AssemblyMeta;
+  body: string;
+}
+
+/** A signal entry ready to render: its module, frontmatter and body. */
+export interface SignalDoc {
+  moduleId: ModuleId;
+  meta: SignalMeta;
+  body: string;
+}
+
+/** Only keep the string members of a frontmatter list (drops anything malformed). */
+const strList = (v: unknown): string[] =>
+  Array.isArray(v) ? (v.filter((x): x is string => typeof x === "string")) : [];
+
+function coerceAssembly(data: Record<string, unknown>): AssemblyMeta | null {
+  if (typeof data.id !== "string" || typeof data.label !== "string") return null;
+  return {
+    id: data.id,
+    label: data.label,
+    blurb: typeof data.blurb === "string" ? data.blurb : "",
+    about: typeof data.about === "string" ? data.about : undefined,
+    deterministic: data.deterministic === true,
+    inputs: strList(data.inputs),
+  };
+}
+
+function coerceSignal(data: Record<string, unknown>): SignalMeta | null {
+  if (typeof data.id !== "string" || typeof data.label !== "string") return null;
+  return {
+    id: data.id,
+    label: data.label,
+    blurb: typeof data.blurb === "string" ? data.blurb : "",
+    inputs: strList(data.inputs),
+    measures: strList(data.measures),
+    answers: strList(data.answers),
+    modes: strList(data.modes).filter((m) => MODES.has(m)),
+    kind: KIND_SET.has(data.kind as string) ? (data.kind as SignalKind) : undefined,
+    confidence: CONFIDENCE_SET.has(data.confidence as string)
+      ? (data.confidence as SignalConfidence)
+      : undefined,
+    pull: typeof data.pull === "string" ? data.pull : undefined,
+  };
+}
+
+/** Read every `.md` in a floor dir into {frontmatter, body}; [] if the dir is absent. */
+async function readFloorDir(
+  dir: string,
+): Promise<{ data: Record<string, unknown>; body: string }[]> {
+  let files: string[];
+  try {
+    files = (await fs.readdir(dir)).filter((f) => f.endsWith(".md")).sort();
+  } catch {
+    return [];
+  }
+  const docs = await Promise.all(
+    files.map(async (f) => {
+      try {
+        const raw = await fs.readFile(path.join(dir, f), "utf8");
+        const { data, content } = matter(raw);
+        return { data: data as Record<string, unknown>, body: content.trim() };
+      } catch {
+        return null;
+      }
+    }),
+  );
+  return docs.filter((d): d is { data: Record<string, unknown>; body: string } => d !== null);
+}
+
+/**
+ * Sweeps all modules for their assembly + signal floors, tagging each entry with
+ * its module so the Library can group and filter. Ordered by module (ALL_MODULE_IDS)
+ * then by filename, for a stable gallery. Read live, never written.
+ */
+export async function readLibrary(): Promise<{
+  assemblies: AssemblyDoc[];
+  signals: SignalDoc[];
+}> {
+  await connection();
+  const root = sourceRoot();
+
+  const perModule = await Promise.all(
+    ALL_MODULE_IDS.map(async (moduleId) => {
+      const [aRaw, sRaw] = await Promise.all([
+        readFloorDir(path.join(root, moduleId, "assemblies")),
+        readFloorDir(path.join(root, moduleId, "signals")),
+      ]);
+      const assemblies = aRaw
+        .map(({ data, body }) => {
+          const meta = coerceAssembly(data);
+          return meta ? { moduleId, meta, body } : null;
+        })
+        .filter((d): d is AssemblyDoc => d !== null);
+      const signals = sRaw
+        .map(({ data, body }) => {
+          const meta = coerceSignal(data);
+          return meta ? { moduleId, meta, body } : null;
+        })
+        .filter((d): d is SignalDoc => d !== null);
+      return { assemblies, signals };
+    }),
+  );
+
+  return {
+    assemblies: perModule.flatMap((m) => m.assemblies),
+    signals: perModule.flatMap((m) => m.signals),
+  };
 }

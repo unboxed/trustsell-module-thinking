@@ -2,7 +2,7 @@
 id: stakeholder-map
 floor: assembly
 label: Stakeholder map
-blurb: Everyone at one organisation, gathered by role and by the gaps.
+blurb: Everyone at one organisation, by their role and who is still missing.
 about: an organisation
 deterministic: true
 inputs:

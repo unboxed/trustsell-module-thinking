@@ -2,7 +2,7 @@
 id: warming
 floor: signal
 label: Warming
-blurb: 'A relationship picking up pace: faster replies, more threads they start, more of their people joining in.'
+blurb: A relationship picking up pace, with faster replies and more people joining in.
 inputs: [person-history]
 measures: [reply-gap-vs-own-rhythm, threads-they-started-this-period, new-people-from-their-side, reply-length-trend]
 answers: [Q14, Q19]

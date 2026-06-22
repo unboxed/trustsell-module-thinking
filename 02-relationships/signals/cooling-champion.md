@@ -2,7 +2,7 @@
 id: cooling-champion
 floor: signal
 label: Cooling champion
-blurb: A champion whose own rhythm broke, with nothing on record to explain it.
+blurb: A champion who is starting to go quiet.
 inputs: [person-history]
 measures: [reply-gap-vs-own-rhythm, last-note-unanswered-days, dropped-recurring-meeting, innocent-explanation-scan]
 answers: [Q18, Q19]

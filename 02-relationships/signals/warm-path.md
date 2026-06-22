@@ -2,7 +2,7 @@
 id: warm-path
 floor: signal
 label: Warm path
-blurb: A target you can reach through someone you already know, with the intro chain visible.
+blurb: A way to reach a target through someone you already know.
 inputs: [person-history, stakeholder-map]
 measures: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
 answers: [Q7, Q8]

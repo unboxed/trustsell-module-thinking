@@ -2,7 +2,7 @@
 id: buying-intent
 floor: signal
 label: Buying intent
-blurb: "A conversation that has gone live: pricing, timing, a proposal ask, or a budget-holder pulled in."
+blurb: A chat that has turned into a real buying discussion.
 inputs: [conversation-history, person-history, meeting-history]
 measures: [pricing-question-asked, timeline-or-start-question, proposal-or-trial-requested, budget-or-procurement-entered, decision-language-used]
 answers: [Q14, Q19]

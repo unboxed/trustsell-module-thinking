@@ -2,7 +2,7 @@
 id: conversation-history
 floor: assembly
 label: Conversation history
-blurb: 'One conversation, gathered whole: every message in order, with everyone on it.'
+blurb: Everything said in one conversation, with everyone who was on it.
 about: a conversation
 deterministic: true
 inputs:

@@ -2,7 +2,7 @@
 id: best-way-to-reach
 floor: signal
 label: Best way to reach them
-blurb: "Where this person actually answers, and how fast, so you reach them the way that works."
+blurb: The channel where this person actually replies, and how fast.
 inputs: [person-history]
 measures: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]
 answers: [Q9]

@@ -4,6 +4,7 @@ import "@xyflow/react/dist/base.css";
 import "./rf-canvas.css";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Crosshair, Minus, Plus } from "lucide-react";
 import {
   Background,
@@ -101,6 +102,7 @@ function Flow({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const rf = useReactFlow();
+  const router = useRouter();
 
   // Hover focus: a wire touching the hovered node surfaces (calm blue arrowhead) and
   // everything else recedes. Off-hover it's the neutral two-arrow route.
@@ -243,11 +245,16 @@ function Flow({
         edges={edges}
         onNodesChange={onNodesChange}
         onNodeClick={(_, n) => {
-          // Only channel plugs open a panel; a module card has no detail view today.
+          // A channel plug opens its raw-data panel (unchanged).
           if (n.id.startsWith("01-integrations:")) {
             const ch = (n.data as { channel?: Channel }).channel;
             if (ch) setOpenChannel(ch);
+            return;
           }
+          // The Connections group frame itself has no detail.
+          if (n.id === "01-integrations") return;
+          // Any other module card opens its library shelf, pre-filtered to it.
+          router.push(`/library?module=${n.id}`);
         }}
         onNodeMouseEnter={(_, n) => {
           if (n.id === "01-integrations") return; // skip the Connections group frame

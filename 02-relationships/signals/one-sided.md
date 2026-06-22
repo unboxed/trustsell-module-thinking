@@ -2,7 +2,7 @@
 id: one-sided
 floor: signal
 label: One-sided
-blurb: "Whether a relationship is two-way or you're doing all the work: who starts, who answers, who gives."
+blurb: A relationship where you are doing all the work.
 inputs: [person-history, conversation-history]
 measures: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-you-chase]
 answers: [Q14]

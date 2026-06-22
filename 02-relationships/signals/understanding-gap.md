@@ -2,7 +2,7 @@
 id: understanding-gap
 floor: signal
 label: Understanding gap
-blurb: They keep asking the same things, or use your own terms wrongly, so the product hasn't landed.
+blurb: They keep asking the same things, so the product has not landed.
 inputs: [conversation-history, meeting-history]
 measures: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]
 answers: [Q13]

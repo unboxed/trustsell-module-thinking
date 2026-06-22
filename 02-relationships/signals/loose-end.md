@@ -2,7 +2,7 @@
 id: loose-end
 floor: signal
 label: Loose end
-blurb: 'Something left hanging: a "I will send you X" you never sent, or a question of yours still unanswered.'
+blurb: Something left hanging, like a promise you never followed through on.
 inputs: [conversation-history, person-history, meeting-history]
 measures: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan, commitment-made-on-call]
 answers: [Q22]
