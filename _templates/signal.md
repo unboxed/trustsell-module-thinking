@@ -1,37 +1,43 @@
 ---
-# SIGNAL FLOOR. One (rich) doc per entry, at <module>/signals/<id>.md.
-# Frontmatter holds only the flat facets (the future chips). The reasoning (the worked
-# example, the threshold rule, why it is trustworthy) lives in the BODY, where it reads.
-# A signal is the FIRST OPINION: a named, reusable read off an assembly that carries its
-# evidence down to plain facts (track-back). It earns its place only by answering a real
-# salesperson's question (docs/sales-questions.md).
+# SIGNAL FLOOR. One doc per entry, at <module>/signals/<id>.md.
+# Two layers in one file:
+#   FRONTMATTER is the structured (machine) layer: flat facets only, no sentence-length prose.
+#   THE BODY is the human layer, plain English / GDS style (sentence case, short sentences, say what
+#   it means; a signal does not "fire" to a reader). Three consistent sections, below.
+# A signal is the FIRST OPINION: a named read off an assembly that carries its evidence down to plain
+# facts (the track-back tree). It APPLIES the shared rules in docs/reading-principles.md; it does not
+# re-teach them. It earns its place by answering a real question (docs/sales-questions.md).
+# Keep it AGNOSTIC: no named customers, offerings or people anywhere. Examples use generic placeholders.
 id: <kebab-slug>                 # unique within this module's signals
-floor: signal
 label: <Display name>            # plain English, e.g. Cooling champion
 blurb: <one line on what this read means>
-inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve to ../assemblies/*
-measures: [<count-id>, ...]      # the deterministic Floor-2 counts beneath the read (the checkable arithmetic)
-answers: [Q##, ...]              # which of the 26 sales questions (docs/sales-questions.md) it answers
 modes: [<plant|grow|nurture>]    # which category(ies) of work it serves
 kind: <opening|decay|deal-movement|risk|style>   # the family of read (style = a non-state read like Profile's voice)
-confidence: <high|graded|low>    # graded means it depends on how much evidence stacks up (explain in the body)
-pull: <optional: a fact it borrows from a supplier, e.g. "Offerings' objection list to name the objection">
+confidence: <high|graded|low>    # graded = depends on how much evidence stacks (explain in For the build)
+inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve to ../assemblies/*
+measures: [<count-id>, ...]      # the deterministic counts beneath the read (the checkable arithmetic)
+answers: [Q##, ...]              # which sales questions (docs/sales-questions.md) it answers
+needs: [<source-id>, ...]        # sources the read leans on; if one is missing, its checks drop out (a data gap)
+pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' objection list">
 ---
 
 # <label>
 
-<!-- The worked example, traced to the floor. A small table is the clearest form:
+## What it means
 
-       | Floor       | What the module has                                    |
-       |-------------|--------------------------------------------------------|
-       | Facts (1)   | the dated records underneath                           |
-       | Counts (2)  | the arithmetic, including the innocent-explanation scan |
-       | Opinion (3) | the read plus its confidence                           |
--->
+<!-- Plain English: what the read is, when it applies, how confident it is, and what it cannot see.
+     No named customers, offerings or people. Apply the own-rhythm rule (reading-principles.md);
+     do not re-justify "there is no fixed N-day line" at length. -->
 
-**Threshold.** <!-- the rule that turns the count into an opinion, measured against the
-relationship's OWN rhythm. Never a fixed number of days. -->
+## In practice
 
-**Why it's trustworthy.** <!-- most of it is deferred counting; the arguable residue is guarded. -->
+<!-- One short, generic worked example (a contact, a prospect). Concrete numbers are fine for
+     intuition; a case study is not. -->
 
-**Where it can fail to reach ground.** <!-- name the data gap (e.g. thin without LinkedIn). Never fake it. -->
+## For the build
+
+<!-- The precise rule, in tight structured English. Open by pointing at docs/reading-principles.md.
+     - Trigger: how the measures combine into the read (own-rhythm, never a fixed number).
+     - Confidence: what makes it high, what softens it.
+     - Needs: the `needs` sources, and what drops out without them (a data gap, named not faked).
+     - Counts beneath it: the `measures`. -->

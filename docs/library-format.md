@@ -25,15 +25,49 @@ The mapping from the old agent-anatomy is exact:
 
 ## Writing style for every entry
 
-Two rules, because a person reads these, not just a parser:
+A few rules, because a person reads these, not just a parser:
 
-1. **Plain English for the names we invent.** An assembly is "Person history", not "Contact dossier".
+1. **Plain English, GDS style.** Sentence case, short sentences, say what it means. No jargon or
+   wordplay in the prose a person reads: a signal does not "fire" to a reader, it is a read the tool
+   *makes*. Write the body for a person; the structured facets in the frontmatter carry the precise,
+   parser-facing data.
+2. **Plain English for the names we invent.** An assembly is "Person history", not "Contact dossier".
    Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names
    (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,
    champion).
-2. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than
+3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named
+   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a
+   prospect, the offering). The specific case study lives only in the scenario and demo docs.
+4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than
    em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids
    (email-message).
+
+## The two layers: structured frontmatter, plain-English body
+
+Every assembly and signal is two layers in one file, kept cleanly apart so each is written to best
+practice for its reader:
+
+- **Frontmatter is the structured (machine) layer.** Flat, typed facets only: ids, enums, short lists
+  (the card face described below). Each field earns its place by carrying genuine structured data;
+  nothing is kept just because it was there. `floor` has been **dropped** (the folder, `signals/` vs
+  `assemblies/`, already states the type). Sentence-length content never goes here.
+- **The body is the human layer**, plain English under a **fixed set of section headings**, so it
+  reads well *and* a parser can address each section later. The headings are consistent across every
+  entry:
+  - **A signal** uses three sections: `## What it means` (the read, when it applies, how confident it
+    is, what it cannot see, in plain prose), `## In practice` (one short generic example), and
+    `## For the build` (the precise rule: trigger, confidence grading, `needs`, and the `measures`
+    beneath it). "For the build" opens by pointing at [`reading-principles.md`](reading-principles.md)
+    rather than re-teaching the shared rules.
+  - **An assembly** uses two sections: `## What it gathers` (the records and the identity work, plus a
+    one-line "this is floor, not reading") and `## Lineage` (which input id resolves to which channel
+    or told source).
+
+A signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when
+one is not connected, the checks resting on it drop out and confidence falls, which is how a **data
+gap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,
+count-first, confidence grading, name-the-gap, answer a real question) live once in
+[`reading-principles.md`](reading-principles.md), so no signal re-teaches them.
 
 ## The floors, and the one rule that varies by floor
 
@@ -54,7 +88,7 @@ operating prose and the card face.
 **Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label
 lists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable
 markdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's
-threshold and reasoning are prose under the worked example. A nested tree shoved into frontmatter
+threshold and reasoning are prose in the body's sections (such as `For the build`). A nested tree shoved into frontmatter
 renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single
 quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.
 

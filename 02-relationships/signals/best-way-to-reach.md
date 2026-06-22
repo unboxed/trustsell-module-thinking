@@ -1,48 +1,58 @@
 ---
 id: best-way-to-reach
-floor: signal
 label: Best way to reach them
 blurb: The channel where this person actually replies, and how fast.
-inputs: [person-history]
-measures: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]
-answers: [Q9]
 modes: [plant, grow, nurture]
 kind: style
 confidence: graded
+inputs: [person-history]
+measures: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]
+answers: [Q9]
+needs: [calendar, meet]
 ---
 
 # Best way to reach them
 
-The plainest question there is before you get in touch: *what is the best way to reach this person?*
-Not where you happen to have been writing, but where *they* actually answer. People already gathers
-every back-and-forth across email, Slack, the calendar and calls into one picture; this read sorts it
-by where each message went and sees which one earns a reply.
+## What it means
 
-| Floor | What People has |
-|---|---|
-| **Facts** (1) | the dated emails to and from Raj; the Slack messages either way; the calendar invites and whether he accepted; the calls he joined |
-| **Counts** (2) | *email:* you sent 8, he answered 1, usually about 6 days later · *Slack:* you sent 5, he answered all 5, usually within 15 minutes · *where he starts:* every conversation he begins is a Slack message, never email · *meetings:* accepts and shows up to 4 of 4 |
-| **Opinion** (3) | **"Reach Raj on Slack, not email"**: he barely answers mail but replies on Slack in minutes and never misses a call · *confidence: graded* |
+The plainest question there is before you get in touch: what is the best way to reach this person?
 
-What surfaces is not a bare label but *"Email Raj and you wait a week; message him on Slack and he's
-back in minutes, and he always takes a call, so book time or Slack him rather than mailing."* Every
-clause walks back to a count of messages sent against replies on each way of reaching him. That is the
-track-back.
+The tool makes this read by sorting every back-and-forth with a contact by where it went, then seeing
+which way of reaching them earns a reply. Not where you happen to have been writing, but where they
+actually answer. People already gathers every email, Slack message, calendar invite and call into one
+picture; this read scores each route by its own reply rate and speed.
 
-**Threshold.** There is no fixed "answers within a day = reachable" line. Each way of reaching them is
-judged by its own reply rate and speed, and only once there is enough back-and-forth on it to mean
-something: one lucky email reply is not a pattern, where a dozen messages with a steady fast answer is.
-One way wins not by being fast in the abstract but by being faster and surer *for this person* than the
-others, the same own-rhythm rule the quiet-going reads use, applied across email, Slack and calls
-instead of across time.
+There is no fixed "answers within a day means reachable" line. Each route is judged by its own reply
+rate and speed, measured against this person rather than an absolute, and only once there is enough
+back-and-forth on it to mean something. One lucky email reply is not a pattern; a dozen messages with a
+steady fast answer is. One route wins by being faster and surer for this person than the others.
 
-**Why it's trustworthy.** The whole read is plain counting: replies over messages sent each way,
-typical speed each way, where they start conversations, invites accepted over invites sent. Anyone
-could redo the arithmetic over the same picture. The only soft edge is calling one way "best" when two
-run close, and there it reports both rather than forcing a single winner.
+It is most confident when one route clearly beats the rest. When two run close it reports both rather
+than forcing a single winner. It can only compare the routes that are connected: if someone really
+lives on a phone call, a text or WhatsApp, none of which touch the connected accounts, their truest
+route is invisible and the read says so. A contact with too little back-and-forth anywhere gets a thin,
+low-confidence read rather than a guess.
 
-**Where it can fail to reach ground.** It can only compare the ways that are connected. If this person
-really lives on a phone call, a text, or WhatsApp, none of which touch the connected accounts, their
-truest route is invisible and the read says so: *"of what I can see, Slack wins"*, not *"Slack is how
-to reach them"*. That is a **data gap**, named not faked. And a contact with too little back-and-forth
-anywhere gets a thin, low-confidence read rather than a guess.
+## In practice
+
+A contact has had eight emails from you and answered one, about six days later, but has answered all
+five of your Slack messages within fifteen minutes and accepts and shows up to every meeting. Every
+conversation they begin, they begin on Slack. The read: email them and you wait a week, Slack them and
+they are back in minutes, and they always take a call.
+
+## For the build
+
+Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/reading-principles.md).
+
+- Trigger: each route is scored by its own reply rate and typical speed, plus where the person starts
+  conversations and whether they accept meetings; a route wins by being faster and surer for this
+  person than the others (own-rhythm across channels, never a fixed speed), and only once it carries
+  enough back-and-forth to count.
+- Confidence: high when one route clearly beats the rest; softens when two run close, where it reports
+  both; thin and low when there is too little back-and-forth anywhere.
+- Needs: Calendar and Meet (the `needs` field) to count accepted invites and calls joined as a route;
+  without them, calls and meetings drop out of the comparison and only the written channels are scored
+  (a data gap, named not faked). Routes outside the connected accounts (phone, text, WhatsApp) cannot
+  be seen at all, so the read says "of what I can see, this route wins".
+- Counts beneath it: the `measures` in the frontmatter (replies by channel, reply speed by channel,
+  where they start, accepts meetings).

@@ -1,62 +1,70 @@
 ---
 id: answer-gap
-floor: signal
 label: Answer gap
 blurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.
-inputs: [objection-list]
-measures: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]
-answers: [Q15, Q17]
 modes: [grow]
 kind: risk
 confidence: graded
+inputs: [objection-list]
+measures: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]
+answers: [Q15, Q17]
+needs: [drive, web]
 pull: Organisation's proof library, to supply the document a claim needs
 ---
 
 # Answer gap
 
-A Grow read on one worry People put on record: not "can we answer this?" in the abstract, but "do we
-have a *grounded* answer ready, with the proof it needs, right now, and is that proof actually strong?"
-The honest, valuable edge is naming the gap, saying plainly when there is no good answer yet, or when
-the answer leans on proof too thin to carry it, rather than improvising one.
+## What it means
 
-| Floor | What Offerings has |
-|---|---|
-| **Facts** (1) | the worry on record from People ("is this FedRAMP-authorised?"); your told worries and answers; the proof docs in Drive; what the web turned up |
-| **Counts** (2) | *objection-list entry:* no match for "FedRAMP" among your told worries → **missing** · *answer grounded:* none on file · *proof required:* a compliance attestation (kind: certificate) · *proof on file:* Drive search → **empty** · *(contrast, "data residency":* entry **present**, answer told, proof = case study, Drive has "Council X data-residency" → present, but *proofs per claim:* 1 · *recency:* 4 years old · *named vs anonymous:* the council is named · *third-party vs self-asserted:* it is your own write-up → **covered but thin**) |
-| **Opinion** (3) | **"Answer gap on FedRAMP, thin proof on data residency"**: FedRAMP is a live worry with no answer and no proof at all; data residency has an answer but it rests on a single ageing, self-written case study · *confidence: high on the total gap, graded on the thin one* |
+A worry is on record from People, but there is no grounded answer ready for it, or the answer leans
+on proof too thin to carry it.
 
-What surfaces is not "we'll figure it out" but *"FedRAMP has come up and we have nothing on file, no
-answer, no certificate. Either supply one or we tell the buyer honestly."* Every clause walks back to
-a told record that exists or doesn't, and a Drive file that is there or isn't. That is the track-back,
-and the gap is part of it.
+The tool makes this read on one worry at a time. It does not ask "can we answer this?" in the
+abstract; it asks whether there is a grounded answer ready right now, with the proof that worry needs,
+and whether that proof is actually strong. The honest, valuable edge is naming the gap plainly:
+saying when there is no good answer yet, or when the answer rests on proof that is old, anonymous, or
+only your own word, rather than improvising one.
 
-**Threshold.** There is no behavioural rhythm here: Offerings reads *coverage and strength*, not pace.
-An answer counts as ready only when it is (a) on the objection list with an answer, (b) backed by the
-proof its claim needs, and (c) backed by proof strong enough to carry it; a told answer with no proof
-behind a claim that needs one is still a gap, and an answer leaning on proof that is old, anonymous, or
-only self-asserted is a *partial* gap, not fully covered. *Entry present and strong proof on file* →
-covered; *entry missing, or proof required but absent* → gap; *answer present but proof thin* → a
-softer, named gap that says "shore this up" rather than "we have nothing". Strength is read off plain
-attributes of the proof: how many independent proofs back the claim, how recent they are, whether the
-reference is named or anonymous, and whether it is third-party or your own word.
+It is most confident when the gap is total: a live worry with no answer and no proof at all. It
+softens to a named, partial gap when an answer exists but its proof is thin, and it says why it is
+thin rather than passing it as covered.
 
-**Why it's trustworthy.** Every count is a lookup anyone could redo: is there an entry, is there an
-answer, does the claim need proof, is the proof file in Drive, how old it is, whether the reference is
-named, whether it is third-party. The one judgement, *does this claim need proof at all*, leans on
-Offerings' own rule (a track-record claim needs a case study, a capability claim a spec line), not
-invention; *how strong is enough* is graded against the claim, not a fixed bar, since a four-year-old
-named case study may carry a continuity claim but not a "current best-in-class" one. The `confidence`
-is **graded on grounding**: high when the gap is total, softer when an answer exists but its proof is
-thin, where the read names *why* it is thin (old, anonymous, or self-asserted) rather than passing it
-as covered.
+It leans on Drive to see whether a proof file is actually on the shelf, and on the open web for what
+research turned up. If Drive is not connected, every "proof on file" check comes back empty and the
+read over-reports gaps, so it says so rather than inventing coverage. The proof a claim needs may be
+the organisation's rather than this offering's, so it borrows the Organisation proof library to find
+the matching document.
 
-**Where it can fail to reach ground.** The proof a claim needs may be the *organisation's*, not this
-offering's, a general track-record case study. That lives in Organisation (`04`), and the pull now
-resolves to its [`proof-library`](../../04-organization/assemblies/proof-library.md): Offerings asks,
-Organisation supplies the matching case study *and its attributes* (how recent it is, whether the
-reference is named, whether it is third-party), or names the hole when the shelf has none. So the
-strength read stays grounded in what `04` hands back, not invented here; `04` keeps no signals of its
-own, it supplies the document and its facts, and Offerings does the judging. Where the organisation has
-tagged no proof for the claim, that is a **told/data gap across modules**, named not faked. And if
-Drive is not connected, every "proof on file" check comes back empty and the read over-reports gaps, a
-**data gap** that lowers confidence rather than inventing coverage.
+## In practice
+
+A buyer worry such as a compliance attestation has come up on a thread, and there is no entry for it
+among your told worries, no answer on file, and nothing in Drive. By contrast a second worry, data
+residency, has a told answer backed by one case study, but the case study is four years old, written
+by you rather than a third party. The read: "answer gap on the compliance worry, thin proof on data
+residency. The first has nothing on file; the second rests on a single ageing, self-written
+reference."
+
+## For the build
+
+Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/reading-principles.md).
+Borrows the Organisation proof library (the `pull` field) for proof that belongs to the organisation
+rather than this offering, such as a general track-record case study.
+
+- Trigger: a worry counts as answered only when it is on the objection list with an answer, backed by
+  the kind of proof its claim needs, and backed by proof strong enough to carry it. An entry present
+  with strong proof on file reads as covered; an entry missing, or proof required but absent, is a
+  gap; an answer present but proof thin is a softer, named gap that says "shore this up" rather than
+  "we have nothing". Strength is read against the claim, not a fixed bar, since an ageing named case
+  study may carry a continuity claim but not a "current best-in-class" one. The one judgement, whether
+  a claim needs proof at all, leans on Offerings' own rule (a track-record claim needs a case study, a
+  capability claim a spec line), not invention.
+- Confidence: high when the gap is total (a live worry, no answer, no proof); softer when an answer
+  exists but its proof is thin, where the read names why it is thin (old, anonymous, or self-asserted)
+  rather than passing it as covered.
+- Needs: Drive (the `needs` field) for the "proof on file" check; without it those checks come back
+  empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data
+  gap, named not faked). The open web supplies what research turned up. Where the organisation has
+  tagged no proof for a borrowed claim, that is a told gap across modules, named not faked.
+- Counts beneath it: the `measures` in the frontmatter (entry exists, answer grounded, proof kind
+  required, proof on file, proofs per claim, proof recency, named vs anonymous reference, third-party
+  vs self-asserted).
