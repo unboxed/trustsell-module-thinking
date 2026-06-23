@@ -13,7 +13,14 @@ services:
       - "3000:3000"
     environment:
       MODULES_DIR: /work
-      WATCHPACK_POLLING: "true"
       NEXT_TELEMETRY_DISABLED: "1"
     volumes:
       - ./:/work
+      # Keep build output + installed deps in the container, not on the host bind
+      # mount (faster, avoids host/container churn). NOTE: after restarting or
+      # rebuilding the dev server, HARD-refresh any open browser tab — Turbopack's
+      # dev chunk hashes change on rebuild, so a stale tab loops on ChunkLoadError
+      # → reload. A freshly loaded tab is stable (verified). WATCHPACK_POLLING is
+      # intentionally absent: it's a Webpack-only var and does nothing for Turbopack.
+      - /work/blueprint/.next
+      - /work/blueprint/node_modules
