@@ -154,6 +154,35 @@
   .card--amber{ --c:var(--amber); }
   .card--green{ --c:var(--green); }
 
+  /* ── Signal: raw data distilled into one read (bespoke layout) ─────── */
+  .sig{ --lab:clamp(86px,10vw,148px); flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; gap:clamp(15px,2.6vh,32px); }
+  .sig__row{ display:grid; grid-template-columns:var(--lab) 1fr; gap:clamp(16px,2.6vw,44px); align-items:start; }
+  .sig__k{ font-weight:700; font-size:clamp(.74rem,.9vw,.88rem); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); padding-top:.18em; }
+  .sig__facts{ font-weight:500; font-size:clamp(1rem,1.35vw,1.2rem); color:var(--ink-soft); line-height:1.5; }
+  .sig__sep{ border:0; height:1px; background:var(--ink-line); }
+  .sig__counts{ display:flex; flex-direction:column; gap:clamp(8px,1.4vh,16px); }
+  .sig__crow{ display:grid; grid-template-columns:clamp(98px,9vw,138px) 1fr; gap:clamp(12px,1.8vw,30px); align-items:baseline; }
+  .sig__cm{ font-weight:600; font-size:clamp(.72rem,.86vw,.82rem); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); }
+  .sig__cv{ font-weight:500; font-size:clamp(1rem,1.4vw,1.24rem); color:var(--ink); line-height:1.35; }
+  .sig__cv b{ font-weight:700; }
+  .sig__q{ font-weight:800; letter-spacing:-.02em; line-height:1.08; font-size:clamp(1.5rem,2.9vw,2.45rem); }
+
+  /* ── Signal as three columns: facts → counting → read (soft read) ──── */
+  .sig3{ flex:1; min-height:0; display:grid; grid-template-columns:1fr 1fr 1fr; align-items:stretch; }
+  .sig3__col{ position:relative; display:flex; flex-direction:column; justify-content:center; gap:clamp(12px,1.9vh,22px); padding:clamp(4px,1vh,10px) clamp(18px,2.4vw,42px); }
+  .sig3__col:first-child{ padding-left:0; }
+  .sig3__col:last-child{ padding-right:0; }
+  .sig3__col + .sig3__col{ border-left:1px solid var(--ink-line); }
+  .sig3__col + .sig3__col::before{ content:"→"; position:absolute; left:0; top:50%; transform:translate(-50%,-50%);
+    background:var(--cream); color:var(--ink-soft); font-size:clamp(1rem,1.5vw,1.4rem); line-height:1; padding:8px 5px; }
+  .sig3__k{ font-weight:700; font-size:clamp(.74rem,.9vw,.88rem); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); }
+  .sig3__list{ display:flex; flex-direction:column; gap:clamp(7px,1.1vh,12px); font-weight:500; font-size:clamp(.98rem,1.25vw,1.16rem); color:var(--ink-soft); line-height:1.4; }
+  .sig3__count{ display:flex; flex-direction:column; gap:clamp(9px,1.4vh,16px); }
+  .sig3__count div{ font-weight:500; font-size:clamp(1rem,1.3vw,1.2rem); color:var(--ink); line-height:1.35; }
+  .sig3__count b{ font-weight:700; }
+  .sig3__read{ font-weight:800; letter-spacing:-.015em; line-height:1.12; font-size:clamp(1.3rem,2.05vw,1.95rem); }
+  .sig3__note{ font-weight:500; font-size:clamp(.9rem,1.1vw,1.02rem); color:var(--ink-soft); line-height:1.45; }
+
   /* ── How might we ──────────────────────────────────────────────── */
   .hmw{ font-weight:700; line-height:1.06; letter-spacing:-.022em; font-size:clamp(2.2rem,5.6vw,4.9rem); max-width:16ch; text-wrap:balance; }
   .hmw em{ font-style:normal; }
@@ -195,6 +224,13 @@
     .col__d,.card__desc{ max-width:none; }
     .actgrid{ grid-template-columns:1fr; grid-template-rows:auto; gap:18px; }
     .actbox--empty{ min-height:150px; }
+    .sig__row{ grid-template-columns:1fr; gap:4px; }
+    .sig__crow{ grid-template-columns:1fr; gap:1px; }
+    .sig3{ grid-template-columns:1fr; }
+    .sig3__col{ justify-content:flex-start; padding:clamp(12px,3vw,16px) 0; }
+    .sig3__col:first-child{ padding-top:0; }
+    .sig3__col + .sig3__col{ border-left:0; border-top:1px solid var(--ink-line); }
+    .sig3__col + .sig3__col::before{ display:none; }
     .hint{ display:none; }
   }
   @media (prefers-reduced-motion:reduce){ *{ transition:none !important; animation:none !important; } }
@@ -237,7 +273,10 @@
             </div>
             <div class="arow">
               <span class="anum">02</span>
-              <span class="acontent"><span class="alabel">Intro to the Relationships module</span></span>
+              <span class="acontent">
+                <span class="alabel">Intro to the Relationships module</span>
+                <span class="anote">What it does · the reads it makes · why it needs a face.</span>
+              </span>
             </div>
             <div class="arow">
               <span class="anum">03</span>
@@ -284,8 +323,8 @@
       </div>
     </section>
 
-    <!-- 3 · TODAY'S TOPIC — title up top, chips down by the foot -->
-    <section class="slide" aria-label="Today's topic">
+    <!-- 4 · WHAT IT DOES — title up top, the three facets down by the foot -->
+    <section class="slide" aria-label="What the module does">
       <div class="wrap">
         <div class="shead">
           <div class="eyebrow reveal"><span class="dot"></span> Today's topic</div>
@@ -298,37 +337,142 @@
           </div>
           <div class="reveal">
             <div class="rowrule"></div>
-            <div class="chips">
-              <span class="chip">Keep them alive</span>
-              <span class="chip">Move them forward</span>
-              <span class="chip">Find new ones</span>
+            <div class="trio">
+              <div class="col"><div class="col__k">Who they are</div><div class="col__d">every contact, in one place</div></div>
+              <div class="col"><div class="col__k">Your history</div><div class="col__d">every conversation, gathered</div></div>
+              <div class="col"><div class="col__k">Who knows whom</div><div class="col__d">the paths between people</div></div>
             </div>
+            <p class="lede" style="margin-top:clamp(16px,1.9vw,26px);max-width:none">…and it reads where each relationship stands.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4 · THE THREE VERBS — cards fill the body -->
+    <!-- 5 · HOW A READ IS MADE — raw data distilled into one signal -->
+    <section class="slide" aria-label="How a read is made">
+      <div class="wrap">
+        <div class="shead">
+          <div class="eyebrow reveal"><span class="dot"></span> How a read is made</div>
+          <div class="headrule reveal"></div>
+        </div>
+        <div class="sbody">
+          <div class="sig reveal">
+            <div class="sig__row">
+              <div class="sig__k">Facts</div>
+              <div class="sig__facts">Emails with Maria · two past meetings · the open web on her</div>
+            </div>
+            <hr class="sig__sep">
+            <div class="sig__row">
+              <div class="sig__k">Counting</div>
+              <div class="sig__counts">
+                <div class="sig__crow"><div class="sig__cm">Quiet for</div><div class="sig__cv"><b>11 months</b>, about 11× her usual rhythm</div></div>
+                <div class="sig__crow"><div class="sig__cm">Yet close</div><div class="sig__cv"><b>20+</b> two-way messages, two meetings</div></div>
+                <div class="sig__crow"><div class="sig__cm">Fresh reason</div><div class="sig__cv">just became <b>Head of Transformation</b></div></div>
+              </div>
+            </div>
+            <hr class="sig__sep">
+            <div class="sig__row">
+              <div class="sig__k">The read</div>
+              <div class="sig__q">“Now's a good moment to write to Maria again.”</div>
+            </div>
+          </div>
+        </div>
+        <div class="sfoot">Every read traces back to a date you could check yourself.</div>
+      </div>
+    </section>
+
+    <!-- 6 · A SOFTER READ — warmth-fading, shown as facts → counting → read -->
+    <section class="slide" aria-label="A softer read">
+      <div class="wrap">
+        <div class="shead">
+          <div class="eyebrow reveal"><span class="dot"></span> A softer read</div>
+          <div class="headrule reveal"></div>
+        </div>
+        <div class="sbody">
+          <div class="sig3 reveal">
+            <div class="sig3__col">
+              <div class="sig3__k">Facts</div>
+              <div class="sig3__list">
+                <span>Messages with Anna</span>
+                <span>Her older, warmer replies</span>
+                <span>The last two calls</span>
+              </div>
+            </div>
+            <div class="sig3__col">
+              <div class="sig3__k">Counting</div>
+              <div class="sig3__count">
+                <div>Replies down from <b>~70 words</b> to <b>~10</b>, no greeting</div>
+                <div>Warm, chatty words <b>tailing off</b></div>
+                <div>On the last call she spoke <b>⅓ as much</b></div>
+              </div>
+            </div>
+            <div class="sig3__col">
+              <div class="sig3__k">The read</div>
+              <div class="sig3__read">“Anna may be cooling in how she comes across.”</div>
+              <div class="sig3__note">A soft flag. It never fires alone, only adds colour to a firmer read.</div>
+            </div>
+          </div>
+        </div>
+        <div class="sfoot">The lengths and talk-time count cleanly; reading warmth from words is arguable, so this stays a low flag.</div>
+      </div>
+    </section>
+
+    <!-- 7 · THE FACELESS ENGINE — real inputs flow into a face that isn't there yet -->
+    <section class="slide" aria-label="The faceless engine">
+      <div class="wrap">
+        <div class="shead">
+          <div class="eyebrow reveal"><span class="dot"></span> Why we're here</div>
+          <div class="headrule reveal"></div>
+        </div>
+        <div class="sbody">
+          <h2 class="headline reveal" style="max-width:none;margin-bottom:clamp(20px,2.6vw,36px)">The engine is built.<br>It has no face.</h2>
+          <div class="actgrid reveal">
+            <div class="actbox">
+              <h2 class="actbox__title">What it runs on</h2>
+              <p class="actbox__lead">It reads the traces you already leave.</p>
+              <div class="actbox__foot">
+                <p class="actbox__intent">No new data entry. The footprints are already in your tools.</p>
+                <div class="chips">
+                  <span class="chip">Gmail</span>
+                  <span class="chip">Calendar</span>
+                  <span class="chip">Slack</span>
+                  <span class="chip">Contacts</span>
+                  <span class="chip">Meet</span>
+                  <span class="chip">Web</span>
+                </div>
+              </div>
+            </div>
+            <div class="actbox actbox--empty" style="align-items:center;justify-content:center;text-align:center;gap:clamp(8px,1vw,14px)">
+              <span aria-hidden="true" style="font-weight:800;font-size:clamp(2.6rem,5vw,4rem);line-height:1;color:var(--ink-soft);opacity:.45">?</span>
+              <span style="font-weight:600;font-size:clamp(.95rem,1.3vw,1.15rem);color:var(--ink-soft);opacity:.75">the face you design</span>
+            </div>
+          </div>
+        </div>
+        <div class="sfoot">That's the hackathon: give it a face.</div>
+      </div>
+    </section>
+
+    <!-- 8 · THE THREE VERBS — cards fill the body -->
     <section class="slide" aria-label="The three verbs">
       <div class="wrap">
         <div class="shead">
-          <div class="eyebrow reveal"><span class="dot"></span> Nurture · Grow · Plant</div>
+          <div class="eyebrow reveal"><span class="dot"></span> Sustain · Advance · Expand</div>
           <div class="headrule reveal"></div>
         </div>
         <div class="sbody">
           <div class="verbs reveal">
             <div class="card card--teal">
-              <div class="card__verb">Nurture</div>
+              <div class="card__verb">Sustain</div>
               <div class="card__line"></div>
               <div class="card__desc">Keep relationships alive.</div>
             </div>
             <div class="card card--amber">
-              <div class="card__verb">Grow</div>
+              <div class="card__verb">Advance</div>
               <div class="card__line"></div>
               <div class="card__desc">Move them forward.</div>
             </div>
             <div class="card card--green">
-              <div class="card__verb">Plant</div>
+              <div class="card__verb">Expand</div>
               <div class="card__line"></div>
               <div class="card__desc">Find new ones.</div>
             </div>
@@ -337,7 +481,7 @@
       </div>
     </section>
 
-    <!-- 5 · HOW MIGHT WE — big question, centred and filling -->
+    <!-- 9 · HOW MIGHT WE — big question, centred and filling -->
     <section class="slide" aria-label="How might we">
       <div class="wrap">
         <div class="shead">
@@ -345,13 +489,13 @@
           <div class="headrule reveal"></div>
         </div>
         <div class="sbody sbody--center">
-          <p class="hmw reveal">How might we visualise or represent someone's world so they can <em class="t">nurture</em>, <em class="a">grow</em>, and <em class="g">plant</em> their relationships?</p>
+          <p class="hmw reveal">How might we visualise or represent someone's world so they can <em class="t">sustain</em>, <em class="a">advance</em>, and <em class="g">expand</em> their relationships?</p>
           <div class="launch reveal">Now — let's sketch</div>
         </div>
       </div>
     </section>
 
-    <!-- 7 · CRAZY 8s -->
+    <!-- 10 · CRAZY 8s -->
     <section class="slide activity" aria-label="Crazy 8s">
       <div class="wrap">
         <div class="shead">
@@ -374,7 +518,7 @@
       </div>
     </section>
 
-    <!-- 8 · LANDING PAGE FOR YOUR IDEA -->
+    <!-- 11 · LANDING PAGE FOR YOUR IDEA -->
     <section class="slide activity" aria-label="Landing page for your idea">
       <div class="wrap">
         <div class="shead">
@@ -397,7 +541,7 @@
       </div>
     </section>
 
-    <!-- 9 · DESIGN YOUR IDEA -->
+    <!-- 12 · DESIGN YOUR IDEA -->
     <section class="slide activity" aria-label="Design your idea">
       <div class="wrap">
         <div class="shead">
@@ -420,7 +564,7 @@
       </div>
     </section>
 
-    <!-- 10 · WRAP -->
+    <!-- 13 · WRAP -->
     <section class="slide" aria-label="Wrap">
       <div class="wrap">
         <div class="shead">

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trustsell · Design Hackathon No. 01 — People &amp; Relationships</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ----------------------------------------------------------------------
+     Trustsell · Design Hackathon — workshop deck.
+     Slate ink · one teal accent · frosted glass · dot-grid. Calm, plain,
+     sketch-friendly. No glow, no clever motion.
+  ---------------------------------------------------------------------- */
+  :root{
+    --canvas:#f1f3f6;
+    --paper:#ffffff;
+    --ink-900:#0f172a;
+    --ink-700:#334155;
+    --ink-600:#475569;
+    --ink-500:#64748b;
+    --ink-400:#94a3b8;
+    --line-200:#e2e8f0;
+    --line-300:#cbd5e1;
+    --line-100:#eef2f6;
+
+    --accent-700:#6d28d9;
+    --accent:#7c3aed;     /* the single accent — violet */
+    --accent-400:#a78bfa;
+    --accent-tint:#f5f3ff;
+
+    --radius:18px;
+    --ease:cubic-bezier(.22,.72,.2,1);
+    --pad:clamp(28px,5vw,88px);
+    --maxw:66rem;
+    --font:'Poppins',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --display:'Poppins',var(--font);
+    --mono:'Space Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  /* The whole deck scales with viewport height (crisp font-size, not transform). */
+  html{height:100%;font-size:clamp(15px,2.3vh,40px)}
+  body{height:100%}
+  body{
+    font-family:var(--font);
+    color:var(--ink-900);
+    background:var(--canvas);
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  /* --- deck shell --- */
+  .deck{position:fixed;inset:0;overflow:hidden}
+
+  .slide{
+    position:absolute;inset:0;
+    display:grid;grid-template-rows:1fr;justify-items:start;
+    padding:clamp(26px,5vh,72px) var(--pad) clamp(76px,10vh,124px);
+    opacity:0;visibility:hidden;
+    transform:translateY(14px);
+    transition:opacity .4s var(--ease), transform .45s var(--ease), visibility 0s linear .45s;
+    background:
+      radial-gradient(120% 90% at 14% 8%, rgba(255,255,255,.9), transparent 46%),
+      radial-gradient(120% 120% at 92% 96%, rgba(124,58,237,.05), transparent 44%),
+      var(--canvas);
+  }
+  .slide::before{ /* dot-grid affordance */
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(rgba(15,23,42,.07) .9px, transparent .9px);
+    background-size:26px 26px;
+    -webkit-mask-image:radial-gradient(120% 100% at 50% 40%, #000 55%, transparent 100%);
+            mask-image:radial-gradient(120% 100% at 50% 40%, #000 55%, transparent 100%);
+    opacity:.65;
+  }
+  .slide.active{opacity:1;visibility:visible;transform:none;transition-delay:0s,0s,0s}
+
+  .stage{position:relative;width:100%;max-width:var(--maxw);z-index:2}
+
+  /* Two-zone content slide: title block top-left, body fills the rest. */
+  .slide:not(.slide--dark) .stage{display:flex;flex-direction:column;height:100%;gap:clamp(1rem,3.2vh,2.4rem)}
+  .head{flex:0 0 auto}
+  .body{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:clamp(.9rem,2.4vh,1.6rem)}
+  .body--top{justify-content:flex-start}
+  .grid--fill{flex:1 1 auto;min-height:0;grid-auto-rows:minmax(0,1fr);max-height:clamp(220px,40vh,420px)}
+
+  /* dark slides — cover, the challenge, the wrap */
+  .slide--dark{
+    place-items:center;align-content:center;
+    color:#e8eefc;
+    background:
+      radial-gradient(90% 70% at 30% 18%, rgba(124,58,237,.26), transparent 55%),
+      radial-gradient(80% 80% at 88% 92%, rgba(124,58,237,.14), transparent 50%),
+      #0b1220;
+  }
+  .slide--dark::before{
+    background-image:radial-gradient(rgba(148,163,184,.16) .9px, transparent .9px);
+    background-size:30px 30px;opacity:.5;
+    -webkit-mask-image:radial-gradient(120% 100% at 50% 45%, #000 50%, transparent 100%);
+            mask-image:radial-gradient(120% 100% at 50% 45%, #000 50%, transparent 100%);
+  }
+
+  /* ----------------------------- type ----------------------------- */
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent-700);display:inline-flex;align-items:center;gap:.6em;margin-bottom:1.2rem;
+  }
+  .eyebrow::before{content:"";width:24px;height:1px;background:currentColor;opacity:.55}
+  .slide--dark .eyebrow{color:var(--accent-400)}
+
+  h1{font-family:var(--display);font-weight:600;letter-spacing:-.025em;line-height:1.03;
+     font-size:clamp(2.4rem,7vw,5.4rem)}
+  h2{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.07;
+     font-size:clamp(1.8rem,4.4vw,3.3rem)}
+  .lede{font-size:clamp(1.02rem,1.8vw,1.34rem);line-height:1.5;color:var(--ink-600);
+     max-width:60ch;font-weight:400;margin-top:1.1rem}
+  .slide--dark .lede{color:#aebbd6}
+  .small{font-size:.92rem;color:var(--ink-500)}
+  .slide--dark .small{color:#8a97b4}
+  em{font-style:normal;color:var(--accent-700);font-weight:600}
+  .slide--dark em{color:var(--accent-400)}
+
+  /* ----------------------------- cards ----------------------------- */
+  .grid{display:grid;gap:1rem}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g5{grid-template-columns:repeat(5,1fr)}
+  @media (max-width:980px){.g5{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:880px){.g3,.g4,.g5{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}}
+  @media (max-width:620px){.g2,.g3,.g4,.g5{grid-template-columns:1fr}}
+
+  .card{
+    background:rgba(255,255,255,.72);
+    border:1px solid rgba(255,255,255,.9);
+    box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 10px 30px -18px rgba(15,23,42,.35);
+    border-radius:var(--radius);
+    padding:clamp(1.1rem,2.4vh,1.7rem) clamp(1.1rem,1.6vw,1.6rem);
+    backdrop-filter:blur(6px) saturate(1.1);
+    display:flex;flex-direction:column;
+  }
+  .card .ico{
+    width:clamp(34px,4.4vh,46px);height:clamp(34px,4.4vh,46px);
+    border-radius:12px;display:grid;place-items:center;margin-bottom:.85rem;
+    background:var(--accent-tint);border:1px solid var(--line-200);
+  }
+  .card .ico svg{width:54%;height:54%;stroke:var(--accent-700)}
+  .card .k{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-400);margin-bottom:.5rem}
+  .card .t{font-family:var(--display);font-size:1.2rem;font-weight:600;letter-spacing:-.005em;color:var(--ink-900);margin-bottom:.4rem}
+  .card .d{font-size:1rem;line-height:1.5;color:var(--ink-600)}
+
+  .pill{
+    display:inline-flex;align-items:center;gap:.5em;
+    padding:.45em .85em;border-radius:999px;font-size:.92rem;font-weight:500;
+    color:var(--ink-700);background:#fff;border:1px solid var(--line-200);
+  }
+  .slide--dark .pill{color:#cdd7ee;background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.24)}
+
+  /* ----------------------------- agenda (slide 3) ----------------------------- */
+  .agenda{display:flex;gap:.85rem;width:100%;flex-wrap:wrap}
+  .step{flex:1 1 0;min-width:150px}
+  .step .num{font-family:var(--mono);font-weight:700;font-size:.8rem;color:var(--accent);letter-spacing:.08em}
+  .step .nm{font-family:var(--display);font-weight:600;font-size:1.1rem;margin:.45rem 0 .55rem;color:var(--ink-900)}
+  .timebox{
+    display:inline-flex;align-items:center;gap:.45em;align-self:flex-start;
+    font-family:var(--mono);font-size:.78rem;font-weight:700;letter-spacing:.02em;
+    color:var(--accent-700);background:var(--accent-tint);border:1px solid #ddd6fe;
+    padding:.32em .7em;border-radius:8px;
+  }
+  .timebox svg{width:13px;height:13px;stroke:var(--accent-700)}
+
+  /* ----------------------------- signals columns (slide 6) ----------------------------- */
+  .sigcol{gap:0}
+  .sighd{display:flex;align-items:center;gap:.55rem;margin-bottom:.2rem}
+  .sighd .ico{margin:0;width:32px;height:32px}
+  .sighd .nm{font-family:var(--display);font-weight:600;font-size:1.18rem;color:var(--ink-900)}
+  .sigcol .gloss{font-size:.9rem;color:var(--ink-500);margin:.5rem 0 .95rem}
+  .siglist{display:flex;flex-direction:column;gap:.7rem}
+  .sigrow .n{font-weight:600;font-size:1rem;color:var(--ink-900)}
+  .sigrow .dsc{font-size:.9rem;line-height:1.4;color:var(--ink-600)}
+
+  /* ----------------------------- trust example (slide 7) ----------------------------- */
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,48px);align-items:center;width:100%}
+  @media (max-width:820px){.twocol{grid-template-columns:1fr}}
+  .points{display:flex;flex-direction:column;gap:clamp(.8rem,2.4vh,1.5rem)}
+  .point{display:flex;gap:.85rem;align-items:flex-start}
+  .point .ico{flex:none;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:var(--accent-tint);border:1px solid var(--line-200)}
+  .point .ico svg{width:18px;height:18px;stroke:var(--accent-700)}
+  .point .nm{font-family:var(--display);font-weight:600;font-size:1.12rem;color:var(--ink-900)}
+  .point .dsc{font-size:.98rem;line-height:1.45;color:var(--ink-600)}
+  .example .result{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:600;font-size:1.14rem;color:var(--accent-700);
+     background:var(--accent-tint);border:1px solid #ddd6fe;border-radius:12px;padding:.7em .9em}
+  .example .result svg{width:18px;height:18px;stroke:var(--accent-700);flex:none}
+  .example .reasons{display:flex;flex-direction:column;gap:.5rem;margin:.9rem 0 .2rem;padding-left:.2rem}
+  .example .rsn{display:flex;gap:.55rem;align-items:baseline;font-size:.96rem;color:var(--ink-600)}
+  .example .rsn::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink-400);transform:translateY(-2px);flex:none}
+  .example .foot{font-family:var(--mono);font-size:.72rem;letter-spacing:.02em;color:var(--ink-400);margin-top:.5rem}
+
+  /* ----------------------------- Crazy 8s (slide 9) ----------------------------- */
+  .c8{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);gap:.7rem;width:100%;height:clamp(200px,38vh,320px)}
+  @media (max-width:680px){.c8{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,1fr)}}
+  .c8 .cell{
+    border:1.6px dashed var(--line-300);border-radius:14px;
+    background:rgba(255,255,255,.45);
+    position:relative;min-height:0;
+  }
+  .c8 .cell .no{position:absolute;top:.5rem;left:.6rem;font-family:var(--mono);font-size:.8rem;font-weight:700;color:var(--ink-400)}
+
+  /* ----------------------------- landing wireframe (slide 10) ----------------------------- */
+  .wire{width:100%;max-width:30rem;margin:0 auto;border:1px solid var(--line-200);border-radius:14px;overflow:hidden;
+     background:#fff;box-shadow:0 18px 40px -22px rgba(15,23,42,.4)}
+  .wire .bar{display:flex;align-items:center;gap:.45rem;padding:.6rem .8rem;border-bottom:1px solid var(--line-100);background:var(--paper)}
+  .wire .bar i{width:9px;height:9px;border-radius:50%;background:var(--line-300);display:block}
+  .wire .bar .addr{flex:1;height:.7rem;border-radius:99px;background:var(--line-200);margin-left:.4rem}
+  .wire .pg{padding:clamp(1rem,2.6vh,1.6rem);display:flex;flex-direction:column;gap:.7rem;align-items:flex-start}
+  .wire .h{height:1.5rem;width:72%;border-radius:7px;background:var(--accent-tint);border:1.4px dashed var(--accent)}
+  .wire .l{height:.62rem;border-radius:6px;background:var(--line-200)}
+  .wire .l.w80{width:80%}.wire .l.w55{width:55%}
+  .wire .btn{height:1.5rem;width:34%;border-radius:8px;background:var(--accent);margin-top:.35rem}
+  .wire .cap{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--ink-400);padding:0 0 .9rem;text-align:center}
+
+  /* big plain exercise figure (slide 11) */
+  .bigfig{display:grid;place-items:center;width:100%}
+  .bigfig .panel{width:min(100%,30rem);border:1px solid var(--line-200);border-radius:16px;background:rgba(255,255,255,.55);
+     padding:1.1rem;display:grid;grid-template-columns:1fr 2fr;gap:.7rem;height:clamp(150px,26vh,230px)}
+  .bigfig .panel .col{display:flex;flex-direction:column;gap:.6rem}
+  .bigfig .blk{border-radius:10px;border:1.4px dashed var(--line-300);background:rgba(255,255,255,.5);flex:1}
+  .bigfig .blk.solid{border-style:solid;border-color:var(--line-200)}
+
+  .sharenote{display:inline-flex;align-items:center;gap:.5rem;font-size:.95rem;color:var(--ink-500)}
+  .sharenote svg{width:16px;height:16px;stroke:var(--ink-400)}
+  .slide--dark .sharenote{color:#8a97b4}
+
+  /* ----------------------------- chrome ----------------------------- */
+  .brand{position:fixed;left:var(--pad);bottom:24px;z-index:30;
+     font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-400);
+     display:flex;align-items:center;gap:.6em}
+  .brand b{color:var(--ink-700);font-weight:700}
+  .brand .mk{width:8px;height:8px;border-radius:2px;background:var(--accent);box-shadow:0 0 0 3px rgba(124,58,237,.16)}
+
+  .counter{position:fixed;right:var(--pad);bottom:24px;z-index:30;
+     font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--ink-400)}
+  .counter span{color:var(--ink-700)}
+
+  .progress{position:fixed;left:0;top:0;height:3px;z-index:40;width:0%;
+     background:var(--accent);transition:width .45s var(--ease)}
+
+  .nav{position:fixed;right:var(--pad);bottom:54px;z-index:30;display:flex;gap:8px}
+  .nav button{
+    width:38px;height:38px;border-radius:11px;cursor:pointer;
+    border:1px solid var(--line-200);background:rgba(255,255,255,.8);color:var(--ink-700);
+    display:grid;place-items:center;backdrop-filter:blur(6px);transition:.18s var(--ease)}
+  .nav button:hover{border-color:var(--accent);color:var(--accent-700);transform:translateY(-1px)}
+  .nav button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  .hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:25;
+     font-size:.74rem;color:var(--ink-400);letter-spacing:.04em;display:flex;gap:1.4em;opacity:.9}
+  .hint kbd{font-family:var(--mono);font-weight:700;color:var(--ink-600);
+     background:#fff;border:1px solid var(--line-200);border-bottom-width:2px;border-radius:6px;padding:.05em .45em;font-size:.7rem}
+  .hint.gone{opacity:0;transition:opacity 1.2s ease}
+
+  .edge{position:fixed;top:0;bottom:0;width:14vw;z-index:20;cursor:pointer}
+  .edge.l{left:0}.edge.r{right:0}
+
+  body.dark .counter span{color:#cdd7ee}
+  body.dark .counter{color:#7c89a6}
+  body.dark .brand{color:#7c89a6}
+  body.dark .brand b{color:#cdd7ee}
+  body.dark .nav button{background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.25);color:#cdd7ee}
+  body.dark .nav button:hover{border-color:var(--accent-400);color:#fff}
+  body.dark .hint{color:#7c89a6}
+  body.dark .hint kbd{background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.25);color:#cdd7ee}
+
+  /* staged reveal on slide entry — plain fade only */
+  .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease), transform .55s var(--ease)}
+  .slide.active .reveal{opacity:1;transform:none}
+  .slide.active .reveal:nth-child(1){transition-delay:.05s}
+  .slide.active .reveal:nth-child(2){transition-delay:.12s}
+  .slide.active .reveal:nth-child(3){transition-delay:.19s}
+  .slide.active .reveal:nth-child(4){transition-delay:.26s}
+  .slide.active .reveal:nth-child(5){transition-delay:.33s}
+
+  /* overview grid */
+  .overview{position:fixed;inset:0;z-index:80;background:rgba(8,14,28,.93);
+     display:none;padding:clamp(20px,4vw,56px);overflow:auto}
+  .overview.on{display:block}
+  .ov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;max-width:1200px;margin:0 auto}
+  .ov-card{border:1px solid rgba(148,163,184,.25);border-radius:14px;padding:16px;cursor:pointer;
+     background:rgba(255,255,255,.04);color:#cdd7ee;transition:.16s var(--ease)}
+  .ov-card:hover{border-color:var(--accent-400);background:rgba(13,148,136,.14);transform:translateY(-2px)}
+  .ov-card .n{font-family:var(--mono);font-size:.72rem;color:#7c89a6;font-weight:700;letter-spacing:.1em}
+  .ov-card .ttl{margin-top:.5rem;font-family:var(--display);font-size:1rem;font-weight:600;line-height:1.25}
+  .ov-head{max-width:1200px;margin:0 auto 22px;color:#aebbd6;display:flex;justify-content:space-between;align-items:center}
+  .ov-head h3{font-family:var(--display);font-size:1.1rem;font-weight:600;color:#fff}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .slide,.reveal,.progress{transition:opacity .2s linear!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="deck" id="deck">
+
+  <!-- 1 · COVER ---------------------------------------------------------- -->
+  <section class="slide slide--dark" data-title="Cover" data-dark>
+    <div class="stage" style="text-align:center;display:grid;justify-items:center;gap:10px">
+      <div class="eyebrow reveal" style="margin-bottom:.4rem">Trustsell · Design Hackathon · No. 01</div>
+      <h1 class="reveal">People &amp; Relationships</h1>
+      <div class="reveal lede" style="color:#aebbd6;margin-top:.5rem;max-width:46ch;font-size:clamp(1.05rem,2.1vw,1.45rem)">
+        A space to sketch and build ideas for how Trustsell shows you the people you sell to.
+      </div>
+      <div class="reveal" style="margin-top:34px"><span class="pill">90 minutes · sketch, build, share</span></div>
+    </div>
+  </section>
+
+  <!-- 2 · WHAT THIS IS --------------------------------------------------- -->
+  <section class="slide" data-title="What this is">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The hackathon</div>
+        <h2 class="reveal">A monthly design hackathon.</h2>
+        <p class="lede reveal">A space to sketch, build, and explore future ideas for Trustsell. Each month we pick one part of the tool. Today it's <em>People &amp; Relationships</em>.</p>
+      </div>
+      <div class="body">
+        <div class="grid g3 grid--fill reveal">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg></div>
+            <div class="t">Sketch</div>
+            <div class="d">Get ideas out fast on paper. No wrong answers.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg></div>
+            <div class="t">Build</div>
+            <div class="d">Turn an idea into something you can click and show.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
+            <div class="t">Explore</div>
+            <div class="d">Try ideas we might never have shipped otherwise.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · HOW TODAY RUNS ------------------------------------------------- -->
+  <section class="slide" data-title="How today runs">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The plan</div>
+        <h2 class="reveal">How today runs.</h2>
+        <p class="lede reveal">Four steps, about 90 minutes. We share after each build.</p>
+      </div>
+      <div class="body">
+        <div class="agenda reveal">
+          <div class="card step">
+            <div class="num">01</div><div class="nm">Intro</div>
+            <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~15 min</span>
+          </div>
+          <div class="card step">
+            <div class="num">02</div><div class="nm">Crazy 8s + share</div>
+            <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~15 min</span>
+          </div>
+          <div class="card step">
+            <div class="num">03</div><div class="nm">Landing page + share</div>
+            <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~30 min</span>
+          </div>
+          <div class="card step">
+            <div class="num">04</div><div class="nm">Build it + share</div>
+            <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~30 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · WHAT PEOPLE IS ------------------------------------------------- -->
+  <section class="slide" data-title="What People is">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">The module</div>
+        <h2 class="reveal">People: the expert on everyone you deal with.</h2>
+        <p class="lede reveal">Three things it knows about each person.</p>
+      </div>
+      <div class="body">
+        <div class="grid g3 grid--fill reveal">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></div>
+            <div class="t">Who they are</div>
+            <div class="d">Name, role, company. Pulled together from your emails and calendar, not typed in by you.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div>
+            <div class="t">Your history</div>
+            <div class="d">Every message, call and meeting with them, gathered into one picture.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" x2="15.4" y1="13.5" y2="17.5"/><line x1="15.4" x2="8.6" y1="6.5" y2="10.5"/></svg></div>
+            <div class="t">Who knows whom</div>
+            <div class="d">How people connect: who can introduce you, and who you still need to reach.</div>
+          </div>
+        </div>
+        <p class="small reveal">People is one part of Trustsell. It works out who matters from what people actually do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · ASSEMBLIES ----------------------------------------------------- -->
+  <section class="slide" data-title="What it can pull together">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">What it can pull together</div>
+        <h2 class="reveal">It gathers scattered things into one view.</h2>
+        <p class="lede reveal">The kinds of things it can put in front of you.</p>
+      </div>
+      <div class="body">
+        <div class="grid g5 grid--fill reveal">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></div>
+            <div class="t">Person history</div>
+            <div class="d">Everything about one person in one place: emails, calls, meetings.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></div>
+            <div class="t">Conversation history</div>
+            <div class="d">A whole thread or chat, in order, with everyone on it.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></div>
+            <div class="t">Meeting history</div>
+            <div class="d">A call gathered up: who was there, and the notes if they were taken.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.1a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="t">Stakeholder map</div>
+            <div class="d">Everyone at a company, by role, including who you are missing.</div>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <div class="t">Deal</div>
+            <div class="d">One selling effort: the people and conversations in it, across companies.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · SIGNALS -------------------------------------------------------- -->
+  <section class="slide" data-title="What it can spot">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">What it can spot</div>
+        <h2 class="reveal">It points out things worth your attention.</h2>
+        <p class="lede reveal">Grouped three ways: keep relationships alive, move them forward, find new ones.</p>
+      </div>
+      <div class="body">
+        <div class="grid g3 reveal">
+          <div class="card sigcol">
+            <div class="sighd">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+              <div class="nm">Sustain</div>
+            </div>
+            <div class="gloss">Keep relationships alive.</div>
+            <div class="siglist">
+              <div class="sigrow"><div class="n">Gone quiet</div><div class="dsc">Someone you usually hear from has gone silent.</div></div>
+              <div class="sigrow"><div class="n">Loose end</div><div class="dsc">Something you said you'd do, still not done.</div></div>
+              <div class="sigrow"><div class="n">Champion went quiet</div><div class="dsc">A strong contact you can't reach lately.</div></div>
+            </div>
+          </div>
+          <div class="card sigcol">
+            <div class="sighd">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+              <div class="nm">Advance</div>
+            </div>
+            <div class="gloss">Move things forward.</div>
+            <div class="siglist">
+              <div class="sigrow"><div class="n">Champion</div><div class="dsc">Someone inside the company pushing for you.</div></div>
+              <div class="sigrow"><div class="n">Blocker</div><div class="dsc">Someone slowing things down or pushing back.</div></div>
+              <div class="sigrow"><div class="n">Not landing yet</div><div class="dsc">They keep asking the same things; it hasn't clicked.</div></div>
+            </div>
+          </div>
+          <div class="card sigcol">
+            <div class="sighd">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></div>
+              <div class="nm">Expand</div>
+            </div>
+            <div class="gloss">Find new ones.</div>
+            <div class="siglist">
+              <div class="sigrow"><div class="n">Warm way in</div><div class="dsc">A person you know who can introduce you.</div></div>
+              <div class="sigrow"><div class="n">New person</div><div class="dsc">A new name worth knowing has shown up.</div></div>
+              <div class="sigrow"><div class="n">Buying interest</div><div class="dsc">Signs a conversation is getting serious.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · TRUST ---------------------------------------------------------- -->
+  <section class="slide" data-title="How you can trust it">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">How you can trust it</div>
+        <h2 class="reveal">It shows its reasons, and leaves the call to you.</h2>
+      </div>
+      <div class="body">
+        <div class="twocol">
+          <div class="points reveal">
+            <div class="point">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div><div class="nm">Shows its reasons</div><div class="dsc">Every result comes with the facts behind it, so you can check.</div></div>
+            </div>
+            <div class="point">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div>
+              <div><div class="nm">You decide</div><div class="dsc">It suggests, you choose what to do. Nothing is sent for you.</div></div>
+            </div>
+            <div class="point">
+              <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div>
+              <div><div class="nm">Tells you what's missing</div><div class="dsc">If it can't be sure, it says so instead of guessing.</div></div>
+            </div>
+          </div>
+          <div class="card example reveal">
+            <div class="result"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Looks like Tom has gone quiet</div>
+            <div class="reasons">
+              <div class="rsn">No reply in 3 weeks</div>
+              <div class="rsn">He usually replies within a day</div>
+              <div class="rsn">You normally talk every month</div>
+            </div>
+            <div class="foot">Facts you can check yourself.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · THE CHALLENGE (HMW) -------------------------------------------- -->
+  <section class="slide slide--dark" data-title="The challenge" data-dark>
+    <div class="stage" style="text-align:center">
+      <div class="eyebrow reveal" style="justify-content:center">The challenge · How might we</div>
+      <h2 class="reveal" style="font-size:clamp(1.9rem,4.4vw,3.5rem);max-width:20ch;margin:0 auto;color:#fff">
+        Make someone's whole <span style="color:var(--accent-400)">world</span> of relationships visible, so they always know who to
+        <span style="color:var(--accent-400)">sustain</span>,
+        <span style="color:var(--accent-400)">advance</span>, and
+        <span style="color:var(--accent-400)">expand</span>?
+      </h2>
+      <p class="lede reveal" style="margin:26px auto 0;color:#aebbd6;max-width:52ch">
+        Sustain = keep relationships alive. Advance = move them forward. Expand = find new ones.
+      </p>
+    </div>
+  </section>
+
+  <!-- 9 · CRAZY 8s ------------------------------------------------------- -->
+  <section class="slide" data-title="Crazy 8s">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">Warm-up</div>
+        <h2 class="reveal">Crazy 8s.</h2>
+        <p class="lede reveal">Fold a sheet into 8 boxes. One idea per box. 8 ideas in 8 minutes. Go fast, don't polish.</p>
+        <div class="reveal" style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 min sketch</span>
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~7 min share</span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="c8 reveal" aria-hidden="true">
+          <div class="cell"><span class="no">1</span></div>
+          <div class="cell"><span class="no">2</span></div>
+          <div class="cell"><span class="no">3</span></div>
+          <div class="cell"><span class="no">4</span></div>
+          <div class="cell"><span class="no">5</span></div>
+          <div class="cell"><span class="no">6</span></div>
+          <div class="cell"><span class="no">7</span></div>
+          <div class="cell"><span class="no">8</span></div>
+        </div>
+        <p class="sharenote reveal"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>Then we put them up and take a quick look around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · LANDING PAGE -------------------------------------------------- -->
+  <section class="slide" data-title="Landing page">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">Exercise</div>
+        <h2 class="reveal">A landing page for your idea.</h2>
+        <p class="lede reveal">Make a simple landing page that sells your idea. Focus on what it is and why it matters, not the interface yet.</p>
+        <div class="reveal" style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~18 min build</span>
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~10 min share</span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="wire reveal" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i><span class="addr"></span></div>
+          <div class="pg">
+            <div class="h"></div>
+            <div class="l w80"></div>
+            <div class="l w55"></div>
+            <div class="btn"></div>
+          </div>
+          <div class="cap">lead with the message, not the layout</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · BUILD IT ------------------------------------------------------ -->
+  <section class="slide" data-title="Build it">
+    <div class="stage">
+      <div class="head">
+        <div class="eyebrow reveal">Main exercise</div>
+        <h2 class="reveal">Now build it.</h2>
+        <p class="lede reveal">Build the actual interface for your idea. This is the one we spend the most time on.</p>
+        <div class="reveal" style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem">
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~20 min build</span>
+          <span class="timebox"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~7 min share</span>
+        </div>
+      </div>
+      <div class="body">
+        <div class="bigfig reveal" aria-hidden="true">
+          <div class="panel">
+            <div class="col"><div class="blk solid"></div><div class="blk"></div></div>
+            <div class="col"><div class="blk"></div><div class="blk solid"></div></div>
+          </div>
+        </div>
+        <p class="sharenote reveal" style="justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg>Then we share, and group the ideas together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 · WRAP ---------------------------------------------------------- -->
+  <section class="slide slide--dark" data-title="Wrap" data-dark>
+    <div class="stage" style="text-align:center">
+      <div class="eyebrow reveal" style="justify-content:center">That's a wrap</div>
+      <h1 class="reveal" style="font-size:clamp(2.2rem,5.5vw,4.2rem);color:#fff">Thanks for building.</h1>
+      <p class="lede reveal" style="margin:22px auto 0;color:#aebbd6">Pin up what you made. We'll walk through them and pick what to take further.</p>
+      <div class="reveal" style="margin-top:32px"><span class="pill">No. 01 of a monthly series · No. 02 next month</span></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- chrome -->
+<div class="edge l" id="edgeL" aria-label="previous"></div>
+<div class="edge r" id="edgeR" aria-label="next"></div>
+
+<div class="brand"><span class="mk"></span><span><b>Trustsell</b>&nbsp;·&nbsp;Hackathon No. 01</span></div>
+<div class="counter"><span id="cur">1</span> / <span id="tot">12</span></div>
+<div class="nav">
+  <button id="prev" title="Previous (←)" aria-label="Previous slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 6-6 6 6 6"/></svg></button>
+  <button id="next" title="Next (→)" aria-label="Next slide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></button>
+</div>
+<div class="hint" id="hint">
+  <span><kbd>←</kbd> <kbd>→</kbd> move</span>
+  <span><kbd>F</kbd> fullscreen</span>
+  <span><kbd>O</kbd> overview</span>
+</div>
+
+<div class="overview" id="overview">
+  <div class="ov-head"><h3>All slides</h3><span class="small" style="color:#7c89a6">click to jump · <kbd style="color:#cdd7ee">Esc</kbd> to close</span></div>
+  <div class="ov-grid" id="ovGrid"></div>
+</div>
+
+<script>
+(function(){
+  // Lucide icons inline above use stroke=currentColor + round caps/joins; set those defaults here.
+  document.querySelectorAll('svg').forEach(function(s){
+    if(!s.getAttribute('stroke')) s.setAttribute('stroke','currentColor');
+    if(!s.getAttribute('stroke-linecap')) s.setAttribute('stroke-linecap','round');
+    if(!s.getAttribute('stroke-linejoin')) s.setAttribute('stroke-linejoin','round');
+  });
+
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0, n = slides.length;
+  var elCur = document.getElementById('cur'),
+      elTot = document.getElementById('tot'),
+      prog  = document.getElementById('progress'),
+      hint  = document.getElementById('hint'),
+      ov    = document.getElementById('overview');
+  elTot.textContent = n;
+
+  function render(){
+    slides.forEach(function(s,k){ s.classList.toggle('active', k===i); });
+    document.body.classList.toggle('dark', slides[i].hasAttribute('data-dark'));
+    elCur.textContent = i+1;
+    prog.style.width = (n>1 ? (i/(n-1))*100 : 100) + '%';
+    if(location.hash !== '#'+(i+1)) history.replaceState(null,'','#'+(i+1));
+  }
+  function go(d){ var t=Math.min(n-1,Math.max(0,i+d)); if(t!==i){ i=t; render(); } }
+  function jump(t){ i=Math.min(n-1,Math.max(0,t)); render(); }
+
+  var ovGrid = document.getElementById('ovGrid');
+  slides.forEach(function(s,k){
+    var c=document.createElement('div'); c.className='ov-card';
+    c.innerHTML='<div class="n">'+String(k+1).padStart(2,'0')+'</div><div class="ttl">'+(s.dataset.title||'')+'</div>';
+    c.onclick=function(){ jump(k); ov.classList.remove('on'); };
+    ovGrid.appendChild(c);
+  });
+
+  document.getElementById('next').onclick=function(){go(1)};
+  document.getElementById('prev').onclick=function(){go(-1)};
+  document.getElementById('edgeR').onclick=function(){go(1)};
+  document.getElementById('edgeL').onclick=function(){go(-1)};
+
+  document.addEventListener('keydown', function(e){
+    var k=e.key;
+    if(ov.classList.contains('on')){ if(k==='Escape'||k==='o'||k==='O'){ ov.classList.remove('on'); } return; }
+    if(k==='ArrowRight'||k===' '||k==='PageDown'){ e.preventDefault(); go(1); }
+    else if(k==='ArrowLeft'||k==='PageUp'){ e.preventDefault(); go(-1); }
+    else if(k==='Home'){ jump(0); }
+    else if(k==='End'){ jump(n-1); }
+    else if(k==='f'||k==='F'){ if(!document.fullscreenElement){ (document.documentElement.requestFullscreen||function(){})(); } else { document.exitFullscreen(); } }
+    else if(k==='o'||k==='O'){ ov.classList.add('on'); }
+    else if(k==='Escape' && document.fullscreenElement){ document.exitFullscreen(); }
+  });
+
+  setTimeout(function(){ hint.classList.add('gone'); }, 5200);
+
+  var start = parseInt((location.hash||'').replace('#',''),10);
+  if(start>=1 && start<=n) i=start-1;
+  render();
+})();
+</script>
+</body>
+</html>
