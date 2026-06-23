@@ -219,6 +219,7 @@ function coerceSignal(data: Record<string, unknown>): SignalMeta | null {
     confidence: CONFIDENCE_SET.has(data.confidence as string)
       ? (data.confidence as SignalConfidence)
       : undefined,
+    needs: strList(data.needs),
     pull: typeof data.pull === "string" ? data.pull : undefined,
   };
 }

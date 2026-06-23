@@ -215,6 +215,8 @@ export interface SignalMeta {
   modes: string[];
   kind?: SignalKind;
   confidence?: SignalConfidence;
+  /** the sources a read leans on; when one is unconnected, confidence falls (a data gap). */
+  needs: string[];
   /** an optional fact it borrows from a supplier module. */
   pull?: string;
 }
