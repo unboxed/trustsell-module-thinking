@@ -17,17 +17,13 @@ needs: [linkedin]
 
 A read on the shape of who you are talking to, not on any one person.
 
-People already gathers everyone at an organisation into one picture and marks the empty spots. This
-read holds those empty spots against the people a decision usually needs, and speaks up when there is a
-hole: someone who can actually say yes that you have never reached, or a deal where everything rests on
-one contact. It is the difference between "we have a lovely relationship with our contact" and "we have
-a lovely relationship with our contact and nobody who can sign".
+People gathers everyone at an organisation into one picture and marks the empty spots. This read holds
+those spots against the people a decision usually needs, and speaks up when there is a hole. It is the
+difference between "we have a lovely relationship with our contact" and "we have a lovely relationship
+with our contact and nobody who can sign".
 
-There is no fixed "talk to five people means covered" line. The read speaks up on two distinct holes: a
-needed person nobody has reached (above all, whoever signs off), and everything resting on one contact,
-where a single person carries almost the whole conversation, so the deal has one point of failure.
-"Resting on one" is judged against the organisation's own size, so a genuinely small buyer with one
-decision-maker is not flagged for lacking a team it never had.
+It flags two holes. One is a needed person nobody has reached, above all whoever signs off. The other
+is a deal resting on one contact, where almost everything runs through a single person.
 
 The arguable part is which people a given deal needs. The usual cast (someone who decides, someone who
 holds the budget, people who sway it, anyone likely to push back) is the default checklist; where a
@@ -58,11 +54,9 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
 - Confidence: graded; the counting is the picture's own deterministic work (who holds which part, who
   has been reached, whose share of the back-and-forth dominates), and the soft edge is which cast a
   given deal needs.
-- Needs: LinkedIn (the `needs` field) for who reports to whom and who really decides; until it
+- Needs: LinkedIn, for who reports to whom and who really decides; until it
   connects, those rest on email signatures and the open web and stay under-known, so the read can say
   "nobody who signs off is on record", not "there is definitely someone you are missing" (the data gap
   the organisation picture carries, inherited here and named not faked). Where a deal needs a shape
   only the user or Offerings can state, the read names a told gap ("tell me who signs off here") rather
   than inventing the buying team.
-- Counts beneath it: the `measures` in the frontmatter (people covered vs needed, decision-maker
-  reached, rests on one person, people reached count).

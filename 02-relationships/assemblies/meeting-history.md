@@ -19,12 +19,14 @@ inputs:
 ## What it gathers
 
 Gathers one call into a single picture, the spoken-word sibling of
-[`conversation-history`](conversation-history.md). It keys on the `Meeting` (the record of a call
-that took place) and binds it back to the relationship through the `Calendar event` that scheduled it
-(the shared invite, its attendees, the Meet `video link`), so a call lands on the same deal and the
-same people as the mail around it. Each `Participant` is resolved to the person behind them via
-`person-history`, so a name in the call is the same someone you have a history with, not a fresh
-stranger. This is the one thing it does: this call, who was in the room, and what was said.
+[`conversation-history`](conversation-history.md). It keys on the `Meeting`, the record that a call
+took place, and binds it back through the `Calendar event` that scheduled it: the shared invite, its
+attendees, the Meet `video link`. So a call lands on the same deal and the same people as the mail
+around it.
+
+Each `Participant` is resolved to the person behind them through `person-history`, so a name in the
+call is someone you already have a history with, not a fresh stranger. This is the one thing it does:
+this call, who was in the room, and what was said.
 
 It gathers in two layers, and the second is not guaranteed:
 
@@ -35,10 +37,7 @@ It gathers in two layers, and the second is not guaranteed:
   time) and the `Smart notes` summary, with the `Recording` (its Drive link) where one was kept. Turn
   note-taking off and this layer is simply absent.
 
-The only real work is the tidy-up, sorting the call onto its deal and naming the speakers. That is
-arithmetic, not opinion. This is floor, not reading: any address book or CRM does this much. It does
-not decide whether a commitment was made or an objection raised; judgement happens above, in the
-signals (see [`docs/reading-principles.md`](../../docs/reading-principles.md)).
+The only real work is the tidy-up: sorting the call onto its deal and naming the speakers.
 
 Two provenance facts a reading above must respect. Transcript words are retained only about 30 days
 by the provider, so older calls keep the meeting and participants but lose their verbatim words; the

@@ -57,7 +57,7 @@ export function RfChannelNode({ data, selected }: NodeProps) {
       className={cn(
         "group/plug flex cursor-pointer flex-col items-center",
         "transition-opacity duration-300 motion-reduce:transition-none",
-        trace === "active" && "drop-shadow-[0_0_16px_rgba(37,99,235,0.45)]",
+        trace === "active" && "drop-shadow-lg",
         trace === "dim" && "opacity-35 saturate-50",
       )}
       title={ghost ? `${ch.name} — not connected yet` : ch.name}
@@ -71,18 +71,18 @@ export function RfChannelNode({ data, selected }: NodeProps) {
         style={{ width: CHANNEL.disc, height: CHANNEL.disc }}
         className={cn(
           "flex items-center justify-center rounded-full transition-shadow duration-200",
-          ghost ? "border-2 border-dashed border-slate-300/80 bg-white/25" : "glass-card",
-          selected && "ring-1 ring-blue-600/50",
-          !selected && !ghost && "group-hover/plug:ring-1 group-hover/plug:ring-slate-300/70",
+          ghost ? "border-2 border-dashed border-border bg-card" : "border bg-card",
+          selected && "ring-1 ring-primary",
+          !selected && !ghost && "group-hover/plug:ring-1 group-hover/plug:ring-border",
         )}
       >
         {Icon ? (
           <Icon
-            className={cn("size-6", ghost ? "text-slate-400" : "text-slate-600")}
+            className={cn("size-6", ghost ? "text-muted-foreground" : "text-foreground")}
             strokeWidth={1.85}
           />
         ) : (
-          <span className={cn("text-[17px] font-bold", ghost ? "text-slate-400" : "text-slate-600")}>
+          <span className={cn("text-[17px] font-bold", ghost ? "text-muted-foreground" : "text-foreground")}>
             {glyph}
           </span>
         )}
@@ -90,7 +90,7 @@ export function RfChannelNode({ data, selected }: NodeProps) {
       <span
         className={cn(
           "mt-2 text-[11px] leading-none font-medium whitespace-nowrap",
-          ghost ? "text-slate-400" : "text-slate-500",
+          ghost ? "text-muted-foreground" : "text-muted-foreground",
         )}
       >
         {ch.name}

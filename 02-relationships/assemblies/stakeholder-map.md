@@ -21,25 +21,25 @@ inputs:
 
 ## What it gathers
 
-Gathers everyone you deal with at one organisation into a single picture, keyed by the org (its
-domain from `enrichment`, the shared email domain on a `Contact`, the company on an `Other contact`).
-It stands on Person history: each name on the map is one person already gathered, and the map sorts
-those people into deciders, influencers, champions and blockers, plus who is still a hole. It reads
-who is on a thread (the `From`, To and Cc on an `Email message`, the participants on an `Email
-thread`), who sits on the shared `Calendar event`, the job title on a `Contact` or `Slack user`, and
-the role `enrichment` returns from the open web, then places each person against the org.
+Gathers everyone you deal with at one organisation into a single picture, keyed by the org: its domain
+from `enrichment`, the shared email domain on a `Contact`, the company on an `Other contact`.
+
+It stands on Person history. Each name on the map is one person already gathered. The map sorts those
+people into deciders, influencers, champions and blockers, and marks who is still a hole.
+
+To place each person, it reads what the records state: who is on a thread (`From`, To and Cc on an
+`Email message`, the participants on an `Email thread`), who sits on the shared `Calendar event`, the
+job title on a `Contact` or `Slack user`, and the role `enrichment` returns from the open web.
 
 The map names its gaps as plainly as its names. A missing decider is surfaced as honestly as a known
 one: the picture says "no decision-maker on record here" the same way it names a known decision-maker.
 A hole is a fact about the org, not a thing to paper over.
 
 The only real work is identity and grouping: deciding these scattered people belong to the same org,
-and lining them up by the roles their records carry. The sort into deciders and influencers leans on
-what the records already state (a job title that says "Head of", a name that shows up on every
-thread), not on a read of behaviour. That is arithmetic, not opinion. This is floor, not reading: any
-address book or CRM does this much. Whether a person is actually a champion or has gone cooling is a
-judgement, and that happens above, in the signals (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)).
+and lining them up by the roles their records carry. The sort leans on what the records already state,
+a job title that says "Head of", a name that shows up on every thread, not on a read of behaviour. So
+the map can place someone in the champion or blocker bucket from their record, but it does not judge
+whether they are truly championing or cooling. That judgement is a signal's job.
 
 ## Lineage
 

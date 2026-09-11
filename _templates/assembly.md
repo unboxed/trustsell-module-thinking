@@ -19,9 +19,8 @@ inputs:                       # what it gathers, one floor down. Each id MUST re
 ## What it gathers
 
 <!-- Which records it pulls together and the identity work it does (how a single instance is keyed),
-     in plain English, agnostic (no named people). Then one line that this is FLOOR, not reading:
-     any address book or CRM does this much; judgement happens above, in the signals
-     (see docs/reading-principles.md). -->
+     in plain English, agnostic (no named people). Use a plain list where it gathers several things.
+     No need to say "this is floor, not reading": living in assemblies/ already says it. -->
 
 ## Lineage
 

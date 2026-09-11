@@ -2,9 +2,11 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { ArrowLeft, Search } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import type { AssemblyDoc, SignalDoc } from "@/lib/modules";
 import { MODE_NAMES, type IconName, type ModuleId } from "@/lib/blueprint.config";
 import type { LibraryEntry, ResolveAssembly } from "./types";
@@ -33,15 +35,17 @@ export function Playbook({
   assemblies,
   signals,
   modules,
-  initialModule,
-  initialPlay,
 }: {
   assemblies: AssemblyDoc[];
   signals: SignalDoc[];
   modules: LibraryModule[];
-  initialModule: string | null;
-  initialPlay: string | null;
 }) {
+  // Deep links: `?module=<id>` pre-selects a shelf (how a canvas node click lands
+  // here filtered); `?play=<module>/<id>` opens one play's spread. Read in the
+  // browser (not on the server) so the page can also be exported as a static site.
+  const searchParams = useSearchParams();
+  const initialModule = searchParams.get("module");
+  const initialPlay = searchParams.get("play");
   // Canonical order: signals (module order) then assemblies — the index reads
   // top to bottom in this order, and flipping follows it.
   const allEntries = useMemo<LibraryEntry[]>(
@@ -194,11 +198,6 @@ export function Playbook({
     setSelectedKey(null);
   }, []);
 
-  const toggleMode = useCallback(
-    (m: string) => setModeFilter((cur) => (cur === m ? "" : m)),
-    [],
-  );
-
   // Turn pages with the arrow keys while reading; Esc returns to the index.
   useEffect(() => {
     if (!inSpread) return;
@@ -242,7 +241,7 @@ export function Playbook({
   return (
     <div className="flex min-h-dvh w-full flex-col">
       {/* — sticky gallery top bar: nav + filters, content scrolls under it — */}
-      <header className="sticky top-0 z-20 border-b border-border bg-canvas/80 backdrop-blur">
+      <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
         <div className="mx-auto flex w-full max-w-[88rem] flex-wrap items-center gap-x-5 gap-y-3 px-5 py-3 sm:px-8">
           <Link
             href="/"
@@ -266,23 +265,30 @@ export function Playbook({
                 className="w-[13rem] rounded-lg border border-border bg-card py-1.5 pr-3 pl-8 text-[13px] text-foreground placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
               />
             </div>
-            <Segmented
-              ariaLabel="Filter by type"
+            <Tabs
               value={typeFilter}
-              onChange={(v) => setTypeFilter(v as TypeFilter)}
-              options={[
-                { value: "all", label: "All" },
-                { value: "signal", label: "Signals" },
-                { value: "assembly", label: "Assemblies" },
-              ]}
-            />
-            <Segmented
-              ariaLabel="Filter by mode"
+              onValueChange={(v) => setTypeFilter(v as TypeFilter)}
+            >
+              <TabsList aria-label="Filter by type">
+                <TabsTrigger value="all">All</TabsTrigger>
+                <TabsTrigger value="signal">Signals</TabsTrigger>
+                <TabsTrigger value="assembly">Assemblies</TabsTrigger>
+              </TabsList>
+            </Tabs>
+            <ToggleGroup
+              type="single"
+              variant="outline"
+              spacing={0}
               value={modeFilter}
-              onChange={toggleMode}
-              options={MODE_NAMES.map((m) => ({ value: m, label: m }))}
-              capitalize
-            />
+              onValueChange={setModeFilter}
+              aria-label="Filter by mode"
+            >
+              {MODE_NAMES.map((m) => (
+                <ToggleGroupItem key={m} value={m} className="px-3 capitalize">
+                  {m}
+                </ToggleGroupItem>
+              ))}
+            </ToggleGroup>
           </div>
         </div>
         <div className="mx-auto flex w-full max-w-[88rem] flex-wrap items-center gap-2 px-5 pb-3 sm:px-8">
@@ -343,50 +349,5 @@ function ShelfPill({
       <span>{label}</span>
       <span className="opacity-60">{count}</span>
     </button>
-  );
-}
-
-/** A segmented control in the canvas style — active segment filled with the secondary tint. */
-function Segmented({
-  options,
-  value,
-  onChange,
-  ariaLabel,
-  capitalize,
-}: {
-  options: { value: string; label: string }[];
-  value: string;
-  onChange: (v: string) => void;
-  ariaLabel: string;
-  capitalize?: boolean;
-}) {
-  return (
-    <div
-      role="group"
-      aria-label={ariaLabel}
-      className="inline-flex overflow-hidden rounded-lg border border-border"
-    >
-      {options.map((o, i) => {
-        const on = value === o.value;
-        return (
-          <button
-            key={o.value}
-            type="button"
-            aria-pressed={on}
-            onClick={() => onChange(o.value)}
-            className={cn(
-              "px-3 py-1.5 text-[12.5px] transition-colors",
-              capitalize && "capitalize",
-              i > 0 && "border-l border-border",
-              on
-                ? "bg-secondary text-foreground"
-                : "bg-card text-muted-foreground hover:text-foreground",
-            )}
-          >
-            {o.label}
-          </button>
-        );
-      })}
-    </div>
   );
 }

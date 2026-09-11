@@ -27,15 +27,14 @@ it naturally counts how many separate proofs stand behind one claim. These are f
 the shelf surfaces them so that Offerings' `answer-gap` can judge how strong a piece of proof is. The
 shelf carries the attributes; Offerings does the reading.
 
-Nothing here is judged or guessed. It does not decide whether a proof will land, which case study wins
-a deal, or whether a proof is strong enough (that strength read is Offerings' `answer-gap`, working off
-the attributes this shelf surfaces); it only gathers the documents and matches each to its told tag.
-The only real work is identity and grouping, deciding which Drive file is the one a `proof-tag` names,
-and which shelf (company-general here, product-specific in Offerings) a file belongs on. That is
-arithmetic, not opinion; judgement starts a floor up (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)). The Match job that reads this shelf,
-finding the best-fitting proof for a claim, lives in the module prose, not as a signal: Organisation
-has no signal floor.
+It does not decide whether a proof will land, which case study wins a deal, or whether a proof is
+strong enough. That strength read is Offerings' `answer-gap`, working off the attributes this shelf
+surfaces. It only gathers the documents and matches each to its told tag. The only real work is
+identity and grouping: deciding which Drive file is the one a `proof-tag` names, and which shelf
+(company-general here, product-specific in Offerings) a file belongs on.
+
+The Match job that reads this shelf, finding the best-fitting proof for a claim, lives in the module
+prose, not as a signal: Organisation has no signal floor.
 
 Where a claim has a `proof-tag` but no Drive document behind it, the shelf shows the hole plainly, a
 proof gap named not faked, rather than implying a document that is not there.

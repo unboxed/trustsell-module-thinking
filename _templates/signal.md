@@ -2,8 +2,8 @@
 # SIGNAL FLOOR. One doc per entry, at <module>/signals/<id>.md.
 # Two layers in one file:
 #   FRONTMATTER is the structured (machine) layer: flat facets only, no sentence-length prose.
-#   THE BODY is the human layer, plain English / GDS style (sentence case, short sentences, say what
-#   it means; a signal does not "fire" to a reader). Three consistent sections, below.
+#   THE BODY is the human layer, plain English / GDS style (sentence case, short sentences, one idea
+#   each, say what it means; a signal does not "fire" to a reader). Three consistent sections, below.
 # A signal is the FIRST OPINION: a named read off an assembly that carries its evidence down to plain
 # facts (the track-back tree). It APPLIES the shared rules in docs/reading-principles.md; it does not
 # re-teach them. It earns its place by answering a real question (docs/sales-questions.md).
@@ -25,9 +25,9 @@ pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' obje
 
 ## What it means
 
-<!-- Plain English: what the read is, when it applies, how confident it is, and what it cannot see.
-     No named customers, offerings or people. Apply the own-rhythm rule (reading-principles.md);
-     do not re-justify "there is no fixed N-day line" at length. -->
+<!-- Just the read and when it applies, in a few short plain sentences. One idea per sentence; put the
+     point first. No named customers, offerings or people. Do NOT restate the blurb, re-teach own-rhythm
+     (reading-principles.md), grade confidence, or list blind spots: those live in "For the build". -->
 
 ## In practice
 
@@ -36,8 +36,9 @@ pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' obje
 
 ## For the build
 
-<!-- The precise rule, in tight structured English. Open by pointing at docs/reading-principles.md.
+<!-- The precise rule, in tight structured English. The single home for how confident the read is and
+     what it cannot see. Open by pointing at docs/reading-principles.md.
      - Trigger: how the measures combine into the read (own-rhythm, never a fixed number).
      - Confidence: what makes it high, what softens it.
-     - Needs: the `needs` sources, and what drops out without them (a data gap, named not faked).
-     - Counts beneath it: the `measures`. -->
+     - Needs: what drops out when a `needs` source is missing (a data gap, named not faked).
+     Do NOT re-list the `measures`, `needs` or `confidence` here: they are frontmatter facets already. -->

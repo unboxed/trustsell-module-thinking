@@ -17,22 +17,12 @@ needs: [calendar, meet]
 
 Something left hanging on a thread, where only finishing it makes the thread safe.
 
-A loose end comes in two shapes. One is your promise ("I'll send you the pricing sheet") that never
-went out. The other is your question ("can you confirm the budget?") that never came back. Either way a
-thread is hanging on you or on them, and the read carries which. The two shapes are read off the
-conversation's own back-and-forth (who said "I'll send", and whether anything later closed it); the
-pace they are judged against comes from the rhythm this pair actually keeps.
+A loose end comes in two shapes. One is your promise that never went out ("I'll send you the pricing
+sheet"). The other is your question that never came back ("can you confirm the budget?"). Either way a
+thread is waiting on someone, and the read carries which.
 
-There is no fixed "older than seven days is overdue" line. A loose end is overdue against this thread's
-own normal turn time: a pair who close a turn in two days have a loose end the moment a promise outruns
-that, while a pair who trade notes monthly do not. The read lands only once the fulfilment scan comes
-back empty, so a sheet that did go out as an attachment, or got handed over in a meeting, never counts
-as still open.
-
-It is most confident when the promise is concrete and well past the thread's pace with nothing on
-record to close it; it softens when the language was loose or the gap has only just crossed the line.
-It reads promises made aloud on captured calls too. A promise made on an uncaptured call, or kept from
-a personal account outside the connected channels, still looks undelivered.
+It lands only once it has checked that nothing already closed it. A sheet that did go out as an
+attachment, or got handed over in a meeting, never counts as still open.
 
 ## In practice
 
@@ -54,12 +44,10 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
 - Confidence: high when the promise is concrete and well past the thread's pace with nothing to close
   it; softens when the language was loose ("I'll look into it") or the gap has only just crossed the
   line.
-- Needs: Calendar and Meet (the `needs` field) so a promise handed over in a meeting closes the loose
+- Needs: Calendar and Meet, so a promise handed over in a meeting closes the loose
   end and a commitment made on a captured call counts as a promise; without them, a promise made on an
   uncaptured call shows only "you spoke", not what was said, so it still looks undelivered (the
   conditional-content data gap [`meeting-history`](../assemblies/meeting-history.md) names). A promise
   kept outside the connected channels is invisible the same way (a data gap), and a promise in words
   the parser does not catch may be missed entirely (a told gap the user can close by correcting the
   read).
-- Counts beneath it: the `measures` in the frontmatter (promise made undelivered, ask made unanswered,
-  days open vs own rhythm, fulfilment scan, commitment made on call).

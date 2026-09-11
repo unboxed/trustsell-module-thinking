@@ -17,7 +17,7 @@ import type { LibraryEntry, ResolveAssembly } from "./types";
  * it gathers, one floor lower.
  * ------------------------------------------------------------------------- */
 
-const EYEBROW = "text-[11px] font-semibold tracking-[0.1em] uppercase text-ink-eyebrow";
+const EYEBROW = "text-[11px] font-semibold tracking-[0.1em] uppercase text-muted-foreground";
 const NODE =
   "inline-flex items-center gap-2 rounded-lg border bg-card px-3 py-2 text-[13px]";
 
@@ -111,7 +111,7 @@ export function Descent({
                 return (
                   <span
                     key={ni}
-                    className={`${NODE} border-blue-600/40 text-ink-title ring-1 ring-blue-600/30`}
+                    className={`${NODE} border-primary/40 text-foreground ring-1 ring-primary/30`}
                   >
                     <span className="size-1.5 rounded-full bg-primary" />
                     <span className="font-medium">{n.label}</span>
@@ -123,7 +123,7 @@ export function Descent({
                   <button
                     key={ni}
                     type="button"
-                    className={`${NODE} cursor-pointer border-border text-ink-body transition-colors hover:border-primary/50 hover:text-foreground`}
+                    className={`${NODE} cursor-pointer border-border text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground`}
                     onClick={() => onJump(n.moduleId, n.id)}
                     title={`Go to ${n.label}`}
                   >

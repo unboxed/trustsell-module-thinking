@@ -17,21 +17,12 @@ needs: [calendar, linkedin]
 
 A fresh face arrives in a conversation you are already in, and the map gains a name it did not have.
 
-The tool makes this read when a name appears that the prior-history scan comes back empty on: they are
-on no earlier email, no earlier event, and not already on the organisation's stakeholder map. That
-empty scan is what tells a genuine arrival apart from a colleague who has simply been quiet for a
-while. Seniority is graded against the conversation's own cast: a "Head of" signature or an organiser
-role on an invite weighs more than a name buried in a long Cc, the same way a reply gap is weighed
-against a person's own rhythm rather than a calendar of days.
+The read fires on a name that has no history: on no earlier email, on no earlier event, and not already
+on the organisation's map. That empty history is what tells a real arrival apart from a colleague who
+has just been quiet for a while.
 
-It is most confident when the signature is senior and the map had a decision-maker hole this person
-could fill. It softens to "a new name appeared" when all there is is a fresh address in Cc with nothing
-on it.
-
-Without LinkedIn the role rests on a self-described signature and whatever enrichment returns, so a
-vague or missing signature leaves seniority a guess. A stakeholder who only ever joins by phone or in a
-room never lands in a sender line or an attendee list, so they stay invisible to this read until they
-touch a connected channel.
+Seniority matters here. A "Head of" signature or an organiser role on an invite weighs more than a name
+buried in a long Cc.
 
 ## In practice
 
@@ -50,10 +41,8 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
   fixed rank), so a senior signature or an organiser role outweighs a name buried in Cc.
 - Confidence: high when the signature is senior and the map had a decision-maker hole this person could
   fill; softens to "a new name appeared" when all there is is a fresh address in Cc with nothing on it.
-- Needs: Calendar (the `needs` field) to see a new attendee added to an event, and LinkedIn for role
+- Needs: Calendar, to see a new attendee added to an event, and LinkedIn for role
   and seniority; without LinkedIn the role rests on a self-described signature and whatever enrichment
   returns, so a vague or missing signature leaves seniority a guess (a data gap, named not faked). A
   stakeholder who only joins by phone or in a room never lands in a sender line or attendee list and
   stays invisible until they touch a connected channel.
-- Counts beneath it: the `measures` in the frontmatter (new name on thread, new attendee on event,
-  head-of signature scan, prior-history scan).

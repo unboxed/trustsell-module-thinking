@@ -22,7 +22,7 @@ import { Descent } from "./descent";
  * No modal — the detail is the page. Styled with the canvas design system.
  * ------------------------------------------------------------------------- */
 
-const EYEBROW = "text-[11px] font-semibold tracking-[0.1em] uppercase text-ink-eyebrow";
+const EYEBROW = "text-[11px] font-semibold tracking-[0.1em] uppercase text-muted-foreground";
 
 export function PlaySpread({
   entry,
@@ -88,10 +88,10 @@ export function PlaySpread({
             <Tab>{tab}</Tab>
             {signal ? <ConfidenceMeter confidence={signal.confidence} /> : <GatherMark />}
           </div>
-          <h1 className="mt-4 text-[clamp(30px,4.5vw,46px)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink-title">
+          <h1 className="mt-4 text-[clamp(30px,4.5vw,46px)] leading-[1.05] font-semibold tracking-[-0.02em] text-foreground">
             {meta.label}
           </h1>
-          <p className="mt-5 max-w-3xl text-[clamp(15px,1.2vw,19px)] leading-[1.5] text-ink-body">
+          <p className="mt-5 max-w-3xl text-[clamp(15px,1.2vw,19px)] leading-[1.5] text-muted-foreground">
             {meta.blurb}
           </p>
           {signal && signal.modes.length > 0 && (
@@ -105,7 +105,7 @@ export function PlaySpread({
 
         {/* the content: prose down the left, the descent riding sticky on the right */}
         <div className="grid gap-10 pt-9 md:grid-cols-[1.1fr_0.9fr] md:gap-14">
-          <article className="module-doc min-w-0 [&>h1:first-child]:hidden">
+          <article className="prose prose-sm min-w-0 max-w-none dark:prose-invert [&>h1:first-child]:hidden [--tw-prose-body:var(--foreground)] [--tw-prose-headings:var(--foreground)] [--tw-prose-bold:var(--foreground)] [--tw-prose-links:var(--primary)] [--tw-prose-bullets:var(--muted-foreground)] [--tw-prose-counters:var(--muted-foreground)] [--tw-prose-quotes:var(--muted-foreground)] [--tw-prose-quote-borders:var(--border)] [--tw-prose-hr:var(--border)] [--tw-prose-code:var(--foreground)] [--tw-prose-captions:var(--muted-foreground)] [--tw-prose-th-borders:var(--border)] [--tw-prose-td-borders:var(--border)]">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
@@ -160,7 +160,7 @@ export function PlaySpread({
                   )}
                   {signal.pull && (
                     <DataRow label="pull">
-                      <span className="text-[13px] leading-[1.5] text-ink-body">
+                      <span className="text-[13px] leading-[1.5] text-muted-foreground">
                         {signal.pull}
                       </span>
                     </DataRow>

@@ -25,18 +25,22 @@ inputs:
 
 ## What it gathers
 
-Gathers every record that touches one person (your mail and threads with them, the calendar events you
-share, the calls you sat in together, their Slack messages and profile, and any open-web enrichment),
-resolved by identity (email, name) into a single timeline: one person, and your whole history with
-them. A call counts as a touch on that timeline the same way an email does: the meeting and its
-participant list show you were on a call on a date, so a recent call is not silence. The calendar
-status events (out-of-office, focus time) and a free/busy query are gathered too, so a read above can
-tell an innocent gap (someone was on holiday) from a real one.
+Gathers everything that touches one person into a single timeline. One person, and your whole history
+with them.
 
-Nothing here is judged or guessed. It is the deterministic tidy-up any address book or CRM does, the
-one picture the signals then count and read; judgement starts a floor up, in the signals (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)). The only real work is resolving
-"these scattered records are the same person", and that is still arithmetic, not opinion.
+It pulls in:
+
+- your emails and threads with them
+- the calendar events you share
+- the calls you sat in together
+- their Slack messages and profile
+- anything found about them on the open web
+- anything you have told us yourself: a note, an offline meeting, a preference
+
+A call counts as a touch, the same as an email. The calendar's out-of-office and free/busy events come
+in too, so a read above can tell a holiday from a real silence.
+
+The one real piece of work is deciding which scattered records are the same person.
 
 ## Lineage
 

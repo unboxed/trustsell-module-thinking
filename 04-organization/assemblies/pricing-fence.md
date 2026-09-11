@@ -20,12 +20,11 @@ soft the same way the compliance fence marks its rules: the floor is a wall, the
 the line beyond which sign-off is needed. Every line the company holds on price, in one place. The
 sibling of `compliance-fence`: one fences words, this one fences money.
 
-Nothing here is judged or guessed. It does not decide how far to discount this deal, which is the
-Brain's call (the deferred deal-specific discount room, which reads this fence to know the envelope it
-must stay inside); it only gathers the governance into one place. The only real work is grouping and
-resolving, lining up the told ceiling and floor with any Drive pricing sheet that confirms them, and
-keeping the hard floor apart from the sign-off line. That is arithmetic, not opinion; judgement starts
-a floor up (see [`docs/reading-principles.md`](../../docs/reading-principles.md)).
+It does not decide how far to discount this deal; that is the Brain's call (the deferred deal-specific
+discount room, which reads this fence to know the envelope it must stay inside). It only gathers the
+governance into one place. The only real work is grouping and resolving: lining up the told ceiling and
+floor with any Drive pricing sheet that confirms them, and keeping the hard floor apart from the
+sign-off line.
 
 Keep this apart from Offerings' price reading: `03`'s `price-position` and `price-barrier` work the
 per-offering price (what the offering costs, how far its own told discount room reaches against

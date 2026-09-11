@@ -1,10 +1,13 @@
 "use client";
 
-import { Dialog as DialogPrimitive } from "radix-ui";
-import { XIcon } from "lucide-react";
-
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   Tooltip,
@@ -33,74 +36,50 @@ export function ChannelPanel({
   const ghost = channel?.source === "account" && !channel.connected;
 
   return (
-    <DialogPrimitive.Root
+    <Dialog
       open={channel !== null}
       onOpenChange={(open) => {
         if (!open) onClose();
       }}
     >
-      <DialogPrimitive.Portal>
-        <DialogPrimitive.Overlay
-          className={cn(
-            "fixed inset-0 z-50 bg-slate-900/20 supports-backdrop-filter:backdrop-blur-xs",
-            "data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
-          )}
-        />
-        <DialogPrimitive.Content
-          className={cn(
-            "fixed top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2",
-            "flex h-[min(78vh,640px)] w-[min(640px,92vw)] flex-col overflow-hidden",
-            "rounded-2xl border border-border/70 bg-popover text-popover-foreground shadow-2xl",
-            "duration-200 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95",
-            "data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
-          )}
-        >
-          {channel && (
-            <>
-              <div className="flex items-start justify-between gap-4 border-b border-border/70 p-6">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[11px] font-semibold tracking-[0.1em] text-ink-eyebrow uppercase">
-                    {eyebrow}
-                  </p>
-                  <DialogPrimitive.Title className="font-heading text-xl font-semibold tracking-[-0.01em] text-ink-title">
-                    {channel.name}
-                  </DialogPrimitive.Title>
-                  <DialogPrimitive.Description className="text-sm text-ink-body">
-                    The raw data this channel can pull in — carried as-is.
-                  </DialogPrimitive.Description>
-                  <div className="mt-1 flex flex-wrap gap-1.5">
-                    <MetaPill>{channel.records.length} records</MetaPill>
-                    {ghost && <MetaPill>not connected yet</MetaPill>}
-                  </div>
-                </div>
-                <DialogPrimitive.Close asChild>
-                  <Button variant="ghost" size="icon-sm" className="-mt-1 -mr-1 shrink-0">
-                    <XIcon />
-                    <span className="sr-only">Close</span>
-                  </Button>
-                </DialogPrimitive.Close>
+      <DialogContent className="flex h-[min(78vh,640px)] w-[min(640px,92vw)] max-w-[min(640px,92vw)] flex-col gap-0 overflow-hidden p-0">
+        {channel && (
+          <>
+            <DialogHeader className="gap-1 border-b border-border p-6 pr-12 text-left">
+              <p className="text-[11px] font-semibold tracking-[0.1em] text-muted-foreground uppercase">
+                {eyebrow}
+              </p>
+              <DialogTitle className="font-heading text-xl font-semibold tracking-[-0.01em] text-foreground">
+                {channel.name}
+              </DialogTitle>
+              <DialogDescription className="text-sm text-muted-foreground">
+                The raw data this channel can pull in — carried as-is.
+              </DialogDescription>
+              <div className="mt-1 flex flex-wrap gap-1.5">
+                <MetaPill>{channel.records.length} records</MetaPill>
+                {ghost && <MetaPill>not connected yet</MetaPill>}
               </div>
+            </DialogHeader>
 
-              <ScrollArea className="min-h-0 flex-1">
-                <TooltipProvider>
-                  {channel.records.length > 0 ? (
-                    <ul className="flex flex-col divide-y divide-border/60 p-6 pt-2">
-                      {channel.records.map((record) => (
-                        <RecordRow key={record.label} record={record} />
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="p-6 pt-4 text-[13px] leading-[1.5] text-muted-foreground italic">
-                      Records coming soon.
-                    </p>
-                  )}
-                </TooltipProvider>
-              </ScrollArea>
-            </>
-          )}
-        </DialogPrimitive.Content>
-      </DialogPrimitive.Portal>
-    </DialogPrimitive.Root>
+            <ScrollArea className="min-h-0 flex-1">
+              <TooltipProvider>
+                {channel.records.length > 0 ? (
+                  <ul className="flex flex-col divide-y divide-border p-6 pt-2">
+                    {channel.records.map((record) => (
+                      <RecordRow key={record.label} record={record} />
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="p-6 pt-4 text-[13px] leading-[1.5] text-muted-foreground italic">
+                    Records coming soon.
+                  </p>
+                )}
+              </TooltipProvider>
+            </ScrollArea>
+          </>
+        )}
+      </DialogContent>
+    </Dialog>
   );
 }
 
@@ -166,13 +145,11 @@ function FieldChip({ field }: { field: RecordField }) {
 /** A small uppercase pill used for record labels and channel counts. */
 export function MetaPill({ children }: { children: React.ReactNode }) {
   return (
-    <span
-      className={cn(
-        "rounded-full border border-slate-300/70 px-2 py-0.5",
-        "text-[10px] font-medium tracking-wider text-slate-400 uppercase",
-      )}
+    <Badge
+      variant="outline"
+      className="rounded-full text-[10px] font-medium tracking-wider text-muted-foreground uppercase"
     >
       {children}
-    </span>
+    </Badge>
   );
 }

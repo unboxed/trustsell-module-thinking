@@ -1,51 +1,83 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
-/* ---------------------------------------------------------------------------
- * Design tokens
- *
- * Two layers live here:
- *   1. The shadcn/radix-nova semantic tokens the bundled UI components expect
- *      (background, foreground, card, popover, primary, …, ring + the radius
- *      scale). They were stripped when the UI was reset; without them shadcn
- *      renders unstyled. Restored here, tuned to a clean neutral slate palette.
- *   2. The canvas + frosted-card tokens this build adds on top.
- * ------------------------------------------------------------------------- */
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  /* shadcn semantic — light */
-  --background: #f4f6f8;
-  --foreground: #0f172a; /* slate-900 */
-  --card: #ffffff;
-  --card-foreground: #0f172a;
-  --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #2563eb; /* blue-600 — interaction only */
-  --primary-foreground: #ffffff;
-  --secondary: #eef2f6;
-  --secondary-foreground: #0f172a;
-  --muted: #eef2f6;
-  --muted-foreground: #64748b; /* slate-500 */
-  --accent: #eef2f6;
-  --accent-foreground: #0f172a;
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
-  --border: #e2e8f0; /* slate-200 */
-  --input: #e2e8f0;
-  --ring: #2563eb;
-  --radius: 0.75rem;
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.55 0.22 257); /* blue-600 accent */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.55 0.22 257); /* blue ring */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.55 0.22 257);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.55 0.22 257);
+}
 
-  /* canvas + frosted card */
-  --canvas-base: #f1f3f6;
-  --dot: rgba(15, 23, 42, 0.1);
-  --glass-bg: rgba(255, 255, 255, 0.3);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-shadow: rgba(2, 6, 23, 0.1);
-  --ink-title: #0f172a; /* slate-900 */
-  --ink-body: #475569; /* slate-600 */
-  --ink-eyebrow: #94a3b8; /* slate-400 */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.62 0.19 257); /* lighter blue for dark */
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.62 0.19 257); /* lighter blue ring for dark */
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.62 0.19 257);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.62 0.19 257);
 }
 
 @theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -61,210 +93,35 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 
-  /* custom utilities for the canvas + cards */
-  --color-canvas: var(--canvas-base);
-  --color-ink-title: var(--ink-title);
-  --color-ink-body: var(--ink-body);
-  --color-ink-eyebrow: var(--ink-eyebrow);
-
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-
-  /* fonts (wired via next/font/local in app/layout.tsx) */
+  /* Self-hosted Inter, wired via next/font/local in app/layout.tsx.
+     font-heading is referenced by card/dialog/sheet titles. */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   * {
-    border-color: var(--border);
-  }
-  html,
-  body {
-    height: 100%;
+    @apply border-border outline-ring/50;
   }
   body {
-    background-color: var(--canvas-base);
-    color: var(--foreground);
-    font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
+    @apply bg-background text-foreground font-sans antialiased;
     text-rendering: optimizeLegibility;
-  }
-}
-
-@layer components {
-  /* Fixed "lighting", anchored to the viewport (it never pans). The soft tonal
-     wash gives the frosted cards real variation to refract — glass over a flat
-     fill reads as nothing. Edgeless: it fills whatever the viewport is, so there
-     are no sheet corners to pan into. */
-  .canvas-atmosphere {
-    background-color: var(--canvas-base);
-    background-image:
-      radial-gradient(60% 70% at 15% 8%, rgba(255, 255, 255, 0.7), transparent 66%),
-      radial-gradient(65% 80% at 88% 96%, rgba(15, 23, 42, 0.03), transparent 72%),
-      linear-gradient(140deg, #f5f7fa 0%, #e6e9ef 100%);
-  }
-
-  /* The endless dot grid (the canvas affordance, à la Figma/Miro). The 24px dot
-     tile repeats forever; its `background-position` is driven by the pan offset
-     (inline style in canvas.tsx) so it scrolls under the content and never shows
-     an edge. */
-  .canvas-grid {
-    background-image: radial-gradient(var(--dot) 0.9px, transparent 1.2px);
-    background-size: 24px 24px;
-  }
-
-  /* Frosted, floating node card. Blur kept moderate (12px) so text contrast
-     never suffers. Solid fallbacks for no-backdrop-filter and for users who
-     ask the OS to reduce transparency. */
-  .glass-card {
-    background-color: var(--glass-bg);
-    /* faint top-only sheen — keep most of the pane see-through */
-    background-image: linear-gradient(
-      160deg,
-      rgba(255, 255, 255, 0.28) 0%,
-      rgba(255, 255, 255, 0) 42%
-    );
-    -webkit-backdrop-filter: blur(4px) saturate(1.2);
-    backdrop-filter: blur(4px) saturate(1.2);
-    border: 1px solid var(--glass-border);
-    box-shadow:
-      /* soft shadow — a little lift, not floating */
-      0 5px 16px -8px rgba(2, 6, 23, 0.16),
-      /* top rim light + faint bottom edge = glass thickness */
-      inset 0 1px 0 0 rgba(255, 255, 255, 0.8),
-      inset 0 -1px 0 0 rgba(15, 23, 42, 0.04);
-  }
-
-  @supports not (
-    (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
-  ) {
-    .glass-card {
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-  }
-
-  /* Glass cards living inside the panning viewport: a backdrop-filter would force each
-     onto its own GPU layer, which React Flow's fractional pan offset then resamples —
-     soft text/borders at 100% zoom, where there's no scaling to mask it. Lean on a
-     stronger translucent fill + sheen instead and skip the real blur, so the browser
-     re-rasterizes the text crisply at any offset. Screen-space chrome (zoom buttons,
-     timeline, panels) sits outside the viewport, stays crisp, and keeps true glass. */
-  .react-flow__node .glass-card {
-    background-color: rgba(255, 255, 255, 0.62);
-    background-image: linear-gradient(
-      160deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0) 46%
-    );
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-  }
-
-  /* Note: we deliberately do NOT force solid cards under
-     prefers-reduced-transparency — the glass look is the point of this viewer.
-     (Re-add a legible fallback here if transparency ever becomes a problem.) */
-
-  /* The module detail panel renders a CLAUDE.md body with react-markdown. No
-     typography plugin here, so style the rendered elements directly — tuned to
-     the same ink/border tokens the cards use. */
-  .module-doc {
-    color: var(--ink-body);
-    font-size: 0.875rem;
-    line-height: 1.6;
-  }
-  .module-doc > :first-child {
-    margin-top: 0;
-  }
-  .module-doc h1 {
-    color: var(--ink-title);
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    margin: 1.5rem 0 0.5rem;
-  }
-  .module-doc h2 {
-    color: var(--ink-title);
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 1.4rem 0 0.4rem;
-  }
-  .module-doc h3 {
-    color: var(--ink-title);
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin: 1.1rem 0 0.35rem;
-  }
-  .module-doc p {
-    margin: 0.6rem 0;
-  }
-  .module-doc strong {
-    color: var(--ink-title);
-    font-weight: 600;
-  }
-  .module-doc em {
-    font-style: italic;
-  }
-  .module-doc ul,
-  .module-doc ol {
-    margin: 0.6rem 0;
-    padding-left: 1.25rem;
-  }
-  .module-doc ul {
-    list-style: disc;
-  }
-  .module-doc ol {
-    list-style: decimal;
-  }
-  .module-doc li {
-    margin: 0.3rem 0;
-  }
-  .module-doc a {
-    color: var(--primary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .module-doc code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 0.8em;
-    background: var(--muted);
-    padding: 0.1em 0.35em;
-    border-radius: 4px;
-    color: var(--ink-title);
-  }
-  .module-doc blockquote {
-    margin: 0.8rem 0;
-    padding: 0.4rem 0 0.4rem 0.9rem;
-    border-left: 3px solid var(--border);
-    color: var(--muted-foreground);
-  }
-  .module-doc table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0.8rem 0;
-    font-size: 0.82rem;
-  }
-  .module-doc th,
-  .module-doc td {
-    border: 1px solid var(--border);
-    padding: 0.4rem 0.6rem;
-    text-align: left;
-  }
-  .module-doc th {
-    background: var(--muted);
-    color: var(--ink-title);
-    font-weight: 600;
-  }
-  .module-doc hr {
-    border: 0;
-    border-top: 1px solid var(--border);
-    margin: 1.2rem 0;
   }
 }

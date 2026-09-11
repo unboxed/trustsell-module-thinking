@@ -12,12 +12,14 @@ import {
 
 import { getEdgeParams } from "./floating-edge-utils";
 
-/** Neutral wire ink — slate-600 @ ~55% (the resting / receded wire). */
-const ROUTE_INK = "rgba(71, 85, 105, 0.55)";
-/** The lit-route blue — --primary / blue-600. The loud one: + glow + marching, trace only. */
-const ROUTE_BLUE = "#2563eb";
-/** The calm hover blue — blue-500, one notch lighter. Static, no glow: trace stays the hero. */
-const ROUTE_BLUE_SOFT = "#3b82f6";
+/* Wire colours read from the global-css tokens (resolved by the browser, since these
+   land in inline `style` where var() works). Per-state faintness comes from `opacity`. */
+/** Neutral wire ink — the muted-foreground token (the resting / receded wire). */
+const ROUTE_INK = "var(--muted-foreground)";
+/** The lit-route accent — the primary token. The loud one: + glow + marching, trace only. */
+const ROUTE_BLUE = "var(--primary)";
+/** The hover accent — also primary, surfaced static (no glow): trace stays the hero. */
+const ROUTE_BLUE_SOFT = "var(--primary)";
 
 /**
  * One wire per connection, floating between two cards. The path shape (bezier /
@@ -95,7 +97,7 @@ export function FloatingEdge({ source, target, markerStart, markerEnd, data }: E
     style = {
       stroke: ROUTE_BLUE,
       strokeWidth: 2.1,
-      filter: "drop-shadow(0 0 3px rgba(37, 99, 235, 0.4))",
+      filter: "drop-shadow(0 0 3px var(--primary))",
       transition,
     };
   } else if (d.highlight) {

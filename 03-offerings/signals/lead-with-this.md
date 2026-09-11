@@ -18,17 +18,15 @@ needs: []
 For a kind of buyer, the use-case to lead with, the information that is most relevant, and what to
 hold back.
 
-The tool points the angle. It feeds the Brain's message play (the "match the message to the person"
-group, Q10 to Q12 and Q24): Offerings supplies the angle, the Brain decides the move. The angle is
-chosen against this buyer-type's own concerns, not a fixed "always lead with X".
+It points the angle. It feeds the Brain's message play, the "match the message to the person" group:
+Offerings supplies the angle, the Brain decides the move. The angle is chosen against this buyer-type's
+own concerns, not a fixed "always lead with X".
 
-It is most confident when use-cases and the fit-shape are richly told, and it softens when only one
-use-case is on file or the buyer-type's factors are thin. A use-case that maps to none of the factors
-this buyer-type cares about is not the opener, however strong it is in general.
+A use-case that maps to none of the factors this buyer-type cares about is not the opener, however
+strong it is in general.
 
-It cannot tell you which use-case actually wins (rather than which maps best): that is the parked
-learning loop, and until outcomes are wired it ranks by relevance, not by track record. If you have
-told it no use-cases, there is nothing to lead with.
+It ranks by relevance, not by track record. It cannot yet tell you which use-case actually wins, since
+outcomes are not wired in. That is the parked learning loop.
 
 ## In practice
 
@@ -55,5 +53,3 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
   People put on record (the [`objection-list`](../assemblies/objection-list.md) it reads). If you have
   told it no use-cases there is nothing to lead with (a told gap). Which use-case actually wins is the
   parked learning loop, named not faked.
-- Counts beneath it: the `measures` in the frontmatter (dominant worry for this buyer-type, use-cases
-  on file, relevance to stated factors).

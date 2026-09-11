@@ -12,7 +12,7 @@ import { confidenceFill } from "./types";
 /** A kind / about tab: an uppercase eyebrow label (RISK, A PERSON, …). */
 export function Tab({ children }: { children: ReactNode }) {
   return (
-    <span className="text-[11px] font-semibold tracking-[0.1em] text-ink-eyebrow uppercase">
+    <span className="text-[11px] font-semibold tracking-[0.1em] text-muted-foreground uppercase">
       {children}
     </span>
   );
@@ -29,7 +29,7 @@ export function ConfidenceMeter({ confidence }: { confidence?: string }) {
             key={i}
             className={cn(
               "size-1.5 rounded-full",
-              i < fill ? "bg-ink-body" : "bg-slate-300",
+              i < fill ? "bg-foreground" : "bg-border",
             )}
           />
         ))}

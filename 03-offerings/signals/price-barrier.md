@@ -18,19 +18,13 @@ needs: [web]
 Where your price sits against the field, and whether that gap is likely to surface as a barrier on
 this deal.
 
-The tool reads one offering's price against the field it competes with and turns the side-by-side
-numbers into a "watch for this" rather than leaving them as raw figures. It is the price half of the
-competitive picture; capability and lock-in are [`competitive-standing`](competitive-standing.md)'s,
-so the two reads never double-judge the same thing.
+It reads one offering's price against the field it competes with, and turns the side-by-side numbers
+into a "watch for this" rather than leaving them raw. It is the price half of the competitive picture.
+Capability and lock-in are [`competitive-standing`](competitive-standing.md)'s, so the two reads never
+double-judge the same thing.
 
-It is most confident when the field is complete (several rivals with published prices), and it
-softens when prices are scarce. Price reads as a likely barrier only when the delta is real, your
-discount room does not close it, and the buyer is cost-led (a fit-shape factor), not on the raw number
-alone.
-
-It leans on the open web for rivals' published pricing. Where rivals publish no price (much
-enterprise pricing is "contact us"), the field has holes and the delta is computed against fewer
-points. Whether this buyer is cost-led is a fit-shape fact that may not have been told.
+A gap is not a barrier on its own. It bites only when the delta is real, your discount room does not
+close it, and the buyer is cost-led.
 
 ## In practice
 
@@ -51,8 +45,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
   priorities (cost-led versus continuity-led) rather than asserted.
 - Confidence: graded on how complete the field is. High when several rivals publish prices; soft when
   prices are scarce.
-- Needs: the open web (the `needs` field) for rivals' published prices; without it the field has holes
+- Needs: the open web, for rivals' published prices; without it the field has holes
   and the delta is computed against fewer points (a data gap, named not faked). Whether this buyer is
   cost-led is a fit-shape fact that may be a told gap.
-- Counts beneath it: the `measures` in the frontmatter (your price, competitor price band, price delta
-  vs leader).

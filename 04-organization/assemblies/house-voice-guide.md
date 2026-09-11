@@ -26,11 +26,10 @@ to lean toward and keeps the fence to walls only. A genuinely hard brand wall (a
 can never use) stays a `rule` in the fence; the guide's forbidden phrasings are the softer "we don't
 talk like that" preferences.
 
-Nothing here is judged or guessed. It does not weigh how far to bend the house voice toward your own,
-which is the render's persona-dependent blend (`05`), still an open seam; it only gathers the brand
-voice into one guide. The only real work is grouping and resolving, lining up the told tone and
-phrasings with any Drive brand doc that confirms them. That is arithmetic, not opinion; judgement
-starts a floor up (see [`docs/reading-principles.md`](../../docs/reading-principles.md)).
+It does not weigh how far to bend the house voice toward your own; that is the render's
+persona-dependent blend (`05`), still an open seam. It only gathers the brand voice into one guide. The
+only real work is grouping and resolving: lining up the told tone and phrasings with any Drive brand
+doc that confirms them.
 
 Profile (`05`) is the downstream: at render it pulls this guide as the brand style to write toward and
 blends it with the user's personal voice, leaning more on the house voice for someone who sells only

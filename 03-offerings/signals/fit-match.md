@@ -19,18 +19,12 @@ pull: People's lead situation, to judge the match against the fit-shape
 Given a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls
 short.
 
-The tool makes this Plant read per candidate. Offerings owns the shape and the match-judgement;
-People owns sweeping the address book and calls this read on each lead. It is the mirror of People
-pulling Offerings to name an objection: here Offerings pulls People to know the lead.
+This is a Plant read, made per candidate. Offerings owns the shape and the match. People owns sweeping
+the address book and calls this read on each lead. It is the mirror of People pulling Offerings to name
+an objection: here Offerings pulls People to know the lead.
 
-It is most confident when the fit-shape is fully told and the lead's situation is richly known, and it
-softens when the shape is thin or People's read of the lead is sparse. A miss is named rather than
-scored away: a lead that meets every factor but the one you marked essential reads weaker than one
-that misses two minor ones.
-
-It cannot reach the ground at all if you have not told it the fit-shape; then the honest output is
-"tell me what a good-fit lead looks like and I can start matching" rather than a guess. If People's
-picture of the lead is thin, the match is judged on less.
+A miss is named, not scored away. A lead that meets every factor but the one you marked essential reads
+weaker than one that misses two minor ones.
 
 ## In practice
 
@@ -42,7 +36,7 @@ size, sector and pain; the only gap is budget timing, so chase now but pace to t
 ## For the build
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/reading-principles.md).
-Borrows People's lead situation (the `pull` field) to judge the match against the fit-shape.
+Borrows People's lead situation to judge the match against the fit-shape.
 
 - Trigger: there is no fixed "meets 3 of 4 = fit" line that means the same for every offering. The
   yardstick is your own fit-shape: how many of the factors you defined this lead meets, and which it
@@ -56,5 +50,3 @@ Borrows People's lead situation (the `pull` field) to judge the match against th
   have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of
   the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing
   a fit).
-- Counts beneath it: the `measures` in the frontmatter (fit-factors met, fit-factors missed,
-  fit-shape completeness).

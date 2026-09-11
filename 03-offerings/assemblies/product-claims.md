@@ -16,18 +16,16 @@ inputs:
 ## What it gathers
 
 Gathers the factual claims a product makes ("syncs both ways", "exports an audit log", "deploys in a
-day") into a single list, each carried with its grounding: the told `pitch` it came from, a line in a
-spec sheet or deck read out of `file-content`, or a third-party comparison from the web. It stands on
-the Offering entry. What this product says it does, and where each claim is backed.
+day") into a single list. Each claim is carried with its grounding: the told `pitch` it came from, a
+line in a spec sheet or deck read out of `file-content`, or a third-party comparison from the web.
 
-The only real work is listing the claims and noting where each is grounded. That is arithmetic, not
-opinion.
+It stands on the Offering entry. What this product says it does, and where each claim is backed.
 
-This is floor, not reading: nothing here is judged. It does not decide whether a buyer has
-*misunderstood* one. Judgement happens above, in the signals (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)): People's
-[`understanding-gap`](../../02-relationships/signals/understanding-gap.md) signal **pulls this list**
-to judge a buyer's confusion (a buyer using "export" where the product says "audit log").
+The only real work is listing the claims and noting where each is grounded.
+
+It does not decide whether a buyer has *misunderstood* one. That is People's
+[`understanding-gap`](../../02-relationships/signals/understanding-gap.md) signal, which pulls this
+list to judge a buyer's confusion (a buyer using "export" where the product says "audit log").
 
 ## Lineage
 

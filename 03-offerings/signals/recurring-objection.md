@@ -19,18 +19,11 @@ pull: People's worries-on-record, in aggregate across deals
 Across all the worries People has put on record, which one comes up most, so you can answer it before
 it is asked.
 
-The tool lifts above a single deal and reads the spread of worries across your deals. The point is to
-lead the deck with the rebuttal to your most common objection rather than meeting it cold each time.
-The yardstick is the spread across your own deals: a worry leads when it recurs in a clear majority of
-the deals where any worry was raised, not on raw volume.
+It lifts above a single deal and reads the spread of worries across all of them. The point is to lead
+the deck with the rebuttal to your most common objection, rather than meeting it cold each time.
 
-It is most confident when many deals are on record and one worry clearly dominates the spread, and it
-softens when few deals exist or the lead is narrow. One vocal buyer raising the same worry ten times
-is not a dominant objection; the same worry appearing once each across most deals is.
-
-Early on, with few deals on record, the tally is thin, and the read says so rather than crowning a
-dominant worry off two data points. A worry raised only off-channel, on a call People never saw, never
-reaches the count.
+What counts is how many deals a worry shows up in, not raw volume. One vocal buyer raising the same
+worry ten times is not a dominant objection. The same worry appearing once each across most deals is.
 
 ## In practice
 
@@ -42,7 +35,7 @@ rebuttal up front."
 ## For the build
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/reading-principles.md).
-Borrows People's worries-on-record (the `pull` field) in aggregate across deals.
+Borrows People's worries-on-record in aggregate across deals.
 
 - Trigger: there is no fixed "raised 3 times = dominant" count. The yardstick is the spread across your
   own deals: a worry leads when it recurs in a clear majority of the deals where any worry was raised,
@@ -54,5 +47,3 @@ Borrows People's worries-on-record (the `pull` field) in aggregate across deals.
 - Needs: no source dependency beyond the worries People puts on record. Early on, with few deals, the
   tally is thin and the read says so rather than crowning a worry off two data points (a told/data gap,
   not enough history yet). A worry raised only off-channel never reaches the count.
-- Counts beneath it: the `measures` in the frontmatter (worry occurrences across deals, distinct
-  worries count).

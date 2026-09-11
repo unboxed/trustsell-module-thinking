@@ -27,14 +27,13 @@ don't talk like that" preferences live in the guide. A limit that is really a ju
 sound pushy") is held as a soft rule and flagged as such, rather than dressed up as a wall it cannot
 enforce deterministically.
 
-Nothing here is judged or guessed. It does not weigh whether a draft is on-brand or rewrite it; it
-only gathers the rules into one fence. The only real work is grouping and resolving, deciding which
-told rule a Drive brand-doc passage confirms, and keeping the hard limits apart from the soft
-preferences. That is arithmetic, not opinion; judgement starts a floor up (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)). The Gate job that reads this fence,
-checking a finished draft against it and passing it or flagging exactly what crosses a line, lives in
-the module prose, not as a signal: Organisation has no signal floor. Used solo with no organisation
-behind you, the fence is empty and the Gate step is skipped.
+It does not weigh whether a draft is on-brand, or rewrite it. It only gathers the rules into one fence.
+The only real work is grouping and resolving: deciding which told rule a Drive brand-doc passage
+confirms, and keeping the hard limits apart from the soft preferences.
+
+The Gate job that reads this fence, checking a finished draft against it and passing it or flagging
+exactly what crosses a line, lives in the module prose, not as a signal: Organisation has no signal
+floor. Used solo with no organisation behind you, the fence is empty and the Gate step is skipped.
 
 ## Lineage
 

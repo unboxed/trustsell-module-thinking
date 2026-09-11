@@ -53,13 +53,13 @@ split or merge is a told `correction` it keeps.
 
 The only work here is identity and grouping: deciding these threads and these people belong to one
 effort (and, at a genuine boundary, asking rather than guessing), and resolving each participant to a
-known person via `person-history`. The organisation stays the account (the standing address book that
-`stakeholder-map` gathers); it is a useful related lens on a deal's buyer side, not the key the deal
-is built on. This is floor, not reading: any address book or CRM does this much. No behaviour is
-sensed here. The deal does not decide what stage it is at, whether it is healthy, or whether it is
-worth acting on today. That is intent, and it belongs to the Brain, which places the deal on a goal's
-ladder and prioritises it; judgement happens above, in the signals (see
-[`docs/reading-principles.md`](../../docs/reading-principles.md)).
+known person via `person-history`. The organisation stays the account, the standing address book that
+`stakeholder-map` gathers. It is a useful related lens on a deal's buyer side, not the key the deal is
+built on.
+
+No behaviour is sensed here. The deal does not decide what stage it is at, whether it is healthy, or
+whether it is worth acting on today. That is intent, and it belongs to the Brain, which places the deal
+on a goal's ladder and prioritises it.
 
 ## Lineage
 

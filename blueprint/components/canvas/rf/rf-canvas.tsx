@@ -19,7 +19,7 @@ import {
   type Node,
 } from "@xyflow/react";
 
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import type { Channel } from "@/lib/blueprint.config";
 import { RfNodeCard } from "./rf-node-card";
 import { RfConnectionsGroup } from "./rf-integrations-node";
@@ -27,10 +27,6 @@ import { RfChannelNode } from "./rf-channel-node";
 import { FloatingEdge } from "./floating-edge";
 import { ChannelPanel } from "../channel-panel";
 
-/** Arrowheads a touch more solid than the wire so direction reads. */
-const MARKER_COLOR = "#64748b"; // slate-500
-/** The calm hover blue — blue-500, for arrowheads on the surfaced (hovered) wires. */
-const ROUTE_BLUE_SOFT = "#3b82f6";
 /** The wire look. "bezier" is what we shipped; "smoothstep" / "straight" also work. */
 const EDGE_VARIANT = "bezier" as const;
 const EDGE_ANIMATED = false;
@@ -43,13 +39,10 @@ const NODE_TYPES = {
 };
 const EDGE_TYPES = { floating: FloatingEdge };
 
-/** Shared look for the floating canvas controls (zoom in / out / fit). */
-const CONTROL_BTN = cn(
-  "glass-card flex size-11 items-center justify-center rounded-full",
-  "text-slate-600 transition-transform duration-200 ease-out hover:-translate-y-0.5",
-  "focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none",
-  "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
-);
+/** Shared look for the floating canvas controls (zoom in / out / fit) — a stock
+    outline Button, enlarged to a round 44px and given a gentle hover lift. */
+const CONTROL_BTN =
+  "size-11 rounded-full transition-transform duration-200 ease-out hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0";
 
 /** A gentle accelerate-then-settle curve, shared by every animated viewport move
     so zoom steps and framing glide in and out instead of snapping. */
@@ -104,6 +97,23 @@ function Flow({
   const rf = useReactFlow();
   const router = useRouter();
 
+  // React Flow paints arrowheads + the dot grid as SVG <marker>/<rect> fills, where a
+  // raw `var(--token)` doesn't resolve. So read the global-css tokens once on mount and
+  // hand React Flow the concrete colours — still sourced from the design tokens.
+  const [paint, setPaint] = useState({ marker: "", markerSoft: "", dot: "" });
+  useEffect(() => {
+    // One-shot read of a platform API (getComputedStyle) to mirror the global-css
+    // tokens into React Flow's SVG fills. Empty initial state keeps SSR/hydration in
+    // step; this resolves them right after mount. A legitimate effect, not a cascade.
+    const cs = getComputedStyle(document.documentElement);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setPaint({
+      marker: cs.getPropertyValue("--muted-foreground").trim(),
+      markerSoft: cs.getPropertyValue("--primary").trim(),
+      dot: cs.getPropertyValue("--border").trim(),
+    });
+  }, []);
+
   // Hover focus: a wire touching the hovered node surfaces (calm blue arrowhead) and
   // everything else recedes. Off-hover it's the neutral two-arrow route.
   const edges: Edge[] = useMemo(() => {
@@ -117,10 +127,10 @@ function Flow({
       // The same test covers both directions — for a module it catches its peer
       // wires and its channel inflow; for a plug it catches the wires it originates.
       const related = hoveredId ? e.source === hoveredId || e.target === hoveredId : null;
-      // Arrowhead follows the line: the calm blue on a surfaced wire, slate otherwise.
+      // Arrowhead follows the line: the accent on a surfaced wire, muted otherwise.
       const arrow = {
         type: MarkerType.ArrowClosed,
-        color: related ? ROUTE_BLUE_SOFT : MARKER_COLOR,
+        color: related ? paint.markerSoft : paint.marker,
         width: 16,
         height: 16,
       };
@@ -140,7 +150,7 @@ function Flow({
         },
       };
     });
-  }, [rawEdges, hoveredId]);
+  }, [rawEdges, hoveredId, paint]);
 
   // Crisp text at any *resting* zoom. React Flow zooms with one CSS transform on the
   // viewport, so the browser stretches a snapshot rasterized at a single scale — text
@@ -239,7 +249,7 @@ function Flow({
   }, []);
 
   return (
-    <div ref={wrapperRef} className="canvas-atmosphere relative h-full w-full">
+    <div ref={wrapperRef} className="relative h-full w-full bg-background">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -281,14 +291,15 @@ function Flow({
         proOptions={{ hideAttribution: false }}
         style={{ background: "transparent" }}
       >
-        <Background variant={BackgroundVariant.Dots} gap={24} size={1.5} color="rgba(15,23,42,0.1)" />
+        <Background variant={BackgroundVariant.Dots} gap={24} size={1.5} color={paint.dot || undefined} />
       </ReactFlow>
 
       {/* Zoom + fit — Figma-style controls. Also: scroll/two-finger to pan,
           pinch or ⌘/Ctrl-scroll to zoom, and +/−/0 on the keyboard. */}
       <div className="absolute right-5 bottom-5 flex flex-col gap-2">
-        <button
-          type="button"
+        <Button
+          variant="outline"
+          size="icon"
           onClick={() => animate(() => rf.zoomIn(ZOOM_TWEEN))}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom in"
@@ -296,9 +307,10 @@ function Flow({
           className={CONTROL_BTN}
         >
           <Plus className="size-5" strokeWidth={1.75} />
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
           onClick={() => animate(() => rf.zoomOut(ZOOM_TWEEN))}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Zoom out"
@@ -306,9 +318,10 @@ function Flow({
           className={CONTROL_BTN}
         >
           <Minus className="size-5" strokeWidth={1.75} />
-        </button>
-        <button
-          type="button"
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
           onClick={recenter}
           onPointerDown={(e) => e.stopPropagation()}
           aria-label="Fit the map to view"
@@ -316,7 +329,7 @@ function Flow({
           className={CONTROL_BTN}
         >
           <Crosshair className="size-5" strokeWidth={1.75} />
-        </button>
+        </Button>
       </div>
 
       <ChannelPanel channel={openChannel} onClose={() => setOpenChannel(null)} />

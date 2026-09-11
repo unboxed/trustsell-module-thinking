@@ -15,28 +15,21 @@ needs: [gmail, slack]
 
 ## What it means
 
-How you sound in writing, read off what you actually send rather than a style you fill in on a form:
-your usual greeting and sign-off, how long your sentences run, how formal you are with a stranger
+How you sound in writing, read off what you actually send rather than a style you fill in on a form.
+Your usual greeting and sign-off, how long your sentences run, how formal you are with a stranger
 versus a peer, and, sharpest of all, the edits you make to the tool's drafts.
 
-The read is measured against your own baseline, your usual greeting, your usual length, your usual
-formality at each stage of a relationship, not an absolute. One unusual email is noise; the read firms
-only when a pattern holds across many messages. The draft-to-sent edits are weighted most, because a
-correction is you saying outright "not like that, like this". Told voice samples seed the read before
-there is enough sent mail to stand on.
+The draft-to-sent edits carry the most weight. A correction is you saying outright "not like that, like
+this". Told voice samples seed the read before there is enough sent mail to stand on.
 
 What another module gets is not a bare label but the read with its evidence: "writes warm but brisk,
 opens with the first name, closes with 'Cheers', keeps it formal on a first touch and loosens once a
-thread is going, and reliably strips exclamation marks." Every clause walks back to something you
-actually sent, which is what lets the render sound like you.
+thread is going, and reliably strips exclamation marks". Every clause walks back to something you
+actually sent. That is what lets the render sound like you.
 
-It is most confident when many messages and edits agree, and softer when the read rests on a handful
-of mails or a single sample. With little sent mail (a brand-new user) the read is thin and it leans on
-your samples or asks, rather than inventing a voice. There is also a persona-shaped gap worth naming:
-someone who sells only because their role needs it has sent mail that is mostly about their real job,
-not selling, so their sales voice can be thin even when their everyday voice is rich. For them the
-render leans more on the organisation's house voice (`04`) and on coaching, the persona-dependent blend
-recorded in the module prose.
+One gap is worth naming. Someone who sells only because their role needs it has sent mail that is mostly
+about their real job, not selling, so their sales voice can read thin even when their everyday voice is
+rich. For them the render leans more on the organisation's house voice (`04`) and on coaching.
 
 ## In practice
 
@@ -58,9 +51,6 @@ samples.
   draft-to-sent edits weighted most because each correction states the preference outright.
 - Confidence: high when many messages and edits agree; grades down toward a soft read when it rests on
   a handful of mails or a single seeded sample.
-- Needs: Gmail and Slack (the `needs` field) for the sent mail, drafts and Slack messages the read is
+- Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is
   built from; without them the read is thin and leans on told samples or asks, rather than inventing a
   voice (a data gap, named not faked).
-- Counts beneath it: the `measures` in the frontmatter (greeting and sign-off pattern, sentence length
-  versus baseline, formality by relationship stage, draft-to-sent edit distance, channel register
-  shift).

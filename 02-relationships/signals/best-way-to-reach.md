@@ -15,23 +15,12 @@ needs: [calendar, meet]
 
 ## What it means
 
-The plainest question there is before you get in touch: what is the best way to reach this person?
+The plainest question before you get in touch: what is the best way to reach this person?
 
-The tool makes this read by sorting every back-and-forth with a contact by where it went, then seeing
-which way of reaching them earns a reply. Not where you happen to have been writing, but where they
-actually answer. People already gathers every email, Slack message, calendar invite and call into one
-picture; this read scores each route by its own reply rate and speed.
+It sorts every back-and-forth with them by where it went. Then it scores each route by where they
+actually reply, and how fast. Not where you happen to write, but where they answer.
 
-There is no fixed "answers within a day means reachable" line. Each route is judged by its own reply
-rate and speed, measured against this person rather than an absolute, and only once there is enough
-back-and-forth on it to mean something. One lucky email reply is not a pattern; a dozen messages with a
-steady fast answer is. One route wins by being faster and surer for this person than the others.
-
-It is most confident when one route clearly beats the rest. When two run close it reports both rather
-than forcing a single winner. It can only compare the routes that are connected: if someone really
-lives on a phone call, a text or WhatsApp, none of which touch the connected accounts, their truest
-route is invisible and the read says so. A contact with too little back-and-forth anywhere gets a thin,
-low-confidence read rather than a guess.
+One route usually wins by being quicker and surer for this person than the others.
 
 ## In practice
 
@@ -50,9 +39,7 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
   enough back-and-forth to count.
 - Confidence: high when one route clearly beats the rest; softens when two run close, where it reports
   both; thin and low when there is too little back-and-forth anywhere.
-- Needs: Calendar and Meet (the `needs` field) to count accepted invites and calls joined as a route;
+- Needs: Calendar and Meet, to count accepted invites and calls joined as a route;
   without them, calls and meetings drop out of the comparison and only the written channels are scored
   (a data gap, named not faked). Routes outside the connected accounts (phone, text, WhatsApp) cannot
   be seen at all, so the read says "of what I can see, this route wins".
-- Counts beneath it: the `measures` in the frontmatter (replies by channel, reply speed by channel,
-  where they start, accepts meetings).

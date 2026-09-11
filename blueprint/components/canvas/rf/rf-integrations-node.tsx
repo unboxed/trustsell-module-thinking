@@ -51,15 +51,15 @@ export function RfConnectionsGroup({ data }: NodeProps) {
             className={cn(
               "absolute rounded-2xl border",
               b.connected
-                ? "border-slate-300/45 bg-white/[0.06]"
-                : "border-dashed border-slate-300/55",
+                ? "border-border bg-card"
+                : "border-dashed border-border",
             )}
             style={{ left: b.x, top: b.y, width: b.w, height: b.h }}
           />
           <p
             className={cn(
               "absolute text-[10px] font-semibold tracking-[0.1em] uppercase",
-              b.connected ? "text-slate-400" : "text-slate-400/70",
+              b.connected ? "text-muted-foreground" : "text-muted-foreground/70",
             )}
             style={{ left: b.tag.x, top: b.tag.y }}
           >
@@ -72,7 +72,7 @@ export function RfConnectionsGroup({ data }: NodeProps) {
       {d.clusterLabels.map((l) => (
         <p
           key={l.text}
-          className="absolute text-[11px] font-semibold tracking-[0.1em] text-slate-500 uppercase"
+          className="absolute text-[11px] font-semibold tracking-[0.1em] text-muted-foreground uppercase"
           style={{ left: l.x, top: l.y }}
         >
           {l.text}

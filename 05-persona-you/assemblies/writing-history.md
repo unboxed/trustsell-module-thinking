@@ -28,11 +28,10 @@ Slack message") with the real channel records: a sent email is `email-message` f
 direction, a draft edit is `draft` compared against its sent counterpart, a sent Slack message is
 `slack-message`.
 
-Nothing here is judged or guessed. It does not decide that you are "warm but brisk" or "formal with new
-contacts"; it only gathers your writing into one place and lines up each draft with what you sent. The
-only real work is identity and pairing, deciding which messages are yours and which sent email closes
-which draft. That is arithmetic, not opinion; judgement happens a floor up, in the `voice` signal that
-reads this picture (see [`docs/reading-principles.md`](../../docs/reading-principles.md)).
+It does not decide that you are "warm but brisk" or "formal with new contacts". It only gathers your
+writing into one place and lines up each draft with what you sent. The only real work is identity and
+pairing: deciding which messages are yours, and which sent email closes which draft. The read above is
+the [`voice`](../signals/voice.md) signal.
 
 ## Lineage
 

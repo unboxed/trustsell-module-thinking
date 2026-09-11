@@ -41,6 +41,12 @@ A few rules, because a person reads these, not just a parser:
 4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than
    em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids
    (email-message).
+5. **Clarity before brevity.** One idea per sentence; break a long sentence rather than stack clauses.
+   Put the point first: say what a read *is* before how it works. Where a section names several things,
+   use a plain list, not a parenthetical run-on. Shorter prose is the result of clear writing, never the
+   goal; cramming ideas into one packed sentence reads as cryptic, not clear. Say a thing once: do not
+   repeat what the `blurb`, [`reading-principles.md`](reading-principles.md) or another section already
+   carries.
 
 ## The two layers: structured frontmatter, plain-English body
 
@@ -54,14 +60,16 @@ practice for its reader:
 - **The body is the human layer**, plain English under a **fixed set of section headings**, so it
   reads well *and* a parser can address each section later. The headings are consistent across every
   entry:
-  - **A signal** uses three sections: `## What it means` (the read, when it applies, how confident it
-    is, what it cannot see, in plain prose), `## In practice` (one short generic example), and
-    `## For the build` (the precise rule: trigger, confidence grading, `needs`, and the `measures`
-    beneath it). "For the build" opens by pointing at [`reading-principles.md`](reading-principles.md)
-    rather than re-teaching the shared rules.
-  - **An assembly** uses two sections: `## What it gathers` (the records and the identity work, plus a
-    one-line "this is floor, not reading") and `## Lineage` (which input id resolves to which channel
-    or told source).
+  - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few
+    plain sentences), `## In practice` (one short generic example), and `## For the build` (the precise
+    rule: the trigger and the confidence grading, leaning on the `needs` and `measures` facets above
+    rather than re-listing them; this is the single home for how confident the read is and what it
+    cannot see). "For the build" opens by pointing at
+    [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.
+  - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the
+    identity work; a plain list where it gathers several things) and `## Lineage` (which input id
+    resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of
+    living in `assemblies/`, so no entry needs to say so.
 
 A signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when
 one is not connected, the checks resting on it drop out and confidence falls, which is how a **data

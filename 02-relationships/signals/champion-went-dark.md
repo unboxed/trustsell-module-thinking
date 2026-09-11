@@ -17,22 +17,14 @@ needs: [calendar, meet]
 
 The channel to a contact you relied on has broken.
 
-This read is mostly about reach, not warmth. Where the cooling read asks "has their rhythm slipped?",
-this asks the sharper question "can I still get to them at all?". It leans Nurture (a relationship you
-are losing) but tips into Plant the moment the answer is "they left", because the warm path now has to
-be rebuilt to whoever replaced them.
+This read is about reach, not warmth. The cooling read asks "has their rhythm slipped?". This one asks
+the sharper question: "can I still get to them at all?"
 
-A bounce-back or a "no longer with the company" auto-reply is near-certain: the record either exists on
-the thread or it does not, so there is barely a judgement to make. The arguable case is pure silence
-with no bounce, and there the rule is the own-rhythm one, never a fixed number of days: the silence has
-to dwarf this person's established cadence, and only after the innocent-explanation scan comes back
-empty. It is reserved for a once-active contact, because a person who emailed twice a year cannot go
-dark; there was never a live channel to break.
+It leans Nurture, a relationship you are losing. But it tips into Plant the moment the answer is "they
+left", because the warm path now has to be rebuilt to whoever replaced them.
 
-It reads reach across calls too, so a recent call counts as a live channel and "went dark" will not
-land on someone you spoke to last week. If a departure happens silently, with no bounce and no
-departure note, just a mailbox that quietly stops answering, the read thins to "went quiet, possibly
-left" rather than "went dark".
+It is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was
+never a live channel to break.
 
 ## In practice
 
@@ -52,9 +44,7 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
 - Confidence: high, because a bounce and a departure auto-reply are facts on record, parsed not
   inferred; the silence-without-a-bounce branch is held to the guarded own-rhythm test and graded down
   so it never reads as certain as a bounce.
-- Needs: Calendar and Meet (the `needs` field) so a future meeting or a recent call counts as a live
+- Needs: Calendar and Meet, so a future meeting or a recent call counts as a live
   channel and stops the read landing on someone you just spoke to; without a delivery failure or a
   departure note, a silent leaver cannot be told apart from a contact who is simply ignoring you, so
   the read thins to "went quiet, possibly left" (a data gap, named not faked).
-- Counts beneath it: the `measures` in the frontmatter (bounce-back detected, auto-reply no longer
-  with, silence vs own rhythm, was once active).

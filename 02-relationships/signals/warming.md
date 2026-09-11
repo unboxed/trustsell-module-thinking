@@ -17,19 +17,11 @@ needs: [meet]
 
 The mirror of cooling, read upward.
 
-One contact whose own rhythm is quickening: they answer sooner than they used to, they are the one
-starting threads now, and more of their colleagues are turning up on the chain. A single read carrying
-its evidence all the way down to a date in the inbox.
+One contact whose own rhythm is quickening. They answer sooner than they used to. They are the one
+starting threads now. And more of their colleagues are turning up on the chain.
 
-There is no fixed "replies within a day = warm" line. The lift is measured against this person's own
-normal: their reply gap shrinking against their established rhythm, their share of started threads
-rising above their usual share. One faster reply is noise; the read only holds when the move stays
-across the period and more than one count points the same way. One count up could be a busy week; pace
-and initiation and reach all up together is warming.
-
-The "more of their people joining in" count leans on seeing who is on the chain. If a thread moves to a
-channel the tool cannot read, a call or a side conversation off the connected accounts, the reach count
-thins and confidence falls with it.
+One faster reply is just a busy week. The read holds when the lift stays across the period, and more
+than one of those counts points the same way.
 
 ## In practice
 
@@ -50,5 +42,3 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
 - Needs: Meet (captured-call content) so contact and new names voiced on a call still count toward
   reach; when a thread moves off the connected accounts the reach count thins and confidence falls
   (a data gap, named not faked).
-- Counts beneath it: the `measures` in the frontmatter (reply gap against own rhythm, threads they
-  started this period, new people from their side, reply length trend).

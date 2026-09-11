@@ -34,16 +34,25 @@ const KIND_ICON: Record<string, typeof DoorOpen> = {
   style: Sparkles,
 };
 
-/** A representative icon: signals by kind, assemblies by what they key on. */
-function pickIcon(entry: LibraryEntry): typeof DoorOpen {
-  if (entry.kind === "signal") return KIND_ICON[entry.doc.meta.kind ?? ""] ?? Radar;
-  const about = (entry.doc.meta.about ?? "").toLowerCase();
-  if (about.includes("person")) return User;
-  if (about.includes("conversation")) return MessagesSquare;
-  if (about.includes("organis") || about.includes("organiz")) return Building2;
-  if (about.includes("offering")) return Package;
-  if (about.includes("deal")) return Handshake;
-  return Boxes;
+const ABOUT_ICON: Record<string, typeof DoorOpen> = {
+  person: User,
+  conversation: MessagesSquare,
+  org: Building2,
+  offering: Package,
+  deal: Handshake,
+  default: Boxes,
+};
+
+/** Which about-bucket an assembly keys on — a string key into ABOUT_ICON (not a
+ *  component), so the icon is picked by a static lookup at the call site. */
+function aboutKey(about?: string): keyof typeof ABOUT_ICON {
+  const a = (about ?? "").toLowerCase();
+  if (a.includes("person")) return "person";
+  if (a.includes("conversation")) return "conversation";
+  if (a.includes("organis") || a.includes("organiz")) return "org";
+  if (a.includes("offering")) return "offering";
+  if (a.includes("deal")) return "deal";
+  return "default";
 }
 
 export function PlayCard({
@@ -68,18 +77,23 @@ export function PlayCard({
     : n === 1
       ? "record"
       : "records";
-  const Icon = pickIcon(entry);
+  // A representative icon, picked by static lookup: signals by kind, assemblies by
+  // what they key on (same member-access form rf-node-card uses).
+  const Icon =
+    entry.kind === "signal"
+      ? (KIND_ICON[entry.doc.meta.kind ?? ""] ?? Radar)
+      : ABOUT_ICON[aboutKey(entry.doc.meta.about)];
 
   return (
     <button
       type="button"
       onClick={onOpen}
-      className="glass-card group flex h-full cursor-pointer flex-col rounded-[18px] p-5 text-left transition-[opacity,box-shadow,transform] duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+      className="group flex h-full cursor-pointer flex-col rounded-[18px] border bg-card p-5 text-left transition-[opacity,box-shadow,transform] duration-300 hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       {/* the art banner — a soft tinted panel with the centred icon */}
-      <div className="flex aspect-[16/7] w-full items-center justify-center rounded-[12px] border border-border/60 bg-slate-900/[0.04]">
+      <div className="flex aspect-[16/7] w-full items-center justify-center rounded-[12px] border border-border/60 bg-muted">
         <Icon
-          className="size-9 text-slate-500 transition-transform duration-300 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+          className="size-9 text-muted-foreground transition-transform duration-300 group-hover:scale-110 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           strokeWidth={1.5}
           aria-hidden
         />
@@ -91,11 +105,11 @@ export function PlayCard({
         {signal ? <ConfidenceMeter confidence={signal.confidence} /> : <GatherMark />}
       </div>
 
-      <h3 className="mt-2 text-[19px] leading-tight font-semibold tracking-[-0.01em] text-ink-title">
+      <h3 className="mt-2 text-[19px] leading-tight font-semibold tracking-[-0.01em] text-foreground">
         {meta.label}
       </h3>
 
-      <p className="mt-1.5 text-[13px] leading-[1.5] text-ink-body">{meta.blurb}</p>
+      <p className="mt-1.5 text-[13px] leading-[1.5] text-muted-foreground">{meta.blurb}</p>
 
       {signal && signal.modes.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-1.5">

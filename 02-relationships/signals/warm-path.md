@@ -17,18 +17,13 @@ needs: [linkedin]
 
 A target you have never spoken to is reachable through someone you already deal with.
 
-The read does not just say "there is a path", it carries the chain, so it walks down to real names and
-dated records: the threads that put a bridge contact next to the target, the domain they share, the
-empty history between you and the target.
+It does not just say "there is a path". It carries the chain, down to real names and dated records: the
+threads that put a bridge contact next to the target, the domain they share, the empty history between
+you and the target.
 
 A path only counts as warm when the bridge is someone you genuinely deal with, not a name that brushed
-past once. The yardstick is that contact's own rhythm with you: a real two-way history (you reply to
-each other, you share meetings) makes the intro warm; a single stray cc does not. Short chains beat
-long ones, so a one-hop intro is warmer than a chain of three you can barely vouch for.
-
-The richest warm paths live on LinkedIn, in mutual connections and who-knows-whom that never touch your
-mail. Until LinkedIn is connected, the read sees only the bridges that happen to appear in your Gmail
-and Slack, so it under-reports: many real paths stay invisible.
+past once. A real two-way history makes the intro warm. A single stray Cc does not. And a short chain
+beats a long one: a one-hop intro is warmer than a chain of three you can barely vouch for.
 
 ## In practice
 
@@ -48,5 +43,3 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
   longer chain.
 - Needs: LinkedIn for the mutual-connection web; without it the read sees only mail and Slack bridges
   and under-reports real paths (a data gap, named not faked).
-- Counts beneath it: the `measures` in the frontmatter (shared contact on thread, intro chain length,
-  mutual contact count, target cold to you).

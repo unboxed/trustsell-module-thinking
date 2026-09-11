@@ -47,6 +47,17 @@ const CONFIDENCE_SET = new Set<string>(SIGNAL_CONFIDENCES);
 /** The workspace root: /work under docker compose, else the parent of this app. */
 const sourceRoot = () => process.env.MODULES_DIR ?? path.join(process.cwd(), "..");
 
+/**
+ * Opt out of caching so every request re-reads the docs. Skipped under
+ * STATIC_EXPORT (the GitHub Pages build): `connection()` forces dynamic
+ * rendering, which a static export cannot do, and there the snapshot taken at
+ * build time is exactly what we want.
+ */
+async function liveRead() {
+  if (process.env.STATIC_EXPORT === "1") return;
+  await connection();
+}
+
 /** Pull a clean ModuleMeta out of whatever the frontmatter parsed to. */
 function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
   const str = (v: unknown, fallback = "") =>
@@ -96,7 +107,7 @@ function coerceMeta(id: ModuleId, data: Record<string, unknown>): ModuleMeta {
 }
 
 export async function readModules(): Promise<ModuleDoc[]> {
-  await connection();
+  await liveRead();
   const root = sourceRoot();
 
   return Promise.all(
@@ -142,7 +153,7 @@ function coerceChannel(data: Record<string, unknown>, body: string): Channel | n
  * table. Sorted by filename for a stable plug order. Read live, never written.
  */
 export async function readChannels(): Promise<Channel[]> {
-  await connection();
+  await liveRead();
   const dir = path.join(sourceRoot(), "01-integrations", "channels");
 
   let files: string[];
@@ -257,7 +268,7 @@ export async function readLibrary(): Promise<{
   assemblies: AssemblyDoc[];
   signals: SignalDoc[];
 }> {
-  await connection();
+  await liveRead();
   const root = sourceRoot();
 
   const perModule = await Promise.all(

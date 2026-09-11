@@ -16,20 +16,23 @@ inputs:
 
 ## What it gathers
 
-Gathers the rivals that sit around one offering into a single picture: who the named competitors and
-the incumbent are, what each of them claims to do (read off their own pages), how they position
-themselves, the lock-in they bank on (a long contract, a proprietary format, a switching hassle), and
-the worries-about-them that recur in public reviews. It stands on the Offering entry and reads the
-open web fresh for the rest. Your offering, and the field it is sold into.
+Gathers the rivals that sit around one offering into a single picture. For each named competitor and
+the incumbent, it pulls together:
 
-The only real work is identity and grouping, deciding which pages, claims and reviews belong to
-*which* rival, and which rivals are genuinely in this offering's field rather than a neighbouring
-market. That is arithmetic, not opinion.
+- what they claim to do, read off their own pages
+- how they position themselves
+- the lock-in they bank on: a long contract, a proprietary format, a switching hassle
+- the worries about them that recur in public reviews
 
-This is floor, not reading: nothing here is judged. It lists who the rivals are and what they say, it
-does not decide where you win or whether their lock-in will actually hold a buyer. Judgement happens
-above, in the signals (see [`docs/reading-principles.md`](../../docs/reading-principles.md)), such as
-the [`competitive-standing`](../signals/competitive-standing.md) signal.
+It stands on the Offering entry and reads the open web fresh for the rest. Your offering, and the field
+it is sold into.
+
+The only real work is identity and grouping: deciding which pages, claims and reviews belong to *which*
+rival, and which rivals are genuinely in this offering's field rather than a neighbouring market.
+
+It lists who the rivals are and what they say. It does not decide where you win, or whether their
+lock-in will actually hold a buyer. That read is
+[`competitive-standing`](../signals/competitive-standing.md).
 
 ## Lineage
 

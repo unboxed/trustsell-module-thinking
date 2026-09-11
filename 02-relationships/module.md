@@ -1,7 +1,7 @@
 ---
-name: "People"
+name: "People + Organisations"
 title: "Your relationships"
-blurb: "Keeps every contact, conversation and connection organised, and digs to find who matters."
+blurb: "Keeps every person and organisation you deal with, their conversations and connections, organised, and digs to find who matters."
 icon: users
 optional: false
 tier: assistant
@@ -18,9 +18,11 @@ connects:
 draws_from: [gmail, calendar, slack, contacts, meet, web]
 ---
 
-# 02 · People
+# 02 · People + Organisations
 
-The expert on everyone you deal with: who they are, your history, and who knows whom.
+The expert on everyone you deal with: the **people**, and the **organisations** (the buyer's account) they belong to. Who they are, your history, and who knows whom.
+
+> **Two entities, one module.** *People* is first-class today (its own history and the signals below). *Organisation* is the module's second entity, surfaced for now as the account the [`stakeholder-map`](assemblies/stakeholder-map.md) gathers and the buyer side a [`deal`](assemblies/deal.md) is sold into. Whether Organisation becomes fully first-class (its own record and org-level signals) is still open, see the last open question. Note "Organisation" here is the *buyer's* org; your own is `04`.
 
 > **This is the worked example of the new library format.** Its catalog floors live as libraries:
 > raw data in [`01-integrations/channels/`](../01-integrations/channels/), assemblies in
@@ -135,3 +137,12 @@ pull), never by reaching in.
   Contacts, Meet, web). Whole families stay parked behind data gaps (warm paths thin without LinkedIn,
   call content thin when note-taking was off) and behind frontiers (forecasting, triage). Worth a
   deliberate sweep as channels connect.
+- **Is Organisation first-class?** The module now names *two* entities, People and Organisation, but
+  only People is fully modelled. Open: does the buyer Organisation earn its own account record,
+  org-level history, and org-level signals ("account warming / cooling / stalled / thin coverage"), or
+  does it stay the current lens on the deal (the `stakeholder-map` grouping plus the deal's buyer-org
+  metadata)? Elevating it must keep the *deal* (which crosses org lines) as the unit that moves, with
+  the account as its standing address, not its key. The **interface foundation** takes a first step
+  here: `docs/interface-surfaces.md` makes Contact, Organisation, and Deal hand-creatable entities,
+  with the assistant enriching those same objects later. The deal still moves; the org is a record you
+  can seed, not yet a full account with its own history and signals.

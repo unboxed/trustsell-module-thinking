@@ -15,24 +15,16 @@ needs: [meet]
 
 ## What it means
 
-A read on the balance of a relationship rather than how warm it is.
+A read on the balance of a relationship, not on how warm it is.
 
 Some contacts run hot and cold over time. This asks a flatter question that warming and cooling miss:
-across the whole history, are you both putting in, or are you doing all the work? It is the read behind
-a quiet truth, that a relationship where you start every thread and chase every reply is not really
-yours yet, however polite it looks.
+across the whole history, are you both putting in, or are you doing all the work?
 
-It is a read of balance, not direction, which is what separates it from [`warming`](warming.md):
-warming asks "is the pace picking up?", this asks "is the work shared?". A relationship can be
-perfectly steady and still deeply one-sided. It speaks up only when who-starts, reply size and
-give-and-take all lean the same way across a sustained stretch, not one busy week, and the imbalance is
-read against this pair's own history, so a naturally short-replying contact who still starts threads
-and offers things is not mistaken for someone just taking.
+It is a read of balance, not direction. [`warming`](warming.md) asks "is the pace picking up?". This
+asks "is the work shared?". A relationship can be perfectly steady and still deeply one-sided.
 
-The read surfaces as context, never as a verdict on the person. If the other side gives back somewhere
-the tool cannot see, backing you in meetings you do not sit in, or replying by phone, you will look
-more one-sided than you are. Read with that caveat, it is a nudge to check, not a reason to write
-someone off.
+It surfaces as context, never a verdict on the person. A relationship where you start every thread and
+chase every reply is not really yours yet, however polite it looks.
 
 ## In practice
 
@@ -52,5 +44,3 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../../docs/re
 - Needs: Meet (captured-call content) so a call where they gave back counts as their side. Without it,
   giving-back voiced off-channel is invisible and the contact looks more one-sided than they are (a
   data gap, named not faked).
-- Counts beneath it: the `measures` in the frontmatter (who starts threads, reply size against yours,
-  what you give against what they give, times you chase).
