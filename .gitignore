@@ -7,3 +7,6 @@
 
 # Node (root-level safety net; blueprint/ has its own .gitignore)
 node_modules/
+
+# Claude Code local settings
+.claude/settings.local.json

@@ -1,55 +1,30 @@
-# Sales Amplifier — Thinking Workspace
+# Signal cards
 
-A structured space to **keep brainstorming the architecture** of a sales-amplifier tool with Claude Code — *not* to build the app (yet).
+A playbook of what a sales tool would say to you, one card at a time, written as if the tool
+already existed. Each card names one action and its reason on the front, shows its thinking on the
+back, and ends with a button. Nothing here is connected to anything; it is a design fiction to
+argue with.
 
-## The idea
-Each module of the system gets a folder. Inside each is a `module.md` describing that module's role and open design questions, plus its **libraries** (the catalog floors: `channels/`, `told.md`, `assemblies/`, `signals/`). The root `CLAUDE.md` holds the overall model and tells Claude Code to act as a **design thinking partner** — to pressure-test and update these docs, and *not* to start writing application code.
+## Open it
 
-## How this workspace is organised
-Everything here is one of **three layers** — knowing which is which is the whole trick:
+Double-click `playbook/index.html`. No server, no install. Works offline: the font is bundled, and
+Macs and iPhones use their own SF Pro.
 
-1. **The model** — the durable definition of what each module *is* and *does*. This is the **source of truth**, and it lives in each module's `module.md` and its libraries (the module's *home*). Genuinely cross-module mechanism — the end-to-end flow, the Brain's plays — is model too.
-2. **Scenarios** — one concrete case used to *illustrate* the model (e.g. the councils deal in `docs/scenario-councils.md`). A scenario is an example, **not a contract** — it's allowed to be rough or out of date.
-3. **Demos / views** — how the model is *shown* running on a scenario (the blueprint canvas, the "trace the flow" timeline). Presentation, not truth.
+## Share it
 
-**The invariant:** a module's home is the single source of truth for everything the UI shows about that module — the card, the wires, and (in time) its routines and inputs. The UI is a **read-only mirror**: edit the doc, the UI reflects it; there is no second store. `connects` already works this way, and every facet follows it — a **narrative** in the body plus the **actual listed values** as frontmatter metadata.
+Send the `playbook/` folder. Everything it needs is inside it. If the repository's GitHub Pages
+is switched on, the same folder is published there on every push to `main`.
 
-**Routines & plays** follow the owner: a **routine** (one owner) lives in that module's home; a **play** (across modules, a decision in the middle) lives in the Brain. Defined **once**, then referenced by scenarios and demos.
+## Change it
 
-**The discipline:** when a scenario or a demo teaches you something durable about a module, write it back into the **module's home**. The scenario stays as the illustration; the home is the record — that's how nothing you brainstorm gets lost.
+- The world, the cast, the dates and the card model are in `playbook/world.md`. Start there.
+- Each card is one file in `playbook/cards/`. Copy a card of the same kind (Act, Ask or Connect)
+  and edit the words. Add a tile for it to `playbook/index.html`.
+- The look follows Apple's Human Interface Guidelines. `playbook/assets/style.css` is the
+  playbook's own layer; the two `ios-*.css` files beside it are Apple's measured values and
+  component recipes, copied in and not edited.
 
-Where a thing lives falls straight out of this:
-- **one module, settled** → that module's `module.md` (or a library entry under it)
-- **spans modules, settled** → `docs/`
-- **still being figured out** → `_scratch/`
+## What came before
 
-## How to use it
-1. Install Claude Code, then open this folder:
-   ```
-   cd sales-amplifier-thinking
-   claude
-   ```
-2. Claude reads the root `CLAUDE.md` automatically and picks up the model + the rules.
-3. To brainstorm one module in depth, focus into its folder:
-   ```
-   cd 02-relationships
-   claude
-   ```
-   The root `CLAUDE.md` is auto-loaded; ask Claude to read that module's `module.md` and its libraries.
-4. As decisions firm up, ask Claude to update the relevant `module.md` (or library file). The files are your memory between sessions.
-5. Use `_scratch/open-questions.md` as the parking lot.
-
-## Good first prompts
-- "Read the whole workspace and tell me where the modules contradict each other."
-- "Let's work only on the spine. Walk me through routing for one Grow example, end to end."
-- "Play devil's advocate on the three-tier split — what would collapse these into fewer modules?"
-
-## Folders
-- `00-spine` · the brain — reasons to decide; holds the goals
-- `01-integrations` · the connector — connect once; carries messages in and out
-- `02-relationships` · the people expert — relationships, conversation history, sensing
-- `03-offerings` · the product expert — what we sell, per offering
-- `04-organization` · the organisation you represent — proof, brand, compliance (optional)
-- `05-persona-you` · Profile — your voice and your preferences
-- `docs/` · cross-module reasoning (the model that spans modules) + the UI foundation
-- `_scratch/` · running questions and handoff briefs (the workbench)
+`_archive/` holds the system design this grew out of. It is kept for inspiration; the playbook is
+the source of truth.

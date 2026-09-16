@@ -1,0 +1,288 @@
+/* Signal cards playbook: the playbook's own layer over Apple's kit.
+
+   Load order: fonts/inter.css, ios-tokens.css, ios-components.css, then this.
+   The two ios-*.css files come from the apple-ui-kit skill and are not edited
+   here. This file holds only what the kit does not: page layout, the card,
+   the kind dot, the two-column card page, the sheets' placement, the phone
+   frame and deck, and the narrow-screen rules. Every colour is a token, so
+   re-theming later means changing tokens, not rules.
+
+   Desk follows iPadOS, phone follows iOS. Where the browser cannot do the real
+   thing the comment says what was done instead. */
+
+/* ---------- 1. Tokens the kit leaves to the page ---------- */
+:root{
+  --ios-bg-tertiary:#F2F2F7;        /* tertiarySystemGroupedBackground: a list inside a card */
+  --ios-radius-tile:20px;           /* judgment: a content card, concentric with capsule buttons */
+  --page:80rem;
+  --page-gutter:clamp(16px,3vw,24px);
+  --kind-sustain:var(--ios-green);
+  --kind-advance:var(--ios-accent);
+  --kind-expand:var(--ios-orange);
+  --kind-quiet:var(--ios-gray);
+}
+@media (prefers-color-scheme:dark){
+  :root{--ios-bg-tertiary:#2C2C2E}
+  /* In dark the kit's selected segment (card colour) vanishes on the track; Apple's dark segmented control uses systemGray2 dark, #636366. */
+  .ios-segmented label:has(input:checked){background:#636366}
+}
+
+/* ---------- 2. Base ---------- */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+h1,h2,h3,p,ul{margin:0}
+a{color:var(--ios-accent);text-decoration:none}
+:focus-visible{outline:3px solid var(--ios-accent);outline-offset:2px}
+summary::-webkit-details-marker{display:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.page-body{max-width:var(--page);margin:0 auto;padding:0 var(--page-gutter) 110px}
+.ios-tabbar__item{text-decoration:none}
+.ios-tabbar__item svg{display:block}
+
+/* Small capsule: 36 pt, for chips and suggestions. Frequently used controls
+   stay at 44; these are the "less important controls" of the accessibility
+   table, with 8 pt of space around them doing the rest. */
+.ios-btn--small{min-height:36px;padding:7px 14px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+
+/* Chevron, drawn: the iOS back and disclosure glyph. */
+.chevron{display:inline-block;width:11px;height:11px;border-left:2.5px solid currentColor;border-bottom:2.5px solid currentColor;transform:rotate(45deg);margin:0 6px 0 2px;flex:none}
+.chevron--next{transform:rotate(-135deg);margin:0 2px 0 6px}
+
+/* ---------- 3. Navigation bar ---------- */
+.ios-navbar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:52px}
+.navbar-back{justify-self:start;padding-left:8px;white-space:nowrap}
+.ios-navbar__title{letter-spacing:var(--ios-track-headline)}
+
+/* Large title block. On iOS the bar collapses to a compact title as you
+   scroll; here the large title simply sits at the top of the content. */
+.large-title{padding:24px 0 12px}
+.large-title h1{font:var(--ios-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);color:var(--ios-label)}
+.large-title .date{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary);margin-top:2px}
+
+/* ---------- 4. Kind labels ---------- */
+.kind{
+  display:inline-flex;align-items:center;gap:6px;margin-bottom:10px;
+  font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ios-label-secondary);
+}
+.kind--sustain::before,.kind--advance::before,.kind--expand::before,.kind--ask::before,.kind--connect::before{
+  content:"";width:8px;height:8px;border-radius:50%;flex:none;background:var(--kind-quiet)
+}
+.kind--sustain::before{background:var(--kind-sustain)}
+.kind--advance::before{background:var(--kind-advance)}
+.kind--expand::before{background:var(--kind-expand)}
+.kind .sure,.sure{text-transform:none;letter-spacing:var(--ios-track-footnote);font-weight:var(--ios-weight-regular);color:var(--ios-label-secondary)}
+
+/* ---------- 5. The card ---------- */
+.card{
+  display:flex;flex-direction:column;position:relative;
+  background:var(--ios-bg-card);border-radius:var(--ios-radius-tile);padding:20px;
+  color:var(--ios-label);
+}
+.card h1{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
+.card h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2);margin-bottom:8px}
+.card p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
+.card p+p{margin-top:8px}
+.card .when{font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);margin-top:12px}
+.card .aside{color:var(--ios-label-secondary)}
+.card--held{opacity:var(--ios-disabled-opacity)}
+
+/* The grid, a collection. A card lifts on hover and keyboard focus: the
+   iPadOS pointer lift effect, and the one tvOS idea kept. */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:16px}
+.card--item{transition:transform .18s,box-shadow .18s}
+.card--item:hover,.card--item:focus-visible{transform:scale(1.02);box-shadow:0 10px 30px rgba(0,0,0,.10),0 2px 6px rgba(0,0,0,.06);outline:none}
+.card--item:active{transform:scale(1);box-shadow:none}
+.card--item>.ios-btn{margin-top:auto;align-self:flex-start}
+.card--item>p:last-of-type{margin-bottom:20px}
+.card--item.card--held{opacity:var(--ios-disabled-opacity)}
+
+/* ---------- 6. Lists ---------- */
+/* Inside a page column the list is already inset by the column, so the kit's
+   16 pt outer margin comes off and the header keeps its 16 pt text inset. */
+.page-body .ios-list{margin:0}
+.page-body .ios-list__header,.page-body .ios-list__footer{margin-left:16px;margin-right:16px}
+.page-body .ios-list__header{margin-top:20px}
+.ios-list__header .sure{text-transform:none;letter-spacing:var(--ios-track-footnote);font-weight:var(--ios-weight-regular)}
+.ios-list__row{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.ios-list__row .ios-list__title{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead)}
+.ios-list.read .ios-list__title{color:var(--ios-label)}
+/* A row that is a button (an answer, a pick). The separator rule in the kit
+   looks for sibling rows; here the siblings are the list items. */
+.ios-list li{list-style:none}
+.ios-list li>.ios-list__row{width:100%;text-align:left;font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ios-list li+li>.ios-list__row::before{content:"";position:absolute;top:0;left:var(--ios-gutter);right:0;height:1px;background:var(--ios-separator);transform:scaleY(.5);transform-origin:top}
+.ios-list li>.ios-list__row:active{background:color-mix(in srgb,var(--ios-label) 8%,transparent)}
+.ios-list li>.ios-list__row .ios-list__title{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
+.ios-list__value{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);flex:none}
+/* The checkmark, drawn, shown on the chosen row. */
+.check{width:7px;height:13px;border-right:2.5px solid var(--ios-accent);border-bottom:2.5px solid var(--ios-accent);transform:rotate(45deg);margin:0 8px 4px 4px;flex:none;opacity:0;transition:opacity .15s}
+[aria-checked="true"] .check{opacity:1}
+[aria-checked="true"] .ios-list__title{font-weight:var(--ios-weight-medium)}
+/* A row holding a field or a control. */
+.ios-list__row--field{padding:6px 8px}
+.ios-list__row--field .ios-field{background:transparent;border-radius:0;padding:6px 8px;resize:vertical;min-height:88px}
+.ios-list__row--control{padding:8px 16px}
+.ios-list__row--control .ios-segmented{width:100%}
+.ios-list__footer{margin-top:7px}
+.ack{margin-top:12px}
+
+/* ---------- 7. Actions ---------- */
+.actions{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:16px}
+.toolbar{display:flex;justify-content:space-between;gap:16px;margin-top:28px}
+.toolbar .ios-btn{max-width:48%;text-align:left;font-weight:var(--ios-weight-regular)}
+.toolbar__next{text-align:right;margin-left:auto}
+@media (max-width:560px){
+  .actions{justify-content:center;gap:4px 24px}
+  .actions>.ios-btn--filled{flex:0 0 100%;min-height:50px}
+  .actions>.ios-btn--tinted{flex:0 0 100%}
+}
+@media (max-width:560px){.toolbar{flex-direction:column;align-items:flex-start}.toolbar .ios-btn{max-width:100%}.toolbar__next{margin-left:0;text-align:left}.toolbar__next .chevron{order:-1;transform:rotate(-135deg);margin:0 6px 0 2px}}
+
+/* ---------- 8. The card page: front and the thinking ---------- */
+.card-page{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px;align-items:start}
+.card-front .ios-list__header:first-of-type{margin-top:20px}
+.card-front>.ios-list{margin-top:16px}
+.card-front>.ios-list__header+.ios-list{margin-top:0}
+.back-title{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2);color:var(--ios-label);margin:0 16px 0}
+.back-title .sure{font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);margin-left:6px}
+.card-back .ios-list__header:first-of-type{margin-top:12px}
+@media (max-width:720px){.card-page{grid-template-columns:1fr}}
+
+/* ---------- 9. Sheets ---------- */
+/* The draft is a form sheet: centred over a dimmed page on wide screens
+   (sheets.md, iPadOS: prefer the page or form sheet styles), docked to the
+   bottom with a grabber on narrow ones. Cancel on the left, the confirming
+   action on the right. Nothing in it sends. */
+.sheet-backdrop{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;padding:16px}
+.sheet{position:relative;width:min(640px,100%);max-height:90vh;overflow:auto;background:var(--ios-bg-card);border-radius:26px;padding:6px 20px 20px}
+.sheet__grabber{display:none;width:36px;height:5px;border-radius:999px;background:var(--ios-fill-track);margin:0 auto 4px}
+.sheet__bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:52px}
+.sheet__bar .sheet-cancel{justify-self:start;padding-left:8px}
+.sheet__bar .sheet-hand{justify-self:end}
+.sheet__sub{margin:0 0 12px}
+.sheet__body{padding:8px 0 4px}
+.sheet__body p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.sheet__body p+p{margin-top:8px}
+.sheet__body ul{padding-left:1.2em;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.sheet__body li+li{margin-top:6px}
+.sheet .ios-list__footer{margin:12px 0 0}
+.sheet-backdrop--actions .ios-actionsheet{margin:0 auto}
+.ios-actionsheet__cancel{font-weight:var(--ios-weight-semibold)}
+@media (max-width:720px){
+  .sheet-backdrop{align-items:flex-end;padding:0}
+  .sheet{width:100%;border-radius:26px 26px 0 0;padding-top:8px}
+  .sheet__grabber{display:block}
+  .sheet-backdrop--actions{padding:0 8px 8px}
+}
+
+/* ---------- 10. Home: filters, the box ---------- */
+.filters{margin:8px 0 20px;max-width:100%;overflow-x:auto}
+.filters label{min-height:32px;display:inline-flex;align-items:center;justify-content:center}
+.section{margin-top:32px}
+.section h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2);color:var(--ios-label);margin-bottom:6px}
+.section>p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label);max-width:44rem}
+.search{position:relative;margin-top:16px}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--ios-label-secondary);pointer-events:none}
+.search .ios-field{padding-left:42px}
+.tries{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.tries .lead{font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
+.ios-empty{padding:48px 35px}
+.foot-line{margin-top:24px}
+
+/* ---------- 11. The phone ---------- */
+.phone-wrap{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;justify-content:center;margin-top:20px}
+/* 390 x 844 pt, the iPhone logical size. The bezel is hardware, so it stays black in both appearances. */
+.phone{flex:0 0 390px;width:390px;height:844px;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:56px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.screen{position:relative;width:100%;height:100%;background:var(--ios-bg);border-radius:44px;overflow:hidden;display:flex;flex-direction:column}
+.screen .ios-statusbar{flex:none}
+.phone-title{padding:4px 20px 8px}
+.phone-title h1{font:var(--ios-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);color:var(--ios-label)}
+.phone-title .date{display:block;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);margin-top:2px}
+.home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;z-index:6;pointer-events:none}
+
+/* The screen scrolls as one; the sheet, toast and home indicator stay put. */
+.screen .scroll{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column}
+/* The deck has one fixed, comfortable height; every card in the stack takes that box.
+   Judgment: 600 pt leaves the title above and a little air below on an 844 pt screen. */
+.deck{position:relative;flex:none;height:600px;margin:8px 16px 28px}
+/* Two pages inside the card: the card, then the thinking. Scrolling snaps between them. */
+.deck .card{
+  position:absolute;inset:0;z-index:2;padding:0;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;
+  transition:transform .26s,opacity .26s;
+}
+.deck .card::-webkit-scrollbar{display:none}
+.deck .page{flex:none;min-height:100%;padding:20px;display:flex;flex-direction:column;scroll-snap-align:start;scroll-snap-stop:always}
+.deck .page>*{flex-shrink:0}
+.deck .page--back{background:var(--ios-bg-tertiary)}
+.deck .page--back .back-title{margin:0 0 4px;font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2)}
+.deck .page--back .ios-list__header{margin:12px 0 4px}
+.deck .page--back .ios-list{background:var(--ios-bg-card);margin:0}
+.deck .page--back .ios-list__row{min-height:0;padding:8px 12px}
+.deck .page--back .ios-list li+li>.ios-list__row::before,.deck .page--back .ios-list__row+.ios-list__row::before{left:12px}
+.page-cue{align-self:center;display:inline-flex;align-items:center;gap:6px;min-height:36px;margin-top:8px;padding:0 8px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);background:none;border:0;cursor:pointer}
+.page-cue .chevron{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 4px}
+.deck .card.end{padding:20px}
+.deck .card.dragging{transition:none;cursor:grabbing}
+.deck .card.under{transform:scale(.95) translateY(16px);opacity:.75;pointer-events:none;z-index:1}
+.deck .card.far{visibility:hidden}
+.deck .card.gone{display:none}
+.deck .card.off-left{transform:translateX(-130%) rotate(-10deg);opacity:0}
+.deck .card.off-right{transform:translateX(130%) rotate(10deg);opacity:0}
+.deck .card h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2)}
+.deck .note{margin-top:12px}
+.deck .answers{margin:12px 0 0}
+.deck .answers.ios-list{background:var(--ios-bg-tertiary)}
+/* On a phone the primary action spans the card, 50 pt tall like the empty
+   state's action, and the plain actions sit centred in a row beneath it. */
+.deck .actions,.actions--stack{margin-top:auto;padding-top:16px;justify-content:center;gap:4px 24px}
+.deck .actions>.ios-btn--filled,.actions--stack>.ios-btn--filled{flex:0 0 100%;min-height:50px}
+.deck .actions>.ios-btn--tinted,.actions--stack>.ios-btn--tinted{flex:0 0 100%}
+.deck .card.desk{border:1px dashed var(--ios-separator)}
+.deck .card.end{background:none;box-shadow:none;display:flex;align-items:center;justify-content:center;text-align:center;cursor:default;min-height:16rem}
+.deck .card.end p{color:var(--ios-label-secondary)}
+.deck .card.end a{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;padding:0 8px}
+.hint{position:absolute;top:16px;z-index:1;font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-footnote);padding:5px 12px;border-radius:999px;opacity:0;transition:opacity .15s;pointer-events:none}
+.hint.left{right:16px;background:var(--ios-fill-control);color:var(--ios-label)}
+.hint.right{left:16px;background:var(--ios-accent);color:#fff}
+.deck .card.lean-left .hint.left,.deck .card.lean-right .hint.right{opacity:1}
+
+/* On the phone the draft is a bottom sheet at the medium detent, with a
+   grabber, and the reasons are an action sheet from the bottom. Both sit
+   inside the screen, and the scrim is a shadow clipped by the screen. */
+.screen .sheet-backdrop{position:absolute;align-items:flex-end;padding:0;background:rgba(0,0,0,.35);z-index:8}
+.screen .sheet{width:100%;max-height:72%;border-radius:38px 38px 0 0;padding:8px 20px 28px}
+.screen .sheet__grabber{display:block}
+.screen .sheet-backdrop--actions{padding:0 8px 34px}
+.screen .toast{
+  position:absolute;left:16px;right:16px;bottom:44px;z-index:9;
+  background:color-mix(in srgb,var(--ios-bg-card) 85%,transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  color:var(--ios-label);font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);
+  padding:12px 16px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.16);
+  opacity:0;transition:opacity .2s;pointer-events:none;
+}
+/* Apple has no toast. This is the nearest honest thing: a small translucent
+   banner at the foot of the screen that goes away on its own. */
+.screen .toast.on{opacity:1}
+
+.phone-note{flex:1 1 280px;max-width:30rem}
+.phone-note h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2);color:var(--ios-label);margin-bottom:8px}
+.phone-note p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
+.phone-note p+p{margin-top:8px}
+.phone-note ul{margin-top:12px;padding-left:1.2em;font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
+.phone-note li+li{margin-top:6px}
+.phone-note .small{margin-top:16px;margin-left:0;margin-right:0}
+
+@media (max-width:560px){
+  .phone-wrap{gap:24px}
+  .phone{flex-basis:100%;width:100%;height:auto;min-height:82vh;border:0;border-radius:0;padding:0;background:none;box-shadow:none}
+  .screen{border-radius:0;min-height:82vh}
+  .screen .ios-statusbar,.home-indicator{display:none}
+  .deck{height:calc(82vh - 150px)}
+  .phone-title{padding-top:16px}
+  .phone-note{order:2}
+}

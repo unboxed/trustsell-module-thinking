@@ -1,7 +1,6 @@
-# Publishes the blueprint viewer (blueprint/) as a static site on GitHub Pages.
-# The site is a snapshot of the module docs taken at build time; every push to
-# main rebuilds it. Repo Settings → Pages → Source must be "GitHub Actions".
-name: Deploy blueprint to GitHub Pages
+# Publishes the playbook (playbook/) as a static site on GitHub Pages.
+# Plain HTML, no build step. Repo Settings → Pages → Source must be "GitHub Actions".
+name: Deploy playbook to GitHub Pages
 
 on:
   push:
@@ -18,35 +17,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: blueprint
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: blueprint/package-lock.json
-      - run: npm ci --no-audit --no-fund
-      - run: npm run build
-        env:
-          STATIC_EXPORT: "1"
-          # Project sites live under https://<user>.github.io/<repo>/
-          PAGES_BASE_PATH: /${{ github.event.repository.name }}
-          NEXT_TELEMETRY_DISABLED: "1"
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: blueprint/out
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: playbook
       - id: deployment
         uses: actions/deploy-pages@v4

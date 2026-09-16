@@ -1,101 +1,58 @@
-# Sales Amplifier — Thinking Workspace
+# Signal cards: the playbook
 
-This is a **design / brainstorming workspace, not an application**. There is no code here and we are not building the app yet. Each folder is a *module* of a multi-agent sales tool we're still reasoning about. The markdown files are the living memory of that thinking.
+This is a **design workspace, not an application**. It holds a playbook of **signal cards**: what a
+sales tool would say to a seller, one card at a time, written as if the tool already existed. The
+playbook is plain HTML in `playbook/`, opens by double-clicking `playbook/index.html`, and needs no
+server, build or install. It is meant to be shared as a folder.
 
-## How to work with me in here
-- **Brainstorm and pressure-test. Do NOT write application code, scaffold a project, or propose database/file schemas unless I explicitly ask.** If a request would start "building," pause and confirm first.
-- These `.md` files are the source of truth. When we make a decision, **update the relevant module's `module.md`** (or the matching library file under `channels/` / `told.md` / `assemblies/` / `signals/`) so it persists between sessions.
-- When I explore one module, read that module's `module.md` and its libraries. For cross-cutting questions, read every module file involved before answering.
-- Actively **flag contradictions** between modules (e.g. two modules claiming the same responsibility). Boundary disputes are the most useful thing to catch.
-- Keep this distinction sacred: the memory modules **reason to *answer*** — they serve what they know, and proactively flag what their brief cares about, but they hold **no goals of their own**. The brain **reasons to *decide*** — it sets intent, routes, and acts.
+## How to work with me here
+- **Brainstorm and pressure-test first.** Do not write application code, schemas or a build system
+  unless asked. The cards are static HTML on purpose. A one-off script that rewrites the HTML is
+  fine; it lives in the scratchpad, not the repo.
+- **The card model lives in `playbook/world.md`**, together with the pretend world (goal, councils,
+  cast, documents, dates) and the table of which Apple component each part of a card is. Read it
+  before writing or editing a card. Add to it before inventing a name, a date or a document.
+- **One HTML file per card** in `playbook/cards/`. The home (`playbook/index.html`) lists every
+  card sorted by *when*. When a card is added, add its tile to the home and wire the previous/next
+  links in the toolbar at the foot of the neighbouring cards.
+- **Voice.** Plain English, British spelling, the tool speaking to the seller in the first person.
+  Short sentences. No em dashes. Every Sustain card names the gift. Every card can say its why-now.
+  Ask cards ask for facts, never verdicts. Interface text follows Apple's writing rules: button
+  labels in title case starting with a verb ("Send the Note", "Not Now"), everything else in
+  sentence case, tab labels one word, section headers short noun phrases.
+- **Kinds and labels.** Act cards are labelled Sustain (keep alive), Advance (move forward) or
+  Expand (new relationship). Ask and Connect are their own quiet labels. These five words are the
+  vocabulary; do not add more.
+- **Flag contradictions in the fiction**: two cards on the same person that pull opposite ways on
+  the same day, a date that doesn't match `world.md`, a document nobody has.
 
-## Module doc format
+## The design system
+The playbook is built on Apple's Human Interface Guidelines. The desk follows iPadOS, the phone
+follows iOS. Take numbers from the two skills in `.claude/skills/`, not from memory:
+`apple-hig` for the rules and specs, `apple-ui-kit` for the measured values and component recipes.
+- `playbook/assets/ios-tokens.css` and `playbook/assets/ios-components.css` are copied from the
+  kit. **Do not edit them.** If a value must change, change it in `style.css` by overriding.
+- `playbook/assets/style.css` is the playbook's own layer: page layout, the card, the kind dots,
+  the sheets' placement, the phone frame. Every colour goes through a token, so a later re-theme
+  means changing tokens, not rules. Where a number is a judgment rather than Apple's, the comment
+  says so.
+- `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback. Macs and iPhones use
+  SF Pro through `-apple-system`. Never link a font CDN.
+- `playbook/assets/card.js` is the one script the card pages share.
+- Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
+  `ios-navbar`, `ios-tabbar`, `ios-actionsheet`). Reach for a kit component before inventing one.
 
-Each module is **a slim `module.md` plus its libraries**. `module.md` is two layers in one file:
-a thin **frontmatter** block of facts, then the **narrative body**. The frontmatter holds only the
-small, schema-able slice the blueprint needs — `name`, `title`, `blurb`, `icon`, `optional`, the
-semantic `tier`/`modes`/`connects`, and `draws_from`/`raw_data` for the data a module pulls; it is
-the **single source of the node's card face**. Edit a module and the blueprint reflects it live —
-the UI is a read-only **mirror** of these docs, never the store. The keys are catalogued in
-`docs/ui-foundation.md`; the blueprint reads only the ones it knows today (`coerceMeta` in
-`blueprint/lib/modules.ts`, which reads `module.md`).
+## What is where
+- `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `phone.html` (Phone),
+  `world.md`, `cards/`, `assets/`.
+- `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
+  blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under
+  `_archive/02-relationships/signals/` and `_archive/03-offerings/signals/` are where most cards'
+  reasoning came from; `_archive/docs/tracing-back.md` explains the facts → counting → opinion
+  track-back that a card's back follows. The old vocabulary there was Plant / Grow / Nurture; here
+  it is Expand / Advance / Sustain.
 
-**The body holds the operating prose**, top to bottom:
-
-`Principles` → `System prompt` → `User input` → `Reasoning` → `Output` → `Memory` → `Open questions`
-
-- **Principles** — how it works, one line each.
-- **System prompt** — its operating stance, in prose (brainstorm-level, not deployable wording).
-- **User input** — the *told* pile: what only the user can supply.
-- **Reasoning** — how it turns what it has into what it knows; a short section pointing at the
-  library floors below (or, for `00`/`01`, carrying the whole story, since they have no floors).
-- **Output** — what it hands up, and to whom.
-- **Memory** — what it keeps, and which tier (shared vs personal).
-- **Open questions** — a plain bulleted list of what's still unsettled.
-
-**The catalog floors live as libraries**, not prose, because they want to grow and be rendered:
-**raw data** in `01-integrations/channels/*.md` (one doc per channel) plus a module's own **told
-source** in `<module>/told.md`; **assemblies** (deterministic gathers) in `<module>/assemblies/*.md`;
-**signals** (the first opinion) in `<module>/signals/*.md`. Each entry carries its **lineage** (the
-`inputs` one floor down), so a signal walks back to plain records. The contract is
-`docs/library-format.md`; the skeletons are in `_templates/`. Not every module has every floor
-(`01` is raw data only; `04-organization` has no signals; `00-spine` keeps a scoreboard and
-calendar, a different synthesis) — absence is information, don't invent a floor a module lacks.
-
-Write plain English in the blueprint's voice. Where a section is a **list of named things**
-(records, signals, principles), give each a short label and a one-line description, so the UI can
-show them as **badges/chips** (`connects` and `raw_data` already render that way).
-
-**`02-relationships` is the worked example to copy** — the first module filled all the way down
-(`module.md`, `assemblies/`, `signals/`); **`03-offerings`** is the worked example of the **told
-source** floor (`told.md`). The migration from the old one-prose-`CLAUDE.md`-per-module is
-**complete**: those per-module `CLAUDE.md` files have been retired, and `module.md` plus the
-libraries are the source of truth. (An earlier "badge-facet card" format — Purpose / Values /
-Routines / Plays as frontmatter chips — was sketched but never adopted; those badge keys survive
-only as a possible future frontmatter extension, noted in `docs/ui-foundation.md`.)
-
-The three layers (**model / scenario / demo**) and the single-source-of-truth invariant that sit
-above this are written up in `README.md`.
-
-## The model so far
-
-A three-tier system, not a swarm. The clearest way to picture it: **one brain, a team of expert assistants, and a single shared connector to the outside world.**
-
-### The brain — `00-spine` (reasons to *decide*)
-The brain is the only true decision-maker. It holds the user's **strategy** — which, concretely, is a set of **goals, each pinned to an offering** ("BOPS → 30 councils as early adopters by Q1") — and it *helps shape* that strategy with the user, back and forth. From those goals it decides who to act on and why, then assembles a recommendation. It is the one place **intent** lives.
-
-### The assistants — the memory modules (reason to *answer*)
-`02-relationships`, `03-offerings`, `04-organization`, and `05-persona-you` are domain experts the brain leans on. Crucially they are **not passive answer-on-demand stores**. The brain works with each of them three ways: it **briefs** them with **routines** (the standing jobs drawn from the strategy — a default beat plus strategy-driven focus), they **proactively report** what their routines turn up (which itself can trigger the brain), and it **asks** them specific questions on demand. They have real expertise and initiative — they can even research the open web — but **no goals of their own**. What we're trying to achieve always originates in the brain.
-
-### The connector — `01-integrations` (no reasoning at all)
-A **port**, nothing more. The user connects their accounts to it once; from then on it just carries messages in and out. It does not read, sense, or decide — the modules reach *through* it, and triggers are noticed by `02` and the brain, never by the port.
-
-**Principle:** capability is *distributed* (in the assistants); intent is *centralized* (in the brain).
-
-**The unit of progress is a *deal*, and it is that principle in action.** You do not sell to a person, or even to an organisation; you sell into a *deal*: one selling effort that can pull in people across more than one organisation (a buyer, plus an outside partner or introducer). A deal is **gathered by an assistant** (`02` brings together the offering it is about, its conversations, and whoever is on them; the *conversation is the membrane*, so membership crosses org lines for free) and **staged by the brain** (its rung on the goal's ladder, whether it is worth acting on today). The organisation stays the *account*, the standing address book; the deal is what moves. So a scoreboard row is a deal, a calendar item is a person inside one: capability gathers the deal, intent stages it.
-
-**Routines vs plays.** A **routine** is a standing job with a single owner — the module that does it (it may *pull* ingredients from others, who are just suppliers). A **play** is a brain-conducted choreography across several modules with a *decision in the middle* — it has no single-module owner, so it lives with the brain. The litmus: a decision in the middle ⇒ a play; otherwise a routine.
-
-**Every connection is a request + a provide.** A link between two modules is never one undirected road: something is *asked for* going one way and *handed back* the other — the brain *requests* "find the decision-maker" and `02` *provides* the answer; `02` *requests* a person's mail history and `01` *provides* it. Each module names both sides in its `connects` frontmatter (`requests` / `provides`), and the blueprint draws them as twin directional lines — in and out.
-
-**Autonomy — people as the fulcrum, AI as the lever.** The human works the *verbs* (decide, approve, send); the AI works the *nouns* (find the target, draft the message, gather the proof). The AI always **suggests**; the human makes the final call. Nothing goes out without a person pulling the trigger — at least for now.
-
-**Output of the tool:** not a single card but a living, paced **calendar** of prepared *nouns* — *who to act on, why, and a ready-to-send draft in the user's voice* — kept beside a goal **scoreboard** (where each target stands against the goal). The brain paces the calendar to how much time the user has, leaves a quiet day quiet, and works ahead so a thing is ready by its day; "the one thing worth doing next" is simply today's headline on it. For any one item the brain assembles the what+why from the assistants and hands down a **brief**; a final render step turns it into a message, with `05` supplying the personal voice and `04` supplying the brand/compliance guardrails it must stay inside. (The calendar/scoreboard reframe is worked in `00-spine`.)
-
-**Two tiers of memory — shared vs personal.** `04-organization` is the **shared** tier (proof, brand, compliance, and — as a future vision — the team that joins an org). `05-persona-you` and `02-relationships` are the **personal** tier: one personal layer (voice + preferences), and one set of relationships, per individual.
-
-**Plant, Grow and Nurture are not modes you switch into — they're the three *categories* every routine and action falls into.** All three run at once; the strategy just tilts where the emphasis goes:
-- **Plant** — find new relationships, a new org *or* a new person inside one (warm paths + targets; leans on the People web).
-- **Grow** — move open deals (stage + objections; leans on Offerings).
-- **Nurture** — keep relationships alive (decay + events).
-
-These names are the one vocabulary used everywhere — and the `modes` enum each module carries. They're plain, garden-flavoured verbs; treat them as plain verbs, not a theme to extend beyond these three categories.
-
-## Index
-- `00-spine/` — the brain (reasons to decide; holds the goals)
-- `01-integrations/` — the connector (connect once; carries messages in and out)
-- `02-relationships/` — the people expert (relationships, conversation history, sensing)
-- `03-offerings/` — the product expert (what we sell, per offering)
-- `04-organization/` — the organisation you represent (proof, brand, compliance — optional)
-- `05-persona-you/` — Profile (the personal layer: your voice and your preferences)
-- `_scratch/open-questions.md` — running parking lot
+## The idea in one paragraph
+People work the verbs (decide, approve, send); the tool works the nouns (find the person, gather
+the proof, write the draft). A card is one prepared noun with its reasoning on the back. Early on
+the tool mostly asks; once it has learned your world it mostly acts. Nothing goes out without you.

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Message Sarah Whitlow · Signal cards</title>
+<link rel="stylesheet" href="../assets/fonts/inter.css">
+<link rel="stylesheet" href="../assets/ios-tokens.css">
+<link rel="stylesheet" href="../assets/ios-components.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="page page--card">
+
+<nav class="ios-navbar">
+  <a class="ios-btn navbar-back" href="../index.html"><span class="chevron" aria-hidden="true"></span>Signal cards</a>
+  <span class="ios-navbar__title">Sustain</span>
+  <span class="navbar-spacer" aria-hidden="true"></span>
+</nav>
+
+<main class="page-body">
+<div class="card-page">
+
+<section class="card-front">
+  <article class="card">
+    <span class="kind kind--sustain">Sustain</span>
+    <h1>Message Sarah Whitlow</h1>
+    <p>Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.</p>
+    <p class="when">Any day this week. The gap widens each day you wait.</p>
+  </article>
+  <div class="actions">
+    <button class="ios-btn ios-btn--filled" id="act" data-action="draft">Send the Note</button>
+    <button class="ios-btn" data-ack="Okay. I'll leave it and raise it again only if something changes.">Not Now</button>
+    <button class="ios-btn" id="nope">Not Relevant</button>
+  </div>
+  <p class="ios-list__footer ack" id="ack" role="status" hidden></p>
+</section>
+
+<section class="card-back">
+  <h2 class="back-title">The thinking <span class="sure">likely</span></h2>
+  <div class="ios-list__header">What I noticed</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Why now: 22 days since her last real reply, three times her usual gap, and you have a gift ready: the figures she asked for.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Before the budget meeting she replied in about a day and started 9 of your 12 threads.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Since it: one two-line reply. No out-of-office, no leave, no meeting booked. She is active on other threads, so she is around.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Thornbury Vale is one of your thirty and she is the only door in. Your goal says move patiently, so give, don&#x27;t nudge.</span></li>
+  </ul>
+  <div class="ios-list__header">What I read</div>
+  <ul class="ios-list read">
+      <li class="ios-list__row"><span class="ios-list__title">Your mail with Sarah, March to today: 15 messages, who wrote, when, how long.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Your calendar: &quot;Budget prioritisation meeting, Thornbury Vale&quot;, 22 August. Nothing since.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Drive: the officer-time one-pager, and her July email asking for it.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Your list of thirty councils, and the goal you gave me.</span></li>
+  </ul>
+  <div class="ios-list__header">Not sure</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Whether the budget meeting went badly for BOPS, or she is buried in year-end work. You were in the room.</span></li>
+      <li class="ios-list__row ios-list__row--control"><div class="ios-segmented mini" role="radiogroup" aria-label="Your read">
+        <label><input type="radio" name="mini" data-mini="Then I&#x27;ll hold this note for a month, keep the figures for a better moment, and look for a second door into Thornbury Vale."><span></span>Badly</label>
+        <label><input type="radio" name="mini" data-mini="Then the note goes as written and I&#x27;ll expect a reply within her old rhythm."><span></span>Fine</label>
+        <label><input type="radio" name="mini" data-mini="Then the note stays soft, as written, and I&#x27;ll read her reply for the answer."><span></span>Don&#x27;t Know</label>
+      </div></li>
+  </ul>
+  <p class="ios-list__footer" id="miniack" role="status" hidden></p>
+  <div class="ios-list__header">Then</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Once you send it I&#x27;ll watch for her reply. If nothing comes in two weeks I&#x27;ll come back with a different reason to write, not the same one twice.</span></li>
+  </ul>
+</section>
+
+</div>
+
+<nav class="toolbar" aria-label="Previous and next card">
+  <a class="ios-btn toolbar__prev" href="ask-priya-meeting.html"><span class="chevron" aria-hidden="true"></span><span>You met Priya Nair on Tuesday. How did it go?</span></a>
+  <a class="ios-btn toolbar__next" href="sustain-daniel-rhythm.html"><span>Reconnect with Daniel Okoro</span><span class="chevron chevron--next" aria-hidden="true"></span></a>
+</nav>
+</main>
+
+<div class="sheet-backdrop" id="draft" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="draft-title">
+    <div class="sheet__grabber" aria-hidden="true"></div>
+    <header class="sheet__bar">
+      <button class="ios-btn sheet-cancel">Cancel</button>
+      <span class="ios-navbar__title" id="draft-title">Draft</span>
+      <button class="ios-btn ios-btn--filled sheet-hand">Open in Mail</button>
+    </header>
+    <p class="ios-list__footer sheet__sub">in your voice · nothing sends until you do</p>
+    <div class="sheet__body">
+<p>Hi Sarah,</p><p>You asked back in July for the officer-time numbers from Borsetshire and I never sent them. Here they are, one page. The short version: case admin down by about a third, which is the figure their finance team cared about most.</p><p>I imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how Borsetshire phased it in, I am around whenever suits.</p><p>Fede</p>
+    </div>
+    <p class="ios-list__footer">Attached: the officer-time one-pager. Edit anything, then send from your own mail.</p>
+  </div>
+</div>
+
+<div class="sheet-backdrop sheet-backdrop--actions" id="reasons" hidden>
+  <div class="ios-actionsheet" role="dialog" aria-modal="true" aria-labelledby="reasons-title">
+    <p class="ios-actionsheet__title" id="reasons-title">Why isn&#x27;t this relevant?</p>
+    <div class="ios-actionsheet__actions">
+      <button class="ios-btn" data-ack="Fair. I&#x27;ll stop telling you things you already know about this one, and try to notice earlier next time.">Already Knew</button>
+      <button class="ios-btn" data-ack="Noted. I&#x27;ll stop raising this person for this and look for who it should be.">Wrong Person</button>
+      <button class="ios-btn" data-ack="Understood. I&#x27;ll take this off the board and not raise it again unless you put it back.">Not a Target</button>
+      <button class="ios-btn ios-actionsheet__cancel sheet-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<nav class="ios-tabbar" aria-label="Sections">
+  <a class="ios-tabbar__item" aria-selected="true" href="../index.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="16" height="12" rx="2.5"/><path d="M6 2.5h10"/></svg>Cards</a>
+  <a class="ios-tabbar__item" href="../ask.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9.5" cy="9.5" r="6.5"/><path d="m14.5 14.5 5 5"/></svg>Ask</a>
+  <a class="ios-tabbar__item" href="../phone.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="6" y="2" width="10" height="18" rx="2.5"/><path d="M9.5 17h3" stroke-linecap="round"/></svg>Phone</a>
+</nav>
+<script src="../assets/card.js"></script>
+</body>
+</html>

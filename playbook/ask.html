@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Ask · Signal cards</title>
+<link rel="stylesheet" href="assets/fonts/inter.css">
+<link rel="stylesheet" href="assets/ios-tokens.css">
+<link rel="stylesheet" href="assets/ios-components.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page page--ask">
+
+<main class="page-body">
+
+<header class="large-title">
+  <h1>Ask</h1>
+  <p class="date">The cards are what I think matters today. This is for what you&#x27;re wondering.</p>
+  <form class="search" id="box" autocomplete="off" role="search">
+    <svg width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9.5" cy="9.5" r="6.5"/><path d="m14.5 14.5 5 5"/></svg>
+    <input class="ios-field" id="q" type="search" name="q" placeholder="A person, a council or a deal" aria-label="Ask me">
+  </form>
+</header>
+
+<p class="ios-list__footer" style="margin-top:0">Ask me about a person, a council or a deal. Where I have cards, I&#x27;ll bring them up. Where I don&#x27;t, I&#x27;ll say what I know and what I read to know it.</p>
+
+<div class="ios-list__header">Try</div>
+<ul class="ios-list tries-list">
+  <li><button class="ios-list__row ios-list__row--tappable" data-q="cold"><span class="ios-list__title">Who&#x27;s going cold?</span><span class="ios-list__chevron">›</span></button></li>
+  <li><button class="ios-list__row ios-list__row--tappable" data-q="kelbrook"><span class="ios-list__title">What&#x27;s happening with Kelbrook?</span><span class="ios-list__chevron">›</span></button></li>
+  <li><button class="ios-list__row ios-list__row--tappable" data-q="ashcombe"><span class="ios-list__title">Who am I talking to about Ashcombe?</span><span class="ios-list__chevron">›</span></button></li>
+</ul>
+<p class="ios-list__footer" id="fallback" role="status" hidden>Not one I&#x27;ve prepared for this playbook. Try one of the three above.</p>
+
+<section class="answer" id="a-cold" hidden>
+  <div class="card-page">
+    <article class="card">
+      <span class="kind">My answer <span class="sure">· likely</span></span>
+      <h2>Three people. All three already have cards.</h2>
+      <p>Sarah Whitlow at Thornbury Vale: 22 days since her last real reply, three times her usual gap, and slowing since the budget meeting. Daniel Okoro at Calderside: you speak roughly every six weeks and it has been seven. Marlow Heath: four notes from you since May and nothing back. I have suggested resting it.</p>
+      <p class="aside">Two who might look cold but aren&#x27;t. Hannah Reid is quiet, but quiet is her normal. Priya Nair isn&#x27;t cold either. You are: you owe her the data-residency note.</p>
+    </article>
+    <section class="card-back">
+      <h2 class="back-title">The thinking</h2>
+      <div class="ios-list__header">What I read</div>
+      <ul class="ios-list read">
+        <li class="ios-list__row"><span class="ios-list__title">Reply gaps for all eighteen named people, each against their own usual gap. Sarah&#x27;s normal was a day; Daniel&#x27;s is six weeks. Cold is measured against the person, not a fixed number of days.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Both calendars: no meeting booked with any of the three.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Your notes to Marlow Heath: four, May to August, all unanswered.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Your promise to Priya on 31 August, and Drive: the data-residency note, updated 2 September.</span></li>
+      </ul>
+      <div class="ios-list__header">Then</div>
+      <ul class="ios-list"><li class="ios-list__row"><span class="ios-list__title">If you have to ask me this, I should have shown you sooner. I&#x27;ll move Sustain cards up as soon as a gap passes twice someone&#x27;s rhythm, so this question has nothing to say next time.</span></li></ul>
+    </section>
+  </div>
+  <div class="ios-list__header">Moved to the top of your home</div>
+  <div class="grid">
+    <a class="card card--item" data-c="sustain" href="cards/sustain-sarah-slowing.html">
+      <span class="kind kind--sustain">Sustain</span>
+      <h2>Message Sarah Whitlow</h2>
+      <p>Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.</p>
+      <p class="when">Any day this week. The gap widens each day you wait.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Note</span>
+    </a>
+    <a class="card card--item" data-c="sustain" href="cards/sustain-daniel-rhythm.html">
+      <span class="kind kind--sustain">Sustain</span>
+      <h2>Reconnect with Daniel Okoro</h2>
+      <p>You speak roughly every six weeks and it has been seven. He asked in August how Borsetshire phased the rollout, and now there is a note on it.</p>
+      <p class="when">Any day this week.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Note</span>
+    </a>
+    <a class="card card--item" data-c="sustain" href="cards/sustain-marlow-rest.html">
+      <span class="kind kind--sustain">Sustain</span>
+      <h2>Let Marlow Heath rest</h2>
+      <p>Four notes from you since May, nothing back. A fifth would cost more than it gains. I&#x27;ll stop suggesting them and watch for a warm path instead.</p>
+      <span class="ios-btn ios-btn--tinted">Rest It</span>
+    </a>
+    <a class="card card--item" data-c="sustain" href="cards/sustain-priya-promise.html">
+      <span class="kind kind--sustain">Sustain</span>
+      <h2>Close the loop with Priya Nair</h2>
+      <p>You promised her the data-residency note on 31 August. It is two weeks later and it hasn&#x27;t gone.</p>
+      <p class="when">Worth doing today. A promise ages badly.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Note</span>
+    </a>
+  </div>
+</section>
+
+<section class="answer" id="a-kelbrook" hidden>
+  <div class="card-page">
+    <article class="card">
+      <span class="kind">My answer <span class="sure">· sure</span></span>
+      <h2>Stuck on price, and one voice short.</h2>
+      <p>Kelbrook stands at coalition. Nadia Hussain, Digital Lead, is for it, and so is the service lead. Mark Ellery in finance wrote on 9 September that the annual figure isn&#x27;t in this year&#x27;s budget. Every message from him mentions the price; none questions the product. Paul Denny, Director of Communities, is on no thread, and Nadia has mentioned him twice. Nothing is booked in either calendar.</p>
+      <p>Two cards are live. Offer Mark the partial rollout, which is a third of the price and not a discount. And ask Nadia whether to bring Paul in before the price goes round again.</p>
+    </article>
+    <section class="card-back">
+      <h2 class="back-title">The thinking</h2>
+      <div class="ios-list__header">What I read</div>
+      <ul class="ios-list read">
+        <li class="ios-list__row"><span class="ios-list__title">The Kelbrook thread since June: 18 messages. Mark&#x27;s four all mention price.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Mark&#x27;s message of 9 September.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Nadia&#x27;s messages of 15 July and 21 August, the two that name Paul.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Web: Kelbrook&#x27;s senior team page.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Both calendars: nothing booked with anyone at Kelbrook.</span></li>
+      </ul>
+      <div class="ios-list__header">Then</div>
+      <ul class="ios-list"><li class="ios-list__row"><span class="ios-list__title">Send either card and I&#x27;ll read who replies. If the service lead answers on Mark&#x27;s thread, price has stopped being the blocker. If Nadia hesitates about Paul, I&#x27;ll drop that one and let the price offer land first.</span></li></ul>
+    </section>
+  </div>
+  <div class="ios-list__header">Moved to the top of your home</div>
+  <div class="grid">
+    <a class="card card--item" data-c="advance" href="cards/advance-kelbrook-price.html">
+      <span class="kind kind--advance">Advance</span>
+      <h2>Offer Kelbrook the partial rollout</h2>
+      <p>Mark Ellery&#x27;s objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.</p>
+      <p class="when">Any day this week.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Offer</span>
+    </a>
+    <a class="card card--item" data-c="expand" href="cards/expand-kelbrook-director.html">
+      <span class="kind kind--expand">Expand</span>
+      <h2>Ask Nadia Hussain to bring her director in</h2>
+      <p>Mark Ellery&#x27;s price question is really a priorities question, and priorities are set above him. Nadia has mentioned her director twice.</p>
+      <p class="when">Any day this week.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Ask</span>
+    </a>
+  </div>
+</section>
+
+<section class="answer" id="a-ashcombe" hidden>
+  <div class="card-page">
+    <article class="card">
+      <span class="kind">My answer <span class="sure">· sure</span></span>
+      <h2>Two people, and a gap.</h2>
+      <p>Tom Reynolds, Service Design Lead, is your champion. On Thursday he asked whether BOPS can import their case records and pulled Priya Nair into the thread. Priya, Head of IT, met you on Tuesday and has twice asked whether officers will actually use it. You owe her the data-residency note you promised on 31 August.</p>
+      <p>Nobody who holds a budget, yet. That is the gap, and it&#x27;s why there is no Expand card for Ashcombe: I don&#x27;t know who to point at.</p>
+    </article>
+    <section class="card-back">
+      <h2 class="back-title">The thinking</h2>
+      <div class="ios-list__header">What I read</div>
+      <ul class="ios-list read">
+        <li class="ios-list__row"><span class="ios-list__title">Every Ashcombe thread and who is on each. Two names: Tom and Priya.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Both calendars: Tuesday&#x27;s intro with Priya, 8 September. Nothing else booked.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Web: Ashcombe&#x27;s senior team page. No name on it appears anywhere in your mail.</span></li>
+        <li class="ios-list__row"><span class="ios-list__title">Your goal: coalition before partial, and a budget holder is part of a coalition.</span></li>
+      </ul>
+      <div class="ios-list__header">Then</div>
+      <ul class="ios-list"><li class="ios-list__row"><span class="ios-list__title">I&#x27;ll raise an Expand card the moment a third name appears on a thread or a calendar. If you already know who holds it, a name is enough.</span></li></ul>
+    <ul class="ios-list"><li class="ios-list__row ios-list__row--field"><textarea class="ios-field say" rows="2" placeholder="A name, or where to look." aria-label="A name, or where to look"></textarea></li></ul>
+    <div class="actions"><button class="ios-btn ios-btn--filled" id="saydone" data-ack="Thanks. I&#x27;ll look for them in your mail and on the web, and raise an Expand card when I have a way in.">Tell Me</button></div>
+    <p class="ios-list__footer" id="sayack" role="status" hidden></p>
+    </section>
+  </div>
+  <div class="ios-list__header">Moved to the top of your home</div>
+  <div class="grid">
+    <a class="card card--item" data-c="advance" href="cards/advance-tom-records.html">
+      <span class="kind kind--advance">Advance</span>
+      <h2>Answer Tom Reynolds today</h2>
+      <p>He asked on Thursday whether BOPS can import their existing case records, and pulled Priya Nair, his head of IT, into the thread. That is a door opening.</p>
+      <p class="when">Worth doing today. An unanswered question from a champion goes stale.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Answer</span>
+    </a>
+    <a class="card card--item" data-c="sustain" href="cards/sustain-priya-promise.html">
+      <span class="kind kind--sustain">Sustain</span>
+      <h2>Close the loop with Priya Nair</h2>
+      <p>You promised her the data-residency note on 31 August. It is two weeks later and it hasn&#x27;t gone.</p>
+      <p class="when">Worth doing today. A promise ages badly.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Note</span>
+    </a>
+    <a class="card card--item" data-c="advance" href="cards/advance-priya-peer-call.html">
+      <span class="kind kind--advance">Advance</span>
+      <h2>Offer Priya Nair a call with Borsetshire&#x27;s IT lead</h2>
+      <p>She has asked &quot;will officers actually use it&quot; twice this week. The best answer is not from you. It is from someone in her job who has done it.</p>
+      <p class="when">Any day this week.</p>
+      <span class="ios-btn ios-btn--tinted">Send the Offer</span>
+    </a>
+    <a class="card card--item" data-c="ask" href="cards/ask-priya-meeting.html">
+      <span class="kind kind--ask">Ask</span>
+      <h2>You met Priya Nair on Tuesday. How did it go?</h2>
+      <p>She joined the Ashcombe thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.</p>
+      <p class="when">Ten seconds. Best this week.</p>
+      <span class="ios-btn ios-btn--tinted">Answer</span>
+    </a>
+  </div>
+</section>
+
+<p class="ios-list__footer foot-line">Three questions prepared. The box answers with cards where cards exist and a paragraph where they don&#x27;t, and every answer says what it read. On the home the box sits below the cards, not above them: the cards come to you; the box is for what you&#x27;re wondering. An answer is not a new kind of card.</p>
+
+</main>
+
+<nav class="ios-tabbar" aria-label="Sections">
+  <a class="ios-tabbar__item" href="index.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="16" height="12" rx="2.5"/><path d="M6 2.5h10"/></svg>Cards</a>
+  <a class="ios-tabbar__item" aria-selected="true" href="ask.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9.5" cy="9.5" r="6.5"/><path d="m14.5 14.5 5 5"/></svg>Ask</a>
+  <a class="ios-tabbar__item" href="phone.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="6" y="2" width="10" height="18" rx="2.5"/><path d="M9.5 17h3" stroke-linecap="round"/></svg>Phone</a>
+</nav>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+  var q=$('#q'),fallback=$('#fallback'),answers=$$('.answer'),rows=$$('.tries-list [data-q]');
+  var words={cold:['cold','quiet','gone','slow','dark'],kelbrook:['kelbrook','mark','ellery','nadia','hussain','paul','denny'],ashcombe:['ashcombe','tom','reynolds','priya','nair']};
+  function match(t){t=t.toLowerCase();var hit=null;Object.keys(words).forEach(function(k){if(!hit&&words[k].some(function(w){return t.indexOf(w)>-1}))hit=k});return hit;}
+  function show(k,fromHash){
+    answers.forEach(function(a){a.hidden=true});fallback.hidden=true;
+    rows.forEach(function(r){r.setAttribute('aria-current',r.getAttribute('data-q')===k?'true':'false')});
+    var a=k&&$('#a-'+k);
+    if(!a){fallback.hidden=false;return;}
+    var r=rows.filter(function(x){return x.getAttribute('data-q')===k})[0];
+    if(r)q.value=r.querySelector('.ios-list__title').textContent;
+    a.hidden=false;
+    if(!fromHash){try{history.replaceState(null,'','#'+k)}catch(e){}}
+    a.scrollIntoView({behavior:fromHash?'auto':'smooth',block:'start'});
+  }
+  rows.forEach(function(r){r.addEventListener('click',function(){show(r.getAttribute('data-q'))})});
+  $('#box').addEventListener('submit',function(e){e.preventDefault();show(match(q.value));});
+  var sd=$('#saydone');if(sd){sd.addEventListener('click',function(){var t=$('.say').value.trim(),ack=$('#sayack');ack.textContent=t?sd.getAttribute('data-ack'):'A name is enough. Or leave it with me.';ack.hidden=false;});}
+  var h=location.hash.replace('#','');
+  var qs=/[?&]q=([^&]*)/.exec(location.search);
+  if(h&&$('#a-'+h)){show(h,true);}
+  else if(qs){var t=decodeURIComponent(qs[1].replace(/\+/g,' '));q.value=t;show(match(t),true);}
+})();
+</script>
+</body>
+</html>
