@@ -61,10 +61,23 @@ the grid, never above it: the cards come to you; the box is for what you're wond
 cards ripen on the phone ("Ten seconds. Best while you remember"). Act cards come to the phone
 only when the noun is a short note you would happily hand to Mail; a brief or anything you would
 want to edit stays at the desk, and the card says so. Swipe left is Not Now, with the card's one
-line. Swipe right opens the noun in a sheet and never sends. On an Ask card a swipe right does nothing: the
-tool never guesses an answer from a gesture. Not Relevant stays a button, because the one-tap
-why is where the tool learns. The thinking is the card's second page: scroll down and the card
-snaps to it.
+line. Swipe right opens the noun in a sheet and never sends. On an Ask card a swipe right does
+nothing: the tool never guesses an answer from a gesture. Not Relevant stays a button, because the
+one-tap why is where the tool learns. Swipes work only while the card sits on the deck.
+
+Scroll down and the card widens to the screen's edges and becomes a full-width surface; the deck
+beneath it folds away, and the relationship follows on that surface the way Apple lays out a
+grouped page: an uppercase footnote header above an inset group in the grouped grey, rows parted
+by hairlines, no borders. First the noun: the note itself with Open in Mail, the talking points, or, on an Ask card,
+what each answer changes. Then the person: name, role and council, one line of where things stand,
+and what the tool has seen as dated rows. Then one short paragraph in the tool's voice, *Why now*
+or *Why I'm asking*, which also says where the answer will be kept. The card about your own voice
+has no person card; its evidence stands on its own. The sheet stays as the quick path from the
+front. Once the card's own buttons have scrolled away, Not Now and the one action float at the
+foot. The screen has no large title: an app bar carries the mark on the left, the day and the count
+of cards in the middle, and a menu on the right that opens the Desk and the Ask. At rest the card
+fills the screen, with the edges of the next two cards showing beneath it. Beside the phone, the
+playbook shows the signal that raised the card: its name, its meaning, and what fired here.
 
 **The box.** A place to ask about a person, a council or a deal. It answers with cards where
 cards exist (it moves them to the top of the home) and with a paragraph where they don't. Every
@@ -90,21 +103,29 @@ its own.
 | The answers of an Ask card | an inset grouped list; one row gets the checkmark; the suggested one says so | the same list |
 | A pick of several | the same list, with a limit, and a filled button to confirm | stays at the desk |
 | A sentence in your words | a text field in a list row, and a filled button | stays at the desk |
-| The thinking | inset grouped lists with section headers, beside the front | the card's second page: scroll down and it snaps to it |
+| The thinking | inset grouped lists with section headers, beside the front | inset groups with uppercase headers on the surface the card opens into: the noun, the story so far, what I read, one paragraph of why |
+| The person | not shown yet | on the surface itself, as on a Contacts page: initials, name, role and council, one line of where things stand |
+| What each answer changes | the answer's line, said back after you pick | rows on the page: the answer, then what the tool does with it |
 | Not sure, when you hold the answer | a segmented control in the last row of that list; the reply is the list footer | stays at the desk |
-| The draft, brief or note | a form sheet over a dimmed page: Cancel, the title, Open in Mail | a bottom sheet with a grabber |
+| The draft, brief or note | a form sheet over a dimmed page: Cancel, the title, Open in Mail | on the page itself, with Open in Mail; a bottom sheet with a grabber as the quick path from the front |
+| The actions once the card has opened | the same buttons, always in view | a floating capsule at the foot: Not Now and the one action |
 | What the tool says back | the footer line under the actions | a short banner that fades |
 | The kinds | a dot in Apple's colour before the label: Sustain green, Advance blue, Expand orange, Ask and Connect grey | the same |
-| Home navigation | a tab bar: Cards, Ask, Phone. The kinds are a segmented control, because they filter rather than navigate | the same |
+| Home navigation | a tab bar: Cards, Ask, Phone. The kinds are a segmented control, because they filter rather than navigate | an app bar: the mark, the day and count, a menu that opens the Desk and the Ask as an action sheet |
 
 Wording follows the HIG's writing rules where it is interface text: button labels in title case
 and starting with a verb ("Send the Note", "Not Now", "Open in Mail"), everything else in
 sentence case, tab labels one word each, section headers short noun phrases. The cards keep
 their own first-person voice.
 
-Where the browser cannot do the real thing (sheet physics, the glass material's refraction, the
-Dynamic Type ladder) the playbook does the nearest plain thing and says so in a stylesheet
-comment. Apple has no toast; the phone's banner is the nearest honest thing.
+Where the browser cannot do the real thing (sheet physics, the Dynamic Type ladder) the playbook
+does the nearest plain thing and says so in a stylesheet comment. The glass material is turned off
+on purpose: bars, capsules and buttons are solid surfaces with a hairline. Apple has no toast; the
+phone's banner is the nearest honest thing.
+
+The phone bends the HIG in one place on purpose: its actions float in a capsule at the foot (the
+iOS 26 floating bar shape) once the card's own buttons have scrolled away. Each card is a
+relationship, and the page it opens into tells that relationship as a story.
 
 ## The ladder (where a deal stands)
 
