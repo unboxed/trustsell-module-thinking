@@ -1,0 +1,1109 @@
+/* iOS 27 component recipes for the web.
+ *
+ * Hand-authored, built on the measured values in tokens/ios-tokens.css --
+ * load that first. Colours and control geometry come from the kit; the
+ * layout numbers (padding, gaps, list insets) come from the HIG corpus
+ * where it states them, and are marked where it doesn't.
+ *
+ * Load order:
+ *     <link rel="stylesheet" href="tokens/ios-tokens.css">
+ *     <link rel="stylesheet" href="ios-components.css">
+ */
+
+/* Sizes are measured as the box you see, so the box has to be the one
+   being sized. Twice a measured value was quietly inflated by padding
+   under content-box: a 44pt row came out at 66, a 270pt alert at 302.
+
+   This was an enumerated list of every class in the file, which went
+   stale the moment the next component was added -- the action sheet
+   landed at 393pt against its own 361pt max-width for exactly that
+   reason. Matching the namespace instead keeps it true as the kit
+   grows, and still touches nothing outside it: importing the kit
+   should not change the box model of a page it knows nothing about. */
+[class^="ios-"],
+[class*=" ios-"] {
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* Not measured. The kit exports components on transparent or
+     placeholder backgrounds, so there is no screenshot to read a page
+     background off. These are the grouped-content pairing iOS Settings
+     uses: a grey page with white cards floating on it, inverting to a
+     black page with near-black cards in dark. Getting this backwards --
+     white page, grey cards -- is the single fastest way to make a web
+     page read as "not quite iOS". */
+  --ios-bg: #F2F2F7;          /* systemGroupedBackground: the page */
+  --ios-bg-card: #FFFFFF;     /* secondarySystemGroupedBackground: rows */
+  --ios-separator: rgba(60, 60, 67, 0.29);
+
+  --ios-radius-card: 10px;
+  --ios-radius-control: 12px;
+  --ios-gutter: 16px;      /* layout.md: standard content margin */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ios-bg: #000000;
+    --ios-bg-card: #1C1C1E;
+    --ios-separator: rgba(84, 84, 88, 0.6);
+  }
+}
+
+/* Increase Contrast, using Apple's own published values.
+ *
+ * Apple's default light palette does not clear Apple's own contrast
+ * table. Measured on white: secondary label 3.44:1, accent as text
+ * 3.52:1, red 3.57:1 -- all under the 4.5:1 accessibility.md requires up
+ * to 17 pt. Dark mode is fine; light is where it bites.
+ *
+ * On iOS, Increase Contrast swaps the system colours at render time, and
+ * Apple publishes exactly what it swaps them to -- the "Increased
+ * contrast (light)" column of the Color page's system-colour table.
+ * These are those values, not an approximation. An earlier version
+ * darkened each colour until it cleared 4.5:1 and landed on #006ECF and
+ * #D12E31, which was reasonable and wasn't Apple's answer.
+ *
+ * Note where Apple aims them: #1E6EF4 is 4.57:1 on a white card and
+ * 4.10:1 on the grey page behind it. The card is where list text sits,
+ * so that is the surface being cleared. Accent text placed directly on
+ * the page background stays under the threshold even here. */
+@media (prefers-contrast: more) {
+  :root {
+    --ios-accent: #1E6EF4;                   /* Color page, IC light */
+    --ios-red: #E9152D;                      /* Color page, IC light */
+    --ios-label-secondary: rgba(60, 60, 67, 0.72);  /* 4.74:1 on card */
+  }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root {
+    /* Dark clears 4.5:1 on every pair at the default values, but Apple
+       still publishes an Increased Contrast column for it, and matching
+       the platform matters more than the ratio already being fine. */
+    --ios-accent: #5CB8FF;                   /* Color page, IC dark */
+    --ios-red: #FF6165;                      /* Color page, IC dark */
+    --ios-label-secondary: rgba(235, 235, 245, 0.698);
+  }
+}
+
+body {
+  margin: 0;
+  font: var(--ios-text-body);
+  letter-spacing: var(--ios-track-body);
+  color: var(--ios-label);
+  background: var(--ios-bg);
+  -webkit-font-smoothing: antialiased;
+  /* Inter's variable font carries an optical-size axis, the same idea as
+     SF's Text and Display cuts: as type grows it tightens and its
+     apertures close. Left off, a 34pt title is just a scaled-up 17pt
+     one, which is a large part of why web type stops looking Apple-ish
+     at display sizes. */
+  font-optical-sizing: auto;
+}
+
+/* ---------------------------------------------------------------- Buttons
+
+   Four styles, matching what the HIG actually distinguishes: filled for
+   the primary action, tinted and plain for everything else, and a
+   destructive variant that is a *colour* change on any of them rather
+   than a style of its own.
+
+   Every one is at least 44px tall. buttons.md states 44x44 pt as the
+   general rule for a hit region; the accessibility floor of 28x28 is for
+   less important controls, not a licence to shrink the primary action. */
+
+.ios-btn {
+  font: var(--ios-text-body);
+  letter-spacing: var(--ios-track-body);
+  font-weight: var(--ios-weight-semibold);   /* 590, not 600 */
+  min-height: var(--ios-hit-target);
+  padding: 11px 20px;
+  border: none;
+  border-radius: 999px;                /* iOS 26+ capsule buttons */
+  color: var(--ios-accent);
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: opacity .15s ease, background-color .15s ease,
+              transform .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ios-btn--filled {
+  background: var(--ios-accent);
+  color: #FFFFFF;
+}
+
+.ios-btn--tinted {
+  /* colour-mix keeps the tint tied to the accent, so re-theming one
+     token re-themes the tint with it */
+  background: color-mix(in srgb, var(--ios-accent) 15%, transparent);
+  color: var(--ios-accent);
+}
+
+.ios-btn--destructive        { color: var(--ios-red); }
+.ios-btn--filled.ios-btn--destructive {
+  background: var(--ios-red);
+  color: #FFFFFF;
+}
+
+/* Pressed. The kit's stepper darkens its fill under press rather than
+   fading it, so this darkens too instead of dropping opacity. */
+.ios-btn:active { transform: scale(.97); }
+.ios-btn--filled:active {
+  background: color-mix(in srgb, var(--ios-accent) 85%, #000);
+}
+.ios-btn--filled.ios-btn--destructive:active {
+  background: color-mix(in srgb, var(--ios-red) 85%, #000);
+}
+
+.ios-btn:disabled {
+  opacity: var(--ios-disabled-opacity);
+  cursor: default;
+  transform: none;
+}
+
+.ios-btn:focus-visible {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- Switch
+
+   64x28 with a 14 radius, measured off the kit. The knob is a white
+   circle inset 2px; "on" is systemGreen, "off" is the translucent grey
+   fill. Built on a real checkbox so it is keyboard- and
+   screen-reader-operable without extra work. */
+
+.ios-switch {
+  position: relative;
+  display: inline-block;
+  width: var(--ios-switch-w);
+  height: var(--ios-switch-h);
+  flex: none;
+}
+
+.ios-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ios-switch__track {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--ios-switch-radius);
+  background: var(--ios-fill-track);
+  transition: background-color .2s ease;
+  pointer-events: none;
+}
+
+.ios-switch__track::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(var(--ios-switch-h) - 4px);
+  height: calc(var(--ios-switch-h) - 4px);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .18);
+  transition: transform .2s ease;
+}
+
+.ios-switch input:checked + .ios-switch__track {
+  background: var(--ios-green);
+}
+
+.ios-switch input:checked + .ios-switch__track::after {
+  transform: translateX(calc(var(--ios-switch-w) - var(--ios-switch-h)));
+}
+
+.ios-switch input:disabled + .ios-switch__track {
+  opacity: var(--ios-disabled-opacity);
+}
+
+.ios-switch input:focus-visible + .ios-switch__track {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------ Grouped list
+
+   The inset grouped list is the single most recognisable iOS layout, and
+   the detail people get wrong is the separator: it starts at the text,
+   not at the card edge, and the last row has none at all. */
+
+.ios-list {
+  list-style: none;
+  margin: 0 var(--ios-gutter);
+  padding: 0;
+  background: var(--ios-bg-card);
+  border-radius: var(--ios-radius-card);
+  overflow: hidden;
+}
+
+.ios-list__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: var(--ios-hit-target);
+  padding: 11px var(--ios-gutter);
+  position: relative;
+}
+
+.ios-list__row + .ios-list__row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--ios-gutter);
+  right: 0;
+  height: 1px;
+  background: var(--ios-separator);
+  transform: scaleY(.5);          /* hairline on 2x displays */
+  transform-origin: top;
+}
+
+.ios-list__row--tappable { cursor: pointer; }
+.ios-list__row--tappable:active {
+  background: color-mix(in srgb, var(--ios-label) 8%, transparent);
+}
+
+.ios-list__title { flex: 1; }
+.ios-list__value {
+  color: var(--ios-label-secondary);
+  text-align: right;
+}
+
+.ios-list__chevron {
+  color: var(--ios-label-tertiary);
+  flex: none;
+}
+
+.ios-list__header {
+  font: var(--ios-text-footnote);
+  letter-spacing: var(--ios-track-footnote);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--ios-label-secondary);
+  margin: 24px calc(var(--ios-gutter) * 2) 7px;
+}
+
+.ios-list__footer {
+  font: var(--ios-text-footnote);
+  letter-spacing: var(--ios-track-footnote);
+  color: var(--ios-label-secondary);
+  margin: 7px calc(var(--ios-gutter) * 2) 0;
+}
+
+/* ------------------------------------------------------------- Text field */
+
+.ios-field {
+  font: var(--ios-text-body);
+  color: var(--ios-label);
+  background: var(--ios-surface);
+  border: none;
+  border-radius: var(--ios-radius-control);
+  padding: 12px var(--ios-gutter);
+  min-height: var(--ios-hit-target);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ios-field::placeholder { color: var(--ios-label-tertiary); }
+
+.ios-field:focus {
+  outline: 2px solid var(--ios-accent);
+  outline-offset: -2px;
+}
+
+/* -------------------------------------------------------- Segmented control
+
+   A real radiogroup underneath, so arrow keys work and the selection is
+   announced. The selected segment is a raised white pill on the track. */
+
+.ios-segmented {
+  display: inline-flex;
+  background: var(--ios-fill-control);
+  border-radius: 9px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.ios-segmented label {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  padding: 7px 14px;
+  border-radius: 7px;
+  font: var(--ios-text-subhead);
+  color: var(--ios-label);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ios-segmented input { position: absolute; opacity: 0; inset: 0; margin: 0; }
+
+/* The selected pill is drawn on the label itself rather than a stacked
+   pseudo-element, so it can't drift out of alignment with its own box. */
+.ios-segmented label:has(input:checked) {
+  background: var(--ios-bg-card);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .12);
+}
+
+.ios-segmented label:has(input:focus-visible) {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------- Tab bar
+
+   Bottom-anchored, safe-area aware. The selected item takes the accent;
+   the rest sit at secondary. */
+
+.ios-tabbar {
+  /* iOS 26 floats the tab bar: a translucent capsule inset from the
+     edges with content scrolling underneath it, not a full-bleed bar
+     ruled off by a hairline. The kit already measured the Liquid Glass
+     material and then shaped this like the bar it replaced -- which is
+     the most visible thing on any screen, sitting at the bottom of all
+     of them, and the surest tell that a mockup predates the current OS.
+     Compare App Store, Apple TV, Health: all capsule, all floating. */
+  position: sticky;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+  z-index: 10;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  margin: -62px auto 10px;          /* negative, so content passes under */
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px 6px;
+  border-width: 0;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .16), 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.ios-tabbar__item {
+  flex: 0 0 auto;
+  min-height: 49px;                 /* iOS tab bar height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font: var(--ios-text-caption2);
+  color: var(--ios-label-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 15px;
+  min-height: 46px;
+  border-radius: 999px;
+}
+
+.ios-tabbar__item[aria-selected="true"] {
+  background: color-mix(in srgb, var(--ios-accent) 14%, transparent); color: var(--ios-accent); }
+
+/* --------------------------------------------------------------- Material
+
+   Liquid Glass. The browser cannot do the real thing -- that is a
+   real-time refraction of what sits behind the surface -- but the parts
+   that make it *read* as glass are all reproducible, and leaving them
+   out is why a plain backdrop-filter looks like flat grey.
+
+   Measured off Materials/_Liquid Glass at 4x, the surface has four
+   layers, not one:
+
+     rim        a hairline that is not the same all the way round. Light
+                comes from above, so in dark mode the top edge is #7E7E7E
+                against a #1A1A1A body -- a bright specular line -- while
+                the sides go to #151515, darker than the body. In light
+                mode the whole rim is darker than the body (#C5 top, #97
+                sides on a #F9F9F9 face), so it reads as an outline.
+     falloff    just inside the rim, a band grading back to the body over
+                about 1.5pt: #949494 -> #434343 -> #1F1F1F -> #1A1A1A.
+     body       very slightly darker at the centre than at the edges.
+     ambient    a wide soft shadow, 8% black in light and 15% in dark at
+                the edge, still 3-5% sixteen points out.
+
+   It only works over something. Put it on a flat background and there is
+   nothing to refract and nothing to blur, and it collapses to a grey
+   box. */
+
+.ios-glass,
+.ios-material,
+.ios-navbar,
+.ios-tabbar {
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--ios-bg-card) 62%, transparent),
+      color-mix(in srgb, var(--ios-bg-card) 78%, transparent));
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border: 0.5px solid rgba(0, 0, 0, .14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .55),
+    inset 0 -1px 0 rgba(255, 255, 255, .18),
+    0 2px 8px rgba(0, 0, 0, .06),
+    0 12px 32px rgba(0, 0, 0, .08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ios-glass,
+  .ios-material,
+  .ios-navbar,
+  .ios-tabbar {
+    border-color: rgba(255, 255, 255, .10);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, .34),
+      inset 0 -1px 0 rgba(255, 255, 255, .08),
+      0 2px 8px rgba(0, 0, 0, .30),
+      0 12px 32px rgba(0, 0, 0, .15);
+  }
+}
+
+/* The falloff band. A pseudo-element rather than another gradient on the
+   background, so the backdrop-filter underneath is not disturbed. */
+.ios-glass::before,
+.ios-material::before,
+.ios-navbar::before,
+.ios-tabbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, .22) 0,
+      rgba(255, 255, 255, 0) 6px);
+}
+
+/* The kit ships the tint as named variants, not as one value. Measured
+   from Materials/_Liquid Glass small swatches, "Light" and "Dark" Liquid
+   Glass turn out to be the same neutral grey at two strengths rather
+   than a white-versus-black pair, and "Prominent" is not a tint at all --
+   it is the accent filled in solid, which is what a primary action gets.
+
+   Pick by what is behind the surface: --light over busy or bright
+   content so the colour survives, --dark over quiet content where the
+   control needs to separate from it. */
+.ios-glass--light {
+  background: rgba(115, 115, 128, .078);   /* Inactive Light, a=20/255 */
+}
+
+.ios-glass--dark {
+  background: rgba(116, 116, 128, .18);    /* Inactive Dark, a=46/255 */
+}
+
+.ios-glass--prominent {
+  background: var(--ios-accent);           /* Active Prominent, opaque */
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, .22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .38),
+    0 2px 8px rgba(0, 0, 0, .12),
+    0 12px 32px rgba(0, 0, 0, .16);
+}
+
+.ios-glass--prominent::before { opacity: .5; }
+
+/* Clear: the variant with almost no tint, for glass over vivid content
+   where a milky fill would kill the colour underneath. */
+.ios-glass--clear {
+  background: color-mix(in srgb, var(--ios-bg-card) 22%, transparent);
+  backdrop-filter: saturate(200%) blur(12px);
+  -webkit-backdrop-filter: saturate(200%) blur(12px);
+}
+
+.ios-glass--capsule { border-radius: 999px; }
+.ios-glass--card    { border-radius: 22px; }
+
+/* A floating glass button -- the iOS 26 shape that reads as glass fastest,
+   because it sits over scrolling content rather than over a flat panel. */
+.ios-glass-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: var(--ios-hit-target);
+  min-width: var(--ios-hit-target);
+  padding: 11px 20px;
+  border-radius: 999px;
+  font: var(--ios-text-body);
+  font-weight: 590;
+  color: var(--ios-label);
+  cursor: pointer;
+  transition: transform .12s ease;
+}
+
+.ios-glass-btn:active { transform: scale(.96); }
+
+.ios-glass-btn:focus-visible {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: 2px;
+}
+
+/* Bars are the other place glass belongs: content scrolls underneath, so
+   there is always something to refract. */
+.ios-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px var(--ios-gutter);
+  padding-top: calc(10px + env(safe-area-inset-top, 0px));
+  border-width: 0 0 0.5px 0;
+  border-radius: 0;
+  color: var(--ios-accent);
+  font: var(--ios-text-body);
+}
+
+.ios-navbar__title {
+  color: var(--ios-label);
+  font: var(--ios-text-headline);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .ios-glass,
+  .ios-glass--clear,
+  .ios-navbar,
+  .ios-tabbar {
+    background: var(--ios-bg-card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .ios-glass::before { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ios-btn,
+  .ios-switch__track,
+  .ios-switch__track::after { transition: none; }
+}
+
+/* ---------------------------------------------------------- Controls
+
+   A floating capsule that holds one or more controls, which is how iOS
+   26 groups them: Calendar's back pill and its list/search/add trio,
+   Pages' Cancel and its overflow circle, Maps' 3D/globe/locate stack.
+   The kit had the material and the capsule radius and no component that
+   put them together, so every design either hand-rolled the group or
+   fell back on the flat bar the capsule replaced.
+
+   Composes with .ios-glass: the group takes the material, the items are
+   plain controls inside it, and a hairline separates them the way it
+   separates list rows. */
+
+.ios-controls {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 3px;
+  gap: 0;
+  border-width: 0;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+.ios-controls--vertical {
+  flex-direction: column;
+  border-radius: 22px;
+}
+
+.ios-controls__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  /* Full target even where the glyph is small: these sit at a screen
+     edge, which is the hardest place to hit accurately. */
+  min-height: var(--ios-hit-target);
+  min-width: var(--ios-hit-target);
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ios-accent);
+  font: var(--ios-text-body);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* A hairline between siblings, never on the ends. Drawn as a positioned
+   element rather than an inset shadow or a border: the item is fully
+   rounded, so either of those follows the corner and the divider comes
+   out as an arc rather than a rule. */
+.ios-controls__item { position: relative; }
+.ios-controls__item + .ios-controls__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22%;
+  bottom: 22%;
+  width: 1px;
+  transform: scaleX(.5);
+  background: var(--ios-separator);
+  pointer-events: none;
+}
+.ios-controls--vertical .ios-controls__item + .ios-controls__item::before {
+  left: 22%;
+  right: 22%;
+  top: 0;
+  bottom: auto;
+  width: auto;
+  height: 1px;
+  transform: scaleY(.5);
+}
+
+.ios-controls__item:active { transform: scale(.94); }
+.ios-controls__item:focus-visible {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: 2px;
+}
+.ios-controls__item[aria-pressed="true"],
+.ios-controls__item[aria-current="page"] {
+  background: color-mix(in srgb, var(--ios-accent) 16%, transparent);
+}
+
+/* ------------------------------------------------------- Empty state
+
+   Measured from assets/ui-kit/Empty States/, which renders the family at
+   393x854pt: the copy sits centred at about 46% down, and the primary
+   action is a capsule inset 35pt each side, 52pt tall, 35pt clear of the
+   bottom edge. That last part is the bit designs get wrong -- the action
+   is pinned to the bottom of the screen, not tucked under the sentence
+   -- and it is why an empty state built by eye reads as a dialog rather
+   than as a screen.
+
+   references/screens.md asks for three distinct empties (first run,
+   filtered to nothing, deliberately cleared). This is the shape; the
+   copy is what separates them. */
+
+.ios-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 0;
+  padding: 24px 35px 35px;
+  text-align: center;
+}
+
+.ios-empty__glyph {
+  color: var(--ios-label-tertiary);
+  margin-bottom: 12px;
+}
+
+.ios-empty__title {
+  margin: 0;
+  color: var(--ios-label);
+  font: var(--ios-text-headline);
+  letter-spacing: var(--ios-track-headline);
+}
+
+.ios-empty__body {
+  margin: 2px 0 0;
+  max-width: 28ch;
+  color: var(--ios-label-secondary);
+  font: var(--ios-text-body);
+  letter-spacing: var(--ios-track-body);
+}
+
+/* Pinned, not trailing the copy: margin-top auto pushes it to the
+   bottom of whatever box the state occupies. */
+.ios-empty__action {
+  margin-top: auto;
+  align-self: stretch;
+  min-height: 52px;
+  border-radius: 999px;
+}
+
+/* -------------------------------------------------------- Status bar
+
+   Measured from assets/ui-kit/Status Bars and Menu Bars/iPhone/ at
+   393pt wide: the time sits 52pt from the leading edge, the Dynamic
+   Island is 122x36pt and exactly centred (its midpoint lands on 196.4
+   against the screen's 196.5), and the three indicators are right
+   grouped at 12-13pt tall with roughly 7pt between them.
+
+   The glyphs here are drawn, not Apple's. SF Symbols cannot ship in a
+   web kit and these are the shapes the corpus renders -- ascending
+   bars, arcs, a rounded cell -- at the measured sizes. A mockup needs
+   the proportion and the position to be right; it does not need to
+   pass off the artwork as the original. */
+
+.ios-statusbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 0 38px 0 52px;
+  color: var(--ios-label);
+  font: var(--ios-text-footnote);
+  font-weight: var(--ios-weight-semibold);
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+}
+
+.ios-statusbar__island {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13px;
+  width: 122px;
+  height: 36px;
+  border-radius: 999px;
+  background: #000;
+  pointer-events: none;
+}
+
+.ios-statusbar__indicators {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ios-statusbar__indicators svg { display: block; }
+
+/* ------------------------------------------------------------ Alert
+
+   Measured from assets/ui-kit/Alerts/: 270pt wide, ~21pt corner radius,
+   buttons 34pt tall laid side by side as capsules.
+
+   Two things here are not what most people build. The title and message
+   are LEFT aligned, not centred -- the centred alert is the older iOS
+   one and it is what everyone reaches for from memory. And the buttons
+   are capsules sitting next to each other, not full-width text
+   separated by hairlines. Stacked is the variant, used when a label is
+   long or an action is destructive enough to want its own row; side by
+   side is the default.
+
+   The 34pt button height is Apple's and is below the 44pt general rule
+   while above the 28pt accessibility floor -- the same two numbers
+   pages/buttons.md and specs.md disagree on. Kept as measured, because
+   the width does the work here and inventing a taller button would make
+   this stop matching the thing it was measured from. */
+
+.ios-alert {
+  width: 270px;
+  max-width: calc(100vw - 48px);
+  padding: 19px 16px 16px;
+  border-radius: 21px;
+  background: var(--ios-bg-card);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .34);
+  text-align: left;
+}
+
+.ios-alert__title {
+  margin: 0;
+  color: var(--ios-label);
+  font: var(--ios-text-headline);
+  letter-spacing: var(--ios-track-headline);
+}
+
+.ios-alert__message {
+  margin: 4px 0 0;
+  color: var(--ios-label);
+  font: var(--ios-text-subhead);
+  letter-spacing: var(--ios-track-subhead);
+}
+
+.ios-alert__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.ios-alert--stacked .ios-alert__actions {
+  flex-direction: column-reverse;   /* the confirming action sits on top */
+}
+
+.ios-alert__actions .ios-btn {
+  flex: 1;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font: var(--ios-text-headline);
+  letter-spacing: var(--ios-track-headline);
+}
+
+/* Cancel is a filled grey capsule here, not a plain text button. */
+.ios-alert__cancel {
+  background: var(--ios-fill-control);
+  color: var(--ios-label);
+}
+
+/* ----------------------------------------------------- Action sheet
+
+   From assets/ui-kit/Action Sheets/. The structure is certain and the
+   proportions are not: unlike the alert and the status bar, that
+   rendering carries no reliable scale -- three passes at measuring it
+   gave three different capsule heights, because the point size of the
+   canvas has to be assumed. So the shape below is read off the image
+   and the numbers are chosen to sit with the rest of the kit rather
+   than claimed as measured. Say so rather than quote a figure derived
+   from a guess.
+
+   What is certain, and is not what people build from memory: the
+   actions are full-width pill capsules stacked with a gap between them,
+   on a grey fill, with the title and message LEFT aligned above. The
+   old action sheet -- full-width rows divided by hairlines, cancel in a
+   detached card below -- is the one everyone remembers. A destructive
+   action is red LABEL on the same grey capsule, never a red fill; the
+   fill is reserved for the confirming action in an alert. */
+
+.ios-actionsheet {
+  width: 100%;
+  max-width: 361px;
+  padding: 18px 16px 16px;
+  border-radius: 26px;
+  background: var(--ios-bg-card);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .3);
+  text-align: left;
+}
+
+.ios-actionsheet__title {
+  margin: 0;
+  color: var(--ios-label);
+  font: var(--ios-text-headline);
+  letter-spacing: var(--ios-track-headline);
+}
+
+.ios-actionsheet__message {
+  margin: 4px 0 0;
+  color: var(--ios-label-secondary);
+  font: var(--ios-text-subhead);
+  letter-spacing: var(--ios-track-subhead);
+}
+
+.ios-actionsheet__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Specific enough to defend itself. A consumer stylesheet reasonably
+   says "a button that is not filled takes the accent colour", and that
+   is right everywhere except here: an action sheet's choices are label
+   coloured, and only the destructive one is tinted. The component has
+   to win that argument without the page having to know. */
+.ios-actionsheet .ios-actionsheet__actions .ios-btn:not(.ios-btn--filled):not(.ios-btn--destructive) {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 999px;
+  background: var(--ios-fill-control);
+  color: var(--ios-label);
+  font: var(--ios-text-body);
+  letter-spacing: var(--ios-track-body);
+}
+
+/* Red label, grey capsule. A destructive action in an action sheet is
+   one of several choices, not the confirming one. */
+.ios-actionsheet .ios-actionsheet__actions .ios-btn.ios-btn--destructive {
+  background: var(--ios-fill-control);
+  color: var(--ios-red);
+}
+
+/* ---------------------------------------------------------- Stepper
+
+   The tokens for this were measured long ago -- --ios-stepper-w 46,
+   --ios-stepper-h 32, --ios-stepper-radius 16 -- and nothing ever used
+   them. A measured value with no component to spend it on is the same
+   half-finished state the coverage audit exists to surface.
+
+   From assets/ui-kit/Steppers/: one grey pill holding minus and plus,
+   divided by a hairline that stops short of the ends. Each half is the
+   full 46x32; the control is 92 wide in total. That is under the 44pt
+   hit target, which is Apple's own call here -- a stepper sits inside a
+   row that is itself 44 tall, and the two halves are wide rather than
+   tall. */
+
+.ios-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  height: var(--ios-stepper-h);
+  border-radius: var(--ios-stepper-radius);
+  background: var(--ios-fill-control);
+  overflow: hidden;
+}
+
+.ios-stepper__btn {
+  position: relative;
+  width: var(--ios-stepper-w);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--ios-label);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The divider, positioned rather than bordered: the pill is rounded and
+   a border follows the curve. Same reason as .ios-controls. */
+.ios-stepper__btn + .ios-stepper__btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  transform: scaleX(.5);
+  background: var(--ios-separator);
+}
+
+.ios-stepper__btn:active { background: var(--ios-fill-track); }
+.ios-stepper__btn:disabled {
+  opacity: var(--ios-disabled-opacity);
+  cursor: default;
+}
+.ios-stepper__btn:focus-visible {
+  outline: 3px solid var(--ios-accent);
+  outline-offset: -3px;
+}
+
+/* ----------------------------------------------------- Page control
+
+   Measured from assets/ui-kit/Page Controls/, which renders the family
+   at three lengths and shows the thing nobody implements: past six
+   pages the dots SHRINK toward the ends, so a long control still reads
+   as a fixed-width row rather than marching off the screen.
+
+   The ratios are exact in the rendering:
+
+     1-6 pages   every dot full size
+     7 pages     outermost pair at 0.75
+     8+ pages    outermost pair at 0.5, the next pair at 0.75
+
+   Dot and gap are equal, which is what makes the rhythm read. */
+
+.ios-pagecontrol {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ios-pagecontrol__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--ios-label);
+  opacity: .3;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.ios-pagecontrol__dot[aria-current="true"] { opacity: 1; }
+
+.ios-pagecontrol--seven .ios-pagecontrol__dot:first-child,
+.ios-pagecontrol--seven .ios-pagecontrol__dot:last-child {
+  transform: scale(.75);
+}
+
+.ios-pagecontrol--many .ios-pagecontrol__dot:first-child,
+.ios-pagecontrol--many .ios-pagecontrol__dot:last-child {
+  transform: scale(.5);
+}
+.ios-pagecontrol--many .ios-pagecontrol__dot:nth-child(2),
+.ios-pagecontrol--many .ios-pagecontrol__dot:nth-last-child(2) {
+  transform: scale(.75);
+}
+
+/* ----------------------------------------------------------- Slider
+
+   Measured from assets/ui-kit/Sliders/: a 4pt track with the knob at
+   24x16pt. The knob is a CAPSULE, wider than it is tall -- not the
+   circle it was for a decade, and the thing that dates a hand-built
+   slider instantly. Ticks and a leading/trailing symbol are variants
+   the family renders; both are optional and neither is the default.
+
+   Built on <input type=range> so it keeps the platform's keyboard
+   behaviour: arrows step, Home and End jump to the bounds. A div with
+   a drag handler looks the same and cannot be operated without a
+   pointer, which is the usual reason a custom slider fails an audit. */
+
+.ios-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;             /* the knob's height, so the hit area matches */
+  background: transparent;
+  cursor: pointer;
+}
+
+/* The fill left of the knob. Firefox has ::-moz-range-progress and
+   WebKit has no equivalent, so a gradient stop does the work in both --
+   driven by --ios-slider-value, which the page sets to the percentage:
+
+     <input class="ios-slider" type="range" value="72"
+            style="--ios-slider-value: 72">
+
+   Without it the track renders unfilled, which is what this component
+   did on Chromium until the rendering was put next to it. */
+.ios-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to right,
+      var(--ios-accent) calc(var(--ios-slider-value, 0) * 1%),
+      var(--ios-fill-track) calc(var(--ios-slider-value, 0) * 1%));
+}
+.ios-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ios-fill-track);
+}
+.ios-slider::-moz-range-progress {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ios-accent);
+}
+
+.ios-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 16px;
+  margin-top: -6px;         /* centre the 16pt knob on the 4pt track */
+  border-radius: 999px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18), 0 0 0 .5px rgba(0, 0, 0, .04);
+}
+.ios-slider::-moz-range-thumb {
+  width: 24px;
+  height: 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18);
+}
+
+.ios-slider:focus-visible { outline: none; }
+.ios-slider:focus-visible::-webkit-slider-thumb {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18), 0 0 0 3px var(--ios-accent);
+}
+.ios-slider:disabled { opacity: var(--ios-disabled-opacity); cursor: default; }
+
+/* The row a slider usually lives in: a symbol either side of the track,
+   which is how volume and brightness read. */
+.ios-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ios-label-secondary);
+}
