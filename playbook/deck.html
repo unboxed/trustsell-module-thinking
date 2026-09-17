@@ -52,31 +52,41 @@
     <!-- The card, already in focus: no stack behind it, no menu under it. -->
     <div class="deck">
       <article class="card deck__card deck__card--front">
-        <div class="deck__labels"><span class="kind kind--ask">Ask</span></div>
-        <h2>A question with a few answers to pick from</h2>
-        <p>I looked first and ran out. Pick the answer that fits and I take it from there. If none fit, say it in your words.</p>
-        <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-        <!-- The one action opens the reply sheet. Its name is a placeholder. -->
-        <div class="reply"><button class="reply__row reply__row--action" type="button" data-reply-open>Reply</button></div>
+        <div class="deck__labels"><span class="kind kind--sustain">Sustain</span></div>
+        <h2>Message Sarah Whitlow</h2>
+        <p>Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.</p>
+        <div class="badges"><span class="badge">Any day this week</span><span class="badge">Thornbury Vale</span></div>
+        <!-- The front holds one filled action and at most one plain one. Mail is connected, so the tool can send on your say-so; the plain action raises the sheet to read first. -->
+        <div class="reply">
+          <button class="reply__row reply__row--action" type="button" data-send-message>Send Message</button>
+          <button class="ios-btn" type="button" data-reply-open>View Draft</button>
+        </div>
+        <!-- What the tool says back once it is sent. On a phone Undo would last a few seconds; here it stays, so the slide can be shown again. -->
+        <div class="said" aria-live="polite">
+          <p>Sent. I will tell you when Sarah replies.</p>
+          <button class="ios-btn" type="button" data-undo>Undo</button>
+        </div>
         <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
         <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
       </article>
     </div>
   </div>
-  <!-- The reply sheet rises over the card; the card stays in view behind it. -->
-  <div class="reply-sheet" role="group" aria-label="Your reply">
-    <div class="reply-sheet__top">
-      <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
-      <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+  <!-- The draft sheet rises over the card from View Draft; the card stays in view behind it. -->
+  <div class="reply-sheet reply-sheet--email" role="group" aria-label="The message">
+    <div class="email__head"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="1.5" y="1.5" width="19" height="15" rx="2"/><path d="m2 3 9 7 9-7"/></svg><span>Email</span><button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button></div>
+    <div>
+      <div class="email__part"><span class="email__label">Subject</span><p>The officer-time numbers you asked for</p></div>
+      <div class="email__part"><span class="email__label">Body</span>
+        <div class="email__body" tabindex="0"><p>Hi Sarah,</p><p>You asked back in July for the officer-time numbers from Borsetshire and I never sent them. Here they are, one page. The short version: case admin down by about a third, which is the figure their finance team cared about most.</p><p>I imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how Borsetshire phased it in, I am around whenever suits.</p><p>Fede</p><span class="badge email__file"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M10.2 6.3 6 10.5a2.6 2.6 0 0 1-3.7-3.7l4.6-4.6a1.7 1.7 0 0 1 2.4 2.4L4.8 9.1a.8.8 0 0 1-1.2-1.2l3.9-3.9"/></svg>Officer-time one-pager</span></div>
+      </div>
     </div>
-    <h2>A question with a few answers to pick from</h2>
-    <ul class="reply-sheet__rows" role="radiogroup" aria-label="Your answer">
-      <li role="radio" aria-checked="false" tabindex="0">Option one</li>
-      <li role="radio" aria-checked="false" tabindex="0">Option two</li>
-      <li role="radio" aria-checked="false" tabindex="0">Option three</li>
-      <li><input type="text" placeholder="Type your answer…" aria-label="Type your answer…"></li>
+    <ul class="reply-sheet__rows">
+      <!-- Ask for a change: the arrow hands your words to the tool, and Send Message waits while they are unsent. -->
+      <li><input type="text" placeholder="Tell me what to change…" aria-label="Tell me what to change" data-ask-input><button class="ask-send" type="button" aria-label="Ask for this change" data-ask disabled><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12V2.5M2.8 6.5 7 2.3l4.2 4.2"/></svg></button></li>
     </ul>
-    <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send disabled>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
+    <!-- The prototype answers every ask the same way, with the short form of the note. -->
+    <template data-redraft><p>Hi Sarah,</p><p>The officer-time numbers you asked for in July are attached, one page. I am sorry they took this long.</p><p>No need to reply.</p><p>Fede</p><span class="badge email__file"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M10.2 6.3 6 10.5a2.6 2.6 0 0 1-3.7-3.7l4.6-4.6a1.7 1.7 0 0 1 2.4 2.4L4.8 9.1a.8.8 0 0 1-1.2-1.2l3.9-3.9"/></svg>Officer-time one-pager</span></template>
+    <button class="ios-btn email__send" type="button" data-email-send data-send-message>Send Message</button>
   </div>
   <div class="home-indicator" aria-hidden="true"></div>
 </div>
@@ -85,18 +95,17 @@
   </div>
 </section>
 
-<section id="modules" class="slide" data-w="335" data-h="436" data-max="1.5" style="--sheet-h:436px" aria-label="The modules">
+<section id="modules" class="slide" data-w="335" data-h="566" data-max="1.5" style="--sheet-h:566px" aria-label="The modules">
 
 
   <header class="slide__head">
     <h1>The modules</h1>
-    <p>Every card ends in a reply, given in a sheet that rises over the card. The signal picks which module fills the sheet and writes its words: buttons, choices, several choices or a field.</p>
+    <p>Every card ends in a reply, given in a sheet that rises over the card. The signal picks which module fills the sheet and writes its words: buttons, choices, several choices, a field or a draft.</p>
   </header>
 
   <div class="slide__body">
     <!-- Bare sheets, one per module: the phone's reply sheet, grabbed and scaled. Only the middle differs. -->
     <figure>
-      <figcaption>Buttons</figcaption>
       <div class="sheet-stage"><div class="sheet-stage__in">
         <div class="reply-sheet" role="group" aria-label="Buttons">
           <div class="reply-sheet__top">
@@ -108,9 +117,9 @@
           <div class="reply-sheet__foot"><button class="ios-btn" type="button">Secondary</button><button class="ios-btn ios-btn--filled" type="button" data-send>Primary Action</button></div>
         </div>
       </div></div>
+      <figcaption>Buttons</figcaption>
     </figure>
     <figure>
-      <figcaption>Choices</figcaption>
       <div class="sheet-stage"><div class="sheet-stage__in">
         <div class="reply-sheet" role="group" aria-label="Choices">
           <div class="reply-sheet__top">
@@ -127,9 +136,9 @@
           <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
         </div>
       </div></div>
+      <figcaption>Choices</figcaption>
     </figure>
     <figure>
-      <figcaption>Several choices</figcaption>
       <div class="sheet-stage"><div class="sheet-stage__in">
         <div class="reply-sheet" role="group" aria-label="Several choices">
           <div class="reply-sheet__top">
@@ -146,9 +155,9 @@
           <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
         </div>
       </div></div>
+      <figcaption>Several choices</figcaption>
     </figure>
     <figure>
-      <figcaption>A field</figcaption>
       <div class="sheet-stage"><div class="sheet-stage__in">
         <div class="reply-sheet" role="group" aria-label="A field">
           <div class="reply-sheet__top">
@@ -162,9 +171,33 @@
           <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send disabled>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
         </div>
       </div></div>
+      <figcaption>A field</figcaption>
+    </figure>
+    <!-- One bare sheet, its anatomy copied from the email card in Claude's phone app. The note is the desk's Sarah Whitlow note. The version pills and the copy button are left out for now. -->
+    <figure>
+      <div class="sheet-stage"><div class="sheet-stage__in">
+        <div class="reply-sheet reply-sheet--email" role="group" aria-label="A draft">
+          <div class="email__head"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="1.5" y="1.5" width="19" height="15" rx="2"/><path d="m2 3 9 7 9-7"/></svg><span>Email</span><button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button></div>
+          <div>
+            <div class="email__part"><span class="email__label">Subject</span><p>The officer-time numbers you asked for</p></div>
+            <div class="email__part"><span class="email__label">Body</span>
+              <div class="email__body" tabindex="0"><p>Hi Sarah,</p><p>You asked back in July for the officer-time numbers from Borsetshire and I never sent them. Here they are, one page. The short version: case admin down by about a third, which is the figure their finance team cared about most.</p><p>I imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how Borsetshire phased it in, I am around whenever suits.</p><p>Fede</p><span class="badge email__file"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M10.2 6.3 6 10.5a2.6 2.6 0 0 1-3.7-3.7l4.6-4.6a1.7 1.7 0 0 1 2.4 2.4L4.8 9.1a.8.8 0 0 1-1.2-1.2l3.9-3.9"/></svg>Officer-time one-pager</span></div>
+            </div>
+          </div>
+          <ul class="reply-sheet__rows">
+            <!-- Ask for a change: the arrow hands your words to the tool, and Send Message waits while they are unsent. -->
+            <li><input type="text" placeholder="Tell me what to change…" aria-label="Tell me what to change" data-ask-input><button class="ask-send" type="button" aria-label="Ask for this change" data-ask disabled><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 12V2.5M2.8 6.5 7 2.3l4.2 4.2"/></svg></button></li>
+          </ul>
+          <!-- The prototype answers every ask the same way, with the short form of the note. -->
+          <template data-redraft><p>Hi Sarah,</p><p>The officer-time numbers you asked for in July are attached, one page. I am sorry they took this long.</p><p>No need to reply.</p><p>Fede</p><span class="badge email__file"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M10.2 6.3 6 10.5a2.6 2.6 0 0 1-3.7-3.7l4.6-4.6a1.7 1.7 0 0 1 2.4 2.4L4.8 9.1a.8.8 0 0 1-1.2-1.2l3.9-3.9"/></svg>Officer-time one-pager</span></template>
+          <button class="ios-btn email__send" type="button" data-email-send>Send Message</button>
+        </div>
+      </div></div>
+      <figcaption>A draft</figcaption>
     </figure>
   </div>
 </section>
+
 
 <!-- Previous and next in the side margins, the count in the foot's. -->
 <button class="ios-btn deck__prev" type="button" aria-label="Previous slide"><span class="chevron" aria-hidden="true"></span></button>

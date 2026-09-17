@@ -51,7 +51,7 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
 ## What is where
 - `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `deck.html` (the
   slides, one file, one slide shown at a time: the phone, a working prototype, then the modules
-  that can fill a card's reply sheet, as bare sheets), `world.md`,
+  that can fill a card's reply sheet, as bare sheets, a draft among them), `world.md`,
   `cards/`, `assets/`.
 - `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
   blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under

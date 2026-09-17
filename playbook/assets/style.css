@@ -261,7 +261,8 @@ summary::-webkit-details-marker{display:none}
 .slide--side .slide__head{flex:1;min-width:0}
 .slide--side .slide__body{flex:1;margin-top:0}
 .slide figure{margin:0;min-width:0}
-.slide figcaption{text-align:center;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);margin-bottom:12px;white-space:nowrap}
+/* A figure's caption sits under it: the sheets stand on one line, so their names do too. */
+.slide figcaption{text-align:center;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);margin-top:16px;white-space:nowrap}
 /* A bare sheet: the reply sheet as grabbed from the phone, 335 pt wide (the
    367 pt screen less its two 16 pt margins). The stage is as tall as the
    tallest sheet, measured, and every sheet sits on its foot, the way it
@@ -308,6 +309,14 @@ summary::-webkit-details-marker{display:none}
 .reply__row{display:flex;align-items:center;justify-content:center;width:100%;min-height:var(--ios-hit-target);padding:12px 20px;border:0;border-radius:22px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .1s ease}
 .reply__row:active{transform:scale(.97)}
 .reply__row--action{background:var(--ios-accent);color:var(--on-accent);font-weight:var(--ios-weight-semibold)}
+/* At most one plain action under the filled one: a look first, or a second answer. */
+.reply .ios-btn{align-self:center;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+/* What the tool says back, in place of the actions, once the card is done. */
+.said{display:none;margin-top:auto;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.deck__card .said p{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
+.said .ios-btn{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+.deck__card.is-sent .reply{display:none}
+.deck__card.is-sent .said{display:flex}
 /* The reply sheet: where the module lives. This is the playbook's one
    component of its own, and its anatomy is copied from the sheet Claude's
    phone app raises to ask a question: a floating panel inset 16 pt from the
@@ -337,6 +346,42 @@ summary::-webkit-details-marker{display:none}
 .reply-sheet__rows li[aria-checked="true"]::after{content:"";width:7px;height:13px;border-right:2px solid var(--ios-accent);border-bottom:2px solid var(--ios-accent);transform:rotate(45deg);margin:0 8px 4px 0}
 .reply-sheet__rows input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
 .reply-sheet__rows input::placeholder{color:var(--ios-label-secondary)}
+/* A draft in the sheet. Its anatomy is copied from the email card Claude's
+   phone app shows when it drafts a message: sections divided by hairlines
+   that run edge to edge; a head with a mail glyph and "Email"; a row of
+   version pills (the chosen one tinted, its letter in a filled circle); a
+   small grey label over the subject, another over the body; one full-width
+   action at the foot, plain and semibold, that hands the note to Mail. There
+   is no To row and no edit form: you change the note by asking. Ours differs
+   in three places: the head also holds the sheet's close button, the row to
+   ask sits inside the sheet (Claude's is the chat box under the card), and
+   the body scrolls inside a fixed height and fades at its foot, so the sheet
+   fits the phone. Colour and type are ours. Numbers are a judgment, read off
+   Claude's app. */
+.reply-sheet--email{padding:0;overflow:hidden}
+.email__head{display:flex;align-items:center;gap:10px;padding:8px 8px 8px 24px;border-bottom:.5px solid var(--ios-separator);font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.email__head span{flex:1}
+.email__icon{width:44px;height:44px;padding:0;border:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;color:var(--ios-label-secondary);cursor:pointer}
+.email__versions{display:flex;gap:8px;padding:10px 16px;border-bottom:.5px solid var(--ios-separator);overflow-x:auto;scrollbar-width:none}
+.email__version{flex:none;display:inline-flex;align-items:center;gap:10px;min-height:var(--ios-hit-target);padding:6px 16px 6px 8px;border:0;border-radius:22px;background:transparent;color:var(--ios-label);font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);cursor:pointer}
+.email__version b{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--ios-fill-control);font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold)}
+.email__version[aria-pressed="true"]{background:color-mix(in srgb,var(--ios-accent) 15%,transparent);color:var(--ios-accent)}
+.email__version[aria-pressed="true"] b{background:var(--ios-accent);color:var(--on-accent)}
+.email__part{padding:12px 24px 14px;border-bottom:.5px solid var(--ios-separator)}
+.email__label{display:block;margin-bottom:6px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary)}
+.reply-sheet .email__part p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label);margin:0 0 12px}
+.reply-sheet .email__part p:last-of-type{margin-bottom:0}
+.email__body{max-height:264px;overflow-y:auto;scrollbar-width:none;padding-bottom:48px;-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - 48px),transparent)}
+.email__body::-webkit-scrollbar,.email__versions::-webkit-scrollbar{display:none}
+.email__file{gap:6px;margin-top:12px}
+.reply-sheet--email .reply-sheet__rows{padding:0 24px;border-bottom:.5px solid var(--ios-separator)}
+/* Asking for a change: a round arrow at the row's end, grey until there are
+   words to send, then the accent. While words wait unsent, the sheet's own
+   action stands down, so the old draft cannot go by mistake. */
+.ask-send{flex:none;width:30px;height:30px;margin-left:8px;padding:0;border:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--ios-accent);color:var(--on-accent);cursor:pointer;transition:background-color .15s ease}
+.ask-send[disabled]{background:var(--ios-fill-track);cursor:default}
+.email__send{display:flex;width:100%;min-height:56px;border-radius:0}
+.email__send[disabled]{color:var(--ios-label-tertiary);opacity:1;cursor:default}
 .reply-sheet__foot{display:flex;justify-content:flex-end;align-items:center;gap:4px;margin:12px -8px 0 0}
 .reply-sheet__foot .ios-btn{white-space:nowrap}
 .reply-sheet__foot .ios-btn--filled{min-height:48px;padding:0 24px;gap:10px}

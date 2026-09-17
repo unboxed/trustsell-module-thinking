@@ -52,7 +52,11 @@ state, ever. A card can be **held** (shown faded) when it ripens only after anot
 
 **Guardrails.** Every Sustain card names what the other person gets. "Not Relevant" asks why in
 one tap. Cards are observations with a suggested move, never tasks: no due-date fields, owners or
-statuses. Nothing sends; the human does.
+statuses. Nothing sends without your say-so: where mail is connected the tool can send a
+message once you tell it to, and you can undo for a moment after; where it is not, the message
+opens in Mail and you send it yourself. (Until 17 September this read "Nothing sends; the
+human does". The desk cards still follow the old rule, with Open in Mail and "nothing sends
+until you do"; they have not been changed yet.)
 
 ## Where the cards live
 
@@ -63,9 +67,11 @@ the grid, never above it: the cards come to you; the box is for what you're wond
 live in `deck.html`, one shown at a time. The first, "The phone", is the prototype: the title
 and a line about the idea on the left, one iPhone on the right at almost the panel's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
-close button lowers it). The second, "The modules", shows the four modules as bare reply
+close button lowers it). The second, "The modules", shows the modules as bare reply
 sheets in a row, no phone around them, each captioned by its module. Only the middle of the
-sheet differs.
+sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
+written something for you. Claude's card also has version pills (A and B) and a copy button;
+both are left off the slide for now.
 
 The deck: the page is the grouped grey, and each slide is a white panel inside the same
 48 pt margin the slides always had, with the way out top left and the previous, count and next
@@ -87,8 +93,14 @@ these" while a reply asks you to stop and think, and on a real phone the reply w
 inside a card that did not feel in focus.
 
 The card is a front and nothing else: one kind label, a large bold title (Apple's Large
-Title), a description, badges, then one filled action that opens the reply sheet (named
-"Reply" for now) and, under it, "Scroll for details". Placeholder titles and descriptions
+Title), a description, badges, then the actions and, under them, "Scroll for details". The
+front holds one filled action and at most one plain one; anything that needs more room goes
+in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
+action on the front raises the sheet. The phone slide shows the desk's Sarah Whitlow card:
+the filled action is Send Message, the plain one is View Draft, which raises the draft
+sheet. Once sent, the actions give way to what the tool says back ("Sent. I will tell you
+when Sarah replies.") and Undo. On the phone the word is "message" and the buttons drop the
+article, as Apple's do; the desk still says "Send the Note". Placeholder titles and descriptions
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
 
@@ -106,10 +118,28 @@ typed ("Type a name or a date"). The wordings decided earlier are all the Button
 with the signal's words in it: That's Right and Not Quite; Send the Note and Not Relevant;
 Connect; Got It and Open the Thread.
 
+A draft fills the same sheet, and its anatomy is copied from the email card Claude's phone
+app shows when it drafts a message: a head with a mail glyph and "Email"; a row of version
+pills, A and B, when more than one version helps; a small grey label over the subject and
+another over the body; one full-width action at the foot, Send Message. There is no To row
+and no edit form. You change the note by asking, in the sheet's last row ("Tell me what to
+change…"). The row has its own round arrow, grey until there are words to send; it hands
+them to the tool, which rewrites the draft in place. While words wait unsent, Send Message
+stands down, so the old draft cannot go by mistake. Asking covers attachments too ("attach
+the case study": the tool finds it). There is no editing by hand on the phone yet; whether
+there should be is open. A two-state sheet (reviewing, then a
+tall editing form with To, Subject and Attached rows) was tried the same day and dropped: it
+was Mail rebuilt inside a sheet. The worry that led there, Send sitting under your thumb while you are still changing the
+message, is met another way: sending asks for one deliberate tap, the card says back what
+happened, and Undo is there for a moment. The slide uses the desk's Sarah Whitlow note as version
+A ("With the figure") and a short form as version B ("Shorter"); the subject line, "The
+officer-time numbers you asked for", is new and belongs to that card.
+
 Not decided: what a swipe does, what "details" are and how the scroll reaches them (the user
 likes the idea of a scroll that snaps to the start of the content), what the two menu buttons
-are, and what the count line counts. Also open: the name of the card's action ("Reply" is
-a stand-in; the signal could write it), whether the sheet's pager stays when a card asks one
+are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
+Buttons sheet to the front, as the message card's have; the names the signal writes on the
+front's actions for the other modules; whether the sheet's pager stays when a card asks one
 thing only (it sits close to "1 of 5 cards"), how you say Not Now (the close button, or moving
 to the next card), whether modules chain (what follows "Not Quite"), and a later slide that
 shows one module serving many signals.

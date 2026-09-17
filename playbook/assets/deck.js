@@ -38,9 +38,11 @@
   }
   window.addEventListener('hashchange', fromHash); fromHash();
 
-  /* The reply sheet. On the phone the card's action raises it and the close
-     button or the send button lowers it. In any sheet, a row can be chosen
-     (one, or several), and the send button wakes once there is an answer. */
+  /* The reply sheet. On the phone the card's plain action raises it and the
+     close button lowers it; sending, from the card or the sheet, lowers it
+     and the card says back what happened, with a way to undo. In any sheet, a row can be chosen
+     (one, or several), and the send button wakes once there is an answer. A
+     draft's version pills switch between its versions. */
   function ready(sheet) {
     var send = sheet.querySelector('[data-send]'), input = sheet.querySelector('input');
     if (!send || !sheet.querySelector('[role], input')) return;
@@ -57,17 +59,51 @@
   document.addEventListener('click', function (e) {
     var open = e.target.closest('[data-reply-open]'), row = e.target.closest('.reply-sheet__rows [role]');
     var shut = e.target.closest('.screen .reply-sheet__close, .screen [data-send]');
+    var version = e.target.closest('[data-version]');
+    if (version) {
+      var sh = version.closest('.reply-sheet');
+      sh.querySelectorAll('[data-version]').forEach(function (v) { v.setAttribute('aria-pressed', v === version ? 'true' : 'false'); });
+      sh.querySelectorAll('[data-version-panel]').forEach(function (p) { p.hidden = p.getAttribute('data-version-panel') !== version.getAttribute('data-version'); });
+      return;
+    }
+    var asked = e.target.closest('[data-ask]');
+    if (asked) { ask(asked.closest('.reply-sheet')); return; }
+    var sent = e.target.closest('.screen [data-send-message]'), undo = e.target.closest('[data-undo]');
+    if (sent) {
+      var sc = sent.closest('.screen');
+      sc.querySelector('.reply-sheet').classList.remove('is-open');
+      sc.querySelector('.deck__card').classList.add('is-sent');
+      return;
+    }
+    if (undo) { undo.closest('.deck__card').classList.remove('is-sent'); return; }
     if (open) open.closest('.screen').querySelector('.reply-sheet').classList.add('is-open');
     else if (row) choose(row);
     else if (shut) shut.closest('.reply-sheet').classList.remove('is-open');
   });
+  /* A draft: words typed in the ask row wake its arrow and rest the sheet's
+     send; the arrow (or return) hands them over and the draft is rewritten. */
+  function askState(sheet) {
+    var input = sheet.querySelector('[data-ask-input]'); if (!input) return;
+    var has = !!input.value.trim();
+    sheet.querySelector('[data-ask]').disabled = !has;
+    sheet.querySelector('[data-email-send]').disabled = has;
+  }
+  function ask(sheet) {
+    var input = sheet.querySelector('[data-ask-input]'), again = sheet.querySelector('[data-redraft]');
+    if (!input.value.trim()) return;
+    sheet.querySelector('.email__body').innerHTML = again.innerHTML;
+    input.value = ''; input.placeholder = 'Tell me what else to change…';
+    askState(sheet);
+  }
+
   document.addEventListener('input', function (e) {
-    var sheet = e.target.closest('.reply-sheet'); if (sheet) ready(sheet);
+    var sheet = e.target.closest('.reply-sheet'); if (sheet) { ready(sheet); askState(sheet); }
   });
 
   document.querySelector('.deck__prev').addEventListener('click', function () { show(i - 1, true); });
   document.querySelector('.deck__next').addEventListener('click', function () { show(i + 1, true); });
   document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.target.matches('[data-ask-input]')) { e.preventDefault(); ask(e.target.closest('.reply-sheet')); return; }
     if (e.target.closest('input, textarea')) return;
     var row = e.target.closest('.reply-sheet__rows [role]');
     if (row && (e.key === ' ' || e.key === 'Enter')) { e.preventDefault(); choose(row); return; }
