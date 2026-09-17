@@ -39,8 +39,12 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   the sheets' placement, the phone frame. Every colour goes through a token, so a later re-theme
   means changing tokens, not rules. Where a number is a judgment rather than Apple's, the comment
   says so.
-- `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback. Macs and iPhones use
-  SF Pro through `-apple-system`. Never link a font CDN.
+- `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback, and Plus Jakarta Sans
+  (SIL OFL), the phone's face. Macs and iPhones use SF Pro through `-apple-system` on the desk.
+  Never link a font CDN.
+- The phone has a look of its own (big title, Plus Jakarta Sans, no colour on buttons, a white
+  card by day and slate by night). It is the last section of `style.css`, "The phone's look",
+  set as tokens on `.screen` and `.sheet-stage`. The desk has not taken it. `world.md` says why.
 - `playbook/assets/card.js` is the one script the card pages share; `deck.js` is the deck's
   (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
   its body, the phone's scroll into details, and the phone's reply sheet).

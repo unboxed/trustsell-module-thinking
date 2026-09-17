@@ -156,6 +156,23 @@ happened, and Undo is there for a moment. The slide uses the desk's Sarah Whitlo
 A ("With the figure") and a short form as version B ("Shorter"); the subject line, "The
 officer-time numbers you asked for", is new and belongs to that card.
 
+The phone's look (decided 17 September, by looking, over six rounds on one sheet of rendered
+options: https://claude.ai/artifact/4kvVknQPP2bFEdw2z9ooKB). The anatomy is iOS and stays; the
+look is the playbook's own, and it lives only on the phone and on the bare sheets grabbed from
+it. Four choices. *Big words*: the title is the design, very large, tight and heavy (48 on 46),
+and everything else is small and quiet. *Plus Jakarta Sans* is the phone's face, carried in the
+fonts folder as Inter is; the status bar keeps the system's. *No colour on buttons*: the filled
+action is ink, or white in the dark, and the kind's dot is the only colour on the screen. The
+kind's name is in sentence case and badges are outlines. *The card matches the room*: by day a
+glazed white card on a pale cool ground, with a lit top edge and one deep soft shadow; by night
+all slate, a near-black ground and a lighter slate card with a faint sheen and a lit edge. Tried
+and passed over on the way: recolouring Apple's kit, a card tinted by its kind, a white card on
+deep green set in Baskerville, a ruled docket, paper and frosted glass as materials, a slate
+card kept by day as well, and the kind glowing in the slate. The desk has not taken the look:
+it is still Apple's blue and SF Pro, a known disagreement, left for later. Long titles will
+need a smaller step than 48; not built. The wider face wraps the draft's subject onto two
+lines, so the tallest bare sheet is now 588 pt.
+
 Not decided: what a swipe does, the names and the list of the details' sections ("The story
 so far" is the user's; the other two are borrowed from the desk), whether "Not sure" and "how
 sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
@@ -181,7 +198,9 @@ The playbook follows Apple's Human Interface Guidelines: the desk follows iPadOS
 follows iOS. Each part of a card is one Apple component, so a card never needs a component of
 its own. There is one exception: on the phone, the reply sheet is the playbook's own component
 (see the phone paragraph above), its anatomy copied from Claude's phone app and built from
-the kit's tokens, so the modules read as one family. The desk table below stays as it is.
+the kit's tokens, so the modules read as one family. The phone also has a look of its own
+(typeface, colour and the card's material; see the phone paragraph above), set as tokens over
+the kit. The desk table below stays as it is.
 
 | Part of a card | On the desk |
 | --- | --- |

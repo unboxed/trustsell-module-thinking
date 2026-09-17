@@ -456,3 +456,80 @@ summary::-webkit-details-marker{display:none}
 .details__rows li{padding:11px 0;border-bottom:.5px solid var(--ios-separator);font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
 .details__rows li:last-child{border-bottom:0}
 .home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;pointer-events:none}
+
+/* ---------- The phone's look ---------- */
+/* Decided 17 September, by looking, on one sheet of rendered options. The
+   anatomy above is iOS and stays; the look is the playbook's own and lives
+   only here, on the phone's screen and on the bare sheets grabbed from it.
+   The desk does not take it. Four choices:
+   Big words: the title is the design, very large, tight and heavy, and
+   everything else is small and quiet.
+   Plus Jakarta Sans (fonts/jakarta.css), the phone's face.
+   No colour on buttons: the accent is ink, or white in the dark. The kind's
+   dot is the only colour on the screen.
+   The card matches the room: by day a glazed white card on a pale cool
+   ground, a lit top edge and one deep soft shadow; by night all slate, a
+   near-black ground and a lighter slate card with a faint sheen and a lit
+   edge. Every number here is a judgment, not Apple's.
+
+   The kit's text tokens carry their family from :root, so they are declared
+   again here with the phone's face. Its tracking is tuned for SF, so it is
+   set to nothing. */
+.screen,.sheet-stage{
+  --phone-font:'Plus Jakarta Sans',var(--ios-font);
+  --ios-text-large-title:400 2.125rem/2.5625rem var(--phone-font);
+  --ios-text-title1:400 1.75rem/2.125rem var(--phone-font);
+  --ios-text-title2:400 1.375rem/1.75rem var(--phone-font);
+  --ios-text-title3:400 1.25rem/1.5625rem var(--phone-font);
+  --ios-text-headline:590 1.0625rem/1.375rem var(--phone-font);
+  --ios-text-body:400 1.0625rem/1.375rem var(--phone-font);
+  --ios-text-callout:400 1rem/1.3125rem var(--phone-font);
+  --ios-text-subhead:400 .9375rem/1.25rem var(--phone-font);
+  --ios-text-footnote:400 .8125rem/1.125rem var(--phone-font);
+  --ios-text-caption1:400 .75rem/1rem var(--phone-font);
+  --ios-text-caption2:400 .6875rem/.8125rem var(--phone-font);
+  --ios-track-large-title:0;--ios-track-title1:0;--ios-track-title2:0;--ios-track-title3:0;
+  --ios-track-headline:0;--ios-track-body:0;--ios-track-callout:0;--ios-track-subhead:0;
+  --ios-track-footnote:0;--ios-track-caption1:0;--ios-track-caption2:0;
+  --ios-bg:#ECEEF1;
+  --ios-bg-card:#FFFFFF;
+  --ios-label:#121212;
+  --ios-label-secondary:rgb(18 18 18/.6);
+  --ios-accent:#121212;
+  --on-accent:#FFFFFF;
+  --card-glaze:linear-gradient(#FFFFFF,#F6F7F9 826px,#FFFFFF 826px);
+  --card-edge:inset 0 1.5px 0 rgb(255 255 255/calc(1 - var(--p))),inset 0 -1px 0 rgb(18 18 18/calc(.05*(1 - var(--p))));
+  --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
+}
+@media (prefers-color-scheme:dark){
+  .screen,.sheet-stage{
+    --ios-bg:#0A0B0C;
+    --ios-bg-card:#1D1F22;
+    --ios-label:#FFFFFF;
+    --ios-label-secondary:rgb(255 255 255/.64);
+    --ios-accent:#FFFFFF;
+    --on-accent:#141414;
+    --ios-separator:rgb(255 255 255/.16);
+    --card-glaze:linear-gradient(160deg,#303338,#1D1F22 420px);
+    --card-edge:inset 0 1px 0 rgb(255 255 255/calc(.2*(1 - var(--p)))),inset 0 0 0 1px rgb(255 255 255/calc(.06*(1 - var(--p))));
+    --card-lift:0 0 0 0 transparent;
+  }
+  /* A sheet over slate is a step lighter, so it still reads as raised. */
+  .reply-sheet{--ios-bg-card:#282B2F}
+}
+/* The status bar is the system's, so it keeps the system's face. */
+.screen .ios-statusbar{font-family:var(--ios-font)}
+/* The card: the glaze is on the page, seen through the hole; the edge and the lift are the hole's. */
+.screen .screen__scroll{background:var(--card-glaze)}
+.screen .card-hole{border-radius:calc(36px*(1 - var(--p)));box-shadow:var(--card-edge),var(--card-lift),0 0 0 600px var(--ios-bg)}
+/* Big words: 48 on 46, the heaviest weight, tight. Long titles will need a smaller step; not built yet. */
+.screen .deck__card.deck__card--front h2{font-size:3rem;line-height:2.875rem;font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
+.screen .deck__card p{font-size:1rem;line-height:1.4375rem}
+/* The kind: its dot, then its name in sentence case and the label colour. */
+.screen .kind{text-transform:none;letter-spacing:0;font-size:.9375rem;color:var(--ios-label)}
+/* Badges: an outline, no fill. */
+.screen .badge,.sheet-stage .badge{background:none;border:1px solid color-mix(in srgb,var(--ios-label) 24%,transparent);color:var(--ios-label)}
+/* The filled action: a 48 pt capsule. It ends 2 pt above View Draft. */
+.screen .reply__row{min-height:48px;border-radius:999px}
+/* The kit writes white on its filled button; here the label follows the accent's partner. */
+.screen .ios-btn--filled,.sheet-stage .ios-btn--filled{color:var(--on-accent)}

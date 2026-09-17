@@ -1,0 +1,20 @@
+/* Plus Jakarta Sans, bundled as the phone's own face.
+ *
+ * The phone slide and its bare sheets are set in it (see "The phone's
+ * look" in style.css). The desk stays in SF Pro, with Inter as its
+ * fallback. Plus Jakarta Sans is SIL OFL 1.1, which permits bundling and
+ * web use. LICENSE-PlusJakartaSans.txt travels with it, as the licence
+ * requires.
+ *
+ * One variable file, upright only, weights 200 to 800, the Latin subset.
+ * Skip this stylesheet and everything still works: the phone falls back
+ * to the kit's stack.
+ */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("PlusJakartaSans-Variable.woff2") format("woff2");
+}
