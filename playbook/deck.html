@@ -19,7 +19,7 @@
 
 <a class="ios-btn deck__exit" href="index.html"><span class="chevron" aria-hidden="true"></span>Cards</a>
 
-<section id="phone" class="slide" data-w="393" data-h="852" aria-label="The phone">
+<section id="phone" class="slide slide--side" data-w="393" data-h="852" aria-label="The phone">
 
 
   <header class="slide__head">
@@ -28,7 +28,7 @@
   </header>
 
   <div class="slide__body">
-    <!-- One iPhone, 393 x 852 pt, showing one card. -->
+    <!-- One iPhone, 393 x 852 pt, and it works: the card's action raises the reply sheet. -->
     <div class="phone-stage">
   <div class="phone">
 <div class="screen">
@@ -47,36 +47,37 @@
     <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="14.5" cy="9" r="1.8"/></svg></button>
   </div>
   <div class="screen__content">
-    <!-- Progress through the deck: one small line between the buttons and the cards. -->
+    <!-- Progress through the cards: one small line between the buttons and the card. -->
     <p class="deck__count">1 of 5 cards</p>
-    <!-- A deck: the top card fills the screen; two more wait behind it. Swipe left or right to deal it. -->
+    <!-- The card, already in focus: no stack behind it, no menu under it. -->
     <div class="deck">
-      <div class="deck__behind deck__behind--2" aria-hidden="true"></div>
-      <div class="deck__behind deck__behind--1" aria-hidden="true"></div>
-      <article class="card deck__card">
+      <article class="card deck__card deck__card--front">
         <div class="deck__labels"><span class="kind kind--ask">Ask</span></div>
         <h2>A question with a few answers to pick from</h2>
         <p>I looked first and ran out. Pick the answer that fits and I take it from there. If none fit, say it in your words.</p>
         <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-        <!-- The foot varies by kind. A question card: options to choose from, one gets the checkmark. -->
-        <ul class="ios-list deck__options" role="radiogroup" aria-label="Your answer">
-          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option one</span><span class="check" aria-hidden="true"></span></button></li>
-          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option two</span><span class="check" aria-hidden="true"></span></button></li>
-          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option three</span><span class="check" aria-hidden="true"></span></button></li>
-          <!-- The fourth option: none of the above, said in the seller's own words. -->
-          <li><div class="ios-list__row ios-list__row--field deck__say"><input class="ios-field" type="text" placeholder="Something else, in your words" aria-label="Something else, in your own words"></div></li>
-        </ul>
+        <!-- The one action opens the reply sheet. Its name is a placeholder. -->
+        <div class="reply"><button class="reply__row reply__row--action" type="button" data-reply-open>Reply</button></div>
         <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
         <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
       </article>
     </div>
   </div>
-  <!-- A placeholder menu: the iOS 26 floating tab bar, three tabs, names to be decided. -->
-  <nav class="ios-tabbar screen__tabbar" aria-label="Menu">
-    <a class="ios-tabbar__item" aria-selected="true" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="16" height="12" rx="2.5"/><path d="M6 2.5h10"/></svg>One</a>
-    <a class="ios-tabbar__item" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9.5" cy="9.5" r="6.5"/><path d="m14.5 14.5 5 5"/></svg>Two</a>
-    <a class="ios-tabbar__item" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="8" r="4"/><path d="M3.5 19.5a7.5 7.5 0 0 1 15 0"/></svg>Three</a>
-  </nav>
+  <!-- The reply sheet rises over the card; the card stays in view behind it. -->
+  <div class="reply-sheet" role="group" aria-label="Your reply">
+    <div class="reply-sheet__top">
+      <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
+      <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+    </div>
+    <h2>A question with a few answers to pick from</h2>
+    <ul class="reply-sheet__rows" role="radiogroup" aria-label="Your answer">
+      <li role="radio" aria-checked="false" tabindex="0">Option one</li>
+      <li role="radio" aria-checked="false" tabindex="0">Option two</li>
+      <li role="radio" aria-checked="false" tabindex="0">Option three</li>
+      <li><input type="text" placeholder="Type your answer…" aria-label="Type your answer…"></li>
+    </ul>
+    <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send disabled>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
+  </div>
   <div class="home-indicator" aria-hidden="true"></div>
 </div>
 </div>
@@ -84,130 +85,83 @@
   </div>
 </section>
 
-<section id="asks-of-you" class="slide" data-w="361" data-h="720" aria-label="What a card asks of you">
+<section id="modules" class="slide" data-w="335" data-h="436" data-max="1.5" style="--sheet-h:436px" aria-label="The modules">
 
 
   <header class="slide__head">
-    <h1>What a card asks of you</h1>
-    <p>Every card asks for one kind of reply. These are the six: pick an answer, confirm a reading, give a fact, send a note, connect a source, or just take note.</p>
+    <h1>The modules</h1>
+    <p>Every card ends in a reply, given in a sheet that rises over the card. The signal picks which module fills the sheet and writes its words: buttons, choices, several choices or a field.</p>
   </header>
 
   <div class="slide__body">
-    <!-- Six bare cards, one per kind of reply. Only the foot differs. -->
+    <!-- Bare sheets, one per module: the phone's reply sheet, grabbed and scaled. Only the middle differs. -->
     <figure>
-      <figcaption>Pick an answer</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--ask">Ask</span></div>
-            <h2>A question with a few answers to pick from</h2>
-            <p>I looked first and ran out. Pick the answer that fits and I take it from there. If none fit, say it in your words.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. A question card: options to choose from, one gets the checkmark. -->
-            <ul class="ios-list deck__options" role="radiogroup" aria-label="Your answer">
-              <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option one</span><span class="check" aria-hidden="true"></span></button></li>
-              <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option two</span><span class="check" aria-hidden="true"></span></button></li>
-              <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option three</span><span class="check" aria-hidden="true"></span></button></li>
-              <!-- The fourth option: none of the above, said in the seller's own words. -->
-              <li><div class="ios-list__row ios-list__row--field deck__say"><input class="ios-field" type="text" placeholder="Something else, in your words" aria-label="Something else, in your own words"></div></li>
-            </ul>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
+      <figcaption>Buttons</figcaption>
+      <div class="sheet-stage"><div class="sheet-stage__in">
+        <div class="reply-sheet" role="group" aria-label="Buttons">
+          <div class="reply-sheet__top">
+            <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
+            <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+          </div>
+          <h2>Something ready, or something to confirm</h2>
+          <p>What I prepared shows here, ready to go. The signal writes the words on the buttons.</p>
+          <div class="reply-sheet__foot"><button class="ios-btn" type="button">Secondary</button><button class="ios-btn ios-btn--filled" type="button" data-send>Primary Action</button></div>
+        </div>
+      </div></div>
     </figure>
     <figure>
-      <figcaption>Confirm a reading</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--ask">Ask</span></div>
-            <h2>What I read about someone, said in a line. Is that right?</h2>
-            <p>I read people off their emails, not the room. Before I act on my read, I check it against yours.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. A check: the tool's reading, and you say whether it is right. -->
-            <div class="actions deck__actions">
-              <button class="ios-btn ios-btn--filled" type="button">That's Right</button>
-              <button class="ios-btn" type="button">Not Quite</button>
-            </div>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
+      <figcaption>Choices</figcaption>
+      <div class="sheet-stage"><div class="sheet-stage__in">
+        <div class="reply-sheet" role="group" aria-label="Choices">
+          <div class="reply-sheet__top">
+            <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
+            <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+          </div>
+          <h2>A question with a few answers to pick from</h2>
+          <ul class="reply-sheet__rows" role="radiogroup" aria-label="Your answer">
+            <li role="radio" aria-checked="false" tabindex="0">Option one</li>
+            <li role="radio" aria-checked="true" tabindex="0">Option two</li>
+            <li role="radio" aria-checked="false" tabindex="0">Option three</li>
+            <li><input type="text" placeholder="Type your answer…" aria-label="Type your answer…"></li>
+          </ul>
+          <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
+        </div>
+      </div></div>
     </figure>
     <figure>
-      <figcaption>Give a fact</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--ask">Ask</span></div>
-            <h2>One thing only you know, like a name or a date</h2>
-            <p>I could not find this anywhere I can see. A name or a date is enough, and it changes what I do next.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. A fact: one field with the tool's guess, and a button. -->
-            <ul class="ios-list deck__options deck__options--one">
-              <li><div class="ios-list__row ios-list__row--field deck__say"><input class="ios-field" type="text" placeholder="Type a name or a date" aria-label="Your answer"></div></li>
-            </ul>
-            <div class="actions deck__actions deck__actions--after">
-              <button class="ios-btn ios-btn--filled" type="button">Done</button>
-              <button class="ios-btn" type="button">Not Now</button>
-            </div>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
+      <figcaption>Several choices</figcaption>
+      <div class="sheet-stage"><div class="sheet-stage__in">
+        <div class="reply-sheet" role="group" aria-label="Several choices">
+          <div class="reply-sheet__top">
+            <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
+            <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+          </div>
+          <h2>A question where several answers fit</h2>
+          <ul class="reply-sheet__rows" role="group" aria-label="Your answer">
+            <li role="checkbox" aria-checked="true" tabindex="0">Option one</li>
+            <li role="checkbox" aria-checked="true" tabindex="0">Option two</li>
+            <li role="checkbox" aria-checked="false" tabindex="0">Option three</li>
+            <li><input type="text" placeholder="Type your answer…" aria-label="Type your answer…"></li>
+          </ul>
+          <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
+        </div>
+      </div></div>
     </figure>
     <figure>
-      <figcaption>Send a note</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--sustain">Sustain</span></div>
-            <h2>A note ready for you to send from here</h2>
-            <p>I wrote it in your voice. It goes to Mail, where you can change anything before it sends.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. An Act card: the one action as a filled capsule, Not Now beneath it. -->
-            <div class="actions deck__actions">
-              <button class="ios-btn ios-btn--filled" type="button">Send the Note</button>
-              <button class="ios-btn" type="button">Not Now</button>
-              <button class="ios-btn" type="button">Not Relevant</button>
-            </div>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
-    </figure>
-    <figure>
-      <figcaption>Connect a source</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--connect">Connect</span></div>
-            <h2>A source I cannot see yet</h2>
-            <p>Some of what I need lives somewhere I am not connected to. Let me in and the next cards get better.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. A Connect card: the source to connect, and Not Now. -->
-            <div class="actions deck__actions">
-              <button class="ios-btn ios-btn--filled" type="button">Connect</button>
-              <button class="ios-btn" type="button">Not Now</button>
-            </div>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
-    </figure>
-    <figure>
-      <figcaption>Take note</figcaption>
-      <div class="card-stage">
-      <article class="card deck__card">
-            <div class="deck__labels"><span class="kind kind--told">Told</span></div>
-            <h2>Something happened. Nothing for you to do</h2>
-            <p>An earlier card had a then. This is it. I tell you so you know, and I carry on.</p>
-            <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
-            <!-- The foot varies by kind. Told: an outcome with nothing to do. -->
-            <div class="actions deck__actions">
-              <button class="ios-btn ios-btn--filled" type="button">Got It</button>
-              <button class="ios-btn" type="button">Open the Thread</button>
-            </div>
-            <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-            <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-          </article>
-      </div>
+      <figcaption>A field</figcaption>
+      <div class="sheet-stage"><div class="sheet-stage__in">
+        <div class="reply-sheet" role="group" aria-label="A field">
+          <div class="reply-sheet__top">
+            <div class="reply-sheet__pager"><span class="chevron chevron--off" aria-hidden="true"></span>1 of 2<span class="chevron chevron--next" aria-hidden="true"></span></div>
+            <button class="reply-sheet__close" type="button" aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11"/></svg></button>
+          </div>
+          <h2>One thing only you know, like a name or a date</h2>
+          <ul class="reply-sheet__rows">
+            <li><input type="text" placeholder="Type a name or a date" aria-label="Your answer"></li>
+          </ul>
+          <div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send disabled>Next <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h13M9.5 1.5 14 6l-4.5 4.5"/></svg></button></div>
+        </div>
+      </div></div>
     </figure>
   </div>
 </section>

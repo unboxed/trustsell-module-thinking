@@ -42,15 +42,16 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
 - `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback. Macs and iPhones use
   SF Pro through `-apple-system`. Never link a font CDN.
 - `playbook/assets/card.js` is the one script the card pages share; `deck.js` is the deck's
-  (one slide shown at a time by hash, arrow keys, the count, and fitting a slide's figures to
-  its body).
+  (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
+  its body, and the phone's reply sheet).
 - Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
   `ios-navbar`, `ios-tabbar`, `ios-actionsheet`). Reach for a kit component before inventing one.
+  The one exception is the phone's reply sheet (`.reply-sheet` in `style.css`); `world.md` says why.
 
 ## What is where
 - `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `deck.html` (the
-  slides, one file, one slide shown at a time: the phone intro, then the six things a card can
-  ask of you as bare cards; only the foot differs), `world.md`,
+  slides, one file, one slide shown at a time: the phone, a working prototype, then the modules
+  that can fill a card's reply sheet, as bare sheets), `world.md`,
   `cards/`, `assets/`.
 - `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
   blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under

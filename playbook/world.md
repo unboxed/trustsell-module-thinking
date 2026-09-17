@@ -60,10 +60,12 @@ statuses. Nothing sends; the human does.
 the grid, never above it: the cards come to you; the box is for what you're wondering.
 
 **The phone.** Slides that explain the concept; they are not screens of the tool. All of them
-live in `deck.html`, one shown at a time. The first, "The phone", is the intro: a title, a line
-about the idea, one iPhone showing one card. The second, "What a card asks of you", shows the
-six kinds of reply a card can ask for as bare cards in a row, no phone around them, each
-captioned by what you do. Only the foot of the card differs.
+live in `deck.html`, one shown at a time. The first, "The phone", is the prototype: the title
+and a line about the idea on the left, one iPhone on the right at almost the panel's full
+height, and it works (the card's action raises the reply sheet, a row can be chosen, the
+close button lowers it). The second, "The modules", shows the four modules as bare reply
+sheets in a row, no phone around them, each captioned by its module. Only the middle of the
+sheet differs.
 
 The deck: the page is the grouped grey, and each slide is a white panel inside the same
 48 pt margin the slides always had, with the way out top left and the previous, count and next
@@ -74,21 +76,43 @@ pages: they are the library, not the story.
 
 Decided so far (17 September): the slide sits inside a 48 pt safe area, its title and
 description capped at a reading measure and set on the AX1 rung of Dynamic Type, each phone
-drawn at 393 × 852 pt and scaled so three fit the row.
-On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"), a deck whose
-top card fills the screen with two cards behind it, and the iOS 26 floating tab bar at the foot.
-The card is one kind label, a title of up to three lines, a description, badges, then the foot,
-which is the module, named by what you do: *Pick an answer* has three options and a fourth row
-that is a field for your own words; *Confirm a reading* has That's Right and Not Quite; *Give a
-fact* has one field ("Type a name or a date") and Done; *Send a note* has Send the Note, Not Now
-and Not Relevant; *Connect a source* has Connect and Not Now; *Take note*
-(a Told card) has Got It and Open the Thread. Under the foot, "Scroll for details". Placeholder
-titles and descriptions say what each module is, in the tool's voice; no avatars, no contact
-blocks, no grouped tiles of "the thinking".
+drawn at 393 × 852 pt and scaled to fit, never bigger than a phone. A bare sheet is the
+phone's sheet, as if grabbed from the phone: 335 pt wide, then scaled, and it may grow past
+1:1 on a big screen.
+
+On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"), and one
+card, already in focus, that runs down to the home indicator. There is no stack of cards
+behind it and no menu at the foot. Both were tried and dropped: a stack says "flick through
+these" while a reply asks you to stop and think, and on a real phone the reply was too small
+inside a card that did not feel in focus.
+
+The card is a front and nothing else: one kind label, a large bold title (Apple's Large
+Title), a description, badges, then one filled action that opens the reply sheet (named
+"Reply" for now) and, under it, "Scroll for details". Placeholder titles and descriptions
+say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
+tiles of "the thinking".
+
+The reply is given in a sheet that rises over the card, its anatomy copied from the sheet
+Claude's phone app raises to ask a question: a floating panel, the card still in view behind
+it and not dimmed; a pager ("1 of 2") and a round close button; the question; plain rows with
+hairlines and a tick on a chosen row; a last row for your own words ("Type your answer…");
+one filled button at the foot's right, Next, grey until there is an answer. Colour and type
+are ours. One module fills the sheet. The signal picks the module and writes its words.
+There are four, told apart by shape, not by meaning (an earlier slide showed six, which was
+a mistake: four of them were the same buttons with different words). *Buttons*: a line about
+what is ready, a plain second action and the filled one. *Choices*: three options and your
+own words; one tick. *Several choices*: the same, with several ticks. *A field*: one thing
+typed ("Type a name or a date"). The wordings decided earlier are all the Buttons module
+with the signal's words in it: That's Right and Not Quite; Send the Note and Not Relevant;
+Connect; Got It and Open the Thread.
 
 Not decided: what a swipe does, what "details" are and how the scroll reaches them (the user
 likes the idea of a scroll that snaps to the start of the content), what the two menu buttons
-and the three tabs are, and what the count line counts.
+are, and what the count line counts. Also open: the name of the card's action ("Reply" is
+a stand-in; the signal could write it), whether the sheet's pager stays when a card asks one
+thing only (it sits close to "1 of 5 cards"), how you say Not Now (the close button, or moving
+to the next card), whether modules chain (what follows "Not Quite"), and a later slide that
+shows one module serving many signals.
 
 **The box.** A place to ask about a person, a council or a deal. It answers with cards where
 cards exist (it moves them to the top of the home) and with a paragraph where they don't. Every
@@ -103,7 +127,9 @@ An answer is not a new kind of card. The vocabulary stays at five words.
 
 The playbook follows Apple's Human Interface Guidelines: the desk follows iPadOS, the phone
 follows iOS. Each part of a card is one Apple component, so a card never needs a component of
-its own.
+its own. There is one exception: on the phone, the reply sheet is the playbook's own component
+(see the phone paragraph above), its anatomy copied from Claude's phone app and built from
+the kit's tokens, so the modules read as one family. The desk table below stays as it is.
 
 | Part of a card | On the desk |
 | --- | --- |

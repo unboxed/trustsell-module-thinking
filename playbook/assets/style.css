@@ -20,6 +20,7 @@
   --kind-advance:var(--ios-accent);
   --kind-expand:var(--ios-orange);
   --kind-quiet:var(--ios-gray);
+  --on-accent:#FFFFFF;              /* a label on the accent fill, as on the kit's filled button */
 }
 @media (prefers-color-scheme:dark){
   :root{--ios-bg-tertiary:#2C2C2E}
@@ -254,12 +255,20 @@ summary::-webkit-details-marker{display:none}
 .slide__head p{font:var(--slide-text-callout);letter-spacing:var(--ios-track-callout);color:var(--ios-label-secondary);margin-top:6px}
 /* The body: the rest of the panel, content centred both ways. */
 .slide__body{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;gap:24px;margin-top:24px}
+/* A side slide: the heading on the left, the figure on the right with the
+   panel's whole height to itself, so a phone draws at almost full height. */
+.slide--side{flex-direction:row;gap:48px}
+.slide--side .slide__head{flex:1;min-width:0}
+.slide--side .slide__body{flex:1;margin-top:0}
 .slide figure{margin:0;min-width:0}
 .slide figcaption{text-align:center;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);margin-bottom:12px;white-space:nowrap}
-/* A bare card: drawn at 361 x 720 pt (the card's width inside the phone's
-   gutters, and near its height on the phone) and scaled by --s. */
-.card-stage{flex:none;width:calc(361px*var(--s));height:calc(720px*var(--s))}
-.card-stage .deck__card{width:361px;height:720px;transform:scale(var(--s));transform-origin:top left}
+/* A bare sheet: the reply sheet as grabbed from the phone, 335 pt wide (the
+   367 pt screen less its two 16 pt margins). The stage is as tall as the
+   tallest sheet, measured, and every sheet sits on its foot, the way it
+   rises on the phone. Scaled by --s. If a sheet grows, measure again. */
+.sheet-stage{flex:none;width:calc(335px*var(--s));height:calc(var(--sheet-h)*var(--s))}
+.sheet-stage__in{position:relative;width:335px;height:var(--sheet-h);transform:scale(var(--s));transform-origin:top left}
+.sheet-stage .reply-sheet{left:0;right:0;bottom:0}
 .phone-stage{flex:none;width:calc(393px*var(--s));height:calc(852px*var(--s))}
 /* The bezel is hardware, so it stays black in both appearances. */
 .phone{width:393px;height:852px;transform:scale(var(--s));transform-origin:top left;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:56px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
@@ -270,14 +279,12 @@ summary::-webkit-details-marker{display:none}
    edge, inside the 16 pt gutters. */
 .screen__top{flex:none;display:flex;justify-content:space-between;align-items:center;padding:4px var(--ios-gutter) 0}
 .screen__menu{width:44px;height:44px;padding:0;display:inline-flex;align-items:center;justify-content:center;color:var(--ios-accent);border-radius:50%}
-.screen__content{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 var(--ios-gutter) 108px}
-/* The menu: the kit's floating tab bar, pinned inside the screen 34 pt above
-   the foot (the home indicator's safe area), centred. */
-.screen__tabbar{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);margin:0;z-index:5}
-/* The deck. The top card fills the screen, held in the hand like a playing
-   card: 24 pt corners, a real shadow, a bigger title. Two cards wait behind
-   it, each a step narrower and lower, so there is something to deal to.
-   Numbers are a judgment, not Apple's. */
+/* No menu at the foot (removed 17 September): the card runs down to 8 pt
+   above the home indicator's 34 pt area. */
+.screen__content{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 var(--ios-gutter) 42px}
+/* The card fills the screen under the count: 24 pt corners, a real shadow.
+   It is already in focus; no other cards show behind it. Numbers are a
+   judgment, not Apple's. */
 /* Progress through the deck: a centred footnote in the secondary grey. */
 .deck__count{flex:none;text-align:center;margin-top:2px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
 .deck{position:relative;flex:1;min-height:0;margin-top:10px}
@@ -290,35 +297,54 @@ summary::-webkit-details-marker{display:none}
    colour, 24 pt tall. Judgment, not Apple's. */
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .badge{display:inline-flex;align-items:center;min-height:24px;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--ios-label) 8%,transparent);color:var(--ios-label-secondary);font:var(--ios-text-footnote);font-weight:var(--ios-weight-medium);letter-spacing:var(--ios-track-footnote)}
-/* The foot of the card varies by kind. A question card: the kit's inset
-   list at the foot, in the grouped grey so it reads as a list inside a card,
-   one row per option, the checkmark on the chosen one. */
-.deck__card .deck__options{margin:16px 0 0;margin-top:auto;padding-top:0;background:var(--ios-bg-tertiary)}
 .deck__card .badges{margin-bottom:16px}
-/* The fourth option is a field in a row: the seller's own words. The field
-   sits flat on the row, no box of its own, with the row's hairline above. */
-.deck__options li>.deck__say{padding:0 8px;cursor:text}
-.deck__options li>.deck__say::before{left:var(--ios-gutter)}
-.deck__options .deck__say .ios-field{width:100%;min-height:0;background:transparent;border:0;box-shadow:none;padding:11px 8px;line-height:22px;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
-.deck__options .deck__say .ios-field::placeholder{color:var(--ios-label-tertiary)}
-.deck__options li>.ios-list__row .ios-list__title{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
-/* A fact to type: one field row, then the buttons directly beneath it. */
-.deck__card .deck__options--one{margin-top:auto}
-.deck__card .deck__actions--after{margin-top:0}
-/* A brief kept for the desk: the card says so in one footnote line above its buttons. */
-.deck__card .deck__note{margin-top:auto;text-align:center;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
-.deck__card .deck__note+.deck__actions{margin-top:0;padding-top:8px}
-/* An Act or Connect card: the filled action spans the card, 50 pt tall, and
-   the plain actions sit centred in a row beneath it. */
-.deck__card .deck__actions{margin-top:auto;padding-top:16px;justify-content:center;gap:4px 24px}
-.deck__card .deck__actions>.ios-btn--filled{flex:0 0 100%;min-height:50px}
+/* The front of the card: a large title, the description, the badges, then
+   one filled action that opens the reply sheet, and the hint beneath it.
+   The action is a full-width row, 44 pt tall (Apple's touch target), in
+   Subhead semibold, 15 on 20 pt: below Apple's default 17, still on its
+   scale, the user's call. Judgment, not Apple's. */
+.deck__card.deck__card--front h2{font:var(--ios-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);margin-bottom:14px}
+.reply{margin-top:auto;display:flex;flex-direction:column;gap:6px}
+.reply__row{display:flex;align-items:center;justify-content:center;width:100%;min-height:var(--ios-hit-target);padding:12px 20px;border:0;border-radius:22px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .1s ease}
+.reply__row:active{transform:scale(.97)}
+.reply__row--action{background:var(--ios-accent);color:var(--on-accent);font-weight:var(--ios-weight-semibold)}
+/* The reply sheet: where the module lives. This is the playbook's one
+   component of its own, and its anatomy is copied from the sheet Claude's
+   phone app raises to ask a question: a floating panel inset 16 pt from the
+   screen's sides and 34 pt from its foot, the page behind still in view and
+   not dimmed; a top row with a pager and a round close button; the question;
+   plain rows 56 pt tall with hairlines, a tick on a chosen row; a last row
+   for your own words; one filled button at the foot's right, grey until
+   there is something to send. Colour and type are ours, through the kit's
+   tokens. The four modules differ only in what sits between the question
+   and the button. Numbers are a judgment, read off Claude's app. */
+.reply-sheet{position:absolute;left:16px;right:16px;bottom:34px;z-index:6;background:var(--ios-bg-card);border-radius:28px;padding:16px 24px;box-shadow:0 8px 40px rgba(0,0,0,.16),0 0 1px rgba(0,0,0,.2)}
+/* On the phone the sheet waits below the screen until the card's action
+   raises it; a bare sheet on a slide is always up. */
+.screen .reply-sheet{transition:transform .4s cubic-bezier(.2,.9,.25,1),opacity .2s ease,visibility 0s}
+.screen .reply-sheet:not(.is-open){transform:translateY(calc(100% + 48px));opacity:0;visibility:hidden;transition:transform .3s ease-in,opacity .2s ease .1s,visibility 0s .3s}
+.reply-sheet__rows li[role]{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.reply-sheet__top{display:flex;align-items:center;justify-content:space-between;margin:0 -8px 8px 0}
+.reply-sheet__pager{display:flex;align-items:center;gap:16px;font:var(--ios-text-callout);letter-spacing:var(--ios-track-callout);color:var(--ios-label-secondary);font-variant-numeric:tabular-nums}
+.reply-sheet__pager .chevron{margin:0;border-color:var(--ios-label)}
+.reply-sheet__pager .chevron--off{border-color:var(--ios-label-tertiary)}
+.reply-sheet__close{width:44px;height:44px;padding:0;border:0;border-radius:50%;background:var(--ios-bg-card);box-shadow:0 2px 10px rgba(0,0,0,.1),0 0 1px rgba(0,0,0,.15);display:inline-flex;align-items:center;justify-content:center;color:var(--ios-label);cursor:pointer}
+.reply-sheet h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-title2);color:var(--ios-label);margin:0 0 12px}
+.reply-sheet p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label-secondary);margin:0 0 4px}
+.reply-sheet__rows{list-style:none;margin:0;padding:0}
+.reply-sheet__rows li{display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:.5px solid var(--ios-separator);font:var(--ios-text-body);font-weight:var(--ios-weight-medium);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.reply-sheet__rows li:last-child{border-bottom:0}
+.reply-sheet__rows li[aria-checked="true"]::after{content:"";width:7px;height:13px;border-right:2px solid var(--ios-accent);border-bottom:2px solid var(--ios-accent);transform:rotate(45deg);margin:0 8px 4px 0}
+.reply-sheet__rows input{flex:1;min-width:0;border:0;outline:0;background:transparent;padding:0;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.reply-sheet__rows input::placeholder{color:var(--ios-label-secondary)}
+.reply-sheet__foot{display:flex;justify-content:flex-end;align-items:center;gap:4px;margin:12px -8px 0 0}
+.reply-sheet__foot .ios-btn{white-space:nowrap}
+.reply-sheet__foot .ios-btn--filled{min-height:48px;padding:0 24px;gap:10px}
+.reply-sheet__foot .ios-btn--filled[disabled]{background:var(--ios-fill-track);opacity:1;cursor:default}
 /* The scroll hint under the options: a centred footnote in the secondary grey
    with a chevron pointing down, the disclosure glyph turned. */
 .deck__card .deck__more{display:flex;align-items:center;justify-content:center;gap:6px;margin:14px 0 0;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
 .chevron--down{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 3px}
 .deck__card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
 .deck__card p{color:var(--ios-label-secondary)}
-.deck__behind{position:absolute;left:0;right:0;top:0;height:100%;background:var(--ios-bg-card);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.08);transform-origin:bottom center}
-.deck__behind--1{z-index:2;transform:translateY(12px) scale(.94)}
-.deck__behind--2{z-index:1;transform:translateY(24px) scale(.88);opacity:.6}
 .home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;pointer-events:none}
