@@ -92,7 +92,7 @@ behind it and no menu at the foot. Both were tried and dropped: a stack says "fl
 these" while a reply asks you to stop and think, and on a real phone the reply was too small
 inside a card that did not feel in focus.
 
-The card is a front and nothing else: one kind label, a large bold title (Apple's Large
+The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
 front holds one filled action and at most one plain one; anything that needs more room goes
 in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
@@ -103,6 +103,27 @@ when Sarah replies.") and Undo. On the phone the word is "message" and the butto
 article, as Apple's do; the desk still says "Send the Note". Placeholder titles and descriptions
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
+
+Skip sits top right of the card, at the end of the kind label's line: a plain button, in view
+but far from the thumb that sends, and it costs the card no height. It scrolls away with the
+front. On the slide it does nothing yet.
+
+Scrolling turns the card into a page (decided 17 September, picked from three rendered
+options; the other two were a card that scrolls inside itself, and details that rise over the
+card as a second sheet). It is one surface: over the first 120 pt of scroll the card's
+margins, corners and shadow dissolve until the white runs to the screen's edges, the count
+line and the hint fade, and a bar with a hairline comes in behind the two menu buttons. The
+actions shift into a bar at the foot and stay there: Send Message travels down and narrows to
+the right; View Draft fades out on the card and fades in on the bar's left, so the two never
+cross. What the tool says back after sending, and Undo, show in the same bar. Once the large
+title has passed under the top bar, the title shows small between the menu buttons, as an
+iOS large title does. After a hairline come the details, as prose: section heads, paragraphs,
+and records as plain lines. No grouped tiles. For now the details are the desk card's
+thinking retold: "The story so far" (what I noticed, as a story), "What I read" and "Then".
+The scroll snaps between the card and the start of the details, so half-way between card and
+page is only ever seen in motion; past that start it runs free through the details (a snap
+there pulled the reading back in Safari). Few things move and no text reflows. The reply sheet
+still rises over either state.
 
 The reply is given in a sheet that rises over the card, its anatomy copied from the sheet
 Claude's phone app raises to ask a question: a floating panel, the card still in view behind
@@ -135,13 +156,14 @@ happened, and Undo is there for a moment. The slide uses the desk's Sarah Whitlo
 A ("With the figure") and a short form as version B ("Shorter"); the subject line, "The
 officer-time numbers you asked for", is new and belongs to that card.
 
-Not decided: what a swipe does, what "details" are and how the scroll reaches them (the user
-likes the idea of a scroll that snaps to the start of the content), what the two menu buttons
-are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
+Not decided: what a swipe does, the names and the list of the details' sections ("The story
+so far" is the user's; the other two are borrowed from the desk), whether "Not sure" and "how
+sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
 Buttons sheet to the front, as the message card's have; the names the signal writes on the
 front's actions for the other modules; whether the sheet's pager stays when a card asks one
-thing only (it sits close to "1 of 5 cards"), how you say Not Now (the close button, or moving
-to the next card), whether modules chain (what follows "Not Quite"), and a later slide that
+thing only (it sits close to "1 of 5 cards"), what Skip does (the next card arrives, and whether the tool asks why or
+says when it will come back; the desk's words for this are Not Now and Not Relevant), whether
+Skip is needed once the card is a page, whether modules chain (what follows "Not Quite"), and a later slide that
 shows one module serving many signals.
 
 **The box.** A place to ask about a person, a council or a deal. It answers with cards where

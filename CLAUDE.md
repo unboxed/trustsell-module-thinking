@@ -43,7 +43,7 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   SF Pro through `-apple-system`. Never link a font CDN.
 - `playbook/assets/card.js` is the one script the card pages share; `deck.js` is the deck's
   (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
-  its body, and the phone's reply sheet).
+  its body, the phone's scroll into details, and the phone's reply sheet).
 - Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
   `ios-navbar`, `ios-tabbar`, `ios-actionsheet`). Reach for a kit component before inventing one.
   The one exception is the phone's reply sheet (`.reply-sheet` in `style.css`); `world.md` says why.

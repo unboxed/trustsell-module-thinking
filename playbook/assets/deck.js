@@ -3,7 +3,7 @@
    big one of its figures is drawn (data-w, data-h) and the script scales the
    figures to fit the slide's body, never above the slide's cap: 1:1, unless
    the slide says otherwise (data-max). A phone is never drawn bigger than a
-   phone; a bare sheet may be. The phone's reply sheet works too. */
+   phone; a bare sheet may be. The phone's scroll and reply sheet work too. */
 (function () {
   var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
   var count = document.getElementById('count');
@@ -37,6 +37,28 @@
     show(k, false);
   }
   window.addEventListener('hashchange', fromHash); fromHash();
+
+  /* The phone's scroll. The card becomes a page over the first 120 pt: --p
+     runs from 0 to 1 and the stylesheet does the rest. --t brings in the
+     compact title once the large one has passed under the bar, 160 pt in.
+     is-page says which View Draft is in play, the card's or the bar's.
+     The snap is only for the way between the card and the start of the
+     details. Past that start the scroll runs free (is-free): the details
+     are taller than the screen, and not every browser lets you rest inside
+     a snap area that big; Safari pulls back to its edges. */
+  function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  document.querySelectorAll('[data-scroll]').forEach(function (sc) {
+    var screen = sc.closest('.screen'), details = sc.querySelector('.details');
+    function set() {
+      var start = details.offsetTop - parseFloat(getComputedStyle(sc).scrollPaddingTop);
+      sc.classList.toggle('is-free', sc.scrollTop >= start - 1);
+      var p = clamp(sc.scrollTop / 120);
+      screen.style.setProperty('--p', p);
+      screen.style.setProperty('--t', clamp((sc.scrollTop - 160) / 40));
+      screen.classList.toggle('is-page', p >= .5);
+    }
+    sc.addEventListener('scroll', set, { passive: true }); set();
+  });
 
   /* The reply sheet. On the phone the card's plain action raises it and the
      close button lowers it; sending, from the card or the sheet, lowers it
@@ -72,10 +94,10 @@
     if (sent) {
       var sc = sent.closest('.screen');
       sc.querySelector('.reply-sheet').classList.remove('is-open');
-      sc.querySelector('.deck__card').classList.add('is-sent');
+      sc.classList.add('is-sent');
       return;
     }
-    if (undo) { undo.closest('.deck__card').classList.remove('is-sent'); return; }
+    if (undo) { undo.closest('.screen').classList.remove('is-sent'); return; }
     if (open) open.closest('.screen').querySelector('.reply-sheet').classList.add('is-open');
     else if (row) choose(row);
     else if (shut) shut.closest('.reply-sheet').classList.remove('is-open');

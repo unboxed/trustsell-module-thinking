@@ -28,48 +28,80 @@
   </header>
 
   <div class="slide__body">
-    <!-- One iPhone, 393 x 852 pt, and it works: the card's action raises the reply sheet. -->
+    <!-- One iPhone, 393 x 852 pt, and it works: the card scrolls into its details, and its action raises the reply sheet. -->
     <div class="phone-stage">
   <div class="phone">
 <div class="screen">
-  <div class="ios-statusbar" aria-hidden="true">
-    <span>9:41</span>
-    <span class="ios-statusbar__island"></span>
-    <span class="ios-statusbar__indicators">
-      <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
-      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 4.2a10.5 10.5 0 0 1 14 0"/><path d="M3.6 6.9a6.8 6.8 0 0 1 8.8 0"/><path d="M6.2 9.5a3 3 0 0 1 3.6 0"/></svg>
-      <svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x=".5" y=".5" width="23" height="12" rx="3.5" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4a2 2 0 0 0 0-4z" fill="currentColor" opacity=".4"/></svg>
-    </span>
-  </div>
-  <!-- Two placeholder menu buttons at the top, one each side. -->
-  <div class="screen__top">
-    <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 5h13M2.5 9h13M2.5 13h13"/></svg></button>
-    <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="14.5" cy="9" r="1.8"/></svg></button>
-  </div>
-  <div class="screen__content">
-    <!-- Progress through the cards: one small line between the buttons and the card. -->
-    <p class="deck__count">1 of 5 cards</p>
-    <!-- The card, already in focus: no stack behind it, no menu under it. -->
-    <div class="deck">
-      <article class="card deck__card deck__card--front">
-        <div class="deck__labels"><span class="kind kind--sustain">Sustain</span></div>
-        <h2>Message Sarah Whitlow</h2>
-        <p>Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.</p>
-        <div class="badges"><span class="badge">Any day this week</span><span class="badge">Thornbury Vale</span></div>
-        <!-- The front holds one filled action and at most one plain one. Mail is connected, so the tool can send on your say-so; the plain action raises the sheet to read first. -->
-        <div class="reply">
-          <button class="reply__row reply__row--action" type="button" data-send-message>Send Message</button>
-          <button class="ios-btn" type="button" data-reply-open>View Draft</button>
+  <!-- The whole screen is one scroller. Its content is a white page; the grey around the card is a
+       frame with a hole in it. As you scroll, the hole opens to the screen's edges, the actions
+       shift into a bar at the foot, and the details follow a hairline. The scroll snaps to the
+       card or to the start of the details, and runs free from there on. -->
+  <div class="screen__scroll" data-scroll>
+    <!-- What stays put while the page moves. It lives inside the scroller so a scroll that starts on a button still scrolls. -->
+    <div class="screen__over"><div class="screen__overin">
+      <div class="screen__foot"></div>
+      <div class="card-hole"></div>
+      <div class="screen__bar"></div>
+      <div class="screen__head">
+        <div class="ios-statusbar" aria-hidden="true">
+          <span>9:41</span>
+          <span class="ios-statusbar__island"></span>
+          <span class="ios-statusbar__indicators">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 4.2a10.5 10.5 0 0 1 14 0"/><path d="M3.6 6.9a6.8 6.8 0 0 1 8.8 0"/><path d="M6.2 9.5a3 3 0 0 1 3.6 0"/></svg>
+            <svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x=".5" y=".5" width="23" height="12" rx="3.5" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4a2 2 0 0 0 0-4z" fill="currentColor" opacity=".4"/></svg>
+          </span>
         </div>
-        <!-- What the tool says back once it is sent. On a phone Undo would last a few seconds; here it stays, so the slide can be shown again. -->
-        <div class="said" aria-live="polite">
-          <p>Sent. I will tell you when Sarah replies.</p>
-          <button class="ios-btn" type="button" data-undo>Undo</button>
+        <!-- Two placeholder menu buttons, one each side. Between them, the card's title once its large one has scrolled under the bar. -->
+        <div class="screen__top">
+          <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, left"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 5h13M2.5 9h13M2.5 13h13"/></svg></button>
+          <span class="screen__title" aria-hidden="true">Message Sarah Whitlow</span>
+          <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="14.5" cy="9" r="1.8"/></svg></button>
         </div>
-        <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
-        <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
-      </article>
-    </div>
+      </div>
+      <!-- Progress through the cards: one small line between the buttons and the card. -->
+      <p class="deck__count">1 of 5 cards</p>
+      <!-- One filled action and at most one plain one. Mail is connected, so the tool can send on your say-so; the plain action raises the sheet to read first. Send Message travels into the foot bar. View Draft leaves the card early and arrives in the bar late, so the two never cross. -->
+      <button class="reply__row reply__row--action act act--send" type="button" data-send-message>Send Message</button>
+      <button class="ios-btn act act--view" type="button" data-reply-open>View Draft</button>
+      <button class="ios-btn act act--view-bar" type="button" data-reply-open>View Draft</button>
+      <!-- What the tool says back once it is sent, on the card and in the bar. On a phone Undo would last a few seconds; here it stays, so the slide can be shown again. -->
+      <div class="said said--card" aria-live="polite">
+        <p>Sent. I will tell you when Sarah replies.</p>
+        <button class="ios-btn" type="button" data-undo>Undo</button>
+      </div>
+      <div class="said said--bar">
+        <p>Sent. I will tell you when Sarah replies.</p>
+        <button class="ios-btn" type="button" data-undo>Undo</button>
+      </div>
+      <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
+      <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
+    </div></div>
+    <div class="snap"></div>
+    <!-- The card's front, already in focus: no stack behind it, no menu under it. -->
+    <article class="card deck__card deck__card--front">
+      <!-- The way past this card sits top right, on the label's line: in view, and far from the thumb that sends. It does nothing on the slide yet. -->
+      <div class="deck__labels"><span class="kind kind--sustain">Sustain</span><button class="ios-btn deck__skip" type="button">Skip</button></div>
+      <h2>Message Sarah Whitlow</h2>
+      <p>Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.</p>
+      <div class="badges"><span class="badge">Any day this week</span><span class="badge">Thornbury Vale</span></div>
+    </article>
+    <!-- The details: the desk card's thinking, as prose. The section names are a first go. -->
+    <section class="details snap">
+      <h3>The story so far</h3>
+      <p>You and Sarah have written since March. Until the budget meeting on 22 August she replied in about a day and started 9 of your 12 threads.</p>
+      <p>Since then there has been one two-line reply, 22 days ago. That is three times her usual gap. She is active on other threads, so she is around.</p>
+      <p>In July she asked for the officer-time figures from Borsetshire and never got them. They are the gift in this message.</p>
+      <h3>What I read</h3>
+      <ul class="details__rows">
+        <li>Your mail with Sarah, March to today: 15 messages, who wrote, when, how long.</li>
+        <li>Your calendar: "Budget prioritisation meeting, Thornbury Vale", 22 August. Nothing since.</li>
+        <li>Drive: the officer-time one-pager, and her July email asking for it.</li>
+        <li>Your list of thirty councils, and the goal you gave me.</li>
+      </ul>
+      <h3>Then</h3>
+      <p>Once you send it I will watch for her reply. If nothing comes in two weeks I will come back with a different reason to write, not the same one twice.</p>
+    </section>
   </div>
   <!-- The draft sheet rises over the card from View Draft; the card stays in view behind it. -->
   <div class="reply-sheet reply-sheet--email" role="group" aria-label="The message">

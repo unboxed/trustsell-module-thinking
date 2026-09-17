@@ -280,43 +280,95 @@ summary::-webkit-details-marker{display:none}
    edge, inside the 16 pt gutters. */
 .screen__top{flex:none;display:flex;justify-content:space-between;align-items:center;padding:4px var(--ios-gutter) 0}
 .screen__menu{width:44px;height:44px;padding:0;display:inline-flex;align-items:center;justify-content:center;color:var(--ios-accent);border-radius:50%}
-/* No menu at the foot (removed 17 September): the card runs down to 8 pt
-   above the home indicator's 34 pt area. */
-.screen__content{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 var(--ios-gutter) 42px}
-/* The card fills the screen under the count: 24 pt corners, a real shadow.
-   It is already in focus; no other cards show behind it. Numbers are a
-   judgment, not Apple's. */
+/* The screen is one scroller (decided 17 September). Its content is a white
+   page. The grey around the card is a frame with a hole in it: a box shadow
+   with a large spread, held still over the page. One number, --p, runs from
+   0 to 1 over the first 120 pt of scroll (deck.js sets it) and drives
+   everything that changes: the hole opens to the screen's edges and loses its
+   corners and shadow, the count and the hint fade, a bar fades in behind the
+   menu buttons, and the actions shift into a bar at the foot. Nothing is laid
+   out again while you scroll, so no text reflows. The scroll snaps, so it
+   rests on the card or at the start of the details, and from there on runs
+   free through them. Half-way between card and page is only ever seen in motion. The scroller is clipped 1 pt short at top and
+   foot: on a scaled phone the page's text otherwise shows as a dotted fringe
+   past the bars. All numbers here are a judgment, not Apple's. */
+.screen{--p:0;--t:0}
+.screen__scroll{position:absolute;inset:0;z-index:0;overflow-y:auto;background:var(--ios-bg-card);scroll-snap-type:y mandatory;scroll-padding:108px 0 90px;scrollbar-width:none;clip-path:inset(1px 0)}
+.screen__scroll::-webkit-scrollbar{display:none}
+/* Past the start of the details the scroll runs free; deck.js says when. */
+.screen__scroll.is-free{scroll-snap-type:none}
+.snap{scroll-snap-align:start}
+/* What stays put: a sticky box of no height, and in it a layer the size of
+   the screen (852 pt less the bezel). It sits inside the scroller so that a
+   scroll begun on a button still scrolls. */
+.screen__over{position:sticky;top:0;height:0;z-index:2}
+.screen__overin{position:absolute;top:0;left:0;width:100%;height:826px;pointer-events:none}
+.screen__overin button{pointer-events:auto}
+/* The hole is the card: 16 pt gutters, under the count, 8 pt above the home
+   indicator's 34 pt area, 24 pt corners, a real shadow. The shadow is listed
+   first so it falls on the grey. */
+.card-hole{position:absolute;top:calc(132px*(1 - var(--p)));left:calc(var(--ios-gutter)*(1 - var(--p)));right:calc(var(--ios-gutter)*(1 - var(--p)));bottom:calc(42px*(1 - var(--p)));border-radius:calc(24px*(1 - var(--p)));box-shadow:0 12px 32px rgb(0 0 0/calc(.14*(1 - var(--p)))),0 1px 2px rgb(0 0 0/calc(.06*(1 - var(--p)))),0 0 0 600px var(--ios-bg)}
+/* The bar behind the status bar and the menu buttons: the page's colour and
+   a hairline, there once the card is a page. It ends 10 pt below the 44 pt
+   buttons, the space the kit's navigation bar keeps under its controls. */
+.screen__bar{position:absolute;top:0;left:0;right:0;height:112px;background:var(--ios-bg-card);border-bottom:.5px solid var(--ios-separator);opacity:var(--p)}
+.screen__head{position:absolute;top:0;left:0;right:0}
+/* The card's title, compact, once the large one has passed under the bar (--t), as an iOS large title does. */
+.screen__title{flex:1;min-width:0;text-align:center;white-space:nowrap;font:var(--ios-text-headline);color:var(--ios-label);opacity:var(--t)}
 /* Progress through the deck: a centred footnote in the secondary grey. */
-.deck__count{flex:none;text-align:center;margin-top:2px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
-.deck{position:relative;flex:1;min-height:0;margin-top:10px}
-.deck__card{position:relative;z-index:3;height:100%;padding:24px;border-radius:24px;box-shadow:0 12px 32px rgba(0,0,0,.14),0 1px 2px rgba(0,0,0,.06)}
+.deck__count{position:absolute;left:0;right:0;top:104px;text-align:center;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
+/* The bar at the foot: 12 pt, a 44 pt row, the 34 pt home area. It sits under
+   the frame, so while the hole is still a card it shows only inside it. */
+.screen__foot{position:absolute;left:0;right:0;bottom:0;height:90px;background:var(--ios-bg-card);border-top:.5px solid var(--ios-separator);opacity:calc(var(--p)*2.5)}
+/* The card's front: the same text column at every point, 24 pt inside the
+   card. It slides 16 pt left as the card's edge leaves. */
+.deck__card{position:relative;z-index:0;padding:156px 40px 0;background:transparent;border-radius:0;transform:translateX(calc(var(--ios-gutter)*-1*var(--p)))}
 /* Labels: the playbook's kind label (a dot and an uppercase footnote), two in a row. */
 .deck__labels{display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:12px}
 .deck__labels .kind{margin:0}
+/* Skip: a plain button at the end of the label's line, its words ending on
+   the card's text edge. It keeps the 44 pt target and gives the height back
+   in margins, so the line stays a footnote tall. Judgment, not Apple's. */
+.deck__labels{align-items:center}
+.deck__skip{margin:-13px -12px -13px auto;padding:0 12px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
 /* Badges: small capsules inside the card. The kit has no badge, so this is
    its tinted button's recipe at footnote size: a 15% tint of the label
    colour, 24 pt tall. Judgment, not Apple's. */
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .badge{display:inline-flex;align-items:center;min-height:24px;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--ios-label) 8%,transparent);color:var(--ios-label-secondary);font:var(--ios-text-footnote);font-weight:var(--ios-weight-medium);letter-spacing:var(--ios-track-footnote)}
-.deck__card .badges{margin-bottom:16px}
+.deck__card .badges{margin-bottom:24px}
 /* The front of the card: a large title, the description, the badges, then
    one filled action that opens the reply sheet, and the hint beneath it.
    The action is a full-width row, 44 pt tall (Apple's touch target), in
    Subhead semibold, 15 on 20 pt: below Apple's default 17, still on its
    scale, the user's call. Judgment, not Apple's. */
 .deck__card.deck__card--front h2{font:var(--ios-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);margin-bottom:14px}
-.reply{margin-top:auto;display:flex;flex-direction:column;gap:6px}
 .reply__row{display:flex;align-items:center;justify-content:center;width:100%;min-height:var(--ios-hit-target);padding:12px 20px;border:0;border-radius:22px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .1s ease}
 .reply__row:active{transform:scale(.97)}
 .reply__row--action{background:var(--ios-accent);color:var(--on-accent);font-weight:var(--ios-weight-semibold)}
-/* At most one plain action under the filled one: a look first, or a second answer. */
-.reply .ios-btn{align-self:center;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
-/* What the tool says back, in place of the actions, once the card is done. */
-.said{display:none;margin-top:auto;flex-direction:column;align-items:center;gap:2px;text-align:center}
-.deck__card .said p{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
+/* The actions, placed by --p. Send Message travels from the card's foot
+   into the bar's right side and narrows. View Draft does not travel: the one
+   on the card fades out early and the one in the bar fades in late, so the
+   two never cross. deck.js hides whichever is not in play (is-page), so an
+   unseen button cannot take a tap. At most one plain action beside the filled one. */
+.act{position:absolute;margin:0;white-space:nowrap}
+.act--send{top:calc(634px + 114px*var(--p));left:calc(40px + 111px*var(--p));width:calc(287px - 87px*var(--p))}
+.act--view,.act--view-bar{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+.act--view{top:calc(684px + 40px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3)}
+.act--view-bar{top:748px;left:var(--ios-gutter);width:127px;opacity:calc((var(--p) - .6)/.4)}
+/* What the tool says back, in place of the actions, once the card is done:
+   stacked on the card, a row in the bar. */
+.said{display:none;position:absolute;align-items:center}
+.said p{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
 .said .ios-btn{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
-.deck__card.is-sent .reply{display:none}
-.deck__card.is-sent .said{display:flex}
+.said--card{left:40px;right:40px;bottom:calc(98px - 40px*var(--p));flex-direction:column;gap:2px;text-align:center;opacity:calc(1 - var(--p)/.3)}
+.said--bar{left:24px;right:var(--ios-gutter);top:748px;min-height:var(--ios-hit-target);gap:8px;opacity:calc((var(--p) - .6)/.4)}
+.said--bar p{flex:1}
+/* Under an open sheet the actions stand down once it has risen, so the bar's filled button cannot show past the sheet's corner. */
+.screen:has(.reply-sheet.is-open) .act{visibility:hidden;transition:visibility 0s .3s}
+.screen.is-sent .act{display:none}
+.screen.is-sent .said{display:flex}
+.screen.is-page .act--view,.screen.is-page .said--card,.screen:not(.is-page) .act--view-bar,.screen:not(.is-page) .said--bar{visibility:hidden}
 /* The reply sheet: where the module lives. This is the playbook's one
    component of its own, and its anatomy is copied from the sheet Claude's
    phone app raises to ask a question: a floating panel inset 16 pt from the
@@ -386,10 +438,21 @@ summary::-webkit-details-marker{display:none}
 .reply-sheet__foot .ios-btn{white-space:nowrap}
 .reply-sheet__foot .ios-btn--filled{min-height:48px;padding:0 24px;gap:10px}
 .reply-sheet__foot .ios-btn--filled[disabled]{background:var(--ios-fill-track);opacity:1;cursor:default}
-/* The scroll hint under the options: a centred footnote in the secondary grey
-   with a chevron pointing down, the disclosure glyph turned. */
-.deck__card .deck__more{display:flex;align-items:center;justify-content:center;gap:6px;margin:14px 0 0;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
+/* The scroll hint under the actions: a centred footnote in the secondary grey
+   with a chevron pointing down, the disclosure glyph turned. It goes as soon as you scroll. */
+.deck__more{position:absolute;left:0;right:0;top:742px;display:flex;align-items:center;justify-content:center;gap:6px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
 .chevron--down{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 3px}
 .deck__card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
 .deck__card p{color:var(--ios-label-secondary)}
+/* The details: prose after a hairline, 24 pt from the page's edge. Section
+   heads in Headline, text in Body and the primary label colour, records as
+   plain lines with hairlines. No grouped tiles. They fade in as the card
+   becomes a page and do not move by themselves: a moving box would move the
+   place the scroll snaps to. They clear the foot bar at the end. */
+.details{margin:0 24px;padding:4px 0 120px;border-top:.5px solid var(--ios-separator);opacity:calc((var(--p) - .4)/.6)}
+.details h3{font:var(--ios-text-headline);color:var(--ios-label);margin:24px 0 8px}
+.details p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label);margin:0 0 10px}
+.details__rows{list-style:none;padding:0}
+.details__rows li{padding:11px 0;border-bottom:.5px solid var(--ios-separator);font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.details__rows li:last-child{border-bottom:0}
 .home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;pointer-events:none}
