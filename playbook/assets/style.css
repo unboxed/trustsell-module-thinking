@@ -263,7 +263,9 @@ summary::-webkit-details-marker{display:none}
    card: 24 pt corners, a real shadow, a bigger title. Two cards wait behind
    it, each a step narrower and lower, so there is something to deal to.
    Numbers are a judgment, not Apple's. */
-.deck{position:relative;flex:1;min-height:0;margin-top:12px}
+/* Progress through the deck: a centred footnote in the secondary grey. */
+.deck__count{flex:none;text-align:center;margin-top:2px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
+.deck{position:relative;flex:1;min-height:0;margin-top:10px}
 .deck__card{position:relative;z-index:3;height:100%;padding:24px;border-radius:24px;box-shadow:0 12px 32px rgba(0,0,0,.14),0 1px 2px rgba(0,0,0,.06)}
 /* Labels: the playbook's kind label (a dot and an uppercase footnote), two in a row. */
 .deck__labels{display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:12px}
@@ -279,6 +281,12 @@ summary::-webkit-details-marker{display:none}
    one row per option, the checkmark on the chosen one. */
 .deck__card .deck__options{margin:16px 0 0;margin-top:auto;padding-top:0;background:var(--ios-bg-tertiary)}
 .deck__card .badges{margin-bottom:16px}
+/* The fourth option is a field in a row: the seller's own words. The field
+   sits flat on the row, no box of its own, with the row's hairline above. */
+.deck__options li>.deck__say{padding:0 8px;cursor:text}
+.deck__options li>.deck__say::before{left:var(--ios-gutter)}
+.deck__options .deck__say .ios-field{width:100%;min-height:0;background:transparent;border:0;box-shadow:none;padding:11px 8px;line-height:22px;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
+.deck__options .deck__say .ios-field::placeholder{color:var(--ios-label-tertiary)}
 .deck__options li>.ios-list__row .ios-list__title{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
 /* The scroll hint under the options: a centred footnote in the secondary grey
    with a chevron pointing down, the disclosure glyph turned. */

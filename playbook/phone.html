@@ -42,6 +42,8 @@
     <button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="14.5" cy="9" r="1.8"/></svg></button>
   </div>
   <div class="screen__content">
+    <!-- Progress through the deck: one small line between the buttons and the cards. -->
+    <p class="deck__count">1 of 5 cards</p>
     <!-- A deck: the top card fills the screen; two more wait behind it. Swipe left or right to deal it. -->
     <div class="deck">
       <div class="deck__behind deck__behind--2" aria-hidden="true"></div>
@@ -56,6 +58,8 @@
           <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option one</span><span class="check" aria-hidden="true"></span></button></li>
           <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option two</span><span class="check" aria-hidden="true"></span></button></li>
           <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option three</span><span class="check" aria-hidden="true"></span></button></li>
+          <!-- The fourth option: none of the above, said in the seller's own words. -->
+          <li><div class="ios-list__row ios-list__row--field deck__say"><input class="ios-field" type="text" placeholder="Something else, in your words" aria-label="Something else, in your own words"></div></li>
         </ul>
         <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
         <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
