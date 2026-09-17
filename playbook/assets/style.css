@@ -102,7 +102,7 @@ summary::-webkit-details-marker{display:none}
   font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);letter-spacing:.06em;text-transform:uppercase;
   color:var(--ios-label-secondary);
 }
-.kind--sustain::before,.kind--advance::before,.kind--expand::before,.kind--ask::before,.kind--connect::before{
+.kind--sustain::before,.kind--advance::before,.kind--expand::before,.kind--ask::before,.kind--connect::before,.kind--told::before{
   content:"";width:8px;height:8px;border-radius:50%;flex:none;background:var(--kind-quiet)
 }
 .kind--sustain::before{background:var(--kind-sustain)}
@@ -227,24 +227,39 @@ summary::-webkit-details-marker{display:none}
 .ios-empty{padding:48px 35px}
 .foot-line{margin-top:24px}
 
-/* ---------- 11. The phone ---------- */
-/* An empty iPhone, centred on the page. Drawn at 393 x 852 pt, the logical
-   size of the iPhone 14 Pro, 15, 15 Pro and 16 (the HIG's device table), and
-   scaled by --s (set by the page's script) to fit the viewport's height, never
-   above 1:1. What goes on the screen is not decided yet. */
+/* ---------- 11. The deck ---------- */
+/* The phone pages are slides, all in deck.html, one shown at a time. The page
+   is the grouped grey; the slide is a white panel inside a 48 pt margin (the
+   same safe area the slides had before, a judgment) with 48 pt of padding.
+   The heading sits top left in the panel and the body takes the rest, with
+   its content centred both ways. Figures (a phone, a card) are drawn at
+   their own size and scaled by --s, which deck.js sets to fit the body. */
 :root{--s:1}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.page--phone{height:100vh;height:100dvh;overflow:hidden}
-.page--phone .page-body{height:100%;max-width:none;padding:72px 48px 48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-/* The left half: an empty placeholder, marked by a dashed hairline until it
-   has a job. Capped at a reading measure (44rem, the same as the home's prose)
-   and centred in its half, so a title and a paragraph will not stretch. */
-.phone-left{width:100%;max-width:44rem;height:100%;max-height:calc(852px*var(--s));margin:0 auto;padding:32px;border:1px dashed var(--ios-separator);border-radius:var(--ios-radius-tile)}
-.phone-left h1{font:var(--slide-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);color:var(--ios-label)}
-.phone-left__desc{font:var(--slide-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label-secondary);margin-top:16px;max-width:44rem}
-.phone-right{display:flex;align-items:center;justify-content:center;min-width:0}
-/* The way out: a plain back link fixed in the top left, like a navigation bar's back button. */
-.phone-exit{position:fixed;top:24px;left:40px;z-index:2;padding-left:8px;white-space:nowrap}
+.page--slide{height:100vh;height:100dvh;overflow:hidden}
+.page--slide .page-body{max-width:none;height:100%;padding:0;position:relative}
+.slide{position:absolute;inset:48px;display:flex;flex-direction:column;padding:48px;background:var(--ios-bg-card);border-radius:var(--ios-radius-tile)}
+/* The controls live in the margins: the way out in the top one, its chevron
+   on the panel's left edge; the arrows centred in the side ones; the count in
+   the foot's. */
+.deck__exit{position:fixed;top:2px;left:38px;z-index:2;padding-left:8px;white-space:nowrap}
+.deck__prev,.deck__next{position:fixed;top:50%;transform:translateY(-50%);z-index:2;width:44px;min-width:0;padding:0;justify-content:center}
+.deck__prev{left:2px}
+.deck__next{right:2px}
+.deck__prev .chevron,.deck__next .chevron{margin:0}
+.deck-count{position:fixed;right:16px;bottom:14px;z-index:2;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);font-variant-numeric:tabular-nums}
+/* The heading: title and one line, capped at a reading measure. */
+.slide__head{flex:none;max-width:44rem}
+.slide__head h1{font:var(--slide-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);color:var(--ios-label)}
+.slide__head p{font:var(--slide-text-callout);letter-spacing:var(--ios-track-callout);color:var(--ios-label-secondary);margin-top:6px}
+/* The body: the rest of the panel, content centred both ways. */
+.slide__body{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;gap:24px;margin-top:24px}
+.slide figure{margin:0;min-width:0}
+.slide figcaption{text-align:center;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);margin-bottom:12px;white-space:nowrap}
+/* A bare card: drawn at 361 x 720 pt (the card's width inside the phone's
+   gutters, and near its height on the phone) and scaled by --s. */
+.card-stage{flex:none;width:calc(361px*var(--s));height:calc(720px*var(--s))}
+.card-stage .deck__card{width:361px;height:720px;transform:scale(var(--s));transform-origin:top left}
 .phone-stage{flex:none;width:calc(393px*var(--s));height:calc(852px*var(--s))}
 /* The bezel is hardware, so it stays black in both appearances. */
 .phone{width:393px;height:852px;transform:scale(var(--s));transform-origin:top left;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:56px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
@@ -270,7 +285,6 @@ summary::-webkit-details-marker{display:none}
 /* Labels: the playbook's kind label (a dot and an uppercase footnote), two in a row. */
 .deck__labels{display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:12px}
 .deck__labels .kind{margin:0}
-.kind--quiet::before{content:"";width:8px;height:8px;border-radius:50%;flex:none;background:var(--kind-quiet)}
 /* Badges: small capsules inside the card. The kit has no badge, so this is
    its tinted button's recipe at footnote size: a 15% tint of the label
    colour, 24 pt tall. Judgment, not Apple's. */
@@ -288,6 +302,16 @@ summary::-webkit-details-marker{display:none}
 .deck__options .deck__say .ios-field{width:100%;min-height:0;background:transparent;border:0;box-shadow:none;padding:11px 8px;line-height:22px;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
 .deck__options .deck__say .ios-field::placeholder{color:var(--ios-label-tertiary)}
 .deck__options li>.ios-list__row .ios-list__title{font:var(--ios-text-body);letter-spacing:var(--ios-track-body)}
+/* A fact to type: one field row, then the buttons directly beneath it. */
+.deck__card .deck__options--one{margin-top:auto}
+.deck__card .deck__actions--after{margin-top:0}
+/* A brief kept for the desk: the card says so in one footnote line above its buttons. */
+.deck__card .deck__note{margin-top:auto;text-align:center;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
+.deck__card .deck__note+.deck__actions{margin-top:0;padding-top:8px}
+/* An Act or Connect card: the filled action spans the card, 50 pt tall, and
+   the plain actions sit centred in a row beneath it. */
+.deck__card .deck__actions{margin-top:auto;padding-top:16px;justify-content:center;gap:4px 24px}
+.deck__card .deck__actions>.ios-btn--filled{flex:0 0 100%;min-height:50px}
 /* The scroll hint under the options: a centred footnote in the secondary grey
    with a chevron pointing down, the disclosure glyph turned. */
 .deck__card .deck__more{display:flex;align-items:center;justify-content:center;gap:6px;margin:14px 0 0;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
@@ -298,14 +322,3 @@ summary::-webkit-details-marker{display:none}
 .deck__behind--1{z-index:2;transform:translateY(12px) scale(.94)}
 .deck__behind--2{z-index:1;transform:translateY(24px) scale(.88);opacity:.6}
 .home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;pointer-events:none}
-
-@media (max-width:560px){
-  .page--phone{height:auto;overflow:visible}
-  .page--phone .page-body{height:auto;padding:52px 0 0;display:block}
-  .phone-left{display:none}
-  .phone-exit{position:absolute}
-  .phone-stage{width:100%;height:auto}
-  .phone{width:100%;height:82vh;transform:none;border:0;border-radius:0;padding:0;background:none;box-shadow:none}
-  .screen{border-radius:0}
-  .screen .ios-statusbar,.home-indicator{display:none}
-}

@@ -1,7 +1,8 @@
 # Signal cards: the playbook
 
-This is a **design workspace, not an application**. It holds a playbook of **signal cards**: what a
-sales tool would say to a seller, one card at a time, written as if the tool already existed. The
+This is a **design workspace, not an application**, and its pages are **slides for sharing the
+thinking**, not screens of the tool. It holds a playbook of **signal cards**: what a sales tool
+would say to a seller, one card at a time, written as if the tool already existed. The
 playbook is plain HTML in `playbook/`, opens by double-clicking `playbook/index.html`, and needs no
 server, build or install. It is meant to be shared as a folder.
 
@@ -12,6 +13,8 @@ server, build or install. It is meant to be shared as a folder.
 - **The card model lives in `playbook/world.md`**, together with the pretend world (goal, councils,
   cast, documents, dates) and the table of which Apple component each part of a card is. Read it
   before writing or editing a card. Add to it before inventing a name, a date or a document.
+- **The phone and card slides are concept slides.** Do only what the user asks on them, one step
+  at a time; they direct the design. See the phone paragraph in `world.md` for what is decided.
 - **One HTML file per card** in `playbook/cards/`. The home (`playbook/index.html`) lists every
   card sorted by *when*. When a card is added, add its tile to the home and wire the previous/next
   links in the toolbar at the foot of the neighbouring cards.
@@ -21,8 +24,8 @@ server, build or install. It is meant to be shared as a folder.
   labels in title case starting with a verb ("Send the Note", "Not Now"), everything else in
   sentence case, tab labels one word, section headers short noun phrases.
 - **Kinds and labels.** Act cards are labelled Sustain (keep alive), Advance (move forward) or
-  Expand (new relationship). Ask and Connect are their own quiet labels. These five words are the
-  vocabulary; do not add more.
+  Expand (new relationship). Ask, Connect and Told (an outcome with nothing to do) are their own
+  quiet labels. These six words are the vocabulary; do not add more.
 - **Flag contradictions in the fiction**: two cards on the same person that pull opposite ways on
   the same day, a date that doesn't match `world.md`, a document nobody has.
 
@@ -38,13 +41,17 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   says so.
 - `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback. Macs and iPhones use
   SF Pro through `-apple-system`. Never link a font CDN.
-- `playbook/assets/card.js` is the one script the card pages share.
+- `playbook/assets/card.js` is the one script the card pages share; `deck.js` is the deck's
+  (one slide shown at a time by hash, arrow keys, the count, and fitting a slide's figures to
+  its body).
 - Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
   `ios-navbar`, `ios-tabbar`, `ios-actionsheet`). Reach for a kit component before inventing one.
 
 ## What is where
-- `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `phone.html` (Phone),
-  `world.md`, `cards/`, `assets/`.
+- `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `deck.html` (the
+  slides, one file, one slide shown at a time: the phone intro, then the six things a card can
+  ask of you as bare cards; only the foot differs), `world.md`,
+  `cards/`, `assets/`.
 - `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
   blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under
   `_archive/02-relationships/signals/` and `_archive/03-offerings/signals/` are where most cards'

@@ -20,7 +20,7 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
 
 ## The card model
 
-**Three kinds of card, one shape.**
+**Four kinds of card, one shape.**
 - **Act.** The tool prepared a noun, you do a verb toward someone. Labelled Sustain (keep a
   relationship alive), Advance (move a deal forward) or Expand (start a new relationship).
 - **Ask.** The tool needs one fact only you hold, and the answer changes what it does. The button
@@ -28,6 +28,8 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
   offline, what you intend, what you prefer), never for verdicts it should reach itself. A check
   ("I read Priya as cautious. Right?") is allowed.
 - **Connect.** A source it cannot see.
+- **Told.** An outcome with nothing to do: the *Then* of an earlier card coming back ("Lena's
+  email bounced this morning"). The button is Got It.
 
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve.
 
@@ -57,8 +59,36 @@ statuses. Nothing sends; the human does.
 **The home (desk).** The grid, cards first, sorted by when. Filters by kind. The box sits below
 the grid, never above it: the cards come to you; the box is for what you're wondering.
 
-**The phone.** Being designed again from scratch. Nothing about it is decided yet; the page
-shows an empty iPhone.
+**The phone.** Slides that explain the concept; they are not screens of the tool. All of them
+live in `deck.html`, one shown at a time. The first, "The phone", is the intro: a title, a line
+about the idea, one iPhone showing one card. The second, "What a card asks of you", shows the
+six kinds of reply a card can ask for as bare cards in a row, no phone around them, each
+captioned by what you do. Only the foot of the card differs.
+
+The deck: the page is the grouped grey, and each slide is a white panel inside the same
+48 pt margin the slides always had, with the way out top left and the previous, count and next
+controls bottom right on the grey. The heading sits top left in the panel; the body takes the
+rest and centres its content, scaled to fit. Arrow keys and space move between slides without
+leaving the page. Nothing more: no full screen, no fixed canvas. The Cards and Ask pages stay as
+pages: they are the library, not the story.
+
+Decided so far (17 September): the slide sits inside a 48 pt safe area, its title and
+description capped at a reading measure and set on the AX1 rung of Dynamic Type, each phone
+drawn at 393 × 852 pt and scaled so three fit the row.
+On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"), a deck whose
+top card fills the screen with two cards behind it, and the iOS 26 floating tab bar at the foot.
+The card is one kind label, a title of up to three lines, a description, badges, then the foot,
+which is the module, named by what you do: *Pick an answer* has three options and a fourth row
+that is a field for your own words; *Confirm a reading* has That's Right and Not Quite; *Give a
+fact* has one field ("Type a name or a date") and Done; *Send a note* has Send the Note, Not Now
+and Not Relevant; *Connect a source* has Connect and Not Now; *Take note*
+(a Told card) has Got It and Open the Thread. Under the foot, "Scroll for details". Placeholder
+titles and descriptions say what each module is, in the tool's voice; no avatars, no contact
+blocks, no grouped tiles of "the thinking".
+
+Not decided: what a swipe does, what "details" are and how the scroll reaches them (the user
+likes the idea of a scroll that snaps to the start of the content), what the two menu buttons
+and the three tabs are, and what the count line counts.
 
 **The box.** A place to ask about a person, a council or a deal. It answers with cards where
 cards exist (it moves them to the top of the home) and with a paragraph where they don't. Every
