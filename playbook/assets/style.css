@@ -27,6 +27,28 @@
   .ios-segmented label:has(input:checked){background:#636366}
 }
 
+/* ---------- 1b. Slide type: the Dynamic Type ladder at AX1 ---------- */
+/* The phone page's left half reads like a slide, so its type sits higher on
+   the same iOS ladder the kit uses (the kit is the Large rung, the iPhone
+   default). These are Apple's AX1 sizes from the HIG's Dynamic Type table:
+   the same eleven styles, only larger, so phone and slide share one system.
+   To try the quieter xxxLarge rung: Large Title 40/48, Title 1 34/41,
+   Title 2 28/34, Title 3 26/32, Headline and Body 23/29, Callout 22/28,
+   Subhead 21/28, Footnote 19/24, Caption 1 18/23, Caption 2 17/22. */
+:root{
+  --slide-text-large-title: 400 2.75rem/3.25rem var(--ios-font);     /* 44/52 */
+  --slide-text-title1:      400 2.375rem/2.875rem var(--ios-font);   /* 38/46 */
+  --slide-text-title2:      400 2.125rem/2.5625rem var(--ios-font);  /* 34/41 */
+  --slide-text-title3:      400 1.9375rem/2.375rem var(--ios-font);  /* 31/38 */
+  --slide-text-headline:    590 1.75rem/2.125rem var(--ios-font);    /* 28/34 */
+  --slide-text-body:        400 1.75rem/2.125rem var(--ios-font);    /* 28/34 */
+  --slide-text-callout:     400 1.625rem/2rem var(--ios-font);       /* 26/32 */
+  --slide-text-subhead:     400 1.5625rem/1.9375rem var(--ios-font); /* 25/31 */
+  --slide-text-footnote:    400 1.4375rem/1.8125rem var(--ios-font); /* 23/29 */
+  --slide-text-caption1:    400 1.375rem/1.75rem var(--ios-font);    /* 22/28 */
+  --slide-text-caption2:    400 1.25rem/1.5625rem var(--ios-font);   /* 20/25 */
+}
+
 /* ---------- 2. Base ---------- */
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -206,210 +228,57 @@ summary::-webkit-details-marker{display:none}
 .foot-line{margin-top:24px}
 
 /* ---------- 11. The phone ---------- */
-/* The phone page is a presentation: one viewport, no page scroll. The phone is
-   drawn at 390 x 844 pt, the iPhone logical size, and scaled by --s (set by
-   the page's script) to fit the viewport's height. The signal tile sits
-   beside it and the tab bar is fixed at the foot. */
+/* An empty iPhone, centred on the page. Drawn at 393 x 852 pt, the logical
+   size of the iPhone 14 Pro, 15, 15 Pro and 16 (the HIG's device table), and
+   scaled by --s (set by the page's script) to fit the viewport's height, never
+   above 1:1. What goes on the screen is not decided yet. */
 :root{--s:1}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .page--phone{height:100vh;height:100dvh;overflow:hidden}
-.page--phone .page-body{height:100%;padding-bottom:0;display:flex;flex-direction:column}
-.page--phone .ios-tabbar{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);margin:0}
-.phone-wrap{flex:1;min-height:0;display:flex;flex-wrap:wrap;gap:40px;align-items:center;justify-content:center;padding:16px 0 80px}
-.phone-stage{flex:none;width:calc(390px*var(--s));height:calc(844px*var(--s))}
+.page--phone .page-body{height:100%;max-width:none;padding:72px 48px 48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+/* The left half: an empty placeholder, marked by a dashed hairline until it
+   has a job. Capped at a reading measure (44rem, the same as the home's prose)
+   and centred in its half, so a title and a paragraph will not stretch. */
+.phone-left{width:100%;max-width:44rem;height:100%;max-height:calc(852px*var(--s));margin:0 auto;padding:32px;border:1px dashed var(--ios-separator);border-radius:var(--ios-radius-tile)}
+.phone-left h1{font:var(--slide-text-large-title);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-large-title);color:var(--ios-label)}
+.phone-left__desc{font:var(--slide-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label-secondary);margin-top:16px;max-width:44rem}
+.phone-right{display:flex;align-items:center;justify-content:center;min-width:0}
+/* The way out: a plain back link fixed in the top left, like a navigation bar's back button. */
+.phone-exit{position:fixed;top:24px;left:40px;z-index:2;padding-left:8px;white-space:nowrap}
+.phone-stage{flex:none;width:calc(393px*var(--s));height:calc(852px*var(--s))}
 /* The bezel is hardware, so it stays black in both appearances. */
-.phone{width:390px;height:844px;transform:scale(var(--s));transform-origin:top left;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:56px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-.screen{--t:0;position:relative;width:100%;height:100%;background:var(--ios-bg);border-radius:44px;overflow:hidden;display:flex;flex-direction:column}
+.phone{width:393px;height:852px;transform:scale(var(--s));transform-origin:top left;background:#000;border:1px solid rgba(255,255,255,.12);border-radius:56px;padding:12px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.screen{position:relative;width:100%;height:100%;background:var(--ios-bg);border-radius:44px;overflow:hidden;display:flex;flex-direction:column}
 .screen .ios-statusbar{flex:none}
-.home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;z-index:6;pointer-events:none}
-
-/* The whole screen scrolls as one. The bar, the floating actions, the sheets,
-   the toast and the home indicator sit over it and stay put. */
-.screen .scroll{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:none;overscroll-behavior:contain;padding-top:52px}
-.screen .scroll::-webkit-scrollbar{display:none}
-
-/* The app bar, fixed under the status bar: the mark on the left, the day and
-   count in the middle, the menu on the right. The kit's navigation-bar
-   material sits behind it and comes up as the card scrolls under (--t); the
-   card's title replaces the day once its own title has passed beneath. */
-.screen .bar{position:absolute;left:0;right:0;top:54px;z-index:7;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:52px;padding:4px 12px}
-.screen .bar__material{position:absolute;inset:0;z-index:0;padding:0;border-radius:0;border-width:0 0 .5px 0;background:var(--ios-bg);opacity:var(--t);pointer-events:none}
-.bar__mark{position:relative;z-index:1;justify-self:start;display:inline-flex;color:var(--ios-accent);padding:4px}
-.bar__menu{position:relative;z-index:1;justify-self:end;width:36px;height:36px;padding:0;display:inline-flex;align-items:center;justify-content:center;color:var(--ios-accent);background:none;border:0;box-shadow:none}
-.bar__middle{position:relative;z-index:1;display:grid;justify-items:center;max-width:230px}
-.bar__middle>span{grid-area:1/1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;transition:opacity .2s,transform .2s}
-.bar__date{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary)}
-.bar__title{position:relative;padding-left:14px;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);opacity:0;transform:translateY(6px)}
-.bar__title::before{content:"";position:absolute;left:0;top:50%;margin-top:-4px;width:8px;height:8px;border-radius:50%;background:var(--kind-quiet)}
-.bar__title[data-kind="sustain"]::before{background:var(--kind-sustain)}
-.bar__title[data-kind="advance"]::before{background:var(--kind-advance)}
-.bar__title[data-kind="expand"]::before{background:var(--kind-expand)}
-.screen.titled .bar__title{opacity:1;transform:none}
-.screen.titled .bar__date{opacity:0;transform:translateY(-6px)}
-
-/* The stage: one item on at a time. The card sits on the deck with 16 pt of
-   air. As the screen scrolls (--p, 0 to 1 over 120 px: a judgment) it widens
-   to the edges, squares off and loses its shadow, becoming a full-width
-   surface; the edges of the deck beneath it fold away, and the relationship
-   follows on that surface as light grey tiles with hairlines. */
-.stage{--p:0;--y:0px;--card-h:640px;position:relative}
-.item{display:none}
-.item.on{display:block}
-/* At rest the card fills the screen (--card-h, set by the script), the
-   actions sit at its foot and the cue under them; it is the top of a deck.
-   As the screen scrolls (--y, in px) the spare space inside the card folds
-   away first, so the page it opens into has no dead zone. */
-.item .card{
-  position:relative;z-index:2;margin:8px calc(16px*(1 - var(--p))) 0;padding:20px;min-height:max(0px,calc(var(--card-h) - var(--y)));
-  border-radius:calc(var(--ios-radius-tile)*(1 - var(--p)));
-  box-shadow:0 8px 24px rgba(0,0,0,calc(.08*(1 - var(--p))));
-  touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab;
-  transition:transform .26s,opacity .26s;
-}
-/* The title steps up to Title 1 on the phone: the card is the whole screen, and the title carries it. */
-.item .card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin:2px 0 10px}
-.item .card.dragging{transition:none;cursor:grabbing}
-.item .card.off-left{transform:translateX(-130%) rotate(-10deg);opacity:0}
-.item .card.off-right{transform:translateX(130%) rotate(10deg);opacity:0}
-.item .card.desk{border:1px dashed var(--ios-separator)}
-.item .note{margin-top:12px}
-.item .answers{margin:12px 0 0}
-.item .answers.ios-list{background:var(--ios-bg-tertiary)}
-/* On a phone the primary action spans the card, 50 pt tall like the empty
-   state's action, and the plain actions sit centred in a row beneath it. */
-.item .actions,.actions--stack{margin-top:auto;padding-top:16px;justify-content:center;gap:4px 24px}
-.item .actions>.ios-btn--filled,.actions--stack>.ios-btn--filled{flex:0 0 100%;min-height:50px}
-.item .actions>.ios-btn--tinted,.actions--stack>.ios-btn--tinted{flex:0 0 100%}
-.page-cue{display:flex;align-items:center;gap:6px;height:calc(36px*(1 - var(--p)));overflow:hidden;margin:calc(8px*(1 - var(--p))) auto 0;padding:0 8px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);background:none;border:0;cursor:pointer;opacity:clamp(0,calc(1 - 2*var(--p)),1)}
-.page-cue .chevron{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 4px}
-/* The rest of the deck: two cards' edges under the top one, each narrower
-   and fainter, that fold away as the card opens. */
-.peek{position:relative;height:calc(22px*(1 - var(--p)));opacity:calc(1 - var(--p));overflow:hidden}
-.peek::before,.peek::after{content:"";position:absolute;left:28px;right:28px;top:0;height:10px;background:var(--ios-bg-card);opacity:.75;border-radius:0 0 12px 12px}
-.peek::after{left:40px;right:40px;top:10px;height:9px;opacity:.4}
-/* The next card rises from the deck when one leaves. */
-@keyframes rise{from{transform:scale(.95) translateY(16px);opacity:.75}to{transform:none;opacity:1}}
-.item.rise .card{animation:rise .32s ease-out}
-.item.leaving .world{opacity:0;transition:opacity .2s}
-.item.end .card{background:none;box-shadow:none;margin:8px 16px;min-height:0;display:flex;align-items:center;justify-content:center;text-align:center;cursor:default;min-height:16rem}
-.item.end .card p{color:var(--ios-label-secondary)}
-.item.end .card a{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;padding:0 8px}
-.hint{position:absolute;top:16px;z-index:1;font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-footnote);padding:5px 12px;border-radius:999px;opacity:0;transition:opacity .15s;pointer-events:none}
-.hint.left{right:16px;background:var(--ios-fill-control);color:var(--ios-label)}
-.hint.right{left:16px;background:var(--ios-accent);color:#fff}
-.card.lean-left .hint.left,.card.lean-right .hint.right{opacity:1}
-
-/* The world: the relationship behind the card, on the full-width surface the
-   card has become. Apple's grouped surfaces, as on a Contacts page: the
-   person sits on the surface; each section is an uppercase footnote header
-   above an inset group in the grouped grey, rows parted by hairlines, a
-   footnote footer where there is one. No borders. Three groups per item:
-   the noun first (the note, the talking points, what each answer changes),
-   the story so far and what the tool read, and one short paragraph in its
-   voice. The surface's colour blends from the page grey to the card white
-   as the card opens, and the groups rise in a beat apart, so nothing shows
-   through as a band. */
-.world{
-  position:relative;z-index:1;display:flow-root;padding:0 16px 120px;
-  background:color-mix(in srgb,var(--ios-bg-card) calc(100%*var(--p)),var(--ios-bg));
-}
-/* flow-root keeps the first header's top margin inside the surface; without
-   it the margin escapes and the page grey shows as a band under the card. */
-.world>*{opacity:clamp(0,calc((var(--p) - .4)/.6),1)}
-.who-block{padding:16px 4px 0}
-.world .who{display:flex;align-items:center;gap:14px;padding:0 0 10px}
-.world .ava{width:48px;height:48px;border-radius:50%;background:var(--ios-fill-control);color:var(--ios-label);font:var(--ios-text-body);font-weight:var(--ios-weight-semibold);display:flex;align-items:center;justify-content:center;flex:none}
-.world .name{font:var(--ios-text-title3);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-title3);color:var(--ios-label)}
-.world .role{font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);margin-top:2px}
-.world .meta{font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
-.sec{--i:0;margin-top:8px;transform:translateY(calc((16px + 10px*var(--i))*(1 - var(--p))))}
-.sec:nth-child(2){--i:1}
-.sec:nth-child(3){--i:2}
-.sec:nth-child(4){--i:3}
-.page-body .sec .ios-list__header{margin:20px 16px 7px}
-.page-body .sec .ios-list__footer{margin:7px 16px 0}
-.tile{background:var(--ios-bg-tertiary);border-radius:var(--ios-radius-card);overflow:hidden}
-.tile>p{padding:11px 16px;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
-.tile>p+p{padding-top:0}
-.tile>p.small{padding:4px 16px 10px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary)}
-/* Rows, parted by hairlines inset 16 pt like the kit's list rows. */
-.timeline,.map,.points{list-style:none;margin:0;padding:0}
-.timeline li,.map li,.points li{position:relative;padding:10px 16px}
-.timeline li+li::before,.map li+li::before,.points li+li::before{content:"";position:absolute;top:0;left:16px;right:0;height:1px;background:var(--ios-separator);transform:scaleY(.5);transform-origin:top}
-.timeline li{display:grid;grid-template-columns:76px 1fr;gap:12px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
-.timeline .d{color:var(--ios-label-secondary);font-variant-numeric:tabular-nums}
-.map .a{display:block;font:var(--ios-text-body);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
-.map .r{display:block;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary);margin-top:2px}
-.points{counter-reset:n}
-.points li{padding-left:52px;font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
-.points li::after{counter-increment:n;content:counter(n);position:absolute;left:16px;top:10px;width:26px;height:26px;border-radius:50%;background:var(--ios-fill-control);font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);display:flex;align-items:center;justify-content:center}
-/* A count you can see: one dot per draft. */
-.dots{display:flex;gap:6px;padding:14px 16px 0}
-.dots i{width:16px;height:16px;border-radius:50%;background:var(--ios-fill-control)}
-.dots i.on{background:var(--ios-accent)}
-/* The note, as the rows of its group, then Open in Mail as a tappable row. */
-.tile .letter{padding:12px 16px 12px}
-.tile .letter p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
-.tile .letter p+p{margin-top:8px}
-.tile .tile__row{display:flex;width:100%;min-height:44px;padding:11px 16px;border-radius:0;text-align:left;position:relative}
-.tile .tile__row::before{content:"";position:absolute;top:0;left:16px;right:0;height:1px;background:var(--ios-separator);transform:scaleY(.5);transform-origin:top}
-
-/* The floating actions: the iOS 26 floating capsule, 34 pt above the foot
-   (the home indicator's safe area). It slides up once the card's own buttons
-   have scrolled under the bar. */
-.screen .float{position:absolute;left:50%;bottom:34px;z-index:7;display:flex;gap:2px;padding:5px 6px;border:0;transform:translate(-50%,24px);opacity:0;pointer-events:none;transition:transform .3s,opacity .3s}
-.screen .float .ios-btn{white-space:nowrap;min-height:46px}
-.screen.floating .float{transform:translate(-50%,0);opacity:1;pointer-events:auto}
-
-/* On the phone the note is a bottom sheet at the medium detent, with a
-   grabber, and the reasons are an action sheet from the bottom. Both sit
-   inside the screen, and the scrim is a shadow clipped by the screen. They
-   slide up from the foot; hidden comes back once the close has played. */
-.screen .sheet-backdrop{position:absolute;align-items:flex-end;padding:0;background:rgba(0,0,0,.35);z-index:8;opacity:0;transition:opacity .3s}
-.screen .sheet-backdrop.open{opacity:1}
-.screen .sheet,.screen .ios-actionsheet{transform:translateY(100%);transition:transform .35s cubic-bezier(.32,.72,0,1)}
-.screen .sheet-backdrop.open .sheet,.screen .sheet-backdrop.open .ios-actionsheet{transform:none}
-.screen .sheet{width:100%;max-height:72%;border-radius:38px 38px 0 0;padding:8px 20px 28px}
-.screen .sheet__bar{grid-template-columns:auto 1fr auto}
-.screen .sheet__bar .ios-navbar__title{text-align:center;padding:0 8px}
-.screen .sheet__bar .ios-btn{white-space:nowrap}
-.screen .sheet__grabber{display:block}
-.screen .sheet-backdrop--actions{padding:0 8px 34px}
-.screen .toast{
-  position:absolute;left:16px;right:16px;bottom:44px;z-index:9;
-  background:var(--ios-bg-card);
-  color:var(--ios-label);font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);
-  padding:12px 16px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.16);
-  opacity:0;transition:opacity .2s;pointer-events:none;
-}
-/* Apple has no toast. This is the nearest honest thing: a small banner at
-   the foot of the screen that goes away on its own. */
-.screen .toast.on{opacity:1}
-
-/* Beside the phone: the signal behind the card on screen, as a companion tile. */
-.signal{flex:1 1 280px;max-width:30rem;padding:20px 24px}
-.signal.off{visibility:hidden}
-.signal section{display:none}
-.signal section.on{display:block;animation:fade .25s ease-out}
-@keyframes fade{from{opacity:0}to{opacity:1}}
-.signal .eyebrow{font:var(--ios-text-footnote);font-weight:var(--ios-weight-semibold);letter-spacing:.06em;text-transform:uppercase;color:var(--ios-label-secondary);margin-bottom:6px}
-.signal h2{font:var(--ios-text-title2);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title2);color:var(--ios-label);margin-bottom:4px}
-.signal .blurb{color:var(--ios-label-secondary)}
-.signal .lead{font:var(--ios-text-subhead);font-weight:var(--ios-weight-semibold);letter-spacing:var(--ios-track-subhead);margin-top:20px}
-.signal ul{margin-top:8px;padding-left:1.2em;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
-.signal li+li{margin-top:6px}
-.signal .sure-line{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary);margin-top:16px}
-.signal .small{margin:16px 0 0}
+/* What is on the screen, under the status bar, inside the 16 pt gutters. */
+/* The top row: two round menu buttons, the kit's glass button, one at each
+   edge, inside the 16 pt gutters. */
+.screen__top{flex:none;display:flex;justify-content:space-between;align-items:center;padding:4px var(--ios-gutter) 0}
+.screen__menu{width:44px;height:44px;padding:0;display:inline-flex;align-items:center;justify-content:center;color:var(--ios-accent);border-radius:50%}
+.screen__content{flex:1;min-height:0;display:flex;flex-direction:column;padding:0 var(--ios-gutter) 108px}
+/* The menu: the kit's floating tab bar, pinned inside the screen 34 pt above
+   the foot (the home indicator's safe area), centred. */
+.screen__tabbar{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);margin:0;z-index:5}
+/* The deck. The top card fills the screen, held in the hand like a playing
+   card: 24 pt corners, a real shadow, a bigger title. Two cards wait behind
+   it, each a step narrower and lower, so there is something to deal to.
+   Numbers are a judgment, not Apple's. */
+.deck{position:relative;flex:1;min-height:0;margin-top:12px}
+.deck__card{position:relative;z-index:3;height:100%;padding:24px;border-radius:24px;box-shadow:0 12px 32px rgba(0,0,0,.14),0 1px 2px rgba(0,0,0,.06)}
+.deck__card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
+.deck__card p{color:var(--ios-label-secondary)}
+.deck__behind{position:absolute;left:0;right:0;top:0;height:100%;background:var(--ios-bg-card);border-radius:24px;box-shadow:0 8px 24px rgba(0,0,0,.08);transform-origin:bottom center}
+.deck__behind--1{z-index:2;transform:translateY(12px) scale(.94)}
+.deck__behind--2{z-index:1;transform:translateY(24px) scale(.88);opacity:.6}
+.home-indicator{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:999px;background:var(--ios-label);opacity:.9;pointer-events:none}
 
 @media (max-width:560px){
   .page--phone{height:auto;overflow:visible}
-  .page--phone .page-body{height:auto;padding-bottom:110px;display:block}
-  .page--phone .ios-tabbar{position:sticky;left:auto;transform:none;margin:-62px auto 10px}
-  .phone-wrap{gap:24px;padding:0}
+  .page--phone .page-body{height:auto;padding:52px 0 0;display:block}
+  .phone-left{display:none}
+  .phone-exit{position:absolute}
   .phone-stage{width:100%;height:auto}
   .phone{width:100%;height:82vh;transform:none;border:0;border-radius:0;padding:0;background:none;box-shadow:none}
   .screen{border-radius:0}
   .screen .ios-statusbar,.home-indicator{display:none}
-  .screen .bar{top:0}
-  .signal{order:2;max-width:100%}
 }

@@ -48,8 +48,7 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
 - `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
   blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under
   `_archive/02-relationships/signals/` and `_archive/03-offerings/signals/` are where most cards'
-  reasoning came from, and they name the signal shown beside the phone for each card;
-  `_archive/docs/tracing-back.md` explains the facts → counting → opinion track-back that a card's
+  reasoning came from; `_archive/docs/tracing-back.md` explains the facts → counting → opinion track-back that a card's
   back follows. The old vocabulary there was Plant / Grow / Nurture; here
   it is Expand / Advance / Sustain.
 
