@@ -47,8 +47,18 @@
       <div class="deck__behind deck__behind--2" aria-hidden="true"></div>
       <div class="deck__behind deck__behind--1" aria-hidden="true"></div>
       <article class="card deck__card">
-        <h2>Title</h2>
-        <p>Description. A line or two about what this card is asking or offering.</p>
+        <div class="deck__labels"><span class="kind kind--quiet">Label</span></div>
+        <h2>Title placeholder that runs on long enough to take three lines</h2>
+        <p>Description. A few lines about what this card is asking or offering, where the tool looked before it asked, what it could not see, and what it will do with the answer once you give it.</p>
+        <div class="badges"><span class="badge">Badge</span><span class="badge">Badge</span></div>
+        <!-- The foot varies by kind. A question card: options to choose from, one gets the checkmark. -->
+        <ul class="ios-list deck__options" role="radiogroup" aria-label="Your answer">
+          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option one</span><span class="check" aria-hidden="true"></span></button></li>
+          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option two</span><span class="check" aria-hidden="true"></span></button></li>
+          <li><button class="ios-list__row ios-list__row--tappable" role="radio" aria-checked="false" type="button"><span class="ios-list__title">Option three</span><span class="check" aria-hidden="true"></span></button></li>
+        </ul>
+        <!-- The hint that more waits below: a footnote and a chevron pointing down. -->
+        <p class="deck__more"><span class="chevron chevron--down" aria-hidden="true"></span>Scroll for details</p>
       </article>
     </div>
   </div>
