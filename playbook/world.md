@@ -64,27 +64,39 @@ until you do"; they have not been changed yet.)
 the grid, never above it: the cards come to you; the box is for what you're wondering.
 
 **The phone.** Slides that explain the concept; they are not screens of the tool. All of them
-live in `deck.html`, one shown at a time. The first, "The phone", is the prototype: the title
-and a line about the idea on the left, one iPhone on the right at almost the panel's full
+live in `deck.html`, one shown at a time. The first, "The idea", is words only: it states the
+argument before anything is demonstrated, that people work the verbs and the tool works the
+nouns. The second, "The phone", is the prototype: the title
+and a line about the idea on the left, one iPhone on the right at almost the room's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
-close button lowers it). The second, "The modules", shows the modules as bare reply
+close button lowers it). The third, "The modules", shows the modules as bare reply
 sheets in a row, no phone around them, each captioned by its module. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now.
 
-The deck: the page is the grouped grey, and each slide is a white panel inside the same
-48 pt margin the slides always had, with the way out top left and the previous, count and next
-controls bottom right on the grey. The heading sits top left in the panel; the body takes the
-rest and centres its content, scaled to fit. Arrow keys and space move between slides without
-leaving the page. Nothing more: no full screen, no fixed canvas. The Cards and Ask pages stay as
-pages: they are the library, not the story.
+The deck, "The room" (decided 17 September, by looking, on one sheet of three rendered
+directions: https://claude.ai/artifact/YJCZrrjxT3N7iKS5pDse1b). There is no panel. The slide is
+the ground itself, the same pale cool ground by day and near-black by night that the card was
+drawn against, so the phone stands in the room rather than on a tile inside it. The words sit
+left in a fixed column and the figure right, both at the ground's level, with 64 pt of padding
+top and bottom and 72 pt at the sides. The title is the card's big words one step up, 72 on 66
+in the phone's face, and the line under it is small and quiet. The way out, the arrows and the
+count are ink marks in the margins, not buttons: the room has no furniture in it. Arrow keys and
+space move between slides without leaving the page. Nothing more: no full screen, no fixed
+canvas. Tried and passed over on the way: "The masthead", the title full width over a hairline
+with the figures ranked beneath, and "The night studio", a room fixed dark with the words
+stepped back to a caption in the corner. The Cards and Ask pages stay as pages: they are the
+library, not the story.
 
-Decided so far (17 September): the slide sits inside a 48 pt safe area, its title and
-description capped at a reading measure and set on the AX1 rung of Dynamic Type, each phone
-drawn at 393 × 852 pt and scaled to fit, never bigger than a phone. A bare sheet is the
-phone's sheet, as if grabbed from the phone: 335 pt wide, then scaled, and it may grow past
-1:1 on a big screen.
+Decided so far (17 September): each phone is drawn at 393 × 852 pt and scaled to fit, never
+bigger than a phone. A bare sheet is the phone's sheet, as if grabbed from the phone: 335 pt
+wide, then scaled, and it may grow past 1:1 on a big screen. A slide of words and a figure caps
+its content at 1440 pt and centres it, so a wide screen does not pull the two to opposite walls;
+the ground still bleeds to the edges. The modules slide is not capped, because a bare sheet is
+allowed to grow. A slide whose body is a row of figures takes its title down a step, to the
+card's own 48 on 46, and lets its line run the head's full measure, so the figures keep the
+room. A slide of words only says no size, and the script leaves its scale alone.
 
 On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"), and one
 card, already in focus, that runs down to the home indicator. There is no stack of cards
@@ -158,8 +170,10 @@ officer-time numbers you asked for", is new and belongs to that card.
 
 The phone's look (decided 17 September, by looking, over six rounds on one sheet of rendered
 options: https://claude.ai/artifact/4kvVknQPP2bFEdw2z9ooKB). The anatomy is iOS and stays; the
-look is the playbook's own, and it lives only on the phone and on the bare sheets grabbed from
-it. Four choices. *Big words*: the title is the design, very large, tight and heavy (48 on 46),
+look is the playbook's own. It lives on the phone, on the bare sheets grabbed from it, and on
+the slide that holds them, which took it later the same day when the deck became a room. In the
+stylesheet that is one selector, `.page--slide`, which only `deck.html` carries, so the desk
+cannot inherit it. Four choices. *Big words*: the title is the design, very large, tight and heavy (48 on 46),
 and everything else is small and quiet. *Plus Jakarta Sans* is the phone's face, carried in the
 fonts folder as Inter is; the status bar keeps the system's. *No colour on buttons*: the filled
 action is ink, or white in the dark, and the kind's dot is the only colour on the screen. The
@@ -169,7 +183,9 @@ all slate, a near-black ground and a lighter slate card with a faint sheen and a
 and passed over on the way: recolouring Apple's kit, a card tinted by its kind, a white card on
 deep green set in Baskerville, a ruled docket, paper and frosted glass as materials, a slate
 card kept by day as well, and the kind glowing in the slate. The desk has not taken the look:
-it is still Apple's blue and SF Pro, a known disagreement, left for later. Long titles will
+Cards, Ask and the card pages are still Apple's blue and SF Pro, a known disagreement, left for
+later. The kind's dot is pinned to the blue itself rather than to the accent, because the accent
+is ink here and an Advance dot was coming out black. Long titles will
 need a smaller step than 48; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.
 

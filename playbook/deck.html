@@ -13,12 +13,23 @@
 </head>
 <body class="page page--slide">
 
-<!-- The deck: every slide in one file, one shown at a time. The page is the
-     grey; the slide is a white panel inside the margins. The way out sits in the top
-     margin on the panel's edge, the arrows in the side margins, the count in the foot's. Arrow keys move. -->
+<!-- The deck: every slide in one file, one shown at a time. There is no panel.
+     The slide is the ground itself, the room the card was drawn against. The way out sits
+     top left, the arrows in the side margins, the count in the foot's, all as ink marks
+     rather than buttons. Arrow keys move. -->
 <main class="page-body">
 
 <a class="ios-btn deck__exit" href="index.html"><span class="chevron" aria-hidden="true"></span>Cards</a>
+
+<!-- The opener: the argument, before anything is demonstrated. Words only, so
+     it says no size and deck.js leaves its scale alone. -->
+<section id="idea" class="slide slide--words" aria-label="The idea">
+
+  <header class="slide__head">
+    <h1>The idea</h1>
+    <p>You work the verbs. You decide, you approve, you send. I work the nouns. I find the person, gather the proof and write the draft. Nothing goes out without you.</p>
+  </header>
+</section>
 
 <section id="phone" class="slide slide--side" data-w="393" data-h="852" aria-label="The phone">
 
@@ -128,7 +139,7 @@
   </div>
 </section>
 
-<section id="modules" class="slide" data-w="335" data-h="588" data-max="1.5" style="--sheet-h:588px" aria-label="The modules">
+<section id="modules" class="slide slide--figures" data-w="335" data-h="588" data-max="1.5" style="--sheet-h:588px" aria-label="The modules">
 
 
   <header class="slide__head">

@@ -13,6 +13,9 @@
     var sl = slides[i], body = sl.querySelector('.slide__body');
     if (!body) return;
     var w = +sl.getAttribute('data-w'), h = +sl.getAttribute('data-h');
+    /* A slide of words only says no size, so there is nothing to fit: leave
+       --s alone rather than dividing by zero and setting it to NaN. */
+    if (!w || !h) return;
     var n = sl.querySelectorAll('figure').length || 1;
     var caption = sl.querySelector('figcaption') ? 40 : 0;
     var gap = 24, box = body.getBoundingClientRect();

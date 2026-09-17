@@ -17,7 +17,9 @@
   --page:80rem;
   --page-gutter:clamp(16px,3vw,24px);
   --kind-sustain:var(--ios-green);
-  --kind-advance:var(--ios-accent);
+  /* The blue itself, not the accent: the deck repoints the accent to ink, and
+     the kind's dot is the one thing on the phone that keeps its colour. */
+  --kind-advance:var(--ios-blue);
   --kind-expand:var(--ios-orange);
   --kind-quiet:var(--ios-gray);
   --on-accent:#FFFFFF;              /* a label on the accent fill, as on the kit's filled button */
@@ -229,37 +231,65 @@ summary::-webkit-details-marker{display:none}
 .foot-line{margin-top:24px}
 
 /* ---------- 11. The deck ---------- */
-/* The phone pages are slides, all in deck.html, one shown at a time. The page
-   is the grouped grey; the slide is a white panel inside a 48 pt margin (the
-   same safe area the slides had before, a judgment) with 48 pt of padding.
-   The heading sits top left in the panel and the body takes the rest, with
-   its content centred both ways. Figures (a phone, a card) are drawn at
-   their own size and scaled by --s, which deck.js sets to fit the body. */
+/* The phone pages are slides, all in deck.html, one shown at a time.
+   The room (decided 17 September, by looking, on a sheet of three rendered
+   directions; "The masthead" and "The night studio" were tried and passed
+   over). There is no panel. The slide is the ground itself, the same pale
+   cool ground by day and near-black by night that the card was drawn
+   against, so the phone stands in the room rather than on a tile inside it.
+   The words sit left and the figure right, both at the ground's level.
+   Figures (a phone, a sheet) are drawn at their own size and scaled by --s,
+   which deck.js sets to fit the body. Every number here is a judgment, not
+   Apple's, measured on a 1280 x 800 slide. */
 :root{--s:1}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .page--slide{height:100vh;height:100dvh;overflow:hidden}
 .page--slide .page-body{max-width:none;height:100%;padding:0;position:relative}
-.slide{position:absolute;inset:48px;display:flex;flex-direction:column;padding:48px;background:var(--ios-bg-card);border-radius:var(--ios-radius-tile)}
-/* The controls live in the margins: the way out in the top one, its chevron
-   on the panel's left edge; the arrows centred in the side ones; the count in
-   the foot's. */
-.deck__exit{position:fixed;top:2px;left:38px;z-index:2;padding-left:8px;white-space:nowrap}
-.deck__prev,.deck__next{position:fixed;top:50%;transform:translateY(-50%);z-index:2;width:44px;min-width:0;padding:0;justify-content:center}
-.deck__prev{left:2px}
-.deck__next{right:2px}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;padding:64px 72px}
+/* The controls are marks in the margins, not buttons: the room has no
+   furniture in it. The way out top left on the words' own line, the arrows
+   centred in the side margins, the count in the foot's. */
+.deck__exit,.deck__prev,.deck__next{background:none;border:0;box-shadow:none;min-height:0;padding:0 6px;
+  font:400 .9375rem/1.25rem var(--phone-font);color:color-mix(in srgb,var(--ios-label) 55%,transparent)}
+.deck__exit{position:fixed;top:24px;left:72px;z-index:2;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.deck__prev,.deck__next{position:fixed;top:50%;transform:translateY(-50%);z-index:2;width:44px;min-width:0;justify-content:center}
+.deck__prev{left:24px}
+.deck__next{right:24px}
 .deck__prev .chevron,.deck__next .chevron{margin:0}
-.deck-count{position:fixed;right:16px;bottom:14px;z-index:2;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);font-variant-numeric:tabular-nums}
-/* The heading: title and one line, capped at a reading measure. */
+.deck-count{position:fixed;right:32px;bottom:26px;z-index:2;font:400 .875rem/1.25rem var(--phone-font);
+  color:color-mix(in srgb,var(--ios-label) 40%,transparent);font-variant-numeric:tabular-nums}
+/* The heading. Big words, the card's own move one step up: 72 on 66, the
+   heaviest weight, tight. Everything else is small and quiet. */
 .slide__head{flex:none;max-width:44rem}
-.slide__head h1{font:var(--slide-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);color:var(--ios-label)}
-.slide__head p{font:var(--slide-text-callout);letter-spacing:var(--ios-track-callout);color:var(--ios-label-secondary);margin-top:6px}
-/* The body: the rest of the panel, content centred both ways. */
+.slide__head h1{font:800 4.5rem/4.125rem var(--phone-font);letter-spacing:-.045em;color:var(--ios-label)}
+.slide__head p{font:400 1.25rem/1.9375rem var(--phone-font);color:var(--ios-label-secondary);margin-top:24px;max-width:26rem}
+/* The body: the rest of the room, content centred both ways. */
 .slide__body{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;gap:24px;margin-top:24px}
-/* A side slide: the heading on the left, the figure on the right with the
-   panel's whole height to itself, so a phone draws at almost full height. */
-.slide--side{flex-direction:row;gap:48px}
-.slide--side .slide__head{flex:1;min-width:0}
+/* A side slide: the words on the left in a fixed column, the figure on the
+   right with the room's whole height, so a phone draws at almost full height. */
+/* The head and body must stay stretched to the room's full height: deck.js
+   measures the body to work out --s, and a centred (shrink-wrapped) body
+   would measure the figure against itself and grow it every pass. The words
+   are centred inside the head instead. */
+/* On a very wide screen the room would pull the words and the figure to
+   opposite walls, so the side slide's content is capped and centred. The
+   ground still bleeds to the edges. The figures slide is not capped: a bare
+   sheet is allowed to grow past 1:1 on a big screen. */
+.slide--side{flex-direction:row;gap:64px;max-width:1440px;margin:0 auto}
+.slide--side .slide__head{flex:0 0 30rem;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .slide--side .slide__body{flex:1;margin-top:0}
+/* A slide whose body is a row of figures: the words are a heading standing
+   over them rather than a column beside them, so the title steps down to the
+   card's own 48 on 46 and the line runs the head's full measure. The figures
+   still need the room's whole width, which is what caps their scale. */
+.slide--figures .slide__head{max-width:56rem}
+.slide--figures .slide__head h1{font-size:3rem;line-height:2.875rem}
+.slide--figures .slide__head p{max-width:44rem;margin-top:16px}
+/* A slide with words and no figure: one column, centred in the room. The line
+   under the title is the whole slide here, not a caption, so it is bigger. */
+.slide--words{justify-content:center}
+.slide--words .slide__head{max-width:52rem}
+.slide--words .slide__head p{font-size:1.75rem;line-height:2.625rem;max-width:34rem;margin-top:28px}
 .slide figure{margin:0;min-width:0}
 /* A figure's caption sits under it: the sheets stand on one line, so their names do too. */
 .slide figcaption{text-align:center;font:var(--ios-text-headline);letter-spacing:var(--ios-track-headline);color:var(--ios-label);margin-top:16px;white-space:nowrap}
@@ -460,8 +490,13 @@ summary::-webkit-details-marker{display:none}
 /* ---------- The phone's look ---------- */
 /* Decided 17 September, by looking, on one sheet of rendered options. The
    anatomy above is iOS and stays; the look is the playbook's own and lives
-   only here, on the phone's screen and on the bare sheets grabbed from it.
-   The desk does not take it. Four choices:
+   on the phone's screen, on the bare sheets grabbed from it, and on the slide
+   that holds them (decided 17 September, by looking, second sheet: the slide
+   is the same room the card was drawn against, so the phone stands on the
+   ground rather than on a panel). The desk does not take it: Cards, Ask and
+   the card pages stay on Apple's blue and SF Pro. That is why the scope below
+   is .page--slide, which only deck.html carries, and never :root.
+   Four choices:
    Big words: the title is the design, very large, tight and heavy, and
    everything else is small and quiet.
    Plus Jakarta Sans (fonts/jakarta.css), the phone's face.
@@ -475,7 +510,7 @@ summary::-webkit-details-marker{display:none}
    The kit's text tokens carry their family from :root, so they are declared
    again here with the phone's face. Its tracking is tuned for SF, so it is
    set to nothing. */
-.screen,.sheet-stage{
+.page--slide,.screen,.sheet-stage{
   --phone-font:'Plus Jakarta Sans',var(--ios-font);
   --ios-text-large-title:400 2.125rem/2.5625rem var(--phone-font);
   --ios-text-title1:400 1.75rem/2.125rem var(--phone-font);
@@ -502,7 +537,7 @@ summary::-webkit-details-marker{display:none}
   --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
 }
 @media (prefers-color-scheme:dark){
-  .screen,.sheet-stage{
+  .page--slide,.screen,.sheet-stage{
     --ios-bg:#0A0B0C;
     --ios-bg-card:#1D1F22;
     --ios-label:#FFFFFF;
