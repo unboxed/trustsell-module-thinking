@@ -76,6 +76,24 @@ them any more). Its pages are in `_archive/desk/`. What it decided that is about
 the screen, lives on: the day ordered by what waiting a day would cost (`library/modules/00-spine.md`)
 and the box, below. The playbook is now the slides and the library.
 
+**The library page** became a catalogue on 18 September 2026, chosen by looking over three rounds
+on one sheet of rendered options (https://claude.ai/artifact/DWZCjrQ7FXH9vqkGkLnZ1q): "C · Columns,
+the phone's look", then set straight on the page. The page runs to 96rem, wider than the playbook's 80rem. Three columns on a 12-column grid, 3, 3 and 6:
+the rungs by name, top to bottom (the story's step words were dropped because they repeated the
+names), the entries on one rung as Apple's inset grouped list with one quiet line each and no separators
+(too many hairlines otherwise; the chosen row takes a fill), and the
+entry at a glance. The entry is laid out like Settings: its header on the ground, then grouped
+lists of what rests on it and what it rests on. Every row moves the columns, so following the
+joins is how you browse. A join not written yet, or read off a card rather than decided, is a
+quiet row that says "Not written yet" or "Provisional". Open the Entry leads to the whole entry.
+The reason is chapter 3 of the story: the tool counts first and judges last, and nothing it says
+floats; the library is that climb made browsable (the user: the story is about how things build
+up to a card, not about the library). It wears the phone's type and ink so the playbook reads as
+one, with no coloured dots, and its surfaces are plain: the glaze and the deep shadow belong to
+the card alone (the user's calls). A signal's Sustain, Advance and Expand, and every entry's
+module, are left off the page for now: where they belong is not decided. Passed over: every rung as a shelf of tiles, and
+one rung as a table.
+
 **The phone.** Slides that explain the concept; they are not screens of the tool. The tool is a
 desktop platform and a phone app both; the phone is where the thinking is done because one card
 on a small screen is easier to think through than a full desktop platform (the user, 18
@@ -277,8 +295,8 @@ glazed white card on a pale cool ground, with a lit top edge and one deep soft s
 all slate, a near-black ground and a lighter slate card with a faint sheen and a lit edge. Tried
 and passed over on the way: recolouring Apple's kit, a card tinted by its kind, a white card on
 deep green set in Baskerville, a ruled docket, paper and frosted glass as materials, a slate
-card kept by day as well, and the kind glowing in the slate. The library page has not taken the look and is still Apple's blue and SF Pro. (The desk never
-took it either, and was archived.) The kind's dot is pinned to the blue itself rather than to the accent, because the accent
+card kept by day as well, and the kind glowing in the slate. The library page took the look on 18 September, without the dots (see "The library page"
+above). (The desk never took it, and was archived.) The kind's dot is pinned to the blue itself rather than to the accent, because the accent
 is ink here and an Advance dot was coming out black. Long titles will
 need a smaller step than 38; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.

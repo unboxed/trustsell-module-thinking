@@ -57,11 +57,12 @@ iPadOS desk was archived on 18 September). Take numbers from the two skills in `
   means changing tokens, not rules. Where a number is a judgement rather than Apple's, the comment
   says so.
 - `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback, and Plus Jakarta Sans
-  (SIL OFL), the phone's face. The library page uses SF Pro through `-apple-system`.
+  (SIL OFL), the phone's face, which the library page uses too.
   Never link a font CDN.
 - The phone has a look of its own (big title, Plus Jakarta Sans, no colour on buttons, a white
   card by day and slate by night). It is the last section of `style.css`, "The phone's look",
-  set as tokens on `.screen` and `.sheet-stage`. The library page has not taken it.
+  set as tokens on `.screen`, `.sheet-stage` and `.page--library`. The library page has taken it,
+  without the kind dots, as a catalogue in three columns (`world.md` says why).
 - `deck.js` is the deck's script
   (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
   its body, the phone's scroll into details, and the phone's reply sheet).

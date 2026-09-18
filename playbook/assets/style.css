@@ -587,9 +587,9 @@ summary::-webkit-details-marker{display:none}
    on the phone's screen, on the bare sheets grabbed from it, and on the slide
    that holds them (decided 17 September, by looking, second sheet: the slide
    is the same room the card was drawn against, so the phone stands on the
-   ground rather than on a panel). The desk does not take it: Cards, Ask and
-   the card pages stay on Apple's blue and SF Pro. That is why the scope below
-   is .page--slide, which only deck.html carries, and never :root.
+   ground rather than on a panel). The library page took it on 18 September,
+   when it became a catalogue, so the whole playbook reads as one; that is why
+   .page--library is in the scope. The scope is still never :root.
    Four choices:
    Big words: the title is the design, very large, tight and heavy, and
    everything else is small and quiet.
@@ -604,7 +604,7 @@ summary::-webkit-details-marker{display:none}
    The kit's text tokens carry their family from :root, so they are declared
    again here with the phone's face. Its tracking is tuned for SF, so it is
    set to nothing. */
-.page--slide,.screen,.screen__page,.sheet-stage{
+.page--slide,.page--library,.screen,.screen__page,.sheet-stage{
   --phone-font:'Plus Jakarta Sans',var(--ios-font);
   --ios-text-large-title:400 2.125rem/2.5625rem var(--phone-font);
   --ios-text-title1:400 1.75rem/2.125rem var(--phone-font);
@@ -635,7 +635,7 @@ summary::-webkit-details-marker{display:none}
   --done-edge:none;
 }
 @media (prefers-color-scheme:dark){
-  .page--slide,.screen,.screen__page,.sheet-stage{
+  .page--slide,.page--library,.screen,.screen__page,.sheet-stage{
     --ios-bg:#0A0B0C;
     --ios-bg-card:#1D1F22;
     --ios-label:#FFFFFF;
@@ -669,7 +669,7 @@ summary::-webkit-details-marker{display:none}
 /* The filled action: a 48 pt capsule. It ends 2 pt above View Draft. */
 .screen .reply__row{min-height:48px;border-radius:999px}
 /* The kit writes white on its filled button; here the label follows the accent's partner. */
-.screen .ios-btn--filled,.sheet-stage .ios-btn--filled{color:var(--on-accent)}
+.screen .ios-btn--filled,.sheet-stage .ios-btn--filled,.page--library .ios-btn--filled{color:var(--on-accent)}
 
 /* ---------- The details' widgets ---------- */
 /* Decided 18 September, by looking, on one sheet of rendered options
@@ -720,32 +720,99 @@ summary::-webkit-details-marker{display:none}
 .details .w-docs svg{color:var(--ios-label);margin-top:1px}
 
 /* ---------- The library ---------- */
-/* The browsable form of library/. It is the desk, so it stays on Apple's kit and
-   adds nothing of its own beyond layout: a rung's entries as an inset grouped list
-   in columns, and the entries' prose. Every colour is a token. */
+/* The browsable form of library/, as a catalogue. Decided 18 September, by
+   looking, over three rounds on one sheet of rendered options
+   (https://claude.ai/artifact/DWZCjrQ7FXH9vqkGkLnZ1q): "C · Columns, the
+   phone's look". Three columns: the climb, the entries on one step of it,
+   and the entry at a glance, whose joins are rows that move the columns.
+   It wears the phone's look (the scope above), so the playbook reads as one.
+   Ink only, and no dots here: kinds are words. The lists are Apple's inset
+   grouped lists (the user's call); a join not written yet, or read off a
+   card rather than decided, is a quiet row that says so.
+   The columns sit on a 12-column grid, 3, 3 and 6 (the user's call). The
+   list runs with the page, and the climb and the entry stay in view.
+   Every number is a judgment, not Apple's. */
+/* A surface here is not a card. The glaze, the lit edge and the deep shadow belong to
+   the card alone (the user's call, 18 September); anything else that holds content is
+   a plain surface with a hairline, just enough to set it apart from the ground.
+   The page runs wider than the playbook's 80rem, to 96rem (the user: we've got
+   room, then: not too much); three columns use it where prose could not. */
+.page--library{--p:0;--page:96rem}
+.page--library .topnav{font-family:var(--phone-font)}
+.page--library .topnav a[aria-current="page"]{font-weight:700}
+.page--library .large-title h1{font:800 2.375rem/2.5rem var(--phone-font);letter-spacing:-.045em}
+.page--library .large-title .date{margin-top:6px}
 
-/* A rung's entries run in columns rather than one long list, because a rung can hold
-   ninety-four of them and a single column is a scroll, not a library. 260px is a
-   judgment: it is the narrowest column that holds a two-word label without wrapping. */
-.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr))}
-/* Hairlines are drawn by each cell rather than by gaps, so a part-filled last row
-   does not leave a block of separator colour showing through. The list clips them. */
-.lib-grid li{box-shadow:1px 1px 0 var(--ios-separator)}
-.lib-grid .ios-list__row{width:100%;box-sizing:border-box}
+.cat{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start;margin-top:12px}
+.cat__climb{grid-column:span 3;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto;scrollbar-width:none}
+.cat__list{grid-column:span 3}
+.cat__list,.cat__entry{min-width:0}
+.cat__entry{grid-column:span 6;position:sticky;top:16px}
+.cat__back{display:none}
 
-/* The count beside a rung's name, in the header's own quiet grey. */
-.lib-count{float:right;text-transform:none;letter-spacing:0}
+/* 1. The climb: the rungs by name, the chosen one an ink capsule. */
+.cat-climb{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.cat-climb__beside{margin-top:20px}
+.cat-climb a{display:flex;justify-content:space-between;gap:8px;padding:8px 14px;border-radius:20px;
+  font:600 .9375rem/1.25rem var(--phone-font);color:var(--ios-label)}
+.cat-climb a span{font-weight:400;color:var(--ios-label-secondary)}
+.cat-climb a:hover{background:color-mix(in srgb,var(--ios-label) 6%,transparent)}
+.cat-climb a[aria-current]{background:var(--ios-label);color:var(--ios-bg)}
+.cat-climb a[aria-current] span{color:color-mix(in srgb,var(--ios-bg) 70%,transparent)}
 
-/* One line under each rung's header saying what the floor does. */
-.lib-does{font:var(--ios-text-footnote);color:var(--ios-label-secondary);margin:4px 16px 8px}
+/* 2. The entries: Apple's inset grouped list, drawn by the kit (16 pt insets, 44 pt
+   rows). The chosen row takes a quiet fill, the way an iPad split view marks the
+   row it shows. */
+.cat__list>.ios-list__header:first-of-type{margin-top:0}
+.cat-item{align-items:flex-start}
+.cat-item__name{display:block;font:var(--ios-text-body);color:var(--ios-label)}
+.cat-item__line{display:block;font:var(--ios-text-footnote);color:var(--ios-label-secondary);margin-top:2px}
+.cat-item:hover{background:color-mix(in srgb,var(--ios-label) 5%,transparent)}
+.cat-item[aria-current]{background:color-mix(in srgb,var(--ios-label) 10%,transparent)}
+/* No separators here: a long list of two-line rows stacks up hairlines, and space
+   does the work, as in an iPad content list (the user: too many hairlines). The
+   short grouped lists in the entry keep theirs. */
+.cat-item+.cat-item::before{display:none}
+.cat__list .ios-list{padding:6px}
+.cat-item{border-radius:10px;padding-top:9px;padding-bottom:9px}
+.cat-item.is-gap .cat-item__name{color:var(--ios-label-secondary)}
 
-/* The way back up, above an entry's title. */
+/* 3. The entry at a glance. No surface of its own: the header sits on the ground,
+   and the grouped lists under it are the surfaces, as in Settings. It scrolls itself
+   when it is taller than the window. */
+.cat-entry{display:block;max-height:calc(100vh - 32px);overflow-y:auto;scrollbar-width:thin;padding-bottom:16px}
+.cat-head{padding:0 16px 4px}
+.cat-head__kind{font:var(--ios-text-subhead);color:var(--ios-label-secondary)}
+.cat-head h2{font:800 2.375rem/2.5rem var(--phone-font);letter-spacing:-.045em;margin:2px 0 8px;color:var(--ios-label);overflow-wrap:anywhere}
+.cat-head__lede{font:var(--ios-text-body);color:var(--ios-label-secondary);margin:0 0 4px}
+.cat-row .ios-list__title{font:var(--ios-text-body);color:var(--ios-label)}
+.cat-row .ios-list__value{font:var(--ios-text-subhead)}
+.cat-row .chevron{color:var(--ios-label-tertiary);width:9px;height:9px;border-width:2px}
+.cat-row:hover{background:color-mix(in srgb,var(--ios-label) 5%,transparent)}
+/* A join not written yet, or read off a card rather than decided: quiet, and it says which. */
+.cat-row.is-gap .ios-list__title{color:var(--ios-label-secondary)}
+.cat-entry .cat-prose{margin:0 16px;max-width:72ch}
+.cat-open{margin:20px 16px 0}
+
+/* Narrow: one column at a time, the deepest the route has reached, with a way back. */
+@media (max-width:899px){
+  .cat{display:block}
+  .cat__climb,.cat__entry{position:static;max-height:none}
+  .cat-entry{max-height:none}
+  .cat-head h2{font-size:2rem;line-height:2.125rem}
+  .cat__back{display:inline-block;font:600 .9375rem/1.25rem var(--phone-font);color:var(--ios-label);padding:4px 0 12px}
+  .cat[data-depth="home"] .cat__list,.cat[data-depth="home"] .cat__entry,
+  .cat[data-depth="rung"] .cat__climb,.cat[data-depth="rung"] .cat__entry,
+  .cat[data-depth="entry"] .cat__climb,.cat[data-depth="entry"] .cat__list{display:none}
+}
+
+/* The whole entry, one step on from the glance: Apple's grouped lists in the look. */
 .lib-crumb{font:var(--ios-text-footnote);color:var(--ios-label-secondary);padding-top:20px}
-.lib-crumb a{color:var(--ios-accent);text-decoration:none}
+.lib-crumb a{color:var(--ios-label);font-weight:600}
 
 /* An entry with nothing written in it yet. Named, never hidden: a gap is a fact. */
 .lib-gap{font:var(--ios-text-subhead);color:var(--ios-label-secondary);
-  border-left:3px solid var(--kind-quiet);padding:8px 0 8px 12px;margin:12px 16px}
+  border-left:1.5px dashed color-mix(in srgb,var(--ios-label) 40%,transparent);padding:8px 0 8px 12px;margin:12px 16px}
 
 /* The entry's own words. Prose, not tiles: this is a document, not a screen. */
 .lib-prose{margin:8px 16px 4px;color:var(--ios-label);max-width:72ch}
@@ -755,7 +822,7 @@ summary::-webkit-details-marker{display:none}
 .lib-prose h1,.lib-prose h2,.lib-prose h3,.lib-prose h4{font:var(--ios-text-headline);margin:16px 0 8px}
 .lib-prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.9em;
   background:var(--ios-bg-tertiary);padding:1px 5px;border-radius:5px}
-.lib-prose a{color:var(--ios-accent)}
+.lib-prose a{color:var(--ios-label);text-decoration:underline}
 .lib-prose table{border-collapse:collapse;width:100%;margin:0 0 12px;font:var(--ios-text-footnote)}
 .lib-prose th,.lib-prose td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--ios-separator);vertical-align:top}
 .lib-prose th{color:var(--ios-label-secondary);font-weight:var(--ios-weight-semibold)}
