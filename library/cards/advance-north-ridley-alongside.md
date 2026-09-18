@@ -52,10 +52,10 @@ Michelle Turner's team think BOPS replaces their case system. It sits alongside 
 
 ## What I read
 
-- The North Ridley thread: messages of 2, 5 and 10 September, with the words "replace" and "migrate".
-- Your calendar: "BOPS demo, North Ridley", Thursday 17 September, 10:00, eight invitees.
-- Drive: the one-page "How BOPS sits alongside your case system".
-- Nothing from you corrects the word "replace".
+- gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words "replace" and "migrate".
+- calendar · "BOPS demo, North Ridley", Thursday 17 September, 10:00, eight invitees.
+- drive · The one-page "How BOPS sits alongside your case system".
+- gmail · Nothing from you corrects the word "replace".
 
 ## Not sure
 

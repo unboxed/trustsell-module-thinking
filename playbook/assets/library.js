@@ -21,15 +21,15 @@
   var byKey = {}; RUNGS.forEach(function (r) { byKey[r.key] = r; });
   var find = function (key, id) { return (L[key] || []).filter(function (e) { return e.id === id || e.address === id; })[0]; };
   /* A card's name is its title. Its `label` is the kind, which every card of that kind shares. */
-  var nameOf = function (e) { return e && (e.title || e.label || e.name || e.id); };
+  var nameOf = function (e) { return e && (e.title || e.plain || e.label || e.name || e.id); };
 
   /* Which fields point at which rung, so links resolve without hand-wiring. */
   var POINTS = {
-    cards:      [['signal','signals'], ['counts','counts'], ['held_by','cards'], ['widgets','widgets']],
+    cards:      [['signal','signals'], ['supporting','signals'], ['counts','counts'], ['held_by','cards'], ['widgets','widgets']],
     widgets:    [['fed_by','fed'], ['reaches','records']],
     signals:    [['inputs','assemblies'], ['counts','counts'], ['needs','sources'], ['module','modules']],
     assemblies: [['inputs','mixed'], ['module','modules']],
-    counts:     [['used_by','signals']],
+    counts:     [['used_by','signals'], ['over','assemblies']],
     modules:    [['draws_from','channels']]
   };
   var esc = function (s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); };
@@ -98,10 +98,18 @@
     var sig = find('signals', card.signal);
     if (sig) {
       rows.push('<li class="ios-list__row"><span class="ios-list__title">' + link('signals', sig.id) + '</span><span class="ios-list__value">the read</span></li>');
-      [].concat(card.counts || []).forEach(function (c) {
-        rows.push('<li class="ios-list__row lib-indent"><span class="ios-list__title">' + link('counts', c) + '</span><span class="ios-list__value">a count</span></li>');
+      // Supporting reads: the other signals whose counts the card quotes.
+      var reads = [sig].concat([].concat(card.supporting || []).map(function (id) { return find('signals', id); }).filter(Boolean));
+      reads.slice(1).forEach(function (s) {
+        rows.push('<li class="ios-list__row"><span class="ios-list__title">' + link('signals', s.id) + '</span><span class="ios-list__value">a supporting read</span></li>');
       });
-      [].concat(sig.inputs || []).forEach(function (a) {
+      [].concat(card.counts || []).forEach(function (c) {
+        var cnt = find('counts', c), over = [].concat((cnt && cnt.over) || []);
+        rows.push('<li class="ios-list__row lib-indent"><span class="ios-list__title">' + link('counts', c) + '</span><span class="ios-list__value">' + (over.length ? 'counts within ' + esc(over.join(', ')) : 'a count') + '</span></li>');
+      });
+      var gathers = [];
+      reads.forEach(function (s) { [].concat(s.inputs || []).forEach(function (a) { if (gathers.indexOf(a) < 0) gathers.push(a); }); });
+      gathers.forEach(function (a) {
         var asm = find('assemblies', a);
         rows.push('<li class="ios-list__row"><span class="ios-list__title">' + link('assemblies', a) + '</span><span class="ios-list__value">the gather</span></li>');
         if (asm) [].concat(asm.inputs || []).slice(0, 6).forEach(function (inp) {
@@ -125,8 +133,8 @@
       }
     }
     return '<div class="ios-list__header">All the way down</div><ul class="ios-list">' + rows.join('') + '</ul>' +
-           '<p class="ios-list__footer">The counting floor is not written yet, so this walk steps over it. ' +
-           'That is the gap, named rather than hidden.</p>';
+           '<p class="ios-list__footer">What each count adds up is not written yet. Where a count can already say ' +
+           'which gather it counts within, it does; the rest are the gap, named rather than hidden.</p>';
   }
 
   function entry(key, id) {

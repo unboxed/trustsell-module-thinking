@@ -27,3 +27,12 @@ Owned by Connections, fetched fresh each time and carried untouched. No opinion 
 | Other contact | email | emailAddresses |
 | Contact group | name | name |
 | Contact group | members | memberResourceNames |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Other contact | Someone you have emailed |

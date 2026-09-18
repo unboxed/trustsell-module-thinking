@@ -1,7 +1,7 @@
 ---
 id: offering-entry
 module: 03-offerings
-label: Offering entry
+label: What you sell
 blurb: Everything about one product, gathered into a single card.
 about: an offering
 deterministic: true
@@ -18,8 +18,7 @@ inputs:
   - web#web-result
 ---
 
-# Offering entry
-
+# What you sell
 ## What it gathers
 
 Gathers everything about one product into a single card, from three places:

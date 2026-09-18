@@ -1,7 +1,7 @@
 ---
 id: objection-list
 module: 03-offerings
-label: Objection list
+label: Worries and answers
 blurb: One offering's worries, gathered into a named catalog with each answer and the proof it needs.
 about: an offering
 deterministic: true
@@ -12,8 +12,7 @@ inputs:
   - web#research-report
 ---
 
-# Objection list
-
+# Worries and answers
 ## What it gathers
 
 Gathers one offering's worries into a single catalog. Each is a named objection (data residency,

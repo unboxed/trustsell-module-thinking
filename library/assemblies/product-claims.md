@@ -1,7 +1,7 @@
 ---
 id: product-claims
 module: 03-offerings
-label: Product claims
+label: What we say the product does
 blurb: The factual claims one product makes, gathered with the grounding under each.
 about: an offering
 deterministic: true
@@ -12,8 +12,7 @@ inputs:
   - web#web-result
 ---
 
-# Product claims
-
+# What we say the product does
 ## What it gathers
 
 Gathers the factual claims a product makes ("syncs both ways", "exports an audit log", "deploys in a

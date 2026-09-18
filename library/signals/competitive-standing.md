@@ -1,7 +1,7 @@
 ---
 id: competitive-standing
 module: 03-offerings
-label: Competitive standing
+label: How we compare with competitors
 blurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'
 modes: [advance]
 kind: risk
@@ -12,8 +12,7 @@ answers: [Q15]
 needs: [web]
 ---
 
-# Competitive standing
-
+# How we compare with competitors
 ## What it means
 
 Where your offering stands against the field around it, on capability and on lock-in, never on price.

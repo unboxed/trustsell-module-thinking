@@ -5,6 +5,8 @@ kind: act
 label: Expand
 signal: fit-match
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [buying-intent, warm-path]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: darren-cole
@@ -52,10 +54,10 @@ Their tender went out last Wednesday and reads like your pitch. Darren Cole is t
 
 ## What I read
 
-- Web: Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October.
-- The tender PDF, sections 2 and 4.
-- Your list of thirty, Tarlton marked cold.
-- LinkedIn is not connected, so I can't see whether you know anyone there.
+- web · Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October.
+- web · The tender PDF, sections 2 and 4.
+- goal-told · Your list of thirty, Tarlton marked cold.
+- linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.
 
 ## Not sure
 

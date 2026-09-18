@@ -51,3 +51,14 @@ record.
 | Deal seed | which offering it is about | you, typed (Offerings confirms relevance) |
 | Deal seed | the people or threads it starts from | you, typed or picked |
 | Deal seed | the buyer org(s) | you, typed |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Seed contact | People to start with |
+| Offline touch | Met offline |
+| Deal seed | Deals you name |

@@ -5,6 +5,8 @@ kind: act
 label: Expand
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [new-stakeholder]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: shabana-akhtar
@@ -63,10 +65,10 @@ Stephen Walsh's price question is really a priorities question, and priorities a
 
 ## What I read
 
-- The Felton thread: Shabana's messages of 15 July and 21 August.
-- Web: Felton's senior team page, David Marshall, Director of Communities.
-- The participants of every Felton thread. David is on none.
-- Your goal: coalition before partial.
+- gmail · The Felton thread: Shabana's messages of 15 July and 21 August.
+- web · Felton's senior team page, David Marshall, Director of Communities.
+- gmail · The participants of every Felton thread. David is on none.
+- goal-told · Your goal: coalition before partial.
 
 ## Not sure
 

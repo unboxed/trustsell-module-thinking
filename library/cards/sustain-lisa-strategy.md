@@ -51,9 +51,9 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 
 ## What I read
 
-- Web: Burnham City Council news, "Digital Strategy 2026 to 2030", published 11 September, and the PDF, page 12.
-- Your mail with Lisa since April: 7 messages, last on 20 August.
-- LinkedIn is not connected, so I can't see whether she posted about it herself.
+- web · Burnham City Council news, "Digital Strategy 2026 to 2030", published 11 September, and the PDF, page 12.
+- gmail · Your mail with Lisa since April: 7 messages, last on 20 August.
+- linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.
 
 ## Not sure
 

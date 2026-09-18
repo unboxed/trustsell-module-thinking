@@ -5,6 +5,8 @@ kind: act
 label: Advance
 signal: buying-intent
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [best-way-to-reach, time-to-reconnect]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: neil-chapman
@@ -67,10 +69,10 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 ## What I read
 
-- Gmail: Neil, 14 July: "the window for this year closes 16 October".
-- Your calendar: no meeting with Holbrook since 3 August, none scheduled.
-- Your mail with Neil: who proposed each meeting. You, four of four.
-- Your goal: partial adoption this year means inside that window.
+- gmail · Neil, 14 July: "the window for this year closes 16 October".
+- calendar · No meeting with Holbrook since 3 August, none scheduled.
+- gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.
+- goal-told · Your goal: partial adoption this year means inside that window.
 
 ## Not sure
 

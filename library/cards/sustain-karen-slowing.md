@@ -5,7 +5,9 @@ kind: act
 label: Sustain
 signal: cooling-champion
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [reply-gap-vs-own-rhythm, last-note-unanswered-days, innocent-explanation-scan, dropped-recurring-meeting]
+supporting: [loose-end]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [reply-gap-vs-own-rhythm, last-note-unanswered-days, innocent-explanation-scan, dropped-recurring-meeting, promise-made-undelivered]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: karen-hughes
 council: bramley
@@ -71,10 +73,10 @@ Her replies have slowed since the budget meeting. She never got the officer-time
 
 ## What I read
 
-- Your mail with Karen, March to today: 15 messages, who wrote, when, how long.
-- Your calendar: "Budget prioritisation meeting, Bramley", 22 August. Nothing since.
-- Drive: the officer-time one-pager, and her July email asking for it.
-- Your list of thirty councils, and the goal you gave me.
+- gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.
+- calendar · "Budget prioritisation meeting, Bramley", 22 August. Nothing since.
+- drive, gmail · The officer-time one-pager, and her July email asking for it.
+- goal-told · Your list of thirty councils, and the goal you gave me.
 
 ## Not sure
 

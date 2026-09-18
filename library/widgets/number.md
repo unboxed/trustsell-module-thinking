@@ -6,7 +6,6 @@ blurb: One figure, shown beside what is normal for this person.
 shape: the figure in the card's big words, a bar against a bar for the usual, then the usual in small
 parts: 3
 rows: 2
-waits_on: counts   # reaches no record until the counts it rests on are written
 fed_by: [reply-gap-vs-own-rhythm, how-long-quiet-vs-own-rhythm, silence-vs-own-rhythm, reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, reply-length-vs-own-baseline, days-open-vs-own-rhythm]
 ---
 
@@ -18,8 +17,9 @@ One number that means something only next to its normal: a silence against the u
 reply length against the usual length. The reading rules judge a person against their own
 rhythm, and this widget is that rule made visible.
 
-It rests only on counts, and every count is "not written yet". So the widget is wired in but
-has nothing beneath it yet: the figures on a card are read off the card, not counted.
+It rests only on counts. What they count is still "not written yet", but each now names the
+assembly it counts within, so the widget reaches real records through them. The figures on a
+card are still read off the card, not counted.
 
 ## Row form
 

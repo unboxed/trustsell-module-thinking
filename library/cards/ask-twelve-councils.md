@@ -5,6 +5,8 @@ kind: ask
 label: Ask
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [fit-match, warm-path]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [people-reached-count, fit-factors-met, mutual-contact-count]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: you

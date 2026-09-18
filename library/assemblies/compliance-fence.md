@@ -1,7 +1,7 @@
 ---
 id: compliance-fence
 module: 04-organization
-label: Compliance fence
+label: Things we must not claim
 blurb: The company's hard limits, gathered into one fence a draft must sit inside.
 about: an organisation
 deterministic: true
@@ -10,8 +10,7 @@ inputs:
   - drive#file-content
 ---
 
-# Compliance fence
-
+# Things we must not claim
 ## What it gathers
 
 Gathers the company's hard limits into a single fence: the told `rule` records (what can never be

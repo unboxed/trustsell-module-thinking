@@ -11,12 +11,13 @@
 # Fields below marked OPEN are a suggestion, not a decision. Settle them before filling them in.
 id: <kebab-slug>              # unique across the library
 label: <Display name>         # plain English
-used_by: [<signal-id>, ...]   # which signals reference it. Derived; do not hand-edit.
+used_by: [<signal-id>, ...]   # which signals reference it. Derived; build.js checks it matches.
+over: [<assembly-id>]         # the assembly it counts within: the join down to the records.
+                              # Every signal in used_by MUST read it. [] while not written yet.
 defined: <true|false>         # false until someone has actually written what it counts
 # OPEN, once the shape is agreed:
 #   counts:  one line, the arithmetic said plainly
 #   needs:   the records the sum is done over, addressed as <source-id>#<record-id>
-#   over:    the assembly it counts within
 #   breaks:  when the number stops meaning anything
 ---
 

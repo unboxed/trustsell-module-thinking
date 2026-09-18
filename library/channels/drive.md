@@ -45,3 +45,13 @@ no content is kept. Each record below is a lineage anchor. Its id is the kebab-s
 | Shared drive | name | name |
 | Shared drive | members | permissions |
 | Shared drive | org unit | orgUnitId |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| File content | What a file says |
+| Shared drive | Team drive |

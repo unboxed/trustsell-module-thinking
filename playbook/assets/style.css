@@ -706,3 +706,46 @@ summary::-webkit-details-marker{display:none}
 .lib-indent .ios-list__title{padding-left:20px}
 
 .lib-actions{margin:20px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+
+/* ---------- The ladder slide ---------- */
+/* Decided 18 September, by looking, after four sheets (a full tree, one
+   thread, three threads, rings): "B · Pyramid". The channels are the ground,
+   each with the records it gives; above them the gathers, the counts, the
+   reads and the card, so the shape narrows as it compiles. deck.js draws it
+   from data.js. Ink only, like the phone: the kind's dot is the one colour.
+   A dashed line is a join not written yet. Every number is a judgment. */
+.slide--built .slide__body{margin-top:8px}
+.py-stage{flex:none;width:calc(1136px*var(--s));height:calc(620px*var(--s))}
+.py{position:relative;width:1136px;height:620px;transform:scale(var(--s));transform-origin:top left;
+  display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding-left:124px}
+.py__svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.py__svg path{fill:none;stroke:color-mix(in srgb,var(--ios-label) 45%,transparent);stroke-width:1.25}
+.py__svg path.dash{stroke-dasharray:3 4;stroke:color-mix(in srgb,var(--ios-label) 30%,transparent)}
+.py__row{position:relative;display:flex;justify-content:center;gap:12px}
+.py__name{position:absolute;left:0;font:400 .875rem/1.125rem var(--phone-font);color:var(--ios-label-secondary)}
+.py__pill{position:relative;z-index:1;max-width:176px;text-align:center;padding:6px 14px;border-radius:20px;background:var(--ios-bg);
+  border:1.5px solid var(--ios-label);font:600 .9375rem/1.25rem var(--phone-font);color:var(--ios-label)}
+.py__row{align-items:center}
+/* Only the counts' names are long enough to need two lines; the gathers and the reads stay on one. */
+.py__row[data-r="1"] .py__pill,.py__row[data-r="3"] .py__pill{max-width:none;white-space:nowrap}
+.py__pill.is-main{background:var(--ios-label);color:var(--ios-bg)}
+.py__card{position:relative;z-index:1;width:440px;--p:0}
+.py__card .card{padding:14px 18px;border-radius:20px;background:var(--card-glaze);box-shadow:var(--card-edge),var(--card-lift)}
+.py__card .kind{text-transform:none;letter-spacing:0;font-size:.875rem;color:var(--ios-label);margin-bottom:4px}
+.py__card h2{font:800 1.875rem/2rem var(--phone-font);letter-spacing:-.045em;margin-bottom:4px}
+.py__card p{font:400 .9375rem/1.375rem var(--phone-font);color:var(--ios-label-secondary)}
+.py__row--ground{gap:0;align-items:flex-end}
+.py__col{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;padding:0 8px}
+.py__col ul{list-style:none;padding:0;margin:0 0 8px;text-align:center}
+.py__col li{white-space:nowrap}
+.py__col li span{padding:0 3px;background:var(--ios-bg);font:400 .875rem/1.3125rem var(--phone-font);color:var(--ios-label-secondary)}
+.py__col b{display:block;min-width:92px;text-align:center;padding:8px 10px 0;border-top:2px solid var(--ios-label);font:700 1.0625rem/1.375rem var(--phone-font);color:var(--ios-label)}
+/* The key: what the fill and the dashes mean, top right on the title's line. */
+.slide--built .slide__head{position:relative;max-width:none}
+.py-key{position:absolute;right:0;top:4px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:auto auto;gap:6px 24px;
+  font:400 .8125rem/1.125rem var(--phone-font);color:var(--ios-label-secondary)}
+.py-key li{display:flex;align-items:center;gap:8px}
+.py-key__pill{width:28px;height:14px;border-radius:7px;border:1.5px solid var(--ios-label)}
+.py-key__pill.is-main{background:var(--ios-label)}
+.py-key path{stroke:color-mix(in srgb,var(--ios-label) 45%,transparent);stroke-width:1.5}
+.py-key path.dash{stroke-dasharray:3 4;stroke:color-mix(in srgb,var(--ios-label) 30%,transparent)}

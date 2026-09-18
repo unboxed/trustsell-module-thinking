@@ -1,7 +1,7 @@
 ---
 id: understanding-gap
 module: 02-relationships
-label: Understanding gap
+label: They have misunderstood us
 blurb: They keep asking the same things, so the product has not landed.
 modes: [advance]
 kind: risk
@@ -13,8 +13,7 @@ needs: [meet]
 pull: Offerings' product claims, to judge the confusion
 ---
 
-# Understanding gap
-
+# They have misunderstood us
 ## What it means
 
 A Grow read on one conversation. The deal is not stalling on price or a blocker. It is stalling because

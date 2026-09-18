@@ -77,6 +77,8 @@ The **told** pile, the heavyweight input the whole system turns on:
 - **The target shape.** Who counts as worth chasing. Often this starts fuzzy ("people who feel the
   legacy-tech pain") and the Brain has to sharpen it with you.
 
+These live as records in [`told/goal-told.md`](../told/goal-told.md).
+
 The Brain shapes the goal **with** you. It may come back with a few questions before it commits
 ("what counts as engaged?", "what's the easy first yes?", "who are the 30?"), the same
 propose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens

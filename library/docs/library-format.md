@@ -149,12 +149,28 @@ Every entry names what it is built from, one floor down, by **id**:
   beneath the read.
 
 So any signal walks straight down: **signal, then measures, then assembly, then channel record**.
+A count names the assembly it counts within as `over` (settled 18 September), so the walk passes
+through the counting floor instead of stepping over it. A card names its main `signal` and, when
+it quotes numbers from other reads, those reads as `supporting`; every count a card quotes must
+belong to one of them. A card's *What I read* rows name their sources, and `build.js` checks each
+is reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),
+is always reachable: the goal is what every card is weighed against.
 This is the *track-back*: nothing the tool says should float. Two iron rules:
 
 1. **Every id must resolve.** A dangling `inputs` or `measures` id is a bug, not a stub.
 2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not
    connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,
    as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)
+
+### Names: the id for the build, the label for a person
+
+Every entry has two names. The **id** is the backend name: kebab-case, stable, what every join and
+`build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the
+slide, in the library and on a card, and it is plain English: say what it is the way the seller
+would ("Time since reply, against usual", not "Reply gap vs own rhythm"). Rename a label freely;
+rename an id only with every join that names it. A record is the one exception: its id is made from
+its label, which keeps the real API name, so its plain name lives in the source file's
+`## In plain words` table instead (renamed 18 September).
 
 ### Ids
 
@@ -190,7 +206,7 @@ what to send in `documents`, the proof library: why to write and what to send ar
 headed with its label, rows in its row form; and a card's `reply.module` is a reply widget.
 `build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it
 can actually show, and lists them on the widget's page. A widget that reaches no record fails the
-build unless it says what it `waits_on`: today that is Open items and A number against its usual,
+build unless it says what it `waits_on`: today that is Open items,
 which rest only on counts, and no count is written yet.
 
 ## How an agent produces a module's library

@@ -28,4 +28,13 @@ icon: <lucide-or-glyph>   # e.g. mail, calendar, hash, telescope
 | Record | Field | Source |
 |---|---|---|
 | <Record label> | <field> | <API name, derived, or note> |
+
+## In plain words
+
+<!-- OPTIONAL. Only for a record whose label is not plain English (it keeps the API's name, and
+     the id is made from it). The plain name is what the slide and the library show. -->
+
+| Record | Plain name |
+|---|---|
+| <Record label> | <what a person would call it> |
 | <Record label> | <field> | <...> |

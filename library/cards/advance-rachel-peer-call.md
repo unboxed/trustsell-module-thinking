@@ -5,6 +5,8 @@ kind: act
 label: Advance
 signal: answer-gap
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [understanding-gap]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: rachel-gill
@@ -58,10 +60,10 @@ She has asked "will officers actually use it" twice since you met. The best answ
 
 ## What I read
 
-- The Westmoor thread: Rachel's messages of 9 and 12 September.
-- Gmail: Andrew Doyle, East Marston, 4 March: "happy to do reference calls for councils considering it".
-- Drive: the officer-feedback page of the East Marston case study.
-- Your list: Westmoor at coalition.
+- gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.
+- gmail · Andrew Doyle, East Marston, 4 March: "happy to do reference calls for councils considering it".
+- drive · The officer-feedback page of the East Marston case study.
+- goal-told · Your list: Westmoor at coalition.
 
 ## Not sure
 

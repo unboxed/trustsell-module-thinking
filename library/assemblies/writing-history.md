@@ -1,7 +1,7 @@
 ---
 id: writing-history
 module: 05-persona-you
-label: Writing history
+label: Your writing style
 blurb: Everything you have written, gathered into one picture of how you write.
 about: a person
 deterministic: true
@@ -12,8 +12,7 @@ inputs:
   - profile-told#voice-sample
 ---
 
-# Writing history
-
+# Your writing style
 ## What it gathers
 
 Gathers everything you have written into a single picture: your sent mail (`email-message` with a sent

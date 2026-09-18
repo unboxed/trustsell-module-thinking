@@ -5,6 +5,8 @@ kind: act
 label: Advance
 signal: price-barrier
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [blocker]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [repeated-objection-count, objection-name-match, your-price]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: stephen-walsh
@@ -51,10 +53,10 @@ Stephen Walsh's objection is the annual price, not the product. The partial roll
 
 ## What I read
 
-- The Felton thread since June: 18 messages. Stephen's four all mention price.
-- Stephen's message of 9 September.
-- Drive: the partial rollout price sheet.
-- Your goal: partial adoption first is the plan, not a concession.
+- gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.
+- gmail · Stephen's message of 9 September.
+- drive · The partial rollout price sheet.
+- goal-told · Your goal: partial adoption first is the plan, not a concession.
 
 ## Not sure
 

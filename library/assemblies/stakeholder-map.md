@@ -1,7 +1,7 @@
 ---
 id: stakeholder-map
 module: 02-relationships
-label: Stakeholder map
+label: Who is who in their organisation
 blurb: Everyone at one organisation, by their role and who is still missing.
 about: an organisation
 deterministic: true
@@ -18,8 +18,7 @@ inputs:
   - people-told#relationship-note
 ---
 
-# Stakeholder map
-
+# Who is who in their organisation
 ## What it gathers
 
 Gathers everyone you deal with at one organisation into a single picture, keyed by the org: its domain

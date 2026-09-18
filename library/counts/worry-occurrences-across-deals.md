@@ -1,17 +1,20 @@
 ---
 id: worry-occurrences-across-deals
-label: "Worry occurrences across deals"
+label: "Same worry across deals"
 used_by: [recurring-objection]
+over: [objection-list]
+over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Worry occurrences across deals
-
+# Same worry across deals
 ## What it counts
 
 Not written yet.
 
-This entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
+This entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
+
+It counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
 
 ## What it cannot see
 

@@ -30,3 +30,13 @@ Owned by Connections, fetched fresh each time and carried untouched. No opinion 
 | Transcript | text | text |
 | Transcript | time | startTime (retained ~30 days) |
 | Smart notes | (content) | AI-generated, a single generated document |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Participant | Who was on the call |
+| Smart notes | Meeting notes |

@@ -1,17 +1,20 @@
 ---
 id: claims-rival-wins-on
-label: "Claims rival wins on"
+label: "Where a competitor beats us"
 used_by: [competitive-standing]
+over: [competitor-field]
+over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Claims rival wins on
-
+# Where a competitor beats us
 ## What it counts
 
 Not written yet.
 
-This entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
+This entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
+
+It counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
 
 ## What it cannot see
 

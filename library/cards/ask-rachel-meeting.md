@@ -5,6 +5,8 @@ kind: ask
 label: Ask
 signal: new-stakeholder
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [understanding-gap]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [new-name-on-thread, prior-history-scan, re-asked-questions]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: rachel-gill

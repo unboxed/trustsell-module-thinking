@@ -651,6 +651,23 @@
   </div>
 </section>
 
+<!-- How a card is built: Karen's card at the peak and everything under it, compiling upward from the
+     channels. Drawn by deck.js from assets/data.js, so it follows the library; nothing here is typed. -->
+<section id="built" class="slide slide--figures slide--built" data-w="1136" data-h="620" data-max="2" aria-label="How a card is built">
+  <header class="slide__head">
+    <h1>How a card is built</h1>
+    <ul class="py-key" aria-label="Key">
+      <li><span class="py-key__pill is-main"></span>The main read</li>
+      <li><span class="py-key__pill"></span>A supporting read</li>
+      <li><svg width="28" height="8" aria-hidden="true"><path d="M0 4h28"/></svg>A link the library states</li>
+      <li><svg width="28" height="8" aria-hidden="true"><path class="dash" d="M0 4h28"/></svg>Not decided yet: could be any of these</li>
+    </ul>
+  </header>
+  <div class="slide__body">
+    <div class="py-stage"><div class="py" data-card="sustain-karen-slowing"></div></div>
+  </div>
+</section>
+
 <!-- Previous and next in the side margins, the count in the foot's. -->
 <button class="ios-btn deck__prev" type="button" aria-label="Previous slide"><span class="chevron" aria-hidden="true"></span></button>
 <button class="ios-btn deck__next" type="button" aria-label="Next slide"><span class="chevron chevron--next" aria-hidden="true"></span></button>
@@ -658,6 +675,7 @@
 
 </main>
 
+<script src="assets/data.js"></script>
 <script src="assets/deck.js"></script>
 </body>
 </html>

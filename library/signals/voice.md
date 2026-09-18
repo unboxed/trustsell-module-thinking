@@ -1,7 +1,7 @@
 ---
 id: voice
 module: 05-persona-you
-label: Voice
+label: Your voice
 blurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'
 modes: [sustain, advance, expand]
 kind: style
@@ -12,8 +12,7 @@ answers: [Q23, Q26]
 needs: [gmail, slack]
 ---
 
-# Voice
-
+# Your voice
 ## What it means
 
 How you sound in writing, read off what you actually send rather than a style you fill in on a form.

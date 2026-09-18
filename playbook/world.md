@@ -80,7 +80,15 @@ about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its d
 follow the spine with the card's widgets in place. The words and rows come from the cards in
 `library/`, copied in by a one-off script, so the slide says only what the cards say. Felton
 and Rachel's promise card also carry widgets (People, Their words, Open items, Documents) but
-are not on the slide: their replies are drafts too.
+are not on the slide: their replies are drafts too. The fifth, "How a card is built"
+(18 September, by looking, after four rendered sheets: a full tree, one thread, rings, then
+https://claude.ai/artifact/U4dtpbqQJmpbFp5k5hdES6 where "B · Pyramid" was chosen), shows Karen's
+card at the peak of a pyramid. The channels are the ground, each with the records it gives;
+above them the gathers, the counts and the reads, so the shape narrows as it compiles. Unlike
+the other slides it is not typed: `deck.js` draws it from `data.js` when the deck opens, so it
+follows the library. A dashed line is a join not written yet (a count that cannot yet say which
+gather it counts within). Passed over: rings with the card at the centre, which could not fit
+the long names; one thread, which left the rest of the card on trust.
 
 The deck, "The room" (decided 17 September, by looking, on one sheet of three rendered
 directions: https://claude.ai/artifact/YJCZrrjxT3N7iKS5pDse1b). There is no panel. The slide is
@@ -244,8 +252,10 @@ rule beside it), *People* (a name in bold, the role beside it, where they stand 
 usual* (the figure in the card's big words, a bar against a bar). *Documents* (a file, what it proves,
 how recent) was added the same day, when the widgets were checked against the records rather
 than the cards: every record carries a time, a person, some words or a file, and Documents was
-the missing one. Open items and A number against its usual reach no record yet, because they
-rest only on counts; each says so with `waits_on: counts`. A card says two things, why to write and what to
+the missing one. Open items reaches no record yet, because it rests only
+on counts and none of its counts can say yet which assembly it counts within; it says so with
+`waits_on: counts`. A number against its usual reaches records since 18 September, when each count
+that could name its assembly did. A card says two things, why to write and what to
 send, and they are two trails in the library (decided 18 September, by looking:
 https://claude.ai/artifact/DCS9ZqFCFLqoj2Xd4QaHMQ). Why to write goes down through the signal.
 What to send hangs off the card itself: a card that names `documents` rests on the proof

@@ -51,10 +51,10 @@ Julie Barker's auto-reply says she has left and names Sanjay as the contact. You
 
 ## What I read
 
-- Gmail: the bounce this morning, 08:12, and Julie's auto-reply: "I have left Moreton. For BOPS matters please contact Sanjay Mistry."
-- Your mail with Julie since April: 9 messages.
-- Web: Moreton Borough Council staff page, checked this morning.
-- Your list of thirty.
+- gmail · The bounce this morning, 08:12, and Julie's auto-reply: "I have left Moreton. For BOPS matters please contact Sanjay Mistry."
+- gmail · Your mail with Julie since April: 9 messages.
+- web · Moreton Borough Council staff page, checked this morning.
+- goal-told · Your list of thirty.
 
 ## Not sure
 

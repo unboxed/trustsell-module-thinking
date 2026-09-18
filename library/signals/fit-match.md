@@ -1,7 +1,7 @@
 ---
 id: fit-match
 module: 03-offerings
-label: Fit match
+label: Looks like a good fit
 blurb: How well a lead matches the fit-shape, and exactly where it falls short.
 modes: [expand]
 kind: opening
@@ -13,8 +13,7 @@ needs: []
 pull: People's lead situation, to judge the match against the fit-shape
 ---
 
-# Fit match
-
+# Looks like a good fit
 ## What it means
 
 Given a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls

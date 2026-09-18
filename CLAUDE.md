@@ -93,9 +93,13 @@ Also there: `library/world/` (the pretend world as data: goal, cast, councils, d
 `library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
 including `tracing-back.md`, which this ladder is the executable form of).
 
-**Two rungs are unfinished, on purpose.** Every entry in `counts/` holds only its id and which
-signals reference it; `defined: false` says so. Each card's `signal:` is marked `provisional`
-because it was read off the card rather than decided. Both are a later pass, not an oversight.
+**Two rungs are unfinished, on purpose.** No entry in `counts/` says yet what it counts;
+`defined: false` says so. Each names the assembly it counts within (`over:`) where only one is
+possible, marked `provisional`, and leaves `over: []` where it could be one of several. Each card's
+`signal:` (the main read) and `supporting:` (other reads whose counts it quotes) are marked
+`provisional` because they were read off the card rather than decided. A card's *What I read*
+rows are `source · words`, and the build checks each source against the trail. All of this is a
+later pass, not an oversight.
 
 - `build.js` — the one script. Plain Node, no packages. Reads `library/`, validates every id,
   writes `playbook/assets/data.js`, `playbook/index.html` and `playbook/cards/*.html`.
@@ -103,7 +107,7 @@ because it was read off the card rather than decided. Both are a later pass, not
   `ask.html` (Ask, hand-written), `library.html` (the library, browsable, rendered from
   `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the phone, a working
   prototype, then the modules that can fill a card's reply sheet, as bare sheets, a draft among
-  them), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
+  them, and last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
 - `_archive/` — what did not come forward: the blueprint viewer app, the hackathon deck, the
   scenario docs and the two blueprint-era UI notes. **Inspiration, not source of truth.** The
   channels, assemblies, signals and the live docs that used to live here are now in `library/`.

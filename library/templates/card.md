@@ -11,8 +11,11 @@ id: <kebab-slug>              # unique across the library; by convention <label>
 kind: <act|ask|connect|told>  # the shape of the card
 label: <Sustain|Advance|Expand|Ask|Connect|Told>   # for kind: act, one of the first three, and
                               # it MUST be among the modes of the signal above it
-signal: <signal-id>           # the read this rests on. MUST resolve to ../signals/*
-counts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*
+signal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*
+supporting: [<signal-id>, ...]  # optional. Other reads the card also leans on, e.g. a gift that
+                              # comes from Loose end on a Cooling champion card.
+counts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*,
+                              # and MUST belong to the signal or one of the supporting signals
 person: <person-id>           # who it is about. MUST resolve to ../world/cast.md
 council: <council-id>         # where. MUST resolve to ../world/councils.md
 documents: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md
@@ -48,9 +51,13 @@ action: <Title Case Verb ...> # the one filled button, e.g. Send the Note
      named in What I read, and use only names, dates and numbers the card already holds. -->
 
 ## What I read
-<!-- ACT CARDS. The actual records leaned on, named as the seller would recognise them
-     ("Your mail with Karen, March to today: 15 messages"). This is the track-back made
-     readable. Where a source is not connected, say so here rather than quietly omitting it. -->
+<!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.
+     `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or
+     told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,
+     so the words need not repeat them. build.js checks every source is reached by what the card
+     rests on. The goal and the list of targets are `goal-told`, always reachable. A source that
+     a read needs but that is not connected (LinkedIn) is a data gap: say it in your own words,
+     or the build adds a plain line saying it. -->
 
 ## Not sure
 <!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it

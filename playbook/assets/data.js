@@ -241,7 +241,7 @@ window.LIBRARY = {
      "html": "<p><em>(The operating stance, in prose, brainstorm-level rather than deployable wording.)</em></p>\n<p>You are the Brain, the user's deal lead, the only part of the tool that holds goals and decides. You hold the strategy: goals, each pinned to an offering, shaped together with the user. From the goals you brief each expert with a standing job, and you keep two things no expert holds: a <strong>scoreboard</strong> of where every target stands against the goal, and a <strong>calendar</strong> of what to do about it, paced to how much time the user has. You work the nouns so the user works the verbs: you prepare the target, the proof and the draft; the user decides, approves, sends. You never push for the sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move worth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the expert who should learn it.</p>"
     },
     "User input": {
-     "html": "<p>The <strong>told</strong> pile, the heavyweight input the whole system turns on:</p>\n<ul><li><strong>The goal.</strong> What you want, pinned to an offering, with its finish line: <em>\"BOPS to 30 councils, partial adoption now, full later.\"</em> This is the one input nothing else can supply; everything downstream is shaped from it.</li><li><strong>The tempo.</strong> How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is itself an instruction: nurture, don't push.</li><li><strong>The target shape.</strong> Who counts as worth chasing. Often this starts fuzzy (\"people who feel the legacy-tech pain\") and the Brain has to sharpen it with you.</li></ul>\n<p>The Brain shapes the goal <strong>with</strong> you. It may come back with a few questions before it commits (\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same propose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens rather than guesses.</p>\n<p>(Your <strong>voice and preferences</strong> aren't told to the Brain. They live in Profile (<code>05</code>) and the Brain reads them, especially your <em>cadence</em>: how much you can take on, which paces the whole calendar.)</p>"
+     "html": "<p>The <strong>told</strong> pile, the heavyweight input the whole system turns on:</p>\n<ul><li><strong>The goal.</strong> What you want, pinned to an offering, with its finish line: <em>\"BOPS to 30 councils, partial adoption now, full later.\"</em> This is the one input nothing else can supply; everything downstream is shaped from it.</li><li><strong>The tempo.</strong> How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is itself an instruction: nurture, don't push.</li><li><strong>The target shape.</strong> Who counts as worth chasing. Often this starts fuzzy (\"people who feel the legacy-tech pain\") and the Brain has to sharpen it with you.</li></ul>\n<p>These live as records in <a href=\"../told/goal-told.md\"><code>told/goal-told.md</code></a>.</p>\n<p>The Brain shapes the goal <strong>with</strong> you. It may come back with a few questions before it commits (\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same propose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens rather than guesses.</p>\n<p>(Your <strong>voice and preferences</strong> aren't told to the Brain. They live in Profile (<code>05</code>) and the Brain reads them, especially your <em>cadence</em>: how much you can take on, which paces the whole calendar.)</p>"
     },
     "Reasoning": {
      "html": "<p>The Brain holds no raw data and senses nothing, so it has no <code>channels/</code> and no <code>assemblies/</code> library. It reasons over what the experts report. Its four jobs (synthesise the goal into standing briefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two things it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts' reports rather than a deterministic gather, and they are described in Memory and Output below.</p>"
@@ -266,7 +266,7 @@ window.LIBRARY = {
     "Open questions"
    ],
    "file": "modules/00-spine.md",
-   "markdown": "---\nid: 00-spine\nname: \"Brain\"\ntitle: \"Your deal lead\"\nblurb: \"Holds your goals and keeps your week: what to focus on next, paced to you.\"\nicon: brain\noptional: false\ntier: brain\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"02-relationships\"\n    requests: \"watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)\"\n    provides: \"the standing brief drawn from the goal, plus follow-up questions\"\n  - to: \"03-offerings\"\n    requests: \"the product playbook, proof strategy and pricing levers for a deal\"\n  - to: \"04-organization\"\n    requests: \"the matching case study and the compliance fence\"\n  - to: \"05-persona-you\"\n    requests: \"render the brief into the user's voice\"\n    provides: \"the brief (who to act on and why) to render at message time\"\n---\n\n# 00 · Brain\n\nThe only decision-maker: it holds your goals, keeps the score, and plans what to do next, paced\nto you.\n\n> **The Brain pulls no raw data.** It reasons over what the experts report, not over records. What\n> it keeps, the scoreboard and the calendar, is a synthesis of those reports rather than a gather\n> of facts, so it has no `channels/` (no raw data) and no `assemblies/` library. The scoreboard and\n> calendar are described in Memory and Output below. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow the Brain works, in one breath each:\n\n- **The only decision-maker.** Intent lives here and nowhere else. The experts *know* things; only\n  the Brain *wants* things, and only it decides.\n- **Brief, don't boss.** It hands each expert a standing job and asks for pieces; it never orders\n  one module to obey another. A decision in the middle is the Brain's to make: that's a *play*.\n- **Weigh the whole board against the goal.** It's the only part that sees everything at once and\n  holds the goal, so it's the only one that can choose where a move is worth making.\n- **You work the verbs; the tool works the nouns.** This is the reason the tool exists: it prepares\n  the *things* (the target, the proof, the draft) and you do the *acts* (decide, approve, send).\n  Nothing it surfaces is an order; it's a prepared noun waiting for your verb.\n- **Pace to the person, and a quiet day is a real answer.** It fits what it surfaces to how much\n  time you have, and when nothing genuinely warrants a nudge it says so, rather than manufacture\n  busywork.\n- **Suggest, never send.** The human pulls every trigger.\n- **Route learnings home.** When an outcome lands, it sends the lesson to the module that should\n  learn from it; it keeps only the goal and the score.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are the Brain, the user's deal lead, the only part of the tool that holds goals and decides.\nYou hold the strategy: goals, each pinned to an offering, shaped together with the user. From the\ngoals you brief each expert with a standing job, and you keep two things no expert holds: a\n**scoreboard** of where every target stands against the goal, and a **calendar** of what to do\nabout it, paced to how much time the user has. You work the nouns so the user works the verbs: you\nprepare the target, the proof and the draft; the user decides, approves, sends. You never push for\nthe sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move\nworth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the\nexpert who should learn it.\n\n## User input\n\nThe **told** pile, the heavyweight input the whole system turns on:\n\n- **The goal.** What you want, pinned to an offering, with its finish line: *\"BOPS to 30 councils,\n  partial adoption now, full later.\"* This is the one input nothing else can supply; everything\n  downstream is shaped from it.\n- **The tempo.** How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is\n  itself an instruction: nurture, don't push.\n- **The target shape.** Who counts as worth chasing. Often this starts fuzzy (\"people who feel the\n  legacy-tech pain\") and the Brain has to sharpen it with you.\n\nThe Brain shapes the goal **with** you. It may come back with a few questions before it commits\n(\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same\npropose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens\nrather than guesses.\n\n(Your **voice and preferences** aren't told to the Brain. They live in Profile (`05`) and the\nBrain reads them, especially your *cadence*: how much you can take on, which paces the whole\ncalendar.)\n\n## Reasoning\n\nThe Brain holds no raw data and senses nothing, so it has no `channels/` and no `assemblies/`\nlibrary. It reasons over what the experts report. Its four jobs (synthesise the goal into standing\nbriefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two\nthings it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts'\nreports rather than a deterministic gather, and they are described in Memory and Output below.\n\n## Output\n\nWhat the Brain produces, two faces of the same thinking:\n\n- **The scoreboard** (the *picture*). Where the goal stands: each **target (a deal)** on its rung, the\n  gaps, the tally. A target is a *deal*: the selling effort People gathers (its people and\n  conversations, which can span more than one organisation), which the Brain places on the goal's\n  ladder. The organisation is the *account* behind a deal, not the unit. A *status* the tool never used\n  to offer; you can glance at how the whole goal is going, not just the next move.\n- **The calendar** (the *plan*). A living, paced agenda of prepared **nouns**: today, tomorrow,\n  later, re-shuffled as the world moves, quiet days allowed, items ripening from *forming* to\n  *ready*. Each item is a **person inside a deal**. \"The one thing worth doing next\" is just today's\n  headline on it.\n\nUnderneath those, two more outputs aimed at the modules, not you:\n- **The standing briefs.** Each expert's job, drawn from the goal.\n- **The lesson.** After an outcome, the attribution routed back to whichever module should learn\n  from it.\n\nEverything it surfaces is a suggestion; the human acts.\n\n## Memory\n\nThe Brain holds the **intent** layer: your **strategy** (the goals, each pinned to an offering), the\n**scoreboard** (where every target sits on the ladder, and the tally, a target being a **deal** that\nPeople gathers and the Brain stages), the **calendar** (the paced plan), and **outcome attribution**\n(what it leaned on, so the right lesson can go to the right module).\n\nIt deliberately holds **none of the domain knowledge**. The relationships live in People, the\nproduct in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it\nneeds to *decide*: the goal, the score, the plan, and what worked. It reads the experts' memory by\n**asking**, never by holding a copy.\n\n## Open questions\n\n- **The pick-and-schedule mechanism.** The keystone. *That* the Brain reads the scoreboard, weighs\n  the Layer-2 criteria, and lays results onto a paced calendar is settled; *how* it actually ranks\n  one move over a hundred, and chooses its day, is not. Deferred to a use-case pass, not faked here.\n- **Reading the fuzzy target.** Turning a goal's mindset (\"feels the legacy-tech pain\") into\n  something People can actually watch for, a bridge across People and Offerings the Brain has to\n  commission. Sketched, not built.\n- **The shape of a brief.** The synthesis *mechanism* is settled (Reasoning job 1), but what a brief\n  actually *contains*, the handful of things each module needs to turn it into a routine, isn't\n  worked yet. The test that it's genuinely agnostic: run **two unlike goals** through the same\n  synthesis (a volume cold-outreach goal vs. a patient named-account goal) and check it yields\n  sensible but *different* routines for each.\n- **Tempo vs cadence.** Two different levers push the same \"how twitchy, how hard to push\" dial: the\n  **goal's** patience (told here) and the **user's** capacity (from Profile). How they combine,\n  which wins when they disagree, is open.\n- **Learning from your behaviour.** The Brain can learn from outside outcomes (a reply, a silence)\n  *and* from **you**, what you act on, ignore, or always rewrite. That second loop could quietly\n  tune Profile's dials (you clear nothing at 9am, so your real cadence is evenings). It's a new\n  feedback path we haven't drawn.\n- **Several goals at once.** Splitting attention across more than one goal (two offerings, two\n  segments), how the Brain divides the board and the calendar, is named but not worked.\n- **Forecasting** stays parked: the Brain reads the present board, it doesn't predict which blockers\n  will lift.\n"
+   "markdown": "---\nid: 00-spine\nname: \"Brain\"\ntitle: \"Your deal lead\"\nblurb: \"Holds your goals and keeps your week: what to focus on next, paced to you.\"\nicon: brain\noptional: false\ntier: brain\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"02-relationships\"\n    requests: \"watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)\"\n    provides: \"the standing brief drawn from the goal, plus follow-up questions\"\n  - to: \"03-offerings\"\n    requests: \"the product playbook, proof strategy and pricing levers for a deal\"\n  - to: \"04-organization\"\n    requests: \"the matching case study and the compliance fence\"\n  - to: \"05-persona-you\"\n    requests: \"render the brief into the user's voice\"\n    provides: \"the brief (who to act on and why) to render at message time\"\n---\n\n# 00 · Brain\n\nThe only decision-maker: it holds your goals, keeps the score, and plans what to do next, paced\nto you.\n\n> **The Brain pulls no raw data.** It reasons over what the experts report, not over records. What\n> it keeps, the scoreboard and the calendar, is a synthesis of those reports rather than a gather\n> of facts, so it has no `channels/` (no raw data) and no `assemblies/` library. The scoreboard and\n> calendar are described in Memory and Output below. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow the Brain works, in one breath each:\n\n- **The only decision-maker.** Intent lives here and nowhere else. The experts *know* things; only\n  the Brain *wants* things, and only it decides.\n- **Brief, don't boss.** It hands each expert a standing job and asks for pieces; it never orders\n  one module to obey another. A decision in the middle is the Brain's to make: that's a *play*.\n- **Weigh the whole board against the goal.** It's the only part that sees everything at once and\n  holds the goal, so it's the only one that can choose where a move is worth making.\n- **You work the verbs; the tool works the nouns.** This is the reason the tool exists: it prepares\n  the *things* (the target, the proof, the draft) and you do the *acts* (decide, approve, send).\n  Nothing it surfaces is an order; it's a prepared noun waiting for your verb.\n- **Pace to the person, and a quiet day is a real answer.** It fits what it surfaces to how much\n  time you have, and when nothing genuinely warrants a nudge it says so, rather than manufacture\n  busywork.\n- **Suggest, never send.** The human pulls every trigger.\n- **Route learnings home.** When an outcome lands, it sends the lesson to the module that should\n  learn from it; it keeps only the goal and the score.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are the Brain, the user's deal lead, the only part of the tool that holds goals and decides.\nYou hold the strategy: goals, each pinned to an offering, shaped together with the user. From the\ngoals you brief each expert with a standing job, and you keep two things no expert holds: a\n**scoreboard** of where every target stands against the goal, and a **calendar** of what to do\nabout it, paced to how much time the user has. You work the nouns so the user works the verbs: you\nprepare the target, the proof and the draft; the user decides, approves, sends. You never push for\nthe sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move\nworth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the\nexpert who should learn it.\n\n## User input\n\nThe **told** pile, the heavyweight input the whole system turns on:\n\n- **The goal.** What you want, pinned to an offering, with its finish line: *\"BOPS to 30 councils,\n  partial adoption now, full later.\"* This is the one input nothing else can supply; everything\n  downstream is shaped from it.\n- **The tempo.** How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is\n  itself an instruction: nurture, don't push.\n- **The target shape.** Who counts as worth chasing. Often this starts fuzzy (\"people who feel the\n  legacy-tech pain\") and the Brain has to sharpen it with you.\n\nThese live as records in [`told/goal-told.md`](../told/goal-told.md).\n\nThe Brain shapes the goal **with** you. It may come back with a few questions before it commits\n(\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same\npropose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens\nrather than guesses.\n\n(Your **voice and preferences** aren't told to the Brain. They live in Profile (`05`) and the\nBrain reads them, especially your *cadence*: how much you can take on, which paces the whole\ncalendar.)\n\n## Reasoning\n\nThe Brain holds no raw data and senses nothing, so it has no `channels/` and no `assemblies/`\nlibrary. It reasons over what the experts report. Its four jobs (synthesise the goal into standing\nbriefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two\nthings it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts'\nreports rather than a deterministic gather, and they are described in Memory and Output below.\n\n## Output\n\nWhat the Brain produces, two faces of the same thinking:\n\n- **The scoreboard** (the *picture*). Where the goal stands: each **target (a deal)** on its rung, the\n  gaps, the tally. A target is a *deal*: the selling effort People gathers (its people and\n  conversations, which can span more than one organisation), which the Brain places on the goal's\n  ladder. The organisation is the *account* behind a deal, not the unit. A *status* the tool never used\n  to offer; you can glance at how the whole goal is going, not just the next move.\n- **The calendar** (the *plan*). A living, paced agenda of prepared **nouns**: today, tomorrow,\n  later, re-shuffled as the world moves, quiet days allowed, items ripening from *forming* to\n  *ready*. Each item is a **person inside a deal**. \"The one thing worth doing next\" is just today's\n  headline on it.\n\nUnderneath those, two more outputs aimed at the modules, not you:\n- **The standing briefs.** Each expert's job, drawn from the goal.\n- **The lesson.** After an outcome, the attribution routed back to whichever module should learn\n  from it.\n\nEverything it surfaces is a suggestion; the human acts.\n\n## Memory\n\nThe Brain holds the **intent** layer: your **strategy** (the goals, each pinned to an offering), the\n**scoreboard** (where every target sits on the ladder, and the tally, a target being a **deal** that\nPeople gathers and the Brain stages), the **calendar** (the paced plan), and **outcome attribution**\n(what it leaned on, so the right lesson can go to the right module).\n\nIt deliberately holds **none of the domain knowledge**. The relationships live in People, the\nproduct in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it\nneeds to *decide*: the goal, the score, the plan, and what worked. It reads the experts' memory by\n**asking**, never by holding a copy.\n\n## Open questions\n\n- **The pick-and-schedule mechanism.** The keystone. *That* the Brain reads the scoreboard, weighs\n  the Layer-2 criteria, and lays results onto a paced calendar is settled; *how* it actually ranks\n  one move over a hundred, and chooses its day, is not. Deferred to a use-case pass, not faked here.\n- **Reading the fuzzy target.** Turning a goal's mindset (\"feels the legacy-tech pain\") into\n  something People can actually watch for, a bridge across People and Offerings the Brain has to\n  commission. Sketched, not built.\n- **The shape of a brief.** The synthesis *mechanism* is settled (Reasoning job 1), but what a brief\n  actually *contains*, the handful of things each module needs to turn it into a routine, isn't\n  worked yet. The test that it's genuinely agnostic: run **two unlike goals** through the same\n  synthesis (a volume cold-outreach goal vs. a patient named-account goal) and check it yields\n  sensible but *different* routines for each.\n- **Tempo vs cadence.** Two different levers push the same \"how twitchy, how hard to push\" dial: the\n  **goal's** patience (told here) and the **user's** capacity (from Profile). How they combine,\n  which wins when they disagree, is open.\n- **Learning from your behaviour.** The Brain can learn from outside outcomes (a reply, a silence)\n  *and* from **you**, what you act on, ignore, or always rewrite. That second loop could quietly\n  tune Profile's dials (you clear nothing at 9am, so your real cadence is evenings). It's a new\n  feedback path we haven't drawn.\n- **Several goals at once.** Splitting attention across more than one goal (two offerings, two\n  segments), how the Brain divides the board and the calendar, is named but not worked.\n- **Forecasting** stays parked: the Brain reads the present board, it doesn't predict which blockers\n  will lift.\n"
   },
   {
    "id": "01-integrations",
@@ -604,13 +604,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Calendar list</td><td>name</td><td>summary</td></tr><tr><td>Calendar list</td><td>colour</td><td>colorId</td></tr><tr><td>Calendar list</td><td>access role</td><td>accessRole</td></tr><tr><td>Calendar event</td><td>title</td><td>summary</td></tr><tr><td>Calendar event</td><td>description</td><td>description</td></tr><tr><td>Calendar event</td><td>attendees</td><td>attendees (with accepted / declined / tentative)</td></tr><tr><td>Calendar event</td><td>organiser</td><td>organizer</td></tr><tr><td>Calendar event</td><td>start</td><td>start</td></tr><tr><td>Calendar event</td><td>end</td><td>end</td></tr><tr><td>Calendar event</td><td>all-day flag</td><td>derived</td></tr><tr><td>Calendar event</td><td>recurrence</td><td>recurrence</td></tr><tr><td>Calendar event</td><td>location</td><td>location</td></tr><tr><td>Calendar event</td><td>video link</td><td>hangoutLink (Meet)</td></tr><tr><td>Calendar event</td><td>visibility</td><td>visibility</td></tr><tr><td>Calendar event</td><td>reminders</td><td>reminders</td></tr><tr><td>Calendar event</td><td>created</td><td>created</td></tr><tr><td>Calendar event</td><td>updated</td><td>updated</td></tr><tr><td>Status event</td><td>type</td><td>eventType</td></tr><tr><td>Status event</td><td>time range</td><td>start / end</td></tr><tr><td>Status event</td><td>auto-decline</td><td>autoDeclineMode</td></tr><tr><td>Free / busy</td><td>busy periods</td><td>busy</td></tr><tr><td>Free / busy</td><td>time range</td><td>timeMin / timeMax</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Calendar list</td><td>Your calendars</td></tr><tr><td>Status event</td><td>Away and focus time</td></tr><tr><td>Free / busy</td><td>When they are free</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/calendar.md",
-   "markdown": "---\nid: calendar\nname: Calendar\nbrand: Google\nsource: account\nconnected: true\nicon: calendar\n---\n\n# Calendar\n\nThe meeting record: who is booked with whom, when, and whether they showed up. Events carry the guest list with each guest's accepted, declined or tentative state, the timing, and the Meet link, so the counting floor can read meetings held versus invites ignored. `Status event` covers focus-time, out-of-office and working-location blocks, now first-class event types in the Calendar API. `Free / busy` is a query, not a stored record: it returns when a person is busy or open across their calendars, with no titles attached.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Calendar event` becomes `calendar-event`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Calendar list | name | summary |\n| Calendar list | colour | colorId |\n| Calendar list | access role | accessRole |\n| Calendar event | title | summary |\n| Calendar event | description | description |\n| Calendar event | attendees | attendees (with accepted / declined / tentative) |\n| Calendar event | organiser | organizer |\n| Calendar event | start | start |\n| Calendar event | end | end |\n| Calendar event | all-day flag | derived |\n| Calendar event | recurrence | recurrence |\n| Calendar event | location | location |\n| Calendar event | video link | hangoutLink (Meet) |\n| Calendar event | visibility | visibility |\n| Calendar event | reminders | reminders |\n| Calendar event | created | created |\n| Calendar event | updated | updated |\n| Status event | type | eventType |\n| Status event | time range | start / end |\n| Status event | auto-decline | autoDeclineMode |\n| Free / busy | busy periods | busy |\n| Free / busy | time range | timeMin / timeMax |\n"
+   "markdown": "---\nid: calendar\nname: Calendar\nbrand: Google\nsource: account\nconnected: true\nicon: calendar\n---\n\n# Calendar\n\nThe meeting record: who is booked with whom, when, and whether they showed up. Events carry the guest list with each guest's accepted, declined or tentative state, the timing, and the Meet link, so the counting floor can read meetings held versus invites ignored. `Status event` covers focus-time, out-of-office and working-location blocks, now first-class event types in the Calendar API. `Free / busy` is a query, not a stored record: it returns when a person is busy or open across their calendars, with no titles attached.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Calendar event` becomes `calendar-event`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Calendar list | name | summary |\n| Calendar list | colour | colorId |\n| Calendar list | access role | accessRole |\n| Calendar event | title | summary |\n| Calendar event | description | description |\n| Calendar event | attendees | attendees (with accepted / declined / tentative) |\n| Calendar event | organiser | organizer |\n| Calendar event | start | start |\n| Calendar event | end | end |\n| Calendar event | all-day flag | derived |\n| Calendar event | recurrence | recurrence |\n| Calendar event | location | location |\n| Calendar event | video link | hangoutLink (Meet) |\n| Calendar event | visibility | visibility |\n| Calendar event | reminders | reminders |\n| Calendar event | created | created |\n| Calendar event | updated | updated |\n| Status event | type | eventType |\n| Status event | time range | start / end |\n| Status event | auto-decline | autoDeclineMode |\n| Free / busy | busy periods | busy |\n| Free / busy | time range | timeMin / timeMax |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Calendar list | Your calendars |\n| Status event | Away and focus time |\n| Free / busy | When they are free |\n"
   },
   {
    "id": "contacts",
@@ -624,13 +628,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Contact</td><td>name</td><td>names</td></tr><tr><td>Contact</td><td>emails</td><td>emailAddresses</td></tr><tr><td>Contact</td><td>phones</td><td>phoneNumbers</td></tr><tr><td>Contact</td><td>organisation</td><td>organizations</td></tr><tr><td>Contact</td><td>job title</td><td>organizations.title</td></tr><tr><td>Contact</td><td>photo</td><td>photos</td></tr><tr><td>Other contact</td><td>name</td><td>names</td></tr><tr><td>Other contact</td><td>email</td><td>emailAddresses</td></tr><tr><td>Contact group</td><td>name</td><td>name</td></tr><tr><td>Contact group</td><td>members</td><td>memberResourceNames</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Other contact</td><td>Someone you have emailed</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/contacts.md",
-   "markdown": "---\nid: contacts\nname: Contacts\nbrand: Google\nsource: account\nconnected: true\nicon: contact-round\n---\n\n# Contacts\n\nThe address book: the people a user has saved, the addresses they have written to without saving, and the tags that group saved people together. It carries the plain identity facts (name, email, phone, organisation, job title) that help match a person across channels and place them inside an org. Two provenance notes: `Contact` records come from the Google People API, and an `Other contact` is thinner by nature, just a name and an email harvested from correspondence, with no organisation or phone behind it.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and no content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Other contact` becomes `other-contact`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Contact | name | names |\n| Contact | emails | emailAddresses |\n| Contact | phones | phoneNumbers |\n| Contact | organisation | organizations |\n| Contact | job title | organizations.title |\n| Contact | photo | photos |\n| Other contact | name | names |\n| Other contact | email | emailAddresses |\n| Contact group | name | name |\n| Contact group | members | memberResourceNames |\n"
+   "markdown": "---\nid: contacts\nname: Contacts\nbrand: Google\nsource: account\nconnected: true\nicon: contact-round\n---\n\n# Contacts\n\nThe address book: the people a user has saved, the addresses they have written to without saving, and the tags that group saved people together. It carries the plain identity facts (name, email, phone, organisation, job title) that help match a person across channels and place them inside an org. Two provenance notes: `Contact` records come from the Google People API, and an `Other contact` is thinner by nature, just a name and an email harvested from correspondence, with no organisation or phone behind it.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and no content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Other contact` becomes `other-contact`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Contact | name | names |\n| Contact | emails | emailAddresses |\n| Contact | phones | phoneNumbers |\n| Contact | organisation | organizations |\n| Contact | job title | organizations.title |\n| Contact | photo | photos |\n| Other contact | name | names |\n| Other contact | email | emailAddresses |\n| Contact group | name | name |\n| Contact group | members | memberResourceNames |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Other contact | Someone you have emailed |\n"
   },
   {
    "id": "drive",
@@ -644,13 +652,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>File</td><td>name</td><td>name</td></tr><tr><td>File</td><td>type (mime)</td><td>mimeType</td></tr><tr><td>File</td><td>size</td><td>size</td></tr><tr><td>File</td><td>owner</td><td>owners</td></tr><tr><td>File</td><td>created</td><td>createdTime</td></tr><tr><td>File</td><td>modified</td><td>modifiedTime</td></tr><tr><td>File</td><td>starred</td><td>starred</td></tr><tr><td>File</td><td>shared-with</td><td>permissions</td></tr><tr><td>File</td><td>web link</td><td>webViewLink</td></tr><tr><td>File</td><td>parent folder</td><td>parents</td></tr><tr><td>File content</td><td>(content)</td><td>exported text of a Doc, Sheet or Slide</td></tr><tr><td>Comment</td><td>author</td><td>author</td></tr><tr><td>Comment</td><td>text</td><td>content</td></tr><tr><td>Comment</td><td>anchor</td><td>anchor</td></tr><tr><td>Comment</td><td>resolved flag</td><td>resolved</td></tr><tr><td>Comment</td><td>replies</td><td>replies</td></tr><tr><td>Folder</td><td>name</td><td>name</td></tr><tr><td>Folder</td><td>contents</td><td>derived</td></tr><tr><td>Folder</td><td>sharing</td><td>permissions</td></tr><tr><td>Shared drive</td><td>name</td><td>name</td></tr><tr><td>Shared drive</td><td>members</td><td>permissions</td></tr><tr><td>Shared drive</td><td>org unit</td><td>orgUnitId</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>File content</td><td>What a file says</td></tr><tr><td>Shared drive</td><td>Team drive</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/drive.md",
-   "markdown": "---\nid: drive\nname: Drive\nbrand: Google\nsource: account\nconnected: true\nicon: hard-drive\n---\n\n# Drive\n\nThe shared documents, where proof and brand material live: a doc, sheet, PDF or image, the folders\nthat hold them, and the team-owned spaces they sit in. Files carry the who and when (owner, created,\nmodified) plus the sharing that says who can see them, which is what the organisation's reading\nleans on. `File content` is the exported text of a Doc, Sheet or Slide, a single payload rather than\na set of fields. `Comment` carries the back-and-forth left on a file.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Shared drive` becomes `shared-drive`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| File | name | name |\n| File | type (mime) | mimeType |\n| File | size | size |\n| File | owner | owners |\n| File | created | createdTime |\n| File | modified | modifiedTime |\n| File | starred | starred |\n| File | shared-with | permissions |\n| File | web link | webViewLink |\n| File | parent folder | parents |\n| File content | (content) | exported text of a Doc, Sheet or Slide |\n| Comment | author | author |\n| Comment | text | content |\n| Comment | anchor | anchor |\n| Comment | resolved flag | resolved |\n| Comment | replies | replies |\n| Folder | name | name |\n| Folder | contents | derived |\n| Folder | sharing | permissions |\n| Shared drive | name | name |\n| Shared drive | members | permissions |\n| Shared drive | org unit | orgUnitId |\n"
+   "markdown": "---\nid: drive\nname: Drive\nbrand: Google\nsource: account\nconnected: true\nicon: hard-drive\n---\n\n# Drive\n\nThe shared documents, where proof and brand material live: a doc, sheet, PDF or image, the folders\nthat hold them, and the team-owned spaces they sit in. Files carry the who and when (owner, created,\nmodified) plus the sharing that says who can see them, which is what the organisation's reading\nleans on. `File content` is the exported text of a Doc, Sheet or Slide, a single payload rather than\na set of fields. `Comment` carries the back-and-forth left on a file.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Shared drive` becomes `shared-drive`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| File | name | name |\n| File | type (mime) | mimeType |\n| File | size | size |\n| File | owner | owners |\n| File | created | createdTime |\n| File | modified | modifiedTime |\n| File | starred | starred |\n| File | shared-with | permissions |\n| File | web link | webViewLink |\n| File | parent folder | parents |\n| File content | (content) | exported text of a Doc, Sheet or Slide |\n| Comment | author | author |\n| Comment | text | content |\n| Comment | anchor | anchor |\n| Comment | resolved flag | resolved |\n| Comment | replies | replies |\n| Folder | name | name |\n| Folder | contents | derived |\n| Folder | sharing | permissions |\n| Shared drive | name | name |\n| Shared drive | members | permissions |\n| Shared drive | org unit | orgUnitId |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| File content | What a file says |\n| Shared drive | Team drive |\n"
   },
   {
    "id": "gmail",
@@ -664,13 +676,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Email thread</td><td>participants</td><td>derived</td></tr><tr><td>Email thread</td><td>subject</td><td>first message Subject</td></tr><tr><td>Email thread</td><td>message count</td><td>derived</td></tr><tr><td>Email thread</td><td>first and last activity</td><td>derived</td></tr><tr><td>Email message</td><td>sender</td><td>From</td></tr><tr><td>Email message</td><td>to</td><td>To</td></tr><tr><td>Email message</td><td>cc</td><td>Cc</td></tr><tr><td>Email message</td><td>bcc</td><td>Bcc</td></tr><tr><td>Email message</td><td>subject</td><td>Subject</td></tr><tr><td>Email message</td><td>body</td><td>payload parts</td></tr><tr><td>Email message</td><td>snippet</td><td>snippet</td></tr><tr><td>Email message</td><td>timestamp</td><td>internalDate</td></tr><tr><td>Email message</td><td>thread id</td><td>threadId</td></tr><tr><td>Email message</td><td>in reply to</td><td>In-Reply-To</td></tr><tr><td>Email message</td><td>direction</td><td>derived (sent or received)</td></tr><tr><td>Email message</td><td>read/unread</td><td>UNREAD label</td></tr><tr><td>Email message</td><td>labels</td><td>labelIds</td></tr><tr><td>Email message</td><td>starred</td><td>STARRED label</td></tr><tr><td>Email message</td><td>importance</td><td>IMPORTANT label</td></tr><tr><td>Email message</td><td>has attachments</td><td>derived</td></tr><tr><td>Attachment</td><td>filename</td><td>filename</td></tr><tr><td>Attachment</td><td>type</td><td>mimeType</td></tr><tr><td>Attachment</td><td>size</td><td>body.size</td></tr><tr><td>Attachment</td><td>content</td><td>attachmentId</td></tr><tr><td>Label</td><td>name</td><td>name</td></tr><tr><td>Label</td><td>type</td><td>type (system or user)</td></tr><tr><td>Label</td><td>message count</td><td>messagesTotal</td></tr><tr><td>Draft</td><td>to</td><td>To</td></tr><tr><td>Draft</td><td>subject</td><td>Subject</td></tr><tr><td>Draft</td><td>body</td><td>payload parts</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Label</td><td>Gmail label</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/gmail.md",
-   "markdown": "---\nid: gmail\nname: Gmail\nbrand: Google\nsource: account\nconnected: true\nicon: mail\n---\n\n# Gmail\n\nThe mail history, the spine of most relationship reading. Threads group related messages. A\nmessage carries the who, when and what, plus the flags (read, starred, labelled, importance) that\nthe counting floor leans on for rhythm and engagement. Attachments ride on messages. `Draft` is the\noutgoing side: a reply prepared but not yet sent, surfaced for a human to send.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Email message` becomes `email-message`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Email thread | participants | derived |\n| Email thread | subject | first message Subject |\n| Email thread | message count | derived |\n| Email thread | first and last activity | derived |\n| Email message | sender | From |\n| Email message | to | To |\n| Email message | cc | Cc |\n| Email message | bcc | Bcc |\n| Email message | subject | Subject |\n| Email message | body | payload parts |\n| Email message | snippet | snippet |\n| Email message | timestamp | internalDate |\n| Email message | thread id | threadId |\n| Email message | in reply to | In-Reply-To |\n| Email message | direction | derived (sent or received) |\n| Email message | read/unread | UNREAD label |\n| Email message | labels | labelIds |\n| Email message | starred | STARRED label |\n| Email message | importance | IMPORTANT label |\n| Email message | has attachments | derived |\n| Attachment | filename | filename |\n| Attachment | type | mimeType |\n| Attachment | size | body.size |\n| Attachment | content | attachmentId |\n| Label | name | name |\n| Label | type | type (system or user) |\n| Label | message count | messagesTotal |\n| Draft | to | To |\n| Draft | subject | Subject |\n| Draft | body | payload parts |\n"
+   "markdown": "---\nid: gmail\nname: Gmail\nbrand: Google\nsource: account\nconnected: true\nicon: mail\n---\n\n# Gmail\n\nThe mail history, the spine of most relationship reading. Threads group related messages. A\nmessage carries the who, when and what, plus the flags (read, starred, labelled, importance) that\nthe counting floor leans on for rhythm and engagement. Attachments ride on messages. `Draft` is the\noutgoing side: a reply prepared but not yet sent, surfaced for a human to send.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Email message` becomes `email-message`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Email thread | participants | derived |\n| Email thread | subject | first message Subject |\n| Email thread | message count | derived |\n| Email thread | first and last activity | derived |\n| Email message | sender | From |\n| Email message | to | To |\n| Email message | cc | Cc |\n| Email message | bcc | Bcc |\n| Email message | subject | Subject |\n| Email message | body | payload parts |\n| Email message | snippet | snippet |\n| Email message | timestamp | internalDate |\n| Email message | thread id | threadId |\n| Email message | in reply to | In-Reply-To |\n| Email message | direction | derived (sent or received) |\n| Email message | read/unread | UNREAD label |\n| Email message | labels | labelIds |\n| Email message | starred | STARRED label |\n| Email message | importance | IMPORTANT label |\n| Email message | has attachments | derived |\n| Attachment | filename | filename |\n| Attachment | type | mimeType |\n| Attachment | size | body.size |\n| Attachment | content | attachmentId |\n| Label | name | name |\n| Label | type | type (system or user) |\n| Label | message count | messagesTotal |\n| Draft | to | To |\n| Draft | subject | Subject |\n| Draft | body | payload parts |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Label | Gmail label |\n"
   },
   {
    "id": "linkedin",
@@ -704,13 +720,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Meeting</td><td>the meeting space</td><td>space</td></tr><tr><td>Meeting</td><td>start</td><td>startTime</td></tr><tr><td>Meeting</td><td>end</td><td>endTime</td></tr><tr><td>Meeting</td><td>organiser</td><td>derived</td></tr><tr><td>Participant</td><td>who joined</td><td>signedinUser</td></tr><tr><td>Participant</td><td>their join/leave sessions</td><td>participantSessions</td></tr><tr><td>Participant</td><td>full or companion mode</td><td>derived</td></tr><tr><td>Recording</td><td>Drive link</td><td>driveDestination</td></tr><tr><td>Recording</td><td>duration</td><td>derived</td></tr><tr><td>Transcript</td><td>speaker</td><td>participant</td></tr><tr><td>Transcript</td><td>text</td><td>text</td></tr><tr><td>Transcript</td><td>time</td><td>startTime (retained ~30 days)</td></tr><tr><td>Smart notes</td><td>(content)</td><td>AI-generated, a single generated document</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Participant</td><td>Who was on the call</td></tr><tr><td>Smart notes</td><td>Meeting notes</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/meet.md",
-   "markdown": "---\nid: meet\nname: Meet\nbrand: Google\nsource: account\nconnected: true\nicon: video\n---\n\n# Meet\n\nThe video-conference history: what a meeting was, who showed up, and what was said. A meeting is the record of a call that took place; participants are who attended; the recording is the saved video and the transcript is the spoken words as timestamped entries. Smart notes are an AI-written summary of the call. One provenance caveat: transcripts are retained only about 30 days by the provider, so older meetings keep the meeting record and participants but lose their words.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and no content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Smart notes` becomes `smart-notes`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Meeting | the meeting space | space |\n| Meeting | start | startTime |\n| Meeting | end | endTime |\n| Meeting | organiser | derived |\n| Participant | who joined | signedinUser |\n| Participant | their join/leave sessions | participantSessions |\n| Participant | full or companion mode | derived |\n| Recording | Drive link | driveDestination |\n| Recording | duration | derived |\n| Transcript | speaker | participant |\n| Transcript | text | text |\n| Transcript | time | startTime (retained ~30 days) |\n| Smart notes | (content) | AI-generated, a single generated document |\n"
+   "markdown": "---\nid: meet\nname: Meet\nbrand: Google\nsource: account\nconnected: true\nicon: video\n---\n\n# Meet\n\nThe video-conference history: what a meeting was, who showed up, and what was said. A meeting is the record of a call that took place; participants are who attended; the recording is the saved video and the transcript is the spoken words as timestamped entries. Smart notes are an AI-written summary of the call. One provenance caveat: transcripts are retained only about 30 days by the provider, so older meetings keep the meeting record and participants but lose their words.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and no content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Smart notes` becomes `smart-notes`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Meeting | the meeting space | space |\n| Meeting | start | startTime |\n| Meeting | end | endTime |\n| Meeting | organiser | derived |\n| Participant | who joined | signedinUser |\n| Participant | their join/leave sessions | participantSessions |\n| Participant | full or companion mode | derived |\n| Recording | Drive link | driveDestination |\n| Recording | duration | derived |\n| Transcript | speaker | participant |\n| Transcript | text | text |\n| Transcript | time | startTime (retained ~30 days) |\n| Smart notes | (content) | AI-generated, a single generated document |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Participant | Who was on the call |\n| Smart notes | Meeting notes |\n"
   },
   {
    "id": "salesforce",
@@ -744,13 +764,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Slack channel</td><td>name</td><td>name</td></tr><tr><td>Slack channel</td><td>topic</td><td>topic</td></tr><tr><td>Slack channel</td><td>purpose</td><td>purpose</td></tr><tr><td>Slack channel</td><td>members</td><td>members</td></tr><tr><td>Slack channel</td><td>public or private</td><td>is_private</td></tr><tr><td>Slack message</td><td>channel</td><td>channel</td></tr><tr><td>Slack message</td><td>author</td><td>user</td></tr><tr><td>Slack message</td><td>text</td><td>text</td></tr><tr><td>Slack message</td><td>timestamp</td><td>ts</td></tr><tr><td>Slack message</td><td>thread</td><td>thread_ts</td></tr><tr><td>Slack message</td><td>mentions</td><td>derived</td></tr><tr><td>Slack message</td><td>reactions</td><td>reactions</td></tr><tr><td>Slack message</td><td>edited flag</td><td>edited</td></tr><tr><td>Slack message</td><td>permalink</td><td>permalink</td></tr><tr><td>Canvas</td><td>title</td><td>title</td></tr><tr><td>Canvas</td><td>content</td><td>derived</td></tr><tr><td>Canvas</td><td>linked channel</td><td>channel_id</td></tr><tr><td>List</td><td>rows/fields</td><td>derived</td></tr><tr><td>List</td><td>linked channel</td><td>channel_id</td></tr><tr><td>Slack user</td><td>name</td><td>name</td></tr><tr><td>Slack user</td><td>real name</td><td>real_name</td></tr><tr><td>Slack user</td><td>title</td><td>profile.title</td></tr><tr><td>Slack user</td><td>timezone</td><td>tz</td></tr><tr><td>Slack user</td><td>status</td><td>profile.status_text</td></tr><tr><td>Slack user</td><td>presence</td><td>presence</td></tr><tr><td>Slack file</td><td>filename</td><td>name</td></tr><tr><td>Slack file</td><td>type</td><td>mimetype</td></tr><tr><td>Slack file</td><td>size</td><td>size</td></tr><tr><td>Slack file</td><td>content</td><td>url_private</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Slack user</td><td>Slack profile</td></tr><tr><td>Canvas</td><td>Slack canvas</td></tr><tr><td>List</td><td>Slack list</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/slack.md",
-   "markdown": "---\nid: slack\nname: Slack\nbrand: Slack\nsource: account\nconnected: true\nicon: hash\n---\n\n# Slack\n\nThe workspace chatter, a second stream of conversation history beside the mail. Channels are the\nspaces people post in; messages carry the who, when and what, plus the threading, mentions and\nreactions the counting floor leans on for rhythm and engagement. Canvases and lists are the richer\ndocuments that hang off a channel. People (users) and shared files round it out. Huddle audio is a\nprovenance caveat: it is not reachable through Slack's official API, so that part of the\nconversation is a data gap.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Slack message` becomes `slack-message`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Slack channel | name | name |\n| Slack channel | topic | topic |\n| Slack channel | purpose | purpose |\n| Slack channel | members | members |\n| Slack channel | public or private | is_private |\n| Slack message | channel | channel |\n| Slack message | author | user |\n| Slack message | text | text |\n| Slack message | timestamp | ts |\n| Slack message | thread | thread_ts |\n| Slack message | mentions | derived |\n| Slack message | reactions | reactions |\n| Slack message | edited flag | edited |\n| Slack message | permalink | permalink |\n| Canvas | title | title |\n| Canvas | content | derived |\n| Canvas | linked channel | channel_id |\n| List | rows/fields | derived |\n| List | linked channel | channel_id |\n| Slack user | name | name |\n| Slack user | real name | real_name |\n| Slack user | title | profile.title |\n| Slack user | timezone | tz |\n| Slack user | status | profile.status_text |\n| Slack user | presence | presence |\n| Slack file | filename | name |\n| Slack file | type | mimetype |\n| Slack file | size | size |\n| Slack file | content | url_private |\n"
+   "markdown": "---\nid: slack\nname: Slack\nbrand: Slack\nsource: account\nconnected: true\nicon: hash\n---\n\n# Slack\n\nThe workspace chatter, a second stream of conversation history beside the mail. Channels are the\nspaces people post in; messages carry the who, when and what, plus the threading, mentions and\nreactions the counting floor leans on for rhythm and engagement. Canvases and lists are the richer\ndocuments that hang off a channel. People (users) and shared files round it out. Huddle audio is a\nprovenance caveat: it is not reachable through Slack's official API, so that part of the\nconversation is a data gap.\n\nOwned by Connections, fetched fresh each time and carried untouched. No opinion is formed here and\nno content is kept. Each record below is a lineage anchor. Its id is the kebab-slug of its label\n(`Slack message` becomes `slack-message`), and that is what People's assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Slack channel | name | name |\n| Slack channel | topic | topic |\n| Slack channel | purpose | purpose |\n| Slack channel | members | members |\n| Slack channel | public or private | is_private |\n| Slack message | channel | channel |\n| Slack message | author | user |\n| Slack message | text | text |\n| Slack message | timestamp | ts |\n| Slack message | thread | thread_ts |\n| Slack message | mentions | derived |\n| Slack message | reactions | reactions |\n| Slack message | edited flag | edited |\n| Slack message | permalink | permalink |\n| Canvas | title | title |\n| Canvas | content | derived |\n| Canvas | linked channel | channel_id |\n| List | rows/fields | derived |\n| List | linked channel | channel_id |\n| Slack user | name | name |\n| Slack user | real name | real_name |\n| Slack user | title | profile.title |\n| Slack user | timezone | tz |\n| Slack user | status | profile.status_text |\n| Slack user | presence | presence |\n| Slack file | filename | name |\n| Slack file | type | mimetype |\n| Slack file | size | size |\n| Slack file | content | url_private |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Slack user | Slack profile |\n| Canvas | Slack canvas |\n| List | Slack list |\n"
   },
   {
    "id": "web",
@@ -764,16 +788,43 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Web result</td><td>source URL</td><td>url</td></tr><tr><td>Web result</td><td>title</td><td>title</td></tr><tr><td>Web result</td><td>snippet</td><td>content</td></tr><tr><td>Web result</td><td>relevance score</td><td>score</td></tr><tr><td>Web result</td><td>published date</td><td>published_date</td></tr><tr><td>Page content</td><td>(content)</td><td>/extract</td></tr><tr><td>Site map</td><td>pages</td><td>results</td></tr><tr><td>Site map</td><td>base URL</td><td>base_url</td></tr><tr><td>Research report</td><td>answer</td><td>answer</td></tr><tr><td>Research report</td><td>sources</td><td>results</td></tr><tr><td>Enrichment</td><td>company (name, domain, industry, size, location)</td><td>open web</td></tr><tr><td>Enrichment</td><td>person (role, company)</td><td>open web</td></tr><tr><td>Enrichment</td><td>trigger event (a published tender, a leadership change, funding)</td><td>open web</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Web result</td><td>Search result</td></tr><tr><td>Page content</td><td>A web page</td></tr><tr><td>Site map</td><td>A site's pages</td></tr><tr><td>Research report</td><td>Research</td></tr><tr><td>Enrichment</td><td>Public profile</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "channels/web.md",
-   "markdown": "---\nid: web\nname: Web / Tavily\nbrand: Tavily\nsource: builtin\nconnected: true\nicon: telescope\n---\n\n# Web / Tavily\n\nThe open web, reached through Tavily. It carries what a search turns up (hits, the cleaned text of a page, a site's link graph), a synthesised answer pulled from many searches, and looked-up facts about a company or person. This is a builtin tool, always on, never connected, so there is no data gap here. It forms no opinion: a `Research report` answer is Tavily's synthesis, not the tool's read, and `Enrichment` facts come from the open web and are only as good as what is published there.\n\nOwned by Connections, fetched fresh each time and carried untouched. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Web result` becomes `web-result`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Web result | source URL | url |\n| Web result | title | title |\n| Web result | snippet | content |\n| Web result | relevance score | score |\n| Web result | published date | published_date |\n| Page content | (content) | /extract |\n| Site map | pages | results |\n| Site map | base URL | base_url |\n| Research report | answer | answer |\n| Research report | sources | results |\n| Enrichment | company (name, domain, industry, size, location) | open web |\n| Enrichment | person (role, company) | open web |\n| Enrichment | trigger event (a published tender, a leadership change, funding) | open web |\n"
+   "markdown": "---\nid: web\nname: Web / Tavily\nbrand: Tavily\nsource: builtin\nconnected: true\nicon: telescope\n---\n\n# Web / Tavily\n\nThe open web, reached through Tavily. It carries what a search turns up (hits, the cleaned text of a page, a site's link graph), a synthesised answer pulled from many searches, and looked-up facts about a company or person. This is a builtin tool, always on, never connected, so there is no data gap here. It forms no opinion: a `Research report` answer is Tavily's synthesis, not the tool's read, and `Enrichment` facts come from the open web and are only as good as what is published there.\n\nOwned by Connections, fetched fresh each time and carried untouched. Each record below is a lineage anchor. Its id is the kebab-slug of its label (`Web result` becomes `web-result`), and that is what the modules' assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Web result | source URL | url |\n| Web result | title | title |\n| Web result | snippet | content |\n| Web result | relevance score | score |\n| Web result | published date | published_date |\n| Page content | (content) | /extract |\n| Site map | pages | results |\n| Site map | base URL | base_url |\n| Research report | answer | answer |\n| Research report | sources | results |\n| Enrichment | company (name, domain, industry, size, location) | open web |\n| Enrichment | person (role, company) | open web |\n| Enrichment | trigger event (a published tender, a leadership change, funding) | open web |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Web result | Search result |\n| Page content | A web page |\n| Site map | A site's pages |\n| Research report | Research |\n| Enrichment | Public profile |\n"
   }
  ],
  "told": [
+  {
+   "id": "goal-told",
+   "name": "What you tell the Brain",
+   "source": "told",
+   "connected": true,
+   "icon": "pencil",
+   "title": "What you tell the Brain",
+   "intro": "<p>The goal, and the few facts around it that only you can set: how patiently to pursue it, and who counts as worth chasing. The Brain (<a href=\"../modules/00-spine.md\"><code>00-spine</code></a>) holds them and weighs every card against them, so a card may always name them in What I read without an assembly in between. The Brain gathers nothing and senses nothing; this pile is the one input it has of its own.</p>\n<p>It is shaped with you, not filled in once. The Brain may come back with questions before it commits (\"what counts as engaged?\", \"who are the 30?\"), the same propose-and-confirm move the other modules make. Where a record is empty, that is a <strong>told gap</strong>, named not faked: the Brain says what it is missing rather than guessing.</p>\n<p>Each record below is a lineage anchor; its id is the kebab-slug of its label (<code>Target list</code> becomes <code>target-list</code>), exactly like a channel record.</p>",
+   "sections": {
+    "Records": {
+     "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Goal</td><td>what you want, in your words</td><td>you, typed, then sharpened with the Brain</td></tr><tr><td>Goal</td><td>the offering it is pinned to</td><td>you, typed or picked</td></tr><tr><td>Goal</td><td>the finish line</td><td>you, typed</td></tr><tr><td>Tempo</td><td>how patiently or hard to pursue it</td><td>you, typed or asked</td></tr><tr><td>Target shape</td><td>who counts as worth chasing</td><td>you, typed, often fuzzy at first and sharpened with the Brain</td></tr><tr><td>Target list</td><td>the organisations on the shortlist</td><td>you, typed or uploaded</td></tr><tr><td>Target list</td><td>where each stands on the goal's ladder</td><td>you at first, then the Brain's scoreboard</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Tempo</td><td>How hard to push</td></tr><tr><td>Target shape</td><td>Who is worth chasing</td></tr><tr><td>Target list</td><td>Your list of targets</td></tr></tbody></table>"
+    }
+   },
+   "sectionOrder": [
+    "Records",
+    "In plain words"
+   ],
+   "file": "told/goal-told.md",
+   "markdown": "---\nid: goal-told\nname: What you tell the Brain\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell the Brain\n\nThe goal, and the few facts around it that only you can set: how patiently to pursue it, and who\ncounts as worth chasing. The Brain ([`00-spine`](../modules/00-spine.md)) holds them and weighs every\ncard against them, so a card may always name them in What I read without an assembly in between.\nThe Brain gathers nothing and senses nothing; this pile is the one input it has of its own.\n\nIt is shaped with you, not filled in once. The Brain may come back with questions before it\ncommits (\"what counts as engaged?\", \"who are the 30?\"), the same propose-and-confirm move the other\nmodules make. Where a record is empty, that is a **told gap**, named not faked: the Brain says what\nit is missing rather than guessing.\n\nEach record below is a lineage anchor; its id is the kebab-slug of its label (`Target list`\nbecomes `target-list`), exactly like a channel record.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Goal | what you want, in your words | you, typed, then sharpened with the Brain |\n| Goal | the offering it is pinned to | you, typed or picked |\n| Goal | the finish line | you, typed |\n| Tempo | how patiently or hard to pursue it | you, typed or asked |\n| Target shape | who counts as worth chasing | you, typed, often fuzzy at first and sharpened with the Brain |\n| Target list | the organisations on the shortlist | you, typed or uploaded |\n| Target list | where each stands on the goal's ladder | you at first, then the Brain's scoreboard |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Tempo | How hard to push |\n| Target shape | Who is worth chasing |\n| Target list | Your list of targets |\n"
+  },
   {
    "id": "offering-told",
    "name": "What you tell Offerings",
@@ -785,13 +836,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Pitch</td><td>what it is</td><td>you, typed or asked</td></tr><tr><td>Pitch</td><td>why it's worth buying</td><td>you, typed or asked</td></tr><tr><td>Fit-shape</td><td>customer size</td><td>you, typed or asked</td></tr><tr><td>Fit-shape</td><td>situation</td><td>you, typed or asked</td></tr><tr><td>Fit-shape</td><td>the problem it solves</td><td>you, typed or asked</td></tr><tr><td>Use-case</td><td>the situation it's best for</td><td>you, or read from a deck in Drive</td></tr><tr><td>Use-case</td><td>the angle to lead with</td><td>you, typed or asked</td></tr><tr><td>Pricing</td><td>price</td><td>you, or read from a Drive pricing sheet</td></tr><tr><td>Pricing</td><td>discount room</td><td>you, typed or asked</td></tr><tr><td>Worry + answer</td><td>the worry</td><td>you, or seen in a buyer's mail (via People)</td></tr><tr><td>Worry + answer</td><td>your answer</td><td>you, typed or asked</td></tr><tr><td>Worry + answer</td><td>the kind of proof it needs</td><td>you, typed or asked</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Fit-shape</td><td>What a good fit looks like</td></tr><tr><td>Use-case</td><td>Use case</td></tr><tr><td>Worry + answer</td><td>Worries and answers</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "told/offering-told.md",
-   "markdown": "---\nid: offering-told\nname: What you tell Offerings\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Offerings\n\nThe facts only you can state about a product, the most deterministic ground there is, because you say\nthem outright rather than the tool inferring them from behaviour. They arrive three ways: you type\nthem into the tool, Offerings asks you for them (the propose-a-draft, you-confirm loop), or you upload\na file to Drive and Offerings reads them out of it. The `Source` column says which path each field\ncomes in by.\n\nThis is raw data, not reading: the told pile is Floor 1, the same floor as a fetched email, and\neverything Offerings senses stands on it. Where a record is empty, that is a **told gap**, named not\nfaked: Offerings says \"tell me X and I can run this\", and can offer to research a first version from\nthe web for you to confirm. Each record below is a lineage anchor; its id is the kebab-slug of its\nlabel (`Worry + answer` becomes `worry-answer`), and that is what the assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Pitch | what it is | you, typed or asked |\n| Pitch | why it's worth buying | you, typed or asked |\n| Fit-shape | customer size | you, typed or asked |\n| Fit-shape | situation | you, typed or asked |\n| Fit-shape | the problem it solves | you, typed or asked |\n| Use-case | the situation it's best for | you, or read from a deck in Drive |\n| Use-case | the angle to lead with | you, typed or asked |\n| Pricing | price | you, or read from a Drive pricing sheet |\n| Pricing | discount room | you, typed or asked |\n| Worry + answer | the worry | you, or seen in a buyer's mail (via People) |\n| Worry + answer | your answer | you, typed or asked |\n| Worry + answer | the kind of proof it needs | you, typed or asked |\n"
+   "markdown": "---\nid: offering-told\nname: What you tell Offerings\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Offerings\n\nThe facts only you can state about a product, the most deterministic ground there is, because you say\nthem outright rather than the tool inferring them from behaviour. They arrive three ways: you type\nthem into the tool, Offerings asks you for them (the propose-a-draft, you-confirm loop), or you upload\na file to Drive and Offerings reads them out of it. The `Source` column says which path each field\ncomes in by.\n\nThis is raw data, not reading: the told pile is Floor 1, the same floor as a fetched email, and\neverything Offerings senses stands on it. Where a record is empty, that is a **told gap**, named not\nfaked: Offerings says \"tell me X and I can run this\", and can offer to research a first version from\nthe web for you to confirm. Each record below is a lineage anchor; its id is the kebab-slug of its\nlabel (`Worry + answer` becomes `worry-answer`), and that is what the assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Pitch | what it is | you, typed or asked |\n| Pitch | why it's worth buying | you, typed or asked |\n| Fit-shape | customer size | you, typed or asked |\n| Fit-shape | situation | you, typed or asked |\n| Fit-shape | the problem it solves | you, typed or asked |\n| Use-case | the situation it's best for | you, or read from a deck in Drive |\n| Use-case | the angle to lead with | you, typed or asked |\n| Pricing | price | you, or read from a Drive pricing sheet |\n| Pricing | discount room | you, typed or asked |\n| Worry + answer | the worry | you, or seen in a buyer's mail (via People) |\n| Worry + answer | your answer | you, typed or asked |\n| Worry + answer | the kind of proof it needs | you, typed or asked |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Fit-shape | What a good fit looks like |\n| Use-case | Use case |\n| Worry + answer | Worries and answers |\n"
   },
   {
    "id": "organisation-told",
@@ -804,13 +859,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Rule</td><td>the limit (what can never be claimed, what must always be said, words and tones to avoid)</td><td>you, typed or from a Drive brand/compliance doc</td></tr><tr><td>Rule</td><td>kind (compliance, legal or brand)</td><td>you, typed</td></tr><tr><td>Rule</td><td>hard or soft (a wall, or a strong preference)</td><td>you, typed</td></tr><tr><td>Rule</td><td>drawn from (the Drive doc behind it, if any)</td><td>a Drive file, confirmed by you</td></tr><tr><td>Pricing authority</td><td>standard discount ceiling</td><td>you, typed or from a Drive pricing sheet</td></tr><tr><td>Pricing authority</td><td>who signs off beyond it</td><td>you, typed</td></tr><tr><td>Pricing authority</td><td>floor price, if any</td><td>you, typed</td></tr><tr><td>Proof tag</td><td>the claim it backs</td><td>you, typed</td></tr><tr><td>Proof tag</td><td>the customer-type or segment it fits</td><td>you, typed</td></tr><tr><td>Proof tag</td><td>the Drive doc it points to</td><td>you, or matched to a Drive file</td></tr><tr><td>Proof tag</td><td>reference naming (a named customer, or anonymous)</td><td>you, typed or confirmed</td></tr><tr><td>Proof tag</td><td>proof source (third-party, or your own word)</td><td>you, typed or confirmed</td></tr><tr><td>House voice</td><td>the company tone</td><td>you, typed or from a Drive brand doc</td></tr><tr><td>House voice</td><td>required phrasings</td><td>you, typed</td></tr><tr><td>House voice</td><td>forbidden phrasings</td><td>you, typed</td></tr><tr><td>House voice</td><td>the band a message should sit in</td><td>you, typed</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Rule</td><td>Rules</td></tr><tr><td>Pricing authority</td><td>Who can set prices</td></tr><tr><td>Proof tag</td><td>How you label proof</td></tr><tr><td>House voice</td><td>House style</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "told/organisation-told.md",
-   "markdown": "---\nid: organisation-told\nname: What you tell Organisation\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Organisation\n\nThe facts the company states outright, the deterministic ground for the proof-and-fence step. They\narrive two ways: you type them into the tool, or you point at a brand, compliance or proof document\nin Drive and Organisation reads them out of it. The `Source` column says which path each field comes\nin by. Where a record points at a Drive document, you still confirm what is actually a hard limit:\nthe document is the source, the confirmation is what makes it a rule. A proof tag also carries two\nattributes you confirm rather than the tool inferring them, whether the reference is named or\nanonymous and whether the proof is third-party or your own word, because Offerings reads those to\njudge how *strong* a piece of proof is (its `answer-gap`), and `04` keeps no signals to read them\nitself.\n\nUnlike People's reads or Offerings' fit-shape, this told is **org-level**, set once for the whole\nteam rather than per person, and it does not change with the kind of seller using it. What changes is\nhow hard the tool leans on it (an accidental seller trips the fence more, and carries fewer proof\npoints in their head). That weighting lives in the module prose, not here.\n\nThis is raw data, not reading: the told pile is Floor 1, the same floor as a fetched file, and\neverything Organisation matches or gates stands on it. Where a record is empty, that is a **told\ngap**, named not faked: used solo with no organisation behind you it is empty, and the tool simply\nskips the proof-and-fence step. Each record below is a lineage anchor; its id is the kebab-slug of\nits label (`Proof tag` becomes `proof-tag`), and that is what the assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Rule | the limit (what can never be claimed, what must always be said, words and tones to avoid) | you, typed or from a Drive brand/compliance doc |\n| Rule | kind (compliance, legal or brand) | you, typed |\n| Rule | hard or soft (a wall, or a strong preference) | you, typed |\n| Rule | drawn from (the Drive doc behind it, if any) | a Drive file, confirmed by you |\n| Pricing authority | standard discount ceiling | you, typed or from a Drive pricing sheet |\n| Pricing authority | who signs off beyond it | you, typed |\n| Pricing authority | floor price, if any | you, typed |\n| Proof tag | the claim it backs | you, typed |\n| Proof tag | the customer-type or segment it fits | you, typed |\n| Proof tag | the Drive doc it points to | you, or matched to a Drive file |\n| Proof tag | reference naming (a named customer, or anonymous) | you, typed or confirmed |\n| Proof tag | proof source (third-party, or your own word) | you, typed or confirmed |\n| House voice | the company tone | you, typed or from a Drive brand doc |\n| House voice | required phrasings | you, typed |\n| House voice | forbidden phrasings | you, typed |\n| House voice | the band a message should sit in | you, typed |\n"
+   "markdown": "---\nid: organisation-told\nname: What you tell Organisation\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Organisation\n\nThe facts the company states outright, the deterministic ground for the proof-and-fence step. They\narrive two ways: you type them into the tool, or you point at a brand, compliance or proof document\nin Drive and Organisation reads them out of it. The `Source` column says which path each field comes\nin by. Where a record points at a Drive document, you still confirm what is actually a hard limit:\nthe document is the source, the confirmation is what makes it a rule. A proof tag also carries two\nattributes you confirm rather than the tool inferring them, whether the reference is named or\nanonymous and whether the proof is third-party or your own word, because Offerings reads those to\njudge how *strong* a piece of proof is (its `answer-gap`), and `04` keeps no signals to read them\nitself.\n\nUnlike People's reads or Offerings' fit-shape, this told is **org-level**, set once for the whole\nteam rather than per person, and it does not change with the kind of seller using it. What changes is\nhow hard the tool leans on it (an accidental seller trips the fence more, and carries fewer proof\npoints in their head). That weighting lives in the module prose, not here.\n\nThis is raw data, not reading: the told pile is Floor 1, the same floor as a fetched file, and\neverything Organisation matches or gates stands on it. Where a record is empty, that is a **told\ngap**, named not faked: used solo with no organisation behind you it is empty, and the tool simply\nskips the proof-and-fence step. Each record below is a lineage anchor; its id is the kebab-slug of\nits label (`Proof tag` becomes `proof-tag`), and that is what the assemblies reference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Rule | the limit (what can never be claimed, what must always be said, words and tones to avoid) | you, typed or from a Drive brand/compliance doc |\n| Rule | kind (compliance, legal or brand) | you, typed |\n| Rule | hard or soft (a wall, or a strong preference) | you, typed |\n| Rule | drawn from (the Drive doc behind it, if any) | a Drive file, confirmed by you |\n| Pricing authority | standard discount ceiling | you, typed or from a Drive pricing sheet |\n| Pricing authority | who signs off beyond it | you, typed |\n| Pricing authority | floor price, if any | you, typed |\n| Proof tag | the claim it backs | you, typed |\n| Proof tag | the customer-type or segment it fits | you, typed |\n| Proof tag | the Drive doc it points to | you, or matched to a Drive file |\n| Proof tag | reference naming (a named customer, or anonymous) | you, typed or confirmed |\n| Proof tag | proof source (third-party, or your own word) | you, typed or confirmed |\n| House voice | the company tone | you, typed or from a Drive brand doc |\n| House voice | required phrasings | you, typed |\n| House voice | forbidden phrasings | you, typed |\n| House voice | the band a message should sit in | you, typed |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Rule | Rules |\n| Pricing authority | Who can set prices |\n| Proof tag | How you label proof |\n| House voice | House style |\n"
   },
   {
    "id": "people-told",
@@ -823,13 +882,17 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Seed contact</td><td>who they are (name, email)</td><td>you, typed at setup</td></tr><tr><td>Seed contact</td><td>why they matter</td><td>you, typed or asked</td></tr><tr><td>Relationship note</td><td>the person it is about</td><td>you, typed</td></tr><tr><td>Relationship note</td><td>the note (hidden role, real closeness, \"she's my ex-colleague\", \"he decides even though he's quiet\")</td><td>you, typed or asked</td></tr><tr><td>Offline touch</td><td>the person</td><td>you, typed</td></tr><tr><td>Offline touch</td><td>what happened (met at a conference, a call on a personal line)</td><td>you, typed</td></tr><tr><td>Offline touch</td><td>when</td><td>you, typed</td></tr><tr><td>Contact preference</td><td>the person</td><td>you, typed</td></tr><tr><td>Contact preference</td><td>the best way or time to reach them</td><td>you, typed or asked</td></tr><tr><td>Correction</td><td>the read it overrides</td><td>you, in reply to a surfaced signal</td></tr><tr><td>Correction</td><td>the truth (what is actually going on)</td><td>you, typed</td></tr><tr><td>Deal seed</td><td>the deal (a name for the selling effort)</td><td>you, typed</td></tr><tr><td>Deal seed</td><td>which offering it is about</td><td>you, typed (Offerings confirms relevance)</td></tr><tr><td>Deal seed</td><td>the people or threads it starts from</td><td>you, typed or picked</td></tr><tr><td>Deal seed</td><td>the buyer org(s)</td><td>you, typed</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Seed contact</td><td>People to start with</td></tr><tr><td>Offline touch</td><td>Met offline</td></tr><tr><td>Deal seed</td><td>Deals you name</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "told/people-told.md",
-   "markdown": "---\nid: people-told\nname: What you tell People\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell People\n\nThe facts about your relationships that no amount of fetched mail will reveal, because they live only\nin your head. People infers disposition from behaviour wherever it can, but some ground it cannot read\noff the inbox: who you actually mean to chase, that a quiet name is really the decision-maker, that a\ncontact you went silent with is on holiday rather than cooling, or that someone is best reached on a\nchannel the tool cannot see. That told pile is Floor 1, the same floor as a fetched email, and it is\nthe most deterministic ground there is because you state it outright.\n\nThey arrive the way the other told sources do: you type them in, People asks for them (the\npropose-a-draft, you-confirm loop), or, most often, you give one as a **correction** to a read People\nhas surfaced. A correction is itself a fact People keeps, so the same overruled read does not come\nback. Where a record is empty, that is a **told gap**, named not faked: People says what it is missing\n(\"tell me who really signs off here\") rather than guessing, and a *told* gap it can usually only flag,\nnot fill itself.\n\nOne boundary: **who *you* are is not here.** Your name, email and \"About you\" are *supplied* from\nProfile ([`05-persona-you`](../modules/05-persona-you.md)), which owns your identity. People leans on it\nbut does not hold it. This source is about the *other* people, and about the **deals** you group them\ninto: the `deal-seed` is where you name a selling effort and the people and threads it starts from, so\nPeople can gather it (see [`assemblies/deal.md`](assemblies/deal.md)).\n\nEach record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`\nbecomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel\nrecord.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Seed contact | who they are (name, email) | you, typed at setup |\n| Seed contact | why they matter | you, typed or asked |\n| Relationship note | the person it is about | you, typed |\n| Relationship note | the note (hidden role, real closeness, \"she's my ex-colleague\", \"he decides even though he's quiet\") | you, typed or asked |\n| Offline touch | the person | you, typed |\n| Offline touch | what happened (met at a conference, a call on a personal line) | you, typed |\n| Offline touch | when | you, typed |\n| Contact preference | the person | you, typed |\n| Contact preference | the best way or time to reach them | you, typed or asked |\n| Correction | the read it overrides | you, in reply to a surfaced signal |\n| Correction | the truth (what is actually going on) | you, typed |\n| Deal seed | the deal (a name for the selling effort) | you, typed |\n| Deal seed | which offering it is about | you, typed (Offerings confirms relevance) |\n| Deal seed | the people or threads it starts from | you, typed or picked |\n| Deal seed | the buyer org(s) | you, typed |\n"
+   "markdown": "---\nid: people-told\nname: What you tell People\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell People\n\nThe facts about your relationships that no amount of fetched mail will reveal, because they live only\nin your head. People infers disposition from behaviour wherever it can, but some ground it cannot read\noff the inbox: who you actually mean to chase, that a quiet name is really the decision-maker, that a\ncontact you went silent with is on holiday rather than cooling, or that someone is best reached on a\nchannel the tool cannot see. That told pile is Floor 1, the same floor as a fetched email, and it is\nthe most deterministic ground there is because you state it outright.\n\nThey arrive the way the other told sources do: you type them in, People asks for them (the\npropose-a-draft, you-confirm loop), or, most often, you give one as a **correction** to a read People\nhas surfaced. A correction is itself a fact People keeps, so the same overruled read does not come\nback. Where a record is empty, that is a **told gap**, named not faked: People says what it is missing\n(\"tell me who really signs off here\") rather than guessing, and a *told* gap it can usually only flag,\nnot fill itself.\n\nOne boundary: **who *you* are is not here.** Your name, email and \"About you\" are *supplied* from\nProfile ([`05-persona-you`](../modules/05-persona-you.md)), which owns your identity. People leans on it\nbut does not hold it. This source is about the *other* people, and about the **deals** you group them\ninto: the `deal-seed` is where you name a selling effort and the people and threads it starts from, so\nPeople can gather it (see [`assemblies/deal.md`](assemblies/deal.md)).\n\nEach record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`\nbecomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel\nrecord.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Seed contact | who they are (name, email) | you, typed at setup |\n| Seed contact | why they matter | you, typed or asked |\n| Relationship note | the person it is about | you, typed |\n| Relationship note | the note (hidden role, real closeness, \"she's my ex-colleague\", \"he decides even though he's quiet\") | you, typed or asked |\n| Offline touch | the person | you, typed |\n| Offline touch | what happened (met at a conference, a call on a personal line) | you, typed |\n| Offline touch | when | you, typed |\n| Contact preference | the person | you, typed |\n| Contact preference | the best way or time to reach them | you, typed or asked |\n| Correction | the read it overrides | you, in reply to a surfaced signal |\n| Correction | the truth (what is actually going on) | you, typed |\n| Deal seed | the deal (a name for the selling effort) | you, typed |\n| Deal seed | which offering it is about | you, typed (Offerings confirms relevance) |\n| Deal seed | the people or threads it starts from | you, typed or picked |\n| Deal seed | the buyer org(s) | you, typed |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Seed contact | People to start with |\n| Offline touch | Met offline |\n| Deal seed | Deals you name |\n"
   },
   {
    "id": "profile-told",
@@ -842,20 +905,24 @@ window.LIBRARY = {
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>About you</td><td>name</td><td>you, typed</td></tr><tr><td>About you</td><td>email</td><td>you, typed (also bootstraps before an account is connected)</td></tr><tr><td>About you</td><td>bio (your role and how you'd want to come across)</td><td>you, typed or proposed from sent mail</td></tr><tr><td>Setup archetype</td><td>the starting stance (sell for a living ↔ sell as part of my role)</td><td>you, pick at setup</td></tr><tr><td>Operator dial</td><td>sales fluency (sales shorthand ↔ plain English with coaching)</td><td>you, seeded by archetype, refined by behaviour</td></tr><tr><td>Operator dial</td><td>time and cadence (all day ↔ a few minutes now and then)</td><td>you, seeded by archetype, refined by behaviour</td></tr><tr><td>Operator dial</td><td>style (nurture a few ↔ work many)</td><td>you, seeded by archetype, refined by behaviour</td></tr><tr><td>Operator dial</td><td>autonomy (how far it drafts or acts before you step in)</td><td>you, seeded by archetype, refined by behaviour</td></tr><tr><td>Operator dial</td><td>coaching (just hand me the noun ↔ tell me why this person and what to say)</td><td>you, seeded by archetype, refined by behaviour</td></tr><tr><td>Voice sample</td><td>a piece of your writing</td><td>you, optional (else learned from sent mail)</td></tr><tr><td>Voice sample</td><td>its context (cold or warm, email or chat)</td><td>you, optional</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<p>What a person reads, where it differs from the record's label. The label, and the id made from it, do not change.</p>\n<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>Setup archetype</td><td>What kind of seller you are</td></tr><tr><td>Operator dial</td><td>Your preferences</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "told/profile-told.md",
-   "markdown": "---\nid: profile-told\nname: What you tell Profile\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Profile\n\nThe facts only you can state about yourself, the seed the personal layer starts from. Here \"told\"\nmeans a **seed, not a form**: you give it a starting handful, and from there it lives as memory,\nrefined as the tool watches you work. Nothing about you is frozen as a settings field. The `Source`\ncolumn says how each field comes in, and most of the dials carry the same note: seeded once, then\nkept honest by behaviour.\n\nThe starting point is a **setup archetype**, a single choice about what kind of seller you are, which\n**seeds the dials** below. At one end is someone who sells for a living; at the other, someone who\nsells only because their role needs the organisation to win clients. The two sit at opposite ends of\nnearly every dial (register, pace, how much coaching they want), so the archetype is the quickest way\nto get the tool roughly right before behaviour tunes it. The dials stay individually adjustable; the\narchetype just sets sensible starting positions.\n\nThis is raw data, not reading: the told pile is Floor 1, the seed the voice read and the dials stand\non. Where a record is empty, that is a **told gap**, named not faked, and Profile degrades gracefully:\nit proposes a draft \"About you\" from your sent mail, or infers a dial from how you actually work, for\nyou to confirm, rather than stall. Each record below is a lineage anchor; its id is the kebab-slug of\nits label (`Voice sample` becomes `voice-sample`), and that is what the assemblies and the module\nreference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| About you | name | you, typed |\n| About you | email | you, typed (also bootstraps before an account is connected) |\n| About you | bio (your role and how you'd want to come across) | you, typed or proposed from sent mail |\n| Setup archetype | the starting stance (sell for a living ↔ sell as part of my role) | you, pick at setup |\n| Operator dial | sales fluency (sales shorthand ↔ plain English with coaching) | you, seeded by archetype, refined by behaviour |\n| Operator dial | time and cadence (all day ↔ a few minutes now and then) | you, seeded by archetype, refined by behaviour |\n| Operator dial | style (nurture a few ↔ work many) | you, seeded by archetype, refined by behaviour |\n| Operator dial | autonomy (how far it drafts or acts before you step in) | you, seeded by archetype, refined by behaviour |\n| Operator dial | coaching (just hand me the noun ↔ tell me why this person and what to say) | you, seeded by archetype, refined by behaviour |\n| Voice sample | a piece of your writing | you, optional (else learned from sent mail) |\n| Voice sample | its context (cold or warm, email or chat) | you, optional |\n"
+   "markdown": "---\nid: profile-told\nname: What you tell Profile\nsource: told\nconnected: true\nicon: pencil\n---\n\n# What you tell Profile\n\nThe facts only you can state about yourself, the seed the personal layer starts from. Here \"told\"\nmeans a **seed, not a form**: you give it a starting handful, and from there it lives as memory,\nrefined as the tool watches you work. Nothing about you is frozen as a settings field. The `Source`\ncolumn says how each field comes in, and most of the dials carry the same note: seeded once, then\nkept honest by behaviour.\n\nThe starting point is a **setup archetype**, a single choice about what kind of seller you are, which\n**seeds the dials** below. At one end is someone who sells for a living; at the other, someone who\nsells only because their role needs the organisation to win clients. The two sit at opposite ends of\nnearly every dial (register, pace, how much coaching they want), so the archetype is the quickest way\nto get the tool roughly right before behaviour tunes it. The dials stay individually adjustable; the\narchetype just sets sensible starting positions.\n\nThis is raw data, not reading: the told pile is Floor 1, the seed the voice read and the dials stand\non. Where a record is empty, that is a **told gap**, named not faked, and Profile degrades gracefully:\nit proposes a draft \"About you\" from your sent mail, or infers a dial from how you actually work, for\nyou to confirm, rather than stall. Each record below is a lineage anchor; its id is the kebab-slug of\nits label (`Voice sample` becomes `voice-sample`), and that is what the assemblies and the module\nreference.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| About you | name | you, typed |\n| About you | email | you, typed (also bootstraps before an account is connected) |\n| About you | bio (your role and how you'd want to come across) | you, typed or proposed from sent mail |\n| Setup archetype | the starting stance (sell for a living ↔ sell as part of my role) | you, pick at setup |\n| Operator dial | sales fluency (sales shorthand ↔ plain English with coaching) | you, seeded by archetype, refined by behaviour |\n| Operator dial | time and cadence (all day ↔ a few minutes now and then) | you, seeded by archetype, refined by behaviour |\n| Operator dial | style (nurture a few ↔ work many) | you, seeded by archetype, refined by behaviour |\n| Operator dial | autonomy (how far it drafts or acts before you step in) | you, seeded by archetype, refined by behaviour |\n| Operator dial | coaching (just hand me the noun ↔ tell me why this person and what to say) | you, seeded by archetype, refined by behaviour |\n| Voice sample | a piece of your writing | you, optional (else learned from sent mail) |\n| Voice sample | its context (cold or warm, email or chat) | you, optional |\n\n## In plain words\n\nWhat a person reads, where it differs from the record's label. The label, and the id made from\nit, do not change.\n\n| Record | Plain name |\n|---|---|\n| Setup archetype | What kind of seller you are |\n| Operator dial | Your preferences |\n"
   }
  ],
  "assemblies": [
   {
    "id": "competitor-field",
    "module": "03-offerings",
-   "label": "Competitor field",
+   "label": "Competitors and what they offer",
    "blurb": "The named rivals around one offering, gathered whole: who they are, what they claim, and the lock-in they bank on.",
    "about": "an offering",
    "deterministic": true,
@@ -866,7 +933,7 @@ window.LIBRARY = {
     "web#page-content",
     "web#enrichment"
    ],
-   "title": "Competitor field",
+   "title": "Competitors and what they offer",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -881,12 +948,12 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/competitor-field.md",
-   "markdown": "---\nid: competitor-field\nmodule: 03-offerings\nlabel: Competitor field\nblurb: 'The named rivals around one offering, gathered whole: who they are, what they claim, and the lock-in they bank on.'\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-entry\n  - web#web-result\n  - web#research-report\n  - web#page-content\n  - web#enrichment\n---\n\n# Competitor field\n\n## What it gathers\n\nGathers the rivals that sit around one offering into a single picture. For each named competitor and\nthe incumbent, it pulls together:\n\n- what they claim to do, read off their own pages\n- how they position themselves\n- the lock-in they bank on: a long contract, a proprietary format, a switching hassle\n- the worries about them that recur in public reviews\n\nIt stands on the Offering entry and reads the open web fresh for the rest. Your offering, and the field\nit is sold into.\n\nThe only real work is identity and grouping: deciding which pages, claims and reviews belong to *which*\nrival, and which rivals are genuinely in this offering's field rather than a neighbouring market.\n\nIt lists who the rivals are and what they say. It does not decide where you win, or whether their\nlock-in will actually hold a buyer. That read is\n[`competitive-standing`](../signals/competitive-standing.md).\n\n## Lineage\n\n`offering-entry` is the sibling assembly this stands on. `web-result`, `research-report`,\n`page-content` and `enrichment` resolve to [`channels/web.md`](../channels/web.md).\n\nThis shares its web inputs with [`price-position`](price-position.md) on purpose, and the two carve\nthe field differently: `price-position` lays out the rivals' *numbers only* (your price next to\ntheirs), while `competitor-field` gathers the *fuller rival profile* (claims, lock-in, reviews) that\nthose numbers sit inside. The rival-review worries are read here from `web-result` and\n`research-report` directly, not borrowed from `objection-list`, so the same review is not counted\ntwice across siblings. Where a rival has no public footprint, or publishes neither claims nor pricing,\nthe field has a hole on the open web, a **data gap** named not faked rather than a guessed competitor.\n"
+   "markdown": "---\nid: competitor-field\nmodule: 03-offerings\nlabel: Competitors and what they offer\nblurb: 'The named rivals around one offering, gathered whole: who they are, what they claim, and the lock-in they bank on.'\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-entry\n  - web#web-result\n  - web#research-report\n  - web#page-content\n  - web#enrichment\n---\n\n# Competitors and what they offer\n## What it gathers\n\nGathers the rivals that sit around one offering into a single picture. For each named competitor and\nthe incumbent, it pulls together:\n\n- what they claim to do, read off their own pages\n- how they position themselves\n- the lock-in they bank on: a long contract, a proprietary format, a switching hassle\n- the worries about them that recur in public reviews\n\nIt stands on the Offering entry and reads the open web fresh for the rest. Your offering, and the field\nit is sold into.\n\nThe only real work is identity and grouping: deciding which pages, claims and reviews belong to *which*\nrival, and which rivals are genuinely in this offering's field rather than a neighbouring market.\n\nIt lists who the rivals are and what they say. It does not decide where you win, or whether their\nlock-in will actually hold a buyer. That read is\n[`competitive-standing`](../signals/competitive-standing.md).\n\n## Lineage\n\n`offering-entry` is the sibling assembly this stands on. `web-result`, `research-report`,\n`page-content` and `enrichment` resolve to [`channels/web.md`](../channels/web.md).\n\nThis shares its web inputs with [`price-position`](price-position.md) on purpose, and the two carve\nthe field differently: `price-position` lays out the rivals' *numbers only* (your price next to\ntheirs), while `competitor-field` gathers the *fuller rival profile* (claims, lock-in, reviews) that\nthose numbers sit inside. The rival-review worries are read here from `web-result` and\n`research-report` directly, not borrowed from `objection-list`, so the same review is not counted\ntwice across siblings. Where a rival has no public footprint, or publishes neither claims nor pricing,\nthe field has a hole on the open web, a **data gap** named not faked rather than a guessed competitor.\n"
   },
   {
    "id": "compliance-fence",
    "module": "04-organization",
-   "label": "Compliance fence",
+   "label": "Things we must not claim",
    "blurb": "The company's hard limits, gathered into one fence a draft must sit inside.",
    "about": "an organisation",
    "deterministic": true,
@@ -894,7 +961,7 @@ window.LIBRARY = {
     "organisation-told#rule",
     "drive#file-content"
    ],
-   "title": "Compliance fence",
+   "title": "Things we must not claim",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -909,7 +976,7 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/compliance-fence.md",
-   "markdown": "---\nid: compliance-fence\nmodule: 04-organization\nlabel: Compliance fence\nblurb: The company's hard limits, gathered into one fence a draft must sit inside.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#rule\n  - drive#file-content\n---\n\n# Compliance fence\n\n## What it gathers\n\nGathers the company's hard limits into a single fence: the told `rule` records (what can never be\nclaimed, what must always be said, words and tones to avoid) and the exported `file-content` of any\nbrand or compliance document in Drive they are drawn from. Each limit is grouped by kind (compliance,\nlegal, brand) and marked hard or soft, so the Gate knows which lines are walls and which are strong\npreferences. Every line the company cannot cross, in one place.\n\nThis is the negative half: the walls a draft is gated against, the \"never claim, always say\" limits\nthat can stop a message. The positive \"sound like this\" side, the brand voice the render writes\ntoward, was split out into its sibling [`house-voice-guide`](house-voice-guide.md) so the fence holds\nwalls only. A hard brand wall (a phrase the company can never use) is a `rule` here; the softer \"we\ndon't talk like that\" preferences live in the guide. A limit that is really a judgement call (\"do not\nsound pushy\") is held as a soft rule and flagged as such, rather than dressed up as a wall it cannot\nenforce deterministically.\n\nIt does not weigh whether a draft is on-brand, or rewrite it. It only gathers the rules into one fence.\nThe only real work is grouping and resolving: deciding which told rule a Drive brand-doc passage\nconfirms, and keeping the hard limits apart from the soft preferences.\n\nThe Gate job that reads this fence, checking a finished draft against it and passing it or flagging\nexactly what crosses a line, lives in the module prose, not as a signal: Organisation has no signal\nfloor. Used solo with no organisation behind you, the fence is empty and the Gate step is skipped.\n\n## Lineage\n\n`rule` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`\nresolves to [`channels/drive.md`](../channels/drive.md), the brand or compliance\ndocument a rule may point at. The brand voice the render writes toward lives in\n[`house-voice-guide`](house-voice-guide.md); the seam between that guide and Profile's personal voice\nat render time is an open question, worked in both modules' prose.\n"
+   "markdown": "---\nid: compliance-fence\nmodule: 04-organization\nlabel: Things we must not claim\nblurb: The company's hard limits, gathered into one fence a draft must sit inside.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#rule\n  - drive#file-content\n---\n\n# Things we must not claim\n## What it gathers\n\nGathers the company's hard limits into a single fence: the told `rule` records (what can never be\nclaimed, what must always be said, words and tones to avoid) and the exported `file-content` of any\nbrand or compliance document in Drive they are drawn from. Each limit is grouped by kind (compliance,\nlegal, brand) and marked hard or soft, so the Gate knows which lines are walls and which are strong\npreferences. Every line the company cannot cross, in one place.\n\nThis is the negative half: the walls a draft is gated against, the \"never claim, always say\" limits\nthat can stop a message. The positive \"sound like this\" side, the brand voice the render writes\ntoward, was split out into its sibling [`house-voice-guide`](house-voice-guide.md) so the fence holds\nwalls only. A hard brand wall (a phrase the company can never use) is a `rule` here; the softer \"we\ndon't talk like that\" preferences live in the guide. A limit that is really a judgement call (\"do not\nsound pushy\") is held as a soft rule and flagged as such, rather than dressed up as a wall it cannot\nenforce deterministically.\n\nIt does not weigh whether a draft is on-brand, or rewrite it. It only gathers the rules into one fence.\nThe only real work is grouping and resolving: deciding which told rule a Drive brand-doc passage\nconfirms, and keeping the hard limits apart from the soft preferences.\n\nThe Gate job that reads this fence, checking a finished draft against it and passing it or flagging\nexactly what crosses a line, lives in the module prose, not as a signal: Organisation has no signal\nfloor. Used solo with no organisation behind you, the fence is empty and the Gate step is skipped.\n\n## Lineage\n\n`rule` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`\nresolves to [`channels/drive.md`](../channels/drive.md), the brand or compliance\ndocument a rule may point at. The brand voice the render writes toward lives in\n[`house-voice-guide`](house-voice-guide.md); the seam between that guide and Profile's personal voice\nat render time is an open question, worked in both modules' prose.\n"
   },
   {
    "id": "conversation-history",
@@ -976,7 +1043,7 @@ window.LIBRARY = {
   {
    "id": "house-voice-guide",
    "module": "04-organization",
-   "label": "House voice guide",
+   "label": "Our house style",
    "blurb": "The company's brand voice, gathered into one positive style the render can write toward.",
    "about": "an organisation",
    "deterministic": true,
@@ -984,7 +1051,7 @@ window.LIBRARY = {
     "organisation-told#house-voice",
     "drive#file-content"
    ],
-   "title": "House voice guide",
+   "title": "Our house style",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -999,7 +1066,7 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/house-voice-guide.md",
-   "markdown": "---\nid: house-voice-guide\nmodule: 04-organization\nlabel: House voice guide\nblurb: The company's brand voice, gathered into one positive style the render can write toward.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#house-voice\n  - drive#file-content\n---\n\n# House voice guide\n\n## What it gathers\n\nGathers the company's brand voice into a single style guide: the told `house-voice` record (the\ncompany tone, the required phrasings, the forbidden phrasings, the band a message should sit in) and\nthe exported `file-content` of any brand document in Drive it is drawn from. How the company wants to\nsound, in one place, as something to write toward.\n\nThis is the positive half of the old fence, split out on purpose. The `compliance-fence` holds the\nhard \"never claim this, always say that\" walls a draft is gated against; this guide holds the \"sound\nlike this\" style the render emulates. Two different operations: one checks a finished draft and can\nstop it, the other shapes a draft as it is written. Keeping them apart gives the render a clean thing\nto lean toward and keeps the fence to walls only. A genuinely hard brand wall (a phrase the company\ncan never use) stays a `rule` in the fence; the guide's forbidden phrasings are the softer \"we don't\ntalk like that\" preferences.\n\nIt does not weigh how far to bend the house voice toward your own; that is the render's\npersona-dependent blend (`05`), still an open seam. It only gathers the brand voice into one guide. The\nonly real work is grouping and resolving: lining up the told tone and phrasings with any Drive brand\ndoc that confirms them.\n\nProfile (`05`) is the downstream: at render it pulls this guide as the brand style to write toward and\nblends it with the user's personal voice, leaning more on the house voice for someone who sells only\nbecause their role needs it and more on the personal voice for a practised seller. That blend lives in\n`05`'s prose, not here. Used solo with no organisation behind you, the guide is empty and the render\nrests entirely on your own voice.\n\n## Lineage\n\n`house-voice` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`\nresolves to [`channels/drive.md`](../channels/drive.md), the brand document a tone\nor phrasing may point at. The seam between this guide and Profile's personal voice at render time is\nan open question, worked in both modules' prose.\n"
+   "markdown": "---\nid: house-voice-guide\nmodule: 04-organization\nlabel: Our house style\nblurb: The company's brand voice, gathered into one positive style the render can write toward.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#house-voice\n  - drive#file-content\n---\n\n# Our house style\n## What it gathers\n\nGathers the company's brand voice into a single style guide: the told `house-voice` record (the\ncompany tone, the required phrasings, the forbidden phrasings, the band a message should sit in) and\nthe exported `file-content` of any brand document in Drive it is drawn from. How the company wants to\nsound, in one place, as something to write toward.\n\nThis is the positive half of the old fence, split out on purpose. The `compliance-fence` holds the\nhard \"never claim this, always say that\" walls a draft is gated against; this guide holds the \"sound\nlike this\" style the render emulates. Two different operations: one checks a finished draft and can\nstop it, the other shapes a draft as it is written. Keeping them apart gives the render a clean thing\nto lean toward and keeps the fence to walls only. A genuinely hard brand wall (a phrase the company\ncan never use) stays a `rule` in the fence; the guide's forbidden phrasings are the softer \"we don't\ntalk like that\" preferences.\n\nIt does not weigh how far to bend the house voice toward your own; that is the render's\npersona-dependent blend (`05`), still an open seam. It only gathers the brand voice into one guide. The\nonly real work is grouping and resolving: lining up the told tone and phrasings with any Drive brand\ndoc that confirms them.\n\nProfile (`05`) is the downstream: at render it pulls this guide as the brand style to write toward and\nblends it with the user's personal voice, leaning more on the house voice for someone who sells only\nbecause their role needs it and more on the personal voice for a practised seller. That blend lives in\n`05`'s prose, not here. Used solo with no organisation behind you, the guide is empty and the render\nrests entirely on your own voice.\n\n## Lineage\n\n`house-voice` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`\nresolves to [`channels/drive.md`](../channels/drive.md), the brand document a tone\nor phrasing may point at. The seam between this guide and Profile's personal voice at render time is\nan open question, worked in both modules' prose.\n"
   },
   {
    "id": "meeting-history",
@@ -1037,7 +1104,7 @@ window.LIBRARY = {
   {
    "id": "objection-list",
    "module": "03-offerings",
-   "label": "Objection list",
+   "label": "Worries and answers",
    "blurb": "One offering's worries, gathered into a named catalog with each answer and the proof it needs.",
    "about": "an offering",
    "deterministic": true,
@@ -1047,7 +1114,7 @@ window.LIBRARY = {
     "web#web-result",
     "web#research-report"
    ],
-   "title": "Objection list",
+   "title": "Worries and answers",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1062,12 +1129,12 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/objection-list.md",
-   "markdown": "---\nid: objection-list\nmodule: 03-offerings\nlabel: Objection list\nblurb: One offering's worries, gathered into a named catalog with each answer and the proof it needs.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#worry-answer\n  - offering-entry\n  - web#web-result\n  - web#research-report\n---\n\n# Objection list\n\n## What it gathers\n\nGathers one offering's worries into a single catalog. Each is a named objection (data residency,\nincumbent lock-in, price), with the answer you give it and the kind of proof that answer needs.\n\nIt stands on the Offering entry, spined by the told `worry-answer` records. Web research can add\nworries you did not list yourself: the procurement patterns a cautious buyer-type raises, and the\nworries that recur in public reviews of comparable products. Every worry this product meets, and how\nyou meet it.\n\nThe only real work is listing and de-duplicating the worries, and matching a buyer's loose phrasing to\na named entry (\"is this GDPR-safe?\" lands on **data residency**).\n\nIt does not decide whether a particular buyer is actually *blocking* on one. That is People's\n[`blocker`](../signals/blocker.md) signal, which pulls this list to name the\nobjection rather than inventing a label.\n\n## Lineage\n\n`worry-answer` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `web-result` and\n`research-report` resolve to [`channels/web.md`](../channels/web.md).\n`offering-entry` is the sibling assembly this stands on. A worry phrased loosely enough that it\nmatches nothing on the list is a **told gap** on Offerings' side (the entry is missing), named not\nfaked.\n"
+   "markdown": "---\nid: objection-list\nmodule: 03-offerings\nlabel: Worries and answers\nblurb: One offering's worries, gathered into a named catalog with each answer and the proof it needs.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#worry-answer\n  - offering-entry\n  - web#web-result\n  - web#research-report\n---\n\n# Worries and answers\n## What it gathers\n\nGathers one offering's worries into a single catalog. Each is a named objection (data residency,\nincumbent lock-in, price), with the answer you give it and the kind of proof that answer needs.\n\nIt stands on the Offering entry, spined by the told `worry-answer` records. Web research can add\nworries you did not list yourself: the procurement patterns a cautious buyer-type raises, and the\nworries that recur in public reviews of comparable products. Every worry this product meets, and how\nyou meet it.\n\nThe only real work is listing and de-duplicating the worries, and matching a buyer's loose phrasing to\na named entry (\"is this GDPR-safe?\" lands on **data residency**).\n\nIt does not decide whether a particular buyer is actually *blocking* on one. That is People's\n[`blocker`](../signals/blocker.md) signal, which pulls this list to name the\nobjection rather than inventing a label.\n\n## Lineage\n\n`worry-answer` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `web-result` and\n`research-report` resolve to [`channels/web.md`](../channels/web.md).\n`offering-entry` is the sibling assembly this stands on. A worry phrased loosely enough that it\nmatches nothing on the list is a **told gap** on Offerings' side (the entry is missing), named not\nfaked.\n"
   },
   {
    "id": "offering-entry",
    "module": "03-offerings",
-   "label": "Offering entry",
+   "label": "What you sell",
    "blurb": "Everything about one product, gathered into a single card.",
    "about": "an offering",
    "deterministic": true,
@@ -1083,7 +1150,7 @@ window.LIBRARY = {
     "web#enrichment",
     "web#web-result"
    ],
-   "title": "Offering entry",
+   "title": "What you sell",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1098,7 +1165,7 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/offering-entry.md",
-   "markdown": "---\nid: offering-entry\nmodule: 03-offerings\nlabel: Offering entry\nblurb: Everything about one product, gathered into a single card.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pitch\n  - offering-told#fit-shape\n  - offering-told#use-case\n  - offering-told#pricing\n  - offering-told#worry-answer\n  - drive#file\n  - drive#file-content\n  - web#research-report\n  - web#enrichment\n  - web#web-result\n---\n\n# Offering entry\n\n## What it gathers\n\nGathers everything about one product into a single card, from three places:\n\n- the told spine: your `pitch`, the `fit-shape` it suits, its `use-case`s, its `pricing`, and the\n  `worry-answer` pairs you keep on hand\n- the Drive files filed around it: a deck, a one-pager, a spec sheet, a pricing doc, a product case\n  study\n- the web research that grounds it: a rival's pricing page, what similar products lead with, public\n  reviews\n\nThis product, and everything you know about how to sell it.\n\nThe only real work is identity and grouping: deciding which told facts, which Drive files and which web\nfindings all belong to *this* product rather than another.\n\nIt does not decide whether a lead is a good fit, or which answer will land. It only gathers the facts\nof one offering into one place. The signals that read this card do the deciding: does this lead fit, is\nthere an answer gap, where do we sit on price.\n\n## Lineage\n\n`pitch`, `fit-shape`, `use-case`, `pricing` and `worry-answer` resolve to [`told.md`](../told/offering-told.md), the\noffering's own told source. `file` and `file-content` resolve to\n[`channels/drive.md`](../channels/drive.md). `research-report`, `enrichment` and\n`web-result` resolve to [`channels/web.md`](../channels/web.md). The five web\nframings once written up in Offerings' prose (competitor pricing, market report, procurement pattern,\nproduct comparison, customer review) are *search framings* over `web-result` and `research-report`, not\nseparate records.\n"
+   "markdown": "---\nid: offering-entry\nmodule: 03-offerings\nlabel: What you sell\nblurb: Everything about one product, gathered into a single card.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pitch\n  - offering-told#fit-shape\n  - offering-told#use-case\n  - offering-told#pricing\n  - offering-told#worry-answer\n  - drive#file\n  - drive#file-content\n  - web#research-report\n  - web#enrichment\n  - web#web-result\n---\n\n# What you sell\n## What it gathers\n\nGathers everything about one product into a single card, from three places:\n\n- the told spine: your `pitch`, the `fit-shape` it suits, its `use-case`s, its `pricing`, and the\n  `worry-answer` pairs you keep on hand\n- the Drive files filed around it: a deck, a one-pager, a spec sheet, a pricing doc, a product case\n  study\n- the web research that grounds it: a rival's pricing page, what similar products lead with, public\n  reviews\n\nThis product, and everything you know about how to sell it.\n\nThe only real work is identity and grouping: deciding which told facts, which Drive files and which web\nfindings all belong to *this* product rather than another.\n\nIt does not decide whether a lead is a good fit, or which answer will land. It only gathers the facts\nof one offering into one place. The signals that read this card do the deciding: does this lead fit, is\nthere an answer gap, where do we sit on price.\n\n## Lineage\n\n`pitch`, `fit-shape`, `use-case`, `pricing` and `worry-answer` resolve to [`told.md`](../told/offering-told.md), the\noffering's own told source. `file` and `file-content` resolve to\n[`channels/drive.md`](../channels/drive.md). `research-report`, `enrichment` and\n`web-result` resolve to [`channels/web.md`](../channels/web.md). The five web\nframings once written up in Offerings' prose (competitor pricing, market report, procurement pattern,\nproduct comparison, customer review) are *search framings* over `web-result` and `research-report`, not\nseparate records.\n"
   },
   {
    "id": "person-history",
@@ -1143,7 +1210,7 @@ window.LIBRARY = {
   {
    "id": "price-position",
    "module": "03-offerings",
-   "label": "Price position",
+   "label": "Our price against competitors",
    "blurb": "One offering's price, gathered and laid beside the competitive field.",
    "about": "an offering",
    "deterministic": true,
@@ -1154,7 +1221,7 @@ window.LIBRARY = {
     "web#research-report",
     "web#page-content"
    ],
-   "title": "Price position",
+   "title": "Our price against competitors",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1169,12 +1236,12 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/price-position.md",
-   "markdown": "---\nid: price-position\nmodule: 03-offerings\nlabel: Price position\nblurb: One offering's price, gathered and laid beside the competitive field.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pricing\n  - offering-entry\n  - web#web-result\n  - web#research-report\n  - web#page-content\n---\n\n# Price position\n\n## What it gathers\n\nGathers your price for one offering and lays it beside the competitive field. Your told `pricing`\n(price and discount room) sits next to what rivals charge, pulled from their public pricing pages\n(`page-content`), the search hits that found them (`web-result`), and a synthesised `research-report`\non what similar products lead with.\n\nIt stands on the Offering entry. Your number, next to theirs.\n\nThe only real work is placing the numbers side by side and working out the plain arithmetic: you sit X\nabove or below a named rival.\n\nWhether that gap means you are priced to win, or priced to scare a cautious buyer off, is the read\nabove: [`price-barrier`](../signals/price-barrier.md).\n\n## Lineage\n\n`pricing` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `web-result`,\n`research-report` and `page-content` resolve to [`channels/web.md`](../channels/web.md).\n`offering-entry` is the sibling assembly this stands on. Where a rival publishes no price, the field\nhas a hole on the open web, a **data gap** named not faked rather than a guessed number.\n"
+   "markdown": "---\nid: price-position\nmodule: 03-offerings\nlabel: Our price against competitors\nblurb: One offering's price, gathered and laid beside the competitive field.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pricing\n  - offering-entry\n  - web#web-result\n  - web#research-report\n  - web#page-content\n---\n\n# Our price against competitors\n## What it gathers\n\nGathers your price for one offering and lays it beside the competitive field. Your told `pricing`\n(price and discount room) sits next to what rivals charge, pulled from their public pricing pages\n(`page-content`), the search hits that found them (`web-result`), and a synthesised `research-report`\non what similar products lead with.\n\nIt stands on the Offering entry. Your number, next to theirs.\n\nThe only real work is placing the numbers side by side and working out the plain arithmetic: you sit X\nabove or below a named rival.\n\nWhether that gap means you are priced to win, or priced to scare a cautious buyer off, is the read\nabove: [`price-barrier`](../signals/price-barrier.md).\n\n## Lineage\n\n`pricing` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `web-result`,\n`research-report` and `page-content` resolve to [`channels/web.md`](../channels/web.md).\n`offering-entry` is the sibling assembly this stands on. Where a rival publishes no price, the field\nhas a hole on the open web, a **data gap** named not faked rather than a guessed number.\n"
   },
   {
    "id": "pricing-fence",
    "module": "04-organization",
-   "label": "Pricing fence",
+   "label": "How far the price can move",
    "blurb": "The company's discount limits, gathered into one envelope a deal's price must sit inside.",
    "about": "an organisation",
    "deterministic": true,
@@ -1182,7 +1249,7 @@ window.LIBRARY = {
     "organisation-told#pricing-authority",
     "drive#file-content"
    ],
-   "title": "Pricing fence",
+   "title": "How far the price can move",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1197,12 +1264,12 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/pricing-fence.md",
-   "markdown": "---\nid: pricing-fence\nmodule: 04-organization\nlabel: Pricing fence\nblurb: The company's discount limits, gathered into one envelope a deal's price must sit inside.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#pricing-authority\n  - drive#file-content\n---\n\n# Pricing fence\n\n## What it gathers\n\nGathers the company's discount governance into a single envelope: the told `pricing-authority` record\n(the standard discount ceiling, who signs off beyond it, the floor price if there is one) and the\nexported `file-content` of any pricing sheet in Drive it is drawn from. Each limit is marked hard or\nsoft the same way the compliance fence marks its rules: the floor is a wall, the standard ceiling is\nthe line beyond which sign-off is needed. Every line the company holds on price, in one place. The\nsibling of `compliance-fence`: one fences words, this one fences money.\n\nIt does not decide how far to discount this deal; that is the Brain's call (the deferred deal-specific\ndiscount room, which reads this fence to know the envelope it must stay inside). It only gathers the\ngovernance into one place. The only real work is grouping and resolving: lining up the told ceiling and\nfloor with any Drive pricing sheet that confirms them, and keeping the hard floor apart from the\nsign-off line.\n\nKeep this apart from Offerings' price reading: `03`'s `price-position` and `price-barrier` work the\nper-offering price (what the offering costs, how far its own told discount room reaches against\nrivals). This is the org-level governance that sits above every offering, the authority and the floor\nthe whole team shares. The two are different things; this one is the envelope, that one is the number\ninside it.\n\nWhere the company has set no ceiling, sign-off or floor, the fence shows the hole plainly, a told gap\nnamed not faked: used solo with no organisation behind you it is empty, and pricing is left entirely\nto the user.\n\n## Lineage\n\n`pricing-authority` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source.\n`file-content` resolves to [`channels/drive.md`](../channels/drive.md), the pricing\nsheet a ceiling or floor may point at. The Brain's deferred deal-specific discount room is the\ndownstream that reads this fence; the static governance lives here, the per-deal judgement sits with\nstaging.\n"
+   "markdown": "---\nid: pricing-fence\nmodule: 04-organization\nlabel: How far the price can move\nblurb: The company's discount limits, gathered into one envelope a deal's price must sit inside.\nabout: an organisation\ndeterministic: true\ninputs:\n  - organisation-told#pricing-authority\n  - drive#file-content\n---\n\n# How far the price can move\n## What it gathers\n\nGathers the company's discount governance into a single envelope: the told `pricing-authority` record\n(the standard discount ceiling, who signs off beyond it, the floor price if there is one) and the\nexported `file-content` of any pricing sheet in Drive it is drawn from. Each limit is marked hard or\nsoft the same way the compliance fence marks its rules: the floor is a wall, the standard ceiling is\nthe line beyond which sign-off is needed. Every line the company holds on price, in one place. The\nsibling of `compliance-fence`: one fences words, this one fences money.\n\nIt does not decide how far to discount this deal; that is the Brain's call (the deferred deal-specific\ndiscount room, which reads this fence to know the envelope it must stay inside). It only gathers the\ngovernance into one place. The only real work is grouping and resolving: lining up the told ceiling and\nfloor with any Drive pricing sheet that confirms them, and keeping the hard floor apart from the\nsign-off line.\n\nKeep this apart from Offerings' price reading: `03`'s `price-position` and `price-barrier` work the\nper-offering price (what the offering costs, how far its own told discount room reaches against\nrivals). This is the org-level governance that sits above every offering, the authority and the floor\nthe whole team shares. The two are different things; this one is the envelope, that one is the number\ninside it.\n\nWhere the company has set no ceiling, sign-off or floor, the fence shows the hole plainly, a told gap\nnamed not faked: used solo with no organisation behind you it is empty, and pricing is left entirely\nto the user.\n\n## Lineage\n\n`pricing-authority` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source.\n`file-content` resolves to [`channels/drive.md`](../channels/drive.md), the pricing\nsheet a ceiling or floor may point at. The Brain's deferred deal-specific discount room is the\ndownstream that reads this fence; the static governance lives here, the per-deal judgement sits with\nstaging.\n"
   },
   {
    "id": "product-claims",
    "module": "03-offerings",
-   "label": "Product claims",
+   "label": "What we say the product does",
    "blurb": "The factual claims one product makes, gathered with the grounding under each.",
    "about": "an offering",
    "deterministic": true,
@@ -1212,7 +1279,7 @@ window.LIBRARY = {
     "drive#file-content",
     "web#web-result"
    ],
-   "title": "Product claims",
+   "title": "What we say the product does",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1227,7 +1294,7 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/product-claims.md",
-   "markdown": "---\nid: product-claims\nmodule: 03-offerings\nlabel: Product claims\nblurb: The factual claims one product makes, gathered with the grounding under each.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pitch\n  - offering-entry\n  - drive#file-content\n  - web#web-result\n---\n\n# Product claims\n\n## What it gathers\n\nGathers the factual claims a product makes (\"syncs both ways\", \"exports an audit log\", \"deploys in a\nday\") into a single list. Each claim is carried with its grounding: the told `pitch` it came from, a\nline in a spec sheet or deck read out of `file-content`, or a third-party comparison from the web.\n\nIt stands on the Offering entry. What this product says it does, and where each claim is backed.\n\nThe only real work is listing the claims and noting where each is grounded.\n\nIt does not decide whether a buyer has *misunderstood* one. That is People's\n[`understanding-gap`](../signals/understanding-gap.md) signal, which pulls this\nlist to judge a buyer's confusion (a buyer using \"export\" where the product says \"audit log\").\n\n## Lineage\n\n`pitch` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `file-content` resolves to\n[`channels/drive.md`](../channels/drive.md). `web-result` resolves to\n[`channels/web.md`](../channels/web.md). `offering-entry` is the sibling assembly\nthis stands on. A claim that lives only in a deck not uploaded to Drive is a **data gap**, named not\nfaked: the claim cannot be grounded until the file is connected.\n"
+   "markdown": "---\nid: product-claims\nmodule: 03-offerings\nlabel: What we say the product does\nblurb: The factual claims one product makes, gathered with the grounding under each.\nabout: an offering\ndeterministic: true\ninputs:\n  - offering-told#pitch\n  - offering-entry\n  - drive#file-content\n  - web#web-result\n---\n\n# What we say the product does\n## What it gathers\n\nGathers the factual claims a product makes (\"syncs both ways\", \"exports an audit log\", \"deploys in a\nday\") into a single list. Each claim is carried with its grounding: the told `pitch` it came from, a\nline in a spec sheet or deck read out of `file-content`, or a third-party comparison from the web.\n\nIt stands on the Offering entry. What this product says it does, and where each claim is backed.\n\nThe only real work is listing the claims and noting where each is grounded.\n\nIt does not decide whether a buyer has *misunderstood* one. That is People's\n[`understanding-gap`](../signals/understanding-gap.md) signal, which pulls this\nlist to judge a buyer's confusion (a buyer using \"export\" where the product says \"audit log\").\n\n## Lineage\n\n`pitch` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `file-content` resolves to\n[`channels/drive.md`](../channels/drive.md). `web-result` resolves to\n[`channels/web.md`](../channels/web.md). `offering-entry` is the sibling assembly\nthis stands on. A claim that lives only in a deck not uploaded to Drive is a **data gap**, named not\nfaked: the claim cannot be grounded until the file is connected.\n"
   },
   {
    "id": "proof-library",
@@ -1261,7 +1328,7 @@ window.LIBRARY = {
   {
    "id": "stakeholder-map",
    "module": "02-relationships",
-   "label": "Stakeholder map",
+   "label": "Who is who in their organisation",
    "blurb": "Everyone at one organisation, by their role and who is still missing.",
    "about": "an organisation",
    "deterministic": true,
@@ -1277,7 +1344,7 @@ window.LIBRARY = {
     "people-told#seed-contact",
     "people-told#relationship-note"
    ],
-   "title": "Stakeholder map",
+   "title": "Who is who in their organisation",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1292,12 +1359,12 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/stakeholder-map.md",
-   "markdown": "---\nid: stakeholder-map\nmodule: 02-relationships\nlabel: Stakeholder map\nblurb: Everyone at one organisation, by their role and who is still missing.\nabout: an organisation\ndeterministic: true\ninputs:\n  - person-history\n  - web#enrichment\n  - gmail#email-message\n  - gmail#email-thread\n  - contacts#contact\n  - contacts#other-contact\n  - calendar#calendar-event\n  - slack#slack-user\n  - people-told#seed-contact\n  - people-told#relationship-note\n---\n\n# Stakeholder map\n\n## What it gathers\n\nGathers everyone you deal with at one organisation into a single picture, keyed by the org: its domain\nfrom `enrichment`, the shared email domain on a `Contact`, the company on an `Other contact`.\n\nIt stands on Person history. Each name on the map is one person already gathered. The map sorts those\npeople into deciders, influencers, champions and blockers, and marks who is still a hole.\n\nTo place each person, it reads what the records state: who is on a thread (`From`, To and Cc on an\n`Email message`, the participants on an `Email thread`), who sits on the shared `Calendar event`, the\njob title on a `Contact` or `Slack user`, and the role `enrichment` returns from the open web.\n\nThe map names its gaps as plainly as its names. A missing decider is surfaced as honestly as a known\none: the picture says \"no decision-maker on record here\" the same way it names a known decision-maker.\nA hole is a fact about the org, not a thing to paper over.\n\nThe only real work is identity and grouping: deciding these scattered people belong to the same org,\nand lining them up by the roles their records carry. The sort leans on what the records already state,\na job title that says \"Head of\", a name that shows up on every thread, not on a read of behaviour. So\nthe map can place someone in the champion or blocker bucket from their record, but it does not judge\nwhether they are truly championing or cooling. That judgement is a signal's job.\n\n## Lineage\n\n`email-message` and `email-thread` resolve to\n[`channels/gmail.md`](../channels/gmail.md); `contact` and `other-contact` to\n[`channels/contacts.md`](../channels/contacts.md); `calendar-event` to\n[`channels/calendar.md`](../channels/calendar.md); `slack-user` to\n[`channels/slack.md`](../channels/slack.md); `enrichment` to\n[`channels/web.md`](../channels/web.md). `person-history` is the sibling assembly\nthat turns scattered records into a resolved person. `seed-contact` and `relationship-note` are\nPeople's own told records, resolving to [`told.md`](../told/people-told.md): the targets you name and the\nplacement facts only you know (a quiet person who still decides) that the records cannot show. The\ndecider gap stays wide until LinkedIn connects (role and reporting lines are a data gap), and the\nuser can always override a placement, which is a told fact the map keeps.\n"
+   "markdown": "---\nid: stakeholder-map\nmodule: 02-relationships\nlabel: Who is who in their organisation\nblurb: Everyone at one organisation, by their role and who is still missing.\nabout: an organisation\ndeterministic: true\ninputs:\n  - person-history\n  - web#enrichment\n  - gmail#email-message\n  - gmail#email-thread\n  - contacts#contact\n  - contacts#other-contact\n  - calendar#calendar-event\n  - slack#slack-user\n  - people-told#seed-contact\n  - people-told#relationship-note\n---\n\n# Who is who in their organisation\n## What it gathers\n\nGathers everyone you deal with at one organisation into a single picture, keyed by the org: its domain\nfrom `enrichment`, the shared email domain on a `Contact`, the company on an `Other contact`.\n\nIt stands on Person history. Each name on the map is one person already gathered. The map sorts those\npeople into deciders, influencers, champions and blockers, and marks who is still a hole.\n\nTo place each person, it reads what the records state: who is on a thread (`From`, To and Cc on an\n`Email message`, the participants on an `Email thread`), who sits on the shared `Calendar event`, the\njob title on a `Contact` or `Slack user`, and the role `enrichment` returns from the open web.\n\nThe map names its gaps as plainly as its names. A missing decider is surfaced as honestly as a known\none: the picture says \"no decision-maker on record here\" the same way it names a known decision-maker.\nA hole is a fact about the org, not a thing to paper over.\n\nThe only real work is identity and grouping: deciding these scattered people belong to the same org,\nand lining them up by the roles their records carry. The sort leans on what the records already state,\na job title that says \"Head of\", a name that shows up on every thread, not on a read of behaviour. So\nthe map can place someone in the champion or blocker bucket from their record, but it does not judge\nwhether they are truly championing or cooling. That judgement is a signal's job.\n\n## Lineage\n\n`email-message` and `email-thread` resolve to\n[`channels/gmail.md`](../channels/gmail.md); `contact` and `other-contact` to\n[`channels/contacts.md`](../channels/contacts.md); `calendar-event` to\n[`channels/calendar.md`](../channels/calendar.md); `slack-user` to\n[`channels/slack.md`](../channels/slack.md); `enrichment` to\n[`channels/web.md`](../channels/web.md). `person-history` is the sibling assembly\nthat turns scattered records into a resolved person. `seed-contact` and `relationship-note` are\nPeople's own told records, resolving to [`told.md`](../told/people-told.md): the targets you name and the\nplacement facts only you know (a quiet person who still decides) that the records cannot show. The\ndecider gap stays wide until LinkedIn connects (role and reporting lines are a data gap), and the\nuser can always override a placement, which is a told fact the map keeps.\n"
   },
   {
    "id": "writing-history",
    "module": "05-persona-you",
-   "label": "Writing history",
+   "label": "Your writing style",
    "blurb": "Everything you have written, gathered into one picture of how you write.",
    "about": "a person",
    "deterministic": true,
@@ -1307,7 +1374,7 @@ window.LIBRARY = {
     "slack#slack-message",
     "profile-told#voice-sample"
    ],
-   "title": "Writing history",
+   "title": "Your writing style",
    "intro": "",
    "sections": {
     "What it gathers": {
@@ -1322,22 +1389,26 @@ window.LIBRARY = {
     "Lineage"
    ],
    "file": "assemblies/writing-history.md",
-   "markdown": "---\nid: writing-history\nmodule: 05-persona-you\nlabel: Writing history\nblurb: Everything you have written, gathered into one picture of how you write.\nabout: a person\ndeterministic: true\ninputs:\n  - gmail#email-message\n  - gmail#draft\n  - slack#slack-message\n  - profile-told#voice-sample\n---\n\n# Writing history\n\n## What it gathers\n\nGathers everything you have written into a single picture: your sent mail (`email-message` with a sent\n`direction`), the `draft`s you prepare, your `slack-message`s, and any `voice-sample` you handed over\nas a head start. It reads what you write, never what others send you, resolved to you by identity (your\nown address and Slack user). You, and how you actually put words together.\n\nThe sharpest record here is derived: the gap between a `draft` the tool wrote and the `email-message`\nyou actually sent. That draft-to-sent comparison is computed, not fetched (marked `[derived]`), and it\nis the strongest teacher of voice, because every rewrite is a fact about how you would have said it\ninstead. This also reconciles the loose labels the old notes used (\"Sent email\", \"Draft edit\", \"Sent\nSlack message\") with the real channel records: a sent email is `email-message` filtered to your\ndirection, a draft edit is `draft` compared against its sent counterpart, a sent Slack message is\n`slack-message`.\n\nIt does not decide that you are \"warm but brisk\" or \"formal with new contacts\". It only gathers your\nwriting into one place and lines up each draft with what you sent. The only real work is identity and\npairing: deciding which messages are yours, and which sent email closes which draft. The read above is\nthe [`voice`](../signals/voice.md) signal.\n\n## Lineage\n\n`email-message` and `draft` resolve to\n[`channels/gmail.md`](../channels/gmail.md); `slack-message` resolves to\n[`channels/slack.md`](../channels/slack.md); `voice-sample` resolves to\n[`told.md`](../told/profile-told.md), the optional sample you seed it with. The draft-to-sent edit is a `[derived]`\ncomparison over `draft` and `email-message`, not a separate fetched record.\n"
+   "markdown": "---\nid: writing-history\nmodule: 05-persona-you\nlabel: Your writing style\nblurb: Everything you have written, gathered into one picture of how you write.\nabout: a person\ndeterministic: true\ninputs:\n  - gmail#email-message\n  - gmail#draft\n  - slack#slack-message\n  - profile-told#voice-sample\n---\n\n# Your writing style\n## What it gathers\n\nGathers everything you have written into a single picture: your sent mail (`email-message` with a sent\n`direction`), the `draft`s you prepare, your `slack-message`s, and any `voice-sample` you handed over\nas a head start. It reads what you write, never what others send you, resolved to you by identity (your\nown address and Slack user). You, and how you actually put words together.\n\nThe sharpest record here is derived: the gap between a `draft` the tool wrote and the `email-message`\nyou actually sent. That draft-to-sent comparison is computed, not fetched (marked `[derived]`), and it\nis the strongest teacher of voice, because every rewrite is a fact about how you would have said it\ninstead. This also reconciles the loose labels the old notes used (\"Sent email\", \"Draft edit\", \"Sent\nSlack message\") with the real channel records: a sent email is `email-message` filtered to your\ndirection, a draft edit is `draft` compared against its sent counterpart, a sent Slack message is\n`slack-message`.\n\nIt does not decide that you are \"warm but brisk\" or \"formal with new contacts\". It only gathers your\nwriting into one place and lines up each draft with what you sent. The only real work is identity and\npairing: deciding which messages are yours, and which sent email closes which draft. The read above is\nthe [`voice`](../signals/voice.md) signal.\n\n## Lineage\n\n`email-message` and `draft` resolve to\n[`channels/gmail.md`](../channels/gmail.md); `slack-message` resolves to\n[`channels/slack.md`](../channels/slack.md); `voice-sample` resolves to\n[`told.md`](../told/profile-told.md), the optional sample you seed it with. The draft-to-sent edit is a `[derived]`\ncomparison over `draft` and `email-message`, not a separate fetched record.\n"
   }
  ],
  "counts": [
   {
    "id": "accepts-meetings",
-   "label": "Accepts meetings",
+   "label": "Meetings they accept",
    "used_by": [
     "best-way-to-reach"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Accepts meetings",
+   "title": "Meetings they accept",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1348,20 +1419,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/accepts-meetings.md",
-   "markdown": "---\nid: accepts-meetings\nlabel: \"Accepts meetings\"\nused_by: [best-way-to-reach]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Accepts meetings\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: accepts-meetings\nlabel: \"Meetings they accept\"\nused_by: [best-way-to-reach]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Meetings they accept\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "advocacy-voiced-on-call",
-   "label": "Advocacy voiced on call",
+   "label": "Speaks up for you on calls",
    "used_by": [
     "champion"
    ],
+   "over": [],
    "defined": false,
-   "title": "Advocacy voiced on call",
+   "title": "Speaks up for you on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1372,20 +1444,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/advocacy-voiced-on-call.md",
-   "markdown": "---\nid: advocacy-voiced-on-call\nlabel: \"Advocacy voiced on call\"\nused_by: [champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Advocacy voiced on call\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: advocacy-voiced-on-call\nlabel: \"Speaks up for you on calls\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Speaks up for you on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "answer-grounded",
-   "label": "Answer grounded",
+   "label": "Answer backed by proof",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Answer grounded",
+   "title": "Answer backed by proof",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1396,20 +1472,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/answer-grounded.md",
-   "markdown": "---\nid: answer-grounded\nlabel: \"Answer grounded\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Answer grounded\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: answer-grounded\nlabel: \"Answer backed by proof\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Answer backed by proof\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "ask-made-unanswered",
-   "label": "Ask made unanswered",
+   "label": "Questions left unanswered",
    "used_by": [
     "loose-end"
    ],
+   "over": [],
    "defined": false,
-   "title": "Ask made unanswered",
+   "title": "Questions left unanswered",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1420,20 +1497,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/ask-made-unanswered.md",
-   "markdown": "---\nid: ask-made-unanswered\nlabel: \"Ask made unanswered\"\nused_by: [loose-end]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Ask made unanswered\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: ask-made-unanswered\nlabel: \"Questions left unanswered\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Questions left unanswered\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "auto-reply-no-longer-with",
-   "label": "Auto reply no longer with",
+   "label": "Auto-reply says they have left",
    "used_by": [
     "champion-went-dark"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Auto reply no longer with",
+   "title": "Auto-reply says they have left",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1444,20 +1525,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/auto-reply-no-longer-with.md",
-   "markdown": "---\nid: auto-reply-no-longer-with\nlabel: \"Auto reply no longer with\"\nused_by: [champion-went-dark]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Auto reply no longer with\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: auto-reply-no-longer-with\nlabel: \"Auto-reply says they have left\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Auto-reply says they have left\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "bounce-back-detected",
-   "label": "Bounce back detected",
+   "label": "Emails bouncing",
    "used_by": [
     "champion-went-dark"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Bounce back detected",
+   "title": "Emails bouncing",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1468,20 +1553,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/bounce-back-detected.md",
-   "markdown": "---\nid: bounce-back-detected\nlabel: \"Bounce back detected\"\nused_by: [champion-went-dark]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Bounce back detected\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: bounce-back-detected\nlabel: \"Emails bouncing\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Emails bouncing\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "budget-or-procurement-entered",
-   "label": "Budget or procurement entered",
+   "label": "Budget or buying team joins",
    "used_by": [
     "buying-intent"
    ],
+   "over": [],
    "defined": false,
-   "title": "Budget or procurement entered",
+   "title": "Budget or buying team joins",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1492,20 +1578,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/budget-or-procurement-entered.md",
-   "markdown": "---\nid: budget-or-procurement-entered\nlabel: \"Budget or procurement entered\"\nused_by: [buying-intent]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Budget or procurement entered\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: budget-or-procurement-entered\nlabel: \"Budget or buying team joins\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Budget or buying team joins\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "channel-register-shift",
-   "label": "Channel register shift",
+   "label": "How your tone changes by channel",
    "used_by": [
     "voice"
    ],
+   "over": [
+    "writing-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Channel register shift",
+   "title": "How your tone changes by channel",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1516,20 +1606,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/channel-register-shift.md",
-   "markdown": "---\nid: channel-register-shift\nlabel: \"Channel register shift\"\nused_by: [voice]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Channel register shift\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: channel-register-shift\nlabel: \"How your tone changes by channel\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How your tone changes by channel\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claim-source",
-   "label": "Claim source",
+   "label": "Where a claim comes from",
    "used_by": [
     "unbacked-claim"
    ],
+   "over": [
+    "product-claims"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Claim source",
+   "title": "Where a claim comes from",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1540,20 +1634,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claim-source.md",
-   "markdown": "---\nid: claim-source\nlabel: \"Claim source\"\nused_by: [unbacked-claim]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claim source\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claim-source\nlabel: \"Where a claim comes from\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where a claim comes from\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claims-grounded-count",
-   "label": "Claims grounded count",
+   "label": "Claims with proof",
    "used_by": [
     "unbacked-claim"
    ],
+   "over": [
+    "product-claims"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Claims grounded count",
+   "title": "Claims with proof",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1564,20 +1662,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-grounded-count.md",
-   "markdown": "---\nid: claims-grounded-count\nlabel: \"Claims grounded count\"\nused_by: [unbacked-claim]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims grounded count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-grounded-count\nlabel: \"Claims with proof\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims with proof\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claims-restated-back",
-   "label": "Claims restated back",
+   "label": "Our points said back to us",
    "used_by": [
     "understanding-gap"
    ],
+   "over": [],
    "defined": false,
-   "title": "Claims restated back",
+   "title": "Our points said back to us",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1588,20 +1687,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-restated-back.md",
-   "markdown": "---\nid: claims-restated-back\nlabel: \"Claims restated back\"\nused_by: [understanding-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims restated back\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-restated-back\nlabel: \"Our points said back to us\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Our points said back to us\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claims-rival-wins-on",
-   "label": "Claims rival wins on",
+   "label": "Where a competitor beats us",
    "used_by": [
     "competitive-standing"
    ],
+   "over": [
+    "competitor-field"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Claims rival wins on",
+   "title": "Where a competitor beats us",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1612,20 +1715,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-rival-wins-on.md",
-   "markdown": "---\nid: claims-rival-wins-on\nlabel: \"Claims rival wins on\"\nused_by: [competitive-standing]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims rival wins on\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-rival-wins-on\nlabel: \"Where a competitor beats us\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where a competitor beats us\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claims-stated-count",
-   "label": "Claims stated count",
+   "label": "Claims made",
    "used_by": [
     "unbacked-claim"
    ],
+   "over": [
+    "product-claims"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Claims stated count",
+   "title": "Claims made",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1636,20 +1743,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-stated-count.md",
-   "markdown": "---\nid: claims-stated-count\nlabel: \"Claims stated count\"\nused_by: [unbacked-claim]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims stated count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-stated-count\nlabel: \"Claims made\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims made\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "claims-we-win-on",
-   "label": "Claims we win on",
+   "label": "Where we beat competitors",
    "used_by": [
     "competitive-standing"
    ],
+   "over": [
+    "competitor-field"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Claims we win on",
+   "title": "Where we beat competitors",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1660,20 +1771,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-we-win-on.md",
-   "markdown": "---\nid: claims-we-win-on\nlabel: \"Claims we win on\"\nused_by: [competitive-standing]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims we win on\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-we-win-on\nlabel: \"Where we beat competitors\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where we beat competitors\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "colleagues-looped-in-count",
-   "label": "Colleagues looped in count",
+   "label": "Colleagues they copy in",
    "used_by": [
     "champion"
    ],
+   "over": [],
    "defined": false,
-   "title": "Colleagues looped in count",
+   "title": "Colleagues they copy in",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1684,20 +1796,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/colleagues-looped-in-count.md",
-   "markdown": "---\nid: colleagues-looped-in-count\nlabel: \"Colleagues looped in count\"\nused_by: [champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Colleagues looped in count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: colleagues-looped-in-count\nlabel: \"Colleagues they copy in\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Colleagues they copy in\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "commitment-made-on-call",
-   "label": "Commitment made on call",
+   "label": "Promises made on calls",
    "used_by": [
     "loose-end"
    ],
+   "over": [],
    "defined": false,
-   "title": "Commitment made on call",
+   "title": "Promises made on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1708,20 +1821,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/commitment-made-on-call.md",
-   "markdown": "---\nid: commitment-made-on-call\nlabel: \"Commitment made on call\"\nused_by: [loose-end]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Commitment made on call\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: commitment-made-on-call\nlabel: \"Promises made on calls\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Promises made on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "competitor-price-band",
-   "label": "Competitor price band",
+   "label": "What competitors charge",
    "used_by": [
     "price-barrier"
    ],
+   "over": [
+    "price-position"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Competitor price band",
+   "title": "What competitors charge",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/price-position.md\"><code>price-position</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1732,20 +1849,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/competitor-price-band.md",
-   "markdown": "---\nid: competitor-price-band\nlabel: \"Competitor price band\"\nused_by: [price-barrier]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Competitor price band\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: competitor-price-band\nlabel: \"What competitors charge\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# What competitors charge\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`price-position`](../assemblies/price-position.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "confused-questions",
-   "label": "Confused questions",
+   "label": "Questions that show confusion",
    "used_by": [
     "understanding-gap"
    ],
+   "over": [],
    "defined": false,
-   "title": "Confused questions",
+   "title": "Questions that show confusion",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1756,20 +1874,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/confused-questions.md",
-   "markdown": "---\nid: confused-questions\nlabel: \"Confused questions\"\nused_by: [understanding-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Confused questions\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: confused-questions\nlabel: \"Questions that show confusion\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Questions that show confusion\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "confusion-voiced-on-call",
-   "label": "Confusion voiced on call",
+   "label": "Confusion said on calls",
    "used_by": [
     "understanding-gap"
    ],
+   "over": [],
    "defined": false,
-   "title": "Confusion voiced on call",
+   "title": "Confusion said on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1780,20 +1899,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/confusion-voiced-on-call.md",
-   "markdown": "---\nid: confusion-voiced-on-call\nlabel: \"Confusion voiced on call\"\nused_by: [understanding-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Confusion voiced on call\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: confusion-voiced-on-call\nlabel: \"Confusion said on calls\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Confusion said on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "days-open-vs-own-rhythm",
-   "label": "Days open vs own rhythm",
+   "label": "How long it has been left open",
    "used_by": [
     "loose-end"
    ],
+   "over": [],
    "defined": false,
-   "title": "Days open vs own rhythm",
+   "title": "How long it has been left open",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1804,20 +1924,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/days-open-vs-own-rhythm.md",
-   "markdown": "---\nid: days-open-vs-own-rhythm\nlabel: \"Days open vs own rhythm\"\nused_by: [loose-end]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Days open vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: days-open-vs-own-rhythm\nlabel: \"How long it has been left open\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How long it has been left open\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "decision-language-used",
-   "label": "Decision language used",
+   "label": "They talk about deciding",
    "used_by": [
     "buying-intent"
    ],
+   "over": [],
    "defined": false,
-   "title": "Decision language used",
+   "title": "They talk about deciding",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1828,20 +1949,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/decision-language-used.md",
-   "markdown": "---\nid: decision-language-used\nlabel: \"Decision language used\"\nused_by: [buying-intent]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Decision language used\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: decision-language-used\nlabel: \"They talk about deciding\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# They talk about deciding\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "decision-maker-reached",
-   "label": "Decision maker reached",
+   "label": "Reached the decision-maker",
    "used_by": [
     "missing-people"
    ],
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Decision maker reached",
+   "title": "Reached the decision-maker",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1852,20 +1977,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/decision-maker-reached.md",
-   "markdown": "---\nid: decision-maker-reached\nlabel: \"Decision maker reached\"\nused_by: [missing-people]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Decision maker reached\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: decision-maker-reached\nlabel: \"Reached the decision-maker\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reached the decision-maker\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "distinct-worries-count",
-   "label": "Distinct worries count",
+   "label": "Different worries raised",
    "used_by": [
     "recurring-objection"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Distinct worries count",
+   "title": "Different worries raised",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/recurring-objection.md\"><code>recurring-objection</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/recurring-objection.md\"><code>recurring-objection</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1876,20 +2005,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/distinct-worries-count.md",
-   "markdown": "---\nid: distinct-worries-count\nlabel: \"Distinct worries count\"\nused_by: [recurring-objection]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Distinct worries count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: distinct-worries-count\nlabel: \"Different worries raised\"\nused_by: [recurring-objection]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Different worries raised\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "dominant-worry-for-buyer-type",
-   "label": "Dominant worry for buyer type",
+   "label": "Top worry for this kind of buyer",
    "used_by": [
     "lead-with-this"
    ],
+   "over": [],
    "defined": false,
-   "title": "Dominant worry for buyer type",
+   "title": "Top worry for this kind of buyer",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a> or <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1900,20 +2030,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/dominant-worry-for-buyer-type.md",
-   "markdown": "---\nid: dominant-worry-for-buyer-type\nlabel: \"Dominant worry for buyer type\"\nused_by: [lead-with-this]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Dominant worry for buyer type\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: dominant-worry-for-buyer-type\nlabel: \"Top worry for this kind of buyer\"\nused_by: [lead-with-this]\nover: []   # not written yet. One of: offering-entry, objection-list\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Top worry for this kind of buyer\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`offering-entry`](../assemblies/offering-entry.md) or [`objection-list`](../assemblies/objection-list.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "draft-to-sent-edit-distance",
-   "label": "Draft to sent edit distance",
+   "label": "How much you change my drafts",
    "used_by": [
     "voice"
    ],
+   "over": [
+    "writing-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Draft to sent edit distance",
+   "title": "How much you change my drafts",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1924,20 +2058,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/draft-to-sent-edit-distance.md",
-   "markdown": "---\nid: draft-to-sent-edit-distance\nlabel: \"Draft to sent edit distance\"\nused_by: [voice]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Draft to sent edit distance\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: draft-to-sent-edit-distance\nlabel: \"How much you change my drafts\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How much you change my drafts\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "dropped-recurring-meeting",
-   "label": "Dropped recurring meeting",
+   "label": "Regular meeting dropped",
    "used_by": [
     "cooling-champion"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Dropped recurring meeting",
+   "title": "Regular meeting dropped",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1948,20 +2086,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/dropped-recurring-meeting.md",
-   "markdown": "---\nid: dropped-recurring-meeting\nlabel: \"Dropped recurring meeting\"\nused_by: [cooling-champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Dropped recurring meeting\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: dropped-recurring-meeting\nlabel: \"Regular meeting dropped\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Regular meeting dropped\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "fit-factors-met",
-   "label": "Fit factors met",
+   "label": "Good-fit signs present",
    "used_by": [
     "fit-match"
    ],
+   "over": [
+    "offering-entry"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Fit factors met",
+   "title": "Good-fit signs present",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1972,20 +2114,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fit-factors-met.md",
-   "markdown": "---\nid: fit-factors-met\nlabel: \"Fit factors met\"\nused_by: [fit-match]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fit factors met\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fit-factors-met\nlabel: \"Good-fit signs present\"\nused_by: [fit-match]\nover: [offering-entry]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Good-fit signs present\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`offering-entry`](../assemblies/offering-entry.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "fit-factors-missed",
-   "label": "Fit factors missed",
+   "label": "Good-fit signs missing",
    "used_by": [
     "fit-match"
    ],
+   "over": [
+    "offering-entry"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Fit factors missed",
+   "title": "Good-fit signs missing",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -1996,20 +2142,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fit-factors-missed.md",
-   "markdown": "---\nid: fit-factors-missed\nlabel: \"Fit factors missed\"\nused_by: [fit-match]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fit factors missed\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fit-factors-missed\nlabel: \"Good-fit signs missing\"\nused_by: [fit-match]\nover: [offering-entry]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Good-fit signs missing\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`offering-entry`](../assemblies/offering-entry.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "fit-shape-completeness",
-   "label": "Fit shape completeness",
+   "label": "How complete the good-fit picture is",
    "used_by": [
     "fit-match"
    ],
+   "over": [
+    "offering-entry"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Fit shape completeness",
+   "title": "How complete the good-fit picture is",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/fit-match.md\"><code>fit-match</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2020,20 +2170,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fit-shape-completeness.md",
-   "markdown": "---\nid: fit-shape-completeness\nlabel: \"Fit shape completeness\"\nused_by: [fit-match]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fit shape completeness\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fit-shape-completeness\nlabel: \"How complete the good-fit picture is\"\nused_by: [fit-match]\nover: [offering-entry]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How complete the good-fit picture is\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`offering-entry`](../assemblies/offering-entry.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "formality-by-relationship-stage",
-   "label": "Formality by relationship stage",
+   "label": "Formality as you get closer",
    "used_by": [
     "voice"
    ],
+   "over": [
+    "writing-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Formality by relationship stage",
+   "title": "Formality as you get closer",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2044,20 +2198,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/formality-by-relationship-stage.md",
-   "markdown": "---\nid: formality-by-relationship-stage\nlabel: \"Formality by relationship stage\"\nused_by: [voice]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Formality by relationship stage\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: formality-by-relationship-stage\nlabel: \"Formality as you get closer\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Formality as you get closer\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "fresh-reason-to-write",
-   "label": "Fresh reason to write",
+   "label": "A new reason to write",
    "used_by": [
     "time-to-reconnect"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Fresh reason to write",
+   "title": "A new reason to write",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2068,20 +2226,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fresh-reason-to-write.md",
-   "markdown": "---\nid: fresh-reason-to-write\nlabel: \"Fresh reason to write\"\nused_by: [time-to-reconnect]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fresh reason to write\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fresh-reason-to-write\nlabel: \"A new reason to write\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# A new reason to write\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "friendly-words-trend",
-   "label": "Friendly words trend",
+   "label": "Warm words, over time",
    "used_by": [
     "warmth-fading"
    ],
+   "over": [],
    "defined": false,
-   "title": "Friendly words trend",
+   "title": "Warm words, over time",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2092,20 +2251,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/friendly-words-trend.md",
-   "markdown": "---\nid: friendly-words-trend\nlabel: \"Friendly words trend\"\nused_by: [warmth-fading]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Friendly words trend\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: friendly-words-trend\nlabel: \"Warm words, over time\"\nused_by: [warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Warm words, over time\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "fulfilment-scan",
-   "label": "Fulfilment scan",
+   "label": "Check the promise was kept",
    "used_by": [
     "loose-end"
    ],
+   "over": [],
    "defined": false,
-   "title": "Fulfilment scan",
+   "title": "Check the promise was kept",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2116,20 +2276,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fulfilment-scan.md",
-   "markdown": "---\nid: fulfilment-scan\nlabel: \"Fulfilment scan\"\nused_by: [loose-end]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fulfilment scan\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fulfilment-scan\nlabel: \"Check the promise was kept\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Check the promise was kept\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "greeting-and-signoff-pattern",
-   "label": "Greeting and signoff pattern",
+   "label": "How you open and sign off",
    "used_by": [
     "voice"
    ],
+   "over": [
+    "writing-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Greeting and signoff pattern",
+   "title": "How you open and sign off",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2140,20 +2304,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/greeting-and-signoff-pattern.md",
-   "markdown": "---\nid: greeting-and-signoff-pattern\nlabel: \"Greeting and signoff pattern\"\nused_by: [voice]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Greeting and signoff pattern\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: greeting-and-signoff-pattern\nlabel: \"How you open and sign off\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How you open and sign off\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "grounding-kind-required",
-   "label": "Grounding kind required",
+   "label": "Kind of proof needed",
    "used_by": [
     "unbacked-claim"
    ],
+   "over": [
+    "product-claims"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Grounding kind required",
+   "title": "Kind of proof needed",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2164,20 +2332,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/grounding-kind-required.md",
-   "markdown": "---\nid: grounding-kind-required\nlabel: \"Grounding kind required\"\nused_by: [unbacked-claim]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Grounding kind required\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: grounding-kind-required\nlabel: \"Kind of proof needed\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Kind of proof needed\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "head-of-signature-scan",
-   "label": "Head of signature scan",
+   "label": "Job titles in signatures",
    "used_by": [
     "new-stakeholder"
    ],
+   "over": [],
    "defined": false,
-   "title": "Head of signature scan",
+   "title": "Job titles in signatures",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2188,7 +2357,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/head-of-signature-scan.md",
-   "markdown": "---\nid: head-of-signature-scan\nlabel: \"Head of signature scan\"\nused_by: [new-stakeholder]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Head of signature scan\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: head-of-signature-scan\nlabel: \"Job titles in signatures\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Job titles in signatures\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "how-close-you-were",
@@ -2196,12 +2365,16 @@ window.LIBRARY = {
    "used_by": [
     "time-to-reconnect"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "How close you were",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2212,20 +2385,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/how-close-you-were.md",
-   "markdown": "---\nid: how-close-you-were\nlabel: \"How close you were\"\nused_by: [time-to-reconnect]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How close you were\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: how-close-you-were\nlabel: \"How close you were\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How close you were\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "how-long-quiet-vs-own-rhythm",
-   "label": "How long quiet vs own rhythm",
+   "label": "How long quiet, against usual",
    "used_by": [
     "time-to-reconnect"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "How long quiet vs own rhythm",
+   "title": "How long quiet, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2236,20 +2413,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/how-long-quiet-vs-own-rhythm.md",
-   "markdown": "---\nid: how-long-quiet-vs-own-rhythm\nlabel: \"How long quiet vs own rhythm\"\nused_by: [time-to-reconnect]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How long quiet vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: how-long-quiet-vs-own-rhythm\nlabel: \"How long quiet, against usual\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How long quiet, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "incumbent-data-or-contract-lock",
-   "label": "Incumbent data or contract lock",
+   "label": "Tied to their supplier by data or contract",
    "used_by": [
     "competitive-standing"
    ],
+   "over": [
+    "competitor-field"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Incumbent data or contract lock",
+   "title": "Tied to their supplier by data or contract",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2260,20 +2441,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/incumbent-data-or-contract-lock.md",
-   "markdown": "---\nid: incumbent-data-or-contract-lock\nlabel: \"Incumbent data or contract lock\"\nused_by: [competitive-standing]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Incumbent data or contract lock\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: incumbent-data-or-contract-lock\nlabel: \"Tied to their supplier by data or contract\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Tied to their supplier by data or contract\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "incumbent-lock-in-present",
-   "label": "Incumbent lock in present",
+   "label": "Locked in to their supplier",
    "used_by": [
     "competitive-standing"
    ],
+   "over": [
+    "competitor-field"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Incumbent lock in present",
+   "title": "Locked in to their supplier",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2284,20 +2469,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/incumbent-lock-in-present.md",
-   "markdown": "---\nid: incumbent-lock-in-present\nlabel: \"Incumbent lock in present\"\nused_by: [competitive-standing]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Incumbent lock in present\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: incumbent-lock-in-present\nlabel: \"Locked in to their supplier\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Locked in to their supplier\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "innocent-explanation-scan",
-   "label": "Innocent explanation scan",
+   "label": "Check for leave or holiday",
    "used_by": [
     "cooling-champion"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Innocent explanation scan",
+   "title": "Check for leave or holiday",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2308,20 +2497,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/innocent-explanation-scan.md",
-   "markdown": "---\nid: innocent-explanation-scan\nlabel: \"Innocent explanation scan\"\nused_by: [cooling-champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Innocent explanation scan\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: innocent-explanation-scan\nlabel: \"Check for leave or holiday\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Check for leave or holiday\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "internal-advocacy-mentions",
-   "label": "Internal advocacy mentions",
+   "label": "Speaks up for you to colleagues",
    "used_by": [
     "champion"
    ],
+   "over": [],
    "defined": false,
-   "title": "Internal advocacy mentions",
+   "title": "Speaks up for you to colleagues",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2332,20 +2522,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/internal-advocacy-mentions.md",
-   "markdown": "---\nid: internal-advocacy-mentions\nlabel: \"Internal advocacy mentions\"\nused_by: [champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Internal advocacy mentions\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: internal-advocacy-mentions\nlabel: \"Speaks up for you to colleagues\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Speaks up for you to colleagues\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "intro-chain-length",
-   "label": "Intro chain length",
+   "label": "Steps to an introduction",
    "used_by": [
     "warm-path"
    ],
+   "over": [],
    "defined": false,
-   "title": "Intro chain length",
+   "title": "Steps to an introduction",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2356,20 +2547,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/intro-chain-length.md",
-   "markdown": "---\nid: intro-chain-length\nlabel: \"Intro chain length\"\nused_by: [warm-path]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Intro chain length\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: intro-chain-length\nlabel: \"Steps to an introduction\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Steps to an introduction\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "last-note-unanswered-days",
-   "label": "Last note unanswered days",
+   "label": "Days your last note has waited",
    "used_by": [
     "cooling-champion"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Last note unanswered days",
+   "title": "Days your last note has waited",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2380,20 +2575,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/last-note-unanswered-days.md",
-   "markdown": "---\nid: last-note-unanswered-days\nlabel: \"Last note unanswered days\"\nused_by: [cooling-champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Last note unanswered days\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: last-note-unanswered-days\nlabel: \"Days your last note has waited\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Days your last note has waited\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "mutual-contact-count",
-   "label": "Mutual contact count",
+   "label": "People you both know",
    "used_by": [
     "warm-path"
    ],
+   "over": [],
    "defined": false,
-   "title": "Mutual contact count",
+   "title": "People you both know",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2404,20 +2600,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/mutual-contact-count.md",
-   "markdown": "---\nid: mutual-contact-count\nlabel: \"Mutual contact count\"\nused_by: [warm-path]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Mutual contact count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: mutual-contact-count\nlabel: \"People you both know\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People you both know\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "named-vs-anonymous-reference",
-   "label": "Named vs anonymous reference",
+   "label": "Named or anonymous reference",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Named vs anonymous reference",
+   "title": "Named or anonymous reference",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2428,20 +2628,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/named-vs-anonymous-reference.md",
-   "markdown": "---\nid: named-vs-anonymous-reference\nlabel: \"Named vs anonymous reference\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Named vs anonymous reference\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: named-vs-anonymous-reference\nlabel: \"Named or anonymous reference\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Named or anonymous reference\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "new-attendee-on-event",
-   "label": "New attendee on event",
+   "label": "New name on an invite",
    "used_by": [
     "new-stakeholder"
    ],
+   "over": [],
    "defined": false,
-   "title": "New attendee on event",
+   "title": "New name on an invite",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2452,20 +2653,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/new-attendee-on-event.md",
-   "markdown": "---\nid: new-attendee-on-event\nlabel: \"New attendee on event\"\nused_by: [new-stakeholder]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New attendee on event\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: new-attendee-on-event\nlabel: \"New name on an invite\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New name on an invite\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "new-name-on-thread",
-   "label": "New name on thread",
+   "label": "New name on a thread",
    "used_by": [
     "new-stakeholder"
    ],
+   "over": [],
    "defined": false,
-   "title": "New name on thread",
+   "title": "New name on a thread",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2476,7 +2678,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/new-name-on-thread.md",
-   "markdown": "---\nid: new-name-on-thread\nlabel: \"New name on thread\"\nused_by: [new-stakeholder]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New name on thread\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: new-name-on-thread\nlabel: \"New name on a thread\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New name on a thread\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "new-people-from-their-side",
@@ -2484,12 +2686,16 @@ window.LIBRARY = {
    "used_by": [
     "warming"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "New people from their side",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2500,20 +2706,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/new-people-from-their-side.md",
-   "markdown": "---\nid: new-people-from-their-side\nlabel: \"New people from their side\"\nused_by: [warming]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New people from their side\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: new-people-from-their-side\nlabel: \"New people from their side\"\nused_by: [warming]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New people from their side\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "objection-entry-exists",
-   "label": "Objection entry exists",
+   "label": "Answer on file for this worry",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Objection entry exists",
+   "title": "Answer on file for this worry",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2524,20 +2734,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-entry-exists.md",
-   "markdown": "---\nid: objection-entry-exists\nlabel: \"Objection entry exists\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Objection entry exists\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-entry-exists\nlabel: \"Answer on file for this worry\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Answer on file for this worry\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "objection-name-match",
-   "label": "Objection name match",
+   "label": "Matches a known worry",
    "used_by": [
     "blocker"
    ],
+   "over": [],
    "defined": false,
-   "title": "Objection name match",
+   "title": "Matches a known worry",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2548,20 +2759,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-name-match.md",
-   "markdown": "---\nid: objection-name-match\nlabel: \"Objection name match\"\nused_by: [blocker]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Objection name match\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-name-match\nlabel: \"Matches a known worry\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Matches a known worry\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "objection-raised-on-call",
-   "label": "Objection raised on call",
+   "label": "Worries raised on calls",
    "used_by": [
     "blocker"
    ],
+   "over": [],
    "defined": false,
-   "title": "Objection raised on call",
+   "title": "Worries raised on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2572,20 +2784,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-raised-on-call.md",
-   "markdown": "---\nid: objection-raised-on-call\nlabel: \"Objection raised on call\"\nused_by: [blocker]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Objection raised on call\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-raised-on-call\nlabel: \"Worries raised on calls\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Worries raised on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "people-covered-vs-needed",
-   "label": "People covered vs needed",
+   "label": "People reached, against needed",
    "used_by": [
     "missing-people"
    ],
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "People covered vs needed",
+   "title": "People reached, against needed",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2596,20 +2812,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/people-covered-vs-needed.md",
-   "markdown": "---\nid: people-covered-vs-needed\nlabel: \"People covered vs needed\"\nused_by: [missing-people]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People covered vs needed\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: people-covered-vs-needed\nlabel: \"People reached, against needed\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People reached, against needed\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "people-reached-count",
-   "label": "People reached count",
+   "label": "People reached",
    "used_by": [
     "missing-people"
    ],
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "People reached count",
+   "title": "People reached",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2620,20 +2840,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/people-reached-count.md",
-   "markdown": "---\nid: people-reached-count\nlabel: \"People reached count\"\nused_by: [missing-people]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People reached count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: people-reached-count\nlabel: \"People reached\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People reached\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "price-delta-vs-leader",
-   "label": "Price delta vs leader",
+   "label": "Our price against the market leader",
    "used_by": [
     "price-barrier"
    ],
+   "over": [
+    "price-position"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Price delta vs leader",
+   "title": "Our price against the market leader",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/price-position.md\"><code>price-position</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2644,20 +2868,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/price-delta-vs-leader.md",
-   "markdown": "---\nid: price-delta-vs-leader\nlabel: \"Price delta vs leader\"\nused_by: [price-barrier]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Price delta vs leader\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: price-delta-vs-leader\nlabel: \"Our price against the market leader\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Our price against the market leader\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`price-position`](../assemblies/price-position.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "pricing-question-asked",
-   "label": "Pricing question asked",
+   "label": "Asked about price",
    "used_by": [
     "buying-intent"
    ],
+   "over": [],
    "defined": false,
-   "title": "Pricing question asked",
+   "title": "Asked about price",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2668,20 +2893,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/pricing-question-asked.md",
-   "markdown": "---\nid: pricing-question-asked\nlabel: \"Pricing question asked\"\nused_by: [buying-intent]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Pricing question asked\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: pricing-question-asked\nlabel: \"Asked about price\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked about price\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "prior-history-scan",
-   "label": "Prior history scan",
+   "label": "Check if we have spoken before",
    "used_by": [
     "new-stakeholder"
    ],
+   "over": [],
    "defined": false,
-   "title": "Prior history scan",
+   "title": "Check if we have spoken before",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2692,20 +2918,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/prior-history-scan.md",
-   "markdown": "---\nid: prior-history-scan\nlabel: \"Prior history scan\"\nused_by: [new-stakeholder]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Prior history scan\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: prior-history-scan\nlabel: \"Check if we have spoken before\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Check if we have spoken before\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "promise-made-undelivered",
-   "label": "Promise made undelivered",
+   "label": "Promise not kept yet",
    "used_by": [
     "loose-end"
    ],
+   "over": [],
    "defined": false,
-   "title": "Promise made undelivered",
+   "title": "Promise not kept yet",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2716,7 +2943,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/promise-made-undelivered.md",
-   "markdown": "---\nid: promise-made-undelivered\nlabel: \"Promise made undelivered\"\nused_by: [loose-end]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Promise made undelivered\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: promise-made-undelivered\nlabel: \"Promise not kept yet\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Promise not kept yet\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "proof-on-file",
@@ -2724,12 +2951,16 @@ window.LIBRARY = {
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "Proof on file",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2740,20 +2971,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-on-file.md",
-   "markdown": "---\nid: proof-on-file\nlabel: \"Proof on file\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof on file\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-on-file\nlabel: \"Proof on file\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof on file\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "proof-recency",
-   "label": "Proof recency",
+   "label": "How recent the proof is",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Proof recency",
+   "title": "How recent the proof is",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2764,20 +2999,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-recency.md",
-   "markdown": "---\nid: proof-recency\nlabel: \"Proof recency\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof recency\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-recency\nlabel: \"How recent the proof is\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How recent the proof is\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "proof-required-kind",
-   "label": "Proof required kind",
+   "label": "Kind of proof asked for",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Proof required kind",
+   "title": "Kind of proof asked for",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2788,20 +3027,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-required-kind.md",
-   "markdown": "---\nid: proof-required-kind\nlabel: \"Proof required kind\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof required kind\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-required-kind\nlabel: \"Kind of proof asked for\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Kind of proof asked for\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "proofs-per-claim",
-   "label": "Proofs per claim",
+   "label": "Proof for each claim",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Proofs per claim",
+   "title": "Proof for each claim",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2812,20 +3055,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proofs-per-claim.md",
-   "markdown": "---\nid: proofs-per-claim\nlabel: \"Proofs per claim\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proofs per claim\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proofs-per-claim\nlabel: \"Proof for each claim\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof for each claim\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "proposal-or-trial-requested",
-   "label": "Proposal or trial requested",
+   "label": "Asked for a proposal or trial",
    "used_by": [
     "buying-intent"
    ],
+   "over": [],
    "defined": false,
-   "title": "Proposal or trial requested",
+   "title": "Asked for a proposal or trial",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2836,20 +3080,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proposal-or-trial-requested.md",
-   "markdown": "---\nid: proposal-or-trial-requested\nlabel: \"Proposal or trial requested\"\nused_by: [buying-intent]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proposal or trial requested\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proposal-or-trial-requested\nlabel: \"Asked for a proposal or trial\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked for a proposal or trial\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "re-asked-questions",
-   "label": "Re asked questions",
+   "label": "Same question asked again",
    "used_by": [
     "understanding-gap"
    ],
+   "over": [],
    "defined": false,
-   "title": "Re asked questions",
+   "title": "Same question asked again",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2860,20 +3105,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/re-asked-questions.md",
-   "markdown": "---\nid: re-asked-questions\nlabel: \"Re asked questions\"\nused_by: [understanding-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Re asked questions\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: re-asked-questions\nlabel: \"Same question asked again\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Same question asked again\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "relevance-to-stated-factors",
-   "label": "Relevance to stated factors",
+   "label": "Fits what they said matters to them",
    "used_by": [
     "lead-with-this"
    ],
+   "over": [],
    "defined": false,
-   "title": "Relevance to stated factors",
+   "title": "Fits what they said matters to them",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a> or <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2884,20 +3130,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/relevance-to-stated-factors.md",
-   "markdown": "---\nid: relevance-to-stated-factors\nlabel: \"Relevance to stated factors\"\nused_by: [lead-with-this]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Relevance to stated factors\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: relevance-to-stated-factors\nlabel: \"Fits what they said matters to them\"\nused_by: [lead-with-this]\nover: []   # not written yet. One of: offering-entry, objection-list\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Fits what they said matters to them\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`offering-entry`](../assemblies/offering-entry.md) or [`objection-list`](../assemblies/objection-list.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "repeated-objection-count",
-   "label": "Repeated objection count",
+   "label": "Same worry raised again",
    "used_by": [
     "blocker"
    ],
+   "over": [],
    "defined": false,
-   "title": "Repeated objection count",
+   "title": "Same worry raised again",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2908,7 +3155,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/repeated-objection-count.md",
-   "markdown": "---\nid: repeated-objection-count\nlabel: \"Repeated objection count\"\nused_by: [blocker]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Repeated objection count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: repeated-objection-count\nlabel: \"Same worry raised again\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Same worry raised again\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "replies-by-channel",
@@ -2916,12 +3163,16 @@ window.LIBRARY = {
    "used_by": [
     "best-way-to-reach"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "Replies by channel",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2932,21 +3183,25 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/replies-by-channel.md",
-   "markdown": "---\nid: replies-by-channel\nlabel: \"Replies by channel\"\nused_by: [best-way-to-reach]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Replies by channel\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: replies-by-channel\nlabel: \"Replies by channel\"\nused_by: [best-way-to-reach]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Replies by channel\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-gap-vs-own-rhythm",
-   "label": "Reply gap vs own rhythm",
+   "label": "Time since reply, against usual",
    "used_by": [
     "cooling-champion",
     "warming"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Reply gap vs own rhythm",
+   "title": "Time since reply, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because 2 signals reference this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because 2 signals reference this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2957,20 +3212,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-gap-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-gap-vs-own-rhythm\nlabel: \"Reply gap vs own rhythm\"\nused_by: [cooling-champion, warming]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply gap vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because 2 signals reference this id: [`cooling-champion`](../signals/cooling-champion.md), [`warming`](../signals/warming.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-gap-vs-own-rhythm\nlabel: \"Time since reply, against usual\"\nused_by: [cooling-champion, warming]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Time since reply, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because 2 signals reference this id: [`cooling-champion`](../signals/cooling-champion.md), [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-length-trend",
-   "label": "Reply length trend",
+   "label": "Reply length, over time",
    "used_by": [
     "warming"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Reply length trend",
+   "title": "Reply length, over time",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -2981,20 +3240,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-length-trend.md",
-   "markdown": "---\nid: reply-length-trend\nlabel: \"Reply length trend\"\nused_by: [warming]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length trend\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-length-trend\nlabel: \"Reply length, over time\"\nused_by: [warming]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, over time\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-length-vs-own-baseline",
-   "label": "Reply length vs own baseline",
+   "label": "Reply length, against usual",
    "used_by": [
     "champion"
    ],
+   "over": [],
    "defined": false,
-   "title": "Reply length vs own baseline",
+   "title": "Reply length, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3005,20 +3265,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-length-vs-own-baseline.md",
-   "markdown": "---\nid: reply-length-vs-own-baseline\nlabel: \"Reply length vs own baseline\"\nused_by: [champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length vs own baseline\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-length-vs-own-baseline\nlabel: \"Reply length, against usual\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-length-vs-own-rhythm",
-   "label": "Reply length vs own rhythm",
+   "label": "Reply length, against usual",
    "used_by": [
     "blocker"
    ],
+   "over": [],
    "defined": false,
-   "title": "Reply length vs own rhythm",
+   "title": "Reply length, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3029,20 +3290,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-length-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-length-vs-own-rhythm\nlabel: \"Reply length vs own rhythm\"\nused_by: [blocker]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-length-vs-own-rhythm\nlabel: \"Reply length, against usual\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-size-vs-yours",
-   "label": "Reply size vs yours",
+   "label": "Reply length, theirs against yours",
    "used_by": [
     "one-sided"
    ],
+   "over": [],
    "defined": false,
-   "title": "Reply size vs yours",
+   "title": "Reply length, theirs against yours",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3053,7 +3315,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-size-vs-yours.md",
-   "markdown": "---\nid: reply-size-vs-yours\nlabel: \"Reply size vs yours\"\nused_by: [one-sided]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply size vs yours\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-size-vs-yours\nlabel: \"Reply length, theirs against yours\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, theirs against yours\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`conversation-history`](../assemblies/conversation-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-speed-by-channel",
@@ -3061,12 +3323,16 @@ window.LIBRARY = {
    "used_by": [
     "best-way-to-reach"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "Reply speed by channel",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3077,20 +3343,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-speed-by-channel.md",
-   "markdown": "---\nid: reply-speed-by-channel\nlabel: \"Reply speed by channel\"\nused_by: [best-way-to-reach]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply speed by channel\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-speed-by-channel\nlabel: \"Reply speed by channel\"\nused_by: [best-way-to-reach]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply speed by channel\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "reply-speed-vs-own-rhythm",
-   "label": "Reply speed vs own rhythm",
+   "label": "Reply speed, against usual",
    "used_by": [
     "champion"
    ],
+   "over": [],
    "defined": false,
-   "title": "Reply speed vs own rhythm",
+   "title": "Reply speed, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3101,20 +3368,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-speed-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-speed-vs-own-rhythm\nlabel: \"Reply speed vs own rhythm\"\nused_by: [champion]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply speed vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-speed-vs-own-rhythm\nlabel: \"Reply speed, against usual\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply speed, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "rests-on-one-person",
-   "label": "Rests on one person",
+   "label": "Depends on one person",
    "used_by": [
     "missing-people"
    ],
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Rests on one person",
+   "title": "Depends on one person",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3125,20 +3396,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/rests-on-one-person.md",
-   "markdown": "---\nid: rests-on-one-person\nlabel: \"Rests on one person\"\nused_by: [missing-people]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Rests on one person\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: rests-on-one-person\nlabel: \"Depends on one person\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Depends on one person\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "sentence-length-vs-baseline",
-   "label": "Sentence length vs baseline",
+   "label": "Your sentence length",
    "used_by": [
     "voice"
    ],
+   "over": [
+    "writing-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Sentence length vs baseline",
+   "title": "Your sentence length",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3149,20 +3424,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/sentence-length-vs-baseline.md",
-   "markdown": "---\nid: sentence-length-vs-baseline\nlabel: \"Sentence length vs baseline\"\nused_by: [voice]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Sentence length vs baseline\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: sentence-length-vs-baseline\nlabel: \"Your sentence length\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your sentence length\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "shared-contact-on-thread",
-   "label": "Shared contact on thread",
+   "label": "Someone you both know on a thread",
    "used_by": [
     "warm-path"
    ],
+   "over": [],
    "defined": false,
-   "title": "Shared contact on thread",
+   "title": "Someone you both know on a thread",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3173,20 +3449,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/shared-contact-on-thread.md",
-   "markdown": "---\nid: shared-contact-on-thread\nlabel: \"Shared contact on thread\"\nused_by: [warm-path]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Shared contact on thread\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: shared-contact-on-thread\nlabel: \"Someone you both know on a thread\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Someone you both know on a thread\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "silence-vs-own-rhythm",
-   "label": "Silence vs own rhythm",
+   "label": "Silence, against usual",
    "used_by": [
     "champion-went-dark"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Silence vs own rhythm",
+   "title": "Silence, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3197,20 +3477,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/silence-vs-own-rhythm.md",
-   "markdown": "---\nid: silence-vs-own-rhythm\nlabel: \"Silence vs own rhythm\"\nused_by: [champion-went-dark]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Silence vs own rhythm\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: silence-vs-own-rhythm\nlabel: \"Silence, against usual\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Silence, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "stall-after-ask-count",
-   "label": "Stall after ask count",
+   "label": "Goes quiet after you ask",
    "used_by": [
     "blocker"
    ],
+   "over": [],
    "defined": false,
-   "title": "Stall after ask count",
+   "title": "Goes quiet after you ask",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3221,20 +3502,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/stall-after-ask-count.md",
-   "markdown": "---\nid: stall-after-ask-count\nlabel: \"Stall after ask count\"\nused_by: [blocker]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Stall after ask count\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: stall-after-ask-count\nlabel: \"Goes quiet after you ask\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Goes quiet after you ask\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "talk-time-on-calls",
-   "label": "Talk time on calls",
+   "label": "Who does the talking on calls",
    "used_by": [
     "warmth-fading"
    ],
+   "over": [],
    "defined": false,
-   "title": "Talk time on calls",
+   "title": "Who does the talking on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3245,20 +3527,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/talk-time-on-calls.md",
-   "markdown": "---\nid: talk-time-on-calls\nlabel: \"Talk time on calls\"\nused_by: [warmth-fading]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Talk time on calls\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: talk-time-on-calls\nlabel: \"Who does the talking on calls\"\nused_by: [warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Who does the talking on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "target-cold-to-you",
-   "label": "Target cold to you",
+   "label": "Nobody there knows you",
    "used_by": [
     "warm-path"
    ],
+   "over": [],
    "defined": false,
-   "title": "Target cold to you",
+   "title": "Nobody there knows you",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3269,20 +3552,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/target-cold-to-you.md",
-   "markdown": "---\nid: target-cold-to-you\nlabel: \"Target cold to you\"\nused_by: [warm-path]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Target cold to you\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: target-cold-to-you\nlabel: \"Nobody there knows you\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Nobody there knows you\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "terms-used-wrongly",
-   "label": "Terms used wrongly",
+   "label": "They use our terms wrongly",
    "used_by": [
     "understanding-gap"
    ],
+   "over": [],
    "defined": false,
-   "title": "Terms used wrongly",
+   "title": "They use our terms wrongly",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3293,20 +3577,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/terms-used-wrongly.md",
-   "markdown": "---\nid: terms-used-wrongly\nlabel: \"Terms used wrongly\"\nused_by: [understanding-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Terms used wrongly\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: terms-used-wrongly\nlabel: \"They use our terms wrongly\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# They use our terms wrongly\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "third-party-vs-self-asserted",
-   "label": "Third party vs self asserted",
+   "label": "Proof from others, or from us",
    "used_by": [
     "answer-gap"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Third party vs self asserted",
+   "title": "Proof from others, or from us",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3317,20 +3605,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/third-party-vs-self-asserted.md",
-   "markdown": "---\nid: third-party-vs-self-asserted\nlabel: \"Third party vs self asserted\"\nused_by: [answer-gap]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Third party vs self asserted\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: third-party-vs-self-asserted\nlabel: \"Proof from others, or from us\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Proof from others, or from us\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "threads-they-started-this-period",
-   "label": "Threads they started this period",
+   "label": "Threads they started lately",
    "used_by": [
     "warming"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Threads they started this period",
+   "title": "Threads they started lately",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3341,20 +3633,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/threads-they-started-this-period.md",
-   "markdown": "---\nid: threads-they-started-this-period\nlabel: \"Threads they started this period\"\nused_by: [warming]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Threads they started this period\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: threads-they-started-this-period\nlabel: \"Threads they started lately\"\nused_by: [warming]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Threads they started lately\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "timeline-or-start-question",
-   "label": "Timeline or start question",
+   "label": "Asked when it could start",
    "used_by": [
     "buying-intent"
    ],
+   "over": [],
    "defined": false,
-   "title": "Timeline or start question",
+   "title": "Asked when it could start",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3365,20 +3658,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/timeline-or-start-question.md",
-   "markdown": "---\nid: timeline-or-start-question\nlabel: \"Timeline or start question\"\nused_by: [buying-intent]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Timeline or start question\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: timeline-or-start-question\nlabel: \"Asked when it could start\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked when it could start\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "times-you-chase",
-   "label": "Times you chase",
+   "label": "Times you chased",
    "used_by": [
     "one-sided"
    ],
+   "over": [],
    "defined": false,
-   "title": "Times you chase",
+   "title": "Times you chased",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3389,20 +3683,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/times-you-chase.md",
-   "markdown": "---\nid: times-you-chase\nlabel: \"Times you chase\"\nused_by: [one-sided]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Times you chase\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: times-you-chase\nlabel: \"Times you chased\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Times you chased\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`conversation-history`](../assemblies/conversation-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "use-cases-on-file",
-   "label": "Use cases on file",
+   "label": "Customer examples on file",
    "used_by": [
     "lead-with-this"
    ],
+   "over": [],
    "defined": false,
-   "title": "Use cases on file",
+   "title": "Customer examples on file",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/lead-with-this.md\"><code>lead-with-this</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/offering-entry.md\"><code>offering-entry</code></a> or <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3413,20 +3708,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/use-cases-on-file.md",
-   "markdown": "---\nid: use-cases-on-file\nlabel: \"Use cases on file\"\nused_by: [lead-with-this]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Use cases on file\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: use-cases-on-file\nlabel: \"Customer examples on file\"\nused_by: [lead-with-this]\nover: []   # not written yet. One of: offering-entry, objection-list\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Customer examples on file\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`lead-with-this`](../signals/lead-with-this.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`offering-entry`](../assemblies/offering-entry.md) or [`objection-list`](../assemblies/objection-list.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "warmth-trend-in-replies",
-   "label": "Warmth trend in replies",
+   "label": "Warmth of replies, over time",
    "used_by": [
     "warmth-fading"
    ],
+   "over": [],
    "defined": false,
-   "title": "Warmth trend in replies",
+   "title": "Warmth of replies, over time",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3437,20 +3733,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/warmth-trend-in-replies.md",
-   "markdown": "---\nid: warmth-trend-in-replies\nlabel: \"Warmth trend in replies\"\nused_by: [warmth-fading]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Warmth trend in replies\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: warmth-trend-in-replies\nlabel: \"Warmth of replies, over time\"\nused_by: [warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Warmth of replies, over time\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "was-once-active",
-   "label": "Was once active",
+   "label": "Was once in regular touch",
    "used_by": [
     "champion-went-dark"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Was once active",
+   "title": "Was once in regular touch",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3461,20 +3761,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/was-once-active.md",
-   "markdown": "---\nid: was-once-active\nlabel: \"Was once active\"\nused_by: [champion-went-dark]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Was once active\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: was-once-active\nlabel: \"Was once in regular touch\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Was once in regular touch\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "where-they-start",
-   "label": "Where they start",
+   "label": "Which channel they write first on",
    "used_by": [
     "best-way-to-reach"
    ],
+   "over": [
+    "person-history"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Where they start",
+   "title": "Which channel they write first on",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/best-way-to-reach.md\"><code>best-way-to-reach</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3485,20 +3789,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/where-they-start.md",
-   "markdown": "---\nid: where-they-start\nlabel: \"Where they start\"\nused_by: [best-way-to-reach]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where they start\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: where-they-start\nlabel: \"Which channel they write first on\"\nused_by: [best-way-to-reach]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Which channel they write first on\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "who-starts-threads",
-   "label": "Who starts threads",
+   "label": "Who writes first",
    "used_by": [
     "one-sided"
    ],
+   "over": [],
    "defined": false,
-   "title": "Who starts threads",
+   "title": "Who writes first",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3509,20 +3814,24 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/who-starts-threads.md",
-   "markdown": "---\nid: who-starts-threads\nlabel: \"Who starts threads\"\nused_by: [one-sided]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Who starts threads\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: who-starts-threads\nlabel: \"Who writes first\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Who writes first\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`conversation-history`](../assemblies/conversation-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "worry-occurrences-across-deals",
-   "label": "Worry occurrences across deals",
+   "label": "Same worry across deals",
    "used_by": [
     "recurring-objection"
    ],
+   "over": [
+    "objection-list"
+   ],
+   "over_status": "provisional",
    "defined": false,
-   "title": "Worry occurrences across deals",
+   "title": "Same worry across deals",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/recurring-objection.md\"><code>recurring-objection</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/recurring-objection.md\"><code>recurring-objection</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3533,20 +3842,21 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/worry-occurrences-across-deals.md",
-   "markdown": "---\nid: worry-occurrences-across-deals\nlabel: \"Worry occurrences across deals\"\nused_by: [recurring-objection]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Worry occurrences across deals\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: worry-occurrences-across-deals\nlabel: \"Same worry across deals\"\nused_by: [recurring-objection]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Same worry across deals\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`recurring-objection`](../signals/recurring-objection.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "you-give-vs-they-give",
-   "label": "You give vs they give",
+   "label": "What you give, against what they give",
    "used_by": [
     "one-sided"
    ],
+   "over": [],
    "defined": false,
-   "title": "You give vs they give",
+   "title": "What you give, against what they give",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, the assemblies every signal using it reads.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3557,7 +3867,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/you-give-vs-they-give.md",
-   "markdown": "---\nid: you-give-vs-they-give\nlabel: \"You give vs they give\"\nused_by: [one-sided]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# You give vs they give\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: you-give-vs-they-give\nlabel: \"What you give, against what they give\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# What you give, against what they give\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`conversation-history`](../assemblies/conversation-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
   },
   {
    "id": "your-price",
@@ -3565,12 +3875,16 @@ window.LIBRARY = {
    "used_by": [
     "price-barrier"
    ],
+   "over": [
+    "price-position"
+   ],
+   "over_status": "provisional",
    "defined": false,
    "title": "Your price",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>"
+     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/price-position.md\"><code>price-position</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
     },
     "What it cannot see": {
      "html": "<p>Not written yet.</p>"
@@ -3581,14 +3895,14 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/your-price.md",
-   "markdown": "---\nid: your-price\nlabel: \"Your price\"\nused_by: [price-barrier]\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your price\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). The id is the only fact here. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: your-price\nlabel: \"Your price\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your price\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`price-position`](../assemblies/price-position.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
   }
  ],
  "signals": [
   {
    "id": "answer-gap",
    "module": "03-offerings",
-   "label": "Answer gap",
+   "label": "Worry without an answer",
    "blurb": "A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.",
    "modes": [
     "advance"
@@ -3617,7 +3931,7 @@ window.LIBRARY = {
     "web"
    ],
    "pull": "Organisation's proof library, to supply the document a claim needs",
-   "title": "Answer gap",
+   "title": "Worry without an answer",
    "intro": "",
    "sections": {
     "What it means": {
@@ -3636,7 +3950,7 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/answer-gap.md",
-   "markdown": "---\nid: answer-gap\nmodule: 03-offerings\nlabel: Answer gap\nblurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [objection-list]\ncounts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]\nanswers: [Q15, Q17]\nneeds: [drive, web]\npull: Organisation's proof library, to supply the document a claim needs\n---\n\n# Answer gap\n\n## What it means\n\nA worry is on record from People, but there is no grounded answer ready for it. Or the answer leans on\nproof too thin to carry it.\n\nIt reads one worry at a time. It does not ask \"can we answer this?\" in the abstract. It asks whether\nthere is a grounded answer ready right now, with the proof that worry needs, and whether that proof is\nactually strong.\n\nThe honest, useful edge is naming the gap plainly. It says when there is no good answer yet, or when\nthe answer rests on proof that is old, anonymous, or only your own word, rather than improvising one.\n\n## In practice\n\nA buyer worry such as a compliance attestation has come up on a thread, and there is no entry for it\namong your told worries, no answer on file, and nothing in Drive. By contrast a second worry, data\nresidency, has a told answer backed by one case study, but the case study is four years old, written\nby you rather than a third party. The read: \"answer gap on the compliance worry, thin proof on data\nresidency. The first has nothing on file; the second rests on a single ageing, self-written\nreference.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library for proof that belongs to the organisation\nrather than this offering, such as a general track-record case study.\n\n- Trigger: a worry counts as answered only when it is on the objection list with an answer, backed by\n  the kind of proof its claim needs, and backed by proof strong enough to carry it. An entry present\n  with strong proof on file reads as covered; an entry missing, or proof required but absent, is a\n  gap; an answer present but proof thin is a softer, named gap that says \"shore this up\" rather than\n  \"we have nothing\". Strength is read against the claim, not a fixed bar, since an ageing named case\n  study may carry a continuity claim but not a \"current best-in-class\" one. The one judgement, whether\n  a claim needs proof at all, leans on Offerings' own rule (a track-record claim needs a case study, a\n  capability claim a spec line), not invention.\n- Confidence: high when the gap is total (a live worry, no answer, no proof); softer when an answer\n  exists but its proof is thin, where the read names why it is thin (old, anonymous, or self-asserted)\n  rather than passing it as covered.\n- Needs: Drive, for the \"proof on file\" check; without it those checks come back\n  empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data\n  gap, named not faked). The open web supplies what research turned up. Where the organisation has\n  tagged no proof for a borrowed claim, that is a told gap across modules, named not faked."
+   "markdown": "---\nid: answer-gap\nmodule: 03-offerings\nlabel: Worry without an answer\nblurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [objection-list]\ncounts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]\nanswers: [Q15, Q17]\nneeds: [drive, web]\npull: Organisation's proof library, to supply the document a claim needs\n---\n\n# Worry without an answer\n## What it means\n\nA worry is on record from People, but there is no grounded answer ready for it. Or the answer leans on\nproof too thin to carry it.\n\nIt reads one worry at a time. It does not ask \"can we answer this?\" in the abstract. It asks whether\nthere is a grounded answer ready right now, with the proof that worry needs, and whether that proof is\nactually strong.\n\nThe honest, useful edge is naming the gap plainly. It says when there is no good answer yet, or when\nthe answer rests on proof that is old, anonymous, or only your own word, rather than improvising one.\n\n## In practice\n\nA buyer worry such as a compliance attestation has come up on a thread, and there is no entry for it\namong your told worries, no answer on file, and nothing in Drive. By contrast a second worry, data\nresidency, has a told answer backed by one case study, but the case study is four years old, written\nby you rather than a third party. The read: \"answer gap on the compliance worry, thin proof on data\nresidency. The first has nothing on file; the second rests on a single ageing, self-written\nreference.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library for proof that belongs to the organisation\nrather than this offering, such as a general track-record case study.\n\n- Trigger: a worry counts as answered only when it is on the objection list with an answer, backed by\n  the kind of proof its claim needs, and backed by proof strong enough to carry it. An entry present\n  with strong proof on file reads as covered; an entry missing, or proof required but absent, is a\n  gap; an answer present but proof thin is a softer, named gap that says \"shore this up\" rather than\n  \"we have nothing\". Strength is read against the claim, not a fixed bar, since an ageing named case\n  study may carry a continuity claim but not a \"current best-in-class\" one. The one judgement, whether\n  a claim needs proof at all, leans on Offerings' own rule (a track-record claim needs a case study, a\n  capability claim a spec line), not invention.\n- Confidence: high when the gap is total (a live worry, no answer, no proof); softer when an answer\n  exists but its proof is thin, where the read names why it is thin (old, anonymous, or self-asserted)\n  rather than passing it as covered.\n- Needs: Drive, for the \"proof on file\" check; without it those checks come back\n  empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data\n  gap, named not faked). The open web supplies what research turned up. Where the organisation has\n  tagged no proof for a borrowed claim, that is a told gap across modules, named not faked."
   },
   {
    "id": "best-way-to-reach",
@@ -3894,7 +4208,7 @@ window.LIBRARY = {
   {
    "id": "competitive-standing",
    "module": "03-offerings",
-   "label": "Competitive standing",
+   "label": "How we compare with competitors",
    "blurb": "Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.",
    "modes": [
     "advance"
@@ -3916,7 +4230,7 @@ window.LIBRARY = {
    "needs": [
     "web"
    ],
-   "title": "Competitive standing",
+   "title": "How we compare with competitors",
    "intro": "",
    "sections": {
     "What it means": {
@@ -3935,7 +4249,7 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/competitive-standing.md",
-   "markdown": "---\nid: competitive-standing\nmodule: 03-offerings\nlabel: Competitive standing\nblurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [competitor-field]\ncounts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]\nanswers: [Q15]\nneeds: [web]\n---\n\n# Competitive standing\n\n## What it means\n\nWhere your offering stands against the field around it, on capability and on lock-in, never on price.\n\nIt reads one offering against its named field: where you are stronger, where a named rival or the\nincumbent is stronger (including a capability the buyer needs and you do not have), and whether a\nrival's lock-in is likely to block a switch.\n\nIt turns that side-by-side into a \"watch for this\", the way [`price-barrier`](price-barrier.md) does\nfor price. But it never touches the number: price is price-barrier's read, this one is capability and\nlock-in. The \"where you win\" half is the angle [`lead-with-this`](lead-with-this.md) leans on; this\nread's own spine is the barrier.\n\n## In practice\n\nAgainst the incumbent, your offering has a grounded claim on three counts the incumbent lacks\n(two-way sync, one-day deploy, audit log) and loses on one the buyer asked for (offline mode). The\nincumbent is in place, mid-contract, with data held in a proprietary export. The read: \"you win on\ncapability, but the incumbent's lock-in is the live barrier. You are stronger on three counts, you\nhave one real gap on offline mode, and a switch means breaking a contract and a proprietary export, so\nlead on a partial rollout that does not force a rip-out.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: standing is read against the named field this offering actually competes with (the rivals\n  on the board), not a global average, and against what the buyer asked for. A claim you win on that no\n  buyer cares about does not lift the read, and one capability gap on something a buyer named can sink\n  it. The read needs at least one rival or incumbent gathered to have a field to stand in. The one\n  judgement, whether a lock-in will actually hold the buyer, is graded by how concrete the lock is (a\n  dated contract and a proprietary export, versus a vague \"they're used to it\") rather than asserted.\n  Price is deliberately out of scope, so the two competitive reads never double-judge the same thing.\n- Confidence: graded on how complete the field is. High when several rivals are gathered with their\n  claims and lock-in clear; soft when only one thin rival page was found.\n- Needs: the open web, for rivals' public pages, claims and reviews; without it the\n  field has holes and a rival's real capability is a data gap, named not faked. A switching cost in a\n  private contract is a told gap People surfaces from the thread, not this read inventing it.\n- Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the\n  standing is supplied, the move is the Brain's.\n"
+   "markdown": "---\nid: competitive-standing\nmodule: 03-offerings\nlabel: How we compare with competitors\nblurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [competitor-field]\ncounts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]\nanswers: [Q15]\nneeds: [web]\n---\n\n# How we compare with competitors\n## What it means\n\nWhere your offering stands against the field around it, on capability and on lock-in, never on price.\n\nIt reads one offering against its named field: where you are stronger, where a named rival or the\nincumbent is stronger (including a capability the buyer needs and you do not have), and whether a\nrival's lock-in is likely to block a switch.\n\nIt turns that side-by-side into a \"watch for this\", the way [`price-barrier`](price-barrier.md) does\nfor price. But it never touches the number: price is price-barrier's read, this one is capability and\nlock-in. The \"where you win\" half is the angle [`lead-with-this`](lead-with-this.md) leans on; this\nread's own spine is the barrier.\n\n## In practice\n\nAgainst the incumbent, your offering has a grounded claim on three counts the incumbent lacks\n(two-way sync, one-day deploy, audit log) and loses on one the buyer asked for (offline mode). The\nincumbent is in place, mid-contract, with data held in a proprietary export. The read: \"you win on\ncapability, but the incumbent's lock-in is the live barrier. You are stronger on three counts, you\nhave one real gap on offline mode, and a switch means breaking a contract and a proprietary export, so\nlead on a partial rollout that does not force a rip-out.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: standing is read against the named field this offering actually competes with (the rivals\n  on the board), not a global average, and against what the buyer asked for. A claim you win on that no\n  buyer cares about does not lift the read, and one capability gap on something a buyer named can sink\n  it. The read needs at least one rival or incumbent gathered to have a field to stand in. The one\n  judgement, whether a lock-in will actually hold the buyer, is graded by how concrete the lock is (a\n  dated contract and a proprietary export, versus a vague \"they're used to it\") rather than asserted.\n  Price is deliberately out of scope, so the two competitive reads never double-judge the same thing.\n- Confidence: graded on how complete the field is. High when several rivals are gathered with their\n  claims and lock-in clear; soft when only one thin rival page was found.\n- Needs: the open web, for rivals' public pages, claims and reviews; without it the\n  field has holes and a rival's real capability is a data gap, named not faked. A switching cost in a\n  private contract is a told gap People surfaces from the thread, not this read inventing it.\n- Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the\n  standing is supplied, the move is the Brain's.\n"
   },
   {
    "id": "cooling-champion",
@@ -3987,7 +4301,7 @@ window.LIBRARY = {
   {
    "id": "fit-match",
    "module": "03-offerings",
-   "label": "Fit match",
+   "label": "Looks like a good fit",
    "blurb": "How well a lead matches the fit-shape, and exactly where it falls short.",
    "modes": [
     "expand"
@@ -4009,7 +4323,7 @@ window.LIBRARY = {
    ],
    "needs": [],
    "pull": "People's lead situation, to judge the match against the fit-shape",
-   "title": "Fit match",
+   "title": "Looks like a good fit",
    "intro": "",
    "sections": {
     "What it means": {
@@ -4028,7 +4342,7 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/fit-match.md",
-   "markdown": "---\nid: fit-match\nmodule: 03-offerings\nlabel: Fit match\nblurb: How well a lead matches the fit-shape, and exactly where it falls short.\nmodes: [expand]\nkind: opening\nconfidence: graded\ninputs: [offering-entry]\ncounts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]\nanswers: [Q1, Q2, Q3]\nneeds: []\npull: People's lead situation, to judge the match against the fit-shape\n---\n\n# Fit match\n\n## What it means\n\nGiven a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls\nshort.\n\nThis is a Plant read, made per candidate. Offerings owns the shape and the match. People owns sweeping\nthe address book and calls this read on each lead. It is the mirror of People pulling Offerings to name\nan objection: here Offerings pulls People to know the lead.\n\nA miss is named, not scored away. A lead that meets every factor but the one you marked essential reads\nweaker than one that misses two minor ones.\n\n## In practice\n\nYou have told it all four factors of a fit-shape (a mid-size buyer of this type, a legacy back-office\npain, the right budget cycle, the right sector). A lead handed over by People meets three of them but\nits budget cycle closed last month. The read: \"strong fit, one timing caveat. The lead matches on\nsize, sector and pain; the only gap is budget timing, so chase now but pace to their cycle.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's lead situation to judge the match against the fit-shape.\n\n- Trigger: there is no fixed \"meets 3 of 4 = fit\" line that means the same for every offering. The\n  yardstick is your own fit-shape: how many of the factors you defined this lead meets, and which it\n  misses, named rather than scored away. The read also leans on fit-shape-completeness: if you have\n  told it only some of the factors that matter, a match is only as strong as the thin shape it matched\n  against. The one judgement, whether a miss is fatal or a caveat, is guarded by naming the miss\n  rather than hiding it in a single score.\n- Confidence: graded on grounding. High when the fit-shape is fully told and the lead's situation is\n  richly known; soft when the shape is thin or People's read of the lead is sparse.\n- Needs: no source dependency beyond the told fit-shape and the lead situation People supplies. If you\n  have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of\n  the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing\n  a fit)."
+   "markdown": "---\nid: fit-match\nmodule: 03-offerings\nlabel: Looks like a good fit\nblurb: How well a lead matches the fit-shape, and exactly where it falls short.\nmodes: [expand]\nkind: opening\nconfidence: graded\ninputs: [offering-entry]\ncounts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]\nanswers: [Q1, Q2, Q3]\nneeds: []\npull: People's lead situation, to judge the match against the fit-shape\n---\n\n# Looks like a good fit\n## What it means\n\nGiven a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls\nshort.\n\nThis is a Plant read, made per candidate. Offerings owns the shape and the match. People owns sweeping\nthe address book and calls this read on each lead. It is the mirror of People pulling Offerings to name\nan objection: here Offerings pulls People to know the lead.\n\nA miss is named, not scored away. A lead that meets every factor but the one you marked essential reads\nweaker than one that misses two minor ones.\n\n## In practice\n\nYou have told it all four factors of a fit-shape (a mid-size buyer of this type, a legacy back-office\npain, the right budget cycle, the right sector). A lead handed over by People meets three of them but\nits budget cycle closed last month. The read: \"strong fit, one timing caveat. The lead matches on\nsize, sector and pain; the only gap is budget timing, so chase now but pace to their cycle.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's lead situation to judge the match against the fit-shape.\n\n- Trigger: there is no fixed \"meets 3 of 4 = fit\" line that means the same for every offering. The\n  yardstick is your own fit-shape: how many of the factors you defined this lead meets, and which it\n  misses, named rather than scored away. The read also leans on fit-shape-completeness: if you have\n  told it only some of the factors that matter, a match is only as strong as the thin shape it matched\n  against. The one judgement, whether a miss is fatal or a caveat, is guarded by naming the miss\n  rather than hiding it in a single score.\n- Confidence: graded on grounding. High when the fit-shape is fully told and the lead's situation is\n  richly known; soft when the shape is thin or People's read of the lead is sparse.\n- Needs: no source dependency beyond the told fit-shape and the lead situation People supplies. If you\n  have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of\n  the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing\n  a fit)."
   },
   {
    "id": "lead-with-this",
@@ -4386,7 +4700,8 @@ window.LIBRARY = {
     "Q19"
    ],
    "needs": [
-    "web"
+    "web",
+    "linkedin"
    ],
    "title": "Time to reconnect",
    "intro": "",
@@ -4398,7 +4713,7 @@ window.LIBRARY = {
      "html": "<p>A contact you used to trade notes with monthly has been silent for about 11 months (roughly 11 times the old rhythm), with 20+ two-way messages and two meetings behind you, so a real past relationship, not a passing name. The open web shows they just moved into a senior transformation role at a new organisation. The read: \"now's a good moment to write again.\"</p>"
     },
     "For the build": {
-     "html": "<p>Applies the shared reading rules in <a href=\"../docs/reading-principles.md\"><code>docs/reading-principles.md</code></a>.</p>\n<ul><li>Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm, AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.</li><li>Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the reason is thin or the past relationship was light.</li><li>Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook (a data gap, named not faked). A reconnection that happened off-channel also leaves the contact looking quieter than they are.</li></ul>"
+     "html": "<p>Applies the shared reading rules in <a href=\"../docs/reading-principles.md\"><code>docs/reading-principles.md</code></a>.</p>\n<ul><li>Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm, AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.</li><li>Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the reason is thin or the past relationship was light.</li><li>Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact looking quieter than they are.</li></ul>"
     }
    },
    "sectionOrder": [
@@ -4407,12 +4722,12 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/time-to-reconnect.md",
-   "markdown": "---\nid: time-to-reconnect\nmodule: 02-relationships\nlabel: Time to reconnect\nblurb: A good relationship gone quiet, with a fresh reason to reach out.\nmodes: [sustain, expand]\nkind: opening\nconfidence: graded\ninputs: [person-history]\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\nanswers: [Q19]\nneeds: [web]\n---\n\n# Time to reconnect\n\n## What it means\n\nA read that turns a quiet stretch into a good moment to write.\n\nSome relationships simply drift. No deal, no falling-out: you were close a year ago, and then life\nmoved on. On its own that is just a quiet contact.\n\nThe read fires when the quiet meets a fresh reason to get back in touch, something that just changed\nand gives the note a natural hook. It is the mirror of [`cooling-champion`](cooling-champion.md):\ncooling is a live relationship slipping away, this is a long-quiet one worth pulling back.\n\nQuiet on its own is just a cold contact. A fresh reason against a name you barely knew is a cold\napproach. Both together make the timing.\n\n## In practice\n\nA contact you used to trade notes with monthly has been silent for about 11 months (roughly 11 times\nthe old rhythm), with 20+ two-way messages and two meetings behind you, so a real past relationship,\nnot a passing name. The open web shows they just moved into a senior transformation role at a new\norganisation. The read: \"now's a good moment to write again.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm,\n  AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.\n- Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the\n  reason is thin or the past relationship was light.\n- Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook\n  (a data gap, named not faked). A reconnection that happened off-channel also leaves the contact\n  looking quieter than they are."
+   "markdown": "---\nid: time-to-reconnect\nmodule: 02-relationships\nlabel: Time to reconnect\nblurb: A good relationship gone quiet, with a fresh reason to reach out.\nmodes: [sustain, expand]\nkind: opening\nconfidence: graded\ninputs: [person-history]\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\nanswers: [Q19]\nneeds: [web, linkedin]\n---\n\n# Time to reconnect\n\n## What it means\n\nA read that turns a quiet stretch into a good moment to write.\n\nSome relationships simply drift. No deal, no falling-out: you were close a year ago, and then life\nmoved on. On its own that is just a quiet contact.\n\nThe read fires when the quiet meets a fresh reason to get back in touch, something that just changed\nand gives the note a natural hook. It is the mirror of [`cooling-champion`](cooling-champion.md):\ncooling is a live relationship slipping away, this is a long-quiet one worth pulling back.\n\nQuiet on its own is just a cold contact. A fresh reason against a name you barely knew is a cold\napproach. Both together make the timing.\n\n## In practice\n\nA contact you used to trade notes with monthly has been silent for about 11 months (roughly 11 times\nthe old rhythm), with 20+ two-way messages and two meetings behind you, so a real past relationship,\nnot a passing name. The open web shows they just moved into a senior transformation role at a new\norganisation. The read: \"now's a good moment to write again.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm,\n  AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.\n- Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the\n  reason is thin or the past relationship was light.\n- Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook\n  (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or\n  a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact\n  looking quieter than they are."
   },
   {
    "id": "unbacked-claim",
    "module": "03-offerings",
-   "label": "Unbacked claim",
+   "label": "Claim without proof",
    "blurb": "A claim in your pitch that outruns its grounding: nothing on file to back it up yet.",
    "modes": [
     "advance"
@@ -4436,7 +4751,7 @@ window.LIBRARY = {
     "web"
    ],
    "pull": "Organisation's proof library, to confirm a track-record claim's backing exists",
-   "title": "Unbacked claim",
+   "title": "Claim without proof",
    "intro": "",
    "sections": {
     "What it means": {
@@ -4455,12 +4770,12 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/unbacked-claim.md",
-   "markdown": "---\nid: unbacked-claim\nmodule: 03-offerings\nlabel: Unbacked claim\nblurb: \"A claim in your pitch that outruns its grounding: nothing on file to back it up yet.\"\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [product-claims]\ncounts: [claims-stated-count, claims-grounded-count, grounding-kind-required, claim-source]\nanswers: [Q11]\nneeds: [drive, web]\npull: Organisation's proof library, to confirm a track-record claim's backing exists\n---\n\n# Unbacked claim\n\n## What it means\n\nA claim in your own pitch that nothing on file backs up yet, caught before it ever reaches a draft.\n\nIt turns Offerings' first principle on itself: back every claim, do not make things up. Where\n[`answer-gap`](answer-gap.md) reads a buyer's worry and asks whether you have a grounded answer, this\nreads your own pitch and asks whether each thing it asserts is backed, by a spec line, a Drive file, or\na proof on the shelf.\n\nIt is the guard that keeps a boast you cannot support out of a message. A claim you told it, with no\nsource, is a gap. A claim a researched sharper pitch suggested, with no source, is the sharper gap,\nbecause it asserts something you never actually told it.\n\n## In practice\n\nYour pitch makes six claims; four have a spec line or file under them. A track-record claim such as\n\"trusted by 30 organisations\" needs a case study and has none, and it came from a suggested sharper\npitch rather than something you told it. A second claim, \"fastest in its class\", has no spec line and\nno source. The read: \"two claims float. The track-record claim is a number a researched draft\nsuggested and you have no case study for, and the best-in-class claim has no spec line, so do not send\neither until they are grounded or softened.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library to confirm a track-record claim's backing\nexists before calling it a gap.\n\n- Trigger: a claim counts as backed only when the grounding its kind requires is on file: a capability\n  claim needs a spec line, a track-record claim needs a case study (the same rule `answer-gap` applies\n  to proof). Required grounding on file reads as backed; required grounding absent reads as unbacked. A\n  told claim with no source is a gap; a suggested claim with no source is the sharper gap, because it\n  asserts something you never told it. The one judgement, whether a claim needs backing at all, leans\n  on Offerings' own rule rather than invention.\n- Confidence: graded on grounding. High when a claim has nothing behind it at all; softer when\n  something thin exists but may not carry the claim's kind.\n- Needs: Drive, for the \"spec line or file\" check; without it those checks come back\n  empty and the read over-reports, flagging grounded claims as floating (a data gap that lowers\n  confidence rather than inventing a verdict). The open web supplies what a suggested pitch researched.\n  A claim grounded only in a deck never uploaded cannot be checked until the file is connected.\n- This read names which claims are unsafe to assert; whether the buyer then believes a backed one is\n  People's read (Q14), not Offerings' to judge. The guard flows downstream into the render and the\n  Organisation compliance fence, which gate the draft itself.\n"
+   "markdown": "---\nid: unbacked-claim\nmodule: 03-offerings\nlabel: Claim without proof\nblurb: \"A claim in your pitch that outruns its grounding: nothing on file to back it up yet.\"\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [product-claims]\ncounts: [claims-stated-count, claims-grounded-count, grounding-kind-required, claim-source]\nanswers: [Q11]\nneeds: [drive, web]\npull: Organisation's proof library, to confirm a track-record claim's backing exists\n---\n\n# Claim without proof\n## What it means\n\nA claim in your own pitch that nothing on file backs up yet, caught before it ever reaches a draft.\n\nIt turns Offerings' first principle on itself: back every claim, do not make things up. Where\n[`answer-gap`](answer-gap.md) reads a buyer's worry and asks whether you have a grounded answer, this\nreads your own pitch and asks whether each thing it asserts is backed, by a spec line, a Drive file, or\na proof on the shelf.\n\nIt is the guard that keeps a boast you cannot support out of a message. A claim you told it, with no\nsource, is a gap. A claim a researched sharper pitch suggested, with no source, is the sharper gap,\nbecause it asserts something you never actually told it.\n\n## In practice\n\nYour pitch makes six claims; four have a spec line or file under them. A track-record claim such as\n\"trusted by 30 organisations\" needs a case study and has none, and it came from a suggested sharper\npitch rather than something you told it. A second claim, \"fastest in its class\", has no spec line and\nno source. The read: \"two claims float. The track-record claim is a number a researched draft\nsuggested and you have no case study for, and the best-in-class claim has no spec line, so do not send\neither until they are grounded or softened.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library to confirm a track-record claim's backing\nexists before calling it a gap.\n\n- Trigger: a claim counts as backed only when the grounding its kind requires is on file: a capability\n  claim needs a spec line, a track-record claim needs a case study (the same rule `answer-gap` applies\n  to proof). Required grounding on file reads as backed; required grounding absent reads as unbacked. A\n  told claim with no source is a gap; a suggested claim with no source is the sharper gap, because it\n  asserts something you never told it. The one judgement, whether a claim needs backing at all, leans\n  on Offerings' own rule rather than invention.\n- Confidence: graded on grounding. High when a claim has nothing behind it at all; softer when\n  something thin exists but may not carry the claim's kind.\n- Needs: Drive, for the \"spec line or file\" check; without it those checks come back\n  empty and the read over-reports, flagging grounded claims as floating (a data gap that lowers\n  confidence rather than inventing a verdict). The open web supplies what a suggested pitch researched.\n  A claim grounded only in a deck never uploaded cannot be checked until the file is connected.\n- This read names which claims are unsafe to assert; whether the buyer then believes a backed one is\n  People's read (Q14), not Offerings' to judge. The guard flows downstream into the render and the\n  Organisation compliance fence, which gate the draft itself.\n"
   },
   {
    "id": "understanding-gap",
    "module": "02-relationships",
-   "label": "Understanding gap",
+   "label": "They have misunderstood us",
    "blurb": "They keep asking the same things, so the product has not landed.",
    "modes": [
     "advance"
@@ -4485,7 +4800,7 @@ window.LIBRARY = {
     "meet"
    ],
    "pull": "Offerings' product claims, to judge the confusion",
-   "title": "Understanding gap",
+   "title": "They have misunderstood us",
    "intro": "",
    "sections": {
     "What it means": {
@@ -4504,12 +4819,12 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/understanding-gap.md",
-   "markdown": "---\nid: understanding-gap\nmodule: 02-relationships\nlabel: Understanding gap\nblurb: They keep asking the same things, so the product has not landed.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [conversation-history, meeting-history]\ncounts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]\nanswers: [Q13]\nneeds: [meet]\npull: Offerings' product claims, to judge the confusion\n---\n\n# Understanding gap\n\n## What it means\n\nA Grow read on one conversation. The deal is not stalling on price or a blocker. It is stalling because\nthe product has not landed.\n\nThe read holds two things together: the same question asked again after it was already answered in this\nthread, and their words for the product drifting from what it actually does. A first clarifying question\nis just diligence. The same answered question coming back, with the wording slipping, is the gap.\n\nIt leans on Offerings to judge the confusion. People does not decide what is true about the product. It\nborrows Offerings' claims and flags only the drift against them.\n\n## In practice\n\nA buyer keeps asking \"so does it sync both ways?\" across three separate replies (a re-ask), opens two\nreplies with a question the deck already answered (confused questions), and calls the audit log \"the\nexport\" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate\naudit log, so the restatements do not match. The read: \"they haven't got it, three replies in.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' product claims to judge whether wording contradicts the product.\n\n- Trigger: an already-answered question repeats in this thread AND their words for the product drift\n  from a claim Offerings confirms, measured against this conversation's own normal (not a fixed count).\n- Confidence: graded. High when several answered questions repeat and a term plainly clashes with a\n  claim; softens to \"may not have fully landed\" near the line or on one stray phrase.\n- Needs: Meet (captured-call content) so confusion voiced aloud counts; an uncaptured call hides it\n  (a data gap, named not faked). If Offerings cannot supply the relevant claim, the wrong-term check\n  has nothing to score against and only the re-ask count survives, so confidence falls (a\n  supplier-told gap)."
+   "markdown": "---\nid: understanding-gap\nmodule: 02-relationships\nlabel: They have misunderstood us\nblurb: They keep asking the same things, so the product has not landed.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [conversation-history, meeting-history]\ncounts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]\nanswers: [Q13]\nneeds: [meet]\npull: Offerings' product claims, to judge the confusion\n---\n\n# They have misunderstood us\n## What it means\n\nA Grow read on one conversation. The deal is not stalling on price or a blocker. It is stalling because\nthe product has not landed.\n\nThe read holds two things together: the same question asked again after it was already answered in this\nthread, and their words for the product drifting from what it actually does. A first clarifying question\nis just diligence. The same answered question coming back, with the wording slipping, is the gap.\n\nIt leans on Offerings to judge the confusion. People does not decide what is true about the product. It\nborrows Offerings' claims and flags only the drift against them.\n\n## In practice\n\nA buyer keeps asking \"so does it sync both ways?\" across three separate replies (a re-ask), opens two\nreplies with a question the deck already answered (confused questions), and calls the audit log \"the\nexport\" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate\naudit log, so the restatements do not match. The read: \"they haven't got it, three replies in.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' product claims to judge whether wording contradicts the product.\n\n- Trigger: an already-answered question repeats in this thread AND their words for the product drift\n  from a claim Offerings confirms, measured against this conversation's own normal (not a fixed count).\n- Confidence: graded. High when several answered questions repeat and a term plainly clashes with a\n  claim; softens to \"may not have fully landed\" near the line or on one stray phrase.\n- Needs: Meet (captured-call content) so confusion voiced aloud counts; an uncaptured call hides it\n  (a data gap, named not faked). If Offerings cannot supply the relevant claim, the wrong-term check\n  has nothing to score against and only the re-ask count survives, so confidence falls (a\n  supplier-told gap)."
   },
   {
    "id": "voice",
    "module": "05-persona-you",
-   "label": "Voice",
+   "label": "Your voice",
    "blurb": "How you sound in writing: your greeting, your length, your formality, read off what you actually send.",
    "modes": [
     "sustain",
@@ -4536,7 +4851,7 @@ window.LIBRARY = {
     "gmail",
     "slack"
    ],
-   "title": "Voice",
+   "title": "Your voice",
    "intro": "",
    "sections": {
     "What it means": {
@@ -4555,7 +4870,7 @@ window.LIBRARY = {
     "For the build"
    ],
    "file": "signals/voice.md",
-   "markdown": "---\nid: voice\nmodule: 05-persona-you\nlabel: Voice\nblurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'\nmodes: [sustain, advance, expand]\nkind: style\nconfidence: graded\ninputs: [writing-history]\ncounts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]\nanswers: [Q23, Q26]\nneeds: [gmail, slack]\n---\n\n# Voice\n\n## What it means\n\nHow you sound in writing, read off what you actually send rather than a style you fill in on a form.\nYour usual greeting and sign-off, how long your sentences run, how formal you are with a stranger\nversus a peer, and, sharpest of all, the edits you make to the tool's drafts.\n\nThe draft-to-sent edits carry the most weight. A correction is you saying outright \"not like that, like\nthis\". Told voice samples seed the read before there is enough sent mail to stand on.\n\nWhat another module gets is not a bare label but the read with its evidence: \"writes warm but brisk,\nopens with the first name, closes with 'Cheers', keeps it formal on a first touch and loosens once a\nthread is going, and reliably strips exclamation marks\". Every clause walks back to something you\nactually sent. That is what lets the render sound like you.\n\nOne gap is worth naming. Someone who sells only because their role needs it has sent mail that is mostly\nabout their real job, not selling, so their sales voice can read thin even when their everyday voice is\nrich. For them the render leans more on the organisation's house voice (`04`) and on coaching.\n\n## In practice\n\nAcross the last batch of drafts, the user opens \"Hi {first name}\" in nine of ten mails, closes with\n\"Cheers\", runs sentences around fourteen words, and on the drafts the tool wrote keeps cutting the\nadjective, dropping the exclamation mark and shortening the sign-off. On Slack the same person is\nterser than on mail, and fuller and more formal on a cold first touch than once a thread is going. The\nread: \"warm but brisk; formal with new contacts, looser once established; never an exclamation mark.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nThis is a `style` read, a non-state match to your own writing voice, not an own-rhythm decay read, so\n\"when it applies\" is about having enough voice to read and \"what it cannot see\" is about thin or stale\nsamples.\n\n- Trigger: a greeting, sign-off, length and formality pattern holds across many of your own messages\n  (measured against your own baseline, never a fixed \"uses please = formal\" line), with the\n  draft-to-sent edits weighted most because each correction states the preference outright.\n- Confidence: high when many messages and edits agree; grades down toward a soft read when it rests on\n  a handful of mails or a single seeded sample.\n- Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is\n  built from; without them the read is thin and leans on told samples or asks, rather than inventing a\n  voice (a data gap, named not faked)."
+   "markdown": "---\nid: voice\nmodule: 05-persona-you\nlabel: Your voice\nblurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'\nmodes: [sustain, advance, expand]\nkind: style\nconfidence: graded\ninputs: [writing-history]\ncounts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]\nanswers: [Q23, Q26]\nneeds: [gmail, slack]\n---\n\n# Your voice\n## What it means\n\nHow you sound in writing, read off what you actually send rather than a style you fill in on a form.\nYour usual greeting and sign-off, how long your sentences run, how formal you are with a stranger\nversus a peer, and, sharpest of all, the edits you make to the tool's drafts.\n\nThe draft-to-sent edits carry the most weight. A correction is you saying outright \"not like that, like\nthis\". Told voice samples seed the read before there is enough sent mail to stand on.\n\nWhat another module gets is not a bare label but the read with its evidence: \"writes warm but brisk,\nopens with the first name, closes with 'Cheers', keeps it formal on a first touch and loosens once a\nthread is going, and reliably strips exclamation marks\". Every clause walks back to something you\nactually sent. That is what lets the render sound like you.\n\nOne gap is worth naming. Someone who sells only because their role needs it has sent mail that is mostly\nabout their real job, not selling, so their sales voice can read thin even when their everyday voice is\nrich. For them the render leans more on the organisation's house voice (`04`) and on coaching.\n\n## In practice\n\nAcross the last batch of drafts, the user opens \"Hi {first name}\" in nine of ten mails, closes with\n\"Cheers\", runs sentences around fourteen words, and on the drafts the tool wrote keeps cutting the\nadjective, dropping the exclamation mark and shortening the sign-off. On Slack the same person is\nterser than on mail, and fuller and more formal on a cold first touch than once a thread is going. The\nread: \"warm but brisk; formal with new contacts, looser once established; never an exclamation mark.\"\n\n## For the build\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nThis is a `style` read, a non-state match to your own writing voice, not an own-rhythm decay read, so\n\"when it applies\" is about having enough voice to read and \"what it cannot see\" is about thin or stale\nsamples.\n\n- Trigger: a greeting, sign-off, length and formality pattern holds across many of your own messages\n  (measured against your own baseline, never a fixed \"uses please = formal\" line), with the\n  draft-to-sent edits weighted most because each correction states the preference outright.\n- Confidence: high when many messages and edits agree; grades down toward a soft read when it rests on\n  a handful of mails or a single seeded sample.\n- Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is\n  built from; without them the read is thin and leans on told samples or asks, rather than inventing a\n  voice (a data gap, named not faked)."
   },
   {
    "id": "warm-path",
@@ -4709,6 +5024,10 @@ window.LIBRARY = {
    "label": "Advance",
    "signal": "price-barrier",
    "signal_status": "provisional",
+   "supporting": [
+    "blocker"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "repeated-objection-count",
     "objection-name-match",
@@ -4770,7 +5089,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.</li><li>Felton is at coalition: Shabana Akhtar and the service lead are for it. Stephen is finance, and his objection is the only one left.</li><li>Every message from Stephen mentions the annual figure. None questions what BOPS does. That is a price barrier, not a fit problem.</li><li>The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The Felton thread since June: 18 messages. Stephen's four all mention price.</li><li>Stephen's message of 9 September.</li><li>Drive: the partial rollout price sheet.</li><li>Your goal: partial adoption first is the plan, not a concession.</li></ul>"
+     "html": "<ul><li>gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.</li><li>gmail · Stephen's message of 9 September.</li><li>drive · The partial rollout price sheet.</li><li>goal-told · Your goal: partial adoption first is the plan, not a concession.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether a smaller number reads as a discount to him. It isn't one, and the email says so.</li></ul>"
@@ -4790,8 +5109,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-felton-price.md",
-   "markdown": "---\nid: advance-felton-price\norder: 14\nkind: act\nlabel: Advance\nsignal: price-barrier\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [repeated-objection-count, objection-name-match, your-price]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: stephen-walsh\ncouncil: felton\ndocuments: [partial-rollout-price-sheet]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the partial rollout price sheet.\"\n---\n\n# Offer Felton the partial rollout\n\nStephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.\n\n## What I noticed\n\n- Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.\n- Felton is at coalition: Shabana Akhtar and the service lead are for it. Stephen is finance, and his objection is the only one left.\n- Every message from Stephen mentions the annual figure. None questions what BOPS does. That is a price barrier, not a fit problem.\n- The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.\n\n## What I read\n\n- The Felton thread since June: 18 messages. Stephen's four all mention price.\n- Stephen's message of 9 September.\n- Drive: the partial rollout price sheet.\n- Your goal: partial adoption first is the plan, not a concession.\n\n## Not sure\n\n- Whether a smaller number reads as a discount to him. It isn't one, and the email says so.\n\n## Then\n\n- After you send it I'll watch for whether Stephen replies himself or the service lead does. If it's the service lead, the price has stopped being the blocker.\n\n## The draft\n\nHi Stephen,\n\nYou said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.\n\nMost councils don't start with the whole thing. The usual first step is one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.\n\nThe one-page breakdown is attached.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: advance-felton-price\norder: 14\nkind: act\nlabel: Advance\nsignal: price-barrier\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [blocker]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [repeated-objection-count, objection-name-match, your-price]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: stephen-walsh\ncouncil: felton\ndocuments: [partial-rollout-price-sheet]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the partial rollout price sheet.\"\n---\n\n# Offer Felton the partial rollout\n\nStephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.\n\n## What I noticed\n\n- Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.\n- Felton is at coalition: Shabana Akhtar and the service lead are for it. Stephen is finance, and his objection is the only one left.\n- Every message from Stephen mentions the annual figure. None questions what BOPS does. That is a price barrier, not a fit problem.\n- The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.\n\n## What I read\n\n- gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.\n- gmail · Stephen's message of 9 September.\n- drive · The partial rollout price sheet.\n- goal-told · Your goal: partial adoption first is the plan, not a concession.\n\n## Not sure\n\n- Whether a smaller number reads as a discount to him. It isn't one, and the email says so.\n\n## Then\n\n- After you send it I'll watch for whether Stephen replies himself or the service lead does. If it's the service lead, the price has stopped being the blocker.\n\n## The draft\n\nHi Stephen,\n\nYou said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.\n\nMost councils don't start with the whole thing. The usual first step is one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.\n\nThe one-page breakdown is attached.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Felton thread since June: 18 messages. Stephen's four all mention price."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Stephen's message of 9 September."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The partial rollout price sheet."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption first is the plan, not a concession."
+    }
+   ]
   },
   {
    "id": "advance-gary-records",
@@ -4800,6 +5145,12 @@ window.LIBRARY = {
    "label": "Advance",
    "signal": "champion",
    "signal_status": "provisional",
+   "supporting": [
+    "loose-end",
+    "one-sided",
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "ask-made-unanswered",
     "who-starts-threads",
@@ -4879,7 +5230,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: his question has sat four days, and he brought a new person to hear the answer. The longer it waits, the smaller the door.</li><li>Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".</li><li>He copied Rachel last Thursday. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.</li><li>Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.</li><li>Your mail with Gary since February: 31 messages, reply times, and who started what.</li><li>Drive: \"Records import: how it works\" and the East Marston case study.</li><li>Your goal: partial adoption first, which makes an implementation question from a champion read as progress.</li></ul>"
+     "html": "<ul><li>gmail · The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.</li><li>gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.</li><li>drive · \"Records import: how it works\" and the East Marston case study.</li><li>goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>How technical Rachel wants the answer. Gary wants the story; she may want the schema.</li></ul>"
@@ -4899,8 +5250,41 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-gary-records.md",
-   "markdown": "---\nid: advance-gary-records\norder: 7\nkind: act\nlabel: Advance\nsignal: champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count, new-name-on-thread]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: gary-pearson\ncouncil: westmoor\ndocuments: [east-marston-case-study, records-import-note]\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. An unanswered question from a champion goes stale.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Answer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"She'll Want Detail\"\n    says: \"Then I'll attach the technical note as well and keep the email itself plain.\"\n  - label: \"Keep It Plain\"\n    says: \"Then the case study carries the detail and the email stays short.\"\n  - label: \"Don't Know\"\n    says: \"Then the email stays plain with the technical note attached, so both of them get what they need.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the East Marston case study, and the records import note.\"\n---\n\n# Answer Gary Pearson today\n\nHe asked last Thursday whether BOPS can import their existing case records, and pulled Rachel Gill, his head of IT, into the thread. That is a door opening.\n\n## What I noticed\n\n- Why now: his question has sat four days, and he brought a new person to hear the answer. The longer it waits, the smaller the door.\n- Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".\n- He copied Rachel last Thursday. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.\n- Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.\n\n## What I read\n\n- The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.\n- Your mail with Gary since February: 31 messages, reply times, and who started what.\n- Drive: \"Records import: how it works\" and the East Marston case study.\n- Your goal: partial adoption first, which makes an implementation question from a champion read as progress.\n\n## Not sure\n\n- How technical Rachel wants the answer. Gary wants the story; she may want the schema.\n\n## Then\n\n- Once sent, I'll watch for Rachel's reply as much as Gary's. Her first message back tells us what kind of IT lead she is.\n\n## The draft\n\nHi Gary,\n\nShort answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later, over about six weeks. The case study is attached and has the detail.\n\nRachel, good to meet you on the thread. The import notes are attached too, in case the how matters more than the story.\n\nIf it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: advance-gary-records\norder: 7\nkind: act\nlabel: Advance\nsignal: champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end, one-sided, new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count, new-name-on-thread]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: gary-pearson\ncouncil: westmoor\ndocuments: [east-marston-case-study, records-import-note]\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. An unanswered question from a champion goes stale.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Answer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"She'll Want Detail\"\n    says: \"Then I'll attach the technical note as well and keep the email itself plain.\"\n  - label: \"Keep It Plain\"\n    says: \"Then the case study carries the detail and the email stays short.\"\n  - label: \"Don't Know\"\n    says: \"Then the email stays plain with the technical note attached, so both of them get what they need.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the East Marston case study, and the records import note.\"\n---\n\n# Answer Gary Pearson today\n\nHe asked last Thursday whether BOPS can import their existing case records, and pulled Rachel Gill, his head of IT, into the thread. That is a door opening.\n\n## What I noticed\n\n- Why now: his question has sat four days, and he brought a new person to hear the answer. The longer it waits, the smaller the door.\n- Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".\n- He copied Rachel last Thursday. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.\n- Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.\n\n## What I read\n\n- gmail · The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.\n- gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.\n- drive · \"Records import: how it works\" and the East Marston case study.\n- goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.\n\n## Not sure\n\n- How technical Rachel wants the answer. Gary wants the story; she may want the schema.\n\n## Then\n\n- Once sent, I'll watch for Rachel's reply as much as Gary's. Her first message back tells us what kind of IT lead she is.\n\n## The draft\n\nHi Gary,\n\nShort answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later, over about six weeks. The case study is attached and has the detail.\n\nRachel, good to meet you on the thread. The import notes are attached too, in case the how matters more than the story.\n\nIf it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Gary since February: 31 messages, reply times, and who started what."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "\"Records import: how it works\" and the East Marston case study."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption first, which makes an implementation question from a champion read as progress."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "advance-holbrook-window",
@@ -4909,6 +5293,11 @@ window.LIBRARY = {
    "label": "Advance",
    "signal": "buying-intent",
    "signal_status": "provisional",
+   "supporting": [
+    "best-way-to-reach",
+    "time-to-reconnect"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "budget-or-procurement-entered",
     "accepts-meetings",
@@ -4990,7 +5379,7 @@ window.LIBRARY = {
      "html": "<ul><li>14 July · Neil: the window for this year closes 16 October</li><li>3 August · Your last meeting with Holbrook</li><li>Today · No meeting scheduled</li><li>16 October · The procurement window closes</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Gmail: Neil, 14 July: \"the window for this year closes 16 October\".</li><li>Your calendar: no meeting with Holbrook since 3 August, none scheduled.</li><li>Your mail with Neil: who proposed each meeting. You, four of four.</li><li>Your goal: partial adoption this year means inside that window.</li></ul>"
+     "html": "<ul><li>gmail · Neil, 14 July: \"the window for this year closes 16 October\".</li><li>calendar · No meeting with Holbrook since 3 August, none scheduled.</li><li>gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.</li><li>goal-told · Your goal: partial adoption this year means inside that window.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether the window is for a decision or for a signed order. Those are five weeks apart in practice.</li></ul>"
@@ -5011,7 +5400,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-holbrook-window.md",
-   "markdown": "---\nid: advance-holbrook-window\norder: 3\nkind: act\nlabel: Advance\nsignal: buying-intent\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: []\nwidgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By 16 October: procurement window closes. Book this week.\"\n  until: 2026-10-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Invite\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"A Decision\"\n    says: \"Then a meeting in late September is enough and I'll pace the rest to it.\"\n  - label: \"A Signed Order\"\n    says: \"Then we're already tight. I'll move this to today and draft the paperwork checklist too.\"\n  - label: \"Don't Know\"\n    says: \"Then the invite asks him, plainly, and I'll adjust once he answers.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Send from your own mail; I'll watch for his slots.\"\n---\n\n# Book the Holbrook follow-up\n\nTheir procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.\n\n## What I noticed\n\n- Why now: five weeks to the window, and a meeting takes two to three to land in Neil's calendar. This week is the last comfortable one.\n- Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.\n- Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.\n- You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.\n\n## Timeline\n\n- 14 July · Neil: the window for this year closes 16 October\n- 3 August · Your last meeting with Holbrook\n- Today · No meeting scheduled\n- 16 October · The procurement window closes\n\n## What I read\n\n- Gmail: Neil, 14 July: \"the window for this year closes 16 October\".\n- Your calendar: no meeting with Holbrook since 3 August, none scheduled.\n- Your mail with Neil: who proposed each meeting. You, four of four.\n- Your goal: partial adoption this year means inside that window.\n\n## Not sure\n\n- Whether the window is for a decision or for a signed order. Those are five weeks apart in practice.\n\n## Then\n\n- Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.\n\n## The draft\n\nHi Neil,\n\nYou mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?\n\nTwo or three slots that suit you and I'll book it.\n\nFede\n",
+   "markdown": "---\nid: advance-holbrook-window\norder: 3\nkind: act\nlabel: Advance\nsignal: buying-intent\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [best-way-to-reach, time-to-reconnect]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: []\nwidgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By 16 October: procurement window closes. Book this week.\"\n  until: 2026-10-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Invite\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"A Decision\"\n    says: \"Then a meeting in late September is enough and I'll pace the rest to it.\"\n  - label: \"A Signed Order\"\n    says: \"Then we're already tight. I'll move this to today and draft the paperwork checklist too.\"\n  - label: \"Don't Know\"\n    says: \"Then the invite asks him, plainly, and I'll adjust once he answers.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Send from your own mail; I'll watch for his slots.\"\n---\n\n# Book the Holbrook follow-up\n\nTheir procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.\n\n## What I noticed\n\n- Why now: five weeks to the window, and a meeting takes two to three to land in Neil's calendar. This week is the last comfortable one.\n- Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.\n- Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.\n- You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.\n\n## Timeline\n\n- 14 July · Neil: the window for this year closes 16 October\n- 3 August · Your last meeting with Holbrook\n- Today · No meeting scheduled\n- 16 October · The procurement window closes\n\n## What I read\n\n- gmail · Neil, 14 July: \"the window for this year closes 16 October\".\n- calendar · No meeting with Holbrook since 3 August, none scheduled.\n- gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.\n- goal-told · Your goal: partial adoption this year means inside that window.\n\n## Not sure\n\n- Whether the window is for a decision or for a signed order. Those are five weeks apart in practice.\n\n## Then\n\n- Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.\n\n## The draft\n\nHi Neil,\n\nYou mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?\n\nTwo or three slots that suit you and I'll book it.\n\nFede\n",
    "widgetRows": {
     "timeline": [
      [
@@ -5031,7 +5420,41 @@ window.LIBRARY = {
       "The procurement window closes"
      ]
     ]
-   }
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Neil, 14 July: \"the window for this year closes 16 October\"."
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "No meeting with Holbrook since 3 August, none scheduled."
+    },
+    {
+     "sources": [
+      "gmail",
+      "calendar"
+     ],
+     "words": "Your mail with Neil: who proposed each meeting. You, four of four."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption this year means inside that window."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The time to reconnect read leans on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "advance-north-ridley-alongside",
@@ -5101,7 +5524,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.</li><li>Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.</li><li>Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.</li><li>North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".</li><li>Your calendar: \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.</li><li>Drive: the one-page \"How BOPS sits alongside your case system\".</li><li>Nothing from you corrects the word \"replace\".</li></ul>"
+     "html": "<ul><li>gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".</li><li>calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.</li><li>drive · The one-page \"How BOPS sits alongside your case system\".</li><li>gmail · Nothing from you corrects the word \"replace\".</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.</li></ul>"
@@ -5121,8 +5544,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-north-ridley-alongside.md",
-   "markdown": "---\nid: advance-north-ridley-alongside\norder: 1\nkind: act\nlabel: Advance\nsignal: understanding-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [terms-used-wrongly, claims-restated-back]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [alongside-one-pager]\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By tonight. The demo is tomorrow, Thursday 17 September.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the alongside one-pager.\"\n---\n\n# Clear up North Ridley's misunderstanding before Thursday\n\nMichelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.\n\n## What I noticed\n\n- Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.\n- Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.\n- Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.\n- North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.\n\n## What I read\n\n- The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".\n- Your calendar: \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.\n- Drive: the one-page \"How BOPS sits alongside your case system\".\n- Nothing from you corrects the word \"replace\".\n\n## Not sure\n\n- Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.\n\n## Then\n\n- Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.\n\n## The draft\n\nHi Michelle,\n\nLooking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.\n\nThe one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: advance-north-ridley-alongside\norder: 1\nkind: act\nlabel: Advance\nsignal: understanding-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [terms-used-wrongly, claims-restated-back]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [alongside-one-pager]\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By tonight. The demo is tomorrow, Thursday 17 September.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the alongside one-pager.\"\n---\n\n# Clear up North Ridley's misunderstanding before Thursday\n\nMichelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.\n\n## What I noticed\n\n- Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.\n- Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.\n- Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.\n- North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.\n\n## What I read\n\n- gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".\n- calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.\n- drive · The one-page \"How BOPS sits alongside your case system\".\n- gmail · Nothing from you corrects the word \"replace\".\n\n## Not sure\n\n- Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.\n\n## Then\n\n- Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.\n\n## The draft\n\nHi Michelle,\n\nLooking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.\n\nThe one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\"."
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "\"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The one-page \"How BOPS sits alongside your case system\"."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Nothing from you corrects the word \"replace\"."
+    }
+   ]
   },
   {
    "id": "advance-north-ridley-demo-brief",
@@ -5131,6 +5580,10 @@ window.LIBRARY = {
    "label": "Advance",
    "signal": "lead-with-this",
    "signal_status": "provisional",
+   "supporting": [
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "dominant-worry-for-buyer-type",
     "relevance-to-stated-factors",
@@ -5194,7 +5647,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.</li><li>In 14 messages from North Ridley since July, officer time comes up five times and compliance never.</li><li>Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.</li><li>Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Your calendar: the invitee list for Thursday, eight names and their roles from signatures.</li><li>The North Ridley thread since July: what each person asked.</li><li>Drive: your demo deck, June and July versions, first slide \"Compliance by design\".</li><li>Meet: your notes from the Holbrook demo in July.</li></ul>"
+     "html": "<ul><li>calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.</li><li>gmail · The North Ridley thread since July: what each person asked.</li><li>drive · Your demo deck, June and July versions, first slide \"Compliance by design\".</li><li>meet · Your notes from the Holbrook demo in July.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.</li></ul>"
@@ -5214,8 +5667,42 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-north-ridley-demo-brief.md",
-   "markdown": "---\nid: advance-north-ridley-demo-brief\norder: 2\nkind: act\nlabel: Advance\nsignal: lead-with-this\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nwhen:\n  mode: dated\n  words: \"By this evening.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Open the Brief\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Brief\"\n  hand: \"Open in Mail\"\n  sub: \"Thursday 17 September, 10:00\"\n  footer: \"Edit the brief as you like. I'll have it on your calendar entry.\"\n---\n\n# Prepare Thursday's demo at North Ridley\n\nEight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.\n\n## What I noticed\n\n- Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.\n- In 14 messages from North Ridley since July, officer time comes up five times and compliance never.\n- Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.\n- Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.\n\n## What I read\n\n- Your calendar: the invitee list for Thursday, eight names and their roles from signatures.\n- The North Ridley thread since July: what each person asked.\n- Drive: your demo deck, June and July versions, first slide \"Compliance by design\".\n- Meet: your notes from the Holbrook demo in July.\n\n## Not sure\n\n- Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.\n\n## Then\n\n- After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.\n\n## The draft\n\n- Open with the alongside diagram. Say the word \"alongside\" in the first minute.\n- Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.\n- In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.\n- The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.\n- Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.\n- Compliance: one slide, held back, shown only if asked.\n",
-   "widgetRows": {}
+   "markdown": "---\nid: advance-north-ridley-demo-brief\norder: 2\nkind: act\nlabel: Advance\nsignal: lead-with-this\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nwhen:\n  mode: dated\n  words: \"By this evening.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Open the Brief\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Brief\"\n  hand: \"Open in Mail\"\n  sub: \"Thursday 17 September, 10:00\"\n  footer: \"Edit the brief as you like. I'll have it on your calendar entry.\"\n---\n\n# Prepare Thursday's demo at North Ridley\n\nEight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.\n\n## What I noticed\n\n- Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.\n- In 14 messages from North Ridley since July, officer time comes up five times and compliance never.\n- Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.\n- Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.\n\n## What I read\n\n- calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.\n- gmail · The North Ridley thread since July: what each person asked.\n- drive · Your demo deck, June and July versions, first slide \"Compliance by design\".\n- meet · Your notes from the Holbrook demo in July.\n\n## Not sure\n\n- Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.\n\n## Then\n\n- After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.\n\n## The draft\n\n- Open with the alongside diagram. Say the word \"alongside\" in the first minute.\n- Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.\n- In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.\n- The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.\n- Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.\n- Compliance: one slide, held back, shown only if asked.\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "calendar",
+      "gmail"
+     ],
+     "words": "The invitee list for Thursday, eight names and their roles from signatures."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The North Ridley thread since July: what each person asked."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "Your demo deck, June and July versions, first slide \"Compliance by design\"."
+    },
+    {
+     "sources": [
+      "meet"
+     ],
+     "words": "Your notes from the Holbrook demo in July."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "advance-rachel-peer-call",
@@ -5224,6 +5711,10 @@ window.LIBRARY = {
    "label": "Advance",
    "signal": "answer-gap",
    "signal_status": "provisional",
+   "supporting": [
+    "understanding-gap"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "re-asked-questions",
     "objection-entry-exists",
@@ -5300,7 +5791,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: the same worry twice in seven days is a pattern, not a passing remark. Answer it before it hardens.</li><li>Rachel joined the Westmoor thread on 8 September and has written three times. Two of the three ask, in different words, whether officers will adopt it.</li><li>A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March and has done two since.</li><li>Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The Westmoor thread: Rachel's messages of 9 and 12 September.</li><li>Gmail: Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".</li><li>Drive: the officer-feedback page of the East Marston case study.</li><li>Your list: Westmoor at coalition.</li></ul>"
+     "html": "<ul><li>gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.</li><li>gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".</li><li>drive · The officer-feedback page of the East Marston case study.</li><li>goal-told · Your list: Westmoor at coalition.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether Rachel would rather read than talk. Some IT leads take a call as pressure.</li></ul>"
@@ -5320,8 +5811,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/advance-rachel-peer-call.md",
-   "markdown": "---\nid: advance-rachel-peer-call\norder: 13\nkind: act\nlabel: Advance\nsignal: answer-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Offer the Call\"\n    says: \"Then the email offers Andrew and attaches the feedback page as the quieter option.\"\n  - label: \"Just Send the Page\"\n    says: \"Then no call is offered; I'll suggest it later if the worry comes back a third time.\"\n  - label: \"Don't Know\"\n    says: \"Then the email does both, gently, and lets her pick.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the officer feedback page.\"\n---\n\n# Offer Rachel Gill a call with East Marston's IT lead\n\nShe has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.\n\n## What I noticed\n\n- Why now: the same worry twice in seven days is a pattern, not a passing remark. Answer it before it hardens.\n- Rachel joined the Westmoor thread on 8 September and has written three times. Two of the three ask, in different words, whether officers will adopt it.\n- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March and has done two since.\n- Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.\n\n## What I read\n\n- The Westmoor thread: Rachel's messages of 9 and 12 September.\n- Gmail: Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".\n- Drive: the officer-feedback page of the East Marston case study.\n- Your list: Westmoor at coalition.\n\n## Not sure\n\n- Whether Rachel would rather read than talk. Some IT leads take a call as pressure.\n\n## Then\n\n- If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.\n\n## The draft\n\nHi Rachel,\n\nYou've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.\n\nAndrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.\n\nIf you'd rather read first, the page of officer feedback from East Marston is attached.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: advance-rachel-peer-call\norder: 13\nkind: act\nlabel: Advance\nsignal: answer-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Offer the Call\"\n    says: \"Then the email offers Andrew and attaches the feedback page as the quieter option.\"\n  - label: \"Just Send the Page\"\n    says: \"Then no call is offered; I'll suggest it later if the worry comes back a third time.\"\n  - label: \"Don't Know\"\n    says: \"Then the email does both, gently, and lets her pick.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the officer feedback page.\"\n---\n\n# Offer Rachel Gill a call with East Marston's IT lead\n\nShe has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.\n\n## What I noticed\n\n- Why now: the same worry twice in seven days is a pattern, not a passing remark. Answer it before it hardens.\n- Rachel joined the Westmoor thread on 8 September and has written three times. Two of the three ask, in different words, whether officers will adopt it.\n- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March and has done two since.\n- Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.\n\n## What I read\n\n- gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.\n- gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".\n- drive · The officer-feedback page of the East Marston case study.\n- goal-told · Your list: Westmoor at coalition.\n\n## Not sure\n\n- Whether Rachel would rather read than talk. Some IT leads take a call as pressure.\n\n## Then\n\n- If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.\n\n## The draft\n\nHi Rachel,\n\nYou've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.\n\nAndrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.\n\nIf you'd rather read first, the page of officer feedback from East Marston is attached.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Westmoor thread: Rachel's messages of 9 and 12 September."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\"."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The officer-feedback page of the East Marston case study."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list: Westmoor at coalition."
+    }
+   ]
   },
   {
    "id": "ask-budget-meeting",
@@ -5528,6 +6045,10 @@ window.LIBRARY = {
    "label": "Ask",
    "signal": "new-stakeholder",
    "signal_status": "provisional",
+   "supporting": [
+    "understanding-gap"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "new-name-on-thread",
     "prior-history-scan",
@@ -5604,7 +6125,7 @@ window.LIBRARY = {
     "Where I'll remember it"
    ],
    "file": "cards/ask-rachel-meeting.md",
-   "markdown": "---\nid: ask-rachel-meeting\norder: 10\nkind: ask\nlabel: Ask\nsignal: new-stakeholder\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [new-name-on-thread, prior-history-scan, re-asked-questions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: []\nwidgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nwhen:\n  mode: rhythm\n  words: \"Ten seconds. Best this week.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Warm\"\n    suggested: true\n    says: \"Good to know. Drafts to her get shorter and more direct, and I'll stop treating the adoption question as a doubt.\"\n  - label: \"Cautious\"\n    says: \"That matches what I read. I'll keep answering her with evidence and offering peers, not pitches.\"\n  - label: \"Against\"\n    says: \"Thank you for saying so. I'll route through Gary, avoid putting her on the spot, and tell you if her emails change.\"\n  - label: \"Didn't come up\"\n    says: \"Fine. Nothing changes; I'll keep reading her emails for it.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# You met Rachel Gill last week. How did it go?\n\nShe joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.\n\n## What I already know\n\n- Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.\n- Three emails from her since. Two ask, in different words, whether officers will use it.\n- My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.\n\n## People\n\n- Rachel Gill · Head of IT · Cautious, in my reading of her emails\n- Gary Pearson · Service Design Lead · Your champion. She joined his thread\n\n## Timeline\n\n- 8 September · Your intro call with Rachel, 30 minutes\n- 8 September · She joins Gary's thread the same day\n- Since then · Three emails from her. Two ask whether officers will use it\n- Today · No recording and no notes from the call\n\n## Where I ran out\n\n- No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.\n\n## What I'll do with your answer\n\n- Warm: shorter, more direct drafts; the adoption question stops being a doubt.\n- Cautious: as now. Evidence, and peers rather than pitches.\n- Against: I route through Gary and keep her off the spot.\n- Didn't come up: nothing changes.\n\n## Where I'll remember it\n\n- On Rachel's page, as your read on 8 September, next to mine.\n",
+   "markdown": "---\nid: ask-rachel-meeting\norder: 10\nkind: ask\nlabel: Ask\nsignal: new-stakeholder\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [new-name-on-thread, prior-history-scan, re-asked-questions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: []\nwidgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nwhen:\n  mode: rhythm\n  words: \"Ten seconds. Best this week.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Warm\"\n    suggested: true\n    says: \"Good to know. Drafts to her get shorter and more direct, and I'll stop treating the adoption question as a doubt.\"\n  - label: \"Cautious\"\n    says: \"That matches what I read. I'll keep answering her with evidence and offering peers, not pitches.\"\n  - label: \"Against\"\n    says: \"Thank you for saying so. I'll route through Gary, avoid putting her on the spot, and tell you if her emails change.\"\n  - label: \"Didn't come up\"\n    says: \"Fine. Nothing changes; I'll keep reading her emails for it.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# You met Rachel Gill last week. How did it go?\n\nShe joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.\n\n## What I already know\n\n- Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.\n- Three emails from her since. Two ask, in different words, whether officers will use it.\n- My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.\n\n## People\n\n- Rachel Gill · Head of IT · Cautious, in my reading of her emails\n- Gary Pearson · Service Design Lead · Your champion. She joined his thread\n\n## Timeline\n\n- 8 September · Your intro call with Rachel, 30 minutes\n- 8 September · She joins Gary's thread the same day\n- Since then · Three emails from her. Two ask whether officers will use it\n- Today · No recording and no notes from the call\n\n## Where I ran out\n\n- No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.\n\n## What I'll do with your answer\n\n- Warm: shorter, more direct drafts; the adoption question stops being a doubt.\n- Cautious: as now. Evidence, and peers rather than pitches.\n- Against: I route through Gary and keep her off the spot.\n- Didn't come up: nothing changes.\n\n## Where I'll remember it\n\n- On Rachel's page, as your read on 8 September, next to mine.\n",
    "widgetRows": {
     "people": [
      [
@@ -5645,6 +6166,11 @@ window.LIBRARY = {
    "label": "Ask",
    "signal": "missing-people",
    "signal_status": "provisional",
+   "supporting": [
+    "fit-match",
+    "warm-path"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "people-reached-count",
     "fit-factors-met",
@@ -5716,7 +6242,7 @@ window.LIBRARY = {
     "Where I'll remember it"
    ],
    "file": "cards/ask-twelve-councils.md",
-   "markdown": "---\nid: ask-twelve-councils\norder: 17\nkind: ask\nlabel: Ask\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [people-reached-count, fit-factors-met, mutual-contact-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nwhen:\n  mode: rhythm\n  words: \"A minute. Whenever suits this week.\"\nreply:\n  module: several\n  header: \"Pick up to three\"\npicks:\n  - \"Ashby\"\n  - \"Brinsley\"\n  - \"Carlton\"\n  - \"Denby\"\n  - \"Fulford\"\n  - \"Glenfield\"\n  - \"Hatton\"\n  - \"Kirby\"\n  - \"Linton\"\n  - \"Newby\"\n  - \"Orton\"\n  - \"Rowley\"\nactions:\n  - label: \"Start There\"\n    style: filled\n    confirms: picks\n    limit: 3\n    says: \"Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday.\"\n  - label: \"Use Your Pick\"\n    style: tinted\n    says: \"Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# Twelve councils have no named person. Which three should I start with?\n\nI can look for people at all twelve, but slowly. Three at a time means you see names this month.\n\n## What I already know\n\n- Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.\n- Ashby has a tender out for \"customer contact modernisation\".\n- Two have new digital leads since spring: Kirby and Carlton.\n- If you have no view, I'd start with Ashby, Glenfield and Kirby.\n\n## Where I ran out\n\n- LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.\n\n## What I'll do with your answer\n\n- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft within a week.\n- The other nine wait. I won't touch them until these three have names.\n\n## Where I'll remember it\n\n- On your list of thirty, marked \"you chose\", with the date.\n",
+   "markdown": "---\nid: ask-twelve-councils\norder: 17\nkind: ask\nlabel: Ask\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [fit-match, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [people-reached-count, fit-factors-met, mutual-contact-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nwhen:\n  mode: rhythm\n  words: \"A minute. Whenever suits this week.\"\nreply:\n  module: several\n  header: \"Pick up to three\"\npicks:\n  - \"Ashby\"\n  - \"Brinsley\"\n  - \"Carlton\"\n  - \"Denby\"\n  - \"Fulford\"\n  - \"Glenfield\"\n  - \"Hatton\"\n  - \"Kirby\"\n  - \"Linton\"\n  - \"Newby\"\n  - \"Orton\"\n  - \"Rowley\"\nactions:\n  - label: \"Start There\"\n    style: filled\n    confirms: picks\n    limit: 3\n    says: \"Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday.\"\n  - label: \"Use Your Pick\"\n    style: tinted\n    says: \"Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# Twelve councils have no named person. Which three should I start with?\n\nI can look for people at all twelve, but slowly. Three at a time means you see names this month.\n\n## What I already know\n\n- Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.\n- Ashby has a tender out for \"customer contact modernisation\".\n- Two have new digital leads since spring: Kirby and Carlton.\n- If you have no view, I'd start with Ashby, Glenfield and Kirby.\n\n## Where I ran out\n\n- LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.\n\n## What I'll do with your answer\n\n- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft within a week.\n- The other nine wait. I won't touch them until these three have names.\n\n## Where I'll remember it\n\n- On your list of thirty, marked \"you chose\", with the date.\n",
    "widgetRows": {}
   },
   {
@@ -5777,6 +6303,10 @@ window.LIBRARY = {
    "label": "Expand",
    "signal": "missing-people",
    "signal_status": "provisional",
+   "supporting": [
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "decision-maker-reached",
     "people-covered-vs-needed",
@@ -5846,7 +6376,7 @@ window.LIBRARY = {
      "html": "<ul><li>Shabana Akhtar · 15 July · David will want to see this</li><li>Shabana Akhtar · 21 August · I'll need David onside</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The Felton thread: Shabana's messages of 15 July and 21 August.</li><li>Web: Felton's senior team page, David Marshall, Director of Communities.</li><li>The participants of every Felton thread. David is on none.</li><li>Your goal: coalition before partial.</li></ul>"
+     "html": "<ul><li>gmail · The Felton thread: Shabana's messages of 15 July and 21 August.</li><li>web · Felton's senior team page, David Marshall, Director of Communities.</li><li>gmail · The participants of every Felton thread. David is on none.</li><li>goal-told · Your goal: coalition before partial.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.</li></ul>"
@@ -5868,7 +6398,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/expand-felton-director.md",
-   "markdown": "---\nid: expand-felton-director\norder: 16\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: shabana-akhtar\ncouncil: felton\ndocuments: []\nwidgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"a hunch\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Shabana Akhtar to bring her director in\n\nStephen Walsh's price question is really a priorities question, and priorities are set above him. Shabana has mentioned her director twice.\n\n## What I noticed\n\n- Why now: Stephen's \"not in this year's budget\" is a priorities call, and those are made above him. Widen the room before the price goes round again.\n- Shabana wrote \"David will want to see this\" in July and \"I'll need David onside\" in August. David Marshall, Director of Communities, is on no thread.\n- Two of three Felton voices are for it; the third is finance. Adding the director changes the shape of the decision.\n- This is a hunch more than a read: Shabana's two mentions are the whole evidence.\n\n## People\n\n- Shabana Akhtar · Digital Lead · For it. Has mentioned her director twice\n- Stephen Walsh · Finance Business Partner · The price objection is his\n- David Marshall · Director of Communities · On no thread yet\n\n## Their words\n\n- Shabana Akhtar · 15 July · David will want to see this\n- Shabana Akhtar · 21 August · I'll need David onside\n\n## What I read\n\n- The Felton thread: Shabana's messages of 15 July and 21 August.\n- Web: Felton's senior team page, David Marshall, Director of Communities.\n- The participants of every Felton thread. David is on none.\n- Your goal: coalition before partial.\n\n## Not sure\n\n- Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.\n\n## Then\n\n- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and let the price offer land first.\n\n## The draft\n\nHi Shabana,\n\nYou've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now, before the price conversation with Stephen goes round again?\n\nI'm happy to send him a short note through you, or to do a twenty-minute session with the three of you. Whichever you think fits how Felton works.\n\nFede\n",
+   "markdown": "---\nid: expand-felton-director\norder: 16\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: shabana-akhtar\ncouncil: felton\ndocuments: []\nwidgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"a hunch\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Shabana Akhtar to bring her director in\n\nStephen Walsh's price question is really a priorities question, and priorities are set above him. Shabana has mentioned her director twice.\n\n## What I noticed\n\n- Why now: Stephen's \"not in this year's budget\" is a priorities call, and those are made above him. Widen the room before the price goes round again.\n- Shabana wrote \"David will want to see this\" in July and \"I'll need David onside\" in August. David Marshall, Director of Communities, is on no thread.\n- Two of three Felton voices are for it; the third is finance. Adding the director changes the shape of the decision.\n- This is a hunch more than a read: Shabana's two mentions are the whole evidence.\n\n## People\n\n- Shabana Akhtar · Digital Lead · For it. Has mentioned her director twice\n- Stephen Walsh · Finance Business Partner · The price objection is his\n- David Marshall · Director of Communities · On no thread yet\n\n## Their words\n\n- Shabana Akhtar · 15 July · David will want to see this\n- Shabana Akhtar · 21 August · I'll need David onside\n\n## What I read\n\n- gmail · The Felton thread: Shabana's messages of 15 July and 21 August.\n- web · Felton's senior team page, David Marshall, Director of Communities.\n- gmail · The participants of every Felton thread. David is on none.\n- goal-told · Your goal: coalition before partial.\n\n## Not sure\n\n- Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.\n\n## Then\n\n- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and let the price offer land first.\n\n## The draft\n\nHi Shabana,\n\nYou've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now, before the price conversation with Stephen goes round again?\n\nI'm happy to send him a short note through you, or to do a twenty-minute session with the three of you. Whichever you think fits how Felton works.\n\nFede\n",
    "widgetRows": {
     "people": [
      [
@@ -5899,7 +6429,40 @@ window.LIBRARY = {
       "I'll need David onside"
      ]
     ]
-   }
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Felton thread: Shabana's messages of 15 July and 21 August."
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Felton's senior team page, David Marshall, Director of Communities."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The participants of every Felton thread. David is on none."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: coalition before partial."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The missing people and new stakeholder reads lean on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "expand-karen-budget-holder",
@@ -5908,6 +6471,10 @@ window.LIBRARY = {
    "label": "Expand",
    "signal": "missing-people",
    "signal_status": "provisional",
+   "supporting": [
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "decision-maker-reached",
     "rests-on-one-person",
@@ -5965,7 +6532,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.</li><li>Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.</li><li>For a partial adoption someone has to sign, and your goal needs that someone found before the spring budget round.</li><li>Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>The Bramley thread: participants since March, four people, roles from their signatures.</li><li>Web: Bramley's committee papers, Director of Resources: Martin Hodgson.</li><li>Karen's card this week, and the answer you give on it.</li><li>Your goal: partial adoption needs a signature.</li></ul>"
+     "html": "<ul><li>gmail · The Bramley thread: participants since March, four people, roles from their signatures.</li><li>web · Bramley's committee papers, Director of Resources: Martin Hodgson.</li><li>people-told · Karen's card this week, and the answer you give on it.</li><li>goal-told · Your goal: partial adoption needs a signature.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.</li></ul>"
@@ -5985,8 +6552,41 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/expand-karen-budget-holder.md",
-   "markdown": "---\nid: expand-karen-budget-holder\norder: 19\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: []\nsure: \"likely\"\nheld_by: sustain-karen-slowing\nheld_words: \"Held until Karen replies to this week's note. Shown so you can see it coming.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Karen who holds the budget\n\nNobody on the Bramley thread can sign. When Karen is back in rhythm, she is the one to ask.\n\n## What I noticed\n\n- Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.\n- Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.\n- For a partial adoption someone has to sign, and your goal needs that someone found before the spring budget round.\n- Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.\n\n## What I read\n\n- The Bramley thread: participants since March, four people, roles from their signatures.\n- Web: Bramley's committee papers, Director of Resources: Martin Hodgson.\n- Karen's card this week, and the answer you give on it.\n- Your goal: partial adoption needs a signature.\n\n## Not sure\n\n- Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.\n\n## Then\n\n- Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.\n\n## The draft\n\nHi Karen,\n\nThank you for the reply. One practical question, when you have a moment: if Bramley did decide to try BOPS in one service, who would need to say yes to the spend? I'd rather know now than surprise anyone later.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: expand-karen-budget-holder\norder: 19\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: []\nsure: \"likely\"\nheld_by: sustain-karen-slowing\nheld_words: \"Held until Karen replies to this week's note. Shown so you can see it coming.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Karen who holds the budget\n\nNobody on the Bramley thread can sign. When Karen is back in rhythm, she is the one to ask.\n\n## What I noticed\n\n- Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.\n- Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.\n- For a partial adoption someone has to sign, and your goal needs that someone found before the spring budget round.\n- Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.\n\n## What I read\n\n- gmail · The Bramley thread: participants since March, four people, roles from their signatures.\n- web · Bramley's committee papers, Director of Resources: Martin Hodgson.\n- people-told · Karen's card this week, and the answer you give on it.\n- goal-told · Your goal: partial adoption needs a signature.\n\n## Not sure\n\n- Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.\n\n## Then\n\n- Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.\n\n## The draft\n\nHi Karen,\n\nThank you for the reply. One practical question, when you have a moment: if Bramley did decide to try BOPS in one service, who would need to say yes to the spend? I'd rather know now than surprise anyone later.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Bramley thread: participants since March, four people, roles from their signatures."
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Bramley's committee papers, Director of Resources: Martin Hodgson."
+    },
+    {
+     "sources": [
+      "people-told"
+     ],
+     "words": "Karen's card this week, and the answer you give on it."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption needs a signature."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The missing people and new stakeholder reads lean on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "expand-sanjay-mistry",
@@ -6054,7 +6654,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: the handover is fresh. This week Sanjay is reading Julie's inbox and picking up her threads; next month he isn't.</li><li>Julie was engaged: she started threads, asked for pricing in May, and had a demo pencilled for the autumn.</li><li>Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.</li><li>Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Gmail: the bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"</li><li>Your mail with Julie since April: 9 messages.</li><li>Web: Moreton Borough Council staff page, checked this morning.</li><li>Your list of thirty.</li></ul>"
+     "html": "<ul><li>gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"</li><li>gmail · Your mail with Julie since April: 9 messages.</li><li>web · Moreton Borough Council staff page, checked this morning.</li><li>goal-told · Your list of thirty.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>How much Julie told Sanjay. The draft assumes nothing.</li></ul>"
@@ -6074,8 +6674,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/expand-sanjay-mistry.md",
-   "markdown": "---\nid: expand-sanjay-mistry\norder: 8\nkind: act\nlabel: Expand\nsignal: champion-went-dark\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: sanjay-mistry\ncouncil: moreton\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: rhythm\n  words: \"This week, while he is still reading her inbox.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Edit anything, then send from your own mail.\"\n---\n\n# Introduce yourself to Sanjay Mistry at Moreton\n\nJulie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.\n\n## What I noticed\n\n- Why now: the handover is fresh. This week Sanjay is reading Julie's inbox and picking up her threads; next month he isn't.\n- Julie was engaged: she started threads, asked for pricing in May, and had a demo pencilled for the autumn.\n- Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.\n- Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.\n\n## What I read\n\n- Gmail: the bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"\n- Your mail with Julie since April: 9 messages.\n- Web: Moreton Borough Council staff page, checked this morning.\n- Your list of thirty.\n\n## Not sure\n\n- How much Julie told Sanjay. The draft assumes nothing.\n\n## Then\n\n- If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.\n\n## The draft\n\nHi Sanjay,\n\nJulie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had a demo pencilled for the autumn.\n\nI don't want to assume any of that carries over. If it's useful, I can send a two-page summary of where we'd got to, or simply start again with whatever matters to you.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: expand-sanjay-mistry\norder: 8\nkind: act\nlabel: Expand\nsignal: champion-went-dark\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: sanjay-mistry\ncouncil: moreton\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: rhythm\n  words: \"This week, while he is still reading her inbox.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Edit anything, then send from your own mail.\"\n---\n\n# Introduce yourself to Sanjay Mistry at Moreton\n\nJulie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.\n\n## What I noticed\n\n- Why now: the handover is fresh. This week Sanjay is reading Julie's inbox and picking up her threads; next month he isn't.\n- Julie was engaged: she started threads, asked for pricing in May, and had a demo pencilled for the autumn.\n- Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.\n- Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.\n\n## What I read\n\n- gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"\n- gmail · Your mail with Julie since April: 9 messages.\n- web · Moreton Borough Council staff page, checked this morning.\n- goal-told · Your list of thirty.\n\n## Not sure\n\n- How much Julie told Sanjay. The draft assumes nothing.\n\n## Then\n\n- If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.\n\n## The draft\n\nHi Sanjay,\n\nJulie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had a demo pencilled for the autumn.\n\nI don't want to assume any of that carries over. If it's useful, I can send a two-page summary of where we'd got to, or simply start again with whatever matters to you.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\""
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Julie since April: 9 messages."
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Moreton Borough Council staff page, checked this morning."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty."
+    }
+   ]
   },
   {
    "id": "expand-simon-intro",
@@ -6158,7 +6784,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.</li><li>Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.</li><li>Nicola is Head of Digital. The case-system question sits in her patch or next to it.</li><li>Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Slack, #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>Gmail: your four notes to Ashworth.</li><li>Web: Ashworth's leadership page.</li><li>LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.</li></ul>"
+     "html": "<ul><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>gmail · Your four notes to Ashworth.</li><li>web · Ashworth's leadership page.</li><li>linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.</li></ul>"
@@ -6178,8 +6804,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/expand-simon-intro.md",
-   "markdown": "---\nid: expand-simon-intro\norder: 15\nkind: act\nlabel: Expand\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: simon-ward\ncouncil: ashworth\ndocuments: []\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Ask Simon\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Well\"\n    says: \"Then the ask is for an introduction.\"\n  - label: \"Barely\"\n    says: \"Then the ask is for a mention, not an intro, and I'll redraft accordingly.\"\n  - label: \"Don't Know\"\n    says: \"Then ask Simon that first. The draft does.\"\ndraft:\n  title: \"The message\"\n  hand: \"Open in Mail\"\n  sub: \"Slack, to Simon\"\n  footer: \"Send it from Slack yourself. I don't send.\"\n---\n\n# Ask Simon for an introduction\n\nHe knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.\n\n## What I noticed\n\n- Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.\n- Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.\n- Nicola is Head of Digital. The case-system question sits in her patch or next to it.\n- Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.\n\n## What I read\n\n- Slack, #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- Gmail: your four notes to Ashworth.\n- Web: Ashworth's leadership page.\n- LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.\n\n## Not sure\n\n- How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.\n\n## Then\n\n- If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.\n\n## The draft\n\nSimon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.\n\nHow well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.\n",
-   "widgetRows": {}
+   "markdown": "---\nid: expand-simon-intro\norder: 15\nkind: act\nlabel: Expand\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: simon-ward\ncouncil: ashworth\ndocuments: []\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Ask Simon\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Well\"\n    says: \"Then the ask is for an introduction.\"\n  - label: \"Barely\"\n    says: \"Then the ask is for a mention, not an intro, and I'll redraft accordingly.\"\n  - label: \"Don't Know\"\n    says: \"Then ask Simon that first. The draft does.\"\ndraft:\n  title: \"The message\"\n  hand: \"Open in Mail\"\n  sub: \"Slack, to Simon\"\n  footer: \"Send it from Slack yourself. I don't send.\"\n---\n\n# Ask Simon for an introduction\n\nHe knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.\n\n## What I noticed\n\n- Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.\n- Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.\n- Nicola is Head of Digital. The case-system question sits in her patch or next to it.\n- Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.\n\n## What I read\n\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- gmail · Your four notes to Ashworth.\n- web · Ashworth's leadership page.\n- linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.\n\n## Not sure\n\n- How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.\n\n## Then\n\n- If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.\n\n## The draft\n\nSimon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.\n\nHow well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "slack"
+     ],
+     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\"."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your four notes to Ashworth."
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Ashworth's leadership page."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word."
+    }
+   ]
   },
   {
    "id": "expand-tarlton-tender",
@@ -6188,6 +6840,11 @@ window.LIBRARY = {
    "label": "Expand",
    "signal": "fit-match",
    "signal_status": "provisional",
+   "supporting": [
+    "buying-intent",
+    "warm-path"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "fit-factors-met",
     "budget-or-procurement-entered",
@@ -6248,7 +6905,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.</li><li>Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.</li><li>Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.</li><li>Tender rules limit contact. The questions are the contact.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Web: Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.</li><li>The tender PDF, sections 2 and 4.</li><li>Your list of thirty, Tarlton marked cold.</li><li>LinkedIn is not connected, so I can't see whether you know anyone there.</li></ul>"
+     "html": "<ul><li>web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.</li><li>web · The tender PDF, sections 2 and 4.</li><li>goal-told · Your list of thirty, Tarlton marked cold.</li><li>linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether a tender this size is ever won cold. East Marston was. Most aren't.</li></ul>"
@@ -6268,8 +6925,34 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/expand-tarlton-tender.md",
-   "markdown": "---\nid: expand-tarlton-tender\norder: 4\nkind: act\nlabel: Expand\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: darren-cole\ncouncil: tarlton\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By 2 October: clarification questions close. Start this week.\"\n  until: 2026-10-02\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Questions\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"The clarification questions\"\n  hand: \"Open in Mail\"\n  sub: \"to the procurement contact\"\n  footer: \"Send through the portal, not by email. I'll watch for the answer.\"\n---\n\n# Tarlton is replacing its case system\n\nTheir tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.\n\n## What I noticed\n\n- Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.\n- Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.\n- Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.\n- Tender rules limit contact. The questions are the contact.\n\n## What I read\n\n- Web: Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.\n- The tender PDF, sections 2 and 4.\n- Your list of thirty, Tarlton marked cold.\n- LinkedIn is not connected, so I can't see whether you know anyone there.\n\n## Not sure\n\n- Whether a tender this size is ever won cold. East Marston was. Most aren't.\n\n## Then\n\n- Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.\n\n## The draft\n\nDear Mr Cole,\n\nRegarding the case management modernisation tender published 9 September, two clarification questions.\n\n1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?\n\n2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?\n\nKind regards,\n\nFederico Carbo, BOPS\n",
-   "widgetRows": {}
+   "markdown": "---\nid: expand-tarlton-tender\norder: 4\nkind: act\nlabel: Expand\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [buying-intent, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: darren-cole\ncouncil: tarlton\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: dated\n  words: \"By 2 October: clarification questions close. Start this week.\"\n  until: 2026-10-02\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Questions\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"The clarification questions\"\n  hand: \"Open in Mail\"\n  sub: \"to the procurement contact\"\n  footer: \"Send through the portal, not by email. I'll watch for the answer.\"\n---\n\n# Tarlton is replacing its case system\n\nTheir tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.\n\n## What I noticed\n\n- Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.\n- Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.\n- Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.\n- Tender rules limit contact. The questions are the contact.\n\n## What I read\n\n- web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.\n- web · The tender PDF, sections 2 and 4.\n- goal-told · Your list of thirty, Tarlton marked cold.\n- linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.\n\n## Not sure\n\n- Whether a tender this size is ever won cold. East Marston was. Most aren't.\n\n## Then\n\n- Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.\n\n## The draft\n\nDear Mr Cole,\n\nRegarding the case management modernisation tender published 9 September, two clarification questions.\n\n1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?\n\n2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?\n\nKind regards,\n\nFederico Carbo, BOPS\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October."
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "The tender PDF, sections 2 and 4."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty, Tarlton marked cold."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected, so I can't see whether you know anyone there."
+    }
+   ]
   },
   {
    "id": "sustain-ashworth-rest",
@@ -6278,6 +6961,10 @@ window.LIBRARY = {
    "label": "Sustain",
    "signal": "one-sided",
    "signal_status": "provisional",
+   "supporting": [
+    "cooling-champion"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "who-starts-threads",
     "times-you-chase",
@@ -6349,7 +7036,7 @@ window.LIBRARY = {
      "html": "<ul><li>Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Gmail: your four notes to Ashworth, 6 May to 18 August, and the empty replies column.</li><li>Gmail: no bounce or auto-reply on any of them.</li><li>Slack, #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>Your list of thirty, where Ashworth is marked cold.</li></ul>"
+     "html": "<ul><li>gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.</li><li>gmail · No bounce or auto-reply on any of them.</li><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>goal-told · Your list of thirty, where Ashworth is marked cold.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether your notes reached the right people at all. Two names from a website is a thin start.</li></ul>"
@@ -6371,7 +7058,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/sustain-ashworth-rest.md",
-   "markdown": "---\nid: sustain-ashworth-rest\norder: 18\nkind: act\nlabel: Sustain\nsignal: one-sided\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [who-starts-threads, times-you-chase, you-give-vs-they-give, innocent-explanation-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: nicola-shaw\ncouncil: ashworth\ndocuments: []\nwidgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"likely\"\nreply:\n  module: buttons\nactions:\n  - label: \"Rest It\"\n    style: filled\n    says: \"Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears.\"\n  - label: \"One More Try\"\n    style: tinted\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Last note\"\n  hand: \"Open in Mail\"\n  sub: \"only if you want one more try\"\n  footer: \"Nothing attached.\"\n---\n\n# Let Ashworth rest\n\nFour notes from you since May, nothing back. A fifth would cost more than it gains. I'll stop suggesting them and watch for a warm path instead.\n\n## What I noticed\n\n- Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.\n- Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.\n- One-sided threads like this rarely turn with a fifth message. They turn with a different door: a person who knows them.\n- Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.\n\n## Timeline\n\n- 6 May · Your first note to Ashworth\n- 18 August · Your fourth note. No reply to any of them\n- 2 September · Simon says he knows Nicola Shaw\n- Today · Four weeks since your last note\n\n## Their words\n\n- Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event\n\n## What I read\n\n- Gmail: your four notes to Ashworth, 6 May to 18 August, and the empty replies column.\n- Gmail: no bounce or auto-reply on any of them.\n- Slack, #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- Your list of thirty, where Ashworth is marked cold.\n\n## Not sure\n\n- Whether your notes reached the right people at all. Two names from a website is a thin start.\n\n## Then\n\n- If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.\n\n## The draft\n\nHi Nicola,\n\nI have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.\n\nIf there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.\n\nFede\n",
+   "markdown": "---\nid: sustain-ashworth-rest\norder: 18\nkind: act\nlabel: Sustain\nsignal: one-sided\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [cooling-champion]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [who-starts-threads, times-you-chase, you-give-vs-they-give, innocent-explanation-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: nicola-shaw\ncouncil: ashworth\ndocuments: []\nwidgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"likely\"\nreply:\n  module: buttons\nactions:\n  - label: \"Rest It\"\n    style: filled\n    says: \"Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears.\"\n  - label: \"One More Try\"\n    style: tinted\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Last note\"\n  hand: \"Open in Mail\"\n  sub: \"only if you want one more try\"\n  footer: \"Nothing attached.\"\n---\n\n# Let Ashworth rest\n\nFour notes from you since May, nothing back. A fifth would cost more than it gains. I'll stop suggesting them and watch for a warm path instead.\n\n## What I noticed\n\n- Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.\n- Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.\n- One-sided threads like this rarely turn with a fifth message. They turn with a different door: a person who knows them.\n- Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.\n\n## Timeline\n\n- 6 May · Your first note to Ashworth\n- 18 August · Your fourth note. No reply to any of them\n- 2 September · Simon says he knows Nicola Shaw\n- Today · Four weeks since your last note\n\n## Their words\n\n- Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event\n\n## What I read\n\n- gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.\n- gmail · No bounce or auto-reply on any of them.\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- goal-told · Your list of thirty, where Ashworth is marked cold.\n\n## Not sure\n\n- Whether your notes reached the right people at all. Two names from a website is a thin start.\n\n## Then\n\n- If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.\n\n## The draft\n\nHi Nicola,\n\nI have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.\n\nIf there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.\n\nFede\n",
    "widgetRows": {
     "timeline": [
      [
@@ -6398,7 +7085,33 @@ window.LIBRARY = {
       "I know Nicola at Ashworth from the LGA event"
      ]
     ]
-   }
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your four notes to Ashworth, 6 May to 18 August, and the empty replies column."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "No bounce or auto-reply on any of them."
+    },
+    {
+     "sources": [
+      "slack"
+     ],
+     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\"."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty, where Ashworth is marked cold."
+    }
+   ]
   },
   {
    "id": "sustain-karen-slowing",
@@ -6407,11 +7120,16 @@ window.LIBRARY = {
    "label": "Sustain",
    "signal": "cooling-champion",
    "signal_status": "provisional",
+   "supporting": [
+    "loose-end"
+   ],
+   "supporting_status": "provisional",
    "counts": [
     "reply-gap-vs-own-rhythm",
     "last-note-unanswered-days",
     "innocent-explanation-scan",
-    "dropped-recurring-meeting"
+    "dropped-recurring-meeting",
+    "promise-made-undelivered"
    ],
    "counts_status": "provisional",
    "person": "karen-hughes",
@@ -6493,7 +7211,7 @@ window.LIBRARY = {
      "html": "<ul><li>March · You and Karen start writing</li><li>July · She asks for the officer-time figures</li><li>22 August · Budget meeting at Bramley</li><li>Today · The figures are still not sent</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Your mail with Karen, March to today: 15 messages, who wrote, when, how long.</li><li>Your calendar: \"Budget prioritisation meeting, Bramley\", 22 August. Nothing since.</li><li>Drive: the officer-time one-pager, and her July email asking for it.</li><li>Your list of thirty councils, and the goal you gave me.</li></ul>"
+     "html": "<ul><li>gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.</li><li>calendar · \"Budget prioritisation meeting, Bramley\", 22 August. Nothing since.</li><li>drive, gmail · The officer-time one-pager, and her July email asking for it.</li><li>goal-told · Your list of thirty councils, and the goal you gave me.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether the budget meeting went badly for BOPS, or she is buried in year-end work. You were in the room.</li></ul>"
@@ -6515,7 +7233,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/sustain-karen-slowing.md",
-   "markdown": "---\nid: sustain-karen-slowing\norder: 11\nkind: act\nlabel: Sustain\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [reply-gap-vs-own-rhythm, last-note-unanswered-days, innocent-explanation-scan, dropped-recurring-meeting]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: [officer-time-one-pager]\nwidgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week. The gap widens each day you wait.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Badly\"\n    says: \"Then I'll hold this note for a month, keep the figures for a better moment, and look for a second door into Bramley.\"\n  - label: \"Fine\"\n    says: \"Then the note goes as written and I'll expect a reply within her old rhythm.\"\n  - label: \"Don't Know\"\n    says: \"Then the note stays soft, as written, and I'll read her reply for the answer.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the officer-time one-pager. Edit anything, then send from your own mail.\"\n---\n\n# Message Karen Hughes\n\nHer replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.\n\n## What I noticed\n\n- Why now: 24 days since her last real reply, three times her usual gap, and you have a gift ready: the figures she asked for.\n- Before the budget meeting she replied in about a day and started 9 of your 12 threads.\n- Since it: one two-line reply. No out-of-office, no leave, no meeting booked. She is active on other threads, so she is around.\n- Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.\n\n## A number against its usual\n\n- Now · 24 days · since her last real reply\n- Usually · about a day · her replies before the budget meeting\n\n## Timeline\n\n- March · You and Karen start writing\n- July · She asks for the officer-time figures\n- 22 August · Budget meeting at Bramley\n- Today · The figures are still not sent\n\n## What I read\n\n- Your mail with Karen, March to today: 15 messages, who wrote, when, how long.\n- Your calendar: \"Budget prioritisation meeting, Bramley\", 22 August. Nothing since.\n- Drive: the officer-time one-pager, and her July email asking for it.\n- Your list of thirty councils, and the goal you gave me.\n\n## Not sure\n\n- Whether the budget meeting went badly for BOPS, or she is buried in year-end work. You were in the room.\n\n## Then\n\n- Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.\n\n## The draft\n\nHi Karen,\n\nYou asked back in July for the officer-time numbers from East Marston and I never sent them. Here they are, one page. The short version: case admin down by about a third, which is the figure their finance team cared about most.\n\nI imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how East Marston phased it in, I am around whenever suits.\n\nFede\n",
+   "markdown": "---\nid: sustain-karen-slowing\norder: 11\nkind: act\nlabel: Sustain\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [reply-gap-vs-own-rhythm, last-note-unanswered-days, innocent-explanation-scan, dropped-recurring-meeting, promise-made-undelivered]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: [officer-time-one-pager]\nwidgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week. The gap widens each day you wait.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Badly\"\n    says: \"Then I'll hold this note for a month, keep the figures for a better moment, and look for a second door into Bramley.\"\n  - label: \"Fine\"\n    says: \"Then the note goes as written and I'll expect a reply within her old rhythm.\"\n  - label: \"Don't Know\"\n    says: \"Then the note stays soft, as written, and I'll read her reply for the answer.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the officer-time one-pager. Edit anything, then send from your own mail.\"\n---\n\n# Message Karen Hughes\n\nHer replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.\n\n## What I noticed\n\n- Why now: 24 days since her last real reply, three times her usual gap, and you have a gift ready: the figures she asked for.\n- Before the budget meeting she replied in about a day and started 9 of your 12 threads.\n- Since it: one two-line reply. No out-of-office, no leave, no meeting booked. She is active on other threads, so she is around.\n- Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.\n\n## A number against its usual\n\n- Now · 24 days · since her last real reply\n- Usually · about a day · her replies before the budget meeting\n\n## Timeline\n\n- March · You and Karen start writing\n- July · She asks for the officer-time figures\n- 22 August · Budget meeting at Bramley\n- Today · The figures are still not sent\n\n## What I read\n\n- gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.\n- calendar · \"Budget prioritisation meeting, Bramley\", 22 August. Nothing since.\n- drive, gmail · The officer-time one-pager, and her July email asking for it.\n- goal-told · Your list of thirty councils, and the goal you gave me.\n\n## Not sure\n\n- Whether the budget meeting went badly for BOPS, or she is buried in year-end work. You were in the room.\n\n## Then\n\n- Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.\n\n## The draft\n\nHi Karen,\n\nYou asked back in July for the officer-time numbers from East Marston and I never sent them. Here they are, one page. The short version: case admin down by about a third, which is the figure their finance team cared about most.\n\nI imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how East Marston phased it in, I am around whenever suits.\n\nFede\n",
    "widgetRows": {
     "number": [
      [
@@ -6547,7 +7265,34 @@ window.LIBRARY = {
       "The figures are still not sent"
      ]
     ]
-   }
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Karen, March to today: 15 messages, who wrote, when, how long."
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "\"Budget prioritisation meeting, Bramley\", 22 August. Nothing since."
+    },
+    {
+     "sources": [
+      "drive",
+      "gmail"
+     ],
+     "words": "The officer-time one-pager, and her July email asking for it."
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty councils, and the goal you gave me."
+    }
+   ]
   },
   {
    "id": "sustain-lisa-strategy",
@@ -6614,7 +7359,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.</li><li>Page 12 commits Burnham to \"replacing legacy case systems by 2028\". That is your pitch in their words.</li><li>Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.</li><li>Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Web: Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.</li><li>Your mail with Lisa since April: 7 messages, last on 20 August.</li><li>LinkedIn is not connected, so I can't see whether she posted about it herself.</li></ul>"
+     "html": "<ul><li>web · Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.</li><li>gmail · Your mail with Lisa since April: 7 messages, last on 20 August.</li><li>linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether she wrote page 12 herself or a consultant did. Either way she owns it now.</li></ul>"
@@ -6634,8 +7379,28 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/sustain-lisa-strategy.md",
-   "markdown": "---\nid: sustain-lisa-strategy\norder: 6\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: lisa-holmes\ncouncil: burnham\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. Stale by Friday.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Edit anything, then send from your own mail.\"\n---\n\n# Congratulate Lisa Holmes\n\nBurnham published its digital strategy last Friday. She led it, and it says the things you would say.\n\n## What I noticed\n\n- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.\n- Page 12 commits Burnham to \"replacing legacy case systems by 2028\". That is your pitch in their words.\n- Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.\n- Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.\n\n## What I read\n\n- Web: Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.\n- Your mail with Lisa since April: 7 messages, last on 20 August.\n- LinkedIn is not connected, so I can't see whether she posted about it herself.\n\n## Not sure\n\n- Whether she wrote page 12 herself or a consultant did. Either way she owns it now.\n\n## Then\n\n- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.\n\n## The draft\n\nHi Lisa,\n\nI read the strategy over the weekend. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.\n\nNo agenda here. Just wanted you to know it landed.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: sustain-lisa-strategy\norder: 6\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: lisa-holmes\ncouncil: burnham\ndocuments: []\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. Stale by Friday.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Nothing attached. Edit anything, then send from your own mail.\"\n---\n\n# Congratulate Lisa Holmes\n\nBurnham published its digital strategy last Friday. She led it, and it says the things you would say.\n\n## What I noticed\n\n- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.\n- Page 12 commits Burnham to \"replacing legacy case systems by 2028\". That is your pitch in their words.\n- Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.\n- Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.\n\n## What I read\n\n- web · Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.\n- gmail · Your mail with Lisa since April: 7 messages, last on 20 August.\n- linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.\n\n## Not sure\n\n- Whether she wrote page 12 herself or a consultant did. Either way she owns it now.\n\n## Then\n\n- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.\n\n## The draft\n\nHi Lisa,\n\nI read the strategy over the weekend. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.\n\nNo agenda here. Just wanted you to know it landed.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Lisa since April: 7 messages, last on 20 August."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected, so I can't see whether she posted about it herself."
+    }
+   ]
   },
   {
    "id": "sustain-neil-rhythm",
@@ -6705,7 +7470,7 @@ window.LIBRARY = {
      "html": "<ul><li>Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished last Friday.</li><li>Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.</li><li>He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.</li><li>Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Your mail with Neil since March: 11 messages, and 4 calls in your calendar.</li><li>Your calendar: last call with Neil, 3 August.</li><li>Drive: \"East Marston phasing note\", finished 11 September.</li><li>His email of 19 August asking how East Marston \"did it in stages\".</li></ul>"
+     "html": "<ul><li>gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.</li><li>calendar · Last call with Neil, 3 August.</li><li>drive · \"East Marston phasing note\", finished 11 September.</li><li>gmail · His email of 19 August asking how East Marston \"did it in stages\".</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Whether he wants the note by email or would rather talk it through. He usually books a call.</li></ul>"
@@ -6725,8 +7490,42 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/sustain-neil-rhythm.md",
-   "markdown": "---\nid: sustain-neil-rhythm\norder: 12\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: [east-marston-phasing-note]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the East Marston phasing note.\"\n---\n\n# Reconnect with Neil Chapman\n\nYou speak roughly every six weeks and it has been seven. He asked in August how East Marston phased the rollout, and now there is a note on it.\n\n## What I noticed\n\n- Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished last Friday.\n- Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.\n- He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.\n- Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.\n\n## What I read\n\n- Your mail with Neil since March: 11 messages, and 4 calls in your calendar.\n- Your calendar: last call with Neil, 3 August.\n- Drive: \"East Marston phasing note\", finished 11 September.\n- His email of 19 August asking how East Marston \"did it in stages\".\n\n## Not sure\n\n- Whether he wants the note by email or would rather talk it through. He usually books a call.\n\n## Then\n\n- I'll watch for his reply. If he books a call I'll prepare the phasing questions he is likely to ask.\n\n## The draft\n\nHi Neil,\n\nYou asked in August how East Marston took BOPS in stages rather than all at once. There is now a short note on exactly that: what they switched on first, what they left for later, and how long each step took. Attached.\n\nNo rush at all. If it raises questions, a call whenever suits you.\n\nFede\n",
-   "widgetRows": {}
+   "markdown": "---\nid: sustain-neil-rhythm\norder: 12\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: [east-marston-phasing-note]\nsure: \"likely\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the East Marston phasing note.\"\n---\n\n# Reconnect with Neil Chapman\n\nYou speak roughly every six weeks and it has been seven. He asked in August how East Marston phased the rollout, and now there is a note on it.\n\n## What I noticed\n\n- Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished last Friday.\n- Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.\n- He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.\n- Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.\n\n## What I read\n\n- gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.\n- calendar · Last call with Neil, 3 August.\n- drive · \"East Marston phasing note\", finished 11 September.\n- gmail · His email of 19 August asking how East Marston \"did it in stages\".\n\n## Not sure\n\n- Whether he wants the note by email or would rather talk it through. He usually books a call.\n\n## Then\n\n- I'll watch for his reply. If he books a call I'll prepare the phasing questions he is likely to ask.\n\n## The draft\n\nHi Neil,\n\nYou asked in August how East Marston took BOPS in stages rather than all at once. There is now a short note on exactly that: what they switched on first, what they left for later, and how long each step took. Attached.\n\nNo rush at all. If it raises questions, a call whenever suits you.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail",
+      "calendar"
+     ],
+     "words": "Your mail with Neil since March: 11 messages, and 4 calls in your calendar."
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "Last call with Neil, 3 August."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "\"East Marston phasing note\", finished 11 September."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "His email of 19 August asking how East Marston \"did it in stages\"."
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The time to reconnect read leans on it, so I have less to go on here.",
+     "gap": true
+    }
+   ]
   },
   {
    "id": "sustain-rachel-promise",
@@ -6806,7 +7605,7 @@ window.LIBRARY = {
      "html": "<ul><li>The data-residency note · Where the data lives and who can see it · Updated 2 September</li></ul>"
     },
     "What I read": {
-     "html": "<ul><li>Gmail: your message to Rachel, 31 August: \"I'll send the data-residency note this week\".</li><li>Gmail: no message from you to Rachel since.</li><li>Drive: \"BOPS data residency\", updated 2 September.</li><li>The Westmoor thread: Rachel's question of 9 September.</li></ul>"
+     "html": "<ul><li>gmail · Your message to Rachel, 31 August: \"I'll send the data-residency note this week\".</li><li>gmail · No message from you to Rachel since.</li><li>drive · \"BOPS data residency\", updated 2 September.</li><li>gmail · The Westmoor thread: Rachel's question of 9 September.</li></ul>"
     },
     "Not sure": {
      "html": "<ul><li>Nothing here. A promise and a date.</li></ul>"
@@ -6828,7 +7627,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "cards/sustain-rachel-promise.md",
-   "markdown": "---\nid: sustain-rachel-promise\norder: 5\nkind: act\nlabel: Sustain\nsignal: loose-end\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [data-residency-note]\nwidgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. A promise ages badly.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the BOPS data residency note.\"\n---\n\n# Close the loop with Rachel Gill\n\nYou promised her the data-residency note on 31 August. It is two weeks later and it hasn't gone.\n\n## What I noticed\n\n- Why now: it is two weeks since you wrote \"I'll send the data-residency note this week\", and you haven't. Every day makes the next email harder.\n- Rachel is Head of IT at Westmoor. Data residency is the first thing IT leads ask, and she asked it in her second message.\n- The note exists and is current. Nothing is stopping this except that it slipped.\n- Westmoor is your most advanced deal. An unkept promise to the newest person in it costs more than anywhere else.\n\n## Open items\n\n- The data-residency note · You owe Rachel, promised 31 August · 14 days\n\n## Documents\n\n- The data-residency note · Where the data lives and who can see it · Updated 2 September\n\n## What I read\n\n- Gmail: your message to Rachel, 31 August: \"I'll send the data-residency note this week\".\n- Gmail: no message from you to Rachel since.\n- Drive: \"BOPS data residency\", updated 2 September.\n- The Westmoor thread: Rachel's question of 9 September.\n\n## Not sure\n\n- Nothing here. A promise and a date.\n\n## Then\n\n- Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.\n\n## The draft\n\nHi Rachel,\n\nI said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives, who can see it, and how it leaves if you ever want it to.\n\nIf anything in it is unclear, or you want it in the form your information governance team prefers, say so and I'll adjust.\n\nFede\n",
+   "markdown": "---\nid: sustain-rachel-promise\norder: 5\nkind: act\nlabel: Sustain\nsignal: loose-end\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [data-residency-note]\nwidgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. A promise ages badly.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Open in Mail\"\n  sub: \"in your voice · nothing sends until you do\"\n  footer: \"Attached: the BOPS data residency note.\"\n---\n\n# Close the loop with Rachel Gill\n\nYou promised her the data-residency note on 31 August. It is two weeks later and it hasn't gone.\n\n## What I noticed\n\n- Why now: it is two weeks since you wrote \"I'll send the data-residency note this week\", and you haven't. Every day makes the next email harder.\n- Rachel is Head of IT at Westmoor. Data residency is the first thing IT leads ask, and she asked it in her second message.\n- The note exists and is current. Nothing is stopping this except that it slipped.\n- Westmoor is your most advanced deal. An unkept promise to the newest person in it costs more than anywhere else.\n\n## Open items\n\n- The data-residency note · You owe Rachel, promised 31 August · 14 days\n\n## Documents\n\n- The data-residency note · Where the data lives and who can see it · Updated 2 September\n\n## What I read\n\n- gmail · Your message to Rachel, 31 August: \"I'll send the data-residency note this week\".\n- gmail · No message from you to Rachel since.\n- drive · \"BOPS data residency\", updated 2 September.\n- gmail · The Westmoor thread: Rachel's question of 9 September.\n\n## Not sure\n\n- Nothing here. A promise and a date.\n\n## Then\n\n- Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.\n\n## The draft\n\nHi Rachel,\n\nI said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives, who can see it, and how it leaves if you ever want it to.\n\nIf anything in it is unclear, or you want it in the form your information governance team prefers, say so and I'll adjust.\n\nFede\n",
    "widgetRows": {
     "open-items": [
      [
@@ -6844,7 +7643,33 @@ window.LIBRARY = {
       "Updated 2 September"
      ]
     ]
-   }
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your message to Rachel, 31 August: \"I'll send the data-residency note this week\"."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "No message from you to Rachel since."
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "\"BOPS data residency\", updated 2 September."
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Westmoor thread: Rachel's question of 9 September."
+    }
+   ]
   }
  ],
  "widgets": [
@@ -6989,7 +7814,6 @@ window.LIBRARY = {
    "shape": "the figure in the card's big words, a bar against a bar for the usual, then the usual in small",
    "parts": "3",
    "rows": "2",
-   "waits_on": "counts",
    "fed_by": [
     "reply-gap-vs-own-rhythm",
     "how-long-quiet-vs-own-rhythm",
@@ -7003,7 +7827,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it shows": {
-     "html": "<p>One number that means something only next to its normal: a silence against the usual gap, a reply length against the usual length. The reading rules judge a person against their own rhythm, and this widget is that rule made visible.</p>\n<p>It rests only on counts, and every count is \"not written yet\". So the widget is wired in but has nothing beneath it yet: the figures on a card are read off the card, not counted.</p>"
+     "html": "<p>One number that means something only next to its normal: a silence against the usual gap, a reply length against the usual length. The reading rules judge a person against their own rhythm, and this widget is that rule made visible.</p>\n<p>It rests only on counts. What they count is still \"not written yet\", but each now names the assembly it counts within, so the widget reaches real records through them. The figures on a card are still read off the card, not counted.</p>"
     },
     "Row form": {
      "html": "<p>Exactly two rows, the figure first and its usual second.</p>\n<p><code>Now · &lt;the figure&gt; · &lt;what it measures&gt;</code> <code>Usually · &lt;the usual&gt; · &lt;what the usual is&gt;</code></p>"
@@ -7014,8 +7838,23 @@ window.LIBRARY = {
     "Row form"
    ],
    "file": "widgets/number.md",
-   "markdown": "---\nid: number\nfamily: detail\nlabel: A number against its usual\nblurb: One figure, shown beside what is normal for this person.\nshape: the figure in the card's big words, a bar against a bar for the usual, then the usual in small\nparts: 3\nrows: 2\nwaits_on: counts   # reaches no record until the counts it rests on are written\nfed_by: [reply-gap-vs-own-rhythm, how-long-quiet-vs-own-rhythm, silence-vs-own-rhythm, reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, reply-length-vs-own-baseline, days-open-vs-own-rhythm]\n---\n\n# A number against its usual\n\n## What it shows\n\nOne number that means something only next to its normal: a silence against the usual gap, a\nreply length against the usual length. The reading rules judge a person against their own\nrhythm, and this widget is that rule made visible.\n\nIt rests only on counts, and every count is \"not written yet\". So the widget is wired in but\nhas nothing beneath it yet: the figures on a card are read off the card, not counted.\n\n## Row form\n\nExactly two rows, the figure first and its usual second.\n\n`Now · <the figure> · <what it measures>`\n`Usually · <the usual> · <what the usual is>`\n",
-   "reaches": []
+   "markdown": "---\nid: number\nfamily: detail\nlabel: A number against its usual\nblurb: One figure, shown beside what is normal for this person.\nshape: the figure in the card's big words, a bar against a bar for the usual, then the usual in small\nparts: 3\nrows: 2\nfed_by: [reply-gap-vs-own-rhythm, how-long-quiet-vs-own-rhythm, silence-vs-own-rhythm, reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, reply-length-vs-own-baseline, days-open-vs-own-rhythm]\n---\n\n# A number against its usual\n\n## What it shows\n\nOne number that means something only next to its normal: a silence against the usual gap, a\nreply length against the usual length. The reading rules judge a person against their own\nrhythm, and this widget is that rule made visible.\n\nIt rests only on counts. What they count is still \"not written yet\", but each now names the\nassembly it counts within, so the widget reaches real records through them. The figures on a\ncard are still read off the card, not counted.\n\n## Row form\n\nExactly two rows, the figure first and its usual second.\n\n`Now · <the figure> · <what it measures>`\n`Usually · <the usual> · <what the usual is>`\n",
+   "reaches": [
+    "calendar#calendar-event",
+    "calendar#free-busy",
+    "calendar#status-event",
+    "gmail#email-message",
+    "gmail#email-thread",
+    "meet#meeting",
+    "meet#participant",
+    "people-told#contact-preference",
+    "people-told#correction",
+    "people-told#offline-touch",
+    "people-told#relationship-note",
+    "slack#slack-message",
+    "slack#slack-user",
+    "web#enrichment"
+   ]
   },
   {
    "id": "open-items",
@@ -7312,10 +8151,10 @@ window.LIBRARY = {
      "html": "<p>Raw data has two homes. Most of it is the shared <strong>channels</strong> in <code>01-integrations</code> (the accounts you connect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the user <strong>states outright</strong>, the pitch for a product, the shape of a good-fit customer, a price. That <strong>told</strong> input is raw data too, and the most deterministic kind there is, because the user says it rather than the tool inferring it.</p>\n<p>Each reasoning module owns its own told source, so it sits <strong>inside the module</strong>, not in Connections (Connections stays strictly the doorway for external accounts). It lives at <code>&lt;module&gt;/told.md</code> (a <code>told/</code> folder only if a module grows several), and it is shaped exactly like a channel doc (<a href=\"../templates/channel.md\"><code>_templates/channel.md</code></a>): a card-face frontmatter with <code>source: told</code>, then a <code>## Records</code> field-per-row table. Its records get ids the same way (the kebab-slug of the label), and an assembly lists them in <code>inputs</code> exactly like channel records.</p>\n<p>Three things to keep true:</p>\n<ul><li><strong>It is elicited, not just waited for.</strong> The module actively asks for it (the propose-a-draft, you-confirm loop), and a record may be populated from a file the user uploads to Drive. The <code>Source</code> column says which path each field comes in by.</li><li><strong>An empty record is a told gap</strong>, named not faked, the same banner <a href=\"tracing-back.md\"><code>tracing-back.md</code></a> already uses: the honest output is \"tell me X and I can run this\", and the module can offer to research a first version for the user to confirm.</li><li><strong>02 and 00 will adopt one too.</strong> People's seed list and corrections and the Brain's goals are told piles living in their <code>module.md</code> User input today; each grows a <code>told.md</code> of its own when its library is built. <strong>05-persona-you</strong> now has one (identity, the operator dials, voice samples). <strong>03-offerings is the worked example of this floor.</strong></li></ul>"
     },
     "Lineage, the spine": {
-     "html": "<p>Every entry names what it is built from, one floor down, by <strong>id</strong>:</p>\n<ul><li>an <strong>assembly</strong>'s <code>inputs</code> are <strong>record ids</strong> (a channel record, or a record from the module's own <code>told.md</code>) and, optionally, other assembly ids;</li><li>a <strong>signal</strong>'s <code>inputs</code> are <strong>assembly ids</strong>, and its <code>measures</code> are the deterministic counts beneath the read.</li></ul>\n<p>So any signal walks straight down: <strong>signal, then measures, then assembly, then channel record</strong>. This is the <em>track-back</em>: nothing the tool says should float. Two iron rules:</p>\n<p>1. <strong>Every id must resolve.</strong> A dangling <code>inputs</code> or <code>measures</code> id is a bug, not a stub. 2. <strong>Name the gap, do not fake it.</strong> Where a branch runs out of ground because a source is not connected (warm paths without LinkedIn) or the user has not told us something, the entry says so, as a <strong>data gap</strong> or a <strong>told gap</strong>. (See <a href=\"tracing-back.md\"><code>tracing-back.md</code></a>.)</p>\n<h3>Ids</h3>\n<p>Kebab-slugs. A <strong>record's id is the kebab-slug of its label</strong> (<code>Email message</code> gives <code>email-message</code>); it lives in the body table's Record column, not in frontmatter. <strong>Record ids are unique across all channels</strong> (<code>email-message</code>, <code>calendar-event</code>, <code>slack-message</code>), so an assembly can name them without qualifying the channel. A told source's records follow the same rule and are unique within their module (<code>pitch</code>, <code>fit-shape</code>). Assembly and signal ids are unique within their module.</p>"
+     "html": "<p>Every entry names what it is built from, one floor down, by <strong>id</strong>:</p>\n<ul><li>an <strong>assembly</strong>'s <code>inputs</code> are <strong>record ids</strong> (a channel record, or a record from the module's own <code>told.md</code>) and, optionally, other assembly ids;</li><li>a <strong>signal</strong>'s <code>inputs</code> are <strong>assembly ids</strong>, and its <code>measures</code> are the deterministic counts beneath the read.</li></ul>\n<p>So any signal walks straight down: <strong>signal, then measures, then assembly, then channel record</strong>. A count names the assembly it counts within as <code>over</code> (settled 18 September), so the walk passes through the counting floor instead of stepping over it. A card names its main <code>signal</code> and, when it quotes numbers from other reads, those reads as <code>supporting</code>; every count a card quotes must belong to one of them. A card's <em>What I read</em> rows name their sources, and <code>build.js</code> checks each is reached by the trail. The Brain's own told pile, <a href=\"../told/goal-told.md\"><code>told/goal-told.md</code></a>, is always reachable: the goal is what every card is weighed against. This is the <em>track-back</em>: nothing the tool says should float. Two iron rules:</p>\n<p>1. <strong>Every id must resolve.</strong> A dangling <code>inputs</code> or <code>measures</code> id is a bug, not a stub. 2. <strong>Name the gap, do not fake it.</strong> Where a branch runs out of ground because a source is not connected (warm paths without LinkedIn) or the user has not told us something, the entry says so, as a <strong>data gap</strong> or a <strong>told gap</strong>. (See <a href=\"tracing-back.md\"><code>tracing-back.md</code></a>.)</p>\n<h3>Names: the id for the build, the label for a person</h3>\n<p>Every entry has two names. The <strong>id</strong> is the backend name: kebab-case, stable, what every join and <code>build.js</code> use. It never changes for the sake of wording. The <strong>label</strong> is what a person reads on the slide, in the library and on a card, and it is plain English: say what it is the way the seller would (\"Time since reply, against usual\", not \"Reply gap vs own rhythm\"). Rename a label freely; rename an id only with every join that names it. A record is the one exception: its id is made from its label, which keeps the real API name, so its plain name lives in the source file's <code>## In plain words</code> table instead (renamed 18 September).</p>\n<h3>Ids</h3>\n<p>Kebab-slugs. A <strong>record's id is the kebab-slug of its label</strong> (<code>Email message</code> gives <code>email-message</code>); it lives in the body table's Record column, not in frontmatter. <strong>Record ids are unique across all channels</strong> (<code>email-message</code>, <code>calendar-event</code>, <code>slack-message</code>), so an assembly can name them without qualifying the channel. A told source's records follow the same rule and are unique within their module (<code>pitch</code>, <code>fit-shape</code>). Assembly and signal ids are unique within their module.</p>"
     },
     "The widgets: a catalog beside the ladder": {
-     "html": "<p>A card shows its evidence through <strong>widgets</strong>, one doc each in <a href=\"../widgets/\"><code>widgets/</code></a>, to the skeleton in <a href=\"../templates/widget.md\"><code>templates/widget.md</code></a>. A widget holds no reading of its own, so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already holds.</p>\n<p>There are two families. <strong>Detail widgets</strong> (Timeline, Their words, People, Open items, A number against its usual) sit in a card's details, between the story and Not sure; a card takes at most two. <strong>Reply widgets</strong> (Buttons, Choices, Several choices, A field, A draft) fill the sheet a card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning: no new widget without a new shape.</p>\n<p>The idea is close to Google's A2UI, where an app keeps a catalog of trusted components and an agent sends data that picks from it and fills it. The difference is on purpose. A2UI's components are usually small building blocks the agent arranges freely. Ours are large and specific, and they sit in a fixed place on every card. The agent chooses and fills; it never arranges. That is what lets a seller learn the set once.</p>\n<p>The joins, checked by <code>build.js</code>: a detail widget's <code>fed_by</code> resolves to assemblies or counts; a card's <code>widgets</code> resolve to detail widgets, and each is fed by something the card rests on (its counts, its signal's inputs, every assembly those gather, and, when the card names what to send in <code>documents</code>, the proof library: why to write and what to send are two trails); each has a body section headed with its label, rows in its row form; and a card's <code>reply.module</code> is a reply widget. <code>build.js</code> also walks each detail widget's <code>fed_by</code> down through the assemblies to the records it can actually show, and lists them on the widget's page. A widget that reaches no record fails the build unless it says what it <code>waits_on</code>: today that is Open items and A number against its usual, which rest only on counts, and no count is written yet.</p>"
+     "html": "<p>A card shows its evidence through <strong>widgets</strong>, one doc each in <a href=\"../widgets/\"><code>widgets/</code></a>, to the skeleton in <a href=\"../templates/widget.md\"><code>templates/widget.md</code></a>. A widget holds no reading of its own, so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already holds.</p>\n<p>There are two families. <strong>Detail widgets</strong> (Timeline, Their words, People, Open items, A number against its usual) sit in a card's details, between the story and Not sure; a card takes at most two. <strong>Reply widgets</strong> (Buttons, Choices, Several choices, A field, A draft) fill the sheet a card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning: no new widget without a new shape.</p>\n<p>The idea is close to Google's A2UI, where an app keeps a catalog of trusted components and an agent sends data that picks from it and fills it. The difference is on purpose. A2UI's components are usually small building blocks the agent arranges freely. Ours are large and specific, and they sit in a fixed place on every card. The agent chooses and fills; it never arranges. That is what lets a seller learn the set once.</p>\n<p>The joins, checked by <code>build.js</code>: a detail widget's <code>fed_by</code> resolves to assemblies or counts; a card's <code>widgets</code> resolve to detail widgets, and each is fed by something the card rests on (its counts, its signal's inputs, every assembly those gather, and, when the card names what to send in <code>documents</code>, the proof library: why to write and what to send are two trails); each has a body section headed with its label, rows in its row form; and a card's <code>reply.module</code> is a reply widget. <code>build.js</code> also walks each detail widget's <code>fed_by</code> down through the assemblies to the records it can actually show, and lists them on the widget's page. A widget that reaches no record fails the build unless it says what it <code>waits_on</code>: today that is Open items, which rest only on counts, and no count is written yet.</p>"
     },
     "How an agent produces a module's library": {
      "html": "<p>All six modules are now converted, and the per-module <code>CLAUDE.md</code> files have been retired. The steps below record how the conversion was done and guide any <strong>new</strong> module added later (working from a <code>module.md</code> draft rather than an old <code>CLAUDE.md</code>):</p>\n<p>1. <strong><code>module.md</code>.</strong> Copy the card-face frontmatter (drop the old <code>raw_data</code> and <code>channels</code> blobs); move Principles, System prompt, User input, Output, Memory and Open questions into the body verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries. 2. <strong>Signals.</strong> For the reasoned module, each named read in the old \"signal catalog\" becomes one <code>signals/&lt;id&gt;.md</code>. Carry its counts into <code>measures</code>, its sales-question handles into <code>answers</code>, its tilt into <code>modes</code> and <code>kind</code>, and the worked example plus threshold logic into the body. A signal earns its place only by answering a real question in <a href=\"sales-questions.md\"><code>sales-questions.md</code></a>. 3. <strong>Assemblies.</strong> Name the deterministic gathers the signals stand on (a person history, a conversation history, a stakeholder map). Their <code>inputs</code> are the channel records they tidy together, plus any records from the module's own <code>told.md</code>. 4. <strong>Raw data.</strong> The shared channels (raw-data floor, 01 only) live in <code>01-integrations/channels/&lt;id&gt;.md</code>: a card-face frontmatter, then the records as a <strong>field-per-row table</strong>, <code>| Record | Field | Source |</code>. And, where a module has facts the user states outright, a <code>&lt;module&gt;/told.md</code> of the same shape with <code>source: told</code> (see <em>The told source</em> above). 5. <strong>Check the lineage.</strong> Every signal <code>inputs</code> id points at a real assembly file; every assembly <code>inputs</code> id points at a real record id in a channel doc. Walk one signal end to end to confirm nothing floats.</p>\n<p>These steps were <strong>additive</strong>: the new files sat beside the old <code>CLAUDE.md</code> until each module's library was complete. That is now done across all six modules, the per-module <code>CLAUDE.md</code> files are retired, and the blueprint reads <code>module.md</code> (<code>readModules</code> in <code>blueprint/lib/modules.ts</code>).</p>"
@@ -7341,7 +8180,7 @@ window.LIBRARY = {
    ],
    "id": "library-format",
    "file": "docs/library-format.md",
-   "markdown": "# The library format: how the modules' thinking is stored from here on\n\nThis is the **contract** for the structured library that replaces the one-prose-`CLAUDE.md`-per-module\nmonolith. It is what an agent reads before producing entries. The matching skeletons live in\n[`_templates/`](../templates/); one worked example of each lives in its real home (linked below).\n\n## Why we changed\n\nThe agent-anatomy prose was right for *reasoning*, but the part of each module that is really a\n**catalog** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it\ncould not grow into a library or be rendered. We split each module in two:\n\n- **The catalog floors** become a **library of structured entries** (this doc).\n- **The operating prose** (principles, system prompt, user input, output, memory, open questions)\n  becomes a slim **`module.md`** overview.\n\nThe mapping from the old agent-anatomy is exact:\n\n| Old agent-anatomy section | New home |\n|---|---|\n| Raw data | `01-integrations/channels/*.md` (raw-data floor) |\n| Reasoning, *assembling* | `<module>/assemblies/*.md` |\n| Reasoning, *sensing* | `<module>/signals/*.md` |\n| Principles, System prompt, User input, Output, Memory, Open questions | `<module>/module.md` |\n\n## Writing style for every entry\n\nA few rules, because a person reads these, not just a parser:\n\n1. **Plain English, GDS style.** Sentence case, short sentences, say what it means. No jargon or\n   wordplay in the prose a person reads: a signal does not \"fire\" to a reader, it is a read the tool\n   *makes*. Write the body for a person; the structured facets in the frontmatter carry the precise,\n   parser-facing data.\n2. **Plain English for the names we invent.** An assembly is \"Person history\", not \"Contact dossier\".\n   Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names\n   (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,\n   champion).\n3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named\n   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a\n   prospect, the offering). The specific case study lives only in the scenario and demo docs.\n4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than\n   em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids\n   (email-message).\n5. **Clarity before brevity.** One idea per sentence; break a long sentence rather than stack clauses.\n   Put the point first: say what a read *is* before how it works. Where a section names several things,\n   use a plain list, not a parenthetical run-on. Shorter prose is the result of clear writing, never the\n   goal; cramming ideas into one packed sentence reads as cryptic, not clear. Say a thing once: do not\n   repeat what the `blurb`, [`reading-principles.md`](reading-principles.md) or another section already\n   carries.\n\n## The two layers: structured frontmatter, plain-English body\n\nEvery assembly and signal is two layers in one file, kept cleanly apart so each is written to best\npractice for its reader:\n\n- **Frontmatter is the structured (machine) layer.** Flat, typed facets only: ids, enums, short lists\n  (the card face described below). Each field earns its place by carrying genuine structured data;\n  nothing is kept just because it was there. `floor` has been **dropped** (the folder, `signals/` vs\n  `assemblies/`, already states the type). Sentence-length content never goes here.\n- **The body is the human layer**, plain English under a **fixed set of section headings**, so it\n  reads well *and* a parser can address each section later. The headings are consistent across every\n  entry:\n  - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few\n    plain sentences), `## In practice` (one short generic example), and `## For the build` (the precise\n    rule: the trigger and the confidence grading, leaning on the `needs` and `measures` facets above\n    rather than re-listing them; this is the single home for how confident the read is and what it\n    cannot see). \"For the build\" opens by pointing at\n    [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.\n  - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the\n    identity work; a plain list where it gathers several things) and `## Lineage` (which input id\n    resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of\n    living in `assemblies/`, so no entry needs to say so.\n\nA signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when\none is not connected, the checks resting on it drop out and confidence falls, which is how a **data\ngap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,\ncount-first, confidence grading, name-the-gap, answer a real question) live once in\n[`reading-principles.md`](reading-principles.md), so no signal re-teaches them.\n\n## The floors, and the one rule that varies by floor\n\nThe pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the\nthree-floor track-back in [`tracing-back.md`](tracing-back.md): facts, then counting, then opinion.\nThe **granularity matches the floor**, so we write docs only where there is reasoning to hold:\n\n| Floor | Nature | Unit | Template |\n|---|---|---|---|\n| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service**, plus each module's own `told.md` | [`_templates/channel.md`](../templates/channel.md) |\n| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`_templates/assembly.md`](../templates/assembly.md) |\n| **Signals** | the read, the first opinion | **rich doc per entry** | [`_templates/signal.md`](../templates/signal.md) |\n| insights, briefs, actions | the higher floors | (none yet) | later |\n\nPlus, per module, one **`module.md`** ([`_templates/module.md`](../templates/module.md)) holding the\noperating prose and the card face.\n\n**Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label\nlists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable\nmarkdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's\nthreshold and reasoning are prose in the body's sections (such as `For the build`). A nested tree shoved into frontmatter\nrenders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single\nquotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.\n\n**Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the\n`label` is the plain-English display name, and the `blurb` is the **one-line short description on the\nentry's card face** in the library viewer. Keep the `blurb` to a single plain sentence (the long body\nis revealed on click, so it does not belong in the blurb). The library at `/library` reads exactly\nthese fields, so editing a `blurb` updates its card with no other change.\n\nNot every module has every floor, and the library is meant to reveal that. **04-organisation has no\nsignals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**\nhas only raw data; **00-spine**'s \"assemblies\" are the scoreboard and calendar, a different kind of\nsynthesis. Absence is information; do not invent a floor a module does not have.\n\n## The told source: a module's own raw data\n\nRaw data has two homes. Most of it is the shared **channels** in `01-integrations` (the accounts you\nconnect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the\nuser **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That\n**told** input is raw data too, and the most deterministic kind there is, because the user says it\nrather than the tool inferring it.\n\nEach reasoning module owns its own told source, so it sits **inside the module**, not in Connections\n(Connections stays strictly the doorway for external accounts). It lives at `<module>/told.md` (a\n`told/` folder only if a module grows several), and it is shaped exactly like a channel doc\n([`_templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,\nthen a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the\nlabel), and an assembly lists them in `inputs` exactly like channel records.\n\nThree things to keep true:\n\n- **It is elicited, not just waited for.** The module actively asks for it (the propose-a-draft,\n  you-confirm loop), and a record may be populated from a file the user uploads to Drive. The `Source`\n  column says which path each field comes in by.\n- **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)\n  already uses: the honest output is \"tell me X and I can run this\", and the module can offer to\n  research a first version for the user to confirm.\n- **02 and 00 will adopt one too.** People's seed list and corrections and the Brain's goals are\n  told piles living in their `module.md` User input today; each grows a `told.md` of its own when its\n  library is built. **05-persona-you** now has one (identity, the operator dials, voice samples).\n  **03-offerings is the worked example of this floor.**\n\n## Lineage, the spine\n\nEvery entry names what it is built from, one floor down, by **id**:\n\n- an **assembly**'s `inputs` are **record ids** (a channel record, or a record from the module's own\n  `told.md`) and, optionally, other assembly ids;\n- a **signal**'s `inputs` are **assembly ids**, and its `measures` are the deterministic counts\n  beneath the read.\n\nSo any signal walks straight down: **signal, then measures, then assembly, then channel record**.\nThis is the *track-back*: nothing the tool says should float. Two iron rules:\n\n1. **Every id must resolve.** A dangling `inputs` or `measures` id is a bug, not a stub.\n2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not\n   connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,\n   as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)\n\n### Ids\n\nKebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives\n`email-message`); it lives in the body table's Record column, not in frontmatter. **Record ids are\nunique across all channels** (`email-message`, `calendar-event`, `slack-message`), so an assembly can\nname them without qualifying the channel. A told source's records follow the same rule and are unique\nwithin their module (`pitch`, `fit-shape`). Assembly and signal ids are unique within their module.\n\n## The widgets: a catalog beside the ladder\n\nA card shows its evidence through **widgets**, one doc each in [`widgets/`](../widgets/), to the\nskeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no reading of its own,\nso it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already\nholds.\n\nThere are two families. **Detail widgets** (Timeline, Their words, People, Open items, A number\nagainst its usual) sit in a card's details, between the story and Not sure; a card takes at most\ntwo. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a\ncard's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:\nno new widget without a new shape.\n\nThe idea is close to Google's A2UI, where an app keeps a catalog of trusted components and an\nagent sends data that picks from it and fills it. The difference is on purpose. A2UI's\ncomponents are usually small building blocks the agent arranges freely. Ours are large and\nspecific, and they sit in a fixed place on every card. The agent chooses and fills; it never\narranges. That is what lets a seller learn the set once.\n\nThe joins, checked by `build.js`: a detail widget's `fed_by` resolves to assemblies or counts;\na card's `widgets` resolve to detail widgets, and each is fed by something the card rests on\n(its counts, its signal's inputs, every assembly those gather, and, when the card names\nwhat to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section\nheaded with its label, rows in its row form; and a card's `reply.module` is a reply widget.\n`build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it\ncan actually show, and lists them on the widget's page. A widget that reaches no record fails the\nbuild unless it says what it `waits_on`: today that is Open items and A number against its usual,\nwhich rest only on counts, and no count is written yet.\n\n## How an agent produces a module's library\n\nAll six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps\nbelow record how the conversion was done and guide any **new** module added later (working from a\n`module.md` draft rather than an old `CLAUDE.md`):\n\n1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);\n   move Principles, System prompt, User input, Output, Memory and Open questions into the body\n   verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.\n2. **Signals.** For the reasoned module, each named read in the old \"signal catalog\" becomes one\n   `signals/<id>.md`. Carry its counts into `measures`, its sales-question handles into `answers`, its\n   tilt into `modes` and `kind`, and the worked example plus threshold logic into the body. A signal\n   earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).\n3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a\n   conversation history, a stakeholder map). Their `inputs` are the channel records they tidy\n   together, plus any records from the module's own `told.md`.\n4. **Raw data.** The shared channels (raw-data floor, 01 only) live in\n   `01-integrations/channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row\n   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a\n   `<module>/told.md` of the same shape with `source: told` (see *The told source* above).\n5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly\n   `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm\n   nothing floats.\n\nThese steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's\nlibrary was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are\nretired, and the blueprint reads `module.md` (`readModules` in `blueprint/lib/modules.ts`).\n\n## The worked examples (the gold standard to imitate)\n\n- Channel: [`01-integrations/channels/gmail.md`](../channels/gmail.md)\n- Assembly: [`02-relationships/assemblies/person-history.md`](../assemblies/person-history.md)\n- Signal: [`02-relationships/signals/cooling-champion.md`](../signals/cooling-champion.md)\n- Module overview: [`02-relationships/module.md`](../modules/02-relationships.md)\n\n**02-relationships is the worked example**, so copy its shape.\n\n## Deliberately deferred\n\n- **Measures as their own floor.** The deterministic counts are a `measures:` field on a signal for\n  now. Because they are reusable and checkable (`reply-gap-vs-own-rhythm` feeds several signals), they\n  may graduate to their own doc-per-entry floor. Open question, not yet.\n- **The higher floors** (insights, briefs, actions) come once raw data, assemblies and signals prove\n  out.\n- **The UI that renders the library.** A first cut now exists: `/library` in the blueprint viewer is\n  a filterable gallery of every assembly and signal (search · module · type · mode), each card\n  mirroring its `label` + `blurb` + facets, with the body and clickable lineage in an overlay. The\n  told floor is not rendered there yet. Retiring the old per-module `CLAUDE.md`s is **done**.\n"
+   "markdown": "# The library format: how the modules' thinking is stored from here on\n\nThis is the **contract** for the structured library that replaces the one-prose-`CLAUDE.md`-per-module\nmonolith. It is what an agent reads before producing entries. The matching skeletons live in\n[`_templates/`](../templates/); one worked example of each lives in its real home (linked below).\n\n## Why we changed\n\nThe agent-anatomy prose was right for *reasoning*, but the part of each module that is really a\n**catalog** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it\ncould not grow into a library or be rendered. We split each module in two:\n\n- **The catalog floors** become a **library of structured entries** (this doc).\n- **The operating prose** (principles, system prompt, user input, output, memory, open questions)\n  becomes a slim **`module.md`** overview.\n\nThe mapping from the old agent-anatomy is exact:\n\n| Old agent-anatomy section | New home |\n|---|---|\n| Raw data | `01-integrations/channels/*.md` (raw-data floor) |\n| Reasoning, *assembling* | `<module>/assemblies/*.md` |\n| Reasoning, *sensing* | `<module>/signals/*.md` |\n| Principles, System prompt, User input, Output, Memory, Open questions | `<module>/module.md` |\n\n## Writing style for every entry\n\nA few rules, because a person reads these, not just a parser:\n\n1. **Plain English, GDS style.** Sentence case, short sentences, say what it means. No jargon or\n   wordplay in the prose a person reads: a signal does not \"fire\" to a reader, it is a read the tool\n   *makes*. Write the body for a person; the structured facets in the frontmatter carry the precise,\n   parser-facing data.\n2. **Plain English for the names we invent.** An assembly is \"Person history\", not \"Contact dossier\".\n   Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names\n   (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,\n   champion).\n3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named\n   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a\n   prospect, the offering). The specific case study lives only in the scenario and demo docs.\n4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than\n   em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids\n   (email-message).\n5. **Clarity before brevity.** One idea per sentence; break a long sentence rather than stack clauses.\n   Put the point first: say what a read *is* before how it works. Where a section names several things,\n   use a plain list, not a parenthetical run-on. Shorter prose is the result of clear writing, never the\n   goal; cramming ideas into one packed sentence reads as cryptic, not clear. Say a thing once: do not\n   repeat what the `blurb`, [`reading-principles.md`](reading-principles.md) or another section already\n   carries.\n\n## The two layers: structured frontmatter, plain-English body\n\nEvery assembly and signal is two layers in one file, kept cleanly apart so each is written to best\npractice for its reader:\n\n- **Frontmatter is the structured (machine) layer.** Flat, typed facets only: ids, enums, short lists\n  (the card face described below). Each field earns its place by carrying genuine structured data;\n  nothing is kept just because it was there. `floor` has been **dropped** (the folder, `signals/` vs\n  `assemblies/`, already states the type). Sentence-length content never goes here.\n- **The body is the human layer**, plain English under a **fixed set of section headings**, so it\n  reads well *and* a parser can address each section later. The headings are consistent across every\n  entry:\n  - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few\n    plain sentences), `## In practice` (one short generic example), and `## For the build` (the precise\n    rule: the trigger and the confidence grading, leaning on the `needs` and `measures` facets above\n    rather than re-listing them; this is the single home for how confident the read is and what it\n    cannot see). \"For the build\" opens by pointing at\n    [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.\n  - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the\n    identity work; a plain list where it gathers several things) and `## Lineage` (which input id\n    resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of\n    living in `assemblies/`, so no entry needs to say so.\n\nA signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when\none is not connected, the checks resting on it drop out and confidence falls, which is how a **data\ngap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,\ncount-first, confidence grading, name-the-gap, answer a real question) live once in\n[`reading-principles.md`](reading-principles.md), so no signal re-teaches them.\n\n## The floors, and the one rule that varies by floor\n\nThe pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the\nthree-floor track-back in [`tracing-back.md`](tracing-back.md): facts, then counting, then opinion.\nThe **granularity matches the floor**, so we write docs only where there is reasoning to hold:\n\n| Floor | Nature | Unit | Template |\n|---|---|---|---|\n| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service**, plus each module's own `told.md` | [`_templates/channel.md`](../templates/channel.md) |\n| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`_templates/assembly.md`](../templates/assembly.md) |\n| **Signals** | the read, the first opinion | **rich doc per entry** | [`_templates/signal.md`](../templates/signal.md) |\n| insights, briefs, actions | the higher floors | (none yet) | later |\n\nPlus, per module, one **`module.md`** ([`_templates/module.md`](../templates/module.md)) holding the\noperating prose and the card face.\n\n**Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label\nlists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable\nmarkdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's\nthreshold and reasoning are prose in the body's sections (such as `For the build`). A nested tree shoved into frontmatter\nrenders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single\nquotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.\n\n**Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the\n`label` is the plain-English display name, and the `blurb` is the **one-line short description on the\nentry's card face** in the library viewer. Keep the `blurb` to a single plain sentence (the long body\nis revealed on click, so it does not belong in the blurb). The library at `/library` reads exactly\nthese fields, so editing a `blurb` updates its card with no other change.\n\nNot every module has every floor, and the library is meant to reveal that. **04-organisation has no\nsignals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**\nhas only raw data; **00-spine**'s \"assemblies\" are the scoreboard and calendar, a different kind of\nsynthesis. Absence is information; do not invent a floor a module does not have.\n\n## The told source: a module's own raw data\n\nRaw data has two homes. Most of it is the shared **channels** in `01-integrations` (the accounts you\nconnect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the\nuser **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That\n**told** input is raw data too, and the most deterministic kind there is, because the user says it\nrather than the tool inferring it.\n\nEach reasoning module owns its own told source, so it sits **inside the module**, not in Connections\n(Connections stays strictly the doorway for external accounts). It lives at `<module>/told.md` (a\n`told/` folder only if a module grows several), and it is shaped exactly like a channel doc\n([`_templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,\nthen a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the\nlabel), and an assembly lists them in `inputs` exactly like channel records.\n\nThree things to keep true:\n\n- **It is elicited, not just waited for.** The module actively asks for it (the propose-a-draft,\n  you-confirm loop), and a record may be populated from a file the user uploads to Drive. The `Source`\n  column says which path each field comes in by.\n- **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)\n  already uses: the honest output is \"tell me X and I can run this\", and the module can offer to\n  research a first version for the user to confirm.\n- **02 and 00 will adopt one too.** People's seed list and corrections and the Brain's goals are\n  told piles living in their `module.md` User input today; each grows a `told.md` of its own when its\n  library is built. **05-persona-you** now has one (identity, the operator dials, voice samples).\n  **03-offerings is the worked example of this floor.**\n\n## Lineage, the spine\n\nEvery entry names what it is built from, one floor down, by **id**:\n\n- an **assembly**'s `inputs` are **record ids** (a channel record, or a record from the module's own\n  `told.md`) and, optionally, other assembly ids;\n- a **signal**'s `inputs` are **assembly ids**, and its `measures` are the deterministic counts\n  beneath the read.\n\nSo any signal walks straight down: **signal, then measures, then assembly, then channel record**.\nA count names the assembly it counts within as `over` (settled 18 September), so the walk passes\nthrough the counting floor instead of stepping over it. A card names its main `signal` and, when\nit quotes numbers from other reads, those reads as `supporting`; every count a card quotes must\nbelong to one of them. A card's *What I read* rows name their sources, and `build.js` checks each\nis reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),\nis always reachable: the goal is what every card is weighed against.\nThis is the *track-back*: nothing the tool says should float. Two iron rules:\n\n1. **Every id must resolve.** A dangling `inputs` or `measures` id is a bug, not a stub.\n2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not\n   connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,\n   as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)\n\n### Names: the id for the build, the label for a person\n\nEvery entry has two names. The **id** is the backend name: kebab-case, stable, what every join and\n`build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the\nslide, in the library and on a card, and it is plain English: say what it is the way the seller\nwould (\"Time since reply, against usual\", not \"Reply gap vs own rhythm\"). Rename a label freely;\nrename an id only with every join that names it. A record is the one exception: its id is made from\nits label, which keeps the real API name, so its plain name lives in the source file's\n`## In plain words` table instead (renamed 18 September).\n\n### Ids\n\nKebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives\n`email-message`); it lives in the body table's Record column, not in frontmatter. **Record ids are\nunique across all channels** (`email-message`, `calendar-event`, `slack-message`), so an assembly can\nname them without qualifying the channel. A told source's records follow the same rule and are unique\nwithin their module (`pitch`, `fit-shape`). Assembly and signal ids are unique within their module.\n\n## The widgets: a catalog beside the ladder\n\nA card shows its evidence through **widgets**, one doc each in [`widgets/`](../widgets/), to the\nskeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no reading of its own,\nso it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already\nholds.\n\nThere are two families. **Detail widgets** (Timeline, Their words, People, Open items, A number\nagainst its usual) sit in a card's details, between the story and Not sure; a card takes at most\ntwo. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a\ncard's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:\nno new widget without a new shape.\n\nThe idea is close to Google's A2UI, where an app keeps a catalog of trusted components and an\nagent sends data that picks from it and fills it. The difference is on purpose. A2UI's\ncomponents are usually small building blocks the agent arranges freely. Ours are large and\nspecific, and they sit in a fixed place on every card. The agent chooses and fills; it never\narranges. That is what lets a seller learn the set once.\n\nThe joins, checked by `build.js`: a detail widget's `fed_by` resolves to assemblies or counts;\na card's `widgets` resolve to detail widgets, and each is fed by something the card rests on\n(its counts, its signal's inputs, every assembly those gather, and, when the card names\nwhat to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section\nheaded with its label, rows in its row form; and a card's `reply.module` is a reply widget.\n`build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it\ncan actually show, and lists them on the widget's page. A widget that reaches no record fails the\nbuild unless it says what it `waits_on`: today that is Open items,\nwhich rest only on counts, and no count is written yet.\n\n## How an agent produces a module's library\n\nAll six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps\nbelow record how the conversion was done and guide any **new** module added later (working from a\n`module.md` draft rather than an old `CLAUDE.md`):\n\n1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);\n   move Principles, System prompt, User input, Output, Memory and Open questions into the body\n   verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.\n2. **Signals.** For the reasoned module, each named read in the old \"signal catalog\" becomes one\n   `signals/<id>.md`. Carry its counts into `measures`, its sales-question handles into `answers`, its\n   tilt into `modes` and `kind`, and the worked example plus threshold logic into the body. A signal\n   earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).\n3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a\n   conversation history, a stakeholder map). Their `inputs` are the channel records they tidy\n   together, plus any records from the module's own `told.md`.\n4. **Raw data.** The shared channels (raw-data floor, 01 only) live in\n   `01-integrations/channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row\n   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a\n   `<module>/told.md` of the same shape with `source: told` (see *The told source* above).\n5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly\n   `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm\n   nothing floats.\n\nThese steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's\nlibrary was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are\nretired, and the blueprint reads `module.md` (`readModules` in `blueprint/lib/modules.ts`).\n\n## The worked examples (the gold standard to imitate)\n\n- Channel: [`01-integrations/channels/gmail.md`](../channels/gmail.md)\n- Assembly: [`02-relationships/assemblies/person-history.md`](../assemblies/person-history.md)\n- Signal: [`02-relationships/signals/cooling-champion.md`](../signals/cooling-champion.md)\n- Module overview: [`02-relationships/module.md`](../modules/02-relationships.md)\n\n**02-relationships is the worked example**, so copy its shape.\n\n## Deliberately deferred\n\n- **Measures as their own floor.** The deterministic counts are a `measures:` field on a signal for\n  now. Because they are reusable and checkable (`reply-gap-vs-own-rhythm` feeds several signals), they\n  may graduate to their own doc-per-entry floor. Open question, not yet.\n- **The higher floors** (insights, briefs, actions) come once raw data, assemblies and signals prove\n  out.\n- **The UI that renders the library.** A first cut now exists: `/library` in the blueprint viewer is\n  a filterable gallery of every assembly and signal (search · module · type · mode), each card\n  mirroring its `label` + `blurb` + facets, with the body and clickable lineage in an overlay. The\n  told floor is not rendered there yet. Retiring the old per-module `CLAUDE.md`s is **done**.\n"
   },
   {
    "title": "Reading principles: the rules every signal applies",
@@ -7502,6 +8341,10 @@ window.LIBRARY = {
    "kind": "<act|ask|connect|told>",
    "label": "<Sustain|Advance|Expand|Ask|Connect|Told>",
    "signal": "<signal-id>",
+   "supporting": [
+    "<signal-id>",
+    "..."
+   ],
    "counts": [
     "<count-id>",
     "..."
@@ -7555,7 +8398,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "templates/card.md",
-   "markdown": "---\n# THE TOP RUNG. One doc per card, at library/cards/<id>.md.\n# A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the\n# seller, written as if the tool already existed. Unlike every floor below it, a card is NOT\n# agnostic: it names real people, councils and documents from library/world/.\n# The card is where the ladder comes out. `signal` is what it rests on and `counts` are the\n# numbers it may quote; both MUST resolve, because that join is what stops a card floating.\n# Two layers: FRONTMATTER is the machine layer; THE BODY is the card's words, in the tool's\n# own first-person voice. Plain English, British spelling, short sentences, no em dashes.\nid: <kebab-slug>              # unique across the library; by convention <label>-<who>-<what>\nkind: <act|ask|connect|told>  # the shape of the card\nlabel: <Sustain|Advance|Expand|Ask|Connect|Told>   # for kind: act, one of the first three, and\n                              # it MUST be among the modes of the signal above it\nsignal: <signal-id>           # the read this rests on. MUST resolve to ../signals/*\ncounts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*\nperson: <person-id>           # who it is about. MUST resolve to ../world/cast.md\ncouncil: <council-id>         # where. MUST resolve to ../world/councils.md\ndocuments: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md\nwidgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in\n                              # the details between the story and Not sure. Each needs a body\n                              # section headed with the widget's label, its rows in the widget's\n                              # row form, and must be fed by something this card rests on.\nsure: <sure|likely|a hunch>   # sure = a fact (a bounce). likely = a pattern (silence). Shown\n                              # beside \"The thinking\" only where it matters.\nwhen:                         # omit entirely when the card is a \"whenever\"\n  mode: <fresh|dated|rhythm>  #   fresh = stale in days. dated = the world sets it. rhythm = a window.\n  words: <the one small line shown on the front>\n  until: <YYYY-MM-DD>         #   for mode: dated only\nheld_by: <optional card-id>   # this card ripens only after that one lands; shown faded until then\naction: <Title Case Verb ...> # the one filled button, e.g. Send the Note\n---\n\n# <the action, as the card's title>\n\n<!-- The front. One or two lines of reason, no more. Say the why plainly; the numbers that\n     back it belong on the back. For a Sustain card the reason MUST name the gift: what the\n     other person gets out of it. A card is an observation with a suggested move, never a\n     task: no due dates, no owners, no statuses. -->\n\n## What I noticed\n<!-- ACT CARDS. The first bullet is the why-now, and it earns the card its place today.\n     Each later bullet is one observation. Where a bullet quotes a number, that number must\n     come from one of the `counts` above, said in plain words rather than as an id. -->\n\n## <a detail widget's label, e.g. Timeline>\n<!-- ONE SECTION PER WIDGET in `widgets`, headed with its label exactly. Rows only, each a list\n     item in the widget's row form, parts split by \" · \". Every row must trace to a record\n     named in What I read, and use only names, dates and numbers the card already holds. -->\n\n## What I read\n<!-- ACT CARDS. The actual records leaned on, named as the seller would recognise them\n     (\"Your mail with Karen, March to today: 15 messages\"). This is the track-back made\n     readable. Where a source is not connected, say so here rather than quietly omitting it. -->\n\n## Not sure\n<!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it\n     may become a one-tap question with two or three replies, and each reply says what it\n     changes. Ask for facts, never for a verdict the tool should reach itself. -->\n\n## Then\n<!-- ACT CARDS. What happens after the seller acts: what the tool will watch for, and when it\n     will come back. If it would come back with the same reason twice, say what it will do\n     instead. -->\n\n<!-- ASK CARDS use four different sections in place of the four above:\n       ## What I already know     what it has worked out for itself, so the ask is not lazy\n       ## Where I ran out         the precise point it could go no further, having looked first\n       ## What I'll do with your answer   each answer's consequence, said back after the pick\n       ## Where I'll remember it  which told record the answer becomes, so it is asked once\n     CONNECT CARDS name the source that is not connected and what would become answerable.\n     TOLD CARDS are an outcome with nothing to do; the button is Got It. -->\n\n## The draft\n<!-- Optional, for a card whose action opens a prepared message. The note itself, in the\n     seller's voice, as plain paragraphs. Nothing sends without the seller's say-so. -->\n"
+   "markdown": "---\n# THE TOP RUNG. One doc per card, at library/cards/<id>.md.\n# A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the\n# seller, written as if the tool already existed. Unlike every floor below it, a card is NOT\n# agnostic: it names real people, councils and documents from library/world/.\n# The card is where the ladder comes out. `signal` is what it rests on and `counts` are the\n# numbers it may quote; both MUST resolve, because that join is what stops a card floating.\n# Two layers: FRONTMATTER is the machine layer; THE BODY is the card's words, in the tool's\n# own first-person voice. Plain English, British spelling, short sentences, no em dashes.\nid: <kebab-slug>              # unique across the library; by convention <label>-<who>-<what>\nkind: <act|ask|connect|told>  # the shape of the card\nlabel: <Sustain|Advance|Expand|Ask|Connect|Told>   # for kind: act, one of the first three, and\n                              # it MUST be among the modes of the signal above it\nsignal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*\nsupporting: [<signal-id>, ...]  # optional. Other reads the card also leans on, e.g. a gift that\n                              # comes from Loose end on a Cooling champion card.\ncounts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*,\n                              # and MUST belong to the signal or one of the supporting signals\nperson: <person-id>           # who it is about. MUST resolve to ../world/cast.md\ncouncil: <council-id>         # where. MUST resolve to ../world/councils.md\ndocuments: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md\nwidgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in\n                              # the details between the story and Not sure. Each needs a body\n                              # section headed with the widget's label, its rows in the widget's\n                              # row form, and must be fed by something this card rests on.\nsure: <sure|likely|a hunch>   # sure = a fact (a bounce). likely = a pattern (silence). Shown\n                              # beside \"The thinking\" only where it matters.\nwhen:                         # omit entirely when the card is a \"whenever\"\n  mode: <fresh|dated|rhythm>  #   fresh = stale in days. dated = the world sets it. rhythm = a window.\n  words: <the one small line shown on the front>\n  until: <YYYY-MM-DD>         #   for mode: dated only\nheld_by: <optional card-id>   # this card ripens only after that one lands; shown faded until then\naction: <Title Case Verb ...> # the one filled button, e.g. Send the Note\n---\n\n# <the action, as the card's title>\n\n<!-- The front. One or two lines of reason, no more. Say the why plainly; the numbers that\n     back it belong on the back. For a Sustain card the reason MUST name the gift: what the\n     other person gets out of it. A card is an observation with a suggested move, never a\n     task: no due dates, no owners, no statuses. -->\n\n## What I noticed\n<!-- ACT CARDS. The first bullet is the why-now, and it earns the card its place today.\n     Each later bullet is one observation. Where a bullet quotes a number, that number must\n     come from one of the `counts` above, said in plain words rather than as an id. -->\n\n## <a detail widget's label, e.g. Timeline>\n<!-- ONE SECTION PER WIDGET in `widgets`, headed with its label exactly. Rows only, each a list\n     item in the widget's row form, parts split by \" · \". Every row must trace to a record\n     named in What I read, and use only names, dates and numbers the card already holds. -->\n\n## What I read\n<!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.\n     `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or\n     told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,\n     so the words need not repeat them. build.js checks every source is reached by what the card\n     rests on. The goal and the list of targets are `goal-told`, always reachable. A source that\n     a read needs but that is not connected (LinkedIn) is a data gap: say it in your own words,\n     or the build adds a plain line saying it. -->\n\n## Not sure\n<!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it\n     may become a one-tap question with two or three replies, and each reply says what it\n     changes. Ask for facts, never for a verdict the tool should reach itself. -->\n\n## Then\n<!-- ACT CARDS. What happens after the seller acts: what the tool will watch for, and when it\n     will come back. If it would come back with the same reason twice, say what it will do\n     instead. -->\n\n<!-- ASK CARDS use four different sections in place of the four above:\n       ## What I already know     what it has worked out for itself, so the ask is not lazy\n       ## Where I ran out         the precise point it could go no further, having looked first\n       ## What I'll do with your answer   each answer's consequence, said back after the pick\n       ## Where I'll remember it  which told record the answer becomes, so it is asked once\n     CONNECT CARDS name the source that is not connected and what would become answerable.\n     TOLD CARDS are an outcome with nothing to do; the button is Got It. -->\n\n## The draft\n<!-- Optional, for a card whose action opens a prepared message. The note itself, in the\n     seller's voice, as plain paragraphs. Nothing sends without the seller's say-so. -->\n"
   },
   {
    "id": "<kebab-slug>",
@@ -7568,14 +8411,18 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "Records": {
-     "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>&lt;Record label&gt;</td><td>&lt;field&gt;</td><td>&lt;API name, derived, or note&gt;</td></tr><tr><td>&lt;Record label&gt;</td><td>&lt;field&gt;</td><td>&lt;...&gt;</td></tr></tbody></table>"
+     "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>&lt;Record label&gt;</td><td>&lt;field&gt;</td><td>&lt;API name, derived, or note&gt;</td></tr></tbody></table>"
+    },
+    "In plain words": {
+     "html": "<table><thead><tr><th>Record</th><th>Plain name</th></tr></thead><tbody><tr><td>&lt;Record label&gt;</td><td>&lt;what a person would call it&gt;</td></tr><tr><td>&lt;Record label&gt;</td><td>&lt;field&gt;</td><td>&lt;...&gt;</td></tr></tbody></table>"
     }
    },
    "sectionOrder": [
-    "Records"
+    "Records",
+    "In plain words"
    ],
    "file": "templates/channel.md",
-   "markdown": "---\n# RAW-DATA FLOOR. One doc per channel service, at library/channels/<id>.md.\n# Frontmatter is ONLY the channel's card face. The records and fields live in the BODY,\n# as a clean field-per-row table that reads well and that a UI can render directly.\n# (A nested records tree in frontmatter renders as an unreadable blob, so keep it out.)\nid: <kebab-slug>          # channel id, e.g. gmail. Matches a module's draws_from value.\nname: <Display name>      # e.g. Gmail\nbrand: <Brand>            # the account family, e.g. Google, Slack, Tavily\nsource: <account|builtin> # account = the user authorises it once. builtin = ships always-on (web, enrichment)\nconnected: <true|false>   # false = a DATA GAP, named not faked\nicon: <lucide-or-glyph>   # e.g. mail, calendar, hash, telescope\n---\n\n# <channel name>\n\n<!-- One short paragraph: what this channel carries and why it matters to the modules that\n     draw from it. Note any data gaps or provenance caveats. No reasoning; it forms no opinions. -->\n\n## Records\n\n<!-- One row per FIELD. The Record column is the lineage anchor: a record's id is the\n     kebab-slug of its label (Email message becomes email-message), and that is what\n     assemblies reference. Source = the real API name, \"derived\" (the tool computes it), or a\n     short sourcing note. A pure-payload record (extracted page text, AI notes) gets a single\n     row with field \"(content)\". Show nesting, if it matters, by ordering child records under\n     their parent. -->\n\n| Record | Field | Source |\n|---|---|---|\n| <Record label> | <field> | <API name, derived, or note> |\n| <Record label> | <field> | <...> |\n"
+   "markdown": "---\n# RAW-DATA FLOOR. One doc per channel service, at library/channels/<id>.md.\n# Frontmatter is ONLY the channel's card face. The records and fields live in the BODY,\n# as a clean field-per-row table that reads well and that a UI can render directly.\n# (A nested records tree in frontmatter renders as an unreadable blob, so keep it out.)\nid: <kebab-slug>          # channel id, e.g. gmail. Matches a module's draws_from value.\nname: <Display name>      # e.g. Gmail\nbrand: <Brand>            # the account family, e.g. Google, Slack, Tavily\nsource: <account|builtin> # account = the user authorises it once. builtin = ships always-on (web, enrichment)\nconnected: <true|false>   # false = a DATA GAP, named not faked\nicon: <lucide-or-glyph>   # e.g. mail, calendar, hash, telescope\n---\n\n# <channel name>\n\n<!-- One short paragraph: what this channel carries and why it matters to the modules that\n     draw from it. Note any data gaps or provenance caveats. No reasoning; it forms no opinions. -->\n\n## Records\n\n<!-- One row per FIELD. The Record column is the lineage anchor: a record's id is the\n     kebab-slug of its label (Email message becomes email-message), and that is what\n     assemblies reference. Source = the real API name, \"derived\" (the tool computes it), or a\n     short sourcing note. A pure-payload record (extracted page text, AI notes) gets a single\n     row with field \"(content)\". Show nesting, if it matters, by ordering child records under\n     their parent. -->\n\n| Record | Field | Source |\n|---|---|---|\n| <Record label> | <field> | <API name, derived, or note> |\n\n## In plain words\n\n<!-- OPTIONAL. Only for a record whose label is not plain English (it keeps the API's name, and\n     the id is made from it). The plain name is what the slide and the library show. -->\n\n| Record | Plain name |\n|---|---|\n| <Record label> | <what a person would call it> |\n| <Record label> | <field> | <...> |\n"
   },
   {
    "id": "<kebab-slug>",
@@ -7583,6 +8430,9 @@ window.LIBRARY = {
    "used_by": [
     "<signal-id>",
     "..."
+   ],
+   "over": [
+    "<assembly-id>"
    ],
    "defined": "<true|false>",
    "title": "<label>",
@@ -7600,7 +8450,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "templates/count.md",
-   "markdown": "---\n# COUNTING FLOOR. One doc per entry, at library/counts/<id>.md.\n# THE SHAPE OF THIS RUNG IS NOT SETTLED YET. Every entry in counts/ today holds only two\n# facts: its id, and which signals reference it. Nothing has been written about what any of\n# them actually counts. That is deliberate, and it is the next piece of thinking to do.\n#\n# What a count is meant to be: PLAIN ARITHMETIC over records, checkable, holding no opinion.\n# It is floor 2 in ../docs/tracing-back.md, the floor that makes track-back worth trusting.\n# The moment a number needs judging, that judgement belongs one floor up, in a signal.\n#\n# Fields below marked OPEN are a suggestion, not a decision. Settle them before filling them in.\nid: <kebab-slug>              # unique across the library\nlabel: <Display name>         # plain English\nused_by: [<signal-id>, ...]   # which signals reference it. Derived; do not hand-edit.\ndefined: <true|false>         # false until someone has actually written what it counts\n# OPEN, once the shape is agreed:\n#   counts:  one line, the arithmetic said plainly\n#   needs:   the records the sum is done over, addressed as <source-id>#<record-id>\n#   over:    the assembly it counts within\n#   breaks:  when the number stops meaning anything\n---\n\n# <label>\n\n## What it counts\n\n<!-- The arithmetic in plain English: what is summed, over what window, against what baseline.\n     Precise enough that two people would compute the same number. No opinion, no threshold. -->\n\n## What it cannot see\n\n<!-- Where the number misleads: a source not connected (a data gap, named not faked), too\n     little history for a baseline, a record the channel does not carry. -->\n"
+   "markdown": "---\n# COUNTING FLOOR. One doc per entry, at library/counts/<id>.md.\n# THE SHAPE OF THIS RUNG IS NOT SETTLED YET. Every entry in counts/ today holds only two\n# facts: its id, and which signals reference it. Nothing has been written about what any of\n# them actually counts. That is deliberate, and it is the next piece of thinking to do.\n#\n# What a count is meant to be: PLAIN ARITHMETIC over records, checkable, holding no opinion.\n# It is floor 2 in ../docs/tracing-back.md, the floor that makes track-back worth trusting.\n# The moment a number needs judging, that judgement belongs one floor up, in a signal.\n#\n# Fields below marked OPEN are a suggestion, not a decision. Settle them before filling them in.\nid: <kebab-slug>              # unique across the library\nlabel: <Display name>         # plain English\nused_by: [<signal-id>, ...]   # which signals reference it. Derived; build.js checks it matches.\nover: [<assembly-id>]         # the assembly it counts within: the join down to the records.\n                              # Every signal in used_by MUST read it. [] while not written yet.\ndefined: <true|false>         # false until someone has actually written what it counts\n# OPEN, once the shape is agreed:\n#   counts:  one line, the arithmetic said plainly\n#   needs:   the records the sum is done over, addressed as <source-id>#<record-id>\n#   breaks:  when the number stops meaning anything\n---\n\n# <label>\n\n## What it counts\n\n<!-- The arithmetic in plain English: what is summed, over what window, against what baseline.\n     Precise enough that two people would compute the same number. No opinion, no threshold. -->\n\n## What it cannot see\n\n<!-- Where the number misleads: a source not connected (a data gap, named not faked), too\n     little history for a baseline, a record the channel does not carry. -->\n"
   },
   {
    "name": "<Short name>",
@@ -7739,6 +8589,7 @@ window.LIBRARY = {
   {
    "id": "calendar-list",
    "label": "Calendar list",
+   "plain": "Your calendars",
    "source": "calendar",
    "address": "calendar#calendar-list",
    "fields": [
@@ -7759,6 +8610,7 @@ window.LIBRARY = {
   {
    "id": "calendar-event",
    "label": "Calendar event",
+   "plain": "Calendar event",
    "source": "calendar",
    "address": "calendar#calendar-event",
    "fields": [
@@ -7823,6 +8675,7 @@ window.LIBRARY = {
   {
    "id": "status-event",
    "label": "Status event",
+   "plain": "Away and focus time",
    "source": "calendar",
    "address": "calendar#status-event",
    "fields": [
@@ -7843,6 +8696,7 @@ window.LIBRARY = {
   {
    "id": "free-busy",
    "label": "Free / busy",
+   "plain": "When they are free",
    "source": "calendar",
    "address": "calendar#free-busy",
    "fields": [
@@ -7859,6 +8713,7 @@ window.LIBRARY = {
   {
    "id": "contact",
    "label": "Contact",
+   "plain": "Contact",
    "source": "contacts",
    "address": "contacts#contact",
    "fields": [
@@ -7891,6 +8746,7 @@ window.LIBRARY = {
   {
    "id": "other-contact",
    "label": "Other contact",
+   "plain": "Someone you have emailed",
    "source": "contacts",
    "address": "contacts#other-contact",
    "fields": [
@@ -7907,6 +8763,7 @@ window.LIBRARY = {
   {
    "id": "contact-group",
    "label": "Contact group",
+   "plain": "Contact group",
    "source": "contacts",
    "address": "contacts#contact-group",
    "fields": [
@@ -7923,6 +8780,7 @@ window.LIBRARY = {
   {
    "id": "file",
    "label": "File",
+   "plain": "File",
    "source": "drive",
    "address": "drive#file",
    "fields": [
@@ -7971,6 +8829,7 @@ window.LIBRARY = {
   {
    "id": "file-content",
    "label": "File content",
+   "plain": "What a file says",
    "source": "drive",
    "address": "drive#file-content",
    "fields": [
@@ -7983,6 +8842,7 @@ window.LIBRARY = {
   {
    "id": "comment",
    "label": "Comment",
+   "plain": "Comment",
    "source": "drive",
    "address": "drive#comment",
    "fields": [
@@ -8011,6 +8871,7 @@ window.LIBRARY = {
   {
    "id": "folder",
    "label": "Folder",
+   "plain": "Folder",
    "source": "drive",
    "address": "drive#folder",
    "fields": [
@@ -8031,6 +8892,7 @@ window.LIBRARY = {
   {
    "id": "shared-drive",
    "label": "Shared drive",
+   "plain": "Team drive",
    "source": "drive",
    "address": "drive#shared-drive",
    "fields": [
@@ -8051,6 +8913,7 @@ window.LIBRARY = {
   {
    "id": "email-thread",
    "label": "Email thread",
+   "plain": "Email thread",
    "source": "gmail",
    "address": "gmail#email-thread",
    "fields": [
@@ -8075,6 +8938,7 @@ window.LIBRARY = {
   {
    "id": "email-message",
    "label": "Email message",
+   "plain": "Email message",
    "source": "gmail",
    "address": "gmail#email-message",
    "fields": [
@@ -8147,6 +9011,7 @@ window.LIBRARY = {
   {
    "id": "attachment",
    "label": "Attachment",
+   "plain": "Attachment",
    "source": "gmail",
    "address": "gmail#attachment",
    "fields": [
@@ -8171,6 +9036,7 @@ window.LIBRARY = {
   {
    "id": "label",
    "label": "Label",
+   "plain": "Gmail label",
    "source": "gmail",
    "address": "gmail#label",
    "fields": [
@@ -8191,6 +9057,7 @@ window.LIBRARY = {
   {
    "id": "draft",
    "label": "Draft",
+   "plain": "Draft",
    "source": "gmail",
    "address": "gmail#draft",
    "fields": [
@@ -8211,6 +9078,7 @@ window.LIBRARY = {
   {
    "id": "profile",
    "label": "Profile",
+   "plain": "Profile",
    "source": "linkedin",
    "address": "linkedin#profile",
    "fields": [
@@ -8239,6 +9107,7 @@ window.LIBRARY = {
   {
    "id": "job-change",
    "label": "Job change",
+   "plain": "Job change",
    "source": "linkedin",
    "address": "linkedin#job-change",
    "fields": [
@@ -8259,6 +9128,7 @@ window.LIBRARY = {
   {
    "id": "mutual-connections",
    "label": "Mutual connections",
+   "plain": "Mutual connections",
    "source": "linkedin",
    "address": "linkedin#mutual-connections",
    "fields": [
@@ -8275,6 +9145,7 @@ window.LIBRARY = {
   {
    "id": "meeting",
    "label": "Meeting",
+   "plain": "Meeting",
    "source": "meet",
    "address": "meet#meeting",
    "fields": [
@@ -8299,6 +9170,7 @@ window.LIBRARY = {
   {
    "id": "participant",
    "label": "Participant",
+   "plain": "Who was on the call",
    "source": "meet",
    "address": "meet#participant",
    "fields": [
@@ -8319,6 +9191,7 @@ window.LIBRARY = {
   {
    "id": "recording",
    "label": "Recording",
+   "plain": "Recording",
    "source": "meet",
    "address": "meet#recording",
    "fields": [
@@ -8335,6 +9208,7 @@ window.LIBRARY = {
   {
    "id": "transcript",
    "label": "Transcript",
+   "plain": "Transcript",
    "source": "meet",
    "address": "meet#transcript",
    "fields": [
@@ -8355,6 +9229,7 @@ window.LIBRARY = {
   {
    "id": "smart-notes",
    "label": "Smart notes",
+   "plain": "Meeting notes",
    "source": "meet",
    "address": "meet#smart-notes",
    "fields": [
@@ -8367,6 +9242,7 @@ window.LIBRARY = {
   {
    "id": "crm-record",
    "label": "CRM record",
+   "plain": "CRM record",
    "source": "salesforce",
    "address": "salesforce#crm-record",
    "fields": [
@@ -8403,6 +9279,7 @@ window.LIBRARY = {
   {
    "id": "slack-channel",
    "label": "Slack channel",
+   "plain": "Slack channel",
    "source": "slack",
    "address": "slack#slack-channel",
    "fields": [
@@ -8431,6 +9308,7 @@ window.LIBRARY = {
   {
    "id": "slack-message",
    "label": "Slack message",
+   "plain": "Slack message",
    "source": "slack",
    "address": "slack#slack-message",
    "fields": [
@@ -8475,6 +9353,7 @@ window.LIBRARY = {
   {
    "id": "canvas",
    "label": "Canvas",
+   "plain": "Slack canvas",
    "source": "slack",
    "address": "slack#canvas",
    "fields": [
@@ -8495,6 +9374,7 @@ window.LIBRARY = {
   {
    "id": "list",
    "label": "List",
+   "plain": "Slack list",
    "source": "slack",
    "address": "slack#list",
    "fields": [
@@ -8511,6 +9391,7 @@ window.LIBRARY = {
   {
    "id": "slack-user",
    "label": "Slack user",
+   "plain": "Slack profile",
    "source": "slack",
    "address": "slack#slack-user",
    "fields": [
@@ -8543,6 +9424,7 @@ window.LIBRARY = {
   {
    "id": "slack-file",
    "label": "Slack file",
+   "plain": "Slack file",
    "source": "slack",
    "address": "slack#slack-file",
    "fields": [
@@ -8567,6 +9449,7 @@ window.LIBRARY = {
   {
    "id": "web-result",
    "label": "Web result",
+   "plain": "Search result",
    "source": "web",
    "address": "web#web-result",
    "fields": [
@@ -8595,6 +9478,7 @@ window.LIBRARY = {
   {
    "id": "page-content",
    "label": "Page content",
+   "plain": "A web page",
    "source": "web",
    "address": "web#page-content",
    "fields": [
@@ -8607,6 +9491,7 @@ window.LIBRARY = {
   {
    "id": "site-map",
    "label": "Site map",
+   "plain": "A site's pages",
    "source": "web",
    "address": "web#site-map",
    "fields": [
@@ -8623,6 +9508,7 @@ window.LIBRARY = {
   {
    "id": "research-report",
    "label": "Research report",
+   "plain": "Research",
    "source": "web",
    "address": "web#research-report",
    "fields": [
@@ -8639,6 +9525,7 @@ window.LIBRARY = {
   {
    "id": "enrichment",
    "label": "Enrichment",
+   "plain": "Public profile",
    "source": "web",
    "address": "web#enrichment",
    "fields": [
@@ -8657,8 +9544,73 @@ window.LIBRARY = {
    ]
   },
   {
+   "id": "goal",
+   "label": "Goal",
+   "plain": "Goal",
+   "source": "goal-told",
+   "address": "goal-told#goal",
+   "fields": [
+    {
+     "field": "what you want, in your words",
+     "source": "you, typed, then sharpened with the Brain"
+    },
+    {
+     "field": "the offering it is pinned to",
+     "source": "you, typed or picked"
+    },
+    {
+     "field": "the finish line",
+     "source": "you, typed"
+    }
+   ]
+  },
+  {
+   "id": "tempo",
+   "label": "Tempo",
+   "plain": "How hard to push",
+   "source": "goal-told",
+   "address": "goal-told#tempo",
+   "fields": [
+    {
+     "field": "how patiently or hard to pursue it",
+     "source": "you, typed or asked"
+    }
+   ]
+  },
+  {
+   "id": "target-shape",
+   "label": "Target shape",
+   "plain": "Who is worth chasing",
+   "source": "goal-told",
+   "address": "goal-told#target-shape",
+   "fields": [
+    {
+     "field": "who counts as worth chasing",
+     "source": "you, typed, often fuzzy at first and sharpened with the Brain"
+    }
+   ]
+  },
+  {
+   "id": "target-list",
+   "label": "Target list",
+   "plain": "Your list of targets",
+   "source": "goal-told",
+   "address": "goal-told#target-list",
+   "fields": [
+    {
+     "field": "the organisations on the shortlist",
+     "source": "you, typed or uploaded"
+    },
+    {
+     "field": "where each stands on the goal's ladder",
+     "source": "you at first, then the Brain's scoreboard"
+    }
+   ]
+  },
+  {
    "id": "pitch",
    "label": "Pitch",
+   "plain": "Pitch",
    "source": "offering-told",
    "address": "offering-told#pitch",
    "fields": [
@@ -8675,6 +9627,7 @@ window.LIBRARY = {
   {
    "id": "fit-shape",
    "label": "Fit-shape",
+   "plain": "What a good fit looks like",
    "source": "offering-told",
    "address": "offering-told#fit-shape",
    "fields": [
@@ -8695,6 +9648,7 @@ window.LIBRARY = {
   {
    "id": "use-case",
    "label": "Use-case",
+   "plain": "Use case",
    "source": "offering-told",
    "address": "offering-told#use-case",
    "fields": [
@@ -8711,6 +9665,7 @@ window.LIBRARY = {
   {
    "id": "pricing",
    "label": "Pricing",
+   "plain": "Pricing",
    "source": "offering-told",
    "address": "offering-told#pricing",
    "fields": [
@@ -8727,6 +9682,7 @@ window.LIBRARY = {
   {
    "id": "worry-answer",
    "label": "Worry + answer",
+   "plain": "Worries and answers",
    "source": "offering-told",
    "address": "offering-told#worry-answer",
    "fields": [
@@ -8747,6 +9703,7 @@ window.LIBRARY = {
   {
    "id": "rule",
    "label": "Rule",
+   "plain": "Rules",
    "source": "organisation-told",
    "address": "organisation-told#rule",
    "fields": [
@@ -8771,6 +9728,7 @@ window.LIBRARY = {
   {
    "id": "pricing-authority",
    "label": "Pricing authority",
+   "plain": "Who can set prices",
    "source": "organisation-told",
    "address": "organisation-told#pricing-authority",
    "fields": [
@@ -8791,6 +9749,7 @@ window.LIBRARY = {
   {
    "id": "proof-tag",
    "label": "Proof tag",
+   "plain": "How you label proof",
    "source": "organisation-told",
    "address": "organisation-told#proof-tag",
    "fields": [
@@ -8819,6 +9778,7 @@ window.LIBRARY = {
   {
    "id": "house-voice",
    "label": "House voice",
+   "plain": "House style",
    "source": "organisation-told",
    "address": "organisation-told#house-voice",
    "fields": [
@@ -8843,6 +9803,7 @@ window.LIBRARY = {
   {
    "id": "seed-contact",
    "label": "Seed contact",
+   "plain": "People to start with",
    "source": "people-told",
    "address": "people-told#seed-contact",
    "fields": [
@@ -8859,6 +9820,7 @@ window.LIBRARY = {
   {
    "id": "relationship-note",
    "label": "Relationship note",
+   "plain": "Relationship note",
    "source": "people-told",
    "address": "people-told#relationship-note",
    "fields": [
@@ -8875,6 +9837,7 @@ window.LIBRARY = {
   {
    "id": "offline-touch",
    "label": "Offline touch",
+   "plain": "Met offline",
    "source": "people-told",
    "address": "people-told#offline-touch",
    "fields": [
@@ -8895,6 +9858,7 @@ window.LIBRARY = {
   {
    "id": "contact-preference",
    "label": "Contact preference",
+   "plain": "Contact preference",
    "source": "people-told",
    "address": "people-told#contact-preference",
    "fields": [
@@ -8911,6 +9875,7 @@ window.LIBRARY = {
   {
    "id": "correction",
    "label": "Correction",
+   "plain": "Correction",
    "source": "people-told",
    "address": "people-told#correction",
    "fields": [
@@ -8927,6 +9892,7 @@ window.LIBRARY = {
   {
    "id": "deal-seed",
    "label": "Deal seed",
+   "plain": "Deals you name",
    "source": "people-told",
    "address": "people-told#deal-seed",
    "fields": [
@@ -8951,6 +9917,7 @@ window.LIBRARY = {
   {
    "id": "about-you",
    "label": "About you",
+   "plain": "About you",
    "source": "profile-told",
    "address": "profile-told#about-you",
    "fields": [
@@ -8971,6 +9938,7 @@ window.LIBRARY = {
   {
    "id": "setup-archetype",
    "label": "Setup archetype",
+   "plain": "What kind of seller you are",
    "source": "profile-told",
    "address": "profile-told#setup-archetype",
    "fields": [
@@ -8983,6 +9951,7 @@ window.LIBRARY = {
   {
    "id": "operator-dial",
    "label": "Operator dial",
+   "plain": "Your preferences",
    "source": "profile-told",
    "address": "profile-told#operator-dial",
    "fields": [
@@ -9011,6 +9980,7 @@ window.LIBRARY = {
   {
    "id": "voice-sample",
    "label": "Voice sample",
+   "plain": "Voice sample",
    "source": "profile-told",
    "address": "profile-told#voice-sample",
    "fields": [

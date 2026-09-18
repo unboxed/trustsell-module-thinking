@@ -1,7 +1,7 @@
 ---
 id: price-position
 module: 03-offerings
-label: Price position
+label: Our price against competitors
 blurb: One offering's price, gathered and laid beside the competitive field.
 about: an offering
 deterministic: true
@@ -13,8 +13,7 @@ inputs:
   - web#page-content
 ---
 
-# Price position
-
+# Our price against competitors
 ## What it gathers
 
 Gathers your price for one offering and lays it beside the competitive field. Your told `pricing`

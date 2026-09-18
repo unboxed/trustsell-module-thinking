@@ -5,6 +5,8 @@ kind: act
 label: Sustain
 signal: one-sided
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [cooling-champion]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [who-starts-threads, times-you-chase, you-give-vs-they-give, innocent-explanation-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: nicola-shaw
@@ -63,10 +65,10 @@ Four notes from you since May, nothing back. A fifth would cost more than it gai
 
 ## What I read
 
-- Gmail: your four notes to Ashworth, 6 May to 18 August, and the empty replies column.
-- Gmail: no bounce or auto-reply on any of them.
-- Slack, #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
-- Your list of thirty, where Ashworth is marked cold.
+- gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.
+- gmail · No bounce or auto-reply on any of them.
+- slack · #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
+- goal-told · Your list of thirty, where Ashworth is marked cold.
 
 ## Not sure
 

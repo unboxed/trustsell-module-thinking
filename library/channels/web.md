@@ -30,3 +30,16 @@ Owned by Connections, fetched fresh each time and carried untouched. Each record
 | Enrichment | company (name, domain, industry, size, location) | open web |
 | Enrichment | person (role, company) | open web |
 | Enrichment | trigger event (a published tender, a leadership change, funding) | open web |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Web result | Search result |
+| Page content | A web page |
+| Site map | A site's pages |
+| Research report | Research |
+| Enrichment | Public profile |

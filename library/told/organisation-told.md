@@ -49,3 +49,15 @@ its label (`Proof tag` becomes `proof-tag`), and that is what the assemblies ref
 | House voice | required phrasings | you, typed |
 | House voice | forbidden phrasings | you, typed |
 | House voice | the band a message should sit in | you, typed |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Rule | Rules |
+| Pricing authority | Who can set prices |
+| Proof tag | How you label proof |
+| House voice | House style |

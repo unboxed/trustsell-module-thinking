@@ -1,7 +1,7 @@
 ---
 id: house-voice-guide
 module: 04-organization
-label: House voice guide
+label: Our house style
 blurb: The company's brand voice, gathered into one positive style the render can write toward.
 about: an organisation
 deterministic: true
@@ -10,8 +10,7 @@ inputs:
   - drive#file-content
 ---
 
-# House voice guide
-
+# Our house style
 ## What it gathers
 
 Gathers the company's brand voice into a single style guide: the told `house-voice` record (the

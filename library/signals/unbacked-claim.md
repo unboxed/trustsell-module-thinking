@@ -1,7 +1,7 @@
 ---
 id: unbacked-claim
 module: 03-offerings
-label: Unbacked claim
+label: Claim without proof
 blurb: "A claim in your pitch that outruns its grounding: nothing on file to back it up yet."
 modes: [advance]
 kind: risk
@@ -13,8 +13,7 @@ needs: [drive, web]
 pull: Organisation's proof library, to confirm a track-record claim's backing exists
 ---
 
-# Unbacked claim
-
+# Claim without proof
 ## What it means
 
 A claim in your own pitch that nothing on file backs up yet, caught before it ever reaches a draft.

@@ -5,6 +5,8 @@ kind: act
 label: Expand
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [new-stakeholder]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: karen-hughes
@@ -50,10 +52,10 @@ Nobody on the Bramley thread can sign. When Karen is back in rhythm, she is the 
 
 ## What I read
 
-- The Bramley thread: participants since March, four people, roles from their signatures.
-- Web: Bramley's committee papers, Director of Resources: Martin Hodgson.
-- Karen's card this week, and the answer you give on it.
-- Your goal: partial adoption needs a signature.
+- gmail · The Bramley thread: participants since March, four people, roles from their signatures.
+- web · Bramley's committee papers, Director of Resources: Martin Hodgson.
+- people-told · Karen's card this week, and the answer you give on it.
+- goal-told · Your goal: partial adoption needs a signature.
 
 ## Not sure
 

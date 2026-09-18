@@ -1,7 +1,7 @@
 ---
 id: competitor-field
 module: 03-offerings
-label: Competitor field
+label: Competitors and what they offer
 blurb: 'The named rivals around one offering, gathered whole: who they are, what they claim, and the lock-in they bank on.'
 about: an offering
 deterministic: true
@@ -13,8 +13,7 @@ inputs:
   - web#enrichment
 ---
 
-# Competitor field
-
+# Competitors and what they offer
 ## What it gathers
 
 Gathers the rivals that sit around one offering into a single picture. For each named competitor and

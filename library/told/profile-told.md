@@ -43,3 +43,13 @@ reference.
 | Operator dial | coaching (just hand me the noun ↔ tell me why this person and what to say) | you, seeded by archetype, refined by behaviour |
 | Voice sample | a piece of your writing | you, optional (else learned from sent mail) |
 | Voice sample | its context (cold or warm, email or chat) | you, optional |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Setup archetype | What kind of seller you are |
+| Operator dial | Your preferences |

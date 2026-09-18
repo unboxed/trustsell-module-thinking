@@ -60,10 +60,10 @@ You promised her the data-residency note on 31 August. It is two weeks later and
 
 ## What I read
 
-- Gmail: your message to Rachel, 31 August: "I'll send the data-residency note this week".
-- Gmail: no message from you to Rachel since.
-- Drive: "BOPS data residency", updated 2 September.
-- The Westmoor thread: Rachel's question of 9 September.
+- gmail · Your message to Rachel, 31 August: "I'll send the data-residency note this week".
+- gmail · No message from you to Rachel since.
+- drive · "BOPS data residency", updated 2 September.
+- gmail · The Westmoor thread: Rachel's question of 9 September.
 
 ## Not sure
 

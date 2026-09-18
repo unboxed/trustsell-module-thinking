@@ -163,16 +163,22 @@ function readDir(dir) {
   });
 }
 
-// A record's address is <source-id>#<kebab-slug of its Record label>.
+// A record's address is <source-id>#<kebab-slug of its Record label>. The label stays close to
+// the real API name, because the id is made from it; what a person reads is its plain name, from
+// the file's "In plain words" table (the label itself where the table has no row for it).
+const tableUnder = (md, heading) => {
+  const part = md.split(/^## /m).find(p => p.split('\n')[0].trim() === heading) || '';
+  return (part.match(/^\|.*\|$/gm) || []).map(r => r.split('|').slice(1, -1).map(c => c.trim()))
+    .filter(c => c.length >= 2 && c[0] && !/^-+$/.test(c[0]) && c[0] !== 'Record');
+};
 function recordsOf(entries) {
   const recs = [];
   for (const e of entries) {
-    const rows = (e.markdown.match(/^\|.*\|$/gm) || [])
-      .map(r => r.split('|').slice(1, -1).map(c => c.trim()))
-      .filter(c => c.length >= 2 && c[0] && !/^-+$/.test(c[0]) && c[0] !== 'Record');
+    const plain = new Map(tableUnder(e.markdown, 'In plain words').map(([label, words]) => [label, words]));
+    const rows = tableUnder(e.markdown, 'Records');
     const byLabel = new Map();
     for (const [label, field, source] of rows) {
-      if (!byLabel.has(label)) byLabel.set(label, {id: slug(label), label, source: e.id,
+      if (!byLabel.has(label)) byLabel.set(label, {id: slug(label), label, plain: plain.get(label) || label, source: e.id,
                                                    address: `${e.id}#${slug(label)}`, fields: []});
       byLabel.get(label).fields.push({field, source: source || ''});
     }
@@ -251,6 +257,15 @@ for (const a of L.assemblies) {
 for (const c of L.counts) {
   must(c.file, 'needs', c.needs, S.records, 'record address');
   must(c.file, 'over', c.over, S.assemblies, 'assembly');
+  // used_by is derived, so it must match the signals that actually list this count.
+  const users = L.signals.filter(s => (s.counts || []).includes(c.id)).map(s => s.id).sort();
+  if (users.join() !== [].concat(c.used_by || []).slice().sort().join())
+    problems.push(`${c.file}: used_by says [${[].concat(c.used_by || []).join(', ')}], but the signals that list it are [${users.join(', ')}]`);
+  // A count counts within one assembly, and every signal quoting it must read that assembly.
+  for (const a of [].concat(c.over || []))
+    for (const s of L.signals.filter(x => users.includes(x.id)))
+      if (!(s.inputs || []).includes(a))
+        problems.push(`${c.file}: over "${a}", but signal "${s.id}" uses this count and does not read that assembly`);
 }
 for (const s of L.signals) {
   must(s.file, 'module', s.module, S.modules, 'module');
@@ -262,7 +277,17 @@ for (const s of L.signals) {
 const MODE_LABEL = {expand: 'Expand', advance: 'Advance', sustain: 'Sustain'};
 for (const c of L.cards) {
   must(c.file, 'signal', c.signal, S.signals, 'signal');
+  must(c.file, 'supporting', c.supporting, S.signals, 'signal');
   must(c.file, 'counts', c.counts, S.counts, 'count');
+  // A card quotes only numbers from the reads it rests on: its signal, or one it names as supporting.
+  const reads = [c.signal, ...[].concat(c.supporting || [])];
+  if ([].concat(c.supporting || []).includes(c.signal))
+    problems.push(`${c.file}: "${c.signal}" is both the signal and a supporting signal`);
+  for (const n of [].concat(c.counts || [])) {
+    const cnt = L.counts.find(x => x.id === n);
+    if (cnt && !reads.some(r => [].concat(cnt.used_by || []).includes(r)))
+      problems.push(`${c.file}: count "${n}" belongs to [${[].concat(cnt.used_by || []).join(', ')}], which is neither the card's signal nor among its supporting`);
+  }
   must(c.file, 'person', c.person, new Set([...S.cast]), 'person in world/cast.md');
   must(c.file, 'council', c.council, S.councils, 'council in world/councils.md');
   must(c.file, 'documents', c.documents, S.documents, 'document in world/documents.md');
@@ -301,13 +326,17 @@ for (const w of L.widgets) {
   if (w.reaches.length && w.waits_on)
     problems.push(`${w.file}: reaches ${w.reaches.length} records, so it no longer waits_on "${w.waits_on}"; remove that line`);
 }
-// Everything a card rests on: its counts, its signal's inputs, and every assembly those gather.
-// A card that names what to send (`documents`) also rests on the proof library: why to write is
-// traced through the signal, what to send is its own trail (decided 18 September, by looking).
+// Everything a card rests on: its counts, the inputs of its signal and its supporting signals,
+// each count's `over`, and every assembly those gather. A card that names what to send
+// (`documents`) also rests on the proof library: why to write is traced through the signal,
+// what to send is its own trail (decided 18 September, by looking).
+const signalsOf = c => [c.signal, ...[].concat(c.supporting || [])]
+  .map(id => L.signals.find(s => s.id === id)).filter(Boolean);
 function restsOn(c) {
   const out = new Set(c.counts || []);
-  const sig = L.signals.find(s => s.id === c.signal);
-  const todo = [...((sig && sig.inputs) || []), ...((c.documents || []).length ? ['proof-library'] : [])];
+  const todo = [...signalsOf(c).flatMap(s => s.inputs || []),
+                ...[].concat(c.counts || []).flatMap(n => [].concat((L.counts.find(x => x.id === n) || {}).over || [])),
+                ...((c.documents || []).length ? ['proof-library'] : [])];
   while (todo.length) {
     const a = todo.pop();
     if (out.has(a)) continue;
@@ -317,6 +346,18 @@ function restsOn(c) {
   }
   return out;
 }
+// The sources a card's trail reaches: the channel or told file behind every record it gathers.
+// The Brain's told pile is always there, because the Brain weighs every card against the goal.
+function sourcesOf(c) {
+  const out = new Set(['goal-told']);
+  for (const a of restsOn(c)) {
+    const asm = L.assemblies.find(x => x.id === a);
+    for (const inp of (asm && asm.inputs) || []) if (S.records.has(inp)) out.add(inp.split('#')[0]);
+  }
+  return out;
+}
+const sourceById = id => L.channels.find(x => x.id === id) || L.told.find(x => x.id === id);
+const sourceName = id => { const s = sourceById(id); return !s ? id : s.source === 'told' ? 'You told me' : s.name.replace(/ \/ .*/, ''); };
 // A detail widget's rows are the list items under the body heading that carries its label.
 const rowsUnder = (md, heading) => {
   const m = md.split(/^## /m).find(p => p.split('\n')[0].trim() === heading);
@@ -340,6 +381,33 @@ for (const c of L.cards) {
     if (bad.length) problems.push(`${c.file}: "## ${w.label}" rows need ${w.parts} parts split by " · " (${bad.length} don't)`);
     if (w.rows && rows.length !== Number(w.rows)) problems.push(`${c.file}: "## ${w.label}" needs exactly ${w.rows} rows, has ${rows.length}`);
     c.widgetRows[id] = rows;
+  }
+  // What I read: each row is `source-ids · words`. The words are the card's; the sources are
+  // checked against the trail, so the list cannot claim a source the card does not rest on.
+  // A source a card's reads need but that is not connected is a data gap: it may be named even
+  // off the trail, and when the card does not name it in its own words, the build does.
+  const read = c.sections['What I read'] ? c.markdown.split(/^## /m).find(p => p.split('\n')[0].trim() === 'What I read') : null;
+  if (!read) continue;
+  const reach = sourcesOf(c);
+  const needed = new Set(signalsOf(c).flatMap(s => s.needs || []));
+  c.readRows = [];
+  for (const line of read.match(/^[-*] .*$/gm) || []) {
+    const t = line.replace(/^[-*] /, ''), at = t.indexOf(' · ');
+    if (at === -1) { problems.push(`${c.file}: What I read row "${t.slice(0, 40)}…" needs its sources first, as "gmail · words"`); continue; }
+    const srcs = t.slice(0, at).split(',').map(s => s.trim()), words = t.slice(at + 3).trim();
+    for (const s of srcs) {
+      const src = sourceById(s);
+      if (!src) problems.push(`${c.file}: What I read source "${s}" is not a channel or told source`);
+      else if (!reach.has(s) && !(needed.has(s) && src.connected === false))
+        problems.push(`${c.file}: What I read names "${s}", but nothing the card rests on reaches it`);
+    }
+    c.readRows.push({sources: srcs, words});
+  }
+  for (const s of needed) {
+    const src = sourceById(s);
+    if (!src || src.connected !== false || c.readRows.some(r => r.sources.includes(s))) continue;
+    const who = signalsOf(c).filter(x => (x.needs || []).includes(s)).map(x => x.label.toLowerCase());
+    c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, gap: true});
   }
 }
 
@@ -434,6 +502,11 @@ function backSections(c) {
   const out = [];
   for (const name of c.sectionOrder || []) {
     if (name === 'The draft') continue;
+    if (name === 'What I read' && c.readRows) {
+      const items = c.readRows.map(r => `      <li class="ios-list__row"><span class="ios-list__title">${inline(r.words)}</span><span class="ios-list__value">${h(r.sources.map(sourceName).filter((v, i, a) => a.indexOf(v) === i).join(', '))}</span></li>`);
+      out.push(`  <div class="ios-list__header">What I read</div>\n  <ul class="ios-list read">\n${items.join('\n')}\n  </ul>`);
+      continue;
+    }
     const rows = lis(c.sections[name].html);
     if (!rows.length) continue;
     const extra = name === 'What I read' ? ' read' : '';

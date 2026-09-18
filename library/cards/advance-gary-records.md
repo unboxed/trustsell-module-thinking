@@ -5,6 +5,8 @@ kind: act
 label: Advance
 signal: champion
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [loose-end, one-sided, new-stakeholder]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count, new-name-on-thread]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: gary-pearson
@@ -58,10 +60,10 @@ He asked last Thursday whether BOPS can import their existing case records, and 
 
 ## What I read
 
-- The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.
-- Your mail with Gary since February: 31 messages, reply times, and who started what.
-- Drive: "Records import: how it works" and the East Marston case study.
-- Your goal: partial adoption first, which makes an implementation question from a champion read as progress.
+- gmail · The Westmoor thread: Gary's message of 10 September, and Rachel's first appearance on it.
+- gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.
+- drive · "Records import: how it works" and the East Marston case study.
+- goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.
 
 ## Not sure
 

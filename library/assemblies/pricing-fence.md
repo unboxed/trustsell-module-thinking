@@ -1,7 +1,7 @@
 ---
 id: pricing-fence
 module: 04-organization
-label: Pricing fence
+label: How far the price can move
 blurb: The company's discount limits, gathered into one envelope a deal's price must sit inside.
 about: an organisation
 deterministic: true
@@ -10,8 +10,7 @@ inputs:
   - drive#file-content
 ---
 
-# Pricing fence
-
+# How far the price can move
 ## What it gathers
 
 Gathers the company's discount governance into a single envelope: the told `pricing-authority` record

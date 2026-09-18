@@ -9,7 +9,7 @@ confidence: graded
 inputs: [person-history]
 counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
 answers: [Q19]
-needs: [web]
+needs: [web, linkedin]
 ---
 
 # Time to reconnect
@@ -44,5 +44,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the
   reason is thin or the past relationship was light.
 - Needs: Web for the fresh reason; without it the read thins to plain "gone quiet" with no timing hook
-  (a data gap, named not faked). A reconnection that happened off-channel also leaves the contact
+  (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or
+  a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact
   looking quieter than they are.

@@ -1,7 +1,7 @@
 ---
 id: answer-gap
 module: 03-offerings
-label: Answer gap
+label: Worry without an answer
 blurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.
 modes: [advance]
 kind: risk
@@ -13,8 +13,7 @@ needs: [drive, web]
 pull: Organisation's proof library, to supply the document a claim needs
 ---
 
-# Answer gap
-
+# Worry without an answer
 ## What it means
 
 A worry is on record from People, but there is no grounded answer ready for it. Or the answer leans on

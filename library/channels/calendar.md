@@ -39,3 +39,14 @@ Owned by Connections, fetched fresh each time and carried untouched. No opinion 
 | Status event | auto-decline | autoDeclineMode |
 | Free / busy | busy periods | busy |
 | Free / busy | time range | timeMin / timeMax |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Calendar list | Your calendars |
+| Status event | Away and focus time |
+| Free / busy | When they are free |

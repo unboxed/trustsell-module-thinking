@@ -36,3 +36,14 @@ label (`Worry + answer` becomes `worry-answer`), and that is what the assemblies
 | Worry + answer | the worry | you, or seen in a buyer's mail (via People) |
 | Worry + answer | your answer | you, typed or asked |
 | Worry + answer | the kind of proof it needs | you, typed or asked |
+
+## In plain words
+
+What a person reads, where it differs from the record's label. The label, and the id made from
+it, do not change.
+
+| Record | Plain name |
+|---|---|
+| Fit-shape | What a good fit looks like |
+| Use-case | Use case |
+| Worry + answer | Worries and answers |

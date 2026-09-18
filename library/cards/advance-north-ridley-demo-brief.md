@@ -5,6 +5,8 @@ kind: act
 label: Advance
 signal: lead-with-this
 signal_status: provisional   # mapped by reading the card, not yet confirmed
+supporting: [new-stakeholder]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: michelle-turner
@@ -52,10 +54,10 @@ Eight people. Three have asked about officer time and none about compliance. You
 
 ## What I read
 
-- Your calendar: the invitee list for Thursday, eight names and their roles from signatures.
-- The North Ridley thread since July: what each person asked.
-- Drive: your demo deck, June and July versions, first slide "Compliance by design".
-- Meet: your notes from the Holbrook demo in July.
+- calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.
+- gmail · The North Ridley thread since July: what each person asked.
+- drive · Your demo deck, June and July versions, first slide "Compliance by design".
+- meet · Your notes from the Holbrook demo in July.
 
 ## Not sure
 

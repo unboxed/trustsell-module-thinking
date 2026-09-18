@@ -51,10 +51,10 @@ You speak roughly every six weeks and it has been seven. He asked in August how 
 
 ## What I read
 
-- Your mail with Neil since March: 11 messages, and 4 calls in your calendar.
-- Your calendar: last call with Neil, 3 August.
-- Drive: "East Marston phasing note", finished 11 September.
-- His email of 19 August asking how East Marston "did it in stages".
+- gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.
+- calendar · Last call with Neil, 3 August.
+- drive · "East Marston phasing note", finished 11 September.
+- gmail · His email of 19 August asking how East Marston "did it in stages".
 
 ## Not sure
 
