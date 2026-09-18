@@ -44,8 +44,8 @@ notsure:
     says: "Then the email does both, gently, and lets her pick."
 draft:
   title: "Draft"
-  hand: "Open in Mail"
-  sub: "in your voice · nothing sends until you do"
+  hand: "Send"
+  sub: "in your voice · sends only when you say"
   footer: "Attached: the officer feedback page."
 ---
 

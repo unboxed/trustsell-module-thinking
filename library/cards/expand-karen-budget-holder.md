@@ -35,8 +35,8 @@ reasons:
     says: "Understood. I'll take this off the board and not raise it again unless you put it back."
 draft:
   title: "Draft"
-  hand: "Open in Mail"
-  sub: "in your voice · nothing sends until you do"
+  hand: "Send"
+  sub: "in your voice · sends only when you say"
   footer: "Nothing attached."
 ---
 

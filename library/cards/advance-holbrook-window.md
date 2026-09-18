@@ -46,9 +46,9 @@ notsure:
     says: "Then the invite asks him, plainly, and I'll adjust once he answers."
 draft:
   title: "Draft"
-  hand: "Open in Mail"
-  sub: "in your voice · nothing sends until you do"
-  footer: "Nothing attached. Send from your own mail; I'll watch for his slots."
+  hand: "Send"
+  sub: "in your voice · sends only when you say"
+  footer: "Nothing attached. Once it goes, I'll watch for his slots."
 ---
 
 # Book the Holbrook follow-up

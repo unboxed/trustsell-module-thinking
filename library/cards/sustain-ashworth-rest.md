@@ -37,7 +37,7 @@ reasons:
     says: "Understood. I'll take this off the board and not raise it again unless you put it back."
 draft:
   title: "Last note"
-  hand: "Open in Mail"
+  hand: "Send"
   sub: "only if Simon's introduction goes nowhere"
   footer: "Nothing attached."
 ---

@@ -65,7 +65,7 @@ notsure:                      # optional: Not sure as a one-tap question, two or
     says: <what that answer changes>
 draft:                        # optional, with a `## The draft` section in the body
   title: <...>
-  hand: <Title Case Verb ...> #   the sheet's button, matching where the note goes (Open in Mail)
+  hand: <Title Case Verb ...> #   the sheet's button, matching where the note goes (Send where mail is connected, Open in Mail where it is not)
   sub: <...>
   footer: <...>
 ---

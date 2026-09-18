@@ -64,6 +64,11 @@ summary::-webkit-details-marker{display:none}
 .page-body{max-width:var(--page);margin:0 auto;padding:0 var(--page-gutter) 110px}
 .ios-tabbar__item{text-decoration:none}
 .ios-tabbar__item svg{display:block}
+/* The library's menu: two plain words at the top, no app chrome (the user's call, 18 September).
+   Sizes are a judgement, not Apple's. */
+.topnav{display:flex;gap:20px;padding-top:20px;padding-bottom:0;font:var(--ios-text-subhead)}
+.topnav a{color:var(--ios-label-secondary);text-decoration:none}
+.topnav a[aria-current="page"]{color:var(--ios-label);font-weight:600}
 
 /* Small capsule: 36 pt, for chips and suggestions. Frequently used controls
    stay at 44; these are the "less important controls" of the accessibility

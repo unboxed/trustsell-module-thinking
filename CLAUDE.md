@@ -14,6 +14,11 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   is plain Node with no packages, and it renders markdown into static HTML. Do not add a framework,
   a bundler or a dependency. Anything else that rewrites files is a one-off and lives in the
   scratchpad, not the repo.
+- **The story holds the reasons.** `playbook/story.md` is the reference for why. When the user
+  explains something or their reasoning, check it against the story and say where it fits, or
+  point out the contradiction so they can think it over. Anything built needs a reason that the
+  story tells. If it is missing, ask for it or add it marked "(My reason, not yet yours.)". The
+  story can change: a better reason or approach rewrites the chapter it belongs to.
 - **Do not make things up.** The facts are what matter. Where something is not known, the entry
   says "not written yet" rather than being filled with a plausible invention. Every count in
   `library/counts/` is in that state on purpose, and the `signal:` on each card is marked
@@ -25,10 +30,9 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   document that is not already there.
 - **The phone and card slides are concept slides.** Do only what the user asks on them, one step
   at a time; they direct the design. See the phone paragraph in `world.md` for what is decided.
-- **One markdown file per card** in `library/cards/`. `playbook/cards/*.html`,
-  `playbook/index.html` and `playbook/assets/data.js` are **generated: never hand-edit them.**
-  Adding a card means adding its markdown and running `node build.js`; the tile on the home and
-  the previous/next links wire themselves from the card's `order`.
+- **One markdown file per card** in `library/cards/`. `playbook/assets/data.js` is
+  **generated: never hand-edit it.** Adding a card means adding its markdown and running
+  `node build.js`; the library page picks it up from there.
 - **`build.js` fails loudly on an id that does not resolve**, and writes nothing when it does.
   That check is the point: the joins between the floors are what went missing before.
 - **Voice.** Plain English, British spelling, the tool speaking to the seller in the first person.
@@ -43,8 +47,8 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   the same day, a date that doesn't match `world.md`, a document nobody has.
 
 ## The design system
-The playbook is built on Apple's Human Interface Guidelines. The desk follows iPadOS, the phone
-follows iOS. Take numbers from the two skills in `.claude/skills/`, not from memory:
+The playbook is built on Apple's Human Interface Guidelines. The phone follows iOS (the
+iPadOS desk was archived on 18 September). Take numbers from the two skills in `.claude/skills/`, not from memory:
 `apple-hig` for the rules and specs, `apple-ui-kit` for the measured values and component recipes.
 - `playbook/assets/ios-tokens.css` and `playbook/assets/ios-components.css` are copied from the
   kit. **Do not edit them.** If a value must change, change it in `style.css` by overriding.
@@ -53,12 +57,12 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   means changing tokens, not rules. Where a number is a judgement rather than Apple's, the comment
   says so.
 - `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback, and Plus Jakarta Sans
-  (SIL OFL), the phone's face. Macs and iPhones use SF Pro through `-apple-system` on the desk.
+  (SIL OFL), the phone's face. The library page uses SF Pro through `-apple-system`.
   Never link a font CDN.
 - The phone has a look of its own (big title, Plus Jakarta Sans, no colour on buttons, a white
   card by day and slate by night). It is the last section of `style.css`, "The phone's look",
-  set as tokens on `.screen` and `.sheet-stage`. The desk has not taken it. `world.md` says why.
-- `playbook/assets/card.js` is the one script the card pages share; `deck.js` is the deck's
+  set as tokens on `.screen` and `.sheet-stage`. The library page has not taken it.
+- `deck.js` is the deck's script
   (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
   its body, the phone's scroll into details, and the phone's reply sheet).
 - Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
@@ -102,15 +106,21 @@ rows are `source · words`, and the build checks each source against the trail. 
 later pass, not an oversight.
 
 - `build.js`: the one script. Plain Node, no packages. Reads `library/`, validates every id,
-  writes `playbook/assets/data.js`, `playbook/index.html` and `playbook/cards/*.html`.
-- `playbook/`: the deliverable, still plain static HTML. `index.html` (Cards, generated),
-  `ask.html` (Ask, hand-written), `library.html` (the library, browsable, rendered from
+  writes `playbook/assets/data.js`.
+- `playbook/`: the deliverable, still plain static HTML. `index.html` (the way in: it
+  opens the slides), `library.html` (the library, browsable, rendered from
   `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
   only; your day on mobile, a working prototype; the modules that can fill a card's reply sheet,
   as bare sheets, a draft among them; the details, three phones scrolled into their details; and
-  last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
+  last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions, the log), `story.md` (the tool told
+  from the start, for any kind of sale (the pretend world only as marked examples), at the
+  altitude of why: what the tool needs to know and why each part exists,
+  never how a screen looks, and no detours. It is the user's test of the
+  thinking: a reason I supplied is marked "(My reason, not yet yours.)" until they confirm it,
+  and a missing why is listed, never filled in. When a decision changes the story, update it there too), `assets/` (`library.js` is the library page's script).
 - `_archive/`: what did not come forward. That is the blueprint viewer app, the hackathon deck, the
-  scenario docs and the two blueprint-era UI notes. **Inspiration, not source of truth.** The
+  scenario docs, the two blueprint-era UI notes, and the desk (`_archive/desk/`: the grid of
+  cards, the card pages and the Ask page, archived 18 September because it had fallen behind). **Inspiration, not source of truth.** The
   channels, assemblies, signals and the live docs that used to live here are now in `library/`.
   The old vocabulary there was Plant / Grow / Nurture; here it is Expand / Advance / Sustain.
 

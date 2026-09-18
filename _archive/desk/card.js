@@ -1,4 +1,4 @@
-/* Signal cards: one card page. Nothing here sends anything. */
+/* Signal cards: one card page. Nothing here sends anything; Send only says it did. */
 (function () {
   var $ = function (s) { return document.querySelector(s); };
   var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -27,8 +27,15 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(draft); close(reasons); } });
   $$('.sheet-cancel').forEach(function (b) { b.addEventListener('click', function () { close(b.closest('.sheet-backdrop')); }); });
   $$('.sheet-hand').forEach(function (b) {
-    b.addEventListener('click', function () { close(b.closest('.sheet-backdrop')); say(b.getAttribute('data-ack') || 'Opened in Mail. Nothing sends until you do.'); });
+    b.addEventListener('click', function () {
+      close(b.closest('.sheet-backdrop'));
+      if (b.hasAttribute('data-sends')) { say('Sent. You have a moment to undo it.'); if (undo) undo.hidden = false; return; }
+      say(b.getAttribute('data-ack') || 'Opened in Mail. Nothing sends until you do.');
+    });
   });
+  /* Undo: on a phone it would last a few seconds; here it stays, so the page can be shown again. */
+  var undo = $('#undo');
+  if (undo) undo.addEventListener('click', function () { undo.hidden = true; say('Undone. Nothing went.'); });
 
   /* The primary action and the plain ones beside it. */
   var act = $('#act');

@@ -1,5 +1,8 @@
 # The pretend world
 
+For the story of the tool, told from the start with the why of each part, read `story.md`.
+This file is the card model, the world and the log of decisions.
+
 Every card in the playbook is written as if the tool already exists and is talking to **you**, the
 seller. To keep the cards consistent they all share one world and one card model. The card model
 and the decisions live here. The world itself (goal, cast, councils, documents) is data in
@@ -63,18 +66,20 @@ one tap. Cards are observations with a suggested move, never tasks: no due-date 
 statuses. Nothing sends without your say-so: where mail is connected the tool can send a
 message once you tell it to, and you can undo for a moment after; where it is not, the message
 opens in Mail and you send it yourself. (Until 17 September this read "Nothing sends; the
-human does". The desk cards still follow the old rule, with Open in Mail and "nothing sends
-until you do"; they have not been changed yet.)
+human does". In the library the mail drafts' button is Send; the tender portal and the Slack
+message to Simon still hand over, because neither is mail.)
 
 ## Where the cards live
 
-**The home (desk).** The grid, cards first, sorted by what waiting a day would cost: six bands
-worked out by `build.js` from each card's `when`, what it owes and what waits on it, with a held card
-right under the card it waits on (decided 18 September; the bands are in
-`library/modules/00-spine.md`). Filters by kind. The box sits below
-the grid, never above it: the cards come to you; the box is for what you're wondering.
+**The desk** was archived on 18 September 2026 (the user: outdated, and it had no meaning for
+them any more). Its pages are in `_archive/desk/`. What it decided that is about the tool, not
+the screen, lives on: the day ordered by what waiting a day would cost (`library/modules/00-spine.md`)
+and the box, below. The playbook is now the slides and the library.
 
-**The phone.** Slides that explain the concept; they are not screens of the tool. All of them
+**The phone.** Slides that explain the concept; they are not screens of the tool. The tool is a
+desktop platform and a phone app both; the phone is where the thinking is done because one card
+on a small screen is easier to think through than a full desktop platform (the user, 18
+September). All of them
 live in `deck.html`, one shown at a time. The first, "The idea", is words only: it states the
 argument before anything is demonstrated, that people work the verbs and the tool works the
 nouns. The second, "Your day on mobile" (called "The phone" until 18 September), is the prototype: the title
@@ -168,11 +173,11 @@ The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
 front holds one filled action and at most one outline one, stacked, with Skip under them; anything that needs more room goes
 in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
-action on the front raises the sheet. The phone slide shows the desk's Karen Hughes card:
+action on the front raises the sheet. The phone slide shows the library's Karen Hughes card:
 the filled action is Send Message, the plain one is View Draft, which raises the draft
 sheet. Once sent, the card darkens and says back what happened (see "After the action" below).
 On the phone the word is "message" and the buttons drop the
-article, as Apple's do; the desk still says "Send the Note". Placeholder titles and descriptions
+article, as Apple's do; the library card still says "Send the Note". Placeholder titles and descriptions
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
 
@@ -198,7 +203,7 @@ the same day). A Next button between the feedback and Undo was tried first and d
 button on a moment meant to be quiet. A card left behind stays dark, since each card keeps its
 own state. The last card has no hint and does not slide, because what comes after the day's last
 card is not written yet. After a reply it is two thumbs and a note; after
-Skip it is the reason, in the desk's words, Not Now (another day) and Not Relevant (the card got
+Skip it is the reason, in the library cards' words, Not Now (another day) and Not Relevant (the card got
 it wrong), then the note. Scrolled into a page, the bar says the line with Undo, as before. The
 user asked for this because feedback is optional and must not stand in the way: first confirm,
 then let the seller say something if they want to. Passed over on the way: a yes-or-no question
@@ -220,7 +225,7 @@ the right; View Draft fades out on the card and fades in on the bar's left, so t
 cross. What the tool says back after sending, and Undo, show in the same bar. Once the large
 title has passed under the top bar, the title shows small between the menu buttons, as an
 iOS large title does. After a hairline come the details, as prose: section heads, paragraphs,
-and records as plain lines. No grouped tiles. For now the details are the desk card's
+and records as plain lines. No grouped tiles. For now the details are the library card's
 thinking retold: "The story so far" (what I noticed, as a story), "What I read" and "Then".
 The scroll snaps between the card and the start of the details, so half-way between card and
 page is only ever seen in motion; past that start it runs free through the details (a snap
@@ -254,7 +259,7 @@ there should be is open. A two-state sheet (reviewing, then a
 tall editing form with To, Subject and Attached rows) was tried the same day and dropped: it
 was Mail rebuilt inside a sheet. The worry that led there, Send sitting under your thumb while you are still changing the
 message, is met another way: sending asks for one deliberate tap, the card says back what
-happened, and Undo is there for a moment. The slide uses the desk's Karen Hughes note as version
+happened, and Undo is there for a moment. The slide uses the library's Karen Hughes note as version
 A ("With the figure") and a short form as version B ("Shorter"); the subject line, "The
 officer-time numbers you asked for", is new and belongs to that card.
 
@@ -272,9 +277,8 @@ glazed white card on a pale cool ground, with a lit top edge and one deep soft s
 all slate, a near-black ground and a lighter slate card with a faint sheen and a lit edge. Tried
 and passed over on the way: recolouring Apple's kit, a card tinted by its kind, a white card on
 deep green set in Baskerville, a ruled docket, paper and frosted glass as materials, a slate
-card kept by day as well, and the kind glowing in the slate. The desk has not taken the look:
-Cards, Ask and the card pages are still Apple's blue and SF Pro, a known disagreement, left for
-later. The kind's dot is pinned to the blue itself rather than to the accent, because the accent
+card kept by day as well, and the kind glowing in the slate. The library page has not taken the look and is still Apple's blue and SF Pro. (The desk never
+took it either, and was archived.) The kind's dot is pinned to the blue itself rather than to the accent, because the accent
 is ink here and an Advance dot was coming out black. Long titles will
 need a smaller step than 38; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.
@@ -314,7 +318,7 @@ phone the widgets show only on "The details".
 
 Not decided: how widgets look at night, whether a widget can be tapped through to its records,
 whether the draft becomes a `reply.module` of its own, what a swipe does, the names and the list of the details' sections ("The story
-so far" is the user's; the other two are borrowed from the desk), whether "Not sure" and "how
+so far" is the user's; the other two are borrowed from the old desk), whether "Not sure" and "how
 sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
 Buttons sheet to the front, as the message card's have; the names the signal writes on the
 front's actions for the other modules; whether the sheet's pager stays when a card asks one
@@ -334,37 +338,17 @@ An answer is not a new kind of card. The vocabulary stays at six words.
 
 ## How a card is presented
 
-The playbook follows Apple's Human Interface Guidelines: the desk follows iPadOS, the phone
-follows iOS. Each part of a card is one Apple component, so a card never needs a component of
-its own. There is one exception: on the phone, the reply sheet is the playbook's own component
-(see the phone paragraph above), its anatomy copied from Claude's phone app and built from
-the kit's tokens, so the modules read as one family. The phone also has a look of its own
-(typeface, colour and the card's material; see the phone paragraph above), set as tokens over
-the kit. The desk table below stays as it is.
-
-| Part of a card | On the desk |
-| --- | --- |
-| The front (label, title, reason, when) | a card on the grouped grey page |
-| The one action | a filled capsule button |
-| Not Now | a plain button |
-| Not Relevant and its one-tap why | a plain button that opens an action sheet: three reasons and Cancel |
-| The answers of an Ask card | an inset grouped list; one row gets the checkmark; the suggested one says so |
-| A pick of several | the same list, with a limit, and a filled button to confirm |
-| A sentence in your words | a text field in a list row, and a filled button |
-| The thinking | inset grouped lists with section headers, beside the front |
-| The person | not shown yet |
-| What each answer changes | the answer's line, said back after you pick |
-| Not sure, when you hold the answer | a segmented control in the last row of that list; the reply is the list footer |
-| The draft, brief or note | a form sheet over a dimmed page: Cancel, the title, Open in Mail |
-| The actions once the card has opened | the same buttons, always in view |
-| What the tool says back | the footer line under the actions |
-| The kinds | a dot in Apple's colour before the label: Sustain green, Advance blue, Expand orange, Ask and Connect grey |
-| Home navigation | a tab bar: Cards, Ask, Library, Phone. The kinds are a segmented control, because they filter rather than navigate |
+The playbook follows Apple's Human Interface Guidelines, and the phone follows iOS. Each part of
+a card is one Apple component, so a card never needs a component of its own. There is one
+exception: the reply sheet is the playbook's own component (see the phone paragraph above), its
+anatomy copied from Claude's phone app and built from the kit's tokens, so the modules read as one
+family. The phone also has a look of its own (typeface, colour and the card's material; see the
+phone paragraph above), set as tokens over the kit. The desk's table of components went to
+`_archive/desk/README.md` with the desk.
 
 Wording follows the HIG's writing rules where it is interface text: button labels in title case
-and starting with a verb ("Send the Note", "Not Now", "Open in Mail"), everything else in
-sentence case, tab labels one word each, section headers short noun phrases. The cards keep
-their own first-person voice.
+and starting with a verb ("Send Message", "Not Now", "Undo"), everything else in sentence case,
+section headers short noun phrases. The cards keep their own first-person voice.
 
 Where the browser cannot do the real thing (sheet physics, the Dynamic Type ladder) the playbook
 does the nearest plain thing and says so in a stylesheet comment. The glass material is turned off
