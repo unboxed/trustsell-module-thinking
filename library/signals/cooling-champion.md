@@ -6,8 +6,8 @@ blurb: A champion who is starting to go quiet.
 modes: [sustain]
 kind: decay
 confidence: graded
-inputs: [person-history]
-counts: [reply-gap-vs-own-rhythm, last-note-unanswered-days, dropped-recurring-meeting, innocent-explanation-scan]
+inputs: [person-history, deal]
+counts: [reply-gap-vs-own-rhythm, dropped-recurring-meeting, innocent-explanation-scan]
 answers: [Q18, Q19]
 needs: [calendar]
 ---
@@ -34,6 +34,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Trigger: the reply gap is large against the person's own median reply time (never a fixed number of
   days), AND the innocent-explanation scan returns empty.
 - Confidence: high when a large own-rhythm departure, a dropped recurring meeting, an unanswered note
-  and an empty scan all stack; grades down toward "maybe cooling" as fewer hold.
+  and an empty scan all stack; grades down towards "maybe cooling" as fewer hold.
 - Needs: Calendar, for the dropped-meeting and out-of-office checks; without it
   those checks drop out and confidence falls (a data gap, named not faked).

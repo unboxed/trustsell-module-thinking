@@ -1,13 +1,12 @@
 ---
 id: offering-told
-name: What you tell Offerings
+name: What you told me about what you sell
 source: told
 connected: true
 icon: pencil
 ---
 
-# What you tell Offerings
-
+# What you told me about what you sell
 The facts only you can state about a product, the most deterministic ground there is, because you say
 them outright rather than the tool inferring them from behaviour. They arrive three ways: you type
 them into the tool, Offerings asks you for them (the propose-a-draft, you-confirm loop), or you upload

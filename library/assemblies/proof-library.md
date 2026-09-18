@@ -42,7 +42,7 @@ proof gap named not faked, rather than implying a document that is not there.
 
 ## Lineage
 
-`proof-tag` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source, including its
+`proof-tag` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source, including its
 reference-naming and proof-source attributes. `file` and `file-content` resolve to
 [`channels/drive.md`](../channels/drive.md); recency is derived from `file`'s
 `created` and `modified` dates. The split with Offerings is responsibility, not access: both read the

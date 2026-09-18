@@ -37,4 +37,3 @@ icon: <lucide-or-glyph>   # e.g. mail, calendar, hash, telescope
 | Record | Plain name |
 |---|---|
 | <Record label> | <what a person would call it> |
-| <Record label> | <field> | <...> |

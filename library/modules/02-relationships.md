@@ -23,11 +23,11 @@ draws_from: [gmail, calendar, slack, contacts, meet, web]
 
 The expert on everyone you deal with: the **people**, and the **organisations** (the buyer's account) they belong to. Who they are, your history, and who knows whom.
 
-> **Two entities, one module.** *People* is first-class today (its own history and the signals below). *Organisation* is the module's second entity, surfaced for now as the account the [`stakeholder-map`](assemblies/stakeholder-map.md) gathers and the buyer side a [`deal`](assemblies/deal.md) is sold into. Whether Organisation becomes fully first-class (its own record and org-level signals) is still open, see the last open question. Note "Organisation" here is the *buyer's* org; your own is `04`.
+> **Two entities, one module.** *People* is first-class today (its own history and the signals below). *Organisation* is the module's second entity, surfaced for now as the account the [`stakeholder-map`](../assemblies/stakeholder-map.md) gathers and the buyer side a [`deal`](../assemblies/deal.md) is sold into. Whether Organisation becomes fully first-class (its own record and org-level signals) is still open, see the last open question. Note "Organisation" here is the *buyer's* org; your own is `04`.
 
-> **This is the worked example of the new library format.** Its catalog floors live as libraries:
-> raw data in [`01-integrations/channels/`](../channels/), assemblies in
-> [`assemblies/`](assemblies/), signals in [`signals/`](signals/). This file holds only the
+> **This is the worked example of the new library format.** Its catalogue floors live as libraries:
+> raw data in [`channels/`](../channels/), assemblies in
+> [`assemblies/`](../assemblies/), signals in [`signals/`](../signals/). This file holds only the
 > operating prose. See [`docs/library-format.md`](../docs/library-format.md).
 
 ## Principles
@@ -85,12 +85,12 @@ People's reasoning is now its **libraries**, where the two moves above the raw d
 floor you can browse:
 
 - **Assembling** (deterministic, organising the facts so they can be seen) becomes the
-  [`assemblies/`](assemblies/) library: *person history, conversation history, meeting history,
+  [`assemblies/`](../assemblies/) library: *person history, conversation history, meeting history,
   stakeholder map*, and the *deal*, the selling effort the others feed into (its people and
   conversations gathered whole, across any org). The deal is the unit you sell into; People gathers it
   goal-blind, and the Brain stages it.
 - **Sensing** (the reading, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
-  counting then judging) becomes the [`signals/`](signals/) library. Each signal is a named, reusable
+  counting then judging) becomes the [`signals/`](../signals/) library. Each signal is a named, reusable
   read that carries its evidence, measured against the relationship's **own rhythm**, earning its
   place by answering a real question in [`sales-questions.md`](../docs/sales-questions.md).
 
@@ -144,6 +144,6 @@ pull), never by reaching in.
   does it stay the current lens on the deal (the `stakeholder-map` grouping plus the deal's buyer-org
   metadata)? Elevating it must keep the *deal* (which crosses org lines) as the unit that moves, with
   the account as its standing address, not its key. The **interface foundation** takes a first step
-  here: `docs/interface-surfaces.md` makes Contact, Organisation, and Deal hand-creatable entities,
+  here: `_archive/docs/interface-surfaces.md` makes Contact, Organisation, and Deal hand-creatable entities,
   with the assistant enriching those same objects later. The deal still moves; the org is a record you
   can seed, not yet a full account with its own history and signals.

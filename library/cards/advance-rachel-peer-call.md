@@ -1,6 +1,6 @@
 ---
 id: advance-rachel-peer-call
-order: 13
+order: 12
 kind: act
 label: Advance
 signal: answer-gap
@@ -13,9 +13,11 @@ person: rachel-gill
 council: westmoor
 documents: [east-marston-case-study]
 sure: "likely"
+sure_because: "A pattern: the same worry, twice in four days."
+held_by: ask-rachel-meeting
 when:
   mode: rhythm
-  words: "Any day this week."
+  words: "This week, once you have told me how you read her."
 reply:
   module: buttons
 actions:
@@ -53,9 +55,9 @@ She has asked "will officers actually use it" twice since you met. The best answ
 
 ## What I noticed
 
-- Why now: the same worry twice in seven days is a pattern, not a passing remark. Answer it before it hardens.
-- Rachel joined the Westmoor thread on 8 September and has written three times. Two of the three ask, in different words, whether officers will adopt it.
-- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March and has done two since.
+- Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.
+- Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.
+- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.
 - Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.
 
 ## What I read

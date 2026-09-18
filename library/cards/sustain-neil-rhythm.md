@@ -1,16 +1,19 @@
 ---
 id: sustain-neil-rhythm
-order: 12
+order: 13
 kind: act
 label: Sustain
 signal: time-to-reconnect
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
+supporting: [best-way-to-reach]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write, reply-speed-by-channel, accepts-meetings]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: neil-chapman
 council: holbrook
 documents: [east-marston-phasing-note]
 sure: "likely"
+sure_because: "A pattern against his usual: six weeks, his rhythm since March."
 when:
   mode: rhythm
   words: "Any day this week."
@@ -40,11 +43,11 @@ draft:
 
 # Reconnect with Neil Chapman
 
-You speak roughly every six weeks and it has been seven. He asked in August how East Marston phased the rollout, and now there is a note on it.
+You speak roughly every six weeks and it has been six. He asked in August how East Marston phased the rollout, and now there is a note on it.
 
 ## What I noticed
 
-- Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished last Friday.
+- Why now: six weeks since you last spoke, right on his rhythm, and the phasing note he asked about was finished last Friday.
 - Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.
 - He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.
 - Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.

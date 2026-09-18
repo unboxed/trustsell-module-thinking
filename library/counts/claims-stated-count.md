@@ -1,13 +1,13 @@
 ---
 id: claims-stated-count
-label: "Claims made"
+label: "Claims in your pitch"
 used_by: [unbacked-claim]
 over: [product-claims]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Claims made
+# Claims in your pitch
 ## What it counts
 
 Not written yet.

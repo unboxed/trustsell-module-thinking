@@ -22,9 +22,9 @@ draws_from: [drive]
 
 Your company's shared layer: the proof you can point to and the lines you cannot cross.
 
-> Its catalog floors live as libraries: raw data in
-> [`01-integrations/channels/`](../channels/), what the company tells it in
-> [`told.md`](told.md), assemblies in [`assemblies/`](assemblies/). Organisation has **no signals**:
+> Its catalogue floors live as libraries: raw data in
+> [`channels/`](../channels/), what the company tells it in
+> [`organisation-told.md`](../told/organisation-told.md), assemblies in [`assemblies/`](../assemblies/). Organisation has **no signals**:
 > it matches proof and gates drafts, so there is no behaviour to sense. This file holds only the
 > operating prose. See [`docs/library-format.md`](../docs/library-format.md).
 
@@ -75,7 +75,7 @@ The **told** pile, what the company sets that no channel can fetch:
 
 Because Organisation is **shared**, these are set once for the whole team. Used solo it's empty,
 and the tool simply skips the proof-and-fence step. The full record list is the
-[`told.md`](told.md) library.
+[`organisation-told.md`](../told/organisation-told.md) library.
 
 The same told serves both kinds of seller: it does not change for an experienced salesperson or for
 someone selling only because their role needs the organisation to win clients. What changes is how
@@ -97,22 +97,22 @@ Organisation merely surfaces. So Organisation does two plain jobs and supplies t
 floors, none of it a signal:
 
 - **Match.** Find the right proof. Given the kind of proof a claim needs (from Offerings or the
-  Brain) and who the customer is, it reads the [`proof-library`](assemblies/proof-library.md) and
+  Brain) and who the customer is, it reads the [`proof-library`](../assemblies/proof-library.md) and
   returns the company case study that fits best, or names the hole honestly when nothing on the
   shelf matches.
 - **Gate.** Check against the fence. Given a finished draft (from Profile), it checks it against
-  the [`compliance-fence`](assemblies/compliance-fence.md) and either passes it or flags exactly
+  the [`compliance-fence`](../assemblies/compliance-fence.md) and either passes it or flags exactly
   what crosses a line. This is the last check before anything reaches you.
 
 And it **supplies** two gathered floors it does no reading on, handing them to whoever asks:
 
-- The [`pricing-fence`](assemblies/pricing-fence.md), the org-level discount envelope (ceiling,
+- The [`pricing-fence`](../assemblies/pricing-fence.md), the org-level discount envelope (ceiling,
   sign-off, floor), supplied to the **Brain** for its deferred deal-specific discount decision. (This
   is the company governance, distinct from the per-offering price Offerings reads in `price-barrier`.)
-- The [`house-voice-guide`](assemblies/house-voice-guide.md), the positive brand style, supplied to
+- The [`house-voice-guide`](../assemblies/house-voice-guide.md), the positive brand style, supplied to
   **Profile** to write *toward* at render, the partner to the fence it writes *inside*.
 
-All four stand on the deterministic gathers in [`assemblies/`](assemblies/); none is a signal,
+All four stand on the deterministic gathers in [`assemblies/`](../assemblies/); none is a signal,
 because there is no behaviour to sense, just proof to fetch, limits to enforce, and material to supply.
 
 ## Output
@@ -151,8 +151,8 @@ module's memory only by **asking**, like everyone else.
   is worth a pass.
 - **House voice vs your voice.** Where the company's brand voice ends and your personal voice
   (`05`) begins at render time. The **structure** is now settled: the brand voice is its own
-  [`house-voice-guide`](assemblies/house-voice-guide.md) the render writes *toward*, kept apart from
-  the [`compliance-fence`](assemblies/compliance-fence.md) it writes *inside* (emulate vs gate). What
+  [`house-voice-guide`](../assemblies/house-voice-guide.md) the render writes *toward*, kept apart from
+  the [`compliance-fence`](../assemblies/compliance-fence.md) it writes *inside* (emulate vs gate). What
   stays open is the **blend math**: the proposed direction is **persona-dependent**, leaning toward
   the house voice for someone who sells only because their role needs it (a thin personal sales voice,
   more guardrail) and toward their own voice for an experienced seller, but the exact mechanism isn't

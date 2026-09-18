@@ -1,19 +1,18 @@
 ---
 id: missing-people
 module: 02-relationships
-label: Missing people
+label: Stakeholders you have not reached
 blurb: A key person you have never reached, or a deal resting on one contact.
 modes: [advance, expand]
 kind: risk
 confidence: graded
-inputs: [stakeholder-map]
+inputs: [stakeholder-map, deal]
 counts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]
 answers: [Q4, Q5, Q6]
 needs: [linkedin]
 ---
 
-# Missing people
-
+# Stakeholders you have not reached
 ## What it means
 
 A read on the shape of who you are talking to, not on any one person.

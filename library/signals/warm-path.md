@@ -1,7 +1,7 @@
 ---
 id: warm-path
 module: 02-relationships
-label: Warm path
+label: Someone who can introduce you
 blurb: A way to reach a target through someone you already know.
 modes: [expand]
 kind: opening
@@ -12,8 +12,7 @@ answers: [Q7, Q8]
 needs: [linkedin]
 ---
 
-# Warm path
-
+# Someone who can introduce you
 ## What it means
 
 A target you have never spoken to is reachable through someone you already deal with.

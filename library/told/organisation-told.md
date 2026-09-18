@@ -1,13 +1,12 @@
 ---
 id: organisation-told
-name: What you tell Organisation
+name: What you told me about your company
 source: told
 connected: true
 icon: pencil
 ---
 
-# What you tell Organisation
-
+# What you told me about your company
 The facts the company states outright, the deterministic ground for the proof-and-fence step. They
 arrive two ways: you type them into the tool, or you point at a brand, compliance or proof document
 in Drive and Organisation reads them out of it. The `Source` column says which path each field comes

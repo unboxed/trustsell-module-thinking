@@ -1,6 +1,6 @@
 ---
 id: ask-twelve-councils
-order: 17
+order: 18
 kind: ask
 label: Ask
 signal: missing-people
@@ -60,7 +60,7 @@ I can look for people at all twelve, but slowly. Three at a time means you see n
 
 ## What I'll do with your answer
 
-- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft within a week.
+- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.
 - The other nine wait. I won't touch them until these three have names.
 
 ## Where I'll remember it

@@ -1,16 +1,16 @@
-# The salesperson's 26 questions — the demand-side spec
+# The salesperson's 26 questions: the demand-side spec
 
 A real salesperson's own questions through the sales process (suggested by MJ at a show &
 tell). They are the **demand side**: what the tool *must* be able to answer. The modules'
 signals and plays are the **supply side**: what it *can* produce. Where supply meets demand,
 the model holds; where it doesn't, that's the real work.
 
-**How we use them — settled.** The questions are a **lens, not the backbone**: handles for
+**How we use them: settled.** The questions are a **lens, not the backbone**: handles for
 showing how an answer traces down to plain facts (and where it can't), **not** the tool's
 filing system. A contact's memory stays in `02` as inferred reads, not a list of 26 answered
 fields. The one idea we keep from the stronger reframe: *a recommendation can be read as a
 standing question whose answer just changed in a way that points to a move.* (Recorded in
-`_scratch/open-questions.md`; sensing catalog derived from these lives in `02-relationships`.)
+`_archive/_scratch/open-questions.md`; the signals derived from these live in `library/signals/`.)
 
 ## The list (verbatim)
 1. What are the different conditions under which my product is needed?
@@ -43,31 +43,32 @@ standing question whose answer just changed in a way that points to a move.* (Re
 ## Where each group lands (the pipeline)
 Each group with its **answer path** (fetched / told / inferred) and its **owner**.
 
-- **Define the need** — Q1–2. *Told*, tool co-authoring. Owner: **Offerings** (the fit-shape).
-- **Find the targets** — Q3–8. *Fetched + inferred*, pulling the fit-shape from Offerings.
-  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Plant.
-- **Reach them** — Q9. *Inferred* from where they actually respond. Owner: **People** (thin
-  today — mostly email connected).
-- **Match the message to the person** — Q10–12, Q15, Q17, Q24–25. Owner: a Brain **play**
-  (People's read + Offerings' answers + Organisation's proof). Grow.
-- **Read their state** — Q13–14, Q16, Q19. *Inferred reads* — the soft, judgement end. Owner:
+- **Define the need**: Q1 and Q2. *Told*, tool co-authoring. Owner: **Offerings** (the fit-shape).
+- **Find the targets**: Q3 to Q8. *Fetched + inferred*, pulling the fit-shape from Offerings.
+  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Expand.
+- **Reach them**: Q9. *Inferred* from where they actually respond. Owner: **People** (thin
+  today, mostly email connected).
+- **Match the message to the person**: Q10 to Q12, Q15, Q17, Q24 and Q25. Owner: a Brain **play**
+  (People's read + Offerings' answers + Organisation's proof). Advance.
+- **Read their state**: Q13 and Q14, Q16, Q19. *Inferred reads*: the soft, judgement end. Owner:
   **People** sensing.
-- **Track and prioritise** — Q18, Q21–22. *Fetched* facts and loose ends feeding Brain's
+- **Track and prioritise**: Q18, Q21 and Q22. *Fetched* facts and loose ends feeding Brain's
   **triage**.
-- **Write it** — Q20, Q23, Q26. The **render** — Profile's voice, closeness from People, inside
+- **Write it**: Q20, Q23, Q26. The **render**: Profile's voice, closeness from People, inside
   Organisation's fence.
 
 ## The five frontiers (where the real work still is)
 1. **Forecasting.** Q16 ("are barriers *likely* to be removed?"), plus the predictive edges of
-   Q14 and Q19. The model reads the **present** well but doesn't predict the **future** — it
+   Q14 and Q19. The model reads the **present** well but doesn't predict the **future**. It
    reasons about *now*, not *next*. A genuinely new dimension.
-2. **The triage mechanism.** Q21 ("who most urgently?") confirms triage is central — but *how*
-   Brain prioritises across a big, slow board is the open question parked in `00-spine`.
+2. **The triage mechanism.** Q21 ("who most urgently?") confirms triage is central. How
+   Brain orders a day was settled on 18 September (six bands, by what waiting a day costs; see
+   `00-spine`). How many cards a given cadence allows is still open.
 3. **Timing thresholds.** Q19 ("when to chase?") is first-class, yet "how long is quiet, how
    strong a reply must be" is the threshold knob still being worked in `02-relationships`.
 4. **Plumbing-bound answers.** Q8 (mutual connections) and Q9 (best channel) are answerable in
-   principle but thin until LinkedIn and more channels are connected — a *data* gap, not a model
+   principle but thin until LinkedIn and more channels are connected: a *data* gap, not a model
    gap. Name it so answer quality isn't oversold.
 5. **Coaching, not just drafting.** Q25 ("what questions should I ask them?") stretches the
    output from "a message to send" to "a move plus talking points." A possible widening of what
-   the tool hands back — a deliberate decision still pending.
+   the tool hands back: a deliberate decision still pending.

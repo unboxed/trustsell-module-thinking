@@ -18,7 +18,7 @@ needs: [calendar, linkedin]
 
 A fresh face arrives in a conversation you are already in, and the map gains a name it did not have.
 
-The read fires on a name that has no history: on no earlier email, on no earlier event, and not already
+The tool makes the read on a name that has no history: on no earlier email, on no earlier event, and not already
 on the organisation's map. That empty history is what tells a real arrival apart from a colleague who
 has just been quiet for a while.
 

@@ -22,5 +22,5 @@ Keep it short. Four or five moments carry a story; twenty are a log.
 
 `<when> · <what happened>`
 
-The first part is a date as the card would say it ("22 August", "March") or "Today". The
+The first part is a date as the card would say it ("20 August", "March") or "Today". The
 second is one short sentence. The row marked "Today" is the filled dot.

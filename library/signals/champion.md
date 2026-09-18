@@ -7,7 +7,7 @@ modes: [advance]
 kind: opening
 confidence: graded
 inputs: [person-history, conversation-history, meeting-history]
-counts: [reply-speed-vs-own-rhythm, reply-length-vs-own-baseline, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
+counts: [reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
 answers: [Q4, Q5, Q6, Q14]
 needs: [meet]
 ---

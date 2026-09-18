@@ -1,13 +1,13 @@
 ---
 id: incumbent-lock-in-present
-label: "Locked in to their supplier"
+label: "Tied to their current supplier"
 used_by: [competitive-standing]
 over: [competitor-field]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Locked in to their supplier
+# Tied to their current supplier
 ## What it counts
 
 Not written yet.

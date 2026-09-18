@@ -6,7 +6,7 @@ blurb: Where your price sits against the field, and whether it's likely to be a 
 modes: [advance]
 kind: risk
 confidence: graded
-inputs: [price-position]
+inputs: [price-position, pricing-fence, deal]
 counts: [your-price, competitor-price-band, price-delta-vs-leader]
 answers: [Q15]
 needs: [web]

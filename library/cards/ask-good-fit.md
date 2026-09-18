@@ -1,6 +1,6 @@
 ---
 id: ask-good-fit
-order: 20
+order: 21
 kind: ask
 label: Ask
 signal: fit-match
@@ -19,7 +19,7 @@ actions:
     says: "Thank you. I'll write that down as what a good fit looks like, and show you the first five councils that match before I add any of them."
   - label: "Use Your Guess"
     style: tinted
-    says: "Then I'll go with my guess for now: district or borough, 200 to 800 officers, a case system over ten years old, a digital lead in post under two years. Correct it any time."
+    says: "Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time."
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---

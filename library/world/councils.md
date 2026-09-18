@@ -10,7 +10,7 @@ them yet, which is what makes them the subject of an Expand or an Ask.
 
 | Council | id | Stands at | Notes |
 |---|---|---|---|
-| Bramley District Council | bramley | engaged | Karen Hughes is the only live door. Budget meeting 22 August. Budget sits with the Director of Resources, Martin Hodgson |
+| Bramley District Council | bramley | engaged | Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson |
 | Westmoor County Council | westmoor | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |
 | Holbrook Metropolitan Borough | holbrook | engaged | Neil Chapman; procurement window closes 16 October |
 | Ashworth Borough Council | ashworth | cold | four notes from you since May, nothing back |

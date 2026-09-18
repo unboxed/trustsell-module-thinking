@@ -1,13 +1,13 @@
 ---
 id: proofs-per-claim
-label: "Proof for each claim"
+label: "Pieces of proof per claim"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Proof for each claim
+# Pieces of proof per claim
 ## What it counts
 
 Not written yet.

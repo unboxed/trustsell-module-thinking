@@ -6,7 +6,7 @@ blurb: One figure, shown beside what is normal for this person.
 shape: the figure in the card's big words, a bar against a bar for the usual, then the usual in small
 parts: 3
 rows: 2
-fed_by: [reply-gap-vs-own-rhythm, how-long-quiet-vs-own-rhythm, silence-vs-own-rhythm, reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, reply-length-vs-own-baseline, days-open-vs-own-rhythm]
+fed_by: [reply-gap-vs-own-rhythm, how-long-quiet-vs-own-rhythm, reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, days-open-vs-own-rhythm]
 ---
 
 # A number against its usual

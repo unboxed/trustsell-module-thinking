@@ -79,6 +79,15 @@ The **told** pile, the heavyweight input the whole system turns on:
 
 These live as records in [`told/goal-told.md`](../told/goal-told.md).
 
+**Told once, or asked when it matters** (decided 18 September). There is no settings screen. What
+changes from seller to seller fills the goal and profile records from the seller's own answers, by
+one rule. A fact that does not shift (the goal, the tempo, how much time you have) is told once and
+kept. Your judgement, anything that shifts, or anything the tool would otherwise guess (which
+councils matter most this month, your tone, what a good fit looks like, what is new about the
+product) comes as an **Ask**, raised only when the answer would change something, and written into
+the right record so it is never asked twice. An Ask is the general way the tool learns what it
+cannot observe.
+
 The Brain shapes the goal **with** you. It may come back with a few questions before it commits
 ("what counts as engaged?", "what's the easy first yes?", "who are the 30?"), the same
 propose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens
@@ -95,6 +104,28 @@ library. It reasons over what the experts report. Its four jobs (synthesise the 
 briefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two
 things it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts'
 reports rather than a deterministic gather, and they are described in Memory and Output below.
+
+## What first: the order of a day
+
+Decided 18 September, answering Q21 ("who should I contact most urgently?"). The Brain asks one
+question of every card: **what would waiting a day cost?** The answer is already on the card, in
+its `when`, what it owes and what waits on it, so `build.js` works out the place rather than anyone
+typing it. Six bands, in order:
+
+1. **Gone tomorrow.** A date the world set, within a day.
+2. **Worse every day.** Something owed (a promise, an unanswered question), or a fresh moment going
+   stale.
+3. **Holding something up.** A card another card waits on. Asks land here often: ten seconds that
+   free a card.
+4. **A date further off.** Set by the world, weeks away.
+5. **Due by its rhythm.** Right this week, no worse next week.
+6. **Costs nothing to wait.**
+
+Within a band, the council further up the ladder comes first, then the surer card. One guard runs
+across every band: **one move per person at a time**. A second card for the same person is held by
+the first and sits right under it. The pace is not a band: how many cards a day comes from your
+time and cadence (Profile), ties between Sustain and Expand from your style (Profile), and how
+early a rhythm card shows from the goal's tempo.
 
 ## Output
 
@@ -131,9 +162,8 @@ needs to *decide*: the goal, the score, the plan, and what worked. It reads the 
 
 ## Open questions
 
-- **The pick-and-schedule mechanism.** The keystone. *That* the Brain reads the scoreboard, weighs
-  the Layer-2 criteria, and lays results onto a paced calendar is settled; *how* it actually ranks
-  one move over a hundred, and chooses its day, is not. Deferred to a use-case pass, not faked here.
+- **The pick-and-schedule mechanism.** How a day is ordered is now settled (the six bands above).
+  Still open: how many cards a given cadence allows, and what a later day on the calendar shows.
 - **Reading the fuzzy target.** Turning a goal's mindset ("feels the legacy-tech pain") into
   something People can actually watch for, a bridge across People and Offerings the Brain has to
   commission. Sketched, not built.

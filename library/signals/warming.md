@@ -1,19 +1,18 @@
 ---
 id: warming
 module: 02-relationships
-label: Warming
+label: Warming to you
 blurb: A relationship picking up pace, with faster replies and more people joining in.
 modes: [advance, expand]
 kind: opening
 confidence: graded
-inputs: [person-history]
-counts: [reply-gap-vs-own-rhythm, threads-they-started-this-period, new-people-from-their-side, reply-length-trend]
+inputs: [person-history, meeting-history]
+counts: [reply-speed-vs-own-rhythm, who-starts-threads, colleagues-looped-in-count, reply-length-vs-own-rhythm]
 answers: [Q14, Q19]
 needs: [meet]
 ---
 
-# Warming
-
+# Warming to you
 ## What it means
 
 The mirror of cooling, read upward.
@@ -35,11 +34,11 @@ rather than one busy week. The read: "they're warming."
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 
-- Trigger: the reply gap shrinks against the person's own median, their share of started threads rises
+- Trigger: they reply faster against the person's own median, their share of started threads rises
   above their usual share, and the move holds across the period in more than one count (never a fixed
   number of days).
 - Confidence: graded. High when pace, initiation and reach all turn together; softer to "maybe
   warming" when only one count moves.
-- Needs: Meet (captured-call content) so contact and new names voiced on a call still count toward
+- Needs: Meet (captured-call content) so contact and new names voiced on a call still count towards
   reach; when a thread moves off the connected accounts the reach count thins and confidence falls
   (a data gap, named not faked).

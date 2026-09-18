@@ -1,13 +1,13 @@
 ---
 id: innocent-explanation-scan
-label: "Check for leave or holiday"
+label: "Reasons they may be away"
 used_by: [cooling-champion]
 over: [person-history]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Check for leave or holiday
+# Reasons they may be away
 ## What it counts
 
 Not written yet.

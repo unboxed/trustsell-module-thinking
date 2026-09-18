@@ -1,16 +1,19 @@
 ---
 id: sustain-lisa-strategy
-order: 6
+order: 5
 kind: act
 label: Sustain
 signal: time-to-reconnect
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm]
+supporting: [one-sided]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: lisa-holmes
 council: burnham
 documents: []
 sure: "sure"
+sure_because: "A fact on record: the strategy was published on 11 September."
 when:
   mode: fresh
   words: "Worth doing today. Stale by Friday."
@@ -45,7 +48,7 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 ## What I noticed
 
 - Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
-- Page 12 commits Burnham to "replacing legacy case systems by 2028". That is your pitch in their words.
+- Page 12 commits Burnham to "replacing legacy case systems by 2028". That is where your goal ends up: partial now, full later.
 - Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.
 - Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.
 
@@ -67,7 +70,7 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 
 Hi Lisa,
 
-I read the strategy over the weekend. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.
+I read the strategy. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.
 
 No agenda here. Just wanted you to know it landed.
 

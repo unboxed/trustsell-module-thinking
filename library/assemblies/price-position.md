@@ -1,7 +1,7 @@
 ---
 id: price-position
 module: 03-offerings
-label: Our price against competitors
+label: Your price against competitors
 blurb: One offering's price, gathered and laid beside the competitive field.
 about: an offering
 deterministic: true
@@ -13,7 +13,7 @@ inputs:
   - web#page-content
 ---
 
-# Our price against competitors
+# Your price against competitors
 ## What it gathers
 
 Gathers your price for one offering and lays it beside the competitive field. Your told `pricing`
@@ -31,7 +31,7 @@ above: [`price-barrier`](../signals/price-barrier.md).
 
 ## Lineage
 
-`pricing` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `web-result`,
+`pricing` resolves to [`offering-told.md`](../told/offering-told.md), the offering's own told source. `web-result`,
 `research-report` and `page-content` resolve to [`channels/web.md`](../channels/web.md).
 `offering-entry` is the sibling assembly this stands on. Where a rival publishes no price, the field
 has a hole on the open web, a **data gap** named not faked rather than a guessed number.

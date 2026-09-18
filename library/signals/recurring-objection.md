@@ -1,20 +1,19 @@
 ---
 id: recurring-objection
 module: 03-offerings
-label: Recurring objection
+label: A worry that keeps coming up
 blurb: The worry that comes up most across your deals, so you can answer it before it's asked.
 modes: [advance]
 kind: risk
 confidence: graded
-inputs: [objection-list]
+inputs: [objection-list, deal]
 counts: [worry-occurrences-across-deals, distinct-worries-count]
 answers: [Q15]
 needs: []
 pull: People's worries-on-record, in aggregate across deals
 ---
 
-# Recurring objection
-
+# A worry that keeps coming up
 ## What it means
 
 Across all the worries People has put on record, which one comes up most, so you can answer it before

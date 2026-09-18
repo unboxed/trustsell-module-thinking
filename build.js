@@ -275,6 +275,7 @@ for (const s of L.signals) {
   must(s.file, 'answers', s.answers, S.questions, 'sales question');
 }
 const MODE_LABEL = {expand: 'Expand', advance: 'Advance', sustain: 'Sustain'};
+const SURE = ['sure', 'likely', 'a hunch'];
 for (const c of L.cards) {
   must(c.file, 'signal', c.signal, S.signals, 'signal');
   must(c.file, 'supporting', c.supporting, S.signals, 'signal');
@@ -292,6 +293,12 @@ for (const c of L.cards) {
   must(c.file, 'council', c.council, S.councils, 'council in world/councils.md');
   must(c.file, 'documents', c.documents, S.documents, 'document in world/documents.md');
   must(c.file, 'held_by', c.held_by, S.cards, 'card');
+  // How sure: one of three words, earned from the weakest evidence under the card, and it
+  // always says why (decided 18 September; the rule is in docs/reading-principles.md).
+  if (c.sure && !SURE.includes(c.sure))
+    problems.push(`${c.file}: sure "${c.sure}" is not one of ${SURE.map(w => `"${w}"`).join(', ')}`);
+  if (c.sure && !c.sure_because)
+    problems.push(`${c.file}: sure "${c.sure}" needs a sure_because line saying what it stands on`);
   const sig = L.signals.find(s => s.id === c.signal);
   if (sig && c.kind === 'act') {
     const allowed = (sig.modes || []).map(m => MODE_LABEL[m]).filter(Boolean);
@@ -410,6 +417,41 @@ for (const c of L.cards) {
     c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, gap: true});
   }
 }
+
+/* ---------- what first: what does waiting a day cost? ---------- */
+// Decided 18 September; the rule is in modules/00-spine.md. Every card's band comes from
+// what it already carries, so nothing about its place is typed by hand except the last
+// tie-break, `order`. A held card is not banded: it sits right under the card it waits on.
+const BANDS = ['Gone tomorrow', 'Worse every day', 'Holding something up', 'A date further off',
+               'Due by its rhythm', 'Costs nothing to wait'];
+const DAY = 86400000, todayMs = Date.parse((world.goal && world.goal.today) + 'T00:00:00Z');
+const OWED = ['promise-made-undelivered', 'ask-made-unanswered'];
+function bandOf(c) {
+  const w = c.when || {}, counts = [].concat(c.counts || []);
+  if (w.mode === 'dated' && w.until && Date.parse(w.until + 'T00:00:00Z') - todayMs <= DAY) return 1;
+  if (w.mode === 'fresh' || counts.some(n => OWED.includes(n))) return 2;
+  if (L.cards.some(x => x.held_by === c.id)) return 3;
+  if (w.mode === 'dated') return 4;
+  if (w.mode === 'rhythm') return 5;
+  return 6;
+}
+// Ties: the council further up the ladder first, then the surer card, then `order`.
+const ladder = [].concat((world.goal && world.goal.ladder) || []);
+const stands = new Map(rowsOf(world.councils).map(r => [r[1], r[2]]));
+const ladderRank = c => c.council ? ladder.indexOf(stands.get(c.council) || 'cold') : -1;
+const sureRank = c => c.sure ? SURE.length - SURE.indexOf(c.sure) : 0;
+const byPlace = (a, b) => a.band - b.band || ladderRank(b) - ladderRank(a) || sureRank(b) - sureRank(a) || (a.order || 0) - (b.order || 0);
+for (const c of L.cards) if (!c.held_by) { c.band = bandOf(c); c.bandWords = BANDS[c.band - 1]; }
+const sorted = [];
+(function place(list) {
+  for (const c of list.sort(byPlace)) {
+    if (sorted.includes(c)) continue;
+    sorted.push(c);
+    place(L.cards.filter(x => x.held_by === c.id).map(x => Object.assign(x, {band: c.band, bandWords: c.bandWords})));
+  }
+})(L.cards.filter(c => !c.held_by));
+for (const c of L.cards) if (!sorted.includes(c))
+  problems.push(`${c.file}: held_by "${c.held_by}" never reaches a card that is not held, so it has no place`);
 
 if (problems.length) {
   console.error(`\n${problems.length} unresolved reference${problems.length > 1 ? 's' : ''}:\n`);
@@ -579,7 +621,7 @@ ${frontReply(c)}${frontActions(c)}
 
 <section class="card-back">
   <h2 class="back-title">The thinking${c.sure ? ` <span class="sure">${h(c.sure)}</span>` : ''}</h2>
-${backSections(c)}
+${c.sure_because ? `  <p class="ios-list__footer sure-because">${h(c.sure_because)}</p>\n` : ''}${backSections(c)}
 </section>
 
 </div>
@@ -599,7 +641,6 @@ ${TABBAR('card')}
 `;
 }
 
-const sorted = L.cards.slice().sort((a, b) => (a.order || 0) - (b.order || 0));
 const CARDS_DIR = path.join(ROOT, 'playbook/cards');
 for (let i = 0; i < sorted.length; i++)
   fs.writeFileSync(path.join(CARDS_DIR, sorted[i].id + '.html'),
@@ -613,6 +654,11 @@ console.log(`  wrote playbook/cards/*.html (${sorted.length} pages)`);
 // there is nothing to reply to yet. Every other kind shows its one action.
 const tileAction = c => c.kind === 'ask' ? 'Answer' : (c.actions && c.actions[0] ? c.actions[0].label : null);
 
+// Today, from world/goal.md, said the way the page says a date: "Wednesday 16 September".
+const todayWords = (() => {
+  const d = new Date((world.goal && world.goal.today) + 'T12:00:00Z');
+  return isNaN(d) ? '' : d.toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC'}).replace(',', '');
+})();
 function homePage(cards) {
   const tiles = cards.map(c => `  <a class="card card--item${c.held_by ? ' card--held' : ''}" data-c="${kindSlug(c)}" href="cards/${c.id}.html">
     <span class="kind kind--${kindSlug(c)}">${h(c.label)}</span>
@@ -627,7 +673,7 @@ ${(c.when || c.held_words) ? `    <p class="when">${h(c.when ? c.when.words : c.
 
 <header class="large-title">
   <h1>Signal cards</h1>
-  <p class="date">Monday 14 September</p>
+  <p class="date">${todayWords}</p>
 </header>
 
 <div class="ios-segmented filters" role="radiogroup" aria-label="Kind of card">
@@ -663,7 +709,7 @@ ${tiles}
   </div>
 </section>
 
-<p class="ios-list__footer foot-line">Monday 14 September. ${cards.filter(c => c.when && c.when.mode === 'dated').length} cards carry a date, ${cards.filter(c => c.when && c.when.mode === 'fresh').length} are fresh, the rest simmer. The real tool would show what fits your day and hold the rest; the playbook shows the whole deck, sorted by when.</p>
+<p class="ios-list__footer foot-line">${todayWords}. ${cards.filter(c => c.when && c.when.mode === 'dated').length} cards carry a date, ${cards.filter(c => c.when && c.when.mode === 'fresh').length} are fresh, the rest simmer. The real tool would show what fits your day and hold the rest; the playbook shows the whole deck, sorted by what waiting a day would cost.</p>
 
 </main>
 

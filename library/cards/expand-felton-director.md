@@ -1,22 +1,24 @@
 ---
 id: expand-felton-director
-order: 16
+order: 10
 kind: act
 label: Expand
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [new-stakeholder]
+supporting: [new-stakeholder, champion]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan]
+counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: shabana-akhtar
 council: felton
 documents: []
 widgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
 sure: "a hunch"
+sure_because: "A reading of her words: Shabana's two mentions of David are the whole evidence."
+held_by: advance-felton-price
 when:
   mode: rhythm
-  words: "Any day this week."
+  words: "Once the partial rollout offer is with Stephen."
 reply:
   module: buttons
 actions:
@@ -43,13 +45,13 @@ draft:
 
 # Ask Shabana Akhtar to bring her director in
 
-Stephen Walsh's price question is really a priorities question, and priorities are set above him. Shabana has mentioned her director twice.
+Stephen Walsh's objection is this year's budget, and budgets are set above him. Shabana has mentioned her director twice.
 
 ## What I noticed
 
-- Why now: Stephen's "not in this year's budget" is a priorities call, and those are made above him. Widen the room before the price goes round again.
+- Why next: the partial rollout offer answers the size of the number. Whether it fits this year is a priorities call, made above Stephen. Once the offer is with him, widen the room.
 - Shabana wrote "David will want to see this" in July and "I'll need David onside" in August. David Marshall, Director of Communities, is on no thread.
-- Two of three Felton voices are for it; the third is finance. Adding the director changes the shape of the decision.
+- Two Felton voices on the thread: Shabana is for it, and Stephen, in finance, holds the objection. Adding the director changes the shape of the decision.
 - This is a hunch more than a read: Shabana's two mentions are the whole evidence.
 
 ## People
@@ -76,14 +78,14 @@ Stephen Walsh's price question is really a priorities question, and priorities a
 
 ## Then
 
-- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and let the price offer land first.
+- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and wait for Stephen's reply.
 
 ## The draft
 
 Hi Shabana,
 
-You've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now, before the price conversation with Stephen goes round again?
+You've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now that the smaller starting option is with Stephen?
 
-I'm happy to send him a short note through you, or to do a twenty-minute session with the three of you. Whichever you think fits how Felton works.
+I'm happy to send him a short note through you, or to do a twenty-minute session with you and David. Whichever you think fits how Felton works.
 
 Fede

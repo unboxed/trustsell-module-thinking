@@ -1,12 +1,12 @@
 ---
 id: fulfilment-scan
-label: "Check the promise was kept"
+label: "Anything that kept the promise"
 used_by: [loose-end]
 over: []   # not written yet. One of: conversation-history, person-history, meeting-history
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Check the promise was kept
+# Anything that kept the promise
 ## What it counts
 
 Not written yet.

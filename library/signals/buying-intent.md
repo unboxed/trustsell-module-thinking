@@ -1,20 +1,19 @@
 ---
 id: buying-intent
 module: 02-relationships
-label: Buying intent
+label: Talking about buying
 blurb: A chat that has turned into a real buying discussion.
 modes: [advance, expand]
-kind: opening
+kind: deal-movement
 confidence: graded
-inputs: [conversation-history, person-history, meeting-history]
+inputs: [conversation-history, person-history, meeting-history, deal]
 counts: [pricing-question-asked, timeline-or-start-question, proposal-or-trial-requested, budget-or-procurement-entered, decision-language-used]
 answers: [Q14, Q19]
 needs: [meet]
 pull: Offerings' offering relevance, to anchor which offering the interest is about
 ---
 
-# Buying intent
-
+# Talking about buying
 ## What it means
 
 A conversation has stopped being a chat and started being a purchase.

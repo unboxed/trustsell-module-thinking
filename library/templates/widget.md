@@ -2,7 +2,7 @@
 # THE CATALOG. One doc per widget, at library/widgets/<id>.md.
 # A widget is one thing a card can show, in a shape the seller learns once. It sits BESIDE the
 # ladder, not on it: it holds no reading of its own, it is how a card shows the evidence a
-# rung below already holds. The catalog is fixed; a card picks from it and fills it, and never
+# rung below already holds. The catalogue is fixed; a card picks from it and fills it, and never
 # arranges it. Keep it AGNOSTIC: no named people, councils or documents.
 # Two families. DETAIL widgets sit in a card's details, between the story and Not sure; a card
 # takes at most two. REPLY widgets fill the sheet a card's reply is given in; a card takes one.

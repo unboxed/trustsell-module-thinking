@@ -24,9 +24,9 @@ draws_from: [web, drive]
 The expert on the things you sell: what each is, who it suits, how it's priced, and how to
 answer the usual objections.
 
-> Its catalog floors live as libraries: raw data in
-> [`01-integrations/channels/`](../channels/), assemblies in
-> [`assemblies/`](assemblies/), signals in [`signals/`](signals/). This file holds only the
+> Its catalogue floors live as libraries: raw data in
+> [`channels/`](../channels/), assemblies in
+> [`assemblies/`](../assemblies/), signals in [`signals/`](../signals/). This file holds only the
 > operating prose. See [`docs/library-format.md`](../docs/library-format.md).
 
 ## Principles
@@ -84,9 +84,9 @@ Offerings' reasoning is now its **libraries**, where the two moves above the raw
 floor you can browse, just pointed at products instead of people:
 
 - **Assembling** (deterministic, organising the product facts so they can be seen) becomes the
-  [`assemblies/`](assemblies/) library.
+  [`assemblies/`](../assemblies/) library.
 - **Sensing** (the reading, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
-  counting then judging) becomes the [`signals/`](signals/) library. The reads sit on top of the
+  counting then judging) becomes the [`signals/`](../signals/) library. The reads sit on top of the
   facts (what you told it plus what it found on the web) and the counts (which worries come up
   most, where you sit against a competitor's price, which answers you keep reaching for), earning
   their place by answering a real question in [`sales-questions.md`](../docs/sales-questions.md).
@@ -115,7 +115,7 @@ What it can't do yet: it reads the present, not the future. Whether a buyer's bl
 lift* is a forecasting question, and that's parked, not Offerings' to guess.
 
 The raw data this stands on has two homes. The channels Offerings draws from (`web`, `drive`) live in
-[`01-integrations/channels/`](../channels/). Its own [`told.md`](told.md) holds the
+[`channels/`](../channels/). Its own [`offering-told.md`](../told/offering-told.md) holds the
 facts you state outright (the pitch, the fit-shape, the use-cases, the pricing, the worries and
 answers), which is the most deterministic ground of all: you say it rather than the tool inferring it.
 Offerings is the worked example of that **told source** floor (see

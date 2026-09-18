@@ -16,8 +16,8 @@ The files behind a card: the case study it attaches, the note it offers, the one
 points at. For each, what it proves and how recent it is, so you can judge whether it is the
 right thing to send.
 
-It is the widget for "what have I got to give". Most Sustain cards need it, because a Sustain
-card names a gift, and the gift is often a document.
+It is the widget for "what have I got to give". A Sustain card names a gift, and the gift is
+often a document, so it fits there first. Today one card carries it: Rachel's promise.
 
 ## Row form
 

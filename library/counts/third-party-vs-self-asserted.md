@@ -1,13 +1,13 @@
 ---
 id: third-party-vs-self-asserted
-label: "Proof from others, or from us"
+label: "Proof from others, or from you"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Proof from others, or from us
+# Proof from others, or from you
 ## What it counts
 
 Not written yet.

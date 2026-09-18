@@ -17,3 +17,4 @@ What a card can offer or attach. Each lives in Drive, so a card that offers one 
 | The records import note | records-import-note | How import works, in stages | — |
 | The partial rollout price sheet | partial-rollout-price-sheet | One service, live cases, about a third of the price | — |
 | The alongside one-pager | alongside-one-pager | How BOPS sits beside an existing case system | — |
+| Your demo deck | demo-deck | The slides you demo with. The June and July versions open on "Compliance by design" | — |

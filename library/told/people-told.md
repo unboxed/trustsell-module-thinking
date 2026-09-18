@@ -1,13 +1,12 @@
 ---
 id: people-told
-name: What you tell People
+name: What you told me about people
 source: told
 connected: true
 icon: pencil
 ---
 
-# What you tell People
-
+# What you told me about people
 The facts about your relationships that no amount of fetched mail will reveal, because they live only
 in your head. People infers disposition from behaviour wherever it can, but some ground it cannot read
 off the inbox: who you actually mean to chase, that a quiet name is really the decision-maker, that a
@@ -26,7 +25,7 @@ One boundary: **who *you* are is not here.** Your name, email and "About you" ar
 Profile ([`05-persona-you`](../modules/05-persona-you.md)), which owns your identity. People leans on it
 but does not hold it. This source is about the *other* people, and about the **deals** you group them
 into: the `deal-seed` is where you name a selling effort and the people and threads it starts from, so
-People can gather it (see [`assemblies/deal.md`](assemblies/deal.md)).
+People can gather it (see [`assemblies/deal.md`](../assemblies/deal.md)).
 
 Each record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`
 becomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel

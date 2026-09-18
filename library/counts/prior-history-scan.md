@@ -1,12 +1,12 @@
 ---
 id: prior-history-scan
-label: "Check if we have spoken before"
+label: "Spoken to before"
 used_by: [new-stakeholder]
 over: []   # not written yet. One of: conversation-history, stakeholder-map
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Check if we have spoken before
+# Spoken to before
 ## What it counts
 
 Not written yet.

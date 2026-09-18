@@ -8,7 +8,7 @@ kind: style
 confidence: graded
 inputs: [writing-history]
 counts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]
-answers: [Q23, Q26]
+answers: [Q23]
 needs: [gmail, slack]
 ---
 
@@ -49,7 +49,7 @@ samples.
 - Trigger: a greeting, sign-off, length and formality pattern holds across many of your own messages
   (measured against your own baseline, never a fixed "uses please = formal" line), with the
   draft-to-sent edits weighted most because each correction states the preference outright.
-- Confidence: high when many messages and edits agree; grades down toward a soft read when it rests on
+- Confidence: high when many messages and edits agree; grades down towards a soft read when it rests on
   a handful of mails or a single seeded sample.
 - Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is
   built from; without them the read is thin and leans on told samples or asks, rather than inventing a

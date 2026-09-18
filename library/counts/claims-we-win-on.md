@@ -1,13 +1,13 @@
 ---
 id: claims-we-win-on
-label: "Where we beat competitors"
+label: "Where you beat competitors"
 used_by: [competitive-standing]
 over: [competitor-field]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Where we beat competitors
+# Where you beat competitors
 ## What it counts
 
 Not written yet.

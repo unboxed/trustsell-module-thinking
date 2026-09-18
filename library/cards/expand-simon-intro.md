@@ -1,16 +1,19 @@
 ---
 id: expand-simon-intro
-order: 15
+order: 17
 kind: act
 label: Expand
 signal: warm-path
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
+supporting: [one-sided]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you, times-you-chase]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: simon-ward
 council: ashworth
 documents: []
 sure: "likely"
+sure_because: "Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected."
 when:
   mode: rhythm
   words: "Any day this week."
@@ -40,7 +43,7 @@ notsure:
     says: "Then ask Simon that first. The draft does."
 draft:
   title: "The message"
-  hand: "Open in Mail"
+  hand: "Open in Slack"
   sub: "Slack, to Simon"
   footer: "Send it from Slack yourself. I don't send."
 ---

@@ -1,7 +1,7 @@
 ---
 id: product-claims
 module: 03-offerings
-label: What we say the product does
+label: What you say the product does
 blurb: The factual claims one product makes, gathered with the grounding under each.
 about: an offering
 deterministic: true
@@ -12,7 +12,7 @@ inputs:
   - web#web-result
 ---
 
-# What we say the product does
+# What you say the product does
 ## What it gathers
 
 Gathers the factual claims a product makes ("syncs both ways", "exports an audit log", "deploys in a
@@ -29,7 +29,7 @@ list to judge a buyer's confusion (a buyer using "export" where the product says
 
 ## Lineage
 
-`pitch` resolves to [`told.md`](../told/offering-told.md), the offering's own told source. `file-content` resolves to
+`pitch` resolves to [`offering-told.md`](../told/offering-told.md), the offering's own told source. `file-content` resolves to
 [`channels/drive.md`](../channels/drive.md). `web-result` resolves to
 [`channels/web.md`](../channels/web.md). `offering-entry` is the sibling assembly
 this stands on. A claim that lives only in a deck not uploaded to Drive is a **data gap**, named not

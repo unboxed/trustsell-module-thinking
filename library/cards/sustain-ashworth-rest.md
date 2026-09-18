@@ -1,19 +1,20 @@
 ---
 id: sustain-ashworth-rest
-order: 18
+order: 20
 kind: act
 label: Sustain
 signal: one-sided
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [cooling-champion]
+supporting: [champion-went-dark, warm-path]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [who-starts-threads, times-you-chase, you-give-vs-they-give, innocent-explanation-scan]
+counts: [who-starts-threads, times-you-chase, you-give-vs-they-give, bounce-back-detected, auto-reply-no-longer-with]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: nicola-shaw
 council: ashworth
 documents: []
 widgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
 sure: "likely"
+sure_because: "A pattern: four notes, no reply, no bounce."
 reply:
   module: buttons
 actions:
@@ -37,19 +38,19 @@ reasons:
 draft:
   title: "Last note"
   hand: "Open in Mail"
-  sub: "only if you want one more try"
+  sub: "only if Simon's introduction goes nowhere"
   footer: "Nothing attached."
 ---
 
 # Let Ashworth rest
 
-Four notes from you since May, nothing back. A fifth would cost more than it gains. I'll stop suggesting them and watch for a warm path instead.
+Four notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.
 
 ## What I noticed
 
 - Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.
 - Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.
-- One-sided threads like this rarely turn with a fifth message. They turn with a different door: a person who knows them.
+- A fifth message is unlikely to do what four did not. A different door might: a person who knows them.
 - Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.
 
 ## Timeline

@@ -1,6 +1,6 @@
 ---
 id: advance-holbrook-window
-order: 3
+order: 14
 kind: act
 label: Advance
 signal: buying-intent
@@ -14,6 +14,8 @@ council: holbrook
 documents: []
 widgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
 sure: "sure"
+sure_because: "A fact on record: Neil wrote that the window closes 16 October."
+held_by: sustain-neil-rhythm
 when:
   mode: dated
   words: "By 16 October: procurement window closes. Book this week."
@@ -55,7 +57,7 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 ## What I noticed
 
-- Why now: five weeks to the window, and a meeting takes two to three to land in Neil's calendar. This week is the last comfortable one.
+- Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.
 - Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.
 - Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.
 - You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.
@@ -76,7 +78,7 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 ## Not sure
 
-- Whether the window is for a decision or for a signed order. Those are five weeks apart in practice.
+- Whether the window is for a decision or for a signed order. Neil will know.
 
 ## Then
 

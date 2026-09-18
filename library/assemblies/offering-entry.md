@@ -41,7 +41,7 @@ there an answer gap, where do we sit on price.
 
 ## Lineage
 
-`pitch`, `fit-shape`, `use-case`, `pricing` and `worry-answer` resolve to [`told.md`](../told/offering-told.md), the
+`pitch`, `fit-shape`, `use-case`, `pricing` and `worry-answer` resolve to [`offering-told.md`](../told/offering-told.md), the
 offering's own told source. `file` and `file-content` resolve to
 [`channels/drive.md`](../channels/drive.md). `research-report`, `enrichment` and
 `web-result` resolve to [`channels/web.md`](../channels/web.md). The five web

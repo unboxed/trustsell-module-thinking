@@ -1,6 +1,6 @@
 ---
 id: ask-rachel-meeting
-order: 10
+order: 11
 kind: ask
 label: Ask
 signal: new-stakeholder
@@ -20,14 +20,14 @@ reply:
   module: choices
 answers:
   - label: "Warm"
-    suggested: true
-    says: "Good to know. Drafts to her get shorter and more direct, and I'll stop treating the adoption question as a doubt."
+    says: "Good to know. Drafts to her get shorter and more direct, and the call with Andrew goes as an offer, not as an answer to a doubt."
   - label: "Cautious"
-    says: "That matches what I read. I'll keep answering her with evidence and offering peers, not pitches."
+    suggested: true
+    says: "That matches what I read. The call with Andrew is ready to send: evidence and peers, not pitches."
   - label: "Against"
-    says: "Thank you for saying so. I'll route through Gary, avoid putting her on the spot, and tell you if her emails change."
+    says: "Thank you for saying so. I'll hold the call with Andrew, route through Gary, and tell you if her emails change."
   - label: "Didn't come up"
-    says: "Fine. Nothing changes; I'll keep reading her emails for it."
+    says: "Fine. The call with Andrew is ready to send as written, and I'll keep reading her emails."
 actions:
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
@@ -61,10 +61,10 @@ She joined the Westmoor thread the same day. I can read her emails, not the room
 
 ## What I'll do with your answer
 
-- Warm: shorter, more direct drafts; the adoption question stops being a doubt.
-- Cautious: as now. Evidence, and peers rather than pitches.
-- Against: I route through Gary and keep her off the spot.
-- Didn't come up: nothing changes.
+- Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.
+- Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.
+- Against: I hold the call with Andrew, route through Gary and keep her off the spot.
+- Didn't come up: the call with Andrew is ready as written.
 
 ## Where I'll remember it
 

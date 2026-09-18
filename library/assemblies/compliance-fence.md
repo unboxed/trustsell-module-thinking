@@ -1,7 +1,7 @@
 ---
 id: compliance-fence
 module: 04-organization
-label: Things we must not claim
+label: Rules every message must follow
 blurb: The company's hard limits, gathered into one fence a draft must sit inside.
 about: an organisation
 deterministic: true
@@ -10,8 +10,10 @@ inputs:
   - drive#file-content
 ---
 
-# Things we must not claim
+# Rules every message must follow
 ## What it gathers
+
+Nothing reads this yet. It waits for the draft gate, the check a draft passes before it reaches you, which is not built.
 
 Gathers the company's hard limits into a single fence: the told `rule` records (what can never be
 claimed, what must always be said, words and tones to avoid) and the exported `file-content` of any
@@ -21,7 +23,7 @@ preferences. Every line the company cannot cross, in one place.
 
 This is the negative half: the walls a draft is gated against, the "never claim, always say" limits
 that can stop a message. The positive "sound like this" side, the brand voice the render writes
-toward, was split out into its sibling [`house-voice-guide`](house-voice-guide.md) so the fence holds
+towards, was split out into its sibling [`house-voice-guide`](house-voice-guide.md) so the fence holds
 walls only. A hard brand wall (a phrase the company can never use) is a `rule` here; the softer "we
 don't talk like that" preferences live in the guide. A limit that is really a judgement call ("do not
 sound pushy") is held as a soft rule and flagged as such, rather than dressed up as a wall it cannot
@@ -37,8 +39,8 @@ floor. Used solo with no organisation behind you, the fence is empty and the Gat
 
 ## Lineage
 
-`rule` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`
+`rule` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`
 resolves to [`channels/drive.md`](../channels/drive.md), the brand or compliance
-document a rule may point at. The brand voice the render writes toward lives in
+document a rule may point at. The brand voice the render writes towards lives in
 [`house-voice-guide`](house-voice-guide.md); the seam between that guide and Profile's personal voice
 at render time is an open question, worked in both modules' prose.

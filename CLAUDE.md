@@ -50,7 +50,7 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   kit. **Do not edit them.** If a value must change, change it in `style.css` by overriding.
 - `playbook/assets/style.css` is the playbook's own layer: page layout, the card, the kind dots,
   the sheets' placement, the phone frame. Every colour goes through a token, so a later re-theme
-  means changing tokens, not rules. Where a number is a judgment rather than Apple's, the comment
+  means changing tokens, not rules. Where a number is a judgement rather than Apple's, the comment
   says so.
 - `playbook/assets/fonts/` holds Inter (SIL OFL) as the non-Apple fallback, and Plus Jakarta Sans
   (SIL OFL), the phone's face. Macs and iPhones use SF Pro through `-apple-system` on the desk.
@@ -67,7 +67,7 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
 
 ## What is where
 
-**`library/` — the source of truth.** Markdown, brainstormed in prose. The two-layer format is the
+**`library/`: the source of truth.** Markdown, brainstormed in prose. The two-layer format is the
 good thing here and is not up for redesign: **frontmatter is the machine layer** (flat facets, ids
 that must resolve), **the body is the human layer** (plain English, short sentences). The
 skeletons are in `library/templates/`; the contract is `library/docs/library-format.md`.
@@ -84,7 +84,7 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 | Signals | `library/signals/` | the first opinion, the first thing you could argue with |
 | Cards | `library/cards/` | the suggestion, question or outcome |
 
-Beside the ladder, `library/widgets/`: the catalog a card picks from and fills, never arranges.
+Beside the ladder, `library/widgets/`: the catalogue a card picks from and fills, never arranges.
 Detail widgets (Timeline, Their words, People, Documents, Open items, A number against its usual; at most two
 per card, each fed by something the card rests on) and reply widgets (the reply modules and the
 draft). `build.js` checks every join. See `library/docs/library-format.md`.
@@ -101,14 +101,15 @@ possible, marked `provisional`, and leaves `over: []` where it could be one of s
 rows are `source · words`, and the build checks each source against the trail. All of this is a
 later pass, not an oversight.
 
-- `build.js` — the one script. Plain Node, no packages. Reads `library/`, validates every id,
+- `build.js`: the one script. Plain Node, no packages. Reads `library/`, validates every id,
   writes `playbook/assets/data.js`, `playbook/index.html` and `playbook/cards/*.html`.
-- `playbook/` — the deliverable, still plain static HTML. `index.html` (Cards, generated),
+- `playbook/`: the deliverable, still plain static HTML. `index.html` (Cards, generated),
   `ask.html` (Ask, hand-written), `library.html` (the library, browsable, rendered from
-  `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the phone, a working
-  prototype, then the modules that can fill a card's reply sheet, as bare sheets, a draft among
-  them, and last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
-- `_archive/` — what did not come forward: the blueprint viewer app, the hackathon deck, the
+  `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
+  only; your day on mobile, a working prototype; the modules that can fill a card's reply sheet,
+  as bare sheets, a draft among them; the details, three phones scrolled into their details; and
+  last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
+- `_archive/`: what did not come forward. That is the blueprint viewer app, the hackathon deck, the
   scenario docs and the two blueprint-era UI notes. **Inspiration, not source of truth.** The
   channels, assemblies, signals and the live docs that used to live here are now in `library/`.
   The old vocabulary there was Plant / Grow / Nurture; here it is Expand / Advance / Sustain.

@@ -1,12 +1,12 @@
 ---
 id: ask-made-unanswered
-label: "Questions left unanswered"
+label: "Your questions they have not answered"
 used_by: [loose-end]
 over: []   # not written yet. One of: conversation-history, person-history, meeting-history
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Questions left unanswered
+# Your questions they have not answered
 ## What it counts
 
 Not written yet.

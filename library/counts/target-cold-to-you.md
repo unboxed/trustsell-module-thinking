@@ -1,12 +1,12 @@
 ---
 id: target-cold-to-you
-label: "Nobody there knows you"
+label: "You have never spoken to them"
 used_by: [warm-path]
 over: []   # not written yet. One of: person-history, stakeholder-map
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Nobody there knows you
+# You have never spoken to them
 ## What it counts
 
 Not written yet.

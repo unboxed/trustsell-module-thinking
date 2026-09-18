@@ -1,20 +1,19 @@
 ---
 id: blocker
 module: 02-relationships
-label: Blocker
+label: Someone blocking the deal
 blurb: Someone who keeps raising the same objection and stalls the deal.
 modes: [advance]
 kind: risk
 confidence: graded
-inputs: [conversation-history, person-history, meeting-history]
+inputs: [conversation-history, person-history, meeting-history, objection-list, deal]
 counts: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]
-answers: [Q13, Q15]
+answers: [Q15, Q16]
 needs: [meet]
 pull: Offerings' objection list, to name the objection
 ---
 
-# Blocker
-
+# Someone blocking the deal
 ## What it means
 
 One stakeholder on a live deal who keeps pushing back. They still reply, so they have not gone quiet.
@@ -45,7 +44,7 @@ Borrows Offerings' objection list to name the objection.
 - Confidence: high when the worry is identical across replies, the replies have clearly shortened, and
   every ask stalled; softens to "pushing back" when the worries differ each time or the deal is still
   inching forward.
-- Needs: Meet, so push-back voiced aloud on a captured call counts toward the
+- Needs: Meet, so push-back voiced aloud on a captured call counts towards the
   pattern and is still matched to Offerings to be named; without it, an uncaptured call shows the stall
   without the worry behind it (the conditional-content data gap
   [`meeting-history`](../assemblies/meeting-history.md) names). If the worry matches nothing on

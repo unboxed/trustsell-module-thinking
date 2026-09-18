@@ -6,7 +6,7 @@ blurb: A worry on record with no grounded answer yet, or an answer whose proof i
 modes: [advance]
 kind: risk
 confidence: graded
-inputs: [objection-list]
+inputs: [objection-list, proof-library]
 counts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]
 answers: [Q15, Q17]
 needs: [drive, web]

@@ -1,11 +1,11 @@
 ---
 id: advance-felton-price
-order: 14
+order: 9
 kind: act
 label: Advance
-signal: price-barrier
+signal: blocker
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [blocker]
+supporting: [price-barrier]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [repeated-objection-count, objection-name-match, your-price]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
@@ -13,6 +13,7 @@ person: stephen-walsh
 council: felton
 documents: [partial-rollout-price-sheet]
 sure: "likely"
+sure_because: "A pattern: all four of Stephen's messages mention the price."
 when:
   mode: rhythm
   words: "Any day this week."
@@ -47,8 +48,8 @@ Stephen Walsh's objection is the annual price, not the product. The partial roll
 ## What I noticed
 
 - Why now: Stephen's email last Wednesday ended "we can't find that in this year's budget". Left alone, that sentence becomes the decision.
-- Felton is at coalition: Shabana Akhtar and the service lead are for it. Stephen is finance, and his objection is the only one left.
-- Every message from Stephen mentions the annual figure. None questions what BOPS does. That is a price barrier, not a fit problem.
+- Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.
+- Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.
 - The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.
 
 ## What I read
@@ -64,7 +65,7 @@ Stephen Walsh's objection is the annual price, not the product. The partial roll
 
 ## Then
 
-- After you send it I'll watch for whether Stephen replies himself or the service lead does. If it's the service lead, the price has stopped being the blocker.
+- After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.
 
 ## The draft
 
@@ -72,7 +73,7 @@ Hi Stephen,
 
 You said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.
 
-Most councils don't start with the whole thing. The usual first step is one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.
+East Marston didn't start with the whole thing either. A first step can be one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.
 
 The one-page breakdown is attached.
 

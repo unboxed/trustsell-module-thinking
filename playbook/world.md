@@ -1,8 +1,10 @@
 # The pretend world
 
 Every card in the playbook is written as if the tool already exists and is talking to **you**, the
-seller. To keep the cards consistent they all share one world and one card model. Reuse these
-names and rules; add to this file before inventing anything new.
+seller. To keep the cards consistent they all share one world and one card model. The card model
+and the decisions live here. The world itself (goal, cast, councils, documents) is data in
+`library/world/`, because cards reference it by id; add there before using a name, a date or a
+document that is not already there. The world sections at the end of this file mirror it.
 
 ## Today
 
@@ -31,7 +33,11 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
 - **Told.** An outcome with nothing to do: the *Then* of an earlier card coming back ("Julie's
   email bounced this morning"). The button is Got It.
 
-Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve.
+Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve. An Ask
+is the general way the tool learns what it cannot observe, not only about a person: your tone, which
+councils matter most, what is new about the product. A fact that does not shift is told once; what
+shifts is asked when the answer would change something, and every answer is kept, so nothing is
+asked twice. There is no settings screen (decided 18 September).
 
 **The front** is what the home shows: label, the action as the title, one or two lines of reason,
 the *when* if earned, one button. **The back** is the thinking: for Act cards, *What I noticed*
@@ -47,8 +53,10 @@ one-tap question when you hold the answer) and *Then* (what happens after you ac
 Cards ripen and rot. A card past its moment leaves by itself with one line. There is no overdue
 state, ever. A card can be **held** (shown faded) when it ripens only after another card lands.
 
-**How sure**, one word beside "The thinking" where it matters: *sure* (a fact: a bounce), *likely*
-(a pattern: silence), *a hunch*.
+**How sure**, one word beside "The thinking" where it matters: *sure* (a fact on record: a bounce),
+*likely* (a pattern against their usual: silence), *a hunch* (a reading of someone's words). Never
+a number. The weakest ground sets the word, and a line under it says what it stands on (decided 18
+September; the rule is in `library/docs/reading-principles.md`).
 
 **Guardrails.** Every Sustain card names what the other person gets. "Not Relevant" asks why in
 one tap. Cards are observations with a suggested move, never tasks: no due-date fields, owners or
@@ -60,7 +68,10 @@ until you do"; they have not been changed yet.)
 
 ## Where the cards live
 
-**The home (desk).** The grid, cards first, sorted by when. Filters by kind. The box sits below
+**The home (desk).** The grid, cards first, sorted by what waiting a day would cost: six bands
+worked out by `build.js` from each card's `when`, what it owes and what waits on it, with a held card
+right under the card it waits on (decided 18 September; the bands are in
+`library/modules/00-spine.md`). Filters by kind. The box sits below
 the grid, never above it: the cards come to you; the box is for what you're wondering.
 
 **The phone.** Slides that explain the concept; they are not screens of the tool. All of them
@@ -80,7 +91,8 @@ about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its d
 follow the spine with the card's widgets in place. The words and rows come from the cards in
 `library/`, copied in by a one-off script, so the slide says only what the cards say. Felton
 and Rachel's promise card also carry widgets (People, Their words, Open items, Documents) but
-are not on the slide: their replies are drafts too. The fifth, "How a card is built"
+are not on the slide: their replies are drafts too. Holbrook's window card carries a Timeline
+and is not on the slide either. The fifth, "How a card is built"
 (18 September, by looking, after four rendered sheets: a full tree, one thread, rings, then
 https://claude.ai/artifact/U4dtpbqQJmpbFp5k5hdES6 where "B · Pyramid" was chosen), shows Karen's
 card at the peak of a pyramid. The channels are the ground, each with the records it gives;
@@ -145,7 +157,7 @@ and date. (Today moved from Monday 14 to Wednesday 16 September on 18 September,
 with past days in it could be seen; the cards were reworded to stay true from Wednesday.) A
 day on the strip means when a card's moment arrives, never a due date, so the strip does not
 break the rule that cards carry no due dates. What a later day shows is not written yet, so the
-card stays the same whichever day is chosen. Only the five `dated` cards have a real day today;
+card stays the same whichever day is chosen. Only the four `dated` cards have a real day today;
 every other card would need an "arrives" fact first. Passed over: the strip above the count,
 which pushed the card 50 pt down, and a smaller strip between the menu buttons, which left the
 compact title nowhere to go. The strip fades with the count's timing as the card becomes a page,
@@ -154,7 +166,7 @@ their count.
 
 The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
-front holds one filled action and at most one plain one; anything that needs more room goes
+front holds one filled action and at most one outline one, stacked, with Skip under them; anything that needs more room goes
 in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
 action on the front raises the sheet. The phone slide shows the desk's Karen Hughes card:
 the filled action is Send Message, the plain one is View Draft, which raises the draft
@@ -164,9 +176,13 @@ article, as Apple's do; the desk still says "Send the Note". Placeholder titles 
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
 
-Skip sits top right of the card, at the end of the kind label's line: a plain button, in view
-but far from the thumb that sends, and it costs the card no height. It scrolls away with the
-front. On the slide it does nothing yet.
+How sure sits top right of the card, at the end of the kind label's line: one quiet word
+("likely"), with what it stands on a hover away; an Ask card leaves the place empty. Skip has
+moved into the actions (18 September, the user's call). The actions stack, one per row: the
+filled action, then the secondary one as an outline capsule of the same size (drawn with the badges'
+hairline, so there is still no colour on buttons), then Skip as quiet text, last. The stack keeps its foot: on a card with no secondary action the filled action drops a row, so Skip sits in the same place on every card and no empty row is left under it. Skip fades with the front as the card becomes a page. For an
+hour the same day Skip shared the secondary action's row, side by side; the user preferred a stack. On the slide it does nothing yet. (Until 18 September Skip sat
+where the word now is.)
 
 Scrolling turns the card into a page (decided 17 September, picked from three rendered
 options; the other two were a card that scrolls inside itself, and details that rise over the
@@ -237,13 +253,13 @@ is ink here and an Advance dot was coming out black. Long titles will
 need a smaller step than 38; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.
 
-The details have a fixed spine and a catalog of widgets (decided 18 September, by looking, on one
+The details have a fixed spine and a catalogue of widgets (decided 18 September, by looking, on one
 sheet of rendered options: https://claude.ai/artifact/DnMav6ETmx2HwEnYtXEn7K). The spine is the
 same on every card: Why now, The story so far, then one or two detail widgets, then Not sure,
 Then, and What I read. Ask cards keep their own section names in the same places. The widgets
-are a catalog the tool picks from and fills, as the reply modules are, and they live in
+are a catalogue the tool picks from and fills, as the reply modules are, and they live in
 `library/widgets/`. They are close to Google's A2UI, where an agent picks components from a
-catalog and fills them with data, but with one difference, on purpose: ours are large and
+catalogue and fills them with data, but with one difference, on purpose: ours are large and
 specific and sit in a fixed place, so the tool chooses and fills them but never arranges them.
 That is what lets a seller learn the set once. There are six detail widgets, told apart by
 shape: *Timeline* (a line of dots, today's filled), *Their words* (a quote in large type with a
@@ -264,9 +280,11 @@ card on that signal lean on documents even when it sends nothing. The look chose
 drawn"; tried and passed over on the same sheet were "Plain lines" (the blocks looked alike)
 and "Meta beside the words" (a quiet left column on every block). Ink only: the kind's dot stays
 the only colour. A message history is a Timeline; promises and blockers are both Open items.
-Every row traces to a record in What I read. Four cards carry widgets so far. North Ridley's demo
-brief cannot take People yet: its signal, `lead-with-this`, reads the offering and the
-objections but not who is in the room, so the check refuses it. Not built on the phone yet.
+Every row traces to a record in What I read. Six cards carry widgets so far: Karen, Ashworth, the
+Ask about Rachel's meeting, Rachel's promise, Felton's director and Holbrook's window. North Ridley's
+demo brief could not take People at first, because its signal, `lead-with-this`, does not read who
+is in the room; it now rests on `new-stakeholder` too, so it could, but none is placed yet. On the
+phone the widgets show only on "The details".
 
 Not decided: how widgets look at night, whether a widget can be tapped through to its records,
 whether the draft becomes a `reply.module` of its own, what a swipe does, the names and the list of the details' sections ("The story
@@ -286,7 +304,7 @@ matters. A question the tool cannot answer can turn into an Ask ("if you know wh
 budget, a name is enough"). A question the cards should already have answered ("who's going
 cold?") is a signal that the cards surfaced too late, and the answer says so.
 
-An answer is not a new kind of card. The vocabulary stays at five words.
+An answer is not a new kind of card. The vocabulary stays at six words.
 
 ## How a card is presented
 
@@ -315,7 +333,7 @@ the kit. The desk table below stays as it is.
 | The actions once the card has opened | the same buttons, always in view |
 | What the tool says back | the footer line under the actions |
 | The kinds | a dot in Apple's colour before the label: Sustain green, Advance blue, Expand orange, Ask and Connect grey |
-| Home navigation | a tab bar: Cards, Ask, Phone. The kinds are a segmented control, because they filter rather than navigate |
+| Home navigation | a tab bar: Cards, Ask, Library, Phone. The kinds are a segmented control, because they filter rather than navigate |
 
 Wording follows the HIG's writing rules where it is interface text: button labels in title case
 and starting with a verb ("Send the Note", "Not Now", "Open in Mail"), everything else in
@@ -335,7 +353,7 @@ cold → engaged → coalition → partial → full
 
 | Council | Stands at | Notes |
 |---|---|---|
-| Bramley District Council | engaged | Karen Hughes is the only live door. Budget meeting 22 August. Budget sits with the Director of Resources, Martin Hodgson |
+| Bramley District Council | engaged | Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson |
 | Westmoor County Council | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |
 | Holbrook Metropolitan Borough | engaged | Neil Chapman; procurement window closes 16 October |
 | Ashworth Borough Council | cold | four notes from you since May, nothing back |
@@ -344,7 +362,7 @@ cold → engaged → coalition → partial → full
 | North Ridley Council | engaged | demo Thursday 17 September 10:00; think BOPS replaces their case system |
 | Moreton Borough Council | engaged | Julie Barker left; her auto-reply names Sanjay Mistry |
 | Tarlton Borough Council | cold | tender out 9 September, clarifications close 2 October, tender closes 9 October |
-| East Marston County Council | full (customer) | the case study every other council gets shown; live fourteen months |
+| East Marston County Council | full | the customer. The case study every other council gets shown; live fourteen months |
 
 Twelve councils have no named person: Ashby, Brinsley, Carlton, Denby, Fulford,
 Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
@@ -352,6 +370,7 @@ Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 ## The cast
 
 - **Karen Hughes**, Head of Customer Services, Bramley. Used to reply within a day; slowed since the budget meeting.
+- **Martin Hodgson**, Director of Resources, Bramley. Holds the budget. Not on any thread.
 - **Gary Pearson**, Service Design Lead, Westmoor. Your champion. Asked on 10 September whether BOPS can import their case records.
 - **Rachel Gill**, Head of IT, Westmoor. Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked "will officers actually use it". You owe her the data-residency note.
 - **Neil Chapman**, Digital Transformation Lead, Holbrook. Warm, slow rhythm, roughly every six weeks. Books calls when you propose them.

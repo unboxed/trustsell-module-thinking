@@ -1,6 +1,6 @@
 ---
 id: expand-tarlton-tender
-order: 4
+order: 15
 kind: act
 label: Expand
 signal: fit-match
@@ -13,6 +13,7 @@ person: darren-cole
 council: tarlton
 documents: []
 sure: "sure"
+sure_because: "A fact on record: the tender's own dates."
 when:
   mode: dated
   words: "By 2 October: clarification questions close. Start this week."
@@ -36,12 +37,12 @@ reasons:
     says: "Understood. I'll take this off the board and not raise it again unless you put it back."
 draft:
   title: "The clarification questions"
-  hand: "Open in Mail"
+  hand: "Copy for the Portal"
   sub: "to the procurement contact"
   footer: "Send through the portal, not by email. I'll watch for the answer."
 ---
 
-# Tarlton is replacing its case system
+# Send Tarlton two clarification questions
 
 Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
 
@@ -61,7 +62,7 @@ Their tender went out last Wednesday and reads like your pitch. Darren Cole is t
 
 ## Not sure
 
-- Whether a tender this size is ever won cold. East Marston was. Most aren't.
+- Whether a tender this size can be won cold. I have nothing to go on either way.
 
 ## Then
 
@@ -79,4 +80,4 @@ Regarding the case management modernisation tender published 9 September, two cl
 
 Kind regards,
 
-Federico Carbo, BOPS
+Fede

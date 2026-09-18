@@ -19,7 +19,7 @@ pull: People's lead situation, to judge the match against the fit-shape
 Given a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls
 short.
 
-This is a Plant read, made per candidate. Offerings owns the shape and the match. People owns sweeping
+This is an Expand read, made per candidate. Offerings owns the shape and the match. People owns sweeping
 the address book and calls this read on each lead. It is the mirror of People pulling Offerings to name
 an objection: here Offerings pulls People to know the lead.
 

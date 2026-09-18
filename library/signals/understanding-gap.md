@@ -1,22 +1,22 @@
 ---
 id: understanding-gap
 module: 02-relationships
-label: They have misunderstood us
+label: They have misunderstood you
 blurb: They keep asking the same things, so the product has not landed.
 modes: [advance]
 kind: risk
 confidence: graded
-inputs: [conversation-history, meeting-history]
+inputs: [conversation-history, meeting-history, product-claims]
 counts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]
 answers: [Q13]
 needs: [meet]
 pull: Offerings' product claims, to judge the confusion
 ---
 
-# They have misunderstood us
+# They have misunderstood you
 ## What it means
 
-A Grow read on one conversation. The deal is not stalling on price or a blocker. It is stalling because
+An Advance read on one conversation. The deal is not stalling on price or a blocker. It is stalling because
 the product has not landed.
 
 The read holds two things together: the same question asked again after it was already answered in this

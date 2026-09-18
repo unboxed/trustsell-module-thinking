@@ -17,8 +17,9 @@ Things left hanging: a promise you made and haven't kept, a question someone ask
 answer to, a blocker standing in the way. Promises and blockers are one widget because they
 have one shape: something owed, by someone, for some time.
 
-It rests only on counts, and every count is "not written yet". So the widget is wired in but
-has nothing beneath it yet: the rows on a card are read off the card, not counted.
+It rests only on counts, and none of them can say yet which assembly it counts within (each has
+`over: []`). So the widget is wired in but reaches no record yet: the rows on a card are read off
+the card, not counted.
 
 It is also the one widget whose rows are a reading rather than a record. No channel carries a
 "promise" or a "blocker": both are drawn from words and a date (your line "I'll send it this

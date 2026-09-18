@@ -1,16 +1,16 @@
-# The library format: how the modules' thinking is stored from here on
+# The library format: how the thinking is stored
 
-This is the **contract** for the structured library that replaces the one-prose-`CLAUDE.md`-per-module
+This is the **contract** for the structured library that replaced the one-prose-`CLAUDE.md`-per-module
 monolith. It is what an agent reads before producing entries. The matching skeletons live in
-[`_templates/`](../templates/); one worked example of each lives in its real home (linked below).
+[`templates/`](../templates/); one worked example of each lives in its real home (linked below).
 
 ## Why we changed
 
 The agent-anatomy prose was right for *reasoning*, but the part of each module that is really a
-**catalog** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it
+**catalogue** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it
 could not grow into a library or be rendered. We split each module in two:
 
-- **The catalog floors** become a **library of structured entries** (this doc).
+- **The catalogue floors** become a **library of structured entries** (this doc).
 - **The operating prose** (principles, system prompt, user input, output, memory, open questions)
   becomes a slim **`module.md`** overview.
 
@@ -18,10 +18,14 @@ The mapping from the old agent-anatomy is exact:
 
 | Old agent-anatomy section | New home |
 |---|---|
-| Raw data | `01-integrations/channels/*.md` (raw-data floor) |
-| Reasoning, *assembling* | `<module>/assemblies/*.md` |
-| Reasoning, *sensing* | `<module>/signals/*.md` |
-| Principles, System prompt, User input, Output, Memory, Open questions | `<module>/module.md` |
+| Raw data | `channels/*.md` and `told/*.md` (raw-data floor) |
+| Reasoning, *assembling* | `assemblies/*.md` |
+| Reasoning, *counting* | `counts/*.md` |
+| Reasoning, *sensing* | `signals/*.md` |
+| Principles, System prompt, User input, Output, Memory, Open questions | `modules/<id>.md` |
+
+The folders are flat: every entry names its owning module in a `module:` field rather than living
+inside a module folder.
 
 ## Writing style for every entry
 
@@ -62,7 +66,7 @@ practice for its reader:
   entry:
   - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few
     plain sentences), `## In practice` (one short generic example), and `## For the build` (the precise
-    rule: the trigger and the confidence grading, leaning on the `needs` and `measures` facets above
+    rule: the trigger and the confidence grading, leaning on the `needs` and `counts` facets above
     rather than re-listing them; this is the single home for how confident the read is and what it
     cannot see). "For the build" opens by pointing at
     [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.
@@ -85,12 +89,14 @@ The **granularity matches the floor**, so we write docs only where there is reas
 
 | Floor | Nature | Unit | Template |
 |---|---|---|---|
-| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service**, plus each module's own `told.md` | [`_templates/channel.md`](../templates/channel.md) |
-| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`_templates/assembly.md`](../templates/assembly.md) |
-| **Signals** | the read, the first opinion | **rich doc per entry** | [`_templates/signal.md`](../templates/signal.md) |
-| insights, briefs, actions | the higher floors | (none yet) | later |
+| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service** in `channels/` | [`templates/channel.md`](../templates/channel.md) |
+| **Told** | what only you can say | **one doc per module that has one**, in `told/` | [`templates/channel.md`](../templates/channel.md) |
+| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`templates/assembly.md`](../templates/assembly.md) |
+| **Counts** | the arithmetic. Every entry is `defined: false` for now | **thin doc per entry** | [`templates/count.md`](../templates/count.md) |
+| **Signals** | the read, the first opinion | **rich doc per entry** | [`templates/signal.md`](../templates/signal.md) |
+| **Cards** | the suggestion, question or outcome | **one doc per card** | [`templates/card.md`](../templates/card.md) |
 
-Plus, per module, one **`module.md`** ([`_templates/module.md`](../templates/module.md)) holding the
+Plus, per module, one **`modules/<id>.md`** ([`templates/module.md`](../templates/module.md)) holding the
 operating prose and the card face.
 
 **Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label
@@ -102,27 +108,28 @@ quotes; YAML reads an unquoted colon as a key separator, and the file fails to p
 
 **Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the
 `label` is the plain-English display name, and the `blurb` is the **one-line short description on the
-entry's card face** in the library viewer. Keep the `blurb` to a single plain sentence (the long body
-is revealed on click, so it does not belong in the blurb). The library at `/library` reads exactly
-these fields, so editing a `blurb` updates its card with no other change.
+entry's card face** in the library page. Keep the `blurb` to a single plain sentence (the long body
+is revealed on click, so it does not belong in the blurb). The library page,
+[`playbook/library.html`](../../playbook/library.html), reads exactly these fields from `data.js`, so
+editing a `blurb` and running `node build.js` updates its card with no other change.
 
-Not every module has every floor, and the library is meant to reveal that. **04-organisation has no
+Not every module has every floor, and the library is meant to reveal that. **04-organization has no
 signals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**
 has only raw data; **00-spine**'s "assemblies" are the scoreboard and calendar, a different kind of
 synthesis. Absence is information; do not invent a floor a module does not have.
 
 ## The told source: a module's own raw data
 
-Raw data has two homes. Most of it is the shared **channels** in `01-integrations` (the accounts you
+Raw data has two homes. Most of it is the shared **channels** in `channels/` (the accounts you
 connect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the
 user **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That
 **told** input is raw data too, and the most deterministic kind there is, because the user says it
 rather than the tool inferring it.
 
 Each reasoning module owns its own told source, so it sits **inside the module**, not in Connections
-(Connections stays strictly the doorway for external accounts). It lives at `<module>/told.md` (a
-`told/` folder only if a module grows several), and it is shaped exactly like a channel doc
-([`_templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,
+(Connections stays strictly the doorway for external accounts). It lives at `told/<name>-told.md`,
+one file per module that has one, and it is shaped exactly like a channel doc
+([`templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,
 then a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the
 label), and an assembly lists them in `inputs` exactly like channel records.
 
@@ -134,21 +141,24 @@ Three things to keep true:
 - **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)
   already uses: the honest output is "tell me X and I can run this", and the module can offer to
   research a first version for the user to confirm.
-- **02 and 00 will adopt one too.** People's seed list and corrections and the Brain's goals are
-  told piles living in their `module.md` User input today; each grows a `told.md` of its own when its
-  library is built. **05-persona-you** now has one (identity, the operator dials, voice samples).
-  **03-offerings is the worked example of this floor.**
+- **Five modules have one.** The Brain ([`goal-told.md`](../told/goal-told.md)), People
+  ([`people-told.md`](../told/people-told.md)), Offerings
+  ([`offering-told.md`](../told/offering-told.md)), Organisation
+  ([`organisation-told.md`](../told/organisation-told.md)) and Profile
+  ([`profile-told.md`](../told/profile-told.md)). **Offerings is the worked example of this floor.**
 
 ## Lineage, the spine
 
 Every entry names what it is built from, one floor down, by **id**:
 
-- an **assembly**'s `inputs` are **record ids** (a channel record, or a record from the module's own
-  `told.md`) and, optionally, other assembly ids;
-- a **signal**'s `inputs` are **assembly ids**, and its `measures` are the deterministic counts
+- an **assembly**'s `inputs` are **record addresses** (`gmail#email-message`, or a told record such
+  as `offering-told#pitch`) and, optionally, other assembly ids;
+- a **count** names the assembly it counts within as `over`;
+- a **signal**'s `inputs` are **assembly ids**, and its `counts` are the deterministic counts
   beneath the read.
 
-So any signal walks straight down: **signal, then measures, then assembly, then channel record**.
+So any signal walks straight down: **signal, then its counts, then the assembly each counts within,
+then the records it gathers**.
 A count names the assembly it counts within as `over` (settled 18 September), so the walk passes
 through the counting floor instead of stepping over it. A card names its main `signal` and, when
 it quotes numbers from other reads, those reads as `supporting`; every count a card quotes must
@@ -157,7 +167,7 @@ is reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../tol
 is always reachable: the goal is what every card is weighed against.
 This is the *track-back*: nothing the tool says should float. Two iron rules:
 
-1. **Every id must resolve.** A dangling `inputs` or `measures` id is a bug, not a stub.
+1. **Every id must resolve.** A dangling `inputs` or `counts` id is a bug, not a stub.
 2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not
    connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,
    as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)
@@ -167,7 +177,7 @@ This is the *track-back*: nothing the tool says should float. Two iron rules:
 Every entry has two names. The **id** is the backend name: kebab-case, stable, what every join and
 `build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the
 slide, in the library and on a card, and it is plain English: say what it is the way the seller
-would ("Time since reply, against usual", not "Reply gap vs own rhythm"). Rename a label freely;
+would ("How long your last note has waited, against usual", not "Reply gap vs own rhythm"). Rename a label freely;
 rename an id only with every join that names it. A record is the one exception: its id is made from
 its label, which keeps the real API name, so its plain name lives in the source file's
 `## In plain words` table instead (renamed 18 September).
@@ -175,25 +185,25 @@ its label, which keeps the real API name, so its plain name lives in the source 
 ### Ids
 
 Kebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives
-`email-message`); it lives in the body table's Record column, not in frontmatter. **Record ids are
-unique across all channels** (`email-message`, `calendar-event`, `slack-message`), so an assembly can
-name them without qualifying the channel. A told source's records follow the same rule and are unique
-within their module (`pitch`, `fit-shape`). Assembly and signal ids are unique within their module.
+`email-message`); it lives in the body table's Record column, not in frontmatter. A record is always
+**addressed by its source**, `<source-id>#<record-id>` (`gmail#email-message`, `offering-told#pitch`),
+so two sources may share a record name. Every other id (assembly, count, signal, card, widget) is
+unique across the library, because the folders are flat.
 
-## The widgets: a catalog beside the ladder
+## The widgets: a catalogue beside the ladder
 
 A card shows its evidence through **widgets**, one doc each in [`widgets/`](../widgets/), to the
 skeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no reading of its own,
 so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already
 holds.
 
-There are two families. **Detail widgets** (Timeline, Their words, People, Open items, A number
-against its usual) sit in a card's details, between the story and Not sure; a card takes at most
+There are two families. **Detail widgets** (Timeline, Their words, People, Documents, Open items,
+A number against its usual) sit in a card's details, between the story and Not sure; a card takes at most
 two. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a
 card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:
 no new widget without a new shape.
 
-The idea is close to Google's A2UI, where an app keeps a catalog of trusted components and an
+The idea is close to Google's A2UI, where an app keeps a catalogue of trusted components and an
 agent sends data that picks from it and fills it. The difference is on purpose. A2UI's
 components are usually small building blocks the agent arranges freely. Ours are large and
 specific, and they sit in a fixed place on every card. The agent chooses and fills; it never
@@ -201,13 +211,14 @@ arranges. That is what lets a seller learn the set once.
 
 The joins, checked by `build.js`: a detail widget's `fed_by` resolves to assemblies or counts;
 a card's `widgets` resolve to detail widgets, and each is fed by something the card rests on
-(its counts, its signal's inputs, every assembly those gather, and, when the card names
+(its counts, the inputs of its signal and its supporting signals, each count's `over`, every
+assembly those gather, and, when the card names
 what to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section
 headed with its label, rows in its row form; and a card's `reply.module` is a reply widget.
 `build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it
 can actually show, and lists them on the widget's page. A widget that reaches no record fails the
-build unless it says what it `waits_on`: today that is Open items,
-which rest only on counts, and no count is written yet.
+build unless it says what it `waits_on`: today that is Open items, which rests only on counts,
+none of which can say yet which assembly it counts within (`over: []`).
 
 ## How an agent produces a module's library
 
@@ -218,42 +229,37 @@ below record how the conversion was done and guide any **new** module added late
 1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);
    move Principles, System prompt, User input, Output, Memory and Open questions into the body
    verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.
-2. **Signals.** For the reasoned module, each named read in the old "signal catalog" becomes one
-   `signals/<id>.md`. Carry its counts into `measures`, its sales-question handles into `answers`, its
+2. **Signals.** For the reasoned module, each named read in the old "signal catalogue" becomes one
+   `signals/<id>.md`. Carry its counts into `counts`, its sales-question handles into `answers`, its
    tilt into `modes` and `kind`, and the worked example plus threshold logic into the body. A signal
    earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
-   together, plus any records from the module's own `told.md`.
+   together, plus any records from the module's own told source.
 4. **Raw data.** The shared channels (raw-data floor, 01 only) live in
-   `01-integrations/channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row
+   `channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row
    table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a
-   `<module>/told.md` of the same shape with `source: told` (see *The told source* above).
+   `told/<name>-told.md` of the same shape with `source: told` (see *The told source* above).
 5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly
    `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm
    nothing floats.
 
 These steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's
 library was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are
-retired, and the blueprint reads `module.md` (`readModules` in `blueprint/lib/modules.ts`).
+retired (they are in `_archive/`), and `build.js` reads the library into the playbook.
 
 ## The worked examples (the gold standard to imitate)
 
-- Channel: [`01-integrations/channels/gmail.md`](../channels/gmail.md)
-- Assembly: [`02-relationships/assemblies/person-history.md`](../assemblies/person-history.md)
-- Signal: [`02-relationships/signals/cooling-champion.md`](../signals/cooling-champion.md)
-- Module overview: [`02-relationships/module.md`](../modules/02-relationships.md)
+- Channel: [`channels/gmail.md`](../channels/gmail.md)
+- Assembly: [`assemblies/person-history.md`](../assemblies/person-history.md)
+- Signal: [`signals/cooling-champion.md`](../signals/cooling-champion.md)
+- Module overview: [`modules/02-relationships.md`](../modules/02-relationships.md)
 
 **02-relationships is the worked example**, so copy its shape.
 
 ## Deliberately deferred
 
-- **Measures as their own floor.** The deterministic counts are a `measures:` field on a signal for
-  now. Because they are reusable and checkable (`reply-gap-vs-own-rhythm` feeds several signals), they
-  may graduate to their own doc-per-entry floor. Open question, not yet.
-- **The higher floors** (insights, briefs, actions) come once raw data, assemblies and signals prove
-  out.
-- **The UI that renders the library.** A first cut now exists: `/library` in the blueprint viewer is
-  a filterable gallery of every assembly and signal (search · module · type · mode), each card
-  mirroring its `label` + `blurb` + facets, with the body and clickable lineage in an overlay. The
-  told floor is not rendered there yet. Retiring the old per-module `CLAUDE.md`s is **done**.
+- **What each count counts.** Counts became their own floor on 18 September, joined by `over`. Every
+  entry is still `defined: false`: what it counts, which records it needs and when the number stops
+  meaning anything are not written yet.
+- **Floors above the cards** (insights, briefs) come once the cards prove out.

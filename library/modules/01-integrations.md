@@ -20,14 +20,14 @@ Google services, your Slack, and (later) LinkedIn and Salesforce. The **Tools li
 tools that ship with the product and are always on, the ones you never connect. Today that is web
 search and enrichment.
 
-> **The catalog floor lives as a library.** This module has no assemblies and no signals: it is
+> **The catalogue floor lives as a library.** This module has no assemblies and no signals: it is
 > the connector, so it does no reasoning. Its raw data is the channels, written up one doc per
-> channel service in [`channels/`](channels/). This file holds only the operating prose. See
+> channel service in [`channels/`](../channels/). This file holds only the operating prose. See
 > [`docs/library-format.md`](../docs/library-format.md).
 
 ## Raw data
 
-The full catalogue, grouped by channel, lives in [`channels/`](channels/): one doc per channel
+The full catalogue, grouped by channel, lives in [`channels/`](../channels/): one doc per channel
 service (Gmail, Calendar, Drive, Contacts, Meet, Slack, web, and the not-yet-connected LinkedIn
 and Salesforce), each carrying its records as a field-per-row table. These are plain records,
 carried as-is. All the meaning is made downstream, in the modules.

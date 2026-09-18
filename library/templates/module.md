@@ -1,7 +1,8 @@
 ---
-# MODULE OVERVIEW. The slim card face plus the prose that is NOT a catalog.
-# The catalog floors (raw data, assemblies, signals, ...) live in their own libraries
+# MODULE OVERVIEW. The slim card face plus the prose that is NOT a catalogue.
+# The catalogue floors (raw data, assemblies, signals, ...) live in their own libraries
 # (channels/, assemblies/, signals/); this file holds everything else about the module.
+id: <nn-kebab-slug>           # e.g. 02-relationships. Unique; signals and assemblies name it in `module:`
 name: <Short name>            # the card eyebrow, e.g. People
 title: <Your ___>             # the friendly heading, e.g. Your relationships
 blurb: <one line on what it does>
@@ -38,8 +39,8 @@ draws_from: [<channel-id>, ...]   # the channels (01 sub-items) it pulls raw dat
 ## Open questions
 <!-- A plain bulleted list of what is still unsettled. -->
 
-<!-- The two catalog sections of the old agent-anatomy now live as libraries:
+<!-- The two catalogue sections of the old agent-anatomy now live as libraries:
        Raw data             -> channels/   (raw-data floor; owned by 01)
        Reasoning (assemble) -> assemblies/
        Reasoning (sense)    -> signals/
-     This file keeps a one-line pointer to them instead of the prose catalog. -->
+     This file keeps a one-line pointer to them instead of the prose catalogue. -->

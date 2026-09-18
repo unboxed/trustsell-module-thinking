@@ -4,10 +4,10 @@ module: 02-relationships
 label: Warmth fading
 blurb: Replies turning short and cool, or quiet on the last call.
 modes: [advance, sustain]
-kind: style
+kind: decay
 confidence: low
 inputs: [person-history, meeting-history]
-counts: [warmth-trend-in-replies, friendly-words-trend, talk-time-on-calls]
+counts: [reply-length-vs-own-rhythm, friendly-words-trend, talk-time-on-calls]
 answers: [Q14]
 needs: [meet]
 ---

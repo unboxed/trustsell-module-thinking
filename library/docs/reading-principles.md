@@ -45,3 +45,27 @@ falls with them.
 A signal exists only because a salesperson actually asks the question it answers (the list in
 [`sales-questions.md`](sales-questions.md)). Its `answers` field names those questions. A read that
 answers no real question does not belong in the library.
+
+## 6. Say how sure in a word, earned from the weakest ground
+
+Rule 3 grades a read. A card carries the result to the seller as one of three words, never a number
+(decided 18 September). A number would claim a precision nothing here can back; a word says what
+kind of ground the card stands on.
+
+- **Sure**: it stands on a fact on record. A bounce, a date in a tender, your own words in a sent
+  message.
+- **Likely**: it stands on a pattern against the person's own usual. Silence far longer than their
+  normal gap.
+- **A hunch**: it stands on a reading of someone's words. Two passing mentions of a director.
+
+The weakest thing the card stands on sets the ceiling. The word drops one step when a source the
+read needs is not connected, when there is too little history to know the person's usual, or when
+only one sign points that way. Every word comes with one line saying what it stands on (a card's
+`sure_because`), so the seller can argue with the evidence rather than with a score.
+
+A hunch the seller could settle becomes an Ask rather than an Act. That is why the home is mostly
+Asks early on and mostly Acts later: as answers accumulate, more cards stand on firmer ground.
+
+Later, once cards have outcomes, the word can also move with the tool's record for this seller:
+how often this kind of read turned out right for them. That is the only honest way it gets finer
+than three words. There is nothing to learn from yet, so it is not written.

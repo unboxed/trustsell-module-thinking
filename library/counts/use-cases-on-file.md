@@ -1,12 +1,12 @@
 ---
 id: use-cases-on-file
-label: "Customer examples on file"
+label: "Use cases on file"
 used_by: [lead-with-this]
 over: []   # not written yet. One of: offering-entry, objection-list
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Customer examples on file
+# Use cases on file
 ## What it counts
 
 Not written yet.

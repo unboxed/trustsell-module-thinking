@@ -1,19 +1,18 @@
 ---
 id: one-sided
 module: 02-relationships
-label: One-sided
+label: You are doing all the work
 blurb: A relationship where you are doing all the work.
 modes: [advance, sustain]
-kind: style
+kind: risk
 confidence: graded
-inputs: [person-history, conversation-history]
+inputs: [person-history, conversation-history, meeting-history]
 counts: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-you-chase]
-answers: [Q14]
+answers: [Q18, Q19]
 needs: [meet]
 ---
 
-# One-sided
-
+# You are doing all the work
 ## What it means
 
 A read on the balance of a relationship, not on how warm it is.

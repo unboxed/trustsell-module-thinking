@@ -1,19 +1,22 @@
 ---
 id: expand-sanjay-mistry
-order: 8
+order: 16
 kind: act
 label: Expand
 signal: champion-went-dark
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]
+supporting: [buying-intent]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active, pricing-question-asked]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: sanjay-mistry
 council: moreton
 documents: []
 sure: "sure"
+sure_because: "A fact on record: the bounce, and Julie's auto-reply naming him."
 when:
   mode: rhythm
-  words: "This week, while he is still reading her inbox."
+  words: "This week, while the handover is fresh."
 reply:
   module: buttons
 actions:
@@ -44,8 +47,8 @@ Julie Barker's auto-reply says she has left and names Sanjay as the contact. You
 
 ## What I noticed
 
-- Why now: the handover is fresh. This week Sanjay is reading Julie's inbox and picking up her threads; next month he isn't.
-- Julie was engaged: she started threads, asked for pricing in May, and had a demo pencilled for the autumn.
+- Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.
+- Julie was engaged: she started threads and asked for pricing in May.
 - Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.
 - Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.
 
@@ -68,8 +71,8 @@ Julie Barker's auto-reply says she has left and names Sanjay as the contact. You
 
 Hi Sanjay,
 
-Julie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had a demo pencilled for the autumn.
+Julie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had asked about pricing.
 
-I don't want to assume any of that carries over. If it's useful, I can send a two-page summary of where we'd got to, or simply start again with whatever matters to you.
+I don't want to assume any of that carries over. If it's useful, I can send a short summary of where we'd got to, or simply start again with whatever matters to you.
 
 Fede

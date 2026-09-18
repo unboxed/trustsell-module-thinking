@@ -1,6 +1,6 @@
 ---
 id: sustain-rachel-promise
-order: 5
+order: 3
 kind: act
 label: Sustain
 signal: loose-end
@@ -12,6 +12,7 @@ council: westmoor
 documents: [data-residency-note]
 widgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
 sure: "sure"
+sure_because: "A fact on record: your own words, on 8 September."
 when:
   mode: fresh
   words: "Worth doing today. A promise ages badly."
@@ -36,23 +37,23 @@ draft:
   title: "Draft"
   hand: "Open in Mail"
   sub: "in your voice · nothing sends until you do"
-  footer: "Attached: the BOPS data residency note."
+  footer: "Attached: the data-residency note."
 ---
 
 # Close the loop with Rachel Gill
 
-You promised her the data-residency note on 31 August. It is two weeks later and it hasn't gone.
+You promised her the data-residency note on 8 September. It hasn't gone, and it answers the first question she asked you.
 
 ## What I noticed
 
-- Why now: it is two weeks since you wrote "I'll send the data-residency note this week", and you haven't. Every day makes the next email harder.
-- Rachel is Head of IT at Westmoor. Data residency is the first thing IT leads ask, and she asked it in her second message.
+- Why now: it is eight days since you wrote "I'll send the data-residency note this week", and the week is over. Every day makes the next email harder.
+- Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread.
 - The note exists and is current. Nothing is stopping this except that it slipped.
-- Westmoor is your most advanced deal. An unkept promise to the newest person in it costs more than anywhere else.
+- Westmoor is at coalition, one of your two furthest-along councils. An unkept promise to the newest person in it costs more than anywhere else.
 
 ## Open items
 
-- The data-residency note · You owe Rachel, promised 31 August · 14 days
+- The data-residency note · You owe Rachel, promised 8 September · 8 days
 
 ## Documents
 
@@ -60,10 +61,10 @@ You promised her the data-residency note on 31 August. It is two weeks later and
 
 ## What I read
 
-- gmail · Your message to Rachel, 31 August: "I'll send the data-residency note this week".
+- gmail · Your reply to Rachel, 8 September: "I'll send the data-residency note this week".
 - gmail · No message from you to Rachel since.
-- drive · "BOPS data residency", updated 2 September.
-- gmail · The Westmoor thread: Rachel's question of 9 September.
+- drive · The data-residency note, updated 2 September.
+- gmail · The Westmoor thread: Rachel's question of 8 September.
 
 ## Not sure
 
@@ -77,7 +78,7 @@ You promised her the data-residency note on 31 August. It is two weeks later and
 
 Hi Rachel,
 
-I said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives, who can see it, and how it leaves if you ever want it to.
+I said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives and who can see it.
 
 If anything in it is unclear, or you want it in the form your information governance team prefers, say so and I'll adjust.
 

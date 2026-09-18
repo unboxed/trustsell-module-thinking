@@ -1,13 +1,13 @@
 ---
 id: incumbent-data-or-contract-lock
-label: "Tied to their supplier by data or contract"
+label: "What locks them in: data or contract"
 used_by: [competitive-standing]
 over: [competitor-field]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Tied to their supplier by data or contract
+# What locks them in: data or contract
 ## What it counts
 
 Not written yet.

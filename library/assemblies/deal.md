@@ -40,7 +40,7 @@ detect one by clustering conversations that belong to the same effort, the same 
 together when they share the offering (Offerings can tag what a conversation is about), an
 overlapping set of people, the account (or a stable cross-org group), cross-references, and a
 coherent time window. What makes a cluster worth surfacing is a whiff of buying intent, so a proposal
-is triggered by the [`buying-intent`](../signals/buying-intent.md) read firing on a conversation not
+is triggered by the [`buying-intent`](../signals/buying-intent.md) read being made on a conversation not
 already in a deal. People then proposes the deal for you to confirm, split or reject; it never
 auto-commits one (suggest, never send). A confirmed proposal simply becomes a `deal-seed`, so
 detection and manual creation land on the same object.
@@ -64,7 +64,7 @@ on a goal's ladder and prioritises it.
 
 ## Lineage
 
-`deal-seed` is People's own told record, resolving to [`told.md`](../told/people-told.md); `conversation-history`,
+`deal-seed` is People's own told record, resolving to [`people-told.md`](../told/people-told.md); `conversation-history`,
 `meeting-history` and `person-history` are sibling assemblies. The offering a deal is about is named
 in the `deal-seed` and confirmed by asking Offerings "is this conversation about that offering" (a
 `connects` request, not a direct input), so module boundaries stay clean. Where the grouping has to

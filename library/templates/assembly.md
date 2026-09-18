@@ -8,7 +8,7 @@ id: <kebab-slug>              # unique across the library
 module: <module-id>           # which module owns the gather, e.g. 02-relationships
 label: <Display name>         # plain English, e.g. Person history (not jargon like "dossier")
 blurb: <one line on what this gathers>
-about: <a person|a conversation|an organisation>   # what a single instance is keyed on
+about: <a person|a conversation|an organisation|an offering|a deal>   # what a single instance is keyed on
 deterministic: true           # always true for an assembly; no opinion lives here
 inputs:                       # what it gathers, one floor down. Each id MUST resolve.
   - <channel-id>#<record-id>  #   a record, addressed by the source that carries it: gmail#email-message
@@ -25,5 +25,5 @@ inputs:                       # what it gathers, one floor down. Each id MUST re
 
 ## Lineage
 
-<!-- Which input id resolves to which channel doc (../channels/* or ../told/*) or told.md, so the
+<!-- Which input id resolves to which channel doc (../channels/* or ../told/*), so the
      gather walks all the way down to raw data. Every id must resolve; name a gap, do not fake it. -->

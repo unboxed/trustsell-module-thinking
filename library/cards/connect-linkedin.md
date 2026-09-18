@@ -27,7 +27,7 @@ Twelve of your thirty councils have nobody you know. LinkedIn is where the warm 
 
 ## What I can't
 
-- Who you know. Who Simon knows. Who has moved where. Three cards this week say "LinkedIn is not connected" and stop there.
+- Who you know. Who Simon knows. Who has moved where. Four cards this week say "LinkedIn is not connected" and work around it.
 
 ## What changes once connected
 

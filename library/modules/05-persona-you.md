@@ -21,10 +21,10 @@ draws_from: [gmail, slack]
 
 The personal layer: your voice and your preferences, so every message sounds like you.
 
-> Profile's catalog floors live as libraries: raw data in
-> [`01-integrations/channels/`](../channels/), what you tell it in
-> [`told.md`](told.md), assemblies in [`assemblies/`](assemblies/), signals in
-> [`signals/`](signals/). This file holds only the operating prose. See
+> Profile's catalogue floors live as libraries: raw data in
+> [`channels/`](../channels/), what you tell it in
+> [`profile-told.md`](../told/profile-told.md), assemblies in [`assemblies/`](../assemblies/), signals in
+> [`signals/`](../signals/). This file holds only the operating prose. See
 > [`docs/library-format.md`](../docs/library-format.md).
 
 ## Principles
@@ -83,8 +83,8 @@ give it a starting handful; from there it lives as memory, refined as the tool w
     English at one end, sales shorthand at the other.
   - **Time and cadence**, selling all day, or a few minutes now and then. This tells the **Brain**
     how to pace: how much to surface, how hard to push.
-  - **Style**, a relationship owner nurturing a few, or a volume seller working many (the
-    Nurture/Plant tilt).
+  - **Style**, a relationship owner sustaining a few, or a volume seller working many (the
+    Sustain/Expand tilt).
   - **Autonomy**, how far it drafts or acts before you step in. It always suggests; this sets how
     far ahead it works.
   - **Coaching**, how much it teaches rather than just hands over: from "just give me the noun" to
@@ -114,15 +114,15 @@ sounds like you. Both stand on the same ground, what you actually write. That re
 **libraries**, where the moves above the raw data each become a floor you can browse:
 
 - **Assembling** (deterministic, organising your sent text so it can be seen) becomes the
-  [`assemblies/`](assemblies/) library.
+  [`assemblies/`](../assemblies/) library.
 - **Sensing** (the voice read, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
-  counting then judging) becomes the [`signals/`](signals/) library. Your **edits are the strongest
+  counting then judging) becomes the [`signals/`](../signals/) library. Your **edits are the strongest
   teacher**: every time you rewrite a draft, the gap between what it wrote and what you sent is a
   fact that sharpens the read.
 
 **Why voice is the only signal, and the dials are not.** The test for a signal is whether the read,
 when it changes, points at a *move on a prospect*, which is why every signal answers one of the
-salesperson's 26 questions. [`voice`](signals/voice.md) passes: it is read off your behaviour, but it
+salesperson's 26 questions. [`voice`](../signals/voice.md) passes: it is read off your behaviour, but it
 is *applied to the prospect*, it shapes the message you send (Q23, Q26), so it earns a signal floor.
 The five operator dials (fluency, cadence, style, autonomy, coaching) do not: they change how the tool
 talks to *you* and how the Brain paces *your* calendar, not what you do toward a prospect. Even cadence,

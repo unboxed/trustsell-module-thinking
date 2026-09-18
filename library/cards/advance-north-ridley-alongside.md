@@ -5,12 +5,15 @@ kind: act
 label: Advance
 signal: understanding-gap
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [terms-used-wrongly, claims-restated-back]
+supporting: [new-stakeholder]
+supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+counts: [terms-used-wrongly, claims-restated-back, new-attendee-on-event, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: michelle-turner
 council: north-ridley
 documents: [alongside-one-pager]
 sure: "sure"
+sure_because: "A fact on record: three of their messages say replace or migrate off."
 when:
   mode: dated
   words: "By tonight. The demo is tomorrow, Thursday 17 September."

@@ -1,7 +1,7 @@
 ---
 id: writing-history
 module: 05-persona-you
-label: Your writing style
+label: What you have written
 blurb: Everything you have written, gathered into one picture of how you write.
 about: a person
 deterministic: true
@@ -12,7 +12,7 @@ inputs:
   - profile-told#voice-sample
 ---
 
-# Your writing style
+# What you have written
 ## What it gathers
 
 Gathers everything you have written into a single picture: your sent mail (`email-message` with a sent
@@ -38,5 +38,5 @@ the [`voice`](../signals/voice.md) signal.
 `email-message` and `draft` resolve to
 [`channels/gmail.md`](../channels/gmail.md); `slack-message` resolves to
 [`channels/slack.md`](../channels/slack.md); `voice-sample` resolves to
-[`told.md`](../told/profile-told.md), the optional sample you seed it with. The draft-to-sent edit is a `[derived]`
+[`profile-told.md`](../told/profile-told.md), the optional sample you seed it with. The draft-to-sent edit is a `[derived]`
 comparison over `draft` and `email-message`, not a separate fetched record.

@@ -38,7 +38,7 @@ to the user.
 
 ## Lineage
 
-`pricing-authority` resolves to [`told.md`](../told/organisation-told.md), the organisation's own told source.
+`pricing-authority` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source.
 `file-content` resolves to [`channels/drive.md`](../channels/drive.md), the pricing
 sheet a ceiling or floor may point at. The Brain's deferred deal-specific discount room is the
 downstream that reads this fence; the static governance lives here, the per-deal judgement sits with

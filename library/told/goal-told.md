@@ -1,13 +1,12 @@
 ---
 id: goal-told
-name: What you tell the Brain
+name: What you told me about your goal
 source: told
 connected: true
 icon: pencil
 ---
 
-# What you tell the Brain
-
+# What you told me about your goal
 The goal, and the few facts around it that only you can set: how patiently to pursue it, and who
 counts as worth chasing. The Brain ([`00-spine`](../modules/00-spine.md)) holds them and weighs every
 card against them, so a card may always name them in What I read without an assembly in between.

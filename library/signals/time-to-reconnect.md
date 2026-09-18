@@ -21,7 +21,7 @@ A read that turns a quiet stretch into a good moment to write.
 Some relationships simply drift. No deal, no falling-out: you were close a year ago, and then life
 moved on. On its own that is just a quiet contact.
 
-The read fires when the quiet meets a fresh reason to get back in touch, something that just changed
+The tool makes the read when the quiet meets a fresh reason to get back in touch, something that just changed
 and gives the note a natural hook. It is the mirror of [`cooling-champion`](cooling-champion.md):
 cooling is a live relationship slipping away, this is a long-quiet one worth pulling back.
 

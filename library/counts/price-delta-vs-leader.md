@@ -1,13 +1,13 @@
 ---
 id: price-delta-vs-leader
-label: "Our price against the market leader"
+label: "Your price against the market leader"
 used_by: [price-barrier]
 over: [price-position]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Our price against the market leader
+# Your price against the market leader
 ## What it counts
 
 Not written yet.

@@ -7,7 +7,7 @@ modes: [sustain, expand]
 kind: risk
 confidence: high
 inputs: [person-history]
-counts: [bounce-back-detected, auto-reply-no-longer-with, silence-vs-own-rhythm, was-once-active]
+counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]
 answers: [Q6, Q18]
 needs: [calendar, meet]
 ---
@@ -21,7 +21,7 @@ The channel to a contact you relied on has broken.
 This read is about reach, not warmth. The cooling read asks "has their rhythm slipped?". This one asks
 the sharper question: "can I still get to them at all?"
 
-It leans Nurture, a relationship you are losing. But it tips into Plant the moment the answer is "they
+It leans Sustain, a relationship you are losing. But it tips into Expand the moment the answer is "they
 left", because the warm path now has to be rebuilt to whoever replaced them.
 
 It is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was
@@ -38,13 +38,12 @@ booked. The read: this contact has gone dark, and on the evidence has likely lef
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 
-- Trigger: a bounce-back or a "no longer with" auto-reply on the thread is near-binary and fires
-  directly; otherwise silence must dwarf this person's own established cadence (own-rhythm, never a
-  fixed number of days) AND the innocent-explanation scan must come back empty. Only ever for a contact
-  the was-once-active check confirms.
+- Trigger: a bounce-back or a "no longer with" auto-reply on the thread. Both are near-binary and make
+  the read directly. Only ever for a contact the was-once-active check confirms. Silence without either
+  is not this read: it belongs to [`cooling-champion`](cooling-champion.md), which holds the own-rhythm
+  test and the innocent-explanation scan (settled 18 September, so the two reads no longer overlap).
 - Confidence: high, because a bounce and a departure auto-reply are facts on record, parsed not
-  inferred; the silence-without-a-bounce branch is held to the guarded own-rhythm test and graded down
-  so it never reads as certain as a bounce.
+  inferred.
 - Needs: Calendar and Meet, so a future meeting or a recent call counts as a live
   channel and stops the read landing on someone you just spoke to; without a delivery failure or a
   departure note, a silent leaver cannot be told apart from a contact who is simply ignoring you, so

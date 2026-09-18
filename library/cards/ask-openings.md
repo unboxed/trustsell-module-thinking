@@ -1,6 +1,6 @@
 ---
 id: ask-openings
-order: 21
+order: 19
 kind: ask
 label: Ask
 signal: voice
@@ -27,7 +27,7 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# You rewrite my openings every time. Should I drop the pleasantries?
+# You rewrite most of my openings. Should I drop the pleasantries?
 
 In 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.
 

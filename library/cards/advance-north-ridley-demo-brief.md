@@ -11,8 +11,9 @@ counts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attende
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 person: michelle-turner
 council: north-ridley
-documents: [east-marston-case-study]
+documents: [east-marston-case-study, alongside-one-pager]
 sure: "likely"
+sure_because: "A pattern: what the invitees have asked about, and how your last two demos went."
 when:
   mode: dated
   words: "By this evening."
@@ -36,7 +37,7 @@ reasons:
     says: "Understood. I'll take this off the board and not raise it again unless you put it back."
 draft:
   title: "Brief"
-  hand: "Open in Mail"
+  hand: "Add to the Invite"
   sub: "Thursday 17 September, 10:00"
   footer: "Edit the brief as you like. I'll have it on your calendar entry."
 ---

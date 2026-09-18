@@ -403,7 +403,8 @@ summary::-webkit-details-marker{display:none}
    the card's text edge. It keeps the 44 pt target and gives the height back
    in margins, so the line stays a footnote tall. Judgment, not Apple's. */
 .deck__labels{align-items:center}
-.deck__skip{margin:-13px -12px -13px auto;padding:0 12px;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+/* How sure, one word, top right on the label's line (18 September; Skip used to sit here and has moved into the actions). */
+.deck__sure{margin-left:auto;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label-secondary)}
 /* Badges: small capsules inside the card. The kit has no badge, so this is
    its tinted button's recipe at footnote size: a 15% tint of the label
    colour, 24 pt tall. Judgment, not Apple's. */
@@ -425,9 +426,20 @@ summary::-webkit-details-marker{display:none}
    two never cross. deck.js hides whichever is not in play (is-page), so an
    unseen button cannot take a tap. At most one plain action beside the filled one. */
 .act{position:absolute;margin:0;white-space:nowrap}
-.act--send{top:calc(634px + 114px*var(--p));left:calc(40px + 111px*var(--p));width:calc(287px - 87px*var(--p))}
-.act--view,.act--view-bar{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
-.act--view{top:calc(684px + 40px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3)}
+.act--send{top:calc(578px + 170px*var(--p));left:calc(40px + 111px*var(--p));width:calc(287px - 87px*var(--p))}
+.act--view,.act--view-bar,.act--skip{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+.act--view{top:calc(634px + 90px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3)}
+/* The actions stack, one per row (18 September, the user's call): the filled action, the plain one, then
+   Skip, quietest, last. The stack sits one row higher than before so Skip clears the hint below it. Skip
+   takes the plain action's place when a card has none. Like the old Skip, it stays with the front and fades
+   as the card becomes a page. */
+.act--skip{top:calc(690px + 34px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3);color:var(--ios-label-secondary)}
+/* With no secondary action the stack keeps its foot and loses its top row, so no empty row is left
+   under Skip: the filled action drops one row and Skip keeps its place. */
+.screen__overin:has(.act--skip-alone) .act--send{top:calc(634px + 114px*var(--p))}
+/* The secondary action is an outline capsule, the filled one's size, drawn with the badges' hairline:
+   still no colour on buttons (18 September, the user's call). The same in the bar. */
+.screen :is(.act--view,.act--view-bar){min-height:48px;border-radius:999px;border:1px solid color-mix(in srgb,var(--ios-label) 24%,transparent);color:var(--ios-label)}
 .act--view-bar{top:748px;left:var(--ios-gutter);width:127px;opacity:calc((var(--p) - .6)/.4)}
 /* What the tool says back, in place of the actions, once the card is done:
    stacked on the card, a row in the bar. */
@@ -442,7 +454,7 @@ summary::-webkit-details-marker{display:none}
 :is(.screen:not(:has(.pager)),.screen__page):has(.reply-sheet.is-open) .act{visibility:hidden;transition:visibility 0s .3s}
 :is(.screen:not(:has(.pager)),.screen__page).is-sent .act{display:none}
 :is(.screen:not(:has(.pager)),.screen__page).is-sent .said{display:flex}
-:is(.screen:not(:has(.pager)),.screen__page).is-page :is(.act--view,.said--card),:is(.screen:not(:has(.pager)),.screen__page):not(.is-page) :is(.act--view-bar,.said--bar){visibility:hidden}
+:is(.screen:not(:has(.pager)),.screen__page).is-page :is(.act--view,.act--skip,.said--card),:is(.screen:not(:has(.pager)),.screen__page):not(.is-page) :is(.act--view-bar,.said--bar){visibility:hidden}
 /* The reply sheet: where the module lives. This is the playbook's one
    component of its own, and its anatomy is copied from the sheet Claude's
    phone app raises to ask a question: a floating panel inset 16 pt from the

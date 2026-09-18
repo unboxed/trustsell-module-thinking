@@ -1,13 +1,12 @@
 ---
 id: profile-told
-name: What you tell Profile
+name: What you told me about yourself
 source: told
 connected: true
 icon: pencil
 ---
 
-# What you tell Profile
-
+# What you told me about yourself
 The facts only you can state about yourself, the seed the personal layer starts from. Here "told"
 means a **seed, not a form**: you give it a starting handful, and from there it lives as memory,
 refined as the tool watches you work. Nothing about you is frozen as a settings field. The `Source`
@@ -38,7 +37,7 @@ reference.
 | Setup archetype | the starting stance (sell for a living ↔ sell as part of my role) | you, pick at setup |
 | Operator dial | sales fluency (sales shorthand ↔ plain English with coaching) | you, seeded by archetype, refined by behaviour |
 | Operator dial | time and cadence (all day ↔ a few minutes now and then) | you, seeded by archetype, refined by behaviour |
-| Operator dial | style (nurture a few ↔ work many) | you, seeded by archetype, refined by behaviour |
+| Operator dial | style (sustain a few ↔ work many) | you, seeded by archetype, refined by behaviour |
 | Operator dial | autonomy (how far it drafts or acts before you step in) | you, seeded by archetype, refined by behaviour |
 | Operator dial | coaching (just hand me the noun ↔ tell me why this person and what to say) | you, seeded by archetype, refined by behaviour |
 | Voice sample | a piece of your writing | you, optional (else learned from sent mail) |

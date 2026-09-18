@@ -50,7 +50,7 @@ whether they are truly championing or cooling. That judgement is a signal's job.
 [`channels/slack.md`](../channels/slack.md); `enrichment` to
 [`channels/web.md`](../channels/web.md). `person-history` is the sibling assembly
 that turns scattered records into a resolved person. `seed-contact` and `relationship-note` are
-People's own told records, resolving to [`told.md`](../told/people-told.md): the targets you name and the
+People's own told records, resolving to [`people-told.md`](../told/people-told.md): the targets you name and the
 placement facts only you know (a quiet person who still decides) that the records cannot show. The
 decider gap stays wide until LinkedIn connects (role and reporting lines are a data gap), and the
 user can always override a placement, which is a told fact the map keeps.
