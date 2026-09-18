@@ -52,14 +52,14 @@ Her replies have slowed since the budget meeting. She never got the officer-time
 
 ## What I noticed
 
-- Why now: 22 days since her last real reply, three times her usual gap, and you have a gift ready: the figures she asked for.
+- Why now: 24 days since her last real reply, three times her usual gap, and you have a gift ready: the figures she asked for.
 - Before the budget meeting she replied in about a day and started 9 of your 12 threads.
 - Since it: one two-line reply. No out-of-office, no leave, no meeting booked. She is active on other threads, so she is around.
 - Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.
 
 ## A number against its usual
 
-- Now · 22 days · since her last real reply
+- Now · 24 days · since her last real reply
 - Usually · about a day · her replies before the budget meeting
 
 ## Timeline

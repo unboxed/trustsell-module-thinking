@@ -47,7 +47,7 @@ draft:
 
 # Offer Rachel Gill a call with East Marston's IT lead
 
-She has asked "will officers actually use it" twice this week. The best answer is not from you. It is from someone in her job who has done it.
+She has asked "will officers actually use it" twice since you met. The best answer is not from you. It is from someone in her job who has done it.
 
 ## What I noticed
 

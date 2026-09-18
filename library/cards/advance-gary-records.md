@@ -47,13 +47,13 @@ draft:
 
 # Answer Gary Pearson today
 
-He asked on Thursday whether BOPS can import their existing case records, and pulled Rachel Gill, his head of IT, into the thread. That is a door opening.
+He asked last Thursday whether BOPS can import their existing case records, and pulled Rachel Gill, his head of IT, into the thread. That is a door opening.
 
 ## What I noticed
 
 - Why now: his question has sat four days, and he brought a new person to hear the answer. The longer it waits, the smaller the door.
 - Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: "once we've rolled this out", "I'll put it to procurement".
-- He copied Rachel on Thursday. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.
+- He copied Rachel last Thursday. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.
 - Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.
 
 ## What I read

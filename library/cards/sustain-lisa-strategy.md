@@ -40,11 +40,11 @@ draft:
 
 # Congratulate Lisa Holmes
 
-Burnham published its digital strategy on Friday. She led it, and it says the things you would say.
+Burnham published its digital strategy last Friday. She led it, and it says the things you would say.
 
 ## What I noticed
 
-- Why now: the strategy went out on Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
+- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
 - Page 12 commits Burnham to "replacing legacy case systems by 2028". That is your pitch in their words.
 - Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.
 - Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.

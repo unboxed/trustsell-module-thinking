@@ -1,6 +1,6 @@
 ---
 id: goal
-today: 2026-09-14
+today: 2026-09-16
 seller: you
 ladder: [cold, engaged, coalition, partial, full]
 ---
@@ -17,7 +17,7 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
 
 ## Today
 
-Monday 14 September 2026. Every `when` on a card is relative to this date.
+Wednesday 16 September 2026. Every `when` on a card is relative to this date.
 
 ## The ladder
 

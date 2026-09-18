@@ -31,7 +31,7 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# You met Rachel Gill on Tuesday. How did it go?
+# You met Rachel Gill last week. How did it go?
 
 She joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.
 

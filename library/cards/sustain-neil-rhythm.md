@@ -44,7 +44,7 @@ You speak roughly every six weeks and it has been seven. He asked in August how 
 
 ## What I noticed
 
-- Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished on Friday.
+- Why now: seven weeks since you last spoke, one past his rhythm, and the phasing note he asked about was finished last Friday.
 - Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.
 - He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.
 - Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.

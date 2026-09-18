@@ -41,7 +41,7 @@ draft:
 
 # Tarlton is replacing its case system
 
-Their tender went out on Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
+Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
 
 ## What I noticed
 

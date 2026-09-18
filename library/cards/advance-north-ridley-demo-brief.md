@@ -13,7 +13,7 @@ documents: [east-marston-case-study]
 sure: "likely"
 when:
   mode: dated
-  words: "By Wednesday evening."
+  words: "By this evening."
   until: 2026-09-16
 reply:
   module: buttons
@@ -45,7 +45,7 @@ Eight people. Three have asked about officer time and none about compliance. You
 
 ## What I noticed
 
-- Why now: three days to the demo, and the brief needs a read-through, not a rewrite, by Wednesday night.
+- Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.
 - In 14 messages from North Ridley since July, officer time comes up five times and compliance never.
 - Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.
 - Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.

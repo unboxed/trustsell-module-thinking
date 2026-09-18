@@ -6,7 +6,7 @@ names and rules; add to this file before inventing anything new.
 
 ## Today
 
-Monday 14 September 2026. Dates on the cards are relative to this.
+Wednesday 16 September 2026. Dates on the cards are relative to this.
 
 ## The goal, in your words
 
@@ -66,7 +66,7 @@ the grid, never above it: the cards come to you; the box is for what you're wond
 **The phone.** Slides that explain the concept; they are not screens of the tool. All of them
 live in `deck.html`, one shown at a time. The first, "The idea", is words only: it states the
 argument before anything is demonstrated, that people work the verbs and the tool works the
-nouns. The second, "The phone", is the prototype: the title
+nouns. The second, "Your day on mobile" (called "The phone" until 18 September), is the prototype: the title
 and a line about the idea on the left, one iPhone on the right at almost the room's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
 close button lowers it). The third, "The modules", shows the modules as bare reply
@@ -110,7 +110,39 @@ On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"),
 card, already in focus, that runs down to the home indicator. There is no stack of cards
 behind it and no menu at the foot. Both were tried and dropped: a stack says "flick through
 these" while a reply asks you to stop and think, and on a real phone the reply was too small
-inside a card that did not feel in focus.
+inside a card that did not feel in focus. (On "Your day on mobile" the count has since given way
+to the week strip, and the cards to either side now show at the edges; both are below.)
+
+Moving between cards (decided 18 September, by looking, on a sheet of three ways:
+https://claude.ai/artifact/GmPvzETw8SUGyAkHYaLcXM). On "Your day on mobile" the cards sit side by
+side and a sideways swipe moves one card at a time, forward or back. Up and down still opens a
+card into its details. The cards either side show as thin edges in the gutters, and three dots
+above the home indicator say where you are. Each card keeps its own state: send Karen's
+message, swipe on, and Ashworth is still waiting with Rest It. The header, the week and the bar
+stay put while the cards move, and follow the card in view. There are three cards (Karen,
+Ashworth, the Ask about Rachel's meeting) because only three are built; which cards make a day,
+and in what order, is not written yet. Passed over: "Act or Skip to move on", where only a
+decision takes you to the next card, and "Today's list", a list of the day's cards from the
+header. The cost, noted: a sideways swipe invites flicking through, the habit the stack was
+dropped for. Skip still does nothing; moving to the next card is its obvious job, not yet given.
+
+The week strip (decided 18 September, by looking, on a sheet of three placements:
+https://claude.ai/artifact/BHpdq7UGj2dX5EtNbLw2HU). On "Your day on mobile" only, the count line
+gives way to a week: seven days, a letter over each date, today (Wednesday 16 September) filled
+in ink. Monday and Tuesday, already gone, are faint but can still be chosen. The header between the two menu buttons names the day, "Today". The strip swipes a week at
+a time, from this week to the week of 12 October, so the last dated card (Holbrook, 16 October)
+is in reach. There are no past weeks, because a card never goes overdue. Tapping a day moves
+the fill there, today keeps a ring, and the header says "Tomorrow", "Yesterday" or the weekday
+and date. (Today moved from Monday 14 to Wednesday 16 September on 18 September, so a week
+with past days in it could be seen; the cards were reworded to stay true from Wednesday.) A
+day on the strip means when a card's moment arrives, never a due date, so the strip does not
+break the rule that cards carry no due dates. What a later day shows is not written yet, so the
+card stays the same whichever day is chosen. Only the five `dated` cards have a real day today;
+every other card would need an "arrives" fact first. Passed over: the strip above the count,
+which pushed the card 50 pt down, and a smaller strip between the menu buttons, which left the
+compact title nowhere to go. The strip fades with the count's timing as the card becomes a page,
+and "Today" gives way to the card's title in the bar. The three phones on "The details" keep
+their count.
 
 The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The

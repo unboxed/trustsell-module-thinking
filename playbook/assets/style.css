@@ -350,6 +350,46 @@ summary::-webkit-details-marker{display:none}
 .screen__title{flex:1;min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px;font:var(--ios-text-headline);color:var(--ios-label);opacity:var(--t)}
 /* Progress through the deck: a centred footnote in the secondary grey. */
 .deck__count{position:absolute;left:0;right:0;top:104px;text-align:center;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
+/* The week strip (the phone slide only, .screen--week), where the count was:
+   the header names the day, the strip shows the week. 12 pt under the menu
+   buttons, 16 pt above the card, so the card sits 49 pt lower than it did.
+   One week fills the strip and it swipes a week at a time. The day the strip
+   is on is filled with the ink accent; today, when another day is chosen,
+   keeps a ring. Days already gone this week are faint but can be chosen. No colour, as everywhere on the phone. The kit has no week
+   row, so every number here is a judgment, not Apple's. */
+.screen--week .screen__top{position:relative}
+.screen__day{position:absolute;left:0;right:0;text-align:center;font:var(--ios-text-headline);font-weight:700;color:var(--ios-label);opacity:calc(1 - var(--t));pointer-events:none}
+.screen--week .card-hole{top:calc(181px*(1 - var(--p)))}
+.screen--week .deck__card{padding-top:205px}
+.week{position:absolute;left:var(--ios-gutter);right:var(--ios-gutter);top:114px;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;pointer-events:auto;opacity:calc(1 - var(--p)*2.5)}
+.week::-webkit-scrollbar{display:none}
+.screen__shared.is-page .week{visibility:hidden}
+.week__row{flex:0 0 100%;display:flex;justify-content:space-between;scroll-snap-align:start}
+.week__day{appearance:none;border:0;background:none;padding:0;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:44px;font-family:var(--phone-font);color:var(--ios-label);cursor:pointer}
+.week__name{font-size:.6875rem;line-height:.8125rem;font-weight:600;color:var(--ios-label-secondary)}
+.week__num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:1.0625rem;font-weight:600}
+.week__day.is-today .week__num{font-weight:800;box-shadow:inset 0 0 0 1.5px var(--ios-label)}
+.week__day.is-selected .week__num{background:var(--ios-accent);color:var(--on-accent);box-shadow:none;font-weight:800}
+/* A day already gone this week: faint, and still a button. */
+.week__day.is-past{opacity:.4}
+.week__day.is-past.is-selected{opacity:1}
+/* Cards side by side (the phone slide only, decided 18 September): a sideways
+   swipe moves between them, one card to a swipe. Each page is a whole card with
+   its own scroller and sheet. Over them, a layer that does not move sideways
+   holds the bar, the header and the week; deck.js mirrors the card in view's
+   --p and --t onto it. The cards either side show as 8 pt edges in the
+   gutters, and dots at the foot say where you are. Judgment, not Apple's. */
+.pager{position:absolute;inset:0;z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
+.pager::-webkit-scrollbar{display:none}
+.screen__page{position:relative;flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always}
+.screen__shared{position:absolute;top:0;left:0;right:0;height:826px;z-index:3;pointer-events:none;--p:0;--t:0}
+.screen__shared button,.screen__shared .week{pointer-events:auto}
+.peek{position:absolute;top:181px;bottom:42px;width:8px;background:var(--ios-bg-card);box-shadow:var(--card-edge),var(--card-lift);opacity:calc(1 - var(--p)*2.5)}
+.peek--left{left:0;border-radius:0 24px 24px 0}
+.peek--right{right:0;border-radius:24px 0 0 24px}
+.dots{position:absolute;left:0;right:0;bottom:21px;display:flex;justify-content:center;gap:7px;opacity:calc(1 - var(--p)*2.5)}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--ios-label);opacity:.25}
+.dots i.is-on{opacity:1}
 /* The bar at the foot: 12 pt, a 44 pt row, the 34 pt home area. It sits under
    the frame, so while the hole is still a card it shows only inside it. */
 .screen__foot{position:absolute;left:0;right:0;bottom:0;height:90px;background:var(--ios-bg-card);border-top:.5px solid var(--ios-separator);opacity:calc(var(--p)*2.5)}
@@ -398,10 +438,11 @@ summary::-webkit-details-marker{display:none}
 .said--bar{left:24px;right:var(--ios-gutter);top:748px;min-height:var(--ios-hit-target);gap:8px;opacity:calc((var(--p) - .6)/.4)}
 .said--bar p{flex:1}
 /* Under an open sheet the actions stand down once it has risen, so the bar's filled button cannot show past the sheet's corner. */
-.screen:has(.reply-sheet.is-open) .act{visibility:hidden;transition:visibility 0s .3s}
-.screen.is-sent .act{display:none}
-.screen.is-sent .said{display:flex}
-.screen.is-page .act--view,.screen.is-page .said--card,.screen:not(.is-page) .act--view-bar,.screen:not(.is-page) .said--bar{visibility:hidden}
+/* A card's state lives on its screen, or on its page where the screen holds several cards. */
+:is(.screen:not(:has(.pager)),.screen__page):has(.reply-sheet.is-open) .act{visibility:hidden;transition:visibility 0s .3s}
+:is(.screen:not(:has(.pager)),.screen__page).is-sent .act{display:none}
+:is(.screen:not(:has(.pager)),.screen__page).is-sent .said{display:flex}
+:is(.screen:not(:has(.pager)),.screen__page).is-page :is(.act--view,.said--card),:is(.screen:not(:has(.pager)),.screen__page):not(.is-page) :is(.act--view-bar,.said--bar){visibility:hidden}
 /* The reply sheet: where the module lives. This is the playbook's one
    component of its own, and its anatomy is copied from the sheet Claude's
    phone app raises to ask a question: a floating panel inset 16 pt from the
@@ -513,7 +554,7 @@ summary::-webkit-details-marker{display:none}
    The kit's text tokens carry their family from :root, so they are declared
    again here with the phone's face. Its tracking is tuned for SF, so it is
    set to nothing. */
-.page--slide,.screen,.sheet-stage{
+.page--slide,.screen,.screen__page,.sheet-stage{
   --phone-font:'Plus Jakarta Sans',var(--ios-font);
   --ios-text-large-title:400 2.125rem/2.5625rem var(--phone-font);
   --ios-text-title1:400 1.75rem/2.125rem var(--phone-font);
@@ -540,7 +581,7 @@ summary::-webkit-details-marker{display:none}
   --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
 }
 @media (prefers-color-scheme:dark){
-  .page--slide,.screen,.sheet-stage{
+  .page--slide,.screen,.screen__page,.sheet-stage{
     --ios-bg:#0A0B0C;
     --ios-bg-card:#1D1F22;
     --ios-label:#FFFFFF;

@@ -50,17 +50,52 @@
      are taller than the screen, and not every browser lets you rest inside
      a snap area that big; Safari pulls back to its edges. */
   function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  /* Where a card keeps its state: its page, when the screen holds several cards side by side, or else the screen. */
+  function scope(el) { return el.closest('.screen__page') || el.closest('.screen'); }
+  function mirror(from, to) {
+    to.style.setProperty('--p', from.style.getPropertyValue('--p') || 0);
+    to.style.setProperty('--t', from.style.getPropertyValue('--t') || 0);
+    to.classList.toggle('is-page', from.classList.contains('is-page'));
+  }
   document.querySelectorAll('[data-scroll]').forEach(function (sc) {
-    var screen = sc.closest('.screen'), details = sc.querySelector('.details');
+    var screen = sc.closest('.screen'), host = scope(sc), details = sc.querySelector('.details');
+    var shared = screen.querySelector('.screen__shared');
+    /* A screen whose card sits lower (the week strip's) says where its title reaches the bar. */
+    var titleAt = +screen.getAttribute('data-title-at') || 160;
     function set() {
       var start = details.offsetTop - parseFloat(getComputedStyle(sc).scrollPaddingTop);
       sc.classList.toggle('is-free', sc.scrollTop >= start - 1);
       var p = clamp(sc.scrollTop / 120);
-      screen.style.setProperty('--p', p);
-      screen.style.setProperty('--t', clamp((sc.scrollTop - 160) / 40));
-      screen.classList.toggle('is-page', p >= .5);
+      host.style.setProperty('--p', p);
+      host.style.setProperty('--t', clamp((sc.scrollTop - titleAt) / 40));
+      host.classList.toggle('is-page', p >= .5);
+      if (shared && host.classList.contains('is-here')) mirror(host, shared);
     }
     sc.addEventListener('scroll', set, { passive: true }); set();
+  });
+
+  /* Cards side by side: a sideways swipe moves one card at a time. The card in
+     view (is-here) lends its scroll to the layer that stays put, its title to
+     the bar, and its place to the dots; the edges show where there is a card
+     either side. */
+  document.querySelectorAll('[data-pager]').forEach(function (pager) {
+    var screen = pager.closest('.screen'), shared = screen.querySelector('.screen__shared');
+    var pages = pager.querySelectorAll('.screen__page'), dots = shared.querySelectorAll('.dots i');
+    var here = -1;
+    function go() {
+      /* A hidden slide has no width yet; it starts on the first card. */
+      var w = pager.clientWidth, k = w ? Math.max(0, Math.min(pages.length - 1, Math.round(pager.scrollLeft / w))) : 0;
+      if (k === here) return;
+      here = k;
+      pages.forEach(function (pg, j) { pg.classList.toggle('is-here', j === k); pg.inert = j !== k; });
+      dots.forEach(function (d, j) { d.classList.toggle('is-on', j === k); });
+      shared.querySelector('.dots').setAttribute('aria-label', 'Card ' + (k + 1) + ' of ' + pages.length);
+      shared.querySelector('.screen__title').textContent = pages[k].querySelector('.deck__card h2').textContent;
+      shared.querySelector('.peek--left').hidden = k === 0;
+      shared.querySelector('.peek--right').hidden = k === pages.length - 1;
+      mirror(pages[k], shared);
+    }
+    pager.addEventListener('scroll', go, { passive: true }); go();
   });
 
   /* The reply sheet. On the phone the card's plain action raises it and the
@@ -81,7 +116,27 @@
     } else row.setAttribute('aria-checked', on ? 'false' : 'true');
     ready(row.closest('.reply-sheet'));
   }
+  /* The week strip. Tapping a day moves the selection and the header names
+     it: Today, Tomorrow, Yesterday, or the weekday and date. The card stays; what a later
+     day shows is not written yet. */
+  function dayName(day, today) {
+    var d = new Date(day.getAttribute('data-date') + 'T12:00:00');
+    var t = new Date(today.getAttribute('data-date') + 'T12:00:00');
+    var gap = Math.round((d - t) / 864e5);
+    return gap === 0 ? 'Today' : gap === 1 ? 'Tomorrow' : gap === -1 ? 'Yesterday' : day.getAttribute('aria-label');
+  }
+  function pick(day) {
+    var screen = day.closest('.screen');
+    screen.querySelectorAll('.week__day').forEach(function (d) {
+      d.classList.toggle('is-selected', d === day);
+      d.setAttribute('aria-pressed', d === day ? 'true' : 'false');
+    });
+    screen.querySelector('.screen__day').textContent = dayName(day, screen.querySelector('.week__day.is-today'));
+  }
+
   document.addEventListener('click', function (e) {
+    var day = e.target.closest('.week__day');
+    if (day) { pick(day); return; }
     var open = e.target.closest('[data-reply-open]'), row = e.target.closest('.reply-sheet__rows [role]');
     var shut = e.target.closest('.screen .reply-sheet__close, .screen [data-send]');
     var version = e.target.closest('[data-version]');
@@ -95,13 +150,13 @@
     if (asked) { ask(asked.closest('.reply-sheet')); return; }
     var sent = e.target.closest('.screen [data-send-message]'), undo = e.target.closest('[data-undo]');
     if (sent) {
-      var sc = sent.closest('.screen');
+      var sc = scope(sent);
       sc.querySelector('.reply-sheet').classList.remove('is-open');
       sc.classList.add('is-sent');
       return;
     }
-    if (undo) { undo.closest('.screen').classList.remove('is-sent'); return; }
-    if (open) open.closest('.screen').querySelector('.reply-sheet').classList.add('is-open');
+    if (undo) { scope(undo).classList.remove('is-sent'); return; }
+    if (open) scope(open).querySelector('.reply-sheet').classList.add('is-open');
     else if (row) choose(row);
     else if (shut) shut.closest('.reply-sheet').classList.remove('is-open');
   });

@@ -44,7 +44,7 @@ Stephen Walsh's objection is the annual price, not the product. The partial roll
 
 ## What I noticed
 
-- Why now: Stephen's email on Wednesday ended "we can't find that in this year's budget". Left alone, that sentence becomes the decision.
+- Why now: Stephen's email last Wednesday ended "we can't find that in this year's budget". Left alone, that sentence becomes the decision.
 - Felton is at coalition: Shabana Akhtar and the service lead are for it. Stephen is finance, and his objection is the only one left.
 - Every message from Stephen mentions the annual figure. None questions what BOPS does. That is a price barrier, not a fit problem.
 - The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.

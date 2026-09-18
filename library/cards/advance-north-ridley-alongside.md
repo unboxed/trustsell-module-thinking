@@ -13,7 +13,7 @@ documents: [alongside-one-pager]
 sure: "sure"
 when:
   mode: dated
-  words: "By Wednesday. The demo is Thursday 17 September."
+  words: "By tonight. The demo is tomorrow, Thursday 17 September."
   until: 2026-09-16
 reply:
   module: buttons
@@ -45,7 +45,7 @@ Michelle Turner's team think BOPS replaces their case system. It sits alongside 
 
 ## What I noticed
 
-- Why now: the demo is in three days. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.
+- Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.
 - Three messages from North Ridley in the last fortnight say "replace" or "migrate off". Your replies never corrected it.
 - Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.
 - North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.
