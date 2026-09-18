@@ -187,7 +187,7 @@
 
   /* The reply sheet. On the phone the card's plain action raises it and the
      close button lowers it; sending, from the card or the sheet, lowers it
-     and the card says back what happened, with a way to undo. In any sheet, a row can be chosen
+     and the card darkens and says back what happened, with a way to undo. In any sheet, a row can be chosen
      (one, or several), and the send button wakes once there is an answer. A
      draft's version pills switch between its versions. */
   function ready(sheet) {
@@ -242,7 +242,29 @@
       sc.classList.add('is-sent');
       return;
     }
-    if (undo) { scope(undo).classList.remove('is-sent'); return; }
+    /* Skip darkens the card too, where the card has a skipped state; the reason
+       and the thumbs mark themselves, one in each group, and a second tap clears it. */
+    var skip = e.target.closest('.screen .act--skip'), mark = e.target.closest('[data-mark]');
+    if (skip && scope(skip).querySelector('.done--skipped')) { scope(skip).classList.add('is-skipped'); return; }
+    /* A thumb or a reason is the acknowledgment too: it marks itself, and after a
+       beat the card slides off to the next one, which keeps its own state. A
+       swipe does the same without a mark. The last card only marks. */
+    if (mark) {
+      var was = mark.getAttribute('aria-pressed') === 'true';
+      mark.closest('[data-marks]').querySelectorAll('[data-mark]').forEach(function (m) { m.setAttribute('aria-pressed', 'false'); });
+      mark.setAttribute('aria-pressed', was ? 'false' : 'true');
+      var pg = mark.closest('.screen__page'), pager = pg && pg.closest('[data-pager]');
+      if (!was && pager && pg.nextElementSibling) {
+        setTimeout(function () { pager.scrollTo({ left: pg.offsetLeft + pager.clientWidth, behavior: 'smooth' }); }, 450);
+      }
+      return;
+    }
+    if (undo) {
+      var u = scope(undo);
+      u.classList.remove('is-sent', 'is-skipped');
+      u.querySelectorAll('[data-mark]').forEach(function (m) { m.setAttribute('aria-pressed', 'false'); });
+      return;
+    }
     if (open) scope(open).querySelector('.reply-sheet').classList.add('is-open');
     else if (row) choose(row);
     else if (shut) shut.closest('.reply-sheet').classList.remove('is-open');

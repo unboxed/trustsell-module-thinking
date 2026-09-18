@@ -144,7 +144,7 @@ Ashworth, the Ask about Rachel's meeting) because only three are built; which ca
 and in what order, is not written yet. Passed over: "Act or Skip to move on", where only a
 decision takes you to the next card, and "Today's list", a list of the day's cards from the
 header. The cost, noted: a sideways swipe invites flicking through, the habit the stack was
-dropped for. Skip still does nothing; moving to the next card is its obvious job, not yet given.
+dropped for. Skip now darkens the card and asks why, quietly (see "After the action"); moving to the next card is its obvious job, not yet given.
 
 The week strip (decided 18 September, by looking, on a sheet of three placements:
 https://claude.ai/artifact/BHpdq7UGj2dX5EtNbLw2HU). On "Your day on mobile" only, the count line
@@ -170,8 +170,8 @@ front holds one filled action and at most one outline one, stacked, with Skip un
 in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
 action on the front raises the sheet. The phone slide shows the desk's Karen Hughes card:
 the filled action is Send Message, the plain one is View Draft, which raises the draft
-sheet. Once sent, the actions give way to what the tool says back ("Sent. I will tell you
-when Karen replies.") and Undo. On the phone the word is "message" and the buttons drop the
+sheet. Once sent, the card darkens and says back what happened (see "After the action" below).
+On the phone the word is "message" and the buttons drop the
 article, as Apple's do; the desk still says "Send the Note". Placeholder titles and descriptions
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
@@ -181,8 +181,34 @@ How sure sits top right of the card, at the end of the kind label's line: one qu
 moved into the actions (18 September, the user's call). The actions stack, one per row: the
 filled action, then the secondary one as an outline capsule of the same size (drawn with the badges'
 hairline, so there is still no colour on buttons), then Skip as quiet text, last. The stack keeps its foot: on a card with no secondary action the filled action drops a row, so Skip sits in the same place on every card and no empty row is left under it. Skip fades with the front as the card becomes a page. For an
-hour the same day Skip shared the secondary action's row, side by side; the user preferred a stack. On the slide it does nothing yet. (Until 18 September Skip sat
+hour the same day Skip shared the secondary action's row, side by side; the user preferred a stack. On "Your day on mobile" it darkens the card and offers Not Now and Not Relevant; on "The details" it does nothing yet. (Until 18 September Skip sat
 where the word now is.)
+
+After the action, the card darkens (decided 18 September, by looking, over three rounds on one
+sheet: https://claude.ai/artifact/DuTZjnLqWKDHCCjsU9vRsq, where "A · The card darkens" was
+chosen). Once you reply (Send Message, Rest It, an Ask's answer) or Skip, the card itself turns
+dark, ink by day and a step darker than the slate by night, with the day still around it. On it,
+centred: a large mark for what happened (a tick, or a skip mark), a short heavy line ("Sent to
+Karen", "Skipped"), then the receipt: what I did, what I updated, what I'll do next. Feedback
+comes after, quiet and optional, then Undo. "Scroll for details" leaves while the dark card shows (the user's call, the same
+day). In its place, at the foot of the dark card, a quiet hint: "Swipe for the next card". A
+thumb, Not Now or Not Relevant is the acknowledgment too: it marks itself and, after a beat, the
+card slides off to the next one; the note does not, because it is for typing (the user's call,
+the same day). A Next button between the feedback and Undo was tried first and dropped: one more
+button on a moment meant to be quiet. A card left behind stays dark, since each card keeps its
+own state. The last card has no hint and does not slide, because what comes after the day's last
+card is not written yet. After a reply it is two thumbs and a note; after
+Skip it is the reason, in the desk's words, Not Now (another day) and Not Relevant (the card got
+it wrong), then the note. Scrolled into a page, the bar says the line with Undo, as before. The
+user asked for this because feedback is optional and must not stand in the way: first confirm,
+then let the seller say something if they want to. Passed over on the way: a yes-or-no question
+under the line, the sheet staying up to ask why, the card as a white receipt with a field, the
+three icons under a white receipt or in the card's corner, and the whole screen dimming with a
+panel at the foot (liked too). Stand-ins, not decided: "I've marked the July figures as sent" is a
+proposal for how the tool reports updating its nouns; what Not Now and Not Relevant do next, what
+the thumbs change and what the note opens are not written yet. A dark card by day is a new
+material on the phone, beside the white card and the slate night. Only "Your day on mobile" has
+it; the three phones on "The details" still say back one line.
 
 Scrolling turns the card into a page (decided 17 September, picked from three rendered
 options; the other two were a card that scrolls inside itself, and details that rise over the
@@ -292,8 +318,8 @@ so far" is the user's; the other two are borrowed from the desk), whether "Not s
 sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
 Buttons sheet to the front, as the message card's have; the names the signal writes on the
 front's actions for the other modules; whether the sheet's pager stays when a card asks one
-thing only (it sits close to "1 of 5 cards"), what Skip does (the next card arrives, and whether the tool asks why or
-says when it will come back; the desk's words for this are Not Now and Not Relevant), whether
+thing only (it sits close to "1 of 5 cards"), what Skip does next (the next card arrives, and what Not Now and Not Relevant each
+change), whether
 Skip is needed once the card is a page, whether modules chain (what follows "Not Quite"), and a later slide that
 shows one module serving many signals.
 

@@ -455,6 +455,39 @@ summary::-webkit-details-marker{display:none}
 :is(.screen:not(:has(.pager)),.screen__page).is-sent .act{display:none}
 :is(.screen:not(:has(.pager)),.screen__page).is-sent .said{display:flex}
 :is(.screen:not(:has(.pager)),.screen__page).is-page :is(.act--view,.act--skip,.said--card),:is(.screen:not(:has(.pager)),.screen__page):not(.is-page) :is(.act--view-bar,.said--bar){visibility:hidden}
+/* After the action, the card darkens (decided 18 September, by looking:
+   https://claude.ai/artifact/DuTZjnLqWKDHCCjsU9vRsq, "A · The card darkens").
+   Once you reply or skip, the card itself turns dark, a focused moment with the
+   day still around it: a large mark for what happened, a short heavy line, the
+   receipt, then feedback, quiet and optional, and Undo last. After a reply the
+   feedback is two thumbs and a note; after Skip it is the reason, in the desk's
+   words. It sits where the card is and fades with the front as the card becomes
+   a page; the bar then says the line with Undo. The dark and its ink are tokens,
+   set in "The phone's look". Every number here is a judgment, not Apple's. */
+.done{display:none;position:absolute;top:calc(181px*(1 - var(--p)));left:var(--ios-gutter);right:var(--ios-gutter);bottom:42px;border-radius:36px;background:var(--done-bg);color:var(--done-ink);box-shadow:var(--done-edge);flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;opacity:calc(1 - var(--p)/.3)}
+.done__mark{display:block;margin-bottom:12px;opacity:.9}
+.done__mark svg{display:block}
+.screen .done p{margin:0;color:inherit}
+.screen .done .done__head{font:800 1.75rem/2rem var(--phone-font,var(--ios-font));letter-spacing:-.03em;margin-bottom:8px}
+.screen .done .done__text{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);max-width:280px;opacity:.7}
+.done__icons{display:flex;gap:8px;margin-top:16px}
+.done__icon{width:44px;height:44px;padding:0;border:0;border-radius:50%;background:none;display:inline-flex;align-items:center;justify-content:center;color:inherit;opacity:.7;cursor:pointer}
+.done__icon[aria-pressed="true"]{opacity:1;background:color-mix(in srgb,currentColor 16%,transparent)}
+.done__why{display:flex;gap:8px;width:100%;margin-top:20px}
+.done__why + .done__icons{margin-top:8px}
+.screen .done__cap{flex:1;min-height:48px;padding:0 12px;border-radius:999px;border:1px solid color-mix(in srgb,currentColor 30%,transparent);color:inherit;white-space:nowrap;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+.screen .done__cap[aria-pressed="true"]{background:var(--done-ink);color:var(--done-bg);border-color:var(--done-ink)}
+/* The way on: a quiet hint at the foot, where Scroll for details was. A thumb or a reason also slides on by itself. The last card has none. */
+.screen .done .done__hint{position:absolute;left:0;right:0;bottom:28px;display:flex;align-items:center;justify-content:center;gap:2px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);opacity:.6}
+.done__hint .chevron{width:7px;height:7px;border-width:0 0 1.5px 1.5px;margin:0 0 0 4px}
+.screen .done__undo{margin-top:4px;color:inherit;font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
+.screen__page.is-sent .done--sent,.screen__page.is-skipped .done--skipped{display:flex}
+.screen__page.is-page .done{visibility:hidden}
+.screen__page:has(.done).is-sent .said--card,.screen__page.is-sent .said--skipped{display:none}
+.screen__page.is-skipped .act{display:none}
+.screen__page.is-skipped .said--skipped{display:flex}
+/* The dark card is a moment, not a door: the hint to scroll leaves while it shows. */
+.screen__page:is(.is-sent,.is-skipped):has(.done) .deck__more{display:none}
 /* The reply sheet: where the module lives. This is the playbook's one
    component of its own, and its anatomy is copied from the sheet Claude's
    phone app raises to ask a question: a floating panel inset 16 pt from the
@@ -591,6 +624,10 @@ summary::-webkit-details-marker{display:none}
   --card-glaze:linear-gradient(#FFFFFF,#F6F7F9 826px,#FFFFFF 826px);
   --card-edge:inset 0 1.5px 0 rgb(255 255 255/calc(1 - var(--p))),inset 0 -1px 0 rgb(18 18 18/calc(.05*(1 - var(--p))));
   --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
+  /* The card once replied to: ink by day, the buttons' own colour. */
+  --done-bg:#121212;
+  --done-ink:#FFFFFF;
+  --done-edge:none;
 }
 @media (prefers-color-scheme:dark){
   .page--slide,.screen,.screen__page,.sheet-stage{
@@ -604,6 +641,10 @@ summary::-webkit-details-marker{display:none}
     --card-glaze:linear-gradient(160deg,#303338,#1D1F22 420px);
     --card-edge:inset 0 1px 0 rgb(255 255 255/calc(.2*(1 - var(--p)))),inset 0 0 0 1px rgb(255 255 255/calc(.06*(1 - var(--p))));
     --card-lift:0 0 0 0 transparent;
+    /* By night the slate card darkens toward the ground, and keeps a lit edge so it is still a card. */
+    --done-bg:#101113;
+    --done-ink:#FFFFFF;
+    --done-edge:inset 0 1px 0 rgb(255 255 255/.14),inset 0 0 0 1px rgb(255 255 255/.07);
   }
   /* A sheet over slate is a step lighter, so it still reads as raised. */
   .reply-sheet{--ios-bg-card:#282B2F}
