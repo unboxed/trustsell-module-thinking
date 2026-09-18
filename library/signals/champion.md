@@ -28,7 +28,7 @@ faster and just as long, and over a couple of weeks has added three of their own
 thread, including their procurement lead, with lines like "looping in the person who owns this". The
 read: this contact is championing the work.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

@@ -33,7 +33,7 @@ pain, the right budget cycle, the right sector). A lead handed over by People me
 its budget cycle closed last month. The read: "strong fit, one timing caveat. The lead matches on
 size, sector and pain; the only gap is budget timing, so chase now but pace to their cycle."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows People's lead situation to judge the match against the fit-shape.

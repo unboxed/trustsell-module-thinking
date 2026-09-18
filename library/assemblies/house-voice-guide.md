@@ -39,7 +39,7 @@ because their role needs it and more on the personal voice for a practised selle
 `05`'s prose, not here. Used solo with no organisation behind you, the guide is empty and the render
 rests entirely on your own voice.
 
-## Lineage
+## Where it comes from
 
 `house-voice` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`
 resolves to [`channels/drive.md`](../channels/drive.md), the brand document a tone

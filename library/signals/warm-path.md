@@ -32,7 +32,7 @@ you). One contact you know sits on 3 threads with that decision-maker and shares
 giving a chain of length 2 (you, the contact, the target). The read: "there's a one-hop warm path, and
 here is the chain."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

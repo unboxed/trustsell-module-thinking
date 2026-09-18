@@ -38,7 +38,7 @@ maps to none. The read: "lead with the partial-rollout use-case. It speaks to th
 this buyer-type cares about and sidesteps the rollout-risk worry that tops their list; hold full
 migration for later."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

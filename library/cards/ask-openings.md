@@ -27,25 +27,25 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# You rewrite most of my openings. Should I drop the pleasantries?
+# Should I leave the greetings out of my drafts?
 
 In 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.
 
-## What I already know
+## Known so far
 
 - 11 drafts since August. In 9, the first sentence was deleted before sending: "I hope you're well", "Hope the week is going well".
 - The 2 you kept were both to people you had not met.
 
-## Where I ran out
+## What's missing
 
 - I can see what you changed. I can't see why.
 
-## What I'll do with your answer
+## What your answer changes
 
 - Drop them: I open with the point, everywhere.
 - Keep them: I leave them in and stop asking.
 - Depends: first contact keeps them, people you know don't.
 
-## Where I'll remember it
+## Where your answer is saved
 
 - In your voice profile, as a rule you set, with the date.

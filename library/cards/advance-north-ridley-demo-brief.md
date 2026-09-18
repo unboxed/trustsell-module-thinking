@@ -46,25 +46,25 @@ draft:
 
 Eight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.
 
-## What I noticed
+## What happened
 
 - Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.
 - In 14 messages from North Ridley since July, officer time comes up five times and compliance never.
 - Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.
 - Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.
 
-## What I read
+## Sources
 
 - calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.
 - gmail · The North Ridley thread since July: what each person asked.
 - drive · Your demo deck, June and July versions, first slide "Compliance by design".
 - meet · Your notes from the Holbrook demo in July.
 
-## Not sure
+## Still unclear
 
 - Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.
 
-## Then
+## What happens next
 
 - After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.
 

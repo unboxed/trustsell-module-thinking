@@ -34,7 +34,7 @@ and your told discount room of −10% does not reach them. The read: "you are pr
 You sit 18% over the cheapest named rival and your floor does not reach them, so on a cost-led buyer
 price will come up; lead on value or a partial rollout to reframe it."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

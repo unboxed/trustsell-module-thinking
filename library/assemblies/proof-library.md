@@ -40,7 +40,7 @@ prose, not as a signal: Organisation has no signal floor.
 Where a claim has a `proof-tag` but no Drive document behind it, the shelf shows the hole plainly, a
 proof gap named not faked, rather than implying a document that is not there.
 
-## Lineage
+## Where it comes from
 
 `proof-tag` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source, including its
 reference-naming and proof-source attributes. `file` and `file-content` resolve to

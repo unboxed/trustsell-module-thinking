@@ -568,14 +568,27 @@ summary::-webkit-details-marker{display:none}
 .chevron--down{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 3px}
 .deck__card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
 .deck__card p{color:var(--ios-label-secondary)}
-/* The details: prose after a hairline, 24 pt from the page's edge. Section
-   heads in Headline, text in Body and the primary label colour, records as
-   plain lines with hairlines. No grouped tiles. They fade in as the card
-   becomes a page and do not move by themselves: a moving box would move the
-   place the scroll snaps to. They clear the foot bar at the end. */
-.details{margin:0 24px;padding:4px 0 120px;border-top:.5px solid var(--ios-separator);opacity:calc((var(--p) - .4)/.6)}
-.details h3{font:var(--ios-text-headline);color:var(--ios-label);margin:24px 0 8px}
-.details p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label);margin:0 0 10px}
+/* The details: one filled tile per section, 16 pt from the page's edge, as an
+   inset grouped list (decided 18 September, by looking, on a sheet of
+   options; it replaces prose after a hairline, where every gap was the same
+   and nothing grouped). A tile is a plain fill, no glaze and no shadow: the
+   card is still the only raised thing. The fill mixes from tokens, so the
+   night follows. Section heads in Headline, text in Body and the primary
+   label colour, records as plain lines with hairlines. A head stands 12 pt
+   above its text, more than the 8 pt between paragraphs, so it reads as
+   the head of the whole tile. The 18 pt inside and
+   14 pt between are judgments. They fade in as the card becomes a page and
+   do not move by themselves: a moving box would move the place the scroll
+   snaps to. They clear the foot bar at the end. */
+.details{margin:0 16px;padding:14px 0 120px;opacity:calc((var(--p) - .4)/.6)}
+.details__part{--tile:color-mix(in srgb,var(--ios-label) 4.5%,var(--ios-bg-card));background:var(--tile);border-radius:16px;padding:18px;margin-bottom:14px}
+.details h3{font:var(--ios-text-headline);color:var(--ios-label);margin:0 0 12px}
+.details p{font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label);margin:0 0 8px}
+.details__part>:last-child{margin-bottom:0}
+.details__part .w-time li:last-child{padding-bottom:0}
+.details__part .w-time::before{bottom:6px}
+.details__part>.w-number:last-child{padding-bottom:0}
+.details__part>.w-words:last-child blockquote:last-child{margin-bottom:0}
 .details__rows{list-style:none;padding:0}
 .details__rows li{padding:11px 0;border-bottom:.5px solid var(--ios-separator);font:var(--ios-text-body);letter-spacing:var(--ios-track-body);color:var(--ios-label)}
 .details__rows li:last-child{border-bottom:0}
@@ -677,9 +690,9 @@ summary::-webkit-details-marker{display:none}
    widget is told apart by its shape before a word is read, and looks the same
    on every card. Ink only: the kind's dot stays the only colour on the screen,
    so every mark here is the label colour or a mix of it, and night follows
-   the tokens. The widgets sit in the details between the story and Not sure;
+   the tokens. The widgets sit in the details between What happened and Still unclear;
    library/widgets/ says what each one is. Every number is a judgment. */
-/* A number against its usual: the figure in the card's big words, then a bar
+/* Compared with usual: the figure in the card's big words, then a bar
    for it over a bar for the usual. The usual's bar is drawn short: it only
    says "much less", the counts will give it its length. */
 .details .w-number{padding:2px 0 8px}
@@ -693,12 +706,12 @@ summary::-webkit-details-marker{display:none}
 .details .w-time{list-style:none;padding:0 0 0 22px;margin:4px 0 0;position:relative}
 .details .w-time::before{content:"";position:absolute;left:4px;top:8px;bottom:14px;width:1.5px;background:color-mix(in srgb,var(--ios-label) 20%,transparent)}
 .details .w-time li{position:relative;padding:0 0 16px}
-.details .w-time li::before{content:"";position:absolute;left:-22px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--ios-bg-card);box-shadow:inset 0 0 0 1.5px var(--ios-label)}
+.details .w-time li::before{content:"";position:absolute;left:-22px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--tile,var(--ios-bg-card));box-shadow:inset 0 0 0 1.5px var(--ios-label)}
 .details .w-time li.is-today::before{background:var(--ios-label)}
 .details .w-time span{font:var(--ios-text-footnote);color:var(--ios-label-secondary)}
 .details .w-time p{margin:0}
 .details .w-time li.is-today p{font-weight:700}
-/* Their words: the quote large, a rule beside it, who and when small. */
+/* What they said: the quote large, a rule beside it, who and when small. */
 .details .w-words blockquote{margin:4px 0 18px;padding:0 0 0 14px;border-left:2px solid var(--ios-label)}
 .details .w-words blockquote p{font:600 1.25rem/1.625rem var(--phone-font,var(--ios-font));margin:0 0 4px}
 .details .w-words cite{font:var(--ios-text-footnote);font-style:normal;color:var(--ios-label-secondary)}

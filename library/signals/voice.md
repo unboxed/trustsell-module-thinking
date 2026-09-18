@@ -39,7 +39,7 @@ adjective, dropping the exclamation mark and shortening the sign-off. On Slack t
 terser than on mail, and fuller and more formal on a cold first touch than once a thread is going. The
 read: "warm but brisk; formal with new contacts, looser once established; never an exclamation mark."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 This is a `style` read, a non-state match to your own writing voice, not an own-rhythm decay read, so

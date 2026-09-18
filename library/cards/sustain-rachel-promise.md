@@ -44,7 +44,7 @@ draft:
 
 You promised her the data-residency note on 8 September. It hasn't gone, and it answers the first question she asked you.
 
-## What I noticed
+## What happened
 
 - Why now: it is eight days since you wrote "I'll send the data-residency note this week", and the week is over. Every day makes the next email harder.
 - Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread.
@@ -59,18 +59,18 @@ You promised her the data-residency note on 8 September. It hasn't gone, and it 
 
 - The data-residency note · Where the data lives and who can see it · Updated 2 September
 
-## What I read
+## Sources
 
 - gmail · Your reply to Rachel, 8 September: "I'll send the data-residency note this week".
 - gmail · No message from you to Rachel since.
 - drive · The data-residency note, updated 2 September.
 - gmail · The Westmoor thread: Rachel's question of 8 September.
 
-## Not sure
+## Still unclear
 
 - Nothing here. A promise and a date.
 
-## Then
+## What happens next
 
 - Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.
 

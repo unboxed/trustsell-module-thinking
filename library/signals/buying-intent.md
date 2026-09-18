@@ -32,7 +32,7 @@ A conversation that had been all about features turns, over a week, to price, a 
 request for a proposal, and the buyer's procurement lead joins the thread. The read: "this has gone
 from interested to buying."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows Offerings' offering relevance to name the offering.

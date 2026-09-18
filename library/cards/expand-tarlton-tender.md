@@ -46,25 +46,25 @@ draft:
 
 Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
 
-## What I noticed
+## What happened
 
 - Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.
 - Section 2.3 asks to "reduce officer time on case administration" and section 4 wants a solution that "works alongside existing systems". Those are your two sentences.
 - Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.
 - Tender rules limit contact. The questions are the contact.
 
-## What I read
+## Sources
 
 - web · Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October.
 - web · The tender PDF, sections 2 and 4.
 - goal-told · Your list of thirty, Tarlton marked cold.
 - linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.
 
-## Not sure
+## Still unclear
 
 - Whether a tender this size can be won cold. I have nothing to go on either way.
 
-## Then
+## What happens next
 
 - Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.
 

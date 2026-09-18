@@ -27,7 +27,7 @@ A contact who normally replies within a day has gone quiet for about three weeks
 left your last note unanswered, and quietly dropped your monthly check-in, with nothing on record to
 explain it. The read: "they're cooling."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

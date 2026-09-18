@@ -32,7 +32,7 @@ next week's demo invite. Their signature reads as a senior service lead, and the
 with them anywhere. The read: a senior new name with no history has entered the conversation, and a
 new decision-maker may be in the room.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

@@ -35,7 +35,7 @@ capability, but the incumbent's lock-in is the live barrier. You are stronger on
 have one real gap on offline mode, and a switch means breaking a contract and a proprietary export, so
 lead on a partial rollout that does not force a rip-out."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

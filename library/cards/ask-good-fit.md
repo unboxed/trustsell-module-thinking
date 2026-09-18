@@ -28,20 +28,20 @@ actions:
 
 You named thirty. You never said why those thirty. Until I know, I can't spot the thirty-first.
 
-## What I already know
+## Known so far
 
 - What your thirty share, as far as I can see: mostly district and borough councils; case systems over ten years old at the 19 where I can tell; a digital lead in post under two years at 14.
 - My guess from that is written on the button. It is a guess, not your reason.
 
-## Where I ran out
+## What's missing
 
 - The reason is yours and isn't written anywhere I can read. "Feels the legacy-tech pain" is a mindset, and I can only see behaviour.
 
-## What I'll do with your answer
+## What your answer changes
 
 - Once I have it: I build a fit-scan from it and show you the first five candidates before adding anyone to the thirty.
 - If you use my guess: same, but I'll flag every match as "on my guess" until you correct it.
 
-## Where I'll remember it
+## Where your answer is saved
 
 - As "what a good fit looks like", the thing you told me. Editable, dated, and shown to you before it is ever used.

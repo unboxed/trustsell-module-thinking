@@ -29,25 +29,25 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# You were in the budget meeting at Bramley. What was decided about BOPS?
+# What did the Bramley budget meeting decide about BOPS?
 
-Karen has gone quiet since it, and I can't see what was said. Your answer changes what I do with her card.
+You were there. Karen has gone quiet since then, and I can't see what was said. Your answer changes what I do with her card.
 
-## What I already know
+## Known so far
 
 - The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.
 - Nothing in your mail or Slack mentions how it went.
 
-## Where I ran out
+## What's missing
 
 - Meetings leave no record I can read unless there are notes in Drive or a Meet recording. There are none for this one.
 
-## What I'll do with your answer
+## What your answer changes
 
 - Cut or put off: I hold Karen's note a month, look for a second door, and mark Bramley as at risk.
 - Stayed in: Karen's note is ready to send this week.
 - Didn't come up: Karen's note is ready to send as written, and I read her reply for the reason she went quiet.
 
-## Where I'll remember it
+## Where your answer is saved
 
 - On Karen's page and on Bramley's, as a thing you told me, with the date.

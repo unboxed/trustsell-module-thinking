@@ -14,7 +14,7 @@ label: <Display name>            # plain English, e.g. Cooling champion
 blurb: <one line on what this read means>
 modes: [<expand|advance|sustain>]    # which category(ies) of work it serves
 kind: <opening|decay|deal-movement|risk|style>   # the family of read (style = a non-state read like Profile's voice)
-confidence: <high|graded|low>    # graded = depends on how much evidence stacks (explain in For the build)
+confidence: <high|graded|low>    # graded = depends on how much evidence stacks (explain in How it is worked out)
 inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve to ../assemblies/*
 counts: [<count-id>, ...]        # the counting floor beneath the read. Each MUST resolve to ../counts/*
 answers: [Q##, ...]              # which sales questions (../docs/sales-questions.md) it answers
@@ -28,14 +28,14 @@ pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' obje
 
 <!-- Just the read and when it applies, in a few short plain sentences. One idea per sentence; put the
      point first. No named customers, offerings or people. Do NOT restate the blurb, re-teach own-rhythm
-     (reading-principles.md), grade confidence, or list blind spots: those live in "For the build". -->
+     (reading-principles.md), grade confidence, or list blind spots: those live in "How it is worked out". -->
 
 ## In practice
 
 <!-- One short, generic worked example (a contact, a prospect). Concrete numbers are fine for
      intuition; a case study is not. -->
 
-## For the build
+## How it is worked out
 
 <!-- The precise rule, in tight structured English. The single home for how confident the read is and
      what it cannot see. Open by pointing at ../docs/reading-principles.md.

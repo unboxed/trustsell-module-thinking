@@ -13,6 +13,8 @@ person: karen-hughes
 council: bramley
 documents: [officer-time-one-pager]
 widgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widget_heads:
+  number: "Reply time"   # the head names the measure; the widget's label is the default
 sure: "likely"
 sure_because: "A pattern against her usual: 28 days, when she used to answer in a day. Why, only you can say."
 held_by: ask-budget-meeting
@@ -47,14 +49,14 @@ draft:
 
 Her replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.
 
-## What I noticed
+## What happened
 
 - Why now: 28 days since her last real reply, when she used to answer in about a day, and you have a gift ready: the figures she asked for.
 - Before the budget meeting she replied in about a day and started 9 of your 12 threads.
 - Since it: one two-line reply. No out-of-office, no leave, no meeting booked.
 - Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.
 
-## A number against its usual
+## Reply time
 
 - Now · 28 days · since her last real reply
 - Usually · about a day · her replies before the budget meeting
@@ -66,18 +68,18 @@ Her replies have slowed since the budget meeting. She never got the officer-time
 - 20 August · Budget meeting at Bramley
 - Today · The figures are still not sent
 
-## What I read
+## Sources
 
 - gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.
 - calendar · "Budget prioritisation meeting, Bramley", Thursday 20 August. Nothing since.
 - drive, gmail · The officer-time one-pager, and her July email asking for it.
 - goal-told · Your list of thirty councils, and the goal you gave me.
 
-## Not sure
+## Still unclear
 
 - Whether she is quiet because of the budget meeting or for a reason I can't see. What you tell me about the meeting settles most of it.
 
-## Then
+## What happens next
 
 - Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.
 

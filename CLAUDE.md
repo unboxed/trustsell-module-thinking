@@ -90,7 +90,7 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 | Cards | `library/cards/` | the suggestion, question or outcome |
 
 Beside the ladder, `library/widgets/`: the catalogue a card picks from and fills, never arranges.
-Detail widgets (Timeline, Their words, People, Documents, Open items, A number against its usual; at most two
+Detail widgets (Timeline, What they said, People, Documents, Open items, Compared with usual; at most two
 per card, each fed by something the card rests on) and reply widgets (the reply modules and the
 draft). `build.js` checks every join. See `library/docs/library-format.md`.
 
@@ -102,7 +102,7 @@ including `tracing-back.md`, which this ladder is the executable form of).
 `defined: false` says so. Each names the assembly it counts within (`over:`) where only one is
 possible, marked `provisional`, and leaves `over: []` where it could be one of several. Each card's
 `signal:` (the main read) and `supporting:` (other reads whose counts it quotes) are marked
-`provisional` because they were read off the card rather than decided. A card's *What I read*
+`provisional` because they were read off the card rather than decided. A card's *Sources*
 rows are `source · words`, and the build checks each source against the trail. All of this is a
 later pass, not an oversight.
 
@@ -111,7 +111,7 @@ later pass, not an oversight.
 - `playbook/`: the deliverable, still plain static HTML. `index.html` (the way in: it
   opens the slides), `library.html` (the library, browsable, rendered from
   `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
-  only; your day on mobile, a working prototype; the modules that can fill a card's reply sheet,
+  only; your day on mobile, a working prototype; reply sheets (the modules that can fill a card's reply sheet),
   as bare sheets, a draft among them; the details, three phones scrolled into their details; and
   last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions, the log), `story.md` (the tool told
   from the start, for any kind of sale (the pretend world only as marked examples), at the

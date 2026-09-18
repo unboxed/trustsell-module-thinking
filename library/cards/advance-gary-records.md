@@ -45,25 +45,25 @@ draft:
 
 He asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.
 
-## What I noticed
+## What happened
 
 - Why now: his question has sat six days. The longer it waits, the smaller the door.
 - Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: "once we've rolled this out", "I'll put it to procurement".
 - Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.
 - Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.
 
-## What I read
+## Sources
 
 - gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.
 - gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.
 - drive · "Records import: how it works" and the East Marston case study.
 - goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.
 
-## Not sure
+## Still unclear
 
 - Nothing much. He asked a direct question and this answers it. Rachel's needs have cards of their own.
 
-## Then
+## What happens next
 
 - Once sent, I'll watch for Gary's reply and tell you when it comes.
 

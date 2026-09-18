@@ -39,7 +39,7 @@ It does not decide whether a lead is a good fit, or which answer will land. It o
 of one offering into one place. The signals that read this card do the deciding: does this lead fit, is
 there an answer gap, where do we sit on price.
 
-## Lineage
+## Where it comes from
 
 `pitch`, `fit-shape`, `use-case`, `pricing` and `worry-answer` resolve to [`offering-told.md`](../told/offering-told.md), the
 offering's own told source. `file` and `file-content` resolve to

@@ -45,25 +45,25 @@ draft:
 
 Stephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.
 
-## What I noticed
+## What happened
 
 - Why now: Stephen's email last Wednesday ended "we can't find that in this year's budget". Left alone, that sentence becomes the decision.
 - Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.
 - Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.
 - The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.
 
-## What I read
+## Sources
 
 - gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.
 - gmail · Stephen's message of 9 September.
 - drive · The partial rollout price sheet.
 - goal-told · Your goal: partial adoption first is the plan, not a concession.
 
-## Not sure
+## Still unclear
 
 - Whether a smaller number reads as a discount to him. It isn't one, and the email says so.
 
-## Then
+## What happens next
 
 - After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.
 

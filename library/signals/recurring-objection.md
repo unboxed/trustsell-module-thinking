@@ -32,7 +32,7 @@ four, price in three, with six distinct named objections in play. The read: "dat
 dominant objection. It is raised in well over half your deals, more than any other, so put its
 rebuttal up front."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows People's worries-on-record in aggregate across deals.

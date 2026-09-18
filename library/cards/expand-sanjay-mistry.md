@@ -45,25 +45,25 @@ draft:
 
 Julie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.
 
-## What I noticed
+## What happened
 
 - Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.
 - Julie was engaged: she started threads and asked for pricing in May.
 - Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.
 - Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.
 
-## What I read
+## Sources
 
 - gmail · The bounce this morning, 08:12, and Julie's auto-reply: "I have left Moreton. For BOPS matters please contact Sanjay Mistry."
 - gmail · Your mail with Julie since April: 9 messages.
 - web · Moreton Borough Council staff page, checked this morning.
 - goal-told · Your list of thirty.
 
-## Not sure
+## Still unclear
 
 - How much Julie told Sanjay. The draft assumes nothing.
 
-## Then
+## What happens next
 
 - If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.
 

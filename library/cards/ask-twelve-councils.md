@@ -43,26 +43,26 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# Twelve councils have no named person. Which three should I start with?
+# Which three councils without a contact should I start with?
 
-I can look for people at all twelve, but slowly. Three at a time means you see names this month.
+Twelve councils have no named person. I can look for people at all twelve, but slowly. Three at a time means you see names this month.
 
-## What I already know
+## Known so far
 
 - Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.
 - Ashby has a tender out for "customer contact modernisation".
 - Two have new digital leads since spring: Kirby and Carlton.
 - If you have no view, I'd start with Ashby, Glenfield and Kirby.
 
-## Where I ran out
+## What's missing
 
 - LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.
 
-## What I'll do with your answer
+## What your answer changes
 
 - For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.
 - The other nine wait. I won't touch them until these three have names.
 
-## Where I'll remember it
+## Where your answer is saved
 
 - On your list of thirty, marked "you chose", with the date.

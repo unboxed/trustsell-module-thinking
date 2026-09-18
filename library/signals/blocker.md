@@ -32,7 +32,7 @@ shrink from a sixty-word norm to about twelve words, and three times you ask for
 pivots straight back to the same concern with no movement. Offerings matches the worry to its objection
 list. The read: this contact is blocking on data residency.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows Offerings' objection list to name the objection.

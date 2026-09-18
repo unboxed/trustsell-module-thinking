@@ -382,31 +382,33 @@ for (const c of L.cards) {
     const w = L.widgets.find(x => x.id === id);
     if (!(w.fed_by || []).some(f => base.has(f)))
       problems.push(`${c.file}: widget "${id}" is fed by ${(w.fed_by || []).join(', ')}, and the card rests on none of them`);
-    const rows = rowsUnder(c.markdown, w.label);
-    if (!rows || !rows.length) { problems.push(`${c.file}: widget "${id}" has no rows under "## ${w.label}"`); continue; }
+    // The section carries the widget's label, unless the card names what it shows (widget_heads).
+    const head = (c.widget_heads && c.widget_heads[id]) || w.label;
+    const rows = rowsUnder(c.markdown, head);
+    if (!rows || !rows.length) { problems.push(`${c.file}: widget "${id}" has no rows under "## ${head}"`); continue; }
     const bad = rows.filter(r => r.length !== Number(w.parts));
-    if (bad.length) problems.push(`${c.file}: "## ${w.label}" rows need ${w.parts} parts split by " · " (${bad.length} don't)`);
-    if (w.rows && rows.length !== Number(w.rows)) problems.push(`${c.file}: "## ${w.label}" needs exactly ${w.rows} rows, has ${rows.length}`);
+    if (bad.length) problems.push(`${c.file}: "## ${head}" rows need ${w.parts} parts split by " · " (${bad.length} don't)`);
+    if (w.rows && rows.length !== Number(w.rows)) problems.push(`${c.file}: "## ${head}" needs exactly ${w.rows} rows, has ${rows.length}`);
     c.widgetRows[id] = rows;
   }
-  // What I read: each row is `source-ids · words`. The words are the card's; the sources are
+  // Sources: each row is `source-ids · words`. The words are the card's; the sources are
   // checked against the trail, so the list cannot claim a source the card does not rest on.
   // A source a card's reads need but that is not connected is a data gap: it may be named even
   // off the trail, and when the card does not name it in its own words, the build does.
-  const read = c.sections['What I read'] ? c.markdown.split(/^## /m).find(p => p.split('\n')[0].trim() === 'What I read') : null;
+  const read = c.sections['Sources'] ? c.markdown.split(/^## /m).find(p => p.split('\n')[0].trim() === 'Sources') : null;
   if (!read) continue;
   const reach = sourcesOf(c);
   const needed = new Set(signalsOf(c).flatMap(s => s.needs || []));
   c.readRows = [];
   for (const line of read.match(/^[-*] .*$/gm) || []) {
     const t = line.replace(/^[-*] /, ''), at = t.indexOf(' · ');
-    if (at === -1) { problems.push(`${c.file}: What I read row "${t.slice(0, 40)}…" needs its sources first, as "gmail · words"`); continue; }
+    if (at === -1) { problems.push(`${c.file}: Sources row "${t.slice(0, 40)}…" needs its sources first, as "gmail · words"`); continue; }
     const srcs = t.slice(0, at).split(',').map(s => s.trim()), words = t.slice(at + 3).trim();
     for (const s of srcs) {
       const src = sourceById(s);
-      if (!src) problems.push(`${c.file}: What I read source "${s}" is not a channel or told source`);
+      if (!src) problems.push(`${c.file}: Sources source "${s}" is not a channel or told source`);
       else if (!reach.has(s) && !(needed.has(s) && src.connected === false))
-        problems.push(`${c.file}: What I read names "${s}", but nothing the card rests on reaches it`);
+        problems.push(`${c.file}: Sources names "${s}", but nothing the card rests on reaches it`);
     }
     c.readRows.push({sources: srcs, words});
   }

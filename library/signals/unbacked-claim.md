@@ -36,7 +36,7 @@ no source. The read: "two claims float. The track-record claim is a number a res
 suggested and you have no case study for, and the best-in-class claim has no spec line, so do not send
 either until they are grounded or softened."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows the Organisation proof library to confirm a track-record claim's backing

@@ -35,7 +35,7 @@ the old rhythm), with 20+ two-way messages and two meetings behind you, so a rea
 not a passing name. The open web shows they just moved into a senior transformation role at a new
 organisation. The read: "now's a good moment to write again."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

@@ -35,7 +35,7 @@ the last captured call they spoke about a third as much as the call before. The 
 prompt: "they may be going cooler in how they come across, worth a look alongside whatever else you're
 seeing."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

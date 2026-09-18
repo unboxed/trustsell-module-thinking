@@ -41,7 +41,7 @@ a job title that says "Head of", a name that shows up on every thread, not on a 
 the map can place someone in the champion or blocker bucket from their record, but it does not judge
 whether they are truly championing or cooling. That judgement is a signal's job.
 
-## Lineage
+## Where it comes from
 
 `email-message` and `email-thread` resolve to
 [`channels/gmail.md`](../channels/gmail.md); `contact` and `other-contact` to

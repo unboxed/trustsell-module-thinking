@@ -33,7 +33,7 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
   offline, what you intend, what you prefer), never for verdicts it should reach itself. A check
   ("I read Rachel as cautious. Right?") is allowed.
 - **Connect.** A source it cannot see.
-- **Told.** An outcome with nothing to do: the *Then* of an earlier card coming back ("Julie's
+- **Told.** An outcome with nothing to do: the *What happens next* of an earlier card coming back ("Julie's
   email bounced this morning"). The button is Got It.
 
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve. An Ask
@@ -43,10 +43,10 @@ shifts is asked when the answer would change something, and every answer is kept
 asked twice. There is no settings screen (decided 18 September).
 
 **The front** is what the home shows: label, the action as the title, one or two lines of reason,
-the *when* if earned, one button. **The back** is the thinking: for Act cards, *What I noticed*
-(first bullet is the why-now), *What I read* (the actual records), *Not sure* (a sentence, or a
-one-tap question when you hold the answer) and *Then* (what happens after you act). For Ask cards,
-*What I already know*, *Where I ran out*, *What I'll do with your answer*, *Where I'll remember it*.
+the *when* if earned, one button. **The back** is the thinking: for Act cards, *What happened*
+(first bullet is the why-now), *Sources* (the actual records), *Still unclear* (a sentence, or a
+one-tap question when you hold the answer) and *What happens next* (what happens after you act). For Ask cards,
+*Known so far*, *What's missing*, *What your answer changes*, *Where your answer is saved*.
 
 **The when**, shown only when earned, as one small line:
 - fresh: "Worth doing today. Stale by Friday."
@@ -103,7 +103,7 @@ argument before anything is demonstrated, that people work the verbs and the too
 nouns. The second, "Your day on mobile" (called "The phone" until 18 September), is the prototype: the title
 and a line about the idea on the left, one iPhone on the right at almost the room's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
-close button lowers it). The third, "The modules", shows the modules as bare reply
+close button lowers it). The third, "Reply sheets", shows the reply modules as bare
 sheets in a row, no phone around them, each captioned by its module. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
@@ -113,7 +113,7 @@ draft), Ashworth's Rest It (one tap, with One More Try raising the last note) an
 about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its details, which
 follow the spine with the card's widgets in place. The words and rows come from the cards in
 `library/`, copied in by a one-off script, so the slide says only what the cards say. Felton
-and Rachel's promise card also carry widgets (People, Their words, Open items, Documents) but
+and Rachel's promise card also carry widgets (People, What they said, Open items, Documents) but
 are not on the slide: their replies are drafts too. Holbrook's window card carries a Timeline
 and is not on the slide either. The fifth, "How a card is built"
 (18 September, by looking, after four rendered sheets: a full tree, one thread, rings, then
@@ -143,8 +143,8 @@ Decided so far (17 September): each phone is drawn at 393 × 852 pt and scaled t
 bigger than a phone. A bare sheet is the phone's sheet, as if grabbed from the phone: 335 pt
 wide, then scaled, and it may grow past 1:1 on a big screen. A slide of words and a figure caps
 its content at 1440 pt and centres it, so a wide screen does not pull the two to opposite walls;
-the ground still bleeds to the edges. The modules slide is not capped, because a bare sheet is
-allowed to grow. A slide whose body is a row of figures (the modules, the details) has
+the ground still bleeds to the edges. The reply sheets slide is not capped, because a bare sheet is
+allowed to grow. A slide whose body is a row of figures (the reply sheets, the details) has
 only a brief, small title and no line under it, so the figures take the room (decided 18
 September, by looking: https://claude.ai/artifact/919qY4w2iqY1KyTBmE44E1; passed over were the
 words in a column beside the figures and a line across the top). A slide of words only says no size, and the script leaves its scale alone.
@@ -242,9 +242,12 @@ actions shift into a bar at the foot and stay there: Send Message travels down a
 the right; View Draft fades out on the card and fades in on the bar's left, so the two never
 cross. What the tool says back after sending, and Undo, show in the same bar. Once the large
 title has passed under the top bar, the title shows small between the menu buttons, as an
-iOS large title does. After a hairline come the details, as prose: section heads, paragraphs,
-and records as plain lines. No grouped tiles. For now the details are the library card's
-thinking retold: "The story so far" (what I noticed, as a story), "What I read" and "Then".
+iOS large title does. Under the card come the details, one filled tile per section, as an inset
+grouped list: a head, then paragraphs, a widget or records as plain lines (18 September, by
+looking, on a sheet of options; until then they were prose after a hairline, and "No grouped
+tiles", but every gap was the same and nothing grouped). A tile is a plain fill with no shadow,
+so the card is still the only raised thing. For now the details are the library card's
+thinking retold: "What happened" (what I noticed, as a story), "Sources" and "What happens next".
 The scroll snaps between the card and the start of the details, so half-way between card and
 page is only ever seen in motion; past that start it runs free through the details (a snap
 there pulled the reading back in Safari). Few things move and no text reflows. The reply sheet
@@ -303,14 +306,14 @@ lines, so the tallest bare sheet is now 588 pt.
 
 The details have a fixed spine and a catalogue of widgets (decided 18 September, by looking, on one
 sheet of rendered options: https://claude.ai/artifact/DnMav6ETmx2HwEnYtXEn7K). The spine is the
-same on every card: Why now, The story so far, then one or two detail widgets, then Not sure,
-Then, and What I read. Ask cards keep their own section names in the same places. The widgets
+same on every card: Why now, What happened, then one or two detail widgets, then Still unclear,
+What happens next, and Sources. Ask cards keep their own section names in the same places. The widgets
 are a catalogue the tool picks from and fills, as the reply modules are, and they live in
 `library/widgets/`. They are close to Google's A2UI, where an agent picks components from a
 catalogue and fills them with data, but with one difference, on purpose: ours are large and
 specific and sit in a fixed place, so the tool chooses and fills them but never arranges them.
 That is what lets a seller learn the set once. There are six detail widgets, told apart by
-shape: *Timeline* (a line of dots, today's filled), *Their words* (a quote in large type with a
+shape: *Timeline* (a line of dots, today's filled), *What they said* (a quote in large type with a
 rule beside it), *People* (a name in bold, the role beside it, where they stand underneath),
 *Open items* (an empty circle, what is owed, its age on the right) and *A number against its
 usual* (the figure in the card's big words, a bar against a bar). *Documents* (a file, what it proves,
@@ -318,7 +321,7 @@ how recent) was added the same day, when the widgets were checked against the re
 than the cards: every record carries a time, a person, some words or a file, and Documents was
 the missing one. Open items reaches no record yet, because it rests only
 on counts and none of its counts can say yet which assembly it counts within; it says so with
-`waits_on: counts`. A number against its usual reaches records since 18 September, when each count
+`waits_on: counts`. Compared with usual reaches records since 18 September, when each count
 that could name its assembly did. A card says two things, why to write and what to
 send, and they are two trails in the library (decided 18 September, by looking:
 https://claude.ai/artifact/DCS9ZqFCFLqoj2Xd4QaHMQ). Why to write goes down through the signal.
@@ -328,15 +331,16 @@ card on that signal lean on documents even when it sends nothing. The look chose
 drawn"; tried and passed over on the same sheet were "Plain lines" (the blocks looked alike)
 and "Meta beside the words" (a quiet left column on every block). Ink only: the kind's dot stays
 the only colour. A message history is a Timeline; promises and blockers are both Open items.
-Every row traces to a record in What I read. Six cards carry widgets so far: Karen, Ashworth, the
+Every row traces to a record in Sources. Six cards carry widgets so far: Karen, Ashworth, the
 Ask about Rachel's meeting, Rachel's promise, Felton's director and Holbrook's window. North Ridley's
 demo brief could not take People at first, because its signal, `lead-with-this`, does not read who
 is in the room; it now rests on `new-stakeholder` too, so it could, but none is placed yet. On the
 phone the widgets show only on "The details".
 
 Not decided: how widgets look at night, whether a widget can be tapped through to its records,
-whether the draft becomes a `reply.module` of its own, what a swipe does, the names and the list of the details' sections ("The story
-so far" is the user's; the other two are borrowed from the old desk), whether "Not sure" and "how
+whether the draft becomes a `reply.module` of its own, what a swipe does, the list of the details' sections (their names
+were made plain on 18 September, checked against Apple's and GOV.UK's heading guidance: "The story
+so far", the user's, became What happened), whether "Still unclear" and "how
 sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
 Buttons sheet to the front, as the message card's have; the names the signal writes on the
 front's actions for the other modules; whether the sheet's pager stays when a card asks one
@@ -347,7 +351,7 @@ shows one module serving many signals.
 
 **The box.** A place to ask about a person, a council or a deal. It answers with cards where
 cards exist (it moves them to the top of the home) and with a paragraph where they don't. Every
-answer carries *What I read* and a *Then*, same as a card's back, and a "how sure" word where it
+answer carries *Sources* and a *What happens next*, same as a card's back, and a "how sure" word where it
 matters. A question the tool cannot answer can turn into an Ask ("if you know who holds the
 budget, a name is enough"). A question the cards should already have answered ("who's going
 cold?") is a signal that the cards surfaced too late, and the answer says so.

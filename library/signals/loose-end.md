@@ -34,7 +34,7 @@ no answer. Nothing on record, no attachment, follow-up note or calendar event, c
 read: you owe them the questionnaire and they still owe you the sign-off, both well past the pace this
 thread keeps.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

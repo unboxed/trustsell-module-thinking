@@ -65,13 +65,13 @@ practice for its reader:
   reads well *and* a parser can address each section later. The headings are consistent across every
   entry:
   - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few
-    plain sentences), `## In practice` (one short generic example), and `## For the build` (the precise
+    plain sentences), `## In practice` (one short generic example), and `## How it is worked out` (the precise
     rule: the trigger and the confidence grading, leaning on the `needs` and `counts` facets above
     rather than re-listing them; this is the single home for how confident the read is and what it
-    cannot see). "For the build" opens by pointing at
+    cannot see). "How it is worked out" opens by pointing at
     [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.
   - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the
-    identity work; a plain list where it gathers several things) and `## Lineage` (which input id
+    identity work; a plain list where it gathers several things) and `## Where it comes from` (which input id
     resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of
     living in `assemblies/`, so no entry needs to say so.
 
@@ -102,7 +102,7 @@ operating prose and the card face.
 **Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label
 lists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable
 markdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's
-threshold and reasoning are prose in the body's sections (such as `For the build`). A nested tree shoved into frontmatter
+threshold and reasoning are prose in the body's sections (such as `How it is worked out`). A nested tree shoved into frontmatter
 renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single
 quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.
 
@@ -147,7 +147,7 @@ Three things to keep true:
   ([`organisation-told.md`](../told/organisation-told.md)) and Profile
   ([`profile-told.md`](../told/profile-told.md)). **Offerings is the worked example of this floor.**
 
-## Lineage, the spine
+## Where each entry comes from, the spine
 
 Every entry names what it is built from, one floor down, by **id**:
 
@@ -162,7 +162,7 @@ then the records it gathers**.
 A count names the assembly it counts within as `over` (settled 18 September), so the walk passes
 through the counting floor instead of stepping over it. A card names its main `signal` and, when
 it quotes numbers from other reads, those reads as `supporting`; every count a card quotes must
-belong to one of them. A card's *What I read* rows name their sources, and `build.js` checks each
+belong to one of them. A card's *Sources* rows name their sources, and `build.js` checks each
 is reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),
 is always reachable: the goal is what every card is weighed against.
 This is the *track-back*: nothing the tool says should float. Two iron rules:
@@ -197,8 +197,8 @@ skeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no r
 so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already
 holds.
 
-There are two families. **Detail widgets** (Timeline, Their words, People, Documents, Open items,
-A number against its usual) sit in a card's details, between the story and Not sure; a card takes at most
+There are two families. **Detail widgets** (Timeline, What they said, People, Documents, Open items,
+Compared with usual) sit in a card's details, between What happened and Still unclear; a card takes at most
 two. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a
 card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:
 no new widget without a new shape.

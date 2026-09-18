@@ -46,7 +46,7 @@ draft:
 
 Four notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.
 
-## What I noticed
+## What happened
 
 - Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.
 - Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.
@@ -60,22 +60,22 @@ Four notes from you since May, nothing back. Resting it gives Nicola a quiet inb
 - 2 September · Simon says he knows Nicola Shaw
 - Today · Four weeks since your last note
 
-## Their words
+## What they said
 
 - Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event
 
-## What I read
+## Sources
 
 - gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.
 - gmail · No bounce or auto-reply on any of them.
 - slack · #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
 - goal-told · Your list of thirty, where Ashworth is marked cold.
 
-## Not sure
+## Still unclear
 
 - Whether your notes reached the right people at all. Two names from a website is a thin start.
 
-## Then
+## What happens next
 
 - If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.
 

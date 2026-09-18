@@ -33,11 +33,11 @@ actions:
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
 ---
 
-# You met Rachel Gill last week. How did it go?
+# How did your meeting with Rachel Gill go?
 
-She joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.
+You met her on 8 September, and she joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.
 
-## What I already know
+## Known so far
 
 - Your calendar: "Westmoor: intro with Rachel Gill", Tuesday 8 September, 30 minutes.
 - Three emails from her since. Two ask, in different words, whether officers will use it.
@@ -55,17 +55,17 @@ She joined the Westmoor thread the same day. I can read her emails, not the room
 - Since then · Three emails from her. Two ask whether officers will use it
 - Today · No recording and no notes from the call
 
-## Where I ran out
+## What's missing
 
 - No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.
 
-## What I'll do with your answer
+## What your answer changes
 
 - Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.
 - Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.
 - Against: I hold the call with Andrew, route through Gary and keep her off the spot.
 - Didn't come up: the call with Andrew is ready as written.
 
-## Where I'll remember it
+## Where your answer is saved
 
 - On Rachel's page, as your read on 8 September, next to mine.

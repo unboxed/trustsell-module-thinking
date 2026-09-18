@@ -33,7 +33,7 @@ writing into one place and lines up each draft with what you sent. The only real
 pairing: deciding which messages are yours, and which sent email closes which draft. The read above is
 the [`voice`](../signals/voice.md) signal.
 
-## Lineage
+## Where it comes from
 
 `email-message` and `draft` resolve to
 [`channels/gmail.md`](../channels/gmail.md); `slack-message` resolves to

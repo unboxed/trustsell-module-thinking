@@ -31,7 +31,7 @@ Each participant is resolved to the person behind them through `person-history`.
 The only real work is the tidy-up: pulling scattered messages back onto their one thread, and matching
 each speaker to a known person.
 
-## Lineage
+## Where it comes from
 
 `email-thread` and `email-message` resolve to
 [`channels/gmail.md`](../channels/gmail.md); `slack-channel`, `slack-message` and

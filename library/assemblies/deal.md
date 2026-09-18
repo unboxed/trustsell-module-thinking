@@ -62,7 +62,7 @@ No behaviour is sensed here. The deal does not decide what stage it is at, wheth
 whether it is worth acting on today. That is intent, and it belongs to the Brain, which places the deal
 on a goal's ladder and prioritises it.
 
-## Lineage
+## Where it comes from
 
 `deal-seed` is People's own told record, resolving to [`people-told.md`](../told/people-told.md); `conversation-history`,
 `meeting-history` and `person-history` are sibling assemblies. The offering a deal is about is named

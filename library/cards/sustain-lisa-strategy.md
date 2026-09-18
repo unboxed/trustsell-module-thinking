@@ -45,24 +45,24 @@ draft:
 
 Burnham published its digital strategy last Friday. She led it, and it says the things you would say.
 
-## What I noticed
+## What happened
 
 - Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
 - Page 12 commits Burnham to "replacing legacy case systems by 2028". That is where your goal ends up: partial now, full later.
 - Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.
 - Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.
 
-## What I read
+## Sources
 
 - web · Burnham City Council news, "Digital Strategy 2026 to 2030", published 11 September, and the PDF, page 12.
 - gmail · Your mail with Lisa since April: 7 messages, last on 20 August.
 - linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.
 
-## Not sure
+## Still unclear
 
 - Whether she wrote page 12 herself or a consultant did. Either way she owns it now.
 
-## Then
+## What happens next
 
 - After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.
 

@@ -46,25 +46,25 @@ draft:
 
 Michelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.
 
-## What I noticed
+## What happened
 
 - Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.
 - Three messages from North Ridley in the last fortnight say "replace" or "migrate off". Your replies never corrected it.
 - Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.
 - North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.
 
-## What I read
+## Sources
 
 - gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words "replace" and "migrate".
 - calendar · "BOPS demo, North Ridley", Thursday 17 September, 10:00, eight invitees.
 - drive · The one-page "How BOPS sits alongside your case system".
 - gmail · Nothing from you corrects the word "replace".
 
-## Not sure
+## Still unclear
 
 - Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.
 
-## Then
+## What happens next
 
 - Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.
 

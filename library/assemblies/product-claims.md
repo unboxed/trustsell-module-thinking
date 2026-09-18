@@ -27,7 +27,7 @@ It does not decide whether a buyer has *misunderstood* one. That is People's
 [`understanding-gap`](../signals/understanding-gap.md) signal, which pulls this
 list to judge a buyer's confusion (a buyer using "export" where the product says "audit log").
 
-## Lineage
+## Where it comes from
 
 `pitch` resolves to [`offering-told.md`](../told/offering-told.md), the offering's own told source. `file-content` resolves to
 [`channels/drive.md`](../channels/drive.md). `web-result` resolves to

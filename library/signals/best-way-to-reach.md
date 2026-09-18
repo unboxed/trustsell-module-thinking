@@ -30,7 +30,7 @@ five of your Slack messages within fifteen minutes and accepts and shows up to e
 conversation they begin, they begin on Slack. The read: email them and you wait a week, Slack them and
 they are back in minutes, and they always take a call.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

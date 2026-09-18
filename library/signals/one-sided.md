@@ -33,7 +33,7 @@ average about 90 words against their roughly 8-word replies, you have offered th
 intro, a call) and they have offered nothing back, and you nudge twice to get each reply. The read:
 "you're carrying this one."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

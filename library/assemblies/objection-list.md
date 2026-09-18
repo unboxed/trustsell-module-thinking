@@ -30,7 +30,7 @@ It does not decide whether a particular buyer is actually *blocking* on one. Tha
 [`blocker`](../signals/blocker.md) signal, which pulls this list to name the
 objection rather than inventing a label.
 
-## Lineage
+## Where it comes from
 
 `worry-answer` resolves to [`offering-told.md`](../told/offering-told.md), the offering's own told source. `web-result` and
 `research-report` resolve to [`channels/web.md`](../channels/web.md).

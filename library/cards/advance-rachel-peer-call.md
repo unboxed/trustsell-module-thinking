@@ -53,25 +53,25 @@ draft:
 
 She has asked "will officers actually use it" twice since you met. The best answer is not from you. It is from someone in her job who has done it.
 
-## What I noticed
+## What happened
 
 - Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.
 - Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.
 - A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.
 - Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.
 
-## What I read
+## Sources
 
 - gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.
 - gmail · Andrew Doyle, East Marston, 4 March: "happy to do reference calls for councils considering it".
 - drive · The officer-feedback page of the East Marston case study.
 - goal-told · Your list: Westmoor at coalition.
 
-## Not sure
+## Still unclear
 
 - Whether Rachel would rather read than talk. Some IT leads take a call as pressure.
 
-## Then
+## What happens next
 
 - If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.
 

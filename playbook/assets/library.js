@@ -15,16 +15,16 @@
      only the names (the user: the step words repeated them), so it is kept as a note. */
   var RUNGS = [
     {key: 'cards',      step: 'What it says',                    name: 'Cards',      one: 'Card',     does: 'The suggestion, question or outcome.'},
-    {key: 'signals',    step: 'What it judges',                  name: 'Signals',    one: 'Signal',   does: 'The first thing you could argue with.'},
+    {key: 'signals',    step: 'What it judges',                  name: 'Signals',    one: 'Signal',   does: 'The tool\'s first judgement, made from the counts.'},
     {key: 'counts',     step: 'What it counts',                  name: 'Counts',     one: 'Count',    does: 'The arithmetic. Nothing written yet.'},
-    {key: 'assemblies', step: 'What it gathers',                 name: 'Assemblies', one: 'Assembly', does: 'Ingredients combined into one picture. Still no opinion.'},
+    {key: 'assemblies', step: 'What it gathers',                 name: 'Assemblies', one: 'Assembly', does: 'Records combined into one picture, before any judgement.'},
     {key: 'records',    step: 'What it sees, and what you told it', name: 'Records', one: 'Record',   does: 'Rows inside their source, each with an address.'},
     {key: 'told',       step: 'What it sees, and what you told it', name: 'Told',    one: 'Told',     does: 'What only you can say. No channel can fetch it.'},
-    {key: 'channels',   step: 'What it sees, and what you told it', name: 'Channels', one: 'Channel', does: 'What you connect. Carries records, forms no opinion.'},
-    {key: 'widgets',    step: 'Beside the climb',                name: 'Widgets',    one: 'Widget',   does: 'The catalogue a card picks from and fills: its details and its reply.'},
-    {key: 'modules',    step: 'Beside the climb',                name: 'Modules',    one: 'Module',   does: 'Who owns which reads.'},
-    {key: 'docs',       step: 'Beside the climb',                name: 'Notes',      one: 'Note',     does: 'The thinking behind the shape of all this.'},
-    {key: 'templates',  step: 'Beside the climb',                name: 'Templates',  one: 'Template', does: 'The format each rung is written to.'}
+    {key: 'channels',   step: 'What it sees, and what you told it', name: 'Channels', one: 'Channel', does: 'The services you connect, and the records they hold.'},
+    {key: 'widgets',    step: 'Reference',                       name: 'Widgets',    one: 'Widget',   does: 'The catalogue a card picks from and fills: its details and its reply.'},
+    {key: 'modules',    step: 'Reference',                       name: 'Modules',    one: 'Module',   does: 'Who owns which reads.'},
+    {key: 'docs',       step: 'Reference',                       name: 'Notes',      one: 'Note',     does: 'Why the library is shaped this way.'},
+    {key: 'templates',  step: 'Reference',                       name: 'Templates',  one: 'Template', does: 'The format each rung is written to.'}
   ];
   var byKey = {}; RUNGS.forEach(function (r) { byKey[r.key] = r; });
   var find = function (key, id) { return (L[key] || []).filter(function (e) { return e.id === id || e.address === id; })[0]; };

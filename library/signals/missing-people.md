@@ -43,7 +43,7 @@ the row for whoever signs off is empty and nobody on record holds budget approva
 messages are with the one main contact, and you have reached two of an estimated four needed people.
 The read: this deal rests on one person and is missing whoever signs off.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

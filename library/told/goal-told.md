@@ -9,7 +9,7 @@ icon: pencil
 # What you told me about your goal
 The goal, and the few facts around it that only you can set: how patiently to pursue it, and who
 counts as worth chasing. The Brain ([`00-spine`](../modules/00-spine.md)) holds them and weighs every
-card against them, so a card may always name them in What I read without an assembly in between.
+card against them, so a card may always name them in Sources without an assembly in between.
 The Brain gathers nothing and senses nothing; this pile is the one input it has of its own.
 
 It is shaped with you, not filled in once. The Brain may come back with questions before it

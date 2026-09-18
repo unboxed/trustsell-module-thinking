@@ -47,7 +47,7 @@ draft:
 
 Stephen Walsh's objection is this year's budget, and budgets are set above him. Shabana has mentioned her director twice.
 
-## What I noticed
+## What happened
 
 - Why next: the partial rollout offer answers the size of the number. Whether it fits this year is a priorities call, made above Stephen. Once the offer is with him, widen the room.
 - Shabana wrote "David will want to see this" in July and "I'll need David onside" in August. David Marshall, Director of Communities, is on no thread.
@@ -60,23 +60,23 @@ Stephen Walsh's objection is this year's budget, and budgets are set above him. 
 - Stephen Walsh · Finance Business Partner · The price objection is his
 - David Marshall · Director of Communities · On no thread yet
 
-## Their words
+## What they said
 
 - Shabana Akhtar · 15 July · David will want to see this
 - Shabana Akhtar · 21 August · I'll need David onside
 
-## What I read
+## Sources
 
 - gmail · The Felton thread: Shabana's messages of 15 July and 21 August.
 - web · Felton's senior team page, David Marshall, Director of Communities.
 - gmail · The participants of every Felton thread. David is on none.
 - goal-told · Your goal: coalition before partial.
 
-## Not sure
+## Still unclear
 
 - Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.
 
-## Then
+## What happens next
 
 - If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and wait for Stephen's reply.
 

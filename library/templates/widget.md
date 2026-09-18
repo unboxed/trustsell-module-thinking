@@ -4,7 +4,7 @@
 # ladder, not on it: it holds no reading of its own, it is how a card shows the evidence a
 # rung below already holds. The catalogue is fixed; a card picks from it and fills it, and never
 # arranges it. Keep it AGNOSTIC: no named people, councils or documents.
-# Two families. DETAIL widgets sit in a card's details, between the story and Not sure; a card
+# Two families. DETAIL widgets sit in a card's details, between What happened and Still unclear; a card
 # takes at most two. REPLY widgets fill the sheet a card's reply is given in; a card takes one.
 id: <kebab-slug>              # unique across the library
 family: <detail|reply>

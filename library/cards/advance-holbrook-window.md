@@ -55,7 +55,7 @@ draft:
 
 Their procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.
 
-## What I noticed
+## What happened
 
 - Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.
 - Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.
@@ -69,18 +69,18 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 - Today · No meeting scheduled
 - 16 October · The procurement window closes
 
-## What I read
+## Sources
 
 - gmail · Neil, 14 July: "the window for this year closes 16 October".
 - calendar · No meeting with Holbrook since 3 August, none scheduled.
 - gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.
 - goal-told · Your goal: partial adoption this year means inside that window.
 
-## Not sure
+## Still unclear
 
 - Whether the window is for a decision or for a signed order. Neil will know.
 
-## Then
+## What happens next
 
 - Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.
 

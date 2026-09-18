@@ -15,7 +15,7 @@ thinking under it is not finished yet. Where a reason is mine and not yours, it 
 *(My reason, not yet yours.)*, so you can agree with it, correct it or replace it. The last chapter
 lists the reasons nobody has given yet.
 
-## 1. The job
+## 1. The seller's job
 
 Selling is built on relationships. A sale rarely comes from one conversation. It comes from many,
 with several people, over time, and from the trust that builds between them.
@@ -29,7 +29,7 @@ relationship pays for it. That is the work the tool takes on. *(My reason, not y
 never on one person's say. The tempo is patient, because one clumsy chase can cost a relationship
 that took years to build.
 
-## 2. The idea
+## 2. How the work is split
 
 People work the verbs. The tool works the nouns.
 
@@ -82,7 +82,7 @@ it (Advance). Nobody at Bramley can sign, so find out who can (Expand).
 looked first and says where it ran out. It asks for facts (what happened, what you intend, what you
 prefer), never for judgements it should make itself.
 
-*In the example:* "You met Rachel Gill last week. How did it go? I can read her emails, not the
+*In the example:* "How did your meeting with Rachel Gill go? I can read her emails, not the
 room."
 
 **Connect.** There is a place it cannot see, and seeing it would help.
@@ -109,7 +109,7 @@ does. Every answer is kept, so nothing is asked twice.
 That is why there is no settings screen. The tool asks when it needs to know, at the moment the
 answer matters.
 
-## 6. It shows its thinking
+## 6. The reasons behind a suggestion
 
 Every suggestion comes with its reasons: why now, what the tool noticed, the actual records it
 read, what it is not sure of, and what will happen after you act.
@@ -122,7 +122,7 @@ It also says how sure it is, in a word, never a number: *sure* when it stands on
 reading of someone's words. A number would claim a precision nothing here can back. The weakest
 ground sets the word. A hunch you could settle turns into an Ask.
 
-## 7. Moments, not tasks
+## 7. Timing
 
 What the tool brings you are observations with a suggested move, never tasks. They have no due
 dates, no owners and no statuses.
@@ -143,7 +143,7 @@ day. A note that follows someone's rhythm costs nothing to leave until next week
 You can also ask the tool about a person, an organisation or a deal. But if you have to ask "who's
 going cold?", the tool should already have told you, and its answer says so.
 
-## 8. Your say
+## 8. What needs your approval
 
 Nothing sends without you. The tool can prepare a message, even send it once you say so, but the
 decision to send is yours, and you can take it back for a moment after.

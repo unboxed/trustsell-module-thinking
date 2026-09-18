@@ -33,7 +33,7 @@ replies with a question the deck already answered (confused questions), and call
 export" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate
 audit log, so the restatements do not match. The read: "they haven't got it, three replies in."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows Offerings' product claims to judge whether wording contradicts the product.

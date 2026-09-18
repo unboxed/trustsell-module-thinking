@@ -36,7 +36,7 @@ Where the company has set no ceiling, sign-off or floor, the fence shows the hol
 named not faked: used solo with no organisation behind you it is empty, and pricing is left entirely
 to the user.
 
-## Lineage
+## Where it comes from
 
 `pricing-authority` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source.
 `file-content` resolves to [`channels/drive.md`](../channels/drive.md), the pricing

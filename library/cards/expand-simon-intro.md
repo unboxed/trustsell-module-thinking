@@ -52,25 +52,25 @@ draft:
 
 He knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.
 
-## What I noticed
+## What happened
 
 - Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.
 - Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.
 - Nicola is Head of Digital. The case-system question sits in her patch or next to it.
 - Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.
 
-## What I read
+## Sources
 
 - slack · #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
 - gmail · Your four notes to Ashworth.
 - web · Ashworth's leadership page.
 - linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.
 
-## Not sure
+## Still unclear
 
 - How well Simon actually knows her. "I know Nicola from the LGA event" can mean a conversation or a handshake.
 
-## Then
+## What happens next
 
 - If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.
 

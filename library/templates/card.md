@@ -26,7 +26,7 @@ person: <person-id>           # who it is about. MUST resolve to ../world/cast.m
 council: <council-id>         # optional: where. MUST resolve to ../world/councils.md
 documents: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md
 widgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in
-                              # the details between the story and Not sure. Each needs a body
+                              # the details between What happened and Still unclear. Each needs a body
                               # section headed with the widget's label, its rows in the widget's
                               # row form, and must be fed by something this card rests on.
 sure: <sure|likely|a hunch>   # how sure, earned from the WEAKEST evidence the card stands on:
@@ -60,7 +60,7 @@ answers:                      # choices only: the rows of an Ask; one may be `su
   - label: <...>
     says: <...>
 picks: [<...>, ...]           # several only
-notsure:                      # optional: Not sure as a one-tap question, two or three replies
+notsure:                      # optional: Still unclear as a one-tap question, two or three replies
   - label: <Title Case>
     says: <what that answer changes>
 draft:                        # optional, with a `## The draft` section in the body
@@ -77,7 +77,7 @@ draft:                        # optional, with a `## The draft` section in the b
      other person gets out of it. A card is an observation with a suggested move, never a
      task: no due dates, no owners, no statuses. -->
 
-## What I noticed
+## What happened
 <!-- ACT CARDS. The first bullet is the why-now, and it earns the card its place today.
      Each later bullet is one observation. Where a bullet quotes a number, that number must
      come from one of the `counts` above, said in plain words rather than as an id. -->
@@ -85,9 +85,9 @@ draft:                        # optional, with a `## The draft` section in the b
 ## <a detail widget's label, e.g. Timeline>
 <!-- ONE SECTION PER WIDGET in `widgets`, headed with its label exactly. Rows only, each a list
      item in the widget's row form, parts split by " · ". Every row must trace to a record
-     named in What I read, and use only names, dates and numbers the card already holds. -->
+     named in Sources, and use only names, dates and numbers the card already holds. -->
 
-## What I read
+## Sources
 <!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.
      `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or
      told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,
@@ -96,21 +96,21 @@ draft:                        # optional, with a `## The draft` section in the b
      a read needs but that is not connected (LinkedIn) is a data gap: say it in your own words,
      or the build adds a plain line saying it. -->
 
-## Not sure
+## Still unclear
 <!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it
      may become a one-tap question with two or three replies, and each reply says what it
      changes. Ask for facts, never for a verdict the tool should reach itself. -->
 
-## Then
+## What happens next
 <!-- ACT CARDS. What happens after the seller acts: what the tool will watch for, and when it
      will come back. If it would come back with the same reason twice, say what it will do
      instead. -->
 
 <!-- ASK CARDS use four different sections in place of the four above:
-       ## What I already know     what it has worked out for itself, so the ask is not lazy
-       ## Where I ran out         the precise point it could go no further, having looked first
-       ## What I'll do with your answer   each answer's consequence, said back after the pick
-       ## Where I'll remember it  which told record the answer becomes, so it is asked once
+       ## Known so far                what it has worked out for itself, so the ask is not lazy
+       ## What's missing              the precise point it could go no further, having looked first
+       ## What your answer changes    each answer's consequence, said back after the pick
+       ## Where your answer is saved  which told record the answer becomes, so it is asked once
      CONNECT CARDS name the source that is not connected and what would become answerable.
      TOLD CARDS are an outcome with nothing to do; the button is Got It. -->
 

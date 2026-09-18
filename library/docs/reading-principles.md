@@ -22,7 +22,7 @@ thread, and for any other pace measure: the baseline is the subject's own histor
 
 Most of a read is deterministic counting that anyone could redo and get the same answer: how many days,
 how many new names on a thread, how a reply length compares to the baseline. Only a small, named step
-is an actual judgement. Keep that seam visible. A signal's "For the build" should make clear which part
+is an actual judgement. Keep that seam visible. A signal's "How it is worked out" should make clear which part
 is counting and which one line is the judgement, so the read can always be checked.
 
 ## 3. Grade the confidence by how much stacks

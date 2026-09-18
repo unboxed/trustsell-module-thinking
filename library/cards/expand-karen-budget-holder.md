@@ -44,25 +44,25 @@ draft:
 
 Nobody on the Bramley thread can sign. When Karen is back in rhythm, she is the one to ask.
 
-## What I noticed
+## What happened
 
 - Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.
 - Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.
 - For a partial adoption someone has to sign, and your goal needs that someone found.
 - Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.
 
-## What I read
+## Sources
 
 - gmail · The Bramley thread: participants since March, four people, roles from their signatures.
 - web · Bramley's committee papers, Director of Resources: Martin Hodgson.
 - people-told · What you tell me about the budget meeting, and Karen's reply to this week's note.
 - goal-told · Your goal: partial adoption needs a signature.
 
-## Not sure
+## Still unclear
 
 - Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.
 
-## Then
+## What happens next
 
 - Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.
 

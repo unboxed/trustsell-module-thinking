@@ -23,7 +23,7 @@ the card, not counted.
 
 It is also the one widget whose rows are a reading rather than a record. No channel carries a
 "promise" or a "blocker": both are drawn from words and a date (your line "I'll send it this
-week", and when you wrote it). Once the counts are written it may turn out to be Their words with
+week", and when you wrote it). Once the counts are written it may turn out to be What they said with
 an age, and fold into it.
 
 ## Row form

@@ -23,7 +23,7 @@ inputs:                       # what it gathers, one floor down. Each id MUST re
      in plain English, agnostic (no named people). Use a plain list where it gathers several things.
      No need to say "this is floor, not reading": living in assemblies/ already says it. -->
 
-## Lineage
+## Where it comes from
 
 <!-- Which input id resolves to which channel doc (../channels/* or ../told/*), so the
      gather walks all the way down to raw data. Every id must resolve; name a gap, do not fake it. -->

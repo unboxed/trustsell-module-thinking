@@ -37,7 +37,7 @@ The Gate job that reads this fence, checking a finished draft against it and pas
 exactly what crosses a line, lives in the module prose, not as a signal: Organisation has no signal
 floor. Used solo with no organisation behind you, the fence is empty and the Gate step is skipped.
 
-## Lineage
+## Where it comes from
 
 `rule` resolves to [`organisation-told.md`](../told/organisation-told.md), the organisation's own told source. `file-content`
 resolves to [`channels/drive.md`](../channels/drive.md), the brand or compliance

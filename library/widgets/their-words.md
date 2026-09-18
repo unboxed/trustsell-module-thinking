@@ -1,14 +1,14 @@
 ---
 id: their-words
 family: detail
-label: Their words
+label: What they said
 blurb: What someone actually said, quoted, with who and when.
 shape: a quote in large type with a rule beside it, then who and when in small
 parts: 3
 fed_by: [person-history, conversation-history, meeting-history]
 ---
 
-# Their words
+# What they said
 
 ## What it shows
 

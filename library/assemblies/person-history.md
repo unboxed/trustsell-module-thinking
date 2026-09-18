@@ -47,7 +47,7 @@ in too, so a read above can tell a holiday from a real silence.
 
 The one real piece of work is deciding which scattered records are the same person.
 
-## Lineage
+## Where it comes from
 
 `email-message` and `email-thread` resolve to
 [`channels/gmail.md`](../channels/gmail.md); `calendar-event`, `status-event` and

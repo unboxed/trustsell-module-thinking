@@ -45,25 +45,25 @@ draft:
 
 You speak roughly every six weeks and it has been six. He asked in August how East Marston phased the rollout, and now there is a note on it.
 
-## What I noticed
+## What happened
 
 - Why now: six weeks since you last spoke, right on his rhythm, and the phasing note he asked about was finished last Friday.
 - Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.
 - He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.
 - Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.
 
-## What I read
+## Sources
 
 - gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.
 - calendar · Last call with Neil, 3 August.
 - drive · "East Marston phasing note", finished 11 September.
 - gmail · His email of 19 August asking how East Marston "did it in stages".
 
-## Not sure
+## Still unclear
 
 - Whether he wants the note by email or would rather talk it through. He usually books a call.
 
-## Then
+## What happens next
 
 - I'll watch for his reply. If he books a call I'll prepare the phasing questions he is likely to ask.
 

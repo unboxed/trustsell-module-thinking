@@ -21,20 +21,20 @@ actions:
 
 Twelve of your thirty councils have nobody you know. LinkedIn is where the warm paths would show. Today I only see paths that happen to surface in your mail and Slack.
 
-## What I can see today
+## What I can see now
 
 - Your mail, calendar and Drive. Slack. The open web: council sites, news, tenders.
 
-## What I can't
+## What I cannot see
 
 - Who you know. Who Simon knows. Who has moved where. Four cards this week say "LinkedIn is not connected" and work around it.
 
-## What changes once connected
+## Once connected
 
 - Warm-path cards for the twelve councils where you know nobody.
 - Job changes noticed within a day, like Julie Barker leaving Moreton, instead of when an email bounces.
 - Simon's "I know Nicola" becomes something I can check rather than take on trust.
 
-## What I won't do
+## What I will not do
 
 - Post, message, or connect on your behalf. I only read.

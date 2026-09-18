@@ -47,7 +47,7 @@ Content is conditional: when no one turned note-taking on, the second layer is e
 data gap named not faked, "a call happened on this date, but nothing was captured", not an assumption
 that nothing was said.
 
-## Lineage
+## Where it comes from
 
 `meeting`, `participant`, `transcript`, `smart-notes` and `recording` resolve to
 [`channels/meet.md`](../channels/meet.md); `calendar-event` to

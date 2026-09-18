@@ -30,7 +30,7 @@ about 6 hours (well under their own norm), has started 4 of the last 6 threads, 
 colleagues onto the chain, and is writing longer replies, with the lift holding across the period
 rather than one busy week. The read: "they're warming."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

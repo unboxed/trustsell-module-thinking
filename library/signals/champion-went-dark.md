@@ -34,7 +34,7 @@ last note bounced with a mailer-daemon message, or their auto-reply says they ar
 organisation, and there is no out-of-office window, no "back next month" note and no future meeting
 booked. The read: this contact has gone dark, and on the evidence has likely left.
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 

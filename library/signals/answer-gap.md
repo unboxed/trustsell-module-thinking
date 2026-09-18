@@ -35,7 +35,7 @@ by you rather than a third party. The read: "answer gap on the compliance worry,
 residency. The first has nothing on file; the second rests on a single ageing, self-written
 reference."
 
-## For the build
+## How it is worked out
 
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows the Organisation proof library for proof that belongs to the organisation

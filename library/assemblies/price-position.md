@@ -29,7 +29,7 @@ above or below a named rival.
 Whether that gap means you are priced to win, or priced to scare a cautious buyer off, is the read
 above: [`price-barrier`](../signals/price-barrier.md).
 
-## Lineage
+## Where it comes from
 
 `pricing` resolves to [`offering-told.md`](../told/offering-told.md), the offering's own told source. `web-result`,
 `research-report` and `page-content` resolve to [`channels/web.md`](../channels/web.md).

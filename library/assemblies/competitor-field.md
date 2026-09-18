@@ -34,7 +34,7 @@ It lists who the rivals are and what they say. It does not decide where you win,
 lock-in will actually hold a buyer. That read is
 [`competitive-standing`](../signals/competitive-standing.md).
 
-## Lineage
+## Where it comes from
 
 `offering-entry` is the sibling assembly this stands on. `web-result`, `research-report`,
 `page-content` and `enrichment` resolve to [`channels/web.md`](../channels/web.md).
