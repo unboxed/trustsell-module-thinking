@@ -5,8 +5,18 @@
 *.swp
 *~
 
-# Node (root-level safety net; blueprint/ has its own .gitignore)
+# Node (root-level safety net; _archive/blueprint/ has its own .gitignore)
 node_modules/
+
+# Build output of the archived blueprint app
+.next/
+out/
+*.tsbuildinfo
+
+# Rendered screenshots. Verification shots belong in the scratchpad, and the
+# work itself is shown in playbook/deck.html, never as a folder of PNGs.
+phone-png/
+*-png/
 
 # Claude Code local settings
 .claude/settings.local.json

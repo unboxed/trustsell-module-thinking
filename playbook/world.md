@@ -26,9 +26,9 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
 - **Ask.** The tool needs one fact only you hold, and the answer changes what it does. The button
   is the answer. It has looked first and says where it ran out. It asks for facts (what happened
   offline, what you intend, what you prefer), never for verdicts it should reach itself. A check
-  ("I read Priya as cautious. Right?") is allowed.
+  ("I read Rachel as cautious. Right?") is allowed.
 - **Connect.** A source it cannot see.
-- **Told.** An outcome with nothing to do: the *Then* of an earlier card coming back ("Lena's
+- **Told.** An outcome with nothing to do: the *Then* of an earlier card coming back ("Julie's
   email bounced this morning"). The button is Got It.
 
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve.
@@ -73,7 +73,14 @@ close button lowers it). The third, "The modules", shows the modules as bare rep
 sheets in a row, no phone around them, each captioned by its module. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
-both are left off the slide for now.
+both are left off the slide for now. The fourth, "The details" (18 September), shows three phones
+side by side, one card each, chosen so the three replies differ: Karen's Send Message (a
+draft), Ashworth's Rest It (one tap, with One More Try raising the last note) and the Ask
+about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its details, which
+follow the spine with the card's widgets in place. The words and rows come from the cards in
+`library/`, copied in by a one-off script, so the slide says only what the cards say. Felton
+and Rachel's promise card also carry widgets (People, Their words, Open items, Documents) but
+are not on the slide: their replies are drafts too.
 
 The deck, "The room" (decided 17 September, by looking, on one sheet of three rendered
 directions: https://claude.ai/artifact/YJCZrrjxT3N7iKS5pDse1b). There is no panel. The slide is
@@ -94,9 +101,10 @@ bigger than a phone. A bare sheet is the phone's sheet, as if grabbed from the p
 wide, then scaled, and it may grow past 1:1 on a big screen. A slide of words and a figure caps
 its content at 1440 pt and centres it, so a wide screen does not pull the two to opposite walls;
 the ground still bleeds to the edges. The modules slide is not capped, because a bare sheet is
-allowed to grow. A slide whose body is a row of figures takes its title down a step, to the
-card's own 48 on 46, and lets its line run the head's full measure, so the figures keep the
-room. A slide of words only says no size, and the script leaves its scale alone.
+allowed to grow. A slide whose body is a row of figures (the modules, the details) has
+only a brief, small title and no line under it, so the figures take the room (decided 18
+September, by looking: https://claude.ai/artifact/919qY4w2iqY1KyTBmE44E1; passed over were the
+words in a column beside the figures and a line across the top). A slide of words only says no size, and the script leaves its scale alone.
 
 On the screen: two round menu buttons at the top, a count line ("1 of 5 cards"), and one
 card, already in focus, that runs down to the home indicator. There is no stack of cards
@@ -108,10 +116,10 @@ The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
 front holds one filled action and at most one plain one; anything that needs more room goes
 in a sheet. If the reply is one tap it lives on the front; if it needs room or reading, an
-action on the front raises the sheet. The phone slide shows the desk's Sarah Whitlow card:
+action on the front raises the sheet. The phone slide shows the desk's Karen Hughes card:
 the filled action is Send Message, the plain one is View Draft, which raises the draft
 sheet. Once sent, the actions give way to what the tool says back ("Sent. I will tell you
-when Sarah replies.") and Undo. On the phone the word is "message" and the buttons drop the
+when Karen replies.") and Undo. On the phone the word is "message" and the buttons drop the
 article, as Apple's do; the desk still says "Send the Note". Placeholder titles and descriptions
 say what each module is, in the tool's voice; no avatars, no contact blocks, no grouped
 tiles of "the thinking".
@@ -164,7 +172,7 @@ there should be is open. A two-state sheet (reviewing, then a
 tall editing form with To, Subject and Attached rows) was tried the same day and dropped: it
 was Mail rebuilt inside a sheet. The worry that led there, Send sitting under your thumb while you are still changing the
 message, is met another way: sending asks for one deliberate tap, the card says back what
-happened, and Undo is there for a moment. The slide uses the desk's Sarah Whitlow note as version
+happened, and Undo is there for a moment. The slide uses the desk's Karen Hughes note as version
 A ("With the figure") and a short form as version B ("Shorter"); the subject line, "The
 officer-time numbers you asked for", is new and belongs to that card.
 
@@ -173,7 +181,7 @@ options: https://claude.ai/artifact/4kvVknQPP2bFEdw2z9ooKB). The anatomy is iOS 
 look is the playbook's own. It lives on the phone, on the bare sheets grabbed from it, and on
 the slide that holds them, which took it later the same day when the deck became a room. In the
 stylesheet that is one selector, `.page--slide`, which only `deck.html` carries, so the desk
-cannot inherit it. Four choices. *Big words*: the title is the design, very large, tight and heavy (48 on 46),
+cannot inherit it. Four choices. *Big words*: the title is the design, very large, tight and heavy (38 on 40, down from 48 on 46 on 18 September),
 and everything else is small and quiet. *Plus Jakarta Sans* is the phone's face, carried in the
 fonts folder as Inter is; the status bar keeps the system's. *No colour on buttons*: the filled
 action is ink, or white in the dark, and the kind's dot is the only colour on the screen. The
@@ -186,10 +194,40 @@ card kept by day as well, and the kind glowing in the slate. The desk has not ta
 Cards, Ask and the card pages are still Apple's blue and SF Pro, a known disagreement, left for
 later. The kind's dot is pinned to the blue itself rather than to the accent, because the accent
 is ink here and an Advance dot was coming out black. Long titles will
-need a smaller step than 48; not built. The wider face wraps the draft's subject onto two
+need a smaller step than 38; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.
 
-Not decided: what a swipe does, the names and the list of the details' sections ("The story
+The details have a fixed spine and a catalog of widgets (decided 18 September, by looking, on one
+sheet of rendered options: https://claude.ai/artifact/DnMav6ETmx2HwEnYtXEn7K). The spine is the
+same on every card: Why now, The story so far, then one or two detail widgets, then Not sure,
+Then, and What I read. Ask cards keep their own section names in the same places. The widgets
+are a catalog the tool picks from and fills, as the reply modules are, and they live in
+`library/widgets/`. They are close to Google's A2UI, where an agent picks components from a
+catalog and fills them with data, but with one difference, on purpose: ours are large and
+specific and sit in a fixed place, so the tool chooses and fills them but never arranges them.
+That is what lets a seller learn the set once. There are six detail widgets, told apart by
+shape: *Timeline* (a line of dots, today's filled), *Their words* (a quote in large type with a
+rule beside it), *People* (a name in bold, the role beside it, where they stand underneath),
+*Open items* (an empty circle, what is owed, its age on the right) and *A number against its
+usual* (the figure in the card's big words, a bar against a bar). *Documents* (a file, what it proves,
+how recent) was added the same day, when the widgets were checked against the records rather
+than the cards: every record carries a time, a person, some words or a file, and Documents was
+the missing one. Open items and A number against its usual reach no record yet, because they
+rest only on counts; each says so with `waits_on: counts`. A card says two things, why to write and what to
+send, and they are two trails in the library (decided 18 September, by looking:
+https://claude.ai/artifact/DCS9ZqFCFLqoj2Xd4QaHMQ). Why to write goes down through the signal.
+What to send hangs off the card itself: a card that names `documents` rests on the proof
+library too. Passed over: the signal reading the proof library, which would have made every
+card on that signal lean on documents even when it sends nothing. The look chosen is "Each shape
+drawn"; tried and passed over on the same sheet were "Plain lines" (the blocks looked alike)
+and "Meta beside the words" (a quiet left column on every block). Ink only: the kind's dot stays
+the only colour. A message history is a Timeline; promises and blockers are both Open items.
+Every row traces to a record in What I read. Four cards carry widgets so far. North Ridley's demo
+brief cannot take People yet: its signal, `lead-with-this`, reads the offering and the
+objections but not who is in the room, so the check refuses it. Not built on the phone yet.
+
+Not decided: how widgets look at night, whether a widget can be tapped through to its records,
+whether the draft becomes a `reply.module` of its own, what a swipe does, the names and the list of the details' sections ("The story
 so far" is the user's; the other two are borrowed from the desk), whether "Not sure" and "how
 sure" belong in the details, what the two menu buttons are, and what the count line counts. Also open: whether one-tap replies (That's Right and Not Quite; Got It) move from the
 Buttons sheet to the front, as the message card's have; the names the signal writes on the
@@ -255,44 +293,44 @@ cold → engaged → coalition → partial → full
 
 | Council | Stands at | Notes |
 |---|---|---|
-| Thornbury Vale District Council | engaged | Sarah Whitlow is the only live door. Budget meeting 22 August. Budget sits with the Director of Resources, Graham Ewell |
-| Ashcombe County Council | coalition | Tom Reynolds champion; Priya Nair joined the thread 8 September; no budget holder seen yet |
-| Calderside Metropolitan Borough | engaged | Daniel Okoro; procurement window closes 16 October |
-| Marlow Heath Borough Council | cold | four notes from you since May, nothing back |
-| Eastwick City Council | engaged | Hannah Reid; digital strategy published Friday 11 September |
-| Kelbrook District Council | coalition | stuck on price with Mark Ellery; Nadia Hussain for it; Paul Denny not yet in |
-| Fenwick & Dale Council | engaged | demo Thursday 17 September 10:00; think BOPS replaces their case system |
-| Harrowfield Borough Council | engaged | Lena Marsh left; her auto-reply names Dev Patel |
-| Wendleton Borough Council | cold | tender out 9 September, clarifications close 2 October, tender closes 9 October |
-| Borsetshire County Council | full (customer) | the case study every other council gets shown; live fourteen months |
+| Bramley District Council | engaged | Karen Hughes is the only live door. Budget meeting 22 August. Budget sits with the Director of Resources, Martin Hodgson |
+| Westmoor County Council | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |
+| Holbrook Metropolitan Borough | engaged | Neil Chapman; procurement window closes 16 October |
+| Ashworth Borough Council | cold | four notes from you since May, nothing back |
+| Burnham City Council | engaged | Lisa Holmes; digital strategy published Friday 11 September |
+| Felton District Council | coalition | stuck on price with Stephen Walsh; Shabana Akhtar for it; David Marshall not yet in |
+| North Ridley Council | engaged | demo Thursday 17 September 10:00; think BOPS replaces their case system |
+| Moreton Borough Council | engaged | Julie Barker left; her auto-reply names Sanjay Mistry |
+| Tarlton Borough Council | cold | tender out 9 September, clarifications close 2 October, tender closes 9 October |
+| East Marston County Council | full (customer) | the case study every other council gets shown; live fourteen months |
 
-Twelve councils have no named person: Ambleford, Brackley Vale, Coldharbour, Dunmere, Ferrisby,
-Greystoke, Hollins Cross, Kingsmead, Lowerdale, Norbury Heath, Oxley, Radcliffe Moor.
+Twelve councils have no named person: Ashby, Brinsley, Carlton, Denby, Fulford,
+Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 
 ## The cast
 
-- **Sarah Whitlow**, Head of Customer Services, Thornbury Vale. Used to reply within a day; slowed since the budget meeting.
-- **Tom Reynolds**, Service Design Lead, Ashcombe. Your champion. Asked on 10 September whether BOPS can import their case records.
-- **Priya Nair**, Head of IT, Ashcombe. Met you Tuesday 8 September, joined Tom's thread the same day. Has twice asked "will officers actually use it". You owe her the data-residency note.
-- **Daniel Okoro**, Digital Transformation Lead, Calderside. Warm, slow rhythm, roughly every six weeks. Books calls when you propose them.
-- **Hannah Reid**, Director of Digital, Eastwick. Quiet but friendly. Led the digital strategy.
-- **Mark Ellery**, Finance Business Partner, Kelbrook. The price objection is his.
-- **Nadia Hussain**, Digital Lead, Kelbrook. For it. Has mentioned her director twice.
-- **Paul Denny**, Director of Communities, Kelbrook. On no thread yet.
-- **Joanne Platt**, Programme Manager, Fenwick & Dale. Running Thursday's demo.
-- **Lena Marsh**, formerly Service Improvement Lead, Harrowfield. Left; her email bounced this morning.
-- **Dev Patel**, Digital Programme Manager, Harrowfield. Named in Lena's auto-reply. Never spoken.
-- **Owen Pryce**, procurement contact, Wendleton. Named in the tender. Never spoken.
-- **Claire Bennett**, Head of Digital, Marlow Heath. Your colleague Ravi knows her.
-- **Kwame Asante**, Head of IT, Borsetshire. Happy to do reference calls.
-- **Ravi Menon**, your colleague in partnerships. Well connected across the sector.
+- **Karen Hughes**, Head of Customer Services, Bramley. Used to reply within a day; slowed since the budget meeting.
+- **Gary Pearson**, Service Design Lead, Westmoor. Your champion. Asked on 10 September whether BOPS can import their case records.
+- **Rachel Gill**, Head of IT, Westmoor. Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked "will officers actually use it". You owe her the data-residency note.
+- **Neil Chapman**, Digital Transformation Lead, Holbrook. Warm, slow rhythm, roughly every six weeks. Books calls when you propose them.
+- **Lisa Holmes**, Director of Digital, Burnham. Quiet but friendly. Led the digital strategy.
+- **Stephen Walsh**, Finance Business Partner, Felton. The price objection is his.
+- **Shabana Akhtar**, Digital Lead, Felton. For it. Has mentioned her director twice.
+- **David Marshall**, Director of Communities, Felton. On no thread yet.
+- **Michelle Turner**, Programme Manager, North Ridley. Running Thursday's demo.
+- **Julie Barker**, formerly Service Improvement Lead, Moreton. Left; her email bounced this morning.
+- **Sanjay Mistry**, Digital Programme Manager, Moreton. Named in Julie's auto-reply. Never spoken.
+- **Darren Cole**, procurement contact, Tarlton. Named in the tender. Never spoken.
+- **Nicola Shaw**, Head of Digital, Ashworth. Your colleague Simon knows her.
+- **Andrew Doyle**, Head of IT, East Marston. Happy to do reference calls.
+- **Simon Ward**, your colleague in partnerships. Well connected across the sector.
 - **You.** Fede, the seller. Warm, plain-spoken, allergic to "just checking in" emails. You delete the tool's pleasantries.
 
 ## Proof and documents you can point at
 
-- The **Borsetshire case study**, with a page of officer feedback: case admin down by about a third.
+- The **East Marston case study**, with a page of officer feedback: case admin down by about a third.
 - The **officer-time one-pager**: the one-page summary of that saving.
-- The **Borsetshire phasing note**: how they took BOPS in stages. Finished 11 September.
+- The **East Marston phasing note**: how they took BOPS in stages. Finished 11 September.
 - The **data-residency note**: where the data lives and who can see it. Updated 2 September.
 - The **records import note**: how import works, in stages.
 - The **partial rollout price sheet**: one service, live cases, about a third of the price.

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Book the Holbrook follow-up · Signal cards</title>
+<link rel="stylesheet" href="../assets/fonts/inter.css">
+<link rel="stylesheet" href="../assets/ios-tokens.css">
+<link rel="stylesheet" href="../assets/ios-components.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="page page--card">
+
+<nav class="ios-navbar">
+  <a class="ios-btn navbar-back" href="../index.html"><span class="chevron" aria-hidden="true"></span>Signal cards</a>
+  <span class="ios-navbar__title">Advance</span>
+  <span class="navbar-spacer" aria-hidden="true"></span>
+</nav>
+
+<main class="page-body">
+<div class="card-page">
+
+<section class="card-front">
+  <article class="card">
+    <span class="kind kind--advance">Advance</span>
+    <h1>Book the Holbrook follow-up</h1>
+    <p>Their procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.</p>
+    <p class="when">By 16 October: procurement window closes. Book this week.</p>
+  </article>
+  <div class="actions">
+    <button class="ios-btn ios-btn--filled" id="act" data-action="draft">Send the Invite</button>
+    <button class="ios-btn" data-ack="Okay. I&#x27;ll leave it and raise it again only if something changes.">Not Now</button>
+    <button class="ios-btn" id="nope">Not Relevant</button>
+  </div>
+  <p class="ios-list__footer ack" id="ack" role="status" hidden></p>
+</section>
+
+<section class="card-back">
+  <h2 class="back-title">The thinking <span class="sure">sure</span></h2>
+  <div class="ios-list__header">What I noticed</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Why now: five weeks to the window, and a meeting takes two to three to land in Neil's calendar. This week is the last comfortable one.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.</span></li>
+  </ul>
+  <div class="ios-list__header">Timeline</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">14 July · Neil: the window for this year closes 16 October</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">3 August · Your last meeting with Holbrook</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Today · No meeting scheduled</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">16 October · The procurement window closes</span></li>
+  </ul>
+  <div class="ios-list__header">What I read</div>
+  <ul class="ios-list read">
+      <li class="ios-list__row"><span class="ios-list__title">Gmail: Neil, 14 July: "the window for this year closes 16 October".</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Your calendar: no meeting with Holbrook since 3 August, none scheduled.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Your mail with Neil: who proposed each meeting. You, four of four.</span></li>
+      <li class="ios-list__row"><span class="ios-list__title">Your goal: partial adoption this year means inside that window.</span></li>
+  </ul>
+  <div class="ios-list__header">Not sure</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Whether the window is for a decision or for a signed order. Those are five weeks apart in practice.</span></li>
+      <li class="ios-list__row ios-list__row--control"><div class="ios-segmented mini" role="radiogroup" aria-label="Your read">
+        <label><input type="radio" name="mini" data-mini="Then a meeting in late September is enough and I&#x27;ll pace the rest to it."><span></span>A Decision</label>
+        <label><input type="radio" name="mini" data-mini="Then we&#x27;re already tight. I&#x27;ll move this to today and draft the paperwork checklist too."><span></span>A Signed Order</label>
+        <label><input type="radio" name="mini" data-mini="Then the invite asks him, plainly, and I&#x27;ll adjust once he answers."><span></span>Don&#x27;t Know</label>
+      </div></li>
+  </ul>
+  <p class="ios-list__footer" id="miniack" role="status" hidden></p>
+  <div class="ios-list__header">Then</div>
+  <ul class="ios-list">
+      <li class="ios-list__row"><span class="ios-list__title">Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.</span></li>
+  </ul>
+</section>
+
+</div>
+
+<nav class="toolbar" aria-label="Previous and next card">
+  <a class="ios-btn toolbar__prev" href="advance-north-ridley-demo-brief.html"><span class="chevron" aria-hidden="true"></span><span>Prepare Thursday&#x27;s demo at North Ridley</span></a>
+  <a class="ios-btn toolbar__next" href="expand-tarlton-tender.html"><span>Tarlton is replacing its case system</span><span class="chevron chevron--next" aria-hidden="true"></span></a>
+</nav>
+</main>
+
+<div class="sheet-backdrop" id="draft" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="draft-title">
+    <div class="sheet__grabber" aria-hidden="true"></div>
+    <header class="sheet__bar">
+      <button class="ios-btn sheet-cancel">Cancel</button>
+      <span class="ios-navbar__title" id="draft-title">Draft</span>
+      <button class="ios-btn ios-btn--filled sheet-hand">Open in Mail</button>
+    </header>
+    <p class="ios-list__footer sheet__sub">in your voice · nothing sends until you do</p>
+    <div class="sheet__body">
+<p>Hi Neil,</p>
+<p>You mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?</p>
+<p>Two or three slots that suit you and I'll book it.</p>
+<p>Fede</p>
+    </div>
+    <p class="ios-list__footer">Nothing attached. Send from your own mail; I&#x27;ll watch for his slots.</p>
+  </div>
+</div>
+
+<div class="sheet-backdrop sheet-backdrop--actions" id="reasons" hidden>
+  <div class="ios-actionsheet" role="dialog" aria-modal="true" aria-labelledby="reasons-title">
+    <p class="ios-actionsheet__title" id="reasons-title">Why isn&#x27;t this relevant?</p>
+    <div class="ios-actionsheet__actions">
+      <button class="ios-btn" data-ack="Fair. I&#x27;ll stop telling you things you already know about this one, and try to notice earlier next time.">Already Knew</button>
+      <button class="ios-btn" data-ack="Noted. I&#x27;ll stop raising this person for this and look for who it should be.">Wrong Person</button>
+      <button class="ios-btn" data-ack="Understood. I&#x27;ll take this off the board and not raise it again unless you put it back.">Not a Target</button>
+      <button class="ios-btn ios-actionsheet__cancel sheet-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<nav class="ios-tabbar" aria-label="Sections">
+  <a class="ios-tabbar__item" href="../index.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="16" height="12" rx="2.5"/><path d="M6 2.5h10"/></svg>Cards</a>
+  <a class="ios-tabbar__item" href="../ask.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9.5" cy="9.5" r="6.5"/><path d="m14.5 14.5 5 5"/></svg>Ask</a>
+  <a class="ios-tabbar__item" href="../library.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="3" width="4" height="16" rx="1"/><rect x="9" y="3" width="4" height="16" rx="1"/><path d="M15.5 4.2l3.3 15.2" stroke-linecap="round"/></svg>Library</a>
+  <a class="ios-tabbar__item" href="../deck.html"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="6" y="2" width="10" height="18" rx="2.5"/><path d="M9.5 17h3" stroke-linecap="round"/></svg>Phone</a>
+</nav>
+<script src="../assets/card.js"></script>
+</body>
+</html>

@@ -4,20 +4,33 @@ This is a **design workspace, not an application**, and its pages are **slides f
 thinking**, not screens of the tool. It holds a playbook of **signal cards**: what a sales tool
 would say to a seller, one card at a time, written as if the tool already existed. The
 playbook is plain HTML in `playbook/`, opens by double-clicking `playbook/index.html`, and needs no
-server, build or install. It is meant to be shared as a folder.
+server or install to read. It is meant to be shared as a folder.
+
+The thinking the cards rest on lives in `library/`, as markdown. `build.js` projects it into the
+playbook. Editing the library and running `node build.js` is how the playbook changes.
 
 ## How to work with me here
-- **Brainstorm and pressure-test first.** Do not write application code, schemas or a build system
-  unless asked. The cards are static HTML on purpose. A one-off script that rewrites the HTML is
-  fine; it lives in the scratchpad, not the repo.
-- **The card model lives in `playbook/world.md`**, together with the pretend world (goal, councils,
-  cast, documents, dates) and the table of which Apple component each part of a card is. Read it
-  before writing or editing a card. Add to it before inventing a name, a date or a document.
+- **Brainstorm and pressure-test first.** Still no application: `build.js` is the only script, it
+  is plain Node with no packages, and it renders markdown into static HTML. Do not add a framework,
+  a bundler or a dependency. Anything else that rewrites files is a one-off and lives in the
+  scratchpad, not the repo.
+- **Do not make things up.** The facts are what matter. Where something is not known, the entry
+  says "not written yet" rather than being filled with a plausible invention. Every count in
+  `library/counts/` is in that state on purpose, and the `signal:` on each card is marked
+  `provisional` because it was read off the card rather than decided.
+- **The card model lives in `playbook/world.md`**, together with the design decisions and the table
+  of which Apple component each part of a card is. The pretend world itself (goal, councils, cast,
+  documents, today's date) is data, in `library/world/`, because cards reference it by id. Read
+  both before writing or editing a card. Add to `library/world/` before using a name, a date or a
+  document that is not already there.
 - **The phone and card slides are concept slides.** Do only what the user asks on them, one step
   at a time; they direct the design. See the phone paragraph in `world.md` for what is decided.
-- **One HTML file per card** in `playbook/cards/`. The home (`playbook/index.html`) lists every
-  card sorted by *when*. When a card is added, add its tile to the home and wire the previous/next
-  links in the toolbar at the foot of the neighbouring cards.
+- **One markdown file per card** in `library/cards/`. `playbook/cards/*.html`,
+  `playbook/index.html` and `playbook/assets/data.js` are **generated: never hand-edit them.**
+  Adding a card means adding its markdown and running `node build.js`; the tile on the home and
+  the previous/next links wire themselves from the card's `order`.
+- **`build.js` fails loudly on an id that does not resolve**, and writes nothing when it does.
+  That check is the point: the joins between the floors are what went missing before.
 - **Voice.** Plain English, British spelling, the tool speaking to the seller in the first person.
   Short sentences. No em dashes. Every Sustain card names the gift. Every card can say its why-now.
   Ask cards ask for facts, never verdicts. Interface text follows Apple's writing rules: button
@@ -53,16 +66,48 @@ follows iOS. Take numbers from the two skills in `.claude/skills/`, not from mem
   The one exception is the phone's reply sheet (`.reply-sheet` in `style.css`); `world.md` says why.
 
 ## What is where
-- `playbook/` — the deliverable. `index.html` (Cards), `ask.html` (Ask), `deck.html` (the
-  slides, one file, one slide shown at a time: the phone, a working prototype, then the modules
-  that can fill a card's reply sheet, as bare sheets, a draft among them), `world.md`,
-  `cards/`, `assets/`.
-- `_archive/` — the earlier system design this grew out of: six modules, signals, assemblies, a
-  blueprint app, scenario docs. **Inspiration, not source of truth.** The signals under
-  `_archive/02-relationships/signals/` and `_archive/03-offerings/signals/` are where most cards'
-  reasoning came from; `_archive/docs/tracing-back.md` explains the facts → counting → opinion track-back that a card's
-  back follows. The old vocabulary there was Plant / Grow / Nurture; here
-  it is Expand / Advance / Sustain.
+
+**`library/` — the source of truth.** Markdown, brainstormed in prose. The two-layer format is the
+good thing here and is not up for redesign: **frontmatter is the machine layer** (flat facets, ids
+that must resolve), **the body is the human layer** (plain English, short sentences). The
+skeletons are in `library/templates/`; the contract is `library/docs/library-format.md`.
+
+The ladder, bottom to top. Each rung rests on the one below and every id is checked:
+
+| Rung | Where | What it is |
+|---|---|---|
+| Channels | `library/channels/` | what you connect. Carries records, forms no opinion |
+| Told | `library/told/` | what only you can say. No channel can fetch it |
+| Records | rows inside a channel or told file | the ingredients, addressed as `gmail#email-message` |
+| Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |
+| Counts | `library/counts/` | the arithmetic. **Nothing written yet** |
+| Signals | `library/signals/` | the first opinion, the first thing you could argue with |
+| Cards | `library/cards/` | the suggestion, question or outcome |
+
+Beside the ladder, `library/widgets/`: the catalog a card picks from and fills, never arranges.
+Detail widgets (Timeline, Their words, People, Documents, Open items, A number against its usual; at most two
+per card, each fed by something the card rests on) and reply widgets (the reply modules and the
+draft). `build.js` checks every join. See `library/docs/library-format.md`.
+
+Also there: `library/world/` (the pretend world as data: goal, cast, councils, documents),
+`library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
+including `tracing-back.md`, which this ladder is the executable form of).
+
+**Two rungs are unfinished, on purpose.** Every entry in `counts/` holds only its id and which
+signals reference it; `defined: false` says so. Each card's `signal:` is marked `provisional`
+because it was read off the card rather than decided. Both are a later pass, not an oversight.
+
+- `build.js` — the one script. Plain Node, no packages. Reads `library/`, validates every id,
+  writes `playbook/assets/data.js`, `playbook/index.html` and `playbook/cards/*.html`.
+- `playbook/` — the deliverable, still plain static HTML. `index.html` (Cards, generated),
+  `ask.html` (Ask, hand-written), `library.html` (the library, browsable, rendered from
+  `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the phone, a working
+  prototype, then the modules that can fill a card's reply sheet, as bare sheets, a draft among
+  them), `world.md` (the card model and the design decisions), `cards/` (generated), `assets/`.
+- `_archive/` — what did not come forward: the blueprint viewer app, the hackathon deck, the
+  scenario docs and the two blueprint-era UI notes. **Inspiration, not source of truth.** The
+  channels, assemblies, signals and the live docs that used to live here are now in `library/`.
+  The old vocabulary there was Plant / Grow / Nurture; here it is Expand / Advance / Sustain.
 
 ## The idea in one paragraph
 People work the verbs (decide, approve, send); the tool works the nouns (find the person, gather

@@ -1,5 +1,10 @@
 # Sales Amplifier — Thinking Workspace
 
+> **Out of date.** This file describes the library when it lived under `_archive/` and was read
+> by the blueprint viewer app. The channels, assemblies, signals, told records, module overviews
+> and the live notes have moved to `../library/`, the app is retired, and `../build.js` now
+> validates every id between the rungs. Kept for the reasoning, not for the paths.
+
 This is a **design / brainstorming workspace, not an application**. There is no code here and we are not building the app yet. Each folder is a *module* of a multi-agent sales tool we're still reasoning about. The markdown files are the living memory of that thinking.
 
 ## How to work with me in here

@@ -278,13 +278,16 @@ summary::-webkit-details-marker{display:none}
 .slide--side{flex-direction:row;gap:64px;max-width:1440px;margin:0 auto}
 .slide--side .slide__head{flex:0 0 30rem;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .slide--side .slide__body{flex:1;margin-top:0}
-/* A slide whose body is a row of figures: the words are a heading standing
-   over them rather than a column beside them, so the title steps down to the
-   card's own 48 on 46 and the line runs the head's full measure. The figures
-   still need the room's whole width, which is what caps their scale. */
-.slide--figures .slide__head{max-width:56rem}
-.slide--figures .slide__head h1{font-size:3rem;line-height:2.875rem}
-.slide--figures .slide__head p{max-width:44rem;margin-top:16px}
+/* A slide whose body is a row of figures: the figures are the slide, so the
+   words step right back to a brief, small title and no line under it
+   (decided 18 September, by looking: https://claude.ai/artifact/919qY4w2iqY1KyTBmE44E1,
+   where a column of words beside the figures and a line across the top were
+   passed over). The room goes to the figures, which draw almost at full height.
+   Sizes are a judgment. */
+.slide--figures{padding-top:56px;padding-bottom:40px}
+.slide--figures .slide__head{max-width:none}
+.slide--figures .slide__head h1{font-size:1.75rem;line-height:2rem;letter-spacing:-.03em}
+.slide--figures .slide__body{margin-top:16px}
 /* A slide with words and no figure: one column, centred in the room. The line
    under the title is the whole slide here, not a caption, so it is bigger. */
 .slide--words{justify-content:center}
@@ -344,7 +347,7 @@ summary::-webkit-details-marker{display:none}
 .screen__bar{position:absolute;top:0;left:0;right:0;height:112px;background:var(--ios-bg-card);border-bottom:.5px solid var(--ios-separator);opacity:var(--p)}
 .screen__head{position:absolute;top:0;left:0;right:0}
 /* The card's title, compact, once the large one has passed under the bar (--t), as an iOS large title does. */
-.screen__title{flex:1;min-width:0;text-align:center;white-space:nowrap;font:var(--ios-text-headline);color:var(--ios-label);opacity:var(--t)}
+.screen__title{flex:1;min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px;font:var(--ios-text-headline);color:var(--ios-label);opacity:var(--t)}
 /* Progress through the deck: a centred footnote in the secondary grey. */
 .deck__count{position:absolute;left:0;right:0;top:104px;text-align:center;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
 /* The bar at the foot: 12 pt, a 44 pt row, the 34 pt home area. It sits under
@@ -557,8 +560,8 @@ summary::-webkit-details-marker{display:none}
 /* The card: the glaze is on the page, seen through the hole; the edge and the lift are the hole's. */
 .screen .screen__scroll{background:var(--card-glaze)}
 .screen .card-hole{border-radius:calc(36px*(1 - var(--p)));box-shadow:var(--card-edge),var(--card-lift),0 0 0 600px var(--ios-bg)}
-/* Big words: 48 on 46, the heaviest weight, tight. Long titles will need a smaller step; not built yet. */
-.screen .deck__card.deck__card--front h2{font-size:3rem;line-height:2.875rem;font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
+/* Big words: 38 on 40, the heaviest weight, tight in its letters (48 on 46 until 18 September; the user asked for a touch smaller, then for more air between the lines, then a touch smaller again, twice). Long titles will need a smaller step; not built yet. */
+.screen .deck__card.deck__card--front h2{font-size:2.375rem;line-height:2.5rem;font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
 .screen .deck__card p{font-size:1rem;line-height:1.4375rem}
 /* The kind: its dot, then its name in sentence case and the label colour. */
 .screen .kind{text-transform:none;letter-spacing:0;font-size:.9375rem;color:var(--ios-label)}
@@ -568,3 +571,97 @@ summary::-webkit-details-marker{display:none}
 .screen .reply__row{min-height:48px;border-radius:999px}
 /* The kit writes white on its filled button; here the label follows the accent's partner. */
 .screen .ios-btn--filled,.sheet-stage .ios-btn--filled{color:var(--on-accent)}
+
+/* ---------- The details' widgets ---------- */
+/* Decided 18 September, by looking, on one sheet of rendered options
+   (https://claude.ai/artifact/DnMav6ETmx2HwEnYtXEn7K): "Each shape drawn". A
+   widget is told apart by its shape before a word is read, and looks the same
+   on every card. Ink only: the kind's dot stays the only colour on the screen,
+   so every mark here is the label colour or a mix of it, and night follows
+   the tokens. The widgets sit in the details between the story and Not sure;
+   library/widgets/ says what each one is. Every number is a judgment. */
+/* A number against its usual: the figure in the card's big words, then a bar
+   for it over a bar for the usual. The usual's bar is drawn short: it only
+   says "much less", the counts will give it its length. */
+.details .w-number{padding:2px 0 8px}
+.details .w-number__fig{display:block;font:800 2.375rem/2.5rem var(--phone-font,var(--ios-font));letter-spacing:-.045em;color:var(--ios-label)}
+.details .w-number>p{margin:6px 0 0}
+.details .w-number__bars{display:grid;gap:6px;margin:16px 0 8px}
+.details .w-number__bars i{display:block;height:6px;border-radius:3px;background:var(--ios-label)}
+.details .w-number__bars i.is-usual{width:6px;background:color-mix(in srgb,var(--ios-label) 30%,transparent)}
+.details .w-number .w-number__usual{font:var(--ios-text-footnote);color:var(--ios-label-secondary)}
+/* Timeline: a line of dots, oldest first; today's dot is filled. */
+.details .w-time{list-style:none;padding:0 0 0 22px;margin:4px 0 0;position:relative}
+.details .w-time::before{content:"";position:absolute;left:4px;top:8px;bottom:14px;width:1.5px;background:color-mix(in srgb,var(--ios-label) 20%,transparent)}
+.details .w-time li{position:relative;padding:0 0 16px}
+.details .w-time li::before{content:"";position:absolute;left:-22px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--ios-bg-card);box-shadow:inset 0 0 0 1.5px var(--ios-label)}
+.details .w-time li.is-today::before{background:var(--ios-label)}
+.details .w-time span{font:var(--ios-text-footnote);color:var(--ios-label-secondary)}
+.details .w-time p{margin:0}
+.details .w-time li.is-today p{font-weight:700}
+/* Their words: the quote large, a rule beside it, who and when small. */
+.details .w-words blockquote{margin:4px 0 18px;padding:0 0 0 14px;border-left:2px solid var(--ios-label)}
+.details .w-words blockquote p{font:600 1.25rem/1.625rem var(--phone-font,var(--ios-font));margin:0 0 4px}
+.details .w-words cite{font:var(--ios-text-footnote);font-style:normal;color:var(--ios-label-secondary)}
+/* People, Open items and Documents: rows on hairlines. */
+.details .w-people,.details .w-open,.details .w-docs{list-style:none;padding:0;margin:0}
+.details .w-people li,.details .w-open li,.details .w-docs li{padding:11px 0;border-bottom:.5px solid var(--ios-separator)}
+.details .w-people li:last-child,.details .w-open li:last-child,.details .w-docs li:last-child{border-bottom:0}
+.details .w-people b{font:var(--ios-text-headline)}
+.details .w-people span{font:var(--ios-text-footnote);color:var(--ios-label-secondary);margin-left:8px}
+.details .w-people p{margin:2px 0 0;font:var(--ios-text-subhead);color:var(--ios-label-secondary)}
+/* Open items: an empty circle, what is owed, its age on the right. */
+.details .w-open li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:start}
+.details .w-open li::before{content:"";width:16px;height:16px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--ios-label);margin-top:3px}
+.details .w-open p,.details .w-docs p{margin:0}
+.details .w-open em,.details .w-docs em{display:block;font:var(--ios-text-footnote);font-style:normal;color:var(--ios-label-secondary);margin-top:2px}
+.details .w-open span{font:var(--ios-text-headline)}
+/* Documents: a file glyph, the name, what it proves and how recent. */
+.details .w-docs li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.details .w-docs svg{color:var(--ios-label);margin-top:1px}
+
+/* ---------- The library ---------- */
+/* The browsable form of library/. It is the desk, so it stays on Apple's kit and
+   adds nothing of its own beyond layout: a rung's entries as an inset grouped list
+   in columns, and the entries' prose. Every colour is a token. */
+
+/* A rung's entries run in columns rather than one long list, because a rung can hold
+   ninety-four of them and a single column is a scroll, not a library. 260px is a
+   judgment: it is the narrowest column that holds a two-word label without wrapping. */
+.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr))}
+/* Hairlines are drawn by each cell rather than by gaps, so a part-filled last row
+   does not leave a block of separator colour showing through. The list clips them. */
+.lib-grid li{box-shadow:1px 1px 0 var(--ios-separator)}
+.lib-grid .ios-list__row{width:100%;box-sizing:border-box}
+
+/* The count beside a rung's name, in the header's own quiet grey. */
+.lib-count{float:right;text-transform:none;letter-spacing:0}
+
+/* One line under each rung's header saying what the floor does. */
+.lib-does{font:var(--ios-text-footnote);color:var(--ios-label-secondary);margin:4px 16px 8px}
+
+/* The way back up, above an entry's title. */
+.lib-crumb{font:var(--ios-text-footnote);color:var(--ios-label-secondary);padding-top:20px}
+.lib-crumb a{color:var(--ios-accent);text-decoration:none}
+
+/* An entry with nothing written in it yet. Named, never hidden: a gap is a fact. */
+.lib-gap{font:var(--ios-text-subhead);color:var(--ios-label-secondary);
+  border-left:3px solid var(--kind-quiet);padding:8px 0 8px 12px;margin:12px 16px}
+
+/* The entry's own words. Prose, not tiles: this is a document, not a screen. */
+.lib-prose{margin:8px 16px 4px;color:var(--ios-label);max-width:72ch}
+.lib-prose p{font:var(--ios-text-body);margin:0 0 12px}
+.lib-prose ul{margin:0 0 12px;padding-left:20px}
+.lib-prose li{font:var(--ios-text-body);margin-bottom:6px}
+.lib-prose h1,.lib-prose h2,.lib-prose h3,.lib-prose h4{font:var(--ios-text-headline);margin:16px 0 8px}
+.lib-prose code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.9em;
+  background:var(--ios-bg-tertiary);padding:1px 5px;border-radius:5px}
+.lib-prose a{color:var(--ios-accent)}
+.lib-prose table{border-collapse:collapse;width:100%;margin:0 0 12px;font:var(--ios-text-footnote)}
+.lib-prose th,.lib-prose td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--ios-separator);vertical-align:top}
+.lib-prose th{color:var(--ios-label-secondary);font-weight:var(--ios-weight-semibold)}
+
+/* A step down in the track-back, so a count under a signal reads as beneath it. */
+.lib-indent .ios-list__title{padding-left:20px}
+
+.lib-actions{margin:20px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
