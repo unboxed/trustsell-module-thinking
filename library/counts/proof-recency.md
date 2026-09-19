@@ -1,13 +1,13 @@
 ---
 id: proof-recency
-label: "How recent the proof is"
+label: "How recent the evidence is"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# How recent the proof is
+# How recent the evidence is
 ## What it counts
 
 Not written yet.

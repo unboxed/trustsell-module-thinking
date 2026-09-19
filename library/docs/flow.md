@@ -23,7 +23,7 @@ This is the worked version of Brain's canonical **play** (`00-spine`); it ties t
 3. **Modules run their routines and push up what matters.** People scans for fits (pulling the *fit-shape* from Offerings as a supplier) and watches for signals. *Underneath:* Connections fetches the raw facts (a new mail, a calendar change, a Slack mention, a web hit); People does the **reading**. One clears the bar: a reply lands from Council X asking what BOPS would cost, which People reads as *a live buying question*, so it pushes *"Council X replied asking about pricing"* up, and that wakes Brain.
 4. **Brain runs the recommendation play, gathering each module's piece:**
    - asks **People** → *provides* our history with Council X, the warm path in, any loose end.
-   - asks **Offerings** → *provides* the entry use-case and the proof that lands for a council.
+   - asks **Offerings** → *provides* the entry use-case and the evidence that lands for a council.
    - asks **Organisation** → *provides* the matching case study and the fence to stay inside.
 5. **Brain decides: this is the mix.** It weighs the pieces into one call: *act on **Person P** at **Council X**, because [warm path through Q + fits the early-adopter profile + just asked about pricing], leading with [the entry use-case + that council case study].* That's the **what + why**.
 6. **Brain hands a brief to Profile, who renders it.** Profile writes it in your voice, reading your closeness to Person P from People, inside Organisation's fence, and Organisation does a final compliance pass.

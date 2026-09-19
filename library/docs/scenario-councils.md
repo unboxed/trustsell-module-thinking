@@ -81,7 +81,7 @@ small reading, and the brief is what you get when you combine them:
   the loose end (his records-import question is still unanswered) and the stakeholder
   picture at Council 14.
 - **Offerings** handed up: the answer to a records-import worry, the partial-rollout
-  first step that's easy to say yes to, and the proof that reassures a cautious public
+  first step that's easy to say yes to, and the evidence that reassures a cautious public
   buyer.
 - **Organisation** handed up: the East Marston County case study (a comparable council
   already live) and the compliance fence the message must stay inside.
@@ -170,7 +170,7 @@ plain terms, its routine is:
 > move, I raise it.
 
 The other modules run lighter routines:
-- **Offerings** keeps the council pitch sharp and ready (the entry step, the proof, the
+- **Offerings** keeps the council pitch sharp and ready (the entry step, the evidence, the
   objection answers) and doesn't go hunting; it answers when asked.
 - **Organisation** keeps the case study and the compliance fence current.
 - **Profile** stands ready to render in voice.

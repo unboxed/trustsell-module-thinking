@@ -2,7 +2,7 @@
 id: objection-list
 module: 03-offerings
 label: Worries and answers
-blurb: One offering's worries, gathered into a named catalogue with each answer and the proof it needs.
+blurb: One offering's worries, gathered into a named catalogue with each answer and the evidence it needs.
 about: an offering
 deterministic: true
 inputs:
@@ -16,7 +16,7 @@ inputs:
 ## What it gathers
 
 Gathers one offering's worries into a single catalogue. Each is a named objection (data residency,
-incumbent lock-in, price), with the answer you give it and the kind of proof that answer needs.
+incumbent lock-in, price), with the answer you give it and the kind of evidence that answer needs.
 
 It stands on the Offering entry, spined by the told `worry-answer` records. Web research can add
 worries you did not list yourself: the procurement patterns a cautious buyer-type raises, and the

@@ -1,13 +1,13 @@
 ---
 id: proof-required-kind
-label: "Kind of proof asked for"
+label: "Kind of evidence an answer needs"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Kind of proof asked for
+# Kind of evidence an answer needs
 ## What it counts
 
 Not written yet.

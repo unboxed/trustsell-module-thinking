@@ -1,13 +1,13 @@
 ---
 id: proof-on-file
-label: "Proof on file"
+label: "Evidence on file"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Proof on file
+# Evidence on file
 ## What it counts
 
 Not written yet.

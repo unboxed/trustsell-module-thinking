@@ -377,7 +377,7 @@ for (const w of L.widgets) {
 }
 // Everything a card rests on: its counts, the inputs of its signal and its supporting signals,
 // each count's `over`, and every assembly those gather. A card that names what to send
-// (`documents`) also rests on the proof library: why to write is traced through the signal,
+// (`documents`) also rests on the evidence library: why to write is traced through the signal,
 // what to send is its own trail (decided 18 September, by looking).
 const signalsOf = c => [c.signal, ...[].concat(c.supporting || [])]
   .map(id => L.signals.find(s => s.id === id)).filter(Boolean);

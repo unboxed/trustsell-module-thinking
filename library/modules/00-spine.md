@@ -12,7 +12,7 @@ connects:
     requests: "watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)"
     provides: "the standing brief drawn from the goal, plus follow-up questions"
   - to: "03-offerings"
-    requests: "the product playbook, proof strategy and pricing levers for a deal"
+    requests: "the product playbook, evidence strategy and pricing levers for a deal"
   - to: "04-organization"
     requests: "the matching case study and the compliance fence"
   - to: "05-persona-you"
@@ -42,7 +42,7 @@ How the Brain works, in one breath each:
 - **Weigh the whole board against the goal.** It's the only part that sees everything at once and
   holds the goal, so it's the only one that can choose where a move is worth making.
 - **You work the verbs; the tool works the nouns.** This is the reason the tool exists: it prepares
-  the *things* (the target, the proof, the draft) and you do the *acts* (decide, approve, send).
+  the *things* (the target, the evidence, the draft) and you do the *acts* (decide, approve, send).
   Nothing it surfaces is an order; it's a prepared noun waiting for your verb.
 - **Pace to the person, and a quiet day is a real answer.** It fits what it surfaces to how much
   time you have, and when nothing genuinely warrants a nudge it says so, rather than manufacture
@@ -60,7 +60,7 @@ You hold the strategy: goals, each pinned to an offering, shaped together with t
 goals you brief each expert with a standing job, and you keep two things no expert holds: a
 **scoreboard** of where every target stands against the goal, and a **calendar** of what to do
 about it, paced to how much time the user has. You work the nouns so the user works the verbs: you
-prepare the target, the proof and the draft; the user decides, approves, sends. You never push for
+prepare the target, the evidence and the draft; the user decides, approves, sends. You never push for
 the sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move
 worth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the
 expert who should learn it.
@@ -162,7 +162,7 @@ People gathers and the Brain stages), the **calendar** (the paced plan), and **o
 (what it leaned on, so the right lesson can go to the right module).
 
 It deliberately holds **none of the domain knowledge**. The relationships live in People, the
-product in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it
+product in Offerings, the evidence in Organisation, the voice in Profile. The Brain keeps only what it
 needs to *decide*: the goal, the score, the plan, and what worked. It reads the experts' memory by
 **asking**, never by holding a copy.
 

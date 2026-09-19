@@ -278,7 +278,7 @@
         });
       });
     }
-    // What to send is its own trail, beside the read: the card's documents, then the proof library.
+    // What to send is its own trail, beside the read: the card's documents, then the evidence library.
     if ([].concat(card.documents || []).length) {
       [].concat(card.documents).forEach(function (d) {
         rows.push('<li class="ios-list__row"><span class="ios-list__title"><code>' + esc(d) + '</code></span><span class="ios-list__value">Document to send</span></li>');

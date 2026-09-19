@@ -30,7 +30,7 @@ of this readable:
   competitor's pricing page, a council's published digital strategy. No one had to type
   it in.
 - **Supplied.** Another module handed it over when asked. Offerings asks Organisation for
-  the proof behind a claim; Profile asks People how close you are to someone. One module's
+  the evidence behind a claim; Profile asks People how close you are to someone. One module's
   output is another's ingredient.
 
 People runs mostly on *fetched* (your mail, calendar, Slack). The supply modules lean more
@@ -69,13 +69,13 @@ not knowing slows the tool down, it doesn't stop it.
 - *pricing and the entry step*: the price levers, and the partial rollout that's the easy
   first yes;
 - *the objections* a cautious public buyer raises, and the rebuttal to each;
-- and, for each rebuttal, *what kind* of proof would back it.
+- and, for each rebuttal, *what kind* of evidence would back it.
 
 **Where each piece comes from.** The pitch and pricing are **told**. Only you have them.
 The fit-shape starts **told** but is often **researched and proposed** (below). The
 objections are part told, part **fetched** (procurement patterns, what councils ask about
-new software) and proposed for you to confirm. The *kind* of proof a rebuttal needs is
-Offerings' own call; the actual proof document is **supplied** by Organisation.
+new software) and proposed for you to confirm. The *kind* of evidence a rebuttal needs is
+Offerings' own call; the actual evidence document is **supplied** by Organisation.
 
 **When you don't know your fit-shape.** This is the case worth dwelling on, because it
 mirrors People exactly. You may not be able to say crisply what an early-adopter council
@@ -88,7 +88,7 @@ your own product. Same principle, the setup side of it.
 
 **What it remembers.** Offerings' memory is the playbook itself (the pitch, the
 fit-shape, the objection-and-rebuttal pairs), kept current. Over time it can also learn
-*what's landing*: which rebuttal tends to move a council, which proof tends to reassure,
+*what's landing*: which rebuttal tends to move a council, which evidence tends to reassure,
 fed back by the Brain when an outcome comes in. (That learning is lighter today than
 People's, and the richer version is a future direction.)
 
@@ -102,8 +102,8 @@ A council replies: *"can it import our existing case records?"*
 - **People** has that message on record (it read the reply, filed it as a worry), and
   hands the worry to **Offerings** when asked.
 - **Offerings** recognises this as a technical-capability worry, and knows the rebuttal
-  needs a specific kind of proof: evidence the import has actually worked somewhere real.
-- It asks **Organisation**, which **supplies** the matching proof from its library: the
+  needs a specific kind of evidence: something showing the import has actually worked somewhere real.
+- It asks **Organisation**, which **supplies** the matching evidence from its library: the
   records-import case study from a comparable council.
 
 Three modules, one finished answer. But notice the shape: **Offerings owns the job**
@@ -153,10 +153,10 @@ a small chain: **Profile owns the words**; People and Organisation supply.
 
 Organisation holds the **shared** things (true for everyone who represents the company)
 rather than anything personal. Its knowledge is almost all **told** (or uploaded): the
-proof library, the brand and compliance rules, the authority to discount. It rarely goes
-hunting; it mostly **supplies**: the matching case study to the Brain, the actual proof to
+evidence library, the brand and compliance rules, the authority to discount. It rarely goes
+hunting; it mostly **supplies**: the matching case study to the Brain, the actual evidence to
 Offerings, the hard limits to Profile. For a solo operator it simply switches off: no company,
-no shared proof or fence, so Profile writes free. Its memory is the proof library itself; a
+no shared evidence or fence, so Profile writes free. Its memory is the evidence library itself; a
 richer future version would mint a fresh case study from a won deal, but that's a vision,
 not today.
 
@@ -182,7 +182,7 @@ from becoming a swarm.
 
 **Every module with initiative also has a memory, and they sit in tiers.** People
 remembers relationships; Profile remembers your voice; Offerings remembers the playbook and
-what's landing; Organisation holds the proof. Profile and People are **personal**: one set per
+what's landing; Organisation holds the evidence. Profile and People are **personal**: one set per
 individual. Organisation is **shared**: one per company. And a module reaches another's
 memory only by *asking* for what it needs, never by rummaging through it directly. Connections
 alone remembers nothing, because it is a pipe, not an expert.

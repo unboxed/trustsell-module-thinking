@@ -29,7 +29,7 @@ with several people, over time, and from the trust that builds between them.
 
 Most of the work is not the conversations themselves. It is everything around them: noticing that
 someone has gone quiet, remembering what you promised, finding who really decides, digging out the
-right proof, writing the note. It is patient work, easy to let slip, and when it slips the
+right evidence, writing the note. It is patient work, easy to let slip, and when it slips the
 relationship pays for it. That is the work the tool takes on. *(My reason, not yet yours.)*
 
 *In the example:* you sell BOPS to about thirty councils. A council buys slowly, over years, and
@@ -41,7 +41,7 @@ that took years to build.
 People work the verbs. The tool works the nouns.
 
 The verbs are the moves that need a person: decide, approve, send. The nouns are what those moves
-need: the person to write to, the proof to point at, the draft to send. Deciding what to do is
+need: the person to write to, the evidence to point at, the draft to send. Deciding what to do is
 judgement about people, and that stays with you. Preparing what you need to do it is the tool's job.
 
 So the tool is an amplifier, not a replacement. You are the fulcrum and the tool is the lever: it

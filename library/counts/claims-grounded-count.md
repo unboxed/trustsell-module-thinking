@@ -1,13 +1,13 @@
 ---
 id: claims-grounded-count
-label: "Claims with proof"
+label: "Claims with evidence"
 used_by: [unbacked-claim]
 over: [product-claims]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Claims with proof
+# Claims with evidence
 ## What it counts
 
 Not written yet.

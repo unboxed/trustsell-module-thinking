@@ -51,7 +51,7 @@ Each group with its **answer path** (fetched / told / inferred) and its **owner*
 - **Reach them**: Q9. *Inferred* from where they actually respond. Owner: **People** (thin
   today, mostly email connected).
 - **Match the message to the person**: Q10 to Q12, Q15, Q17, Q24 and Q25. Owner: a Brain **play**
-  (People's read + Offerings' answers + Organisation's proof). Advance.
+  (People's read + Offerings' answers + Organisation's evidence). Advance.
 - **Read their state**: Q13 and Q14, Q16, Q19. *Inferred reads*: the soft, judgement end. Owner:
   **People** sensing.
 - **Track and prioritise**: Q18, Q21 and Q22. *Fetched* facts and loose ends feeding Brain's

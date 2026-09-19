@@ -1,13 +1,13 @@
 ---
 id: answer-grounded
-label: "Answer backed by proof"
+label: "Answer backed by evidence"
 used_by: [answer-gap]
 over: [objection-list]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Answer backed by proof
+# Answer backed by evidence
 ## What it counts
 
 Not written yet.

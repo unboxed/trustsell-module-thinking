@@ -34,7 +34,7 @@ label (`Worry + answer` becomes `worry-answer`), and that is what the assemblies
 | Pricing | discount room | you, typed or asked |
 | Worry + answer | the worry | you, or seen in a buyer's mail (via People) |
 | Worry + answer | your answer | you, typed or asked |
-| Worry + answer | the kind of proof it needs | you, typed or asked |
+| Worry + answer | the kind of evidence it needs | you, typed or asked |
 
 ## In plain words
 

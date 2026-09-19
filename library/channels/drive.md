@@ -9,7 +9,7 @@ icon: hard-drive
 
 # Drive
 
-The shared documents, where proof and brand material live: a doc, sheet, PDF or image, the folders
+The shared documents, where evidence and brand material live: a doc, sheet, PDF or image, the folders
 that hold them, and the team-owned spaces they sit in. Files carry the who and when (owner, created,
 modified) plus the sharing that says who can see them, which is what the organisation's reading
 leans on. `File content` is the exported text of a Doc, Sheet or Slide, a single payload rather than

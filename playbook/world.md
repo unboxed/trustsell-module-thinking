@@ -134,12 +134,22 @@ the long names; one thread, which left the rest of the card on trust. Balanced 1
 looking (https://claude.ai/artifact/UA8xP4uwqtfz3V8KzPAgcx, "B · Names on the ground line"): the
 records had stood on their channel, one to six high, so the lines ended at eight heights and the
 tall stacks crowded the gathers. Now the channel names are the ground line, every line ends on
-them, and the records hang below. The counted pills are one size. Passed over: records capped
+them, and the records hang below. Passed over: records capped
 at three high, which made the busiest channels too wide for the slide. The same day its words
 went one step down Apple's scale ("B · One step down": pills Footnote, channel names Subhead,
-records Caption 1), the pyramid kept at the same size, so the longest count sits on two lines
-and the stacks are shorter. Passed over: two steps down, too small to read across a room, and
-drawing the figure wider, which shrank everything rather than using the sides.
+records Caption 1), the pyramid kept at the same size, so the stacks are shorter. Passed over:
+two steps down, too small to read across a room, and drawing the figure wider, which shrank
+everything rather than using the sides. Then the five longest count names were shortened
+("Wait for a reply, against usual" and its kin, ids unchanged), and every pill, the counts too,
+now sits on one line, as wide as its words. The key (main read, supporting read, the two
+kinds of line) was taken off the slide the same day, the user's call.
+
+**Proof is now evidence** (19 September, the user's call). "Proof" named what a document does, not
+what it is, and read as unclear. Everywhere it meant the case studies, references and results you
+can show a buyer to back a claim, it now says evidence: the Evidence library, Claim without
+evidence, Evidence on file and the rest. Labels and prose only; the ids (`proof-library`,
+`proof-on-file`…) and the told record "Proof tag" keep their names. Passed over: "documents",
+which the cards already use for the file itself.
 
 **The phone is built** (decided 19 September, the user's call). The phone is no longer typed into
 `deck.html`. It is one page, `phone.html`, and `phone.js` draws it from `data.js`, so it says what
@@ -383,8 +393,8 @@ on counts and none of its counts can say yet which assembly it counts within; it
 that could name its assembly did. A card says two things, why to write and what to
 send, and they are two trails in the library (decided 18 September, by looking:
 https://claude.ai/artifact/DCS9ZqFCFLqoj2Xd4QaHMQ). Why to write goes down through the signal.
-What to send hangs off the card itself: a card that names `documents` rests on the proof
-library too. Passed over: the signal reading the proof library, which would have made every
+What to send hangs off the card itself: a card that names `documents` rests on the evidence
+library too. Passed over: the signal reading the evidence library, which would have made every
 card on that signal lean on documents even when it sends nothing. The look chosen is "Each shape
 drawn"; tried and passed over on the same sheet were "Plain lines" (the blocks looked alike)
 and "Meta beside the words" (a quiet left column on every block). Ink only: the kind's dot stays
@@ -543,7 +553,7 @@ Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 - **Simon Ward**, your colleague in partnerships. Well connected across the sector.
 - **You.** Fede, the seller. Warm, plain-spoken, allergic to "just checking in" emails. You delete the tool's pleasantries.
 
-## Proof and documents you can point at
+## Evidence and documents you can point at
 
 - The **East Marston case study**, with a page of officer feedback: case admin down by about a third.
 - The **officer-time one-pager**: the one-page summary of that saving.

@@ -879,13 +879,11 @@ summary::-webkit-details-marker{display:none}
 .py__svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .py__svg path{fill:none;stroke:color-mix(in srgb,var(--ios-label) 45%,transparent);stroke-width:1.25}
 .py__svg path.dash{stroke-dasharray:3 4;stroke:color-mix(in srgb,var(--ios-label) 30%,transparent)}
-.py__row{position:relative;display:flex;justify-content:center;gap:12px}
+.py__row{position:relative;display:flex;justify-content:center;gap:24px}
 .py__name{position:absolute;left:0;font:var(--ios-text-caption1);color:var(--ios-label-secondary)}
-.py__pill{position:relative;z-index:1;max-width:176px;text-align:center;padding:6px 14px;border-radius:20px;background:var(--ios-bg);
+.py__pill{position:relative;z-index:1;white-space:nowrap;text-align:center;padding:6px 14px;border-radius:20px;background:var(--ios-bg);
   border:1.5px solid var(--ios-label);font:var(--ios-text-footnote);font-weight:600;color:var(--ios-label)}
 .py__row{align-items:center}
-/* Only the counts' names are long enough to need two lines; the gathers and the reads stay on one. */
-.py__row[data-r="1"] .py__pill,.py__row[data-r="3"] .py__pill{max-width:none;white-space:nowrap}
 .py__pill.is-main{background:var(--ios-label);color:var(--ios-bg)}
 .py__card{position:relative;z-index:1;width:440px;--p:0}
 .py__card .card{padding:14px 18px;border-radius:20px;background:var(--card-glaze);box-shadow:var(--card-edge),var(--card-lift)}
@@ -895,28 +893,17 @@ summary::-webkit-details-marker{display:none}
 /* Balanced 19 September, by looking at three options: "B · Names on the ground line". The records
    used to stand on their channel, one to six high, so the lines ended at eight heights. Now the
    names are the ground, every line ends on them, and the records hang under the rule. The ground
-   row is only as tall as a name (32px), so the rows above keep even gaps. The counted pills are one size, stretched to the tallest.
+   row is only as tall as a name (32px), so the rows above keep even gaps.
    The same day its words went one step down Apple's scale (pills Footnote, channel names Subhead,
-   records and row names Caption 1), so the longest count wraps to two lines, not three, and the
-   stacks are shorter. The 140px kept for the hanging records and the pills' 184px are judgements. */
+   records and row names Caption 1), so the stacks are shorter and every pill, the counts too,
+   sits on one line, as wide as its words. The 140px kept for the hanging records is a judgement. */
 .py{padding-bottom:140px}
-.py__row[data-r="2"]{align-items:stretch}
-.py__row[data-r="2"] .py__pill{width:184px;max-width:none;padding:6px 10px;display:flex;align-items:center;justify-content:center}
 .py__row--ground{gap:0;align-items:flex-start;height:32px}
-.py__col{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;padding:0 8px}
+.py__col{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;padding:0 10px}
 .py__col ul{list-style:none;padding:0;margin:8px 0 0;text-align:center}
 .py__col li{white-space:nowrap}
 .py__col li span{padding:0 3px;background:var(--ios-bg);font:var(--ios-text-caption1);color:var(--ios-label-secondary)}
 .py__col b{order:-1;display:block;min-width:92px;text-align:center;padding:0 10px 8px;border-bottom:2px solid var(--ios-label);font:var(--ios-text-subhead);font-weight:700;color:var(--ios-label)}
-/* The key: what the fill and the dashes mean, top right on the title's line. */
-.slide--built .slide__head{position:relative;max-width:none}
-.py-key{position:absolute;right:0;top:4px;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:auto auto;gap:6px 24px;
-  font:var(--ios-text-footnote);color:var(--ios-label-secondary)}
-.py-key li{display:flex;align-items:center;gap:8px}
-.py-key__pill{width:28px;height:14px;border-radius:7px;border:1.5px solid var(--ios-label)}
-.py-key__pill.is-main{background:var(--ios-label)}
-.py-key path{stroke:color-mix(in srgb,var(--ios-label) 45%,transparent);stroke-width:1.5}
-.py-key path.dash{stroke-dasharray:3 4;stroke:color-mix(in srgb,var(--ios-label) 30%,transparent)}
 
 /* ---------- The phone page ---------- */
 /* phone.html is the one phone (decided 19 September): phone.js draws it from

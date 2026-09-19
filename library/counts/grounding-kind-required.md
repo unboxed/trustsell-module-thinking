@@ -1,13 +1,13 @@
 ---
 id: grounding-kind-required
-label: "Kind of proof needed"
+label: "Kind of evidence a claim needs"
 used_by: [unbacked-claim]
 over: [product-claims]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# Kind of proof needed
+# Kind of evidence a claim needs
 ## What it counts
 
 Not written yet.

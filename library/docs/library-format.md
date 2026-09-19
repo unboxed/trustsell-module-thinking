@@ -114,7 +114,7 @@ is revealed on click, so it does not belong in the blurb). The library page,
 editing a `blurb` and running `node build.js` updates its card with no other change.
 
 Not every module has every floor, and the library is meant to reveal that. **04-organization has no
-signals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**
+signals** (it matches evidence and gates drafts, so there is no behaviour to sense); **01-integrations**
 has only raw data; **00-spine**'s "assemblies" are the scoreboard and calendar, a different kind of
 synthesis. Absence is information; do not invent a floor a module does not have.
 
@@ -213,7 +213,7 @@ The joins, checked by `build.js`: a detail widget's `fed_by` resolves to assembl
 a card's `widgets` resolve to detail widgets, and each is fed by something the card rests on
 (its counts, the inputs of its signal and its supporting signals, each count's `over`, every
 assembly those gather, and, when the card names
-what to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section
+what to send in `documents`, the evidence library: why to write and what to send are two trails); each has a body section
 headed with its label, rows in its row form; and a card's `reply.module` is a reply widget.
 `build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it
 can actually show, and lists them on the widget's page. A widget that reaches no record fails the
