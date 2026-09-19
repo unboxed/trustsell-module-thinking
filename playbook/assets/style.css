@@ -334,7 +334,7 @@ summary::-webkit-details-marker{display:none}
    phone.js sets both to the phone's own, and everything below that sits at the foot is measured
    up from its bottom, so the card fills any phone (decided 19 September, the user's call). */
 :root{--screen-w:367px;--screen-h:826px}
-.screen{--p:0;--t:0}
+.screen{--p:0;--t:0;--card-r:24px}
 .screen__scroll{position:absolute;inset:0;z-index:0;overflow-y:auto;background:var(--ios-bg-card);scroll-snap-type:y mandatory;scroll-padding:108px 0 90px;scrollbar-width:none;clip-path:inset(1px 0)}
 .screen__scroll::-webkit-scrollbar{display:none}
 /* Past the start of the details the scroll runs free; deck.js says when. */
@@ -386,16 +386,25 @@ summary::-webkit-details-marker{display:none}
    swipe moves between them, one card to a swipe. Each page is a whole card with
    its own scroller and sheet. Over them, a layer that does not move sideways
    holds the bar, the header and the week; deck.js mirrors the card in view's
-   --p and --t onto it. The cards either side show as 8 pt edges in the
-   gutters, and dots at the foot say where you are. Judgment, not Apple's. */
-.pager{position:absolute;inset:0;z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
+   --p and --t onto it. Dots at the foot say where you are. Judgment, not Apple's.
+   The cards either side are the real ones (19 September; until then two 8 pt
+   slivers stood still over the gutters and the real card slid in behind them).
+   The pages overlap by a gutter and 8 pt, so the next card's first 8 pt show
+   in the gutter and 8 pt of ground part the two. Each page is cut to its card's
+   shape, so the gutters are clear, and the ground is painted once, behind
+   them all. The card in view sits on top, so its edge and, once it opens,
+   the whole of it cover its neighbours. */
+.pager{position:absolute;inset:0;z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;background:var(--ios-bg)}
 .pager::-webkit-scrollbar{display:none}
 .screen__page{position:relative;flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always}
+.screen__page:not(:last-child){margin-right:calc(-1*var(--ios-gutter) - 8px)}
+.screen__page.is-here{z-index:1}
+/* The card's shape, as the hole draws it; 1 pt kept top and foot, as the scroller's own clip. */
+.screen__page .screen__scroll{clip-path:inset(max(1px,calc(181px*(1 - var(--p)))) calc(var(--ios-gutter)*(1 - var(--p))) max(1px,calc(42px*(1 - var(--p)))) round calc(var(--card-r)*(1 - var(--p))))}
+/* The cut takes the hole's lift with it, so the lift is drawn again under the page. */
+.screen__page::before{content:'';position:absolute;top:calc(181px*(1 - var(--p)));left:calc(var(--ios-gutter)*(1 - var(--p)));right:calc(var(--ios-gutter)*(1 - var(--p)));bottom:calc(42px*(1 - var(--p)));border-radius:calc(var(--card-r)*(1 - var(--p)));box-shadow:var(--card-lift)}
 .screen__shared{position:absolute;top:0;left:0;right:0;height:var(--screen-h);z-index:3;pointer-events:none;--p:0;--t:0}
 .screen__shared button,.screen__shared .week{pointer-events:auto}
-.peek{position:absolute;top:181px;bottom:42px;width:8px;background:var(--ios-bg-card);box-shadow:var(--card-edge),var(--card-lift);opacity:calc(1 - var(--p)*2.5)}
-.peek--left{left:0;border-radius:0 24px 24px 0}
-.peek--right{right:0;border-radius:24px 0 0 24px}
 .dots{position:absolute;left:0;right:0;bottom:21px;display:flex;justify-content:center;gap:7px;opacity:calc(1 - var(--p)*2.5)}
 .dots i{width:6px;height:6px;border-radius:50%;background:var(--ios-label);opacity:.25}
 .dots i.is-on{opacity:1}
@@ -675,7 +684,8 @@ summary::-webkit-details-marker{display:none}
 .screen .ios-statusbar{font-family:var(--ios-font)}
 /* The card: the glaze is on the page, seen through the hole; the edge and the lift are the hole's. */
 .screen .screen__scroll{background:var(--card-glaze)}
-.screen .card-hole{border-radius:calc(36px*(1 - var(--p)));box-shadow:var(--card-edge),var(--card-lift),0 0 0 600px var(--ios-bg)}
+.screen{--card-r:36px}
+.screen .card-hole{border-radius:calc(var(--card-r)*(1 - var(--p)));box-shadow:var(--card-edge),var(--card-lift),0 0 0 600px var(--ios-bg)}
 /* Big words: 38 on 40, the heaviest weight, tight in its letters (48 on 46 until 18 September; the user asked for a touch smaller, then for more air between the lines, then a touch smaller again, twice). Long titles will need a smaller step; not built yet. */
 .screen .deck__card.deck__card--front h2{font-size:2.375rem;line-height:2.5rem;font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
 .screen .deck__card p{font-size:1rem;line-height:1.4375rem}

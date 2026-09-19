@@ -235,7 +235,7 @@
       cards.map(function (c, k) { return page(c, k, n); }).join('') + '</div>' +
       '<div class="screen__shared"><div class="screen__bar"></div><div class="screen__head">' + statusbar +
       top('<span class="screen__day" aria-live="polite">Today</span><span class="screen__title" aria-hidden="true">' + esc(cards[0].title) + '</span>') + '</div>' +
-      week() + '<div class="peek peek--left" hidden></div><div class="peek peek--right"' + (n > 1 ? '' : ' hidden') + '></div>' +
+      week() +
       '<div class="dots" role="img" aria-label="Card 1 of ' + n + '">' + cards.map(function (c, k) { return '<i' + (k ? '' : ' class="is-on"') + '></i>'; }).join('') + '</div>' +
       '</div><div class="home-indicator" aria-hidden="true"></div></div>';
   }
@@ -343,23 +343,22 @@
 
   /* Cards side by side: a sideways swipe moves one card at a time. The card in
      view (is-here) lends its scroll to the layer that stays put, its title to
-     the bar, and its place to the dots; the edges show where there is a card
-     either side. */
+     the bar, and its place to the dots. The cards either side are really
+     there, their edges in the gutters, so a swipe pulls in the edge you saw. */
   document.querySelectorAll('[data-pager]').forEach(function (pager) {
     var screen = pager.closest('.screen'), shared = screen.querySelector('.screen__shared');
     var pages = pager.querySelectorAll('.screen__page'), dots = shared.querySelectorAll('.dots i');
     var here = -1;
     function go() {
-      /* A hidden page has no width yet; it starts on the first card. */
-      var w = pager.clientWidth, k = w ? Math.max(0, Math.min(pages.length - 1, Math.round(pager.scrollLeft / w))) : 0;
+      /* One card's step: the pages overlap, so it is less than the screen. A hidden page has no width yet; it starts on the first card. */
+      var w = pages.length > 1 ? pages[1].offsetLeft - pages[0].offsetLeft : pager.clientWidth;
+      var k = w > 0 ? Math.max(0, Math.min(pages.length - 1, Math.round(pager.scrollLeft / w))) : 0;
       if (k === here) return;
       here = k;
       pages.forEach(function (pg, j) { pg.classList.toggle('is-here', j === k); pg.inert = j !== k; });
       dots.forEach(function (d, j) { d.classList.toggle('is-on', j === k); });
       shared.querySelector('.dots').setAttribute('aria-label', 'Card ' + (k + 1) + ' of ' + pages.length);
       shared.querySelector('.screen__title').textContent = pages[k].querySelector('.deck__card h2').textContent;
-      shared.querySelector('.peek--left').hidden = k === 0;
-      shared.querySelector('.peek--right').hidden = k === pages.length - 1;
       mirror(pages[k], shared);
     }
     pager.addEventListener('scroll', go, { passive: true }); go();
@@ -437,7 +436,7 @@
       var pg = mark.closest('.screen__page'), pager = pg && pg.closest('[data-pager]');
       if (pg) remember(pg);
       if (!was && pager && pg.nextElementSibling) {
-        setTimeout(function () { pager.scrollTo({ left: pg.offsetLeft + pager.clientWidth, behavior: 'smooth' }); }, 450);
+        setTimeout(function () { pager.scrollTo({ left: pg.nextElementSibling.offsetLeft, behavior: 'smooth' }); }, 450);
       }
       return;
     }

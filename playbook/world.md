@@ -187,7 +187,10 @@ side and a sideways swipe moves one card at a time, forward or back. Up and down
 card into its details. The cards either side show as thin edges in the gutters, and three dots
 above the home indicator say where you are. Each card keeps its own state: send Karen's
 message, swipe on, and Ashworth is still waiting with Rest It. The header, the week and the bar
-stay put while the cards move, and follow the card in view. There are three cards (Karen,
+stay put while the cards move, and follow the card in view. The edges are the real cards
+(19 September, the user's call): until then they were two slivers that stood still while the
+real card slid in from off the screen, and the user saw through it. Now a swipe pulls in the edge
+you were looking at. There are three cards (Karen,
 the Ask about Rachel's meeting, Ashworth) because only three carry a phone block. Their order is
 the home's, from `build.js` (Karen's card is held by the budget meeting Ask, Rachel's Ask is
 holding something up, Ashworth costs nothing to wait); until 19 September it was typed as Karen,
