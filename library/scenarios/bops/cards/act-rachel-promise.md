@@ -1,21 +1,24 @@
 ---
-id: sustain-rachel-promise
+id: act-rachel-promise
 order: 3
 kind: act
-label: Sustain
 signal: loose-end
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 counts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: rachel-gill
-council: westmoor
+about: [rachel-gill, westmoor]
+to: rachel-gill                # who the move reaches; one move per person at a time
+arrives: 2026-09-16             # the day the tool puts it on the home
 documents: [data-residency-note]
-widgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 sure: "sure"
 sure_because: "A fact on record: your own words, on 8 September."
 when:
   mode: fresh
   words: "Worth doing today. A promise ages badly."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Rachel's reply"
+    next: "If she has more questions, I'll draft answers from the note."
 reply:
   module: buttons
 actions:
@@ -38,6 +41,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the data-residency note."
+phone:
+  when: "Today"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "The data-residency note"
+  said: "Sent. The promise is kept."
+  done: "Sent to Rachel"
+  done_text: "I've marked the data-residency note as sent, so I'll stop raising it. If she comes back with questions, I'll draft answers from the note."
 ---
 
 # Close the loop with Rachel Gill

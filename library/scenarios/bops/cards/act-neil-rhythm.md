@@ -1,22 +1,26 @@
 ---
-id: sustain-neil-rhythm
+id: act-neil-rhythm
 order: 13
 kind: act
-label: Sustain
 signal: time-to-reconnect
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [best-way-to-reach]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write, reply-speed-by-channel, accepts-meetings]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: neil-chapman
-council: holbrook
+about: [neil-chapman, holbrook]
+to: neil-chapman                # who the move reaches; one move per person at a time
+arrives: 2026-09-18             # the day the tool puts it on the home
 documents: [east-marston-phasing-note]
 sure: "likely"
 sure_because: "A pattern against his usual: six weeks, his rhythm since March."
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "Any day this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Neil's reply"
+    next: "If he books a call, I'll prepare the phasing questions he is likely to ask."
 reply:
   module: buttons
 actions:
@@ -39,6 +43,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the East Marston phasing note."
+phone:
+  when: "Any day this week"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "How East Marston did it in stages"
+  said: "Sent. The Holbrook invite is next."
+  done: "Sent to Neil"
+  done_text: "The phasing note went with it. Next is the Holbrook follow-up: his window closes 16 October."
 ---
 
 # Reconnect with Neil Chapman

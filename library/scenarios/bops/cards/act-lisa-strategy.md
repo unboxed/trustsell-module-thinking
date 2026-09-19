@@ -1,22 +1,23 @@
 ---
-id: sustain-lisa-strategy
+id: act-lisa-strategy
 order: 5
 kind: act
-label: Sustain
 signal: time-to-reconnect
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [one-sided]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: lisa-holmes
-council: burnham
+about: [lisa-holmes, burnham]
+to: lisa-holmes                # who the move reaches; one move per person at a time
+arrives: 2026-09-17             # Thursday: still a day before it goes stale
 documents: []
 sure: "sure"
 sure_because: "A fact on record: the strategy was published on 11 September."
 when:
   mode: fresh
-  words: "Worth doing today. Stale by Friday."
+  until: 2026-09-18
+  words: "Worth doing before Friday, when it goes stale."
 reply:
   module: buttons
 actions:
@@ -39,6 +40,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Nothing attached. Edit anything, then send."
+phone:
+  when: "Stale by Friday"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "Your digital strategy"
+  said: "Sent. I'll leave Burnham be for a fortnight."
+  done: "Sent to Lisa"
+  done_text: "Nothing asked of her. I'll leave Burnham alone for a fortnight, then look for the moment to show her East Marston."
 ---
 
 # Congratulate Lisa Holmes

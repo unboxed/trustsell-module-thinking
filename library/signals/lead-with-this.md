@@ -3,7 +3,6 @@ id: lead-with-this
 module: 03-offerings
 label: Lead with this
 blurb: For a buyer-type, the use-case and information to open with, and what to hold for later.
-modes: [advance, expand]
 kind: opening
 confidence: graded
 inputs: [offering-entry, objection-list]

@@ -2,17 +2,18 @@
 id: ask-twelve-councils
 order: 18
 kind: ask
-label: Ask
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [fit-match, warm-path]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [people-reached-count, fit-factors-met, mutual-contact-count]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: you
+about: [you]
+arrives: 2026-09-16             # today: the one card that asks for several choices
 documents: []
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "A minute. Whenever suits this week."
 reply:
   module: several
@@ -41,6 +42,13 @@ actions:
     says: "Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday."
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
+phone:
+  when: "This week"
+  act: "Choose Three"
+  act_does: open
+  said: "Got it. Names by next Monday."
+  done: "Thank you"
+  done_text: "I'll read each council's site and news, find the likely lead, and come back with a name and a first note for each by next Monday."
 ---
 
 # Which three councils without a contact should I start with?

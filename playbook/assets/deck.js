@@ -75,9 +75,9 @@
     var recLabel = function (i) { var r = (LIB.records || []).filter(function (x) { return x.address === i; })[0]; return esc(r ? r.plain || r.label : i); };
     var colName = function (c) { var ch = find('channels', c); return c === 'told' ? 'You told me' : esc(ch ? ch.name.replace(/ \/.*/, '') : c); };
     var pill = function (id, text, main) { return '<span class="py__pill' + (main ? ' is-main' : '') + '" data-id="' + id + '">' + text + '</span>'; };
-    var kind = card.kind === 'act' ? card.label.toLowerCase() : card.kind;
+    var kind = card.kind;
     py.innerHTML = '<svg class="py__svg" aria-hidden="true"></svg>' +
-      '<div class="py__row"><div class="py__card" data-id="card"><article class="card"><span class="kind kind--' + kind + '">' + esc(card.label) + '</span>' +
+      '<div class="py__row"><div class="py__card" data-id="card"><article class="card"><span class="kind kind--' + kind + '">' + esc(kind[0].toUpperCase() + kind.slice(1)) + '</span>' +
       '<h2>' + esc(card.title) + '</h2>' + card.intro + '</article></div></div>' +
       '<span class="py__name" data-for="3">What I think</span><div class="py__row" data-r="3">' + reads.map(function (r, j) { return pill('g:' + r.id, label(r), !j); }).join('') + '</div>' +
       '<span class="py__name" data-for="2">What I counted</span><div class="py__row" data-r="2">' + counts.map(function (c) { return pill('c:' + c.id, label(c)); }).join('') + '</div>' +

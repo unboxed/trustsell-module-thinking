@@ -3,7 +3,6 @@ id: buying-intent
 module: 02-relationships
 label: Talking about buying
 blurb: A chat that has turned into a real buying discussion.
-modes: [advance, expand]
 kind: deal-movement
 confidence: graded
 inputs: [conversation-history, person-history, meeting-history, deal]

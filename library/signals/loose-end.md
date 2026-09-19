@@ -3,7 +3,6 @@ id: loose-end
 module: 02-relationships
 label: Loose end
 blurb: Something left hanging, like a promise you never followed through on.
-modes: [advance, sustain]
 kind: risk
 confidence: graded
 inputs: [conversation-history, person-history, meeting-history]

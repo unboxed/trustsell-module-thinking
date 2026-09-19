@@ -1,21 +1,19 @@
 ---
-id: expand-karen-budget-holder
+id: act-karen-budget-holder
 order: 8
 kind: act
-label: Expand
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [new-stakeholder]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: karen-hughes
-council: bramley
+about: [karen-hughes, bramley]
+to: karen-hughes                # who the move reaches; one move per person at a time
 documents: []
 sure: "likely"
 sure_because: "A pattern: every name on the thread is service-side, and only the committee papers point at Martin Hodgson."
-held_by: sustain-karen-slowing
-held_words: "Held until Karen replies to this week's note. Shown so you can see it coming."
+held_words: "Once Karen replies to this week's note."
 reply:
   module: buttons
 actions:

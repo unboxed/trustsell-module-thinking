@@ -1,25 +1,28 @@
 ---
-id: advance-holbrook-window
+id: act-holbrook-window
 order: 14
 kind: act
-label: Advance
 signal: buying-intent
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [best-way-to-reach, time-to-reconnect]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: neil-chapman
-council: holbrook
+about: [neil-chapman, holbrook]
+to: neil-chapman                # who the move reaches; one move per person at a time
+arrives: 2026-09-18             # the day the tool puts it on the home
+held_words: "Once the phasing note is with Neil."
 documents: []
-widgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 sure: "sure"
 sure_because: "A fact on record: Neil wrote that the window closes 16 October."
-held_by: sustain-neil-rhythm
 when:
   mode: dated
-  words: "By 16 October: procurement window closes. Book this week."
   until: 2026-10-16
+  words: "By 16 October: procurement window closes. Book this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Neil's answer to the invite"
+    next: "Once he accepts, I'll prepare the meeting."
 reply:
   module: buttons
 actions:
@@ -49,6 +52,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Nothing attached. Once it goes, I'll watch for his slots."
+phone:
+  when: "By 16 October"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "Before your October window"
+  said: "Sent. I'll prepare the meeting once he accepts."
+  done: "Sent to Neil"
+  done_text: "I'll watch for his answer. Once he accepts, I'll prepare the meeting: what Holbrook has asked, and the two things to leave with."
 ---
 
 # Book the Holbrook follow-up

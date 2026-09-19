@@ -3,7 +3,6 @@ id: cooling-champion
 module: 02-relationships
 label: Cooling champion
 blurb: A champion who is starting to go quiet.
-modes: [sustain]
 kind: decay
 confidence: graded
 inputs: [person-history, deal]

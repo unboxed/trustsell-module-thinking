@@ -1,22 +1,25 @@
 ---
-id: advance-gary-records
+id: act-gary-records
 order: 4
 kind: act
-label: Advance
 signal: champion
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [loose-end, warming]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: gary-pearson
-council: westmoor
+about: [gary-pearson, westmoor]
+to: gary-pearson                # who the move reaches; one move per person at a time
+arrives: 2026-09-16             # the day the tool puts it on the home
 documents: [east-marston-case-study, records-import-note]
 sure: "sure"
 sure_because: "A fact on record: his question of 10 September has no answer yet."
 when:
   mode: fresh
   words: "Worth doing today. An unanswered question from a champion goes stale."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Gary's reply"
+    next: "I'll tell you when it comes."
 reply:
   module: buttons
 actions:
@@ -39,6 +42,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the East Marston case study, and the records import note."
+phone:
+  when: "Today"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "Importing your case records"
+  said: "Sent. I'll tell you when Gary replies."
+  done: "Sent to Gary"
+  done_text: "The case study and the import note went with it. I'll watch for Gary's reply and tell you when it comes."
 ---
 
 # Answer Gary Pearson today

@@ -2,6 +2,7 @@
 id: goal
 today: 2026-09-16
 seller: you
+offering: bops          # the thing being sold; a card can be about it
 ladder: [cold, engaged, coalition, partial, full]
 ---
 
@@ -27,4 +28,4 @@ Where a deal stands, in order: cold, engaged, coalition, partial, full.
 
 Gmail, Calendar, Drive, Meet, Slack and the open web. **LinkedIn is not connected**, which is a
 data gap several cards name rather than work around. The connected state of each source is held
-where it belongs, as `connected:` in [`../channels/`](../channels/).
+where it belongs, as `connected:` in [`../../../channels/`](../../../channels/).

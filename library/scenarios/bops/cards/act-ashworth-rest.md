@@ -1,18 +1,18 @@
 ---
-id: sustain-ashworth-rest
+id: act-ashworth-rest
 order: 20
 kind: act
-label: Sustain
 signal: one-sided
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [champion-went-dark, warm-path]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [who-starts-threads, times-you-chase, you-give-vs-they-give, bounce-back-detected, auto-reply-no-longer-with]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: nicola-shaw
-council: ashworth
+about: [nicola-shaw, ashworth]
+to: nicola-shaw                # who the move reaches; one move per person at a time
+arrives: 2026-09-16             # today: the one card answered with a single tap
 documents: []
-widgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 sure: "likely"
 sure_because: "A pattern: four notes, no reply, no bounce."
 reply:
@@ -58,7 +58,7 @@ Four notes from you since May, nothing back. Resting it gives Nicola a quiet inb
 - Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.
 - Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.
 - A fifth message is unlikely to do what four did not. A different door might: a person who knows them.
-- Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.
+- Your colleague Simon knows Nicola Shaw there. That is the card about an introduction, next to this one.
 
 ## Timeline
 

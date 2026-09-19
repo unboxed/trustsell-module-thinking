@@ -26,27 +26,34 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   `provisional` because it was read off the card rather than decided.
 - **The card model lives in `playbook/world.md`**, together with the design decisions and the table
   of which Apple component each part of a card is. The pretend world itself (goal, councils, cast,
-  documents, today's date) is data, in `library/world/`, because cards reference it by id. Read
-  both before writing or editing a card. Add to `library/world/` before using a name, a date or a
+  documents, today's date) is data, in `library/scenarios/bops/world/`, because cards reference it by id. Read
+  both before writing or editing a card. Add to the scenario's `world/` before using a name, a date or a
   document that is not already there.
 - **The phone is built from the library** (19 September). Every slide that shows a phone holds
   `phone.html` in an iframe; nothing on the phone is typed into `deck.html`. To change what a card
   says on the phone, edit the card (its `phone:` block, or its body) and run `node build.js`. The
   design is still the user's: do only what they ask on the phone, one step at a time. See the
   phone paragraphs in `world.md` for what is decided.
-- **One markdown file per card** in `library/cards/`. `playbook/assets/data.js` is
+- **One markdown file per card** in `library/scenarios/bops/cards/`. `playbook/assets/data.js` is
   **generated: never hand-edit it.** Adding a card means adding its markdown and running
   `node build.js`; the library page picks it up from there.
 - **`build.js` fails loudly on an id that does not resolve**, and writes nothing when it does.
   That check is the point: the joins between the floors are what went missing before.
 - **Voice.** Plain English, British spelling, the tool speaking to the seller in the first person.
-  Short sentences. No em dashes. Every Sustain card names the gift. Every card can say its why-now.
+  Short sentences. No em dashes. Every message the tool drafts names the gift. Every card can say its why-now.
   Ask cards ask for facts, never verdicts. Interface text follows Apple's writing rules: button
   labels in title case starting with a verb ("Send the Note", "Not Now"), everything else in
   sentence case, tab labels one word, section headers short noun phrases.
-- **Kinds and labels.** Act cards are labelled Sustain (keep alive), Advance (move forward) or
-  Expand (new relationship). Ask, Connect and Told (an outcome with nothing to do) are their own
-  quiet labels. These six words are the vocabulary; do not add more.
+- **Kinds are the only labels.** Act, Ask, Connect and News (an outcome with nothing to do; called Told until 19 September,
+  a name now kept only for the library's `told/` rung, what you tell the tool). These
+  four words are the vocabulary; do not add more. Sustain, Advance and Expand were dropped on 19
+  September (`world.md`, "A card's day").
+- **The library is the database, the phone is the demo.** Define a thing in the cards'
+  frontmatter and let `build.js` work it out (the order of the day, who waits on whom); the
+  phone follows. The tool decides the order, never the seller.
+- **The scenario is one example.** BOPS lives in `library/scenarios/bops/` and can be rewritten to
+  fit the signals. Everything else in `library/` must hold for any kind of sale; a mass-selling
+  scenario is meant to follow.
 - **Flag contradictions in the fiction**: two cards on the same person that pull opposite ways on
   the same day, a date that doesn't match `world.md`, a document nobody has.
 
@@ -93,14 +100,14 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 | Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |
 | Counts | `library/counts/` | the arithmetic. **Nothing written yet** |
 | Signals | `library/signals/` | the first opinion, the first thing you could argue with |
-| Cards | `library/cards/` | the suggestion, question or outcome |
+| Cards | `library/scenarios/<name>/cards/` | the suggestion, question or outcome |
 
 Beside the ladder, `library/widgets/`: the catalogue a card picks from and fills, never arranges.
 Detail widgets (Timeline, What they said, People, Documents, Open items, Compared with usual; at most two
 per card, each fed by something the card rests on) and reply widgets (the reply modules and the
 draft). `build.js` checks every join. See `library/docs/library-format.md`.
 
-Also there: `library/world/` (the pretend world as data: goal, cast, councils, documents),
+Also there: `library/scenarios/bops/world/` (the pretend world as data: goal, cast, organisations, documents),
 `library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
 including `tracing-back.md`, which this ladder is the executable form of).
 
@@ -117,8 +124,9 @@ later pass, not an oversight.
 - `playbook/`: the deliverable, still plain static HTML. `index.html` (the way in: it
   opens the slides), `library.html` (the library, browsable, rendered from
   `data.js`), `phone.html` (the one phone, rendered from `data.js`: opened on its own it is a
-  working day that remembers what you did; `?card=`, `?cards=`, `&open=details` and `&fresh`
-  are for the slides), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
+  working week, each day's cards on the strip, waiting cards arriving once freed, and a last
+  page of what the tool is watching; it remembers what you did; `?card=`, `&open=details` and
+  `&fresh` are for the slides), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
   only; your day on mobile, a working prototype; reply sheets (the modules that can fill a card's reply sheet),
   as bare sheets, a draft among them; the details, three phones scrolled into their details; and
   last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions, the log), `story.md` (the tool told
@@ -131,7 +139,7 @@ later pass, not an oversight.
   scenario docs, the two blueprint-era UI notes, and the desk (`_archive/desk/`: the grid of
   cards, the card pages and the Ask page, archived 18 September because it had fallen behind). **Inspiration, not source of truth.** The
   channels, assemblies, signals and the live docs that used to live here are now in `library/`.
-  The old vocabulary there was Plant / Grow / Nurture; here it is Expand / Advance / Sustain.
+  The old vocabulary there was Plant / Grow / Nurture; it later became Expand / Advance / Sustain, and those were dropped too.
 
 ## The idea in one paragraph
 People work the verbs (decide, approve, send); the tool works the nouns (find the person, gather

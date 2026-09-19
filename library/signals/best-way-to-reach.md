@@ -3,7 +3,6 @@ id: best-way-to-reach
 module: 02-relationships
 label: Best way to reach them
 blurb: The channel where this person actually replies, and how fast.
-modes: [expand, advance, sustain]
 kind: style
 confidence: graded
 inputs: [person-history]

@@ -6,7 +6,7 @@ about: the proof you can point at
 # Proof and documents you can point at
 
 What a card can offer or attach. Each lives in Drive, so a card that offers one rests on
-[`../channels/drive.md`](../channels/drive.md).
+[`../../../channels/drive.md`](../../../channels/drive.md).
 
 | Document | id | What it is | Dated |
 |---|---|---|---|

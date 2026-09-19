@@ -3,7 +3,6 @@ id: new-stakeholder
 module: 02-relationships
 label: New stakeholder
 blurb: A new person joins the conversation, often someone senior.
-modes: [expand]
 kind: opening
 confidence: graded
 inputs: [conversation-history, stakeholder-map]

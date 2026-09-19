@@ -1,22 +1,26 @@
 ---
-id: expand-simon-intro
+id: act-simon-intro
 order: 17
 kind: act
-label: Expand
 signal: warm-path
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [one-sided]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you, times-you-chase]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: simon-ward
-council: ashworth
+about: [simon-ward, ashworth]
+to: simon-ward                # who the move reaches; one move per person at a time
+arrives: 2026-09-18             # the day the tool puts it on the home
 documents: []
 sure: "likely"
 sure_because: "Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected."
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "Any day this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Simon's answer"
+    next: "If he agrees, I'll draft the note he can forward to Nicola."
 reply:
   module: buttons
 actions:
@@ -46,6 +50,13 @@ draft:
   hand: "Open in Slack"
   sub: "Slack, to Simon"
   footer: "Send it from Slack yourself. I don't send."
+phone:
+  when: "Any day this week"
+  act: "View Message"
+  act_does: view
+  said: "Opened in Slack. Over to you."
+  done: "Opened in Slack"
+  done_text: "I've handed the message to Slack for you to send. If Simon agrees, I'll draft the note he can forward to Nicola."
 ---
 
 # Ask Simon for an introduction

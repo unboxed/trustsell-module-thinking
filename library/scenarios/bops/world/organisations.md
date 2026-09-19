@@ -1,14 +1,14 @@
 ---
-id: councils
-about: the organisations on the shortlist
+id: organisations
+about: the organisations on the shortlist. In this scenario they are councils
 ---
 
 # The councils
 
 About thirty are on the shortlist. Ten have a live story; twelve are named but have no person in
-them yet, which is what makes them the subject of an Expand or an Ask.
+them yet, which is what makes them the subject of an Act or an Ask.
 
-| Council | id | Stands at | Notes |
+| Organisation | id | Stands at | Notes |
 |---|---|---|---|
 | Bramley District Council | bramley | engaged | Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson |
 | Westmoor County Council | westmoor | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |

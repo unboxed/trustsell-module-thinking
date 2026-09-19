@@ -3,7 +3,6 @@ id: one-sided
 module: 02-relationships
 label: You are doing all the work
 blurb: A relationship where you are doing all the work.
-modes: [advance, sustain]
 kind: risk
 confidence: graded
 inputs: [person-history, conversation-history, meeting-history]

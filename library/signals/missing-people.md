@@ -3,7 +3,6 @@ id: missing-people
 module: 02-relationships
 label: Stakeholders you have not reached
 blurb: A key person you have never reached, or a deal resting on one contact.
-modes: [advance, expand]
 kind: risk
 confidence: graded
 inputs: [stakeholder-map, deal]

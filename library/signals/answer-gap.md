@@ -3,7 +3,6 @@ id: answer-gap
 module: 03-offerings
 label: Worry without an answer
 blurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [objection-list, proof-library]

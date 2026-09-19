@@ -84,7 +84,7 @@ give it a starting handful; from there it lives as memory, refined as the tool w
   - **Time and cadence**, selling all day, or a few minutes now and then. This tells the **Brain**
     how to pace: how much to surface, how hard to push.
   - **Style**, a relationship owner sustaining a few, or a volume seller working many (the
-    Sustain/Expand tilt).
+    tilt between keeping relationships and starting new ones).
   - **Autonomy**, how far it drafts or acts before you step in. It always suggests; this sets how
     far ahead it works.
   - **Coaching**, how much it teaches rather than just hands over: from "just give me the noun" to

@@ -2,19 +2,20 @@
 id: ask-rachel-meeting
 order: 11
 kind: ask
-label: Ask
 signal: new-stakeholder
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [understanding-gap]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [new-name-on-thread, prior-history-scan, re-asked-questions]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: rachel-gill
-council: westmoor
+about: [rachel-gill, westmoor]
+arrives: 2026-09-17             # the day the tool puts it on the home
+changes: [act-rachel-peer-call]   # cards the answer changes; build.js holds them behind this Ask
 documents: []
-widgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "Ten seconds. Best this week."
 reply:
   module: choices

@@ -3,7 +3,6 @@ id: warm-path
 module: 02-relationships
 label: Someone who can introduce you
 blurb: A way to reach a target through someone you already know.
-modes: [expand]
 kind: opening
 confidence: graded
 inputs: [person-history, stakeholder-map]

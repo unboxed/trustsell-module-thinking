@@ -2,15 +2,15 @@
 id: ask-budget-meeting
 order: 6
 kind: ask
-label: Ask
 signal: cooling-champion
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [warmth-fading]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [innocent-explanation-scan, reply-gap-vs-own-rhythm, reply-length-vs-own-rhythm]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: karen-hughes
-council: bramley
+about: [karen-hughes, bramley]
+arrives: 2026-09-16             # the day the tool puts it on the home
+changes: [act-karen-slowing]   # cards the answer changes; build.js holds them behind this Ask
 documents: []
 when:
   mode: fresh
@@ -27,6 +27,13 @@ answers:
 actions:
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
+phone:
+  when: "Best while you remember"
+  act: "Answer"
+  act_does: open
+  said: "Thank you. Karen's note is next."
+  done: "Thank you"
+  done_text: "I've saved it on Bramley's page. Karen's note is ready for you now."
 ---
 
 # What did the Bramley budget meeting decide about BOPS?

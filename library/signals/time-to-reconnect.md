@@ -3,7 +3,6 @@ id: time-to-reconnect
 module: 02-relationships
 label: Time to reconnect
 blurb: A good relationship gone quiet, with a fresh reason to reach out.
-modes: [sustain, expand]
 kind: opening
 confidence: graded
 inputs: [person-history]

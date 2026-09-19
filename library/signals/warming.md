@@ -3,7 +3,6 @@ id: warming
 module: 02-relationships
 label: Warming to you
 blurb: A relationship picking up pace, with faster replies and more people joining in.
-modes: [advance, expand]
 kind: opening
 confidence: graded
 inputs: [person-history, meeting-history]

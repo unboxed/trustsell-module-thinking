@@ -1,5 +1,7 @@
 # The salesperson's 26 questions: the demand-side spec
 
+*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, "A card's day".*
+
 A real salesperson's own questions through the sales process (suggested by MJ at a show &
 tell). They are the **demand side**: what the tool *must* be able to answer. The modules'
 signals and plays are the **supply side**: what it *can* produce. Where supply meets demand,

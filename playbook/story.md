@@ -7,7 +7,8 @@ and everything tried on the way.
 
 The examples come from one pretend world, set up to pressure-test the thinking: a seller selling
 new software (BOPS) to councils, on a Wednesday in September 2026. They are marked *In the
-example*. The claims around them should hold for any kind of sale; where one does not, that is
+example*. It is one scenario, and it can be rewritten to fit the thinking; others are meant to
+follow. The claims around them should hold for any kind of sale; where one does not, that is
 worth finding.
 
 The story is also a test of the thinking. If a chapter does not make sense when you read it, the
@@ -73,33 +74,35 @@ it says should float.
 Everything the tool brings you is one of four things, and each exists because of what the tool
 knows, or does not.
 
-**Act.** It knows enough to suggest a move, and has prepared it. There are three things you do
-with a relationship, so an Act is one of three: *(My reason, not yet yours.)*
+**Act.** It knows enough to suggest a move, and has prepared it.
 
-- **Sustain**: keep it alive.
-- **Advance**: move it forward.
-- **Expand**: start a new one.
+*In the example:* Karen has gone quiet, so give her the figures she asked for. Rachel keeps asking
+whether officers will use it, so offer her a call with someone in her job who has done it. Nobody at
+Bramley can sign, so find out who can.
 
-*In the example:* Karen has gone quiet, so give her the figures she asked for (Sustain). Rachel
-keeps asking whether officers will use it, so offer her a call with someone in her job who has done
-it (Advance). Nobody at Bramley can sign, so find out who can (Expand).
-
-**Ask.** It needs one fact that only you hold, and your answer would change what it does. It has
+**Ask.** It needs one fact that only you hold, and your answer would change what it does. The
+fact can be about anything in your world: a person, an organisation, what you sell, or you. It has
 looked first and says where it ran out. It asks for facts (what happened, what you intend, what you
-prefer), never for judgements it should make itself.
+prefer), never for judgements it should make itself. When it asks where to start, it can say
+how many it can take on ("pick up to three"), so the answer is one it can act on. When it asks
+what happened, it never limits the answer, because every true answer must fit. *(My reason, not
+yet yours.)*
 
 *In the example:* "How did your meeting with Rachel Gill go? I can read her emails, not the
 room."
 
 **Connect.** There is a place it cannot see, and seeing it would help.
 
-**Told.** Something happened that you should know, and there is nothing to do.
+**News.** Something happened that you should know, and there is nothing to do.
 
 *In the example:* LinkedIn is not connected, and several suggestions would be better if it were
-(Connect). "Julie's email bounced this morning" (Told).
+(Connect). "Julie's email bounced this morning" (News).
 
-Those are the only four, and Act has only three labels. A small vocabulary is one you learn once and
-then stop noticing. *(My reason, not yet yours.)*
+Those are the only four, and the kind is the only label a card wears. A small vocabulary is one you
+learn once and then stop noticing. *(My reason, not yet yours.)* There used to be three labels
+for an Act, Sustain, Advance and Expand, for keeping a relationship alive, moving it forward and
+starting a new one. They were dropped: they were one picture of how selling works, and a seller
+may not see it that way.
 
 ## 5. How it learns
 
@@ -112,8 +115,10 @@ relationships matter most, and what is new about what you sell. Something that d
 asked once. Something that shifts is asked again only when the answer would change what the tool
 does. Every answer is kept, so nothing is asked twice.
 
-That is why there is no settings screen. The tool asks when it needs to know, at the moment the
-answer matters.
+The tool asks when it needs to know, at the moment the answer matters. The cards are also where
+you see that it keeps learning: the world moves, and the tool keeps up with it. What it holds
+underneath (the records, what you told it, your profile) is more than the cards show, and how you
+look at it or change it yourself is not written yet.
 
 ## 6. The reasons behind a suggestion
 
@@ -133,17 +138,32 @@ ground sets the word. A hunch you could settle turns into an Ask.
 What the tool brings you are observations with a suggested move, never tasks. They have no due
 dates, no owners and no statuses.
 
-A suggestion has a moment instead. Some are fresh and go stale in days. Some wait on a date the
-world set, like a deadline to apply. Some just follow a person's rhythm. When the moment passes,
-the suggestion goes away by itself. Nothing is ever overdue. A to-do list that grows overdue turns
+A suggestion has a moment instead: the day it arrives and, where anything says so, the day it goes
+stale. Some are fresh and go stale in days. Some wait on a date the world set, like a deadline to
+apply. Some just follow a person's rhythm. When the moment passes, the suggestion goes away by
+itself. Nothing is ever overdue. A to-do list that grows overdue turns
 into pressure, and pressure is how a seller ends up sending the clumsy chase. *(My reason, not yet
 yours.)*
 
-Some moves only make sense after another: you ask someone who holds the budget only once they are
-talking to you again. So a suggestion can wait for another to land, and one person only ever gets
-one move at a time.
+Some moves only make sense after another, and the tool works out which, not you. A suggestion waits
+when an answer you have not given yet would change it, or when it only makes sense once another
+has landed: you ask someone who holds the budget only once they are talking to you again. And one
+person only ever gets one move at a time. When two are ready for the same person, what you owe
+them goes first, then what gives them something, then what would cost most to leave. *(My reason,
+not yet yours.)* Two moves to one person that nothing tells apart should be one message.
 
-Your day is ordered by one question: what would waiting a day cost? A promise owed costs more every
+Each suggestion arrives on a day. The tool spreads what can wait across the week rather than piling
+it on one morning, so a busy day is busy because the world made it so, and a quiet day gets the
+things that cost nothing to wait. Some are prepared ahead: a meeting on Thursday means a question
+about it on Thursday afternoon. So you can look ahead at the week and see what is already
+waiting for its day. How many make a day is not a number: some days bring two, some bring seven.
+*(My reason, not yet yours: the days are placed by me, in the pretend world.)*
+
+After you act, the tool keeps watching: for the reply, for the silence, for the date. A later day
+says what it is still watching, and a watch turns into a suggestion only if something comes, or
+fails to.
+
+Within a day, the order comes from one question: what would waiting a day cost? A promise owed costs more every
 day. A note that follows someone's rhythm costs nothing to leave until next week.
 
 You can also ask the tool about a person, an organisation or a deal. But if you have to ask "who's
@@ -154,8 +174,9 @@ going cold?", the tool should already have told you, and its answer says so.
 Nothing sends without you. The tool can prepare a message, even send it once you say so, but the
 decision to send is yours, and you can take it back for a moment after.
 
-Every Sustain names what the other person gets. Keeping a relationship alive means giving, not
-nudging, so there is always a gift: something they asked for, something you promised.
+Every message the tool drafts names what the other person gets. Keeping a relationship alive
+means giving, not nudging, so there is always a gift: something they asked for, something you
+promised. *(My reason, not yet yours: the rule used to cover only Sustain, which has gone.)*
 
 The tool writes in your voice, and learns it from the changes you ask for.
 
@@ -174,7 +195,7 @@ needs to know, and what it does with it:
 - **Was the moment right?** Not now means the read may be fine and the timing is not. It leaves it,
   and raises it again only if something changes.
 - **Did the move work?** Every suggestion says what should happen next. What does happen comes back
-  to the tool, sometimes as something Told: a reply, a bounce, a silence.
+  to the tool, sometimes as News: a reply, a bounce, a silence.
 - **Did it sound like you?** The changes you ask for in a draft teach it your voice.
 
 Over time, this is how the tool gets better for you in particular. Once it has outcomes to learn
@@ -186,11 +207,13 @@ right for you. Nothing has come back yet, so that part is not written.
 Some of the story is still open, and it says so rather than filling the gaps.
 
 - Whether it holds for any kind of sale. It has only been pressure-tested on one: a long,
-  patient sell to organisations with several people to win. A fast sale, or a sale to one person,
-  has not been tried.
+  patient sell to organisations with several people to win. The next test is its opposite, a mass
+  sale to many buyers. A sale to one person has not been tried either.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
-- How many suggestions make a day.
+- How much a day can hold. There is no fixed number, but a day can still be too full for the
+  time you have, and nothing yet asks about your time.
+- How you see or change what the tool holds, beyond the cards.
 - What the tool learns from a thumbs up, a thumbs down or a note, and what it does after Not Now or
   Not Relevant beyond the lines above.
 
@@ -200,4 +223,4 @@ These parts of the story say what, but not yet why. Each is a question for you:
 
 - Why is a missing connection something the tool says to you (Connect), rather than something you
   set up once?
-- Why does an outcome with nothing to do (Told) earn a place of its own?
+- Why does an outcome with nothing to do (News) earn a place of its own?

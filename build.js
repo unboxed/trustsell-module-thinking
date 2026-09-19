@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 // Reads library/ and writes playbook/assets/data.js.
+// The library is general; the pretend world and its cards are one scenario of it, in
+// library/scenarios/<name>/. Change SCENARIO to build the playbook from another.
 // Node only, no packages, nothing to install. Run it after editing the library:
 //     node build.js
 // It fails loudly when an id does not resolve. That is the point of it: the joins
 // between the floors are what went missing before, so nothing is allowed to dangle.
 
 const fs = require('fs'), path = require('path');
-const ROOT = __dirname, LIB = path.join(ROOT, 'library');
+const SCENARIO = 'bops';
+const ROOT = __dirname, LIB = path.join(ROOT, 'library'), SCN = `scenarios/${SCENARIO}`;
 const OUT = path.join(ROOT, 'playbook/assets/data.js');
 
 /* ---------- a small YAML subset: scalars, flow arrays, block lists, nested maps ---------- */
@@ -196,7 +199,7 @@ const L = {
   assemblies: readDir('assemblies'),
   counts:     readDir('counts'),
   signals:    readDir('signals'),
-  cards:      readDir('cards'),
+  cards:      readDir(`${SCN}/cards`),
   widgets:    readDir('widgets'),
   docs:       readDir('docs'),
   templates:  readDir('templates'),
@@ -204,15 +207,15 @@ const L = {
 L.records = recordsOf([...L.channels, ...L.told]);
 
 const world = {};
-for (const w of readDir('world')) world[w.id] = w;
+for (const w of readDir(`${SCN}/world`)) world[w.id] = w;
 
 const rowsOf = (entry, col = 1) => (entry.markdown.match(/^\|.*\|$/gm) || [])
   .map(r => r.split('|').slice(1, -1).map(c => c.trim()))
-  .filter(c => c.length > col && c[col] && !/^-+$/.test(c[0]) && c[0] !== 'Person' && c[0] !== 'Council' && c[0] !== 'Document');
+  .filter(c => c.length > col && c[col] && !/^-+$/.test(c[0]) && c[0] !== 'Person' && c[0] !== 'Organisation' && c[0] !== 'Document');
 
 const castIds     = rowsOf(world.cast).map(r => r[1]);
-const councilIds  = rowsOf(world.councils).map(r => r[1])
-  .concat((world.councils.markdown.match(/`([a-z-]+)`/g) || []).map(s => s.replace(/`/g, '')));
+const orgIds      = rowsOf(world.organisations).map(r => r[1])
+  .concat((world.organisations.markdown.match(/`([a-z-]+)`/g) || []).map(s => s.replace(/`/g, '')));
 const documentIds = rowsOf(world.documents).map(r => r[1]);
 // The 26 questions are a numbered list in the doc, so Q18 is item 18. Keep the wording:
 // a card's track-back can then show the question it is ultimately answering.
@@ -239,7 +242,9 @@ const S = {
   reply:  new Set(L.widgets.filter(w => w.family === 'reply').map(w => w.id)),
   records: new Set(L.records.map(r => r.address)),
   sources: new Set([...ids('channels'), ...ids('told')]),
-  cast: new Set(castIds), councils: new Set(councilIds), documents: new Set(documentIds),
+  cast: new Set(castIds), orgs: new Set(orgIds), documents: new Set(documentIds),
+  // Everything a card can be about: a person, an organisation, a document, the offering, you.
+  nouns: new Set([...castIds, ...orgIds, ...documentIds, world.goal && world.goal.offering].filter(Boolean)),
   questions: new Set(questionIds),
 };
 
@@ -274,8 +279,8 @@ for (const s of L.signals) {
   must(s.file, 'needs', s.needs, S.sources, 'channel or told source');
   must(s.file, 'answers', s.answers, S.questions, 'sales question');
 }
-const MODE_LABEL = {expand: 'Expand', advance: 'Advance', sustain: 'Sustain'};
 const SURE = ['sure', 'likely', 'a hunch'];
+const isDate = v => /^\d{4}-\d{2}-\d{2}$/.test(v || '') && !isNaN(Date.parse(v));
 for (const c of L.cards) {
   must(c.file, 'signal', c.signal, S.signals, 'signal');
   must(c.file, 'supporting', c.supporting, S.signals, 'signal');
@@ -289,22 +294,59 @@ for (const c of L.cards) {
     if (cnt && !reads.some(r => [].concat(cnt.used_by || []).includes(r)))
       problems.push(`${c.file}: count "${n}" belongs to [${[].concat(cnt.used_by || []).join(', ')}], which is neither the card's signal nor among its supporting`);
   }
-  must(c.file, 'person', c.person, new Set([...S.cast]), 'person in world/cast.md');
-  must(c.file, 'council', c.council, S.councils, 'council in world/councils.md');
+  if (!['act', 'ask', 'connect', 'news'].includes(c.kind))
+    problems.push(`${c.file}: kind "${c.kind}" is not one of act, ask, connect, news`);
+  if (![].concat(c.about || []).length) problems.push(`${c.file}: about names nothing; a card is about at least one noun`);
+  must(c.file, 'about', c.about, S.nouns, 'person, organisation, document or offering in world/');
+  must(c.file, 'to', c.to, new Set(castIds.filter(x => x !== 'you')), 'person in world/cast.md other than you');
+  if (c.to && c.kind !== 'act') problems.push(`${c.file}: only an Act reaches someone, so only an Act has a to`);
   must(c.file, 'documents', c.documents, S.documents, 'document in world/documents.md');
   must(c.file, 'held_by', c.held_by, S.cards, 'card');
+  must(c.file, 'changes', c.changes, S.cards, 'card');
+  if (c.changes && c.kind !== 'ask') problems.push(`${c.file}: only an Ask's answer changes other cards`);
+  // A limit on how many to pick: only for several choices, and fewer than there are to pick from.
+  for (const x of [].concat(c.actions || []).filter(x => x.limit)) {
+    const n = [].concat(c.answers || c.picks || []).length;
+    if (!c.reply || c.reply.module !== 'several') problems.push(`${c.file}: limit ${x.limit} on "${x.label}", but the reply is not several choices`);
+    else if (!(+x.limit > 0 && +x.limit < n)) problems.push(`${c.file}: limit ${x.limit} must be between 1 and one fewer than the ${n} choices`);
+  }
+  // The moment, in real dates: the day the tool puts it on the home (`arrives`) and the day it
+  // goes stale (`when.until`). The words say it for the seller; the dates say it for the week
+  // (decided 19 September). A working day, never before today, never after it goes stale.
+  const w = c.when;
+  if (w) {
+    if (!['fresh', 'dated', 'rhythm'].includes(w.mode)) problems.push(`${c.file}: when.mode "${w.mode}" is not fresh, dated or rhythm`);
+    if (w.until && !isDate(w.until)) problems.push(`${c.file}: when.until "${w.until}" is not a date (YYYY-MM-DD)`);
+    if (w.mode === 'dated' && !w.until) problems.push(`${c.file}: a dated when needs the world's date as until`);
+    if (!w.words) problems.push(`${c.file}: when needs its words, the line the seller reads`);
+  }
+  if (c.arrives) {
+    if (!isDate(c.arrives)) problems.push(`${c.file}: arrives "${c.arrives}" is not a date (YYYY-MM-DD)`);
+    else {
+      if ([0, 6].includes(new Date(c.arrives + 'T12:00:00Z').getUTCDay())) problems.push(`${c.file}: arrives ${c.arrives} is a weekend`);
+      if (c.arrives < world.goal.today) problems.push(`${c.file}: arrives ${c.arrives}, before today (${world.goal.today})`);
+      if (w && w.until && c.arrives > w.until) problems.push(`${c.file}: arrives ${c.arrives}, after it goes stale (${w.until})`);
+    }
+  }
+  // What the tool watches for once you act: a line on the days it is open, and a card that
+  // arrives only if what it watches for comes (`then`). The words come from What happens next.
+  for (const x of [].concat(c.watch || [])) {
+    if (!x.for) problems.push(`${c.file}: a watch needs a for, what it watches for`);
+    if (x.until && !isDate(x.until)) problems.push(`${c.file}: watch until "${x.until}" is not a date`);
+    if (x.then) {
+      must(c.file, 'watch then', x.then, S.cards, 'card');
+      const t = L.cards.find(y => y.id === x.then);
+      if (t && t.arrives) problems.push(`${t.file}: arrives only if ${c.id}'s watch turns it up, so it has no arrives`);
+    }
+  }
+  if (!c.arrives && !L.cards.some(y => [].concat(y.watch || []).some(x => x.then === c.id)))
+    problems.push(`${c.file}: no arrives, and no watch turns it up; say which day it comes`);
   // How sure: one of three words, earned from the weakest evidence under the card, and it
   // always says why (decided 18 September; the rule is in docs/reading-principles.md).
   if (c.sure && !SURE.includes(c.sure))
     problems.push(`${c.file}: sure "${c.sure}" is not one of ${SURE.map(w => `"${w}"`).join(', ')}`);
   if (c.sure && !c.sure_because)
     problems.push(`${c.file}: sure "${c.sure}" needs a sure_because line saying what it stands on`);
-  const sig = L.signals.find(s => s.id === c.signal);
-  if (sig && c.kind === 'act') {
-    const allowed = (sig.modes || []).map(m => MODE_LABEL[m]).filter(Boolean);
-    if (allowed.length && !allowed.includes(c.label))
-      problems.push(`${c.file}: label "${c.label}" is not among the modes of signal "${c.signal}" (${allowed.join(', ')})`);
-  }
 }
 
 /* ---------- the catalog: widgets a card picks from and fills, never arranges ---------- */
@@ -424,14 +466,15 @@ for (const c of L.cards) {
 // A card the phone shows carries a `phone:` block with the words that differ from the card's
 // own (decided 19 September: the phone is built from the library, not typed into the deck).
 // The build checks that what the phone will reach for is there, so the phone never guesses.
-const ACT_DOES = ['send', 'tap', 'open'];
+const ACT_DOES = ['send', 'tap', 'open', 'view'];
 const SHEETS = ['choices', 'several', 'field'];
-const councilRows = new Map(rowsOf(world.councils).map(r => [r[1], r[0]]));
+const orgRows = new Map(rowsOf(world.organisations).map(r => [r[1], r[0]]));
+const orgOf = c => [].concat(c.about || []).find(a => orgRows.has(a));
 const documentRows = new Map(rowsOf(world.documents).map(r => [r[1], r[0]]));
 for (const c of L.cards) {
   // Short names for the phone's badges: "Bramley", not "Bramley District Council".
-  if (councilRows.has(c.council))
-    c.councilName = councilRows.get(c.council).replace(/\s+((District|County|Borough|City|Metropolitan)\s+)*(Council|Borough)$/, '');
+  if (orgOf(c))
+    c.orgName = orgRows.get(orgOf(c)).replace(/\s+((District|County|Borough|City|Metropolitan)\s+)*(Council|Borough)$/, '');
   c.documentNames = [].concat(c.documents || []).filter(d => documentRows.has(d))
     .map(d => documentRows.get(d).replace(/^The /, '')).map(n => n[0].toUpperCase() + n.slice(1));
   const p = c.phone;
@@ -439,48 +482,104 @@ for (const c of L.cards) {
   if (!p.act) problems.push(`${c.file}: phone needs an act, the words on the filled action`);
   if (!ACT_DOES.includes(p.act_does))
     problems.push(`${c.file}: phone act_does "${p.act_does}" is not one of ${ACT_DOES.join(', ')}`);
-  if ((p.act_does === 'send' || p.view) && !c.sections['The draft'])
+  if (p.act_does === 'view' && !(c.draft && c.draft.hand))
+    problems.push(`${c.file}: phone act_does view raises the draft and hands it over, but draft.hand says nothing`);
+  if ((['send', 'view'].includes(p.act_does) || p.view) && !c.sections['The draft'])
     problems.push(`${c.file}: phone ${p.view ? `view "${p.view}"` : 'act_does send'} raises the draft, but there is no "## The draft"`);
   if (p.act_does === 'open' && !SHEETS.includes(c.reply && c.reply.module))
     problems.push(`${c.file}: phone act_does open raises a sheet, but reply.module is not one of ${SHEETS.join(', ')}`);
-  if (p.act_does === 'open' && c.reply && c.reply.module !== 'field' && !(c.answers || []).length)
+  if (p.act_does === 'open' && c.reply && c.reply.module !== 'field' && !(c.answers || c.picks || []).length)
     problems.push(`${c.file}: phone act_does open raises ${c.reply.module}, but the card has no answers`);
 }
 
 /* ---------- what first: what does waiting a day cost? ---------- */
 // Decided 18 September; the rule is in modules/00-spine.md. Every card's band comes from
 // what it already carries, so nothing about its place is typed by hand except the last
-// tie-break, `order`. A held card is not banded: it sits right under the card it waits on.
+// tie-break, `order`. A held card is not banded: it sits right under the last card it waits on.
 const BANDS = ['Gone tomorrow', 'Worse every day', 'Holding something up', 'A date further off',
                'Due by its rhythm', 'Costs nothing to wait'];
-const DAY = 86400000, todayMs = Date.parse((world.goal && world.goal.today) + 'T00:00:00Z');
+const DAY = 86400000;
 const OWED = ['promise-made-undelivered', 'ask-made-unanswered'];
-function bandOf(c) {
-  const w = c.when || {}, counts = [].concat(c.counts || []);
-  if (w.mode === 'dated' && w.until && Date.parse(w.until + 'T00:00:00Z') - todayMs <= DAY) return 1;
-  if (w.mode === 'fresh' || counts.some(n => OWED.includes(n))) return 2;
-  if (L.cards.some(x => x.held_by === c.id)) return 3;
+const owes = c => [].concat(c.counts || []).some(n => OWED.includes(n));
+const gives = c => [].concat(c.documents || []).length > 0;
+// The band a card would have on its own, on the day it arrives, before anything waits on it.
+function ownBand(c) {
+  const w = c.when || {}, on = Date.parse((c.arrives || world.goal.today) + 'T00:00:00Z');
+  if (w.until && Date.parse(w.until + 'T00:00:00Z') - on <= DAY) return 1;
+  if (w.mode === 'fresh' || owes(c)) return 2;
   if (w.mode === 'dated') return 4;
   if (w.mode === 'rhythm') return 5;
   return 6;
 }
-// Ties: the council further up the ladder first, then the surer card, then `order`.
+
+// Who waits on whom. The tool decides it from what the cards carry, not the seller (decided
+// 19 September). Four ways a card comes to wait:
+//   1. an Ask names it in `changes`: the answer changes it, so it waits for the answer;
+//   2. it names `held_by`: a sequence its own words give ("once the note has gone");
+//   3. a watch turns it up (`then`): it waits on the card that set the watch, and on the reply;
+//   4. it is a second Act to the same person: one move per person at a time. What arrives
+//      first goes first, then what is owed, then what gives before what asks, then the band.
+//      (My reason, not yet yours.)
+// Two Acts to one person that nothing tells apart should be one card, and the build says so.
+const waitsOn = new Map(L.cards.map(c => [c.id, new Set([].concat(c.held_by || []))]));
+for (const a of L.cards) for (const id of [].concat(a.changes || [])) if (waitsOn.has(id)) waitsOn.get(id).add(a.id);
+for (const a of L.cards) for (const x of [].concat(a.watch || [])) if (waitsOn.has(x.then)) waitsOn.get(x.then).add(a.id);
+const byPerson = new Map();
+for (const c of L.cards) if (c.kind === 'act' && c.to) byPerson.set(c.to, [...(byPerson.get(c.to) || []), c]);
+const arrival = c => c.arrives || '9999-12-31';   // turned up by a watch: after everything scheduled
+const firstMove = (a, b) => (arrival(a) < arrival(b) ? -1 : arrival(a) > arrival(b) ? 1 : 0) ||
+  owes(b) - owes(a) || gives(b) - gives(a) || ownBand(a) - ownBand(b);
+for (const [person, moves] of byPerson) {
+  // A sequence the cards already state wins over the rule.
+  const stated = (a, b) => waitsOn.get(b.id).has(a.id) ? -1 : waitsOn.get(a.id).has(b.id) ? 1 : 0;
+  moves.sort((a, b) => stated(a, b) || firstMove(a, b) || (a.order || 0) - (b.order || 0));
+  for (let i = 1; i < moves.length; i++) {
+    const [prev, c] = [moves[i - 1], moves[i]];
+    if (!stated(prev, c) && !firstMove(prev, c) && (prev.when || {}).until === (c.when || {}).until)
+      problems.push(`${c.file}: a second move to ${person} that nothing tells apart from ${prev.id}; write these as one card`);
+    waitsOn.get(c.id).add(prev.id);
+  }
+}
+for (const c of L.cards) {
+  c.waits_on = [...waitsOn.get(c.id)];
+  if (c.waits_on.length && !c.held_words)
+    problems.push(`${c.file}: waits on ${c.waits_on.join(', ')} but has no held_words, the line it shows while it waits`);
+  if (!c.waits_on.length && c.held_words)
+    problems.push(`${c.file}: has held_words but waits on nothing`);
+}
+for (const c of L.cards) for (const id of c.waits_on) {
+  const h = L.cards.find(x => x.id === id);
+  if (c.arrives && h && h.arrives && c.arrives < h.arrives)
+    problems.push(`${c.file}: arrives ${c.arrives}, before ${id} (${h.arrives}), which it waits on`);
+}
+const heldOn = new Set(L.cards.flatMap(c => c.waits_on));
+function bandOf(c) { const b = ownBand(c); return b > 3 && heldOn.has(c.id) ? 3 : b; }
+
+// Ties: the organisation further up the ladder first, then the surer card, then `order`.
 const ladder = [].concat((world.goal && world.goal.ladder) || []);
-const stands = new Map(rowsOf(world.councils).map(r => [r[1], r[2]]));
-const ladderRank = c => c.council ? ladder.indexOf(stands.get(c.council) || 'cold') : -1;
+const stands = new Map(rowsOf(world.organisations).map(r => [r[1], r[2]]));
+const ladderRank = c => orgOf(c) ? ladder.indexOf(stands.get(orgOf(c)) || ladder[0]) : -1;
 const sureRank = c => c.sure ? SURE.length - SURE.indexOf(c.sure) : 0;
 const byPlace = (a, b) => a.band - b.band || ladderRank(b) - ladderRank(a) || sureRank(b) - sureRank(a) || (a.order || 0) - (b.order || 0);
-for (const c of L.cards) if (!c.held_by) { c.band = bandOf(c); c.bandWords = BANDS[c.band - 1]; }
+for (const c of L.cards) if (!c.waits_on.length) { c.band = bandOf(c); c.bandWords = BANDS[c.band - 1]; }
 const sorted = [];
 (function place(list) {
   for (const c of list.sort(byPlace)) {
     if (sorted.includes(c)) continue;
     sorted.push(c);
-    place(L.cards.filter(x => x.held_by === c.id).map(x => Object.assign(x, {band: c.band, bandWords: c.bandWords})));
+    // A waiting card follows once everything it waits on is placed, and takes the band of the last.
+    place(L.cards.filter(x => x.waits_on.includes(c.id) && x.waits_on.every(id => sorted.some(s => s.id === id)))
+      .map(x => Object.assign(x, {band: c.band, bandWords: c.bandWords})));
   }
-})(L.cards.filter(c => !c.held_by));
+})(L.cards.filter(c => !c.waits_on.length));
 for (const c of L.cards) if (!sorted.includes(c))
-  problems.push(`${c.file}: held_by "${c.held_by}" never reaches a card that is not held, so it has no place`);
+  problems.push(`${c.file}: waits on ${c.waits_on.join(', ')}, which never reaches a card that waits on nothing, so it has no place`);
+
+// The week: for each day, the cards the tool puts on the home that day, in the home's order.
+// A card that waits is listed on its day too; the phone shows it once what it waits on is done.
+// A card a watch turns up has no day. The watches themselves are on their cards, for the phone.
+const days = {};
+for (const c of sorted) if (c.arrives) (days[c.arrives] = days[c.arrives] || []).push(c.id);
 
 if (problems.length) {
   console.error(`\n${problems.length} unresolved reference${problems.length > 1 ? 's' : ''}:\n`);
@@ -496,7 +595,9 @@ const payload = Object.assign({
   generated: new Date().toISOString().slice(0, 10),
   world,
   questions,
+  scenario: SCENARIO,
   day: sorted.map(c => c.id),   // the home's order, first to last
+  days,                         // date -> the ids whose moment is open that day, in the home's order
 }, L);
 
 fs.mkdirSync(path.dirname(OUT), {recursive: true});

@@ -3,7 +3,6 @@ id: champion-went-dark
 module: 02-relationships
 label: Champion went dark
 blurb: An active contact you suddenly cannot reach at all.
-modes: [sustain, expand]
 kind: risk
 confidence: high
 inputs: [person-history]
@@ -21,8 +20,8 @@ The channel to a contact you relied on has broken.
 This read is about reach, not warmth. The cooling read asks "has their rhythm slipped?". This one asks
 the sharper question: "can I still get to them at all?"
 
-It leans Sustain, a relationship you are losing. But it tips into Expand the moment the answer is "they
-left", because the warm path now has to be rebuilt to whoever replaced them.
+It is mostly about keeping a relationship you are losing. But it becomes about a new one the
+moment the answer is "they left", because the warm path now has to be rebuilt to whoever replaced them.
 
 It is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was
 never a live channel to break.

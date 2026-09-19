@@ -1,24 +1,20 @@
 ---
-id: expand-felton-director
+id: act-felton-director
 order: 10
 kind: act
-label: Expand
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [new-stakeholder, champion]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: shabana-akhtar
-council: felton
+about: [shabana-akhtar, felton]
+to: shabana-akhtar                # who the move reaches; one move per person at a time
 documents: []
-widgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 sure: "a hunch"
 sure_because: "A reading of her words: Shabana's two mentions of David are the whole evidence."
-held_by: advance-felton-price
-when:
-  mode: rhythm
-  words: "Once the partial rollout offer is with Stephen."
+held_words: "If Stephen says the budget is still the answer."
 reply:
   module: buttons
 actions:

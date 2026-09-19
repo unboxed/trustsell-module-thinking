@@ -1,16 +1,14 @@
 ---
-# THE TOP RUNG. One doc per card, at library/cards/<id>.md.
+# THE TOP RUNG. One doc per card, at library/scenarios/<scenario>/cards/<id>.md.
 # A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the
 # seller, written as if the tool already existed. Unlike every floor below it, a card is NOT
-# agnostic: it names real people, councils and documents from library/world/.
+# agnostic: it names real people, organisations and documents from its scenario's world/.
 # The card is where the ladder comes out. `signal` is what it rests on and `counts` are the
 # numbers it may quote; both MUST resolve, because that join is what stops a card floating.
 # Two layers: FRONTMATTER is the machine layer; THE BODY is the card's words, in the tool's
 # own first-person voice. Plain English, British spelling, short sentences, no em dashes.
-id: <kebab-slug>              # unique across the library; by convention <label>-<who>-<what>
-kind: <act|ask|connect|told>  # the shape of the card
-label: <Sustain|Advance|Expand|Ask|Connect|Told>   # for kind: act, one of the first three, and
-                              # it MUST be among the modes of the signal above it
+id: <kebab-slug>              # unique across the library; by convention <kind>-<who>-<what>
+kind: <act|ask|connect|news>  # the shape of the card, and its only label
 order: <n>                    # the LAST tie-break only. build.js places each card by what waiting
                               # a day would cost (see ../modules/00-spine.md); keep this in step
 signal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*
@@ -21,9 +19,13 @@ supporting_status: provisional
 counts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*,
                               # and MUST belong to the signal or one of the supporting signals
 counts_status: provisional
-person: <person-id>           # who it is about. MUST resolve to ../world/cast.md; `you` for a
-                              # card about the seller's own setup
-council: <council-id>         # optional: where. MUST resolve to ../world/councils.md
+about: [<noun-id>, ...]       # what it is about, of any type: a person, an organisation, a
+                              # document, the offering, or `you`. Each MUST resolve in ../world/
+to: <person-id>               # act only, optional: who the move reaches. One move per person at
+                              # a time: build.js makes a second Act to the same person wait
+changes: [<card-id>, ...]     # ask only, optional: the cards the answer changes. They wait for it
+arrives: <YYYY-MM-DD>         # the working day the tool puts it on the home. Left out only when a
+                              # watch turns it up (another card's watch.then names it)
 documents: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md
 widgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in
                               # the details between What happened and Still unclear. Each needs a body
@@ -38,10 +40,18 @@ sure: <sure|likely|a hunch>   # how sure, earned from the WEAKEST evidence the c
 sure_because: <one line>      # required with `sure`: what it stands on, shown under the word
 when:                         # omit entirely when the card is a "whenever"
   mode: <fresh|dated|rhythm>  #   fresh = stale in days. dated = the world sets it. rhythm = a window.
-  words: <the one small line shown on the front>
-  until: <YYYY-MM-DD>         #   for mode: dated only
-held_by: <optional card-id>   # this card ripens only after that one lands; shown faded until then
-held_words: <optional line>   # with held_by only: the line a held card shows in place of `when`
+  until: <YYYY-MM-DD>         #   the day it goes stale, or the world's date. Required for dated;
+                              #   otherwise only when the card's own words give it
+  words: <the one small line shown on the front: the when only, never the hold>
+watch:                        # optional: what I watch for once you act, from What happens next
+  - for: <what comes back, e.g. Karen's reply>
+    until: <YYYY-MM-DD>       #   optional: the last day I wait
+    then: <card-id>           #   optional: the card that arrives if it comes
+    next: <line>              #   optional: what I do when it comes
+    otherwise: <line>         #   optional: what I do if nothing has come by until
+held_by: <optional card-id>   # a sequence the card's own words give: it waits until that one lands
+held_words: <line>            # required whenever the card waits (held_by, an Ask's changes, or a
+                              # second move to the same person): the line it shows while it waits
 reply:
   module: <buttons|choices|several|field|draft>   # the reply widget. MUST resolve to ../widgets/*
   placeholder: <...>          #   field only: the grey words in the empty field
@@ -52,7 +62,9 @@ actions:                      # the buttons on the front, first one filled. Titl
     opens: <draft|reasons>    #   optional: raises the draft sheet or the Not Relevant reasons
     says: <...>               #   optional: what the tool says back once it is pressed
     confirms: <picks|field>   #   optional, for several and field: confirms the answer
-    limit: <n>                #   with confirms: picks only
+    limit: <n>                #   with confirms: picks only. Only on an Ask about what you intend or
+                              #   prefer (where to start); never on one about what happened, where
+                              #   every true answer must be allowed
 reasons:                      # optional: the three one-tap whys behind Not Relevant
   - label: <Title Case>
     says: <...>
@@ -82,8 +94,8 @@ phone:                        # optional: the card on playbook/phone.html. Only 
 # <the action, as the card's title>
 
 <!-- The front. One or two lines of reason, no more. Say the why plainly; the numbers that
-     back it belong on the back. For a Sustain card the reason MUST name the gift: what the
-     other person gets out of it. A card is an observation with a suggested move, never a
+     back it belong on the back. For a card that sends a message, the reason MUST name
+     what the other person gets out of it. A card is an observation with a suggested move, never a
      task: no due dates, no owners, no statuses. -->
 
 ## What happened

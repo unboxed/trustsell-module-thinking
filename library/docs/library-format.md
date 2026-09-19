@@ -94,7 +94,7 @@ The **granularity matches the floor**, so we write docs only where there is reas
 | **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`templates/assembly.md`](../templates/assembly.md) |
 | **Counts** | the arithmetic. Every entry is `defined: false` for now | **thin doc per entry** | [`templates/count.md`](../templates/count.md) |
 | **Signals** | the read, the first opinion | **rich doc per entry** | [`templates/signal.md`](../templates/signal.md) |
-| **Cards** | the suggestion, question or outcome | **one doc per card** | [`templates/card.md`](../templates/card.md) |
+| **Cards** | the suggestion, question or outcome | **one doc per card**, in the scenario's `cards/` | [`templates/card.md`](../templates/card.md) |
 
 Plus, per module, one **`modules/<id>.md`** ([`templates/module.md`](../templates/module.md)) holding the
 operating prose and the card face.
@@ -227,13 +227,51 @@ is on the phone when it carries a `phone:` block. The block holds only the words
 they differ from the rest of the card: the short when on the badge, the filled action and what it
 does (`send` the draft, one `tap`, or `open` the reply sheet), the outline action if there is one,
 the line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else
-the phone reads from the card as it is: the title, the intro, how sure, the council, the documents,
+the phone reads from the card as it is: the title, the intro, how sure, the organisation, the documents,
 the details on their spine with the widgets in place, the draft, and an Ask's answers. A card with
 a `## The shorter draft` section offers the ask-for-a-change row, and every ask gets that draft
 back; that is a stand-in until the tool can really redraft. `build.js` checks that whatever the
 phone will reach for is there: an action that raises the draft needs `## The draft`, and an action
 that raises a sheet needs a `reply.module` of choices, several or field, with its answers. The
 order on the phone is the home's, which `build.js` writes as `day`.
+
+### The scenario
+
+Everything above the cards is general: it must hold for any kind of sale. The pretend world and
+its cards are not. They are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
+the cast, the organisations, the documents) and a `cards/` (decided 19 September). Today there
+is one, `bops`, a patient sale to councils. A second, a mass sale, is meant to follow, standing
+on the same channels, assemblies, counts and signals. `build.js` reads the one named in
+`SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a
+general rule, the card changes, not the rule.
+
+### A card's day: what it is about, who it reaches, when, and what it waits on
+
+Decided 19 September, so the day is worked out from the cards rather than typed.
+
+- **`kind`** is the card's only label: Act, Ask, Connect or News. (Sustain, Advance and Expand were
+  dropped the same day: they were one picture of selling, and may mean nothing to a seller.)
+- **`about`** names the nouns the card concerns, of any type: a person, an organisation, a
+  document, the offering, or `you`. An Ask can be about anything the tool wants to learn.
+- **`to`** names who an Act reaches, when it reaches anyone. A brief for you has no `to`.
+- **`arrives`** is the working day the tool puts the card on the home. A card due "any day this
+  week" is not piled on Monday: the tool spreads the week, and quiet days take the cards that
+  cost nothing to wait. A card a watch turns up has no `arrives`.
+- **`when.until`** is the day it goes stale, or the world's date, left out when nothing says.
+  "This week" ends on Friday. The `words` are the when only.
+- **`watch`** is what the tool watches for once you act, taken from What happens next: what it
+  waits for, until when, the card it turns up (`then`), and what it does if nothing comes.
+- **Waiting.** A card waits for four reasons, and `build.js` works out all four into `waits_on`:
+  an Ask names it in `changes` (the answer changes it); it names `held_by` (a sequence its own
+  words give); a watch turns it up; or it is a second Act to the same person, because there is
+  one move per person at a time. For that last one the tool decides the order: a sequence the
+  cards state first, then what arrives first, what is owed, what gives (names `documents`)
+  before what asks, and what waiting a day costs. Two Acts to one person
+  that nothing tells apart fail the build: write them as one card. A card that waits carries
+  `held_words`, the line it shows while it waits.
+- `build.js` writes `day` (the home's order) and `days` (each date, the cards that arrive on it,
+  in that order). The phone shows a day's cards, hides a waiting card until what it waits on is
+  sent or answered, and ends every day on a page of what the tool is watching.
 
 ## How an agent produces a module's library
 
@@ -246,7 +284,7 @@ below record how the conversion was done and guide any **new** module added late
    verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.
 2. **Signals.** For the reasoned module, each named read in the old "signal catalogue" becomes one
    `signals/<id>.md`. Carry its counts into `counts`, its sales-question handles into `answers`, its
-   tilt into `modes` and `kind`, and the worked example plus threshold logic into the body. A signal
+   tilt into `kind`, and the worked example plus threshold logic into the body. A signal
    earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy

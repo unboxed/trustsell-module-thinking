@@ -3,7 +3,6 @@ id: price-barrier
 module: 03-offerings
 label: Price barrier
 blurb: Where your price sits against the field, and whether it's likely to be a barrier on this deal.
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [price-position, pricing-fence, deal]

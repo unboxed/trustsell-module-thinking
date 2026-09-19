@@ -28,14 +28,15 @@
   ];
   var byKey = {}; RUNGS.forEach(function (r) { byKey[r.key] = r; });
   var find = function (key, id) { return (L[key] || []).filter(function (e) { return e.id === id || e.address === id; })[0]; };
-  /* A card's name is its title. Its `label` is the kind, which every card of that kind shares. */
+  /* A card's name is its title. Its kind (Act, Ask, Connect, News) is the word above it. */
+  var kindWord = function (e) { return e.kind ? e.kind[0].toUpperCase() + e.kind.slice(1) : ''; };
   var nameOf = function (e) { return e && (e.title || e.plain || e.label || e.name || e.id); };
   var keyOf = function (e) { return e.address || e.id; };
 
   /* Which fields point DOWN at which rung, so links resolve without hand-wiring.
      A count's `used_by` points up, so it stays out: the reverse index finds it. */
   var POINTS = {
-    cards:      [['signal','signals'], ['supporting','signals'], ['counts','counts'], ['held_by','cards'], ['widgets','widgets']],
+    cards:      [['signal','signals'], ['supporting','signals'], ['counts','counts'], ['waits_on','cards'], ['widgets','widgets']],
     widgets:    [['fed_by','fed'], ['reaches','records']],
     signals:    [['inputs','assemblies'], ['counts','counts'], ['needs','sources'], ['module','modules']],
     assemblies: [['inputs','mixed'], ['module','modules']],
@@ -44,7 +45,7 @@
   };
   /* What each of those joins is called above its list, in plain words. */
   var JOIN_WORDS = {
-    cards:      {signal: 'Main signal', supporting: 'Other signals', counts: 'Numbers it quotes', held_by: 'Waits for', widgets: 'Details', documents: 'Documents to send'},
+    cards:      {signal: 'Main signal', supporting: 'Other signals', counts: 'Numbers it quotes', waits_on: 'Waits for', widgets: 'Details', documents: 'Documents to send'},
     widgets:    {fed_by: 'Fed by', reaches: 'Records it can show'},
     signals:    {inputs: 'Reads from', counts: 'Counts', needs: 'Needs', module: 'Module'},
     assemblies: {inputs: 'Built from', module: 'Module'},
@@ -89,7 +90,7 @@
   /* The pretend world's names, read off its own tables, so a card can say who it is
      about and what it would send. */
   var WORLD = {};
-  ['cast', 'councils', 'documents'].forEach(function (k) {
+  ['cast', 'organisations', 'documents'].forEach(function (k) {
     var w = L.world && L.world[k]; if (!w) return;
     var html = (w.intro || '') + (w.sectionOrder || []).map(function (s) { return w.sections[s].html; }).join('');
     html.replace(/<tr><td>(.*?)<\/td><td>(.*?)<\/td>/g, function (_, name, id) { WORLD[id] = name.replace(/<[^>]+>/g, ''); });
@@ -109,12 +110,11 @@
   }
 
   /* ---------- column 2: one quiet line under each entry's name ---------- */
-  /* Only what tells one entry from its neighbours. Sustain, Advance and Expand, and the
-     owning module, are left off: where they belong on this page is not decided (the
-     user, 18 September). The whole entry still shows them. */
+  /* Only what tells one entry from its neighbours. The owning module is left off: where it
+     belongs on this page is not decided (the user, 18 September). */
   var GLANCE = {
     cards: function (e) {
-      return [e.label, [who(e.person), e.council && who(e.council)].filter(Boolean).join(', ')].filter(Boolean).join(' · ');
+      return [kindWord(e), [].concat(e.about || []).map(who).join(', ')].filter(Boolean).join(' · ');
     },
     signals: function (e) { var n = cardsOn(e.id).length; return n ? 'Used in ' + plural(n, 'card') : 'Not used in a card yet'; },
     /* A count has nothing written yet, so no line: its name is drawn quiet instead (the
@@ -132,7 +132,7 @@
 
   /* ---------- column 3: the kind line above the name ---------- */
   var KIND = {
-    cards: function (e) { return ['Card', e.label, e.sure].filter(Boolean).join(' · '); },
+    cards: function (e) { return ['Card', kindWord(e), e.sure].filter(Boolean).join(' · '); },
     signals: function () { return 'Signal'; },
     counts: function () { return 'Count'; },
     assemblies: function (e) { return 'Assembly · about ' + e.about; },
@@ -170,7 +170,7 @@
     if (key === 'channels' || key === 'told') up = up.filter(function (p) { return p[0] !== 'records'; });
     var cards = up.filter(function (p) { return p[0] === 'cards'; }), rest = up.filter(function (p) { return p[0] !== 'cards'; });
     if (cards.length) h.push(group(key === 'cards' ? 'Waiting on this card' : 'Used in cards',
-      cards.map(function (p) { return row('cards', p[1], find('cards', p[1]).label); })));
+      cards.map(function (p) { return row('cards', p[1], kindWord(find('cards', p[1]))); })));
     if (rest.length) h.push(group('Used by', rest.map(function (p) { return row(p[0], p[1], byKey[p[0]].one); })));
     if (held.length) h.push(group('Records', held.map(function (p) { return row('records', p[1]); })));
 
@@ -305,7 +305,7 @@
              '<header class="large-title"><h1>' + esc(nameOf(e)) + '</h1>' +
              '<p class="date"><code>' + esc(keyOf(e)) + '</code>' +
              (e.blurb ? ' &middot; ' + esc(e.blurb) : '') +
-             (key === 'cards' ? ' &middot; ' + esc(e.label) : '') + '</p></header>'];
+             (key === 'cards' ? ' &middot; ' + esc(kindWord(e)) : '') + '</p></header>'];
 
     if (e.defined === false)
       h.push('<p class="lib-gap">Not written yet. Only the name is decided.</p>');

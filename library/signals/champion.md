@@ -3,7 +3,6 @@ id: champion
 module: 02-relationships
 label: Champion
 blurb: Someone inside the buyer who is selling for you.
-modes: [advance]
 kind: opening
 confidence: graded
 inputs: [person-history, conversation-history, meeting-history]

@@ -7,7 +7,7 @@ about: the people, real to the fiction
 
 Everyone a card can be about. `you` is the seller the tool is speaking to.
 
-| Person | id | Role | Council | What you know |
+| Person | id | Role | Organisation | What you know |
 |---|---|---|---|---|
 | Karen Hughes | karen-hughes | Head of Customer Services | bramley | Used to reply within a day; slowed since the budget meeting |
 | Gary Pearson | gary-pearson | Service Design Lead | westmoor | Your champion. Asked on 10 September whether BOPS can import their case records |

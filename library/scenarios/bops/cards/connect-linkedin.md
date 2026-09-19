@@ -2,12 +2,12 @@
 id: connect-linkedin
 order: 22
 kind: connect
-label: Connect
 signal: warm-path
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 counts: [mutual-contact-count, intro-chain-length, target-cold-to-you]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: you
+about: [you]
+arrives: 2026-09-21             # the day the tool puts it on the home
 documents: []
 reply:
   module: buttons
@@ -15,6 +15,12 @@ actions:
   - label: "Connect LinkedIn"
     style: filled
     says: "In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything."
+phone:
+  act: "Connect LinkedIn"
+  act_does: tap
+  said: "In the real tool this opens LinkedIn's sign-in."
+  done: "Not connected here"
+  done_text: "In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything."
 ---
 
 # Connect LinkedIn

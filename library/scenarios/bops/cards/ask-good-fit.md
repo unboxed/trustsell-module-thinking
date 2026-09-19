@@ -2,12 +2,12 @@
 id: ask-good-fit
 order: 21
 kind: ask
-label: Ask
 signal: fit-match
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 counts: [fit-shape-completeness, fit-factors-met]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: you
+about: [you]
+arrives: 2026-09-16             # today: the one card that asks for your own words
 documents: []
 reply:
   module: field
@@ -22,6 +22,12 @@ actions:
     says: "Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time."
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
+phone:
+  act: "Answer"
+  act_does: open
+  said: "Thank you. I'll show you the first five matches."
+  done: "Thank you"
+  done_text: "I've written it down as what a good fit looks like. I'll show you the first five councils that match before I add any of them."
 ---
 
 # What does a good-fit council look like?

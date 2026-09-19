@@ -1,26 +1,32 @@
 ---
-id: sustain-karen-slowing
+id: act-karen-slowing
 order: 7
 kind: act
-label: Sustain
 signal: cooling-champion
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [loose-end, one-sided, warmth-fading]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [reply-gap-vs-own-rhythm, innocent-explanation-scan, promise-made-undelivered, who-starts-threads, reply-length-vs-own-rhythm]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: karen-hughes
-council: bramley
+about: [karen-hughes, bramley]
+to: karen-hughes                # who the move reaches; one move per person at a time
+arrives: 2026-09-16             # the day the tool puts it on the home
 documents: [officer-time-one-pager]
-widgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*
+widgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 widget_heads:
   number: "Reply time"   # the head names the measure; the widget's label is the default
 sure: "likely"
 sure_because: "A pattern against her usual: 28 days, when she used to answer in a day. Why, only you can say."
-held_by: ask-budget-meeting
+held_words: "Once you have told me about the budget meeting."
 when:
   mode: rhythm
-  words: "Any day this week, once you have told me about the budget meeting."
+  until: 2026-09-18
+  words: "Any day this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Karen's reply"
+    until: 2026-09-30
+    then: act-karen-budget-holder
+    otherwise: "I'll come back with a different reason to write, not the same one twice."
 reply:
   module: buttons
 actions:

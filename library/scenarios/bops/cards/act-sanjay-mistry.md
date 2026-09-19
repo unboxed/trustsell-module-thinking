@@ -1,22 +1,27 @@
 ---
-id: expand-sanjay-mistry
+id: act-sanjay-mistry
 order: 16
 kind: act
-label: Expand
 signal: champion-went-dark
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [buying-intent]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active, pricing-question-asked]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: sanjay-mistry
-council: moreton
+about: [sanjay-mistry, moreton]
+to: sanjay-mistry                # who the move reaches; one move per person at a time
+arrives: 2026-09-17             # the day the tool puts it on the home
 documents: []
 sure: "sure"
 sure_because: "A fact on record: the bounce, and Julie's auto-reply naming him."
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "This week, while the handover is fresh."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Sanjay's reply"
+    until: 2026-10-01
+    otherwise: "I'll look for a second door into Moreton."
 reply:
   module: buttons
 actions:
@@ -39,6 +44,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Nothing attached. Edit anything, then send."
+phone:
+  when: "This week"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "Picking up from Julie Barker"
+  said: "Sent. I'll watch for Sanjay's reply."
+  done: "Sent to Sanjay"
+  done_text: "If he replies, I'll start a page on him and pick up Moreton where Julie left it. If not in two weeks, I'll look for a second door."
 ---
 
 # Introduce yourself to Sanjay Mistry at Moreton

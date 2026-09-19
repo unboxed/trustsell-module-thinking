@@ -3,7 +3,6 @@ id: competitive-standing
 module: 03-offerings
 label: How you compare with competitors
 blurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [competitor-field, product-claims]

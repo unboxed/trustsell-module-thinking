@@ -5,8 +5,8 @@ This file is the card model, the world and the log of decisions.
 
 Every card in the playbook is written as if the tool already exists and is talking to **you**, the
 seller. To keep the cards consistent they all share one world and one card model. The card model
-and the decisions live here. The world itself (goal, cast, councils, documents) is data in
-`library/world/`, because cards reference it by id; add there before using a name, a date or a
+and the decisions live here. The world itself (goal, cast, organisations, documents) is data in
+`library/scenarios/bops/world/`, because cards reference it by id; add there before using a name, a date or a
 document that is not already there. The world sections at the end of this file mirror it.
 
 ## Today
@@ -26,21 +26,26 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
 ## The card model
 
 **Four kinds of card, one shape.**
-- **Act.** The tool prepared a noun, you do a verb toward someone. Labelled Sustain (keep a
-  relationship alive), Advance (move a deal forward) or Expand (start a new relationship).
+- **Act.** The tool prepared a noun, you do a verb toward someone. Until 19 September an Act was
+  labelled Sustain, Advance or Expand; the three were dropped (see "A card's day" below).
 - **Ask.** The tool needs one fact only you hold, and the answer changes what it does. The button
   is the answer. It has looked first and says where it ran out. It asks for facts (what happened
   offline, what you intend, what you prefer), never for verdicts it should reach itself. A check
   ("I read Rachel as cautious. Right?") is allowed.
 - **Connect.** A source it cannot see.
-- **Told.** An outcome with nothing to do: the *What happens next* of an earlier card coming back ("Julie's
+- **News.** An outcome with nothing to do (called Told until 19 September; renamed because
+  "told" is also the library's word for what you tell the tool, the opposite direction. Update
+  was tried the same day and dropped: it reads as an instruction to update something, or as a
+  software update. FYI and Heads-up were passed over. The user's call): the *What happens next* of an earlier card coming back ("Julie's
   email bounced this morning"). The button is Got It.
 
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve. An Ask
 is the general way the tool learns what it cannot observe, not only about a person: your tone, which
 councils matter most, what is new about the product. A fact that does not shift is told once; what
 shifts is asked when the answer would change something, and every answer is kept, so nothing is
-asked twice. There is no settings screen (decided 18 September).
+asked twice. "There is no settings screen" was decided on 18 September and opened again on 19
+September: the tool also holds records and a profile, and how the seller sees or changes them is
+not written yet. So far only the cards are designed.
 
 **The front** is what the home shows: label, the action as the title, one or two lines of reason,
 the *when* if earned, one button. **The back** is the thinking: for Act cards, *What happened*
@@ -54,14 +59,16 @@ one-tap question when you hold the answer) and *What happens next* (what happens
 - rhythm: "Any day this week."
 - whenever: nothing.
 Cards ripen and rot. A card past its moment leaves by itself with one line. There is no overdue
-state, ever. A card can be **held** (shown faded) when it ripens only after another card lands.
+state, ever. A card can be **held** when it ripens only after another card lands. On the phone it is hidden
+until then and arrives next (since 19 September; until then it was to be shown faded).
 
 **How sure**, one word beside "The thinking" where it matters: *sure* (a fact on record: a bounce),
 *likely* (a pattern against their usual: silence), *a hunch* (a reading of someone's words). Never
 a number. The weakest ground sets the word, and a line under it says what it stands on (decided 18
 September; the rule is in `library/docs/reading-principles.md`).
 
-**Guardrails.** Every Sustain card names what the other person gets. "Not Relevant" asks why in
+**Guardrails.** Every message the tool drafts names what the other person gets (until 19
+September: every Sustain card). "Not Relevant" asks why in
 one tap. Cards are observations with a suggested move, never tasks: no due-date fields, owners or
 statuses. Nothing sends without your say-so: where mail is connected the tool can send a
 message once you tell it to, and you can undo for a moment after; where it is not, the message
@@ -90,8 +97,8 @@ The reason is chapter 3 of the story: the tool counts first and judges last, and
 floats; the library is that climb made browsable (the user: the story is about how things build
 up to a card, not about the library). It wears the phone's type and ink so the playbook reads as
 one, with no coloured dots, and its surfaces are plain: the glaze and the deep shadow belong to
-the card alone (the user's calls). A signal's Sustain, Advance and Expand, and every entry's
-module, are left off the page for now: where they belong is not decided. Passed over: every rung as a shelf of tiles, and
+the card alone (the user's calls). Every entry's module is left off the page for now: where it
+belongs is not decided. Passed over: every rung as a shelf of tiles, and
 one rung as a table.
 
 **The phone.** Slides that explain the concept; they are not screens of the tool. The tool is a
@@ -155,8 +162,13 @@ directions: https://claude.ai/artifact/YJCZrrjxT3N7iKS5pDse1b). There is no pane
 the ground itself, the same pale cool ground by day and near-black by night that the card was
 drawn against, so the phone stands in the room rather than on a tile inside it. The words sit
 left in a fixed column and the figure right, both at the ground's level, with 64 pt of padding
-top and bottom and 72 pt at the sides. The title is the card's big words one step up, 72 on 66
-in the phone's face, and the line under it is small and quiet. The way out, the arrows and the
+top and bottom and 72 pt at the sides. The title and the words are set in tvOS's text styles, in the phone's face (19 September, the
+user's call: slides are read across a room, which is what tvOS type is for; tvOS as a platform
+is still not the playbook's): Title 1, 76 on 96, for the title, Caption 2 for the quiet line
+under it, Body for the words-only slide, Callout for the brief title over a row of figures, and
+Caption 2 for the figures' captions. Until then the title was 72 on 66, the card's big words one
+step up. The same day every other size in the playbook moved onto Apple's iOS scale, from the
+kit's tokens, so no size is ours any more; only the heavy weight is, as part of the look. The way out, the arrows and the
 count are ink marks in the margins, not buttons: the room has no furniture in it. Arrow keys and
 space move between slides without leaving the page. Nothing more: no full screen, no fixed
 canvas. Tried and passed over on the way: "The masthead", the title full width over a hairline
@@ -209,9 +221,8 @@ the fill there, today keeps a ring, and the header says "Tomorrow", "Yesterday" 
 and date. (Today moved from Monday 14 to Wednesday 16 September on 18 September, so a week
 with past days in it could be seen; the cards were reworded to stay true from Wednesday.) A
 day on the strip means when a card's moment arrives, never a due date, so the strip does not
-break the rule that cards carry no due dates. What a later day shows is not written yet, so the
-card stays the same whichever day is chosen. Only the four `dated` cards have a real day today;
-every other card would need an "arrives" fact first. Passed over: the strip above the count,
+break the rule that cards carry no due dates. Since 19 September a day shows the cards that arrive on it
+(see "The week, played out"); until then the card stayed the same whichever day was chosen. Passed over: the strip above the count,
 which pushed the card 50 pt down, and a smaller strip between the menu buttons, which left the
 compact title nowhere to go. The strip fades with the count's timing as the card becomes a page,
 and "Today" gives way to the card's title in the bar. The three phones on "The details" keep
@@ -250,8 +261,8 @@ thumb, Not Now or Not Relevant is the acknowledgment too: it marks itself and, a
 card slides off to the next one; the note does not, because it is for typing (the user's call,
 the same day). A Next button between the feedback and Undo was tried first and dropped: one more
 button on a moment meant to be quiet. A card left behind stays dark, since each card keeps its
-own state. The last card has no hint and does not slide, because what comes after the day's last
-card is not written yet. After a reply it is two thumbs and a note; after
+own state. Since 19 September the day's last card is followed by a page of what the tool is watching, so
+every card has the hint. After a reply it is two thumbs and a note; after
 Skip it is the reason, in the library cards' words, Not Now (another day) and Not Relevant (the card got
 it wrong), then the note. Scrolled into a page, the bar says the line with Undo, as before. The
 user asked for this because feedback is optional and must not stand in the way: first confirm,
@@ -296,7 +307,14 @@ what is ready, a plain second action and the filled one. *Choices*: three option
 own words; one tick. *Several choices*: the same, with several ticks. *A field*: one thing
 typed ("Type a name or a date"). The wordings decided earlier are all the Buttons module
 with the signal's words in it: That's Right and Not Quite; Send the Note and Not Relevant;
-Connect; Got It and Open the Thread.
+Connect; Got It and Open the Thread. An answer sheet grows with its rows only so far (19 September, the user found twelve
+councils running off the screen): as Apple's sheets do, it stops at its tallest, here the card's
+own top edge under the week strip, and the question and Next stay put while the rows scroll
+between them, fading at the foot while more are below. The draft sheet was already bounded.
+Several choices can carry a limit ("Pick up to three", the same day): at the limit the rows not
+ticked grey out until one is unticked, and the card's own header says the number. Only an Ask
+about what you intend or prefer takes one (the twelve councils); an Ask about what happened
+never does (the demo), because a limit would make the tool record something untrue.
 
 A draft fills the same sheet, and its anatomy is copied from the email card Claude's phone
 app shows when it drafts a message: a head with a mail glyph and "Email"; a row of version
@@ -320,18 +338,18 @@ options: https://claude.ai/artifact/4kvVknQPP2bFEdw2z9ooKB). The anatomy is iOS 
 look is the playbook's own. It lives on the phone, on the bare sheets grabbed from it, and on
 the slide that holds them, which took it later the same day when the deck became a room. In the
 stylesheet that is one selector, `.page--slide`, which only `deck.html` carries, so the desk
-cannot inherit it. Four choices. *Big words*: the title is the design, very large, tight and heavy (38 on 40, down from 48 on 46 on 18 September),
+cannot inherit it. Four choices. *Big words*: the title is the design, heavy, on Apple's scale (Title 1 from the kit's tokens, 28 on 34, since 19 September, so the size is the kit's and not ours; 38 on 40 before that, and 48 on 46 until 18 September),
 and everything else is small and quiet. *Plus Jakarta Sans* is the phone's face, carried in the
 fonts folder as Inter is; the status bar keeps the system's. *No colour on buttons*: the filled
-action is ink, or white in the dark, and the kind's dot is the only colour on the screen. The
+action is ink, or white in the dark, and the kind's dot is the only colour on the screen (grey for now, since 19 September). The
 kind's name is in sentence case and badges are outlines. *The card matches the room*: by day a
 glazed white card on a pale cool ground, with a lit top edge and one deep soft shadow; by night
 all slate, a near-black ground and a lighter slate card with a faint sheen and a lit edge. Tried
 and passed over on the way: recolouring Apple's kit, a card tinted by its kind, a white card on
 deep green set in Baskerville, a ruled docket, paper and frosted glass as materials, a slate
 card kept by day as well, and the kind glowing in the slate. The library page took the look on 18 September, without the dots (see "The library page"
-above). (The desk never took it, and was archived.) The kind's dot is pinned to the blue itself rather than to the accent, because the accent
-is ink here and an Advance dot was coming out black. Long titles will
+above). (The desk never took it, and was archived.) Since 19 September every kind's dot is the quiet grey: the three colours went with Sustain,
+Advance and Expand, and what the four kinds look like is the user's call, not yet made. Long titles will
 need a smaller step than 38; not built. The wider face wraps the draft's subject onto two
 lines, so the tallest bare sheet is now 588 pt.
 
@@ -380,7 +398,7 @@ change), whether
 Skip is needed once the card is a page, whether modules chain (what follows "Not Quite"), and a later slide that
 shows one module serving many signals.
 
-**The box.** A place to ask about a person, a council or a deal. It answers with cards where
+**The box.** A place to ask about a person, an organisation or a deal. It answers with cards where
 cards exist (it moves them to the top of the home) and with a paragraph where they don't. Every
 answer carries *Sources* and a *What happens next*, same as a card's back, and a "how sure" word where it
 matters. A question the tool cannot answer can turn into an Ask ("if you know who holds the
@@ -388,6 +406,72 @@ budget, a name is enough"). A question the cards should already have answered ("
 cold?") is a signal that the cards surfaced too late, and the answer says so.
 
 An answer is not a new kind of card. The vocabulary stays at six words.
+
+## A card's day
+
+Decided 19 September, the user's calls, with the reasons in chapter 7 of the story. The library
+is the database and the phone is the demo: if the cards carry the day properly, the phone
+follows. So the day is defined in the cards' frontmatter and worked out by `build.js`, and the
+rules are in `library/docs/library-format.md`, "A card's day".
+
+- **The kind is the only label.** Sustain, Advance and Expand were dropped. They were the user's
+  picture of how selling works, and a seller may not see it that way. The cards renamed with them:
+  `sustain-*`, `advance-*` and `expand-*` are now `act-*`.
+- **A card is about nouns of any type** (`about`): a person, an organisation, a document, the
+  offering, or you. `person` and `council` are gone. An Act names who it reaches (`to`); the
+  demo brief reaches nobody, because it is for you.
+- **Real dates.** Every `when` has `from` and, where the card's own words give one, `until`. Only
+  the words were there before. `build.js` writes `days` for the week strip: each day, the cards
+  whose moment is open. The strip does not read it yet.
+- **The tool decides who waits.** An Ask names the cards its answer changes (Karen's note waits on
+  the budget Ask, Rachel's peer call on the Ask about her meeting). Two Acts to one person: what is
+  owed first, then what gives before what asks, then the band. So Rachel's peer call also waits on
+  the promised note, and Neil's invite on the phasing note (it used to be typed; the card's own
+  words already said "send that first"). The demo brief waits on the note to Michelle, as that
+  card says. Two moves to one person that nothing tells apart fail the build: write one card.
+  The user first asked for this when the question was put to them ("the tool should know what
+  should go first, or if it's merged").
+- **The scenario is separate.** The pretend world and its cards moved to `library/scenarios/bops/`.
+  BOPS is one example. The user means to pressure-test the same library on the opposite kind of
+  sale, a mass sale, and the scenarios can be rewritten to fit the signals.
+
+**The week, played out** (the same day, the user's call, after looking at
+https://claude.ai/artifact/DxWfJdHinuRtz7gMXWWN2A). The user did not want to set how many cards
+make a day ("the whole point of the tool is to bring you things you can do in the day") and asked
+me to judge waiting by playing scenarios out. What came of it:
+- Every card has a day, `arrives`. The tool spreads "any day this week" across the working days
+  instead of piling it on Wednesday; quiet days take what costs nothing to wait. "This week" ends
+  on Friday. Placed by me in the pretend world, each day from what the card already says.
+- Today holds one card of every reply the phone has (the user's call, the same day): drafts to
+  send, a hand-over (the brief), one choice (the budget Ask), several choices (the twelve
+  councils), your own words (a good fit) and one tap (let Ashworth rest). The twelve councils, a
+  good fit and Ashworth moved to Wednesday for it; Lisa's note moved to Thursday, a day before
+  it goes stale, so Wednesday does not overflow. The scenario bends to show the tool.
+- A waiting card is not shown until it is free, then it arrives next. On a phone that shows one
+  card at a time, a faded card you cannot act on is a dead stop. Send the note to Michelle and the
+  demo brief is next; answer the budget Ask and Karen's note is next.
+- Known events prepare cards on their day. Three new cards, each promised by an existing one:
+  the question after Thursday's demo, the Tarlton bid question before 2 October, and the note to
+  Lisa a fortnight after the congratulations.
+- What happens next becomes a `watch` on the card. Once you act, the tool watches; a later day's
+  last page lists what it is still watching, and on a watch's last day what it will do if nothing
+  came. The cards a watch turns up (Karen's budget holder, Felton's director) have no day.
+  Felton's director used to wait on the offer being sent; its own trail said on Stephen's reply
+  saying budget again, so it now waits on that.
+- Every day ends past its last card, and that end is not a card (the user's call, by looking:
+  https://claude.ai/artifact/CdpkU44FdAYVj8NecebAfg). It is the card's own shape, same size and
+  corners, as a faded outline with no fill and no shadow, so it speaks the cards' language
+  without being one. In it, the card's big words in grey ("No more cards today.", or "No cards
+  on Saturday.") and the watches under them. That writes what comes after the day's last card,
+  which was open. Tried first: a card saying "That's all for today" (the user was not convinced),
+  then, on the ground with no outline, Apple's empty state, an inset list, and big words alone.
+  The content inside the outline was my pick (big words); the user asked only that the shape be
+  the card's exactly.
+- The phone draws the day picked on the week strip. A draft that is not mail (the brief, the
+  Slack message to Simon, Tarlton's portal questions) opens under its own title and hands over
+  with the card's own words ("Add to the Invite", "Open in Slack", "Copy for the Portal").
+Passed over: a fixed number of cards a day, and waiting cards shown faded (decided 16 September,
+see "The card model"; kept in the library page, where a card's "Waits for" is still shown).
 
 ## How a card is presented
 

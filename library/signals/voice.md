@@ -3,7 +3,6 @@ id: voice
 module: 05-persona-you
 label: Your voice
 blurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'
-modes: [sustain, advance, expand]
 kind: style
 confidence: graded
 inputs: [writing-history]

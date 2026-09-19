@@ -3,7 +3,6 @@ id: unbacked-claim
 module: 03-offerings
 label: Claim without proof
 blurb: "A claim in your pitch that outruns its grounding: nothing on file to back it up yet."
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [product-claims]

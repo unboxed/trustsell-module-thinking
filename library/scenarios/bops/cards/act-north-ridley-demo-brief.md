@@ -1,23 +1,24 @@
 ---
-id: advance-north-ridley-demo-brief
+id: act-north-ridley-demo-brief
 order: 2
 kind: act
-label: Advance
 signal: lead-with-this
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [new-stakeholder]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: michelle-turner
-council: north-ridley
+about: [michelle-turner, north-ridley]
+arrives: 2026-09-16             # the day the tool puts it on the home
+held_by: act-north-ridley-alongside
+held_words: "Once the note to Michelle has gone."
 documents: [east-marston-case-study, alongside-one-pager]
 sure: "likely"
 sure_because: "A pattern: what the invitees have asked about, and how your last two demos went."
 when:
   mode: dated
-  words: "By this evening."
   until: 2026-09-16
+  words: "By this evening."
 reply:
   module: buttons
 actions:
@@ -40,6 +41,13 @@ draft:
   hand: "Add to the Invite"
   sub: "Thursday 17 September, 10:00"
   footer: "Edit the brief as you like. I'll have it on your calendar entry."
+phone:
+  when: "By this evening"
+  act: "Read the Brief"
+  act_does: view
+  said: "Added to the invite. Good luck tomorrow."
+  done: "Brief added"
+  done_text: "It's in the demo invite. After the demo I'll ask how it went and what surprised you."
 ---
 
 # Prepare Thursday's demo at North Ridley

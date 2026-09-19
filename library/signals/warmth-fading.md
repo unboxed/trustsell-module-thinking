@@ -3,7 +3,6 @@ id: warmth-fading
 module: 02-relationships
 label: Warmth fading
 blurb: Replies turning short and cool, or quiet on the last call.
-modes: [advance, sustain]
 kind: decay
 confidence: low
 inputs: [person-history, meeting-history]

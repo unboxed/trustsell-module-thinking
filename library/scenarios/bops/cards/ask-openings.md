@@ -2,12 +2,12 @@
 id: ask-openings
 order: 19
 kind: ask
-label: Ask
 signal: voice
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 counts: [draft-to-sent-edit-distance, greeting-and-signoff-pattern]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: you
+about: [you]
+arrives: 2026-09-21             # the day the tool puts it on the home
 documents: []
 when:
   mode: rhythm
@@ -25,6 +25,12 @@ answers:
 actions:
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
+phone:
+  act: "Answer"
+  act_does: open
+  said: "Thank you. I'll write that way from now on."
+  done: "Thank you"
+  done_text: "I've saved it with how you like to sound, so every draft follows it."
 ---
 
 # Should I leave the greetings out of my drafts?

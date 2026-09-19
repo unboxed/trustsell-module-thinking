@@ -1,5 +1,7 @@
 # Selling to councils: one scenario, reverse-engineered
 
+*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, "A card's day".*
+
 A worked walkthrough of a single real goal, run **backward**. Where `docs/flow.md`
 walks the BOPS Expand goal forward in time, this one starts from a finished
 recommendation and peels each layer back, asking *"what had to be true for this?"*

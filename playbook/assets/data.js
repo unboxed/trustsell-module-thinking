@@ -7,42 +7,27 @@ window.LIBRARY = {
    "id": "cast",
    "about": "the people, real to the fiction",
    "title": "The cast",
-   "intro": "<p>Everyone a card can be about. <code>you</code> is the seller the tool is speaking to.</p>\n<table><thead><tr><th>Person</th><th>id</th><th>Role</th><th>Council</th><th>What you know</th></tr></thead><tbody><tr><td>Karen Hughes</td><td>karen-hughes</td><td>Head of Customer Services</td><td>bramley</td><td>Used to reply within a day; slowed since the budget meeting</td></tr><tr><td>Gary Pearson</td><td>gary-pearson</td><td>Service Design Lead</td><td>westmoor</td><td>Your champion. Asked on 10 September whether BOPS can import their case records</td></tr><tr><td>Rachel Gill</td><td>rachel-gill</td><td>Head of IT</td><td>westmoor</td><td>Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked \"will officers actually use it\". You owe her the data-residency note</td></tr><tr><td>Neil Chapman</td><td>neil-chapman</td><td>Digital Transformation Lead</td><td>holbrook</td><td>Warm, slow rhythm, roughly every six weeks. Books calls when you propose them</td></tr><tr><td>Lisa Holmes</td><td>lisa-holmes</td><td>Director of Digital</td><td>burnham</td><td>Quiet but friendly. Led the digital strategy</td></tr><tr><td>Stephen Walsh</td><td>stephen-walsh</td><td>Finance Business Partner</td><td>felton</td><td>The price objection is his</td></tr><tr><td>Shabana Akhtar</td><td>shabana-akhtar</td><td>Digital Lead</td><td>felton</td><td>For it. Has mentioned her director twice</td></tr><tr><td>David Marshall</td><td>david-marshall</td><td>Director of Communities</td><td>felton</td><td>On no thread yet</td></tr><tr><td>Michelle Turner</td><td>michelle-turner</td><td>Programme Manager</td><td>north-ridley</td><td>Running Thursday's demo</td></tr><tr><td>Julie Barker</td><td>julie-barker</td><td>formerly Service Improvement Lead</td><td>moreton</td><td>Left; her email bounced this morning</td></tr><tr><td>Sanjay Mistry</td><td>sanjay-mistry</td><td>Digital Programme Manager</td><td>moreton</td><td>Named in Julie's auto-reply. Never spoken</td></tr><tr><td>Darren Cole</td><td>darren-cole</td><td>procurement contact</td><td>tarlton</td><td>Named in the tender. Never spoken</td></tr><tr><td>Nicola Shaw</td><td>nicola-shaw</td><td>Head of Digital</td><td>ashworth</td><td>Your colleague Simon knows her</td></tr><tr><td>Andrew Doyle</td><td>andrew-doyle</td><td>Head of IT</td><td>east-marston</td><td>Happy to do reference calls</td></tr><tr><td>Martin Hodgson</td><td>martin-hodgson</td><td>Director of Resources</td><td>bramley</td><td>Holds the budget. Not on any thread</td></tr><tr><td>Simon Ward</td><td>simon-ward</td><td>your colleague in partnerships</td><td>—</td><td>Well connected across the sector</td></tr><tr><td>You</td><td>you</td><td>the seller</td><td>—</td><td>Fede. Warm, plain-spoken, allergic to \"just checking in\" emails. You delete the tool's pleasantries</td></tr></tbody></table>",
+   "intro": "<p>Everyone a card can be about. <code>you</code> is the seller the tool is speaking to.</p>\n<table><thead><tr><th>Person</th><th>id</th><th>Role</th><th>Organisation</th><th>What you know</th></tr></thead><tbody><tr><td>Karen Hughes</td><td>karen-hughes</td><td>Head of Customer Services</td><td>bramley</td><td>Used to reply within a day; slowed since the budget meeting</td></tr><tr><td>Gary Pearson</td><td>gary-pearson</td><td>Service Design Lead</td><td>westmoor</td><td>Your champion. Asked on 10 September whether BOPS can import their case records</td></tr><tr><td>Rachel Gill</td><td>rachel-gill</td><td>Head of IT</td><td>westmoor</td><td>Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked \"will officers actually use it\". You owe her the data-residency note</td></tr><tr><td>Neil Chapman</td><td>neil-chapman</td><td>Digital Transformation Lead</td><td>holbrook</td><td>Warm, slow rhythm, roughly every six weeks. Books calls when you propose them</td></tr><tr><td>Lisa Holmes</td><td>lisa-holmes</td><td>Director of Digital</td><td>burnham</td><td>Quiet but friendly. Led the digital strategy</td></tr><tr><td>Stephen Walsh</td><td>stephen-walsh</td><td>Finance Business Partner</td><td>felton</td><td>The price objection is his</td></tr><tr><td>Shabana Akhtar</td><td>shabana-akhtar</td><td>Digital Lead</td><td>felton</td><td>For it. Has mentioned her director twice</td></tr><tr><td>David Marshall</td><td>david-marshall</td><td>Director of Communities</td><td>felton</td><td>On no thread yet</td></tr><tr><td>Michelle Turner</td><td>michelle-turner</td><td>Programme Manager</td><td>north-ridley</td><td>Running Thursday's demo</td></tr><tr><td>Julie Barker</td><td>julie-barker</td><td>formerly Service Improvement Lead</td><td>moreton</td><td>Left; her email bounced this morning</td></tr><tr><td>Sanjay Mistry</td><td>sanjay-mistry</td><td>Digital Programme Manager</td><td>moreton</td><td>Named in Julie's auto-reply. Never spoken</td></tr><tr><td>Darren Cole</td><td>darren-cole</td><td>procurement contact</td><td>tarlton</td><td>Named in the tender. Never spoken</td></tr><tr><td>Nicola Shaw</td><td>nicola-shaw</td><td>Head of Digital</td><td>ashworth</td><td>Your colleague Simon knows her</td></tr><tr><td>Andrew Doyle</td><td>andrew-doyle</td><td>Head of IT</td><td>east-marston</td><td>Happy to do reference calls</td></tr><tr><td>Martin Hodgson</td><td>martin-hodgson</td><td>Director of Resources</td><td>bramley</td><td>Holds the budget. Not on any thread</td></tr><tr><td>Simon Ward</td><td>simon-ward</td><td>your colleague in partnerships</td><td>—</td><td>Well connected across the sector</td></tr><tr><td>You</td><td>you</td><td>the seller</td><td>—</td><td>Fede. Warm, plain-spoken, allergic to \"just checking in\" emails. You delete the tool's pleasantries</td></tr></tbody></table>",
    "sections": {},
    "sectionOrder": [],
-   "file": "world/cast.md",
-   "markdown": "---\nid: cast\nabout: the people, real to the fiction\n---\n\n# The cast\n\nEveryone a card can be about. `you` is the seller the tool is speaking to.\n\n| Person | id | Role | Council | What you know |\n|---|---|---|---|---|\n| Karen Hughes | karen-hughes | Head of Customer Services | bramley | Used to reply within a day; slowed since the budget meeting |\n| Gary Pearson | gary-pearson | Service Design Lead | westmoor | Your champion. Asked on 10 September whether BOPS can import their case records |\n| Rachel Gill | rachel-gill | Head of IT | westmoor | Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked \"will officers actually use it\". You owe her the data-residency note |\n| Neil Chapman | neil-chapman | Digital Transformation Lead | holbrook | Warm, slow rhythm, roughly every six weeks. Books calls when you propose them |\n| Lisa Holmes | lisa-holmes | Director of Digital | burnham | Quiet but friendly. Led the digital strategy |\n| Stephen Walsh | stephen-walsh | Finance Business Partner | felton | The price objection is his |\n| Shabana Akhtar | shabana-akhtar | Digital Lead | felton | For it. Has mentioned her director twice |\n| David Marshall | david-marshall | Director of Communities | felton | On no thread yet |\n| Michelle Turner | michelle-turner | Programme Manager | north-ridley | Running Thursday's demo |\n| Julie Barker | julie-barker | formerly Service Improvement Lead | moreton | Left; her email bounced this morning |\n| Sanjay Mistry | sanjay-mistry | Digital Programme Manager | moreton | Named in Julie's auto-reply. Never spoken |\n| Darren Cole | darren-cole | procurement contact | tarlton | Named in the tender. Never spoken |\n| Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |\n| Andrew Doyle | andrew-doyle | Head of IT | east-marston | Happy to do reference calls |\n| Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget. Not on any thread |\n| Simon Ward | simon-ward | your colleague in partnerships | — | Well connected across the sector |\n| You | you | the seller | — | Fede. Warm, plain-spoken, allergic to \"just checking in\" emails. You delete the tool's pleasantries |\n"
-  },
-  "councils": {
-   "id": "councils",
-   "about": "the organisations on the shortlist",
-   "title": "The councils",
-   "intro": "<p>About thirty are on the shortlist. Ten have a live story; twelve are named but have no person in them yet, which is what makes them the subject of an Expand or an Ask.</p>\n<table><thead><tr><th>Council</th><th>id</th><th>Stands at</th><th>Notes</th></tr></thead><tbody><tr><td>Bramley District Council</td><td>bramley</td><td>engaged</td><td>Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson</td></tr><tr><td>Westmoor County Council</td><td>westmoor</td><td>coalition</td><td>Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet</td></tr><tr><td>Holbrook Metropolitan Borough</td><td>holbrook</td><td>engaged</td><td>Neil Chapman; procurement window closes 16 October</td></tr><tr><td>Ashworth Borough Council</td><td>ashworth</td><td>cold</td><td>four notes from you since May, nothing back</td></tr><tr><td>Burnham City Council</td><td>burnham</td><td>engaged</td><td>Lisa Holmes; digital strategy published Friday 11 September</td></tr><tr><td>Felton District Council</td><td>felton</td><td>coalition</td><td>stuck on price with Stephen Walsh; Shabana Akhtar for it; David Marshall not yet in</td></tr><tr><td>North Ridley Council</td><td>north-ridley</td><td>engaged</td><td>demo Thursday 17 September 10:00; think BOPS replaces their case system</td></tr><tr><td>Moreton Borough Council</td><td>moreton</td><td>engaged</td><td>Julie Barker left; her auto-reply names Sanjay Mistry</td></tr><tr><td>Tarlton Borough Council</td><td>tarlton</td><td>cold</td><td>tender out 9 September, clarifications close 2 October, tender closes 9 October</td></tr><tr><td>East Marston County Council</td><td>east-marston</td><td>full</td><td>the customer. The case study every other council gets shown; live fourteen months</td></tr></tbody></table>",
-   "sections": {
-    "The twelve with no named person": {
-     "html": "<p>Ashby, Brinsley, Carlton, Denby, Fulford, Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.</p>\n<p>Their ids are the kebab-slug of the name: <code>ashby</code>, <code>brinsley</code>, <code>carlton</code>, <code>denby</code>, <code>fulford</code>, <code>glenfield</code>, <code>hatton</code>, <code>kirby</code>, <code>linton</code>, <code>newby</code>, <code>orton</code>, <code>rowley</code>. All stand at cold.</p>"
-    }
-   },
-   "sectionOrder": [
-    "The twelve with no named person"
-   ],
-   "file": "world/councils.md",
-   "markdown": "---\nid: councils\nabout: the organisations on the shortlist\n---\n\n# The councils\n\nAbout thirty are on the shortlist. Ten have a live story; twelve are named but have no person in\nthem yet, which is what makes them the subject of an Expand or an Ask.\n\n| Council | id | Stands at | Notes |\n|---|---|---|---|\n| Bramley District Council | bramley | engaged | Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson |\n| Westmoor County Council | westmoor | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |\n| Holbrook Metropolitan Borough | holbrook | engaged | Neil Chapman; procurement window closes 16 October |\n| Ashworth Borough Council | ashworth | cold | four notes from you since May, nothing back |\n| Burnham City Council | burnham | engaged | Lisa Holmes; digital strategy published Friday 11 September |\n| Felton District Council | felton | coalition | stuck on price with Stephen Walsh; Shabana Akhtar for it; David Marshall not yet in |\n| North Ridley Council | north-ridley | engaged | demo Thursday 17 September 10:00; think BOPS replaces their case system |\n| Moreton Borough Council | moreton | engaged | Julie Barker left; her auto-reply names Sanjay Mistry |\n| Tarlton Borough Council | tarlton | cold | tender out 9 September, clarifications close 2 October, tender closes 9 October |\n| East Marston County Council | east-marston | full | the customer. The case study every other council gets shown; live fourteen months |\n\n## The twelve with no named person\n\nAshby, Brinsley, Carlton, Denby, Fulford, Glenfield, Hatton, Kirby,\nLinton, Newby, Orton, Rowley.\n\nTheir ids are the kebab-slug of the name: `ashby`, `brinsley`, `carlton`, `denby`,\n`fulford`, `glenfield`, `hatton`, `kirby`, `linton`, `newby`, `orton`,\n`rowley`. All stand at cold.\n"
+   "file": "scenarios/bops/world/cast.md",
+   "markdown": "---\nid: cast\nabout: the people, real to the fiction\n---\n\n# The cast\n\nEveryone a card can be about. `you` is the seller the tool is speaking to.\n\n| Person | id | Role | Organisation | What you know |\n|---|---|---|---|---|\n| Karen Hughes | karen-hughes | Head of Customer Services | bramley | Used to reply within a day; slowed since the budget meeting |\n| Gary Pearson | gary-pearson | Service Design Lead | westmoor | Your champion. Asked on 10 September whether BOPS can import their case records |\n| Rachel Gill | rachel-gill | Head of IT | westmoor | Met you Tuesday 8 September, joined Gary's thread the same day. Has twice asked \"will officers actually use it\". You owe her the data-residency note |\n| Neil Chapman | neil-chapman | Digital Transformation Lead | holbrook | Warm, slow rhythm, roughly every six weeks. Books calls when you propose them |\n| Lisa Holmes | lisa-holmes | Director of Digital | burnham | Quiet but friendly. Led the digital strategy |\n| Stephen Walsh | stephen-walsh | Finance Business Partner | felton | The price objection is his |\n| Shabana Akhtar | shabana-akhtar | Digital Lead | felton | For it. Has mentioned her director twice |\n| David Marshall | david-marshall | Director of Communities | felton | On no thread yet |\n| Michelle Turner | michelle-turner | Programme Manager | north-ridley | Running Thursday's demo |\n| Julie Barker | julie-barker | formerly Service Improvement Lead | moreton | Left; her email bounced this morning |\n| Sanjay Mistry | sanjay-mistry | Digital Programme Manager | moreton | Named in Julie's auto-reply. Never spoken |\n| Darren Cole | darren-cole | procurement contact | tarlton | Named in the tender. Never spoken |\n| Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |\n| Andrew Doyle | andrew-doyle | Head of IT | east-marston | Happy to do reference calls |\n| Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget. Not on any thread |\n| Simon Ward | simon-ward | your colleague in partnerships | — | Well connected across the sector |\n| You | you | the seller | — | Fede. Warm, plain-spoken, allergic to \"just checking in\" emails. You delete the tool's pleasantries |\n"
   },
   "documents": {
    "id": "documents",
    "about": "the proof you can point at",
    "title": "Proof and documents you can point at",
-   "intro": "<p>What a card can offer or attach. Each lives in Drive, so a card that offers one rests on <a href=\"../channels/drive.md\"><code>../channels/drive.md</code></a>.</p>\n<table><thead><tr><th>Document</th><th>id</th><th>What it is</th><th>Dated</th></tr></thead><tbody><tr><td>The East Marston case study</td><td>east-marston-case-study</td><td>A page of officer feedback: case admin down by about a third</td><td>—</td></tr><tr><td>The officer-time one-pager</td><td>officer-time-one-pager</td><td>The one-page summary of that saving</td><td>—</td></tr><tr><td>The East Marston phasing note</td><td>east-marston-phasing-note</td><td>How they took BOPS in stages</td><td>finished 11 September</td></tr><tr><td>The data-residency note</td><td>data-residency-note</td><td>Where the data lives and who can see it</td><td>updated 2 September</td></tr><tr><td>The records import note</td><td>records-import-note</td><td>How import works, in stages</td><td>—</td></tr><tr><td>The partial rollout price sheet</td><td>partial-rollout-price-sheet</td><td>One service, live cases, about a third of the price</td><td>—</td></tr><tr><td>The alongside one-pager</td><td>alongside-one-pager</td><td>How BOPS sits beside an existing case system</td><td>—</td></tr><tr><td>Your demo deck</td><td>demo-deck</td><td>The slides you demo with. The June and July versions open on \"Compliance by design\"</td><td>—</td></tr></tbody></table>",
+   "intro": "<p>What a card can offer or attach. Each lives in Drive, so a card that offers one rests on <a href=\"../../../channels/drive.md\"><code>../../../channels/drive.md</code></a>.</p>\n<table><thead><tr><th>Document</th><th>id</th><th>What it is</th><th>Dated</th></tr></thead><tbody><tr><td>The East Marston case study</td><td>east-marston-case-study</td><td>A page of officer feedback: case admin down by about a third</td><td>—</td></tr><tr><td>The officer-time one-pager</td><td>officer-time-one-pager</td><td>The one-page summary of that saving</td><td>—</td></tr><tr><td>The East Marston phasing note</td><td>east-marston-phasing-note</td><td>How they took BOPS in stages</td><td>finished 11 September</td></tr><tr><td>The data-residency note</td><td>data-residency-note</td><td>Where the data lives and who can see it</td><td>updated 2 September</td></tr><tr><td>The records import note</td><td>records-import-note</td><td>How import works, in stages</td><td>—</td></tr><tr><td>The partial rollout price sheet</td><td>partial-rollout-price-sheet</td><td>One service, live cases, about a third of the price</td><td>—</td></tr><tr><td>The alongside one-pager</td><td>alongside-one-pager</td><td>How BOPS sits beside an existing case system</td><td>—</td></tr><tr><td>Your demo deck</td><td>demo-deck</td><td>The slides you demo with. The June and July versions open on \"Compliance by design\"</td><td>—</td></tr></tbody></table>",
    "sections": {},
    "sectionOrder": [],
-   "file": "world/documents.md",
-   "markdown": "---\nid: documents\nabout: the proof you can point at\n---\n\n# Proof and documents you can point at\n\nWhat a card can offer or attach. Each lives in Drive, so a card that offers one rests on\n[`../channels/drive.md`](../channels/drive.md).\n\n| Document | id | What it is | Dated |\n|---|---|---|---|\n| The East Marston case study | east-marston-case-study | A page of officer feedback: case admin down by about a third | — |\n| The officer-time one-pager | officer-time-one-pager | The one-page summary of that saving | — |\n| The East Marston phasing note | east-marston-phasing-note | How they took BOPS in stages | finished 11 September |\n| The data-residency note | data-residency-note | Where the data lives and who can see it | updated 2 September |\n| The records import note | records-import-note | How import works, in stages | — |\n| The partial rollout price sheet | partial-rollout-price-sheet | One service, live cases, about a third of the price | — |\n| The alongside one-pager | alongside-one-pager | How BOPS sits beside an existing case system | — |\n| Your demo deck | demo-deck | The slides you demo with. The June and July versions open on \"Compliance by design\" | — |\n"
+   "file": "scenarios/bops/world/documents.md",
+   "markdown": "---\nid: documents\nabout: the proof you can point at\n---\n\n# Proof and documents you can point at\n\nWhat a card can offer or attach. Each lives in Drive, so a card that offers one rests on\n[`../../../channels/drive.md`](../../../channels/drive.md).\n\n| Document | id | What it is | Dated |\n|---|---|---|---|\n| The East Marston case study | east-marston-case-study | A page of officer feedback: case admin down by about a third | — |\n| The officer-time one-pager | officer-time-one-pager | The one-page summary of that saving | — |\n| The East Marston phasing note | east-marston-phasing-note | How they took BOPS in stages | finished 11 September |\n| The data-residency note | data-residency-note | Where the data lives and who can see it | updated 2 September |\n| The records import note | records-import-note | How import works, in stages | — |\n| The partial rollout price sheet | partial-rollout-price-sheet | One service, live cases, about a third of the price | — |\n| The alongside one-pager | alongside-one-pager | How BOPS sits beside an existing case system | — |\n| Your demo deck | demo-deck | The slides you demo with. The June and July versions open on \"Compliance by design\" | — |\n"
   },
   "goal": {
    "id": "goal",
    "today": "2026-09-16",
    "seller": "you",
+   "offering": "bops",
    "ladder": [
     "cold",
     "engaged",
@@ -60,7 +45,7 @@ window.LIBRARY = {
      "html": "<p>Where a deal stands, in order: cold, engaged, coalition, partial, full.</p>"
     },
     "What is connected": {
-     "html": "<p>Gmail, Calendar, Drive, Meet, Slack and the open web. <strong>LinkedIn is not connected</strong>, which is a data gap several cards name rather than work around. The connected state of each source is held where it belongs, as <code>connected:</code> in <a href=\"../channels/\"><code>../channels/</code></a>.</p>"
+     "html": "<p>Gmail, Calendar, Drive, Meet, Slack and the open web. <strong>LinkedIn is not connected</strong>, which is a data gap several cards name rather than work around. The connected state of each source is held where it belongs, as <code>connected:</code> in <a href=\"../../../channels/\"><code>../../../channels/</code></a>.</p>"
     }
    },
    "sectionOrder": [
@@ -68,8 +53,24 @@ window.LIBRARY = {
     "The ladder",
     "What is connected"
    ],
-   "file": "world/goal.md",
-   "markdown": "---\nid: goal\ntoday: 2026-09-16\nseller: you\nladder: [cold, engaged, coalition, partial, full]\n---\n\n# The goal, in your words\n\nSell **BOPS**, a new SaaS for local authorities. A good product but a tough, multi-year sell. Find\nthe early adopters: individuals inside councils who feel the pain of legacy tech and want better\ntools for their officers. Several stakeholders to win per council, some deciders, some influencers.\nLand a **partial adoption now**, full adoption later. About **30 councils** on the shortlist, with\nnamed people in eighteen of them.\n\nTempo: patient. Never push. A clumsy chase costs a relationship built over years.\n\n## Today\n\nWednesday 16 September 2026. Every `when` on a card is relative to this date.\n\n## The ladder\n\nWhere a deal stands, in order: cold, engaged, coalition, partial, full.\n\n## What is connected\n\nGmail, Calendar, Drive, Meet, Slack and the open web. **LinkedIn is not connected**, which is a\ndata gap several cards name rather than work around. The connected state of each source is held\nwhere it belongs, as `connected:` in [`../channels/`](../channels/).\n"
+   "file": "scenarios/bops/world/goal.md",
+   "markdown": "---\nid: goal\ntoday: 2026-09-16\nseller: you\noffering: bops          # the thing being sold; a card can be about it\nladder: [cold, engaged, coalition, partial, full]\n---\n\n# The goal, in your words\n\nSell **BOPS**, a new SaaS for local authorities. A good product but a tough, multi-year sell. Find\nthe early adopters: individuals inside councils who feel the pain of legacy tech and want better\ntools for their officers. Several stakeholders to win per council, some deciders, some influencers.\nLand a **partial adoption now**, full adoption later. About **30 councils** on the shortlist, with\nnamed people in eighteen of them.\n\nTempo: patient. Never push. A clumsy chase costs a relationship built over years.\n\n## Today\n\nWednesday 16 September 2026. Every `when` on a card is relative to this date.\n\n## The ladder\n\nWhere a deal stands, in order: cold, engaged, coalition, partial, full.\n\n## What is connected\n\nGmail, Calendar, Drive, Meet, Slack and the open web. **LinkedIn is not connected**, which is a\ndata gap several cards name rather than work around. The connected state of each source is held\nwhere it belongs, as `connected:` in [`../../../channels/`](../../../channels/).\n"
+  },
+  "organisations": {
+   "id": "organisations",
+   "about": "the organisations on the shortlist. In this scenario they are councils",
+   "title": "The councils",
+   "intro": "<p>About thirty are on the shortlist. Ten have a live story; twelve are named but have no person in them yet, which is what makes them the subject of an Act or an Ask.</p>\n<table><thead><tr><th>Organisation</th><th>id</th><th>Stands at</th><th>Notes</th></tr></thead><tbody><tr><td>Bramley District Council</td><td>bramley</td><td>engaged</td><td>Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson</td></tr><tr><td>Westmoor County Council</td><td>westmoor</td><td>coalition</td><td>Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet</td></tr><tr><td>Holbrook Metropolitan Borough</td><td>holbrook</td><td>engaged</td><td>Neil Chapman; procurement window closes 16 October</td></tr><tr><td>Ashworth Borough Council</td><td>ashworth</td><td>cold</td><td>four notes from you since May, nothing back</td></tr><tr><td>Burnham City Council</td><td>burnham</td><td>engaged</td><td>Lisa Holmes; digital strategy published Friday 11 September</td></tr><tr><td>Felton District Council</td><td>felton</td><td>coalition</td><td>stuck on price with Stephen Walsh; Shabana Akhtar for it; David Marshall not yet in</td></tr><tr><td>North Ridley Council</td><td>north-ridley</td><td>engaged</td><td>demo Thursday 17 September 10:00; think BOPS replaces their case system</td></tr><tr><td>Moreton Borough Council</td><td>moreton</td><td>engaged</td><td>Julie Barker left; her auto-reply names Sanjay Mistry</td></tr><tr><td>Tarlton Borough Council</td><td>tarlton</td><td>cold</td><td>tender out 9 September, clarifications close 2 October, tender closes 9 October</td></tr><tr><td>East Marston County Council</td><td>east-marston</td><td>full</td><td>the customer. The case study every other council gets shown; live fourteen months</td></tr></tbody></table>",
+   "sections": {
+    "The twelve with no named person": {
+     "html": "<p>Ashby, Brinsley, Carlton, Denby, Fulford, Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.</p>\n<p>Their ids are the kebab-slug of the name: <code>ashby</code>, <code>brinsley</code>, <code>carlton</code>, <code>denby</code>, <code>fulford</code>, <code>glenfield</code>, <code>hatton</code>, <code>kirby</code>, <code>linton</code>, <code>newby</code>, <code>orton</code>, <code>rowley</code>. All stand at cold.</p>"
+    }
+   },
+   "sectionOrder": [
+    "The twelve with no named person"
+   ],
+   "file": "scenarios/bops/world/organisations.md",
+   "markdown": "---\nid: organisations\nabout: the organisations on the shortlist. In this scenario they are councils\n---\n\n# The councils\n\nAbout thirty are on the shortlist. Ten have a live story; twelve are named but have no person in\nthem yet, which is what makes them the subject of an Act or an Ask.\n\n| Organisation | id | Stands at | Notes |\n|---|---|---|---|\n| Bramley District Council | bramley | engaged | Karen Hughes is the only live door. Budget meeting Thursday 20 August. Budget sits with the Director of Resources, Martin Hodgson |\n| Westmoor County Council | westmoor | coalition | Gary Pearson champion; Rachel Gill joined the thread 8 September; no budget holder seen yet |\n| Holbrook Metropolitan Borough | holbrook | engaged | Neil Chapman; procurement window closes 16 October |\n| Ashworth Borough Council | ashworth | cold | four notes from you since May, nothing back |\n| Burnham City Council | burnham | engaged | Lisa Holmes; digital strategy published Friday 11 September |\n| Felton District Council | felton | coalition | stuck on price with Stephen Walsh; Shabana Akhtar for it; David Marshall not yet in |\n| North Ridley Council | north-ridley | engaged | demo Thursday 17 September 10:00; think BOPS replaces their case system |\n| Moreton Borough Council | moreton | engaged | Julie Barker left; her auto-reply names Sanjay Mistry |\n| Tarlton Borough Council | tarlton | cold | tender out 9 September, clarifications close 2 October, tender closes 9 October |\n| East Marston County Council | east-marston | full | the customer. The case study every other council gets shown; live fourteen months |\n\n## The twelve with no named person\n\nAshby, Brinsley, Carlton, Denby, Fulford, Glenfield, Hatton, Kirby,\nLinton, Newby, Orton, Rowley.\n\nTheir ids are the kebab-slug of the name: `ashby`, `brinsley`, `carlton`, `denby`,\n`fulford`, `glenfield`, `hatton`, `kirby`, `linton`, `newby`, `orton`,\n`rowley`. All stand at cold.\n"
   }
  },
  "questions": [
@@ -198,30 +199,71 @@ window.LIBRARY = {
    "text": "**Coaching, not just drafting.** Q25 (\"what questions should I ask them?\") stretches the"
   }
  ],
+ "scenario": "bops",
  "day": [
-  "advance-north-ridley-alongside",
-  "advance-north-ridley-demo-brief",
-  "sustain-rachel-promise",
-  "advance-gary-records",
-  "sustain-lisa-strategy",
-  "ask-budget-meeting",
-  "sustain-karen-slowing",
-  "expand-karen-budget-holder",
-  "advance-felton-price",
-  "expand-felton-director",
+  "act-felton-price",
+  "act-felton-director",
   "ask-rachel-meeting",
-  "advance-rachel-peer-call",
-  "sustain-neil-rhythm",
-  "advance-holbrook-window",
-  "expand-tarlton-tender",
-  "expand-sanjay-mistry",
-  "expand-simon-intro",
+  "act-north-ridley-alongside",
+  "act-north-ridley-demo-brief",
+  "ask-north-ridley-demo",
+  "act-lisa-strategy",
+  "act-lisa-east-marston",
+  "act-sanjay-mistry",
+  "act-neil-rhythm",
+  "act-holbrook-window",
+  "act-simon-intro",
+  "act-rachel-promise",
+  "act-rachel-peer-call",
+  "act-gary-records",
+  "ask-budget-meeting",
+  "act-karen-slowing",
+  "act-karen-budget-holder",
+  "act-tarlton-tender",
+  "ask-tarlton-bid",
   "ask-twelve-councils",
   "ask-openings",
-  "sustain-ashworth-rest",
+  "act-ashworth-rest",
   "ask-good-fit",
   "connect-linkedin"
  ],
+ "days": {
+  "2026-09-18": [
+   "act-felton-price",
+   "act-neil-rhythm",
+   "act-holbrook-window",
+   "act-simon-intro",
+   "act-tarlton-tender"
+  ],
+  "2026-09-17": [
+   "ask-rachel-meeting",
+   "ask-north-ridley-demo",
+   "act-lisa-strategy",
+   "act-sanjay-mistry",
+   "act-rachel-peer-call"
+  ],
+  "2026-09-16": [
+   "act-north-ridley-alongside",
+   "act-north-ridley-demo-brief",
+   "act-rachel-promise",
+   "act-gary-records",
+   "ask-budget-meeting",
+   "act-karen-slowing",
+   "ask-twelve-councils",
+   "act-ashworth-rest",
+   "ask-good-fit"
+  ],
+  "2026-09-30": [
+   "act-lisa-east-marston"
+  ],
+  "2026-09-29": [
+   "ask-tarlton-bid"
+  ],
+  "2026-09-21": [
+   "ask-openings",
+   "connect-linkedin"
+  ]
+ },
  "modules": [
   {
    "id": "00-spine",
@@ -271,7 +313,7 @@ window.LIBRARY = {
      "html": "<p>The Brain holds no raw data and senses nothing, so it has no <code>channels/</code> and no <code>assemblies/</code> library. It reasons over what the experts report. Its four jobs (synthesise the goal into standing briefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two things it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts' reports rather than a deterministic gather, and they are described in Memory and Output below.</p>"
     },
     "What first: the order of a day": {
-     "html": "<p>Decided 18 September, answering Q21 (\"who should I contact most urgently?\"). The Brain asks one question of every card: <strong>what would waiting a day cost?</strong> The answer is already on the card, in its <code>when</code>, what it owes and what waits on it, so <code>build.js</code> works out the place rather than anyone typing it. Six bands, in order:</p>\n<p>1. <strong>Gone tomorrow.</strong> A date the world set, within a day. 2. <strong>Worse every day.</strong> Something owed (a promise, an unanswered question), or a fresh moment going stale. 3. <strong>Holding something up.</strong> A card another card waits on. Asks land here often: ten seconds that free a card. 4. <strong>A date further off.</strong> Set by the world, weeks away. 5. <strong>Due by its rhythm.</strong> Right this week, no worse next week. 6. <strong>Costs nothing to wait.</strong></p>\n<p>Within a band, the council further up the ladder comes first, then the surer card. One guard runs across every band: <strong>one move per person at a time</strong>. A second card for the same person is held by the first and sits right under it. The pace is not a band: how many cards a day comes from your time and cadence (Profile), ties between Sustain and Expand from your style (Profile), and how early a rhythm card shows from the goal's tempo.</p>"
+     "html": "<p>Decided 18 September, answering Q21 (\"who should I contact most urgently?\"). The Brain asks one question of every card: <strong>what would waiting a day cost?</strong> The answer is already on the card, in its <code>when</code>, what it owes and what waits on it, so <code>build.js</code> works out the place rather than anyone typing it. Six bands, in order:</p>\n<p>1. <strong>Gone tomorrow.</strong> Its last day (<code>until</code>) is today or tomorrow. 2. <strong>Worse every day.</strong> Something owed (a promise, an unanswered question), or a fresh moment going stale. 3. <strong>Holding something up.</strong> A card another card waits on. Asks land here often: ten seconds that free a card. 4. <strong>A date further off.</strong> Set by the world, weeks away. 5. <strong>Due by its rhythm.</strong> Right this week, no worse next week. 6. <strong>Costs nothing to wait.</strong></p>\n<p>Within a band, the organisation further up the ladder comes first, then the surer card. One guard runs across every band: <strong>one move per person at a time</strong>. A second Act to the same person (its <code>to</code>) waits for the first and sits right under it. The Brain decides which goes first, not the seller (19 September): what is owed first, then what gives before what asks, then what waiting a day costs. (My reason, not yet yours.) Two that nothing tells apart should be one card. A card also waits when an Ask's answer changes it, or when its own words give a sequence. The rules are in <code>docs/library-format.md</code>, \"A card's day\".</p>\n<p>The pace is not a band: how many cards a day comes from your time and cadence (Profile), ties between keeping what you have and starting something new from your style (Profile), and how early a rhythm card shows from the goal's tempo.</p>"
     },
     "Output": {
      "html": "<p>What the Brain produces, two faces of the same thinking:</p>\n<ul><li><strong>The scoreboard</strong> (the <em>picture</em>). Where the goal stands: each <strong>target (a deal)</strong> on its rung, the gaps, the tally. A target is a <em>deal</em>: the selling effort People gathers (its people and conversations, which can span more than one organisation), which the Brain places on the goal's ladder. The organisation is the <em>account</em> behind a deal, not the unit. A <em>status</em> the tool never used to offer; you can glance at how the whole goal is going, not just the next move.</li><li><strong>The calendar</strong> (the <em>plan</em>). A living, paced agenda of prepared <strong>nouns</strong>: today, tomorrow, later, re-shuffled as the world moves, quiet days allowed, items ripening from <em>forming</em> to <em>ready</em>. Each item is a <strong>person inside a deal</strong>. \"The one thing worth doing next\" is just today's headline on it.</li></ul>\n<p>Underneath those, two more outputs aimed at the modules, not you:</p>\n<ul><li><strong>The standing briefs.</strong> Each expert's job, drawn from the goal.</li><li><strong>The lesson.</strong> After an outcome, the attribution routed back to whichever module should learn from it.</li></ul>\n<p>Everything it surfaces is a suggestion; the human acts.</p>"
@@ -294,7 +336,7 @@ window.LIBRARY = {
     "Open questions"
    ],
    "file": "modules/00-spine.md",
-   "markdown": "---\nid: 00-spine\nname: \"Brain\"\ntitle: \"Your deal lead\"\nblurb: \"Holds your goals and keeps your week: what to focus on next, paced to you.\"\nicon: brain\noptional: false\ntier: brain\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"02-relationships\"\n    requests: \"watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)\"\n    provides: \"the standing brief drawn from the goal, plus follow-up questions\"\n  - to: \"03-offerings\"\n    requests: \"the product playbook, proof strategy and pricing levers for a deal\"\n  - to: \"04-organization\"\n    requests: \"the matching case study and the compliance fence\"\n  - to: \"05-persona-you\"\n    requests: \"render the brief into the user's voice\"\n    provides: \"the brief (who to act on and why) to render at message time\"\n---\n\n# 00 · Brain\n\nThe only decision-maker: it holds your goals, keeps the score, and plans what to do next, paced\nto you.\n\n> **The Brain pulls no raw data.** It reasons over what the experts report, not over records. What\n> it keeps, the scoreboard and the calendar, is a synthesis of those reports rather than a gather\n> of facts, so it has no `channels/` (no raw data) and no `assemblies/` library. The scoreboard and\n> calendar are described in Memory and Output below. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow the Brain works, in one breath each:\n\n- **The only decision-maker.** Intent lives here and nowhere else. The experts *know* things; only\n  the Brain *wants* things, and only it decides.\n- **Brief, don't boss.** It hands each expert a standing job and asks for pieces; it never orders\n  one module to obey another. A decision in the middle is the Brain's to make: that's a *play*.\n- **Weigh the whole board against the goal.** It's the only part that sees everything at once and\n  holds the goal, so it's the only one that can choose where a move is worth making.\n- **You work the verbs; the tool works the nouns.** This is the reason the tool exists: it prepares\n  the *things* (the target, the proof, the draft) and you do the *acts* (decide, approve, send).\n  Nothing it surfaces is an order; it's a prepared noun waiting for your verb.\n- **Pace to the person, and a quiet day is a real answer.** It fits what it surfaces to how much\n  time you have, and when nothing genuinely warrants a nudge it says so, rather than manufacture\n  busywork.\n- **Suggest, never send.** The human pulls every trigger.\n- **Route learnings home.** When an outcome lands, it sends the lesson to the module that should\n  learn from it; it keeps only the goal and the score.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are the Brain, the user's deal lead, the only part of the tool that holds goals and decides.\nYou hold the strategy: goals, each pinned to an offering, shaped together with the user. From the\ngoals you brief each expert with a standing job, and you keep two things no expert holds: a\n**scoreboard** of where every target stands against the goal, and a **calendar** of what to do\nabout it, paced to how much time the user has. You work the nouns so the user works the verbs: you\nprepare the target, the proof and the draft; the user decides, approves, sends. You never push for\nthe sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move\nworth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the\nexpert who should learn it.\n\n## User input\n\nThe **told** pile, the heavyweight input the whole system turns on:\n\n- **The goal.** What you want, pinned to an offering, with its finish line: *\"BOPS to 30 councils,\n  partial adoption now, full later.\"* This is the one input nothing else can supply; everything\n  downstream is shaped from it.\n- **The tempo.** How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is\n  itself an instruction: nurture, don't push.\n- **The target shape.** Who counts as worth chasing. Often this starts fuzzy (\"people who feel the\n  legacy-tech pain\") and the Brain has to sharpen it with you.\n\nThese live as records in [`told/goal-told.md`](../told/goal-told.md).\n\n**Told once, or asked when it matters** (decided 18 September). There is no settings screen. What\nchanges from seller to seller fills the goal and profile records from the seller's own answers, by\none rule. A fact that does not shift (the goal, the tempo, how much time you have) is told once and\nkept. Your judgement, anything that shifts, or anything the tool would otherwise guess (which\ncouncils matter most this month, your tone, what a good fit looks like, what is new about the\nproduct) comes as an **Ask**, raised only when the answer would change something, and written into\nthe right record so it is never asked twice. An Ask is the general way the tool learns what it\ncannot observe.\n\nThe Brain shapes the goal **with** you. It may come back with a few questions before it commits\n(\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same\npropose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens\nrather than guesses.\n\n(Your **voice and preferences** aren't told to the Brain. They live in Profile (`05`) and the\nBrain reads them, especially your *cadence*: how much you can take on, which paces the whole\ncalendar.)\n\n## Reasoning\n\nThe Brain holds no raw data and senses nothing, so it has no `channels/` and no `assemblies/`\nlibrary. It reasons over what the experts report. Its four jobs (synthesise the goal into standing\nbriefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two\nthings it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts'\nreports rather than a deterministic gather, and they are described in Memory and Output below.\n\n## What first: the order of a day\n\nDecided 18 September, answering Q21 (\"who should I contact most urgently?\"). The Brain asks one\nquestion of every card: **what would waiting a day cost?** The answer is already on the card, in\nits `when`, what it owes and what waits on it, so `build.js` works out the place rather than anyone\ntyping it. Six bands, in order:\n\n1. **Gone tomorrow.** A date the world set, within a day.\n2. **Worse every day.** Something owed (a promise, an unanswered question), or a fresh moment going\n   stale.\n3. **Holding something up.** A card another card waits on. Asks land here often: ten seconds that\n   free a card.\n4. **A date further off.** Set by the world, weeks away.\n5. **Due by its rhythm.** Right this week, no worse next week.\n6. **Costs nothing to wait.**\n\nWithin a band, the council further up the ladder comes first, then the surer card. One guard runs\nacross every band: **one move per person at a time**. A second card for the same person is held by\nthe first and sits right under it. The pace is not a band: how many cards a day comes from your\ntime and cadence (Profile), ties between Sustain and Expand from your style (Profile), and how\nearly a rhythm card shows from the goal's tempo.\n\n## Output\n\nWhat the Brain produces, two faces of the same thinking:\n\n- **The scoreboard** (the *picture*). Where the goal stands: each **target (a deal)** on its rung, the\n  gaps, the tally. A target is a *deal*: the selling effort People gathers (its people and\n  conversations, which can span more than one organisation), which the Brain places on the goal's\n  ladder. The organisation is the *account* behind a deal, not the unit. A *status* the tool never used\n  to offer; you can glance at how the whole goal is going, not just the next move.\n- **The calendar** (the *plan*). A living, paced agenda of prepared **nouns**: today, tomorrow,\n  later, re-shuffled as the world moves, quiet days allowed, items ripening from *forming* to\n  *ready*. Each item is a **person inside a deal**. \"The one thing worth doing next\" is just today's\n  headline on it.\n\nUnderneath those, two more outputs aimed at the modules, not you:\n- **The standing briefs.** Each expert's job, drawn from the goal.\n- **The lesson.** After an outcome, the attribution routed back to whichever module should learn\n  from it.\n\nEverything it surfaces is a suggestion; the human acts.\n\n## Memory\n\nThe Brain holds the **intent** layer: your **strategy** (the goals, each pinned to an offering), the\n**scoreboard** (where every target sits on the ladder, and the tally, a target being a **deal** that\nPeople gathers and the Brain stages), the **calendar** (the paced plan), and **outcome attribution**\n(what it leaned on, so the right lesson can go to the right module).\n\nIt deliberately holds **none of the domain knowledge**. The relationships live in People, the\nproduct in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it\nneeds to *decide*: the goal, the score, the plan, and what worked. It reads the experts' memory by\n**asking**, never by holding a copy.\n\n## Open questions\n\n- **The pick-and-schedule mechanism.** How a day is ordered is now settled (the six bands above).\n  Still open: how many cards a given cadence allows, and what a later day on the calendar shows.\n- **Reading the fuzzy target.** Turning a goal's mindset (\"feels the legacy-tech pain\") into\n  something People can actually watch for, a bridge across People and Offerings the Brain has to\n  commission. Sketched, not built.\n- **The shape of a brief.** The synthesis *mechanism* is settled (Reasoning job 1), but what a brief\n  actually *contains*, the handful of things each module needs to turn it into a routine, isn't\n  worked yet. The test that it's genuinely agnostic: run **two unlike goals** through the same\n  synthesis (a volume cold-outreach goal vs. a patient named-account goal) and check it yields\n  sensible but *different* routines for each.\n- **Tempo vs cadence.** Two different levers push the same \"how twitchy, how hard to push\" dial: the\n  **goal's** patience (told here) and the **user's** capacity (from Profile). How they combine,\n  which wins when they disagree, is open.\n- **Learning from your behaviour.** The Brain can learn from outside outcomes (a reply, a silence)\n  *and* from **you**, what you act on, ignore, or always rewrite. That second loop could quietly\n  tune Profile's dials (you clear nothing at 9am, so your real cadence is evenings). It's a new\n  feedback path we haven't drawn.\n- **Several goals at once.** Splitting attention across more than one goal (two offerings, two\n  segments), how the Brain divides the board and the calendar, is named but not worked.\n- **Forecasting** stays parked: the Brain reads the present board, it doesn't predict which blockers\n  will lift.\n"
+   "markdown": "---\nid: 00-spine\nname: \"Brain\"\ntitle: \"Your deal lead\"\nblurb: \"Holds your goals and keeps your week: what to focus on next, paced to you.\"\nicon: brain\noptional: false\ntier: brain\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"02-relationships\"\n    requests: \"watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)\"\n    provides: \"the standing brief drawn from the goal, plus follow-up questions\"\n  - to: \"03-offerings\"\n    requests: \"the product playbook, proof strategy and pricing levers for a deal\"\n  - to: \"04-organization\"\n    requests: \"the matching case study and the compliance fence\"\n  - to: \"05-persona-you\"\n    requests: \"render the brief into the user's voice\"\n    provides: \"the brief (who to act on and why) to render at message time\"\n---\n\n# 00 · Brain\n\nThe only decision-maker: it holds your goals, keeps the score, and plans what to do next, paced\nto you.\n\n> **The Brain pulls no raw data.** It reasons over what the experts report, not over records. What\n> it keeps, the scoreboard and the calendar, is a synthesis of those reports rather than a gather\n> of facts, so it has no `channels/` (no raw data) and no `assemblies/` library. The scoreboard and\n> calendar are described in Memory and Output below. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow the Brain works, in one breath each:\n\n- **The only decision-maker.** Intent lives here and nowhere else. The experts *know* things; only\n  the Brain *wants* things, and only it decides.\n- **Brief, don't boss.** It hands each expert a standing job and asks for pieces; it never orders\n  one module to obey another. A decision in the middle is the Brain's to make: that's a *play*.\n- **Weigh the whole board against the goal.** It's the only part that sees everything at once and\n  holds the goal, so it's the only one that can choose where a move is worth making.\n- **You work the verbs; the tool works the nouns.** This is the reason the tool exists: it prepares\n  the *things* (the target, the proof, the draft) and you do the *acts* (decide, approve, send).\n  Nothing it surfaces is an order; it's a prepared noun waiting for your verb.\n- **Pace to the person, and a quiet day is a real answer.** It fits what it surfaces to how much\n  time you have, and when nothing genuinely warrants a nudge it says so, rather than manufacture\n  busywork.\n- **Suggest, never send.** The human pulls every trigger.\n- **Route learnings home.** When an outcome lands, it sends the lesson to the module that should\n  learn from it; it keeps only the goal and the score.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are the Brain, the user's deal lead, the only part of the tool that holds goals and decides.\nYou hold the strategy: goals, each pinned to an offering, shaped together with the user. From the\ngoals you brief each expert with a standing job, and you keep two things no expert holds: a\n**scoreboard** of where every target stands against the goal, and a **calendar** of what to do\nabout it, paced to how much time the user has. You work the nouns so the user works the verbs: you\nprepare the target, the proof and the draft; the user decides, approves, sends. You never push for\nthe sake of pushing: a quiet day is a fine answer. You weigh the whole board and surface the move\nworth making, but the human pulls every trigger. When an outcome lands, you route the lesson to the\nexpert who should learn it.\n\n## User input\n\nThe **told** pile, the heavyweight input the whole system turns on:\n\n- **The goal.** What you want, pinned to an offering, with its finish line: *\"BOPS to 30 councils,\n  partial adoption now, full later.\"* This is the one input nothing else can supply; everything\n  downstream is shaped from it.\n- **The tempo.** How patiently or aggressively to pursue it. \"Tough, multi-year, low urgency\" is\n  itself an instruction: nurture, don't push.\n- **The target shape.** Who counts as worth chasing. Often this starts fuzzy (\"people who feel the\n  legacy-tech pain\") and the Brain has to sharpen it with you.\n\nThese live as records in [`told/goal-told.md`](../told/goal-told.md).\n\n**Told once, or asked when it matters** (decided 18 September). There is no settings screen. What\nchanges from seller to seller fills the goal and profile records from the seller's own answers, by\none rule. A fact that does not shift (the goal, the tempo, how much time you have) is told once and\nkept. Your judgement, anything that shifts, or anything the tool would otherwise guess (which\ncouncils matter most this month, your tone, what a good fit looks like, what is new about the\nproduct) comes as an **Ask**, raised only when the answer would change something, and written into\nthe right record so it is never asked twice. An Ask is the general way the tool learns what it\ncannot observe.\n\nThe Brain shapes the goal **with** you. It may come back with a few questions before it commits\n(\"what counts as engaged?\", \"what's the easy first yes?\", \"who are the 30?\"), the same\npropose-and-confirm move the other modules make. Where the goal is too fuzzy to act on, it sharpens\nrather than guesses.\n\n(Your **voice and preferences** aren't told to the Brain. They live in Profile (`05`) and the\nBrain reads them, especially your *cadence*: how much you can take on, which paces the whole\ncalendar.)\n\n## Reasoning\n\nThe Brain holds no raw data and senses nothing, so it has no `channels/` and no `assemblies/`\nlibrary. It reasons over what the experts report. Its four jobs (synthesise the goal into standing\nbriefs, keep the scoreboard, plan the calendar, conduct the recommendation play) build the two\nthings it keeps. Those two, the scoreboard and the calendar, are a synthesis of the experts'\nreports rather than a deterministic gather, and they are described in Memory and Output below.\n\n## What first: the order of a day\n\nDecided 18 September, answering Q21 (\"who should I contact most urgently?\"). The Brain asks one\nquestion of every card: **what would waiting a day cost?** The answer is already on the card, in\nits `when`, what it owes and what waits on it, so `build.js` works out the place rather than anyone\ntyping it. Six bands, in order:\n\n1. **Gone tomorrow.** Its last day (`until`) is today or tomorrow.\n2. **Worse every day.** Something owed (a promise, an unanswered question), or a fresh moment going\n   stale.\n3. **Holding something up.** A card another card waits on. Asks land here often: ten seconds that\n   free a card.\n4. **A date further off.** Set by the world, weeks away.\n5. **Due by its rhythm.** Right this week, no worse next week.\n6. **Costs nothing to wait.**\n\nWithin a band, the organisation further up the ladder comes first, then the surer card. One guard\nruns across every band: **one move per person at a time**. A second Act to the same person (its\n`to`) waits for the first and sits right under it. The Brain decides which goes first, not the\nseller (19 September): what is owed first, then what gives before what asks, then what waiting a\nday costs. (My reason, not yet yours.) Two that nothing tells apart should be one card. A card also\nwaits when an Ask's answer changes it, or when its own words give a sequence. The rules are in\n`docs/library-format.md`, \"A card's day\".\n\nThe pace is not a band: how many cards a day comes from your\ntime and cadence (Profile), ties between keeping what you have and starting something new from your style (Profile), and how\nearly a rhythm card shows from the goal's tempo.\n\n## Output\n\nWhat the Brain produces, two faces of the same thinking:\n\n- **The scoreboard** (the *picture*). Where the goal stands: each **target (a deal)** on its rung, the\n  gaps, the tally. A target is a *deal*: the selling effort People gathers (its people and\n  conversations, which can span more than one organisation), which the Brain places on the goal's\n  ladder. The organisation is the *account* behind a deal, not the unit. A *status* the tool never used\n  to offer; you can glance at how the whole goal is going, not just the next move.\n- **The calendar** (the *plan*). A living, paced agenda of prepared **nouns**: today, tomorrow,\n  later, re-shuffled as the world moves, quiet days allowed, items ripening from *forming* to\n  *ready*. Each item is a **person inside a deal**. \"The one thing worth doing next\" is just today's\n  headline on it.\n\nUnderneath those, two more outputs aimed at the modules, not you:\n- **The standing briefs.** Each expert's job, drawn from the goal.\n- **The lesson.** After an outcome, the attribution routed back to whichever module should learn\n  from it.\n\nEverything it surfaces is a suggestion; the human acts.\n\n## Memory\n\nThe Brain holds the **intent** layer: your **strategy** (the goals, each pinned to an offering), the\n**scoreboard** (where every target sits on the ladder, and the tally, a target being a **deal** that\nPeople gathers and the Brain stages), the **calendar** (the paced plan), and **outcome attribution**\n(what it leaned on, so the right lesson can go to the right module).\n\nIt deliberately holds **none of the domain knowledge**. The relationships live in People, the\nproduct in Offerings, the proof in Organisation, the voice in Profile. The Brain keeps only what it\nneeds to *decide*: the goal, the score, the plan, and what worked. It reads the experts' memory by\n**asking**, never by holding a copy.\n\n## Open questions\n\n- **The pick-and-schedule mechanism.** How a day is ordered is now settled (the six bands above).\n  Still open: how many cards a given cadence allows, and what a later day on the calendar shows.\n- **Reading the fuzzy target.** Turning a goal's mindset (\"feels the legacy-tech pain\") into\n  something People can actually watch for, a bridge across People and Offerings the Brain has to\n  commission. Sketched, not built.\n- **The shape of a brief.** The synthesis *mechanism* is settled (Reasoning job 1), but what a brief\n  actually *contains*, the handful of things each module needs to turn it into a routine, isn't\n  worked yet. The test that it's genuinely agnostic: run **two unlike goals** through the same\n  synthesis (a volume cold-outreach goal vs. a patient named-account goal) and check it yields\n  sensible but *different* routines for each.\n- **Tempo vs cadence.** Two different levers push the same \"how twitchy, how hard to push\" dial: the\n  **goal's** patience (told here) and the **user's** capacity (from Profile). How they combine,\n  which wins when they disagree, is open.\n- **Learning from your behaviour.** The Brain can learn from outside outcomes (a reply, a silence)\n  *and* from **you**, what you act on, ignore, or always rewrite. That second loop could quietly\n  tune Profile's dials (you clear nothing at 9am, so your real cadence is evenings). It's a new\n  feedback path we haven't drawn.\n- **Several goals at once.** Splitting attention across more than one goal (two offerings, two\n  segments), how the Brain divides the board and the calendar, is named but not worked.\n- **Forecasting** stays parked: the Brain reads the present board, it doesn't predict which blockers\n  will lift.\n"
   },
   {
    "id": "01-integrations",
@@ -591,7 +633,7 @@ window.LIBRARY = {
      "html": "<p><em>(The operating stance, in prose, brainstorm-level rather than deployable wording.)</em></p>\n<p>You are Profile, the keeper of how the user sounds and what they prefer. You learn their voice from what they write, their sent mail and the edits they make to your drafts, never from a form they fill in. You own their identity: their name, their role, how they see their job; every module that writes or reasons about them comes to you for it. When you render a message you pitch it to the relationship, leaning on People for closeness and register, and you keep it inside the organisation's hard limits, leaning on Organisation for the fence. You draft; the user decides: how far you draft ahead is their preference to set, but nothing sends without them. When you don't yet know their voice, you propose from what they've written and ask them to confirm, rather than guess.</p>"
     },
     "User input": {
-     "html": "<p>Profile holds the <strong>told</strong> layer about <em>you</em>, but \"told\" here means a <strong>seed, not a form</strong>. You give it a starting handful; from there it lives as memory, refined as the tool watches you work (see Reasoning and Memory). Nothing about you is frozen as a settings field.</p>\n<ul><li><strong>Who you are</strong>, your <strong>name</strong>, your <strong>email</strong>, and a short <strong>bio / \"About you\"</strong> (your role and how you'd want to come across). This is the most basic thing the whole tool needs: a message can't sound like you, or even address people as you, without it. (Email also lets it bootstrap before any account is connected; the connected Google account later confirms it.) Note what it deliberately leaves out: <em>what you sell</em> is Offerings' (<code>03</code>), not Profile's. Profile keeps only what's personal to you and reaches to Offerings for the product, rather than restating it here.</li><li><strong>How the tool should work with you</strong>, broader than a single setting. This is a set of <strong>operator dials</strong> that describe <em>what kind of seller you are</em>, and they tune the whole tool, not just the wording. They are <strong>seeded by a setup archetype</strong>, a single choice between selling for a living and selling only because your role needs it, which sets sensible starting positions; from there each dial is adjustable and is refined by what you do (see Reasoning): - <strong>Sales fluency</strong>, an expert salesperson, or someone who simply has a product to sell and for whom this isn't really the job. This sets the **register the tool speaks to <em>you</em><strong> in: plain English at one end, sales shorthand at the other. - </strong>Time and cadence<strong>, selling all day, or a few minutes now and then. This tells the </strong>Brain<strong> how to pace: how much to surface, how hard to push. - </strong>Style<strong>, a relationship owner sustaining a few, or a volume seller working many (the Sustain/Expand tilt). - </strong>Autonomy<strong>, how far it drafts or acts before you step in. It always suggests; this sets how far ahead it works. - </strong>Coaching**, how much it teaches rather than just hands over: from \"just give me the noun\" to \"tell me <em>why</em> this person and <em>what</em> to say.\" This is the lever that most separates the two kinds of seller. The accidental seller wants the tool to coach (the <em>why</em> and the talking points); the experienced seller wants the bare next move. It is distinct from fluency: fluency sets the <em>words</em> the tool speaks to you in, coaching sets <em>how much it explains</em>.</li><li><strong>Your voice</strong>, optional <strong>writing samples</strong>, or it learns from your sent mail and your edits to its drafts (the raw data behind the libraries). Samples are a head start, not a requirement.</li></ul>\n<p><strong>Two different voices live here, and they shouldn't be confused:</strong> the voice the tool writes <em>as you</em> (to your prospects, <em>your</em> voice), and the voice the tool speaks <em>to you</em> (plain or sales-fluent, set by your fluency dial). Profile holds both.</p>\n<p>These are <strong>supplied outward</strong>: every module that writes, reasons, or speaks to you reaches Profile for them, rather than each holding its own copy. Your identity and your operator dials are owned once, here, and lent to the rest. The Brain reads your cadence to pace; every module reads your fluency to pick plain words over sales jargon.</p>\n<p>When something's missing, Profile degrades gracefully: it can propose a draft \"About you\" from your sent mail, or infer a dial from how you actually work, for you to confirm, rather than stall.</p>"
+     "html": "<p>Profile holds the <strong>told</strong> layer about <em>you</em>, but \"told\" here means a <strong>seed, not a form</strong>. You give it a starting handful; from there it lives as memory, refined as the tool watches you work (see Reasoning and Memory). Nothing about you is frozen as a settings field.</p>\n<ul><li><strong>Who you are</strong>, your <strong>name</strong>, your <strong>email</strong>, and a short <strong>bio / \"About you\"</strong> (your role and how you'd want to come across). This is the most basic thing the whole tool needs: a message can't sound like you, or even address people as you, without it. (Email also lets it bootstrap before any account is connected; the connected Google account later confirms it.) Note what it deliberately leaves out: <em>what you sell</em> is Offerings' (<code>03</code>), not Profile's. Profile keeps only what's personal to you and reaches to Offerings for the product, rather than restating it here.</li><li><strong>How the tool should work with you</strong>, broader than a single setting. This is a set of <strong>operator dials</strong> that describe <em>what kind of seller you are</em>, and they tune the whole tool, not just the wording. They are <strong>seeded by a setup archetype</strong>, a single choice between selling for a living and selling only because your role needs it, which sets sensible starting positions; from there each dial is adjustable and is refined by what you do (see Reasoning): - <strong>Sales fluency</strong>, an expert salesperson, or someone who simply has a product to sell and for whom this isn't really the job. This sets the **register the tool speaks to <em>you</em><strong> in: plain English at one end, sales shorthand at the other. - </strong>Time and cadence<strong>, selling all day, or a few minutes now and then. This tells the </strong>Brain<strong> how to pace: how much to surface, how hard to push. - </strong>Style<strong>, a relationship owner sustaining a few, or a volume seller working many (the tilt between keeping relationships and starting new ones). - </strong>Autonomy<strong>, how far it drafts or acts before you step in. It always suggests; this sets how far ahead it works. - </strong>Coaching**, how much it teaches rather than just hands over: from \"just give me the noun\" to \"tell me <em>why</em> this person and <em>what</em> to say.\" This is the lever that most separates the two kinds of seller. The accidental seller wants the tool to coach (the <em>why</em> and the talking points); the experienced seller wants the bare next move. It is distinct from fluency: fluency sets the <em>words</em> the tool speaks to you in, coaching sets <em>how much it explains</em>.</li><li><strong>Your voice</strong>, optional <strong>writing samples</strong>, or it learns from your sent mail and your edits to its drafts (the raw data behind the libraries). Samples are a head start, not a requirement.</li></ul>\n<p><strong>Two different voices live here, and they shouldn't be confused:</strong> the voice the tool writes <em>as you</em> (to your prospects, <em>your</em> voice), and the voice the tool speaks <em>to you</em> (plain or sales-fluent, set by your fluency dial). Profile holds both.</p>\n<p>These are <strong>supplied outward</strong>: every module that writes, reasons, or speaks to you reaches Profile for them, rather than each holding its own copy. Your identity and your operator dials are owned once, here, and lent to the rest. The Brain reads your cadence to pace; every module reads your fluency to pick plain words over sales jargon.</p>\n<p>When something's missing, Profile degrades gracefully: it can propose a draft \"About you\" from your sent mail, or infer a dial from how you actually work, for you to confirm, rather than stall.</p>"
     },
     "Reasoning": {
      "html": "<p>Profile does two things: it <strong>learns your voice</strong>, and it <strong>renders</strong> a brief into a message that sounds like you. Both stand on the same ground, what you actually write. That reasoning is now its <strong>libraries</strong>, where the moves above the raw data each become a floor you can browse:</p>\n<ul><li><strong>Assembling</strong> (deterministic, organising your sent text so it can be seen) becomes the <a href=\"../assemblies/\"><code>assemblies/</code></a> library.</li><li><strong>Sensing</strong> (the voice read, on the three floors of <a href=\"../docs/tracing-back.md\"><code>tracing-back.md</code></a>: counting then judging) becomes the <a href=\"../signals/\"><code>signals/</code></a> library. Your <strong>edits are the strongest teacher</strong>: every time you rewrite a draft, the gap between what it wrote and what you sent is a fact that sharpens the read.</li></ul>\n<p><strong>Why voice is the only signal, and the dials are not.</strong> The test for a signal is whether the read, when it changes, points at a <em>move on a prospect</em>, which is why every signal answers one of the salesperson's 26 questions. <a href=\"../signals/voice.md\"><code>voice</code></a> passes: it is read off your behaviour, but it is <em>applied to the prospect</em>, it shapes the message you send (Q23, Q26), so it earns a signal floor. The five operator dials (fluency, cadence, style, autonomy, coaching) do not: they change how the tool talks to <em>you</em> and how the Brain paces <em>your</em> calendar, not what you do toward a prospect. Even cadence, the most signal-like, only sets the Brain's tempo; the move toward a prospect still comes from People's reads. So the dials are <strong>configuration</strong>, not signals. They are still <strong>learned from behaviour</strong>, told first and refined ever after (how you write, how often you act, what you rewrite, what you ignore), but that refinement is a <strong>learning loop</strong> tuning a told seed, a different mechanism from a sensing floor, and it is deferred (see Open questions). The absence of a dials-signal floor is correct and informative: Profile <em>configures and renders</em>, it does not <em>sense prospects</em>, save the one read it applies to them.</p>\n<p>When the Brain hands down a brief (who to act on, why, the points to make), Profile is the final render step: it pitches the closeness and register to the relationship by <em>pulling</em> the history from People, blends your voice with the brand style by <em>pulling</em> Organisation's <code>house-voice-guide</code> to write <em>toward</em>, and stays inside Organisation's <code>compliance-fence</code>, the hard limits it writes <em>inside</em>. Two different things come from Organisation, and they do different jobs: the house voice guide shapes the draft as it is written (emulate), the fence checks it and can stop it (gate). The brief carries the <em>what and why</em>; Profile supplies the <em>how it sounds</em>.</p>"
@@ -616,7 +658,7 @@ window.LIBRARY = {
     "Open questions"
    ],
    "file": "modules/05-persona-you.md",
-   "markdown": "---\nid: 05-persona-you\nname: \"Profile\"\ntitle: \"Your profile\"\nblurb: \"Everything personal to you, your voice and your preferences, so every message sounds like you.\"\nicon: pen\noptional: false\ntier: assistant\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"00-spine\"\n    provides: \"the brief rendered into words in the user's voice\"\n  - to: \"02-relationships\"\n    requests: \"relationship history, to pitch the right closeness and register\"\n  - to: \"04-organization\"\n    requests: \"the compliance fence to write inside, and the house voice guide to write toward\"\ndraws_from: [gmail, slack]\n---\n\n# 05 · Profile\n\nThe personal layer: your voice and your preferences, so every message sounds like you.\n\n> Profile's catalogue floors live as libraries: raw data in\n> [`channels/`](../channels/), what you tell it in\n> [`profile-told.md`](../told/profile-told.md), assemblies in [`assemblies/`](../assemblies/), signals in\n> [`signals/`](../signals/). This file holds only the operating prose. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow Profile works, in one breath each:\n\n- **Learn voice, don't ask for it.** Your voice is *read off what you actually write* (sent mail,\n  the edits you make to drafts), never filled in on a form. (People's \"infer, don't tag,\" pointed\n  at you.)\n- **Three floors for voice.** The same ladder as People: the facts of your sent text, the patterns\n  counted off them, the voice read on top, and every read walks back to something you really wrote.\n- **Own identity once, lend it outward.** Who you are lives here and only here; every module that\n  writes or reasons as you reaches Profile rather than keeping its own copy.\n- **Write inside the fence, toward the house voice.** A draft must sit inside Organisation's hard\n  limits (the `compliance-fence`): your voice never overrides compliance or brand. Alongside that hard\n  wall is a softer pull, Organisation's `house-voice-guide`, the brand style your voice blends toward\n  at render.\n- **Suggest, never auto-send.** Profile drafts; you decide. How far it drafts ahead is your\n  autonomy dial, but the trigger is always yours.\n- **Degrade gracefully.** Missing a sample or an \"About you\"? It proposes a draft from your sent\n  mail to confirm, rather than stall.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are Profile, the keeper of how the user sounds and what they prefer. You learn their voice from\nwhat they write, their sent mail and the edits they make to your drafts, never from a form they fill\nin. You own their identity: their name, their role, how they see their job; every module that\nwrites or reasons about them comes to you for it. When you render a message you pitch it to the\nrelationship, leaning on People for closeness and register, and you keep it inside the\norganisation's hard limits, leaning on Organisation for the fence. You draft; the user decides:\nhow far you draft ahead is their preference to set, but nothing sends without them. When you don't\nyet know their voice, you propose from what they've written and ask them to confirm, rather than\nguess.\n\n## User input\n\nProfile holds the **told** layer about *you*, but \"told\" here means a **seed, not a form**. You\ngive it a starting handful; from there it lives as memory, refined as the tool watches you work\n(see Reasoning and Memory). Nothing about you is frozen as a settings field.\n\n- **Who you are**, your **name**, your **email**, and a short **bio / \"About you\"** (your role and\n  how you'd want to come across). This is the most basic thing the whole tool needs: a message can't\n  sound like you, or even address people as you, without it. (Email also lets it bootstrap before any\n  account is connected; the connected Google account later confirms it.) Note what it deliberately\n  leaves out: *what you sell* is Offerings' (`03`), not Profile's. Profile keeps only what's personal\n  to you and reaches to Offerings for the product, rather than restating it here.\n- **How the tool should work with you**, broader than a single setting. This is a set of\n  **operator dials** that describe *what kind of seller you are*, and they tune the whole tool, not\n  just the wording. They are **seeded by a setup archetype**, a single choice between selling for a\n  living and selling only because your role needs it, which sets sensible starting positions; from\n  there each dial is adjustable and is refined by what you do (see Reasoning):\n  - **Sales fluency**, an expert salesperson, or someone who simply has a product to sell and for\n    whom this isn't really the job. This sets the **register the tool speaks to *you*** in: plain\n    English at one end, sales shorthand at the other.\n  - **Time and cadence**, selling all day, or a few minutes now and then. This tells the **Brain**\n    how to pace: how much to surface, how hard to push.\n  - **Style**, a relationship owner sustaining a few, or a volume seller working many (the\n    Sustain/Expand tilt).\n  - **Autonomy**, how far it drafts or acts before you step in. It always suggests; this sets how\n    far ahead it works.\n  - **Coaching**, how much it teaches rather than just hands over: from \"just give me the noun\" to\n    \"tell me *why* this person and *what* to say.\" This is the lever that most separates the two\n    kinds of seller. The accidental seller wants the tool to coach (the *why* and the talking\n    points); the experienced seller wants the bare next move. It is distinct from fluency: fluency\n    sets the *words* the tool speaks to you in, coaching sets *how much it explains*.\n- **Your voice**, optional **writing samples**, or it learns from your sent mail and your edits to\n  its drafts (the raw data behind the libraries). Samples are a head start, not a requirement.\n\n**Two different voices live here, and they shouldn't be confused:** the voice the tool writes *as\nyou* (to your prospects, *your* voice), and the voice the tool speaks *to you* (plain or\nsales-fluent, set by your fluency dial). Profile holds both.\n\nThese are **supplied outward**: every module that writes, reasons, or speaks to you reaches Profile\nfor them, rather than each holding its own copy. Your identity and your operator dials are owned\nonce, here, and lent to the rest. The Brain reads your cadence to pace; every module reads your\nfluency to pick plain words over sales jargon.\n\nWhen something's missing, Profile degrades gracefully: it can propose a draft \"About you\" from\nyour sent mail, or infer a dial from how you actually work, for you to confirm, rather than stall.\n\n## Reasoning\n\nProfile does two things: it **learns your voice**, and it **renders** a brief into a message that\nsounds like you. Both stand on the same ground, what you actually write. That reasoning is now its\n**libraries**, where the moves above the raw data each become a floor you can browse:\n\n- **Assembling** (deterministic, organising your sent text so it can be seen) becomes the\n  [`assemblies/`](../assemblies/) library.\n- **Sensing** (the voice read, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):\n  counting then judging) becomes the [`signals/`](../signals/) library. Your **edits are the strongest\n  teacher**: every time you rewrite a draft, the gap between what it wrote and what you sent is a\n  fact that sharpens the read.\n\n**Why voice is the only signal, and the dials are not.** The test for a signal is whether the read,\nwhen it changes, points at a *move on a prospect*, which is why every signal answers one of the\nsalesperson's 26 questions. [`voice`](../signals/voice.md) passes: it is read off your behaviour, but it\nis *applied to the prospect*, it shapes the message you send (Q23, Q26), so it earns a signal floor.\nThe five operator dials (fluency, cadence, style, autonomy, coaching) do not: they change how the tool\ntalks to *you* and how the Brain paces *your* calendar, not what you do toward a prospect. Even cadence,\nthe most signal-like, only sets the Brain's tempo; the move toward a prospect still comes from People's\nreads. So the dials are **configuration**, not signals. They are still **learned from behaviour**, told\nfirst and refined ever after (how you write, how often you act, what you rewrite, what you ignore), but\nthat refinement is a **learning loop** tuning a told seed, a different mechanism from a sensing floor,\nand it is deferred (see Open questions). The absence of a dials-signal floor is correct and\ninformative: Profile *configures and renders*, it does not *sense prospects*, save the one read it\napplies to them.\n\nWhen the Brain hands down a brief (who to act on, why, the points to make), Profile is the final\nrender step: it pitches the closeness and register to the relationship by *pulling* the history from\nPeople, blends your voice with the brand style by *pulling* Organisation's `house-voice-guide` to\nwrite *toward*, and stays inside Organisation's `compliance-fence`, the hard limits it writes\n*inside*. Two different things come from Organisation, and they do different jobs: the house voice\nguide shapes the draft as it is written (emulate), the fence checks it and can stop it (gate). The\nbrief carries the *what and why*; Profile supplies the *how it sounds*.\n\n## Output\n\nWhat Profile hands up, all as suggestions, like every module:\n\n- **The rendered message** (the headline), the brief turned into words in your voice, pitched to\n  the relationship and sitting inside the organisation's fence, drafted as far ahead as your\n  autonomy allows.\n- **Your voice, on request**, the read itself (how you sound, with its evidence), for any module\n  that needs to write or reason as you.\n- **Your identity and operator dials**, name, email, bio, plus the fluency, cadence, style,\n  autonomy and coaching dials, supplied outward to whoever needs them: the Brain reads your cadence\n  to pace, every module reads your fluency to choose plain words over sales jargon.\n\n## Memory\n\nProfile holds the **personal layer**, everything the tool needs to be *you-shaped*: your identity\n(name, email, bio), your **operator dials** (fluency, cadence, style, autonomy, coaching, seeded by\nyour setup archetype), your **voice**\n(built on the same three floors: the writing it's seen, the patterns it's counted, the read it's\nformed), and the standing **preferences and corrections** you've given. All of it is **seeded then\nkept alive**, told once, then refined from what you do, and held with its evidence so it can be\nrevised, never frozen as a form field.\n\nIt's a **personal** tier, one Profile per individual, private to that user; the shared,\ncompany-wide material lives in Organisation (`04`). Profile reaches another module's memory only by\n**asking**, People for relationship history, Organisation for the fence, never by reaching in.\n\n## Open questions\n\n- **The operator dials, which ones, and how set.** The working set is now five: fluency, cadence,\n  style, autonomy and coaching, seeded by a setup archetype and then inferred from behaviour. One\n  thing is now **settled**: the dials are **configuration, not signals** (they change how the tool\n  works with you, not what you do toward a prospect, so by the action test they earn no signal floor;\n  see Reasoning), and their behavioural refinement is a **learning loop** tuning a told seed, not a\n  sensing read. What's still open is the calibration: how the archetype maps to starting positions,\n  how fast behaviour should override a told setting, and how plainly to expose the dials to you, plus\n  the learning loop itself, which is not yet drawn.\n- **How the Brain consumes the cadence dial.** The biggest downstream effect is the Brain pacing to\n  your time (all-day seller vs a few minutes now and then); exactly how that changes what the Brain\n  surfaces and how hard it pushes is sketched, not settled (`00-spine`).\n- **The voice-capture method.** Learning from sent mail and your edits is the working approach, but\n  the precise form is unsettled: writing **samples** vs a learned **style-spec** vs purely\n  **learned-from-edits**, and how they combine. A use-case pass will settle it.\n- **How much before a confident read.** People's threshold question in voice's (and the dials')\n  terms: how many messages, edits, or sessions before a read is trustworthy enough to act on, and\n  how a thin read degrades (lean on samples, or ask).\n- **House voice vs your voice.** Where the organisation's brand voice (`04`) ends and your personal\n  voice begins at render time. The **structure** is now settled: the brand voice is its own\n  `house-voice-guide` your render writes *toward*, kept apart from the `compliance-fence` it writes\n  *inside* (emulate vs gate). What stays open is the **blend math**: the proposed direction is\n  **persona-dependent**, leaning toward the house voice for someone selling only because their role\n  needs it (a thin personal sales voice, more guardrail) and toward your own voice for an experienced\n  seller, but the exact mechanism isn't yet drawn. *(The same seam is worked from `04`'s side.)*\n"
+   "markdown": "---\nid: 05-persona-you\nname: \"Profile\"\ntitle: \"Your profile\"\nblurb: \"Everything personal to you, your voice and your preferences, so every message sounds like you.\"\nicon: pen\noptional: false\ntier: assistant\nmodes: [sustain, advance, expand]\nconnects:\n  - to: \"00-spine\"\n    provides: \"the brief rendered into words in the user's voice\"\n  - to: \"02-relationships\"\n    requests: \"relationship history, to pitch the right closeness and register\"\n  - to: \"04-organization\"\n    requests: \"the compliance fence to write inside, and the house voice guide to write toward\"\ndraws_from: [gmail, slack]\n---\n\n# 05 · Profile\n\nThe personal layer: your voice and your preferences, so every message sounds like you.\n\n> Profile's catalogue floors live as libraries: raw data in\n> [`channels/`](../channels/), what you tell it in\n> [`profile-told.md`](../told/profile-told.md), assemblies in [`assemblies/`](../assemblies/), signals in\n> [`signals/`](../signals/). This file holds only the operating prose. See\n> [`docs/library-format.md`](../docs/library-format.md).\n\n## Principles\n\nHow Profile works, in one breath each:\n\n- **Learn voice, don't ask for it.** Your voice is *read off what you actually write* (sent mail,\n  the edits you make to drafts), never filled in on a form. (People's \"infer, don't tag,\" pointed\n  at you.)\n- **Three floors for voice.** The same ladder as People: the facts of your sent text, the patterns\n  counted off them, the voice read on top, and every read walks back to something you really wrote.\n- **Own identity once, lend it outward.** Who you are lives here and only here; every module that\n  writes or reasons as you reaches Profile rather than keeping its own copy.\n- **Write inside the fence, toward the house voice.** A draft must sit inside Organisation's hard\n  limits (the `compliance-fence`): your voice never overrides compliance or brand. Alongside that hard\n  wall is a softer pull, Organisation's `house-voice-guide`, the brand style your voice blends toward\n  at render.\n- **Suggest, never auto-send.** Profile drafts; you decide. How far it drafts ahead is your\n  autonomy dial, but the trigger is always yours.\n- **Degrade gracefully.** Missing a sample or an \"About you\"? It proposes a draft from your sent\n  mail to confirm, rather than stall.\n\n## System prompt\n\n*(The operating stance, in prose, brainstorm-level rather than deployable wording.)*\n\nYou are Profile, the keeper of how the user sounds and what they prefer. You learn their voice from\nwhat they write, their sent mail and the edits they make to your drafts, never from a form they fill\nin. You own their identity: their name, their role, how they see their job; every module that\nwrites or reasons about them comes to you for it. When you render a message you pitch it to the\nrelationship, leaning on People for closeness and register, and you keep it inside the\norganisation's hard limits, leaning on Organisation for the fence. You draft; the user decides:\nhow far you draft ahead is their preference to set, but nothing sends without them. When you don't\nyet know their voice, you propose from what they've written and ask them to confirm, rather than\nguess.\n\n## User input\n\nProfile holds the **told** layer about *you*, but \"told\" here means a **seed, not a form**. You\ngive it a starting handful; from there it lives as memory, refined as the tool watches you work\n(see Reasoning and Memory). Nothing about you is frozen as a settings field.\n\n- **Who you are**, your **name**, your **email**, and a short **bio / \"About you\"** (your role and\n  how you'd want to come across). This is the most basic thing the whole tool needs: a message can't\n  sound like you, or even address people as you, without it. (Email also lets it bootstrap before any\n  account is connected; the connected Google account later confirms it.) Note what it deliberately\n  leaves out: *what you sell* is Offerings' (`03`), not Profile's. Profile keeps only what's personal\n  to you and reaches to Offerings for the product, rather than restating it here.\n- **How the tool should work with you**, broader than a single setting. This is a set of\n  **operator dials** that describe *what kind of seller you are*, and they tune the whole tool, not\n  just the wording. They are **seeded by a setup archetype**, a single choice between selling for a\n  living and selling only because your role needs it, which sets sensible starting positions; from\n  there each dial is adjustable and is refined by what you do (see Reasoning):\n  - **Sales fluency**, an expert salesperson, or someone who simply has a product to sell and for\n    whom this isn't really the job. This sets the **register the tool speaks to *you*** in: plain\n    English at one end, sales shorthand at the other.\n  - **Time and cadence**, selling all day, or a few minutes now and then. This tells the **Brain**\n    how to pace: how much to surface, how hard to push.\n  - **Style**, a relationship owner sustaining a few, or a volume seller working many (the\n    tilt between keeping relationships and starting new ones).\n  - **Autonomy**, how far it drafts or acts before you step in. It always suggests; this sets how\n    far ahead it works.\n  - **Coaching**, how much it teaches rather than just hands over: from \"just give me the noun\" to\n    \"tell me *why* this person and *what* to say.\" This is the lever that most separates the two\n    kinds of seller. The accidental seller wants the tool to coach (the *why* and the talking\n    points); the experienced seller wants the bare next move. It is distinct from fluency: fluency\n    sets the *words* the tool speaks to you in, coaching sets *how much it explains*.\n- **Your voice**, optional **writing samples**, or it learns from your sent mail and your edits to\n  its drafts (the raw data behind the libraries). Samples are a head start, not a requirement.\n\n**Two different voices live here, and they shouldn't be confused:** the voice the tool writes *as\nyou* (to your prospects, *your* voice), and the voice the tool speaks *to you* (plain or\nsales-fluent, set by your fluency dial). Profile holds both.\n\nThese are **supplied outward**: every module that writes, reasons, or speaks to you reaches Profile\nfor them, rather than each holding its own copy. Your identity and your operator dials are owned\nonce, here, and lent to the rest. The Brain reads your cadence to pace; every module reads your\nfluency to pick plain words over sales jargon.\n\nWhen something's missing, Profile degrades gracefully: it can propose a draft \"About you\" from\nyour sent mail, or infer a dial from how you actually work, for you to confirm, rather than stall.\n\n## Reasoning\n\nProfile does two things: it **learns your voice**, and it **renders** a brief into a message that\nsounds like you. Both stand on the same ground, what you actually write. That reasoning is now its\n**libraries**, where the moves above the raw data each become a floor you can browse:\n\n- **Assembling** (deterministic, organising your sent text so it can be seen) becomes the\n  [`assemblies/`](../assemblies/) library.\n- **Sensing** (the voice read, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):\n  counting then judging) becomes the [`signals/`](../signals/) library. Your **edits are the strongest\n  teacher**: every time you rewrite a draft, the gap between what it wrote and what you sent is a\n  fact that sharpens the read.\n\n**Why voice is the only signal, and the dials are not.** The test for a signal is whether the read,\nwhen it changes, points at a *move on a prospect*, which is why every signal answers one of the\nsalesperson's 26 questions. [`voice`](../signals/voice.md) passes: it is read off your behaviour, but it\nis *applied to the prospect*, it shapes the message you send (Q23, Q26), so it earns a signal floor.\nThe five operator dials (fluency, cadence, style, autonomy, coaching) do not: they change how the tool\ntalks to *you* and how the Brain paces *your* calendar, not what you do toward a prospect. Even cadence,\nthe most signal-like, only sets the Brain's tempo; the move toward a prospect still comes from People's\nreads. So the dials are **configuration**, not signals. They are still **learned from behaviour**, told\nfirst and refined ever after (how you write, how often you act, what you rewrite, what you ignore), but\nthat refinement is a **learning loop** tuning a told seed, a different mechanism from a sensing floor,\nand it is deferred (see Open questions). The absence of a dials-signal floor is correct and\ninformative: Profile *configures and renders*, it does not *sense prospects*, save the one read it\napplies to them.\n\nWhen the Brain hands down a brief (who to act on, why, the points to make), Profile is the final\nrender step: it pitches the closeness and register to the relationship by *pulling* the history from\nPeople, blends your voice with the brand style by *pulling* Organisation's `house-voice-guide` to\nwrite *toward*, and stays inside Organisation's `compliance-fence`, the hard limits it writes\n*inside*. Two different things come from Organisation, and they do different jobs: the house voice\nguide shapes the draft as it is written (emulate), the fence checks it and can stop it (gate). The\nbrief carries the *what and why*; Profile supplies the *how it sounds*.\n\n## Output\n\nWhat Profile hands up, all as suggestions, like every module:\n\n- **The rendered message** (the headline), the brief turned into words in your voice, pitched to\n  the relationship and sitting inside the organisation's fence, drafted as far ahead as your\n  autonomy allows.\n- **Your voice, on request**, the read itself (how you sound, with its evidence), for any module\n  that needs to write or reason as you.\n- **Your identity and operator dials**, name, email, bio, plus the fluency, cadence, style,\n  autonomy and coaching dials, supplied outward to whoever needs them: the Brain reads your cadence\n  to pace, every module reads your fluency to choose plain words over sales jargon.\n\n## Memory\n\nProfile holds the **personal layer**, everything the tool needs to be *you-shaped*: your identity\n(name, email, bio), your **operator dials** (fluency, cadence, style, autonomy, coaching, seeded by\nyour setup archetype), your **voice**\n(built on the same three floors: the writing it's seen, the patterns it's counted, the read it's\nformed), and the standing **preferences and corrections** you've given. All of it is **seeded then\nkept alive**, told once, then refined from what you do, and held with its evidence so it can be\nrevised, never frozen as a form field.\n\nIt's a **personal** tier, one Profile per individual, private to that user; the shared,\ncompany-wide material lives in Organisation (`04`). Profile reaches another module's memory only by\n**asking**, People for relationship history, Organisation for the fence, never by reaching in.\n\n## Open questions\n\n- **The operator dials, which ones, and how set.** The working set is now five: fluency, cadence,\n  style, autonomy and coaching, seeded by a setup archetype and then inferred from behaviour. One\n  thing is now **settled**: the dials are **configuration, not signals** (they change how the tool\n  works with you, not what you do toward a prospect, so by the action test they earn no signal floor;\n  see Reasoning), and their behavioural refinement is a **learning loop** tuning a told seed, not a\n  sensing read. What's still open is the calibration: how the archetype maps to starting positions,\n  how fast behaviour should override a told setting, and how plainly to expose the dials to you, plus\n  the learning loop itself, which is not yet drawn.\n- **How the Brain consumes the cadence dial.** The biggest downstream effect is the Brain pacing to\n  your time (all-day seller vs a few minutes now and then); exactly how that changes what the Brain\n  surfaces and how hard it pushes is sketched, not settled (`00-spine`).\n- **The voice-capture method.** Learning from sent mail and your edits is the working approach, but\n  the precise form is unsettled: writing **samples** vs a learned **style-spec** vs purely\n  **learned-from-edits**, and how they combine. A use-case pass will settle it.\n- **How much before a confident read.** People's threshold question in voice's (and the dials')\n  terms: how many messages, edits, or sessions before a read is trustworthy enough to act on, and\n  how a thin read degrades (lean on samples, or ask).\n- **House voice vs your voice.** Where the organisation's brand voice (`04`) ends and your personal\n  voice begins at render time. The **structure** is now settled: the brand voice is its own\n  `house-voice-guide` your render writes *toward*, kept apart from the `compliance-fence` it writes\n  *inside* (emulate vs gate). What stays open is the **blend math**: the proposed direction is\n  **persona-dependent**, leaning toward the house voice for someone selling only because their role\n  needs it (a thin personal sales voice, more guardrail) and toward your own voice for an experienced\n  seller, but the exact mechanism isn't yet drawn. *(The same seam is worked from `04`'s side.)*\n"
   }
  ],
  "channels": [
@@ -724,7 +766,7 @@ window.LIBRARY = {
    "connected": false,
    "icon": "in",
    "title": "LinkedIn",
-   "intro": "<p>The professional graph: who someone is at work, when they move roles, and the people you and a prospect both know who can warm an intro. This is the natural home for warm paths and the Expand work that leans on them. It is <strong>not connected</strong>, a data gap, so everything below is mapped but not flowing. The caveat is deeper than a missing login: LinkedIn's API access for this warm-path data (profiles, job changes, mutual connections) is restricted, so treat this whole channel as aspirational until that access opens. The fields below have no API names because no provider call backs them yet; they are the shape we would want, not what we fetch.</p>",
+   "intro": "<p>The professional graph: who someone is at work, when they move roles, and the people you and a prospect both know who can warm an intro. This is the natural home for warm paths and the work of starting relationships that leans on them. It is <strong>not connected</strong>, a data gap, so everything below is mapped but not flowing. The caveat is deeper than a missing login: LinkedIn's API access for this warm-path data (profiles, job changes, mutual connections) is restricted, so treat this whole channel as aspirational until that access opens. The fields below have no API names because no provider call backs them yet; they are the shape we would want, not what we fetch.</p>",
    "sections": {
     "Records": {
      "html": "<table><thead><tr><th>Record</th><th>Field</th><th>Source</th></tr></thead><tbody><tr><td>Profile</td><td>headline</td><td>not connected (restricted API)</td></tr><tr><td>Profile</td><td>role</td><td>not connected (restricted API)</td></tr><tr><td>Profile</td><td>company</td><td>not connected (restricted API)</td></tr><tr><td>Profile</td><td>location</td><td>not connected (restricted API)</td></tr><tr><td>Profile</td><td>experience</td><td>not connected (restricted API)</td></tr><tr><td>Job change</td><td>previous role</td><td>not connected (restricted API)</td></tr><tr><td>Job change</td><td>new role</td><td>not connected (restricted API)</td></tr><tr><td>Job change</td><td>date</td><td>not connected (restricted API)</td></tr><tr><td>Mutual connections</td><td>the people</td><td>not connected (restricted API)</td></tr><tr><td>Mutual connections</td><td>count</td><td>not connected (restricted API)</td></tr></tbody></table>"
@@ -734,7 +776,7 @@ window.LIBRARY = {
     "Records"
    ],
    "file": "channels/linkedin.md",
-   "markdown": "---\nid: linkedin\nname: LinkedIn\nbrand: LinkedIn\nsource: account\nconnected: false\nicon: in\n---\n\n# LinkedIn\n\nThe professional graph: who someone is at work, when they move roles, and the people you and a prospect both know who can warm an intro. This is the natural home for warm paths and the Expand work that leans on them. It is **not connected**, a data gap, so everything below is mapped but not flowing. The caveat is deeper than a missing login: LinkedIn's API access for this warm-path data (profiles, job changes, mutual connections) is restricted, so treat this whole channel as aspirational until that access opens. The fields below have no API names because no provider call backs them yet; they are the shape we would want, not what we fetch.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Profile | headline | not connected (restricted API) |\n| Profile | role | not connected (restricted API) |\n| Profile | company | not connected (restricted API) |\n| Profile | location | not connected (restricted API) |\n| Profile | experience | not connected (restricted API) |\n| Job change | previous role | not connected (restricted API) |\n| Job change | new role | not connected (restricted API) |\n| Job change | date | not connected (restricted API) |\n| Mutual connections | the people | not connected (restricted API) |\n| Mutual connections | count | not connected (restricted API) |\n"
+   "markdown": "---\nid: linkedin\nname: LinkedIn\nbrand: LinkedIn\nsource: account\nconnected: false\nicon: in\n---\n\n# LinkedIn\n\nThe professional graph: who someone is at work, when they move roles, and the people you and a prospect both know who can warm an intro. This is the natural home for warm paths and the work of starting relationships that leans on them. It is **not connected**, a data gap, so everything below is mapped but not flowing. The caveat is deeper than a missing login: LinkedIn's API access for this warm-path data (profiles, job changes, mutual connections) is restricted, so treat this whole channel as aspirational until that access opens. The fields below have no API names because no provider call backs them yet; they are the shape we would want, not what we fetch.\n\n## Records\n\n| Record | Field | Source |\n|---|---|---|\n| Profile | headline | not connected (restricted API) |\n| Profile | role | not connected (restricted API) |\n| Profile | company | not connected (restricted API) |\n| Profile | location | not connected (restricted API) |\n| Profile | experience | not connected (restricted API) |\n| Job change | previous role | not connected (restricted API) |\n| Job change | new role | not connected (restricted API) |\n| Job change | date | not connected (restricted API) |\n| Mutual connections | the people | not connected (restricted API) |\n| Mutual connections | count | not connected (restricted API) |\n"
   },
   {
    "id": "meet",
@@ -3750,9 +3792,6 @@ window.LIBRARY = {
    "module": "03-offerings",
    "label": "Worry without an answer",
    "blurb": "A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -3797,18 +3836,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/answer-gap.md",
-   "markdown": "---\nid: answer-gap\nmodule: 03-offerings\nlabel: Worry without an answer\nblurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [objection-list, proof-library]\ncounts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]\nanswers: [Q15, Q17]\nneeds: [drive, web]\npull: Organisation's proof library, to supply the document a claim needs\n---\n\n# Worry without an answer\n## What it means\n\nA worry is on record from People, but there is no grounded answer ready for it. Or the answer leans on\nproof too thin to carry it.\n\nIt reads one worry at a time. It does not ask \"can we answer this?\" in the abstract. It asks whether\nthere is a grounded answer ready right now, with the proof that worry needs, and whether that proof is\nactually strong.\n\nThe honest, useful edge is naming the gap plainly. It says when there is no good answer yet, or when\nthe answer rests on proof that is old, anonymous, or only your own word, rather than improvising one.\n\n## In practice\n\nA buyer worry such as a compliance attestation has come up on a thread, and there is no entry for it\namong your told worries, no answer on file, and nothing in Drive. By contrast a second worry, data\nresidency, has a told answer backed by one case study, but the case study is four years old, written\nby you rather than a third party. The read: \"answer gap on the compliance worry, thin proof on data\nresidency. The first has nothing on file; the second rests on a single ageing, self-written\nreference.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library for proof that belongs to the organisation\nrather than this offering, such as a general track-record case study.\n\n- Trigger: a worry counts as answered only when it is on the objection list with an answer, backed by\n  the kind of proof its claim needs, and backed by proof strong enough to carry it. An entry present\n  with strong proof on file reads as covered; an entry missing, or proof required but absent, is a\n  gap; an answer present but proof thin is a softer, named gap that says \"shore this up\" rather than\n  \"we have nothing\". Strength is read against the claim, not a fixed bar, since an ageing named case\n  study may carry a continuity claim but not a \"current best-in-class\" one. The one judgement, whether\n  a claim needs proof at all, leans on Offerings' own rule (a track-record claim needs a case study, a\n  capability claim a spec line), not invention.\n- Confidence: high when the gap is total (a live worry, no answer, no proof); softer when an answer\n  exists but its proof is thin, where the read names why it is thin (old, anonymous, or self-asserted)\n  rather than passing it as covered.\n- Needs: Drive, for the \"proof on file\" check; without it those checks come back\n  empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data\n  gap, named not faked). The open web supplies what research turned up. Where the organisation has\n  tagged no proof for a borrowed claim, that is a told gap across modules, named not faked."
+   "markdown": "---\nid: answer-gap\nmodule: 03-offerings\nlabel: Worry without an answer\nblurb: A worry on record with no grounded answer yet, or an answer whose proof is missing or thin.\nkind: risk\nconfidence: graded\ninputs: [objection-list, proof-library]\ncounts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]\nanswers: [Q15, Q17]\nneeds: [drive, web]\npull: Organisation's proof library, to supply the document a claim needs\n---\n\n# Worry without an answer\n## What it means\n\nA worry is on record from People, but there is no grounded answer ready for it. Or the answer leans on\nproof too thin to carry it.\n\nIt reads one worry at a time. It does not ask \"can we answer this?\" in the abstract. It asks whether\nthere is a grounded answer ready right now, with the proof that worry needs, and whether that proof is\nactually strong.\n\nThe honest, useful edge is naming the gap plainly. It says when there is no good answer yet, or when\nthe answer rests on proof that is old, anonymous, or only your own word, rather than improvising one.\n\n## In practice\n\nA buyer worry such as a compliance attestation has come up on a thread, and there is no entry for it\namong your told worries, no answer on file, and nothing in Drive. By contrast a second worry, data\nresidency, has a told answer backed by one case study, but the case study is four years old, written\nby you rather than a third party. The read: \"answer gap on the compliance worry, thin proof on data\nresidency. The first has nothing on file; the second rests on a single ageing, self-written\nreference.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library for proof that belongs to the organisation\nrather than this offering, such as a general track-record case study.\n\n- Trigger: a worry counts as answered only when it is on the objection list with an answer, backed by\n  the kind of proof its claim needs, and backed by proof strong enough to carry it. An entry present\n  with strong proof on file reads as covered; an entry missing, or proof required but absent, is a\n  gap; an answer present but proof thin is a softer, named gap that says \"shore this up\" rather than\n  \"we have nothing\". Strength is read against the claim, not a fixed bar, since an ageing named case\n  study may carry a continuity claim but not a \"current best-in-class\" one. The one judgement, whether\n  a claim needs proof at all, leans on Offerings' own rule (a track-record claim needs a case study, a\n  capability claim a spec line), not invention.\n- Confidence: high when the gap is total (a live worry, no answer, no proof); softer when an answer\n  exists but its proof is thin, where the read names why it is thin (old, anonymous, or self-asserted)\n  rather than passing it as covered.\n- Needs: Drive, for the \"proof on file\" check; without it those checks come back\n  empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data\n  gap, named not faked). The open web supplies what research turned up. Where the organisation has\n  tagged no proof for a borrowed claim, that is a told gap across modules, named not faked."
   },
   {
    "id": "best-way-to-reach",
    "module": "02-relationships",
    "label": "Best way to reach them",
    "blurb": "The channel where this person actually replies, and how fast.",
-   "modes": [
-    "expand",
-    "advance",
-    "sustain"
-   ],
    "kind": "style",
    "confidence": "graded",
    "inputs": [
@@ -3846,16 +3880,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/best-way-to-reach.md",
-   "markdown": "---\nid: best-way-to-reach\nmodule: 02-relationships\nlabel: Best way to reach them\nblurb: The channel where this person actually replies, and how fast.\nmodes: [expand, advance, sustain]\nkind: style\nconfidence: graded\ninputs: [person-history]\ncounts: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]\nanswers: [Q9]\nneeds: [calendar, meet]\n---\n\n# Best way to reach them\n\n## What it means\n\nThe plainest question before you get in touch: what is the best way to reach this person?\n\nIt sorts every back-and-forth with them by where it went. Then it scores each route by where they\nactually reply, and how fast. Not where you happen to write, but where they answer.\n\nOne route usually wins by being quicker and surer for this person than the others.\n\n## In practice\n\nA contact has had eight emails from you and answered one, about six days later, but has answered all\nfive of your Slack messages within fifteen minutes and accepts and shows up to every meeting. Every\nconversation they begin, they begin on Slack. The read: email them and you wait a week, Slack them and\nthey are back in minutes, and they always take a call.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: each route is scored by its own reply rate and typical speed, plus where the person starts\n  conversations and whether they accept meetings; a route wins by being faster and surer for this\n  person than the others (own-rhythm across channels, never a fixed speed), and only once it carries\n  enough back-and-forth to count.\n- Confidence: high when one route clearly beats the rest; softens when two run close, where it reports\n  both; thin and low when there is too little back-and-forth anywhere.\n- Needs: Calendar and Meet, to count accepted invites and calls joined as a route;\n  without them, calls and meetings drop out of the comparison and only the written channels are scored\n  (a data gap, named not faked). Routes outside the connected accounts (phone, text, WhatsApp) cannot\n  be seen at all, so the read says \"of what I can see, this route wins\"."
+   "markdown": "---\nid: best-way-to-reach\nmodule: 02-relationships\nlabel: Best way to reach them\nblurb: The channel where this person actually replies, and how fast.\nkind: style\nconfidence: graded\ninputs: [person-history]\ncounts: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]\nanswers: [Q9]\nneeds: [calendar, meet]\n---\n\n# Best way to reach them\n\n## What it means\n\nThe plainest question before you get in touch: what is the best way to reach this person?\n\nIt sorts every back-and-forth with them by where it went. Then it scores each route by where they\nactually reply, and how fast. Not where you happen to write, but where they answer.\n\nOne route usually wins by being quicker and surer for this person than the others.\n\n## In practice\n\nA contact has had eight emails from you and answered one, about six days later, but has answered all\nfive of your Slack messages within fifteen minutes and accepts and shows up to every meeting. Every\nconversation they begin, they begin on Slack. The read: email them and you wait a week, Slack them and\nthey are back in minutes, and they always take a call.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: each route is scored by its own reply rate and typical speed, plus where the person starts\n  conversations and whether they accept meetings; a route wins by being faster and surer for this\n  person than the others (own-rhythm across channels, never a fixed speed), and only once it carries\n  enough back-and-forth to count.\n- Confidence: high when one route clearly beats the rest; softens when two run close, where it reports\n  both; thin and low when there is too little back-and-forth anywhere.\n- Needs: Calendar and Meet, to count accepted invites and calls joined as a route;\n  without them, calls and meetings drop out of the comparison and only the written channels are scored\n  (a data gap, named not faked). Routes outside the connected accounts (phone, text, WhatsApp) cannot\n  be seen at all, so the read says \"of what I can see, this route wins\"."
   },
   {
    "id": "blocker",
    "module": "02-relationships",
    "label": "Someone blocking the deal",
    "blurb": "Someone who keeps raising the same objection and stalls the deal.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -3899,17 +3930,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/blocker.md",
-   "markdown": "---\nid: blocker\nmodule: 02-relationships\nlabel: Someone blocking the deal\nblurb: Someone who keeps raising the same objection and stalls the deal.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history, objection-list, deal]\ncounts: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]\nanswers: [Q15, Q16]\nneeds: [meet]\npull: Offerings' objection list, to name the objection\n---\n\n# Someone blocking the deal\n## What it means\n\nOne stakeholder on a live deal who keeps pushing back. They still reply, so they have not gone quiet.\nBut the replies are flat and short, and the same worry keeps coming back.\n\nA single push-back is healthy interest, not a block. The same worry, restated and unresolved, with\nevery next step stalling, is the read.\n\nIt names the worry, not just the person. And it leans on Offerings to put a name to the objection\nrather than inventing one.\n\n## In practice\n\nOver a thread, a contact raises the same data-residency worry in three separate replies, their replies\nshrink from a sixty-word norm to about twelve words, and three times you ask for a next step the reply\npivots straight back to the same concern with no movement. Offerings matches the worry to its objection\nlist. The read: this contact is blocking on data residency.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' objection list to name the objection.\n\n- Trigger: the same worry recurs across replies without resolving, AND the replies have gone short\n  against this person's own earlier rhythm in the thread (own-rhythm, never a fixed word count), AND\n  each ask for a next step stalls instead of moving. All three must line up; a single push-back is\n  diligence, not a block.\n- Confidence: high when the worry is identical across replies, the replies have clearly shortened, and\n  every ask stalled; softens to \"pushing back\" when the worries differ each time or the deal is still\n  inching forward.\n- Needs: Meet, so push-back voiced aloud on a captured call counts towards the\n  pattern and is still matched to Offerings to be named; without it, an uncaptured call shows the stall\n  without the worry behind it (the conditional-content data gap\n  [`meeting-history`](../assemblies/meeting-history.md) names). If the worry matches nothing on\n  Offerings' list, the pattern still shows but the objection cannot be named (a supplier-told gap), and\n  confidence falls."
+   "markdown": "---\nid: blocker\nmodule: 02-relationships\nlabel: Someone blocking the deal\nblurb: Someone who keeps raising the same objection and stalls the deal.\nkind: risk\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history, objection-list, deal]\ncounts: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]\nanswers: [Q15, Q16]\nneeds: [meet]\npull: Offerings' objection list, to name the objection\n---\n\n# Someone blocking the deal\n## What it means\n\nOne stakeholder on a live deal who keeps pushing back. They still reply, so they have not gone quiet.\nBut the replies are flat and short, and the same worry keeps coming back.\n\nA single push-back is healthy interest, not a block. The same worry, restated and unresolved, with\nevery next step stalling, is the read.\n\nIt names the worry, not just the person. And it leans on Offerings to put a name to the objection\nrather than inventing one.\n\n## In practice\n\nOver a thread, a contact raises the same data-residency worry in three separate replies, their replies\nshrink from a sixty-word norm to about twelve words, and three times you ask for a next step the reply\npivots straight back to the same concern with no movement. Offerings matches the worry to its objection\nlist. The read: this contact is blocking on data residency.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' objection list to name the objection.\n\n- Trigger: the same worry recurs across replies without resolving, AND the replies have gone short\n  against this person's own earlier rhythm in the thread (own-rhythm, never a fixed word count), AND\n  each ask for a next step stalls instead of moving. All three must line up; a single push-back is\n  diligence, not a block.\n- Confidence: high when the worry is identical across replies, the replies have clearly shortened, and\n  every ask stalled; softens to \"pushing back\" when the worries differ each time or the deal is still\n  inching forward.\n- Needs: Meet, so push-back voiced aloud on a captured call counts towards the\n  pattern and is still matched to Offerings to be named; without it, an uncaptured call shows the stall\n  without the worry behind it (the conditional-content data gap\n  [`meeting-history`](../assemblies/meeting-history.md) names). If the worry matches nothing on\n  Offerings' list, the pattern still shows but the objection cannot be named (a supplier-told gap), and\n  confidence falls."
   },
   {
    "id": "buying-intent",
    "module": "02-relationships",
    "label": "Talking about buying",
    "blurb": "A chat that has turned into a real buying discussion.",
-   "modes": [
-    "advance",
-    "expand"
-   ],
    "kind": "deal-movement",
    "confidence": "graded",
    "inputs": [
@@ -3952,17 +3979,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/buying-intent.md",
-   "markdown": "---\nid: buying-intent\nmodule: 02-relationships\nlabel: Talking about buying\nblurb: A chat that has turned into a real buying discussion.\nmodes: [advance, expand]\nkind: deal-movement\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history, deal]\ncounts: [pricing-question-asked, timeline-or-start-question, proposal-or-trial-requested, budget-or-procurement-entered, decision-language-used]\nanswers: [Q14, Q19]\nneeds: [meet]\npull: Offerings' offering relevance, to anchor which offering the interest is about\n---\n\n# Talking about buying\n## What it means\n\nA conversation has stopped being a chat and started being a purchase.\n\nThe warming read tracks the *pace* of a relationship lifting. This one reads the *content*: the\nquestions people ask only when they are seriously weighing a buy. It is the read that says \"this is a\nlive opportunity\". When it lands on a conversation that is not yet in a deal, it is what prompts People\nto propose one.\n\nIt leans on Offerings to name which offering the interest is about, so it reports a real purchase\nrather than guessing the product.\n\n## In practice\n\nA conversation that had been all about features turns, over a week, to price, a start date and a\nrequest for a proposal, and the buyer's procurement lead joins the thread. The read: \"this has gone\nfrom interested to buying.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' offering relevance to name the offering.\n\n- Trigger: several intent cues stack on one conversation, measured against that conversation's own\n  progression (a feature-led thread turning to price, timing and procurement). One stray cue, or a\n  hypothetical (\"if we ever did this\"), does not count; concrete present-tense buying questions do.\n- Confidence: high when price, timeline and procurement stack together; softer (\"showing interest\")\n  when only one cue shows.\n- Needs: Meet (captured-call content) to catch intent voiced aloud; without it, call-only intent is a\n  data gap. If Offerings cannot confirm the offering, the read still sees the intent but cannot name\n  what they want to buy (a supplier-told gap), and softens to \"interested in something\"."
+   "markdown": "---\nid: buying-intent\nmodule: 02-relationships\nlabel: Talking about buying\nblurb: A chat that has turned into a real buying discussion.\nkind: deal-movement\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history, deal]\ncounts: [pricing-question-asked, timeline-or-start-question, proposal-or-trial-requested, budget-or-procurement-entered, decision-language-used]\nanswers: [Q14, Q19]\nneeds: [meet]\npull: Offerings' offering relevance, to anchor which offering the interest is about\n---\n\n# Talking about buying\n## What it means\n\nA conversation has stopped being a chat and started being a purchase.\n\nThe warming read tracks the *pace* of a relationship lifting. This one reads the *content*: the\nquestions people ask only when they are seriously weighing a buy. It is the read that says \"this is a\nlive opportunity\". When it lands on a conversation that is not yet in a deal, it is what prompts People\nto propose one.\n\nIt leans on Offerings to name which offering the interest is about, so it reports a real purchase\nrather than guessing the product.\n\n## In practice\n\nA conversation that had been all about features turns, over a week, to price, a start date and a\nrequest for a proposal, and the buyer's procurement lead joins the thread. The read: \"this has gone\nfrom interested to buying.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' offering relevance to name the offering.\n\n- Trigger: several intent cues stack on one conversation, measured against that conversation's own\n  progression (a feature-led thread turning to price, timing and procurement). One stray cue, or a\n  hypothetical (\"if we ever did this\"), does not count; concrete present-tense buying questions do.\n- Confidence: high when price, timeline and procurement stack together; softer (\"showing interest\")\n  when only one cue shows.\n- Needs: Meet (captured-call content) to catch intent voiced aloud; without it, call-only intent is a\n  data gap. If Offerings cannot confirm the offering, the read still sees the intent but cannot name\n  what they want to buy (a supplier-told gap), and softens to \"interested in something\"."
   },
   {
    "id": "champion-went-dark",
    "module": "02-relationships",
    "label": "Champion went dark",
    "blurb": "An active contact you suddenly cannot reach at all.",
-   "modes": [
-    "sustain",
-    "expand"
-   ],
    "kind": "risk",
    "confidence": "high",
    "inputs": [
@@ -3985,7 +4008,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it means": {
-     "html": "<p>The channel to a contact you relied on has broken.</p>\n<p>This read is about reach, not warmth. The cooling read asks \"has their rhythm slipped?\". This one asks the sharper question: \"can I still get to them at all?\"</p>\n<p>It leans Sustain, a relationship you are losing. But it tips into Expand the moment the answer is \"they left\", because the warm path now has to be rebuilt to whoever replaced them.</p>\n<p>It is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was never a live channel to break.</p>"
+     "html": "<p>The channel to a contact you relied on has broken.</p>\n<p>This read is about reach, not warmth. The cooling read asks \"has their rhythm slipped?\". This one asks the sharper question: \"can I still get to them at all?\"</p>\n<p>It is mostly about keeping a relationship you are losing. But it becomes about a new one the moment the answer is \"they left\", because the warm path now has to be rebuilt to whoever replaced them.</p>\n<p>It is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was never a live channel to break.</p>"
     },
     "In practice": {
      "html": "<p>A contact who used to reply within a day and started most of your threads now sends nothing back. Your last note bounced with a mailer-daemon message, or their auto-reply says they are no longer with the organisation, and there is no out-of-office window, no \"back next month\" note and no future meeting booked. The read: this contact has gone dark, and on the evidence has likely left.</p>"
@@ -4000,16 +4023,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/champion-went-dark.md",
-   "markdown": "---\nid: champion-went-dark\nmodule: 02-relationships\nlabel: Champion went dark\nblurb: An active contact you suddenly cannot reach at all.\nmodes: [sustain, expand]\nkind: risk\nconfidence: high\ninputs: [person-history]\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]\nanswers: [Q6, Q18]\nneeds: [calendar, meet]\n---\n\n# Champion went dark\n\n## What it means\n\nThe channel to a contact you relied on has broken.\n\nThis read is about reach, not warmth. The cooling read asks \"has their rhythm slipped?\". This one asks\nthe sharper question: \"can I still get to them at all?\"\n\nIt leans Sustain, a relationship you are losing. But it tips into Expand the moment the answer is \"they\nleft\", because the warm path now has to be rebuilt to whoever replaced them.\n\nIt is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was\nnever a live channel to break.\n\n## In practice\n\nA contact who used to reply within a day and started most of your threads now sends nothing back. Your\nlast note bounced with a mailer-daemon message, or their auto-reply says they are no longer with the\norganisation, and there is no out-of-office window, no \"back next month\" note and no future meeting\nbooked. The read: this contact has gone dark, and on the evidence has likely left.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a bounce-back or a \"no longer with\" auto-reply on the thread. Both are near-binary and make\n  the read directly. Only ever for a contact the was-once-active check confirms. Silence without either\n  is not this read: it belongs to [`cooling-champion`](cooling-champion.md), which holds the own-rhythm\n  test and the innocent-explanation scan (settled 18 September, so the two reads no longer overlap).\n- Confidence: high, because a bounce and a departure auto-reply are facts on record, parsed not\n  inferred.\n- Needs: Calendar and Meet, so a future meeting or a recent call counts as a live\n  channel and stops the read landing on someone you just spoke to; without a delivery failure or a\n  departure note, a silent leaver cannot be told apart from a contact who is simply ignoring you, so\n  the read thins to \"went quiet, possibly left\" (a data gap, named not faked)."
+   "markdown": "---\nid: champion-went-dark\nmodule: 02-relationships\nlabel: Champion went dark\nblurb: An active contact you suddenly cannot reach at all.\nkind: risk\nconfidence: high\ninputs: [person-history]\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]\nanswers: [Q6, Q18]\nneeds: [calendar, meet]\n---\n\n# Champion went dark\n\n## What it means\n\nThe channel to a contact you relied on has broken.\n\nThis read is about reach, not warmth. The cooling read asks \"has their rhythm slipped?\". This one asks\nthe sharper question: \"can I still get to them at all?\"\n\nIt is mostly about keeping a relationship you are losing. But it becomes about a new one the\nmoment the answer is \"they left\", because the warm path now has to be rebuilt to whoever replaced them.\n\nIt is only ever for a once-active contact. Someone who emailed twice a year cannot go dark; there was\nnever a live channel to break.\n\n## In practice\n\nA contact who used to reply within a day and started most of your threads now sends nothing back. Your\nlast note bounced with a mailer-daemon message, or their auto-reply says they are no longer with the\norganisation, and there is no out-of-office window, no \"back next month\" note and no future meeting\nbooked. The read: this contact has gone dark, and on the evidence has likely left.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a bounce-back or a \"no longer with\" auto-reply on the thread. Both are near-binary and make\n  the read directly. Only ever for a contact the was-once-active check confirms. Silence without either\n  is not this read: it belongs to [`cooling-champion`](cooling-champion.md), which holds the own-rhythm\n  test and the innocent-explanation scan (settled 18 September, so the two reads no longer overlap).\n- Confidence: high, because a bounce and a departure auto-reply are facts on record, parsed not\n  inferred.\n- Needs: Calendar and Meet, so a future meeting or a recent call counts as a live\n  channel and stops the read landing on someone you just spoke to; without a delivery failure or a\n  departure note, a silent leaver cannot be told apart from a contact who is simply ignoring you, so\n  the read thins to \"went quiet, possibly left\" (a data gap, named not faked)."
   },
   {
    "id": "champion",
    "module": "02-relationships",
    "label": "Champion",
    "blurb": "Someone inside the buyer who is selling for you.",
-   "modes": [
-    "advance"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4052,16 +4072,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/champion.md",
-   "markdown": "---\nid: champion\nmodule: 02-relationships\nlabel: Champion\nblurb: Someone inside the buyer who is selling for you.\nmodes: [advance]\nkind: opening\nconfidence: graded\ninputs: [person-history, conversation-history, meeting-history]\ncounts: [reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]\nanswers: [Q4, Q5, Q6, Q14]\nneeds: [meet]\n---\n\n# Champion\n\n## What it means\n\nSomeone inside the buyer is selling for you. They reply quickly and fully. And they bring their own\ncolleagues in to back the work.\n\nBringing colleagues in is the real sign. Quick replies on their own are just warmth, not championing.\n\n## In practice\n\nA contact who normally replies in a day, in a paragraph or two, is now replying at the same speed or\nfaster and just as long, and over a couple of weeks has added three of their own colleagues to the\nthread, including their procurement lead, with lines like \"looping in the person who owns this\". The\nread: this contact is championing the work.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: reply speed and length sit at or above this person's own baseline (own-rhythm, never a fixed\n  number of hours). And they are actively adding their own colleagues to the thread and vouching for the\n  work. Fast and long for them is warmth. Fast and long *and* recruiting their own people is what makes\n  it champion.\n- Confidence: high when fast, long and clearly recruiting colleagues all stack; softens to \"engaged\"\n  when only the reply behaviour shows and nobody new is being pulled in.\n- Needs: Meet. With it, advocacy spoken on a captured call counts, even before a\n  new name reaches a thread. Without it, that advocacy is invisible: the conditional-content data gap\n  [`meeting-history`](../assemblies/meeting-history.md) names. Advocacy on a phone call or on LinkedIn\n  is invisible too (a data gap, named not faked). So a championing contact reads low until it surfaces\n  in a connected channel."
+   "markdown": "---\nid: champion\nmodule: 02-relationships\nlabel: Champion\nblurb: Someone inside the buyer who is selling for you.\nkind: opening\nconfidence: graded\ninputs: [person-history, conversation-history, meeting-history]\ncounts: [reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]\nanswers: [Q4, Q5, Q6, Q14]\nneeds: [meet]\n---\n\n# Champion\n\n## What it means\n\nSomeone inside the buyer is selling for you. They reply quickly and fully. And they bring their own\ncolleagues in to back the work.\n\nBringing colleagues in is the real sign. Quick replies on their own are just warmth, not championing.\n\n## In practice\n\nA contact who normally replies in a day, in a paragraph or two, is now replying at the same speed or\nfaster and just as long, and over a couple of weeks has added three of their own colleagues to the\nthread, including their procurement lead, with lines like \"looping in the person who owns this\". The\nread: this contact is championing the work.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: reply speed and length sit at or above this person's own baseline (own-rhythm, never a fixed\n  number of hours). And they are actively adding their own colleagues to the thread and vouching for the\n  work. Fast and long for them is warmth. Fast and long *and* recruiting their own people is what makes\n  it champion.\n- Confidence: high when fast, long and clearly recruiting colleagues all stack; softens to \"engaged\"\n  when only the reply behaviour shows and nobody new is being pulled in.\n- Needs: Meet. With it, advocacy spoken on a captured call counts, even before a\n  new name reaches a thread. Without it, that advocacy is invisible: the conditional-content data gap\n  [`meeting-history`](../assemblies/meeting-history.md) names. Advocacy on a phone call or on LinkedIn\n  is invisible too (a data gap, named not faked). So a championing contact reads low until it surfaces\n  in a connected channel."
   },
   {
    "id": "competitive-standing",
    "module": "03-offerings",
    "label": "How you compare with competitors",
    "blurb": "Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4099,16 +4116,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/competitive-standing.md",
-   "markdown": "---\nid: competitive-standing\nmodule: 03-offerings\nlabel: How you compare with competitors\nblurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [competitor-field, product-claims]\ncounts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]\nanswers: [Q15]\nneeds: [web]\n---\n\n# How you compare with competitors\n## What it means\n\nWhere your offering stands against the field around it, on capability and on lock-in, never on price.\n\nIt reads one offering against its named field: where you are stronger, where a named rival or the\nincumbent is stronger (including a capability the buyer needs and you do not have), and whether a\nrival's lock-in is likely to block a switch.\n\nIt turns that side-by-side into a \"watch for this\", the way [`price-barrier`](price-barrier.md) does\nfor price. But it never touches the number: price is price-barrier's read, this one is capability and\nlock-in. The \"where you win\" half is the angle [`lead-with-this`](lead-with-this.md) leans on; this\nread's own spine is the barrier.\n\n## In practice\n\nAgainst the incumbent, your offering has a grounded claim on three counts the incumbent lacks\n(two-way sync, one-day deploy, audit log) and loses on one the buyer asked for (offline mode). The\nincumbent is in place, mid-contract, with data held in a proprietary export. The read: \"you win on\ncapability, but the incumbent's lock-in is the live barrier. You are stronger on three counts, you\nhave one real gap on offline mode, and a switch means breaking a contract and a proprietary export, so\nlead on a partial rollout that does not force a rip-out.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: standing is read against the named field this offering actually competes with (the rivals\n  on the board), not a global average, and against what the buyer asked for. A claim you win on that no\n  buyer cares about does not lift the read, and one capability gap on something a buyer named can sink\n  it. The read needs at least one rival or incumbent gathered to have a field to stand in. The one\n  judgement, whether a lock-in will actually hold the buyer, is graded by how concrete the lock is (a\n  dated contract and a proprietary export, versus a vague \"they're used to it\") rather than asserted.\n  Price is deliberately out of scope, so the two competitive reads never double-judge the same thing.\n- Confidence: graded on how complete the field is. High when several rivals are gathered with their\n  claims and lock-in clear; soft when only one thin rival page was found.\n- Needs: the open web, for rivals' public pages, claims and reviews; without it the\n  field has holes and a rival's real capability is a data gap, named not faked. A switching cost in a\n  private contract is a told gap People surfaces from the thread, not this read inventing it.\n- Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the\n  standing is supplied, the move is the Brain's.\n"
+   "markdown": "---\nid: competitive-standing\nmodule: 03-offerings\nlabel: How you compare with competitors\nblurb: 'Where your offering stands against the named field: where you win, where a rival or incumbent wins, and whether lock-in is a live barrier.'\nkind: risk\nconfidence: graded\ninputs: [competitor-field, product-claims]\ncounts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]\nanswers: [Q15]\nneeds: [web]\n---\n\n# How you compare with competitors\n## What it means\n\nWhere your offering stands against the field around it, on capability and on lock-in, never on price.\n\nIt reads one offering against its named field: where you are stronger, where a named rival or the\nincumbent is stronger (including a capability the buyer needs and you do not have), and whether a\nrival's lock-in is likely to block a switch.\n\nIt turns that side-by-side into a \"watch for this\", the way [`price-barrier`](price-barrier.md) does\nfor price. But it never touches the number: price is price-barrier's read, this one is capability and\nlock-in. The \"where you win\" half is the angle [`lead-with-this`](lead-with-this.md) leans on; this\nread's own spine is the barrier.\n\n## In practice\n\nAgainst the incumbent, your offering has a grounded claim on three counts the incumbent lacks\n(two-way sync, one-day deploy, audit log) and loses on one the buyer asked for (offline mode). The\nincumbent is in place, mid-contract, with data held in a proprietary export. The read: \"you win on\ncapability, but the incumbent's lock-in is the live barrier. You are stronger on three counts, you\nhave one real gap on offline mode, and a switch means breaking a contract and a proprietary export, so\nlead on a partial rollout that does not force a rip-out.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: standing is read against the named field this offering actually competes with (the rivals\n  on the board), not a global average, and against what the buyer asked for. A claim you win on that no\n  buyer cares about does not lift the read, and one capability gap on something a buyer named can sink\n  it. The read needs at least one rival or incumbent gathered to have a field to stand in. The one\n  judgement, whether a lock-in will actually hold the buyer, is graded by how concrete the lock is (a\n  dated contract and a proprietary export, versus a vague \"they're used to it\") rather than asserted.\n  Price is deliberately out of scope, so the two competitive reads never double-judge the same thing.\n- Confidence: graded on how complete the field is. High when several rivals are gathered with their\n  claims and lock-in clear; soft when only one thin rival page was found.\n- Needs: the open web, for rivals' public pages, claims and reviews; without it the\n  field has holes and a rival's real capability is a data gap, named not faked. A switching cost in a\n  private contract is a told gap People surfaces from the thread, not this read inventing it.\n- Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the\n  standing is supplied, the move is the Brain's.\n"
   },
   {
    "id": "cooling-champion",
    "module": "02-relationships",
    "label": "Cooling champion",
    "blurb": "A champion who is starting to go quiet.",
-   "modes": [
-    "sustain"
-   ],
    "kind": "decay",
    "confidence": "graded",
    "inputs": [
@@ -4146,16 +4160,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/cooling-champion.md",
-   "markdown": "---\nid: cooling-champion\nmodule: 02-relationships\nlabel: Cooling champion\nblurb: A champion who is starting to go quiet.\nmodes: [sustain]\nkind: decay\nconfidence: graded\ninputs: [person-history, deal]\ncounts: [reply-gap-vs-own-rhythm, dropped-recurring-meeting, innocent-explanation-scan]\nanswers: [Q18, Q19]\nneeds: [calendar]\n---\n\n# Cooling champion\n\n## What it means\n\nA champion has gone quiet, and no open deal explains it. They are slower than usual, and nothing on\nrecord says why.\n\nA long silence on its own means little. A long silence with no reason behind it is the read.\n\n## In practice\n\nA contact who normally replies within a day has gone quiet for about three weeks across every channel,\nleft your last note unanswered, and quietly dropped your monthly check-in, with nothing on record to\nexplain it. The read: \"they're cooling.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: the reply gap is large against the person's own median reply time (never a fixed number of\n  days), AND the innocent-explanation scan returns empty.\n- Confidence: high when a large own-rhythm departure, a dropped recurring meeting, an unanswered note\n  and an empty scan all stack; grades down towards \"maybe cooling\" as fewer hold.\n- Needs: Calendar, for the dropped-meeting and out-of-office checks; without it\n  those checks drop out and confidence falls (a data gap, named not faked)."
+   "markdown": "---\nid: cooling-champion\nmodule: 02-relationships\nlabel: Cooling champion\nblurb: A champion who is starting to go quiet.\nkind: decay\nconfidence: graded\ninputs: [person-history, deal]\ncounts: [reply-gap-vs-own-rhythm, dropped-recurring-meeting, innocent-explanation-scan]\nanswers: [Q18, Q19]\nneeds: [calendar]\n---\n\n# Cooling champion\n\n## What it means\n\nA champion has gone quiet, and no open deal explains it. They are slower than usual, and nothing on\nrecord says why.\n\nA long silence on its own means little. A long silence with no reason behind it is the read.\n\n## In practice\n\nA contact who normally replies within a day has gone quiet for about three weeks across every channel,\nleft your last note unanswered, and quietly dropped your monthly check-in, with nothing on record to\nexplain it. The read: \"they're cooling.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: the reply gap is large against the person's own median reply time (never a fixed number of\n  days), AND the innocent-explanation scan returns empty.\n- Confidence: high when a large own-rhythm departure, a dropped recurring meeting, an unanswered note\n  and an empty scan all stack; grades down towards \"maybe cooling\" as fewer hold.\n- Needs: Calendar, for the dropped-meeting and out-of-office checks; without it\n  those checks drop out and confidence falls (a data gap, named not faked)."
   },
   {
    "id": "fit-match",
    "module": "03-offerings",
    "label": "Looks like a good fit",
    "blurb": "How well a lead matches the fit-shape, and exactly where it falls short.",
-   "modes": [
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4177,7 +4188,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it means": {
-     "html": "<p>Given a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls short.</p>\n<p>This is an Expand read, made per candidate. Offerings owns the shape and the match. People owns sweeping the address book and calls this read on each lead. It is the mirror of People pulling Offerings to name an objection: here Offerings pulls People to know the lead.</p>\n<p>A miss is named, not scored away. A lead that meets every factor but the one you marked essential reads weaker than one that misses two minor ones.</p>"
+     "html": "<p>Given a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls short.</p>\n<p>This read is about starting new relationships, made per candidate. Offerings owns the shape and the match. People owns sweeping the address book and calls this read on each lead. It is the mirror of People pulling Offerings to name an objection: here Offerings pulls People to know the lead.</p>\n<p>A miss is named, not scored away. A lead that meets every factor but the one you marked essential reads weaker than one that misses two minor ones.</p>"
     },
     "In practice": {
      "html": "<p>You have told it all four factors of a fit-shape (a mid-size buyer of this type, a legacy back-office pain, the right budget cycle, the right sector). A lead handed over by People meets three of them but its budget cycle closed last month. The read: \"strong fit, one timing caveat. The lead matches on size, sector and pain; the only gap is budget timing, so chase now but pace to their cycle.\"</p>"
@@ -4192,17 +4203,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/fit-match.md",
-   "markdown": "---\nid: fit-match\nmodule: 03-offerings\nlabel: Looks like a good fit\nblurb: How well a lead matches the fit-shape, and exactly where it falls short.\nmodes: [expand]\nkind: opening\nconfidence: graded\ninputs: [offering-entry]\ncounts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]\nanswers: [Q1, Q2, Q3]\nneeds: []\npull: People's lead situation, to judge the match against the fit-shape\n---\n\n# Looks like a good fit\n## What it means\n\nGiven a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls\nshort.\n\nThis is an Expand read, made per candidate. Offerings owns the shape and the match. People owns sweeping\nthe address book and calls this read on each lead. It is the mirror of People pulling Offerings to name\nan objection: here Offerings pulls People to know the lead.\n\nA miss is named, not scored away. A lead that meets every factor but the one you marked essential reads\nweaker than one that misses two minor ones.\n\n## In practice\n\nYou have told it all four factors of a fit-shape (a mid-size buyer of this type, a legacy back-office\npain, the right budget cycle, the right sector). A lead handed over by People meets three of them but\nits budget cycle closed last month. The read: \"strong fit, one timing caveat. The lead matches on\nsize, sector and pain; the only gap is budget timing, so chase now but pace to their cycle.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's lead situation to judge the match against the fit-shape.\n\n- Trigger: there is no fixed \"meets 3 of 4 = fit\" line that means the same for every offering. The\n  yardstick is your own fit-shape: how many of the factors you defined this lead meets, and which it\n  misses, named rather than scored away. The read also leans on fit-shape-completeness: if you have\n  told it only some of the factors that matter, a match is only as strong as the thin shape it matched\n  against. The one judgement, whether a miss is fatal or a caveat, is guarded by naming the miss\n  rather than hiding it in a single score.\n- Confidence: graded on grounding. High when the fit-shape is fully told and the lead's situation is\n  richly known; soft when the shape is thin or People's read of the lead is sparse.\n- Needs: no source dependency beyond the told fit-shape and the lead situation People supplies. If you\n  have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of\n  the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing\n  a fit)."
+   "markdown": "---\nid: fit-match\nmodule: 03-offerings\nlabel: Looks like a good fit\nblurb: How well a lead matches the fit-shape, and exactly where it falls short.\nkind: opening\nconfidence: graded\ninputs: [offering-entry]\ncounts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]\nanswers: [Q1, Q2, Q3]\nneeds: []\npull: People's lead situation, to judge the match against the fit-shape\n---\n\n# Looks like a good fit\n## What it means\n\nGiven a lead's situation, how well it matches this offering's fit-shape, and exactly where it falls\nshort.\n\nThis read is about starting new relationships, made per candidate. Offerings owns the shape and the match. People owns sweeping\nthe address book and calls this read on each lead. It is the mirror of People pulling Offerings to name\nan objection: here Offerings pulls People to know the lead.\n\nA miss is named, not scored away. A lead that meets every factor but the one you marked essential reads\nweaker than one that misses two minor ones.\n\n## In practice\n\nYou have told it all four factors of a fit-shape (a mid-size buyer of this type, a legacy back-office\npain, the right budget cycle, the right sector). A lead handed over by People meets three of them but\nits budget cycle closed last month. The read: \"strong fit, one timing caveat. The lead matches on\nsize, sector and pain; the only gap is budget timing, so chase now but pace to their cycle.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's lead situation to judge the match against the fit-shape.\n\n- Trigger: there is no fixed \"meets 3 of 4 = fit\" line that means the same for every offering. The\n  yardstick is your own fit-shape: how many of the factors you defined this lead meets, and which it\n  misses, named rather than scored away. The read also leans on fit-shape-completeness: if you have\n  told it only some of the factors that matter, a match is only as strong as the thin shape it matched\n  against. The one judgement, whether a miss is fatal or a caveat, is guarded by naming the miss\n  rather than hiding it in a single score.\n- Confidence: graded on grounding. High when the fit-shape is fully told and the lead's situation is\n  richly known; soft when the shape is thin or People's read of the lead is sparse.\n- Needs: no source dependency beyond the told fit-shape and the lead situation People supplies. If you\n  have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of\n  the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing\n  a fit)."
   },
   {
    "id": "lead-with-this",
    "module": "03-offerings",
    "label": "Lead with this",
    "blurb": "For a buyer-type, the use-case and information to open with, and what to hold for later.",
-   "modes": [
-    "advance",
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4240,17 +4247,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/lead-with-this.md",
-   "markdown": "---\nid: lead-with-this\nmodule: 03-offerings\nlabel: Lead with this\nblurb: For a buyer-type, the use-case and information to open with, and what to hold for later.\nmodes: [advance, expand]\nkind: opening\nconfidence: graded\ninputs: [offering-entry, objection-list]\ncounts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]\nanswers: [Q10, Q11, Q12, Q24]\nneeds: []\n---\n\n# Lead with this\n\n## What it means\n\nFor a kind of buyer, the use-case to lead with, the information that is most relevant, and what to\nhold back.\n\nIt points the angle. It feeds the Brain's message play, the \"match the message to the person\" group:\nOfferings supplies the angle, the Brain decides the move. The angle is chosen against this buyer-type's\nown concerns, not a fixed \"always lead with X\".\n\nA use-case that maps to none of the factors this buyer-type cares about is not the opener, however\nstrong it is in general.\n\nIt ranks by relevance, not by track record. It cannot yet tell you which use-case actually wins, since\noutcomes are not wired in. That is the parked learning loop.\n\n## In practice\n\nYou have three use-cases on file (a full migration, a partial rollout you grow, a pilot). For a\ncautious buyer-type, rollout risk and data residency top the worry list, and the partial-rollout\nuse-case maps to two of the three factors they lead with (continuity and risk) while full migration\nmaps to none. The read: \"lead with the partial-rollout use-case. It speaks to the continuity and risk\nthis buyer-type cares about and sidesteps the rollout-risk worry that tops their list; hold full\nmigration for later.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: the angle is chosen against this buyer-type's own concerns: which of the factors they care\n  about a use-case actually speaks to, and which dominant worry it sidesteps or invites. A use-case\n  that maps to none of their stated factors is not the opener, however strong it is in general. The\n  read needs at least one use-case on file and a fit-shape that names what the buyer cares about; with\n  neither it has nothing to rank. The one judgement, which angle leads, is guarded by ranking against\n  the told factors rather than taste.\n- Confidence: graded on grounding. High when use-cases and fit-shape are richly told; soft when only\n  one use-case is on file or the buyer-type's factors are thin.\n- Needs: no source dependency beyond the told use-cases, the told fit-shape, and the worries\n  People put on record (the [`objection-list`](../assemblies/objection-list.md) it reads). If you have\n  told it no use-cases there is nothing to lead with (a told gap). Which use-case actually wins is the\n  parked learning loop, named not faked."
+   "markdown": "---\nid: lead-with-this\nmodule: 03-offerings\nlabel: Lead with this\nblurb: For a buyer-type, the use-case and information to open with, and what to hold for later.\nkind: opening\nconfidence: graded\ninputs: [offering-entry, objection-list]\ncounts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]\nanswers: [Q10, Q11, Q12, Q24]\nneeds: []\n---\n\n# Lead with this\n\n## What it means\n\nFor a kind of buyer, the use-case to lead with, the information that is most relevant, and what to\nhold back.\n\nIt points the angle. It feeds the Brain's message play, the \"match the message to the person\" group:\nOfferings supplies the angle, the Brain decides the move. The angle is chosen against this buyer-type's\nown concerns, not a fixed \"always lead with X\".\n\nA use-case that maps to none of the factors this buyer-type cares about is not the opener, however\nstrong it is in general.\n\nIt ranks by relevance, not by track record. It cannot yet tell you which use-case actually wins, since\noutcomes are not wired in. That is the parked learning loop.\n\n## In practice\n\nYou have three use-cases on file (a full migration, a partial rollout you grow, a pilot). For a\ncautious buyer-type, rollout risk and data residency top the worry list, and the partial-rollout\nuse-case maps to two of the three factors they lead with (continuity and risk) while full migration\nmaps to none. The read: \"lead with the partial-rollout use-case. It speaks to the continuity and risk\nthis buyer-type cares about and sidesteps the rollout-risk worry that tops their list; hold full\nmigration for later.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: the angle is chosen against this buyer-type's own concerns: which of the factors they care\n  about a use-case actually speaks to, and which dominant worry it sidesteps or invites. A use-case\n  that maps to none of their stated factors is not the opener, however strong it is in general. The\n  read needs at least one use-case on file and a fit-shape that names what the buyer cares about; with\n  neither it has nothing to rank. The one judgement, which angle leads, is guarded by ranking against\n  the told factors rather than taste.\n- Confidence: graded on grounding. High when use-cases and fit-shape are richly told; soft when only\n  one use-case is on file or the buyer-type's factors are thin.\n- Needs: no source dependency beyond the told use-cases, the told fit-shape, and the worries\n  People put on record (the [`objection-list`](../assemblies/objection-list.md) it reads). If you have\n  told it no use-cases there is nothing to lead with (a told gap). Which use-case actually wins is the\n  parked learning loop, named not faked."
   },
   {
    "id": "loose-end",
    "module": "02-relationships",
    "label": "Loose end",
    "blurb": "Something left hanging, like a promise you never followed through on.",
-   "modes": [
-    "advance",
-    "sustain"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4291,17 +4294,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/loose-end.md",
-   "markdown": "---\nid: loose-end\nmodule: 02-relationships\nlabel: Loose end\nblurb: Something left hanging, like a promise you never followed through on.\nmodes: [advance, sustain]\nkind: risk\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history]\ncounts: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan, commitment-made-on-call]\nanswers: [Q22]\nneeds: [calendar, meet]\n---\n\n# Loose end\n\n## What it means\n\nSomething left hanging on a thread, where only finishing it makes the thread safe.\n\nA loose end comes in two shapes. One is your promise that never went out (\"I'll send you the pricing\nsheet\"). The other is your question that never came back (\"can you confirm the budget?\"). Either way a\nthread is waiting on someone, and the read carries which.\n\nIt lands only once it has checked that nothing already closed it. A sheet that did go out as an\nattachment, or got handed over in a meeting, never counts as still open.\n\n## In practice\n\nOn a thread where the two of you usually close a turn within about two days, your line \"I'll get you\nthe security questionnaire by Friday\" sits eleven days back with no later message carrying an\nattachment or a \"here it is\", and your earlier question \"who signs off on this?\" is nine days back with\nno answer. Nothing on record, no attachment, follow-up note or calendar event, closed either. The\nread: you owe them the questionnaire and they still owe you the sign-off, both well past the pace this\nthread keeps.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a concrete promise or unanswered ask sits past this thread's own normal turn time\n  (own-rhythm, never a fixed number of days) AND the fulfilment scan comes back empty (no later\n  attachment, follow-up note or calendar event closed it). Past pace alone is \"maybe overdue\"; past\n  pace and nothing closed it is the read.\n- Confidence: high when the promise is concrete and well past the thread's pace with nothing to close\n  it; softens when the language was loose (\"I'll look into it\") or the gap has only just crossed the\n  line.\n- Needs: Calendar and Meet, so a promise handed over in a meeting closes the loose\n  end and a commitment made on a captured call counts as a promise; without them, a promise made on an\n  uncaptured call shows only \"you spoke\", not what was said, so it still looks undelivered (the\n  conditional-content data gap [`meeting-history`](../assemblies/meeting-history.md) names). A promise\n  kept outside the connected channels is invisible the same way (a data gap), and a promise in words\n  the parser does not catch may be missed entirely (a told gap the user can close by correcting the\n  read)."
+   "markdown": "---\nid: loose-end\nmodule: 02-relationships\nlabel: Loose end\nblurb: Something left hanging, like a promise you never followed through on.\nkind: risk\nconfidence: graded\ninputs: [conversation-history, person-history, meeting-history]\ncounts: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan, commitment-made-on-call]\nanswers: [Q22]\nneeds: [calendar, meet]\n---\n\n# Loose end\n\n## What it means\n\nSomething left hanging on a thread, where only finishing it makes the thread safe.\n\nA loose end comes in two shapes. One is your promise that never went out (\"I'll send you the pricing\nsheet\"). The other is your question that never came back (\"can you confirm the budget?\"). Either way a\nthread is waiting on someone, and the read carries which.\n\nIt lands only once it has checked that nothing already closed it. A sheet that did go out as an\nattachment, or got handed over in a meeting, never counts as still open.\n\n## In practice\n\nOn a thread where the two of you usually close a turn within about two days, your line \"I'll get you\nthe security questionnaire by Friday\" sits eleven days back with no later message carrying an\nattachment or a \"here it is\", and your earlier question \"who signs off on this?\" is nine days back with\nno answer. Nothing on record, no attachment, follow-up note or calendar event, closed either. The\nread: you owe them the questionnaire and they still owe you the sign-off, both well past the pace this\nthread keeps.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a concrete promise or unanswered ask sits past this thread's own normal turn time\n  (own-rhythm, never a fixed number of days) AND the fulfilment scan comes back empty (no later\n  attachment, follow-up note or calendar event closed it). Past pace alone is \"maybe overdue\"; past\n  pace and nothing closed it is the read.\n- Confidence: high when the promise is concrete and well past the thread's pace with nothing to close\n  it; softens when the language was loose (\"I'll look into it\") or the gap has only just crossed the\n  line.\n- Needs: Calendar and Meet, so a promise handed over in a meeting closes the loose\n  end and a commitment made on a captured call counts as a promise; without them, a promise made on an\n  uncaptured call shows only \"you spoke\", not what was said, so it still looks undelivered (the\n  conditional-content data gap [`meeting-history`](../assemblies/meeting-history.md) names). A promise\n  kept outside the connected channels is invisible the same way (a data gap), and a promise in words\n  the parser does not catch may be missed entirely (a told gap the user can close by correcting the\n  read)."
   },
   {
    "id": "missing-people",
    "module": "02-relationships",
    "label": "Stakeholders you have not reached",
    "blurb": "A key person you have never reached, or a deal resting on one contact.",
-   "modes": [
-    "advance",
-    "expand"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4341,16 +4340,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/missing-people.md",
-   "markdown": "---\nid: missing-people\nmodule: 02-relationships\nlabel: Stakeholders you have not reached\nblurb: A key person you have never reached, or a deal resting on one contact.\nmodes: [advance, expand]\nkind: risk\nconfidence: graded\ninputs: [stakeholder-map, deal]\ncounts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]\nanswers: [Q4, Q5, Q6]\nneeds: [linkedin]\n---\n\n# Stakeholders you have not reached\n## What it means\n\nA read on the shape of who you are talking to, not on any one person.\n\nPeople gathers everyone at an organisation into one picture and marks the empty spots. This read holds\nthose spots against the people a decision usually needs, and speaks up when there is a hole. It is the\ndifference between \"we have a lovely relationship with our contact\" and \"we have a lovely relationship\nwith our contact and nobody who can sign\".\n\nIt flags two holes. One is a needed person nobody has reached, above all whoever signs off. The other\nis a deal resting on one contact, where almost everything runs through a single person.\n\nThe arguable part is which people a given deal needs. The usual cast (someone who decides, someone who\nholds the budget, people who sway it, anyone likely to push back) is the default checklist; where a\ndeal needs a shape only you or Offerings can state, the read names it as a told gap rather than\ninventing the buying team. Who reports to whom, and who really decides, rest on email signatures and\nwhat the open web returns, so until LinkedIn connects a person who can say yes might exist that the\npicture cannot see to flag.\n\n> **Scope note.** Today this reads the organisation's roster (`stakeholder-map`), so it covers the\n> buyer org. Re-pointing it at the deal's buying group (which can span orgs) is deferred with the rest\n> of the deal re-scoping; see [`open-questions`](../../_archive/_scratch/open-questions.md).\n\n## In practice\n\nAt a prospect organisation, your main contact is on every thread and a service lead is on a couple, but\nthe row for whoever signs off is empty and nobody on record holds budget approval. About 80% of all\nmessages are with the one main contact, and you have reached two of an estimated four needed people.\nThe read: this deal rests on one person and is missing whoever signs off.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a needed person (above all whoever signs off) is on no record, OR a single contact carries\n  almost the whole conversation so the deal has one point of failure. \"Resting on one\" is judged\n  against the organisation's own size (own-rhythm by roster, never a fixed headcount), so a genuinely\n  small buyer is not flagged for a team it never had.\n- Confidence: graded; the counting is the picture's own deterministic work (who holds which part, who\n  has been reached, whose share of the back-and-forth dominates), and the soft edge is which cast a\n  given deal needs.\n- Needs: LinkedIn, for who reports to whom and who really decides; until it\n  connects, those rest on email signatures and the open web and stay under-known, so the read can say\n  \"nobody who signs off is on record\", not \"there is definitely someone you are missing\" (the data gap\n  the organisation picture carries, inherited here and named not faked). Where a deal needs a shape\n  only the user or Offerings can state, the read names a told gap (\"tell me who signs off here\") rather\n  than inventing the buying team."
+   "markdown": "---\nid: missing-people\nmodule: 02-relationships\nlabel: Stakeholders you have not reached\nblurb: A key person you have never reached, or a deal resting on one contact.\nkind: risk\nconfidence: graded\ninputs: [stakeholder-map, deal]\ncounts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]\nanswers: [Q4, Q5, Q6]\nneeds: [linkedin]\n---\n\n# Stakeholders you have not reached\n## What it means\n\nA read on the shape of who you are talking to, not on any one person.\n\nPeople gathers everyone at an organisation into one picture and marks the empty spots. This read holds\nthose spots against the people a decision usually needs, and speaks up when there is a hole. It is the\ndifference between \"we have a lovely relationship with our contact\" and \"we have a lovely relationship\nwith our contact and nobody who can sign\".\n\nIt flags two holes. One is a needed person nobody has reached, above all whoever signs off. The other\nis a deal resting on one contact, where almost everything runs through a single person.\n\nThe arguable part is which people a given deal needs. The usual cast (someone who decides, someone who\nholds the budget, people who sway it, anyone likely to push back) is the default checklist; where a\ndeal needs a shape only you or Offerings can state, the read names it as a told gap rather than\ninventing the buying team. Who reports to whom, and who really decides, rest on email signatures and\nwhat the open web returns, so until LinkedIn connects a person who can say yes might exist that the\npicture cannot see to flag.\n\n> **Scope note.** Today this reads the organisation's roster (`stakeholder-map`), so it covers the\n> buyer org. Re-pointing it at the deal's buying group (which can span orgs) is deferred with the rest\n> of the deal re-scoping; see [`open-questions`](../../_archive/_scratch/open-questions.md).\n\n## In practice\n\nAt a prospect organisation, your main contact is on every thread and a service lead is on a couple, but\nthe row for whoever signs off is empty and nobody on record holds budget approval. About 80% of all\nmessages are with the one main contact, and you have reached two of an estimated four needed people.\nThe read: this deal rests on one person and is missing whoever signs off.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a needed person (above all whoever signs off) is on no record, OR a single contact carries\n  almost the whole conversation so the deal has one point of failure. \"Resting on one\" is judged\n  against the organisation's own size (own-rhythm by roster, never a fixed headcount), so a genuinely\n  small buyer is not flagged for a team it never had.\n- Confidence: graded; the counting is the picture's own deterministic work (who holds which part, who\n  has been reached, whose share of the back-and-forth dominates), and the soft edge is which cast a\n  given deal needs.\n- Needs: LinkedIn, for who reports to whom and who really decides; until it\n  connects, those rest on email signatures and the open web and stay under-known, so the read can say\n  \"nobody who signs off is on record\", not \"there is definitely someone you are missing\" (the data gap\n  the organisation picture carries, inherited here and named not faked). Where a deal needs a shape\n  only the user or Offerings can state, the read names a told gap (\"tell me who signs off here\") rather\n  than inventing the buying team."
   },
   {
    "id": "new-stakeholder",
    "module": "02-relationships",
    "label": "New stakeholder",
    "blurb": "A new person joins the conversation, often someone senior.",
-   "modes": [
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4390,17 +4386,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/new-stakeholder.md",
-   "markdown": "---\nid: new-stakeholder\nmodule: 02-relationships\nlabel: New stakeholder\nblurb: A new person joins the conversation, often someone senior.\nmodes: [expand]\nkind: opening\nconfidence: graded\ninputs: [conversation-history, stakeholder-map]\ncounts: [new-name-on-thread, new-attendee-on-event, head-of-signature-scan, prior-history-scan]\nanswers: [Q5, Q6]\nneeds: [calendar, linkedin]\n---\n\n# New stakeholder\n\n## What it means\n\nA fresh face arrives in a conversation you are already in, and the map gains a name it did not have.\n\nThe tool makes the read on a name that has no history: on no earlier email, on no earlier event, and not already\non the organisation's map. That empty history is what tells a real arrival apart from a colleague who\nhas just been quiet for a while.\n\nSeniority matters here. A \"Head of\" signature or an organiser role on an invite weighs more than a name\nburied in a long Cc.\n\n## In practice\n\nA new name appears in Cc on a deal thread, on no earlier message or event before now, and is added to\nnext week's demo invite. Their signature reads as a senior service lead, and there is no prior history\nwith them anywhere. The read: a senior new name with no history has entered the conversation, and a\nnew decision-maker may be in the room.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a name is new only when the prior-history scan comes back empty (on no earlier message, no\n  earlier event, not already on the stakeholder map), so a quiet colleague is not mistaken for an\n  arrival; seniority is then weighed against the conversation's own cast (own-rhythm by cast, never a\n  fixed rank), so a senior signature or an organiser role outweighs a name buried in Cc.\n- Confidence: high when the signature is senior and the map had a decision-maker hole this person could\n  fill; softens to \"a new name appeared\" when all there is is a fresh address in Cc with nothing on it.\n- Needs: Calendar, to see a new attendee added to an event, and LinkedIn for role\n  and seniority; without LinkedIn the role rests on a self-described signature and whatever enrichment\n  returns, so a vague or missing signature leaves seniority a guess (a data gap, named not faked). A\n  stakeholder who only joins by phone or in a room never lands in a sender line or attendee list and\n  stays invisible until they touch a connected channel."
+   "markdown": "---\nid: new-stakeholder\nmodule: 02-relationships\nlabel: New stakeholder\nblurb: A new person joins the conversation, often someone senior.\nkind: opening\nconfidence: graded\ninputs: [conversation-history, stakeholder-map]\ncounts: [new-name-on-thread, new-attendee-on-event, head-of-signature-scan, prior-history-scan]\nanswers: [Q5, Q6]\nneeds: [calendar, linkedin]\n---\n\n# New stakeholder\n\n## What it means\n\nA fresh face arrives in a conversation you are already in, and the map gains a name it did not have.\n\nThe tool makes the read on a name that has no history: on no earlier email, on no earlier event, and not already\non the organisation's map. That empty history is what tells a real arrival apart from a colleague who\nhas just been quiet for a while.\n\nSeniority matters here. A \"Head of\" signature or an organiser role on an invite weighs more than a name\nburied in a long Cc.\n\n## In practice\n\nA new name appears in Cc on a deal thread, on no earlier message or event before now, and is added to\nnext week's demo invite. Their signature reads as a senior service lead, and there is no prior history\nwith them anywhere. The read: a senior new name with no history has entered the conversation, and a\nnew decision-maker may be in the room.\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a name is new only when the prior-history scan comes back empty (on no earlier message, no\n  earlier event, not already on the stakeholder map), so a quiet colleague is not mistaken for an\n  arrival; seniority is then weighed against the conversation's own cast (own-rhythm by cast, never a\n  fixed rank), so a senior signature or an organiser role outweighs a name buried in Cc.\n- Confidence: high when the signature is senior and the map had a decision-maker hole this person could\n  fill; softens to \"a new name appeared\" when all there is is a fresh address in Cc with nothing on it.\n- Needs: Calendar, to see a new attendee added to an event, and LinkedIn for role\n  and seniority; without LinkedIn the role rests on a self-described signature and whatever enrichment\n  returns, so a vague or missing signature leaves seniority a guess (a data gap, named not faked). A\n  stakeholder who only joins by phone or in a room never lands in a sender line or attendee list and\n  stays invisible until they touch a connected channel."
   },
   {
    "id": "one-sided",
    "module": "02-relationships",
    "label": "You are doing all the work",
    "blurb": "A relationship where you are doing all the work.",
-   "modes": [
-    "advance",
-    "sustain"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4440,16 +4432,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/one-sided.md",
-   "markdown": "---\nid: one-sided\nmodule: 02-relationships\nlabel: You are doing all the work\nblurb: A relationship where you are doing all the work.\nmodes: [advance, sustain]\nkind: risk\nconfidence: graded\ninputs: [person-history, conversation-history, meeting-history]\ncounts: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-you-chase]\nanswers: [Q18, Q19]\nneeds: [meet]\n---\n\n# You are doing all the work\n## What it means\n\nA read on the balance of a relationship, not on how warm it is.\n\nSome contacts run hot and cold over time. This asks a flatter question that warming and cooling miss:\nacross the whole history, are you both putting in, or are you doing all the work?\n\nIt is a read of balance, not direction. [`warming`](warming.md) asks \"is the pace picking up?\". This\nasks \"is the work shared?\". A relationship can be perfectly steady and still deeply one-sided.\n\nIt surfaces as context, never a verdict on the person. A relationship where you start every thread and\nchase every reply is not really yours yet, however polite it looks.\n\n## In practice\n\nA contact you have exchanged notes with for months: you opened 9 of the last 10 threads, your notes\naverage about 90 words against their roughly 8-word replies, you have offered three things (a deck, an\nintro, a call) and they have offered nothing back, and you nudge twice to get each reply. The read:\n\"you're carrying this one.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: who-starts, reply size and give-and-take all lean the same way across a sustained stretch\n  (not one busy week), measured against this pair's own history rather than any fixed ratio.\n- Confidence: graded. Higher when every count leans the same way at once; softer when only one does, or\n  when the contact is a busy senior who is genuinely on board so the imbalance is just their shape.\n- Needs: Meet (captured-call content) so a call where they gave back counts as their side. Without it,\n  giving-back voiced off-channel is invisible and the contact looks more one-sided than they are (a\n  data gap, named not faked)."
+   "markdown": "---\nid: one-sided\nmodule: 02-relationships\nlabel: You are doing all the work\nblurb: A relationship where you are doing all the work.\nkind: risk\nconfidence: graded\ninputs: [person-history, conversation-history, meeting-history]\ncounts: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-you-chase]\nanswers: [Q18, Q19]\nneeds: [meet]\n---\n\n# You are doing all the work\n## What it means\n\nA read on the balance of a relationship, not on how warm it is.\n\nSome contacts run hot and cold over time. This asks a flatter question that warming and cooling miss:\nacross the whole history, are you both putting in, or are you doing all the work?\n\nIt is a read of balance, not direction. [`warming`](warming.md) asks \"is the pace picking up?\". This\nasks \"is the work shared?\". A relationship can be perfectly steady and still deeply one-sided.\n\nIt surfaces as context, never a verdict on the person. A relationship where you start every thread and\nchase every reply is not really yours yet, however polite it looks.\n\n## In practice\n\nA contact you have exchanged notes with for months: you opened 9 of the last 10 threads, your notes\naverage about 90 words against their roughly 8-word replies, you have offered three things (a deck, an\nintro, a call) and they have offered nothing back, and you nudge twice to get each reply. The read:\n\"you're carrying this one.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: who-starts, reply size and give-and-take all lean the same way across a sustained stretch\n  (not one busy week), measured against this pair's own history rather than any fixed ratio.\n- Confidence: graded. Higher when every count leans the same way at once; softer when only one does, or\n  when the contact is a busy senior who is genuinely on board so the imbalance is just their shape.\n- Needs: Meet (captured-call content) so a call where they gave back counts as their side. Without it,\n  giving-back voiced off-channel is invisible and the contact looks more one-sided than they are (a\n  data gap, named not faked)."
   },
   {
    "id": "price-barrier",
    "module": "03-offerings",
    "label": "Price barrier",
    "blurb": "Where your price sits against the field, and whether it's likely to be a barrier on this deal.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4487,16 +4476,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/price-barrier.md",
-   "markdown": "---\nid: price-barrier\nmodule: 03-offerings\nlabel: Price barrier\nblurb: Where your price sits against the field, and whether it's likely to be a barrier on this deal.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [price-position, pricing-fence, deal]\ncounts: [your-price, competitor-price-band, price-delta-vs-leader]\nanswers: [Q15]\nneeds: [web]\n---\n\n# Price barrier\n\n## What it means\n\nWhere your price sits against the field, and whether that gap is likely to surface as a barrier on\nthis deal.\n\nIt reads one offering's price against the field it competes with, and turns the side-by-side numbers\ninto a \"watch for this\" rather than leaving them raw. It is the price half of the competitive picture.\nCapability and lock-in are [`competitive-standing`](competitive-standing.md)'s, so the two reads never\ndouble-judge the same thing.\n\nA gap is not a barrier on its own. It bites only when the delta is real, your discount room does not\nclose it, and the buyer is cost-led.\n\n## In practice\n\nYour told price sits about 18% above the cheapest named rival, drawn from two public pricing pages,\nand your told discount room of −10% does not reach them. The read: \"you are priced above the field.\nYou sit 18% over the cheapest named rival and your floor does not reach them, so on a cost-led buyer\nprice will come up; lead on value or a partial rollout to reframe it.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: there is no fixed \"X% above = barrier\". The gap is read against the field you actually\n  compete with (the named rivals on the board), not a global average, and against your own discount\n  room: an 18% gap you can discount away is different from one you cannot. Price reads as a likely\n  barrier when the delta is real AND your room does not close it AND the buyer is cost-led, not on the\n  raw number alone. The one judgement, whether the gap will actually bite, is graded by the buyer's own\n  priorities (cost-led versus continuity-led) rather than asserted.\n- Confidence: graded on how complete the field is. High when several rivals publish prices; soft when\n  prices are scarce.\n- Needs: the open web, for rivals' published prices; without it the field has holes\n  and the delta is computed against fewer points (a data gap, named not faked). Whether this buyer is\n  cost-led is a fit-shape fact that may be a told gap."
+   "markdown": "---\nid: price-barrier\nmodule: 03-offerings\nlabel: Price barrier\nblurb: Where your price sits against the field, and whether it's likely to be a barrier on this deal.\nkind: risk\nconfidence: graded\ninputs: [price-position, pricing-fence, deal]\ncounts: [your-price, competitor-price-band, price-delta-vs-leader]\nanswers: [Q15]\nneeds: [web]\n---\n\n# Price barrier\n\n## What it means\n\nWhere your price sits against the field, and whether that gap is likely to surface as a barrier on\nthis deal.\n\nIt reads one offering's price against the field it competes with, and turns the side-by-side numbers\ninto a \"watch for this\" rather than leaving them raw. It is the price half of the competitive picture.\nCapability and lock-in are [`competitive-standing`](competitive-standing.md)'s, so the two reads never\ndouble-judge the same thing.\n\nA gap is not a barrier on its own. It bites only when the delta is real, your discount room does not\nclose it, and the buyer is cost-led.\n\n## In practice\n\nYour told price sits about 18% above the cheapest named rival, drawn from two public pricing pages,\nand your told discount room of −10% does not reach them. The read: \"you are priced above the field.\nYou sit 18% over the cheapest named rival and your floor does not reach them, so on a cost-led buyer\nprice will come up; lead on value or a partial rollout to reframe it.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: there is no fixed \"X% above = barrier\". The gap is read against the field you actually\n  compete with (the named rivals on the board), not a global average, and against your own discount\n  room: an 18% gap you can discount away is different from one you cannot. Price reads as a likely\n  barrier when the delta is real AND your room does not close it AND the buyer is cost-led, not on the\n  raw number alone. The one judgement, whether the gap will actually bite, is graded by the buyer's own\n  priorities (cost-led versus continuity-led) rather than asserted.\n- Confidence: graded on how complete the field is. High when several rivals publish prices; soft when\n  prices are scarce.\n- Needs: the open web, for rivals' published prices; without it the field has holes\n  and the delta is computed against fewer points (a data gap, named not faked). Whether this buyer is\n  cost-led is a fit-shape fact that may be a told gap."
   },
   {
    "id": "recurring-objection",
    "module": "03-offerings",
    "label": "A worry that keeps coming up",
    "blurb": "The worry that comes up most across your deals, so you can answer it before it's asked.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4531,17 +4517,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/recurring-objection.md",
-   "markdown": "---\nid: recurring-objection\nmodule: 03-offerings\nlabel: A worry that keeps coming up\nblurb: The worry that comes up most across your deals, so you can answer it before it's asked.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [objection-list, deal]\ncounts: [worry-occurrences-across-deals, distinct-worries-count]\nanswers: [Q15]\nneeds: []\npull: People's worries-on-record, in aggregate across deals\n---\n\n# A worry that keeps coming up\n## What it means\n\nAcross all the worries People has put on record, which one comes up most, so you can answer it before\nit is asked.\n\nIt lifts above a single deal and reads the spread of worries across all of them. The point is to lead\nthe deck with the rebuttal to your most common objection, rather than meeting it cold each time.\n\nWhat counts is how many deals a worry shows up in, not raw volume. One vocal buyer raising the same\nworry ten times is not a dominant objection. The same worry appearing once each across most deals is.\n\n## In practice\n\nAcross twelve deals where a worry was raised, data residency comes up in seven, incumbent lock-in in\nfour, price in three, with six distinct named objections in play. The read: \"data residency is your\ndominant objection. It is raised in well over half your deals, more than any other, so put its\nrebuttal up front.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's worries-on-record in aggregate across deals.\n\n- Trigger: there is no fixed \"raised 3 times = dominant\" count. The yardstick is the spread across your\n  own deals: a worry leads when it recurs in a clear majority of the deals where any worry was raised,\n  counting distinct deals rather than raw volume (one vocal buyer raising it ten times is not\n  dominant). The read needs enough deals on record to be more than noise. The one soft edge is the\n  cut-off for \"dominant\", which is graded: a worry in seven of twelve is clearly dominant; one in four\n  of twelve reads as \"common, watch it\" rather than \"lead with it\".\n- Confidence: graded on the spread and on how many deals are on record.\n- Needs: no source dependency beyond the worries People puts on record. Early on, with few deals, the\n  tally is thin and the read says so rather than crowning a worry off two data points (a told/data gap,\n  not enough history yet). A worry raised only off-channel never reaches the count."
+   "markdown": "---\nid: recurring-objection\nmodule: 03-offerings\nlabel: A worry that keeps coming up\nblurb: The worry that comes up most across your deals, so you can answer it before it's asked.\nkind: risk\nconfidence: graded\ninputs: [objection-list, deal]\ncounts: [worry-occurrences-across-deals, distinct-worries-count]\nanswers: [Q15]\nneeds: []\npull: People's worries-on-record, in aggregate across deals\n---\n\n# A worry that keeps coming up\n## What it means\n\nAcross all the worries People has put on record, which one comes up most, so you can answer it before\nit is asked.\n\nIt lifts above a single deal and reads the spread of worries across all of them. The point is to lead\nthe deck with the rebuttal to your most common objection, rather than meeting it cold each time.\n\nWhat counts is how many deals a worry shows up in, not raw volume. One vocal buyer raising the same\nworry ten times is not a dominant objection. The same worry appearing once each across most deals is.\n\n## In practice\n\nAcross twelve deals where a worry was raised, data residency comes up in seven, incumbent lock-in in\nfour, price in three, with six distinct named objections in play. The read: \"data residency is your\ndominant objection. It is raised in well over half your deals, more than any other, so put its\nrebuttal up front.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows People's worries-on-record in aggregate across deals.\n\n- Trigger: there is no fixed \"raised 3 times = dominant\" count. The yardstick is the spread across your\n  own deals: a worry leads when it recurs in a clear majority of the deals where any worry was raised,\n  counting distinct deals rather than raw volume (one vocal buyer raising it ten times is not\n  dominant). The read needs enough deals on record to be more than noise. The one soft edge is the\n  cut-off for \"dominant\", which is graded: a worry in seven of twelve is clearly dominant; one in four\n  of twelve reads as \"common, watch it\" rather than \"lead with it\".\n- Confidence: graded on the spread and on how many deals are on record.\n- Needs: no source dependency beyond the worries People puts on record. Early on, with few deals, the\n  tally is thin and the read says so rather than crowning a worry off two data points (a told/data gap,\n  not enough history yet). A worry raised only off-channel never reaches the count."
   },
   {
    "id": "time-to-reconnect",
    "module": "02-relationships",
    "label": "Time to reconnect",
    "blurb": "A good relationship gone quiet, with a fresh reason to reach out.",
-   "modes": [
-    "sustain",
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4578,16 +4560,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/time-to-reconnect.md",
-   "markdown": "---\nid: time-to-reconnect\nmodule: 02-relationships\nlabel: Time to reconnect\nblurb: A good relationship gone quiet, with a fresh reason to reach out.\nmodes: [sustain, expand]\nkind: opening\nconfidence: graded\ninputs: [person-history]\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\nanswers: [Q19]\nneeds: [web, linkedin]\n---\n\n# Time to reconnect\n\n## What it means\n\nA read that turns a quiet stretch into a good moment to write.\n\nSome relationships simply drift. No deal, no falling-out: you were close a year ago, and then life\nmoved on. On its own that is just a quiet contact.\n\nThe tool makes the read when the quiet meets a fresh reason to get back in touch, something that just changed\nand gives the note a natural hook. It is the mirror of [`cooling-champion`](cooling-champion.md):\ncooling is a live relationship slipping away, this is a long-quiet one worth pulling back.\n\nQuiet on its own is just a cold contact. A fresh reason against a name you barely knew is a cold\napproach. Both together make the timing.\n\n## In practice\n\nA contact you used to trade notes with monthly has been silent for about 11 months (roughly 11 times\nthe old rhythm), with 20+ two-way messages and two meetings behind you, so a real past relationship,\nnot a passing name. The open web shows they just moved into a senior transformation role at a new\norganisation. The read: \"now's a good moment to write again.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm,\n  AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.\n- Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the\n  reason is thin or the past relationship was light.\n- Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook\n  (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or\n  a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact\n  looking quieter than they are."
+   "markdown": "---\nid: time-to-reconnect\nmodule: 02-relationships\nlabel: Time to reconnect\nblurb: A good relationship gone quiet, with a fresh reason to reach out.\nkind: opening\nconfidence: graded\ninputs: [person-history]\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]\nanswers: [Q19]\nneeds: [web, linkedin]\n---\n\n# Time to reconnect\n\n## What it means\n\nA read that turns a quiet stretch into a good moment to write.\n\nSome relationships simply drift. No deal, no falling-out: you were close a year ago, and then life\nmoved on. On its own that is just a quiet contact.\n\nThe tool makes the read when the quiet meets a fresh reason to get back in touch, something that just changed\nand gives the note a natural hook. It is the mirror of [`cooling-champion`](cooling-champion.md):\ncooling is a live relationship slipping away, this is a long-quiet one worth pulling back.\n\nQuiet on its own is just a cold contact. A fresh reason against a name you barely knew is a cold\napproach. Both together make the timing.\n\n## In practice\n\nA contact you used to trade notes with monthly has been silent for about 11 months (roughly 11 times\nthe old rhythm), with 20+ two-way messages and two meetings behind you, so a real past relationship,\nnot a passing name. The open web shows they just moved into a senior transformation role at a new\norganisation. The read: \"now's a good moment to write again.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a real past two-way relationship has gone quiet for far longer than its own usual rhythm,\n  AND the open web turns up a fresh, dated reason to write. One without the other is not a moment.\n- Confidence: graded. A job move or a fresh win reads as a strong hook; the read softens when the\n  reason is thin or the past relationship was light.\n- Needs: Web for the fresh reason; without it the read thins to plain \"gone quiet\" with no timing hook\n  (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or\n  a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact\n  looking quieter than they are."
   },
   {
    "id": "unbacked-claim",
    "module": "03-offerings",
    "label": "Claim without proof",
    "blurb": "A claim in your pitch that outruns its grounding: nothing on file to back it up yet.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4626,16 +4605,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/unbacked-claim.md",
-   "markdown": "---\nid: unbacked-claim\nmodule: 03-offerings\nlabel: Claim without proof\nblurb: \"A claim in your pitch that outruns its grounding: nothing on file to back it up yet.\"\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [product-claims]\ncounts: [claims-stated-count, claims-grounded-count, grounding-kind-required, claim-source]\nanswers: [Q11]\nneeds: [drive, web]\npull: Organisation's proof library, to confirm a track-record claim's backing exists\n---\n\n# Claim without proof\n## What it means\n\nA claim in your own pitch that nothing on file backs up yet, caught before it ever reaches a draft.\n\nIt turns Offerings' first principle on itself: back every claim, do not make things up. Where\n[`answer-gap`](answer-gap.md) reads a buyer's worry and asks whether you have a grounded answer, this\nreads your own pitch and asks whether each thing it asserts is backed, by a spec line, a Drive file, or\na proof on the shelf.\n\nIt is the guard that keeps a boast you cannot support out of a message. A claim you told it, with no\nsource, is a gap. A claim a researched sharper pitch suggested, with no source, is the sharper gap,\nbecause it asserts something you never actually told it.\n\n## In practice\n\nYour pitch makes six claims; four have a spec line or file under them. A track-record claim such as\n\"trusted by 30 organisations\" needs a case study and has none, and it came from a suggested sharper\npitch rather than something you told it. A second claim, \"fastest in its class\", has no spec line and\nno source. The read: \"two claims float. The track-record claim is a number a researched draft\nsuggested and you have no case study for, and the best-in-class claim has no spec line, so do not send\neither until they are grounded or softened.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library to confirm a track-record claim's backing\nexists before calling it a gap.\n\n- Trigger: a claim counts as backed only when the grounding its kind requires is on file: a capability\n  claim needs a spec line, a track-record claim needs a case study (the same rule `answer-gap` applies\n  to proof). Required grounding on file reads as backed; required grounding absent reads as unbacked. A\n  told claim with no source is a gap; a suggested claim with no source is the sharper gap, because it\n  asserts something you never told it. The one judgement, whether a claim needs backing at all, leans\n  on Offerings' own rule rather than invention.\n- Confidence: graded on grounding. High when a claim has nothing behind it at all; softer when\n  something thin exists but may not carry the claim's kind.\n- Needs: Drive, for the \"spec line or file\" check; without it those checks come back\n  empty and the read over-reports, flagging grounded claims as floating (a data gap that lowers\n  confidence rather than inventing a verdict). The open web supplies what a suggested pitch researched.\n  A claim grounded only in a deck never uploaded cannot be checked until the file is connected.\n- This read names which claims are unsafe to assert; whether the buyer then believes a backed one is\n  People's read (Q14), not Offerings' to judge. The guard flows downstream into the render and the\n  Organisation compliance fence, which gate the draft itself.\n"
+   "markdown": "---\nid: unbacked-claim\nmodule: 03-offerings\nlabel: Claim without proof\nblurb: \"A claim in your pitch that outruns its grounding: nothing on file to back it up yet.\"\nkind: risk\nconfidence: graded\ninputs: [product-claims]\ncounts: [claims-stated-count, claims-grounded-count, grounding-kind-required, claim-source]\nanswers: [Q11]\nneeds: [drive, web]\npull: Organisation's proof library, to confirm a track-record claim's backing exists\n---\n\n# Claim without proof\n## What it means\n\nA claim in your own pitch that nothing on file backs up yet, caught before it ever reaches a draft.\n\nIt turns Offerings' first principle on itself: back every claim, do not make things up. Where\n[`answer-gap`](answer-gap.md) reads a buyer's worry and asks whether you have a grounded answer, this\nreads your own pitch and asks whether each thing it asserts is backed, by a spec line, a Drive file, or\na proof on the shelf.\n\nIt is the guard that keeps a boast you cannot support out of a message. A claim you told it, with no\nsource, is a gap. A claim a researched sharper pitch suggested, with no source, is the sharper gap,\nbecause it asserts something you never actually told it.\n\n## In practice\n\nYour pitch makes six claims; four have a spec line or file under them. A track-record claim such as\n\"trusted by 30 organisations\" needs a case study and has none, and it came from a suggested sharper\npitch rather than something you told it. A second claim, \"fastest in its class\", has no spec line and\nno source. The read: \"two claims float. The track-record claim is a number a researched draft\nsuggested and you have no case study for, and the best-in-class claim has no spec line, so do not send\neither until they are grounded or softened.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows the Organisation proof library to confirm a track-record claim's backing\nexists before calling it a gap.\n\n- Trigger: a claim counts as backed only when the grounding its kind requires is on file: a capability\n  claim needs a spec line, a track-record claim needs a case study (the same rule `answer-gap` applies\n  to proof). Required grounding on file reads as backed; required grounding absent reads as unbacked. A\n  told claim with no source is a gap; a suggested claim with no source is the sharper gap, because it\n  asserts something you never told it. The one judgement, whether a claim needs backing at all, leans\n  on Offerings' own rule rather than invention.\n- Confidence: graded on grounding. High when a claim has nothing behind it at all; softer when\n  something thin exists but may not carry the claim's kind.\n- Needs: Drive, for the \"spec line or file\" check; without it those checks come back\n  empty and the read over-reports, flagging grounded claims as floating (a data gap that lowers\n  confidence rather than inventing a verdict). The open web supplies what a suggested pitch researched.\n  A claim grounded only in a deck never uploaded cannot be checked until the file is connected.\n- This read names which claims are unsafe to assert; whether the buyer then believes a backed one is\n  People's read (Q14), not Offerings' to judge. The guard flows downstream into the render and the\n  Organisation compliance fence, which gate the draft itself.\n"
   },
   {
    "id": "understanding-gap",
    "module": "02-relationships",
    "label": "They have misunderstood you",
    "blurb": "They keep asking the same things, so the product has not landed.",
-   "modes": [
-    "advance"
-   ],
    "kind": "risk",
    "confidence": "graded",
    "inputs": [
@@ -4661,7 +4637,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it means": {
-     "html": "<p>An Advance read on one conversation. The deal is not stalling on price or a blocker. It is stalling because the product has not landed.</p>\n<p>The read holds two things together: the same question asked again after it was already answered in this thread, and their words for the product drifting from what it actually does. A first clarifying question is just diligence. The same answered question coming back, with the wording slipping, is the gap.</p>\n<p>It leans on Offerings to judge the confusion. People does not decide what is true about the product. It borrows Offerings' claims and flags only the drift against them.</p>"
+     "html": "<p>A read on one conversation, about moving a deal forward. The deal is not stalling on price or a blocker. It is stalling because the product has not landed.</p>\n<p>The read holds two things together: the same question asked again after it was already answered in this thread, and their words for the product drifting from what it actually does. A first clarifying question is just diligence. The same answered question coming back, with the wording slipping, is the gap.</p>\n<p>It leans on Offerings to judge the confusion. People does not decide what is true about the product. It borrows Offerings' claims and flags only the drift against them.</p>"
     },
     "In practice": {
      "html": "<p>A buyer keeps asking \"so does it sync both ways?\" across three separate replies (a re-ask), opens two replies with a question the deck already answered (confused questions), and calls the audit log \"the export\" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate audit log, so the restatements do not match. The read: \"they haven't got it, three replies in.\"</p>"
@@ -4676,18 +4652,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/understanding-gap.md",
-   "markdown": "---\nid: understanding-gap\nmodule: 02-relationships\nlabel: They have misunderstood you\nblurb: They keep asking the same things, so the product has not landed.\nmodes: [advance]\nkind: risk\nconfidence: graded\ninputs: [conversation-history, meeting-history, product-claims]\ncounts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]\nanswers: [Q13]\nneeds: [meet]\npull: Offerings' product claims, to judge the confusion\n---\n\n# They have misunderstood you\n## What it means\n\nAn Advance read on one conversation. The deal is not stalling on price or a blocker. It is stalling because\nthe product has not landed.\n\nThe read holds two things together: the same question asked again after it was already answered in this\nthread, and their words for the product drifting from what it actually does. A first clarifying question\nis just diligence. The same answered question coming back, with the wording slipping, is the gap.\n\nIt leans on Offerings to judge the confusion. People does not decide what is true about the product. It\nborrows Offerings' claims and flags only the drift against them.\n\n## In practice\n\nA buyer keeps asking \"so does it sync both ways?\" across three separate replies (a re-ask), opens two\nreplies with a question the deck already answered (confused questions), and calls the audit log \"the\nexport\" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate\naudit log, so the restatements do not match. The read: \"they haven't got it, three replies in.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' product claims to judge whether wording contradicts the product.\n\n- Trigger: an already-answered question repeats in this thread AND their words for the product drift\n  from a claim Offerings confirms, measured against this conversation's own normal (not a fixed count).\n- Confidence: graded. High when several answered questions repeat and a term plainly clashes with a\n  claim; softens to \"may not have fully landed\" near the line or on one stray phrase.\n- Needs: Meet (captured-call content) so confusion voiced aloud counts; an uncaptured call hides it\n  (a data gap, named not faked). If Offerings cannot supply the relevant claim, the wrong-term check\n  has nothing to score against and only the re-ask count survives, so confidence falls (a\n  supplier-told gap)."
+   "markdown": "---\nid: understanding-gap\nmodule: 02-relationships\nlabel: They have misunderstood you\nblurb: They keep asking the same things, so the product has not landed.\nkind: risk\nconfidence: graded\ninputs: [conversation-history, meeting-history, product-claims]\ncounts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]\nanswers: [Q13]\nneeds: [meet]\npull: Offerings' product claims, to judge the confusion\n---\n\n# They have misunderstood you\n## What it means\n\nA read on one conversation, about moving a deal forward. The deal is not stalling on price or a blocker. It is stalling because\nthe product has not landed.\n\nThe read holds two things together: the same question asked again after it was already answered in this\nthread, and their words for the product drifting from what it actually does. A first clarifying question\nis just diligence. The same answered question coming back, with the wording slipping, is the gap.\n\nIt leans on Offerings to judge the confusion. People does not decide what is true about the product. It\nborrows Offerings' claims and flags only the drift against them.\n\n## In practice\n\nA buyer keeps asking \"so does it sync both ways?\" across three separate replies (a re-ask), opens two\nreplies with a question the deck already answered (confused questions), and calls the audit log \"the\nexport\" twice (a term used wrongly). Offerings' product claims confirm one-way sync and a separate\naudit log, so the restatements do not match. The read: \"they haven't got it, three replies in.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nBorrows Offerings' product claims to judge whether wording contradicts the product.\n\n- Trigger: an already-answered question repeats in this thread AND their words for the product drift\n  from a claim Offerings confirms, measured against this conversation's own normal (not a fixed count).\n- Confidence: graded. High when several answered questions repeat and a term plainly clashes with a\n  claim; softens to \"may not have fully landed\" near the line or on one stray phrase.\n- Needs: Meet (captured-call content) so confusion voiced aloud counts; an uncaptured call hides it\n  (a data gap, named not faked). If Offerings cannot supply the relevant claim, the wrong-term check\n  has nothing to score against and only the re-ask count survives, so confidence falls (a\n  supplier-told gap)."
   },
   {
    "id": "voice",
    "module": "05-persona-you",
    "label": "Your voice",
    "blurb": "How you sound in writing: your greeting, your length, your formality, read off what you actually send.",
-   "modes": [
-    "sustain",
-    "advance",
-    "expand"
-   ],
    "kind": "style",
    "confidence": "graded",
    "inputs": [
@@ -4726,16 +4697,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/voice.md",
-   "markdown": "---\nid: voice\nmodule: 05-persona-you\nlabel: Your voice\nblurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'\nmodes: [sustain, advance, expand]\nkind: style\nconfidence: graded\ninputs: [writing-history]\ncounts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]\nanswers: [Q23]\nneeds: [gmail, slack]\n---\n\n# Your voice\n## What it means\n\nHow you sound in writing, read off what you actually send rather than a style you fill in on a form.\nYour usual greeting and sign-off, how long your sentences run, how formal you are with a stranger\nversus a peer, and, sharpest of all, the edits you make to the tool's drafts.\n\nThe draft-to-sent edits carry the most weight. A correction is you saying outright \"not like that, like\nthis\". Told voice samples seed the read before there is enough sent mail to stand on.\n\nWhat another module gets is not a bare label but the read with its evidence: \"writes warm but brisk,\nopens with the first name, closes with 'Cheers', keeps it formal on a first touch and loosens once a\nthread is going, and reliably strips exclamation marks\". Every clause walks back to something you\nactually sent. That is what lets the render sound like you.\n\nOne gap is worth naming. Someone who sells only because their role needs it has sent mail that is mostly\nabout their real job, not selling, so their sales voice can read thin even when their everyday voice is\nrich. For them the render leans more on the organisation's house voice (`04`) and on coaching.\n\n## In practice\n\nAcross the last batch of drafts, the user opens \"Hi {first name}\" in nine of ten mails, closes with\n\"Cheers\", runs sentences around fourteen words, and on the drafts the tool wrote keeps cutting the\nadjective, dropping the exclamation mark and shortening the sign-off. On Slack the same person is\nterser than on mail, and fuller and more formal on a cold first touch than once a thread is going. The\nread: \"warm but brisk; formal with new contacts, looser once established; never an exclamation mark.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nThis is a `style` read, a non-state match to your own writing voice, not an own-rhythm decay read, so\n\"when it applies\" is about having enough voice to read and \"what it cannot see\" is about thin or stale\nsamples.\n\n- Trigger: a greeting, sign-off, length and formality pattern holds across many of your own messages\n  (measured against your own baseline, never a fixed \"uses please = formal\" line), with the\n  draft-to-sent edits weighted most because each correction states the preference outright.\n- Confidence: high when many messages and edits agree; grades down towards a soft read when it rests on\n  a handful of mails or a single seeded sample.\n- Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is\n  built from; without them the read is thin and leans on told samples or asks, rather than inventing a\n  voice (a data gap, named not faked)."
+   "markdown": "---\nid: voice\nmodule: 05-persona-you\nlabel: Your voice\nblurb: 'How you sound in writing: your greeting, your length, your formality, read off what you actually send.'\nkind: style\nconfidence: graded\ninputs: [writing-history]\ncounts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]\nanswers: [Q23]\nneeds: [gmail, slack]\n---\n\n# Your voice\n## What it means\n\nHow you sound in writing, read off what you actually send rather than a style you fill in on a form.\nYour usual greeting and sign-off, how long your sentences run, how formal you are with a stranger\nversus a peer, and, sharpest of all, the edits you make to the tool's drafts.\n\nThe draft-to-sent edits carry the most weight. A correction is you saying outright \"not like that, like\nthis\". Told voice samples seed the read before there is enough sent mail to stand on.\n\nWhat another module gets is not a bare label but the read with its evidence: \"writes warm but brisk,\nopens with the first name, closes with 'Cheers', keeps it formal on a first touch and loosens once a\nthread is going, and reliably strips exclamation marks\". Every clause walks back to something you\nactually sent. That is what lets the render sound like you.\n\nOne gap is worth naming. Someone who sells only because their role needs it has sent mail that is mostly\nabout their real job, not selling, so their sales voice can read thin even when their everyday voice is\nrich. For them the render leans more on the organisation's house voice (`04`) and on coaching.\n\n## In practice\n\nAcross the last batch of drafts, the user opens \"Hi {first name}\" in nine of ten mails, closes with\n\"Cheers\", runs sentences around fourteen words, and on the drafts the tool wrote keeps cutting the\nadjective, dropping the exclamation mark and shortening the sign-off. On Slack the same person is\nterser than on mail, and fuller and more formal on a cold first touch than once a thread is going. The\nread: \"warm but brisk; formal with new contacts, looser once established; never an exclamation mark.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\nThis is a `style` read, a non-state match to your own writing voice, not an own-rhythm decay read, so\n\"when it applies\" is about having enough voice to read and \"what it cannot see\" is about thin or stale\nsamples.\n\n- Trigger: a greeting, sign-off, length and formality pattern holds across many of your own messages\n  (measured against your own baseline, never a fixed \"uses please = formal\" line), with the\n  draft-to-sent edits weighted most because each correction states the preference outright.\n- Confidence: high when many messages and edits agree; grades down towards a soft read when it rests on\n  a handful of mails or a single seeded sample.\n- Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is\n  built from; without them the read is thin and leans on told samples or asks, rather than inventing a\n  voice (a data gap, named not faked)."
   },
   {
    "id": "warm-path",
    "module": "02-relationships",
    "label": "Someone who can introduce you",
    "blurb": "A way to reach a target through someone you already know.",
-   "modes": [
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4774,17 +4742,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/warm-path.md",
-   "markdown": "---\nid: warm-path\nmodule: 02-relationships\nlabel: Someone who can introduce you\nblurb: A way to reach a target through someone you already know.\nmodes: [expand]\nkind: opening\nconfidence: graded\ninputs: [person-history, stakeholder-map]\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]\nanswers: [Q7, Q8]\nneeds: [linkedin]\n---\n\n# Someone who can introduce you\n## What it means\n\nA target you have never spoken to is reachable through someone you already deal with.\n\nIt does not just say \"there is a path\". It carries the chain, down to real names and dated records: the\nthreads that put a bridge contact next to the target, the domain they share, the empty history between\nyou and the target.\n\nA path only counts as warm when the bridge is someone you genuinely deal with, not a name that brushed\npast once. A real two-way history makes the intro warm. A single stray Cc does not. And a short chain\nbeats a long one: a one-hop intro is warmer than a chain of three you can barely vouch for.\n\n## In practice\n\nYou have no thread with a decision-maker at a prospect, no shared meeting, no Slack overlap (cold to\nyou). One contact you know sits on 3 threads with that decision-maker and shares their email domain,\ngiving a chain of length 2 (you, the contact, the target). The read: \"there's a one-hop warm path, and\nhere is the chain.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: you share no history with the target (cold to you) AND a contact with a real two-way rhythm\n  with you sits next to the target on threads or a shared domain, forming a short chain. Judged against\n  the bridge contact's own rhythm with you, not a fixed overlap count.\n- Confidence: graded. High for a heavily-overlapping one-hop bridge; soft for a single thin link or a\n  longer chain.\n- Needs: LinkedIn for the mutual-connection web; without it the read sees only mail and Slack bridges\n  and under-reports real paths (a data gap, named not faked)."
+   "markdown": "---\nid: warm-path\nmodule: 02-relationships\nlabel: Someone who can introduce you\nblurb: A way to reach a target through someone you already know.\nkind: opening\nconfidence: graded\ninputs: [person-history, stakeholder-map]\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]\nanswers: [Q7, Q8]\nneeds: [linkedin]\n---\n\n# Someone who can introduce you\n## What it means\n\nA target you have never spoken to is reachable through someone you already deal with.\n\nIt does not just say \"there is a path\". It carries the chain, down to real names and dated records: the\nthreads that put a bridge contact next to the target, the domain they share, the empty history between\nyou and the target.\n\nA path only counts as warm when the bridge is someone you genuinely deal with, not a name that brushed\npast once. A real two-way history makes the intro warm. A single stray Cc does not. And a short chain\nbeats a long one: a one-hop intro is warmer than a chain of three you can barely vouch for.\n\n## In practice\n\nYou have no thread with a decision-maker at a prospect, no shared meeting, no Slack overlap (cold to\nyou). One contact you know sits on 3 threads with that decision-maker and shares their email domain,\ngiving a chain of length 2 (you, the contact, the target). The read: \"there's a one-hop warm path, and\nhere is the chain.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: you share no history with the target (cold to you) AND a contact with a real two-way rhythm\n  with you sits next to the target on threads or a shared domain, forming a short chain. Judged against\n  the bridge contact's own rhythm with you, not a fixed overlap count.\n- Confidence: graded. High for a heavily-overlapping one-hop bridge; soft for a single thin link or a\n  longer chain.\n- Needs: LinkedIn for the mutual-connection web; without it the read sees only mail and Slack bridges\n  and under-reports real paths (a data gap, named not faked)."
   },
   {
    "id": "warming",
    "module": "02-relationships",
    "label": "Warming to you",
    "blurb": "A relationship picking up pace, with faster replies and more people joining in.",
-   "modes": [
-    "advance",
-    "expand"
-   ],
    "kind": "opening",
    "confidence": "graded",
    "inputs": [
@@ -4823,17 +4787,13 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/warming.md",
-   "markdown": "---\nid: warming\nmodule: 02-relationships\nlabel: Warming to you\nblurb: A relationship picking up pace, with faster replies and more people joining in.\nmodes: [advance, expand]\nkind: opening\nconfidence: graded\ninputs: [person-history, meeting-history]\ncounts: [reply-speed-vs-own-rhythm, who-starts-threads, colleagues-looped-in-count, reply-length-vs-own-rhythm]\nanswers: [Q14, Q19]\nneeds: [meet]\n---\n\n# Warming to you\n## What it means\n\nThe mirror of cooling, read upward.\n\nOne contact whose own rhythm is quickening. They answer sooner than they used to. They are the one\nstarting threads now. And more of their colleagues are turning up on the chain.\n\nOne faster reply is just a busy week. The read holds when the lift stays across the period, and more\nthan one of those counts points the same way.\n\n## In practice\n\nA contact who normally takes a roughly 3-day median reply and starts about 1 thread in 6 now replies in\nabout 6 hours (well under their own norm), has started 4 of the last 6 threads, has pulled two new\ncolleagues onto the chain, and is writing longer replies, with the lift holding across the period\nrather than one busy week. The read: \"they're warming.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: they reply faster against the person's own median, their share of started threads rises\n  above their usual share, and the move holds across the period in more than one count (never a fixed\n  number of days).\n- Confidence: graded. High when pace, initiation and reach all turn together; softer to \"maybe\n  warming\" when only one count moves.\n- Needs: Meet (captured-call content) so contact and new names voiced on a call still count towards\n  reach; when a thread moves off the connected accounts the reach count thins and confidence falls\n  (a data gap, named not faked)."
+   "markdown": "---\nid: warming\nmodule: 02-relationships\nlabel: Warming to you\nblurb: A relationship picking up pace, with faster replies and more people joining in.\nkind: opening\nconfidence: graded\ninputs: [person-history, meeting-history]\ncounts: [reply-speed-vs-own-rhythm, who-starts-threads, colleagues-looped-in-count, reply-length-vs-own-rhythm]\nanswers: [Q14, Q19]\nneeds: [meet]\n---\n\n# Warming to you\n## What it means\n\nThe mirror of cooling, read upward.\n\nOne contact whose own rhythm is quickening. They answer sooner than they used to. They are the one\nstarting threads now. And more of their colleagues are turning up on the chain.\n\nOne faster reply is just a busy week. The read holds when the lift stays across the period, and more\nthan one of those counts points the same way.\n\n## In practice\n\nA contact who normally takes a roughly 3-day median reply and starts about 1 thread in 6 now replies in\nabout 6 hours (well under their own norm), has started 4 of the last 6 threads, has pulled two new\ncolleagues onto the chain, and is writing longer replies, with the lift holding across the period\nrather than one busy week. The read: \"they're warming.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: they reply faster against the person's own median, their share of started threads rises\n  above their usual share, and the move holds across the period in more than one count (never a fixed\n  number of days).\n- Confidence: graded. High when pace, initiation and reach all turn together; softer to \"maybe\n  warming\" when only one count moves.\n- Needs: Meet (captured-call content) so contact and new names voiced on a call still count towards\n  reach; when a thread moves off the connected accounts the reach count thins and confidence falls\n  (a data gap, named not faked)."
   },
   {
    "id": "warmth-fading",
    "module": "02-relationships",
    "label": "Warmth fading",
    "blurb": "Replies turning short and cool, or quiet on the last call.",
-   "modes": [
-    "advance",
-    "sustain"
-   ],
    "kind": "decay",
    "confidence": "low",
    "inputs": [
@@ -4870,1388 +4830,204 @@ window.LIBRARY = {
     "How it is worked out"
    ],
    "file": "signals/warmth-fading.md",
-   "markdown": "---\nid: warmth-fading\nmodule: 02-relationships\nlabel: Warmth fading\nblurb: Replies turning short and cool, or quiet on the last call.\nmodes: [advance, sustain]\nkind: decay\nconfidence: low\ninputs: [person-history, meeting-history]\ncounts: [reply-length-vs-own-rhythm, friendly-words-trend, talk-time-on-calls]\nanswers: [Q14]\nneeds: [meet]\n---\n\n# Warmth fading\n\n## What it means\n\nThe softest read in the library, and labelled as such.\n\nCooling and warming count whether someone engages: speed, gaps, who starts. This asks the murkier\nquestion of how they come across. Is the warmth still there, or has it gone flat? It is the read for\nwhen the replies still arrive on time, but something in them has cooled.\n\nReading warmth from words is genuinely arguable. Tone over text is unreliable, and sarcasm, culture,\nmood and shorthand all fool it. So the read never acts on its own. It rides on top of a firmer read, a\ncooling champion or a blocker, and is always shown with its evidence so you can glance and wave it\noff.\n\n## In practice\n\nA contact whose replies were once around 70 words with a greeting and \"thanks so much!\" now run to\nabout 10 words with no greeting, their warm and enthusiastic words tail off across the period, and on\nthe last captured call they spoke about a third as much as the call before. The read, offered as a\nprompt: \"they may be going cooler in how they come across, worth a look alongside whatever else you're\nseeing.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a clear move away from the person's own earlier warmth across reply length, friendly-word\n  use and talk-time on calls (own rhythm, never an absolute). Held at a higher bar than the counting\n  reads because the judgement is soft.\n- Confidence: low on purpose. Never raised alone; it rides on top of a firmer read and is always shown\n  with its evidence so a person can wave it off.\n- Needs: Meet (captured-call content) for the talk-time half; an uncaptured call leaves no record to\n  hear tone in (a data gap, named not faked). With both halves off solid ground the read steps back to\n  \"nothing reliable to say\"."
+   "markdown": "---\nid: warmth-fading\nmodule: 02-relationships\nlabel: Warmth fading\nblurb: Replies turning short and cool, or quiet on the last call.\nkind: decay\nconfidence: low\ninputs: [person-history, meeting-history]\ncounts: [reply-length-vs-own-rhythm, friendly-words-trend, talk-time-on-calls]\nanswers: [Q14]\nneeds: [meet]\n---\n\n# Warmth fading\n\n## What it means\n\nThe softest read in the library, and labelled as such.\n\nCooling and warming count whether someone engages: speed, gaps, who starts. This asks the murkier\nquestion of how they come across. Is the warmth still there, or has it gone flat? It is the read for\nwhen the replies still arrive on time, but something in them has cooled.\n\nReading warmth from words is genuinely arguable. Tone over text is unreliable, and sarcasm, culture,\nmood and shorthand all fool it. So the read never acts on its own. It rides on top of a firmer read, a\ncooling champion or a blocker, and is always shown with its evidence so you can glance and wave it\noff.\n\n## In practice\n\nA contact whose replies were once around 70 words with a greeting and \"thanks so much!\" now run to\nabout 10 words with no greeting, their warm and enthusiastic words tail off across the period, and on\nthe last captured call they spoke about a third as much as the call before. The read, offered as a\nprompt: \"they may be going cooler in how they come across, worth a look alongside whatever else you're\nseeing.\"\n\n## How it is worked out\n\nApplies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).\n\n- Trigger: a clear move away from the person's own earlier warmth across reply length, friendly-word\n  use and talk-time on calls (own rhythm, never an absolute). Held at a higher bar than the counting\n  reads because the judgement is soft.\n- Confidence: low on purpose. Never raised alone; it rides on top of a firmer read and is always shown\n  with its evidence so a person can wave it off.\n- Needs: Meet (captured-call content) for the talk-time half; an uncaptured call leaves no record to\n  hear tone in (a data gap, named not faked). With both halves off solid ground the read steps back to\n  \"nothing reliable to say\"."
   }
  ],
  "cards": [
   {
-   "id": "advance-felton-price",
-   "order": "9",
+   "id": "act-ashworth-rest",
+   "order": "20",
    "kind": "act",
-   "label": "Advance",
-   "signal": "blocker",
+   "signal": "one-sided",
    "signal_status": "provisional",
    "supporting": [
-    "price-barrier"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "repeated-objection-count",
-    "objection-name-match",
-    "your-price"
-   ],
-   "counts_status": "provisional",
-   "person": "stephen-walsh",
-   "council": "felton",
-   "documents": [
-    "partial-rollout-price-sheet"
-   ],
-   "sure": "likely",
-   "sure_because": "A pattern: all four of Stephen's messages mention the price.",
-   "when": {
-    "mode": "rhythm",
-    "words": "Any day this week."
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Offer",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Attached: the partial rollout price sheet."
-   },
-   "title": "Offer Felton the partial rollout",
-   "intro": "<p>Stephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.</li><li>Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.</li><li>Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.</li><li>The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.</li><li>gmail · Stephen's message of 9 September.</li><li>drive · The partial rollout price sheet.</li><li>goal-told · Your goal: partial adoption first is the plan, not a concession.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether a smaller number reads as a discount to him. It isn't one, and the email says so.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Stephen,</p>\n<p>You said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.</p>\n<p>East Marston didn't start with the whole thing either. A first step can be one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.</p>\n<p>The one-page breakdown is attached.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-felton-price.md",
-   "markdown": "---\nid: advance-felton-price\norder: 9\nkind: act\nlabel: Advance\nsignal: blocker\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [price-barrier]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [repeated-objection-count, objection-name-match, your-price]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: stephen-walsh\ncouncil: felton\ndocuments: [partial-rollout-price-sheet]\nsure: \"likely\"\nsure_because: \"A pattern: all four of Stephen's messages mention the price.\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the partial rollout price sheet.\"\n---\n\n# Offer Felton the partial rollout\n\nStephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.\n\n## What happened\n\n- Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.\n- Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.\n- Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.\n- The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.\n\n## Sources\n\n- gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.\n- gmail · Stephen's message of 9 September.\n- drive · The partial rollout price sheet.\n- goal-told · Your goal: partial adoption first is the plan, not a concession.\n\n## Still unclear\n\n- Whether a smaller number reads as a discount to him. It isn't one, and the email says so.\n\n## What happens next\n\n- After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.\n\n## The draft\n\nHi Stephen,\n\nYou said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.\n\nEast Marston didn't start with the whole thing either. A first step can be one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.\n\nThe one-page breakdown is attached.\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The Felton thread since June: 18 messages. Stephen's four all mention price.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Stephen's message of 9 September.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "drive"
-     ],
-     "words": "The partial rollout price sheet.",
-     "from": "Drive"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your goal: partial adoption first is the plan, not a concession.",
-     "from": "You told me"
-    }
-   ],
-   "councilName": "Felton",
-   "documentNames": [
-    "Partial rollout price sheet"
-   ],
-   "band": 3,
-   "bandWords": "Holding something up"
-  },
-  {
-   "id": "advance-gary-records",
-   "order": "4",
-   "kind": "act",
-   "label": "Advance",
-   "signal": "champion",
-   "signal_status": "provisional",
-   "supporting": [
-    "loose-end",
-    "warming"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "ask-made-unanswered",
-    "who-starts-threads",
-    "reply-speed-vs-own-rhythm",
-    "internal-advocacy-mentions",
-    "colleagues-looped-in-count"
-   ],
-   "counts_status": "provisional",
-   "person": "gary-pearson",
-   "council": "westmoor",
-   "documents": [
-    "east-marston-case-study",
-    "records-import-note"
-   ],
-   "sure": "sure",
-   "sure_because": "A fact on record: his question of 10 September has no answer yet.",
-   "when": {
-    "mode": "fresh",
-    "words": "Worth doing today. An unanswered question from a champion goes stale."
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Answer",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Attached: the East Marston case study, and the records import note."
-   },
-   "title": "Answer Gary Pearson today",
-   "intro": "<p>He asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: his question has sat six days. The longer it waits, the smaller the door.</li><li>Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".</li><li>Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.</li><li>Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.</li><li>gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.</li><li>drive · \"Records import: how it works\" and the East Marston case study.</li><li>goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Nothing much. He asked a direct question and this answers it. Rachel's needs have cards of their own.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>Once sent, I'll watch for Gary's reply and tell you when it comes.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Gary,</p>\n<p>Short answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.</p>\n<p>The import note is attached too, in case the how matters more than the story.</p>\n<p>If it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-gary-records.md",
-   "markdown": "---\nid: advance-gary-records\norder: 4\nkind: act\nlabel: Advance\nsignal: champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end, warming]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: gary-pearson\ncouncil: westmoor\ndocuments: [east-marston-case-study, records-import-note]\nsure: \"sure\"\nsure_because: \"A fact on record: his question of 10 September has no answer yet.\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. An unanswered question from a champion goes stale.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Answer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the East Marston case study, and the records import note.\"\n---\n\n# Answer Gary Pearson today\n\nHe asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.\n\n## What happened\n\n- Why now: his question has sat six days. The longer it waits, the smaller the door.\n- Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".\n- Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.\n- Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.\n\n## Sources\n\n- gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.\n- gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.\n- drive · \"Records import: how it works\" and the East Marston case study.\n- goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.\n\n## Still unclear\n\n- Nothing much. He asked a direct question and this answers it. Rachel's needs have cards of their own.\n\n## What happens next\n\n- Once sent, I'll watch for Gary's reply and tell you when it comes.\n\n## The draft\n\nHi Gary,\n\nShort answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.\n\nThe import note is attached too, in case the how matters more than the story.\n\nIf it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Your mail with Gary since February: 31 messages, reply times, and who started what.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "drive"
-     ],
-     "words": "\"Records import: how it works\" and the East Marston case study.",
-     "from": "Drive"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your goal: partial adoption first, which makes an implementation question from a champion read as progress.",
-     "from": "You told me"
-    }
-   ],
-   "councilName": "Westmoor",
-   "documentNames": [
-    "East Marston case study",
-    "Records import note"
-   ],
-   "band": 2,
-   "bandWords": "Worse every day"
-  },
-  {
-   "id": "advance-holbrook-window",
-   "order": "14",
-   "kind": "act",
-   "label": "Advance",
-   "signal": "buying-intent",
-   "signal_status": "provisional",
-   "supporting": [
-    "best-way-to-reach",
-    "time-to-reconnect"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "budget-or-procurement-entered",
-    "accepts-meetings",
-    "where-they-start",
-    "how-long-quiet-vs-own-rhythm"
-   ],
-   "counts_status": "provisional",
-   "person": "neil-chapman",
-   "council": "holbrook",
-   "documents": [],
-   "widgets": [
-    "timeline"
-   ],
-   "sure": "sure",
-   "sure_because": "A fact on record: Neil wrote that the window closes 16 October.",
-   "held_by": "sustain-neil-rhythm",
-   "when": {
-    "mode": "dated",
-    "words": "By 16 October: procurement window closes. Book this week.",
-    "until": "2026-10-16"
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Invite",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "notsure": [
-    {
-     "label": "A Decision",
-     "says": "Then a meeting in late September is enough and I'll pace the rest to it."
-    },
-    {
-     "label": "A Signed Order",
-     "says": "Then we're already tight. I'll move this to today and draft the paperwork checklist too."
-    },
-    {
-     "label": "Don't Know",
-     "says": "Then the invite asks him, plainly, and I'll adjust once he answers."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Nothing attached. Once it goes, I'll watch for his slots."
-   },
-   "title": "Book the Holbrook follow-up",
-   "intro": "<p>Their procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.</li><li>Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.</li><li>Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.</li><li>You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.</li></ul>"
-    },
-    "Timeline": {
-     "html": "<ul><li>14 July · Neil: the window for this year closes 16 October</li><li>3 August · Your last meeting with Holbrook</li><li>Today · No meeting scheduled</li><li>16 October · The procurement window closes</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · Neil, 14 July: \"the window for this year closes 16 October\".</li><li>calendar · No meeting with Holbrook since 3 August, none scheduled.</li><li>gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.</li><li>goal-told · Your goal: partial adoption this year means inside that window.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether the window is for a decision or for a signed order. Neil will know.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Neil,</p>\n<p>You mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?</p>\n<p>Two or three slots that suit you and I'll book it.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Timeline",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-holbrook-window.md",
-   "markdown": "---\nid: advance-holbrook-window\norder: 14\nkind: act\nlabel: Advance\nsignal: buying-intent\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [best-way-to-reach, time-to-reconnect]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: []\nwidgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nsure_because: \"A fact on record: Neil wrote that the window closes 16 October.\"\nheld_by: sustain-neil-rhythm\nwhen:\n  mode: dated\n  words: \"By 16 October: procurement window closes. Book this week.\"\n  until: 2026-10-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Invite\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"A Decision\"\n    says: \"Then a meeting in late September is enough and I'll pace the rest to it.\"\n  - label: \"A Signed Order\"\n    says: \"Then we're already tight. I'll move this to today and draft the paperwork checklist too.\"\n  - label: \"Don't Know\"\n    says: \"Then the invite asks him, plainly, and I'll adjust once he answers.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Once it goes, I'll watch for his slots.\"\n---\n\n# Book the Holbrook follow-up\n\nTheir procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.\n\n## What happened\n\n- Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.\n- Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.\n- Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.\n- You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.\n\n## Timeline\n\n- 14 July · Neil: the window for this year closes 16 October\n- 3 August · Your last meeting with Holbrook\n- Today · No meeting scheduled\n- 16 October · The procurement window closes\n\n## Sources\n\n- gmail · Neil, 14 July: \"the window for this year closes 16 October\".\n- calendar · No meeting with Holbrook since 3 August, none scheduled.\n- gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.\n- goal-told · Your goal: partial adoption this year means inside that window.\n\n## Still unclear\n\n- Whether the window is for a decision or for a signed order. Neil will know.\n\n## What happens next\n\n- Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.\n\n## The draft\n\nHi Neil,\n\nYou mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?\n\nTwo or three slots that suit you and I'll book it.\n\nFede\n",
-   "widgetRows": {
-    "timeline": [
-     [
-      "14 July",
-      "Neil: the window for this year closes 16 October"
-     ],
-     [
-      "3 August",
-      "Your last meeting with Holbrook"
-     ],
-     [
-      "Today",
-      "No meeting scheduled"
-     ],
-     [
-      "16 October",
-      "The procurement window closes"
-     ]
-    ]
-   },
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Neil, 14 July: \"the window for this year closes 16 October\".",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "calendar"
-     ],
-     "words": "No meeting with Holbrook since 3 August, none scheduled.",
-     "from": "Calendar"
-    },
-    {
-     "sources": [
-      "gmail",
-      "calendar"
-     ],
-     "words": "Your mail with Neil: who proposed each meeting. You, four of four.",
-     "from": "Gmail, Calendar"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your goal: partial adoption this year means inside that window.",
-     "from": "You told me"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected. The time to reconnect read leans on it, so I have less to go on here.",
-     "from": "LinkedIn",
-     "gap": true
-    }
-   ],
-   "councilName": "Holbrook",
-   "documentNames": [],
-   "band": 3,
-   "bandWords": "Holding something up"
-  },
-  {
-   "id": "advance-north-ridley-alongside",
-   "order": "1",
-   "kind": "act",
-   "label": "Advance",
-   "signal": "understanding-gap",
-   "signal_status": "provisional",
-   "supporting": [
-    "new-stakeholder"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "terms-used-wrongly",
-    "claims-restated-back",
-    "new-attendee-on-event",
-    "head-of-signature-scan"
-   ],
-   "counts_status": "provisional",
-   "person": "michelle-turner",
-   "council": "north-ridley",
-   "documents": [
-    "alongside-one-pager"
-   ],
-   "sure": "sure",
-   "sure_because": "A fact on record: three of their messages say replace or migrate off.",
-   "when": {
-    "mode": "dated",
-    "words": "By tonight. The demo is tomorrow, Thursday 17 September.",
-    "until": "2026-09-16"
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Note",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Attached: the alongside one-pager."
-   },
-   "title": "Clear up North Ridley's misunderstanding before Thursday",
-   "intro": "<p>Michelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.</li><li>Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.</li><li>Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.</li><li>North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".</li><li>calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.</li><li>drive · The one-page \"How BOPS sits alongside your case system\".</li><li>gmail · Nothing from you corrects the word \"replace\".</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Michelle,</p>\n<p>Looking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.</p>\n<p>The one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-north-ridley-alongside.md",
-   "markdown": "---\nid: advance-north-ridley-alongside\norder: 1\nkind: act\nlabel: Advance\nsignal: understanding-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [terms-used-wrongly, claims-restated-back, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [alongside-one-pager]\nsure: \"sure\"\nsure_because: \"A fact on record: three of their messages say replace or migrate off.\"\nwhen:\n  mode: dated\n  words: \"By tonight. The demo is tomorrow, Thursday 17 September.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the alongside one-pager.\"\n---\n\n# Clear up North Ridley's misunderstanding before Thursday\n\nMichelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.\n\n## What happened\n\n- Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.\n- Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.\n- Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.\n- North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.\n\n## Sources\n\n- gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".\n- calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.\n- drive · The one-page \"How BOPS sits alongside your case system\".\n- gmail · Nothing from you corrects the word \"replace\".\n\n## Still unclear\n\n- Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.\n\n## What happens next\n\n- Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.\n\n## The draft\n\nHi Michelle,\n\nLooking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.\n\nThe one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "calendar"
-     ],
-     "words": "\"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.",
-     "from": "Calendar"
-    },
-    {
-     "sources": [
-      "drive"
-     ],
-     "words": "The one-page \"How BOPS sits alongside your case system\".",
-     "from": "Drive"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Nothing from you corrects the word \"replace\".",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
-     "from": "LinkedIn",
-     "gap": true
-    }
-   ],
-   "councilName": "North Ridley",
-   "documentNames": [
-    "Alongside one-pager"
-   ],
-   "band": 1,
-   "bandWords": "Gone tomorrow"
-  },
-  {
-   "id": "advance-north-ridley-demo-brief",
-   "order": "2",
-   "kind": "act",
-   "label": "Advance",
-   "signal": "lead-with-this",
-   "signal_status": "provisional",
-   "supporting": [
-    "new-stakeholder"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "dominant-worry-for-buyer-type",
-    "relevance-to-stated-factors",
-    "new-attendee-on-event",
-    "head-of-signature-scan"
-   ],
-   "counts_status": "provisional",
-   "person": "michelle-turner",
-   "council": "north-ridley",
-   "documents": [
-    "east-marston-case-study",
-    "alongside-one-pager"
-   ],
-   "sure": "likely",
-   "sure_because": "A pattern: what the invitees have asked about, and how your last two demos went.",
-   "when": {
-    "mode": "dated",
-    "words": "By this evening.",
-    "until": "2026-09-16"
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Open the Brief",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Brief",
-    "hand": "Add to the Invite",
-    "sub": "Thursday 17 September, 10:00",
-    "footer": "Edit the brief as you like. I'll have it on your calendar entry."
-   },
-   "title": "Prepare Thursday's demo at North Ridley",
-   "intro": "<p>Eight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.</li><li>In 14 messages from North Ridley since July, officer time comes up five times and compliance never.</li><li>Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.</li><li>Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.</li><li>gmail · The North Ridley thread since July: what each person asked.</li><li>drive · Your demo deck, June and July versions, first slide \"Compliance by design\".</li><li>meet · Your notes from the Holbrook demo in July.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.</li></ul>"
-    },
-    "The draft": {
-     "html": "<ul><li>Open with the alongside diagram. Say the word \"alongside\" in the first minute.</li><li>Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.</li><li>In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.</li><li>The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.</li><li>Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.</li><li>Compliance: one slide, held back, shown only if asked.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-north-ridley-demo-brief.md",
-   "markdown": "---\nid: advance-north-ridley-demo-brief\norder: 2\nkind: act\nlabel: Advance\nsignal: lead-with-this\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: michelle-turner\ncouncil: north-ridley\ndocuments: [east-marston-case-study, alongside-one-pager]\nsure: \"likely\"\nsure_because: \"A pattern: what the invitees have asked about, and how your last two demos went.\"\nwhen:\n  mode: dated\n  words: \"By this evening.\"\n  until: 2026-09-16\nreply:\n  module: buttons\nactions:\n  - label: \"Open the Brief\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Brief\"\n  hand: \"Add to the Invite\"\n  sub: \"Thursday 17 September, 10:00\"\n  footer: \"Edit the brief as you like. I'll have it on your calendar entry.\"\n---\n\n# Prepare Thursday's demo at North Ridley\n\nEight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.\n\n## What happened\n\n- Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.\n- In 14 messages from North Ridley since July, officer time comes up five times and compliance never.\n- Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.\n- Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.\n\n## Sources\n\n- calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.\n- gmail · The North Ridley thread since July: what each person asked.\n- drive · Your demo deck, June and July versions, first slide \"Compliance by design\".\n- meet · Your notes from the Holbrook demo in July.\n\n## Still unclear\n\n- Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.\n\n## What happens next\n\n- After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.\n\n## The draft\n\n- Open with the alongside diagram. Say the word \"alongside\" in the first minute.\n- Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.\n- In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.\n- The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.\n- Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.\n- Compliance: one slide, held back, shown only if asked.\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "calendar",
-      "gmail"
-     ],
-     "words": "The invitee list for Thursday, eight names and their roles from signatures.",
-     "from": "Calendar, Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The North Ridley thread since July: what each person asked.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "drive"
-     ],
-     "words": "Your demo deck, June and July versions, first slide \"Compliance by design\".",
-     "from": "Drive"
-    },
-    {
-     "sources": [
-      "meet"
-     ],
-     "words": "Your notes from the Holbrook demo in July.",
-     "from": "Meet"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
-     "from": "LinkedIn",
-     "gap": true
-    }
-   ],
-   "councilName": "North Ridley",
-   "documentNames": [
-    "East Marston case study",
-    "Alongside one-pager"
-   ],
-   "band": 1,
-   "bandWords": "Gone tomorrow"
-  },
-  {
-   "id": "advance-rachel-peer-call",
-   "order": "12",
-   "kind": "act",
-   "label": "Advance",
-   "signal": "answer-gap",
-   "signal_status": "provisional",
-   "supporting": [
-    "understanding-gap"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "re-asked-questions",
-    "objection-entry-exists",
-    "named-vs-anonymous-reference",
-    "third-party-vs-self-asserted"
-   ],
-   "counts_status": "provisional",
-   "person": "rachel-gill",
-   "council": "westmoor",
-   "documents": [
-    "east-marston-case-study"
-   ],
-   "sure": "likely",
-   "sure_because": "A pattern: the same worry, twice in four days.",
-   "held_by": "ask-rachel-meeting",
-   "when": {
-    "mode": "rhythm",
-    "words": "This week, once you have told me how you read her."
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Offer",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "notsure": [
-    {
-     "label": "Offer the Call",
-     "says": "Then the email offers Andrew and attaches the feedback page as the quieter option."
-    },
-    {
-     "label": "Just Send the Page",
-     "says": "Then no call is offered; I'll suggest it later if the worry comes back a third time."
-    },
-    {
-     "label": "Don't Know",
-     "says": "Then the email does both, gently, and lets her pick."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Attached: the officer feedback page."
-   },
-   "title": "Offer Rachel Gill a call with East Marston's IT lead",
-   "intro": "<p>She has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.</li><li>Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.</li><li>A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.</li><li>Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.</li><li>gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".</li><li>drive · The officer-feedback page of the East Marston case study.</li><li>goal-told · Your list: Westmoor at coalition.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether Rachel would rather read than talk. Some IT leads take a call as pressure.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Rachel,</p>\n<p>You've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.</p>\n<p>Andrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.</p>\n<p>If you'd rather read first, the page of officer feedback from East Marston is attached.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/advance-rachel-peer-call.md",
-   "markdown": "---\nid: advance-rachel-peer-call\norder: 12\nkind: act\nlabel: Advance\nsignal: answer-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nsure_because: \"A pattern: the same worry, twice in four days.\"\nheld_by: ask-rachel-meeting\nwhen:\n  mode: rhythm\n  words: \"This week, once you have told me how you read her.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Offer the Call\"\n    says: \"Then the email offers Andrew and attaches the feedback page as the quieter option.\"\n  - label: \"Just Send the Page\"\n    says: \"Then no call is offered; I'll suggest it later if the worry comes back a third time.\"\n  - label: \"Don't Know\"\n    says: \"Then the email does both, gently, and lets her pick.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the officer feedback page.\"\n---\n\n# Offer Rachel Gill a call with East Marston's IT lead\n\nShe has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.\n\n## What happened\n\n- Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.\n- Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.\n- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.\n- Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.\n\n## Sources\n\n- gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.\n- gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".\n- drive · The officer-feedback page of the East Marston case study.\n- goal-told · Your list: Westmoor at coalition.\n\n## Still unclear\n\n- Whether Rachel would rather read than talk. Some IT leads take a call as pressure.\n\n## What happens next\n\n- If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.\n\n## The draft\n\nHi Rachel,\n\nYou've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.\n\nAndrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.\n\nIf you'd rather read first, the page of officer feedback from East Marston is attached.\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The Westmoor thread: Rachel's messages of 9 and 12 September.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "drive"
-     ],
-     "words": "The officer-feedback page of the East Marston case study.",
-     "from": "Drive"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your list: Westmoor at coalition.",
-     "from": "You told me"
-    }
-   ],
-   "councilName": "Westmoor",
-   "documentNames": [
-    "East Marston case study"
-   ],
-   "band": 3,
-   "bandWords": "Holding something up"
-  },
-  {
-   "id": "ask-budget-meeting",
-   "order": "6",
-   "kind": "ask",
-   "label": "Ask",
-   "signal": "cooling-champion",
-   "signal_status": "provisional",
-   "supporting": [
-    "warmth-fading"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "innocent-explanation-scan",
-    "reply-gap-vs-own-rhythm",
-    "reply-length-vs-own-rhythm"
-   ],
-   "counts_status": "provisional",
-   "person": "karen-hughes",
-   "council": "bramley",
-   "documents": [],
-   "when": {
-    "mode": "fresh",
-    "words": "Ten seconds. Best while you remember."
-   },
-   "reply": {
-    "module": "choices"
-   },
-   "answers": [
-    {
-     "label": "It was cut or put off",
-     "says": "Thank you. I'll hold Karen's note for a month, keep the figures for a better moment, and start looking for a second door into Bramley."
-    },
-    {
-     "label": "It stayed in",
-     "says": "Good. Karen's note is ready to send this week, and I'll expect a reply within her old rhythm."
-    },
-    {
-     "label": "It didn't come up",
-     "says": "Then her quiet has another cause. Karen's note is ready to send as written, and I'll read her reply for it."
-    }
-   ],
-   "actions": [
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
-    }
-   ],
-   "title": "What did the Bramley budget meeting decide about BOPS?",
-   "intro": "<p>You were there. Karen has gone quiet since then, and I can't see what was said. Your answer changes what I do with her card.</p>",
-   "sections": {
-    "Known so far": {
-     "html": "<ul><li>The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.</li><li>Nothing in your mail or Slack mentions how it went.</li></ul>"
-    },
-    "What's missing": {
-     "html": "<ul><li>Meetings leave no record I can read unless there are notes in Drive or a Meet recording. There are none for this one.</li></ul>"
-    },
-    "What your answer changes": {
-     "html": "<ul><li>Cut or put off: I hold Karen's note a month, look for a second door, and mark Bramley as at risk.</li><li>Stayed in: Karen's note is ready to send this week.</li><li>Didn't come up: Karen's note is ready to send as written, and I read her reply for the reason she went quiet.</li></ul>"
-    },
-    "Where your answer is saved": {
-     "html": "<ul><li>On Karen's page and on Bramley's, as a thing you told me, with the date.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "Known so far",
-    "What's missing",
-    "What your answer changes",
-    "Where your answer is saved"
-   ],
-   "file": "cards/ask-budget-meeting.md",
-   "markdown": "---\nid: ask-budget-meeting\norder: 6\nkind: ask\nlabel: Ask\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [warmth-fading]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [innocent-explanation-scan, reply-gap-vs-own-rhythm, reply-length-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: []\nwhen:\n  mode: fresh\n  words: \"Ten seconds. Best while you remember.\"\nreply:\n  module: choices\nanswers:\n  - label: \"It was cut or put off\"\n    says: \"Thank you. I'll hold Karen's note for a month, keep the figures for a better moment, and start looking for a second door into Bramley.\"\n  - label: \"It stayed in\"\n    says: \"Good. Karen's note is ready to send this week, and I'll expect a reply within her old rhythm.\"\n  - label: \"It didn't come up\"\n    says: \"Then her quiet has another cause. Karen's note is ready to send as written, and I'll read her reply for it.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# What did the Bramley budget meeting decide about BOPS?\n\nYou were there. Karen has gone quiet since then, and I can't see what was said. Your answer changes what I do with her card.\n\n## Known so far\n\n- The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.\n- Nothing in your mail or Slack mentions how it went.\n\n## What's missing\n\n- Meetings leave no record I can read unless there are notes in Drive or a Meet recording. There are none for this one.\n\n## What your answer changes\n\n- Cut or put off: I hold Karen's note a month, look for a second door, and mark Bramley as at risk.\n- Stayed in: Karen's note is ready to send this week.\n- Didn't come up: Karen's note is ready to send as written, and I read her reply for the reason she went quiet.\n\n## Where your answer is saved\n\n- On Karen's page and on Bramley's, as a thing you told me, with the date.\n",
-   "widgetRows": {},
-   "councilName": "Bramley",
-   "documentNames": [],
-   "band": 2,
-   "bandWords": "Worse every day"
-  },
-  {
-   "id": "ask-good-fit",
-   "order": "21",
-   "kind": "ask",
-   "label": "Ask",
-   "signal": "fit-match",
-   "signal_status": "provisional",
-   "counts": [
-    "fit-shape-completeness",
-    "fit-factors-met"
-   ],
-   "counts_status": "provisional",
-   "person": "you",
-   "documents": [],
-   "reply": {
-    "module": "field",
-    "placeholder": "A sentence or two, in your words."
-   },
-   "actions": [
-    {
-     "label": "Tell Me",
-     "style": "filled",
-     "confirms": "field",
-     "says": "Thank you. I'll write that down as what a good fit looks like, and show you the first five councils that match before I add any of them."
-    },
-    {
-     "label": "Use Your Guess",
-     "style": "tinted",
-     "says": "Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time."
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
-    }
-   ],
-   "title": "What does a good-fit council look like?",
-   "intro": "<p>You named thirty. You never said why those thirty. Until I know, I can't spot the thirty-first.</p>",
-   "sections": {
-    "Known so far": {
-     "html": "<ul><li>What your thirty share, as far as I can see: mostly district and borough councils; case systems over ten years old at the 19 where I can tell; a digital lead in post under two years at 14.</li><li>My guess from that is written on the button. It is a guess, not your reason.</li></ul>"
-    },
-    "What's missing": {
-     "html": "<ul><li>The reason is yours and isn't written anywhere I can read. \"Feels the legacy-tech pain\" is a mindset, and I can only see behaviour.</li></ul>"
-    },
-    "What your answer changes": {
-     "html": "<ul><li>Once I have it: I build a fit-scan from it and show you the first five candidates before adding anyone to the thirty.</li><li>If you use my guess: same, but I'll flag every match as \"on my guess\" until you correct it.</li></ul>"
-    },
-    "Where your answer is saved": {
-     "html": "<ul><li>As \"what a good fit looks like\", the thing you told me. Editable, dated, and shown to you before it is ever used.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "Known so far",
-    "What's missing",
-    "What your answer changes",
-    "Where your answer is saved"
-   ],
-   "file": "cards/ask-good-fit.md",
-   "markdown": "---\nid: ask-good-fit\norder: 21\nkind: ask\nlabel: Ask\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [fit-shape-completeness, fit-factors-met]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nreply:\n  module: field\n  placeholder: \"A sentence or two, in your words.\"\nactions:\n  - label: \"Tell Me\"\n    style: filled\n    confirms: field\n    says: \"Thank you. I'll write that down as what a good fit looks like, and show you the first five councils that match before I add any of them.\"\n  - label: \"Use Your Guess\"\n    style: tinted\n    says: \"Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# What does a good-fit council look like?\n\nYou named thirty. You never said why those thirty. Until I know, I can't spot the thirty-first.\n\n## Known so far\n\n- What your thirty share, as far as I can see: mostly district and borough councils; case systems over ten years old at the 19 where I can tell; a digital lead in post under two years at 14.\n- My guess from that is written on the button. It is a guess, not your reason.\n\n## What's missing\n\n- The reason is yours and isn't written anywhere I can read. \"Feels the legacy-tech pain\" is a mindset, and I can only see behaviour.\n\n## What your answer changes\n\n- Once I have it: I build a fit-scan from it and show you the first five candidates before adding anyone to the thirty.\n- If you use my guess: same, but I'll flag every match as \"on my guess\" until you correct it.\n\n## Where your answer is saved\n\n- As \"what a good fit looks like\", the thing you told me. Editable, dated, and shown to you before it is ever used.\n",
-   "widgetRows": {},
-   "documentNames": [],
-   "band": 6,
-   "bandWords": "Costs nothing to wait"
-  },
-  {
-   "id": "ask-openings",
-   "order": "19",
-   "kind": "ask",
-   "label": "Ask",
-   "signal": "voice",
-   "signal_status": "provisional",
-   "counts": [
-    "draft-to-sent-edit-distance",
-    "greeting-and-signoff-pattern"
-   ],
-   "counts_status": "provisional",
-   "person": "you",
-   "documents": [],
-   "when": {
-    "mode": "rhythm",
-    "words": "Five seconds."
-   },
-   "reply": {
-    "module": "choices"
-   },
-   "answers": [
-    {
-     "label": "Yes, drop them",
-     "suggested": true,
-     "says": "Done. I start with the point, everywhere, from the next draft."
-    },
-    {
-     "label": "Keep them",
-     "says": "Fine. I'll leave them in and stop asking."
-    },
-    {
-     "label": "Depends who",
-     "says": "Then I'll keep them for first contact and drop them for people you already know. Tell me if that's the wrong line."
-    }
-   ],
-   "actions": [
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
-    }
-   ],
-   "title": "Should I leave the greetings out of my drafts?",
-   "intro": "<p>In 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.</p>",
-   "sections": {
-    "Known so far": {
-     "html": "<ul><li>11 drafts since August. In 9, the first sentence was deleted before sending: \"I hope you're well\", \"Hope the week is going well\".</li><li>The 2 you kept were both to people you had not met.</li></ul>"
-    },
-    "What's missing": {
-     "html": "<ul><li>I can see what you changed. I can't see why.</li></ul>"
-    },
-    "What your answer changes": {
-     "html": "<ul><li>Drop them: I open with the point, everywhere.</li><li>Keep them: I leave them in and stop asking.</li><li>Depends: first contact keeps them, people you know don't.</li></ul>"
-    },
-    "Where your answer is saved": {
-     "html": "<ul><li>In your voice profile, as a rule you set, with the date.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "Known so far",
-    "What's missing",
-    "What your answer changes",
-    "Where your answer is saved"
-   ],
-   "file": "cards/ask-openings.md",
-   "markdown": "---\nid: ask-openings\norder: 19\nkind: ask\nlabel: Ask\nsignal: voice\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [draft-to-sent-edit-distance, greeting-and-signoff-pattern]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nwhen:\n  mode: rhythm\n  words: \"Five seconds.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Yes, drop them\"\n    suggested: true\n    says: \"Done. I start with the point, everywhere, from the next draft.\"\n  - label: \"Keep them\"\n    says: \"Fine. I'll leave them in and stop asking.\"\n  - label: \"Depends who\"\n    says: \"Then I'll keep them for first contact and drop them for people you already know. Tell me if that's the wrong line.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# Should I leave the greetings out of my drafts?\n\nIn 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.\n\n## Known so far\n\n- 11 drafts since August. In 9, the first sentence was deleted before sending: \"I hope you're well\", \"Hope the week is going well\".\n- The 2 you kept were both to people you had not met.\n\n## What's missing\n\n- I can see what you changed. I can't see why.\n\n## What your answer changes\n\n- Drop them: I open with the point, everywhere.\n- Keep them: I leave them in and stop asking.\n- Depends: first contact keeps them, people you know don't.\n\n## Where your answer is saved\n\n- In your voice profile, as a rule you set, with the date.\n",
-   "widgetRows": {},
-   "documentNames": [],
-   "band": 5,
-   "bandWords": "Due by its rhythm"
-  },
-  {
-   "id": "ask-rachel-meeting",
-   "order": "11",
-   "kind": "ask",
-   "label": "Ask",
-   "signal": "new-stakeholder",
-   "signal_status": "provisional",
-   "supporting": [
-    "understanding-gap"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "new-name-on-thread",
-    "prior-history-scan",
-    "re-asked-questions"
-   ],
-   "counts_status": "provisional",
-   "person": "rachel-gill",
-   "council": "westmoor",
-   "documents": [],
-   "widgets": [
-    "people",
-    "timeline"
-   ],
-   "when": {
-    "mode": "rhythm",
-    "words": "Ten seconds. Best this week."
-   },
-   "reply": {
-    "module": "choices"
-   },
-   "answers": [
-    {
-     "label": "Warm",
-     "says": "Good to know. Drafts to her get shorter and more direct, and the call with Andrew goes as an offer, not as an answer to a doubt."
-    },
-    {
-     "label": "Cautious",
-     "suggested": true,
-     "says": "That matches what I read. The call with Andrew is ready to send: evidence and peers, not pitches."
-    },
-    {
-     "label": "Against",
-     "says": "Thank you for saying so. I'll hold the call with Andrew, route through Gary, and tell you if her emails change."
-    },
-    {
-     "label": "Didn't come up",
-     "says": "Fine. The call with Andrew is ready to send as written, and I'll keep reading her emails."
-    }
-   ],
-   "actions": [
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
-    }
-   ],
-   "phone": {
-    "when": "Best this week",
-    "act": "Answer",
-    "act_does": "open",
-    "said": "Thank you. I will keep it on Rachel’s page, next to my own read.",
-    "done": "Thank you",
-    "done_text": "I will keep it on Rachel's page, next to my own read."
-   },
-   "title": "How did your meeting with Rachel Gill go?",
-   "intro": "<p>You met her on 8 September, and she joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.</p>",
-   "sections": {
-    "Known so far": {
-     "html": "<ul><li>Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.</li><li>Three emails from her since. Two ask, in different words, whether officers will use it.</li><li>My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.</li></ul>"
-    },
-    "People": {
-     "html": "<ul><li>Rachel Gill · Head of IT · Cautious, in my reading of her emails</li><li>Gary Pearson · Service Design Lead · Your champion. She joined his thread</li></ul>"
-    },
-    "Timeline": {
-     "html": "<ul><li>8 September · Your intro call with Rachel, 30 minutes</li><li>8 September · She joins Gary's thread the same day</li><li>Since then · Three emails from her. Two ask whether officers will use it</li><li>Today · No recording and no notes from the call</li></ul>"
-    },
-    "What's missing": {
-     "html": "<ul><li>No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.</li></ul>"
-    },
-    "What your answer changes": {
-     "html": "<ul><li>Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.</li><li>Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.</li><li>Against: I hold the call with Andrew, route through Gary and keep her off the spot.</li><li>Didn't come up: the call with Andrew is ready as written.</li></ul>"
-    },
-    "Where your answer is saved": {
-     "html": "<ul><li>On Rachel's page, as your read on 8 September, next to mine.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "Known so far",
-    "People",
-    "Timeline",
-    "What's missing",
-    "What your answer changes",
-    "Where your answer is saved"
-   ],
-   "file": "cards/ask-rachel-meeting.md",
-   "markdown": "---\nid: ask-rachel-meeting\norder: 11\nkind: ask\nlabel: Ask\nsignal: new-stakeholder\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [new-name-on-thread, prior-history-scan, re-asked-questions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: []\nwidgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nwhen:\n  mode: rhythm\n  words: \"Ten seconds. Best this week.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Warm\"\n    says: \"Good to know. Drafts to her get shorter and more direct, and the call with Andrew goes as an offer, not as an answer to a doubt.\"\n  - label: \"Cautious\"\n    suggested: true\n    says: \"That matches what I read. The call with Andrew is ready to send: evidence and peers, not pitches.\"\n  - label: \"Against\"\n    says: \"Thank you for saying so. I'll hold the call with Andrew, route through Gary, and tell you if her emails change.\"\n  - label: \"Didn't come up\"\n    says: \"Fine. The call with Andrew is ready to send as written, and I'll keep reading her emails.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  when: \"Best this week\"\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I will keep it on Rachel’s page, next to my own read.\"\n  done: \"Thank you\"\n  done_text: \"I will keep it on Rachel's page, next to my own read.\"\n---\n\n# How did your meeting with Rachel Gill go?\n\nYou met her on 8 September, and she joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.\n\n## Known so far\n\n- Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.\n- Three emails from her since. Two ask, in different words, whether officers will use it.\n- My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.\n\n## People\n\n- Rachel Gill · Head of IT · Cautious, in my reading of her emails\n- Gary Pearson · Service Design Lead · Your champion. She joined his thread\n\n## Timeline\n\n- 8 September · Your intro call with Rachel, 30 minutes\n- 8 September · She joins Gary's thread the same day\n- Since then · Three emails from her. Two ask whether officers will use it\n- Today · No recording and no notes from the call\n\n## What's missing\n\n- No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.\n\n## What your answer changes\n\n- Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.\n- Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.\n- Against: I hold the call with Andrew, route through Gary and keep her off the spot.\n- Didn't come up: the call with Andrew is ready as written.\n\n## Where your answer is saved\n\n- On Rachel's page, as your read on 8 September, next to mine.\n",
-   "widgetRows": {
-    "people": [
-     [
-      "Rachel Gill",
-      "Head of IT",
-      "Cautious, in my reading of her emails"
-     ],
-     [
-      "Gary Pearson",
-      "Service Design Lead",
-      "Your champion. She joined his thread"
-     ]
-    ],
-    "timeline": [
-     [
-      "8 September",
-      "Your intro call with Rachel, 30 minutes"
-     ],
-     [
-      "8 September",
-      "She joins Gary's thread the same day"
-     ],
-     [
-      "Since then",
-      "Three emails from her. Two ask whether officers will use it"
-     ],
-     [
-      "Today",
-      "No recording and no notes from the call"
-     ]
-    ]
-   },
-   "councilName": "Westmoor",
-   "documentNames": [],
-   "band": 3,
-   "bandWords": "Holding something up"
-  },
-  {
-   "id": "ask-twelve-councils",
-   "order": "18",
-   "kind": "ask",
-   "label": "Ask",
-   "signal": "missing-people",
-   "signal_status": "provisional",
-   "supporting": [
-    "fit-match",
+    "champion-went-dark",
     "warm-path"
    ],
    "supporting_status": "provisional",
    "counts": [
-    "people-reached-count",
-    "fit-factors-met",
-    "mutual-contact-count"
+    "who-starts-threads",
+    "times-you-chase",
+    "you-give-vs-they-give",
+    "bounce-back-detected",
+    "auto-reply-no-longer-with"
    ],
    "counts_status": "provisional",
-   "person": "you",
+   "about": [
+    "nicola-shaw",
+    "ashworth"
+   ],
+   "to": "nicola-shaw",
+   "arrives": "2026-09-16",
    "documents": [],
-   "when": {
-    "mode": "rhythm",
-    "words": "A minute. Whenever suits this week."
-   },
-   "reply": {
-    "module": "several",
-    "header": "Pick up to three"
-   },
-   "picks": [
-    "Ashby",
-    "Brinsley",
-    "Carlton",
-    "Denby",
-    "Fulford",
-    "Glenfield",
-    "Hatton",
-    "Kirby",
-    "Linton",
-    "Newby",
-    "Orton",
-    "Rowley"
+   "widgets": [
+    "timeline",
+    "their-words"
    ],
-   "actions": [
-    {
-     "label": "Start There",
-     "style": "filled",
-     "confirms": "picks",
-     "limit": "3",
-     "says": "Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday."
-    },
-    {
-     "label": "Use Your Pick",
-     "style": "tinted",
-     "says": "Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday."
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
-    }
-   ],
-   "title": "Which three councils without a contact should I start with?",
-   "intro": "<p>Twelve councils have no named person. I can look for people at all twelve, but slowly. Three at a time means you see names this month.</p>",
-   "sections": {
-    "Known so far": {
-     "html": "<ul><li>Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.</li><li>Ashby has a tender out for \"customer contact modernisation\".</li><li>Two have new digital leads since spring: Kirby and Carlton.</li><li>If you have no view, I'd start with Ashby, Glenfield and Kirby.</li></ul>"
-    },
-    "What's missing": {
-     "html": "<ul><li>LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.</li></ul>"
-    },
-    "What your answer changes": {
-     "html": "<ul><li>For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.</li><li>The other nine wait. I won't touch them until these three have names.</li></ul>"
-    },
-    "Where your answer is saved": {
-     "html": "<ul><li>On your list of thirty, marked \"you chose\", with the date.</li></ul>"
-    }
-   },
-   "sectionOrder": [
-    "Known so far",
-    "What's missing",
-    "What your answer changes",
-    "Where your answer is saved"
-   ],
-   "file": "cards/ask-twelve-councils.md",
-   "markdown": "---\nid: ask-twelve-councils\norder: 18\nkind: ask\nlabel: Ask\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [fit-match, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [people-reached-count, fit-factors-met, mutual-contact-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nwhen:\n  mode: rhythm\n  words: \"A minute. Whenever suits this week.\"\nreply:\n  module: several\n  header: \"Pick up to three\"\npicks:\n  - \"Ashby\"\n  - \"Brinsley\"\n  - \"Carlton\"\n  - \"Denby\"\n  - \"Fulford\"\n  - \"Glenfield\"\n  - \"Hatton\"\n  - \"Kirby\"\n  - \"Linton\"\n  - \"Newby\"\n  - \"Orton\"\n  - \"Rowley\"\nactions:\n  - label: \"Start There\"\n    style: filled\n    confirms: picks\n    limit: 3\n    says: \"Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday.\"\n  - label: \"Use Your Pick\"\n    style: tinted\n    says: \"Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\n---\n\n# Which three councils without a contact should I start with?\n\nTwelve councils have no named person. I can look for people at all twelve, but slowly. Three at a time means you see names this month.\n\n## Known so far\n\n- Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.\n- Ashby has a tender out for \"customer contact modernisation\".\n- Two have new digital leads since spring: Kirby and Carlton.\n- If you have no view, I'd start with Ashby, Glenfield and Kirby.\n\n## What's missing\n\n- LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.\n\n## What your answer changes\n\n- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.\n- The other nine wait. I won't touch them until these three have names.\n\n## Where your answer is saved\n\n- On your list of thirty, marked \"you chose\", with the date.\n",
-   "widgetRows": {},
-   "documentNames": [],
-   "band": 5,
-   "bandWords": "Due by its rhythm"
-  },
-  {
-   "id": "connect-linkedin",
-   "order": "22",
-   "kind": "connect",
-   "label": "Connect",
-   "signal": "warm-path",
-   "signal_status": "provisional",
-   "counts": [
-    "mutual-contact-count",
-    "intro-chain-length",
-    "target-cold-to-you"
-   ],
-   "counts_status": "provisional",
-   "person": "you",
-   "documents": [],
+   "sure": "likely",
+   "sure_because": "A pattern: four notes, no reply, no bounce.",
    "reply": {
     "module": "buttons"
    },
    "actions": [
     {
-     "label": "Connect LinkedIn",
+     "label": "Rest It",
      "style": "filled",
-     "says": "In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything."
+     "says": "Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears."
+    },
+    {
+     "label": "One More Try",
+     "style": "tinted",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
     }
    ],
-   "title": "Connect LinkedIn",
-   "intro": "<p>Twelve of your thirty councils have nobody you know. LinkedIn is where the warm paths would show. Today I only see paths that happen to surface in your mail and Slack.</p>",
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Last note",
+    "hand": "Send",
+    "sub": "only if Simon's introduction goes nowhere",
+    "footer": "Nothing attached."
+   },
+   "phone": {
+    "act": "Rest It",
+    "act_does": "tap",
+    "view": "One More Try",
+    "said": "Done. No more Ashworth notes from me.",
+    "done": "Ashworth rests",
+    "done_text": "No more Ashworth notes from me. I'll only come back when a warm path or a change at the council gives us a real reason."
+   },
+   "title": "Let Ashworth rest",
+   "intro": "<p>Four notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.</p>",
    "sections": {
-    "What I can see now": {
-     "html": "<ul><li>Your mail, calendar and Drive. Slack. The open web: council sites, news, tenders.</li></ul>"
+    "What happened": {
+     "html": "<ul><li>Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.</li><li>Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.</li><li>A fifth message is unlikely to do what four did not. A different door might: a person who knows them.</li><li>Your colleague Simon knows Nicola Shaw there. That is the card about an introduction, next to this one.</li></ul>"
     },
-    "What I cannot see": {
-     "html": "<ul><li>Who you know. Who Simon knows. Who has moved where. Four cards this week say \"LinkedIn is not connected\" and work around it.</li></ul>"
+    "Timeline": {
+     "html": "<ul><li>6 May · Your first note to Ashworth</li><li>18 August · Your fourth note. No reply to any of them</li><li>2 September · Simon says he knows Nicola Shaw</li><li>Today · Four weeks since your last note</li></ul>"
     },
-    "Once connected": {
-     "html": "<ul><li>Warm-path cards for the twelve councils where you know nobody.</li><li>Job changes noticed within a day, like Julie Barker leaving Moreton, instead of when an email bounces.</li><li>Simon's \"I know Nicola\" becomes something I can check rather than take on trust.</li></ul>"
+    "What they said": {
+     "html": "<ul><li>Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event</li></ul>"
     },
-    "What I will not do": {
-     "html": "<ul><li>Post, message, or connect on your behalf. I only read.</li></ul>"
+    "Sources": {
+     "html": "<ul><li>gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.</li><li>gmail · No bounce or auto-reply on any of them.</li><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>goal-told · Your list of thirty, where Ashworth is marked cold.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether your notes reached the right people at all. Two names from a website is a thin start.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Nicola,</p>\n<p>I have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.</p>\n<p>If there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.</p>\n<p>Fede</p>"
     }
    },
    "sectionOrder": [
-    "What I can see now",
-    "What I cannot see",
-    "Once connected",
-    "What I will not do"
+    "What happened",
+    "Timeline",
+    "What they said",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
    ],
-   "file": "cards/connect-linkedin.md",
-   "markdown": "---\nid: connect-linkedin\norder: 22\nkind: connect\nlabel: Connect\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [mutual-contact-count, intro-chain-length, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: you\ndocuments: []\nreply:\n  module: buttons\nactions:\n  - label: \"Connect LinkedIn\"\n    style: filled\n    says: \"In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything.\"\n---\n\n# Connect LinkedIn\n\nTwelve of your thirty councils have nobody you know. LinkedIn is where the warm paths would show. Today I only see paths that happen to surface in your mail and Slack.\n\n## What I can see now\n\n- Your mail, calendar and Drive. Slack. The open web: council sites, news, tenders.\n\n## What I cannot see\n\n- Who you know. Who Simon knows. Who has moved where. Four cards this week say \"LinkedIn is not connected\" and work around it.\n\n## Once connected\n\n- Warm-path cards for the twelve councils where you know nobody.\n- Job changes noticed within a day, like Julie Barker leaving Moreton, instead of when an email bounces.\n- Simon's \"I know Nicola\" becomes something I can check rather than take on trust.\n\n## What I will not do\n\n- Post, message, or connect on your behalf. I only read.\n",
-   "widgetRows": {},
+   "file": "scenarios/bops/cards/act-ashworth-rest.md",
+   "markdown": "---\nid: act-ashworth-rest\norder: 20\nkind: act\nsignal: one-sided\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [champion-went-dark, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [who-starts-threads, times-you-chase, you-give-vs-they-give, bounce-back-detected, auto-reply-no-longer-with]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [nicola-shaw, ashworth]\nto: nicola-shaw                # who the move reaches; one move per person at a time\narrives: 2026-09-16             # today: the one card answered with a single tap\ndocuments: []\nwidgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nsure: \"likely\"\nsure_because: \"A pattern: four notes, no reply, no bounce.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Rest It\"\n    style: filled\n    says: \"Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears.\"\n  - label: \"One More Try\"\n    style: tinted\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Last note\"\n  hand: \"Send\"\n  sub: \"only if Simon's introduction goes nowhere\"\n  footer: \"Nothing attached.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  act: \"Rest It\"\n  act_does: tap\n  view: \"One More Try\"\n  said: \"Done. No more Ashworth notes from me.\"\n  done: \"Ashworth rests\"\n  done_text: \"No more Ashworth notes from me. I'll only come back when a warm path or a change at the council gives us a real reason.\"\n---\n\n# Let Ashworth rest\n\nFour notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.\n\n## What happened\n\n- Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.\n- Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.\n- A fifth message is unlikely to do what four did not. A different door might: a person who knows them.\n- Your colleague Simon knows Nicola Shaw there. That is the card about an introduction, next to this one.\n\n## Timeline\n\n- 6 May · Your first note to Ashworth\n- 18 August · Your fourth note. No reply to any of them\n- 2 September · Simon says he knows Nicola Shaw\n- Today · Four weeks since your last note\n\n## What they said\n\n- Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event\n\n## Sources\n\n- gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.\n- gmail · No bounce or auto-reply on any of them.\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- goal-told · Your list of thirty, where Ashworth is marked cold.\n\n## Still unclear\n\n- Whether your notes reached the right people at all. Two names from a website is a thin start.\n\n## What happens next\n\n- If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.\n\n## The draft\n\nHi Nicola,\n\nI have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.\n\nIf there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.\n\nFede\n",
+   "widgetRows": {
+    "timeline": [
+     [
+      "6 May",
+      "Your first note to Ashworth"
+     ],
+     [
+      "18 August",
+      "Your fourth note. No reply to any of them"
+     ],
+     [
+      "2 September",
+      "Simon says he knows Nicola Shaw"
+     ],
+     [
+      "Today",
+      "Four weeks since your last note"
+     ]
+    ],
+    "their-words": [
+     [
+      "Simon Ward",
+      "2 September, in Slack",
+      "I know Nicola at Ashworth from the LGA event"
+     ]
+    ]
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "No bounce or auto-reply on any of them.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "slack"
+     ],
+     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".",
+     "from": "Slack"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty, where Ashworth is marked cold.",
+     "from": "You told me"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The someone who can introduce you read leans on it, so I have less to go on here.",
+     "from": "LinkedIn",
+     "gap": true
+    }
+   ],
+   "orgName": "Ashworth",
    "documentNames": [],
+   "waits_on": [],
    "band": 6,
    "bandWords": "Costs nothing to wait"
   },
   {
-   "id": "expand-felton-director",
+   "id": "act-felton-director",
    "order": "10",
    "kind": "act",
-   "label": "Expand",
    "signal": "missing-people",
    "signal_status": "provisional",
    "supporting": [
@@ -6266,8 +5042,11 @@ window.LIBRARY = {
     "internal-advocacy-mentions"
    ],
    "counts_status": "provisional",
-   "person": "shabana-akhtar",
-   "council": "felton",
+   "about": [
+    "shabana-akhtar",
+    "felton"
+   ],
+   "to": "shabana-akhtar",
    "documents": [],
    "widgets": [
     "people",
@@ -6275,11 +5054,7 @@ window.LIBRARY = {
    ],
    "sure": "a hunch",
    "sure_because": "A reading of her words: Shabana's two mentions of David are the whole evidence.",
-   "held_by": "advance-felton-price",
-   "when": {
-    "mode": "rhythm",
-    "words": "Once the partial rollout offer is with Stephen."
-   },
+   "held_words": "If Stephen says the budget is still the answer.",
    "reply": {
     "module": "buttons"
    },
@@ -6352,8 +5127,8 @@ window.LIBRARY = {
     "What happens next",
     "The draft"
    ],
-   "file": "cards/expand-felton-director.md",
-   "markdown": "---\nid: expand-felton-director\norder: 10\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder, champion]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: shabana-akhtar\ncouncil: felton\ndocuments: []\nwidgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"a hunch\"\nsure_because: \"A reading of her words: Shabana's two mentions of David are the whole evidence.\"\nheld_by: advance-felton-price\nwhen:\n  mode: rhythm\n  words: \"Once the partial rollout offer is with Stephen.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Shabana Akhtar to bring her director in\n\nStephen Walsh's objection is this year's budget, and budgets are set above him. Shabana has mentioned her director twice.\n\n## What happened\n\n- Why next: the partial rollout offer answers the size of the number. Whether it fits this year is a priorities call, made above Stephen. Once the offer is with him, widen the room.\n- Shabana wrote \"David will want to see this\" in July and \"I'll need David onside\" in August. David Marshall, Director of Communities, is on no thread.\n- Two Felton voices on the thread: Shabana is for it, and Stephen, in finance, holds the objection. Adding the director changes the shape of the decision.\n- This is a hunch more than a read: Shabana's two mentions are the whole evidence.\n\n## People\n\n- Shabana Akhtar · Digital Lead · For it. Has mentioned her director twice\n- Stephen Walsh · Finance Business Partner · The price objection is his\n- David Marshall · Director of Communities · On no thread yet\n\n## What they said\n\n- Shabana Akhtar · 15 July · David will want to see this\n- Shabana Akhtar · 21 August · I'll need David onside\n\n## Sources\n\n- gmail · The Felton thread: Shabana's messages of 15 July and 21 August.\n- web · Felton's senior team page, David Marshall, Director of Communities.\n- gmail · The participants of every Felton thread. David is on none.\n- goal-told · Your goal: coalition before partial.\n\n## Still unclear\n\n- Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.\n\n## What happens next\n\n- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and wait for Stephen's reply.\n\n## The draft\n\nHi Shabana,\n\nYou've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now that the smaller starting option is with Stephen?\n\nI'm happy to send him a short note through you, or to do a twenty-minute session with you and David. Whichever you think fits how Felton works.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-felton-director.md",
+   "markdown": "---\nid: act-felton-director\norder: 10\nkind: act\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder, champion]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [shabana-akhtar, felton]\nto: shabana-akhtar                # who the move reaches; one move per person at a time\ndocuments: []\nwidgets: [people, their-words]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nsure: \"a hunch\"\nsure_because: \"A reading of her words: Shabana's two mentions of David are the whole evidence.\"\nheld_words: \"If Stephen says the budget is still the answer.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Shabana Akhtar to bring her director in\n\nStephen Walsh's objection is this year's budget, and budgets are set above him. Shabana has mentioned her director twice.\n\n## What happened\n\n- Why next: the partial rollout offer answers the size of the number. Whether it fits this year is a priorities call, made above Stephen. Once the offer is with him, widen the room.\n- Shabana wrote \"David will want to see this\" in July and \"I'll need David onside\" in August. David Marshall, Director of Communities, is on no thread.\n- Two Felton voices on the thread: Shabana is for it, and Stephen, in finance, holds the objection. Adding the director changes the shape of the decision.\n- This is a hunch more than a read: Shabana's two mentions are the whole evidence.\n\n## People\n\n- Shabana Akhtar · Digital Lead · For it. Has mentioned her director twice\n- Stephen Walsh · Finance Business Partner · The price objection is his\n- David Marshall · Director of Communities · On no thread yet\n\n## What they said\n\n- Shabana Akhtar · 15 July · David will want to see this\n- Shabana Akhtar · 21 August · I'll need David onside\n\n## Sources\n\n- gmail · The Felton thread: Shabana's messages of 15 July and 21 August.\n- web · Felton's senior team page, David Marshall, Director of Communities.\n- gmail · The participants of every Felton thread. David is on none.\n- goal-told · Your goal: coalition before partial.\n\n## Still unclear\n\n- Whether Shabana wants David in yet, or would see it as going over her head. The ask goes to her, not him.\n\n## What happens next\n\n- If Shabana agrees I'll draft the note for her to forward to David, in her voice, not yours. If she hesitates I'll drop it and wait for Stephen's reply.\n\n## The draft\n\nHi Shabana,\n\nYou've mentioned David a couple of times as the person who'd need to be onside. Would it help to bring him in now that the smaller starting option is with Stephen?\n\nI'm happy to send him a short note through you, or to do a twenty-minute session with you and David. Whichever you think fits how Felton works.\n\nFede\n",
    "widgetRows": {
     "people": [
      [
@@ -6423,16 +5198,532 @@ window.LIBRARY = {
      "gap": true
     }
    ],
-   "councilName": "Felton",
+   "orgName": "Felton",
    "documentNames": [],
-   "band": 3,
-   "bandWords": "Holding something up"
+   "waits_on": [
+    "act-felton-price"
+   ],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
   },
   {
-   "id": "expand-karen-budget-holder",
+   "id": "act-felton-price",
+   "order": "9",
+   "kind": "act",
+   "signal": "blocker",
+   "signal_status": "provisional",
+   "supporting": [
+    "price-barrier"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "repeated-objection-count",
+    "objection-name-match",
+    "your-price"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "stephen-walsh",
+    "felton"
+   ],
+   "to": "stephen-walsh",
+   "arrives": "2026-09-18",
+   "documents": [
+    "partial-rollout-price-sheet"
+   ],
+   "sure": "likely",
+   "sure_because": "A pattern: all four of Stephen's messages mention the price.",
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "Any day this week."
+   },
+   "watch": [
+    {
+     "for": "Stephen's reply",
+     "then": "act-felton-director",
+     "next": "If the budget is still the answer, Shabana's director is next."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Offer",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Attached: the partial rollout price sheet."
+   },
+   "phone": {
+    "when": "Any day this week",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "A smaller first step for Felton",
+    "said": "Sent. I'll watch for Stephen's reply.",
+    "done": "Sent to Stephen",
+    "done_text": "The partial rollout price sheet went with it. If the budget is still the answer, Shabana's director is next."
+   },
+   "title": "Offer Felton the partial rollout",
+   "intro": "<p>Stephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.</li><li>Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.</li><li>Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.</li><li>The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.</li><li>gmail · Stephen's message of 9 September.</li><li>drive · The partial rollout price sheet.</li><li>goal-told · Your goal: partial adoption first is the plan, not a concession.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether a smaller number reads as a discount to him. It isn't one, and the email says so.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Stephen,</p>\n<p>You said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.</p>\n<p>East Marston didn't start with the whole thing either. A first step can be one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.</p>\n<p>The one-page breakdown is attached.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-felton-price.md",
+   "markdown": "---\nid: act-felton-price\norder: 9\nkind: act\nsignal: blocker\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [price-barrier]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [repeated-objection-count, objection-name-match, your-price]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [stephen-walsh, felton]\nto: stephen-walsh                # who the move reaches; one move per person at a time\narrives: 2026-09-18             # the day the tool puts it on the home\ndocuments: [partial-rollout-price-sheet]\nsure: \"likely\"\nsure_because: \"A pattern: all four of Stephen's messages mention the price.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"Any day this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Stephen's reply\"\n    then: act-felton-director\n    next: \"If the budget is still the answer, Shabana's director is next.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the partial rollout price sheet.\"\nphone:\n  when: \"Any day this week\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"A smaller first step for Felton\"\n  said: \"Sent. I'll watch for Stephen's reply.\"\n  done: \"Sent to Stephen\"\n  done_text: \"The partial rollout price sheet went with it. If the budget is still the answer, Shabana's director is next.\"\n---\n\n# Offer Felton the partial rollout\n\nStephen Walsh's objection is the annual price, not the product. The partial rollout costs a third and answers the question he is actually asking.\n\n## What happened\n\n- Why now: Stephen's email last Wednesday ended \"we can't find that in this year's budget\". Left alone, that sentence becomes the decision.\n- Felton is at coalition: Shabana Akhtar is for it. Stephen is finance, and his objection is the only one on the thread.\n- Every message from Stephen mentions the annual figure. None questions what BOPS does. The one thing in the way is the size of the number.\n- The partial rollout exists for exactly this: one service, live cases, about a third of the price, and a path to the rest next financial year.\n\n## Sources\n\n- gmail · The Felton thread since June: 18 messages. Stephen's four all mention price.\n- gmail · Stephen's message of 9 September.\n- drive · The partial rollout price sheet.\n- goal-told · Your goal: partial adoption first is the plan, not a concession.\n\n## Still unclear\n\n- Whether a smaller number reads as a discount to him. It isn't one, and the email says so.\n\n## What happens next\n\n- After you send it I'll watch for Stephen's reply. If the budget is still the answer, the next card is Shabana's director, who sets Felton's priorities.\n\n## The draft\n\nHi Stephen,\n\nYou said the annual figure isn't in this year's budget, and I'd rather work with that than argue with it.\n\nEast Marston didn't start with the whole thing either. A first step can be one service on live cases only, which comes in at roughly a third of the figure you've seen. It is a smaller commitment, not a discount: the rest is there when the next budget round allows.\n\nThe one-page breakdown is attached.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Felton thread since June: 18 messages. Stephen's four all mention price.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Stephen's message of 9 September.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The partial rollout price sheet.",
+     "from": "Drive"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption first is the plan, not a concession.",
+     "from": "You told me"
+    }
+   ],
+   "orgName": "Felton",
+   "documentNames": [
+    "Partial rollout price sheet"
+   ],
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-gary-records",
+   "order": "4",
+   "kind": "act",
+   "signal": "champion",
+   "signal_status": "provisional",
+   "supporting": [
+    "loose-end",
+    "warming"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "ask-made-unanswered",
+    "who-starts-threads",
+    "reply-speed-vs-own-rhythm",
+    "internal-advocacy-mentions",
+    "colleagues-looped-in-count"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "gary-pearson",
+    "westmoor"
+   ],
+   "to": "gary-pearson",
+   "arrives": "2026-09-16",
+   "documents": [
+    "east-marston-case-study",
+    "records-import-note"
+   ],
+   "sure": "sure",
+   "sure_because": "A fact on record: his question of 10 September has no answer yet.",
+   "when": {
+    "mode": "fresh",
+    "words": "Worth doing today. An unanswered question from a champion goes stale."
+   },
+   "watch": [
+    {
+     "for": "Gary's reply",
+     "next": "I'll tell you when it comes."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Answer",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Attached: the East Marston case study, and the records import note."
+   },
+   "phone": {
+    "when": "Today",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "Importing your case records",
+    "said": "Sent. I'll tell you when Gary replies.",
+    "done": "Sent to Gary",
+    "done_text": "The case study and the import note went with it. I'll watch for Gary's reply and tell you when it comes."
+   },
+   "title": "Answer Gary Pearson today",
+   "intro": "<p>He asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: his question has sat six days. The longer it waits, the smaller the door.</li><li>Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".</li><li>Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.</li><li>Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.</li><li>gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.</li><li>drive · \"Records import: how it works\" and the East Marston case study.</li><li>goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Nothing much. He asked a direct question and this answers it. Rachel's needs have cards of their own.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>Once sent, I'll watch for Gary's reply and tell you when it comes.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Gary,</p>\n<p>Short answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.</p>\n<p>The import note is attached too, in case the how matters more than the story.</p>\n<p>If it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-gary-records.md",
+   "markdown": "---\nid: act-gary-records\norder: 4\nkind: act\nsignal: champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end, warming]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [gary-pearson, westmoor]\nto: gary-pearson                # who the move reaches; one move per person at a time\narrives: 2026-09-16             # the day the tool puts it on the home\ndocuments: [east-marston-case-study, records-import-note]\nsure: \"sure\"\nsure_because: \"A fact on record: his question of 10 September has no answer yet.\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. An unanswered question from a champion goes stale.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Gary's reply\"\n    next: \"I'll tell you when it comes.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Answer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the East Marston case study, and the records import note.\"\nphone:\n  when: \"Today\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"Importing your case records\"\n  said: \"Sent. I'll tell you when Gary replies.\"\n  done: \"Sent to Gary\"\n  done_text: \"The case study and the import note went with it. I'll watch for Gary's reply and tell you when it comes.\"\n---\n\n# Answer Gary Pearson today\n\nHe asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.\n\n## What happened\n\n- Why now: his question has sat six days. The longer it waits, the smaller the door.\n- Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: \"once we've rolled this out\", \"I'll put it to procurement\".\n- Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.\n- Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.\n\n## Sources\n\n- gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.\n- gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.\n- drive · \"Records import: how it works\" and the East Marston case study.\n- goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.\n\n## Still unclear\n\n- Nothing much. He asked a direct question and this answers it. Rachel's needs have cards of their own.\n\n## What happens next\n\n- Once sent, I'll watch for Gary's reply and tell you when it comes.\n\n## The draft\n\nHi Gary,\n\nShort answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.\n\nThe import note is attached too, in case the how matters more than the story.\n\nIf it helps, a partial rollout is the usual first step: one service, live records only, then widen. Happy to walk through what that looked like for East Marston.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Gary since February: 31 messages, reply times, and who started what.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "\"Records import: how it works\" and the East Marston case study.",
+     "from": "Drive"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption first, which makes an implementation question from a champion read as progress.",
+     "from": "You told me"
+    }
+   ],
+   "orgName": "Westmoor",
+   "documentNames": [
+    "East Marston case study",
+    "Records import note"
+   ],
+   "waits_on": [],
+   "band": 2,
+   "bandWords": "Worse every day"
+  },
+  {
+   "id": "act-holbrook-window",
+   "order": "14",
+   "kind": "act",
+   "signal": "buying-intent",
+   "signal_status": "provisional",
+   "supporting": [
+    "best-way-to-reach",
+    "time-to-reconnect"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "budget-or-procurement-entered",
+    "accepts-meetings",
+    "where-they-start",
+    "how-long-quiet-vs-own-rhythm"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "neil-chapman",
+    "holbrook"
+   ],
+   "to": "neil-chapman",
+   "arrives": "2026-09-18",
+   "held_words": "Once the phasing note is with Neil.",
+   "documents": [],
+   "widgets": [
+    "timeline"
+   ],
+   "sure": "sure",
+   "sure_because": "A fact on record: Neil wrote that the window closes 16 October.",
+   "when": {
+    "mode": "dated",
+    "until": "2026-10-16",
+    "words": "By 16 October: procurement window closes. Book this week."
+   },
+   "watch": [
+    {
+     "for": "Neil's answer to the invite",
+     "next": "Once he accepts, I'll prepare the meeting."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Invite",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "notsure": [
+    {
+     "label": "A Decision",
+     "says": "Then a meeting in late September is enough and I'll pace the rest to it."
+    },
+    {
+     "label": "A Signed Order",
+     "says": "Then we're already tight. I'll move this to today and draft the paperwork checklist too."
+    },
+    {
+     "label": "Don't Know",
+     "says": "Then the invite asks him, plainly, and I'll adjust once he answers."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Nothing attached. Once it goes, I'll watch for his slots."
+   },
+   "phone": {
+    "when": "By 16 October",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "Before your October window",
+    "said": "Sent. I'll prepare the meeting once he accepts.",
+    "done": "Sent to Neil",
+    "done_text": "I'll watch for his answer. Once he accepts, I'll prepare the meeting: what Holbrook has asked, and the two things to leave with."
+   },
+   "title": "Book the Holbrook follow-up",
+   "intro": "<p>Their procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.</li><li>Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.</li><li>Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.</li><li>You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.</li></ul>"
+    },
+    "Timeline": {
+     "html": "<ul><li>14 July · Neil: the window for this year closes 16 October</li><li>3 August · Your last meeting with Holbrook</li><li>Today · No meeting scheduled</li><li>16 October · The procurement window closes</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · Neil, 14 July: \"the window for this year closes 16 October\".</li><li>calendar · No meeting with Holbrook since 3 August, none scheduled.</li><li>gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.</li><li>goal-told · Your goal: partial adoption this year means inside that window.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether the window is for a decision or for a signed order. Neil will know.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Neil,</p>\n<p>You mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?</p>\n<p>Two or three slots that suit you and I'll book it.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Timeline",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-holbrook-window.md",
+   "markdown": "---\nid: act-holbrook-window\norder: 14\nkind: act\nsignal: buying-intent\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [best-way-to-reach, time-to-reconnect]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [neil-chapman, holbrook]\nto: neil-chapman                # who the move reaches; one move per person at a time\narrives: 2026-09-18             # the day the tool puts it on the home\nheld_words: \"Once the phasing note is with Neil.\"\ndocuments: []\nwidgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nsure: \"sure\"\nsure_because: \"A fact on record: Neil wrote that the window closes 16 October.\"\nwhen:\n  mode: dated\n  until: 2026-10-16\n  words: \"By 16 October: procurement window closes. Book this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Neil's answer to the invite\"\n    next: \"Once he accepts, I'll prepare the meeting.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Invite\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"A Decision\"\n    says: \"Then a meeting in late September is enough and I'll pace the rest to it.\"\n  - label: \"A Signed Order\"\n    says: \"Then we're already tight. I'll move this to today and draft the paperwork checklist too.\"\n  - label: \"Don't Know\"\n    says: \"Then the invite asks him, plainly, and I'll adjust once he answers.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Once it goes, I'll watch for his slots.\"\nphone:\n  when: \"By 16 October\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"Before your October window\"\n  said: \"Sent. I'll prepare the meeting once he accepts.\"\n  done: \"Sent to Neil\"\n  done_text: \"I'll watch for his answer. Once he accepts, I'll prepare the meeting: what Holbrook has asked, and the two things to leave with.\"\n---\n\n# Book the Holbrook follow-up\n\nTheir procurement window closes on 16 October. Neil Chapman is warm, and there is no meeting in either calendar.\n\n## What happened\n\n- Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.\n- Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.\n- Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.\n- You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.\n\n## Timeline\n\n- 14 July · Neil: the window for this year closes 16 October\n- 3 August · Your last meeting with Holbrook\n- Today · No meeting scheduled\n- 16 October · The procurement window closes\n\n## Sources\n\n- gmail · Neil, 14 July: \"the window for this year closes 16 October\".\n- calendar · No meeting with Holbrook since 3 August, none scheduled.\n- gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.\n- goal-told · Your goal: partial adoption this year means inside that window.\n\n## Still unclear\n\n- Whether the window is for a decision or for a signed order. Neil will know.\n\n## What happens next\n\n- Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.\n\n## The draft\n\nHi Neil,\n\nYou mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?\n\nTwo or three slots that suit you and I'll book it.\n\nFede\n",
+   "widgetRows": {
+    "timeline": [
+     [
+      "14 July",
+      "Neil: the window for this year closes 16 October"
+     ],
+     [
+      "3 August",
+      "Your last meeting with Holbrook"
+     ],
+     [
+      "Today",
+      "No meeting scheduled"
+     ],
+     [
+      "16 October",
+      "The procurement window closes"
+     ]
+    ]
+   },
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Neil, 14 July: \"the window for this year closes 16 October\".",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "No meeting with Holbrook since 3 August, none scheduled.",
+     "from": "Calendar"
+    },
+    {
+     "sources": [
+      "gmail",
+      "calendar"
+     ],
+     "words": "Your mail with Neil: who proposed each meeting. You, four of four.",
+     "from": "Gmail, Calendar"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your goal: partial adoption this year means inside that window.",
+     "from": "You told me"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The time to reconnect read leans on it, so I have less to go on here.",
+     "from": "LinkedIn",
+     "gap": true
+    }
+   ],
+   "orgName": "Holbrook",
+   "documentNames": [],
+   "waits_on": [
+    "act-neil-rhythm"
+   ],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-karen-budget-holder",
    "order": "8",
    "kind": "act",
-   "label": "Expand",
    "signal": "missing-people",
    "signal_status": "provisional",
    "supporting": [
@@ -6445,13 +5736,15 @@ window.LIBRARY = {
     "head-of-signature-scan"
    ],
    "counts_status": "provisional",
-   "person": "karen-hughes",
-   "council": "bramley",
+   "about": [
+    "karen-hughes",
+    "bramley"
+   ],
+   "to": "karen-hughes",
    "documents": [],
    "sure": "likely",
    "sure_because": "A pattern: every name on the thread is service-side, and only the committee papers point at Martin Hodgson.",
-   "held_by": "sustain-karen-slowing",
-   "held_words": "Held until Karen replies to this week's note. Shown so you can see it coming.",
+   "held_words": "Once Karen replies to this week's note.",
    "reply": {
     "module": "buttons"
    },
@@ -6516,8 +5809,8 @@ window.LIBRARY = {
     "What happens next",
     "The draft"
    ],
-   "file": "cards/expand-karen-budget-holder.md",
-   "markdown": "---\nid: expand-karen-budget-holder\norder: 8\nkind: act\nlabel: Expand\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: []\nsure: \"likely\"\nsure_because: \"A pattern: every name on the thread is service-side, and only the committee papers point at Martin Hodgson.\"\nheld_by: sustain-karen-slowing\nheld_words: \"Held until Karen replies to this week's note. Shown so you can see it coming.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Karen who holds the budget\n\nNobody on the Bramley thread can sign. When Karen is back in rhythm, she is the one to ask.\n\n## What happened\n\n- Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.\n- Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.\n- For a partial adoption someone has to sign, and your goal needs that someone found.\n- Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.\n\n## Sources\n\n- gmail · The Bramley thread: participants since March, four people, roles from their signatures.\n- web · Bramley's committee papers, Director of Resources: Martin Hodgson.\n- people-told · What you tell me about the budget meeting, and Karen's reply to this week's note.\n- goal-told · Your goal: partial adoption needs a signature.\n\n## Still unclear\n\n- Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.\n\n## What happens next\n\n- Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.\n\n## The draft\n\nHi Karen,\n\nThank you for the reply. One practical question, when you have a moment: if Bramley did decide to try BOPS in one service, who would need to say yes to the spend? I'd rather know now than surprise anyone later.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-karen-budget-holder.md",
+   "markdown": "---\nid: act-karen-budget-holder\norder: 8\nkind: act\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [karen-hughes, bramley]\nto: karen-hughes                # who the move reaches; one move per person at a time\ndocuments: []\nsure: \"likely\"\nsure_because: \"A pattern: every name on the thread is service-side, and only the committee papers point at Martin Hodgson.\"\nheld_words: \"Once Karen replies to this week's note.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Ask\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached.\"\n---\n\n# Ask Karen who holds the budget\n\nNobody on the Bramley thread can sign. When Karen is back in rhythm, she is the one to ask.\n\n## What happened\n\n- Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.\n- Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.\n- For a partial adoption someone has to sign, and your goal needs that someone found.\n- Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.\n\n## Sources\n\n- gmail · The Bramley thread: participants since March, four people, roles from their signatures.\n- web · Bramley's committee papers, Director of Resources: Martin Hodgson.\n- people-told · What you tell me about the budget meeting, and Karen's reply to this week's note.\n- goal-told · Your goal: partial adoption needs a signature.\n\n## Still unclear\n\n- Whether Martin Hodgson is the right holder or the committee is. Council budgets move around.\n\n## What happens next\n\n- Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.\n\n## The draft\n\nHi Karen,\n\nThank you for the reply. One practical question, when you have a moment: if Bramley did decide to try BOPS in one service, who would need to say yes to the spend? I'd rather know now than surprise anyone later.\n\nFede\n",
    "widgetRows": {},
    "readRows": [
     {
@@ -6557,605 +5850,18 @@ window.LIBRARY = {
      "gap": true
     }
    ],
-   "councilName": "Bramley",
+   "orgName": "Bramley",
    "documentNames": [],
+   "waits_on": [
+    "act-karen-slowing"
+   ],
    "band": 2,
    "bandWords": "Worse every day"
   },
   {
-   "id": "expand-sanjay-mistry",
-   "order": "16",
-   "kind": "act",
-   "label": "Expand",
-   "signal": "champion-went-dark",
-   "signal_status": "provisional",
-   "supporting": [
-    "buying-intent"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "bounce-back-detected",
-    "auto-reply-no-longer-with",
-    "was-once-active",
-    "pricing-question-asked"
-   ],
-   "counts_status": "provisional",
-   "person": "sanjay-mistry",
-   "council": "moreton",
-   "documents": [],
-   "sure": "sure",
-   "sure_because": "A fact on record: the bounce, and Julie's auto-reply naming him.",
-   "when": {
-    "mode": "rhythm",
-    "words": "This week, while the handover is fresh."
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Note",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Draft",
-    "hand": "Send",
-    "sub": "in your voice · sends only when you say",
-    "footer": "Nothing attached. Edit anything, then send."
-   },
-   "title": "Introduce yourself to Sanjay Mistry at Moreton",
-   "intro": "<p>Julie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.</li><li>Julie was engaged: she started threads and asked for pricing in May.</li><li>Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.</li><li>Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"</li><li>gmail · Your mail with Julie since April: 9 messages.</li><li>web · Moreton Borough Council staff page, checked this morning.</li><li>goal-told · Your list of thirty.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>How much Julie told Sanjay. The draft assumes nothing.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Sanjay,</p>\n<p>Julie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had asked about pricing.</p>\n<p>I don't want to assume any of that carries over. If it's useful, I can send a short summary of where we'd got to, or simply start again with whatever matters to you.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/expand-sanjay-mistry.md",
-   "markdown": "---\nid: expand-sanjay-mistry\norder: 16\nkind: act\nlabel: Expand\nsignal: champion-went-dark\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [buying-intent]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active, pricing-question-asked]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: sanjay-mistry\ncouncil: moreton\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the bounce, and Julie's auto-reply naming him.\"\nwhen:\n  mode: rhythm\n  words: \"This week, while the handover is fresh.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Edit anything, then send.\"\n---\n\n# Introduce yourself to Sanjay Mistry at Moreton\n\nJulie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.\n\n## What happened\n\n- Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.\n- Julie was engaged: she started threads and asked for pricing in May.\n- Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.\n- Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.\n\n## Sources\n\n- gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"\n- gmail · Your mail with Julie since April: 9 messages.\n- web · Moreton Borough Council staff page, checked this morning.\n- goal-told · Your list of thirty.\n\n## Still unclear\n\n- How much Julie told Sanjay. The draft assumes nothing.\n\n## What happens next\n\n- If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.\n\n## The draft\n\nHi Sanjay,\n\nJulie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had asked about pricing.\n\nI don't want to assume any of that carries over. If it's useful, I can send a short summary of where we'd got to, or simply start again with whatever matters to you.\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Your mail with Julie since April: 9 messages.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "web"
-     ],
-     "words": "Moreton Borough Council staff page, checked this morning.",
-     "from": "Web"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your list of thirty.",
-     "from": "You told me"
-    }
-   ],
-   "councilName": "Moreton",
-   "documentNames": [],
-   "band": 5,
-   "bandWords": "Due by its rhythm"
-  },
-  {
-   "id": "expand-simon-intro",
-   "order": "17",
-   "kind": "act",
-   "label": "Expand",
-   "signal": "warm-path",
-   "signal_status": "provisional",
-   "supporting": [
-    "one-sided"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "shared-contact-on-thread",
-    "intro-chain-length",
-    "mutual-contact-count",
-    "target-cold-to-you",
-    "times-you-chase"
-   ],
-   "counts_status": "provisional",
-   "person": "simon-ward",
-   "council": "ashworth",
-   "documents": [],
-   "sure": "likely",
-   "sure_because": "Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected.",
-   "when": {
-    "mode": "rhythm",
-    "words": "Any day this week."
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Ask Simon",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "notsure": [
-    {
-     "label": "Well",
-     "says": "Then the ask is for an introduction."
-    },
-    {
-     "label": "Barely",
-     "says": "Then the ask is for a mention, not an intro, and I'll redraft accordingly."
-    },
-    {
-     "label": "Don't Know",
-     "says": "Then ask Simon that first. The draft does."
-    }
-   ],
-   "draft": {
-    "title": "The message",
-    "hand": "Open in Slack",
-    "sub": "Slack, to Simon",
-    "footer": "Send it from Slack yourself. I don't send."
-   },
-   "title": "Ask Simon for an introduction",
-   "intro": "<p>He knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.</li><li>Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.</li><li>Nicola is Head of Digital. The case-system question sits in her patch or next to it.</li><li>Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>gmail · Your four notes to Ashworth.</li><li>web · Ashworth's leadership page.</li><li>linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Simon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.</p>\n<p>How well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/expand-simon-intro.md",
-   "markdown": "---\nid: expand-simon-intro\norder: 17\nkind: act\nlabel: Expand\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [one-sided]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you, times-you-chase]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: simon-ward\ncouncil: ashworth\ndocuments: []\nsure: \"likely\"\nsure_because: \"Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected.\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Ask Simon\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Well\"\n    says: \"Then the ask is for an introduction.\"\n  - label: \"Barely\"\n    says: \"Then the ask is for a mention, not an intro, and I'll redraft accordingly.\"\n  - label: \"Don't Know\"\n    says: \"Then ask Simon that first. The draft does.\"\ndraft:\n  title: \"The message\"\n  hand: \"Open in Slack\"\n  sub: \"Slack, to Simon\"\n  footer: \"Send it from Slack yourself. I don't send.\"\n---\n\n# Ask Simon for an introduction\n\nHe knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.\n\n## What happened\n\n- Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.\n- Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.\n- Nicola is Head of Digital. The case-system question sits in her patch or next to it.\n- Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.\n\n## Sources\n\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- gmail · Your four notes to Ashworth.\n- web · Ashworth's leadership page.\n- linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.\n\n## Still unclear\n\n- How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.\n\n## What happens next\n\n- If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.\n\n## The draft\n\nSimon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.\n\nHow well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "slack"
-     ],
-     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".",
-     "from": "Slack"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Your four notes to Ashworth.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "web"
-     ],
-     "words": "Ashworth's leadership page.",
-     "from": "Web"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.",
-     "from": "LinkedIn"
-    }
-   ],
-   "councilName": "Ashworth",
-   "documentNames": [],
-   "band": 5,
-   "bandWords": "Due by its rhythm"
-  },
-  {
-   "id": "expand-tarlton-tender",
-   "order": "15",
-   "kind": "act",
-   "label": "Expand",
-   "signal": "fit-match",
-   "signal_status": "provisional",
-   "supporting": [
-    "buying-intent",
-    "warm-path"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "fit-factors-met",
-    "budget-or-procurement-entered",
-    "target-cold-to-you"
-   ],
-   "counts_status": "provisional",
-   "person": "darren-cole",
-   "council": "tarlton",
-   "documents": [],
-   "sure": "sure",
-   "sure_because": "A fact on record: the tender's own dates.",
-   "when": {
-    "mode": "dated",
-    "words": "By 2 October: clarification questions close. Start this week.",
-    "until": "2026-10-02"
-   },
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Send the Questions",
-     "style": "filled",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "The clarification questions",
-    "hand": "Copy for the Portal",
-    "sub": "to the procurement contact",
-    "footer": "Send through the portal, not by email. I'll watch for the answer."
-   },
-   "title": "Send Tarlton two clarification questions",
-   "intro": "<p>Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.</li><li>Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.</li><li>Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.</li><li>Tender rules limit contact. The questions are the contact.</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.</li><li>web · The tender PDF, sections 2 and 4.</li><li>goal-told · Your list of thirty, Tarlton marked cold.</li><li>linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether a tender this size can be won cold. I have nothing to go on either way.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>Once sent I'll watch the portal for their answers and published Q&amp;A, and I'll raise the bid or no-bid decision with you before 2 October.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Dear Mr Cole,</p>\n<p>Regarding the case management modernisation tender published 9 September, two clarification questions.</p>\n<p>1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?</p>\n<p>2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?</p>\n<p>Kind regards,</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/expand-tarlton-tender.md",
-   "markdown": "---\nid: expand-tarlton-tender\norder: 15\nkind: act\nlabel: Expand\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [buying-intent, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: darren-cole\ncouncil: tarlton\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the tender's own dates.\"\nwhen:\n  mode: dated\n  words: \"By 2 October: clarification questions close. Start this week.\"\n  until: 2026-10-02\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Questions\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"The clarification questions\"\n  hand: \"Copy for the Portal\"\n  sub: \"to the procurement contact\"\n  footer: \"Send through the portal, not by email. I'll watch for the answer.\"\n---\n\n# Send Tarlton two clarification questions\n\nTheir tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.\n\n## What happened\n\n- Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.\n- Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.\n- Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.\n- Tender rules limit contact. The questions are the contact.\n\n## Sources\n\n- web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.\n- web · The tender PDF, sections 2 and 4.\n- goal-told · Your list of thirty, Tarlton marked cold.\n- linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.\n\n## Still unclear\n\n- Whether a tender this size can be won cold. I have nothing to go on either way.\n\n## What happens next\n\n- Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.\n\n## The draft\n\nDear Mr Cole,\n\nRegarding the case management modernisation tender published 9 September, two clarification questions.\n\n1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?\n\n2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?\n\nKind regards,\n\nFede\n",
-   "widgetRows": {},
-   "readRows": [
-    {
-     "sources": [
-      "web"
-     ],
-     "words": "Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.",
-     "from": "Web"
-    },
-    {
-     "sources": [
-      "web"
-     ],
-     "words": "The tender PDF, sections 2 and 4.",
-     "from": "Web"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your list of thirty, Tarlton marked cold.",
-     "from": "You told me"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected, so I can't see whether you know anyone there.",
-     "from": "LinkedIn"
-    }
-   ],
-   "councilName": "Tarlton",
-   "documentNames": [],
-   "band": 4,
-   "bandWords": "A date further off"
-  },
-  {
-   "id": "sustain-ashworth-rest",
-   "order": "20",
-   "kind": "act",
-   "label": "Sustain",
-   "signal": "one-sided",
-   "signal_status": "provisional",
-   "supporting": [
-    "champion-went-dark",
-    "warm-path"
-   ],
-   "supporting_status": "provisional",
-   "counts": [
-    "who-starts-threads",
-    "times-you-chase",
-    "you-give-vs-they-give",
-    "bounce-back-detected",
-    "auto-reply-no-longer-with"
-   ],
-   "counts_status": "provisional",
-   "person": "nicola-shaw",
-   "council": "ashworth",
-   "documents": [],
-   "widgets": [
-    "timeline",
-    "their-words"
-   ],
-   "sure": "likely",
-   "sure_because": "A pattern: four notes, no reply, no bounce.",
-   "reply": {
-    "module": "buttons"
-   },
-   "actions": [
-    {
-     "label": "Rest It",
-     "style": "filled",
-     "says": "Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears."
-    },
-    {
-     "label": "One More Try",
-     "style": "tinted",
-     "opens": "draft"
-    },
-    {
-     "label": "Not Now",
-     "says": "Okay. I'll leave it and raise it again only if something changes."
-    },
-    {
-     "label": "Not Relevant",
-     "opens": "reasons"
-    }
-   ],
-   "reasons": [
-    {
-     "label": "Already Knew",
-     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
-    },
-    {
-     "label": "Wrong Person",
-     "says": "Noted. I'll stop raising this person for this and look for who it should be."
-    },
-    {
-     "label": "Not a Target",
-     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
-    }
-   ],
-   "draft": {
-    "title": "Last note",
-    "hand": "Send",
-    "sub": "only if Simon's introduction goes nowhere",
-    "footer": "Nothing attached."
-   },
-   "phone": {
-    "act": "Rest It",
-    "act_does": "tap",
-    "view": "One More Try",
-    "said": "Done. No more Ashworth notes from me.",
-    "done": "Ashworth rests",
-    "done_text": "No more Ashworth notes from me. I'll only come back when a warm path or a change at the council gives us a real reason."
-   },
-   "title": "Let Ashworth rest",
-   "intro": "<p>Four notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.</p>",
-   "sections": {
-    "What happened": {
-     "html": "<ul><li>Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.</li><li>Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.</li><li>A fifth message is unlikely to do what four did not. A different door might: a person who knows them.</li><li>Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.</li></ul>"
-    },
-    "Timeline": {
-     "html": "<ul><li>6 May · Your first note to Ashworth</li><li>18 August · Your fourth note. No reply to any of them</li><li>2 September · Simon says he knows Nicola Shaw</li><li>Today · Four weeks since your last note</li></ul>"
-    },
-    "What they said": {
-     "html": "<ul><li>Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event</li></ul>"
-    },
-    "Sources": {
-     "html": "<ul><li>gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.</li><li>gmail · No bounce or auto-reply on any of them.</li><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>goal-told · Your list of thirty, where Ashworth is marked cold.</li></ul>"
-    },
-    "Still unclear": {
-     "html": "<ul><li>Whether your notes reached the right people at all. Two names from a website is a thin start.</li></ul>"
-    },
-    "What happens next": {
-     "html": "<ul><li>If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.</li></ul>"
-    },
-    "The draft": {
-     "html": "<p>Hi Nicola,</p>\n<p>I have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.</p>\n<p>If there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.</p>\n<p>Fede</p>"
-    }
-   },
-   "sectionOrder": [
-    "What happened",
-    "Timeline",
-    "What they said",
-    "Sources",
-    "Still unclear",
-    "What happens next",
-    "The draft"
-   ],
-   "file": "cards/sustain-ashworth-rest.md",
-   "markdown": "---\nid: sustain-ashworth-rest\norder: 20\nkind: act\nlabel: Sustain\nsignal: one-sided\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [champion-went-dark, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [who-starts-threads, times-you-chase, you-give-vs-they-give, bounce-back-detected, auto-reply-no-longer-with]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: nicola-shaw\ncouncil: ashworth\ndocuments: []\nwidgets: [timeline, their-words]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"likely\"\nsure_because: \"A pattern: four notes, no reply, no bounce.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Rest It\"\n    style: filled\n    says: \"Done. No more Ashworth notes from me. I'll raise it again only if something changes there or a warm path appears.\"\n  - label: \"One More Try\"\n    style: tinted\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Last note\"\n  hand: \"Send\"\n  sub: \"only if Simon's introduction goes nowhere\"\n  footer: \"Nothing attached.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  act: \"Rest It\"\n  act_does: tap\n  view: \"One More Try\"\n  said: \"Done. No more Ashworth notes from me.\"\n  done: \"Ashworth rests\"\n  done_text: \"No more Ashworth notes from me. I'll only come back when a warm path or a change at the council gives us a real reason.\"\n---\n\n# Let Ashworth rest\n\nFour notes from you since May, nothing back. Resting it gives Nicola a quiet inbox, and Simon's introduction a clean start.\n\n## What happened\n\n- Why now: your fourth note went on 18 August and is four weeks unanswered. The pattern is clear enough to act on, and the act is to stop.\n- Four emails from you, May to August, to two people at Ashworth. No reply, no bounce, no auto-reply. Silence, not absence.\n- A fifth message is unlikely to do what four did not. A different door might: a person who knows them.\n- Your colleague Simon knows Nicola Shaw there. That is the Expand card next to this one.\n\n## Timeline\n\n- 6 May · Your first note to Ashworth\n- 18 August · Your fourth note. No reply to any of them\n- 2 September · Simon says he knows Nicola Shaw\n- Today · Four weeks since your last note\n\n## What they said\n\n- Simon Ward · 2 September, in Slack · I know Nicola at Ashworth from the LGA event\n\n## Sources\n\n- gmail · Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.\n- gmail · No bounce or auto-reply on any of them.\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- goal-told · Your list of thirty, where Ashworth is marked cold.\n\n## Still unclear\n\n- Whether your notes reached the right people at all. Two names from a website is a thin start.\n\n## What happens next\n\n- If you rest it I'll stop, and I'll only come back with Ashworth when a warm path or a change at the council gives us a real reason.\n\n## The draft\n\nHi Nicola,\n\nI have written a few times about BOPS and not heard back, which usually means the timing is wrong or the wrong person got the email. Either is fine.\n\nIf there is someone at Ashworth who owns the case-system question, I would be grateful for a name. If not, I'll leave it here.\n\nFede\n",
-   "widgetRows": {
-    "timeline": [
-     [
-      "6 May",
-      "Your first note to Ashworth"
-     ],
-     [
-      "18 August",
-      "Your fourth note. No reply to any of them"
-     ],
-     [
-      "2 September",
-      "Simon says he knows Nicola Shaw"
-     ],
-     [
-      "Today",
-      "Four weeks since your last note"
-     ]
-    ],
-    "their-words": [
-     [
-      "Simon Ward",
-      "2 September, in Slack",
-      "I know Nicola at Ashworth from the LGA event"
-     ]
-    ]
-   },
-   "readRows": [
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "Your four notes to Ashworth, 6 May to 18 August, and the empty replies column.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "gmail"
-     ],
-     "words": "No bounce or auto-reply on any of them.",
-     "from": "Gmail"
-    },
-    {
-     "sources": [
-      "slack"
-     ],
-     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".",
-     "from": "Slack"
-    },
-    {
-     "sources": [
-      "goal-told"
-     ],
-     "words": "Your list of thirty, where Ashworth is marked cold.",
-     "from": "You told me"
-    },
-    {
-     "sources": [
-      "linkedin"
-     ],
-     "words": "LinkedIn is not connected. The someone who can introduce you read leans on it, so I have less to go on here.",
-     "from": "LinkedIn",
-     "gap": true
-    }
-   ],
-   "councilName": "Ashworth",
-   "documentNames": [],
-   "band": 6,
-   "bandWords": "Costs nothing to wait"
-  },
-  {
-   "id": "sustain-karen-slowing",
+   "id": "act-karen-slowing",
    "order": "7",
    "kind": "act",
-   "label": "Sustain",
    "signal": "cooling-champion",
    "signal_status": "provisional",
    "supporting": [
@@ -7172,8 +5878,12 @@ window.LIBRARY = {
     "reply-length-vs-own-rhythm"
    ],
    "counts_status": "provisional",
-   "person": "karen-hughes",
-   "council": "bramley",
+   "about": [
+    "karen-hughes",
+    "bramley"
+   ],
+   "to": "karen-hughes",
+   "arrives": "2026-09-16",
    "documents": [
     "officer-time-one-pager"
    ],
@@ -7186,11 +5896,20 @@ window.LIBRARY = {
    },
    "sure": "likely",
    "sure_because": "A pattern against her usual: 28 days, when she used to answer in a day. Why, only you can say.",
-   "held_by": "ask-budget-meeting",
+   "held_words": "Once you have told me about the budget meeting.",
    "when": {
     "mode": "rhythm",
-    "words": "Any day this week, once you have told me about the budget meeting."
+    "until": "2026-09-18",
+    "words": "Any day this week."
    },
+   "watch": [
+    {
+     "for": "Karen's reply",
+     "until": "2026-09-30",
+     "then": "act-karen-budget-holder",
+     "otherwise": "I'll come back with a different reason to write, not the same one twice."
+    }
+   ],
    "reply": {
     "module": "buttons"
    },
@@ -7277,8 +5996,8 @@ window.LIBRARY = {
     "The draft",
     "The shorter draft"
    ],
-   "file": "cards/sustain-karen-slowing.md",
-   "markdown": "---\nid: sustain-karen-slowing\norder: 7\nkind: act\nlabel: Sustain\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end, one-sided, warmth-fading]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [reply-gap-vs-own-rhythm, innocent-explanation-scan, promise-made-undelivered, who-starts-threads, reply-length-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: karen-hughes\ncouncil: bramley\ndocuments: [officer-time-one-pager]\nwidgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nwidget_heads:\n  number: \"Reply time\"   # the head names the measure; the widget's label is the default\nsure: \"likely\"\nsure_because: \"A pattern against her usual: 28 days, when she used to answer in a day. Why, only you can say.\"\nheld_by: ask-budget-meeting\nwhen:\n  mode: rhythm\n  words: \"Any day this week, once you have told me about the budget meeting.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the officer-time one-pager. Edit anything, then send.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  when: \"Any day this week\"\n  act: \"Send Message\"\n  act_does: send   # send: the filled action sends the draft · tap: one tap, the draft is a separate try · open: raises the reply sheet\n  view: \"View Draft\"\n  said: \"Sent. I will tell you when Karen replies.\"\n  done: \"Sent to Karen\"\n  done_text: \"I've marked the July figures as sent. I'll watch for her reply, and if nothing comes in two weeks I'll bring a different reason to write.\"   # a stand-in for how the tool reports updating its nouns, not decided\n  subject: \"The officer-time numbers you asked for\"\n---\n\n# Message Karen Hughes\n\nHer replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.\n\n## What happened\n\n- Why now: 28 days since her last real reply, when she used to answer in about a day, and you have a gift ready: the figures she asked for.\n- Before the budget meeting she replied in about a day and started 9 of your 12 threads.\n- Since it: one two-line reply. No out-of-office, no leave, no meeting booked.\n- Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.\n\n## Reply time\n\n- Now · 28 days · since her last real reply\n- Usually · about a day · her replies before the budget meeting\n\n## Timeline\n\n- March · You and Karen start writing\n- July · She asks for the officer-time figures\n- 20 August · Budget meeting at Bramley\n- Today · The figures are still not sent\n\n## Sources\n\n- gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.\n- calendar · \"Budget prioritisation meeting, Bramley\", Thursday 20 August. Nothing since.\n- drive, gmail · The officer-time one-pager, and her July email asking for it.\n- goal-told · Your list of thirty councils, and the goal you gave me.\n\n## Still unclear\n\n- Whether she is quiet because of the budget meeting or for a reason I can't see. What you tell me about the meeting settles most of it.\n\n## What happens next\n\n- Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.\n\n## The draft\n\nHi Karen,\n\nYou asked back in July for the officer-time numbers from East Marston and I never sent them. Here they are, one page. The short version: case admin down by about a third.\n\nI imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how East Marston phased it in, I am around whenever suits.\n\nFede\n\n## The shorter draft\n\nHi Karen,\n\nThe officer-time numbers you asked for in July are attached, one page. I am sorry they took this long.\n\nNo need to reply.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-karen-slowing.md",
+   "markdown": "---\nid: act-karen-slowing\norder: 7\nkind: act\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [loose-end, one-sided, warmth-fading]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [reply-gap-vs-own-rhythm, innocent-explanation-scan, promise-made-undelivered, who-starts-threads, reply-length-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [karen-hughes, bramley]\nto: karen-hughes                # who the move reaches; one move per person at a time\narrives: 2026-09-16             # the day the tool puts it on the home\ndocuments: [officer-time-one-pager]\nwidgets: [number, timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nwidget_heads:\n  number: \"Reply time\"   # the head names the measure; the widget's label is the default\nsure: \"likely\"\nsure_because: \"A pattern against her usual: 28 days, when she used to answer in a day. Why, only you can say.\"\nheld_words: \"Once you have told me about the budget meeting.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"Any day this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Karen's reply\"\n    until: 2026-09-30\n    then: act-karen-budget-holder\n    otherwise: \"I'll come back with a different reason to write, not the same one twice.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the officer-time one-pager. Edit anything, then send.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  when: \"Any day this week\"\n  act: \"Send Message\"\n  act_does: send   # send: the filled action sends the draft · tap: one tap, the draft is a separate try · open: raises the reply sheet\n  view: \"View Draft\"\n  said: \"Sent. I will tell you when Karen replies.\"\n  done: \"Sent to Karen\"\n  done_text: \"I've marked the July figures as sent. I'll watch for her reply, and if nothing comes in two weeks I'll bring a different reason to write.\"   # a stand-in for how the tool reports updating its nouns, not decided\n  subject: \"The officer-time numbers you asked for\"\n---\n\n# Message Karen Hughes\n\nHer replies have slowed since the budget meeting. She never got the officer-time figures she asked for in July.\n\n## What happened\n\n- Why now: 28 days since her last real reply, when she used to answer in about a day, and you have a gift ready: the figures she asked for.\n- Before the budget meeting she replied in about a day and started 9 of your 12 threads.\n- Since it: one two-line reply. No out-of-office, no leave, no meeting booked.\n- Bramley is one of your thirty and she is the only door in. Your goal says move patiently, so give, don't nudge.\n\n## Reply time\n\n- Now · 28 days · since her last real reply\n- Usually · about a day · her replies before the budget meeting\n\n## Timeline\n\n- March · You and Karen start writing\n- July · She asks for the officer-time figures\n- 20 August · Budget meeting at Bramley\n- Today · The figures are still not sent\n\n## Sources\n\n- gmail · Your mail with Karen, March to today: 15 messages, who wrote, when, how long.\n- calendar · \"Budget prioritisation meeting, Bramley\", Thursday 20 August. Nothing since.\n- drive, gmail · The officer-time one-pager, and her July email asking for it.\n- goal-told · Your list of thirty councils, and the goal you gave me.\n\n## Still unclear\n\n- Whether she is quiet because of the budget meeting or for a reason I can't see. What you tell me about the meeting settles most of it.\n\n## What happens next\n\n- Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.\n\n## The draft\n\nHi Karen,\n\nYou asked back in July for the officer-time numbers from East Marston and I never sent them. Here they are, one page. The short version: case admin down by about a third.\n\nI imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how East Marston phased it in, I am around whenever suits.\n\nFede\n\n## The shorter draft\n\nHi Karen,\n\nThe officer-time numbers you asked for in July are attached, one page. I am sorry they took this long.\n\nNo need to reply.\n\nFede\n",
    "widgetRows": {
     "number": [
      [
@@ -7342,18 +6061,170 @@ window.LIBRARY = {
      "from": "You told me"
     }
    ],
-   "councilName": "Bramley",
+   "orgName": "Bramley",
    "documentNames": [
     "Officer-time one-pager"
+   ],
+   "waits_on": [
+    "ask-budget-meeting"
    ],
    "band": 2,
    "bandWords": "Worse every day"
   },
   {
-   "id": "sustain-lisa-strategy",
+   "id": "act-lisa-east-marston",
+   "order": "25",
+   "kind": "act",
+   "signal": "time-to-reconnect",
+   "signal_status": "provisional",
+   "supporting": [],
+   "supporting_status": "provisional",
+   "counts": [
+    "fresh-reason-to-write",
+    "how-long-quiet-vs-own-rhythm"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "lisa-holmes",
+    "burnham",
+    "east-marston-case-study"
+   ],
+   "to": "lisa-holmes",
+   "arrives": "2026-09-30",
+   "held_by": "act-lisa-strategy",
+   "held_words": "A fortnight after your congratulations, if they went.",
+   "documents": [
+    "east-marston-case-study"
+   ],
+   "sure": "likely",
+   "sure_because": "A pattern: a fortnight of quiet after a warm note, on her own slow rhythm.",
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-10-02",
+    "words": "Any day this week."
+   },
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Note",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "The East Marston case study attached."
+   },
+   "phone": {
+    "when": "Any day this week",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "What page 12 looks like in practice",
+    "said": "Sent. I'll watch for Lisa's reply.",
+    "done": "Sent to Lisa",
+    "done_text": "I've sent her the East Marston case study. I'll watch for her reply, and leave Burnham be if none comes."
+   },
+   "title": "Show Lisa Holmes what page 12 looks like",
+   "intro": "<p>A fortnight since your congratulations. Page 12 of her strategy commits Burnham to replacing legacy case systems by 2028. East Marston is fourteen months into doing that.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: two weeks since your note about the strategy, as planned. Long enough not to look like a follow-up, soon enough that the strategy is still hers to talk about.</li><li>Page 12 commits Burnham to \"replacing legacy case systems by 2028\".</li><li>East Marston has been live for fourteen months, and case admin is down by about a third.</li><li>Lisa rarely writes first. This gives her something she can use, and asks for nothing.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>web · Burnham's \"Digital Strategy 2026 to 2030\", page 12.</li><li>gmail · Your note to Lisa about the strategy, and nothing since.</li><li>goal-told · East Marston, the customer, live fourteen months.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether she would rather see it in a call than in a document. She has never asked for either.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>I'll watch for her reply. If she asks how East Marston started, the phasing note is the answer.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Lisa,</p>\n<p>Page 12 of the strategy stayed with me: replacing the legacy case systems by 2028. East Marston has been doing a version of exactly that for fourteen months, and their case admin is down by about a third.</p>\n<p>Their case study is attached, in case it is useful while the plan takes shape. No agenda.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-lisa-east-marston.md",
+   "markdown": "---\nid: act-lisa-east-marston\norder: 25\nkind: act\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: []\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [lisa-holmes, burnham, east-marston-case-study]\nto: lisa-holmes\narrives: 2026-09-30             # a fortnight after the congratulations, as that card said\nheld_by: act-lisa-strategy\nheld_words: \"A fortnight after your congratulations, if they went.\"\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nsure_because: \"A pattern: a fortnight of quiet after a warm note, on her own slow rhythm.\"\nwhen:\n  mode: rhythm\n  until: 2026-10-02\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"The East Marston case study attached.\"\nphone:\n  when: \"Any day this week\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"What page 12 looks like in practice\"\n  said: \"Sent. I'll watch for Lisa's reply.\"\n  done: \"Sent to Lisa\"\n  done_text: \"I've sent her the East Marston case study. I'll watch for her reply, and leave Burnham be if none comes.\"\n---\n\n# Show Lisa Holmes what page 12 looks like\n\nA fortnight since your congratulations. Page 12 of her strategy commits Burnham to replacing legacy case systems by 2028. East Marston is fourteen months into doing that.\n\n## What happened\n\n- Why now: two weeks since your note about the strategy, as planned. Long enough not to look like a follow-up, soon enough that the strategy is still hers to talk about.\n- Page 12 commits Burnham to \"replacing legacy case systems by 2028\".\n- East Marston has been live for fourteen months, and case admin is down by about a third.\n- Lisa rarely writes first. This gives her something she can use, and asks for nothing.\n\n## Sources\n\n- web · Burnham's \"Digital Strategy 2026 to 2030\", page 12.\n- gmail · Your note to Lisa about the strategy, and nothing since.\n- goal-told · East Marston, the customer, live fourteen months.\n\n## Still unclear\n\n- Whether she would rather see it in a call than in a document. She has never asked for either.\n\n## What happens next\n\n- I'll watch for her reply. If she asks how East Marston started, the phasing note is the answer.\n\n## The draft\n\nHi Lisa,\n\nPage 12 of the strategy stayed with me: replacing the legacy case systems by 2028. East Marston has been doing a version of exactly that for fourteen months, and their case admin is down by about a third.\n\nTheir case study is attached, in case it is useful while the plan takes shape. No agenda.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Burnham's \"Digital Strategy 2026 to 2030\", page 12.",
+     "from": "Web"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your note to Lisa about the strategy, and nothing since.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "East Marston, the customer, live fourteen months.",
+     "from": "You told me"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The time to reconnect read leans on it, so I have less to go on here.",
+     "from": "LinkedIn",
+     "gap": true
+    }
+   ],
+   "orgName": "Burnham",
+   "documentNames": [
+    "East Marston case study"
+   ],
+   "waits_on": [
+    "act-lisa-strategy"
+   ],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-lisa-strategy",
    "order": "5",
    "kind": "act",
-   "label": "Sustain",
    "signal": "time-to-reconnect",
    "signal_status": "provisional",
    "supporting": [
@@ -7366,14 +6237,19 @@ window.LIBRARY = {
     "who-starts-threads"
    ],
    "counts_status": "provisional",
-   "person": "lisa-holmes",
-   "council": "burnham",
+   "about": [
+    "lisa-holmes",
+    "burnham"
+   ],
+   "to": "lisa-holmes",
+   "arrives": "2026-09-17",
    "documents": [],
    "sure": "sure",
    "sure_because": "A fact on record: the strategy was published on 11 September.",
    "when": {
     "mode": "fresh",
-    "words": "Worth doing today. Stale by Friday."
+    "until": "2026-09-18",
+    "words": "Worth doing before Friday, when it goes stale."
    },
    "reply": {
     "module": "buttons"
@@ -7413,6 +6289,16 @@ window.LIBRARY = {
     "sub": "in your voice · sends only when you say",
     "footer": "Nothing attached. Edit anything, then send."
    },
+   "phone": {
+    "when": "Stale by Friday",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "Your digital strategy",
+    "said": "Sent. I'll leave Burnham be for a fortnight.",
+    "done": "Sent to Lisa",
+    "done_text": "Nothing asked of her. I'll leave Burnham alone for a fortnight, then look for the moment to show her East Marston."
+   },
    "title": "Congratulate Lisa Holmes",
    "intro": "<p>Burnham published its digital strategy last Friday. She led it, and it says the things you would say.</p>",
    "sections": {
@@ -7439,8 +6325,8 @@ window.LIBRARY = {
     "What happens next",
     "The draft"
    ],
-   "file": "cards/sustain-lisa-strategy.md",
-   "markdown": "---\nid: sustain-lisa-strategy\norder: 5\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [one-sided]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: lisa-holmes\ncouncil: burnham\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the strategy was published on 11 September.\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. Stale by Friday.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Edit anything, then send.\"\n---\n\n# Congratulate Lisa Holmes\n\nBurnham published its digital strategy last Friday. She led it, and it says the things you would say.\n\n## What happened\n\n- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.\n- Page 12 commits Burnham to \"replacing legacy case systems by 2028\". That is where your goal ends up: partial now, full later.\n- Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.\n- Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.\n\n## Sources\n\n- web · Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.\n- gmail · Your mail with Lisa since April: 7 messages, last on 20 August.\n- linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.\n\n## Still unclear\n\n- Whether she wrote page 12 herself or a consultant did. Either way she owns it now.\n\n## What happens next\n\n- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.\n\n## The draft\n\nHi Lisa,\n\nI read the strategy. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.\n\nNo agenda here. Just wanted you to know it landed.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-lisa-strategy.md",
+   "markdown": "---\nid: act-lisa-strategy\norder: 5\nkind: act\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [one-sided]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [lisa-holmes, burnham]\nto: lisa-holmes                # who the move reaches; one move per person at a time\narrives: 2026-09-17             # Thursday: still a day before it goes stale\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the strategy was published on 11 September.\"\nwhen:\n  mode: fresh\n  until: 2026-09-18\n  words: \"Worth doing before Friday, when it goes stale.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Edit anything, then send.\"\nphone:\n  when: \"Stale by Friday\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"Your digital strategy\"\n  said: \"Sent. I'll leave Burnham be for a fortnight.\"\n  done: \"Sent to Lisa\"\n  done_text: \"Nothing asked of her. I'll leave Burnham alone for a fortnight, then look for the moment to show her East Marston.\"\n---\n\n# Congratulate Lisa Holmes\n\nBurnham published its digital strategy last Friday. She led it, and it says the things you would say.\n\n## What happened\n\n- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.\n- Page 12 commits Burnham to \"replacing legacy case systems by 2028\". That is where your goal ends up: partial now, full later.\n- Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.\n- Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.\n\n## Sources\n\n- web · Burnham City Council news, \"Digital Strategy 2026 to 2030\", published 11 September, and the PDF, page 12.\n- gmail · Your mail with Lisa since April: 7 messages, last on 20 August.\n- linkedin · LinkedIn is not connected, so I can't see whether she posted about it herself.\n\n## Still unclear\n\n- Whether she wrote page 12 herself or a consultant did. Either way she owns it now.\n\n## What happens next\n\n- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.\n\n## The draft\n\nHi Lisa,\n\nI read the strategy. The commitment on page 12 to replace the legacy case systems by 2028 is the bravest line I have seen a council put in writing this year. Congratulations. It reads like a document someone actually intends to deliver.\n\nNo agenda here. Just wanted you to know it landed.\n\nFede\n",
    "widgetRows": {},
    "readRows": [
     {
@@ -7465,16 +6351,16 @@ window.LIBRARY = {
      "from": "LinkedIn"
     }
    ],
-   "councilName": "Burnham",
+   "orgName": "Burnham",
    "documentNames": [],
-   "band": 2,
-   "bandWords": "Worse every day"
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
   },
   {
-   "id": "sustain-neil-rhythm",
+   "id": "act-neil-rhythm",
    "order": "13",
    "kind": "act",
-   "label": "Sustain",
    "signal": "time-to-reconnect",
    "signal_status": "provisional",
    "supporting": [
@@ -7489,8 +6375,12 @@ window.LIBRARY = {
     "accepts-meetings"
    ],
    "counts_status": "provisional",
-   "person": "neil-chapman",
-   "council": "holbrook",
+   "about": [
+    "neil-chapman",
+    "holbrook"
+   ],
+   "to": "neil-chapman",
+   "arrives": "2026-09-18",
    "documents": [
     "east-marston-phasing-note"
    ],
@@ -7498,8 +6388,15 @@ window.LIBRARY = {
    "sure_because": "A pattern against his usual: six weeks, his rhythm since March.",
    "when": {
     "mode": "rhythm",
+    "until": "2026-09-18",
     "words": "Any day this week."
    },
+   "watch": [
+    {
+     "for": "Neil's reply",
+     "next": "If he books a call, I'll prepare the phasing questions he is likely to ask."
+    }
+   ],
    "reply": {
     "module": "buttons"
    },
@@ -7538,6 +6435,16 @@ window.LIBRARY = {
     "sub": "in your voice · sends only when you say",
     "footer": "Attached: the East Marston phasing note."
    },
+   "phone": {
+    "when": "Any day this week",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "How East Marston did it in stages",
+    "said": "Sent. The Holbrook invite is next.",
+    "done": "Sent to Neil",
+    "done_text": "The phasing note went with it. Next is the Holbrook follow-up: his window closes 16 October."
+   },
    "title": "Reconnect with Neil Chapman",
    "intro": "<p>You speak roughly every six weeks and it has been six. He asked in August how East Marston phased the rollout, and now there is a note on it.</p>",
    "sections": {
@@ -7564,8 +6471,8 @@ window.LIBRARY = {
     "What happens next",
     "The draft"
    ],
-   "file": "cards/sustain-neil-rhythm.md",
-   "markdown": "---\nid: sustain-neil-rhythm\norder: 13\nkind: act\nlabel: Sustain\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [best-way-to-reach]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write, reply-speed-by-channel, accepts-meetings]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: neil-chapman\ncouncil: holbrook\ndocuments: [east-marston-phasing-note]\nsure: \"likely\"\nsure_because: \"A pattern against his usual: six weeks, his rhythm since March.\"\nwhen:\n  mode: rhythm\n  words: \"Any day this week.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the East Marston phasing note.\"\n---\n\n# Reconnect with Neil Chapman\n\nYou speak roughly every six weeks and it has been six. He asked in August how East Marston phased the rollout, and now there is a note on it.\n\n## What happened\n\n- Why now: six weeks since you last spoke, right on his rhythm, and the phasing note he asked about was finished last Friday.\n- Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.\n- He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.\n- Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.\n\n## Sources\n\n- gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.\n- calendar · Last call with Neil, 3 August.\n- drive · \"East Marston phasing note\", finished 11 September.\n- gmail · His email of 19 August asking how East Marston \"did it in stages\".\n\n## Still unclear\n\n- Whether he wants the note by email or would rather talk it through. He usually books a call.\n\n## What happens next\n\n- I'll watch for his reply. If he books a call I'll prepare the phasing questions he is likely to ask.\n\n## The draft\n\nHi Neil,\n\nYou asked in August how East Marston took BOPS in stages rather than all at once. There is now a short note on exactly that: what they switched on first, what they left for later, and how long each step took. Attached.\n\nNo rush at all. If it raises questions, a call whenever suits you.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-neil-rhythm.md",
+   "markdown": "---\nid: act-neil-rhythm\norder: 13\nkind: act\nsignal: time-to-reconnect\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [best-way-to-reach]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write, reply-speed-by-channel, accepts-meetings]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [neil-chapman, holbrook]\nto: neil-chapman                # who the move reaches; one move per person at a time\narrives: 2026-09-18             # the day the tool puts it on the home\ndocuments: [east-marston-phasing-note]\nsure: \"likely\"\nsure_because: \"A pattern against his usual: six weeks, his rhythm since March.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"Any day this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Neil's reply\"\n    next: \"If he books a call, I'll prepare the phasing questions he is likely to ask.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the East Marston phasing note.\"\nphone:\n  when: \"Any day this week\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"How East Marston did it in stages\"\n  said: \"Sent. The Holbrook invite is next.\"\n  done: \"Sent to Neil\"\n  done_text: \"The phasing note went with it. Next is the Holbrook follow-up: his window closes 16 October.\"\n---\n\n# Reconnect with Neil Chapman\n\nYou speak roughly every six weeks and it has been six. He asked in August how East Marston phased the rollout, and now there is a note on it.\n\n## What happened\n\n- Why now: six weeks since you last spoke, right on his rhythm, and the phasing note he asked about was finished last Friday.\n- Since March you and Neil have talked every five to seven weeks, usually a call he books after a short email from you.\n- He is warm but slow, and he doesn't chase. The pattern is that you open and he answers within two days.\n- Holbrook's procurement window closes 16 October. This is the gentle note; the follow-up card is the dated one.\n\n## Sources\n\n- gmail, calendar · Your mail with Neil since March: 11 messages, and 4 calls in your calendar.\n- calendar · Last call with Neil, 3 August.\n- drive · \"East Marston phasing note\", finished 11 September.\n- gmail · His email of 19 August asking how East Marston \"did it in stages\".\n\n## Still unclear\n\n- Whether he wants the note by email or would rather talk it through. He usually books a call.\n\n## What happens next\n\n- I'll watch for his reply. If he books a call I'll prepare the phasing questions he is likely to ask.\n\n## The draft\n\nHi Neil,\n\nYou asked in August how East Marston took BOPS in stages rather than all at once. There is now a short note on exactly that: what they switched on first, what they left for later, and how long each step took. Attached.\n\nNo rush at all. If it raises questions, a call whenever suits you.\n\nFede\n",
    "widgetRows": {},
    "readRows": [
     {
@@ -7606,18 +6513,506 @@ window.LIBRARY = {
      "gap": true
     }
    ],
-   "councilName": "Holbrook",
+   "orgName": "Holbrook",
    "documentNames": [
     "East Marston phasing note"
    ],
-   "band": 3,
-   "bandWords": "Holding something up"
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
   },
   {
-   "id": "sustain-rachel-promise",
+   "id": "act-north-ridley-alongside",
+   "order": "1",
+   "kind": "act",
+   "signal": "understanding-gap",
+   "signal_status": "provisional",
+   "supporting": [
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "terms-used-wrongly",
+    "claims-restated-back",
+    "new-attendee-on-event",
+    "head-of-signature-scan"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "michelle-turner",
+    "north-ridley"
+   ],
+   "to": "michelle-turner",
+   "arrives": "2026-09-16",
+   "documents": [
+    "alongside-one-pager"
+   ],
+   "sure": "sure",
+   "sure_because": "A fact on record: three of their messages say replace or migrate off.",
+   "when": {
+    "mode": "dated",
+    "until": "2026-09-16",
+    "words": "By tonight. The demo is tomorrow, Thursday 17 September."
+   },
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Note",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Attached: the alongside one-pager."
+   },
+   "phone": {
+    "when": "By tonight",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "Before Thursday: BOPS sits alongside your case system",
+    "said": "Sent. The demo brief is next.",
+    "done": "Sent to Michelle",
+    "done_text": "The alongside one-pager went with it. I'm finishing the demo brief now: who is in the room, and the alongside diagram first."
+   },
+   "title": "Clear up North Ridley's misunderstanding before Thursday",
+   "intro": "<p>Michelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.</li><li>Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.</li><li>Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.</li><li>North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".</li><li>calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.</li><li>drive · The one-page \"How BOPS sits alongside your case system\".</li><li>gmail · Nothing from you corrects the word \"replace\".</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Michelle,</p>\n<p>Looking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.</p>\n<p>The one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-north-ridley-alongside.md",
+   "markdown": "---\nid: act-north-ridley-alongside\norder: 1\nkind: act\nsignal: understanding-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [terms-used-wrongly, claims-restated-back, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [michelle-turner, north-ridley]\nto: michelle-turner                # who the move reaches; one move per person at a time\narrives: 2026-09-16             # the day the tool puts it on the home\ndocuments: [alongside-one-pager]\nsure: \"sure\"\nsure_because: \"A fact on record: three of their messages say replace or migrate off.\"\nwhen:\n  mode: dated\n  until: 2026-09-16\n  words: \"By tonight. The demo is tomorrow, Thursday 17 September.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the alongside one-pager.\"\nphone:\n  when: \"By tonight\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"Before Thursday: BOPS sits alongside your case system\"\n  said: \"Sent. The demo brief is next.\"\n  done: \"Sent to Michelle\"\n  done_text: \"The alongside one-pager went with it. I'm finishing the demo brief now: who is in the room, and the alongside diagram first.\"\n---\n\n# Clear up North Ridley's misunderstanding before Thursday\n\nMichelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.\n\n## What happened\n\n- Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.\n- Three messages from North Ridley in the last fortnight say \"replace\" or \"migrate off\". Your replies never corrected it.\n- Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.\n- North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.\n\n## Sources\n\n- gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".\n- calendar · \"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.\n- drive · The one-page \"How BOPS sits alongside your case system\".\n- gmail · Nothing from you corrects the word \"replace\".\n\n## Still unclear\n\n- Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.\n\n## What happens next\n\n- Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.\n\n## The draft\n\nHi Michelle,\n\nLooking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.\n\nThe one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The North Ridley thread: messages of 2, 5 and 10 September, with the words \"replace\" and \"migrate\".",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "calendar"
+     ],
+     "words": "\"BOPS demo, North Ridley\", Thursday 17 September, 10:00, eight invitees.",
+     "from": "Calendar"
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The one-page \"How BOPS sits alongside your case system\".",
+     "from": "Drive"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Nothing from you corrects the word \"replace\".",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
+     "from": "LinkedIn",
+     "gap": true
+    }
+   ],
+   "orgName": "North Ridley",
+   "documentNames": [
+    "Alongside one-pager"
+   ],
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-north-ridley-demo-brief",
+   "order": "2",
+   "kind": "act",
+   "signal": "lead-with-this",
+   "signal_status": "provisional",
+   "supporting": [
+    "new-stakeholder"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "dominant-worry-for-buyer-type",
+    "relevance-to-stated-factors",
+    "new-attendee-on-event",
+    "head-of-signature-scan"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "michelle-turner",
+    "north-ridley"
+   ],
+   "arrives": "2026-09-16",
+   "held_by": "act-north-ridley-alongside",
+   "held_words": "Once the note to Michelle has gone.",
+   "documents": [
+    "east-marston-case-study",
+    "alongside-one-pager"
+   ],
+   "sure": "likely",
+   "sure_because": "A pattern: what the invitees have asked about, and how your last two demos went.",
+   "when": {
+    "mode": "dated",
+    "until": "2026-09-16",
+    "words": "By this evening."
+   },
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Open the Brief",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Brief",
+    "hand": "Add to the Invite",
+    "sub": "Thursday 17 September, 10:00",
+    "footer": "Edit the brief as you like. I'll have it on your calendar entry."
+   },
+   "phone": {
+    "when": "By this evening",
+    "act": "Read the Brief",
+    "act_does": "view",
+    "said": "Added to the invite. Good luck tomorrow.",
+    "done": "Brief added",
+    "done_text": "It's in the demo invite. After the demo I'll ask how it went and what surprised you."
+   },
+   "title": "Prepare Thursday's demo at North Ridley",
+   "intro": "<p>Eight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.</li><li>In 14 messages from North Ridley since July, officer time comes up five times and compliance never.</li><li>Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.</li><li>Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.</li><li>gmail · The North Ridley thread since July: what each person asked.</li><li>drive · Your demo deck, June and July versions, first slide \"Compliance by design\".</li><li>meet · Your notes from the Holbrook demo in July.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.</li></ul>"
+    },
+    "The draft": {
+     "html": "<ul><li>Open with the alongside diagram. Say the word \"alongside\" in the first minute.</li><li>Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.</li><li>In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.</li><li>The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.</li><li>Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.</li><li>Compliance: one slide, held back, shown only if asked.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-north-ridley-demo-brief.md",
+   "markdown": "---\nid: act-north-ridley-demo-brief\norder: 2\nkind: act\nsignal: lead-with-this\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [new-stakeholder]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [dominant-worry-for-buyer-type, relevance-to-stated-factors, new-attendee-on-event, head-of-signature-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [michelle-turner, north-ridley]\narrives: 2026-09-16             # the day the tool puts it on the home\nheld_by: act-north-ridley-alongside\nheld_words: \"Once the note to Michelle has gone.\"\ndocuments: [east-marston-case-study, alongside-one-pager]\nsure: \"likely\"\nsure_because: \"A pattern: what the invitees have asked about, and how your last two demos went.\"\nwhen:\n  mode: dated\n  until: 2026-09-16\n  words: \"By this evening.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Open the Brief\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Brief\"\n  hand: \"Add to the Invite\"\n  sub: \"Thursday 17 September, 10:00\"\n  footer: \"Edit the brief as you like. I'll have it on your calendar entry.\"\nphone:\n  when: \"By this evening\"\n  act: \"Read the Brief\"\n  act_does: view\n  said: \"Added to the invite. Good luck tomorrow.\"\n  done: \"Brief added\"\n  done_text: \"It's in the demo invite. After the demo I'll ask how it went and what surprised you.\"\n---\n\n# Prepare Thursday's demo at North Ridley\n\nEight people. Three have asked about officer time and none about compliance. Your last two demos opened with compliance.\n\n## What happened\n\n- Why now: the demo is tomorrow at 10:00, and the brief needs a read-through, not a rewrite, by tonight.\n- In 14 messages from North Ridley since July, officer time comes up five times and compliance never.\n- Your June and July demos both opened with the compliance slide. At Holbrook it took twenty minutes and drew no questions.\n- Open with the alongside diagram, then officer time, then East Marston's third. Keep compliance for when someone asks.\n\n## Sources\n\n- calendar, gmail · The invitee list for Thursday, eight names and their roles from signatures.\n- gmail · The North Ridley thread since July: what each person asked.\n- drive · Your demo deck, June and July versions, first slide \"Compliance by design\".\n- meet · Your notes from the Holbrook demo in July.\n\n## Still unclear\n\n- Who in the room decides. Michelle runs the programme; the budget holder isn't on the invite.\n\n## What happens next\n\n- After the demo I'll ask you how it went and what surprised you, then update what I know about each of the eight.\n\n## The draft\n\n- Open with the alongside diagram. Say the word \"alongside\" in the first minute.\n- Then officer time: East Marston's case admin down by about a third. The figure they have asked about five times.\n- In the room: Michelle Turner (programme), the case-system lead and two of her team, two frontline officers, one IT, one unknown from Finance.\n- The case-system team will be defensive until the alongside point lands. Let their lead ask the first question.\n- Leave with two things: one named officer willing to pilot, and a date to talk data residency with IT.\n- Compliance: one slide, held back, shown only if asked.\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "calendar",
+      "gmail"
+     ],
+     "words": "The invitee list for Thursday, eight names and their roles from signatures.",
+     "from": "Calendar, Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The North Ridley thread since July: what each person asked.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "Your demo deck, June and July versions, first slide \"Compliance by design\".",
+     "from": "Drive"
+    },
+    {
+     "sources": [
+      "meet"
+     ],
+     "words": "Your notes from the Holbrook demo in July.",
+     "from": "Meet"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected. The new stakeholder read leans on it, so I have less to go on here.",
+     "from": "LinkedIn",
+     "gap": true
+    }
+   ],
+   "orgName": "North Ridley",
+   "documentNames": [
+    "East Marston case study",
+    "Alongside one-pager"
+   ],
+   "waits_on": [
+    "act-north-ridley-alongside"
+   ],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-rachel-peer-call",
+   "order": "12",
+   "kind": "act",
+   "signal": "answer-gap",
+   "signal_status": "provisional",
+   "supporting": [
+    "understanding-gap"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "re-asked-questions",
+    "objection-entry-exists",
+    "named-vs-anonymous-reference",
+    "third-party-vs-self-asserted"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "rachel-gill",
+    "westmoor"
+   ],
+   "to": "rachel-gill",
+   "arrives": "2026-09-17",
+   "documents": [
+    "east-marston-case-study"
+   ],
+   "sure": "likely",
+   "sure_because": "A pattern: the same worry, twice in four days.",
+   "held_words": "Once the data-residency note is with her, and you have told me how you read her.",
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "This week."
+   },
+   "watch": [
+    {
+     "for": "Rachel's answer to the call",
+     "next": "If she takes it, I'll ask Andrew first and brief you."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Offer",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "notsure": [
+    {
+     "label": "Offer the Call",
+     "says": "Then the email offers Andrew and attaches the feedback page as the quieter option."
+    },
+    {
+     "label": "Just Send the Page",
+     "says": "Then no call is offered; I'll suggest it later if the worry comes back a third time."
+    },
+    {
+     "label": "Don't Know",
+     "says": "Then the email does both, gently, and lets her pick."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Attached: the officer feedback page."
+   },
+   "phone": {
+    "when": "This week",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "A call with East Marston's Head of IT",
+    "said": "Sent. I'll ask Andrew if she says yes.",
+    "done": "Sent to Rachel",
+    "done_text": "I'll watch for her answer. If she takes the call, I'll ask Andrew first and brief you on what he is likely to say."
+   },
+   "title": "Offer Rachel Gill a call with East Marston's IT lead",
+   "intro": "<p>She has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.</li><li>Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.</li><li>A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.</li><li>Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.</li><li>gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".</li><li>drive · The officer-feedback page of the East Marston case study.</li><li>goal-told · Your list: Westmoor at coalition.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether Rachel would rather read than talk. Some IT leads take a call as pressure.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Rachel,</p>\n<p>You've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.</p>\n<p>Andrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.</p>\n<p>If you'd rather read first, the page of officer feedback from East Marston is attached.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-rachel-peer-call.md",
+   "markdown": "---\nid: act-rachel-peer-call\norder: 12\nkind: act\nsignal: answer-gap\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [rachel-gill, westmoor]\nto: rachel-gill                # who the move reaches; one move per person at a time\narrives: 2026-09-17             # the day the tool puts it on the home\ndocuments: [east-marston-case-study]\nsure: \"likely\"\nsure_because: \"A pattern: the same worry, twice in four days.\"\nheld_words: \"Once the data-residency note is with her, and you have told me how you read her.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"This week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Rachel's answer to the call\"\n    next: \"If she takes it, I'll ask Andrew first and brief you.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Offer\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Offer the Call\"\n    says: \"Then the email offers Andrew and attaches the feedback page as the quieter option.\"\n  - label: \"Just Send the Page\"\n    says: \"Then no call is offered; I'll suggest it later if the worry comes back a third time.\"\n  - label: \"Don't Know\"\n    says: \"Then the email does both, gently, and lets her pick.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the officer feedback page.\"\nphone:\n  when: \"This week\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"A call with East Marston's Head of IT\"\n  said: \"Sent. I'll ask Andrew if she says yes.\"\n  done: \"Sent to Rachel\"\n  done_text: \"I'll watch for her answer. If she takes the call, I'll ask Andrew first and brief you on what he is likely to say.\"\n---\n\n# Offer Rachel Gill a call with East Marston's IT lead\n\nShe has asked \"will officers actually use it\" twice since you met. The best answer is not from you. It is from someone in her job who has done it.\n\n## What happened\n\n- Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.\n- Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.\n- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.\n- Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.\n\n## Sources\n\n- gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.\n- gmail · Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".\n- drive · The officer-feedback page of the East Marston case study.\n- goal-told · Your list: Westmoor at coalition.\n\n## Still unclear\n\n- Whether Rachel would rather read than talk. Some IT leads take a call as pressure.\n\n## What happens next\n\n- If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.\n\n## The draft\n\nHi Rachel,\n\nYou've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.\n\nAndrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.\n\nIf you'd rather read first, the page of officer feedback from East Marston is attached.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The Westmoor thread: Rachel's messages of 9 and 12 September.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Andrew Doyle, East Marston, 4 March: \"happy to do reference calls for councils considering it\".",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "drive"
+     ],
+     "words": "The officer-feedback page of the East Marston case study.",
+     "from": "Drive"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list: Westmoor at coalition.",
+     "from": "You told me"
+    }
+   ],
+   "orgName": "Westmoor",
+   "documentNames": [
+    "East Marston case study"
+   ],
+   "waits_on": [
+    "ask-rachel-meeting",
+    "act-rachel-promise"
+   ],
+   "band": 2,
+   "bandWords": "Worse every day"
+  },
+  {
+   "id": "act-rachel-promise",
    "order": "3",
    "kind": "act",
-   "label": "Sustain",
    "signal": "loose-end",
    "signal_status": "provisional",
    "counts": [
@@ -7626,8 +7021,12 @@ window.LIBRARY = {
     "fulfilment-scan"
    ],
    "counts_status": "provisional",
-   "person": "rachel-gill",
-   "council": "westmoor",
+   "about": [
+    "rachel-gill",
+    "westmoor"
+   ],
+   "to": "rachel-gill",
+   "arrives": "2026-09-16",
    "documents": [
     "data-residency-note"
    ],
@@ -7641,6 +7040,12 @@ window.LIBRARY = {
     "mode": "fresh",
     "words": "Worth doing today. A promise ages badly."
    },
+   "watch": [
+    {
+     "for": "Rachel's reply",
+     "next": "If she has more questions, I'll draft answers from the note."
+    }
+   ],
    "reply": {
     "module": "buttons"
    },
@@ -7679,6 +7084,16 @@ window.LIBRARY = {
     "sub": "in your voice · sends only when you say",
     "footer": "Attached: the data-residency note."
    },
+   "phone": {
+    "when": "Today",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "The data-residency note",
+    "said": "Sent. The promise is kept.",
+    "done": "Sent to Rachel",
+    "done_text": "I've marked the data-residency note as sent, so I'll stop raising it. If she comes back with questions, I'll draft answers from the note."
+   },
    "title": "Close the loop with Rachel Gill",
    "intro": "<p>You promised her the data-residency note on 8 September. It hasn't gone, and it answers the first question she asked you.</p>",
    "sections": {
@@ -7713,8 +7128,8 @@ window.LIBRARY = {
     "What happens next",
     "The draft"
    ],
-   "file": "cards/sustain-rachel-promise.md",
-   "markdown": "---\nid: sustain-rachel-promise\norder: 3\nkind: act\nlabel: Sustain\nsignal: loose-end\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nperson: rachel-gill\ncouncil: westmoor\ndocuments: [data-residency-note]\nwidgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../widgets/*\nsure: \"sure\"\nsure_because: \"A fact on record: your own words, on 8 September.\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. A promise ages badly.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the data-residency note.\"\n---\n\n# Close the loop with Rachel Gill\n\nYou promised her the data-residency note on 8 September. It hasn't gone, and it answers the first question she asked you.\n\n## What happened\n\n- Why now: it is eight days since you wrote \"I'll send the data-residency note this week\", and the week is over. Every day makes the next email harder.\n- Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread.\n- The note exists and is current. Nothing is stopping this except that it slipped.\n- Westmoor is at coalition, one of your two furthest-along councils. An unkept promise to the newest person in it costs more than anywhere else.\n\n## Open items\n\n- The data-residency note · You owe Rachel, promised 8 September · 8 days\n\n## Documents\n\n- The data-residency note · Where the data lives and who can see it · Updated 2 September\n\n## Sources\n\n- gmail · Your reply to Rachel, 8 September: \"I'll send the data-residency note this week\".\n- gmail · No message from you to Rachel since.\n- drive · The data-residency note, updated 2 September.\n- gmail · The Westmoor thread: Rachel's question of 8 September.\n\n## Still unclear\n\n- Nothing here. A promise and a date.\n\n## What happens next\n\n- Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.\n\n## The draft\n\nHi Rachel,\n\nI said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives and who can see it.\n\nIf anything in it is unclear, or you want it in the form your information governance team prefers, say so and I'll adjust.\n\nFede\n",
+   "file": "scenarios/bops/cards/act-rachel-promise.md",
+   "markdown": "---\nid: act-rachel-promise\norder: 3\nkind: act\nsignal: loose-end\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [rachel-gill, westmoor]\nto: rachel-gill                # who the move reaches; one move per person at a time\narrives: 2026-09-16             # the day the tool puts it on the home\ndocuments: [data-residency-note]\nwidgets: [open-items, documents]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nsure: \"sure\"\nsure_because: \"A fact on record: your own words, on 8 September.\"\nwhen:\n  mode: fresh\n  words: \"Worth doing today. A promise ages badly.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Rachel's reply\"\n    next: \"If she has more questions, I'll draft answers from the note.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Attached: the data-residency note.\"\nphone:\n  when: \"Today\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"The data-residency note\"\n  said: \"Sent. The promise is kept.\"\n  done: \"Sent to Rachel\"\n  done_text: \"I've marked the data-residency note as sent, so I'll stop raising it. If she comes back with questions, I'll draft answers from the note.\"\n---\n\n# Close the loop with Rachel Gill\n\nYou promised her the data-residency note on 8 September. It hasn't gone, and it answers the first question she asked you.\n\n## What happened\n\n- Why now: it is eight days since you wrote \"I'll send the data-residency note this week\", and the week is over. Every day makes the next email harder.\n- Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread.\n- The note exists and is current. Nothing is stopping this except that it slipped.\n- Westmoor is at coalition, one of your two furthest-along councils. An unkept promise to the newest person in it costs more than anywhere else.\n\n## Open items\n\n- The data-residency note · You owe Rachel, promised 8 September · 8 days\n\n## Documents\n\n- The data-residency note · Where the data lives and who can see it · Updated 2 September\n\n## Sources\n\n- gmail · Your reply to Rachel, 8 September: \"I'll send the data-residency note this week\".\n- gmail · No message from you to Rachel since.\n- drive · The data-residency note, updated 2 September.\n- gmail · The Westmoor thread: Rachel's question of 8 September.\n\n## Still unclear\n\n- Nothing here. A promise and a date.\n\n## What happens next\n\n- Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.\n\n## The draft\n\nHi Rachel,\n\nI said I would send the data-residency note and then didn't. Sorry for the delay. It is attached: where the data lives and who can see it.\n\nIf anything in it is unclear, or you want it in the form your information governance team prefers, say so and I'll adjust.\n\nFede\n",
    "widgetRows": {
     "open-items": [
      [
@@ -7761,12 +7176,1216 @@ window.LIBRARY = {
      "from": "Gmail"
     }
    ],
-   "councilName": "Westmoor",
+   "orgName": "Westmoor",
    "documentNames": [
     "Data-residency note"
    ],
+   "waits_on": [],
    "band": 2,
    "bandWords": "Worse every day"
+  },
+  {
+   "id": "act-sanjay-mistry",
+   "order": "16",
+   "kind": "act",
+   "signal": "champion-went-dark",
+   "signal_status": "provisional",
+   "supporting": [
+    "buying-intent"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "bounce-back-detected",
+    "auto-reply-no-longer-with",
+    "was-once-active",
+    "pricing-question-asked"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "sanjay-mistry",
+    "moreton"
+   ],
+   "to": "sanjay-mistry",
+   "arrives": "2026-09-17",
+   "documents": [],
+   "sure": "sure",
+   "sure_because": "A fact on record: the bounce, and Julie's auto-reply naming him.",
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "This week, while the handover is fresh."
+   },
+   "watch": [
+    {
+     "for": "Sanjay's reply",
+     "until": "2026-10-01",
+     "otherwise": "I'll look for a second door into Moreton."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Note",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "Draft",
+    "hand": "Send",
+    "sub": "in your voice · sends only when you say",
+    "footer": "Nothing attached. Edit anything, then send."
+   },
+   "phone": {
+    "when": "This week",
+    "act": "Send Message",
+    "act_does": "send",
+    "view": "View Draft",
+    "subject": "Picking up from Julie Barker",
+    "said": "Sent. I'll watch for Sanjay's reply.",
+    "done": "Sent to Sanjay",
+    "done_text": "If he replies, I'll start a page on him and pick up Moreton where Julie left it. If not in two weeks, I'll look for a second door."
+   },
+   "title": "Introduce yourself to Sanjay Mistry at Moreton",
+   "intro": "<p>Julie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.</li><li>Julie was engaged: she started threads and asked for pricing in May.</li><li>Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.</li><li>Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"</li><li>gmail · Your mail with Julie since April: 9 messages.</li><li>web · Moreton Borough Council staff page, checked this morning.</li><li>goal-told · Your list of thirty.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>How much Julie told Sanjay. The draft assumes nothing.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Hi Sanjay,</p>\n<p>Julie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had asked about pricing.</p>\n<p>I don't want to assume any of that carries over. If it's useful, I can send a short summary of where we'd got to, or simply start again with whatever matters to you.</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-sanjay-mistry.md",
+   "markdown": "---\nid: act-sanjay-mistry\norder: 16\nkind: act\nsignal: champion-went-dark\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [buying-intent]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active, pricing-question-asked]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [sanjay-mistry, moreton]\nto: sanjay-mistry                # who the move reaches; one move per person at a time\narrives: 2026-09-17             # the day the tool puts it on the home\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the bounce, and Julie's auto-reply naming him.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"This week, while the handover is fresh.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Sanjay's reply\"\n    until: 2026-10-01\n    otherwise: \"I'll look for a second door into Moreton.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Note\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"Draft\"\n  hand: \"Send\"\n  sub: \"in your voice · sends only when you say\"\n  footer: \"Nothing attached. Edit anything, then send.\"\nphone:\n  when: \"This week\"\n  act: \"Send Message\"\n  act_does: send\n  view: \"View Draft\"\n  subject: \"Picking up from Julie Barker\"\n  said: \"Sent. I'll watch for Sanjay's reply.\"\n  done: \"Sent to Sanjay\"\n  done_text: \"If he replies, I'll start a page on him and pick up Moreton where Julie left it. If not in two weeks, I'll look for a second door.\"\n---\n\n# Introduce yourself to Sanjay Mistry at Moreton\n\nJulie Barker's auto-reply says she has left and names Sanjay as the contact. Your only door there just changed hands.\n\n## What happened\n\n- Why now: the handover is fresh. Julie's auto-reply sends BOPS matters to Sanjay, so a note from you now arrives as part of her handover, not out of the blue.\n- Julie was engaged: she started threads and asked for pricing in May.\n- Sanjay Mistry appears nowhere in your mail. Moreton's site lists him as Digital Programme Manager, so he is at least the right shape.\n- Moreton stays a target. The goal is patient, but a departure is the one moment to move fast.\n\n## Sources\n\n- gmail · The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"\n- gmail · Your mail with Julie since April: 9 messages.\n- web · Moreton Borough Council staff page, checked this morning.\n- goal-told · Your list of thirty.\n\n## Still unclear\n\n- How much Julie told Sanjay. The draft assumes nothing.\n\n## What happens next\n\n- If Sanjay replies I'll start a page on him and pick up Moreton where Julie left it. If he doesn't within two weeks I'll look for a second door.\n\n## The draft\n\nHi Sanjay,\n\nJulie Barker's auto-reply pointed me to you. We had been talking since April about BOPS, a case-work tool for officers, and she had asked about pricing.\n\nI don't want to assume any of that carries over. If it's useful, I can send a short summary of where we'd got to, or simply start again with whatever matters to you.\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "The bounce this morning, 08:12, and Julie's auto-reply: \"I have left Moreton. For BOPS matters please contact Sanjay Mistry.\"",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your mail with Julie since April: 9 messages.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Moreton Borough Council staff page, checked this morning.",
+     "from": "Web"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty.",
+     "from": "You told me"
+    }
+   ],
+   "orgName": "Moreton",
+   "documentNames": [],
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-simon-intro",
+   "order": "17",
+   "kind": "act",
+   "signal": "warm-path",
+   "signal_status": "provisional",
+   "supporting": [
+    "one-sided"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "shared-contact-on-thread",
+    "intro-chain-length",
+    "mutual-contact-count",
+    "target-cold-to-you",
+    "times-you-chase"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "simon-ward",
+    "ashworth"
+   ],
+   "to": "simon-ward",
+   "arrives": "2026-09-18",
+   "documents": [],
+   "sure": "likely",
+   "sure_because": "Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected.",
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "Any day this week."
+   },
+   "watch": [
+    {
+     "for": "Simon's answer",
+     "next": "If he agrees, I'll draft the note he can forward to Nicola."
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Ask Simon",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "notsure": [
+    {
+     "label": "Well",
+     "says": "Then the ask is for an introduction."
+    },
+    {
+     "label": "Barely",
+     "says": "Then the ask is for a mention, not an intro, and I'll redraft accordingly."
+    },
+    {
+     "label": "Don't Know",
+     "says": "Then ask Simon that first. The draft does."
+    }
+   ],
+   "draft": {
+    "title": "The message",
+    "hand": "Open in Slack",
+    "sub": "Slack, to Simon",
+    "footer": "Send it from Slack yourself. I don't send."
+   },
+   "phone": {
+    "when": "Any day this week",
+    "act": "View Message",
+    "act_does": "view",
+    "said": "Opened in Slack. Over to you.",
+    "done": "Opened in Slack",
+    "done_text": "I've handed the message to Slack for you to send. If Simon agrees, I'll draft the note he can forward to Nicola."
+   },
+   "title": "Ask Simon for an introduction",
+   "intro": "<p>He knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.</li><li>Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.</li><li>Nicola is Head of Digital. The case-system question sits in her patch or next to it.</li><li>Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".</li><li>gmail · Your four notes to Ashworth.</li><li>web · Ashworth's leadership page.</li><li>linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Simon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.</p>\n<p>How well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-simon-intro.md",
+   "markdown": "---\nid: act-simon-intro\norder: 17\nkind: act\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [one-sided]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you, times-you-chase]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [simon-ward, ashworth]\nto: simon-ward                # who the move reaches; one move per person at a time\narrives: 2026-09-18             # the day the tool puts it on the home\ndocuments: []\nsure: \"likely\"\nsure_because: \"Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected.\"\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"Any day this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Simon's answer\"\n    next: \"If he agrees, I'll draft the note he can forward to Nicola.\"\nreply:\n  module: buttons\nactions:\n  - label: \"Ask Simon\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\nnotsure:\n  - label: \"Well\"\n    says: \"Then the ask is for an introduction.\"\n  - label: \"Barely\"\n    says: \"Then the ask is for a mention, not an intro, and I'll redraft accordingly.\"\n  - label: \"Don't Know\"\n    says: \"Then ask Simon that first. The draft does.\"\ndraft:\n  title: \"The message\"\n  hand: \"Open in Slack\"\n  sub: \"Slack, to Simon\"\n  footer: \"Send it from Slack yourself. I don't send.\"\nphone:\n  when: \"Any day this week\"\n  act: \"View Message\"\n  act_does: view\n  said: \"Opened in Slack. Over to you.\"\n  done: \"Opened in Slack\"\n  done_text: \"I've handed the message to Slack for you to send. If Simon agrees, I'll draft the note he can forward to Nicola.\"\n---\n\n# Ask Simon for an introduction\n\nHe knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone unanswered there; a warm path beats a fifth.\n\n## What happened\n\n- Why now: Simon mentioned Nicola two weeks ago in Slack and the memory is fresh. Ask while it is.\n- Four cold notes to Ashworth since May, nothing back. The rest card for Ashworth says stop; this card says try the side door.\n- Nicola is Head of Digital. The case-system question sits in her patch or next to it.\n- Ashworth is on your thirty and marked cold. A warm path is the only thing that changes that.\n\n## Sources\n\n- slack · #partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".\n- gmail · Your four notes to Ashworth.\n- web · Ashworth's leadership page.\n- linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.\n\n## Still unclear\n\n- How well Simon actually knows her. \"I know Nicola from the LGA event\" can mean a conversation or a handshake.\n\n## What happens next\n\n- If Simon agrees I'll draft the forwardable note he can send Nicola. If he doesn't know her well, I'll look for another path.\n\n## The draft\n\nSimon, you mentioned you know Nicola Shaw at Ashworth from the LGA event. I've written to them a few times about BOPS and had nothing back, which probably means wrong people.\n\nHow well do you know her? If well enough, would you be up for a two-line intro? I'll write the forwardable bit.\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "slack"
+     ],
+     "words": "#partnerships, 2 September: Simon, \"I know Nicola at Ashworth from the LGA event\".",
+     "from": "Slack"
+    },
+    {
+     "sources": [
+      "gmail"
+     ],
+     "words": "Your four notes to Ashworth.",
+     "from": "Gmail"
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Ashworth's leadership page.",
+     "from": "Web"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.",
+     "from": "LinkedIn"
+    }
+   ],
+   "orgName": "Ashworth",
+   "documentNames": [],
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "act-tarlton-tender",
+   "order": "15",
+   "kind": "act",
+   "signal": "fit-match",
+   "signal_status": "provisional",
+   "supporting": [
+    "buying-intent",
+    "warm-path"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "fit-factors-met",
+    "budget-or-procurement-entered",
+    "target-cold-to-you"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "darren-cole",
+    "tarlton"
+   ],
+   "to": "darren-cole",
+   "arrives": "2026-09-18",
+   "documents": [],
+   "sure": "sure",
+   "sure_because": "A fact on record: the tender's own dates.",
+   "when": {
+    "mode": "dated",
+    "until": "2026-10-02",
+    "words": "By 2 October: clarification questions close. Start this week."
+   },
+   "watch": [
+    {
+     "for": "Tarlton's answers on the portal",
+     "until": "2026-10-02"
+    }
+   ],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Send the Questions",
+     "style": "filled",
+     "opens": "draft"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll leave it and raise it again only if something changes."
+    },
+    {
+     "label": "Not Relevant",
+     "opens": "reasons"
+    }
+   ],
+   "reasons": [
+    {
+     "label": "Already Knew",
+     "says": "Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time."
+    },
+    {
+     "label": "Wrong Person",
+     "says": "Noted. I'll stop raising this person for this and look for who it should be."
+    },
+    {
+     "label": "Not a Target",
+     "says": "Understood. I'll take this off the board and not raise it again unless you put it back."
+    }
+   ],
+   "draft": {
+    "title": "The clarification questions",
+    "hand": "Copy for the Portal",
+    "sub": "to the procurement contact",
+    "footer": "Send through the portal, not by email. I'll watch for the answer."
+   },
+   "phone": {
+    "when": "By 2 October",
+    "act": "View Questions",
+    "act_does": "view",
+    "said": "Copied. Paste them into the portal.",
+    "done": "Copied for the portal",
+    "done_text": "The questions are on your clipboard for Tarlton's portal. I'll watch it for their answers, and ask you about bidding before 2 October."
+   },
+   "title": "Send Tarlton two clarification questions",
+   "intro": "<p>Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.</p>",
+   "sections": {
+    "What happened": {
+     "html": "<ul><li>Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.</li><li>Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.</li><li>Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.</li><li>Tender rules limit contact. The questions are the contact.</li></ul>"
+    },
+    "Sources": {
+     "html": "<ul><li>web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.</li><li>web · The tender PDF, sections 2 and 4.</li><li>goal-told · Your list of thirty, Tarlton marked cold.</li><li>linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.</li></ul>"
+    },
+    "Still unclear": {
+     "html": "<ul><li>Whether a tender this size can be won cold. I have nothing to go on either way.</li></ul>"
+    },
+    "What happens next": {
+     "html": "<ul><li>Once sent I'll watch the portal for their answers and published Q&amp;A, and I'll raise the bid or no-bid decision with you before 2 October.</li></ul>"
+    },
+    "The draft": {
+     "html": "<p>Dear Mr Cole,</p>\n<p>Regarding the case management modernisation tender published 9 September, two clarification questions.</p>\n<p>1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?</p>\n<p>2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?</p>\n<p>Kind regards,</p>\n<p>Fede</p>"
+    }
+   },
+   "sectionOrder": [
+    "What happened",
+    "Sources",
+    "Still unclear",
+    "What happens next",
+    "The draft"
+   ],
+   "file": "scenarios/bops/cards/act-tarlton-tender.md",
+   "markdown": "---\nid: act-tarlton-tender\norder: 15\nkind: act\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [buying-intent, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [darren-cole, tarlton]\nto: darren-cole                # who the move reaches; one move per person at a time\narrives: 2026-09-18             # the day the tool puts it on the home\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the tender's own dates.\"\nwhen:\n  mode: dated\n  until: 2026-10-02\n  words: \"By 2 October: clarification questions close. Start this week.\"\nwatch:                        # what I watch for once you act; a then card arrives only if it comes\n  - for: \"Tarlton's answers on the portal\"\n    until: 2026-10-02\nreply:\n  module: buttons\nactions:\n  - label: \"Send the Questions\"\n    style: filled\n    opens: draft\n  - label: \"Not Now\"\n    says: \"Okay. I'll leave it and raise it again only if something changes.\"\n  - label: \"Not Relevant\"\n    opens: reasons\nreasons:\n  - label: \"Already Knew\"\n    says: \"Fair. I'll stop telling you things you already know about this one, and try to notice earlier next time.\"\n  - label: \"Wrong Person\"\n    says: \"Noted. I'll stop raising this person for this and look for who it should be.\"\n  - label: \"Not a Target\"\n    says: \"Understood. I'll take this off the board and not raise it again unless you put it back.\"\ndraft:\n  title: \"The clarification questions\"\n  hand: \"Copy for the Portal\"\n  sub: \"to the procurement contact\"\n  footer: \"Send through the portal, not by email. I'll watch for the answer.\"\nphone:\n  when: \"By 2 October\"\n  act: \"View Questions\"\n  act_does: view\n  said: \"Copied. Paste them into the portal.\"\n  done: \"Copied for the portal\"\n  done_text: \"The questions are on your clipboard for Tarlton's portal. I'll watch it for their answers, and ask you about bidding before 2 October.\"\n---\n\n# Send Tarlton two clarification questions\n\nTheir tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.\n\n## What happened\n\n- Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.\n- Section 2.3 asks to \"reduce officer time on case administration\" and section 4 wants a solution that \"works alongside existing systems\". Those are your two sentences.\n- Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.\n- Tender rules limit contact. The questions are the contact.\n\n## Sources\n\n- web · Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.\n- web · The tender PDF, sections 2 and 4.\n- goal-told · Your list of thirty, Tarlton marked cold.\n- linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.\n\n## Still unclear\n\n- Whether a tender this size can be won cold. I have nothing to go on either way.\n\n## What happens next\n\n- Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.\n\n## The draft\n\nDear Mr Cole,\n\nRegarding the case management modernisation tender published 9 September, two clarification questions.\n\n1. Section 2.3 refers to reducing officer time on case administration. Is there a baseline figure the council is working to, or is establishing one part of the scope?\n\n2. Section 4 asks that the solution work alongside existing systems. Is replacement of the current case system in scope for a later phase, or explicitly out of scope?\n\nKind regards,\n\nFede\n",
+   "widgetRows": {},
+   "readRows": [
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "Tarlton's procurement portal, \"Case management modernisation\", published 9 September, closes 9 October, clarifications by 2 October.",
+     "from": "Web"
+    },
+    {
+     "sources": [
+      "web"
+     ],
+     "words": "The tender PDF, sections 2 and 4.",
+     "from": "Web"
+    },
+    {
+     "sources": [
+      "goal-told"
+     ],
+     "words": "Your list of thirty, Tarlton marked cold.",
+     "from": "You told me"
+    },
+    {
+     "sources": [
+      "linkedin"
+     ],
+     "words": "LinkedIn is not connected, so I can't see whether you know anyone there.",
+     "from": "LinkedIn"
+    }
+   ],
+   "orgName": "Tarlton",
+   "documentNames": [],
+   "waits_on": [],
+   "band": 3,
+   "bandWords": "Holding something up"
+  },
+  {
+   "id": "ask-budget-meeting",
+   "order": "6",
+   "kind": "ask",
+   "signal": "cooling-champion",
+   "signal_status": "provisional",
+   "supporting": [
+    "warmth-fading"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "innocent-explanation-scan",
+    "reply-gap-vs-own-rhythm",
+    "reply-length-vs-own-rhythm"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "karen-hughes",
+    "bramley"
+   ],
+   "arrives": "2026-09-16",
+   "changes": [
+    "act-karen-slowing"
+   ],
+   "documents": [],
+   "when": {
+    "mode": "fresh",
+    "words": "Ten seconds. Best while you remember."
+   },
+   "reply": {
+    "module": "choices"
+   },
+   "answers": [
+    {
+     "label": "It was cut or put off",
+     "says": "Thank you. I'll hold Karen's note for a month, keep the figures for a better moment, and start looking for a second door into Bramley."
+    },
+    {
+     "label": "It stayed in",
+     "says": "Good. Karen's note is ready to send this week, and I'll expect a reply within her old rhythm."
+    },
+    {
+     "label": "It didn't come up",
+     "says": "Then her quiet has another cause. Karen's note is ready to send as written, and I'll read her reply for it."
+    }
+   ],
+   "actions": [
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
+    }
+   ],
+   "phone": {
+    "when": "Best while you remember",
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. Karen's note is next.",
+    "done": "Thank you",
+    "done_text": "I've saved it on Bramley's page. Karen's note is ready for you now."
+   },
+   "title": "What did the Bramley budget meeting decide about BOPS?",
+   "intro": "<p>You were there. Karen has gone quiet since then, and I can't see what was said. Your answer changes what I do with her card.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.</li><li>Nothing in your mail or Slack mentions how it went.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>Meetings leave no record I can read unless there are notes in Drive or a Meet recording. There are none for this one.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>Cut or put off: I hold Karen's note a month, look for a second door, and mark Bramley as at risk.</li><li>Stayed in: Karen's note is ready to send this week.</li><li>Didn't come up: Karen's note is ready to send as written, and I read her reply for the reason she went quiet.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>On Karen's page and on Bramley's, as a thing you told me, with the date.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-budget-meeting.md",
+   "markdown": "---\nid: ask-budget-meeting\norder: 6\nkind: ask\nsignal: cooling-champion\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [warmth-fading]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [innocent-explanation-scan, reply-gap-vs-own-rhythm, reply-length-vs-own-rhythm]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [karen-hughes, bramley]\narrives: 2026-09-16             # the day the tool puts it on the home\nchanges: [act-karen-slowing]   # cards the answer changes; build.js holds them behind this Ask\ndocuments: []\nwhen:\n  mode: fresh\n  words: \"Ten seconds. Best while you remember.\"\nreply:\n  module: choices\nanswers:\n  - label: \"It was cut or put off\"\n    says: \"Thank you. I'll hold Karen's note for a month, keep the figures for a better moment, and start looking for a second door into Bramley.\"\n  - label: \"It stayed in\"\n    says: \"Good. Karen's note is ready to send this week, and I'll expect a reply within her old rhythm.\"\n  - label: \"It didn't come up\"\n    says: \"Then her quiet has another cause. Karen's note is ready to send as written, and I'll read her reply for it.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:\n  when: \"Best while you remember\"\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. Karen's note is next.\"\n  done: \"Thank you\"\n  done_text: \"I've saved it on Bramley's page. Karen's note is ready for you now.\"\n---\n\n# What did the Bramley budget meeting decide about BOPS?\n\nYou were there. Karen has gone quiet since then, and I can't see what was said. Your answer changes what I do with her card.\n\n## Known so far\n\n- The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.\n- Nothing in your mail or Slack mentions how it went.\n\n## What's missing\n\n- Meetings leave no record I can read unless there are notes in Drive or a Meet recording. There are none for this one.\n\n## What your answer changes\n\n- Cut or put off: I hold Karen's note a month, look for a second door, and mark Bramley as at risk.\n- Stayed in: Karen's note is ready to send this week.\n- Didn't come up: Karen's note is ready to send as written, and I read her reply for the reason she went quiet.\n\n## Where your answer is saved\n\n- On Karen's page and on Bramley's, as a thing you told me, with the date.\n",
+   "widgetRows": {},
+   "orgName": "Bramley",
+   "documentNames": [],
+   "waits_on": [],
+   "band": 2,
+   "bandWords": "Worse every day"
+  },
+  {
+   "id": "ask-good-fit",
+   "order": "21",
+   "kind": "ask",
+   "signal": "fit-match",
+   "signal_status": "provisional",
+   "counts": [
+    "fit-shape-completeness",
+    "fit-factors-met"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "you"
+   ],
+   "arrives": "2026-09-16",
+   "documents": [],
+   "reply": {
+    "module": "field",
+    "placeholder": "A sentence or two, in your words."
+   },
+   "actions": [
+    {
+     "label": "Tell Me",
+     "style": "filled",
+     "confirms": "field",
+     "says": "Thank you. I'll write that down as what a good fit looks like, and show you the first five councils that match before I add any of them."
+    },
+    {
+     "label": "Use Your Guess",
+     "style": "tinted",
+     "says": "Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time."
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
+    }
+   ],
+   "phone": {
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. I'll show you the first five matches.",
+    "done": "Thank you",
+    "done_text": "I've written it down as what a good fit looks like. I'll show you the first five councils that match before I add any of them."
+   },
+   "title": "What does a good-fit council look like?",
+   "intro": "<p>You named thirty. You never said why those thirty. Until I know, I can't spot the thirty-first.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>What your thirty share, as far as I can see: mostly district and borough councils; case systems over ten years old at the 19 where I can tell; a digital lead in post under two years at 14.</li><li>My guess from that is written on the button. It is a guess, not your reason.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>The reason is yours and isn't written anywhere I can read. \"Feels the legacy-tech pain\" is a mindset, and I can only see behaviour.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>Once I have it: I build a fit-scan from it and show you the first five candidates before adding anyone to the thirty.</li><li>If you use my guess: same, but I'll flag every match as \"on my guess\" until you correct it.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>As \"what a good fit looks like\", the thing you told me. Editable, dated, and shown to you before it is ever used.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-good-fit.md",
+   "markdown": "---\nid: ask-good-fit\norder: 21\nkind: ask\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [fit-shape-completeness, fit-factors-met]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [you]\narrives: 2026-09-16             # today: the one card that asks for your own words\ndocuments: []\nreply:\n  module: field\n  placeholder: \"A sentence or two, in your words.\"\nactions:\n  - label: \"Tell Me\"\n    style: filled\n    confirms: field\n    says: \"Thank you. I'll write that down as what a good fit looks like, and show you the first five councils that match before I add any of them.\"\n  - label: \"Use Your Guess\"\n    style: tinted\n    says: \"Then I'll go with my guess for now: district or borough, a case system over ten years old, a digital lead in post under two years. Correct it any time.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I'll show you the first five matches.\"\n  done: \"Thank you\"\n  done_text: \"I've written it down as what a good fit looks like. I'll show you the first five councils that match before I add any of them.\"\n---\n\n# What does a good-fit council look like?\n\nYou named thirty. You never said why those thirty. Until I know, I can't spot the thirty-first.\n\n## Known so far\n\n- What your thirty share, as far as I can see: mostly district and borough councils; case systems over ten years old at the 19 where I can tell; a digital lead in post under two years at 14.\n- My guess from that is written on the button. It is a guess, not your reason.\n\n## What's missing\n\n- The reason is yours and isn't written anywhere I can read. \"Feels the legacy-tech pain\" is a mindset, and I can only see behaviour.\n\n## What your answer changes\n\n- Once I have it: I build a fit-scan from it and show you the first five candidates before adding anyone to the thirty.\n- If you use my guess: same, but I'll flag every match as \"on my guess\" until you correct it.\n\n## Where your answer is saved\n\n- As \"what a good fit looks like\", the thing you told me. Editable, dated, and shown to you before it is ever used.\n",
+   "widgetRows": {},
+   "documentNames": [],
+   "waits_on": [],
+   "band": 6,
+   "bandWords": "Costs nothing to wait"
+  },
+  {
+   "id": "ask-north-ridley-demo",
+   "order": "23",
+   "kind": "ask",
+   "signal": "new-stakeholder",
+   "signal_status": "provisional",
+   "supporting": [
+    "lead-with-this"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "new-attendee-on-event",
+    "relevance-to-stated-factors"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "michelle-turner",
+    "north-ridley"
+   ],
+   "arrives": "2026-09-17",
+   "held_by": "act-north-ridley-demo-brief",
+   "held_words": "After the demo, once the brief is done.",
+   "documents": [],
+   "when": {
+    "mode": "fresh",
+    "until": "2026-09-18",
+    "words": "Ten seconds. Best while the room is fresh."
+   },
+   "reply": {
+    "module": "several",
+    "header": "What you left the room with"
+   },
+   "answers": [
+    {
+     "label": "A named officer willing to pilot",
+     "says": "That is the door. I'll start a page on them and draft a thank-you that names the pilot."
+    },
+    {
+     "label": "A date to talk data residency with IT",
+     "says": "Good. I'll put the data-residency note in front of IT before that date."
+    },
+    {
+     "label": "Neither",
+     "says": "Then the next move is smaller. I'll read what they write this week before suggesting one."
+    }
+   ],
+   "actions": [
+    {
+     "label": "Tell Me",
+     "style": "filled",
+     "confirms": "picks"
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again tomorrow, while it is still fresh."
+    }
+   ],
+   "phone": {
+    "when": "Best today",
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. I'll update what I know about the eight.",
+    "done": "Thank you",
+    "done_text": "I'll update what I know about each of the eight, and bring you the next move for North Ridley."
+   },
+   "title": "How did the North Ridley demo go?",
+   "intro": "<p>The demo was this morning, eight people in the room. I read the invite, not the room. The brief aimed at two things to leave with.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>Your calendar: \"BOPS demo, North Ridley\", today at 10:00, eight invitees.</li><li>The brief said to leave with a named officer willing to pilot, and a date to talk data residency with IT.</li><li>The case-system team were invited. Your note that BOPS sits alongside their system went to Michelle last night, if you sent it.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>What happened in the room. No recording and no notes yet.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>A named officer: I start a page on them and draft a thank-you that names the pilot.</li><li>A date with IT: the data-residency note goes to IT before it.</li><li>Neither: I wait for what they write this week before suggesting a move.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>On North Ridley's page, as what came out of the demo on 17 September.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-north-ridley-demo.md",
+   "markdown": "---\nid: ask-north-ridley-demo\norder: 23\nkind: ask\nsignal: new-stakeholder\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [lead-with-this]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [new-attendee-on-event, relevance-to-stated-factors]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [michelle-turner, north-ridley]\narrives: 2026-09-17             # the day of the demo; the demo brief promised this question after it\nheld_by: act-north-ridley-demo-brief\nheld_words: \"After the demo, once the brief is done.\"\ndocuments: []\nwhen:\n  mode: fresh\n  until: 2026-09-18\n  words: \"Ten seconds. Best while the room is fresh.\"\nreply:\n  module: several\n  header: \"What you left the room with\"\nanswers:\n  - label: \"A named officer willing to pilot\"\n    says: \"That is the door. I'll start a page on them and draft a thank-you that names the pilot.\"\n  - label: \"A date to talk data residency with IT\"\n    says: \"Good. I'll put the data-residency note in front of IT before that date.\"\n  - label: \"Neither\"\n    says: \"Then the next move is smaller. I'll read what they write this week before suggesting one.\"\nactions:\n  - label: \"Tell Me\"\n    style: filled\n    confirms: picks\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again tomorrow, while it is still fresh.\"\nphone:\n  when: \"Best today\"\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I'll update what I know about the eight.\"\n  done: \"Thank you\"\n  done_text: \"I'll update what I know about each of the eight, and bring you the next move for North Ridley.\"\n---\n\n# How did the North Ridley demo go?\n\nThe demo was this morning, eight people in the room. I read the invite, not the room. The brief aimed at two things to leave with.\n\n## Known so far\n\n- Your calendar: \"BOPS demo, North Ridley\", today at 10:00, eight invitees.\n- The brief said to leave with a named officer willing to pilot, and a date to talk data residency with IT.\n- The case-system team were invited. Your note that BOPS sits alongside their system went to Michelle last night, if you sent it.\n\n## What's missing\n\n- What happened in the room. No recording and no notes yet.\n\n## What your answer changes\n\n- A named officer: I start a page on them and draft a thank-you that names the pilot.\n- A date with IT: the data-residency note goes to IT before it.\n- Neither: I wait for what they write this week before suggesting a move.\n\n## Where your answer is saved\n\n- On North Ridley's page, as what came out of the demo on 17 September.\n",
+   "widgetRows": {},
+   "orgName": "North Ridley",
+   "documentNames": [],
+   "waits_on": [
+    "act-north-ridley-demo-brief"
+   ],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "ask-openings",
+   "order": "19",
+   "kind": "ask",
+   "signal": "voice",
+   "signal_status": "provisional",
+   "counts": [
+    "draft-to-sent-edit-distance",
+    "greeting-and-signoff-pattern"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "you"
+   ],
+   "arrives": "2026-09-21",
+   "documents": [],
+   "when": {
+    "mode": "rhythm",
+    "words": "Five seconds."
+   },
+   "reply": {
+    "module": "choices"
+   },
+   "answers": [
+    {
+     "label": "Yes, drop them",
+     "suggested": true,
+     "says": "Done. I start with the point, everywhere, from the next draft."
+    },
+    {
+     "label": "Keep them",
+     "says": "Fine. I'll leave them in and stop asking."
+    },
+    {
+     "label": "Depends who",
+     "says": "Then I'll keep them for first contact and drop them for people you already know. Tell me if that's the wrong line."
+    }
+   ],
+   "actions": [
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
+    }
+   ],
+   "phone": {
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. I'll write that way from now on.",
+    "done": "Thank you",
+    "done_text": "I've saved it with how you like to sound, so every draft follows it."
+   },
+   "title": "Should I leave the greetings out of my drafts?",
+   "intro": "<p>In 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>11 drafts since August. In 9, the first sentence was deleted before sending: \"I hope you're well\", \"Hope the week is going well\".</li><li>The 2 you kept were both to people you had not met.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>I can see what you changed. I can't see why.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>Drop them: I open with the point, everywhere.</li><li>Keep them: I leave them in and stop asking.</li><li>Depends: first contact keeps them, people you know don't.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>In your voice profile, as a rule you set, with the date.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-openings.md",
+   "markdown": "---\nid: ask-openings\norder: 19\nkind: ask\nsignal: voice\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [draft-to-sent-edit-distance, greeting-and-signoff-pattern]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [you]\narrives: 2026-09-21             # the day the tool puts it on the home\ndocuments: []\nwhen:\n  mode: rhythm\n  words: \"Five seconds.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Yes, drop them\"\n    suggested: true\n    says: \"Done. I start with the point, everywhere, from the next draft.\"\n  - label: \"Keep them\"\n    says: \"Fine. I'll leave them in and stop asking.\"\n  - label: \"Depends who\"\n    says: \"Then I'll keep them for first contact and drop them for people you already know. Tell me if that's the wrong line.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I'll write that way from now on.\"\n  done: \"Thank you\"\n  done_text: \"I've saved it with how you like to sound, so every draft follows it.\"\n---\n\n# Should I leave the greetings out of my drafts?\n\nIn 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.\n\n## Known so far\n\n- 11 drafts since August. In 9, the first sentence was deleted before sending: \"I hope you're well\", \"Hope the week is going well\".\n- The 2 you kept were both to people you had not met.\n\n## What's missing\n\n- I can see what you changed. I can't see why.\n\n## What your answer changes\n\n- Drop them: I open with the point, everywhere.\n- Keep them: I leave them in and stop asking.\n- Depends: first contact keeps them, people you know don't.\n\n## Where your answer is saved\n\n- In your voice profile, as a rule you set, with the date.\n",
+   "widgetRows": {},
+   "documentNames": [],
+   "waits_on": [],
+   "band": 5,
+   "bandWords": "Due by its rhythm"
+  },
+  {
+   "id": "ask-rachel-meeting",
+   "order": "11",
+   "kind": "ask",
+   "signal": "new-stakeholder",
+   "signal_status": "provisional",
+   "supporting": [
+    "understanding-gap"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "new-name-on-thread",
+    "prior-history-scan",
+    "re-asked-questions"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "rachel-gill",
+    "westmoor"
+   ],
+   "arrives": "2026-09-17",
+   "changes": [
+    "act-rachel-peer-call"
+   ],
+   "documents": [],
+   "widgets": [
+    "people",
+    "timeline"
+   ],
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "Ten seconds. Best this week."
+   },
+   "reply": {
+    "module": "choices"
+   },
+   "answers": [
+    {
+     "label": "Warm",
+     "says": "Good to know. Drafts to her get shorter and more direct, and the call with Andrew goes as an offer, not as an answer to a doubt."
+    },
+    {
+     "label": "Cautious",
+     "suggested": true,
+     "says": "That matches what I read. The call with Andrew is ready to send: evidence and peers, not pitches."
+    },
+    {
+     "label": "Against",
+     "says": "Thank you for saying so. I'll hold the call with Andrew, route through Gary, and tell you if her emails change."
+    },
+    {
+     "label": "Didn't come up",
+     "says": "Fine. The call with Andrew is ready to send as written, and I'll keep reading her emails."
+    }
+   ],
+   "actions": [
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
+    }
+   ],
+   "phone": {
+    "when": "Best this week",
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. I will keep it on Rachel’s page, next to my own read.",
+    "done": "Thank you",
+    "done_text": "I will keep it on Rachel's page, next to my own read."
+   },
+   "title": "How did your meeting with Rachel Gill go?",
+   "intro": "<p>You met her on 8 September, and she joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.</li><li>Three emails from her since. Two ask, in different words, whether officers will use it.</li><li>My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.</li></ul>"
+    },
+    "People": {
+     "html": "<ul><li>Rachel Gill · Head of IT · Cautious, in my reading of her emails</li><li>Gary Pearson · Service Design Lead · Your champion. She joined his thread</li></ul>"
+    },
+    "Timeline": {
+     "html": "<ul><li>8 September · Your intro call with Rachel, 30 minutes</li><li>8 September · She joins Gary's thread the same day</li><li>Since then · Three emails from her. Two ask whether officers will use it</li><li>Today · No recording and no notes from the call</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.</li><li>Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.</li><li>Against: I hold the call with Andrew, route through Gary and keep her off the spot.</li><li>Didn't come up: the call with Andrew is ready as written.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>On Rachel's page, as your read on 8 September, next to mine.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "People",
+    "Timeline",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-rachel-meeting.md",
+   "markdown": "---\nid: ask-rachel-meeting\norder: 11\nkind: ask\nsignal: new-stakeholder\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [understanding-gap]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [new-name-on-thread, prior-history-scan, re-asked-questions]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [rachel-gill, westmoor]\narrives: 2026-09-17             # the day the tool puts it on the home\nchanges: [act-rachel-peer-call]   # cards the answer changes; build.js holds them behind this Ask\ndocuments: []\nwidgets: [people, timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"Ten seconds. Best this week.\"\nreply:\n  module: choices\nanswers:\n  - label: \"Warm\"\n    says: \"Good to know. Drafts to her get shorter and more direct, and the call with Andrew goes as an offer, not as an answer to a doubt.\"\n  - label: \"Cautious\"\n    suggested: true\n    says: \"That matches what I read. The call with Andrew is ready to send: evidence and peers, not pitches.\"\n  - label: \"Against\"\n    says: \"Thank you for saying so. I'll hold the call with Andrew, route through Gary, and tell you if her emails change.\"\n  - label: \"Didn't come up\"\n    says: \"Fine. The call with Andrew is ready to send as written, and I'll keep reading her emails.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September\n  when: \"Best this week\"\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I will keep it on Rachel’s page, next to my own read.\"\n  done: \"Thank you\"\n  done_text: \"I will keep it on Rachel's page, next to my own read.\"\n---\n\n# How did your meeting with Rachel Gill go?\n\nYou met her on 8 September, and she joined the Westmoor thread the same day. I can read her emails, not the room. Your read of her sets how I draft to her.\n\n## Known so far\n\n- Your calendar: \"Westmoor: intro with Rachel Gill\", Tuesday 8 September, 30 minutes.\n- Three emails from her since. Two ask, in different words, whether officers will use it.\n- My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.\n\n## People\n\n- Rachel Gill · Head of IT · Cautious, in my reading of her emails\n- Gary Pearson · Service Design Lead · Your champion. She joined his thread\n\n## Timeline\n\n- 8 September · Your intro call with Rachel, 30 minutes\n- 8 September · She joins Gary's thread the same day\n- Since then · Three emails from her. Two ask whether officers will use it\n- Today · No recording and no notes from the call\n\n## What's missing\n\n- No Meet recording, no notes in Drive. The half hour that matters most is the one I can't see.\n\n## What your answer changes\n\n- Warm: shorter, more direct drafts. The call with Andrew goes as an offer, not an answer to a doubt.\n- Cautious: as now. Evidence, and peers rather than pitches. The call with Andrew is ready.\n- Against: I hold the call with Andrew, route through Gary and keep her off the spot.\n- Didn't come up: the call with Andrew is ready as written.\n\n## Where your answer is saved\n\n- On Rachel's page, as your read on 8 September, next to mine.\n",
+   "widgetRows": {
+    "people": [
+     [
+      "Rachel Gill",
+      "Head of IT",
+      "Cautious, in my reading of her emails"
+     ],
+     [
+      "Gary Pearson",
+      "Service Design Lead",
+      "Your champion. She joined his thread"
+     ]
+    ],
+    "timeline": [
+     [
+      "8 September",
+      "Your intro call with Rachel, 30 minutes"
+     ],
+     [
+      "8 September",
+      "She joins Gary's thread the same day"
+     ],
+     [
+      "Since then",
+      "Three emails from her. Two ask whether officers will use it"
+     ],
+     [
+      "Today",
+      "No recording and no notes from the call"
+     ]
+    ]
+   },
+   "orgName": "Westmoor",
+   "documentNames": [],
+   "waits_on": [],
+   "band": 1,
+   "bandWords": "Gone tomorrow"
+  },
+  {
+   "id": "ask-tarlton-bid",
+   "order": "24",
+   "kind": "ask",
+   "signal": "fit-match",
+   "signal_status": "provisional",
+   "supporting": [],
+   "supporting_status": "provisional",
+   "counts": [
+    "fit-factors-met",
+    "fit-factors-missed"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "tarlton",
+    "darren-cole"
+   ],
+   "arrives": "2026-09-29",
+   "held_by": "act-tarlton-tender",
+   "held_words": "Once your clarification questions are in.",
+   "documents": [],
+   "sure": "sure",
+   "sure_because": "A fact on record: the tender's own dates.",
+   "when": {
+    "mode": "dated",
+    "until": "2026-10-02",
+    "words": "By 2 October: clarification questions close."
+   },
+   "reply": {
+    "module": "choices"
+   },
+   "answers": [
+    {
+     "label": "We'll bid",
+     "says": "Then I'll gather what the bid needs from what we already hold, and show you the gaps by Monday."
+    },
+    {
+     "label": "We won't bid",
+     "says": "Understood. I'll stop raising Tarlton for this tender and keep them on the thirty, still cold."
+    },
+    {
+     "label": "Not sure yet",
+     "says": "Fine. I'll ask again on 5 October, with whatever the portal has said by then."
+    }
+   ],
+   "actions": [
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again on Thursday. Clarifications close on Friday."
+    }
+   ],
+   "phone": {
+    "when": "By 2 October",
+    "act": "Answer",
+    "act_does": "open",
+    "said": "Thank you. I'll plan Tarlton around it.",
+    "done": "Thank you",
+    "done_text": "I'll plan Tarlton around your answer, and keep watching the portal until the tender closes on 9 October."
+   },
+   "title": "Will you bid for the Tarlton tender?",
+   "intro": "<p>Clarification questions close on Friday and the tender closes on 9 October. Whether to bid is yours. Your answer sets what I do with Tarlton for the next fortnight.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>The tender asks to reduce officer time on case administration, and for a solution that works alongside existing systems. Those are your two sentences.</li><li>Tarlton is on your thirty and cold. Darren Cole in procurement is the only name.</li><li>Your two clarification questions went through the portal.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>Whether you intend to bid cold. I can't read that from anything you have written.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>Bid: I gather what the bid needs from what we already hold and show you the gaps.</li><li>Won't bid: I stop raising this tender and keep Tarlton on the thirty.</li><li>Not sure: I ask again on 5 October, with whatever the portal has said by then.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>On Tarlton's page, as your intent for the tender that closes 9 October.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-tarlton-bid.md",
+   "markdown": "---\nid: ask-tarlton-bid\norder: 24\nkind: ask\nsignal: fit-match\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: []\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [fit-factors-met, fit-factors-missed]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [tarlton, darren-cole]\narrives: 2026-09-29             # the Tarlton card promised to raise this before 2 October\nheld_by: act-tarlton-tender\nheld_words: \"Once your clarification questions are in.\"\ndocuments: []\nsure: \"sure\"\nsure_because: \"A fact on record: the tender's own dates.\"\nwhen:\n  mode: dated\n  until: 2026-10-02\n  words: \"By 2 October: clarification questions close.\"\nreply:\n  module: choices\nanswers:\n  - label: \"We'll bid\"\n    says: \"Then I'll gather what the bid needs from what we already hold, and show you the gaps by Monday.\"\n  - label: \"We won't bid\"\n    says: \"Understood. I'll stop raising Tarlton for this tender and keep them on the thirty, still cold.\"\n  - label: \"Not sure yet\"\n    says: \"Fine. I'll ask again on 5 October, with whatever the portal has said by then.\"\nactions:\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again on Thursday. Clarifications close on Friday.\"\nphone:\n  when: \"By 2 October\"\n  act: \"Answer\"\n  act_does: open\n  said: \"Thank you. I'll plan Tarlton around it.\"\n  done: \"Thank you\"\n  done_text: \"I'll plan Tarlton around your answer, and keep watching the portal until the tender closes on 9 October.\"\n---\n\n# Will you bid for the Tarlton tender?\n\nClarification questions close on Friday and the tender closes on 9 October. Whether to bid is yours. Your answer sets what I do with Tarlton for the next fortnight.\n\n## Known so far\n\n- The tender asks to reduce officer time on case administration, and for a solution that works alongside existing systems. Those are your two sentences.\n- Tarlton is on your thirty and cold. Darren Cole in procurement is the only name.\n- Your two clarification questions went through the portal.\n\n## What's missing\n\n- Whether you intend to bid cold. I can't read that from anything you have written.\n\n## What your answer changes\n\n- Bid: I gather what the bid needs from what we already hold and show you the gaps.\n- Won't bid: I stop raising this tender and keep Tarlton on the thirty.\n- Not sure: I ask again on 5 October, with whatever the portal has said by then.\n\n## Where your answer is saved\n\n- On Tarlton's page, as your intent for the tender that closes 9 October.\n",
+   "widgetRows": {},
+   "orgName": "Tarlton",
+   "documentNames": [],
+   "waits_on": [
+    "act-tarlton-tender"
+   ],
+   "band": 3,
+   "bandWords": "Holding something up"
+  },
+  {
+   "id": "ask-twelve-councils",
+   "order": "18",
+   "kind": "ask",
+   "signal": "missing-people",
+   "signal_status": "provisional",
+   "supporting": [
+    "fit-match",
+    "warm-path"
+   ],
+   "supporting_status": "provisional",
+   "counts": [
+    "people-reached-count",
+    "fit-factors-met",
+    "mutual-contact-count"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "you"
+   ],
+   "arrives": "2026-09-16",
+   "documents": [],
+   "when": {
+    "mode": "rhythm",
+    "until": "2026-09-18",
+    "words": "A minute. Whenever suits this week."
+   },
+   "reply": {
+    "module": "several",
+    "header": "Pick up to three"
+   },
+   "picks": [
+    "Ashby",
+    "Brinsley",
+    "Carlton",
+    "Denby",
+    "Fulford",
+    "Glenfield",
+    "Hatton",
+    "Kirby",
+    "Linton",
+    "Newby",
+    "Orton",
+    "Rowley"
+   ],
+   "actions": [
+    {
+     "label": "Start There",
+     "style": "filled",
+     "confirms": "picks",
+     "limit": "3",
+     "says": "Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday."
+    },
+    {
+     "label": "Use Your Pick",
+     "style": "tinted",
+     "says": "Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday."
+    },
+    {
+     "label": "Not Now",
+     "says": "Okay. I'll ask again in a week, or sooner if it starts to matter."
+    }
+   ],
+   "phone": {
+    "when": "This week",
+    "act": "Choose Three",
+    "act_does": "open",
+    "said": "Got it. Names by next Monday.",
+    "done": "Thank you",
+    "done_text": "I'll read each council's site and news, find the likely lead, and come back with a name and a first note for each by next Monday."
+   },
+   "title": "Which three councils without a contact should I start with?",
+   "intro": "<p>Twelve councils have no named person. I can look for people at all twelve, but slowly. Three at a time means you see names this month.</p>",
+   "sections": {
+    "Known so far": {
+     "html": "<ul><li>Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.</li><li>Ashby has a tender out for \"customer contact modernisation\".</li><li>Two have new digital leads since spring: Kirby and Carlton.</li><li>If you have no view, I'd start with Ashby, Glenfield and Kirby.</li></ul>"
+    },
+    "What's missing": {
+     "html": "<ul><li>LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.</li></ul>"
+    },
+    "What your answer changes": {
+     "html": "<ul><li>For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.</li><li>The other nine wait. I won't touch them until these three have names.</li></ul>"
+    },
+    "Where your answer is saved": {
+     "html": "<ul><li>On your list of thirty, marked \"you chose\", with the date.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "Known so far",
+    "What's missing",
+    "What your answer changes",
+    "Where your answer is saved"
+   ],
+   "file": "scenarios/bops/cards/ask-twelve-councils.md",
+   "markdown": "---\nid: ask-twelve-councils\norder: 18\nkind: ask\nsignal: missing-people\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\nsupporting: [fit-match, warm-path]\nsupporting_status: provisional   # the reads its other counts belong to, not yet confirmed\ncounts: [people-reached-count, fit-factors-met, mutual-contact-count]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [you]\narrives: 2026-09-16             # today: the one card that asks for several choices\ndocuments: []\nwhen:\n  mode: rhythm\n  until: 2026-09-18\n  words: \"A minute. Whenever suits this week.\"\nreply:\n  module: several\n  header: \"Pick up to three\"\npicks:\n  - \"Ashby\"\n  - \"Brinsley\"\n  - \"Carlton\"\n  - \"Denby\"\n  - \"Fulford\"\n  - \"Glenfield\"\n  - \"Hatton\"\n  - \"Kirby\"\n  - \"Linton\"\n  - \"Newby\"\n  - \"Orton\"\n  - \"Rowley\"\nactions:\n  - label: \"Start There\"\n    style: filled\n    confirms: picks\n    limit: 3\n    says: \"Got it: {picks}. I'll read each council's site and news, find the service-design or digital lead, and come back with a name and a first note for each by next Monday.\"\n  - label: \"Use Your Pick\"\n    style: tinted\n    says: \"Then I'll start with Ashby, Glenfield and Kirby: a live tender, a new digital strategy, and a new digital lead. Names by next Monday.\"\n  - label: \"Not Now\"\n    says: \"Okay. I'll ask again in a week, or sooner if it starts to matter.\"\nphone:\n  when: \"This week\"\n  act: \"Choose Three\"\n  act_does: open\n  said: \"Got it. Names by next Monday.\"\n  done: \"Thank you\"\n  done_text: \"I'll read each council's site and news, find the likely lead, and come back with a name and a first note for each by next Monday.\"\n---\n\n# Which three councils without a contact should I start with?\n\nTwelve councils have no named person. I can look for people at all twelve, but slowly. Three at a time means you see names this month.\n\n## Known so far\n\n- Four of the twelve have published a digital strategy in the last year: Glenfield, Kirby, Linton, Orton.\n- Ashby has a tender out for \"customer contact modernisation\".\n- Two have new digital leads since spring: Kirby and Carlton.\n- If you have no view, I'd start with Ashby, Glenfield and Kirby.\n\n## What's missing\n\n- LinkedIn is not connected, so I can't see who you or Simon already know at any of them. That would change the order.\n\n## What your answer changes\n\n- For each you pick: I read their site and news, find the likely lead, and come back with a name and a first-note draft by next Monday.\n- The other nine wait. I won't touch them until these three have names.\n\n## Where your answer is saved\n\n- On your list of thirty, marked \"you chose\", with the date.\n",
+   "widgetRows": {},
+   "documentNames": [],
+   "waits_on": [],
+   "band": 5,
+   "bandWords": "Due by its rhythm"
+  },
+  {
+   "id": "connect-linkedin",
+   "order": "22",
+   "kind": "connect",
+   "signal": "warm-path",
+   "signal_status": "provisional",
+   "counts": [
+    "mutual-contact-count",
+    "intro-chain-length",
+    "target-cold-to-you"
+   ],
+   "counts_status": "provisional",
+   "about": [
+    "you"
+   ],
+   "arrives": "2026-09-21",
+   "documents": [],
+   "reply": {
+    "module": "buttons"
+   },
+   "actions": [
+    {
+     "label": "Connect LinkedIn",
+     "style": "filled",
+     "says": "In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything."
+    }
+   ],
+   "phone": {
+    "act": "Connect LinkedIn",
+    "act_does": "tap",
+    "said": "In the real tool this opens LinkedIn's sign-in.",
+    "done": "Not connected here",
+    "done_text": "In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything."
+   },
+   "title": "Connect LinkedIn",
+   "intro": "<p>Twelve of your thirty councils have nobody you know. LinkedIn is where the warm paths would show. Today I only see paths that happen to surface in your mail and Slack.</p>",
+   "sections": {
+    "What I can see now": {
+     "html": "<ul><li>Your mail, calendar and Drive. Slack. The open web: council sites, news, tenders.</li></ul>"
+    },
+    "What I cannot see": {
+     "html": "<ul><li>Who you know. Who Simon knows. Who has moved where. Four cards this week say \"LinkedIn is not connected\" and work around it.</li></ul>"
+    },
+    "Once connected": {
+     "html": "<ul><li>Warm-path cards for the twelve councils where you know nobody.</li><li>Job changes noticed within a day, like Julie Barker leaving Moreton, instead of when an email bounces.</li><li>Simon's \"I know Nicola\" becomes something I can check rather than take on trust.</li></ul>"
+    },
+    "What I will not do": {
+     "html": "<ul><li>Post, message, or connect on your behalf. I only read.</li></ul>"
+    }
+   },
+   "sectionOrder": [
+    "What I can see now",
+    "What I cannot see",
+    "Once connected",
+    "What I will not do"
+   ],
+   "file": "scenarios/bops/cards/connect-linkedin.md",
+   "markdown": "---\nid: connect-linkedin\norder: 22\nkind: connect\nsignal: warm-path\nsignal_status: provisional   # mapped by reading the card, not yet confirmed\ncounts: [mutual-contact-count, intro-chain-length, target-cold-to-you]\ncounts_status: provisional   # which numbers this quotes, not yet confirmed\nabout: [you]\narrives: 2026-09-21             # the day the tool puts it on the home\ndocuments: []\nreply:\n  module: buttons\nactions:\n  - label: \"Connect LinkedIn\"\n    style: filled\n    says: \"In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything.\"\nphone:\n  act: \"Connect LinkedIn\"\n  act_does: tap\n  said: \"In the real tool this opens LinkedIn's sign-in.\"\n  done: \"Not connected here\"\n  done_text: \"In the real tool this would open LinkedIn's sign-in. Nothing in this playbook connects to anything.\"\n---\n\n# Connect LinkedIn\n\nTwelve of your thirty councils have nobody you know. LinkedIn is where the warm paths would show. Today I only see paths that happen to surface in your mail and Slack.\n\n## What I can see now\n\n- Your mail, calendar and Drive. Slack. The open web: council sites, news, tenders.\n\n## What I cannot see\n\n- Who you know. Who Simon knows. Who has moved where. Four cards this week say \"LinkedIn is not connected\" and work around it.\n\n## Once connected\n\n- Warm-path cards for the twelve councils where you know nobody.\n- Job changes noticed within a day, like Julie Barker leaving Moreton, instead of when an email bounces.\n- Simon's \"I know Nicola\" becomes something I can check rather than take on trust.\n\n## What I will not do\n\n- Post, message, or connect on your behalf. I only read.\n",
+   "widgetRows": {},
+   "documentNames": [],
+   "waits_on": [],
+   "band": 6,
+   "bandWords": "Costs nothing to wait"
   }
  ],
  "widgets": [
@@ -7831,7 +8450,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it shows": {
-     "html": "<p>The files behind a card: the case study it attaches, the note it offers, the one-pager it points at. For each, what it proves and how recent it is, so you can judge whether it is the right thing to send.</p>\n<p>It is the widget for \"what have I got to give\". A Sustain card names a gift, and the gift is often a document, so it fits there first. Today one card carries it: Rachel's promise.</p>"
+     "html": "<p>The files behind a card: the case study it attaches, the note it offers, the one-pager it points at. For each, what it proves and how recent it is, so you can judge whether it is the right thing to send.</p>\n<p>It is the widget for \"what have I got to give\". Every message the tool drafts names what the other person gets, and that is often a document, so it fits there first. Today one card carries it: Rachel's promise.</p>"
     },
     "Row form": {
      "html": "<p><code>&lt;the document&gt; · &lt;what it proves&gt; · &lt;how recent&gt;</code></p>"
@@ -7842,7 +8461,7 @@ window.LIBRARY = {
     "Row form"
    ],
    "file": "widgets/documents.md",
-   "markdown": "---\nid: documents\nfamily: detail\nlabel: Documents\nblurb: The things the card offers or leans on, and what each one proves.\nshape: a row each, a file glyph, the name, and underneath what it proves and how recent it is\nparts: 3\nfed_by: [proof-library, offering-entry]\n---\n\n# Documents\n\n## What it shows\n\nThe files behind a card: the case study it attaches, the note it offers, the one-pager it\npoints at. For each, what it proves and how recent it is, so you can judge whether it is the\nright thing to send.\n\nIt is the widget for \"what have I got to give\". A Sustain card names a gift, and the gift is\noften a document, so it fits there first. Today one card carries it: Rachel's promise.\n\n## Row form\n\n`<the document> · <what it proves> · <how recent>`\n",
+   "markdown": "---\nid: documents\nfamily: detail\nlabel: Documents\nblurb: The things the card offers or leans on, and what each one proves.\nshape: a row each, a file glyph, the name, and underneath what it proves and how recent it is\nparts: 3\nfed_by: [proof-library, offering-entry]\n---\n\n# Documents\n\n## What it shows\n\nThe files behind a card: the case study it attaches, the note it offers, the one-pager it\npoints at. For each, what it proves and how recent it is, so you can judge whether it is the\nright thing to send.\n\nIt is the widget for \"what have I got to give\". Every message the tool drafts names what the other person gets,\nand that is often a document, so it fits there first. Today one card carries it: Rachel's promise.\n\n## Row form\n\n`<the document> · <what it proves> · <how recent>`\n",
    "reaches": [
     "drive#file",
     "drive#file-content",
@@ -8174,7 +8793,7 @@ window.LIBRARY = {
  "docs": [
   {
    "title": "The flow, end to end",
-   "intro": "<p>How the pieces move from a <strong>strategy</strong> to a <strong>surfaced action</strong> (<em>\"Reach out to Person P, because …\"</em>), worked through the running example: an <em>Expand</em> goal, <strong>BOPS → 30 councils</strong>.</p>\n<p>This is the worked version of Brain's canonical <strong>play</strong> (<code>00-spine</code>); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the <em>shape</em>, not the gospel.</p>",
+   "intro": "<p><em>Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See <code>library-format.md</code>, \"A card's day\".</em></p>\n<p>How the pieces move from a <strong>strategy</strong> to a <strong>surfaced action</strong> (<em>\"Reach out to Person P, because …\"</em>), worked through the running example: an <em>Expand</em> goal, <strong>BOPS → 30 councils</strong>.</p>\n<p>This is the worked version of Brain's canonical <strong>play</strong> (<code>00-spine</code>); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the <em>shape</em>, not the gospel.</p>",
    "sections": {
     "Phase A: strategy becomes standing work": {
      "html": "<p><em>Happens when you set or change the strategy.</em></p>\n<p>1. <strong>You and Brain shape the strategy.</strong> Together you set a goal pinned to an offering: <em>\"BOPS → 30 councils.\"</em> Brain reads it as <strong>Expand</strong>-flavoured, with a target shape (early-adopter councils). 2. <strong>Brain turns the strategy into routines and briefs each module</strong> with a standing job to focus on: - <strong>People</strong>: \"find councils fitting the BOPS profile, surface warm paths, watch the ones we're courting.\" - <strong>Offerings</strong>: \"keep BOPS's fit-shape, entry use-case and rebuttals sharp.\" - <strong>Organisation</strong>: \"have the council case study and the compliance fence ready.\" - <strong>Profile</strong>: (always) \"render anything in my voice.\" - <strong>Connections</strong>: nothing; it has no routines, it's just the wiring.</p>"
@@ -8197,7 +8816,7 @@ window.LIBRARY = {
    ],
    "id": "flow",
    "file": "docs/flow.md",
-   "markdown": "# The flow, end to end\n\nHow the pieces move from a **strategy** to a **surfaced action** (*\"Reach out to Person P, because …\"*), worked through the running example: an *Expand* goal, **BOPS → 30 councils**.\n\nThis is the worked version of Brain's canonical **play** (`00-spine`); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the *shape*, not the gospel.\n\n## Phase A: strategy becomes standing work\n*Happens when you set or change the strategy.*\n\n1. **You and Brain shape the strategy.** Together you set a goal pinned to an offering: *\"BOPS → 30 councils.\"* Brain reads it as **Expand**-flavoured, with a target shape (early-adopter councils).\n2. **Brain turns the strategy into routines and briefs each module** with a standing job to focus on:\n   - **People**: \"find councils fitting the BOPS profile, surface warm paths, watch the ones we're courting.\"\n   - **Offerings**: \"keep BOPS's fit-shape, entry use-case and rebuttals sharp.\"\n   - **Organisation**: \"have the council case study and the compliance fence ready.\"\n   - **Profile**: (always) \"render anything in my voice.\"\n   - **Connections**: nothing; it has no routines, it's just the wiring.\n\n## Phase B: standing work becomes a surfaced action\n*Happens continuously, as routines turn things up.*\n\n3. **Modules run their routines and push up what matters.** People scans for fits (pulling the *fit-shape* from Offerings as a supplier) and watches for signals. *Underneath:* Connections fetches the raw facts (a new mail, a calendar change, a Slack mention, a web hit); People does the **reading**. One clears the bar: a reply lands from Council X asking what BOPS would cost, which People reads as *a live buying question*, so it pushes *\"Council X replied asking about pricing\"* up, and that wakes Brain.\n4. **Brain runs the recommendation play, gathering each module's piece:**\n   - asks **People** → *provides* our history with Council X, the warm path in, any loose end.\n   - asks **Offerings** → *provides* the entry use-case and the proof that lands for a council.\n   - asks **Organisation** → *provides* the matching case study and the fence to stay inside.\n5. **Brain decides: this is the mix.** It weighs the pieces into one call: *act on **Person P** at **Council X**, because [warm path through Q + fits the early-adopter profile + just asked about pricing], leading with [the entry use-case + that council case study].* That's the **what + why**.\n6. **Brain hands a brief to Profile, who renders it.** Profile writes it in your voice, reading your closeness to Person P from People, inside Organisation's fence, and Organisation does a final compliance pass.\n7. **The action surfaces to you.** *\"Reach out to Person P at Council X: they just asked about pricing and you've a warm intro through Q. Here's a draft.\"* You approve, tweak, or send. Nothing leaves without you.\n8. **The outcome loops back.** Brain had stamped what it leaned on; when Person P replies (or goes quiet), it routes the lesson to the module that should learn, and Profile learns from any edits you made to the draft.\n\n## The concepts underneath\n- **Routine** (steps 2 and 3): a standing job with one owner; it may pull from a **supplier** (People pulls the fit-shape from Offerings).\n- **Play** (steps 4 to 6): the cross-module choreography Brain conducts, with the **decision in the middle** (step 5). Only Brain can own it.\n- **Provide** (step 4): each module's piece, handed back when Brain asks.\n- **Brief → render** (steps 6 and 7): Brain decides; Profile writes; Organisation gates.\n\n## Visualised: \"Trace the flow\"\nThis sequence was once playable as a step-by-step trace on the blueprint canvas, which is now archived in `_archive/`, together with its UI note (`_archive/docs/ui-foundation.md`). The playbook does not animate it today. The nearest live picture is the last slide of `playbook/deck.html`, \"How a card is built\", which draws one card's trail from the library.\n"
+   "markdown": "# The flow, end to end\n\n*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, \"A card's day\".*\n\nHow the pieces move from a **strategy** to a **surfaced action** (*\"Reach out to Person P, because …\"*), worked through the running example: an *Expand* goal, **BOPS → 30 councils**.\n\nThis is the worked version of Brain's canonical **play** (`00-spine`); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the *shape*, not the gospel.\n\n## Phase A: strategy becomes standing work\n*Happens when you set or change the strategy.*\n\n1. **You and Brain shape the strategy.** Together you set a goal pinned to an offering: *\"BOPS → 30 councils.\"* Brain reads it as **Expand**-flavoured, with a target shape (early-adopter councils).\n2. **Brain turns the strategy into routines and briefs each module** with a standing job to focus on:\n   - **People**: \"find councils fitting the BOPS profile, surface warm paths, watch the ones we're courting.\"\n   - **Offerings**: \"keep BOPS's fit-shape, entry use-case and rebuttals sharp.\"\n   - **Organisation**: \"have the council case study and the compliance fence ready.\"\n   - **Profile**: (always) \"render anything in my voice.\"\n   - **Connections**: nothing; it has no routines, it's just the wiring.\n\n## Phase B: standing work becomes a surfaced action\n*Happens continuously, as routines turn things up.*\n\n3. **Modules run their routines and push up what matters.** People scans for fits (pulling the *fit-shape* from Offerings as a supplier) and watches for signals. *Underneath:* Connections fetches the raw facts (a new mail, a calendar change, a Slack mention, a web hit); People does the **reading**. One clears the bar: a reply lands from Council X asking what BOPS would cost, which People reads as *a live buying question*, so it pushes *\"Council X replied asking about pricing\"* up, and that wakes Brain.\n4. **Brain runs the recommendation play, gathering each module's piece:**\n   - asks **People** → *provides* our history with Council X, the warm path in, any loose end.\n   - asks **Offerings** → *provides* the entry use-case and the proof that lands for a council.\n   - asks **Organisation** → *provides* the matching case study and the fence to stay inside.\n5. **Brain decides: this is the mix.** It weighs the pieces into one call: *act on **Person P** at **Council X**, because [warm path through Q + fits the early-adopter profile + just asked about pricing], leading with [the entry use-case + that council case study].* That's the **what + why**.\n6. **Brain hands a brief to Profile, who renders it.** Profile writes it in your voice, reading your closeness to Person P from People, inside Organisation's fence, and Organisation does a final compliance pass.\n7. **The action surfaces to you.** *\"Reach out to Person P at Council X: they just asked about pricing and you've a warm intro through Q. Here's a draft.\"* You approve, tweak, or send. Nothing leaves without you.\n8. **The outcome loops back.** Brain had stamped what it leaned on; when Person P replies (or goes quiet), it routes the lesson to the module that should learn, and Profile learns from any edits you made to the draft.\n\n## The concepts underneath\n- **Routine** (steps 2 and 3): a standing job with one owner; it may pull from a **supplier** (People pulls the fit-shape from Offerings).\n- **Play** (steps 4 to 6): the cross-module choreography Brain conducts, with the **decision in the middle** (step 5). Only Brain can own it.\n- **Provide** (step 4): each module's piece, handed back when Brain asks.\n- **Brief → render** (steps 6 and 7): Brain decides; Profile writes; Organisation gates.\n\n## Visualised: \"Trace the flow\"\nThis sequence was once playable as a step-by-step trace on the blueprint canvas, which is now archived in `_archive/`, together with its UI note (`_archive/docs/ui-foundation.md`). The playbook does not animate it today. The nearest live picture is the last slide of `playbook/deck.html`, \"How a card is built\", which draws one card's trail from the library.\n"
   },
   {
    "title": "How the modules collaborate: what each one needs, and how they combine",
@@ -8252,7 +8871,7 @@ window.LIBRARY = {
      "html": "<p>Every assembly and signal is two layers in one file, kept cleanly apart so each is written to best practice for its reader:</p>\n<ul><li><strong>Frontmatter is the structured (machine) layer.</strong> Flat, typed facets only: ids, enums, short lists (the card face described below). Each field earns its place by carrying genuine structured data; nothing is kept just because it was there. <code>floor</code> has been <strong>dropped</strong> (the folder, <code>signals/</code> vs <code>assemblies/</code>, already states the type). Sentence-length content never goes here.</li><li><strong>The body is the human layer</strong>, plain English under a <strong>fixed set of section headings</strong>, so it reads well <em>and</em> a parser can address each section later. The headings are consistent across every entry: - <strong>A signal</strong> uses three sections: <code>## What it means</code> (just the read and when it applies, in a few plain sentences), <code>## In practice</code> (one short generic example), and <code>## How it is worked out</code> (the precise rule: the trigger and the confidence grading, leaning on the <code>needs</code> and <code>counts</code> facets above rather than re-listing them; this is the single home for how confident the read is and what it cannot see). \"How it is worked out\" opens by pointing at <a href=\"reading-principles.md\"><code>reading-principles.md</code></a> rather than re-teaching the shared rules. - <strong>An assembly</strong> uses two sections: <code>## What it gathers</code> (the records it pulls together and the identity work; a plain list where it gathers several things) and <code>## Where it comes from</code> (which input id resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of living in <code>assemblies/</code>, so no entry needs to say so.</li></ul>\n<p>A signal's <strong><code>needs</code></strong> is a flat list of the sources a read leans on (e.g. <code>needs: [calendar]</code>); when one is not connected, the checks resting on it drop out and confidence falls, which is how a <strong>data gap</strong> is named honestly. The shared reading rules every signal applies (own-rhythm thresholds, count-first, confidence grading, name-the-gap, answer a real question) live once in <a href=\"reading-principles.md\"><code>reading-principles.md</code></a>, so no signal re-teaches them.</p>"
     },
     "The floors, and the one rule that varies by floor": {
-     "html": "<p>The pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the three-floor track-back in <a href=\"tracing-back.md\"><code>tracing-back.md</code></a>: facts, then counting, then opinion. The <strong>granularity matches the floor</strong>, so we write docs only where there is reasoning to hold:</p>\n<table><thead><tr><th>Floor</th><th>Nature</th><th>Unit</th><th>Template</th></tr></thead><tbody><tr><td><strong>Raw data</strong> (channels, records, fields)</td><td>reference structure, no opinion</td><td><strong>one doc per channel service</strong> in <code>channels/</code></td><td><a href=\"../templates/channel.md\"><code>templates/channel.md</code></a></td></tr><tr><td><strong>Told</strong></td><td>what only you can say</td><td><strong>one doc per module that has one</strong>, in <code>told/</code></td><td><a href=\"../templates/channel.md\"><code>templates/channel.md</code></a></td></tr><tr><td><strong>Assemblies</strong></td><td>deterministic gather (a person, a conversation, an organisation)</td><td><strong>thin doc per entry</strong></td><td><a href=\"../templates/assembly.md\"><code>templates/assembly.md</code></a></td></tr><tr><td><strong>Counts</strong></td><td>the arithmetic. Every entry is <code>defined: false</code> for now</td><td><strong>thin doc per entry</strong></td><td><a href=\"../templates/count.md\"><code>templates/count.md</code></a></td></tr><tr><td><strong>Signals</strong></td><td>the read, the first opinion</td><td><strong>rich doc per entry</strong></td><td><a href=\"../templates/signal.md\"><code>templates/signal.md</code></a></td></tr><tr><td><strong>Cards</strong></td><td>the suggestion, question or outcome</td><td><strong>one doc per card</strong></td><td><a href=\"../templates/card.md\"><code>templates/card.md</code></a></td></tr></tbody></table>\n<p>Plus, per module, one <strong><code>modules/&lt;id&gt;.md</code></strong> (<a href=\"../templates/module.md\"><code>templates/module.md</code></a>) holding the operating prose and the card face.</p>\n<p><strong>Frontmatter is only the card face.</strong> It holds the flat, tag-like facets (ids, enums, short label lists, the future chips). Anything <strong>nested or sentence-length</strong> lives in the <strong>body</strong> as readable markdown: a channel's records become a <strong>field-per-row table</strong> (Record, Field, Source); a signal's threshold and reasoning are prose in the body's sections (such as <code>How it is worked out</code>). A nested tree shoved into frontmatter renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.</p>\n<p><strong>Every assembly and signal carries a <code>label</code> and a <code>blurb</code></strong>, the same pair <code>module.md</code> uses: the <code>label</code> is the plain-English display name, and the <code>blurb</code> is the <strong>one-line short description on the entry's card face</strong> in the library page. Keep the <code>blurb</code> to a single plain sentence (the long body is revealed on click, so it does not belong in the blurb). The library page, <a href=\"../../playbook/library.html\"><code>playbook/library.html</code></a>, reads exactly these fields from <code>data.js</code>, so editing a <code>blurb</code> and running <code>node build.js</code> updates its card with no other change.</p>\n<p>Not every module has every floor, and the library is meant to reveal that. <strong>04-organization has no signals</strong> (it matches proof and gates drafts, so there is no behaviour to sense); <strong>01-integrations</strong> has only raw data; <strong>00-spine</strong>'s \"assemblies\" are the scoreboard and calendar, a different kind of synthesis. Absence is information; do not invent a floor a module does not have.</p>"
+     "html": "<p>The pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the three-floor track-back in <a href=\"tracing-back.md\"><code>tracing-back.md</code></a>: facts, then counting, then opinion. The <strong>granularity matches the floor</strong>, so we write docs only where there is reasoning to hold:</p>\n<table><thead><tr><th>Floor</th><th>Nature</th><th>Unit</th><th>Template</th></tr></thead><tbody><tr><td><strong>Raw data</strong> (channels, records, fields)</td><td>reference structure, no opinion</td><td><strong>one doc per channel service</strong> in <code>channels/</code></td><td><a href=\"../templates/channel.md\"><code>templates/channel.md</code></a></td></tr><tr><td><strong>Told</strong></td><td>what only you can say</td><td><strong>one doc per module that has one</strong>, in <code>told/</code></td><td><a href=\"../templates/channel.md\"><code>templates/channel.md</code></a></td></tr><tr><td><strong>Assemblies</strong></td><td>deterministic gather (a person, a conversation, an organisation)</td><td><strong>thin doc per entry</strong></td><td><a href=\"../templates/assembly.md\"><code>templates/assembly.md</code></a></td></tr><tr><td><strong>Counts</strong></td><td>the arithmetic. Every entry is <code>defined: false</code> for now</td><td><strong>thin doc per entry</strong></td><td><a href=\"../templates/count.md\"><code>templates/count.md</code></a></td></tr><tr><td><strong>Signals</strong></td><td>the read, the first opinion</td><td><strong>rich doc per entry</strong></td><td><a href=\"../templates/signal.md\"><code>templates/signal.md</code></a></td></tr><tr><td><strong>Cards</strong></td><td>the suggestion, question or outcome</td><td><strong>one doc per card</strong>, in the scenario's <code>cards/</code></td><td><a href=\"../templates/card.md\"><code>templates/card.md</code></a></td></tr></tbody></table>\n<p>Plus, per module, one <strong><code>modules/&lt;id&gt;.md</code></strong> (<a href=\"../templates/module.md\"><code>templates/module.md</code></a>) holding the operating prose and the card face.</p>\n<p><strong>Frontmatter is only the card face.</strong> It holds the flat, tag-like facets (ids, enums, short label lists, the future chips). Anything <strong>nested or sentence-length</strong> lives in the <strong>body</strong> as readable markdown: a channel's records become a <strong>field-per-row table</strong> (Record, Field, Source); a signal's threshold and reasoning are prose in the body's sections (such as <code>How it is worked out</code>). A nested tree shoved into frontmatter renders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single quotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.</p>\n<p><strong>Every assembly and signal carries a <code>label</code> and a <code>blurb</code></strong>, the same pair <code>module.md</code> uses: the <code>label</code> is the plain-English display name, and the <code>blurb</code> is the <strong>one-line short description on the entry's card face</strong> in the library page. Keep the <code>blurb</code> to a single plain sentence (the long body is revealed on click, so it does not belong in the blurb). The library page, <a href=\"../../playbook/library.html\"><code>playbook/library.html</code></a>, reads exactly these fields from <code>data.js</code>, so editing a <code>blurb</code> and running <code>node build.js</code> updates its card with no other change.</p>\n<p>Not every module has every floor, and the library is meant to reveal that. <strong>04-organization has no signals</strong> (it matches proof and gates drafts, so there is no behaviour to sense); <strong>01-integrations</strong> has only raw data; <strong>00-spine</strong>'s \"assemblies\" are the scoreboard and calendar, a different kind of synthesis. Absence is information; do not invent a floor a module does not have.</p>"
     },
     "The told source: a module's own raw data": {
      "html": "<p>Raw data has two homes. Most of it is the shared <strong>channels</strong> in <code>channels/</code> (the accounts you connect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the user <strong>states outright</strong>, the pitch for a product, the shape of a good-fit customer, a price. That <strong>told</strong> input is raw data too, and the most deterministic kind there is, because the user says it rather than the tool inferring it.</p>\n<p>Each reasoning module owns its own told source, so it sits <strong>inside the module</strong>, not in Connections (Connections stays strictly the doorway for external accounts). It lives at <code>told/&lt;name&gt;-told.md</code>, one file per module that has one, and it is shaped exactly like a channel doc (<a href=\"../templates/channel.md\"><code>templates/channel.md</code></a>): a card-face frontmatter with <code>source: told</code>, then a <code>## Records</code> field-per-row table. Its records get ids the same way (the kebab-slug of the label), and an assembly lists them in <code>inputs</code> exactly like channel records.</p>\n<p>Three things to keep true:</p>\n<ul><li><strong>It is elicited, not just waited for.</strong> The module actively asks for it (the propose-a-draft, you-confirm loop), and a record may be populated from a file the user uploads to Drive. The <code>Source</code> column says which path each field comes in by.</li><li><strong>An empty record is a told gap</strong>, named not faked, the same banner <a href=\"tracing-back.md\"><code>tracing-back.md</code></a> already uses: the honest output is \"tell me X and I can run this\", and the module can offer to research a first version for the user to confirm.</li><li><strong>Five modules have one.</strong> The Brain (<a href=\"../told/goal-told.md\"><code>goal-told.md</code></a>), People (<a href=\"../told/people-told.md\"><code>people-told.md</code></a>), Offerings (<a href=\"../told/offering-told.md\"><code>offering-told.md</code></a>), Organisation (<a href=\"../told/organisation-told.md\"><code>organisation-told.md</code></a>) and Profile (<a href=\"../told/profile-told.md\"><code>profile-told.md</code></a>). <strong>Offerings is the worked example of this floor.</strong></li></ul>"
@@ -8261,10 +8880,10 @@ window.LIBRARY = {
      "html": "<p>Every entry names what it is built from, one floor down, by <strong>id</strong>:</p>\n<ul><li>an <strong>assembly</strong>'s <code>inputs</code> are <strong>record addresses</strong> (<code>gmail#email-message</code>, or a told record such as <code>offering-told#pitch</code>) and, optionally, other assembly ids;</li><li>a <strong>count</strong> names the assembly it counts within as <code>over</code>;</li><li>a <strong>signal</strong>'s <code>inputs</code> are <strong>assembly ids</strong>, and its <code>counts</code> are the deterministic counts beneath the read.</li></ul>\n<p>So any signal walks straight down: <strong>signal, then its counts, then the assembly each counts within, then the records it gathers</strong>. A count names the assembly it counts within as <code>over</code> (settled 18 September), so the walk passes through the counting floor instead of stepping over it. A card names its main <code>signal</code> and, when it quotes numbers from other reads, those reads as <code>supporting</code>; every count a card quotes must belong to one of them. A card's <em>Sources</em> rows name their sources, and <code>build.js</code> checks each is reached by the trail. The Brain's own told pile, <a href=\"../told/goal-told.md\"><code>told/goal-told.md</code></a>, is always reachable: the goal is what every card is weighed against. This is the <em>track-back</em>: nothing the tool says should float. Two iron rules:</p>\n<p>1. <strong>Every id must resolve.</strong> A dangling <code>inputs</code> or <code>counts</code> id is a bug, not a stub. 2. <strong>Name the gap, do not fake it.</strong> Where a branch runs out of ground because a source is not connected (warm paths without LinkedIn) or the user has not told us something, the entry says so, as a <strong>data gap</strong> or a <strong>told gap</strong>. (See <a href=\"tracing-back.md\"><code>tracing-back.md</code></a>.)</p>\n<h3>Names: the id for the build, the label for a person</h3>\n<p>Every entry has two names. The <strong>id</strong> is the backend name: kebab-case, stable, what every join and <code>build.js</code> use. It never changes for the sake of wording. The <strong>label</strong> is what a person reads on the slide, in the library and on a card, and it is plain English: say what it is the way the seller would (\"How long your last note has waited, against usual\", not \"Reply gap vs own rhythm\"). Rename a label freely; rename an id only with every join that names it. A record is the one exception: its id is made from its label, which keeps the real API name, so its plain name lives in the source file's <code>## In plain words</code> table instead (renamed 18 September).</p>\n<h3>Ids</h3>\n<p>Kebab-slugs. A <strong>record's id is the kebab-slug of its label</strong> (<code>Email message</code> gives <code>email-message</code>); it lives in the body table's Record column, not in frontmatter. A record is always <strong>addressed by its source</strong>, <code>&lt;source-id&gt;#&lt;record-id&gt;</code> (<code>gmail#email-message</code>, <code>offering-told#pitch</code>), so two sources may share a record name. Every other id (assembly, count, signal, card, widget) is unique across the library, because the folders are flat.</p>"
     },
     "The widgets: a catalogue beside the ladder": {
-     "html": "<p>A card shows its evidence through <strong>widgets</strong>, one doc each in <a href=\"../widgets/\"><code>widgets/</code></a>, to the skeleton in <a href=\"../templates/widget.md\"><code>templates/widget.md</code></a>. A widget holds no reading of its own, so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already holds.</p>\n<p>There are two families. <strong>Detail widgets</strong> (Timeline, What they said, People, Documents, Open items, Compared with usual) sit in a card's details, between What happened and Still unclear; a card takes at most two. <strong>Reply widgets</strong> (Buttons, Choices, Several choices, A field, A draft) fill the sheet a card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning: no new widget without a new shape.</p>\n<p>The idea is close to Google's A2UI, where an app keeps a catalogue of trusted components and an agent sends data that picks from it and fills it. The difference is on purpose. A2UI's components are usually small building blocks the agent arranges freely. Ours are large and specific, and they sit in a fixed place on every card. The agent chooses and fills; it never arranges. That is what lets a seller learn the set once.</p>\n<p>The joins, checked by <code>build.js</code>: a detail widget's <code>fed_by</code> resolves to assemblies or counts; a card's <code>widgets</code> resolve to detail widgets, and each is fed by something the card rests on (its counts, the inputs of its signal and its supporting signals, each count's <code>over</code>, every assembly those gather, and, when the card names what to send in <code>documents</code>, the proof library: why to write and what to send are two trails); each has a body section headed with its label, rows in its row form; and a card's <code>reply.module</code> is a reply widget. <code>build.js</code> also walks each detail widget's <code>fed_by</code> down through the assemblies to the records it can actually show, and lists them on the widget's page. A widget that reaches no record fails the build unless it says what it <code>waits_on</code>: today that is Open items, which rests only on counts, none of which can say yet which assembly it counts within (<code>over: []</code>).</p>\n<h3>The phone block</h3>\n<p>The phone (<code>playbook/phone.html</code>) is drawn from the cards, not typed (decided 19 September). A card is on the phone when it carries a <code>phone:</code> block. The block holds only the words the phone uses where they differ from the rest of the card: the short when on the badge, the filled action and what it does (<code>send</code> the draft, one <code>tap</code>, or <code>open</code> the reply sheet), the outline action if there is one, the line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else the phone reads from the card as it is: the title, the intro, how sure, the council, the documents, the details on their spine with the widgets in place, the draft, and an Ask's answers. A card with a <code>## The shorter draft</code> section offers the ask-for-a-change row, and every ask gets that draft back; that is a stand-in until the tool can really redraft. <code>build.js</code> checks that whatever the phone will reach for is there: an action that raises the draft needs <code>## The draft</code>, and an action that raises a sheet needs a <code>reply.module</code> of choices, several or field, with its answers. The order on the phone is the home's, which <code>build.js</code> writes as <code>day</code>.</p>"
+     "html": "<p>A card shows its evidence through <strong>widgets</strong>, one doc each in <a href=\"../widgets/\"><code>widgets/</code></a>, to the skeleton in <a href=\"../templates/widget.md\"><code>templates/widget.md</code></a>. A widget holds no reading of its own, so it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already holds.</p>\n<p>There are two families. <strong>Detail widgets</strong> (Timeline, What they said, People, Documents, Open items, Compared with usual) sit in a card's details, between What happened and Still unclear; a card takes at most two. <strong>Reply widgets</strong> (Buttons, Choices, Several choices, A field, A draft) fill the sheet a card's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning: no new widget without a new shape.</p>\n<p>The idea is close to Google's A2UI, where an app keeps a catalogue of trusted components and an agent sends data that picks from it and fills it. The difference is on purpose. A2UI's components are usually small building blocks the agent arranges freely. Ours are large and specific, and they sit in a fixed place on every card. The agent chooses and fills; it never arranges. That is what lets a seller learn the set once.</p>\n<p>The joins, checked by <code>build.js</code>: a detail widget's <code>fed_by</code> resolves to assemblies or counts; a card's <code>widgets</code> resolve to detail widgets, and each is fed by something the card rests on (its counts, the inputs of its signal and its supporting signals, each count's <code>over</code>, every assembly those gather, and, when the card names what to send in <code>documents</code>, the proof library: why to write and what to send are two trails); each has a body section headed with its label, rows in its row form; and a card's <code>reply.module</code> is a reply widget. <code>build.js</code> also walks each detail widget's <code>fed_by</code> down through the assemblies to the records it can actually show, and lists them on the widget's page. A widget that reaches no record fails the build unless it says what it <code>waits_on</code>: today that is Open items, which rests only on counts, none of which can say yet which assembly it counts within (<code>over: []</code>).</p>\n<h3>The phone block</h3>\n<p>The phone (<code>playbook/phone.html</code>) is drawn from the cards, not typed (decided 19 September). A card is on the phone when it carries a <code>phone:</code> block. The block holds only the words the phone uses where they differ from the rest of the card: the short when on the badge, the filled action and what it does (<code>send</code> the draft, one <code>tap</code>, or <code>open</code> the reply sheet), the outline action if there is one, the line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else the phone reads from the card as it is: the title, the intro, how sure, the organisation, the documents, the details on their spine with the widgets in place, the draft, and an Ask's answers. A card with a <code>## The shorter draft</code> section offers the ask-for-a-change row, and every ask gets that draft back; that is a stand-in until the tool can really redraft. <code>build.js</code> checks that whatever the phone will reach for is there: an action that raises the draft needs <code>## The draft</code>, and an action that raises a sheet needs a <code>reply.module</code> of choices, several or field, with its answers. The order on the phone is the home's, which <code>build.js</code> writes as <code>day</code>.</p>\n<h3>The scenario</h3>\n<p>Everything above the cards is general: it must hold for any kind of sale. The pretend world and its cards are not. They are one <strong>scenario</strong>, in <code>scenarios/&lt;name&gt;/</code>, with a <code>world/</code> (the goal, the cast, the organisations, the documents) and a <code>cards/</code> (decided 19 September). Today there is one, <code>bops</code>, a patient sale to councils. A second, a mass sale, is meant to follow, standing on the same channels, assemblies, counts and signals. <code>build.js</code> reads the one named in <code>SCENARIO</code> at its top. A scenario can be rewritten to fit the signals; when a card fights a general rule, the card changes, not the rule.</p>\n<h3>A card's day: what it is about, who it reaches, when, and what it waits on</h3>\n<p>Decided 19 September, so the day is worked out from the cards rather than typed.</p>\n<ul><li><strong><code>kind</code></strong> is the card's only label: Act, Ask, Connect or News. (Sustain, Advance and Expand were dropped the same day: they were one picture of selling, and may mean nothing to a seller.)</li><li><strong><code>about</code></strong> names the nouns the card concerns, of any type: a person, an organisation, a document, the offering, or <code>you</code>. An Ask can be about anything the tool wants to learn.</li><li><strong><code>to</code></strong> names who an Act reaches, when it reaches anyone. A brief for you has no <code>to</code>.</li><li><strong><code>arrives</code></strong> is the working day the tool puts the card on the home. A card due \"any day this week\" is not piled on Monday: the tool spreads the week, and quiet days take the cards that cost nothing to wait. A card a watch turns up has no <code>arrives</code>.</li><li><strong><code>when.until</code></strong> is the day it goes stale, or the world's date, left out when nothing says. \"This week\" ends on Friday. The <code>words</code> are the when only.</li><li><strong><code>watch</code></strong> is what the tool watches for once you act, taken from What happens next: what it waits for, until when, the card it turns up (<code>then</code>), and what it does if nothing comes.</li><li><strong>Waiting.</strong> A card waits for four reasons, and <code>build.js</code> works out all four into <code>waits_on</code>: an Ask names it in <code>changes</code> (the answer changes it); it names <code>held_by</code> (a sequence its own words give); a watch turns it up; or it is a second Act to the same person, because there is one move per person at a time. For that last one the tool decides the order: a sequence the cards state first, then what arrives first, what is owed, what gives (names <code>documents</code>) before what asks, and what waiting a day costs. Two Acts to one person that nothing tells apart fail the build: write them as one card. A card that waits carries <code>held_words</code>, the line it shows while it waits.</li><li><code>build.js</code> writes <code>day</code> (the home's order) and <code>days</code> (each date, the cards that arrive on it, in that order). The phone shows a day's cards, hides a waiting card until what it waits on is sent or answered, and ends every day on a page of what the tool is watching.</li></ul>"
     },
     "How an agent produces a module's library": {
-     "html": "<p>All six modules are now converted, and the per-module <code>CLAUDE.md</code> files have been retired. The steps below record how the conversion was done and guide any <strong>new</strong> module added later (working from a <code>module.md</code> draft rather than an old <code>CLAUDE.md</code>):</p>\n<p>1. <strong><code>module.md</code>.</strong> Copy the card-face frontmatter (drop the old <code>raw_data</code> and <code>channels</code> blobs); move Principles, System prompt, User input, Output, Memory and Open questions into the body verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries. 2. <strong>Signals.</strong> For the reasoned module, each named read in the old \"signal catalogue\" becomes one <code>signals/&lt;id&gt;.md</code>. Carry its counts into <code>counts</code>, its sales-question handles into <code>answers</code>, its tilt into <code>modes</code> and <code>kind</code>, and the worked example plus threshold logic into the body. A signal earns its place only by answering a real question in <a href=\"sales-questions.md\"><code>sales-questions.md</code></a>. 3. <strong>Assemblies.</strong> Name the deterministic gathers the signals stand on (a person history, a conversation history, a stakeholder map). Their <code>inputs</code> are the channel records they tidy together, plus any records from the module's own told source. 4. <strong>Raw data.</strong> The shared channels (raw-data floor, 01 only) live in <code>channels/&lt;id&gt;.md</code>: a card-face frontmatter, then the records as a <strong>field-per-row table</strong>, <code>| Record | Field | Source |</code>. And, where a module has facts the user states outright, a <code>told/&lt;name&gt;-told.md</code> of the same shape with <code>source: told</code> (see <em>The told source</em> above). 5. <strong>Check the lineage.</strong> Every signal <code>inputs</code> id points at a real assembly file; every assembly <code>inputs</code> id points at a real record id in a channel doc. Walk one signal end to end to confirm nothing floats.</p>\n<p>These steps were <strong>additive</strong>: the new files sat beside the old <code>CLAUDE.md</code> until each module's library was complete. That is now done across all six modules, the per-module <code>CLAUDE.md</code> files are retired (they are in <code>_archive/</code>), and <code>build.js</code> reads the library into the playbook.</p>"
+     "html": "<p>All six modules are now converted, and the per-module <code>CLAUDE.md</code> files have been retired. The steps below record how the conversion was done and guide any <strong>new</strong> module added later (working from a <code>module.md</code> draft rather than an old <code>CLAUDE.md</code>):</p>\n<p>1. <strong><code>module.md</code>.</strong> Copy the card-face frontmatter (drop the old <code>raw_data</code> and <code>channels</code> blobs); move Principles, System prompt, User input, Output, Memory and Open questions into the body verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries. 2. <strong>Signals.</strong> For the reasoned module, each named read in the old \"signal catalogue\" becomes one <code>signals/&lt;id&gt;.md</code>. Carry its counts into <code>counts</code>, its sales-question handles into <code>answers</code>, its tilt into <code>kind</code>, and the worked example plus threshold logic into the body. A signal earns its place only by answering a real question in <a href=\"sales-questions.md\"><code>sales-questions.md</code></a>. 3. <strong>Assemblies.</strong> Name the deterministic gathers the signals stand on (a person history, a conversation history, a stakeholder map). Their <code>inputs</code> are the channel records they tidy together, plus any records from the module's own told source. 4. <strong>Raw data.</strong> The shared channels (raw-data floor, 01 only) live in <code>channels/&lt;id&gt;.md</code>: a card-face frontmatter, then the records as a <strong>field-per-row table</strong>, <code>| Record | Field | Source |</code>. And, where a module has facts the user states outright, a <code>told/&lt;name&gt;-told.md</code> of the same shape with <code>source: told</code> (see <em>The told source</em> above). 5. <strong>Check the lineage.</strong> Every signal <code>inputs</code> id points at a real assembly file; every assembly <code>inputs</code> id points at a real record id in a channel doc. Walk one signal end to end to confirm nothing floats.</p>\n<p>These steps were <strong>additive</strong>: the new files sat beside the old <code>CLAUDE.md</code> until each module's library was complete. That is now done across all six modules, the per-module <code>CLAUDE.md</code> files are retired (they are in <code>_archive/</code>), and <code>build.js</code> reads the library into the playbook.</p>"
     },
     "The worked examples (the gold standard to imitate)": {
      "html": "<ul><li>Channel: <a href=\"../channels/gmail.md\"><code>channels/gmail.md</code></a></li><li>Assembly: <a href=\"../assemblies/person-history.md\"><code>assemblies/person-history.md</code></a></li><li>Signal: <a href=\"../signals/cooling-champion.md\"><code>signals/cooling-champion.md</code></a></li><li>Module overview: <a href=\"../modules/02-relationships.md\"><code>modules/02-relationships.md</code></a></li></ul>\n<p><strong>02-relationships is the worked example</strong>, so copy its shape.</p>"
@@ -8287,7 +8906,7 @@ window.LIBRARY = {
    ],
    "id": "library-format",
    "file": "docs/library-format.md",
-   "markdown": "# The library format: how the thinking is stored\n\nThis is the **contract** for the structured library that replaced the one-prose-`CLAUDE.md`-per-module\nmonolith. It is what an agent reads before producing entries. The matching skeletons live in\n[`templates/`](../templates/); one worked example of each lives in its real home (linked below).\n\n## Why we changed\n\nThe agent-anatomy prose was right for *reasoning*, but the part of each module that is really a\n**catalogue** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it\ncould not grow into a library or be rendered. We split each module in two:\n\n- **The catalogue floors** become a **library of structured entries** (this doc).\n- **The operating prose** (principles, system prompt, user input, output, memory, open questions)\n  becomes a slim **`module.md`** overview.\n\nThe mapping from the old agent-anatomy is exact:\n\n| Old agent-anatomy section | New home |\n|---|---|\n| Raw data | `channels/*.md` and `told/*.md` (raw-data floor) |\n| Reasoning, *assembling* | `assemblies/*.md` |\n| Reasoning, *counting* | `counts/*.md` |\n| Reasoning, *sensing* | `signals/*.md` |\n| Principles, System prompt, User input, Output, Memory, Open questions | `modules/<id>.md` |\n\nThe folders are flat: every entry names its owning module in a `module:` field rather than living\ninside a module folder.\n\n## Writing style for every entry\n\nA few rules, because a person reads these, not just a parser:\n\n1. **Plain English, GDS style.** Sentence case, short sentences, say what it means. No jargon or\n   wordplay in the prose a person reads: a signal does not \"fire\" to a reader, it is a read the tool\n   *makes*. Write the body for a person; the structured facets in the frontmatter carry the precise,\n   parser-facing data.\n2. **Plain English for the names we invent.** An assembly is \"Person history\", not \"Contact dossier\".\n   Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names\n   (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,\n   champion).\n3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named\n   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a\n   prospect, the offering). The specific case study lives only in the scenario and demo docs.\n4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than\n   em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids\n   (email-message).\n5. **Clarity before brevity.** One idea per sentence; break a long sentence rather than stack clauses.\n   Put the point first: say what a read *is* before how it works. Where a section names several things,\n   use a plain list, not a parenthetical run-on. Shorter prose is the result of clear writing, never the\n   goal; cramming ideas into one packed sentence reads as cryptic, not clear. Say a thing once: do not\n   repeat what the `blurb`, [`reading-principles.md`](reading-principles.md) or another section already\n   carries.\n\n## The two layers: structured frontmatter, plain-English body\n\nEvery assembly and signal is two layers in one file, kept cleanly apart so each is written to best\npractice for its reader:\n\n- **Frontmatter is the structured (machine) layer.** Flat, typed facets only: ids, enums, short lists\n  (the card face described below). Each field earns its place by carrying genuine structured data;\n  nothing is kept just because it was there. `floor` has been **dropped** (the folder, `signals/` vs\n  `assemblies/`, already states the type). Sentence-length content never goes here.\n- **The body is the human layer**, plain English under a **fixed set of section headings**, so it\n  reads well *and* a parser can address each section later. The headings are consistent across every\n  entry:\n  - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few\n    plain sentences), `## In practice` (one short generic example), and `## How it is worked out` (the precise\n    rule: the trigger and the confidence grading, leaning on the `needs` and `counts` facets above\n    rather than re-listing them; this is the single home for how confident the read is and what it\n    cannot see). \"How it is worked out\" opens by pointing at\n    [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.\n  - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the\n    identity work; a plain list where it gathers several things) and `## Where it comes from` (which input id\n    resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of\n    living in `assemblies/`, so no entry needs to say so.\n\nA signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when\none is not connected, the checks resting on it drop out and confidence falls, which is how a **data\ngap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,\ncount-first, confidence grading, name-the-gap, answer a real question) live once in\n[`reading-principles.md`](reading-principles.md), so no signal re-teaches them.\n\n## The floors, and the one rule that varies by floor\n\nThe pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the\nthree-floor track-back in [`tracing-back.md`](tracing-back.md): facts, then counting, then opinion.\nThe **granularity matches the floor**, so we write docs only where there is reasoning to hold:\n\n| Floor | Nature | Unit | Template |\n|---|---|---|---|\n| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service** in `channels/` | [`templates/channel.md`](../templates/channel.md) |\n| **Told** | what only you can say | **one doc per module that has one**, in `told/` | [`templates/channel.md`](../templates/channel.md) |\n| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`templates/assembly.md`](../templates/assembly.md) |\n| **Counts** | the arithmetic. Every entry is `defined: false` for now | **thin doc per entry** | [`templates/count.md`](../templates/count.md) |\n| **Signals** | the read, the first opinion | **rich doc per entry** | [`templates/signal.md`](../templates/signal.md) |\n| **Cards** | the suggestion, question or outcome | **one doc per card** | [`templates/card.md`](../templates/card.md) |\n\nPlus, per module, one **`modules/<id>.md`** ([`templates/module.md`](../templates/module.md)) holding the\noperating prose and the card face.\n\n**Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label\nlists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable\nmarkdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's\nthreshold and reasoning are prose in the body's sections (such as `How it is worked out`). A nested tree shoved into frontmatter\nrenders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single\nquotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.\n\n**Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the\n`label` is the plain-English display name, and the `blurb` is the **one-line short description on the\nentry's card face** in the library page. Keep the `blurb` to a single plain sentence (the long body\nis revealed on click, so it does not belong in the blurb). The library page,\n[`playbook/library.html`](../../playbook/library.html), reads exactly these fields from `data.js`, so\nediting a `blurb` and running `node build.js` updates its card with no other change.\n\nNot every module has every floor, and the library is meant to reveal that. **04-organization has no\nsignals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**\nhas only raw data; **00-spine**'s \"assemblies\" are the scoreboard and calendar, a different kind of\nsynthesis. Absence is information; do not invent a floor a module does not have.\n\n## The told source: a module's own raw data\n\nRaw data has two homes. Most of it is the shared **channels** in `channels/` (the accounts you\nconnect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the\nuser **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That\n**told** input is raw data too, and the most deterministic kind there is, because the user says it\nrather than the tool inferring it.\n\nEach reasoning module owns its own told source, so it sits **inside the module**, not in Connections\n(Connections stays strictly the doorway for external accounts). It lives at `told/<name>-told.md`,\none file per module that has one, and it is shaped exactly like a channel doc\n([`templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,\nthen a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the\nlabel), and an assembly lists them in `inputs` exactly like channel records.\n\nThree things to keep true:\n\n- **It is elicited, not just waited for.** The module actively asks for it (the propose-a-draft,\n  you-confirm loop), and a record may be populated from a file the user uploads to Drive. The `Source`\n  column says which path each field comes in by.\n- **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)\n  already uses: the honest output is \"tell me X and I can run this\", and the module can offer to\n  research a first version for the user to confirm.\n- **Five modules have one.** The Brain ([`goal-told.md`](../told/goal-told.md)), People\n  ([`people-told.md`](../told/people-told.md)), Offerings\n  ([`offering-told.md`](../told/offering-told.md)), Organisation\n  ([`organisation-told.md`](../told/organisation-told.md)) and Profile\n  ([`profile-told.md`](../told/profile-told.md)). **Offerings is the worked example of this floor.**\n\n## Where each entry comes from, the spine\n\nEvery entry names what it is built from, one floor down, by **id**:\n\n- an **assembly**'s `inputs` are **record addresses** (`gmail#email-message`, or a told record such\n  as `offering-told#pitch`) and, optionally, other assembly ids;\n- a **count** names the assembly it counts within as `over`;\n- a **signal**'s `inputs` are **assembly ids**, and its `counts` are the deterministic counts\n  beneath the read.\n\nSo any signal walks straight down: **signal, then its counts, then the assembly each counts within,\nthen the records it gathers**.\nA count names the assembly it counts within as `over` (settled 18 September), so the walk passes\nthrough the counting floor instead of stepping over it. A card names its main `signal` and, when\nit quotes numbers from other reads, those reads as `supporting`; every count a card quotes must\nbelong to one of them. A card's *Sources* rows name their sources, and `build.js` checks each\nis reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),\nis always reachable: the goal is what every card is weighed against.\nThis is the *track-back*: nothing the tool says should float. Two iron rules:\n\n1. **Every id must resolve.** A dangling `inputs` or `counts` id is a bug, not a stub.\n2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not\n   connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,\n   as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)\n\n### Names: the id for the build, the label for a person\n\nEvery entry has two names. The **id** is the backend name: kebab-case, stable, what every join and\n`build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the\nslide, in the library and on a card, and it is plain English: say what it is the way the seller\nwould (\"How long your last note has waited, against usual\", not \"Reply gap vs own rhythm\"). Rename a label freely;\nrename an id only with every join that names it. A record is the one exception: its id is made from\nits label, which keeps the real API name, so its plain name lives in the source file's\n`## In plain words` table instead (renamed 18 September).\n\n### Ids\n\nKebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives\n`email-message`); it lives in the body table's Record column, not in frontmatter. A record is always\n**addressed by its source**, `<source-id>#<record-id>` (`gmail#email-message`, `offering-told#pitch`),\nso two sources may share a record name. Every other id (assembly, count, signal, card, widget) is\nunique across the library, because the folders are flat.\n\n## The widgets: a catalogue beside the ladder\n\nA card shows its evidence through **widgets**, one doc each in [`widgets/`](../widgets/), to the\nskeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no reading of its own,\nso it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already\nholds.\n\nThere are two families. **Detail widgets** (Timeline, What they said, People, Documents, Open items,\nCompared with usual) sit in a card's details, between What happened and Still unclear; a card takes at most\ntwo. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a\ncard's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:\nno new widget without a new shape.\n\nThe idea is close to Google's A2UI, where an app keeps a catalogue of trusted components and an\nagent sends data that picks from it and fills it. The difference is on purpose. A2UI's\ncomponents are usually small building blocks the agent arranges freely. Ours are large and\nspecific, and they sit in a fixed place on every card. The agent chooses and fills; it never\narranges. That is what lets a seller learn the set once.\n\nThe joins, checked by `build.js`: a detail widget's `fed_by` resolves to assemblies or counts;\na card's `widgets` resolve to detail widgets, and each is fed by something the card rests on\n(its counts, the inputs of its signal and its supporting signals, each count's `over`, every\nassembly those gather, and, when the card names\nwhat to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section\nheaded with its label, rows in its row form; and a card's `reply.module` is a reply widget.\n`build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it\ncan actually show, and lists them on the widget's page. A widget that reaches no record fails the\nbuild unless it says what it `waits_on`: today that is Open items, which rests only on counts,\nnone of which can say yet which assembly it counts within (`over: []`).\n\n### The phone block\n\nThe phone (`playbook/phone.html`) is drawn from the cards, not typed (decided 19 September). A card\nis on the phone when it carries a `phone:` block. The block holds only the words the phone uses where\nthey differ from the rest of the card: the short when on the badge, the filled action and what it\ndoes (`send` the draft, one `tap`, or `open` the reply sheet), the outline action if there is one,\nthe line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else\nthe phone reads from the card as it is: the title, the intro, how sure, the council, the documents,\nthe details on their spine with the widgets in place, the draft, and an Ask's answers. A card with\na `## The shorter draft` section offers the ask-for-a-change row, and every ask gets that draft\nback; that is a stand-in until the tool can really redraft. `build.js` checks that whatever the\nphone will reach for is there: an action that raises the draft needs `## The draft`, and an action\nthat raises a sheet needs a `reply.module` of choices, several or field, with its answers. The\norder on the phone is the home's, which `build.js` writes as `day`.\n\n## How an agent produces a module's library\n\nAll six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps\nbelow record how the conversion was done and guide any **new** module added later (working from a\n`module.md` draft rather than an old `CLAUDE.md`):\n\n1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);\n   move Principles, System prompt, User input, Output, Memory and Open questions into the body\n   verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.\n2. **Signals.** For the reasoned module, each named read in the old \"signal catalogue\" becomes one\n   `signals/<id>.md`. Carry its counts into `counts`, its sales-question handles into `answers`, its\n   tilt into `modes` and `kind`, and the worked example plus threshold logic into the body. A signal\n   earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).\n3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a\n   conversation history, a stakeholder map). Their `inputs` are the channel records they tidy\n   together, plus any records from the module's own told source.\n4. **Raw data.** The shared channels (raw-data floor, 01 only) live in\n   `channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row\n   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a\n   `told/<name>-told.md` of the same shape with `source: told` (see *The told source* above).\n5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly\n   `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm\n   nothing floats.\n\nThese steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's\nlibrary was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are\nretired (they are in `_archive/`), and `build.js` reads the library into the playbook.\n\n## The worked examples (the gold standard to imitate)\n\n- Channel: [`channels/gmail.md`](../channels/gmail.md)\n- Assembly: [`assemblies/person-history.md`](../assemblies/person-history.md)\n- Signal: [`signals/cooling-champion.md`](../signals/cooling-champion.md)\n- Module overview: [`modules/02-relationships.md`](../modules/02-relationships.md)\n\n**02-relationships is the worked example**, so copy its shape.\n\n## Deliberately deferred\n\n- **What each count counts.** Counts became their own floor on 18 September, joined by `over`. Every\n  entry is still `defined: false`: what it counts, which records it needs and when the number stops\n  meaning anything are not written yet.\n- **Floors above the cards** (insights, briefs) come once the cards prove out.\n"
+   "markdown": "# The library format: how the thinking is stored\n\nThis is the **contract** for the structured library that replaced the one-prose-`CLAUDE.md`-per-module\nmonolith. It is what an agent reads before producing entries. The matching skeletons live in\n[`templates/`](../templates/); one worked example of each lives in its real home (linked below).\n\n## Why we changed\n\nThe agent-anatomy prose was right for *reasoning*, but the part of each module that is really a\n**catalogue** (the named, enumerable things at each floor of the pipeline) was trapped in prose, so it\ncould not grow into a library or be rendered. We split each module in two:\n\n- **The catalogue floors** become a **library of structured entries** (this doc).\n- **The operating prose** (principles, system prompt, user input, output, memory, open questions)\n  becomes a slim **`module.md`** overview.\n\nThe mapping from the old agent-anatomy is exact:\n\n| Old agent-anatomy section | New home |\n|---|---|\n| Raw data | `channels/*.md` and `told/*.md` (raw-data floor) |\n| Reasoning, *assembling* | `assemblies/*.md` |\n| Reasoning, *counting* | `counts/*.md` |\n| Reasoning, *sensing* | `signals/*.md` |\n| Principles, System prompt, User input, Output, Memory, Open questions | `modules/<id>.md` |\n\nThe folders are flat: every entry names its owning module in a `module:` field rather than living\ninside a module folder.\n\n## Writing style for every entry\n\nA few rules, because a person reads these, not just a parser:\n\n1. **Plain English, GDS style.** Sentence case, short sentences, say what it means. No jargon or\n   wordplay in the prose a person reads: a signal does not \"fire\" to a reader, it is a read the tool\n   *makes*. Write the body for a person; the structured facets in the frontmatter carry the precise,\n   parser-facing data.\n2. **Plain English for the names we invent.** An assembly is \"Person history\", not \"Contact dossier\".\n   Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names\n   (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,\n   champion).\n3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named\n   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a\n   prospect, the offering). The specific case study lives only in the scenario and demo docs.\n4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than\n   em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids\n   (email-message).\n5. **Clarity before brevity.** One idea per sentence; break a long sentence rather than stack clauses.\n   Put the point first: say what a read *is* before how it works. Where a section names several things,\n   use a plain list, not a parenthetical run-on. Shorter prose is the result of clear writing, never the\n   goal; cramming ideas into one packed sentence reads as cryptic, not clear. Say a thing once: do not\n   repeat what the `blurb`, [`reading-principles.md`](reading-principles.md) or another section already\n   carries.\n\n## The two layers: structured frontmatter, plain-English body\n\nEvery assembly and signal is two layers in one file, kept cleanly apart so each is written to best\npractice for its reader:\n\n- **Frontmatter is the structured (machine) layer.** Flat, typed facets only: ids, enums, short lists\n  (the card face described below). Each field earns its place by carrying genuine structured data;\n  nothing is kept just because it was there. `floor` has been **dropped** (the folder, `signals/` vs\n  `assemblies/`, already states the type). Sentence-length content never goes here.\n- **The body is the human layer**, plain English under a **fixed set of section headings**, so it\n  reads well *and* a parser can address each section later. The headings are consistent across every\n  entry:\n  - **A signal** uses three sections: `## What it means` (just the read and when it applies, in a few\n    plain sentences), `## In practice` (one short generic example), and `## How it is worked out` (the precise\n    rule: the trigger and the confidence grading, leaning on the `needs` and `counts` facets above\n    rather than re-listing them; this is the single home for how confident the read is and what it\n    cannot see). \"How it is worked out\" opens by pointing at\n    [`reading-principles.md`](reading-principles.md) rather than re-teaching the shared rules.\n  - **An assembly** uses two sections: `## What it gathers` (the records it pulls together and the\n    identity work; a plain list where it gathers several things) and `## Where it comes from` (which input id\n    resolves to which channel or told source). An assembly is the floor, not a reading, by virtue of\n    living in `assemblies/`, so no entry needs to say so.\n\nA signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when\none is not connected, the checks resting on it drop out and confidence falls, which is how a **data\ngap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,\ncount-first, confidence grading, name-the-gap, answer a real question) live once in\n[`reading-principles.md`](reading-principles.md), so no signal re-teaches them.\n\n## The floors, and the one rule that varies by floor\n\nThe pipeline runs from raw data through assemblies and signals up toward actions. It mirrors the\nthree-floor track-back in [`tracing-back.md`](tracing-back.md): facts, then counting, then opinion.\nThe **granularity matches the floor**, so we write docs only where there is reasoning to hold:\n\n| Floor | Nature | Unit | Template |\n|---|---|---|---|\n| **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service** in `channels/` | [`templates/channel.md`](../templates/channel.md) |\n| **Told** | what only you can say | **one doc per module that has one**, in `told/` | [`templates/channel.md`](../templates/channel.md) |\n| **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`templates/assembly.md`](../templates/assembly.md) |\n| **Counts** | the arithmetic. Every entry is `defined: false` for now | **thin doc per entry** | [`templates/count.md`](../templates/count.md) |\n| **Signals** | the read, the first opinion | **rich doc per entry** | [`templates/signal.md`](../templates/signal.md) |\n| **Cards** | the suggestion, question or outcome | **one doc per card**, in the scenario's `cards/` | [`templates/card.md`](../templates/card.md) |\n\nPlus, per module, one **`modules/<id>.md`** ([`templates/module.md`](../templates/module.md)) holding the\noperating prose and the card face.\n\n**Frontmatter is only the card face.** It holds the flat, tag-like facets (ids, enums, short label\nlists, the future chips). Anything **nested or sentence-length** lives in the **body** as readable\nmarkdown: a channel's records become a **field-per-row table** (Record, Field, Source); a signal's\nthreshold and reasoning are prose in the body's sections (such as `How it is worked out`). A nested tree shoved into frontmatter\nrenders as an unreadable blob, so keep it out. If a value contains a colon, wrap it in single\nquotes; YAML reads an unquoted colon as a key separator, and the file fails to parse.\n\n**Every assembly and signal carries a `label` and a `blurb`**, the same pair `module.md` uses: the\n`label` is the plain-English display name, and the `blurb` is the **one-line short description on the\nentry's card face** in the library page. Keep the `blurb` to a single plain sentence (the long body\nis revealed on click, so it does not belong in the blurb). The library page,\n[`playbook/library.html`](../../playbook/library.html), reads exactly these fields from `data.js`, so\nediting a `blurb` and running `node build.js` updates its card with no other change.\n\nNot every module has every floor, and the library is meant to reveal that. **04-organization has no\nsignals** (it matches proof and gates drafts, so there is no behaviour to sense); **01-integrations**\nhas only raw data; **00-spine**'s \"assemblies\" are the scoreboard and calendar, a different kind of\nsynthesis. Absence is information; do not invent a floor a module does not have.\n\n## The told source: a module's own raw data\n\nRaw data has two homes. Most of it is the shared **channels** in `channels/` (the accounts you\nconnect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the\nuser **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That\n**told** input is raw data too, and the most deterministic kind there is, because the user says it\nrather than the tool inferring it.\n\nEach reasoning module owns its own told source, so it sits **inside the module**, not in Connections\n(Connections stays strictly the doorway for external accounts). It lives at `told/<name>-told.md`,\none file per module that has one, and it is shaped exactly like a channel doc\n([`templates/channel.md`](../templates/channel.md)): a card-face frontmatter with `source: told`,\nthen a `## Records` field-per-row table. Its records get ids the same way (the kebab-slug of the\nlabel), and an assembly lists them in `inputs` exactly like channel records.\n\nThree things to keep true:\n\n- **It is elicited, not just waited for.** The module actively asks for it (the propose-a-draft,\n  you-confirm loop), and a record may be populated from a file the user uploads to Drive. The `Source`\n  column says which path each field comes in by.\n- **An empty record is a told gap**, named not faked, the same banner [`tracing-back.md`](tracing-back.md)\n  already uses: the honest output is \"tell me X and I can run this\", and the module can offer to\n  research a first version for the user to confirm.\n- **Five modules have one.** The Brain ([`goal-told.md`](../told/goal-told.md)), People\n  ([`people-told.md`](../told/people-told.md)), Offerings\n  ([`offering-told.md`](../told/offering-told.md)), Organisation\n  ([`organisation-told.md`](../told/organisation-told.md)) and Profile\n  ([`profile-told.md`](../told/profile-told.md)). **Offerings is the worked example of this floor.**\n\n## Where each entry comes from, the spine\n\nEvery entry names what it is built from, one floor down, by **id**:\n\n- an **assembly**'s `inputs` are **record addresses** (`gmail#email-message`, or a told record such\n  as `offering-told#pitch`) and, optionally, other assembly ids;\n- a **count** names the assembly it counts within as `over`;\n- a **signal**'s `inputs` are **assembly ids**, and its `counts` are the deterministic counts\n  beneath the read.\n\nSo any signal walks straight down: **signal, then its counts, then the assembly each counts within,\nthen the records it gathers**.\nA count names the assembly it counts within as `over` (settled 18 September), so the walk passes\nthrough the counting floor instead of stepping over it. A card names its main `signal` and, when\nit quotes numbers from other reads, those reads as `supporting`; every count a card quotes must\nbelong to one of them. A card's *Sources* rows name their sources, and `build.js` checks each\nis reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),\nis always reachable: the goal is what every card is weighed against.\nThis is the *track-back*: nothing the tool says should float. Two iron rules:\n\n1. **Every id must resolve.** A dangling `inputs` or `counts` id is a bug, not a stub.\n2. **Name the gap, do not fake it.** Where a branch runs out of ground because a source is not\n   connected (warm paths without LinkedIn) or the user has not told us something, the entry says so,\n   as a **data gap** or a **told gap**. (See [`tracing-back.md`](tracing-back.md).)\n\n### Names: the id for the build, the label for a person\n\nEvery entry has two names. The **id** is the backend name: kebab-case, stable, what every join and\n`build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the\nslide, in the library and on a card, and it is plain English: say what it is the way the seller\nwould (\"How long your last note has waited, against usual\", not \"Reply gap vs own rhythm\"). Rename a label freely;\nrename an id only with every join that names it. A record is the one exception: its id is made from\nits label, which keeps the real API name, so its plain name lives in the source file's\n`## In plain words` table instead (renamed 18 September).\n\n### Ids\n\nKebab-slugs. A **record's id is the kebab-slug of its label** (`Email message` gives\n`email-message`); it lives in the body table's Record column, not in frontmatter. A record is always\n**addressed by its source**, `<source-id>#<record-id>` (`gmail#email-message`, `offering-told#pitch`),\nso two sources may share a record name. Every other id (assembly, count, signal, card, widget) is\nunique across the library, because the folders are flat.\n\n## The widgets: a catalogue beside the ladder\n\nA card shows its evidence through **widgets**, one doc each in [`widgets/`](../widgets/), to the\nskeleton in [`templates/widget.md`](../templates/widget.md). A widget holds no reading of its own,\nso it is not a floor: it sits beside the ladder, and is how a card shows what a rung below already\nholds.\n\nThere are two families. **Detail widgets** (Timeline, What they said, People, Documents, Open items,\nCompared with usual) sit in a card's details, between What happened and Still unclear; a card takes at most\ntwo. **Reply widgets** (Buttons, Choices, Several choices, A field, A draft) fill the sheet a\ncard's reply is given in; a card takes one. Widgets are told apart by shape, never by meaning:\nno new widget without a new shape.\n\nThe idea is close to Google's A2UI, where an app keeps a catalogue of trusted components and an\nagent sends data that picks from it and fills it. The difference is on purpose. A2UI's\ncomponents are usually small building blocks the agent arranges freely. Ours are large and\nspecific, and they sit in a fixed place on every card. The agent chooses and fills; it never\narranges. That is what lets a seller learn the set once.\n\nThe joins, checked by `build.js`: a detail widget's `fed_by` resolves to assemblies or counts;\na card's `widgets` resolve to detail widgets, and each is fed by something the card rests on\n(its counts, the inputs of its signal and its supporting signals, each count's `over`, every\nassembly those gather, and, when the card names\nwhat to send in `documents`, the proof library: why to write and what to send are two trails); each has a body section\nheaded with its label, rows in its row form; and a card's `reply.module` is a reply widget.\n`build.js` also walks each detail widget's `fed_by` down through the assemblies to the records it\ncan actually show, and lists them on the widget's page. A widget that reaches no record fails the\nbuild unless it says what it `waits_on`: today that is Open items, which rests only on counts,\nnone of which can say yet which assembly it counts within (`over: []`).\n\n### The phone block\n\nThe phone (`playbook/phone.html`) is drawn from the cards, not typed (decided 19 September). A card\nis on the phone when it carries a `phone:` block. The block holds only the words the phone uses where\nthey differ from the rest of the card: the short when on the badge, the filled action and what it\ndoes (`send` the draft, one `tap`, or `open` the reply sheet), the outline action if there is one,\nthe line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else\nthe phone reads from the card as it is: the title, the intro, how sure, the organisation, the documents,\nthe details on their spine with the widgets in place, the draft, and an Ask's answers. A card with\na `## The shorter draft` section offers the ask-for-a-change row, and every ask gets that draft\nback; that is a stand-in until the tool can really redraft. `build.js` checks that whatever the\nphone will reach for is there: an action that raises the draft needs `## The draft`, and an action\nthat raises a sheet needs a `reply.module` of choices, several or field, with its answers. The\norder on the phone is the home's, which `build.js` writes as `day`.\n\n### The scenario\n\nEverything above the cards is general: it must hold for any kind of sale. The pretend world and\nits cards are not. They are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,\nthe cast, the organisations, the documents) and a `cards/` (decided 19 September). Today there\nis one, `bops`, a patient sale to councils. A second, a mass sale, is meant to follow, standing\non the same channels, assemblies, counts and signals. `build.js` reads the one named in\n`SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a\ngeneral rule, the card changes, not the rule.\n\n### A card's day: what it is about, who it reaches, when, and what it waits on\n\nDecided 19 September, so the day is worked out from the cards rather than typed.\n\n- **`kind`** is the card's only label: Act, Ask, Connect or News. (Sustain, Advance and Expand were\n  dropped the same day: they were one picture of selling, and may mean nothing to a seller.)\n- **`about`** names the nouns the card concerns, of any type: a person, an organisation, a\n  document, the offering, or `you`. An Ask can be about anything the tool wants to learn.\n- **`to`** names who an Act reaches, when it reaches anyone. A brief for you has no `to`.\n- **`arrives`** is the working day the tool puts the card on the home. A card due \"any day this\n  week\" is not piled on Monday: the tool spreads the week, and quiet days take the cards that\n  cost nothing to wait. A card a watch turns up has no `arrives`.\n- **`when.until`** is the day it goes stale, or the world's date, left out when nothing says.\n  \"This week\" ends on Friday. The `words` are the when only.\n- **`watch`** is what the tool watches for once you act, taken from What happens next: what it\n  waits for, until when, the card it turns up (`then`), and what it does if nothing comes.\n- **Waiting.** A card waits for four reasons, and `build.js` works out all four into `waits_on`:\n  an Ask names it in `changes` (the answer changes it); it names `held_by` (a sequence its own\n  words give); a watch turns it up; or it is a second Act to the same person, because there is\n  one move per person at a time. For that last one the tool decides the order: a sequence the\n  cards state first, then what arrives first, what is owed, what gives (names `documents`)\n  before what asks, and what waiting a day costs. Two Acts to one person\n  that nothing tells apart fail the build: write them as one card. A card that waits carries\n  `held_words`, the line it shows while it waits.\n- `build.js` writes `day` (the home's order) and `days` (each date, the cards that arrive on it,\n  in that order). The phone shows a day's cards, hides a waiting card until what it waits on is\n  sent or answered, and ends every day on a page of what the tool is watching.\n\n## How an agent produces a module's library\n\nAll six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps\nbelow record how the conversion was done and guide any **new** module added later (working from a\n`module.md` draft rather than an old `CLAUDE.md`):\n\n1. **`module.md`.** Copy the card-face frontmatter (drop the old `raw_data` and `channels` blobs);\n   move Principles, System prompt, User input, Output, Memory and Open questions into the body\n   verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.\n2. **Signals.** For the reasoned module, each named read in the old \"signal catalogue\" becomes one\n   `signals/<id>.md`. Carry its counts into `counts`, its sales-question handles into `answers`, its\n   tilt into `kind`, and the worked example plus threshold logic into the body. A signal\n   earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).\n3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a\n   conversation history, a stakeholder map). Their `inputs` are the channel records they tidy\n   together, plus any records from the module's own told source.\n4. **Raw data.** The shared channels (raw-data floor, 01 only) live in\n   `channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row\n   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a\n   `told/<name>-told.md` of the same shape with `source: told` (see *The told source* above).\n5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly\n   `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm\n   nothing floats.\n\nThese steps were **additive**: the new files sat beside the old `CLAUDE.md` until each module's\nlibrary was complete. That is now done across all six modules, the per-module `CLAUDE.md` files are\nretired (they are in `_archive/`), and `build.js` reads the library into the playbook.\n\n## The worked examples (the gold standard to imitate)\n\n- Channel: [`channels/gmail.md`](../channels/gmail.md)\n- Assembly: [`assemblies/person-history.md`](../assemblies/person-history.md)\n- Signal: [`signals/cooling-champion.md`](../signals/cooling-champion.md)\n- Module overview: [`modules/02-relationships.md`](../modules/02-relationships.md)\n\n**02-relationships is the worked example**, so copy its shape.\n\n## Deliberately deferred\n\n- **What each count counts.** Counts became their own floor on 18 September, joined by `over`. Every\n  entry is still `defined: false`: what it counts, which records it needs and when the number stops\n  meaning anything are not written yet.\n- **Floors above the cards** (insights, briefs) come once the cards prove out.\n"
   },
   {
    "title": "Reading principles: the rules every signal applies",
@@ -8326,7 +8945,7 @@ window.LIBRARY = {
   },
   {
    "title": "The salesperson's 26 questions: the demand-side spec",
-   "intro": "<p>A real salesperson's own questions through the sales process (suggested by MJ at a show &amp; tell). They are the <strong>demand side</strong>: what the tool <em>must</em> be able to answer. The modules' signals and plays are the <strong>supply side</strong>: what it <em>can</em> produce. Where supply meets demand, the model holds; where it doesn't, that's the real work.</p>\n<p><strong>How we use them: settled.</strong> The questions are a <strong>lens, not the backbone</strong>: handles for showing how an answer traces down to plain facts (and where it can't), <strong>not</strong> the tool's filing system. A contact's memory stays in <code>02</code> as inferred reads, not a list of 26 answered fields. The one idea we keep from the stronger reframe: <em>a recommendation can be read as a standing question whose answer just changed in a way that points to a move.</em> (Recorded in <code>_archive/_scratch/open-questions.md</code>; the signals derived from these live in <code>library/signals/</code>.)</p>",
+   "intro": "<p><em>Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See <code>library-format.md</code>, \"A card's day\".</em></p>\n<p>A real salesperson's own questions through the sales process (suggested by MJ at a show &amp; tell). They are the <strong>demand side</strong>: what the tool <em>must</em> be able to answer. The modules' signals and plays are the <strong>supply side</strong>: what it <em>can</em> produce. Where supply meets demand, the model holds; where it doesn't, that's the real work.</p>\n<p><strong>How we use them: settled.</strong> The questions are a <strong>lens, not the backbone</strong>: handles for showing how an answer traces down to plain facts (and where it can't), <strong>not</strong> the tool's filing system. A contact's memory stays in <code>02</code> as inferred reads, not a list of 26 answered fields. The one idea we keep from the stronger reframe: <em>a recommendation can be read as a standing question whose answer just changed in a way that points to a move.</em> (Recorded in <code>_archive/_scratch/open-questions.md</code>; the signals derived from these live in <code>library/signals/</code>.)</p>",
    "sections": {
     "The list (verbatim)": {
      "html": "<p>1. What are the different conditions under which my product is needed? 2. What factors make up these conditions? 3. What organisations meet these conditions? 4. What roles make the buying decisions? 5. Who else influences the buying decisions? 6. Who are the individuals in those roles? 7. Do I know any of the individuals? 8. Do I have mutual connections that can introduce us? 9. What is the best way to contact them? 10. Which of the factors do they care most about? 11. What current information do I have available to share? 12. Which information is most relevant to them? 13. Do they understand my product? 14. Do they believe my product could help them? 15. What barriers need to be removed before they would buy? 16. Are those barriers likely to be removed? 17. Is there anything we can do to remove those barriers? 18. Did I get a response to my previous message? 19. When is the right time to chase? 20. What should my next message say? 21. Who should I contact most urgently? 22. Is there anything I've promised to do that I need to do now/today/this week? 23. What should my tone be with this person? 24. What should I suggest as a next step? 25. What questions should I ask them? 26. Do they respond better to formal or informal communication?</p>"
@@ -8345,11 +8964,11 @@ window.LIBRARY = {
    ],
    "id": "sales-questions",
    "file": "docs/sales-questions.md",
-   "markdown": "# The salesperson's 26 questions: the demand-side spec\n\nA real salesperson's own questions through the sales process (suggested by MJ at a show &\ntell). They are the **demand side**: what the tool *must* be able to answer. The modules'\nsignals and plays are the **supply side**: what it *can* produce. Where supply meets demand,\nthe model holds; where it doesn't, that's the real work.\n\n**How we use them: settled.** The questions are a **lens, not the backbone**: handles for\nshowing how an answer traces down to plain facts (and where it can't), **not** the tool's\nfiling system. A contact's memory stays in `02` as inferred reads, not a list of 26 answered\nfields. The one idea we keep from the stronger reframe: *a recommendation can be read as a\nstanding question whose answer just changed in a way that points to a move.* (Recorded in\n`_archive/_scratch/open-questions.md`; the signals derived from these live in `library/signals/`.)\n\n## The list (verbatim)\n1. What are the different conditions under which my product is needed?\n2. What factors make up these conditions?\n3. What organisations meet these conditions?\n4. What roles make the buying decisions?\n5. Who else influences the buying decisions?\n6. Who are the individuals in those roles?\n7. Do I know any of the individuals?\n8. Do I have mutual connections that can introduce us?\n9. What is the best way to contact them?\n10. Which of the factors do they care most about?\n11. What current information do I have available to share?\n12. Which information is most relevant to them?\n13. Do they understand my product?\n14. Do they believe my product could help them?\n15. What barriers need to be removed before they would buy?\n16. Are those barriers likely to be removed?\n17. Is there anything we can do to remove those barriers?\n18. Did I get a response to my previous message?\n19. When is the right time to chase?\n20. What should my next message say?\n21. Who should I contact most urgently?\n22. Is there anything I've promised to do that I need to do now/today/this week?\n23. What should my tone be with this person?\n24. What should I suggest as a next step?\n25. What questions should I ask them?\n26. Do they respond better to formal or informal communication?\n\n## Where each group lands (the pipeline)\nEach group with its **answer path** (fetched / told / inferred) and its **owner**.\n\n- **Define the need**: Q1 and Q2. *Told*, tool co-authoring. Owner: **Offerings** (the fit-shape).\n- **Find the targets**: Q3 to Q8. *Fetched + inferred*, pulling the fit-shape from Offerings.\n  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Expand.\n- **Reach them**: Q9. *Inferred* from where they actually respond. Owner: **People** (thin\n  today, mostly email connected).\n- **Match the message to the person**: Q10 to Q12, Q15, Q17, Q24 and Q25. Owner: a Brain **play**\n  (People's read + Offerings' answers + Organisation's proof). Advance.\n- **Read their state**: Q13 and Q14, Q16, Q19. *Inferred reads*: the soft, judgement end. Owner:\n  **People** sensing.\n- **Track and prioritise**: Q18, Q21 and Q22. *Fetched* facts and loose ends feeding Brain's\n  **triage**.\n- **Write it**: Q20, Q23, Q26. The **render**: Profile's voice, closeness from People, inside\n  Organisation's fence.\n\n## The five frontiers (where the real work still is)\n1. **Forecasting.** Q16 (\"are barriers *likely* to be removed?\"), plus the predictive edges of\n   Q14 and Q19. The model reads the **present** well but doesn't predict the **future**. It\n   reasons about *now*, not *next*. A genuinely new dimension.\n2. **The triage mechanism.** Q21 (\"who most urgently?\") confirms triage is central. How\n   Brain orders a day was settled on 18 September (six bands, by what waiting a day costs; see\n   `00-spine`). How many cards a given cadence allows is still open.\n3. **Timing thresholds.** Q19 (\"when to chase?\") is first-class, yet \"how long is quiet, how\n   strong a reply must be\" is the threshold knob still being worked in `02-relationships`.\n4. **Plumbing-bound answers.** Q8 (mutual connections) and Q9 (best channel) are answerable in\n   principle but thin until LinkedIn and more channels are connected: a *data* gap, not a model\n   gap. Name it so answer quality isn't oversold.\n5. **Coaching, not just drafting.** Q25 (\"what questions should I ask them?\") stretches the\n   output from \"a message to send\" to \"a move plus talking points.\" A possible widening of what\n   the tool hands back: a deliberate decision still pending.\n"
+   "markdown": "# The salesperson's 26 questions: the demand-side spec\n\n*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, \"A card's day\".*\n\nA real salesperson's own questions through the sales process (suggested by MJ at a show &\ntell). They are the **demand side**: what the tool *must* be able to answer. The modules'\nsignals and plays are the **supply side**: what it *can* produce. Where supply meets demand,\nthe model holds; where it doesn't, that's the real work.\n\n**How we use them: settled.** The questions are a **lens, not the backbone**: handles for\nshowing how an answer traces down to plain facts (and where it can't), **not** the tool's\nfiling system. A contact's memory stays in `02` as inferred reads, not a list of 26 answered\nfields. The one idea we keep from the stronger reframe: *a recommendation can be read as a\nstanding question whose answer just changed in a way that points to a move.* (Recorded in\n`_archive/_scratch/open-questions.md`; the signals derived from these live in `library/signals/`.)\n\n## The list (verbatim)\n1. What are the different conditions under which my product is needed?\n2. What factors make up these conditions?\n3. What organisations meet these conditions?\n4. What roles make the buying decisions?\n5. Who else influences the buying decisions?\n6. Who are the individuals in those roles?\n7. Do I know any of the individuals?\n8. Do I have mutual connections that can introduce us?\n9. What is the best way to contact them?\n10. Which of the factors do they care most about?\n11. What current information do I have available to share?\n12. Which information is most relevant to them?\n13. Do they understand my product?\n14. Do they believe my product could help them?\n15. What barriers need to be removed before they would buy?\n16. Are those barriers likely to be removed?\n17. Is there anything we can do to remove those barriers?\n18. Did I get a response to my previous message?\n19. When is the right time to chase?\n20. What should my next message say?\n21. Who should I contact most urgently?\n22. Is there anything I've promised to do that I need to do now/today/this week?\n23. What should my tone be with this person?\n24. What should I suggest as a next step?\n25. What questions should I ask them?\n26. Do they respond better to formal or informal communication?\n\n## Where each group lands (the pipeline)\nEach group with its **answer path** (fetched / told / inferred) and its **owner**.\n\n- **Define the need**: Q1 and Q2. *Told*, tool co-authoring. Owner: **Offerings** (the fit-shape).\n- **Find the targets**: Q3 to Q8. *Fetched + inferred*, pulling the fit-shape from Offerings.\n  Owner: **People** routine (fit-scan + stakeholder map + warm-path). Mostly Expand.\n- **Reach them**: Q9. *Inferred* from where they actually respond. Owner: **People** (thin\n  today, mostly email connected).\n- **Match the message to the person**: Q10 to Q12, Q15, Q17, Q24 and Q25. Owner: a Brain **play**\n  (People's read + Offerings' answers + Organisation's proof). Advance.\n- **Read their state**: Q13 and Q14, Q16, Q19. *Inferred reads*: the soft, judgement end. Owner:\n  **People** sensing.\n- **Track and prioritise**: Q18, Q21 and Q22. *Fetched* facts and loose ends feeding Brain's\n  **triage**.\n- **Write it**: Q20, Q23, Q26. The **render**: Profile's voice, closeness from People, inside\n  Organisation's fence.\n\n## The five frontiers (where the real work still is)\n1. **Forecasting.** Q16 (\"are barriers *likely* to be removed?\"), plus the predictive edges of\n   Q14 and Q19. The model reads the **present** well but doesn't predict the **future**. It\n   reasons about *now*, not *next*. A genuinely new dimension.\n2. **The triage mechanism.** Q21 (\"who most urgently?\") confirms triage is central. How\n   Brain orders a day was settled on 18 September (six bands, by what waiting a day costs; see\n   `00-spine`). How many cards a given cadence allows is still open.\n3. **Timing thresholds.** Q19 (\"when to chase?\") is first-class, yet \"how long is quiet, how\n   strong a reply must be\" is the threshold knob still being worked in `02-relationships`.\n4. **Plumbing-bound answers.** Q8 (mutual connections) and Q9 (best channel) are answerable in\n   principle but thin until LinkedIn and more channels are connected: a *data* gap, not a model\n   gap. Name it so answer quality isn't oversold.\n5. **Coaching, not just drafting.** Q25 (\"what questions should I ask them?\") stretches the\n   output from \"a message to send\" to \"a move plus talking points.\" A possible widening of what\n   the tool hands back: a deliberate decision still pending.\n"
   },
   {
    "title": "Selling to councils: one scenario, reverse-engineered",
-   "intro": "<p>A worked walkthrough of a single real goal, run <strong>backward</strong>. Where <code>docs/flow.md</code> walks the BOPS Expand goal forward in time, this one starts from a finished recommendation and peels each layer back, asking <em>\"what had to be true for this?\"</em> until we reach the raw data and the handful of things you told the tool once.</p>\n<p>The point is to make the <strong>build-up visible</strong>: nothing here is allowed to float above its raw material. Every insight is taken apart into the named facts it was reasoned from. The example is illustrative: the exact names and numbers stand in for the real ones; the <em>shape</em> is what matters.</p>\n<p><strong>The goal, in the user's own words (condensed):</strong> sell a new SaaS to local authorities; a good product but a tough, multi-year sell. Find the early adopters: individuals inside councils who feel the pain of legacy tech and want better tools for their officers. Some can make buying decisions, some only influence them; either way there are several stakeholders to win per organisation. There's a working shortlist of about 30 organisations and named people, and the aim is to get them to commit to a <strong>partial</strong> adoption now, with full adoption later.</p>\n<p>---</p>",
+   "intro": "<p><em>Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See <code>library-format.md</code>, \"A card's day\".</em></p>\n<p>A worked walkthrough of a single real goal, run <strong>backward</strong>. Where <code>docs/flow.md</code> walks the BOPS Expand goal forward in time, this one starts from a finished recommendation and peels each layer back, asking <em>\"what had to be true for this?\"</em> until we reach the raw data and the handful of things you told the tool once.</p>\n<p>The point is to make the <strong>build-up visible</strong>: nothing here is allowed to float above its raw material. Every insight is taken apart into the named facts it was reasoned from. The example is illustrative: the exact names and numbers stand in for the real ones; the <em>shape</em> is what matters.</p>\n<p><strong>The goal, in the user's own words (condensed):</strong> sell a new SaaS to local authorities; a good product but a tough, multi-year sell. Find the early adopters: individuals inside councils who feel the pain of legacy tech and want better tools for their officers. Some can make buying decisions, some only influence them; either way there are several stakeholders to win per organisation. There's a working shortlist of about 30 organisations and named people, and the aim is to get them to commit to a <strong>partial</strong> adoption now, with full adoption later.</p>\n<p>---</p>",
    "sections": {
     "Layer 1: The outcome (what you actually see)": {
      "html": "<p>One morning the tool surfaces a single card:</p>\n<p>&gt; <strong>Act on Gary Pearson at Council 14 today.</strong> He's quietly become your strongest &gt; advocate there, and he's just asked a question that opens a door (whether the &gt; product can import their existing case records), and he's pulled his head of IT into &gt; the thread. Lead with the records-import answer and the East Marston case study, and &gt; offer the partial rollout as the easy first step. Here's a draft in your voice.</p>\n<p>That's the whole output: who to act on, why now, what to include, and a ready message. Everything below is what it took to produce that one card.</p>\n<p><strong>The card, taken apart into its ingredients:</strong></p>\n<ul><li><em>who to act on</em>: Gary, surfaced by Relationships</li><li><em>why now</em>: the live question and the warming pattern, Relationships' reading</li><li><em>what to lead with</em>: the records-import answer and the partial-rollout first step (Offerings), and the East Marston case study (Organisation)</li><li><em>the words themselves</em>: rendered in your voice (Profile), inside the compliance fence (Organisation)</li><li><em>the fact it was chosen today, over everything else</em>: Brain's triage</li></ul>\n<p>So even the finished card is an assembly of pieces from five modules. Keep pulling.</p>"
@@ -8388,7 +9007,7 @@ window.LIBRARY = {
    ],
    "id": "scenario-councils",
    "file": "docs/scenario-councils.md",
-   "markdown": "# Selling to councils: one scenario, reverse-engineered\n\nA worked walkthrough of a single real goal, run **backward**. Where `docs/flow.md`\nwalks the BOPS Expand goal forward in time, this one starts from a finished\nrecommendation and peels each layer back, asking *\"what had to be true for this?\"*\nuntil we reach the raw data and the handful of things you told the tool once.\n\nThe point is to make the **build-up visible**: nothing here is allowed to float above\nits raw material. Every insight is taken apart into the named facts it was reasoned\nfrom. The example is illustrative: the exact names and numbers stand in for the real\nones; the *shape* is what matters.\n\n**The goal, in the user's own words (condensed):** sell a new SaaS to local\nauthorities; a good product but a tough, multi-year sell. Find the early adopters:\nindividuals inside councils who feel the pain of legacy tech and want better tools for\ntheir officers. Some can make buying decisions, some only influence them; either way\nthere are several stakeholders to win per organisation. There's a working shortlist of\nabout 30 organisations and named people, and the aim is to get them to commit to a\n**partial** adoption now, with full adoption later.\n\n---\n\n## Layer 1: The outcome (what you actually see)\n\nOne morning the tool surfaces a single card:\n\n> **Act on Gary Pearson at Council 14 today.** He's quietly become your strongest\n> advocate there, and he's just asked a question that opens a door (whether the\n> product can import their existing case records), and he's pulled his head of IT into\n> the thread. Lead with the records-import answer and the East Marston case study, and\n> offer the partial rollout as the easy first step. Here's a draft in your voice.\n\nThat's the whole output: who to act on, why now, what to include, and a ready message.\nEverything below is what it took to produce that one card.\n\n**The card, taken apart into its ingredients:**\n- *who to act on*: Gary, surfaced by Relationships\n- *why now*: the live question and the warming pattern, Relationships' reading\n- *what to lead with*: the records-import answer and the partial-rollout first step\n  (Offerings), and the East Marston case study (Organisation)\n- *the words themselves*: rendered in your voice (Profile), inside the compliance fence\n  (Organisation)\n- *the fact it was chosen today, over everything else*: Brain's triage\n\nSo even the finished card is an assembly of pieces from five modules. Keep pulling.\n\n## Layer 2: The decision (why this, out of a hundred quiet things)\n\nAt any moment you have about 30 organisations and several people in each, mostly\ninching along. On a normal day almost nothing is urgent. So Brain's real job here isn't\nto write. It's to **choose**: of everything quietly in motion, where did something\njust shift in a way that rewards a move *now*?\n\nBrain weighed Gary against the rest of the board, and his situation won on a few counts:\n- **something genuinely changed**: a new question and a new stakeholder appeared,\n  while most of the board is static today\n- **it fits the goal's shape**: a champion widening the coalition inside a target org\n  is exactly the kind of progress this goal wants\n- **it's gently time-sensitive**: an unanswered question from an engaged person goes\n  stale if ignored, and these relationships are too valuable to leave hanging\n- **it's low-risk to act**: answering a question he asked is welcome, not pushy, which\n  matters because the strategy says move patiently\n\nThis is a judgement Brain makes fresh each time, weighing the whole board against the\ngoal. It is not a standing routine. It's the **decision in the middle** that only\nBrain can make, because only Brain sees everything at once and holds the goal. (The\nmodule docs call this a *play*.)\n\nNotice the patient tempo doing real work: a more aggressive strategy might have\nsurfaced three moves this morning; this one surfaces the single move that has a\nnatural, welcome reason to reach out, and lets the rest keep simmering.\n\n## Layer 3: The pieces, and how they compounded into the brief\n\nBefore Brain could decide, it gathered a piece from each expert. Each piece is itself a\nsmall reading, and the brief is what you get when you combine them:\n\n- **Relationships** handed up: *\"Gary is a warming champion with a live question,\"* plus\n  the loose end (his records-import question is still unanswered) and the stakeholder\n  picture at Council 14.\n- **Offerings** handed up: the answer to a records-import worry, the partial-rollout\n  first step that's easy to say yes to, and the proof that reassures a cautious public\n  buyer.\n- **Organisation** handed up: the East Marston County case study (a comparable council\n  already live) and the compliance fence the message must stay inside.\n- **Profile** handed up: the voice the message is written in, and the preference to see it\n  before it sends.\n\nBrain compounded those into the **brief**: *act on Gary, because he's your advocate and\nhe's opening a technical door; lead with the records answer and the East Marston story;\noffer the partial rollout; keep it warm, not salesy.* Profile then rendered the brief into\nthe actual words, and Organisation did a final compliance pass.\n\nSo the brief is a **compounded** thing: its ingredients are other modules' readings,\nnot raw facts directly. To reach the raw data, we have to open up the biggest\ningredient: Relationships' reading.\n\n## Layer 4: The reading, taken all the way apart (the centrepiece)\n\n*\"Gary is a warming champion with a live question\"* is really **three smaller readings\nstacked together**, and each one rests on specific raw facts.\n\n**\"Gary is a champion\"**: read from a behaviour pattern, every line a plain fact\nfetched from your mail and calendar:\n- he started four of the last six email threads himself, rather than only replying\n  (*from the senders and timestamps in your mail*)\n- his replies land within a day and run several paragraphs (*from the gaps between\n  messages and their length*)\n- he writes with ownership: *\"once we've rolled this out,\" \"I'll put it to procurement\"*\n  (*from the words in his messages*)\n- he's copied two colleagues into threads over time (*from the changing list of\n  participants*)\n- he set up and attended two internal meetings about the product (*from your calendar*)\n\nNone of that is a tag you applied. Together, the facts **are** the verdict \"champion.\"\n\n**\"He's warming\"**: read not from the facts themselves but from how they're *trending*:\n- his replies have been getting faster over the last few weeks\n- the circle keeps widening: last Tuesday he added his head of IT, a name on no\n  earlier thread\n- he's been in touch more often lately\n\n**\"There's a live question\"**: read from one specific fact:\n- his most recent message asks whether the product can import their existing case\n  records, and it's still unanswered\n\nAnd underneath all of it, **two things you told the tool once** (the only user input in\nthe whole stack), which are what make the insight *worth raising* rather than merely\ntrue:\n- Council 14 is one of your 30 target organisations\n- your goal is to land a partial adoption and grow it, so an unanswered implementation\n  question from a champion who's pulling in technical people reads as a door opening,\n  not as trivia\n\nStrip the facts away and there is no insight; strip your two inputs away and the insight\nis real but pointless.\n\n**The stakeholder map at Council 14**, decomposed the same way. The unit of work here\nisn't a lone decision-maker. It's a small coalition, and the tool builds a picture of\nit:\n- **Gary (service-design lead): champion.** Read from the behaviour above.\n- **Rachel (head of IT): newly involved, stance unknown.** Read from her first\n  appearance on Tuesday's thread; nothing yet tells the tool whether she's an ally or a\n  sceptic, so it holds the question open rather than guessing.\n- **A budget holder: known to exist, not yet seen.** Read from the gap: nobody on the\n  threads so far has the authority to buy, and the goal needs someone who does, so the\n  tool flags the *absence* as the next thing to find.\n\nThe map is the same kind of assembly as the reading: roles inferred from who appears,\nhow they behave, and who they're copied alongside, with the holes called out as\nhonestly as the knowns.\n\n(Here the deal and the coalition coincide, because everyone in this effort sits inside\nCouncil 14. In general the **deal** is the unit, and it can pull in people across\norganisations; this single-org coalition is just its simplest shape. See\n[`02-relationships/assemblies/deal.md`](../assemblies/deal.md).)\n\n## Layer 5: The routines that produced the reading\n\nHow did Relationships have this reading ready? Because it runs a standing watch. In\nplain terms, its routine is:\n\n> Every morning I sweep the mail, calendar and Slack for the people across the 30\n> target organisations, and I keep a running read on each one. In between sweeps, the\n> moment something moves on one of them (a reply lands, a new name appears on a thread,\n> a meeting is made or missed, a silence stretches too long), I look at whether it\n> changes my read and whether it matters to the goal. When it does, and it points at a\n> move, I raise it.\n\nThe other modules run lighter routines:\n- **Offerings** keeps the council pitch sharp and ready (the entry step, the proof, the\n  objection answers) and doesn't go hunting; it answers when asked.\n- **Organisation** keeps the case study and the compliance fence current.\n- **Profile** stands ready to render in voice.\n- **Connections** has no routine at all. It only moves when another module reaches\n  through it to fetch or to send.\n\nRestating the distinction in this scenario: the watches above are **routines**: each\nhas one owner and a standing job. The priority call back in Layer 2 is a **play**: no\nsingle owner, a decision in the middle. Both are needed; they're just different shapes.\n\n## Layer 6: The strategy the routines came from, and what Brain needed first\n\nThe routines didn't appear from nowhere; Brain wrote them from the strategy. And the\nstrategy didn't appear either. Brain built it *with you*, out of your paragraph. That\nsynthesis is the first real act in the whole system, so it's worth slowing down on.\n\n**What Brain drew out of your paragraph:**\n- the offering, and a two-step finish line: partial adoption now, full adoption later,\n  so every org sits somewhere on that ladder\n- the tempo: tough, multi-year, low urgency, which is itself an instruction to sustain\n  patiently and never push, because a clumsy chase costs a relationship built over years\n- the target, which is a *mindset* (people who feel the legacy-tech pain), not a\n  category like \"councils\"\n- the buying structure: several stakeholders per org, deciders and influencers both, so\n  you win a coalition rather than a contact\n- the starting board: about 30 named orgs and people, already in flight\n\n**What Brain needed before it could synthesise** (it isn't instant):\n- a goal shaped well enough: Brain may come back with a few questions to fill the gaps\n  (\"what counts as 'engaged'?\", \"what's the easy first yes?\", \"who are the 30?\")\n- the modules' starting material: the pitch loaded into Offerings, the accounts\n  connected so there's data to watch at all, your seed list of orgs and people\n- a first baseline scan: a pass over the whole board so it knows where each\n  relationship currently stands, before it can say what's worth doing first\n\nOnly once those are in place can Brain turn \"sell to councils\" into concrete standing\nwork (*\"Relationships, watch these 30 for these movements; Offerings, sharpen these\nanswers\"*), and the machine starts to tick.\n\nOne twist this goal puts on the three kinds of work: because the shortlist of *orgs* is fixed,\n**Expand** here mostly isn't new logos. It is new *people*, widening the coalition inside an\norg you already have (find Gary's colleagues and win them too). Expanding counts whether the ground is\nnew or one you already hold; *moving the deal forward* with the people already in it is Advance. So\nExpand turns inward, while Sustain and Advance carry most of the weight.\n\n## Layer 7: The raw-material floor\n\nKeep peeling, and everything bottoms out in two piles, and only two.\n\n**Fetched**: pulled in through Connections, the only thing that reaches outside:\n- the back-and-forth in your mail: who wrote, when, how fast, how long, to whom, and\n  what was said\n- the meetings on your calendar: what was booked, kept, moved, or dropped\n- mentions in Slack: who's talking about whom in the deal channels\n- what the open web says: a council's new digital strategy, a leadership change, a\n  tender, a public talk\n\nThese arrive as plain facts with no meaning attached. Connections never reads them.\n\n**Told**: what you, and only you, put in. It's a short list:\n- the goal itself\n- the seed list of which orgs and people to chase\n- your voice, and your preferences (such as \"show me everything before it sends\")\n\nAnd the line it took us a few tries to get right: **characterisation is not in the told\npile.** You don't tell the tool that Gary is a champion. The tool reads that off his\nbehaviour, and that reading is the entire point of the Relationship module. You supply\nthe goal, the targets, and your voice; the tool supplies the *meaning*. Strip the\nfetched facts and there are no insights; strip your few inputs and the insights are real\nbut aimless. Put both piles together and you get a card that says: act on Gary, today,\nbecause… and here's the draft.\n\n---\n\n## The shape of it\n\nRead from the bottom up, that's the picture: many raw facts at the wide base, narrowing\nthrough readings into a few insights, compounding into one brief, plated into one action\nat the point. Not a route you travel: an **assembly you build**. `docs/flow.md` shows\nthe same machine moving forward in time; this shows it standing still and taken apart,\nso you can see what every layer is made of.\n\nThis assembly was once a live view in the blueprint app, which is now archived in `_archive/`.\nToday the last slide of `playbook/deck.html`, \"How a card is built\", draws the same idea as a\npyramid, straight from the library: channels at the base, then the gathers, the counts and the\nreads, and the card at the peak.\n"
+   "markdown": "# Selling to councils: one scenario, reverse-engineered\n\n*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, \"A card's day\".*\n\nA worked walkthrough of a single real goal, run **backward**. Where `docs/flow.md`\nwalks the BOPS Expand goal forward in time, this one starts from a finished\nrecommendation and peels each layer back, asking *\"what had to be true for this?\"*\nuntil we reach the raw data and the handful of things you told the tool once.\n\nThe point is to make the **build-up visible**: nothing here is allowed to float above\nits raw material. Every insight is taken apart into the named facts it was reasoned\nfrom. The example is illustrative: the exact names and numbers stand in for the real\nones; the *shape* is what matters.\n\n**The goal, in the user's own words (condensed):** sell a new SaaS to local\nauthorities; a good product but a tough, multi-year sell. Find the early adopters:\nindividuals inside councils who feel the pain of legacy tech and want better tools for\ntheir officers. Some can make buying decisions, some only influence them; either way\nthere are several stakeholders to win per organisation. There's a working shortlist of\nabout 30 organisations and named people, and the aim is to get them to commit to a\n**partial** adoption now, with full adoption later.\n\n---\n\n## Layer 1: The outcome (what you actually see)\n\nOne morning the tool surfaces a single card:\n\n> **Act on Gary Pearson at Council 14 today.** He's quietly become your strongest\n> advocate there, and he's just asked a question that opens a door (whether the\n> product can import their existing case records), and he's pulled his head of IT into\n> the thread. Lead with the records-import answer and the East Marston case study, and\n> offer the partial rollout as the easy first step. Here's a draft in your voice.\n\nThat's the whole output: who to act on, why now, what to include, and a ready message.\nEverything below is what it took to produce that one card.\n\n**The card, taken apart into its ingredients:**\n- *who to act on*: Gary, surfaced by Relationships\n- *why now*: the live question and the warming pattern, Relationships' reading\n- *what to lead with*: the records-import answer and the partial-rollout first step\n  (Offerings), and the East Marston case study (Organisation)\n- *the words themselves*: rendered in your voice (Profile), inside the compliance fence\n  (Organisation)\n- *the fact it was chosen today, over everything else*: Brain's triage\n\nSo even the finished card is an assembly of pieces from five modules. Keep pulling.\n\n## Layer 2: The decision (why this, out of a hundred quiet things)\n\nAt any moment you have about 30 organisations and several people in each, mostly\ninching along. On a normal day almost nothing is urgent. So Brain's real job here isn't\nto write. It's to **choose**: of everything quietly in motion, where did something\njust shift in a way that rewards a move *now*?\n\nBrain weighed Gary against the rest of the board, and his situation won on a few counts:\n- **something genuinely changed**: a new question and a new stakeholder appeared,\n  while most of the board is static today\n- **it fits the goal's shape**: a champion widening the coalition inside a target org\n  is exactly the kind of progress this goal wants\n- **it's gently time-sensitive**: an unanswered question from an engaged person goes\n  stale if ignored, and these relationships are too valuable to leave hanging\n- **it's low-risk to act**: answering a question he asked is welcome, not pushy, which\n  matters because the strategy says move patiently\n\nThis is a judgement Brain makes fresh each time, weighing the whole board against the\ngoal. It is not a standing routine. It's the **decision in the middle** that only\nBrain can make, because only Brain sees everything at once and holds the goal. (The\nmodule docs call this a *play*.)\n\nNotice the patient tempo doing real work: a more aggressive strategy might have\nsurfaced three moves this morning; this one surfaces the single move that has a\nnatural, welcome reason to reach out, and lets the rest keep simmering.\n\n## Layer 3: The pieces, and how they compounded into the brief\n\nBefore Brain could decide, it gathered a piece from each expert. Each piece is itself a\nsmall reading, and the brief is what you get when you combine them:\n\n- **Relationships** handed up: *\"Gary is a warming champion with a live question,\"* plus\n  the loose end (his records-import question is still unanswered) and the stakeholder\n  picture at Council 14.\n- **Offerings** handed up: the answer to a records-import worry, the partial-rollout\n  first step that's easy to say yes to, and the proof that reassures a cautious public\n  buyer.\n- **Organisation** handed up: the East Marston County case study (a comparable council\n  already live) and the compliance fence the message must stay inside.\n- **Profile** handed up: the voice the message is written in, and the preference to see it\n  before it sends.\n\nBrain compounded those into the **brief**: *act on Gary, because he's your advocate and\nhe's opening a technical door; lead with the records answer and the East Marston story;\noffer the partial rollout; keep it warm, not salesy.* Profile then rendered the brief into\nthe actual words, and Organisation did a final compliance pass.\n\nSo the brief is a **compounded** thing: its ingredients are other modules' readings,\nnot raw facts directly. To reach the raw data, we have to open up the biggest\ningredient: Relationships' reading.\n\n## Layer 4: The reading, taken all the way apart (the centrepiece)\n\n*\"Gary is a warming champion with a live question\"* is really **three smaller readings\nstacked together**, and each one rests on specific raw facts.\n\n**\"Gary is a champion\"**: read from a behaviour pattern, every line a plain fact\nfetched from your mail and calendar:\n- he started four of the last six email threads himself, rather than only replying\n  (*from the senders and timestamps in your mail*)\n- his replies land within a day and run several paragraphs (*from the gaps between\n  messages and their length*)\n- he writes with ownership: *\"once we've rolled this out,\" \"I'll put it to procurement\"*\n  (*from the words in his messages*)\n- he's copied two colleagues into threads over time (*from the changing list of\n  participants*)\n- he set up and attended two internal meetings about the product (*from your calendar*)\n\nNone of that is a tag you applied. Together, the facts **are** the verdict \"champion.\"\n\n**\"He's warming\"**: read not from the facts themselves but from how they're *trending*:\n- his replies have been getting faster over the last few weeks\n- the circle keeps widening: last Tuesday he added his head of IT, a name on no\n  earlier thread\n- he's been in touch more often lately\n\n**\"There's a live question\"**: read from one specific fact:\n- his most recent message asks whether the product can import their existing case\n  records, and it's still unanswered\n\nAnd underneath all of it, **two things you told the tool once** (the only user input in\nthe whole stack), which are what make the insight *worth raising* rather than merely\ntrue:\n- Council 14 is one of your 30 target organisations\n- your goal is to land a partial adoption and grow it, so an unanswered implementation\n  question from a champion who's pulling in technical people reads as a door opening,\n  not as trivia\n\nStrip the facts away and there is no insight; strip your two inputs away and the insight\nis real but pointless.\n\n**The stakeholder map at Council 14**, decomposed the same way. The unit of work here\nisn't a lone decision-maker. It's a small coalition, and the tool builds a picture of\nit:\n- **Gary (service-design lead): champion.** Read from the behaviour above.\n- **Rachel (head of IT): newly involved, stance unknown.** Read from her first\n  appearance on Tuesday's thread; nothing yet tells the tool whether she's an ally or a\n  sceptic, so it holds the question open rather than guessing.\n- **A budget holder: known to exist, not yet seen.** Read from the gap: nobody on the\n  threads so far has the authority to buy, and the goal needs someone who does, so the\n  tool flags the *absence* as the next thing to find.\n\nThe map is the same kind of assembly as the reading: roles inferred from who appears,\nhow they behave, and who they're copied alongside, with the holes called out as\nhonestly as the knowns.\n\n(Here the deal and the coalition coincide, because everyone in this effort sits inside\nCouncil 14. In general the **deal** is the unit, and it can pull in people across\norganisations; this single-org coalition is just its simplest shape. See\n[`02-relationships/assemblies/deal.md`](../assemblies/deal.md).)\n\n## Layer 5: The routines that produced the reading\n\nHow did Relationships have this reading ready? Because it runs a standing watch. In\nplain terms, its routine is:\n\n> Every morning I sweep the mail, calendar and Slack for the people across the 30\n> target organisations, and I keep a running read on each one. In between sweeps, the\n> moment something moves on one of them (a reply lands, a new name appears on a thread,\n> a meeting is made or missed, a silence stretches too long), I look at whether it\n> changes my read and whether it matters to the goal. When it does, and it points at a\n> move, I raise it.\n\nThe other modules run lighter routines:\n- **Offerings** keeps the council pitch sharp and ready (the entry step, the proof, the\n  objection answers) and doesn't go hunting; it answers when asked.\n- **Organisation** keeps the case study and the compliance fence current.\n- **Profile** stands ready to render in voice.\n- **Connections** has no routine at all. It only moves when another module reaches\n  through it to fetch or to send.\n\nRestating the distinction in this scenario: the watches above are **routines**: each\nhas one owner and a standing job. The priority call back in Layer 2 is a **play**: no\nsingle owner, a decision in the middle. Both are needed; they're just different shapes.\n\n## Layer 6: The strategy the routines came from, and what Brain needed first\n\nThe routines didn't appear from nowhere; Brain wrote them from the strategy. And the\nstrategy didn't appear either. Brain built it *with you*, out of your paragraph. That\nsynthesis is the first real act in the whole system, so it's worth slowing down on.\n\n**What Brain drew out of your paragraph:**\n- the offering, and a two-step finish line: partial adoption now, full adoption later,\n  so every org sits somewhere on that ladder\n- the tempo: tough, multi-year, low urgency, which is itself an instruction to sustain\n  patiently and never push, because a clumsy chase costs a relationship built over years\n- the target, which is a *mindset* (people who feel the legacy-tech pain), not a\n  category like \"councils\"\n- the buying structure: several stakeholders per org, deciders and influencers both, so\n  you win a coalition rather than a contact\n- the starting board: about 30 named orgs and people, already in flight\n\n**What Brain needed before it could synthesise** (it isn't instant):\n- a goal shaped well enough: Brain may come back with a few questions to fill the gaps\n  (\"what counts as 'engaged'?\", \"what's the easy first yes?\", \"who are the 30?\")\n- the modules' starting material: the pitch loaded into Offerings, the accounts\n  connected so there's data to watch at all, your seed list of orgs and people\n- a first baseline scan: a pass over the whole board so it knows where each\n  relationship currently stands, before it can say what's worth doing first\n\nOnly once those are in place can Brain turn \"sell to councils\" into concrete standing\nwork (*\"Relationships, watch these 30 for these movements; Offerings, sharpen these\nanswers\"*), and the machine starts to tick.\n\nOne twist this goal puts on the three kinds of work: because the shortlist of *orgs* is fixed,\n**Expand** here mostly isn't new logos. It is new *people*, widening the coalition inside an\norg you already have (find Gary's colleagues and win them too). Expanding counts whether the ground is\nnew or one you already hold; *moving the deal forward* with the people already in it is Advance. So\nExpand turns inward, while Sustain and Advance carry most of the weight.\n\n## Layer 7: The raw-material floor\n\nKeep peeling, and everything bottoms out in two piles, and only two.\n\n**Fetched**: pulled in through Connections, the only thing that reaches outside:\n- the back-and-forth in your mail: who wrote, when, how fast, how long, to whom, and\n  what was said\n- the meetings on your calendar: what was booked, kept, moved, or dropped\n- mentions in Slack: who's talking about whom in the deal channels\n- what the open web says: a council's new digital strategy, a leadership change, a\n  tender, a public talk\n\nThese arrive as plain facts with no meaning attached. Connections never reads them.\n\n**Told**: what you, and only you, put in. It's a short list:\n- the goal itself\n- the seed list of which orgs and people to chase\n- your voice, and your preferences (such as \"show me everything before it sends\")\n\nAnd the line it took us a few tries to get right: **characterisation is not in the told\npile.** You don't tell the tool that Gary is a champion. The tool reads that off his\nbehaviour, and that reading is the entire point of the Relationship module. You supply\nthe goal, the targets, and your voice; the tool supplies the *meaning*. Strip the\nfetched facts and there are no insights; strip your few inputs and the insights are real\nbut aimless. Put both piles together and you get a card that says: act on Gary, today,\nbecause… and here's the draft.\n\n---\n\n## The shape of it\n\nRead from the bottom up, that's the picture: many raw facts at the wide base, narrowing\nthrough readings into a few insights, compounding into one brief, plated into one action\nat the point. Not a route you travel: an **assembly you build**. `docs/flow.md` shows\nthe same machine moving forward in time; this shows it standing still and taken apart,\nso you can see what every layer is made of.\n\nThis assembly was once a live view in the blueprint app, which is now archived in `_archive/`.\nToday the last slide of `playbook/deck.html`, \"How a card is built\", draws the same idea as a\npyramid, straight from the library: channels at the base, then the gathers, the counts and the\nreads, and the card at the peak.\n"
   },
   {
    "title": "Tracing it back: questions down to the plain facts",
@@ -8449,8 +9068,7 @@ window.LIBRARY = {
   },
   {
    "id": "<kebab-slug>",
-   "kind": "<act|ask|connect|told>",
-   "label": "<Sustain|Advance|Expand|Ask|Connect|Told>",
+   "kind": "<act|ask|connect|news>",
    "order": "<n>",
    "signal": "<signal-id>",
    "signal_status": "provisional",
@@ -8464,8 +9082,16 @@ window.LIBRARY = {
     "..."
    ],
    "counts_status": "provisional",
-   "person": "<person-id>",
-   "council": "<council-id>",
+   "about": [
+    "<noun-id>",
+    "..."
+   ],
+   "to": "<person-id>",
+   "changes": [
+    "<card-id>",
+    "..."
+   ],
+   "arrives": "<YYYY-MM-DD>",
    "documents": [
     "<document-id>",
     "..."
@@ -8478,11 +9104,20 @@ window.LIBRARY = {
    "sure_because": "<one line>",
    "when": {
     "mode": "<fresh|dated|rhythm>",
-    "words": "<the one small line shown on the front>",
-    "until": "<YYYY-MM-DD>"
+    "until": "<YYYY-MM-DD>",
+    "words": "<the one small line shown on the front: the when only, never the hold>"
    },
+   "watch": [
+    {
+     "for": "<what comes back, e.g. Karen's reply>",
+     "until": "<YYYY-MM-DD>",
+     "then": "<card-id>",
+     "next": "<line>",
+     "otherwise": "<line>"
+    }
+   ],
    "held_by": "<optional card-id>",
-   "held_words": "<optional line>",
+   "held_words": "<line>",
    "reply": {
     "module": "<buttons|choices|several|field|draft>",
     "placeholder": "<...>",
@@ -8567,7 +9202,7 @@ window.LIBRARY = {
     "The draft"
    ],
    "file": "templates/card.md",
-   "markdown": "---\n# THE TOP RUNG. One doc per card, at library/cards/<id>.md.\n# A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the\n# seller, written as if the tool already existed. Unlike every floor below it, a card is NOT\n# agnostic: it names real people, councils and documents from library/world/.\n# The card is where the ladder comes out. `signal` is what it rests on and `counts` are the\n# numbers it may quote; both MUST resolve, because that join is what stops a card floating.\n# Two layers: FRONTMATTER is the machine layer; THE BODY is the card's words, in the tool's\n# own first-person voice. Plain English, British spelling, short sentences, no em dashes.\nid: <kebab-slug>              # unique across the library; by convention <label>-<who>-<what>\nkind: <act|ask|connect|told>  # the shape of the card\nlabel: <Sustain|Advance|Expand|Ask|Connect|Told>   # for kind: act, one of the first three, and\n                              # it MUST be among the modes of the signal above it\norder: <n>                    # the LAST tie-break only. build.js places each card by what waiting\n                              # a day would cost (see ../modules/00-spine.md); keep this in step\nsignal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*\nsignal_status: provisional    # read off the card, not yet decided\nsupporting: [<signal-id>, ...]  # optional. Other reads the card also leans on, e.g. a gift that\n                              # comes from Loose end on a Cooling champion card.\nsupporting_status: provisional\ncounts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*,\n                              # and MUST belong to the signal or one of the supporting signals\ncounts_status: provisional\nperson: <person-id>           # who it is about. MUST resolve to ../world/cast.md; `you` for a\n                              # card about the seller's own setup\ncouncil: <council-id>         # optional: where. MUST resolve to ../world/councils.md\ndocuments: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md\nwidgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in\n                              # the details between What happened and Still unclear. Each needs a body\n                              # section headed with the widget's label, its rows in the widget's\n                              # row form, and must be fed by something this card rests on.\nsure: <sure|likely|a hunch>   # how sure, earned from the WEAKEST evidence the card stands on:\n                              # sure = a fact on record (a bounce, a date in a tender),\n                              # likely = a pattern against their own usual (silence),\n                              # a hunch = a reading of someone's words. One step down for a\n                              # source not connected, too little history, or one sign alone.\n                              # Never a number. See ../docs/reading-principles.md, section 6.\nsure_because: <one line>      # required with `sure`: what it stands on, shown under the word\nwhen:                         # omit entirely when the card is a \"whenever\"\n  mode: <fresh|dated|rhythm>  #   fresh = stale in days. dated = the world sets it. rhythm = a window.\n  words: <the one small line shown on the front>\n  until: <YYYY-MM-DD>         #   for mode: dated only\nheld_by: <optional card-id>   # this card ripens only after that one lands; shown faded until then\nheld_words: <optional line>   # with held_by only: the line a held card shows in place of `when`\nreply:\n  module: <buttons|choices|several|field|draft>   # the reply widget. MUST resolve to ../widgets/*\n  placeholder: <...>          #   field only: the grey words in the empty field\n  header: <...>               #   several only: the list header over the picks\nactions:                      # the buttons on the front, first one filled. Title Case, starting\n  - label: <Title Case Verb ...>   #   with a verb, e.g. Send the Note, Not Now\n    style: <filled|tinted|plain>\n    opens: <draft|reasons>    #   optional: raises the draft sheet or the Not Relevant reasons\n    says: <...>               #   optional: what the tool says back once it is pressed\n    confirms: <picks|field>   #   optional, for several and field: confirms the answer\n    limit: <n>                #   with confirms: picks only\nreasons:                      # optional: the three one-tap whys behind Not Relevant\n  - label: <Title Case>\n    says: <...>\nanswers:                      # choices only: the rows of an Ask; one may be `suggested: true`\n  - label: <...>\n    says: <...>\npicks: [<...>, ...]           # several only\nnotsure:                      # optional: Still unclear as a one-tap question, two or three replies\n  - label: <Title Case>\n    says: <what that answer changes>\ndraft:                        # optional, with a `## The draft` section in the body\n  title: <...>\n  hand: <Title Case Verb ...> #   the sheet's button, matching where the note goes (Send where mail is connected, Open in Mail where it is not)\n  sub: <...>\n  footer: <...>\nphone:                        # optional: the card on playbook/phone.html. Only cards with this block are on the phone.\n  when: <...>                 #   the short when on the front's badge, e.g. Any day this week\n  act: <Title Case Verb ...>  #   the filled action, e.g. Send Message\n  act_does: <send|tap|open>   #   send: sends the draft · tap: one tap · open: raises the reply.module sheet\n  view: <Title Case Verb ...> #   optional: the outline action, which raises the draft\n  said: <...>                 #   the line said back after the reply, with Undo\n  done: <...>                 #   the dark card's heavy line, e.g. Sent to Karen\n  done_text: <...>            #   the dark card's receipt: what I did, what I updated, what I'll do next\n  subject: <...>              #   optional: the draft's subject line\n---\n\n# <the action, as the card's title>\n\n<!-- The front. One or two lines of reason, no more. Say the why plainly; the numbers that\n     back it belong on the back. For a Sustain card the reason MUST name the gift: what the\n     other person gets out of it. A card is an observation with a suggested move, never a\n     task: no due dates, no owners, no statuses. -->\n\n## What happened\n<!-- ACT CARDS. The first bullet is the why-now, and it earns the card its place today.\n     Each later bullet is one observation. Where a bullet quotes a number, that number must\n     come from one of the `counts` above, said in plain words rather than as an id. -->\n\n## <a detail widget's label, e.g. Timeline>\n<!-- ONE SECTION PER WIDGET in `widgets`, headed with its label exactly. Rows only, each a list\n     item in the widget's row form, parts split by \" · \". Every row must trace to a record\n     named in Sources, and use only names, dates and numbers the card already holds. -->\n\n## Sources\n<!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.\n     `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or\n     told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,\n     so the words need not repeat them. build.js checks every source is reached by what the card\n     rests on. The goal and the list of targets are `goal-told`, always reachable. A source that\n     a read needs but that is not connected (LinkedIn) is a data gap: say it in your own words,\n     or the build adds a plain line saying it. -->\n\n## Still unclear\n<!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it\n     may become a one-tap question with two or three replies, and each reply says what it\n     changes. Ask for facts, never for a verdict the tool should reach itself. -->\n\n## What happens next\n<!-- ACT CARDS. What happens after the seller acts: what the tool will watch for, and when it\n     will come back. If it would come back with the same reason twice, say what it will do\n     instead. -->\n\n<!-- ASK CARDS use four different sections in place of the four above:\n       ## Known so far                what it has worked out for itself, so the ask is not lazy\n       ## What's missing              the precise point it could go no further, having looked first\n       ## What your answer changes    each answer's consequence, said back after the pick\n       ## Where your answer is saved  which told record the answer becomes, so it is asked once\n     CONNECT CARDS name the source that is not connected and what would become answerable.\n     TOLD CARDS are an outcome with nothing to do; the button is Got It. -->\n\n## The draft\n<!-- Optional, for a card whose action opens a prepared message. The note itself, in the\n     seller's voice, as plain paragraphs. Nothing sends without the seller's say-so. -->\n"
+   "markdown": "---\n# THE TOP RUNG. One doc per card, at library/scenarios/<scenario>/cards/<id>.md.\n# A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the\n# seller, written as if the tool already existed. Unlike every floor below it, a card is NOT\n# agnostic: it names real people, organisations and documents from its scenario's world/.\n# The card is where the ladder comes out. `signal` is what it rests on and `counts` are the\n# numbers it may quote; both MUST resolve, because that join is what stops a card floating.\n# Two layers: FRONTMATTER is the machine layer; THE BODY is the card's words, in the tool's\n# own first-person voice. Plain English, British spelling, short sentences, no em dashes.\nid: <kebab-slug>              # unique across the library; by convention <kind>-<who>-<what>\nkind: <act|ask|connect|news>  # the shape of the card, and its only label\norder: <n>                    # the LAST tie-break only. build.js places each card by what waiting\n                              # a day would cost (see ../modules/00-spine.md); keep this in step\nsignal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*\nsignal_status: provisional    # read off the card, not yet decided\nsupporting: [<signal-id>, ...]  # optional. Other reads the card also leans on, e.g. a gift that\n                              # comes from Loose end on a Cooling champion card.\nsupporting_status: provisional\ncounts: [<count-id>, ...]     # the numbers this card quotes. Each MUST resolve to ../counts/*,\n                              # and MUST belong to the signal or one of the supporting signals\ncounts_status: provisional\nabout: [<noun-id>, ...]       # what it is about, of any type: a person, an organisation, a\n                              # document, the offering, or `you`. Each MUST resolve in ../world/\nto: <person-id>               # act only, optional: who the move reaches. One move per person at\n                              # a time: build.js makes a second Act to the same person wait\nchanges: [<card-id>, ...]     # ask only, optional: the cards the answer changes. They wait for it\narrives: <YYYY-MM-DD>         # the working day the tool puts it on the home. Left out only when a\n                              # watch turns it up (another card's watch.then names it)\ndocuments: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md\nwidgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../widgets/*, shown in\n                              # the details between What happened and Still unclear. Each needs a body\n                              # section headed with the widget's label, its rows in the widget's\n                              # row form, and must be fed by something this card rests on.\nsure: <sure|likely|a hunch>   # how sure, earned from the WEAKEST evidence the card stands on:\n                              # sure = a fact on record (a bounce, a date in a tender),\n                              # likely = a pattern against their own usual (silence),\n                              # a hunch = a reading of someone's words. One step down for a\n                              # source not connected, too little history, or one sign alone.\n                              # Never a number. See ../docs/reading-principles.md, section 6.\nsure_because: <one line>      # required with `sure`: what it stands on, shown under the word\nwhen:                         # omit entirely when the card is a \"whenever\"\n  mode: <fresh|dated|rhythm>  #   fresh = stale in days. dated = the world sets it. rhythm = a window.\n  until: <YYYY-MM-DD>         #   the day it goes stale, or the world's date. Required for dated;\n                              #   otherwise only when the card's own words give it\n  words: <the one small line shown on the front: the when only, never the hold>\nwatch:                        # optional: what I watch for once you act, from What happens next\n  - for: <what comes back, e.g. Karen's reply>\n    until: <YYYY-MM-DD>       #   optional: the last day I wait\n    then: <card-id>           #   optional: the card that arrives if it comes\n    next: <line>              #   optional: what I do when it comes\n    otherwise: <line>         #   optional: what I do if nothing has come by until\nheld_by: <optional card-id>   # a sequence the card's own words give: it waits until that one lands\nheld_words: <line>            # required whenever the card waits (held_by, an Ask's changes, or a\n                              # second move to the same person): the line it shows while it waits\nreply:\n  module: <buttons|choices|several|field|draft>   # the reply widget. MUST resolve to ../widgets/*\n  placeholder: <...>          #   field only: the grey words in the empty field\n  header: <...>               #   several only: the list header over the picks\nactions:                      # the buttons on the front, first one filled. Title Case, starting\n  - label: <Title Case Verb ...>   #   with a verb, e.g. Send the Note, Not Now\n    style: <filled|tinted|plain>\n    opens: <draft|reasons>    #   optional: raises the draft sheet or the Not Relevant reasons\n    says: <...>               #   optional: what the tool says back once it is pressed\n    confirms: <picks|field>   #   optional, for several and field: confirms the answer\n    limit: <n>                #   with confirms: picks only. Only on an Ask about what you intend or\n                              #   prefer (where to start); never on one about what happened, where\n                              #   every true answer must be allowed\nreasons:                      # optional: the three one-tap whys behind Not Relevant\n  - label: <Title Case>\n    says: <...>\nanswers:                      # choices only: the rows of an Ask; one may be `suggested: true`\n  - label: <...>\n    says: <...>\npicks: [<...>, ...]           # several only\nnotsure:                      # optional: Still unclear as a one-tap question, two or three replies\n  - label: <Title Case>\n    says: <what that answer changes>\ndraft:                        # optional, with a `## The draft` section in the body\n  title: <...>\n  hand: <Title Case Verb ...> #   the sheet's button, matching where the note goes (Send where mail is connected, Open in Mail where it is not)\n  sub: <...>\n  footer: <...>\nphone:                        # optional: the card on playbook/phone.html. Only cards with this block are on the phone.\n  when: <...>                 #   the short when on the front's badge, e.g. Any day this week\n  act: <Title Case Verb ...>  #   the filled action, e.g. Send Message\n  act_does: <send|tap|open>   #   send: sends the draft · tap: one tap · open: raises the reply.module sheet\n  view: <Title Case Verb ...> #   optional: the outline action, which raises the draft\n  said: <...>                 #   the line said back after the reply, with Undo\n  done: <...>                 #   the dark card's heavy line, e.g. Sent to Karen\n  done_text: <...>            #   the dark card's receipt: what I did, what I updated, what I'll do next\n  subject: <...>              #   optional: the draft's subject line\n---\n\n# <the action, as the card's title>\n\n<!-- The front. One or two lines of reason, no more. Say the why plainly; the numbers that\n     back it belong on the back. For a card that sends a message, the reason MUST name\n     what the other person gets out of it. A card is an observation with a suggested move, never a\n     task: no due dates, no owners, no statuses. -->\n\n## What happened\n<!-- ACT CARDS. The first bullet is the why-now, and it earns the card its place today.\n     Each later bullet is one observation. Where a bullet quotes a number, that number must\n     come from one of the `counts` above, said in plain words rather than as an id. -->\n\n## <a detail widget's label, e.g. Timeline>\n<!-- ONE SECTION PER WIDGET in `widgets`, headed with its label exactly. Rows only, each a list\n     item in the widget's row form, parts split by \" · \". Every row must trace to a record\n     named in Sources, and use only names, dates and numbers the card already holds. -->\n\n## Sources\n<!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.\n     `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or\n     told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,\n     so the words need not repeat them. build.js checks every source is reached by what the card\n     rests on. The goal and the list of targets are `goal-told`, always reachable. A source that\n     a read needs but that is not connected (LinkedIn) is a data gap: say it in your own words,\n     or the build adds a plain line saying it. -->\n\n## Still unclear\n<!-- ACT CARDS. One sentence naming the honest doubt. Where the seller holds the answer, it\n     may become a one-tap question with two or three replies, and each reply says what it\n     changes. Ask for facts, never for a verdict the tool should reach itself. -->\n\n## What happens next\n<!-- ACT CARDS. What happens after the seller acts: what the tool will watch for, and when it\n     will come back. If it would come back with the same reason twice, say what it will do\n     instead. -->\n\n<!-- ASK CARDS use four different sections in place of the four above:\n       ## Known so far                what it has worked out for itself, so the ask is not lazy\n       ## What's missing              the precise point it could go no further, having looked first\n       ## What your answer changes    each answer's consequence, said back after the pick\n       ## Where your answer is saved  which told record the answer becomes, so it is asked once\n     CONNECT CARDS name the source that is not connected and what would become answerable.\n     TOLD CARDS are an outcome with nothing to do; the button is Got It. -->\n\n## The draft\n<!-- Optional, for a card whose action opens a prepared message. The note itself, in the\n     seller's voice, as plain paragraphs. Nothing sends without the seller's say-so. -->\n"
   },
   {
    "id": "<kebab-slug>",

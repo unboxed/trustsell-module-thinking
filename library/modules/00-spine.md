@@ -112,7 +112,7 @@ question of every card: **what would waiting a day cost?** The answer is already
 its `when`, what it owes and what waits on it, so `build.js` works out the place rather than anyone
 typing it. Six bands, in order:
 
-1. **Gone tomorrow.** A date the world set, within a day.
+1. **Gone tomorrow.** Its last day (`until`) is today or tomorrow.
 2. **Worse every day.** Something owed (a promise, an unanswered question), or a fresh moment going
    stale.
 3. **Holding something up.** A card another card waits on. Asks land here often: ten seconds that
@@ -121,10 +121,16 @@ typing it. Six bands, in order:
 5. **Due by its rhythm.** Right this week, no worse next week.
 6. **Costs nothing to wait.**
 
-Within a band, the council further up the ladder comes first, then the surer card. One guard runs
-across every band: **one move per person at a time**. A second card for the same person is held by
-the first and sits right under it. The pace is not a band: how many cards a day comes from your
-time and cadence (Profile), ties between Sustain and Expand from your style (Profile), and how
+Within a band, the organisation further up the ladder comes first, then the surer card. One guard
+runs across every band: **one move per person at a time**. A second Act to the same person (its
+`to`) waits for the first and sits right under it. The Brain decides which goes first, not the
+seller (19 September): what is owed first, then what gives before what asks, then what waiting a
+day costs. (My reason, not yet yours.) Two that nothing tells apart should be one card. A card also
+waits when an Ask's answer changes it, or when its own words give a sequence. The rules are in
+`docs/library-format.md`, "A card's day".
+
+The pace is not a band: how many cards a day comes from your
+time and cadence (Profile), ties between keeping what you have and starting something new from your style (Profile), and how
 early a rhythm card shows from the goal's tempo.
 
 ## Output

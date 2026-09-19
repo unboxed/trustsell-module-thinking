@@ -3,7 +3,6 @@ id: blocker
 module: 02-relationships
 label: Someone blocking the deal
 blurb: Someone who keeps raising the same objection and stalls the deal.
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [conversation-history, person-history, meeting-history, objection-list, deal]

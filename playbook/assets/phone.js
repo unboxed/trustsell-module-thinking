@@ -4,8 +4,10 @@
    typed). The slides hold it in an iframe inside their bezel.
 
    The address says what to show:
-     phone.html                   the day: every card with a phone block, in the home's order
-     phone.html?cards=a,b,c       those cards, in that order
+     phone.html                   the day: the cards that arrive today, in the home's order. The
+                                  week strip shows any other day's. A card that waits on another
+                                  slides in once that one is done, and every day ends on a page
+                                  saying what the tool is watching (decided 19 September)
      phone.html?card=a            one card on its own, with the count line (the details slide)
      &open=details                scrolled into the details
      &fresh                       start clean: nothing remembered, nothing kept
@@ -123,10 +125,10 @@
   }
 
   function front(card) {
-    var p = card.phone, kind = card.kind === 'act' ? card.label.toLowerCase() : card.kind;
-    var badges = [p.when, card.councilName].filter(Boolean);
+    var p = card.phone, kind = card.kind;
+    var badges = [p.when, card.orgName].filter(Boolean);
     return '<div class="snap"></div><article class="card deck__card deck__card--front">' +
-      '<div class="deck__labels"><span class="kind kind--' + kind + '">' + esc(card.label) + '</span>' +
+      '<div class="deck__labels"><span class="kind kind--' + kind + '">' + esc(kind[0].toUpperCase() + kind.slice(1)) + '</span>' +
       (card.sure ? '<span class="deck__sure" title="' + esc(card.sure_because) + '">' + esc(card.sure) + '</span>' : '') + '</div>' +
       '<h2>' + esc(card.title) + '</h2>' + card.intro +
       (badges.length ? '<div class="badges">' + badges.map(function (b) { return '<span class="badge">' + esc(b) + '</span>'; }).join('') + '</div>' : '') +
@@ -137,7 +139,7 @@
   function actions(card) {
     var p = card.phone;
     var act = '<button class="reply__row reply__row--action act act--send" type="button" ' +
-      (p.act_does === 'open' ? 'data-reply-open' : 'data-send-message') + '>' + esc(p.act) + '</button>';
+      (p.act_does === 'open' || p.act_does === 'view' ? 'data-reply-open' : 'data-send-message') + '>' + esc(p.act) + '</button>';
     if (!p.view) return act + '<button class="ios-btn act act--skip act--skip-alone" type="button">Skip</button>';
     return act + '<button class="ios-btn act act--view" type="button" data-reply-open>' + esc(p.view) + '</button>' +
       '<button class="ios-btn act act--skip" type="button">Skip</button>' +
@@ -170,14 +172,18 @@
   function sheet(card) {
     var p = card.phone, module = card.reply && card.reply.module;
     if (p.act_does === 'open') {
-      var several = module === 'several', rows = module === 'field' ? '' : (card.answers || []).map(function (a) {
-        return '<li role="' + (several ? 'checkbox' : 'radio') + '" aria-checked="false" tabindex="0">' + esc(a.label) + '</li>';
+      var several = module === 'several', rows = module === 'field' ? '' : (card.answers || card.picks || []).map(function (a) {
+        return '<li role="' + (several ? 'checkbox' : 'radio') + '" aria-checked="false" tabindex="0">' + esc(a.label || a) + '</li>';
       }).join('');
-      var place = module === 'field' ? 'Type a name or a date' : 'Type your answer…';
+      /* Several choices can carry a limit, from the action that confirms them. Only an Ask about what
+         you intend or prefer takes one; an Ask about what happened never does (19 September). */
+      var limit = several ? +((card.actions || []).filter(function (a) { return a.limit; })[0] || {}).limit || 0 : 0;
+      var place = (card.reply && card.reply.placeholder) || (module === 'field' ? 'Type a name or a date' : 'Type your answer…');
       return '<div class="reply-sheet" role="group" aria-label="Your answer">' +
         '<div class="reply-sheet__top"><span></span><button class="reply-sheet__close" type="button" aria-label="Close">' + SVG.close + '</button></div>' +
         '<h2>' + esc(card.title) + '</h2>' +
-        '<ul class="reply-sheet__rows"' + (module === 'choices' ? ' role="radiogroup"' : several ? ' role="group"' : '') + ' aria-label="Your answer">' + rows +
+        (several && card.reply.header ? '<p class="reply-sheet__header">' + esc(card.reply.header) + '</p>' : '') +
+        '<ul class="reply-sheet__rows"' + (limit ? ' data-limit="' + limit + '"' : '') + (module === 'choices' ? ' role="radiogroup"' : several ? ' role="group"' : '') + ' aria-label="Your answer">' + rows +
         '<li><input type="text" placeholder="' + place + '" aria-label="' + place + '"></li></ul>' +
         '<div class="reply-sheet__foot"><button class="ios-btn ios-btn--filled" type="button" data-send data-send-message disabled>Next ' + SVG.next + '</button></div></div>';
     }
@@ -186,6 +192,13 @@
     }).join('') : '';
     var body = function (s) { return card.sections[s].html + files; };
     var again = card.sections['The shorter draft'];
+    /* A draft that is not mail (a brief, a Slack message, a tender's questions) is handed over,
+       not sent: its head is the draft's own title, and its one action is the card's hand-over. */
+    var handed = p.act_does === 'view', head = handed ? card.draft.title : 'Email';
+    if (handed) return '<div class="reply-sheet reply-sheet--email" role="group" aria-label="' + esc(head) + '">' +
+      '<div class="email__head">' + SVG.file + '<span>' + esc(head) + '</span><button class="reply-sheet__close" type="button" aria-label="Close">' + SVG.close + '</button></div>' +
+      '<div class="email__part"><div class="email__body" tabindex="0">' + card.sections['The draft'].html + '</div></div>' +
+      '<button class="ios-btn email__send" type="button" data-send data-send-message>' + esc(card.draft.hand) + '</button></div>';
     return '<div class="reply-sheet reply-sheet--email" role="group" aria-label="The message">' +
       '<div class="email__head">' + SVG.mail + '<span>Email</span><button class="reply-sheet__close" type="button" aria-label="Close">' + SVG.close + '</button></div><div>' +
       (p.subject ? '<div class="email__part"><span class="email__label">Subject</span><p>' + esc(p.subject) + '</p></div>' : '') +
@@ -229,16 +242,59 @@
     }
     return '<div class="week">' + rows + '</div>';
   }
-  function day(cards) {
-    var n = cards.length;
-    return '<div class="screen screen--week" data-title-at="209"><div class="pager" data-pager>' +
-      cards.map(function (c, k) { return page(c, k, n); }).join('') + '</div>' +
+  /* A day's cards: the ones the tool puts on the home that day, less any still waiting on a card
+     that is not done. Sending (or answering) frees what waits on it; skipping does not. */
+  var isDone = function (id) { return memory[id] && memory[id].state === 'is-sent'; };
+  function cardsOn(date) {
+    return ((LIB.days || {})[date] || []).map(find).filter(function (c) {
+      return c && c.phone && (c.waits_on || []).every(isDone);
+    });
+  }
+  /* What the tool is watching on a day: the watches set by cards you have acted on. On the last
+     day of a watch, what it will do if nothing comes. */
+  function watching(date) {
+    var lines = [];
+    (LIB.cards || []).forEach(function (c) {
+      if (!isDone(c.id) || !c.watch || c.arrives > date) return;
+      [].concat(c.watch).forEach(function (w) {
+        if (w.until && date > w.until) return;
+        lines.push(w.until === date && w.otherwise ? 'Nothing from ' + w.for.replace(/'s .*$/, '') + ' by today. ' + w.otherwise
+                                                   : 'Watching for ' + w.for + '.');
+      });
+    });
+    return lines;
+  }
+  function dayWord(date) {
+    var gap = Math.round((new Date(date + 'T12:00:00Z') - new Date(LIB.today + 'T12:00:00Z')) / 864e5);
+    return gap === 0 ? 'today' : gap === 1 ? 'tomorrow' : DAYS[new Date(date + 'T12:00:00Z').getUTCDay()];
+  }
+  /* After the day's last card: not a card, the card's shape as a faded outline with nothing in it
+     but the big words, grey, and what the tool is still watching (19 September, by looking:
+     https://claude.ai/artifact/CdpkU44FdAYVj8NecebAfg). */
+  function end(date, n) {
+    var lines = watching(date), w = dayWord(date);
+    var on = w === 'today' || w === 'tomorrow' ? w : 'on ' + w;
+    var head = (n ? 'No more cards ' : 'No cards ') + on + '.';
+    return '<div class="screen__page screen__page--end" role="group" aria-label="' + esc(head) + '" data-end>' +
+      '<div class="day-end"><h2>' + esc(head) + '</h2>' +
+      (lines.length ? lines.map(function (l) { return '<p>' + esc(l) + '</p>'; }).join('')
+                    : '<p>Nothing I am watching yet. Once you act on a card, I watch for what comes back.</p>') +
+      '</div></div>';
+  }
+  function pagesOf(date) {
+    var cards = cardsOn(date), n = cards.length;
+    return {cards: cards, html: cards.map(function (c, k) { return page(c, k, n + 1); }).join('') + end(date, n), count: n + 1};
+  }
+  function day(date) {
+    var d = pagesOf(date), first = d.cards[0];
+    return '<div class="screen screen--week" data-title-at="209" data-date="' + date + '"><div class="pager" data-pager>' + d.html + '</div>' +
       '<div class="screen__shared"><div class="screen__bar"></div><div class="screen__head">' + statusbar +
-      top('<span class="screen__day" aria-live="polite">Today</span><span class="screen__title" aria-hidden="true">' + esc(cards[0].title) + '</span>') + '</div>' +
+      top('<span class="screen__day" aria-live="polite">Today</span><span class="screen__title" aria-hidden="true">' + esc(first ? first.title : '') + '</span>') + '</div>' +
       week() +
-      '<div class="dots" role="img" aria-label="Card 1 of ' + n + '">' + cards.map(function (c, k) { return '<i' + (k ? '' : ' class="is-on"') + '></i>'; }).join('') + '</div>' +
+      '<div class="dots" role="img" aria-label="Card 1 of ' + d.count + '">' + dots(d.count) + '</div>' +
       '</div><div class="home-indicator" aria-hidden="true"></div></div>';
   }
+  function dots(n) { var h = ''; for (var k = 0; k < n; k++) h += '<i' + (k ? '' : ' class="is-on"') + '></i>'; return h; }
   /* One card on its own, as the details slide shows it: the header scrolls with the card and a
      count line says where it sits in the day. It says back one line; it does not darken. */
   function one(card, k, n) {
@@ -251,15 +307,13 @@
 
   var mount = document.getElementById('day');
   if (mount && LIB) {
-    var today = (LIB.day || []).map(find).filter(function (c) { return c && c.phone; });
-    var named = function (list) { return list.split(',').map(find).filter(function (c) { return c && c.phone; }); };
+    var today = (LIB.day || []).map(find).filter(function (c) { return c && c.phone && c.arrives === LIB.today; });
     var html;
     if (q.get('card')) {
       var c = find(q.get('card'));
       html = c && c.phone ? one(c, Math.max(0, today.indexOf(c)), today.length) : '';
     } else {
-      var cards = q.get('cards') ? named(q.get('cards')) : today;
-      html = cards.length ? day(cards) : '';
+      html = day(LIB.today);
     }
     if (!html) html = '<p class="phone-missing">No card here has a phone block yet.</p>';
     mount.innerHTML = '<div class="phone">' + html + '</div>';
@@ -285,14 +339,24 @@
       fit();
       window.addEventListener('resize', fit);
     }
-    // What was remembered: which cards were sent or skipped, and which marks were pressed.
-    mount.querySelectorAll('[data-card]').forEach(function (host) {
+    restore(mount);
+  }
+  // What was remembered: which cards were sent or skipped, and which marks were pressed.
+  function restore(root) {
+    root.querySelectorAll('[data-card]').forEach(function (host) {
       var m = memory[host.getAttribute('data-card')];
       if (!m) return;
       if (m.state && host.querySelector('.done')) host.classList.add(m.state);
       var marks = host.querySelectorAll('[data-mark]');
       (m.marks || []).forEach(function (j) { if (marks[j]) marks[j].setAttribute('aria-pressed', 'true'); });
     });
+  }
+  /* A card done (or undone) changes what waits on it: draw the day again, after the dark card has shown. */
+  function freed(host) {
+    var id = host.getAttribute('data-card'), pager = host.closest('[data-pager]');
+    if (!pager || !pager.redraw) return;
+    if (!(LIB.cards || []).some(function (c) { return (c.waits_on || []).indexOf(id) > -1; })) return;
+    setTimeout(function () { pager.redraw(); }, 50);
   }
   function remember(host) {
     var id = host && host.getAttribute('data-card');
@@ -321,7 +385,7 @@
     to.style.setProperty('--t', from.style.getPropertyValue('--t') || 0);
     to.classList.toggle('is-page', from.classList.contains('is-page'));
   }
-  document.querySelectorAll('[data-scroll]').forEach(function (sc) {
+  function wireScroll(sc) {
     var screen = sc.closest('.screen'), host = scope(sc), details = sc.querySelector('.details');
     var shared = screen.querySelector('.screen__shared');
     /* A screen whose card sits lower (the week strip's) says where its title reaches the bar. */
@@ -339,7 +403,8 @@
     if (q.get('open') === 'details' && sc === document.querySelector('[data-scroll]'))
       sc.scrollTop = details.offsetTop - parseFloat(getComputedStyle(sc).scrollPaddingTop);
     set();
-  });
+  }
+  document.querySelectorAll('[data-scroll]').forEach(wireScroll);
 
   /* Cards side by side: a sideways swipe moves one card at a time. The card in
      view (is-here) lends its scroll to the layer that stays put, its title to
@@ -347,8 +412,24 @@
      there, their edges in the gutters, so a swipe pulls in the edge you saw. */
   document.querySelectorAll('[data-pager]').forEach(function (pager) {
     var screen = pager.closest('.screen'), shared = screen.querySelector('.screen__shared');
-    var pages = pager.querySelectorAll('.screen__page'), dots = shared.querySelectorAll('.dots i');
-    var here = -1;
+    var pages, dotEls, here;
+    /* Draw the day again: another day picked, or a card done that frees one waiting on it.
+       The card in view stays in view. */
+    pager.redraw = function (date) {
+      var keepId = pages && pages[here] && pages[here].getAttribute('data-card');
+      if (date) screen.setAttribute('data-date', date);
+      var d = pagesOf(screen.getAttribute('data-date'));
+      pager.innerHTML = d.html;
+      shared.querySelector('.dots').innerHTML = dots(d.count);
+      restore(pager);
+      pager.querySelectorAll('[data-scroll]').forEach(wireScroll);
+      reset();
+      var to = date ? 0 : Math.max(0, [].indexOf.call(pages, pager.querySelector('[data-card="' + keepId + '"]')));
+      pager.scrollLeft = pages[to].offsetLeft - pages[0].offsetLeft;
+      here = -1; go();
+    };
+    function reset() { pages = pager.querySelectorAll('.screen__page'); dotEls = shared.querySelectorAll('.dots i'); here = -1; }
+    reset();
     function go() {
       /* One card's step: the pages overlap, so it is less than the screen. A hidden page has no width yet; it starts on the first card. */
       var w = pages.length > 1 ? pages[1].offsetLeft - pages[0].offsetLeft : pager.clientWidth;
@@ -356,9 +437,10 @@
       if (k === here) return;
       here = k;
       pages.forEach(function (pg, j) { pg.classList.toggle('is-here', j === k); pg.inert = j !== k; });
-      dots.forEach(function (d, j) { d.classList.toggle('is-on', j === k); });
+      dotEls.forEach(function (d, j) { d.classList.toggle('is-on', j === k); });
       shared.querySelector('.dots').setAttribute('aria-label', 'Card ' + (k + 1) + ' of ' + pages.length);
-      shared.querySelector('.screen__title').textContent = pages[k].querySelector('.deck__card h2').textContent;
+      shared.querySelector('.screen__title').textContent = pages[k].querySelector('h2').textContent;
+      screen.classList.toggle('is-at-end', pages[k].hasAttribute('data-end'));
       mirror(pages[k], shared);
     }
     pager.addEventListener('scroll', go, { passive: true }); go();
@@ -375,16 +457,26 @@
     send.disabled = !(sheet.querySelector('[aria-checked="true"]') || (input && input.value.trim()));
   }
   function choose(row) {
+    if (row.getAttribute('aria-disabled') === 'true') return;
     var on = row.getAttribute('aria-checked') === 'true';
     if (row.getAttribute('role') === 'radio') {
       row.parentNode.querySelectorAll('[role="radio"]').forEach(function (r) { r.setAttribute('aria-checked', 'false'); });
       row.setAttribute('aria-checked', 'true');
-    } else row.setAttribute('aria-checked', on ? 'false' : 'true');
+    } else {
+      row.setAttribute('aria-checked', on ? 'false' : 'true');
+      /* At the limit, the rows not ticked stand down until one is unticked. */
+      var list = row.parentNode, limit = +list.getAttribute('data-limit');
+      if (limit) {
+        var full = list.querySelectorAll('[aria-checked="true"]').length >= limit;
+        list.querySelectorAll('[role="checkbox"]').forEach(function (r) {
+          if (full && r.getAttribute('aria-checked') !== 'true') r.setAttribute('aria-disabled', 'true'); else r.removeAttribute('aria-disabled');
+        });
+      }
+    }
     ready(row.closest('.reply-sheet'));
   }
-  /* The week strip. Tapping a day moves the selection and the header names
-     it: Today, Tomorrow, Yesterday, or the weekday and date. The card stays; what a later
-     day shows is not written yet. */
+  /* The week strip. Tapping a day moves the selection, the header names it (Today, Tomorrow,
+     Yesterday, or the weekday and date) and the pager shows that day's cards. */
   function dayName(d, today) {
     var a = new Date(d.getAttribute('data-date') + 'T12:00:00');
     var t = new Date(today.getAttribute('data-date') + 'T12:00:00');
@@ -398,6 +490,8 @@
       x.setAttribute('aria-pressed', x === d ? 'true' : 'false');
     });
     screen.querySelector('.screen__day').textContent = dayName(d, screen.querySelector('.week__day.is-today'));
+    var pager = screen.querySelector('[data-pager]');
+    if (pager && pager.redraw) pager.redraw(d.getAttribute('data-date'));
   }
 
   document.addEventListener('click', function (e) {
@@ -420,6 +514,7 @@
       sc.querySelector('.reply-sheet').classList.remove('is-open');
       sc.classList.add('is-sent');
       remember(sc);
+      freed(sc);
       return;
     }
     /* Skip darkens the card too, where the card has a skipped state; the reason
@@ -445,9 +540,10 @@
       u.classList.remove('is-sent', 'is-skipped');
       u.querySelectorAll('[data-mark]').forEach(function (m) { m.setAttribute('aria-pressed', 'false'); });
       remember(u);
+      freed(u);
       return;
     }
-    if (open) scope(open).querySelector('.reply-sheet').classList.add('is-open');
+    if (open) { var sh = scope(open).querySelector('.reply-sheet'); sh.classList.add('is-open'); more(sh.querySelector('.reply-sheet__rows')); }
     else if (row) choose(row);
     else if (shut) shut.closest('.reply-sheet').classList.remove('is-open');
   });
@@ -468,6 +564,13 @@
     askState(sheet);
   }
 
+  /* A list of answers taller than the sheet fades at its foot while there are more rows below. */
+  function more(rows) {
+    if (rows) rows.classList.toggle('is-more', rows.scrollTop + rows.clientHeight < rows.scrollHeight - 2);
+  }
+  document.addEventListener('scroll', function (e) {
+    if (e.target.classList && e.target.classList.contains('reply-sheet__rows')) more(e.target);
+  }, true);
   document.addEventListener('input', function (e) {
     var sh = e.target.closest('.reply-sheet'); if (sh) { ready(sh); askState(sh); }
   });

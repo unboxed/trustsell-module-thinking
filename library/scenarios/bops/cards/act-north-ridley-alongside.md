@@ -1,23 +1,23 @@
 ---
-id: advance-north-ridley-alongside
+id: act-north-ridley-alongside
 order: 1
 kind: act
-label: Advance
 signal: understanding-gap
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [new-stakeholder]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [terms-used-wrongly, claims-restated-back, new-attendee-on-event, head-of-signature-scan]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: michelle-turner
-council: north-ridley
+about: [michelle-turner, north-ridley]
+to: michelle-turner                # who the move reaches; one move per person at a time
+arrives: 2026-09-16             # the day the tool puts it on the home
 documents: [alongside-one-pager]
 sure: "sure"
 sure_because: "A fact on record: three of their messages say replace or migrate off."
 when:
   mode: dated
-  words: "By tonight. The demo is tomorrow, Thursday 17 September."
   until: 2026-09-16
+  words: "By tonight. The demo is tomorrow, Thursday 17 September."
 reply:
   module: buttons
 actions:
@@ -40,6 +40,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the alongside one-pager."
+phone:
+  when: "By tonight"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "Before Thursday: BOPS sits alongside your case system"
+  said: "Sent. The demo brief is next."
+  done: "Sent to Michelle"
+  done_text: "The alongside one-pager went with it. I'm finishing the demo brief now: who is in the room, and the alongside diagram first."
 ---
 
 # Clear up North Ridley's misunderstanding before Thursday

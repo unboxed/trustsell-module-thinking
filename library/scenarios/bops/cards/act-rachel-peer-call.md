@@ -1,23 +1,27 @@
 ---
-id: advance-rachel-peer-call
+id: act-rachel-peer-call
 order: 12
 kind: act
-label: Advance
 signal: answer-gap
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [understanding-gap]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: rachel-gill
-council: westmoor
+about: [rachel-gill, westmoor]
+to: rachel-gill                # who the move reaches; one move per person at a time
+arrives: 2026-09-17             # the day the tool puts it on the home
 documents: [east-marston-case-study]
 sure: "likely"
 sure_because: "A pattern: the same worry, twice in four days."
-held_by: ask-rachel-meeting
+held_words: "Once the data-residency note is with her, and you have told me how you read her."
 when:
   mode: rhythm
-  words: "This week, once you have told me how you read her."
+  until: 2026-09-18
+  words: "This week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Rachel's answer to the call"
+    next: "If she takes it, I'll ask Andrew first and brief you."
 reply:
   module: buttons
 actions:
@@ -47,6 +51,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the officer feedback page."
+phone:
+  when: "This week"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "A call with East Marston's Head of IT"
+  said: "Sent. I'll ask Andrew if she says yes."
+  done: "Sent to Rachel"
+  done_text: "I'll watch for her answer. If she takes the call, I'll ask Andrew first and brief you on what he is likely to say."
 ---
 
 # Offer Rachel Gill a call with East Marston's IT lead

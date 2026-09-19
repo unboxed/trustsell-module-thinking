@@ -1,23 +1,26 @@
 ---
-id: expand-tarlton-tender
+id: act-tarlton-tender
 order: 15
 kind: act
-label: Expand
 signal: fit-match
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [buying-intent, warm-path]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: darren-cole
-council: tarlton
+about: [darren-cole, tarlton]
+to: darren-cole                # who the move reaches; one move per person at a time
+arrives: 2026-09-18             # the day the tool puts it on the home
 documents: []
 sure: "sure"
 sure_because: "A fact on record: the tender's own dates."
 when:
   mode: dated
-  words: "By 2 October: clarification questions close. Start this week."
   until: 2026-10-02
+  words: "By 2 October: clarification questions close. Start this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Tarlton's answers on the portal"
+    until: 2026-10-02
 reply:
   module: buttons
 actions:
@@ -40,6 +43,13 @@ draft:
   hand: "Copy for the Portal"
   sub: "to the procurement contact"
   footer: "Send through the portal, not by email. I'll watch for the answer."
+phone:
+  when: "By 2 October"
+  act: "View Questions"
+  act_does: view
+  said: "Copied. Paste them into the portal."
+  done: "Copied for the portal"
+  done_text: "The questions are on your clipboard for Tarlton's portal. I'll watch it for their answers, and ask you about bidding before 2 October."
 ---
 
 # Send Tarlton two clarification questions

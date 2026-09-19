@@ -3,7 +3,6 @@ id: recurring-objection
 module: 03-offerings
 label: A worry that keeps coming up
 blurb: The worry that comes up most across your deals, so you can answer it before it's asked.
-modes: [advance]
 kind: risk
 confidence: graded
 inputs: [objection-list, deal]

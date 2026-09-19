@@ -1,22 +1,27 @@
 ---
-id: advance-felton-price
+id: act-felton-price
 order: 9
 kind: act
-label: Advance
 signal: blocker
 signal_status: provisional   # mapped by reading the card, not yet confirmed
 supporting: [price-barrier]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
 counts: [repeated-objection-count, objection-name-match, your-price]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
-person: stephen-walsh
-council: felton
+about: [stephen-walsh, felton]
+to: stephen-walsh                # who the move reaches; one move per person at a time
+arrives: 2026-09-18             # the day the tool puts it on the home
 documents: [partial-rollout-price-sheet]
 sure: "likely"
 sure_because: "A pattern: all four of Stephen's messages mention the price."
 when:
   mode: rhythm
+  until: 2026-09-18
   words: "Any day this week."
+watch:                        # what I watch for once you act; a then card arrives only if it comes
+  - for: "Stephen's reply"
+    then: act-felton-director
+    next: "If the budget is still the answer, Shabana's director is next."
 reply:
   module: buttons
 actions:
@@ -39,6 +44,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the partial rollout price sheet."
+phone:
+  when: "Any day this week"
+  act: "Send Message"
+  act_does: send
+  view: "View Draft"
+  subject: "A smaller first step for Felton"
+  said: "Sent. I'll watch for Stephen's reply."
+  done: "Sent to Stephen"
+  done_text: "The partial rollout price sheet went with it. If the budget is still the answer, Shabana's director is next."
 ---
 
 # Offer Felton the partial rollout
