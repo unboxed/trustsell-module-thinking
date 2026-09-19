@@ -1,12 +1,12 @@
 ---
 id: days-open-vs-own-rhythm
-label: "How long it has been left open, against usual"
+label: "Time left hanging, against usual"
 used_by: [loose-end]
 over: []   # not written yet. One of: conversation-history, person-history, meeting-history
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# How long it has been left open, against usual
+# Time left hanging, against usual
 ## What it counts
 
 Not written yet.

@@ -1,13 +1,13 @@
 ---
 id: reply-gap-vs-own-rhythm
-label: "How long your last note has waited, against usual"
+label: "Wait for a reply, against usual"
 used_by: [cooling-champion]
 over: [person-history]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# How long your last note has waited, against usual
+# Wait for a reply, against usual
 ## What it counts
 
 Not written yet.

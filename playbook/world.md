@@ -130,7 +130,16 @@ above them the gathers, the counts and the reads, so the shape narrows as it com
 the other slides it is not typed: `deck.js` draws it from `data.js` when the deck opens, so it
 follows the library. A dashed line is a join not written yet (a count that cannot yet say which
 gather it counts within). Passed over: rings with the card at the centre, which could not fit
-the long names; one thread, which left the rest of the card on trust.
+the long names; one thread, which left the rest of the card on trust. Balanced 19 September, by
+looking (https://claude.ai/artifact/UA8xP4uwqtfz3V8KzPAgcx, "B · Names on the ground line"): the
+records had stood on their channel, one to six high, so the lines ended at eight heights and the
+tall stacks crowded the gathers. Now the channel names are the ground line, every line ends on
+them, and the records hang below. The counted pills are one size. Passed over: records capped
+at three high, which made the busiest channels too wide for the slide. The same day its words
+went one step down Apple's scale ("B · One step down": pills Footnote, channel names Subhead,
+records Caption 1), the pyramid kept at the same size, so the longest count sits on two lines
+and the stacks are shorter. Passed over: two steps down, too small to read across a room, and
+drawing the figure wider, which shrank everything rather than using the sides.
 
 **The phone is built** (decided 19 September, the user's call). The phone is no longer typed into
 `deck.html`. It is one page, `phone.html`, and `phone.js` draws it from `data.js`, so it says what

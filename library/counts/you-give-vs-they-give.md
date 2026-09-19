@@ -1,12 +1,12 @@
 ---
 id: you-give-vs-they-give
-label: "What you give, against what they give"
+label: "Your effort, against theirs"
 used_by: [one-sided]
 over: []   # not written yet. One of: person-history, conversation-history, meeting-history
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# What you give, against what they give
+# Your effort, against theirs
 ## What it counts
 
 Not written yet.

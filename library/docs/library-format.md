@@ -177,7 +177,7 @@ This is the *track-back*: nothing the tool says should float. Two iron rules:
 Every entry has two names. The **id** is the backend name: kebab-case, stable, what every join and
 `build.js` use. It never changes for the sake of wording. The **label** is what a person reads on the
 slide, in the library and on a card, and it is plain English: say what it is the way the seller
-would ("How long your last note has waited, against usual", not "Reply gap vs own rhythm"). Rename a label freely;
+would ("Wait for a reply, against usual", not "Reply gap vs own rhythm"). Rename a label freely;
 rename an id only with every join that names it. A record is the one exception: its id is made from
 its label, which keeps the real API name, so its plain name lives in the source file's
 `## In plain words` table instead (renamed 18 September).

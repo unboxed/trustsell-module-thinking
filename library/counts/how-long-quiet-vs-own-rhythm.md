@@ -1,13 +1,13 @@
 ---
 id: how-long-quiet-vs-own-rhythm
-label: "How long they have been quiet, against usual"
+label: "Their silence, against usual"
 used_by: [time-to-reconnect]
 over: [person-history]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.
 ---
 
-# How long they have been quiet, against usual
+# Their silence, against usual
 ## What it counts
 
 Not written yet.
