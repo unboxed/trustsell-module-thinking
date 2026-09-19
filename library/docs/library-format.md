@@ -220,6 +220,21 @@ can actually show, and lists them on the widget's page. A widget that reaches no
 build unless it says what it `waits_on`: today that is Open items, which rests only on counts,
 none of which can say yet which assembly it counts within (`over: []`).
 
+### The phone block
+
+The phone (`playbook/phone.html`) is drawn from the cards, not typed (decided 19 September). A card
+is on the phone when it carries a `phone:` block. The block holds only the words the phone uses where
+they differ from the rest of the card: the short when on the badge, the filled action and what it
+does (`send` the draft, one `tap`, or `open` the reply sheet), the outline action if there is one,
+the line said back, the dark card's heavy line and receipt, and the draft's subject. Everything else
+the phone reads from the card as it is: the title, the intro, how sure, the council, the documents,
+the details on their spine with the widgets in place, the draft, and an Ask's answers. A card with
+a `## The shorter draft` section offers the ask-for-a-change row, and every ask gets that draft
+back; that is a stand-in until the tool can really redraft. `build.js` checks that whatever the
+phone will reach for is there: an action that raises the draft needs `## The draft`, and an action
+that raises a sheet needs a `reply.module` of choices, several or field, with its answers. The
+order on the phone is the home's, which `build.js` writes as `day`.
+
 ## How an agent produces a module's library
 
 All six modules are now converted, and the per-module `CLAUDE.md` files have been retired. The steps

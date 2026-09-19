@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<!-- Added to the Home Screen, it opens full screen like an app, under the phone's own status bar. -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Signal cards">
+<title>The phone · Signal cards</title>
+<link rel="stylesheet" href="assets/fonts/inter.css">
+<link rel="stylesheet" href="assets/fonts/jakarta.css">
+<link rel="stylesheet" href="assets/ios-tokens.css">
+<link rel="stylesheet" href="assets/ios-components.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page page--phone">
+<!-- The one phone. Nothing is typed here: phone.js draws the day from data.js,
+     which build.js writes from library/. The slides show this page inside their bezel. -->
+<main id="day"></main>
+<script src="assets/data.js"></script>
+<script src="assets/phone.js"></script>
+</body>
+</html>

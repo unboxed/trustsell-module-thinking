@@ -68,6 +68,15 @@ draft:                        # optional, with a `## The draft` section in the b
   hand: <Title Case Verb ...> #   the sheet's button, matching where the note goes (Send where mail is connected, Open in Mail where it is not)
   sub: <...>
   footer: <...>
+phone:                        # optional: the card on playbook/phone.html. Only cards with this block are on the phone.
+  when: <...>                 #   the short when on the front's badge, e.g. Any day this week
+  act: <Title Case Verb ...>  #   the filled action, e.g. Send Message
+  act_does: <send|tap|open>   #   send: sends the draft · tap: one tap · open: raises the reply.module sheet
+  view: <Title Case Verb ...> #   optional: the outline action, which raises the draft
+  said: <...>                 #   the line said back after the reply, with Undo
+  done: <...>                 #   the dark card's heavy line, e.g. Sent to Karen
+  done_text: <...>            #   the dark card's receipt: what I did, what I updated, what I'll do next
+  subject: <...>              #   optional: the draft's subject line
 ---
 
 # <the action, as the card's title>

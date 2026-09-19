@@ -617,7 +617,7 @@ summary::-webkit-details-marker{display:none}
    The kit's text tokens carry their family from :root, so they are declared
    again here with the phone's face. Its tracking is tuned for SF, so it is
    set to nothing. */
-.page--slide,.page--library,.screen,.screen__page,.sheet-stage{
+.page--slide,.page--library,.page--phone,.screen,.screen__page,.sheet-stage{
   --phone-font:'Plus Jakarta Sans',var(--ios-font);
   --ios-text-large-title:400 2.125rem/2.5625rem var(--phone-font);
   --ios-text-title1:400 1.75rem/2.125rem var(--phone-font);
@@ -648,7 +648,7 @@ summary::-webkit-details-marker{display:none}
   --done-edge:none;
 }
 @media (prefers-color-scheme:dark){
-  .page--slide,.page--library,.screen,.screen__page,.sheet-stage{
+  .page--slide,.page--library,.page--phone,.screen,.screen__page,.sheet-stage{
     --ios-bg:#0A0B0C;
     --ios-bg-card:#1D1F22;
     --ios-label:#FFFFFF;
@@ -887,3 +887,25 @@ summary::-webkit-details-marker{display:none}
 .py-key__pill.is-main{background:var(--ios-label)}
 .py-key path{stroke:color-mix(in srgb,var(--ios-label) 45%,transparent);stroke-width:1.5}
 .py-key path.dash{stroke-dasharray:3 4;stroke:color-mix(in srgb,var(--ios-label) 30%,transparent)}
+
+/* ---------- The phone page ---------- */
+/* phone.html is the one phone (decided 19 September): phone.js draws it from
+   data.js, and every slide that shows a phone holds this page in an iframe in
+   place of the screen, inside the slide's own bezel. Opened on its own it
+   stands in the room at its own size; held in a slide, or opened on a narrow
+   screen, it is only the screen, edge to edge. Sizes are a judgement. */
+.page--phone{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:24px 0;background:var(--ios-bg)}
+.page--phone.is-embedded{display:block;padding:0}
+.page--phone.is-embedded .phone{width:100vw;height:100vh;transform:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.page--phone.is-embedded .screen{border-radius:0}
+/* On a real phone (phone.js sets is-device) there is no bezel, and the phone's own status bar and
+   home indicator stand in for the drawn ones. The screen is drawn at one size, 367 x 826, so it is
+   scaled to fit the real one (phone.js sets --fit) and centred on the same ground. Added to the
+   Home Screen it runs full screen; in Safari the browser's bars leave it a little smaller. */
+.page--phone.is-device{position:fixed;inset:0;padding:0;overflow:hidden;background:var(--ios-bg)}
+.page--phone.is-device .phone{position:absolute;left:50%;top:50%;width:367px;height:826px;margin:-413px 0 0 -183.5px;transform:scale(var(--fit,1));transform-origin:center;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.page--phone.is-device .screen{border-radius:0}
+.page--phone.is-device .ios-statusbar{visibility:hidden}
+.page--phone.is-device .home-indicator{display:none}
+.phone-missing{font:var(--ios-text-body);color:var(--ios-label-secondary);padding:40px;text-align:center}
+iframe.screen{border:0;display:block;padding:0}

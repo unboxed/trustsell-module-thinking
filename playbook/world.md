@@ -112,7 +112,7 @@ side by side, one card each, chosen so the three replies differ: Karen's Send Me
 draft), Ashworth's Rest It (one tap, with One More Try raising the last note) and the Ask
 about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its details, which
 follow the spine with the card's widgets in place. The words and rows come from the cards in
-`library/`, copied in by a one-off script, so the slide says only what the cards say. Felton
+`library/`: each phone is `phone.html` on one card (see "The phone is built" below). Felton
 and Rachel's promise card also carry widgets (People, What they said, Open items, Documents) but
 are not on the slide: their replies are drafts too. Holbrook's window card carries a Timeline
 and is not on the slide either. The fifth, "How a card is built"
@@ -124,6 +124,30 @@ the other slides it is not typed: `deck.js` draws it from `data.js` when the dec
 follows the library. A dashed line is a join not written yet (a count that cannot yet say which
 gather it counts within). Passed over: rings with the card at the centre, which could not fit
 the long names; one thread, which left the rest of the card on trust.
+
+**The phone is built** (decided 19 September, the user's call). The phone is no longer typed into
+`deck.html`. It is one page, `phone.html`, and `phone.js` draws it from `data.js`, so it says what
+the cards in `library/` say. A card is on the phone when it carries a `phone:` block with the few
+words the phone uses where they differ from the card: the short when, the filled action and what
+it does, the outline action, the line said back and the dark card's words, the draft's subject.
+Everything else is read from the card as it is. The slides hold `phone.html` in an iframe in place
+of the screen, inside their own bezel: "Your day on mobile" shows the day, and each phone on "The
+details" shows one card. Opened on its own it is a working day: it remembers what you sent, skipped
+and marked in that browser, so a day can be gone through for real (the slides pass `fresh`, so they
+always start clean). The user's reasons, all four: stop the copies drifting, test the flow for
+real, show it to sellers, and a step towards the product. Before this there were four phones
+typed by hand, Karen's email pasted three times, and the details copied from the library once and
+left to drift. Still no framework, no bundler and no server: the folder opens with a double-click.
+What each slide's phone does is unchanged, with two exceptions that came with drawing from one
+card: Karen's details on "Your day on mobile" now follow the spine with her widgets, as on "The
+details", and the day's order is the home's. The phones on "The details" still say back one line
+and do not darken. The Reply sheets slide is still typed; it can be drawn the same way later.
+On a real phone (the same day, the user's call: they want to hold it as an app, not look at a
+mockup) there is no bezel, and the phone's own status bar and home indicator stand in for the
+drawn ones. The screen is still drawn at one size, 367 x 826, so it is scaled to fit the phone in
+your hand (about 2% larger on an iPhone 13 Pro, with a sliver at the sides); a layout that stretches
+to any phone is not built. Added to the Home Screen from Safari it opens full screen, like an app.
+It is reached on GitHub Pages, at `/playbook/phone.html`.
 
 The deck, "The room" (decided 17 September, by looking, on one sheet of three rendered
 directions: https://claude.ai/artifact/YJCZrrjxT3N7iKS5pDse1b). There is no panel. The slide is
@@ -163,8 +187,10 @@ card into its details. The cards either side show as thin edges in the gutters, 
 above the home indicator say where you are. Each card keeps its own state: send Karen's
 message, swipe on, and Ashworth is still waiting with Rest It. The header, the week and the bar
 stay put while the cards move, and follow the card in view. There are three cards (Karen,
-Ashworth, the Ask about Rachel's meeting) because only three are built; which cards make a day,
-and in what order, is not written yet. Passed over: "Act or Skip to move on", where only a
+the Ask about Rachel's meeting, Ashworth) because only three carry a phone block. Their order is
+the home's, from `build.js` (Karen's card is held by the budget meeting Ask, Rachel's Ask is
+holding something up, Ashworth costs nothing to wait); until 19 September it was typed as Karen,
+Ashworth, Rachel. Passed over: "Act or Skip to move on", where only a
 decision takes you to the next card, and "Today's list", a list of the day's cards from the
 header. The cost, noted: a sideways swipe invites flicking through, the habit the stack was
 dropped for. Skip now darkens the card and asks why, quietly (see "After the action"); moving to the next card is its obvious job, not yet given.
@@ -185,7 +211,8 @@ every other card would need an "arrives" fact first. Passed over: the strip abov
 which pushed the card 50 pt down, and a smaller strip between the menu buttons, which left the
 compact title nowhere to go. The strip fades with the count's timing as the card becomes a page,
 and "Today" gives way to the card's title in the bar. The three phones on "The details" keep
-their count.
+their count, which now counts the day's cards with a phone block ("1 of 3"; until 19 September it
+said a typed "of 5").
 
 The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
@@ -334,8 +361,8 @@ the only colour. A message history is a Timeline; promises and blockers are both
 Every row traces to a record in Sources. Six cards carry widgets so far: Karen, Ashworth, the
 Ask about Rachel's meeting, Rachel's promise, Felton's director and Holbrook's window. North Ridley's
 demo brief could not take People at first, because its signal, `lead-with-this`, does not read who
-is in the room; it now rests on `new-stakeholder` too, so it could, but none is placed yet. On the
-phone the widgets show only on "The details".
+is in the room; it now rests on `new-stakeholder` too, so it could, but none is placed yet. Since 19
+September every phone shows them, because every phone is drawn from the same card.
 
 Not decided: how widgets look at night, whether a widget can be tapped through to its records,
 whether the draft becomes a `reply.module` of its own, what a swipe does, the list of the details' sections (their names

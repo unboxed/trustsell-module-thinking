@@ -15,6 +15,12 @@ thinking under it is not finished yet. Where a reason is mine and not yours, it 
 *(My reason, not yet yours.)*, so you can agree with it, correct it or replace it. The last chapter
 lists the reasons nobody has given yet.
 
+The phone in the slides is a working page, drawn from the same cards this story rests on, rather
+than a picture of one. There are four reasons for that. What the phone says can no longer drift
+away from the cards. A whole day can be gone through for real, to see whether the order and the
+replies hold up. It can be put in front of sellers and watched. And it is a first step towards
+the tool itself.
+
 ## 1. The seller's job
 
 Selling is built on relationships. A sale rarely comes from one conversation. It comes from many,

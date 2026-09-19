@@ -10,9 +10,10 @@ The thinking the cards rest on lives in `library/`, as markdown. `build.js` proj
 playbook. Editing the library and running `node build.js` is how the playbook changes.
 
 ## How to work with me here
-- **Brainstorm and pressure-test first.** Still no application: `build.js` is the only script, it
-  is plain Node with no packages, and it renders markdown into static HTML. Do not add a framework,
-  a bundler or a dependency. Anything else that rewrites files is a one-off and lives in the
+- **Brainstorm and pressure-test first.** Still no application beyond the one phone page:
+  `build.js` is the only build script, it is plain Node with no packages, and it renders markdown
+  into static HTML. The phone (`phone.html`, drawn by `phone.js` from `data.js`) is plain HTML and
+  JS too. Do not add a framework, a bundler, a server or a dependency. Anything else that rewrites files is a one-off and lives in the
   scratchpad, not the repo.
 - **The story holds the reasons.** `playbook/story.md` is the reference for why. When the user
   explains something or their reasoning, check it against the story and say where it fits, or
@@ -28,8 +29,11 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   documents, today's date) is data, in `library/world/`, because cards reference it by id. Read
   both before writing or editing a card. Add to `library/world/` before using a name, a date or a
   document that is not already there.
-- **The phone and card slides are concept slides.** Do only what the user asks on them, one step
-  at a time; they direct the design. See the phone paragraph in `world.md` for what is decided.
+- **The phone is built from the library** (19 September). Every slide that shows a phone holds
+  `phone.html` in an iframe; nothing on the phone is typed into `deck.html`. To change what a card
+  says on the phone, edit the card (its `phone:` block, or its body) and run `node build.js`. The
+  design is still the user's: do only what they ask on the phone, one step at a time. See the
+  phone paragraphs in `world.md` for what is decided.
 - **One markdown file per card** in `library/cards/`. `playbook/assets/data.js` is
   **generated: never hand-edit it.** Adding a card means adding its markdown and running
   `node build.js`; the library page picks it up from there.
@@ -65,7 +69,9 @@ iPadOS desk was archived on 18 September). Take numbers from the two skills in `
   without the kind dots, as a catalogue in three columns (`world.md` says why).
 - `deck.js` is the deck's script
   (one slide shown at a time by hash, arrow keys, the count, fitting a slide's figures to
-  its body, the phone's scroll into details, and the phone's reply sheet).
+  its body, and the pyramid). `phone.js` is the phone's: it draws the day from `data.js` and
+  works it (the scroll into details, the pager, the reply sheet, the dark card, what is
+  remembered). The deck loads it too, for the bare sheets.
 - Markup uses the kit's classes directly (`ios-btn`, `ios-list`, `ios-field`, `ios-segmented`,
   `ios-navbar`, `ios-tabbar`, `ios-actionsheet`). Reach for a kit component before inventing one.
   The one exception is the phone's reply sheet (`.reply-sheet` in `style.css`); `world.md` says why.
@@ -110,7 +116,9 @@ later pass, not an oversight.
   writes `playbook/assets/data.js`.
 - `playbook/`: the deliverable, still plain static HTML. `index.html` (the way in: it
   opens the slides), `library.html` (the library, browsable, rendered from
-  `data.js`), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
+  `data.js`), `phone.html` (the one phone, rendered from `data.js`: opened on its own it is a
+  working day that remembers what you did; `?card=`, `?cards=`, `&open=details` and `&fresh`
+  are for the slides), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
   only; your day on mobile, a working prototype; reply sheets (the modules that can fill a card's reply sheet),
   as bare sheets, a draft among them; the details, three phones scrolled into their details; and
   last how a card is built, a pyramid `deck.js` draws from `data.js`), `world.md` (the card model and the design decisions, the log), `story.md` (the tool told

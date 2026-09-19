@@ -410,14 +410,41 @@ for (const c of L.cards) {
       else if (!reach.has(s) && !(needed.has(s) && src.connected === false))
         problems.push(`${c.file}: Sources names "${s}", but nothing the card rests on reaches it`);
     }
-    c.readRows.push({sources: srcs, words});
+    c.readRows.push({sources: srcs, words, from: srcs.map(sourceName).join(', ')});
   }
   for (const s of needed) {
     const src = sourceById(s);
     if (!src || src.connected !== false || c.readRows.some(r => r.sources.includes(s))) continue;
     const who = signalsOf(c).filter(x => (x.needs || []).includes(s)).map(x => x.label.toLowerCase());
-    c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, gap: true});
+    c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, from: sourceName(s), gap: true});
   }
+}
+
+/* ---------- the phone: what a card says on playbook/phone.html ---------- */
+// A card the phone shows carries a `phone:` block with the words that differ from the card's
+// own (decided 19 September: the phone is built from the library, not typed into the deck).
+// The build checks that what the phone will reach for is there, so the phone never guesses.
+const ACT_DOES = ['send', 'tap', 'open'];
+const SHEETS = ['choices', 'several', 'field'];
+const councilRows = new Map(rowsOf(world.councils).map(r => [r[1], r[0]]));
+const documentRows = new Map(rowsOf(world.documents).map(r => [r[1], r[0]]));
+for (const c of L.cards) {
+  // Short names for the phone's badges: "Bramley", not "Bramley District Council".
+  if (councilRows.has(c.council))
+    c.councilName = councilRows.get(c.council).replace(/\s+((District|County|Borough|City|Metropolitan)\s+)*(Council|Borough)$/, '');
+  c.documentNames = [].concat(c.documents || []).filter(d => documentRows.has(d))
+    .map(d => documentRows.get(d).replace(/^The /, '')).map(n => n[0].toUpperCase() + n.slice(1));
+  const p = c.phone;
+  if (!p) continue;
+  if (!p.act) problems.push(`${c.file}: phone needs an act, the words on the filled action`);
+  if (!ACT_DOES.includes(p.act_does))
+    problems.push(`${c.file}: phone act_does "${p.act_does}" is not one of ${ACT_DOES.join(', ')}`);
+  if ((p.act_does === 'send' || p.view) && !c.sections['The draft'])
+    problems.push(`${c.file}: phone ${p.view ? `view "${p.view}"` : 'act_does send'} raises the draft, but there is no "## The draft"`);
+  if (p.act_does === 'open' && !SHEETS.includes(c.reply && c.reply.module))
+    problems.push(`${c.file}: phone act_does open raises a sheet, but reply.module is not one of ${SHEETS.join(', ')}`);
+  if (p.act_does === 'open' && c.reply && c.reply.module !== 'field' && !(c.answers || []).length)
+    problems.push(`${c.file}: phone act_does open raises ${c.reply.module}, but the card has no answers`);
 }
 
 /* ---------- what first: what does waiting a day cost? ---------- */
@@ -469,6 +496,7 @@ const payload = Object.assign({
   generated: new Date().toISOString().slice(0, 10),
   world,
   questions,
+  day: sorted.map(c => c.id),   // the home's order, first to last
 }, L);
 
 fs.mkdirSync(path.dirname(OUT), {recursive: true});

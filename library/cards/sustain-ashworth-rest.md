@@ -40,6 +40,13 @@ draft:
   hand: "Send"
   sub: "only if Simon's introduction goes nowhere"
   footer: "Nothing attached."
+phone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September
+  act: "Rest It"
+  act_does: tap
+  view: "One More Try"
+  said: "Done. No more Ashworth notes from me."
+  done: "Ashworth rests"
+  done_text: "No more Ashworth notes from me. I'll only come back when a warm path or a change at the council gives us a real reason."
 ---
 
 # Let Ashworth rest

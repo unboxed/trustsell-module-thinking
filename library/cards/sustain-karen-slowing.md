@@ -43,6 +43,15 @@ draft:
   hand: "Send"
   sub: "in your voice · sends only when you say"
   footer: "Attached: the officer-time one-pager. Edit anything, then send."
+phone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September
+  when: "Any day this week"
+  act: "Send Message"
+  act_does: send   # send: the filled action sends the draft · tap: one tap, the draft is a separate try · open: raises the reply sheet
+  view: "View Draft"
+  said: "Sent. I will tell you when Karen replies."
+  done: "Sent to Karen"
+  done_text: "I've marked the July figures as sent. I'll watch for her reply, and if nothing comes in two weeks I'll bring a different reason to write."   # a stand-in for how the tool reports updating its nouns, not decided
+  subject: "The officer-time numbers you asked for"
 ---
 
 # Message Karen Hughes
@@ -90,5 +99,15 @@ Hi Karen,
 You asked back in July for the officer-time numbers from East Marston and I never sent them. Here they are, one page. The short version: case admin down by about a third.
 
 I imagine the budget round has been eating your weeks. No need to reply. If it is useful to talk through how East Marston phased it in, I am around whenever suits.
+
+Fede
+
+## The shorter draft
+
+Hi Karen,
+
+The officer-time numbers you asked for in July are attached, one page. I am sorry they took this long.
+
+No need to reply.
 
 Fede

@@ -31,6 +31,13 @@ answers:
 actions:
   - label: "Not Now"
     says: "Okay. I'll ask again in a week, or sooner if it starts to matter."
+phone:   # what the phone says where it differs from the card above; moved from deck.html, 19 September
+  when: "Best this week"
+  act: "Answer"
+  act_does: open
+  said: "Thank you. I will keep it on Rachel’s page, next to my own read."
+  done: "Thank you"
+  done_text: "I will keep it on Rachel's page, next to my own read."
 ---
 
 # How did your meeting with Rachel Gill go?
