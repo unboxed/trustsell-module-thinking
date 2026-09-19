@@ -906,7 +906,7 @@ summary::-webkit-details-marker{display:none}
    home indicator stand in for the drawn ones. The screen takes the phone's own size (phone.js sets
    --screen-w and --screen-h), so it fills it edge to edge. Added to the Home Screen it runs full
    screen; in Safari the browser's bars leave it shorter. */
-.page--phone.is-device{position:fixed;inset:0;padding:0;overflow:hidden;background:var(--ios-bg)}
+.page--phone.is-device{position:fixed;top:0;left:0;width:var(--screen-w);height:var(--screen-h);padding:0;overflow:hidden;background:var(--ios-bg)}
 .page--phone.is-device .phone{position:absolute;inset:0;width:auto;height:auto;transform:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
 .page--phone.is-device .screen{border-radius:0}
 .page--phone.is-device .ios-statusbar{visibility:hidden}

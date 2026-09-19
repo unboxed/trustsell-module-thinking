@@ -267,9 +267,18 @@
     /* On a real phone: no bezel, and the screen takes the size of the one in your hand. */
     if (!embedded && (innerWidth <= 500 || matchMedia('(hover: none) and (pointer: coarse)').matches)) {
       document.body.classList.add('is-device');
+      /* Opened from the Home Screen, iOS reports a window short by about the status bar, which
+         left a black strip at the foot; there the screen's own size is the true one. */
+      var standalone = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
       var fit = function () {
-        document.documentElement.style.setProperty('--screen-w', innerWidth + 'px');
-        document.documentElement.style.setProperty('--screen-h', innerHeight + 'px');
+        var w = innerWidth, h = innerHeight;
+        if (standalone) {
+          var portrait = h >= w;
+          w = Math.max(w, portrait ? screen.width : screen.height);
+          h = Math.max(h, portrait ? screen.height : screen.width);
+        }
+        document.documentElement.style.setProperty('--screen-w', w + 'px');
+        document.documentElement.style.setProperty('--screen-h', h + 'px');
       };
       fit();
       window.addEventListener('resize', fit);
