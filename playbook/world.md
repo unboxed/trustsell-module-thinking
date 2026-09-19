@@ -248,6 +248,27 @@ and "Today" gives way to the card's title in the bar. The three phones on "The d
 their count, which now counts the day's cards with a phone block ("1 of 3"; until 19 September it
 said a typed "of 5").
 
+Two views of the day (decided 19 September, the user's call, by looking over two rounds on one
+sheet: https://claude.ai/artifact/1Svan95P5BFhYUEYwqMuVr). The button top right of the day screen,
+the round `•••` until then, switches between one card at a time and the day as a stack. It shows
+the view it takes you to, as Apple's buttons show their action: a stack in the card view, a
+single card in the stack (the user was unsure which; this is Apple's convention, and Notes and
+Files do the same). The header and the week strip stay in both. In the stack each card shows only
+its top: the kind and the when on one line, then the title in up to two lines, each card
+overlapping the one above ("B · Two lines per card"). One day is one page; a sideways swipe or the
+strip changes the day ("B · Swipe sideways to another day"), and a day with no cards says so in the
+end page's words. What is waiting stays out of the stack until it is free, as in the card view.
+Passed over: one line per card (long titles were cut), the next card open with the rest as lines
+under it, and scrolling down from today into tomorrow (today lost its end). The cost, noted: a
+sideways swipe means the next card in one view and the next day in the other. "Today's list",
+passed over on 18 September as a way to move between cards, comes back as a view for reading the
+day, which is a different job; and the stack dropped from behind the focused card stays dropped,
+because this stack is for reading, not for flicking through while you act. The view is
+remembered. Proposals, not decided: tapping a card in the stack opens it in the card view; a card
+sent or skipped keeps its place in the stack, in the done card's colours; and a card freed by an
+answer arrives in the stack the next time it opens. The reason is in the story, chapter 7, still
+mine.
+
 The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
 front holds one filled action and at most one outline one, stacked, with Skip under them; anything that needs more room goes

@@ -372,6 +372,33 @@ summary::-webkit-details-marker{display:none}
 /* A day already gone this week: faint, and still a button. */
 .week__day.is-past{opacity:.4}
 .week__day.is-past.is-selected{opacity:1}
+/* The stacked view (decided 19 September, by looking:
+   https://claude.ai/artifact/1Svan95P5BFhYUEYwqMuVr). The button top right switches the day
+   screen between one card at a time and the day as a stack; the header and the strip stay. Each
+   card shows its top: the kind and the when in Footnote, the title in Title 3, heaviest, clamped
+   to two lines. Each card overlaps the one above by 28 pt and casts its lift upward, so the one
+   in front is the later card. One day to a page, sideways, as the cards' pager snaps. The stack
+   starts 181 pt down, where the card does, and is cut 11 pt above that so it slides under the
+   strip, not over it. Every number is a judgment, not Apple's. */
+.stack-view{position:absolute;inset:0;z-index:1;display:none;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
+.stack-view::-webkit-scrollbar,.stack-view__scroll::-webkit-scrollbar{display:none}
+.screen.is-stacked .stack-view{display:flex}
+.screen.is-stacked .pager,.screen.is-stacked .dots{visibility:hidden}
+.stack-view__page{position:relative;flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always}
+.stack-view__scroll{position:absolute;top:170px;left:0;right:0;bottom:0;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:none;padding:11px 0 60px}
+.stack{margin:0 var(--ios-gutter)}
+.stack__card{position:relative;display:block;width:100%;appearance:none;border:0;margin:0;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;background:var(--card-glaze);color:var(--ios-label);border-radius:28px;box-shadow:var(--card-edge),var(--stack-lift);padding:18px 22px 34px}
+.stack__card + .stack__card{margin-top:-28px}
+.stack__card:last-child{padding-bottom:22px}
+.stack__meta{display:flex;justify-content:space-between;gap:12px;margin-bottom:4px;font:var(--ios-text-footnote);color:var(--ios-label-secondary)}
+.screen .stack .kind{font:var(--ios-text-footnote);color:inherit}
+.stack__card:not(.is-done) .kind{color:var(--ios-label)}
+.stack__two{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;height:50px;font:var(--ios-text-title3);font-weight:800;color:inherit}
+/* A card sent or skipped keeps its place, in the done card's colours (a proposal, not decided). */
+.stack__card.is-done{background:var(--done-bg);color:var(--done-ink);box-shadow:var(--done-edge),var(--stack-lift)}
+.stack__card.is-done .stack__meta{color:inherit;opacity:.64}
+/* A day with no cards: the end page's big words, grey. */
+.stack__none{margin:0;padding:12px calc(var(--ios-gutter) + 8px) 0;font:var(--ios-text-title1);font-weight:800;color:var(--ios-label-secondary)}
 /* Cards side by side (the phone slide only, decided 18 September): a sideways
    swipe moves between them, one card to a swipe. Each page is a whole card with
    its own scroller and sheet. Over them, a layer that does not move sideways
@@ -658,6 +685,8 @@ summary::-webkit-details-marker{display:none}
   --card-glaze:linear-gradient(#FFFFFF,#F6F7F9 var(--screen-h),#FFFFFF var(--screen-h));
   --card-edge:inset 0 1.5px 0 rgb(255 255 255/calc(1 - var(--p))),inset 0 -1px 0 rgb(18 18 18/calc(.05*(1 - var(--p))));
   --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
+  /* A stacked card's lift falls upward, on the card behind it. */
+  --stack-lift:0 -6px 18px -6px rgb(30 40 60/.14),0 1px 2px rgb(30 40 60/.06);
   /* The card once replied to: ink by day, the buttons' own colour. */
   --done-bg:#121212;
   --done-ink:#FFFFFF;
@@ -675,6 +704,7 @@ summary::-webkit-details-marker{display:none}
     --card-glaze:linear-gradient(160deg,#303338,#1D1F22 420px);
     --card-edge:inset 0 1px 0 rgb(255 255 255/calc(.2*(1 - var(--p)))),inset 0 0 0 1px rgb(255 255 255/calc(.06*(1 - var(--p))));
     --card-lift:0 0 0 0 transparent;
+    --stack-lift:0 -6px 18px -6px rgb(0 0 0/.6);
     /* By night the slate card darkens toward the ground, and keeps a lit edge so it is still a card. */
     --done-bg:#101113;
     --done-ink:#FFFFFF;

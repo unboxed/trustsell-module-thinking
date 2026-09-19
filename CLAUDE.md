@@ -125,7 +125,7 @@ later pass, not an oversight.
   opens the slides), `library.html` (the library, browsable, rendered from
   `data.js`), `phone.html` (the one phone, rendered from `data.js`: opened on its own it is a
   working week, each day's cards on the strip, waiting cards arriving once freed, and a last
-  page of what the tool is watching; it remembers what you did; `?card=`, `&open=details` and
+  page of what the tool is watching; the button top right switches to the day as a stack, a day to a page; it remembers what you did; `?card=`, `&open=details` and
   `&fresh` are for the slides), `deck.html` (the slides, one file, one slide shown at a time: the idea, in words
   only; your day on mobile, a working prototype; reply sheets (the modules that can fill a card's reply sheet),
   as bare sheets, a draft among them; the details, three phones scrolled into their details; and

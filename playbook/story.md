@@ -166,6 +166,11 @@ fails to.
 Within a day, the order comes from one question: what would waiting a day cost? A promise owed costs more every
 day. A note that follows someone's rhythm costs nothing to leave until next week.
 
+You can take in the whole day before you start, not only one suggestion at a time. The tool sets
+the order, and seeing everything it has put on a day lets you trust that order and plan your time
+around it, instead of finding out what comes next only by getting through what comes first.
+*(My reason, not yet yours.)*
+
 You can also ask the tool about a person, an organisation or a deal. But if you have to ask "who's
 going cold?", the tool should already have told you, and its answer says so.
 

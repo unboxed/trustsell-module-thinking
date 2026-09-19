@@ -52,15 +52,20 @@
     wifi: '<svg width="16" height="12" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 4.2a10.5 10.5 0 0 1 14 0"/><path d="M3.6 6.9a6.8 6.8 0 0 1 8.8 0"/><path d="M6.2 9.5a3 3 0 0 1 3.6 0"/></svg>',
     battery: '<svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x=".5" y=".5" width="23" height="12" rx="3.5" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="9" rx="2" fill="currentColor"/><path d="M25 4.5v4a2 2 0 0 0 0-4z" fill="currentColor" opacity=".4"/></svg>',
     menuL: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 5h13M2.5 9h13M2.5 13h13"/></svg>',
+    /* The view switch shows the view it takes you to, as Apple's buttons show their action (the user
+       asked; Notes and Files do the same). The card view shows the stack, the stack shows one card. */
+    oneCard: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="2.5" width="13" height="15" rx="3"/></svg>',
+    stacked: '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8.5" width="14" height="9" rx="2.5"/><path d="M4.5 5.5h11M6.5 2.5h7" stroke-linecap="round"/></svg>',
     menuR: '<svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3.5" cy="9" r="1.8"/><circle cx="9" cy="9" r="1.8"/><circle cx="14.5" cy="9" r="1.8"/></svg>'
   };
 
   var statusbar = '<div class="ios-statusbar" aria-hidden="true"><span>9:41</span><span class="ios-statusbar__island"></span>' +
     '<span class="ios-statusbar__indicators">' + SVG.bars + SVG.wifi + SVG.battery + '</span></div>';
-  function top(inner) {
+  function top(inner, right) {
     return '<div class="screen__top"><button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, left">' + SVG.menuL + '</button>' +
-      inner + '<button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right">' + SVG.menuR + '</button></div>';
+      inner + (right || '<button class="ios-glass-btn screen__menu" type="button" aria-label="Menu, right">' + SVG.menuR + '</button>') + '</div>';
   }
+  var toggle = '<button class="ios-glass-btn screen__menu" type="button" aria-label="Show the day as a stack" data-view-toggle>' + SVG.stacked + '</button>';
 
   /* The details' widgets: the card picks them and fills them, never arranges them. */
   var WIDGET = {
@@ -223,9 +228,19 @@
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   /* The week strip: this week and the next four, today filled, the days gone faint. */
-  function week() {
+  function weekStart() {
     var today = new Date(LIB.today + 'T12:00:00Z'), start = new Date(today);
     start.setUTCDate(start.getUTCDate() - (today.getUTCDay() + 6) % 7);
+    return start;
+  }
+  /* Every day on the strip, Monday of this week to the Sunday four weeks on. */
+  function stripDates() {
+    var start = weekStart(), out = [];
+    for (var k = 0; k < 35; k++) { var d = new Date(start); d.setUTCDate(start.getUTCDate() + k); out.push(d.toISOString().slice(0, 10)); }
+    return out;
+  }
+  function week() {
+    var today = new Date(LIB.today + 'T12:00:00Z'), start = weekStart();
     var rows = '';
     for (var w = 0; w < 5; w++) {
       var mon = new Date(start); mon.setUTCDate(start.getUTCDate() + w * 7);
@@ -271,10 +286,12 @@
   /* After the day's last card: not a card, the card's shape as a faded outline with nothing in it
      but the big words, grey, and what the tool is still watching (19 September, by looking:
      https://claude.ai/artifact/CdpkU44FdAYVj8NecebAfg). */
+  function endHead(date, n) {
+    var w = dayWord(date), on = w === 'today' || w === 'tomorrow' ? w : 'on ' + w;
+    return (n ? 'No more cards ' : 'No cards ') + on + '.';
+  }
   function end(date, n) {
-    var lines = watching(date), w = dayWord(date);
-    var on = w === 'today' || w === 'tomorrow' ? w : 'on ' + w;
-    var head = (n ? 'No more cards ' : 'No cards ') + on + '.';
+    var lines = watching(date), head = endHead(date, n);
     return '<div class="screen__page screen__page--end" role="group" aria-label="' + esc(head) + '" data-end>' +
       '<div class="day-end"><h2>' + esc(head) + '</h2>' +
       (lines.length ? lines.map(function (l) { return '<p>' + esc(l) + '</p>'; }).join('')
@@ -285,11 +302,32 @@
     var cards = cardsOn(date), n = cards.length;
     return {cards: cards, html: cards.map(function (c, k) { return page(c, k, n + 1); }).join('') + end(date, n), count: n + 1};
   }
+  /* The day as a stack (decided 19 September, by looking:
+     https://claude.ai/artifact/1Svan95P5BFhYUEYwqMuVr). Each card shows its top: the kind and the
+     when, then the title in up to two lines. One day to a page, sideways between days, the strip
+     following. A day with no cards says so in the end page's words. A card you have sent or skipped
+     keeps its place, dark; tapping a card opens it in the one-card view (both proposals, not decided). */
+  function stackCard(c) {
+    var m = memory[c.id], done = m && m.state;
+    return '<button class="stack__card' + (done ? ' is-done' : '') + '" type="button" data-open-card="' + c.id + '">' +
+      '<span class="stack__meta"><span class="kind kind--' + c.kind + '">' + esc(c.kind[0].toUpperCase() + c.kind.slice(1)) + '</span>' +
+      (c.phone.when ? '<span>' + esc(c.phone.when) + '</span>' : '') + '</span>' +
+      '<span class="stack__two">' + esc(c.title) + '</span></button>';
+  }
+  function stackPages() {
+    return stripDates().map(function (date) {
+      var cards = cardsOn(date);
+      return '<section class="stack-view__page" data-date="' + date + '"><div class="stack-view__scroll">' +
+        (cards.length ? '<div class="stack">' + cards.map(stackCard).join('') + '</div>' : '<p class="stack__none">' + esc(endHead(date, 0)) + '</p>') +
+        '</div></section>';
+    }).join('');
+  }
   function day(date) {
     var d = pagesOf(date), first = d.cards[0];
     return '<div class="screen screen--week" data-title-at="209" data-date="' + date + '"><div class="pager" data-pager>' + d.html + '</div>' +
+      '<div class="stack-view" data-stack-pager inert></div>' +
       '<div class="screen__shared"><div class="screen__bar"></div><div class="screen__head">' + statusbar +
-      top('<span class="screen__day" aria-live="polite">Today</span><span class="screen__title" aria-hidden="true">' + esc(first ? first.title : '') + '</span>') + '</div>' +
+      top('<span class="screen__day" aria-live="polite">Today</span><span class="screen__title" aria-hidden="true">' + esc(first ? first.title : '') + '</span>', toggle) + '</div>' +
       week() +
       '<div class="dots" role="img" aria-label="Card 1 of ' + d.count + '">' + dots(d.count) + '</div>' +
       '</div><div class="home-indicator" aria-hidden="true"></div></div>';
@@ -415,7 +453,7 @@
     var pages, dotEls, here;
     /* Draw the day again: another day picked, or a card done that frees one waiting on it.
        The card in view stays in view. */
-    pager.redraw = function (date) {
+    pager.redraw = function (date, cardId) {
       var keepId = pages && pages[here] && pages[here].getAttribute('data-card');
       if (date) screen.setAttribute('data-date', date);
       var d = pagesOf(screen.getAttribute('data-date'));
@@ -424,7 +462,8 @@
       restore(pager);
       pager.querySelectorAll('[data-scroll]').forEach(wireScroll);
       reset();
-      var to = date ? 0 : Math.max(0, [].indexOf.call(pages, pager.querySelector('[data-card="' + keepId + '"]')));
+      var to = Math.max(0, [].indexOf.call(pages, pager.querySelector('[data-card="' + (cardId || keepId) + '"]')));
+      if (date && !cardId) to = 0;
       pager.scrollLeft = pages[to].offsetLeft - pages[0].offsetLeft;
       here = -1; go();
     };
@@ -444,6 +483,7 @@
       mirror(pages[k], shared);
     }
     pager.addEventListener('scroll', go, { passive: true }); go();
+    pager.again = function () { here = -1; go(); };
   });
 
   /* The reply sheet. The card's plain action raises it and the close button
@@ -483,20 +523,69 @@
     var gap = Math.round((a - t) / 864e5);
     return gap === 0 ? 'Today' : gap === 1 ? 'Tomorrow' : gap === -1 ? 'Yesterday' : d.getAttribute('aria-label');
   }
-  function pick(d) {
-    var screen = d.closest('.screen');
+  function select(screen, d) {
     screen.querySelectorAll('.week__day').forEach(function (x) {
       x.classList.toggle('is-selected', x === d);
       x.setAttribute('aria-pressed', x === d ? 'true' : 'false');
     });
     screen.querySelector('.screen__day').textContent = dayName(d, screen.querySelector('.week__day.is-today'));
+  }
+  function pick(d) {
+    var screen = d.closest('.screen');
+    select(screen, d);
+    if (screen.classList.contains('is-stacked')) { stackTo(screen, d.getAttribute('data-date'), true); return; }
     var pager = screen.querySelector('[data-pager]');
     if (pager && pager.redraw) pager.redraw(d.getAttribute('data-date'));
   }
 
+  /* The two views. The switch shows the other view; the stacked view is drawn afresh each
+     time it opens, so what you did in the card view shows there. Remembered, unless fresh. */
+  function stackTo(screen, date, smooth) {
+    var sv = screen.querySelector('[data-stack-pager]'), pg = sv.querySelector('[data-date="' + date + '"]');
+    if (pg) sv.scrollTo({ left: pg.offsetLeft, behavior: smooth ? 'smooth' : 'auto' });
+  }
+  function setView(screen, stacked, cardId) {
+    var sv = screen.querySelector('[data-stack-pager]'), pager = screen.querySelector('[data-pager]');
+    var btn = screen.querySelector('[data-view-toggle]'), shared = screen.querySelector('.screen__shared');
+    var date = screen.getAttribute('data-date');
+    if (stacked) {
+      sv.innerHTML = stackPages();
+      /* The header and strip stay the day's, not the open card's page. */
+      shared.style.setProperty('--p', 0); shared.style.setProperty('--t', 0); shared.classList.remove('is-page');
+    }
+    screen.classList.toggle('is-stacked', stacked);
+    sv.inert = !stacked; pager.inert = stacked;
+    btn.innerHTML = stacked ? SVG.oneCard : SVG.stacked;
+    btn.setAttribute('aria-label', stacked ? 'Show one card at a time' : 'Show the day as a stack');
+    if (stacked) stackTo(screen, date);
+    else if (cardId || date !== pager.shownDate) pager.redraw(date, cardId);
+    else pager.again();
+    pager.shownDate = date;
+    memory.view = stacked ? 'stack' : 'card';
+    keep();
+  }
+  document.querySelectorAll('[data-stack-pager]').forEach(function (sv) {
+    var screen = sv.closest('.screen'), weekEl = screen.querySelector('.week');
+    screen.querySelector('[data-pager]').shownDate = screen.getAttribute('data-date');
+    sv.addEventListener('scroll', function () {
+      if (!screen.classList.contains('is-stacked')) return;
+      var pages = sv.children, k = Math.round(sv.scrollLeft / sv.clientWidth), pg = pages[k];
+      if (!pg || pg.getAttribute('data-date') === screen.getAttribute('data-date')) return;
+      var date = pg.getAttribute('data-date'), d = screen.querySelector('.week__day[data-date="' + date + '"]');
+      screen.setAttribute('data-date', date);
+      select(screen, d);
+      /* Crossing into another week brings its row onto the strip. */
+      if (Math.abs(weekEl.scrollLeft - d.parentNode.offsetLeft) > 2) weekEl.scrollTo({ left: d.parentNode.offsetLeft, behavior: 'smooth' });
+    }, { passive: true });
+    if (memory.view === 'stack') setView(screen, true);
+  });
+
   document.addEventListener('click', function (e) {
     var d = e.target.closest('.week__day');
     if (d) { pick(d); return; }
+    var vt = e.target.closest('[data-view-toggle]'), oc = e.target.closest('[data-open-card]');
+    if (vt) { var scr = vt.closest('.screen'); setView(scr, !scr.classList.contains('is-stacked')); return; }
+    if (oc) { setView(oc.closest('.screen'), false, oc.getAttribute('data-open-card')); return; }
     var open = e.target.closest('[data-reply-open]'), row = e.target.closest('.reply-sheet__rows [role]');
     var shut = e.target.closest('.screen .reply-sheet__close, .screen [data-send]');
     var version = e.target.closest('[data-version]');
