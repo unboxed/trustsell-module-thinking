@@ -279,6 +279,8 @@
         }
         document.documentElement.style.setProperty('--screen-w', w + 'px');
         document.documentElement.style.setProperty('--screen-h', h + 'px');
+        /* Whatever iOS leaves uncovered shows the page's own ground, never black. */
+        document.documentElement.style.background = getComputedStyle(document.body).backgroundColor;
       };
       fit();
       window.addEventListener('resize', fit);
