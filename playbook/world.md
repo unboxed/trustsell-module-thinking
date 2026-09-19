@@ -144,9 +144,10 @@ details", and the day's order is the home's. The phones on "The details" still s
 and do not darken. The Reply sheets slide is still typed; it can be drawn the same way later.
 On a real phone (the same day, the user's call: they want to hold it as an app, not look at a
 mockup) there is no bezel, and the phone's own status bar and home indicator stand in for the
-drawn ones. The screen is still drawn at one size, 367 x 826, so it is scaled to fit the phone in
-your hand (about 2% larger on an iPhone 13 Pro, with a sliver at the sides); a layout that stretches
-to any phone is not built. Added to the Home Screen from Safari it opens full screen, like an app.
+drawn ones. The screen takes the phone's own size: what sits at the foot (the actions, the hint,
+the bar) is measured up from the bottom and across the width, so the card fills any phone edge to
+edge. (For an hour it was the 367 x 826 screen scaled to fit, which left bands on an iPhone 13 Pro;
+the user asked for it to be responsive.) The slides still draw it at 367 x 826. Added to the Home Screen from Safari it opens full screen, like an app.
 It is reached on GitHub Pages, at `/playbook/phone.html`.
 
 The deck, "The room" (decided 17 September, by looking, on one sheet of three rendered

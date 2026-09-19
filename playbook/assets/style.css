@@ -330,6 +330,10 @@ summary::-webkit-details-marker{display:none}
    free through them. Half-way between card and page is only ever seen in motion. The scroller is clipped 1 pt short at top and
    foot: on a scaled phone the page's text otherwise shows as a dotted fringe
    past the bars. All numbers here are a judgment, not Apple's. */
+/* The screen's size. The slides draw it at 367 x 826 (393 x 852 less the bezel); on a real phone
+   phone.js sets both to the phone's own, and everything below that sits at the foot is measured
+   up from its bottom, so the card fills any phone (decided 19 September, the user's call). */
+:root{--screen-w:367px;--screen-h:826px}
 .screen{--p:0;--t:0}
 .screen__scroll{position:absolute;inset:0;z-index:0;overflow-y:auto;background:var(--ios-bg-card);scroll-snap-type:y mandatory;scroll-padding:108px 0 90px;scrollbar-width:none;clip-path:inset(1px 0)}
 .screen__scroll::-webkit-scrollbar{display:none}
@@ -340,7 +344,7 @@ summary::-webkit-details-marker{display:none}
    the screen (852 pt less the bezel). It sits inside the scroller so that a
    scroll begun on a button still scrolls. */
 .screen__over{position:sticky;top:0;height:0;z-index:2}
-.screen__overin{position:absolute;top:0;left:0;width:100%;height:826px;pointer-events:none}
+.screen__overin{position:absolute;top:0;left:0;width:100%;height:var(--screen-h);pointer-events:none}
 .screen__overin button{pointer-events:auto}
 /* The hole is the card: 16 pt gutters, under the count, 8 pt above the home
    indicator's 34 pt area, 24 pt corners, a real shadow. The shadow is listed
@@ -387,7 +391,7 @@ summary::-webkit-details-marker{display:none}
 .pager{position:absolute;inset:0;z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
 .pager::-webkit-scrollbar{display:none}
 .screen__page{position:relative;flex:0 0 100%;height:100%;scroll-snap-align:start;scroll-snap-stop:always}
-.screen__shared{position:absolute;top:0;left:0;right:0;height:826px;z-index:3;pointer-events:none;--p:0;--t:0}
+.screen__shared{position:absolute;top:0;left:0;right:0;height:var(--screen-h);z-index:3;pointer-events:none;--p:0;--t:0}
 .screen__shared button,.screen__shared .week{pointer-events:auto}
 .peek{position:absolute;top:181px;bottom:42px;width:8px;background:var(--ios-bg-card);box-shadow:var(--card-edge),var(--card-lift);opacity:calc(1 - var(--p)*2.5)}
 .peek--left{left:0;border-radius:0 24px 24px 0}
@@ -431,28 +435,28 @@ summary::-webkit-details-marker{display:none}
    two never cross. deck.js hides whichever is not in play (is-page), so an
    unseen button cannot take a tap. At most one plain action beside the filled one. */
 .act{position:absolute;margin:0;white-space:nowrap}
-.act--send{top:calc(578px + 170px*var(--p));left:calc(40px + 111px*var(--p));width:calc(287px - 87px*var(--p))}
+.act--send{top:calc(var(--screen-h) - 248px + 170px*var(--p));left:calc(40px + 111px*var(--p));width:calc(var(--screen-w) - 80px - 87px*var(--p))}
 .act--view,.act--view-bar,.act--skip{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
-.act--view{top:calc(634px + 90px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3)}
+.act--view{top:calc(var(--screen-h) - 192px + 90px*var(--p));left:40px;width:calc(var(--screen-w) - 80px);opacity:calc(1 - var(--p)/.3)}
 /* The actions stack, one per row (18 September, the user's call): the filled action, the plain one, then
    Skip, quietest, last. The stack sits one row higher than before so Skip clears the hint below it. Skip
    takes the plain action's place when a card has none. Like the old Skip, it stays with the front and fades
    as the card becomes a page. */
-.act--skip{top:calc(690px + 34px*var(--p));left:40px;width:287px;opacity:calc(1 - var(--p)/.3);color:var(--ios-label-secondary)}
+.act--skip{top:calc(var(--screen-h) - 136px + 34px*var(--p));left:40px;width:calc(var(--screen-w) - 80px);opacity:calc(1 - var(--p)/.3);color:var(--ios-label-secondary)}
 /* With no secondary action the stack keeps its foot and loses its top row, so no empty row is left
    under Skip: the filled action drops one row and Skip keeps its place. */
-.screen__overin:has(.act--skip-alone) .act--send{top:calc(634px + 114px*var(--p))}
+.screen__overin:has(.act--skip-alone) .act--send{top:calc(var(--screen-h) - 192px + 114px*var(--p))}
 /* The secondary action is an outline capsule, the filled one's size, drawn with the badges' hairline:
    still no colour on buttons (18 September, the user's call). The same in the bar. */
 .screen :is(.act--view,.act--view-bar){min-height:48px;border-radius:999px;border:1px solid color-mix(in srgb,var(--ios-label) 24%,transparent);color:var(--ios-label)}
-.act--view-bar{top:748px;left:var(--ios-gutter);width:127px;opacity:calc((var(--p) - .6)/.4)}
+.act--view-bar{top:calc(var(--screen-h) - 78px);left:var(--ios-gutter);width:127px;opacity:calc((var(--p) - .6)/.4)}
 /* What the tool says back, in place of the actions, once the card is done:
    stacked on the card, a row in the bar. */
 .said{display:none;position:absolute;align-items:center}
 .said p{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);color:var(--ios-label)}
 .said .ios-btn{font:var(--ios-text-subhead);letter-spacing:var(--ios-track-subhead);font-weight:var(--ios-weight-semibold)}
 .said--card{left:40px;right:40px;bottom:calc(98px - 40px*var(--p));flex-direction:column;gap:2px;text-align:center;opacity:calc(1 - var(--p)/.3)}
-.said--bar{left:24px;right:var(--ios-gutter);top:748px;min-height:var(--ios-hit-target);gap:8px;opacity:calc((var(--p) - .6)/.4)}
+.said--bar{left:24px;right:var(--ios-gutter);top:calc(var(--screen-h) - 78px);min-height:var(--ios-hit-target);gap:8px;opacity:calc((var(--p) - .6)/.4)}
 .said--bar p{flex:1}
 /* Under an open sheet the actions stand down once it has risen, so the bar's filled button cannot show past the sheet's corner. */
 /* A card's state lives on its screen, or on its page where the screen holds several cards. */
@@ -564,7 +568,7 @@ summary::-webkit-details-marker{display:none}
 .reply-sheet__foot .ios-btn--filled[disabled]{background:var(--ios-fill-track);opacity:1;cursor:default}
 /* The scroll hint under the actions: a centred footnote in the secondary grey
    with a chevron pointing down, the disclosure glyph turned. It goes as soon as you scroll. */
-.deck__more{position:absolute;left:0;right:0;top:742px;display:flex;align-items:center;justify-content:center;gap:6px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
+.deck__more{position:absolute;left:0;right:0;top:calc(var(--screen-h) - 84px);display:flex;align-items:center;justify-content:center;gap:6px;font:var(--ios-text-footnote);letter-spacing:var(--ios-track-footnote);color:var(--ios-label-secondary);opacity:calc(1 - var(--p)*2.5)}
 .chevron--down{width:8px;height:8px;transform:rotate(-45deg);margin:0 0 3px}
 .deck__card h2{font:var(--ios-text-title1);font-weight:var(--ios-weight-bold);letter-spacing:var(--ios-track-title1);margin-bottom:10px}
 .deck__card p{color:var(--ios-label-secondary)}
@@ -639,7 +643,7 @@ summary::-webkit-details-marker{display:none}
   --ios-label-secondary:rgb(18 18 18/.6);
   --ios-accent:#121212;
   --on-accent:#FFFFFF;
-  --card-glaze:linear-gradient(#FFFFFF,#F6F7F9 826px,#FFFFFF 826px);
+  --card-glaze:linear-gradient(#FFFFFF,#F6F7F9 var(--screen-h),#FFFFFF var(--screen-h));
   --card-edge:inset 0 1.5px 0 rgb(255 255 255/calc(1 - var(--p))),inset 0 -1px 0 rgb(18 18 18/calc(.05*(1 - var(--p))));
   --card-lift:0 30px 50px -18px rgb(30 40 60/calc(.28*(1 - var(--p)))),0 3px 8px rgb(30 40 60/calc(.08*(1 - var(--p))));
   /* The card once replied to: ink by day, the buttons' own colour. */
@@ -899,11 +903,11 @@ summary::-webkit-details-marker{display:none}
 .page--phone.is-embedded .phone{width:100vw;height:100vh;transform:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
 .page--phone.is-embedded .screen{border-radius:0}
 /* On a real phone (phone.js sets is-device) there is no bezel, and the phone's own status bar and
-   home indicator stand in for the drawn ones. The screen is drawn at one size, 367 x 826, so it is
-   scaled to fit the real one (phone.js sets --fit) and centred on the same ground. Added to the
-   Home Screen it runs full screen; in Safari the browser's bars leave it a little smaller. */
+   home indicator stand in for the drawn ones. The screen takes the phone's own size (phone.js sets
+   --screen-w and --screen-h), so it fills it edge to edge. Added to the Home Screen it runs full
+   screen; in Safari the browser's bars leave it shorter. */
 .page--phone.is-device{position:fixed;inset:0;padding:0;overflow:hidden;background:var(--ios-bg)}
-.page--phone.is-device .phone{position:absolute;left:50%;top:50%;width:367px;height:826px;margin:-413px 0 0 -183.5px;transform:scale(var(--fit,1));transform-origin:center;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+.page--phone.is-device .phone{position:absolute;inset:0;width:auto;height:auto;transform:none;padding:0;border:0;border-radius:0;background:none;box-shadow:none}
 .page--phone.is-device .screen{border-radius:0}
 .page--phone.is-device .ios-statusbar{visibility:hidden}
 .page--phone.is-device .home-indicator{display:none}

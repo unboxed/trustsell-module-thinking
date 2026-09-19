@@ -264,12 +264,12 @@
     if (!html) html = '<p class="phone-missing">No card here has a phone block yet.</p>';
     mount.innerHTML = '<div class="phone">' + html + '</div>';
     document.body.classList.toggle('is-embedded', embedded);
-    /* On a real phone: no bezel, and the screen scaled to fit the one in your hand. */
+    /* On a real phone: no bezel, and the screen takes the size of the one in your hand. */
     if (!embedded && (innerWidth <= 500 || matchMedia('(hover: none) and (pointer: coarse)').matches)) {
       document.body.classList.add('is-device');
       var fit = function () {
-        var v = window.visualViewport || {width: innerWidth, height: innerHeight};
-        document.body.style.setProperty('--fit', Math.min(v.width / 367, v.height / 826));
+        document.documentElement.style.setProperty('--screen-w', innerWidth + 'px');
+        document.documentElement.style.setProperty('--screen-h', innerHeight + 'px');
       };
       fit();
       window.addEventListener('resize', fit);
