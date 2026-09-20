@@ -199,6 +199,15 @@ Every message the tool drafts names what the other person gets. Keeping a relati
 means giving, not nudging, so there is always a gift: something they asked for, something you
 promised. *(My reason, not yet yours: the rule used to cover only Sustain, which has gone.)*
 
+The tool can also say no. Until 20 September everything it noticed pointed toward a move; now
+some of what it notices points against one. It can say you have tried someone enough and should
+stop. It can say the next message would press with a deadline nobody gave, or ask to be believed
+with nothing to show and nothing to give. It can say a buyer is ready to agree and something you
+are obliged to tell them has not been said. And it can say that what you sell would cost them more
+than they have shown they can bear. These are the tool's own rules, not your company's, so they
+hold for a seller with nobody behind them, and they are reads like any other: they count first,
+judge last, and can be traced down to the facts. *(My reason, not yet yours.)*
+
 The tool writes in your voice, and learns it from the changes you ask for.
 
 ## 9. Feedback
@@ -230,13 +239,14 @@ Some of the story is still open, and it says so rather than filling the gaps.
 - Whether it holds for any kind of sale. It has been pressure-tested on one, a long, patient
   sell to organisations with several people to win, and measured on paper against its opposite, a
   fast sale to one owner. The aim is no longer that every part holds everywhere: the set should
-  cover the spectrum from a lead onwards, and each read says what it needs. Today 13 of the 23
+  cover the spectrum from a lead onwards, and each read says what it needs. Today 18 of the 28
   reads can be made on a live thread with no history, and 10 cannot. The fast sale has not been
   built as a scenario yet, and a sale to one person has not been tried.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
-- What the tool reads in what a buyer hands over. The place for it exists, and nothing reads it
-  yet.
+- What the tool reads in what a buyer hands over. The place for it exists, and the tool can say
+  what you asked for and what has come. What it reads inside a document is not written yet, and
+  the read of whether they can carry what you sell waits on that.
 - How much a day can hold. There is no fixed number, but a day can still be too full for the
   time you have, and nothing yet asks about your time.
 - How you see or change what the tool holds, beyond the cards.

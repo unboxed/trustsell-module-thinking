@@ -14,9 +14,11 @@ connects:
   - to: "03-offerings"
     requests: "which offering a conversation relates to, and the rebuttal to a worry on record"
     provides: "the worry it has on record (for 03 to answer) and a lead's situation (for 03 to judge fit)"
+  - to: "04-organization"
+    requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
-draws_from: [gmail, calendar, slack, contacts, meet, web]
+draws_from: [gmail, calendar, slack, contacts, meet, web, handover]
 ---
 
 # 02 · People + Organisations
@@ -88,7 +90,9 @@ floor you can browse:
   [`assemblies/`](../assemblies/) library: *person history, conversation history, meeting history,
   stakeholder map*, and the *deal*, the selling effort the others feed into (its people and
   conversations gathered whole, across any org). The deal is the unit you sell into; People gathers it
-  goal-blind, and the Brain stages it.
+  goal-blind, and the Brain stages it. Since 20 September the deal has a *document set* beside it,
+  what you asked the buyer for and what has come, gathered from what the buyer hands over: the
+  first gather that draws from a source that is neither yours nor told.
 - **Sensing** (the reading, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
   counting then judging) becomes the [`signals/`](../signals/) library. Each signal is a named, reusable
   read that carries its evidence, measured against the relationship's **own rhythm**, earning its
@@ -96,6 +100,15 @@ floor you can browse:
 
 The principle holds across both. *What's* worth sensing is set by the Brain's strategy (scope, which
 signals, sensitivity); the reading stays People's.
+
+**Three of People's reads point against a move**, added 20 September, because until then every
+read in the library pointed toward one. *Enough tries* says when to stop chasing someone who has
+not answered. *Something you must tell them first* holds a close until a disclosure the
+organisation requires is on the thread. *Pushing rather than giving* says what a thread can
+honestly carry before the next message is written: the only real dates in the buyer's words, what
+you owe them, what you could show them. They sit here and not in Organisation on purpose:
+Organisation is optional, and these rules must hold for a solo seller with nobody behind them. Not
+pushing is the tool's rule, not the company's. *(My reason, not yet yours.)*
 
 ## Output
 

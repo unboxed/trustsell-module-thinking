@@ -74,7 +74,7 @@ marks them so.
 ## What it exposes
 
 The coverage map is in [`coverage.md`](coverage.md), question by question. The short version, and the
-reason this document was written: three of these twenty-two are answered today, five are answered in
-part, and **fourteen are answered by nothing at all**. They gather into seven families, and only one
-of the seven is really about volume. The rest are questions any seller asks, which one seller happened
-not to.
+reason this document was written: on the day it was written, three of these twenty-two were answered,
+five were answered in part, and **fourteen were answered by nothing at all**. They gathered into seven
+families, and only one of the seven is really about volume. The rest are questions any seller asks,
+which one seller happened not to. The count moves as reads are written, and the map keeps it.

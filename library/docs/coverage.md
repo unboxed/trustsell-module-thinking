@@ -28,8 +28,9 @@ on the library page, so it is not repeated here. The four that no read claims:
 
 ## The volume seller's 22
 
-No signal claims any of these, because the set did not exist when the signals were written. The
-verdicts below are mine, from reading every entry. The last column says what a new read would declare
+When this map was first written no signal claimed any of these, because the set did not exist when
+the signals were written; since later on 20 September five do (V5, V13, V14, V17 in part, V18, V19).
+The verdicts below are mine, from reading every entry. The last column says what a new read would declare
 in `assumes:`, which exists since 20 September (the words changed on the way; see the end). Questions
 that come before a lead are outside the tool's scope (the user, 20 September: it covers from a lead
 onwards, not mass cold calling and messaging), so they are marked as such rather than counted as
@@ -41,7 +42,7 @@ holes.
 | V2 What changed that gives me a reason now? | `time-to-reconnect` and `buying-intent` both need an existing thread. On a stranger, nothing. | Before a lead: out of scope | nothing |
 | V3 Which candidates are the same as each other? | Nothing. Every count is per person or per offering. | Before a lead: out of scope | nothing |
 | V4 Has anyone else at my firm been in touch? | Nothing. `colleagues-looped-in-count` counts the **buyer's** colleagues, not mine. The library assumes one seller with nobody beside them; `pricing-fence` even says it is empty "used solo with no organisation behind you". | Hole | nothing; universal |
-| V5 How many times have I tried, and when do I stop? | Nothing. Every read asks whether to reach out; none asks whether to give up. | Hole | nothing; universal |
+| V5 How many times have I tried, and when do I stop? | [`enough-tries`](../signals/enough-tries.md), since 20 September: your tries since they last wrote, the innocent-explanation scan, and the goal's tempo for where "enough" sits. The first read that points away from a move. | Answered | `[]`: it stands on your own sent messages, so it holds on a lead who never replied |
 | V6 What hour, and what channel, do they answer on? | `best-way-to-reach` answers the channel from where they actually respond, so it needs a past with them. The hour is nowhere. | Partly | the cohort version is before a lead: out of scope |
 | V7 Is the person I reached the one who can decide? | `missing-people`, through `decision-maker-reached`. | Answered | already assumes `several-people`, which a one-owner business does not meet; see the end |
 | V8 Does this business clear the bar? | `fit-match`, against the told fit-shape. The funder's box is a fit-shape. | Answered | nothing |
@@ -49,31 +50,32 @@ holes.
 | V10 How urgent is it for them? | `buying-intent` is closest and is written around procurement entering a thread. Since 20 September the fast end's own words arrive first as `web-form#form-submission`; no read takes them yet. | Partly, one end only | nothing |
 | V11 Is their income steady or lumpy? | No read. Until 20 September every channel in the library was one of the seller's own accounts and nothing gathered what the buyer hands over. `channels/handover.md` now holds it, as an envelope only: what the tool reads inside a set of accounts is not written yet. | Hole; the channel exists, the read does not | nothing; universal |
 | V12 What do they already owe, and to whom? | No read. Same as V11, plus public records, which no channel covers. | Hole; the channel exists, the read does not | nothing; universal |
-| V13 Can they carry this on top of what they carry? | Nothing. No read of whether a buyer can bear what is being sold. | Hole | nothing; universal |
-| V14 What have they still not sent me? | `loose-end`'s second shape is a question of yours that never came back, so a single outstanding item is covered. A required **set**, three of five documents in, is not. Since 20 September `handover#document-request` and its `answered by` are the records such a read would count. | Partly | nothing |
+| V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Written so the decisions have a place to land: the term is not a told field and what is inside a set of accounts is not written yet, so the read cannot be made today. | Answered by a read that waits on two decisions | `[]` |
+| V14 What have they still not sent me? | [`missing-documents`](../signals/missing-documents.md), since 20 September, over the new [`document-set`](../assemblies/document-set.md) gather: what you asked for against what came, from `handover#document-request` and `handover#handed-over-document`. Which documents a sale needs is still a told gap, so it reads what you asked for, never what you should have. | Answered | `thread-under-way` |
 | V15 Which of the things I offer should this go to? | Nothing. `world/goal.md` carries `offering:` as a single id and `offering-entry` is written for one product. | Hole, structural | nothing; universal |
 | V16 What was turned down last time on one like this? | Nothing. The library holds no outcomes at all; story ch. 9 says nothing has come back yet. | Hole | outcomes on record, which no word names |
-| V17 Why should a stranger believe me? | `unbacked-claim` checks a claim has evidence behind it. The seller's own record of having delivered is nowhere. | Hole | nothing; universal |
-| V18 What must I disclose about the cost? | `compliance-fence` gates a draft. Module 04 has no signals, so nothing reasons about it. | Partly, no read | nothing |
-| V19 Am I manufacturing urgency that is not real? | `unbacked-claim` is the nearest thing and points the other way, at claims rather than pressure. | Hole | nothing; universal |
+| V17 Why should a stranger believe me? | [`pushing`](../signals/pushing.md), second shape, since 20 September: asking to be taken on your word, with nothing to show (the evidence shelf, by buyer type) and nothing to give (what they asked for, what you promised) after several unanswered notes. The seller's own record of having delivered is still nowhere: that is outcomes, V16's family. | Answered in part | `thread-under-way` |
+| V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. | Answered | `thread-under-way` |
+| V19 Am I manufacturing urgency that is not real? | [`pushing`](../signals/pushing.md), first shape, since 20 September: the only real dates on a thread are the buyer's own words and a dated change in your told pricing; any other deadline is manufactured. | Answered | `thread-under-way` |
 | V20 When does someone I sold to come round again? | Nothing. The ladder stops at the sale; `deal` mentions a renewal only as an identity edge case. | Hole, structural | nothing; universal |
 | V21 Who could this buyer introduce me to? | `warm-path` finds a way in through a mutual contact. A customer introducing you onward is the mirror of it, and is absent. | Partly | nothing |
 | V22 Which of the people I sold to is in trouble? | Nothing. Nothing exists after the sale. | Hole | nothing; universal |
 
 ## The holes, in seven families
 
-Eleven holes (fourteen until 20 September, when V1 to V3 were put outside the tool's scope), but not
-eleven separate pieces of work. They gather into seven, and the right-hand column is the thing worth
-arguing about: **none of them is about volume.** They were missed because one seller did not need
+Eleven holes when this was written (fourteen until 20 September, when V1 to V3 were put outside the
+tool's scope; seven since the fourth pass the same day), but not eleven separate pieces of work. They
+gather into seven families, and the right-hand column is the thing worth arguing about: **none of
+them is about volume.** They were missed because one seller did not need
 them, and they would serve the patient end just as well.
 
 | Family | Questions | Is it about volume, or about any sale? |
 |---|---|---|
-| **Giving up, and what was turned down** | V5, V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
-| **Reading what the buyer gives you** | V11, V12, V14 in part | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) now gathers it, as an envelope. What the tool reads inside is still the deepest hole in the map. |
-| **Whether they can bear it** | V13 | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
+| **Giving up, and what was turned down** | V5 (answered 20 September), V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
+| **Reading what the buyer gives you** | V11, V12 (V14 answered 20 September) | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) now gathers it, as an envelope, and [`document-set`](../assemblies/document-set.md) counts it. What the tool reads inside is still the deepest hole in the map. |
+| **Whether they can bear it** | V13 (a read since 20 September, waiting on two decisions) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
-| **Being believed, and not pushing** | V17, V19, V18 in part | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift, yet nothing reads a draft to check. |
+| **Being believed, and not pushing** | V17 in part, V19, V18 (all reads since 20 September) | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
 | **After the sale** | V20, V22, V21 in part | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and the ladder ends at the signature. |
 | **Colleagues** | V4 | **Any sale.** The library assumes a seller with nobody else in their firm. |
 
@@ -81,18 +83,22 @@ them, and they would serve the patient end just as well.
 
 - **Fix Q26** on [`signals/voice.md`](../signals/voice.md): it already counts formality and should claim
   that question.
-- **Module 04 having no signals** is the reason two families are empty. The decision is recorded as
+- **Module 04 having no signals** was the reason two families were empty. The decision is recorded as
   deliberate, on the grounds that the module matches evidence and gates drafts so there is no
   behaviour to sense. That reasoning holds for compliance and not for ethics: refusing to push, and
-  refusing to oversell someone who cannot bear it, are reads, and they belong to a rung.
-- **Nothing in the library has an opinion against a sale.** Across 23 signals, every read points
-  toward a move. That is the single most important thing this map found.
+  refusing to oversell someone who cannot bear it, are reads, and they belong to a rung. Since 20
+  September they do, and not in module 04: it is optional, and the tool's own rules must hold for a
+  solo seller with nobody behind them. They live in People and Offerings and borrow 04's floors.
+- **Nothing in the library had an opinion against a sale.** Across the first 23 signals, every read
+  pointed toward a move. That was the single most important thing this map found, and it is why the
+  fourth pass wrote the reads that point the other way first: `enough-tries` (stop), `pushing`
+  (not like this), `disclosure-still-owed` (not yet) and `can-they-carry-it` (not this sale).
 
 ## What this map does not settle
 
 - Whether the 22 are the right second set. They are one trade's, drawn from what brokers publish about
   their own work, with the inferred ones marked in [`volume-questions.md`](volume-questions.md).
-- Which of the eleven holes are worth filling, and in what order. That is the user's call, and the
+- Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
 - What each count counts. All 87 are still `defined: false`, and some of them should probably merge or
@@ -141,18 +147,42 @@ layer: `world/goal.md` lists what the seller has plugged in, `build.js` checks t
 channel or told doc that still says it, and the library page reads the same list. The BOPS world
 plugs in Gmail, Calendar, Drive, Contacts, Meet, Slack and the web, as its channel docs said.
 
+**Done in the fourth pass, 20 September.** The reads that move a deal forward or hold it back, in
+the order proposed below (which was mine, and is not yet confirmed). Five signals, one assembly and
+eleven counts, every count `defined: false` like the rest. [`enough-tries`](../signals/enough-tries.md)
+(V5) stands on your own sent messages and the innocent-explanation scan, so it declares `assumes: []`:
+it is the one decay read that needs no rhythm, which is what lets it hold on a lead who never
+replied. [`missing-documents`](../signals/missing-documents.md) (V14) reads the new
+[`document-set`](../assemblies/document-set.md) gather, the first assembly to draw from what the
+buyer hands over; People's `draws_from` names `handover` now. [`can-they-carry-it`](../signals/can-they-carry-it.md)
+(V13) is written so two decisions have a place to land, and says it cannot be made until they are:
+the term is not a told field, and what is inside a set of accounts is not written.
+[`disclosure-still-owed`](../signals/disclosure-still-owed.md) (V18) reads the thread against the
+fence's must-say rules and holds a close until they are on record; what a jurisdiction requires
+stays "not written yet", the organisation's to tell. [`pushing`](../signals/pushing.md) (V19, V17
+in part) is the tool's own rule turned into a read, in two shapes: urgency the record does not back,
+and asking to be taken on trust with nothing to show or give. It does not judge a draft; it says what
+the thread can honestly carry, and the draft is written inside that, the way it is written inside
+the fence. **Where they live** is the decision worth arguing with: not in Organisation, which is
+optional, because the tool's rules must hold for a solo seller. People holds three and Offerings
+one, and both borrow Organisation's floors (the fence, the evidence shelf) through a new
+`connects`. *(My reason, not yet yours.)* What the pass did not do: define a count, add a field to a
+told source, gather `sms` or `web-form` (so a try by text is not counted yet, and the reads say so),
+or touch a card. Eight of the 22 are now answered by a read, one by asking, three in part, seven by
+nothing, and three are out of scope. The assumptions count: 10 reads assume nothing, 8
+`thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 18 of the 28 can be made on a
+live thread with no history, and 10 cannot.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Write the missing reads**, from the seven families above, each declaring its `assumes:`. First
-  the ones that move a deal forward or hold it back, because that is where the fast end lives and
-  none needs a new channel: when to stop (V5), the required document set (V14, which can now count
-  `handover#document-request`), whether they can carry it (V13), what must be disclosed (V18), and
-  the opinion against a sale (V17, V19). Then reading what the buyer hands over (V11, V12): its
-  channel exists, and what is inside a document is the decision still to make before a read can
-  stand on it. Then colleagues (V4), after
+- **Write the remaining reads**, each declaring its `assumes:`. Reading what the buyer hands over
+  (V11, V12): the channel and the gather exist, and what is inside a document is the decision still
+  to make before a read can stand on it; `what-they-can-bear` and
+  `existing-commitments-on-record` are already waiting for it. Then colleagues (V4), after
   the sale (V20 to V22, once the second scenario's ladder continues past it), and what was turned
-  down last time (V16, once outcomes exist). Counting over a group needs no new machinery: add an
+  down last time (V16, once outcomes exist, which is also what V17's other half needs: the seller's
+  own record of having delivered). Counting over a group needs no new machinery: add an
   assembly that gathers the group and a count names it in `over:` exactly as a per-person count
   does. Checked against the build's joins.
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and

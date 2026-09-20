@@ -15,6 +15,8 @@ connects:
     provides: "the evidence library: the case study a claim needs, with its strength attributes"
   - to: "05-persona-you"
     provides: "the compliance fence to write inside, and the house voice guide to write toward"
+  - to: "02-relationships"
+    provides: "what must always be said before a buyer agrees, from the fence, and what is on the evidence shelf for a buyer's type"
 draws_from: [drive]
 ---
 
@@ -93,8 +95,14 @@ whether something is a signal is whether the read, when it changes, points at a 
 that kind of read: it only supplies material and gates a draft. The one judgement-shaped question it
 brushes against, *is this evidence strong enough to carry the claim*, was handed up a floor to Offerings'
 [`answer-gap`](../signals/answer-gap.md), which judges strength off the attributes
-Organisation merely surfaces. So Organisation does two plain jobs and supplies two more gathered
-floors, none of it a signal:
+Organisation merely surfaces. That reasoning holds for compliance and for evidence, and not for
+ethics (found 20 September): refusing to push, refusing to close before a required disclosure is
+on record, and refusing to oversell someone who cannot bear it are reads, and since that day they
+exist. They live in People (`enough-tries`, `disclosure-still-owed`, `pushing`) and Offerings
+(`can-they-carry-it`), not here, because Organisation is optional and those rules must hold for a
+solo seller too. Two of them borrow this module's floors: the fence for what must be said, the
+evidence shelf for what can be shown. So Organisation still does two plain jobs and supplies two
+more gathered floors, none of it a signal:
 
 - **Match.** Find the right evidence. Given the kind of evidence a claim needs (from Offerings or the
   Brain) and who the customer is, it reads the [`proof-library`](../assemblies/proof-library.md) and

@@ -132,13 +132,13 @@ possible, marked `provisional`, and leaves `over: []` where it could be one of s
 rows are `source · words`, and the build checks each source against the trail. All of this is a
 later pass, not an oversight.
 
-**A third thing is missing rather than unfinished.** Eleven of the volume seller's twenty-two
-questions have no read at all, in seven families, and only one family is really about volume. The two
-that matter most: nothing in the library can hold an opinion *against* a sale (all 23 signals point
-toward a move), and nothing reads what the buyer hands over. The channel for that exists since 20
-September (`channels/handover.md`, the envelope only, with `sms.md` and `web-form.md` beside it for
-the fast end); no module draws from the three and no read needs them yet. `library/docs/coverage.md`
-names all of them.
+**A third thing is missing rather than unfinished.** Seven of the volume seller's twenty-two
+questions still have no read at all, and none of the holes is really about volume. Since later on 20
+September four reads point *against* a move or a sale (`enough-tries`, `disclosure-still-owed`,
+`pushing` in People; `can-they-carry-it` in Offerings), and People draws from what the buyer hands
+over (`assemblies/document-set.md`, the envelope only: which documents came against which you asked
+for). What the tool reads *inside* a document is still not written, and `sms.md` and `web-form.md`
+are drawn from by nothing. `library/docs/coverage.md` names all of it.
 
 - `build.js`: the one script. Plain Node, no packages. Reads `library/`, validates every id,
   writes `playbook/assets/data.js`.

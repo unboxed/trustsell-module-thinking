@@ -110,6 +110,11 @@ real barrier to a switch. It keeps off **price**, which stays its own separate r
 competitive reads never judge the same thing twice. **Is our own pitch honest?** And it turns
 "back every claim" on itself, flagging a boast in your pitch that has nothing on file behind it
 before it ever reaches a draft, the guard that feeds the render and Organisation's compliance fence.
+**Can they carry it?** And, since 20 September, it asks the question after fit and price: whether
+this buyer can bear what is being sold on top of what they already carry, from what they handed
+over or said. It is the one read in Offerings that can say no to a sale that would close, and it
+sits here rather than in Organisation because Organisation is optional and a solo seller must be
+held to it too. *(My reason, not yet yours.)*
 
 What it can't do yet: it reads the present, not the future. Whether a buyer's blocker is *likely to
 lift* is a forecasting question, and that's parked, not Offerings' to guess.

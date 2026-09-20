@@ -117,7 +117,8 @@ is revealed on click, so it does not belong in the blurb). The library page,
 editing a `blurb` and running `node build.js` updates its card with no other change.
 
 Not every module has every floor, and the library is meant to reveal that. **04-organization has no
-signals** (it matches evidence and gates drafts, so there is no behaviour to sense); **01-integrations**
+signals** (it matches evidence and gates drafts, so there is no behaviour to sense; the reads
+against a sale that brush its rules live in People and Offerings, because Organisation is optional); **01-integrations**
 has only raw data; **00-spine**'s "assemblies" are the scoreboard and calendar, a different kind of
 synthesis. Absence is information; do not invent a floor a module does not have.
 
@@ -163,11 +164,13 @@ it, the buyer hands it over. *(My reason, not yet yours.)*
 
 Two things to keep true. **Only the envelope is written**: what it is, who sent it, when, by which
 way, and which request of yours it answers. What the tool reads inside a document is not written
-yet, and the doc says so rather than listing plausible fields. **Nothing draws from it yet.** No
-module names it in `draws_from` and no read `needs` it; the reads that would are the ones
-[`coverage.md`](coverage.md) lists under reading what the buyer gives you. The same is true of the
-two other channels laid the same day for the fast end, [`sms.md`](../channels/sms.md) and
-[`web-form.md`](../channels/web-form.md): the floor is there so the reads can be written on it.
+yet, and the doc says so rather than listing plausible fields. **Only the envelope is read.** People draws
+from it since later on 20 September: [`assemblies/document-set.md`](../assemblies/document-set.md)
+gathers what you asked a buyer for against what came, and two reads need it
+(`missing-documents`, `can-they-carry-it`). Both stop at the envelope; the counts that would read
+inside a document exist and say "not written yet". The two other channels laid the same day for
+the fast end, [`sms.md`](../channels/sms.md) and [`web-form.md`](../channels/web-form.md), are
+still drawn from by nothing: the floor is there so the reads can be written on it.
 
 ## Whether a channel is connected is the scenario's to say
 
