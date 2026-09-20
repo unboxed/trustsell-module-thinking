@@ -46,11 +46,11 @@ holes.
 | V7 Is the person I reached the one who can decide? | `missing-people`, through `decision-maker-reached`. | Answered | already assumes `several-people`, which a one-owner business does not meet; see the end |
 | V8 Does this business clear the bar? | `fit-match`, against the told fit-shape. The funder's box is a fit-shape. | Answered | nothing |
 | V9 What do they want it for? | Nothing reads it, and nothing should: it is a fact only they hold, so it is asked. | Answered by asking | nothing |
-| V10 How urgent is it for them? | `buying-intent` is closest and is written around procurement entering a thread. | Partly, one end only | nothing |
-| V11 Is their income steady or lumpy? | Nothing. **Every channel in the library is one of the seller's own accounts.** Nothing gathers what the buyer hands over. | Hole, structural | nothing; universal |
-| V12 What do they already owe, and to whom? | Nothing. Same hole as V11, plus public records, which no channel covers. | Hole, structural | nothing; universal |
+| V10 How urgent is it for them? | `buying-intent` is closest and is written around procurement entering a thread. Since 20 September the fast end's own words arrive first as `web-form#form-submission`; no read takes them yet. | Partly, one end only | nothing |
+| V11 Is their income steady or lumpy? | No read. Until 20 September every channel in the library was one of the seller's own accounts and nothing gathered what the buyer hands over. `channels/handover.md` now holds it, as an envelope only: what the tool reads inside a set of accounts is not written yet. | Hole; the channel exists, the read does not | nothing; universal |
+| V12 What do they already owe, and to whom? | No read. Same as V11, plus public records, which no channel covers. | Hole; the channel exists, the read does not | nothing; universal |
 | V13 Can they carry this on top of what they carry? | Nothing. No read of whether a buyer can bear what is being sold. | Hole | nothing; universal |
-| V14 What have they still not sent me? | `loose-end`'s second shape is a question of yours that never came back, so a single outstanding item is covered. A required **set**, three of five documents in, is not. | Partly | nothing |
+| V14 What have they still not sent me? | `loose-end`'s second shape is a question of yours that never came back, so a single outstanding item is covered. A required **set**, three of five documents in, is not. Since 20 September `handover#document-request` and its `answered by` are the records such a read would count. | Partly | nothing |
 | V15 Which of the things I offer should this go to? | Nothing. `world/goal.md` carries `offering:` as a single id and `offering-entry` is written for one product. | Hole, structural | nothing; universal |
 | V16 What was turned down last time on one like this? | Nothing. The library holds no outcomes at all; story ch. 9 says nothing has come back yet. | Hole | outcomes on record, which no word names |
 | V17 Why should a stranger believe me? | `unbacked-claim` checks a claim has evidence behind it. The seller's own record of having delivered is nowhere. | Hole | nothing; universal |
@@ -70,7 +70,7 @@ them, and they would serve the patient end just as well.
 | Family | Questions | Is it about volume, or about any sale? |
 |---|---|---|
 | **Giving up, and what was turned down** | V5, V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
-| **Reading what the buyer gives you** | V11, V12, V14 in part | **Any sale.** Every channel in the library is the seller's own account. A buyer hands over accounts, budget papers, a brief, a specification, and nothing gathers them. This is the deepest hole in the map. |
+| **Reading what the buyer gives you** | V11, V12, V14 in part | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) now gathers it, as an envelope. What the tool reads inside is still the deepest hole in the map. |
 | **Whether they can bear it** | V13 | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
 | **Being believed, and not pushing** | V17, V19, V18 in part | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift, yet nothing reads a draft to check. |
@@ -125,22 +125,32 @@ carries the third kind of gap, the assumption gap; `library-format.md` § *The s
 "must hold for any kind of sale"; the library page shows each read's assumptions in words and counts
 them on the signals step.
 
+**Done in the third pass, 20 September.** The missing floor is laid in `channels/`, three docs.
+[`sms.md`](../channels/sms.md) and [`web-form.md`](../channels/web-form.md) are the fast end's
+records: a conversation by text is a thread like any other, and an enquiry on your own site is the
+moment a stranger becomes a lead, the earliest record the tool covers and the only one where the
+buyer speaks first. Neither names a provider, because none is chosen; their Source columns are plain
+notes, as LinkedIn's are. Not a dialler, a bought list or a sequencer: those work the list before
+there is a lead. [`handover.md`](../channels/handover.md) is the channel nothing covered at either
+end, what the buyer hands over on the way to a close. It is a third kind of source, `buyer`, beside
+`account`, `builtin` and `told`: nothing fetches it and you cannot say it. It holds the envelope only
+(what, from whom, when, by which door, in answer to which request of yours) and says in so many words
+that what the tool reads inside a document is not written yet. No module draws from the three and no
+read needs them: the floor is there for the reads to stand on. And `connected:` has left the general
+layer: `world/goal.md` lists what the seller has plugged in, `build.js` checks the list and refuses a
+channel or told doc that still says it, and the library page reads the same list. The BOPS world
+plugs in Gmail, Calendar, Drive, Contacts, Meet, Slack and the web, as its channel docs said.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Lay the missing floor in `channels/`.** Nothing above can be tested until the volume end has
-  records: SMS, a web form, and whatever a lead hands over on the way to a close. Not a dialler, a
-  bought list or an email sequencer: those work the list before there is a lead, and that is outside
-  the tool's scope. And the channels nothing covers at either end: whatever the buyer hands over,
-  which is the deepest hole in the map.
-- **Move `connected:` out of the general layer.** It hard-codes one seller's stack onto the channel
-  docs. A channel says what it is; what this seller has plugged in belongs in the scenario's `world/`.
-  It is read in only two places in `build.js` and two in `library.js`, both cosmetic.
 - **Write the missing reads**, from the seven families above, each declaring its `assumes:`. First
   the ones that move a deal forward or hold it back, because that is where the fast end lives and
-  none needs a new channel: when to stop (V5), the required document set (V14), whether they can
-  carry it (V13), what must be disclosed (V18), and the opinion against a sale (V17, V19). Then
-  reading what the buyer hands over (V11, V12), once its channel exists. Then colleagues (V4), after
+  none needs a new channel: when to stop (V5), the required document set (V14, which can now count
+  `handover#document-request`), whether they can carry it (V13), what must be disclosed (V18), and
+  the opinion against a sale (V17, V19). Then reading what the buyer hands over (V11, V12): its
+  channel exists, and what is inside a document is the decision still to make before a read can
+  stand on it. Then colleagues (V4), after
   the sale (V20 to V22, once the second scenario's ladder continues past it), and what was turned
   down last time (V16, once outcomes exist). Counting over a group needs no new machinery: add an
   assembly that gathers the group and a count names it in `over:` exactly as a per-person count
@@ -149,8 +159,9 @@ yet yours.)*
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.
 - **Write the second scenario's world**, `library/scenarios/pmf/world/`, with no `cards/`. A scenario
-  with a `world/` and no cards builds clean; `goal.md` must carry `offering`, `today` and `ladder`,
-  and the other three world files must exist. It is built around live deals moving to a close, not a
+  with a `world/` and no cards builds clean; `goal.md` must carry `offering`, `today`, `ladder` and
+  `connected` (which will name `sms`, `web-form` and `handover` for the first time), and the other
+  three world files must exist. It is built around live deals moving to a close, not a
   list being worked. Its ladder continues past the sale, which is what makes the after-the-sale
   family testable. Once it exists, `goal.md` could say what the sale has (a thread, a history,
   several people) and the build could check that a card's reads assume no more than that, which

@@ -2,7 +2,6 @@
 id: goal-told
 name: What you told me about your goal
 source: told
-connected: true
 icon: pencil
 ---
 

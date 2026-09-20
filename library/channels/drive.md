@@ -3,7 +3,6 @@ id: drive
 name: Drive
 brand: Google
 source: account
-connected: true
 icon: hard-drive
 ---
 

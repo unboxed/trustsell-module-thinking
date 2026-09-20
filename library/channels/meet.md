@@ -3,7 +3,6 @@ id: meet
 name: Meet
 brand: Google
 source: account
-connected: true
 icon: video
 ---
 

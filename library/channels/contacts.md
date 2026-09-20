@@ -3,7 +3,6 @@ id: contacts
 name: Contacts
 brand: Google
 source: account
-connected: true
 icon: contact-round
 ---
 

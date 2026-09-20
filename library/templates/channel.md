@@ -6,8 +6,12 @@
 id: <kebab-slug>          # channel id, e.g. gmail. Matches a module's draws_from value.
 name: <Display name>      # e.g. Gmail
 brand: <Brand>            # the account family, e.g. Google, Slack, Tavily
-source: <account|builtin> # account = the user authorises it once. builtin = ships always-on (web, enrichment)
-connected: <true|false>   # false = a DATA GAP, named not faked
+source: <account|builtin|buyer> # account = the user authorises it once. builtin = ships always-on (web, enrichment).
+                          # buyer = the buyer hands it over, nothing fetches it (channels/handover.md). A told doc says told.
+                          # brand is left out where no provider is chosen yet (sms, web-form), and on buyer and told docs.
+                          # Whether a channel is CONNECTED is not said here: the scenario lists what its seller has
+                          # plugged in, as connected: in scenarios/<name>/world/goal.md. A channel left out is a DATA
+                          # GAP, named not faked.
 icon: <lucide-or-glyph>   # e.g. mail, calendar, hash, telescope
 ---
 

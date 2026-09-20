@@ -3,7 +3,6 @@ id: salesforce
 name: Salesforce
 brand: Salesforce
 source: account
-connected: false
 icon: cloud
 ---
 
@@ -14,8 +13,9 @@ meant to close, and the account, contact and activity behind it. This is the str
 the mail and calendar history can't show on its own, useful to Offerings for stage and to People for
 who's attached to what.
 
-This channel is **not connected yet**, so it's a **data gap**: the records below are mapped against
-Salesforce's API but no live data flows until the account is authorised. The single `CRM record`
+Whether it is plugged in is the scenario's to say (`connected:` in its `world/goal.md`); the example
+seller has not, so there it is a **data gap**. The records below are mapped against Salesforce's API,
+and no live data flows until an account is authorised. The single `CRM record`
 here is a placeholder shape, not yet broken into the separate deal, account and contact objects
 Salesforce actually exposes. Owned by Connections, fetched fresh and carried untouched once live; no
 opinion is formed here.

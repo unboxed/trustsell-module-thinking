@@ -2,7 +2,6 @@
 id: people-told
 name: What you told me about people
 source: told
-connected: true
 icon: pencil
 ---
 

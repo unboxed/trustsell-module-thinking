@@ -257,6 +257,19 @@ const S = {
   questions: new Set(questionIds),
 };
 
+// What this seller has plugged in is the scenario's, not the channel's (moved out of the channel
+// docs on 20 September). world/goal.md lists it in `connected`; a channel it leaves out is not
+// connected, the data gap the cards name. A channel is what it is, so a channel or told doc that
+// still says `connected:` fails, and the general layer stays free of one seller's stack.
+if (!world.goal || !('connected' in world.goal)) problems.push(`${SCN}/world/goal.md: no connected; list the channels this seller has plugged in, or connected: []`);
+else must(world.goal.file, 'connected', world.goal.connected, S.channels, 'channel');
+const plugged = new Set([].concat((world.goal && world.goal.connected) || []));
+for (const ch of L.channels) {
+  if ('connected' in ch) problems.push(`${ch.file}: connected belongs in ${SCN}/world/goal.md, not on the channel`);
+  ch.connected = plugged.has(ch.id);
+}
+for (const t of L.told) if ('connected' in t) problems.push(`${t.file}: connected; a told source is said, never connected`);
+
 for (const m of L.modules) {
   must(m.file, 'draws_from', m.draws_from, S.channels, 'channel');
   for (const c of m.connects || []) must(m.file, 'connects.to', c.to, S.modules, 'module');

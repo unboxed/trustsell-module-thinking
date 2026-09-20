@@ -98,6 +98,9 @@
   var who = function (id) { return id === 'you' ? 'You' : (WORLD[id] || id); };
   var firstLine = function (html) { var m = /<p>([\s\S]*?)<\/p>/.exec(html || ''); return m ? m[1].replace(/<[^>]+>/g, '') : ''; };
   var recordsIn = function (src) { return (L.records || []).filter(function (r) { return r.source === src; }).length; };
+  /* Whether a channel is plugged in is the scenario's to say, in its world/goal.md (moved off the
+     channel docs on 20 September). A channel the list leaves out is not connected. */
+  var plugged = function (id) { return ((L.world && L.world.goal && L.world.goal.connected) || []).indexOf(id) > -1; };
   var cardsOn = function (sigId) {
     return (L.cards || []).filter(function (c) { return c.signal === sigId || [].concat(c.supporting || []).indexOf(sigId) > -1; });
   };
@@ -123,7 +126,7 @@
     assemblies: function (e) { return 'About ' + e.about; },
     records: function (e) { return e.label + ' · ' + plural((e.fields || []).length, 'field'); },
     told: function (e) { return plural(recordsIn(e.id), 'record'); },
-    channels: function (e) { return (e.connected ? 'Connected' : 'Not connected') + ' · ' + plural(recordsIn(e.id), 'record'); },
+    channels: function (e) { return (plugged(e.id) ? 'Connected' : 'Not connected') + ' · ' + plural(recordsIn(e.id), 'record'); },
     widgets: function (e) { return e.family === 'detail' ? 'A detail' : 'A reply'; },
     modules: function (e) { return e.blurb; },
     docs: function (e) { return firstLine(e.intro); },
@@ -138,7 +141,7 @@
     assemblies: function (e) { return 'Assembly · about ' + e.about; },
     records: function (e) { var s = find('channels', e.source) || find('told', e.source); return 'Record · in ' + (s ? s.name : e.source); },
     told: function () { return 'Told · what only you can say'; },
-    channels: function (e) { return 'Channel · ' + e.brand + ' · ' + (e.connected ? 'connected' : 'not connected'); },
+    channels: function (e) { return ['Channel', e.brand, plugged(e.id) ? 'connected' : 'not connected'].filter(Boolean).join(' · '); },
     widgets: function (e) { return 'Widget · ' + (e.family === 'detail' ? 'a detail' : 'a reply'); },
     modules: function () { return 'Module'; },
     docs: function () { return 'Note'; },

@@ -105,7 +105,7 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 
 | Rung | Where | What it is |
 |---|---|---|
-| Channels | `library/channels/` | what you connect. Carries records, forms no opinion |
+| Channels | `library/channels/` | what you connect, and what the buyer hands over (`handover.md`, `source: buyer`, 20 September). Carries records, forms no opinion. Whether a channel is connected is the scenario's to say, in `world/goal.md` |
 | Told | `library/told/` | what only you can say. No channel can fetch it |
 | Records | rows inside a channel or told file | the ingredients, addressed as `gmail#email-message` |
 | Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |
@@ -132,11 +132,13 @@ possible, marked `provisional`, and leaves `over: []` where it could be one of s
 rows are `source · words`, and the build checks each source against the trail. All of this is a
 later pass, not an oversight.
 
-**A third thing is missing rather than unfinished.** Fourteen of the volume seller's twenty-two
+**A third thing is missing rather than unfinished.** Eleven of the volume seller's twenty-two
 questions have no read at all, in seven families, and only one family is really about volume. The two
 that matter most: nothing in the library can hold an opinion *against* a sale (all 23 signals point
-toward a move), and every channel is one of the seller's own accounts, so nothing gathers what the
-buyer hands over. `library/docs/coverage.md` names all of them.
+toward a move), and nothing reads what the buyer hands over. The channel for that exists since 20
+September (`channels/handover.md`, the envelope only, with `sms.md` and `web-form.md` beside it for
+the fast end); no module draws from the three and no read needs them yet. `library/docs/coverage.md`
+names all of them.
 
 - `build.js`: the one script. Plain Node, no packages. Reads `library/`, validates every id,
   writes `playbook/assets/data.js`.

@@ -3,7 +3,6 @@ id: web
 name: Web / Tavily
 brand: Tavily
 source: builtin
-connected: true
 icon: telescope
 ---
 

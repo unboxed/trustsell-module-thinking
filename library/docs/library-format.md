@@ -123,8 +123,9 @@ synthesis. Absence is information; do not invent a floor a module does not have.
 
 ## The told source: a module's own raw data
 
-Raw data has two homes. Most of it is the shared **channels** in `channels/` (the accounts you
-connect, the always-on tools). But some Floor-1 facts are not fetched from anywhere: they are what the
+Raw data has three homes. Most of it is the shared **channels** in `channels/` (the accounts you
+connect, the always-on tools, and, since 20 September, what the buyer hands over; see the next
+section). But some Floor-1 facts are not fetched from anywhere: they are what the
 user **states outright**, the pitch for a product, the shape of a good-fit customer, a price. That
 **told** input is raw data too, and the most deterministic kind there is, because the user says it
 rather than the tool inferring it.
@@ -149,6 +150,32 @@ Three things to keep true:
   ([`offering-told.md`](../told/offering-told.md)), Organisation
   ([`organisation-told.md`](../told/organisation-told.md)) and Profile
   ([`profile-told.md`](../told/profile-told.md)). **Offerings is the worked example of this floor.**
+
+## What the buyer hands over: the third home
+
+Added 20 September. Until then every channel was one of the seller's own accounts, so a buyer's
+accounts arriving as a mail attachment were a filename and a size, and nothing knew they were the
+buyer's, or that three of five asked-for documents were in. [`channels/handover.md`](../channels/handover.md)
+is the third home: what a lead gives you on the way to a close (accounts, a brief, a specification),
+by whichever door it arrives. It lives in `channels/` and is shaped like a channel doc, but its
+`source:` is `buyer`, beside `account`, `builtin` and `told`: nothing fetches it and you cannot say
+it, the buyer hands it over. *(My reason, not yet yours.)*
+
+Two things to keep true. **Only the envelope is written**: what it is, who sent it, when, by which
+way, and which request of yours it answers. What the tool reads inside a document is not written
+yet, and the doc says so rather than listing plausible fields. **Nothing draws from it yet.** No
+module names it in `draws_from` and no read `needs` it; the reads that would are the ones
+[`coverage.md`](coverage.md) lists under reading what the buyer gives you. The same is true of the
+two other channels laid the same day for the fast end, [`sms.md`](../channels/sms.md) and
+[`web-form.md`](../channels/web-form.md): the floor is there so the reads can be written on it.
+
+## Whether a channel is connected is the scenario's to say
+
+Moved 20 September. A channel doc says what a service carries and nothing about whether this
+seller has it: that is one seller's stack, and it belongs in the scenario. `world/goal.md` lists what
+is plugged in as `connected:`, a flat list of channel ids that `build.js` checks; a channel left off
+it is **not connected**, the data gap the cards name. A channel or told doc that still carries
+`connected:` fails the build, so the general layer stays clean. The library page reads the same list.
 
 ## Where each entry comes from, the spine
 
@@ -246,7 +273,8 @@ a false choice between universal and wrong). The library is general because the 
 spectrum, from a lead onwards, and each entry states its ground in `assumes:`. Some reads belong
 to long relationships and some to a live thread with no history. A scenario may only rest on reads
 whose assumptions its sale meets; the build does not check that yet. The world and cards are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
-the cast, the organisations, the documents) and a `cards/` (decided 19 September). Today there
+the cast, the organisations, the documents, and, since 20 September, which channels this seller
+has plugged in) and a `cards/` (decided 19 September). Today there
 is one, `bops`, a patient sale to councils. A second, a mass sale, is meant to follow, standing
 on the same channels, assemblies, counts and signals. `build.js` reads the one named in
 `SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a
@@ -299,8 +327,8 @@ below record how the conversion was done and guide any **new** module added late
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
    together, plus any records from the module's own told source.
 4. **Raw data.** The shared channels (raw-data floor, 01 only) live in
-   `channels/<id>.md`: a card-face frontmatter, then the records as a **field-per-row
-   table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a
+   `channels/<id>.md`: a card-face frontmatter (never `connected:`, which is the scenario's), then
+   the records as a **field-per-row table**, `| Record | Field | Source |`. And, where a module has facts the user states outright, a
    `told/<name>-told.md` of the same shape with `source: told` (see *The told source* above).
 5. **Check the lineage.** Every signal `inputs` id points at a real assembly file; every assembly
    `inputs` id points at a real record id in a channel doc. Walk one signal end to end to confirm

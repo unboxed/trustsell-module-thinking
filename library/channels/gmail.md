@@ -3,7 +3,6 @@ id: gmail
 name: Gmail
 brand: Google
 source: account
-connected: true
 icon: mail
 ---
 

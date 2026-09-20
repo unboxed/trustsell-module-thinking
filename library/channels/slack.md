@@ -3,7 +3,6 @@ id: slack
 name: Slack
 brand: Slack
 source: account
-connected: true
 icon: hash
 ---
 

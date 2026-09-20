@@ -53,14 +53,19 @@ does the heavy lifting, you choose where to push. And nothing goes out without y
 
 ## 3. What the tool needs to know
 
-To prepare anything, the tool has to know your world. It learns it from two places.
+To prepare anything, the tool has to know your world. It learns it from three places.
 
 Some of it the tool can see for itself, in what you connect: your mail, your calendar, your files,
 your messages, the open web. That is where it notices that someone who used to reply in a day has
 gone quiet for weeks, or that you promised something and never sent it.
 
-The rest only you hold: your goal, how a meeting went, how you read a person, what matters most to
+Some only you hold: your goal, how a meeting went, how you read a person, what matters most to
 you, how you like to sound. No connection can fetch those.
+
+The rest the buyer hands you on the way to a close: their accounts, a brief, a specification. The
+tool cannot fetch it and you cannot say it. It arrives when they send it, by whatever way they
+choose, and the tool keeps it as theirs, so it can say what you asked for and what has not come.
+What it reads inside is not written yet. *(My reason, not yet yours.)*
 
 The goal matters most, because it shapes everything else: who the tool looks for, what counts as
 progress, and how fast it is right to move.
@@ -230,6 +235,8 @@ Some of the story is still open, and it says so rather than filling the gaps.
   built as a scenario yet, and a sale to one person has not been tried.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
+- What the tool reads in what a buyer hands over. The place for it exists, and nothing reads it
+  yet.
 - How much a day can hold. There is no fixed number, but a day can still be too full for the
   time you have, and nothing yet asks about your time.
 - How you see or change what the tool holds, beyond the cards.

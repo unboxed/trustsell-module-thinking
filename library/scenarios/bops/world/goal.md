@@ -4,6 +4,7 @@ today: 2026-09-16
 seller: you
 offering: bops          # the thing being sold; a card can be about it
 ladder: [cold, engaged, coalition, partial, full]
+connected: [gmail, calendar, drive, contacts, meet, slack, web]   # what you have plugged in; a channel left out is not connected
 ---
 
 # The goal, in your words
@@ -26,6 +27,9 @@ Where a deal stands, in order: cold, engaged, coalition, partial, full.
 
 ## What is connected
 
-Gmail, Calendar, Drive, Meet, Slack and the open web. **LinkedIn is not connected**, which is a
-data gap several cards name rather than work around. The connected state of each source is held
-where it belongs, as `connected:` in [`../../../channels/`](../../../channels/).
+Gmail, Calendar, Drive, Contacts, Meet, Slack and the open web, listed as `connected:` above.
+**LinkedIn is not connected**, which is a data gap several cards name rather than work around.
+Nor are Salesforce, SMS, the web form or what a buyer hands over: this is a patient sale by mail
+and meeting, and nothing in it uses them. What is plugged in is this seller's, so it lives here and
+not on the channel docs (moved 20 September): a channel says what it carries, and the scenario
+says whether you have it.

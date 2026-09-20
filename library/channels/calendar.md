@@ -3,7 +3,6 @@ id: calendar
 name: Calendar
 brand: Google
 source: account
-connected: true
 icon: calendar
 ---
 

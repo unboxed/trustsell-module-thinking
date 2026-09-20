@@ -2,7 +2,6 @@
 id: organisation-told
 name: What you told me about your company
 source: told
-connected: true
 icon: pencil
 ---
 

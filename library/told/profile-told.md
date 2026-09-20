@@ -2,7 +2,6 @@
 id: profile-told
 name: What you told me about yourself
 source: told
-connected: true
 icon: pencil
 ---
 

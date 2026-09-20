@@ -2,7 +2,6 @@
 id: offering-told
 name: What you told me about what you sell
 source: told
-connected: true
 icon: pencil
 ---
 
