@@ -190,6 +190,7 @@
         return row(r[0], r[1], t && t.defined === false ? 'Not written yet' : gap ? 'Not confirmed' : '', gap);
       })));
     });
+    if (key === 'signals') h.push(assumesGroup(e));
     if (key === 'records') h.push(group('Comes from', [row(find('channels', e.source) ? 'channels' : 'told', e.source)]));
     if (key === 'cards' && [].concat(e.documents || []).length)
       h.push(group(JOIN_WORDS.cards.documents, [].concat(e.documents).map(function (d) { return '<div class="ios-list__row cat-row"><span class="ios-list__title">' + esc(who(d)) + '</span></div>'; })));
@@ -203,12 +204,35 @@
     return h.join('');
   }
 
+  /* What a read needs before it can stand (decided 20 September). The words come from a fixed
+     vocabulary that build.js writes as `assumptions`, so they are shown as words and never
+     looked up as ids. Read off the prose rather than decided, so drawn as not confirmed. */
+  function assumesGroup(e) {
+    var words = [].concat(e.assumes || []), gap = e.assumes_status === 'provisional';
+    var rows = words.length ? words.map(function (w) {
+      return '<div class="ios-list__row cat-row' + (gap ? ' is-gap' : '') + '"><span class="ios-list__title">' +
+             esc((L.assumptions || {})[w] || w) + '</span>' + (gap ? '<span class="ios-list__value">Not confirmed</span>' : '') + '</div>';
+    }) : ['<div class="ios-list__row cat-row"><span class="ios-list__title">Nothing about the sale. It stands on what it reads alone.</span></div>'];
+    return group('Assumes', rows);
+  }
+  /* The signals step says, in one computed line, how many reads need each thing. */
+  function assumesLine(items) {
+    var has = function (e, w) { return [].concat(e.assumes || []).indexOf(w) > -1; };
+    var parts = Object.keys(L.assumptions || {}).map(function (w) {
+      var words = L.assumptions[w]; words = words[0].toLowerCase() + words.slice(1);
+      return items.filter(function (e) { return has(e, w); }).length + ' ' + words;
+    });
+    parts.push(items.filter(function (e) { return ![].concat(e.assumes || []).length; }).length + ' nothing about the sale');
+    return 'What each read needs before it can stand: ' + parts.join(', ') + '.';
+  }
+
   function stepHead(r) {
     var items = L[r.key] || [];
     var undef = items.filter(function (e) { return e.defined === false; }).length;
     return '<header class="cat-head"><h2>' + esc(r.name) + '</h2>' +
       '<p class="cat-head__lede">' + esc(r.does) + '</p>' +
-      '<p class="cat-head__lede">' + items.length + ' ' + r.name.toLowerCase() + (undef ? ', ' + (undef === items.length ? 'none' : items.length - undef) + ' written yet' : '') + '. Pick one to see what it is built from, and where it is used.</p></header>';
+      '<p class="cat-head__lede">' + items.length + ' ' + r.name.toLowerCase() + (undef ? ', ' + (undef === items.length ? 'none' : items.length - undef) + ' written yet' : '') + '. Pick one to see what it is built from, and where it is used.</p>' +
+      (r.key === 'signals' && L.assumptions ? '<p class="cat-head__lede">' + esc(assumesLine(items)) + '</p>' : '') + '</header>';
   }
 
   /* ---------- the columns ---------- */
@@ -330,6 +354,7 @@
       });
     });
     if (down.length) h.push('<div class="ios-list__header">Built from</div><ul class="ios-list">' + down.join('') + '</ul>');
+    if (key === 'signals') h.push(assumesGroup(e));
 
     var up = (usedBy[key + '/' + keyOf(e)] || []).slice();
     if (up.length) h.push('<div class="ios-list__header">Used by</div><ul class="ios-list">' + up.map(function (p) {

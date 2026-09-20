@@ -9,6 +9,8 @@ inputs: [conversation-history, person-history, meeting-history, deal]
 counts: [pricing-question-asked, timeline-or-start-question, proposal-or-trial-requested, budget-or-procurement-entered, decision-language-used]
 answers: [Q14, Q19]
 needs: [meet]
+assumes: [thread-under-way]
+assumes_status: provisional
 pull: Offerings' offering relevance, to anchor which offering the interest is about
 ---
 
@@ -44,3 +46,6 @@ Borrows Offerings' offering relevance to name the offering.
 - Needs: Meet (captured-call content) to catch intent voiced aloud; without it, call-only intent is a
   data gap. If Offerings cannot confirm the offering, the read still sees the intent but cannot name
   what they want to buy (a supplier-told gap), and softens to "interested in something".
+- Assumes: a conversation already under way, because the cues are read against that conversation's
+  own progression. On a first contact there is no progression to read them against, so the read
+  waits for the thread (an assumption gap, named not faked).

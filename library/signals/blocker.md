@@ -9,6 +9,8 @@ inputs: [conversation-history, person-history, meeting-history, objection-list, 
 counts: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-count, objection-name-match, objection-raised-on-call]
 answers: [Q15, Q16]
 needs: [meet]
+assumes: [thread-under-way]
+assumes_status: provisional
 pull: Offerings' objection list, to name the objection
 ---
 
@@ -49,3 +51,6 @@ Borrows Offerings' objection list to name the objection.
   [`meeting-history`](../assemblies/meeting-history.md) names). If the worry matches nothing on
   Offerings' list, the pattern still shows but the objection cannot be named (a supplier-told gap), and
   confidence falls.
+- Assumes: a conversation already under way, because the same worry has to recur across replies, and
+  the replies are read against their own earlier length in this thread. Before there is a thread
+  there is nothing to recur (an assumption gap, named not faked).

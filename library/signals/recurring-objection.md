@@ -9,6 +9,8 @@ inputs: [objection-list, deal]
 counts: [worry-occurrences-across-deals, distinct-worries-count]
 answers: [Q15]
 needs: []
+assumes: []
+assumes_status: provisional
 pull: People's worries-on-record, in aggregate across deals
 ---
 
@@ -46,3 +48,6 @@ Borrows People's worries-on-record in aggregate across deals.
 - Needs: no source dependency beyond the worries People puts on record. Early on, with few deals, the
   tally is thin and the read says so rather than crowning a worry off two data points (a told/data gap,
   not enough history yet). A worry raised only off-channel never reaches the count.
+- Assumes: nothing about the shape of any one sale, but it does need several deals on record to
+  count across, which none of the vocabulary's words names. With one deal there is no spread to read
+  (the gap the Needs line already names).

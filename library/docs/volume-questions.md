@@ -66,7 +66,10 @@ questions it answers in `answers:`, from either set, and `build.js` checks the i
 are `V1` to `V22` here and `Q1` to `Q26` there.
 
 Nor is it the volume seller's whole job. It stops where the library stops: at what the tool could
-prepare. How a call is opened, and what is said on it, is the seller's.
+prepare. How a call is opened, and what is said on it, is the seller's. And it starts later than the
+job does: the tool covers from a lead onwards, not the cold list worked at scale (the user, 20
+September), so questions 1 to 3 and the cohort half of 6 are before its scope. [`coverage.md`](coverage.md)
+marks them so.
 
 ## What it exposes
 

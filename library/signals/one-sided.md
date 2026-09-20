@@ -9,6 +9,8 @@ inputs: [person-history, conversation-history, meeting-history]
 counts: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-you-chase]
 answers: [Q18, Q19]
 needs: [meet]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # You are doing all the work
@@ -43,3 +45,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Needs: Meet (captured-call content) so a call where they gave back counts as their side. Without it,
   giving-back voiced off-channel is invisible and the contact looks more one-sided than they are (a
   data gap, named not faked).
+- Assumes: enough history with this person to know their usual, because balance is read across a
+  sustained stretch, not one exchange. On a first contact every relationship looks one-sided, so the
+  read does not apply until there is a history to read (an assumption gap, named not faked).

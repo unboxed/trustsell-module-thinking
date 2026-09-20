@@ -32,6 +32,10 @@ someone has gone quiet, remembering what you promised, finding who really decide
 right evidence, writing the note. It is patient work, easy to let slip, and when it slips the
 relationship pays for it. That is the work the tool takes on. *(My reason, not yet yours.)*
 
+The tool starts at a lead: a named person or business already in front of you. Finding them at
+scale, the cold list and the mass message, is not its job. What it takes on is everything from
+there onwards.
+
 *In the example:* you sell BOPS to about thirty councils. A council buys slowly, over years, and
 never on one person's say. The tempo is patient, because one clumsy chase can cost a relationship
 that took years to build.
@@ -68,6 +72,13 @@ Everything the tool says rests on what it can see or what you told it. It counts
 last: most of what it notices is plain arithmetic that anyone could redo, and only one small step
 is an opinion. So anything it tells you can be traced back down to the facts it came from. Nothing
 it says should float.
+
+Some of what the tool notices only makes sense in some kinds of sale. Someone going quiet only
+means something against a history with them. The right people being in the room only means
+something when there are several to win. So each thing the tool reads says what it needs before
+it can stand, and where this sale does not have it, the tool says so rather than judging on a
+comparison it cannot make. A fast sale, days from lead to close, still has a thread to read; it
+just has no history yet. *(My reason, not yet yours.)*
 
 ## 4. Four things the tool can say
 
@@ -211,9 +222,12 @@ right for you. Nothing has come back yet, so that part is not written.
 
 Some of the story is still open, and it says so rather than filling the gaps.
 
-- Whether it holds for any kind of sale. It has only been pressure-tested on one: a long,
-  patient sell to organisations with several people to win. The next test is its opposite, a mass
-  sale to many buyers. A sale to one person has not been tried either.
+- Whether it holds for any kind of sale. It has been pressure-tested on one, a long, patient
+  sell to organisations with several people to win, and measured on paper against its opposite, a
+  fast sale to one owner. The aim is no longer that every part holds everywhere: the set should
+  cover the spectrum from a lead onwards, and each read says what it needs. Today 13 of the 23
+  reads can be made on a live thread with no history, and 10 cannot. The fast sale has not been
+  built as a scenario yet, and a sale to one person has not been tried.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
 - How much a day can hold. There is no fixed number, but a day can still be too full for the

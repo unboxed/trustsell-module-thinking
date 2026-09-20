@@ -9,6 +9,8 @@ inputs: [person-history]
 counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
 answers: [Q19]
 needs: [web, linkedin]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Time to reconnect
@@ -46,3 +48,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   (a data gap, named not faked). LinkedIn for a reason the person gives themselves, a job change or
   a post; it is not connected, so the read goes on the web alone. A reconnection that happened off-channel also leaves the contact
   looking quieter than they are.
+- Assumes: enough history with this person to know their usual, and a real one: the read is only for
+  a relationship that once was. A fresh reason against a name you barely knew is a cold approach,
+  not this read (an assumption gap, named not faked).

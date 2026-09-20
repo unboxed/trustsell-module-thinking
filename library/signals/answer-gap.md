@@ -9,6 +9,8 @@ inputs: [objection-list, proof-library]
 counts: [objection-entry-exists, answer-grounded, proof-required-kind, proof-on-file, proofs-per-claim, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]
 answers: [Q15, Q17]
 needs: [drive, web]
+assumes: []
+assumes_status: provisional
 pull: Organisation's evidence library, to supply the document a claim needs
 ---
 
@@ -55,3 +57,5 @@ rather than this offering, such as a general track-record case study.
   empty and the read over-reports gaps, lowering confidence rather than inventing coverage (a data
   gap, named not faked). The open web supplies what research turned up. Where the organisation has
   tagged no evidence for a borrowed claim, that is a told gap across modules, named not faked.
+- Assumes: nothing about the shape of the sale. A worry on record is enough, whoever raised it and
+  however long you have known them.

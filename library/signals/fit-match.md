@@ -9,6 +9,8 @@ inputs: [offering-entry]
 counts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]
 answers: [Q1, Q2, Q3]
 needs: []
+assumes: []
+assumes_status: provisional
 pull: People's lead situation, to judge the match against the fit-shape
 ---
 
@@ -49,3 +51,5 @@ Borrows People's lead situation to judge the match against the fit-shape.
   have not told it the fit-shape there is nothing to match against (a told gap); if People's picture of
   the lead is thin the match is judged on less (a data gap that lowers confidence rather than inventing
   a fit).
+- Assumes: nothing about the shape of the sale. It is made per candidate, so it stands on a first
+  contact as well as on a contact of years.

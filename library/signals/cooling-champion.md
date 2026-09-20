@@ -9,6 +9,8 @@ inputs: [person-history, deal]
 counts: [reply-gap-vs-own-rhythm, dropped-recurring-meeting, innocent-explanation-scan]
 answers: [Q18, Q19]
 needs: [calendar]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Cooling champion
@@ -36,3 +38,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   and an empty scan all stack; grades down towards "maybe cooling" as fewer hold.
 - Needs: Calendar, for the dropped-meeting and out-of-office checks; without it
   those checks drop out and confidence falls (a data gap, named not faked).
+- Assumes: enough history with this person to know their usual, because the gap is read against
+  their own median. On a first contact there is no usual to compare against, so the read does not
+  apply (an assumption gap, named not faked).

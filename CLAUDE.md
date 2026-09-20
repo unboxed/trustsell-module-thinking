@@ -61,7 +61,10 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   rung.** A mass-selling scenario (PMF, a merchant cash advance broker) is the second pressure test.
   **Not every entry has to hold for both ends** (20 September): some reads belong to long
   relationships and some to volume. The library is general because the set covers the spectrum and
-  each entry says what it needs in order to stand, not because every entry is universal.
+  each entry says what it needs in order to stand, not because every entry is universal. Each
+  signal declares that in `assumes:` (`thread-under-way`, `own-rhythm`, `several-people`, or `[]`;
+  `build.js` checks the words, 20 September). The tool covers from a lead onwards; mass cold
+  outreach is not its job (the user, 20 September).
 - **Flag contradictions in the fiction**: two cards on the same person that pull opposite ways on
   the same day, a date that doesn't match `world.md`, a document nobody has.
 

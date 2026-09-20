@@ -9,6 +9,8 @@ inputs: [person-history]
 counts: [replies-by-channel, reply-speed-by-channel, where-they-start, accepts-meetings]
 answers: [Q9]
 needs: [calendar, meet]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Best way to reach them
@@ -43,3 +45,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   without them, calls and meetings drop out of the comparison and only the written channels are scored
   (a data gap, named not faked). Routes outside the connected accounts (phone, text, WhatsApp) cannot
   be seen at all, so the read says "of what I can see, this route wins".
+- Assumes: enough history with this person to know their usual, because a route is scored by how
+  they have answered on it before. On a first contact there is nothing to score, so the read does
+  not apply (an assumption gap, named not faked).

@@ -9,6 +9,8 @@ inputs: [person-history]
 counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]
 answers: [Q6, Q18]
 needs: [calendar, meet]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Champion went dark
@@ -47,3 +49,5 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   channel and stops the read landing on someone you just spoke to; without a delivery failure or a
   departure note, a silent leaver cannot be told apart from a contact who is simply ignoring you, so
   the read thins to "went quiet, possibly left" (a data gap, named not faked).
+- Assumes: enough history with this person to know their usual, because only a once-active channel
+  can break. Someone you have never really reached cannot go dark (an assumption gap, not a read).

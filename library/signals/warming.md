@@ -9,6 +9,8 @@ inputs: [person-history, meeting-history]
 counts: [reply-speed-vs-own-rhythm, who-starts-threads, colleagues-looped-in-count, reply-length-vs-own-rhythm]
 answers: [Q14, Q19]
 needs: [meet]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Warming to you
@@ -41,3 +43,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Needs: Meet (captured-call content) so contact and new names voiced on a call still count towards
   reach; when a thread moves off the connected accounts the reach count thins and confidence falls
   (a data gap, named not faked).
+- Assumes: enough history with this person to know their usual, because faster and more are read
+  against their own median and their usual share. On a first contact there is no usual to lift from
+  (an assumption gap, named not faked).

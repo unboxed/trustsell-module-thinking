@@ -9,6 +9,8 @@ inputs: [stakeholder-map, deal]
 counts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]
 answers: [Q4, Q5, Q6]
 needs: [linkedin]
+assumes: [several-people]
+assumes_status: provisional
 ---
 
 # Stakeholders you have not reached
@@ -59,3 +61,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   the organisation picture carries, inherited here and named not faked). Where a deal needs a shape
   only the user or Offerings can state, the read names a told gap ("tell me who signs off here") rather
   than inventing the buying team.
+- Assumes: several people to win at the buyer, because the read holds the map against the cast a
+  decision needs. Where one person decides alone there is no hole to find, and the read does not
+  apply (an assumption gap, named not faked).

@@ -9,6 +9,8 @@ inputs: [writing-history]
 counts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]
 answers: [Q23, Q26]
 needs: [gmail, slack]
+assumes: []
+assumes_status: provisional
 ---
 
 # Your voice
@@ -53,3 +55,5 @@ samples.
 - Needs: Gmail and Slack, for the sent mail, drafts and Slack messages the read is
   built from; without them the read is thin and leans on told samples or asks, rather than inventing a
   voice (a data gap, named not faked).
+- Assumes: nothing about the shape of the sale. It is a read of you, not of a buyer, and holds
+  whoever you are writing to.

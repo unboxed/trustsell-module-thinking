@@ -77,7 +77,10 @@ practice for its reader:
 
 A signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when
 one is not connected, the checks resting on it drop out and confidence falls, which is how a **data
-gap** is named honestly. The shared reading rules every signal applies (own-rhythm thresholds,
+gap** is named honestly. A signal's **`assumes`** is a flat list from a fixed vocabulary
+(`thread-under-way`, `own-rhythm`, `several-people`; `build.js` checks the words) saying what the read
+needs to exist before it can stand, and `[]` means it stands on what it reads alone. Where a sale does
+not have it, that is an **assumption gap**, the third kind, added 20 September. The shared reading rules every signal applies (own-rhythm thresholds,
 count-first, confidence grading, name-the-gap, answer a real question) live once in
 [`reading-principles.md`](reading-principles.md), so no signal re-teaches them.
 
@@ -237,8 +240,12 @@ order on the phone is the home's, which `build.js` writes as `day`.
 
 ### The scenario
 
-Everything above the cards is general: it must hold for any kind of sale. The pretend world and
-its cards are not. They are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
+Everything above the cards is general, and the pretend world and its cards are not. General does
+not mean that every entry holds for every kind of sale (the rule until 20 September, which forced
+a false choice between universal and wrong). The library is general because the set covers the
+spectrum, from a lead onwards, and each entry states its ground in `assumes:`. Some reads belong
+to long relationships and some to a live thread with no history. A scenario may only rest on reads
+whose assumptions its sale meets; the build does not check that yet. The world and cards are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
 the cast, the organisations, the documents) and a `cards/` (decided 19 September). Today there
 is one, `bops`, a patient sale to councils. A second, a mass sale, is meant to follow, standing
 on the same channels, assemblies, counts and signals. `build.js` reads the one named in
@@ -284,8 +291,10 @@ below record how the conversion was done and guide any **new** module added late
    verbatim; reduce Raw data and Reasoning to a one-line pointer at the libraries.
 2. **Signals.** For the reasoned module, each named read in the old "signal catalogue" becomes one
    `signals/<id>.md`. Carry its counts into `counts`, its sales-question handles into `answers`, its
-   tilt into `kind`, and the worked example plus threshold logic into the body. A signal
-   earns its place only by answering a real question in [`sales-questions.md`](sales-questions.md).
+   tilt into `kind`, and the worked example plus threshold logic into the body. Declare what it
+   `assumes` before it can stand, from the fixed vocabulary, and say in the body what it does when
+   that is absent. A signal earns its place only by answering a real question in
+   [`sales-questions.md`](sales-questions.md) or [`volume-questions.md`](volume-questions.md).
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
    together, plus any records from the module's own told source.

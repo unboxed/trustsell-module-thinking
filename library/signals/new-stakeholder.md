@@ -9,6 +9,8 @@ inputs: [conversation-history, stakeholder-map]
 counts: [new-name-on-thread, new-attendee-on-event, head-of-signature-scan, prior-history-scan]
 answers: [Q5, Q6]
 needs: [calendar, linkedin]
+assumes: [thread-under-way]
+assumes_status: provisional
 ---
 
 # New stakeholder
@@ -46,3 +48,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   returns, so a vague or missing signature leaves seniority a guess (a data gap, named not faked). A
   stakeholder who only joins by phone or in a room never lands in a sender line or attendee list and
   stays invisible until they touch a connected channel.
+- Assumes: a conversation already under way, because a name can only be new to a thread you are
+  already on. On a first contact everyone is new, and the read has nothing to tell an arrival from
+  (an assumption gap, named not faked).

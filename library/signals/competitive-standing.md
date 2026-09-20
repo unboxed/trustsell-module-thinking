@@ -9,6 +9,8 @@ inputs: [competitor-field, product-claims]
 counts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]
 answers: [Q15]
 needs: [web]
+assumes: []
+assumes_status: provisional
 ---
 
 # How you compare with competitors
@@ -50,5 +52,7 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Needs: the open web, for rivals' public pages, claims and reviews; without it the
   field has holes and a rival's real capability is a data gap, named not faked. A switching cost in a
   private contract is a told gap People surfaces from the thread, not this read inventing it.
+- Assumes: nothing about the shape of the sale. It reads the offering against its field and holds
+  the same whoever the buyer is.
 - Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the
   standing is supplied, the move is the Brain's.

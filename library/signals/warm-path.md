@@ -9,6 +9,8 @@ inputs: [person-history, stakeholder-map]
 counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
 answers: [Q7, Q8]
 needs: [linkedin]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Someone who can introduce you
@@ -42,3 +44,7 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   longer chain.
 - Needs: LinkedIn for the mutual-connection web; without it the read sees only mail and Slack bridges
   and under-reports real paths (a data gap, named not faked).
+- Assumes: enough history to know someone's usual, but with the bridge, not the target. The target
+  is cold to you by definition; it is the bridge whose two-way rhythm with you makes the path warm.
+  With no contact you genuinely deal with, there is no bridge to read (an assumption gap, named not
+  faked).

@@ -9,6 +9,8 @@ inputs: [person-history, conversation-history, meeting-history]
 counts: [reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
 answers: [Q4, Q5, Q6, Q14]
 needs: [meet]
+assumes: [own-rhythm, several-people]
+assumes_status: provisional
 ---
 
 # Champion
@@ -42,3 +44,7 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   [`meeting-history`](../assemblies/meeting-history.md) names. Advocacy on a phone call or on LinkedIn
   is invisible too (a data gap, named not faked). So a championing contact reads low until it surfaces
   in a connected channel.
+- Assumes: enough history with this person to know their usual, so that fast and long mean
+  something, and several people to win at the buyer, because recruiting colleagues is the sign.
+  Where the buyer is one person there is nobody to recruit, so at most the reply behaviour shows and
+  the read stops at "engaged" (an assumption gap, named not faked).

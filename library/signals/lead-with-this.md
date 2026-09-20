@@ -9,6 +9,8 @@ inputs: [offering-entry, objection-list]
 counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]
 answers: [Q10, Q11, Q12, Q24]
 needs: []
+assumes: []
+assumes_status: provisional
 ---
 
 # Lead with this
@@ -53,3 +55,5 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   People put on record (the [`objection-list`](../assemblies/objection-list.md) it reads). If you have
   told it no use-cases there is nothing to lead with (a told gap). Which use-case actually wins is the
   parked learning loop, named not faked.
+- Assumes: nothing about the shape of the sale. It reads a buyer-type against what you told it,
+  before any contact is made.

@@ -12,13 +12,18 @@ id: <kebab-slug>                 # unique across the library
 module: <module-id>              # which module owns the read, e.g. 02-relationships
 label: <Display name>            # plain English, e.g. Cooling champion
 blurb: <one line on what this read means>
-modes: [<expand|advance|sustain>]    # which category(ies) of work it serves
 kind: <opening|decay|deal-movement|risk|style>   # the family of read (style = a non-state read like Profile's voice)
 confidence: <high|graded|low>    # graded = depends on how much evidence stacks (explain in How it is worked out)
 inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve to ../assemblies/*
 counts: [<count-id>, ...]        # the counting floor beneath the read. Each MUST resolve to ../counts/*
 answers: [Q##, ...]              # which sales questions (../docs/sales-questions.md) it answers
 needs: [<source-id>, ...]        # sources the read leans on; if one is missing, its checks drop out (a data gap)
+assumes: [<thread-under-way|own-rhythm|several-people>]   # what the read needs to exist before it can stand
+                                 #   thread-under-way = a conversation already under way with them
+                                 #   own-rhythm       = enough history with them to know their usual
+                                 #   several-people   = several people to win at the buyer
+                                 # `[]` is a claim too: it stands on what it reads alone. build.js checks the words.
+assumes_status: provisional      # read off the prose, not yet decided
 pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' objection list">
 ---
 
@@ -42,4 +47,6 @@ pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' obje
      - Trigger: how the counts combine into the read (own-rhythm, never a fixed number).
      - Confidence: what makes it high, what softens it.
      - Needs: what drops out when a `needs` source is missing (a data gap, named not faked).
+     - Assumes: what the read needs to exist before it can stand, and what it says when that is not
+       there (an assumption gap, named not faked). With `assumes: []`, say what it stands on instead.
      Do NOT re-list the `counts`, `needs` or `confidence` here: they are frontmatter facets already. -->

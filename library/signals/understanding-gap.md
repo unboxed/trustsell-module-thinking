@@ -9,6 +9,8 @@ inputs: [conversation-history, meeting-history, product-claims]
 counts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]
 answers: [Q13]
 needs: [meet]
+assumes: [thread-under-way]
+assumes_status: provisional
 pull: Offerings' product claims, to judge the confusion
 ---
 
@@ -45,3 +47,6 @@ Borrows Offerings' product claims to judge whether wording contradicts the produ
   (a data gap, named not faked). If Offerings cannot supply the relevant claim, the wrong-term check
   has nothing to score against and only the re-ask count survives, so confidence falls (a
   supplier-told gap).
+- Assumes: a conversation already under way, because a question can only repeat after it was
+  answered in this thread. On a first contact a question is just a question (an assumption gap,
+  named not faked).

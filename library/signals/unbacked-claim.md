@@ -9,6 +9,8 @@ inputs: [product-claims]
 counts: [claims-stated-count, claims-grounded-count, grounding-kind-required, claim-source]
 answers: [Q11]
 needs: [drive, web]
+assumes: []
+assumes_status: provisional
 pull: Organisation's evidence library, to confirm a track-record claim's backing exists
 ---
 
@@ -53,6 +55,8 @@ exists before calling it a gap.
   empty and the read over-reports, flagging grounded claims as floating (a data gap that lowers
   confidence rather than inventing a verdict). The open web supplies what a suggested pitch researched.
   A claim grounded only in a deck never uploaded cannot be checked until the file is connected.
+- Assumes: nothing about the shape of the sale. It reads your own pitch against your own files,
+  before any buyer is in view.
 - This read names which claims are unsafe to assert; whether the buyer then believes a backed one is
   People's read (Q14), not Offerings' to judge. The guard flows downstream into the render and the
   Organisation compliance fence, which gate the draft itself.

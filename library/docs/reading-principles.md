@@ -33,12 +33,22 @@ signal says what makes it high and what softens it, so the grade is earned, not 
 
 ## 4. Name the gap, do not fake it
 
-When a read cannot reach the ground, because a source is not connected or the user has not told us
-something, the signal says so plainly instead of guessing. There are two kinds, both set out in
-[`tracing-back.md`](tracing-back.md): a **data gap** (a source such as Calendar or LinkedIn is not
-connected) and a **told gap** (something only the user can supply). A signal's `needs` field lists the
-sources it depends on; when one is missing, the checks that rest on it drop out and the confidence
-falls with them.
+When a read cannot reach the ground, the signal says so plainly instead of guessing. There are three
+kinds, all set out in [`tracing-back.md`](tracing-back.md):
+
+- A **data gap**: a source such as Calendar or LinkedIn is not connected. A signal's `needs` field
+  lists the sources it depends on; when one is missing, the checks that rest on it drop out and the
+  confidence falls with them.
+- A **told gap**: something only the user can supply, and has not yet.
+- An **assumption gap** (added 20 September): the condition a read needs is not there in this sale.
+  A signal's `assumes` field says what it needs before it can stand, from a fixed vocabulary: a
+  conversation already under way (`thread-under-way`), enough history with the person to know their
+  usual (`own-rhythm`), several people to win at the buyer (`several-people`). An empty list is a
+  claim too: the read stands on what it reads alone. Where a sale does not have what a read assumes,
+  the read does not apply, and the honest output is "this read needs a history with them, and there
+  is none yet", never a judgement on a comparison it cannot make. Not every read holds for every kind
+  of sale. Some belong to long relationships and some to a live thread with no history, and the
+  library is general because the set covers the spectrum, not because each entry does.
 
 ## 5. Earn the place by answering a real question
 

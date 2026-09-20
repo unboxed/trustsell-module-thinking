@@ -78,11 +78,11 @@ tool stores it.
 
 ---
 
-## Two kinds of gap
+## Three kinds of gap
 
 The interesting part isn't only the branches that reach the ground. It's the ones that
 **don't**, because that's where the tool earns trust by being honest. A branch can run
-out of ground in two distinct ways, and the tool should name which:
+out of ground in three distinct ways, and the tool should name which:
 
 - **A data gap: a source isn't connected.** The question is answerable in principle, but
   the plumbing to answer it isn't plugged in yet. *"Do I have a mutual connection who
@@ -93,6 +93,12 @@ out of ground in two distinct ways, and the tool should name which:
   the tool is missing something only you can supply. *"Which orgs meet my conditions?"*
   can't be answered until you've said what the conditions are. The honest output is *"tell
   me what a good-fit org looks like and I can run this."*
+- **An assumption gap: the sale is not the shape the read needs.** Added 20 September,
+  once the library was measured against a second kind of seller. *"Has this contact gone
+  quiet?"* only means something against a history with them; on a first contact there is
+  no usual to compare against. Each read now says what it assumes (`assumes:` on a
+  signal), and the honest output where a sale does not have it is *"I can't read this yet:
+  there is no history with them to compare against."*
 
 This isn't a new mechanism bolted on. It joins two things already in the notes:
 Connections (`01`) already lists sources that are "on the board but not connected yet,"

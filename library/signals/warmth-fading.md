@@ -9,6 +9,8 @@ inputs: [person-history, meeting-history]
 counts: [reply-length-vs-own-rhythm, friendly-words-trend, talk-time-on-calls]
 answers: [Q14]
 needs: [meet]
+assumes: [own-rhythm]
+assumes_status: provisional
 ---
 
 # Warmth fading
@@ -46,3 +48,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Needs: Meet (captured-call content) for the talk-time half; an uncaptured call leaves no record to
   hear tone in (a data gap, named not faked). With both halves off solid ground the read steps back to
   "nothing reliable to say".
+- Assumes: enough history with this person to know their usual, because a move away from their
+  earlier warmth needs an earlier warmth on record. On a first contact a short reply is just a short
+  reply (an assumption gap, named not faked).

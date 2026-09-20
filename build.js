@@ -281,8 +281,20 @@ for (const c of L.counts) {
       if (!(s.inputs || []).includes(a))
         problems.push(`${c.file}: over "${a}", but signal "${s.id}" uses this count and does not read that assembly`);
 }
+// What a read needs to exist before it can stand, from a fixed vocabulary (decided 20 September).
+// A read says it in `assumes`. An empty list is a claim too: it stands on what it reads alone.
+// When a sale does not have what a read assumes, that is an assumption gap, named not faked
+// (docs/reading-principles.md, section 4). The words are shown, never resolved as ids.
+const ASSUMES = {
+  'thread-under-way': 'A conversation already under way with them',
+  'own-rhythm':       'Enough history with them to know their usual',
+  'several-people':   'Several people to win at the buyer',
+};
 for (const s of L.signals) {
   must(s.file, 'module', s.module, S.modules, 'module');
+  if (!('assumes' in s)) problems.push(`${s.file}: no assumes; say what the read needs before it can stand, or assumes: []`);
+  for (const a of [].concat(s.assumes || []))
+    if (!ASSUMES[a]) problems.push(`${s.file}: assumes "${a}" is not one of ${Object.keys(ASSUMES).join(', ')}`);
   must(s.file, 'inputs', s.inputs, S.assemblies, 'assembly');
   must(s.file, 'counts', s.counts, S.counts, 'count');
   must(s.file, 'needs', s.needs, S.sources, 'channel or told source');
@@ -604,6 +616,7 @@ const payload = Object.assign({
   generated: new Date().toISOString().slice(0, 10),
   world,
   questions,
+  assumptions: ASSUMES,         // the vocabulary a signal's `assumes` draws on, with its plain words
   scenario: SCENARIO,
   day: sorted.map(c => c.id),   // the home's order, first to last
   days,                         // date -> the ids whose moment is open that day, in the home's order

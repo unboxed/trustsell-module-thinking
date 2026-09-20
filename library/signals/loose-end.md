@@ -9,6 +9,8 @@ inputs: [conversation-history, person-history, meeting-history]
 counts: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan, commitment-made-on-call]
 answers: [Q22]
 needs: [calendar, meet]
+assumes: [thread-under-way]
+assumes_status: provisional
 ---
 
 # Loose end
@@ -51,3 +53,6 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   kept outside the connected channels is invisible the same way (a data gap), and a promise in words
   the parser does not catch may be missed entirely (a told gap the user can close by correcting the
   read).
+- Assumes: a conversation already under way, because a promise or an ask has to sit on a thread, and
+  it is read against that thread's own pace. A few messages are enough; a long history is not
+  needed. Before the thread there is nothing to be owed (an assumption gap, named not faked).

@@ -9,6 +9,8 @@ inputs: [price-position, pricing-fence, deal]
 counts: [your-price, competitor-price-band, price-delta-vs-leader]
 answers: [Q15]
 needs: [web]
+assumes: []
+assumes_status: provisional
 ---
 
 # Price barrier
@@ -48,3 +50,5 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Needs: the open web, for rivals' published prices; without it the field has holes
   and the delta is computed against fewer points (a data gap, named not faked). Whether this buyer is
   cost-led is a fit-shape fact that may be a told gap.
+- Assumes: nothing about the shape of the sale. It reads your price against the field; whether this
+  buyer is cost-led comes from the fit-shape, not from a history with them.
