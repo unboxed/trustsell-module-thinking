@@ -162,15 +162,23 @@ by whichever door it arrives. It lives in `channels/` and is shaped like a chann
 `source:` is `buyer`, beside `account`, `builtin` and `told`: nothing fetches it and you cannot say
 it, the buyer hands it over. *(My reason, not yet yours.)*
 
-Two things to keep true. **Only the envelope is written**: what it is, who sent it, when, by which
-way, and which request of yours it answers. What the tool reads inside a document is not written
-yet, and the doc says so rather than listing plausible fields. **Only the envelope is read.** People draws
-from it since later on 20 September: [`assemblies/document-set.md`](../assemblies/document-set.md)
-gathers what you asked a buyer for against what came, and two reads need it
-(`missing-documents`, `can-they-carry-it`). Both stop at the envelope; the counts that would read
-inside a document exist and say "not written yet". The two other channels laid the same day for
-the fast end, [`sms.md`](../channels/sms.md) and [`web-form.md`](../channels/web-form.md), are
-still drawn from by nothing: the floor is there so the reads can be written on it.
+Two things to keep true. **Two layers are written, and no more.** The envelope: what it is, who
+sent it, when, by which way, and which request of yours it answers. And, since 21 September, the
+figures a document states, as two records: a stated figure (the document's own label, the amount,
+the period, where on the page, and one derived kind: money in, money out, a balance, or unplaced)
+and a stated commitment (to whom, what it is called, how much and how often, until when, all as the
+document names them). That is the whole of what the tool reads inside a document, and the channel
+doc's *What is never read* section lists what no read may do with it: no figure the document does
+not state, no verdict on the person, nothing beyond the purpose it was handed over for, nothing
+about their kind of business, no view on whether it is genuine. **Two gathers read it, one per
+layer.** [`assemblies/document-set.md`](../assemblies/document-set.md) reads the envelope: what you
+asked a buyer for against what came (`missing-documents` stands on it).
+[`assemblies/figures-on-record.md`](../assemblies/figures-on-record.md) reads the figures, lined up
+by period, with what the buyer said on your form or the thread kept apart from what they showed
+(`uneven-income`, `existing-commitments` and `can-they-carry-it` stand on it). It is also the first
+gather to draw from [`web-form.md`](../channels/web-form.md), for a figure a buyer states on your
+enquiry form. [`sms.md`](../channels/sms.md) is still drawn from by nothing: the floor is there so
+the reads can be written on it.
 
 ## Whether a channel is connected is the scenario's to say
 

@@ -18,7 +18,7 @@ connects:
     requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
-draws_from: [gmail, calendar, slack, contacts, meet, web, handover]
+draws_from: [gmail, calendar, slack, contacts, meet, web, handover, web-form]
 ---
 
 # 02 · People + Organisations
@@ -92,7 +92,11 @@ floor you can browse:
   conversations gathered whole, across any org). The deal is the unit you sell into; People gathers it
   goal-blind, and the Brain stages it. Since 20 September the deal has a *document set* beside it,
   what you asked the buyer for and what has come, gathered from what the buyer hands over: the
-  first gather that draws from a source that is neither yours nor told.
+  first gather that draws from a source that is neither yours nor told. Since 21 September a
+  second gather stands beside it, *what their documents show*: the figures a document states and
+  what it names as owed, lined up by period, with what the buyer said on your form or the thread
+  kept apart from what they showed. It reads what is stated and nothing else
+  ([`channels/handover.md`](../channels/handover.md), *What is never read*).
 - **Sensing** (the reading, on the three floors of [`tracing-back.md`](../docs/tracing-back.md):
   counting then judging) becomes the [`signals/`](../signals/) library. Each signal is a named, reusable
   read that carries its evidence, measured against the relationship's **own rhythm**, earning its
@@ -109,6 +113,15 @@ honestly carry before the next message is written: the only real dates in the bu
 you owe them, what you could show them. They sit here and not in Organisation on purpose:
 Organisation is optional, and these rules must hold for a solo seller with nobody behind them. Not
 pushing is the tool's rule, not the company's. *(My reason, not yet yours.)*
+
+**Two of People's reads describe the buyer's figures without judging the sale**, added 21
+September. *Uneven income* says whether what comes in swings against their own usual, on the
+periods they have shown. *What they already owe* lists what their documents name as owed and what
+looks like a commitment because the same payment goes to the same name month after month, and says
+"looks like" of the second. Both stand on the buyer's own documents alone, so they hold on a lead
+of a fortnight. The judgement they feed, whether what you sell fits on top, is Offerings' *whether
+they can carry it*. They sit here because they are reads about the buyer, from what the buyer
+handed over, which People already draws from. *(My reason, not yet yours.)*
 
 ## Output
 

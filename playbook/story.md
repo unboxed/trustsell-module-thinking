@@ -65,7 +65,12 @@ you, how you like to sound. No connection can fetch those.
 The rest the buyer hands you on the way to a close: their accounts, a brief, a specification. The
 tool cannot fetch it and you cannot say it. It arrives when they send it, by whatever way they
 choose, and the tool keeps it as theirs, so it can say what you asked for and what has not come.
-What it reads inside is not written yet. *(My reason, not yet yours.)*
+Inside a document it reads only the figures the document states, in the document's own words:
+what came in and went out in each period, and what it names as owed and to whom. From those it
+can say whether their income is even and what they already pay out, and nothing more. It never
+adds a figure the document does not give, never reads character into amounts, never reads a
+document for anything beyond what it was sent to show, never reads the buyer as a kind of
+business, and never judges whether a document is genuine. *(My reason, not yet yours.)*
 
 The goal matters most, because it shapes everything else: who the tool looks for, what counts as
 progress, and how fast it is right to move.
@@ -239,14 +244,15 @@ Some of the story is still open, and it says so rather than filling the gaps.
 - Whether it holds for any kind of sale. It has been pressure-tested on one, a long, patient
   sell to organisations with several people to win, and measured on paper against its opposite, a
   fast sale to one owner. The aim is no longer that every part holds everywhere: the set should
-  cover the spectrum from a lead onwards, and each read says what it needs. Today 18 of the 28
+  cover the spectrum from a lead onwards, and each read says what it needs. Today 20 of the 30
   reads can be made on a live thread with no history, and 10 cannot. The fast sale has not been
   built as a scenario yet, and a sale to one person has not been tried.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
-- What the tool reads in what a buyer hands over. The place for it exists, and the tool can say
-  what you asked for and what has come. What it reads inside a document is not written yet, and
-  the read of whether they can carry what you sell waits on that.
+- What a document's own words mean. The tool reads the figures a buyer's document states, but
+  which label means money in, by kind of document and by country, is not written, and a figure it
+  cannot place stays unplaced. The read of whether they can carry what you sell still waits on one
+  more thing: how long what you sell runs for, and in what repayments, which nobody has told it.
 - How much a day can hold. There is no fixed number, but a day can still be too full for the
   time you have, and nothing yet asks about your time.
 - How you see or change what the tool holds, beyond the cards.

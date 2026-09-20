@@ -1,0 +1,19 @@
+---
+id: money-in-by-period
+label: "Money in, by period"
+used_by: [uneven-income]
+over: [figures-on-record]
+over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
+defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+---
+
+# Money in, by period
+## What it counts
+
+Money in, per period the documents cover: each stated figure whose kind is money in, laid out by the month or year it covers. The periods are the documents' own; where none covers a month, that month is a gap, not a zero.
+
+It counts within [`figures-on-record`](../assemblies/figures-on-record.md), what the buyer's documents show. Which records it needs and when the number stops meaning anything are not written in the count's fields yet, like every other count.
+
+## What it cannot see
+
+Cash that never reaches a statement, a period no document covers, and anything on a public register, which no channel carries. A figure the buyer said rather than showed is kept apart by the gather and is not summed here.

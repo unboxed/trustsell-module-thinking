@@ -48,9 +48,9 @@ holes.
 | V8 Does this business clear the bar? | `fit-match`, against the told fit-shape. The funder's box is a fit-shape. | Answered | nothing |
 | V9 What do they want it for? | Nothing reads it, and nothing should: it is a fact only they hold, so it is asked. | Answered by asking | nothing |
 | V10 How urgent is it for them? | `buying-intent` is closest and is written around procurement entering a thread. Since 20 September the fast end's own words arrive first as `web-form#form-submission`; no read takes them yet. | Partly, one end only | nothing |
-| V11 Is their income steady or lumpy? | No read. Until 20 September every channel in the library was one of the seller's own accounts and nothing gathered what the buyer hands over. `channels/handover.md` now holds it, as an envelope only: what the tool reads inside a set of accounts is not written yet. | Hole; the channel exists, the read does not | nothing; universal |
-| V12 What do they already owe, and to whom? | No read. Same as V11, plus public records, which no channel covers. | Hole; the channel exists, the read does not | nothing; universal |
-| V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Written so the decisions have a place to land: the term is not a told field and what is inside a set of accounts is not written yet, so the read cannot be made today. | Answered by a read that waits on two decisions | `[]` |
+| V11 Is their income steady or lumpy? | [`uneven-income`](../signals/uneven-income.md), since 21 September, over the new [`figures-on-record`](../assemblies/figures-on-record.md) gather: money in per period against the buyer's own median, on the periods their documents cover. It can say uneven on six months and seasonal only on twelve, and says which. Where "uneven" begins is not written yet. | Answered | `[]`: it stands on their own documents alone |
+| V12 What do they already owe, and to whom? | [`existing-commitments`](../signals/existing-commitments.md), since 21 September: what their documents name as owed, plus what looks like a commitment because the same payment goes to the same name period after period, said as "looks like". "To whom" is only as the document names them; a public register is covered by no channel, and the read says so. | Answered, short of public records | `[]` |
+| V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Since 21 September the inside of a document is written, so one decision remains: the term is not a told field on the offering, and until it is the read cannot be made. | Answered by a read that waits on one decision | `[]` |
 | V14 What have they still not sent me? | [`missing-documents`](../signals/missing-documents.md), since 20 September, over the new [`document-set`](../assemblies/document-set.md) gather: what you asked for against what came, from `handover#document-request` and `handover#handed-over-document`. Which documents a sale needs is still a told gap, so it reads what you asked for, never what you should have. | Answered | `thread-under-way` |
 | V15 Which of the things I offer should this go to? | Nothing. `world/goal.md` carries `offering:` as a single id and `offering-entry` is written for one product. | Hole, structural | nothing; universal |
 | V16 What was turned down last time on one like this? | Nothing. The library holds no outcomes at all; story ch. 9 says nothing has come back yet. | Hole | outcomes on record, which no word names |
@@ -64,7 +64,8 @@ holes.
 ## The holes, in seven families
 
 Eleven holes when this was written (fourteen until 20 September, when V1 to V3 were put outside the
-tool's scope; seven since the fourth pass the same day), but not eleven separate pieces of work. They
+tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September), but
+not eleven separate pieces of work. They
 gather into seven families, and the right-hand column is the thing worth arguing about: **none of
 them is about volume.** They were missed because one seller did not need
 them, and they would serve the patient end just as well.
@@ -72,8 +73,8 @@ them, and they would serve the patient end just as well.
 | Family | Questions | Is it about volume, or about any sale? |
 |---|---|---|
 | **Giving up, and what was turned down** | V5 (answered 20 September), V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
-| **Reading what the buyer gives you** | V11, V12 (V14 answered 20 September) | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) now gathers it, as an envelope, and [`document-set`](../assemblies/document-set.md) counts it. What the tool reads inside is still the deepest hole in the map. |
-| **Whether they can bear it** | V13 (a read since 20 September, waiting on two decisions) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
+| **Reading what the buyer gives you** | V11, V12, V14 (all answered by 21 September) | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) gathers it, as an envelope and, since 21 September, as the figures a document states, and no more. [`document-set`](../assemblies/document-set.md) reads the envelope, [`figures-on-record`](../assemblies/figures-on-record.md) the figures. What a document's own labels mean, by kind and by country, is the part still not written. |
+| **Whether they can bear it** | V13 (a read since 20 September, waiting on one decision: the term) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
 | **Being believed, and not pushing** | V17 in part, V19, V18 (all reads since 20 September) | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
 | **After the sale** | V20, V22, V21 in part | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and the ladder ends at the signature. |
@@ -101,7 +102,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 87 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 102 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -173,18 +174,45 @@ nothing, and three are out of scope. The assumptions count: 10 reads assume noth
 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 18 of the 28 can be made on a
 live thread with no history, and 10 cannot.
 
+**Done in the fifth pass, 21 September.** Reading what the buyer hands over. The decision was what
+the tool reads inside a document and what it must never read into one, and the answer is one line:
+it reads the figures a document states, in the document's own words, and nothing else.
+[`channels/handover.md`](../channels/handover.md) gains two records below the envelope, a stated
+figure (label, amount, period, where, and one derived kind with "unplaced" as the honest fallback)
+and a stated commitment (to whom, what it is called, how much and how often, until when, all as
+the document names them), and a section, *What is never read*, with five rules: no figure the
+document does not state, no verdict on the person, nothing beyond the purpose it was handed over
+for (so V21 is never answered from a bank statement), nothing about their kind of business, and no
+view on whether it is genuine. [`reading-principles.md`](reading-principles.md) carries it as
+principle 7. A new gather, [`figures-on-record`](../assemblies/figures-on-record.md), lines the
+figures up by period and keeps what the buyer said (on your form, the first draw from `web-form`;
+on the thread) apart from what they showed; it stands beside `document-set` rather than inside it,
+so the envelope read does not change when the inside is read. Two reads in People, both
+`assumes: []` because they stand on the buyer's own documents alone:
+[`uneven-income`](../signals/uneven-income.md) (V11) and
+[`existing-commitments`](../signals/existing-commitments.md) (V12). Neither points against a
+sale: they describe, and `can-they-carry-it` judges. That read now reads the new gather and waits
+on one decision instead of two. Four new counts, and the two that were waiting re-pointed to the
+new gather; all still `defined: false`, with the arithmetic said in prose. A commitment only
+repetition suggests is a count, not a record, and the read says "looks like" of it. Where the
+reads live, the derived `kind` on the channel floor, and drawing from the form were decided by me
+on 21 September, with the user's leave: they asked for the thinking to be structured accurately
+and said they could not judge it themselves. *(My reasons, not yet yours.)* Ten of the 22 are now
+answered by a read, one by asking, three in part, five by nothing, and three are out of scope. The
+assumptions count: 12 reads assume nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2
+`several-people`; so 20 of the 30 can be made on a live thread with no history, and 10 cannot.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Write the remaining reads**, each declaring its `assumes:`. Reading what the buyer hands over
-  (V11, V12): the channel and the gather exist, and what is inside a document is the decision still
-  to make before a read can stand on it; `what-they-can-bear` and
-  `existing-commitments-on-record` are already waiting for it. Then colleagues (V4), after
-  the sale (V20 to V22, once the second scenario's ladder continues past it), and what was turned
+- **Write the remaining reads**, each declaring its `assumes:`. Colleagues (V4); after
+  the sale (V20 to V22, once the second scenario's ladder continues past it); and what was turned
   down last time (V16, once outcomes exist, which is also what V17's other half needs: the seller's
   own record of having delivered). Counting over a group needs no new machinery: add an
   assembly that gathers the group and a count names it in `over:` exactly as a per-person count
-  does. Checked against the build's joins.
+  does. Checked against the build's joins. Still open from the fifth pass: the term and repayment
+  shape as told fields on the offering, which is what `can-they-carry-it` waits on; and a channel
+  for public records, which is what "to whom" needs beyond what the buyer shows.
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.
@@ -204,7 +232,7 @@ yet yours.)*
   on all five `modules/*.md`; `docs/scenario-councils.md`, which belongs in the scenario; and the
   presumptions in `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md`.
 
-**Deliberately not yet.** Defining the counts: all 87 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 102 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.

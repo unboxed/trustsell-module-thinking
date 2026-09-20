@@ -5,7 +5,7 @@ label: Whether they can carry it
 blurb: What this would cost them over its term, against what they have said or shown they can bear.
 kind: risk
 confidence: graded
-inputs: [price-position, document-set]
+inputs: [price-position, figures-on-record, document-set]
 counts: [your-price, cost-to-them-over-the-term, what-they-can-bear, existing-commitments-on-record]
 answers: [V13]
 needs: [handover]
@@ -52,11 +52,13 @@ Borrows People's deal for what the buyer has said on the thread.
   a document they handed over; softens to "may not carry" when what they can bear rests on a figure
   they said in passing rather than showed.
 - Needs: what the buyer hands over, for what they can bear and what they already owe. Without it
-  the read rests only on what they said on a thread, and softens accordingly (a data gap, named not
-  faked). Two things nobody has decided stop the read being made today at all: the term and the
-  shape of the repayments are not told fields on the offering (a told gap), and what the tool reads
-  inside a set of accounts is not written yet (`channels/handover.md`). This read is written so the
-  decisions have a place to land.
+  the read rests only on what they said on a thread or your form, and softens accordingly (a data
+  gap, named not faked). What the tool reads inside a document is written since 21 September
+  (`channels/handover.md`: the figures a document states, and nothing else), and two reads beside
+  this one describe it, [`uneven-income`](uneven-income.md) and
+  [`existing-commitments`](existing-commitments.md). One thing nobody has decided still stops the
+  read being made: the term and the shape of the repayments are not told fields on the offering (a
+  told gap). This read is written so that decision has a place to land.
 - Assumes: nothing about the shape of the sale. It is made per buyer from their own figures, so it
   stands on a lead of a fortnight as well as on a customer of years.
 - This read points against a sale. It sits in Offerings and not in Organisation on purpose:

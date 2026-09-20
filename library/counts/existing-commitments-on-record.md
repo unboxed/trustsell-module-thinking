@@ -1,21 +1,29 @@
 ---
 id: existing-commitments-on-record
 label: "What they already owe, on record"
-used_by: [can-they-carry-it]
-over: [document-set]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+used_by: [can-they-carry-it, existing-commitments]
+over: [figures-on-record]
+over_status: provisional   # re-pointed 21 September, when the figures inside a document were written. Not yet confirmed.
+defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
 ---
 
 # What they already owe, on record
 ## What it counts
 
-Not written yet.
+What the buyer's documents name as owed, and to whom: each stated commitment, with its payee as
+the document names it, what it is called, how much and how often, and until when where the
+document says. Plain listing. It does not add a commitment the documents do not name; the run of
+repeated payments that suggests one is [`repeated-outgoings-to-one-payee`](repeated-outgoings-to-one-payee.md),
+and joining the two is the read's judgement.
 
-This entry exists because one signal references this id: [`can-they-carry-it`](../signals/can-they-carry-it.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided. It would read inside what the buyer handed over, and the public record, which no channel covers; what the tool reads inside a document is not written yet (`channels/handover.md`, V12).
-
-It counts within [`document-set`](../assemblies/document-set.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It counts within [`figures-on-record`](../assemblies/figures-on-record.md), what the buyer's
+documents show. Until 21 September it counted within `document-set` and said "not written yet";
+the shape of what the tool reads inside a document is now written in
+[`channels/handover.md`](../channels/handover.md). Which records it needs and when the number
+stops meaning anything are not written in the count's fields yet, like every other count.
 
 ## What it cannot see
 
-Not written yet.
+Anything on a public register: a charge, a filing, a judgment. No channel covers those, and the
+reads that use this count say so rather than guessing. A commitment the buyer mentioned on an
+uncaptured call is a told gap until you say so.

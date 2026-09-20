@@ -79,3 +79,13 @@ Asks early on and mostly Acts later: as answers accumulate, more cards stand on 
 Later, once cards have outcomes, the word can also move with the tool's record for this seller:
 how often this kind of read turned out right for them. That is the only honest way it gets finer
 than three words. There is nothing to learn from yet, so it is not written.
+
+## 7. Read what a document states, never who they are
+
+Added 21 September. A read over what the buyer hands over (their accounts, their statements, a
+budget paper) reads the figures the document states, in the document's own words, and nothing
+else. It never adds a figure the document does not give, never reads character into amounts, never
+reads a document for anything beyond the purpose it was handed over for, never reads the buyer as a
+kind of business, and never judges whether a document is genuine. The list, with its reasons, is
+in [`channels/handover.md`](../channels/handover.md) under *What is never read*, and every read
+that stands on a handed-over document applies it. *(My reason, not yet yours.)*
