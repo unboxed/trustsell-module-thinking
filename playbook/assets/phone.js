@@ -557,12 +557,60 @@
     sv.inert = !stacked; pager.inert = stacked;
     btn.innerHTML = stacked ? SVG.oneCard : SVG.stacked;
     btn.setAttribute('aria-label', stacked ? 'Show one card at a time' : 'Show the day as a stack');
-    if (stacked) stackTo(screen, date);
+    if (stacked) { stackTo(screen, date); settle(screen, date); }
     else if (cardId || date !== pager.shownDate) pager.redraw(date, cardId);
     else pager.again();
     pager.shownDate = date;
     memory.view = stacked ? 'stack' : 'card';
     keep();
+  }
+
+  /* The stack's motion (decided 19 September, by trying four on one sheet:
+     https://claude.ai/artifact/EesojPnV7RRKuFE3i5hMcm). The layout stays as it was; only the
+     motion is added. When the stack opens, the day's cards rise into place one after another.
+     A tapped card dips and lifts, then grows into the card it opens, the card view fading in
+     under it. With reduced motion there is none of it. */
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var EASE = 'cubic-bezier(.2,.8,.2,1)';
+  function settle(screen, date) {
+    if (still) return;
+    screen.querySelectorAll('.stack-view__page[data-date="' + date + '"] .stack__card').forEach(function (c, i) {
+      c.animate([{ opacity: 0, transform: 'translateY(28px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 380, delay: i * 40, easing: EASE, fill: 'backwards' });
+    });
+  }
+  function openFromStack(c) {
+    var screen = c.closest('.screen'), id = c.getAttribute('data-open-card');
+    if (still) { setView(screen, false, id); return; }
+    if (screen.opening) return;
+    screen.opening = true;
+    function box(el) {
+      var r = el.getBoundingClientRect(), s = screen.getBoundingClientRect();
+      return { top: r.top - s.top, left: r.left - s.left, width: r.width, height: r.height };
+    }
+    c.animate([{ transform: 'none' }, { transform: 'scale(.97)', offset: .45 }, { transform: 'translateY(-4px) scale(1.01)' }],
+      { duration: 220, easing: 'ease-out', fill: 'forwards' }).finished.then(function () {
+      /* A copy of the stacked card stands in while the real one is drawn in the card view. */
+      var from = box(c), wrap = document.createElement('div'), ghost = c.cloneNode(true);
+      wrap.className = 'stack stack__ghost';
+      wrap.style.cssText = 'top:' + from.top + 'px;left:' + from.left + 'px;width:' + from.width + 'px';
+      ghost.style.height = from.height + 'px';
+      wrap.appendChild(ghost);
+      setView(screen, false, id);
+      var hole = screen.querySelector('.screen__page.is-here .card-hole'), pager = screen.querySelector('[data-pager]');
+      if (!hole) { screen.opening = false; return; }
+      screen.appendChild(wrap);
+      var to = box(hole), t = 460;
+      wrap.animate([{ top: from.top + 'px', left: from.left + 'px', width: from.width + 'px' },
+        { top: to.top + 'px', left: to.left + 'px', width: to.width + 'px' }], { duration: t, easing: EASE, fill: 'forwards' });
+      ghost.animate([{ height: from.height + 'px' }, { height: to.height + 'px', borderRadius: getComputedStyle(hole).borderRadius }],
+        { duration: t, easing: EASE, fill: 'forwards' });
+      [].forEach.call(ghost.children, function (k) { k.animate([{ opacity: 1 }, { opacity: 0, offset: .45 }, { opacity: 0 }], { duration: t, fill: 'forwards' }); });
+      pager.animate([{ opacity: 0 }, { opacity: 0, offset: .35 }, { opacity: 1 }], { duration: t, easing: 'ease-out' });
+      wrap.animate([{ opacity: 1 }, { opacity: 1, offset: .75 }, { opacity: 0 }], { duration: t + 60, fill: 'forwards' }).finished.then(function () {
+        wrap.remove(); screen.opening = false;
+      });
+    });
   }
   document.querySelectorAll('[data-stack-pager]').forEach(function (sv) {
     var screen = sv.closest('.screen'), weekEl = screen.querySelector('.week');
@@ -585,7 +633,7 @@
     if (d) { pick(d); return; }
     var vt = e.target.closest('[data-view-toggle]'), oc = e.target.closest('[data-open-card]');
     if (vt) { var scr = vt.closest('.screen'); setView(scr, !scr.classList.contains('is-stacked')); return; }
-    if (oc) { setView(oc.closest('.screen'), false, oc.getAttribute('data-open-card')); return; }
+    if (oc) { openFromStack(oc); return; }
     var open = e.target.closest('[data-reply-open]'), row = e.target.closest('.reply-sheet__rows [role]');
     var shut = e.target.closest('.screen .reply-sheet__close, .screen [data-send]');
     var version = e.target.closest('[data-version]');

@@ -269,6 +269,16 @@ sent or skipped keeps its place in the stack, in the done card's colours; and a 
 answer arrives in the stack the next time it opens. The reason is in the story, chapter 7, still
 mine.
 
+The stack's motion (decided 19 September, the user's call, by trying four working phones on one
+sheet: https://claude.ai/artifact/EesojPnV7RRKuFE3i5hMcm). The aim was for the stack to feel like
+real cards. The layout stays as it was; only motion is added. When the stack opens, the day's
+cards rise into place one after another. A tapped card dips and lifts, then grows into the card
+it opens while the card view fades in under it. With reduced motion there is none of it. Passed
+over: Wallet (taller cards like passes; the tapped one rises and the rest drop to a pile at the
+foot), Depth (cards apart, the ones you have passed sinking into a pile at the top, which fit
+fewer titles on the screen) and Cards on a table (each card a little askew, which Apple's screens
+never do). The cost, noted: standing still the stack looks as it did, so a slide shows no change.
+
 The card starts as a front: one kind label, a large bold title (Apple's Large
 Title), a description, badges, then the actions and, under them, "Scroll for details". The
 front holds one filled action and at most one outline one, stacked, with Skip under them; anything that needs more room goes

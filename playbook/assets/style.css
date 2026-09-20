@@ -397,6 +397,8 @@ summary::-webkit-details-marker{display:none}
 /* A card sent or skipped keeps its place, in the done card's colours (a proposal, not decided). */
 .stack__card.is-done{background:var(--done-bg);color:var(--done-ink);box-shadow:var(--done-edge),var(--stack-lift)}
 .stack__card.is-done .stack__meta{color:inherit;opacity:.64}
+/* The copy of a tapped card that grows into the card view; over the cards, under the header. */
+.stack__ghost{position:absolute;z-index:2;margin:0;pointer-events:none}
 /* A day with no cards: the end page's big words, grey. */
 .stack__none{margin:0;padding:12px calc(var(--ios-gutter) + 8px) 0;font:var(--ios-text-title1);font-weight:800;color:var(--ios-label-secondary)}
 /* Cards side by side (the phone slide only, decided 18 September): a sideways
