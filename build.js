@@ -217,11 +217,20 @@ const castIds     = rowsOf(world.cast).map(r => r[1]);
 const orgIds      = rowsOf(world.organisations).map(r => r[1])
   .concat((world.organisations.markdown.match(/`([a-z-]+)`/g) || []).map(s => s.replace(/`/g, '')));
 const documentIds = rowsOf(world.documents).map(r => r[1]);
-// The 26 questions are a numbered list in the doc, so Q18 is item 18. Keep the wording:
-// a card's track-back can then show the question it is ultimately answering.
-const questionsDoc = L.docs.find(d => /sales-questions/.test(d.file)) || {markdown: ''};
-const questions = [...questionsDoc.markdown.matchAll(/^(\d{1,2})\. +(.+)$/gm)]
-  .map(m => ({id: 'Q' + m[1], text: m[2].trim()}));
+// The questions are a numbered list under each doc's "The list" heading, so Q18 is item 18.
+// Only that list: both docs carry other numbered lists further down. Keep the wording, because a
+// card's track-back can then show the question it is ultimately answering. There are two sets, one
+// per end of the spectrum: Q is the patient seller's, V the volume seller's. Each doc is matched by
+// its exact filename, so a later doc about the questions cannot stand in for one.
+const questionsIn = (file, set) => {
+  const doc = L.docs.find(d => d.file === `docs/${file}`) || {markdown: ''};
+  const part = doc.markdown.split(/^## /m).find(p => /^The list\b/.test(p.split('\n')[0].trim())) || '';
+  return [...part.matchAll(/^(\d{1,2})\. +(.+)$/gm)].map(m => ({id: set + m[1], text: m[2].trim(), set}));
+};
+const questions = [
+  ...questionsIn('sales-questions.md', 'Q'),
+  ...questionsIn('volume-questions.md', 'V'),
+];
 const questionIds = questions.map(q => q.id);
 
 /* ---------- validate: every id must resolve ---------- */

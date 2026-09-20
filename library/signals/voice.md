@@ -7,7 +7,7 @@ kind: style
 confidence: graded
 inputs: [writing-history]
 counts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by-relationship-stage, draft-to-sent-edit-distance, channel-register-shift]
-answers: [Q23]
+answers: [Q23, Q26]
 needs: [gmail, slack]
 ---
 

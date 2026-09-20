@@ -51,9 +51,17 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
 - **The library is the database, the phone is the demo.** Define a thing in the cards'
   frontmatter and let `build.js` work it out (the order of the day, who waits on whom); the
   phone follows. The tool decides the order, never the seller.
-- **The scenario is one example.** BOPS lives in `library/scenarios/bops/` and can be rewritten to
-  fit the signals. Everything else in `library/` must hold for any kind of sale; a mass-selling
-  scenario is meant to follow.
+- **The scenario is one example, and the library is known to be one seller's.** BOPS lives in
+  `library/scenarios/bops/` and can be rewritten to fit the signals. Everything else in `library/` is
+  meant to serve any kind of sale, but the signals and counts were derived from one seller's questions
+  (`library/docs/sales-questions.md`, the patient end), so the library answers that seller well and is
+  silent about what they never had to ask. A second question set from the opposite end,
+  `library/docs/volume-questions.md`, and the map of what is and is not answered,
+  `library/docs/coverage.md`, exist to make that visible. **Read `coverage.md` before adding to a
+  rung.** A mass-selling scenario (PMF, a merchant cash advance broker) is the second pressure test.
+  **Not every entry has to hold for both ends** (20 September): some reads belong to long
+  relationships and some to volume. The library is general because the set covers the spectrum and
+  each entry says what it needs in order to stand, not because every entry is universal.
 - **Flag contradictions in the fiction**: two cards on the same person that pull opposite ways on
   the same day, a date that doesn't match `world.md`, a document nobody has.
 
@@ -109,7 +117,9 @@ draft). `build.js` checks every join. See `library/docs/library-format.md`.
 
 Also there: `library/scenarios/bops/world/` (the pretend world as data: goal, cast, organisations, documents),
 `library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
-including `tracing-back.md`, which this ladder is the executable form of).
+including `tracing-back.md`, which this ladder is the executable form of; the two question sets the
+library is measured against, `sales-questions.md` and `volume-questions.md`; and `coverage.md`, the
+map of which of those questions nothing answers yet, with the work still to do at its end).
 
 **Two rungs are unfinished, on purpose.** No entry in `counts/` says yet what it counts;
 `defined: false` says so. Each names the assembly it counts within (`over:`) where only one is
@@ -118,6 +128,12 @@ possible, marked `provisional`, and leaves `over: []` where it could be one of s
 `provisional` because they were read off the card rather than decided. A card's *Sources*
 rows are `source · words`, and the build checks each source against the trail. All of this is a
 later pass, not an oversight.
+
+**A third thing is missing rather than unfinished.** Fourteen of the volume seller's twenty-two
+questions have no read at all, in seven families, and only one family is really about volume. The two
+that matter most: nothing in the library can hold an opinion *against* a sale (all 23 signals point
+toward a move), and every channel is one of the seller's own accounts, so nothing gathers what the
+buyer hands over. `library/docs/coverage.md` names all of them.
 
 - `build.js`: the one script. Plain Node, no packages. Reads `library/`, validates every id,
   writes `playbook/assets/data.js`.

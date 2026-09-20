@@ -1,4 +1,4 @@
-# The salesperson's 26 questions: the demand-side spec
+# The patient seller's 26 questions: the demand-side spec
 
 *Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, "A card's day".*
 
@@ -6,6 +6,13 @@ A real salesperson's own questions through the sales process (suggested by MJ at
 tell). They are the **demand side**: what the tool *must* be able to answer. The modules'
 signals and plays are the **supply side**: what it *can* produce. Where supply meets demand,
 the model holds; where it doesn't, that's the real work.
+
+**Whose questions these are.** One seller's, at the patient end: few buyers, several people to win in
+each, years of contact. The library's signals and counts were derived from this list, so the library
+answers this seller well and is silent about anything they never had to ask. That is worth saying
+out loud, because a read nobody wrote looks exactly like a read someone chose to leave out. There is
+now a second set from the opposite end, [`volume-questions.md`](volume-questions.md), and a map of
+what both sets do and do not reach, [`coverage.md`](coverage.md). Ids here are `Q1` to `Q26`.
 
 **How we use them: settled.** The questions are a **lens, not the backbone**: handles for
 showing how an answer traces down to plain facts (and where it can't), **not** the tool's
