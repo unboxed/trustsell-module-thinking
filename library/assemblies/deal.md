@@ -32,7 +32,7 @@ effort, the offering it is about, the people or threads it starts from, and the 
 From there it grows deterministically by following the conversations: a new name on one of the deal's
 threads or calls becomes a candidate member (the `new-stakeholder` signal reads this same arrival).
 When Salesforce connects, a CRM opportunity can seed a deal the same way; until then that is a data
-gap, named not faked (`salesforce` is `connected: false`).
+gap, named not faked (whether Salesforce is connected is the scenario's to say, in its `world/goal.md`).
 
 **It can also be proposed, then confirmed.** You do not have to seed every deal by hand. People can
 detect one by clustering conversations that belong to the same effort, the same identity work

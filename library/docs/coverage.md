@@ -41,7 +41,7 @@ holes.
 | V1 Which candidate is worth reaching today? | `fit-match` judges one candidate against the fit-shape. Nothing chooses between many. The order of a day only sorts what is already a card. | Before a lead: out of scope | nothing |
 | V2 What changed that gives me a reason now? | `time-to-reconnect` and `buying-intent` both need an existing thread. On a stranger, nothing. | Before a lead: out of scope | nothing |
 | V3 Which candidates are the same as each other? | Nothing. Every count is per person or per offering. | Before a lead: out of scope | nothing |
-| V4 Has anyone else at my firm been in touch? | Nothing. `colleagues-looped-in-count` counts the **buyer's** colleagues, not mine. The library assumes one seller with nobody beside them; `pricing-fence` even says it is empty "used solo with no organisation behind you". | Hole | nothing; universal |
+| V4 Has anyone else at my firm been in touch? | [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md), since 21 September, over the new [`firm-contact`](../assemblies/firm-contact.md) gather: who at your firm was in touch with this organisation, when, by which way, from the records a firm shares (the CRM, the first draw from it; the workspace; a thread you were copied on; a shared calendar). A colleague's own mailbox is never visible. It points at a word with the colleague, not at a move. | Answered | `[]`, though it does assume a firm beside you, which the vocabulary has no word for; see the end |
 | V5 How many times have I tried, and when do I stop? | [`enough-tries`](../signals/enough-tries.md), since 20 September: your tries since they last wrote, the innocent-explanation scan, and the goal's tempo for where "enough" sits. The first read that points away from a move. | Answered | `[]`: it stands on your own sent messages, so it holds on a lead who never replied |
 | V6 What hour, and what channel, do they answer on? | `best-way-to-reach` answers the channel from where they actually respond, so it needs a past with them. The hour is nowhere. | Partly | the cohort version is before a lead: out of scope |
 | V7 Is the person I reached the one who can decide? | `missing-people`, through `decision-maker-reached`. | Answered | already assumes `several-people`, which a one-owner business does not meet; see the end |
@@ -50,7 +50,7 @@ holes.
 | V10 How urgent is it for them? | `buying-intent` is closest and is written around procurement entering a thread. Since 20 September the fast end's own words arrive first as `web-form#form-submission`; no read takes them yet. | Partly, one end only | nothing |
 | V11 Is their income steady or lumpy? | [`uneven-income`](../signals/uneven-income.md), since 21 September, over the new [`figures-on-record`](../assemblies/figures-on-record.md) gather: money in per period against the buyer's own median, on the periods their documents cover. It can say uneven on six months and seasonal only on twelve, and says which. Where "uneven" begins is not written yet. | Answered | `[]`: it stands on their own documents alone |
 | V12 What do they already owe, and to whom? | [`existing-commitments`](../signals/existing-commitments.md), since 21 September: what their documents name as owed, plus what looks like a commitment because the same payment goes to the same name period after period, said as "looks like". "To whom" is only as the document names them; a public register is covered by no channel, and the read says so. | Answered, short of public records | `[]` |
-| V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Since 21 September the inside of a document is written, so one decision remains: the term is not a told field on the offering, and until it is the read cannot be made. | Answered by a read that waits on one decision | `[]` |
+| V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Since 21 September the inside of a document is written and the term and the way it is paid are told fields on the offering's pricing, so the read can be made wherever those are filled. | Answered | `[]` |
 | V14 What have they still not sent me? | [`missing-documents`](../signals/missing-documents.md), since 20 September, over the new [`document-set`](../assemblies/document-set.md) gather: what you asked for against what came, from `handover#document-request` and `handover#handed-over-document`. Which documents a sale needs is still a told gap, so it reads what you asked for, never what you should have. | Answered | `thread-under-way` |
 | V15 Which of the things I offer should this go to? | Nothing. `world/goal.md` carries `offering:` as a single id and `offering-entry` is written for one product. | Hole, structural | nothing; universal |
 | V16 What was turned down last time on one like this? | Nothing. The library holds no outcomes at all; story ch. 9 says nothing has come back yet. | Hole | outcomes on record, which no word names |
@@ -64,8 +64,8 @@ holes.
 ## The holes, in seven families
 
 Eleven holes when this was written (fourteen until 20 September, when V1 to V3 were put outside the
-tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September), but
-not eleven separate pieces of work. They
+tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September, and
+four since the sixth the same day), but not eleven separate pieces of work. They
 gather into seven families, and the right-hand column is the thing worth arguing about: **none of
 them is about volume.** They were missed because one seller did not need
 them, and they would serve the patient end just as well.
@@ -74,11 +74,11 @@ them, and they would serve the patient end just as well.
 |---|---|---|
 | **Giving up, and what was turned down** | V5 (answered 20 September), V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
 | **Reading what the buyer gives you** | V11, V12, V14 (all answered by 21 September) | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) gathers it, as an envelope and, since 21 September, as the figures a document states, and no more. [`document-set`](../assemblies/document-set.md) reads the envelope, [`figures-on-record`](../assemblies/figures-on-record.md) the figures. What a document's own labels mean, by kind and by country, is the part still not written. |
-| **Whether they can bear it** | V13 (a read since 20 September, waiting on one decision: the term) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
+| **Whether they can bear it** | V13 (a read since 20 September; makeable since 21 September, when the term became a told field) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
 | **Being believed, and not pushing** | V17 in part, V19, V18 (all reads since 20 September) | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
 | **After the sale** | V20, V22, V21 in part | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and the ladder ends at the signature. |
-| **Colleagues** | V4 | **Any sale.** The library assumes a seller with nobody else in their firm. |
+| **Colleagues** | V4 (answered 21 September) | **Any sale**, wherever there is a firm. The library assumed a seller with nobody else in their firm; now a read says who at your firm was in touch before you, from the records a firm shares, and the vocabulary still has no word for "a firm beside you". |
 
 ## What falls out of this immediately
 
@@ -202,17 +202,39 @@ answered by a read, one by asking, three in part, five by nothing, and three are
 assumptions count: 12 reads assume nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2
 `several-people`; so 20 of the 30 can be made on a live thread with no history, and 10 cannot.
 
+**Done in the sixth pass, 21 September.** Colleagues, and the term. [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md)
+(V4) reads a new gather, [`firm-contact`](../assemblies/firm-contact.md): every contact on record
+between someone at your firm other than you and one buyer organisation, from the records a firm
+shares. That is the CRM (the first gather to draw from [`channels/salesforce.md`](../channels/salesforce.md)),
+the workspace, a thread you were copied on and a shared calendar; a colleague's own mailbox is
+never visible, and the gather says so. Who counts as a colleague is read from your own profile:
+anyone on your domain who is not you. The read points at a word with the colleague, never at a
+move over their thread, and it lives in People because it is about who has been in touch with the
+buyer, whichever side of your firm they are on. It declares `assumes: []` because it stands on
+shared records alone, and used solo those records are empty and the read does not arise. **It does
+assume a firm beside you**, and the vocabulary has no word for that. The word was not added,
+because the three words were fixed with the user and a fourth is theirs to add; the read's body
+names the gap and says it would be the one to declare it. And the term: `Pricing` on
+[`offering-told.md`](../told/offering-told.md) gains two told fields, how long it runs for and how
+it is paid, which is all `can-they-carry-it` was waiting on; where they are empty for an offering
+that is a told gap for that offering, not a hole in the shape. `deal.md` no longer says the CRM is
+`connected: false`, which moved to the scenario on 20 September. *(My reasons, not yet yours.)*
+Eleven of the 22 are now answered by a read, one by asking, three in part, four by nothing, and
+three are out of scope. The assumptions count: 13 reads assume nothing, 8 `thread-under-way`, 9
+`own-rhythm`, 2 `several-people`; so 21 of the 31 can be made on a live thread with no history,
+and 10 cannot.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Write the remaining reads**, each declaring its `assumes:`. Colleagues (V4); after
-  the sale (V20 to V22, once the second scenario's ladder continues past it); and what was turned
-  down last time (V16, once outcomes exist, which is also what V17's other half needs: the seller's
-  own record of having delivered). Counting over a group needs no new machinery: add an
-  assembly that gathers the group and a count names it in `over:` exactly as a per-person count
-  does. Checked against the build's joins. Still open from the fifth pass: the term and repayment
-  shape as told fields on the offering, which is what `can-they-carry-it` waits on; and a channel
-  for public records, which is what "to whom" needs beyond what the buyer shows.
+- **Write the remaining reads**, each declaring its `assumes:`. After the sale (V20 to V22, once
+  the second scenario's ladder continues past it); and what was turned down last time (V16, once
+  outcomes exist, which is also what V17's other half needs: the seller's own record of having
+  delivered). Counting over a group needs no new machinery: add an assembly that gathers the group
+  and a count names it in `over:` exactly as a per-person count does. Checked against the build's
+  joins. Still open: a channel for public records, which is what "to whom" needs beyond what the
+  buyer shows; and whether "a firm beside you" becomes the fourth word in `assumes:`, the user's
+  call.
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.

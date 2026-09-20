@@ -56,9 +56,9 @@ Borrows People's deal for what the buyer has said on the thread.
   gap, named not faked). What the tool reads inside a document is written since 21 September
   (`channels/handover.md`: the figures a document states, and nothing else), and two reads beside
   this one describe it, [`uneven-income`](uneven-income.md) and
-  [`existing-commitments`](existing-commitments.md). One thing nobody has decided still stops the
-  read being made: the term and the shape of the repayments are not told fields on the offering (a
-  told gap). This read is written so that decision has a place to land.
+  [`existing-commitments`](existing-commitments.md). The term and the way it is paid are told
+  fields on the offering's pricing since 21 September; where they are empty for this offering the
+  cost over the term cannot be summed (a told gap, named not faked), and the read says so.
 - Assumes: nothing about the shape of the sale. It is made per buyer from their own figures, so it
   stands on a lead of a fortnight as well as on a customer of years.
 - This read points against a sale. It sits in Offerings and not in Organisation on purpose:

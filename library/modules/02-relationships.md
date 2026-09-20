@@ -18,7 +18,7 @@ connects:
     requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
-draws_from: [gmail, calendar, slack, contacts, meet, web, handover, web-form]
+draws_from: [gmail, calendar, slack, contacts, meet, web, handover, web-form, salesforce]
 ---
 
 # 02 · People + Organisations
@@ -122,6 +122,13 @@ looks like a commitment because the same payment goes to the same name month aft
 of a fortnight. The judgement they feed, whether what you sell fits on top, is Offerings' *whether
 they can carry it*. They sit here because they are reads about the buyer, from what the buyer
 handed over, which People already draws from. *(My reason, not yet yours.)*
+
+**One of People's reads is about your own side**, added 21 September. *A colleague already in
+touch* says who at your firm has been in touch with a buyer organisation before you, when, and
+what came of it, from the records a firm shares: the CRM, the workspace, a thread you were copied
+on, a shared calendar. It stands on a new gather, *who at your firm has been in touch*, the first
+to draw from the CRM. Used solo there is nothing to gather and the read does not arise. It points
+at a word with the colleague, never at a move over their thread. *(My reason, not yet yours.)*
 
 ## Output
 

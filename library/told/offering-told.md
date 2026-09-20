@@ -31,6 +31,8 @@ label (`Worry + answer` becomes `worry-answer`), and that is what the assemblies
 | Use-case | the angle to lead with | you, typed or asked |
 | Pricing | price | you, or read from a Drive pricing sheet |
 | Pricing | discount room | you, typed or asked |
+| Pricing | term (how long it runs for) | you, typed or asked; empty for a thing sold once |
+| Pricing | how it is paid (once, or how often over the term) | you, typed or asked |
 | Worry + answer | the worry | you, or seen in a buyer's mail (via People) |
 | Worry + answer | your answer | you, typed or asked |
 | Worry + answer | the kind of evidence it needs | you, typed or asked |

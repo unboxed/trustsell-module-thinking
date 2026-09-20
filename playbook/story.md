@@ -57,7 +57,10 @@ To prepare anything, the tool has to know your world. It learns it from three pl
 
 Some of it the tool can see for itself, in what you connect: your mail, your calendar, your files,
 your messages, the open web. That is where it notices that someone who used to reply in a day has
-gone quiet for weeks, or that you promised something and never sent it.
+gone quiet for weeks, or that you promised something and never sent it. Where you sell with a firm
+behind you, it is also where it notices that a colleague was in touch with a buyer before you, from
+the record your firm keeps and the workspace you share, so you can ask them before you write. What
+a colleague's own mailbox holds it never sees. *(My reason, not yet yours.)*
 
 Some only you hold: your goal, how a meeting went, how you read a person, what matters most to
 you, how you like to sound. No connection can fetch those.
@@ -244,15 +247,14 @@ Some of the story is still open, and it says so rather than filling the gaps.
 - Whether it holds for any kind of sale. It has been pressure-tested on one, a long, patient
   sell to organisations with several people to win, and measured on paper against its opposite, a
   fast sale to one owner. The aim is no longer that every part holds everywhere: the set should
-  cover the spectrum from a lead onwards, and each read says what it needs. Today 20 of the 30
+  cover the spectrum from a lead onwards, and each read says what it needs. Today 21 of the 31
   reads can be made on a live thread with no history, and 10 cannot. The fast sale has not been
   built as a scenario yet, and a sale to one person has not been tried.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
 - What a document's own words mean. The tool reads the figures a buyer's document states, but
   which label means money in, by kind of document and by country, is not written, and a figure it
-  cannot place stays unplaced. The read of whether they can carry what you sell still waits on one
-  more thing: how long what you sell runs for, and in what repayments, which nobody has told it.
+  cannot place stays unplaced.
 - How much a day can hold. There is no fixed number, but a day can still be too full for the
   time you have, and nothing yet asks about your time.
 - How you see or change what the tool holds, beyond the cards.
