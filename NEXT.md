@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the fourteenth pass on `main`, fourteen passes on `library/docs/coverage.md` are done. The
+As of the fifteenth pass on `main`, fifteen passes on `library/docs/coverage.md` are done. The
 library holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37
 signals, 7 docs (all general now) and two scenarios (`bops`, with 25 cards; `pmf`, with 10). It
 builds clean, with `SCENARIO` set to either world. **The playbook still ships `bops`**: to look at
@@ -64,6 +64,10 @@ The most recent passes:
   than from the side: six passes had added entries against question sets and no world had ever
   exercised them. Nothing was fixed in the same pass, on purpose. What the cards exposed is in
   `coverage.md` and is now the top of the work list, above everything the F-audit left.
+- **The fifteenth** fixed the biggest of those: `conversation-history` and `person-history` now
+  gather text, and the form submission is the conversation's first turn. Measured, not asserted:
+  `act-errol-application` went from **a hunch** to **sure** and moved up the day. The patient
+  scenario is untouched, because it connects neither channel.
 
 Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
 asking" and "Where this goes next". **Do not re-derive the audit.**
@@ -115,35 +119,32 @@ written. Your own task is the section after them.
 Commit and push to `main` after each numbered step, with a message in the style of `git log`.
 
 **Start with what the cards found, not with the F-audit list.** Those are holes under reads that
-already exist, which makes them worth more than reads that do not. In order:
+already exist, which makes them worth more than reads that do not. The first of them, gathering a
+text conversation, was done in the fifteenth pass. What is left, in order:
 
-1. **Gather a text conversation.** Add `sms`, and `web-form` for the first thing a lead says, to
-   `assemblies/conversation-history.md`, and `sms` to `assemblies/person-history.md`. Roughly a
-   dozen reads are blind at the fast end without it, and `act-errol-application` is stuck at "a
-   hunch" because of it. Nothing else on this page is worth as much.
-2. **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
+1. **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
    the cost is and not only that it is unsaid. `act-paula-disclosure` names the gap today.
-3. **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
+2. **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
    than on ended deals. `act-tony-offers` cannot tell the seller what came back.
-4. **Decide whether a completed sale is News**, which would give that kind its first card in
+3. **Decide whether a completed sale is News**, which would give that kind its first card in
    either scenario, and **make the build notice a trail running into an unconnected channel**, not
    only a signal's `needs`.
 
 Then the list the F-audit left, which is written out at the end of `coverage.md`'s **"Where this
 goes next"**:
 
-5. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
+4. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
    the question it reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
    `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,
    F17 on `warm-path`.
-6. **Read the buyer's own published words**: a gather over `web#research-report` and
+5. **Read the buyer's own published words**: a gather over `web#research-report` and
    `web#enrichment` keyed on the buyer organisation rather than on the offering, and a read over
    it (F1, and the missing half of F16). It is the ground a first message stands on at the patient
    end, and `web` is already connected in both worlds.
-7. **The shape of their process**, a told record nobody has: what a buy at this kind of
+6. **The shape of their process**, a told record nobody has: what a buy at this kind of
    organisation takes, so a read can say which of those steps the record shows no sign of (F8,
    which the third seller says no system does, and F6 with it).
-8. **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
+7. **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
    "enough tries"; and **where a lead came from** (F17, F20), which is provenance on a lead and an
    event list, a lead source no channel has.
 

@@ -10,8 +10,8 @@ about: [errol-danning, mercer-dental]
 to: errol-danning
 arrives: 2026-09-21
 documents: []
-sure: "a hunch"
-sure_because: "He said yes on a text I cannot read. I am going on your note of it."
+sure: "sure"
+sure_because: "A fact on record: his own words, by text on Friday at 16:40."
 when:
   mode: fresh
   words: "Today. A yes on Friday is cold by Wednesday."
@@ -60,18 +60,21 @@ He said yes on Friday afternoon and nothing has happened since. At this tempo a 
 ## What happened
 
 - Why now: it is the first working morning since he said yes, and nothing has been sent, filled in or signed. Every day from here the yes is worth less.
+- His words on Friday at 16:40 were a decision, not a question: he said he needed the money and asked how fast it could happen.
 - He has not been sent the form. There is no application against this deal and no request for one.
 - Nothing has come back from him since Friday either.
 - The deal stands at interested, which is the rung that means a yes and nothing more.
 
 ## Sources
 
+- sms · Your text conversation with Errol: his yes on Friday at 16:40, and how fast he asked it could happen.
+- sms · Nothing either way since.
 - gmail · No mail to or from Errol at all.
-- people-told · Mercer Dental, the deal you named, standing at interested, and your note that he said yes on Friday at 16:40.
+- people-told · Mercer Dental, the deal you named, standing at interested.
 
 ## Still unclear
 
-- **What he actually said.** He said it by text, and a text conversation is not something I can read: nothing I gather reaches your messages. I am going entirely on the line you wrote down, so "he said yes" is your word and not my reading. If the texts were something I could see, this card would be a good deal surer than a hunch.
+- **Whether he meant this week.** He asked how fast it could happen, which is a yes with a clock on it, but he did not say what the money is for or by when he needs it. That matters more than it sounds: it is the difference between a form that gets filled in tonight and one that sits.
 
 ## What happens next
 

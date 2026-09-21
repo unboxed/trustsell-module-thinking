@@ -15,6 +15,8 @@ inputs:
   - slack#slack-user
   - meet#meeting
   - meet#participant
+  - sms#text-message
+  - sms#text-conversation
   - web#enrichment
   - linkedin#profile
   - linkedin#job-change
@@ -35,6 +37,7 @@ with them.
 It pulls in:
 
 - your emails and threads with them
+- your texts with them, both ways
 - the calendar events you share
 - the calls you sat in together
 - their Slack messages and profile
@@ -50,7 +53,9 @@ The one real piece of work is deciding which scattered records are the same pers
 ## Where it comes from
 
 `email-message` and `email-thread` resolve to
-[`channels/gmail.md`](../channels/gmail.md); `calendar-event`, `status-event` and
+[`channels/gmail.md`](../channels/gmail.md); `text-message` and `text-conversation` to
+[`channels/sms.md`](../channels/sms.md), added 21 September, which is also what lets a phone number
+be resolved to somebody you already know; `calendar-event`, `status-event` and
 `free-busy` to [`channels/calendar.md`](../channels/calendar.md); `slack-message`
 and `slack-user` to [`channels/slack.md`](../channels/slack.md); `meeting` and
 `participant` to [`channels/meet.md`](../channels/meet.md); `enrichment` to

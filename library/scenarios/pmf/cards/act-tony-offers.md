@@ -12,7 +12,7 @@ arrives: 2026-09-21
 documents: []
 widgets: [open-items]
 sure: "sure"
-sure_because: "A fact on record: your own words to him on Friday."
+sure_because: "A fact on record: your own words to him, by text on Friday."
 when:
   mode: fresh
   words: "Worth doing first. Three working days is a long wait for an answer you promised."
@@ -59,7 +59,7 @@ You told him on Friday you would come back with what the funders said. Nothing h
 ## What happened
 
 - Why now: it is three working days since you wrote "I'll come back to you with the offers". At this tempo that is a long silence, and the first thing he will assume is bad news.
-- Nothing has gone from you to Tony since Friday.
+- Nothing has gone from you to Tony since Friday, by text or any other way.
 - He has not chased, which is not the same as not minding.
 - What you owe him is small: a time, or a sentence saying where it is.
 
@@ -69,8 +69,8 @@ You told him on Friday you would come back with what the funders said. Nothing h
 
 ## Sources
 
-- gmail · Your message to Tony on Friday: "I'll come back to you with the offers".
-- gmail · Nothing from you to Tony since.
+- sms · Your text to Tony on Friday: "I'll come back to you with the offers".
+- sms · Nothing from you to Tony since, and nothing from him.
 - people-told · Corner Tire and Auto, the deal you named, standing at offers in.
 
 ## Still unclear

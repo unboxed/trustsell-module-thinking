@@ -557,6 +557,37 @@ Nothing was fixed in this pass on purpose: the cards were written to find out, a
 rungs in the same breath would have hidden what they found. Every item above is work, and the order
 is mine. *(My reasons, not yet yours.)*
 
+**Done in the fifteenth pass, 21 September.** The first thing the cards found, fixed, and the loop
+closed to prove it. [`conversation-history`](../assemblies/conversation-history.md) now draws on
+`sms#text-conversation`, `sms#text-message` and `web-form#form-submission` beside mail and Slack,
+and [`person-history`](../assemblies/person-history.md) on the two text records. That is all it
+took. `sms.md` had said since the third pass that "a conversation by SMS is `thread-under-way` in
+every sense a mail thread is", and for two days nothing drew on it, because until a card was
+written at the fast end nobody could feel the absence.
+
+**Two decisions inside it**, both mine. A **text conversation is the same kind of thing as a mail
+thread**, keyed on the other number and hung on the same timeline, rather than a parallel gather of
+its own: a seller does not hold two histories with one person, and every read above would have had
+to remember to consult both. And **a form submission is the first turn of the conversation**, not a
+record off to one side: it is the earliest thing a lead said in their own words, so it belongs at
+the head of the timeline where a read will find it without being told to look. Neither channel went
+into any signal's `needs`, on the same grounds that `gmail` is not in one: these are the ordinary
+ways people talk, not extra sources a read leans on, and listing them would have put a data-gap
+line on every patient-sale card for a channel that sale has no use for. *(My reasons, not yet
+yours.)*
+
+**What it bought, measured rather than asserted.** Rebuilding the broker's ten cards:
+[`act-errol-application`](../scenarios/pmf/cards/act-errol-application.md) went from **a hunch** to
+**sure**, because the yes it rests on stopped being a line the seller typed and became the
+merchant's own words on record, and it moved up the day from seventh to sixth.
+[`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) now cites the text in which the
+promise was actually made rather than a mail that never existed.
+[`act-curtis-funder`](../scenarios/pmf/cards/act-curtis-funder.md) can cite the enquiry he came
+back through. The patient scenario is untouched, as it should be: it connects neither channel, the
+gathers simply find nothing there, and its cards' confidence is exactly what it was.
+
+Four of the fourteenth pass's six findings remain, and they are the top of the list below.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -584,10 +615,8 @@ yet yours.)*
   user's disagreement.
 - **What the fourteenth pass found, in order.** These come before the list below, because they are
   holes under reads that already exist rather than reads that do not. *(My order, not yet yours.)*
-  - **Gather a text conversation.** Add `sms` (and `web-form`, for the first thing a lead says) to
-    [`conversation-history`](../assemblies/conversation-history.md), and `sms` to
-    [`person-history`](../assemblies/person-history.md). Roughly a dozen reads stop being blind at
-    the fast end. Nothing else in this list is worth as much.
+  - ~~**Gather a text conversation.**~~ Done in the fifteenth pass, and it moved a card from a
+    hunch to sure.
   - **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
     the cost is rather than only that it is unsaid.
   - **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather

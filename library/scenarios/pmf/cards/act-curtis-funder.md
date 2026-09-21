@@ -68,6 +68,7 @@ Three funders declined him in May on his credit score. Two of them are still the
 - offering-told · The four funders on the shelf, and the box each one takes.
 - offering-told · What each would cost him over the term, side by side.
 - crm · May's decisions on his deal: three declines, one reason.
+- web-form · His enquiry last week, and the amount he asked for in his own words.
 - people-told · Pinewood Cleaners, the deal you named, standing at interested.
 
 ## Still unclear
