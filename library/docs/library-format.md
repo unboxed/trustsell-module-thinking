@@ -247,6 +247,36 @@ The endings are not the same as **feedback on a card**, which story ch. 9 covers
 told `correction` record already carries in part. A card's outcome is about the tool's own bets; a
 deal's outcome is about the sale. Only the second is written.
 
+## News rests on a record, not a read
+
+Added 21 September, when the News kind got its first card in either scenario. Every other kind of
+card names a `signal`, and that join is what stops a card floating: the read reaches the counts,
+the counts reach the gathers, the gathers reach the records. News has no read to name, because it
+carries no opinion. An outcome with nothing to do is a fact, and a read invented to wrap it would
+be a read that decides nothing.
+
+So a News card names **`rests`** instead: the records that say the outcome happened, addressed the
+way every other join is (`crm#deal-record`), resolved by `build.js` like every other id, and used
+as the card's reach when its *Sources* rows are checked. It rests on the record floor rather than
+the signal floor, which is lower than any other card and is exactly right for what it is.
+`build.js` allows the swap for `kind: news` only: any other kind without a signal fails, and
+`rests` on any other kind fails too, so this is not a way round the join.
+
+What earns a completion a card is not that the news is good. It is that the tool's watching on that
+deal **stops**, and the seller is owed the list of what it will no longer raise. The guard is the
+rule the library already holds in two other places: a completion is fetched or told and never
+deduced ([`assemblies/since-the-sale.md`](../assemblies/since-the-sale.md), and *How a deal ended*
+above). *(My reasons, not yet yours.)*
+
+**What a card promises to send, it has to be able to fetch.** The same pass added one check
+beside this. A card that names `documents:` rests on the evidence shelf, whose files come from a
+channel; where the scenario has connected none of them, the build writes the gap row itself, in the
+card's *Sources*: the shelf is empty here, so the tool can say what to send and cannot hand it
+over. The check is deliberately narrow. A gather that merely touches an unconnected channel simply
+finds nothing there, which is fine and normal, and a row for every one of those would have put a
+line about SMS on twenty-two of the patient scenario's twenty-five cards. A promise to attach
+something is different in kind, because the card has claimed it. *(My reason, not yet yours.)*
+
 ## Whether a channel is connected is the scenario's to say
 
 Moved 20 September. A channel doc says what a service carries and nothing about whether this

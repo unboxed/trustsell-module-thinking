@@ -39,6 +39,17 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
   software update. FYI and Heads-up were passed over. The user's call): the *What happens next* of an earlier card coming back ("Julie's
   email bounced this morning"). The button is Got It.
 
+**News rests on a record, not a read** (21 September). Every other kind of card names a `signal`,
+the read it stands on, and the build refuses a card whose read does not reach what it claims. News
+carries no opinion: an outcome with nothing to do is a fact, and there is nothing for a read to
+say about it. So a News card names `rests` instead, the records that say it happened, addressed
+the way every other join is (`crm#deal-record`) and checked the same way. It rests lower on the
+ladder than any other card, which is exactly right. The rule that guards it: a completion is
+fetched or told and **never deduced**, the same rule the library already holds for an ending and
+for the completion of a sale. What earns it a card is not that the news is good, but that the
+tool's watching on that deal stops, and the seller should be told which promises it will stop
+raising. *(My reason, not yet yours.)*
+
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve. An Ask
 is the general way the tool learns what it cannot observe, not only about a person: your tone, which
 councils matter most, what is new about the product. A fact that does not shift is told once; what

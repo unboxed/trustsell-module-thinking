@@ -341,6 +341,17 @@ for (const c of L.cards) {
   }
   if (!['act', 'ask', 'connect', 'news'].includes(c.kind))
     problems.push(`${c.file}: kind "${c.kind}" is not one of act, ask, connect, news`);
+  // News is the one kind that rests on a record rather than a read (decided 21 September, see
+  // playbook/world.md). An outcome with nothing to do carries no opinion, so there is nothing for
+  // a signal to say; what it must carry instead is the records that say it happened, named in
+  // `rests` and checked like every other join. Every other kind still rests on a read.
+  must(c.file, 'rests', c.rests, S.records, 'record address');
+  if (c.kind === 'news' && !c.signal && ![].concat(c.rests || []).length)
+    problems.push(`${c.file}: a News card rests on a record; name it in rests, as "crm#deal-record"`);
+  if (c.kind !== 'news' && [].concat(c.rests || []).length)
+    problems.push(`${c.file}: rests is News only; every other kind rests on a read, in signal`);
+  if (c.kind !== 'news' && !c.signal)
+    problems.push(`${c.file}: no signal; only a News card may rest on a record instead of a read`);
   if (![].concat(c.about || []).length) problems.push(`${c.file}: about names nothing; a card is about at least one noun`);
   must(c.file, 'about', c.about, S.nouns, 'person, organisation, document or offering in world/');
   must(c.file, 'to', c.to, new Set(castIds.filter(x => x !== 'you')), 'person in world/cast.md other than you');
@@ -444,11 +455,26 @@ function restsOn(c) {
 // The Brain's told pile is always there, because the Brain weighs every card against the goal.
 function sourcesOf(c) {
   const out = new Set(['goal-told']);
+  for (const r of [].concat(c.rests || [])) out.add(r.split('#')[0]);
   for (const a of restsOn(c)) {
     const asm = L.assemblies.find(x => x.id === a);
     for (const inp of (asm && asm.inputs) || []) if (S.records.has(inp)) out.add(inp.split('#')[0]);
   }
   return out;
+}
+// Every channel a gather reaches, walking down through the assemblies it stands on. Told sources
+// are left out on purpose: a told source is said, never connected, so it is always there to ask.
+function channelsUnder(id, seen = new Set()) {
+  if (seen.has(id)) return [];
+  seen.add(id);
+  const asm = L.assemblies.find(a => a.id === id);
+  if (!asm) return [];
+  const out = new Set();
+  for (const inp of asm.inputs || []) {
+    if (S.records.has(inp)) { const src = inp.split('#')[0]; if (S.channels.has(src)) out.add(src); }
+    else for (const x of channelsUnder(inp, seen)) out.add(x);
+  }
+  return [...out];
 }
 const sourceById = id => L.channels.find(x => x.id === id) || L.told.find(x => x.id === id);
 const sourceName = id => { const s = sourceById(id); return !s ? id : s.source === 'told' ? 'You told me' : s.name.replace(/ \/ .*/, ''); };
@@ -504,6 +530,23 @@ for (const c of L.cards) {
     if (!src || src.connected !== false || c.readRows.some(r => r.sources.includes(s))) continue;
     const who = signalsOf(c).filter(x => (x.needs || []).includes(s)).map(x => x.label.toLowerCase());
     c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, from: sourceName(s), gap: true});
+  }
+  // A card that names what to send has to be able to fetch it (added 21 September, after a card
+  // at the fast end offered a document off a shelf its world does not have). The evidence shelf's
+  // files come from a channel; where not one of them is connected, the shelf is empty here and
+  // the card says so. Deliberately narrow: a gather that merely touches an unconnected channel
+  // finds nothing there and is fine, and a row for every one of those would put a line about SMS
+  // on almost every patient-sale card. A promise to attach something is different, because the
+  // card has claimed it.
+  if ([].concat(c.documents || []).length) {
+    const shelf = channelsUnder('proof-library');
+    if (shelf.length && !shelf.some(x => (sourceById(x) || {}).connected)) {
+      for (const x of shelf) {
+        if (c.readRows.some(r => r.sources.includes(x))) continue;
+        const src = sourceById(x);
+        c.readRows.push({sources: [x], words: `${src.name} is not connected, and the evidence shelf lives there. I can tell you what to send; I cannot fetch it for you.`, from: sourceName(x), gap: true});
+      }
+    }
   }
 }
 

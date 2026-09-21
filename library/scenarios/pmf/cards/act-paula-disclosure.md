@@ -40,7 +40,7 @@ draft:
   title: "Draft"
   hand: "Send"
   sub: "in your voice · sends only when you say"
-  footer: "Attached: the disclosure. The shape of the cost is filled in. Kestrel's own figures are yours."
+  footer: "The numbers go in the message. Your firm's form is on Drive, which I cannot reach."
 phone:
   when: "Today"
   act: "Send Disclosure"
@@ -49,7 +49,7 @@ phone:
   subject: "The cost, in writing, before you sign"
   said: "Sent. It is on record now."
   done: "Sent to Paula"
-  done_text: "The disclosure is on record against this deal, before the contract came back. If your firm has written rules about what it must contain, tell me and I'll check the next one against them."
+  done_text: "The disclosure is on record against this deal, before the contract came back. If your firm has written rules about what it must contain, tell me and I'll check the next one against them. The form itself lives on Drive, which I cannot reach from here."
 ---
 
 # Put the cost in front of Paula Larkin before she signs
@@ -91,7 +91,7 @@ Hi Paula,
 
 Before the contract comes back, I want the numbers in front of you in writing rather than buried in the agreement.
 
-The attached sets out what you receive, what you repay in total, over how long, and what leaves the account each working day. Those last two are a fixed debit every working day across the term, not a monthly bill. If any of it is not what you understood on Friday, say so now and we will stop and go through it.
+Here it is in full: what you receive, what you repay in total, over how long, and what leaves the account each working day. That last one is a fixed debit every working day across the term, not a monthly bill. If any of it is not what you understood on Friday, say so now and we will stop and go through it.
 
 Nothing needs signing until you are happy with those four numbers.
 

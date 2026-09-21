@@ -11,8 +11,12 @@ id: <kebab-slug>              # unique across the library; by convention <kind>-
 kind: <act|ask|connect|news>  # the shape of the card, and its only label
 order: <n>                    # the LAST tie-break only. build.js places each card by what waiting
                               # a day would cost (see ../modules/00-spine.md); keep this in step
-signal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*
+signal: <signal-id>           # the main read this rests on. MUST resolve to ../signals/*.
+                              # Required on every kind but News, which rests on a record instead
 signal_status: provisional    # read off the card, not yet decided
+rests: [<source-id>#<record-id>, ...]   # NEWS ONLY, and required there when it names no signal:
+                              # the records that say the outcome happened. Each MUST resolve. News
+                              # carries no opinion, so it stands on the record floor, not on a read
 supporting: [<signal-id>, ...]  # optional. Other reads the card also leans on, e.g. a gift that
                               # comes from Loose end on a Cooling champion card.
 supporting_status: provisional

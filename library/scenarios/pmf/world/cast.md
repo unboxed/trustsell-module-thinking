@@ -25,4 +25,5 @@ is the scenario's own open question and not a gap in the library.
 | Wes Halloran | wes-halloran | owner | halsey-freight | Funded in June. Two debits returned unpaid this month |
 | Joyce Amadi | joyce-amadi | owner | oak-row-bakery | Funded in January, most of the way through. Took an advance from someone else last time before you called |
 | Curtis Naylor | curtis-naylor | owner | pinewood-cleaners | Declined by three funders in May on his credit score. Back on the form last week |
+| Ivy Sandoval | ivy-sandoval | owner | fenwick-auto-body | Funded on Friday, the money on her account the same day. Nothing owed and nothing asked for yet |
 | Hannah Beck | hannah-beck | funding manager | avondale-capital | Your usual first call on a restaurant. Answers submissions same day |
