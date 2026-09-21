@@ -85,6 +85,14 @@ show, and whom they have named who could hear about you next. Whether the money 
 cannot see, because your bank is not one of the places it looks, and it says so instead of guessing
 from silence. *(My reason, not yet yours.)*
 
+What you sell is a list, not a single thing. Most sellers have one, and one is what the tool
+expects. Where there are several, it knows who each suits and what each costs, and it can say which
+of them a new lead should go to and which would turn them away. It is the same reading it does for
+one thing, run across all of them. Where you broker or resell, the same product from two suppliers
+counts as two, because the terms and the buyers they will take are the supplier's, and those are
+what the answer turns on. What it will not do is rank them by what you earn: which you most want to
+sell is yours to decide, and the tool says which ones fit. *(My reason, not yet yours.)*
+
 The goal matters most, because it shapes everything else: who the tool looks for, what counts as
 progress, and how fast it is right to move.
 

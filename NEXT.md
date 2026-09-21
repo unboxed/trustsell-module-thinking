@@ -9,17 +9,17 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the ninth pass on `main`, nine passes on `library/docs/coverage.md` are done. The library
-holds 12 channels, 5 told sources, 20 assemblies, 116 counts (all `defined: false`), 36 signals,
+As of the tenth pass on `main`, ten passes on `library/docs/coverage.md` are done. The library
+holds 12 channels, 5 told sources, 21 assemblies, 118 counts (all `defined: false`), 37 signals,
 9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
 `SCENARIO` set to either world.
 
-Of the volume seller's 22 questions, sixteen are answered by a read, one by asking, one in part,
-one by nothing (**V15**, the catalogue) and three are out of scope. A third question set exists,
+**Every one of the volume seller's 22 questions now has an answer**: seventeen by a read, one by
+asking, one in part (V10), three out of scope, none by nothing. A third question set exists,
 `library/docs/firm-questions.md` (`F1` to `F21`, from the Cority interview), and **the coverage map
 has not been run against it**.
 
-The four most recent passes:
+The five most recent passes:
 
 - **The seventh** wrote the second scenario's world, `library/scenarios/pmf/world/`, a broker
   placing merchant cash advances, with an empty `cards/`. Its ladder runs past the sale, its
@@ -37,6 +37,12 @@ The four most recent passes:
   (V17's other half). The decision it rests on: **an ending is told or fetched, never deduced**,
   the eighth pass's rule extended to the three ways a deal can finish without a sale. It is written
   up in `library/docs/library-format.md` and story ch. 9.
+- **The tenth** made `offering:` a list. An offering is one thing on one set of terms, so the same
+  product from two suppliers is two entries; `offering-told#supplier` says who is behind one. Above
+  them the `catalogue` shelf and one read, `where-this-one-goes` (V15), which is `fit-match` run
+  across the shelf instead of once. It lives in Offerings, not the Brain: which of them would have
+  this buyer is qualification, which of them you most want to sell is still parked as intent.
+  Written up in `library/docs/library-format.md` and story ch. 3.
 
 Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
 asking" and "Where this goes next". **Do not re-derive the audit.**
@@ -67,16 +73,11 @@ numbered step with a message in the style of `git log`.
    completed. The told outcome is now a third route into `since-the-sale` all the same, because a
    rung says where a deal stands and an outcome says that it finished and on what day.
 
-2. **The catalogue, V15.** `world/goal.md` carries `offering:` as one id, `offering-entry.md` is
-   written for one product, and `build.js` takes `world.goal.offering` as a single noun (in the
-   `S.nouns` set). At PMF the catalogue is the funders: one product with many suppliers and terms,
-   which is a different shape from several products, and `scenarios/pmf/world/organisations.md`
-   already lists four funders with a box each. Decide which shape the catalogue is before changing
-   `goal.md`. Then make `offering:` a list (one entry stays valid), keep `offering-entry` per
-   product or per supplier as decided, and add the read that says which of several a lead should go
-   to. `modules/03-offerings.md`'s open question says ranking across offerings is the Brain's, so
-   the read lives in `00-spine` or its home is argued for in the file. This touches `build.js`:
-   keep the change small and keep it plain Node.
+2. ~~**The catalogue, V15.**~~ **Done in the tenth pass.** `offering:` is a flat list that
+   `build.js` reads as one or several and refuses empty; `offering-entry` stays per entry, and an
+   entry is one thing on one set of terms, so a supplier's version is its own. The shape decision
+   and its cost (the pitch repeats across a broker's entries) are in `library-format.md`, *The
+   catalogue*.
 
 3. **Small decisions the passes raised.** A channel for public records (a charge, a filing, a
    judgment, a credit score), `source: builtin`, drawn from by `figures-on-record` so

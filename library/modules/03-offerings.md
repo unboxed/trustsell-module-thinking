@@ -32,8 +32,10 @@ answer the usual objections.
 
 How Offerings works, in one breath each:
 
-- **One entry per offering.** Each thing you sell gets its own card: what it is, who it's a good
-  fit for, how it's priced, and the answers to the worries that keep coming up.
+- **One entry per offering, and an offering is one thing on one set of terms.** Each gets its own
+  card: what it is, who it's a good fit for, how it's priced, and the answers to the worries that
+  keep coming up. Where the same product comes from several suppliers, each supplier's version is
+  an entry, because that is what a seller actually chooses between.
 - **Back every claim.** When it says "this is a good fit" or "here's the answer to that worry," it
   rests on something real: something you told it, something it found on the web, or a piece of evidence
   document from Organisation. It doesn't make things up.
@@ -109,7 +111,10 @@ real barrier to a switch. It keeps off **price**, which stays its own separate r
 competitive reads never judge the same thing twice. **Is our own pitch honest?** And it turns
 "back every claim" on itself, flagging a boast in your pitch that has nothing on file behind it
 before it ever reaches a draft, the guard that feeds the render and Organisation's compliance fence.
-**Can they carry it?** And, since 20 September, it asks the question after fit and price: whether
+**Which of them should this one go to?** And, since 21 September, where there is more than one
+thing on the shelf, it runs the fit read across all of them instead of once and says which would
+take this buyer and which would turn them away. It never ranks on what you earn on each. **Can they
+carry it?** And, since 20 September, it asks the question after fit and price: whether
 this buyer can bear what is being sold on top of what they already carry, from what they handed
 over or said. It is the one read in Offerings that can say no to a sale that would close, and it
 sits here rather than in Organisation because Organisation is optional and a solo seller must be
@@ -163,8 +168,11 @@ Organisation (`04`), which is optional for the same reason.)
   loop is wired. `lead-with-this` ranks by relevance today, not by track record.
 - **Forecasting is parked.** Reading whether a buyer's blocker is *likely to lift* (a future
   question) is deliberately out of scope for now.
-- **Two reads belong to the Brain, not here.** Ranking which *offering* best fits a given lead (a
-  portfolio call across every offering) and judging how much to discount on *this* deal are both
-  **intent**: they depend on the goal and how hard you'll push. So they sit with the Brain, which
-  calls `fit-match` per offering and reads the told discount room, rather than becoming Offerings
-  signals. Noted here so they're not re-proposed as reads.
+- **One read belongs to the Brain, not here.** Judging how much to discount on *this* deal is
+  **intent**: it depends on the goal and how hard you'll push, so it sits with the Brain, which
+  reads the told discount room. Noted here so it isn't re-proposed as a read. Ranking across
+  offerings was parked here too until 21 September, and half of it has now come back:
+  [`where-this-one-goes`](../signals/where-this-one-goes.md) says which of several entries would
+  have this buyer at all, which is the told fit-shape against the lead's facts and not a question
+  about what you want. Which of them you most *want* to sell is still the Brain's, beside its own
+  open question about several goals at once. *(My reason, not yet yours.)*

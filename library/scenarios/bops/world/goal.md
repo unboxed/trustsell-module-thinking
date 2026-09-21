@@ -2,7 +2,7 @@
 id: goal
 today: 2026-09-16
 seller: you
-offering: bops          # the thing being sold; a card can be about it
+offering: [bops]        # what is sold; a list since 21 September, and one entry is the common case
 ladder: [cold, engaged, coalition, partial, full]
 connected: [gmail, calendar, drive, contacts, meet, slack, web]   # what you have plugged in; a channel left out is not connected
 ---
@@ -16,6 +16,12 @@ Land a **partial adoption now**, full adoption later. About **30 councils** on t
 named people in eighteen of them.
 
 Tempo: patient. Never push. A clumsy chase costs a relationship built over years.
+
+**One thing to sell.** The `offering:` above is a list with one entry in it, which is the common
+case and the one the library was written around. Nothing here asks which of several a lead should
+go to, so [`signals/where-this-one-goes.md`](../../../signals/where-this-one-goes.md) is never made
+in this world: with one entry there is nothing to choose between, and the read says so rather than
+naming the only thing you sell as if it had won a comparison.
 
 ## Today
 

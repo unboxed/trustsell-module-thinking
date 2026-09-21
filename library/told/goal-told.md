@@ -24,7 +24,7 @@ becomes `target-list`), exactly like a channel record.
 | Record | Field | Source |
 |---|---|---|
 | Goal | what you want, in your words | you, typed, then sharpened with the Brain |
-| Goal | the offering it is pinned to | you, typed or picked |
+| Goal | the offering or offerings it is pinned to | you, typed or picked |
 | Goal | the finish line | you, typed |
 | Tempo | how patiently or hard to pursue it | you, typed or asked |
 | Target shape | who counts as worth chasing | you, typed, often fuzzy at first and sharpened with the Brain |

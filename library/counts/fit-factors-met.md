@@ -1,7 +1,7 @@
 ---
 id: fit-factors-met
 label: "Good-fit signs present"
-used_by: [fit-match]
+used_by: [fit-match, where-this-one-goes]
 over: [offering-entry]
 over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
 defined: false   # nothing here is written yet. See the body.

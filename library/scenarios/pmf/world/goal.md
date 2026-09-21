@@ -2,7 +2,7 @@
 id: goal
 today: 2026-09-21
 seller: you
-offering: advance       # the thing being sold; a card can be about it
+offering: [advance-avondale, advance-kestrel, advance-northline, advance-bayard]   # what is sold: one product, four funders, one entry each
 ladder: [interested, applied, submitted, offers-in, accepted, funded, repaying, coming-round-again]
 connected: [sms, web-form, handover, crm, gmail, web]   # what you have plugged in; a channel left out is not connected
 ---
@@ -71,12 +71,26 @@ handover being talked about.
 ## What you are selling
 
 One product, an advance against future takings, from any of several funders. The `offering:` above
-is a single id, `advance`, which is the shape the library has today: one thing sold. Here the
-catalogue is really the funders, each with its own box, and which of them a deal should go to is
-the read nothing makes yet ([`docs/coverage.md`](../../../docs/coverage.md), V15).
+is four ids, one per funder, and that is the catalogue decision of 21 September working: a thing
+you sell is one thing on one set of terms, so the same advance from Avondale and from Kestrel is
+two entries, because they are what you actually choose between
+([`docs/library-format.md`](../../../docs/library-format.md), *The catalogue*).
 
-What [`told/offering-told.md`](../../../told/offering-told.md) calls Pricing, filled in for this
-one:
+| Offering | id | Who supplies it | What their box takes |
+|---|---|---|---|
+| Advance, Avondale | advance-avondale | avondale-capital | Restaurants and retail, weaker credit, $10,000 to $60,000, same-day answer |
+| Advance, Kestrel | advance-kestrel | kestrel-funding | Any industry, good credit only, $75,000 upwards, slower and cheapest |
+| Advance, Northline | advance-northline | northline-advance | Trucking, freight and plant, two years in business |
+| Advance, Bayard | advance-bayard | bayard-funding | Under $25,000, almost anyone, the dearest money on the shelf |
+
+Each funder's box is that entry's told fit-shape, which is what
+[`signals/where-this-one-goes.md`](../../../signals/where-this-one-goes.md) reads to say which of
+the four a merchant should be submitted to. The pitch is the same on all four, because the product
+is: that repetition is the price of this shape, and
+[`docs/library-format.md`](../../../docs/library-format.md) says so rather than hiding it.
+
+What [`told/offering-told.md`](../../../told/offering-told.md) calls Pricing, filled in for an
+advance. The price band is the shelf's; each entry narrows it to its own funder's:
 
 | Told field | What you would say |
 |---|---|

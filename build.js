@@ -217,6 +217,12 @@ const castIds     = rowsOf(world.cast).map(r => r[1]);
 const orgIds      = rowsOf(world.organisations).map(r => r[1])
   .concat((world.organisations.markdown.match(/`([a-z-]+)`/g) || []).map(s => s.replace(/`/g, '')));
 const documentIds = rowsOf(world.documents).map(r => r[1]);
+// What this seller has to sell. One id or several: `offering` became a list on 21 September,
+// because a seller with one product and a broker with four suppliers are the same shape at
+// different lengths, and V15 (which of them should this lead go to) needs the list to exist.
+// One entry stays valid, and the ids are nouns a card can be about, like a person or a document.
+const offeringIds = [].concat((world.goal && world.goal.offering) || []).filter(Boolean);
+
 // The questions are a numbered list under each doc's "The list" heading, so Q18 is item 18.
 // Only that list: the docs carry other numbered lists further down. Keep the wording, because a
 // card's track-back can then show the question it is ultimately answering. There are three sets:
@@ -255,7 +261,7 @@ const S = {
   sources: new Set([...ids('channels'), ...ids('told')]),
   cast: new Set(castIds), orgs: new Set(orgIds), documents: new Set(documentIds),
   // Everything a card can be about: a person, an organisation, a document, the offering, you.
-  nouns: new Set([...castIds, ...orgIds, ...documentIds, world.goal && world.goal.offering].filter(Boolean)),
+  nouns: new Set([...castIds, ...orgIds, ...documentIds, ...offeringIds]),
   questions: new Set(questionIds),
 };
 
@@ -263,6 +269,8 @@ const S = {
 // docs on 20 September). world/goal.md lists it in `connected`; a channel it leaves out is not
 // connected, the data gap the cards name. A channel is what it is, so a channel or told doc that
 // still says `connected:` fails, and the general layer stays free of one seller's stack.
+if (!offeringIds.length) problems.push(`${SCN}/world/goal.md: no offering; name what this seller sells, as one id or a list of them`);
+if (new Set(offeringIds).size !== offeringIds.length) problems.push(`${SCN}/world/goal.md: offering names the same id twice`);
 if (!world.goal || !('connected' in world.goal)) problems.push(`${SCN}/world/goal.md: no connected; list the channels this seller has plugged in, or connected: []`);
 else must(world.goal.file, 'connected', world.goal.connected, S.channels, 'channel');
 const plugged = new Set([].concat((world.goal && world.goal.connected) || []));

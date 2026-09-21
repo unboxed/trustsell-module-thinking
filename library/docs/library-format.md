@@ -180,6 +180,37 @@ gather to draw from [`web-form.md`](../channels/web-form.md), for a figure a buy
 enquiry form. [`sms.md`](../channels/sms.md) is still drawn from by nothing: the floor is there so
 the reads can be written on it.
 
+## The catalogue: what you sell is a list
+
+Added 21 September. Until then `world/goal.md` carried `offering:` as a single id and
+[`assemblies/offering-entry.md`](../assemblies/offering-entry.md) was written for one product, so
+the library supported a seller with exactly one thing to sell and had no way to ask which of
+several a lead should go to.
+
+`offering:` is now a **flat list of ids**, and one entry is still perfectly valid: `build.js` reads
+either and refuses an empty list. Above the entries sits one gather,
+[`assemblies/catalogue.md`](../assemblies/catalogue.md), the pile of them, and one read,
+[`signals/where-this-one-goes.md`](../signals/where-this-one-goes.md).
+
+Two decisions are worth arguing with, and both are mine. *(My reasons, not yet yours.)*
+
+- **An offering is one thing on one set of terms.** Two shapes of catalogue exist in real selling:
+  several products, and one product from several suppliers on different terms. They are modelled
+  the same way, as one entry each, because what a read compares is the fit-shape and the price and
+  both of those belong to the supplier, not to the product behind it. A lender who will not take
+  this trade and a lender who will are two different answers to the same buyer. A second rung to
+  hold the product behind several suppliers would buy nothing any read consults. The cost is
+  duplication: the pitch, the use-cases and the worries repeat across such entries, and nothing
+  shares them yet. `offering-told#supplier` says who is behind an entry, and empty means it is
+  yours.
+- **The qualifying half is a read; the wanting half is the Brain's.**
+  [`modules/03-offerings.md`](../modules/03-offerings.md) parked ranking across offerings with the
+  Brain, on the grounds that it is intent. That holds for which of them you most want to sell,
+  which depends on the goal and on how hard you will push. It does not hold for which of them
+  would have this buyer at all: that is the told box against the lead's facts, and it is the work
+  done before anybody is asked what they would like to sell. So the read lives in Offerings with
+  the fit-shapes it stands on, and the Brain's half stays parked.
+
 ## How a deal ended: told, or fetched, never deduced
 
 Added 21 September. Until then nothing in the library held what came of anything. Every rung read
