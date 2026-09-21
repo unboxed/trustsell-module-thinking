@@ -1,0 +1,129 @@
+# The prompt for the next session
+
+Hand this file to the next agent as its prompt. It is written to be read cold, and it is kept true
+at every commit: anything not reached is picked up by a later session given the same file.
+
+---
+
+This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; it is accurate.
+
+## Where the work stands
+
+As of commit `c1504e3` on `main`, eight passes on `library/docs/coverage.md` are done. The library
+holds 12 channels, 5 told sources, 19 assemblies, 111 counts (all `defined: false`), 34 signals,
+9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean.
+
+Of the volume seller's 22 questions, fourteen are answered by a read, one by asking, two in part,
+two by nothing (**V15** and **V16**) and three are out of scope. A third question set exists,
+`library/docs/firm-questions.md` (`F1` to `F21`, from the Cority interview), and **the coverage map
+has not been run against it**.
+
+The three most recent passes:
+
+- **The seventh** wrote the second scenario's world, `library/scenarios/pmf/world/`, a broker
+  placing merchant cash advances, with an empty `cards/`. Its ladder runs past the sale, its
+  `connected:` names `sms`, `web-form`, `handover` and `crm` for the first time, and its pricing
+  fills the term and how it is paid. Beside it, the third question set.
+- **The eighth** wrote after the sale: `assemblies/since-the-sale.md` and three reads,
+  `coming-round-again` (V20), `payments-faltering` (V22) and `customer-introduction` (V21's other
+  half). The decision it rests on: **a sale's completion is fetched from the CRM or told by you,
+  never deduced** from a signature, a payment or a form of words.
+- **Then, on the user's asking**, the `salesforce` channel became `crm`, and its record
+  `crm#deal-record`. A rung of the general library should not carry one seller's stack.
+
+Read `coverage.md` in full, especially "Done in the seventh pass", "Done in the eighth pass",
+"Renamed on the user's asking" and "Where this goes next". **Do not re-derive the audit.**
+
+Two first-hand sources exist. Read them before anything else in step 1:
+`library/scenarios/pmf/docs/what-pmf-told-us.md` (the makers of the tool PMF sells on; the PMF
+world came from it) and `library/scenarios/cority/docs/what-cority-told-us.md` (an enterprise
+seller with a firm around her; the patient end again, with tenders). Both keep people's names out;
+keep it that way in anything you write from them. Also skim
+`library/docs/reading-principles.md` sections 4 and 7.
+
+## The user's standing instruction (21 September)
+
+They are not a sales expert and do not know how the AI would work. They want the thinking
+structured accurately and expect you to make the sales and how-it-reads calls yourself, writing the
+reason into the entry marked "(My reason, not yet yours.)". Do not stop to ask about those. Ask
+only about scope, voice, the phone, or anything hard to reverse.
+
+## Your task
+
+The rest of "Where this goes next", in this order, committing and pushing to `main` after each
+numbered step with a message in the style of `git log`.
+
+1. **Outcomes, then V16.** Nothing in the library holds what came of a card or a deal (story ch. 9:
+   nothing has come back yet). Decide where outcomes live: the likeliest shape is a told record on
+   `people-told.md` or `goal-told.md` (won, lost, what was turned down and why), with the funder's
+   offer or decline and its reason on `crm#deal-record` as the fetched twin, which is where PMF's
+   outcomes already are. Then signals for **V16** (what was turned down last time on one like this)
+   and **V17's other half** (the seller's own record of having delivered), over a gather of
+   outcomes. This is a shape decision: write the reason in `library-format.md` and story ch. 9,
+   marked mine. Note that `since-the-sale` already gathers a completed deal and may be the place
+   the outcome hangs, or may not; say which and why.
+
+2. **The catalogue, V15.** `world/goal.md` carries `offering:` as one id, `offering-entry.md` is
+   written for one product, and `build.js` takes `world.goal.offering` as a single noun (in the
+   `S.nouns` set). At PMF the catalogue is the funders: one product with many suppliers and terms,
+   which is a different shape from several products, and `scenarios/pmf/world/organisations.md`
+   already lists four funders with a box each. Decide which shape the catalogue is before changing
+   `goal.md`. Then make `offering:` a list (one entry stays valid), keep `offering-entry` per
+   product or per supplier as decided, and add the read that says which of several a lead should go
+   to. `modules/03-offerings.md`'s open question says ranking across offerings is the Brain's, so
+   the read lives in `00-spine` or its home is argued for in the file. This touches `build.js`:
+   keep the change small and keep it plain Node.
+
+3. **Small decisions the passes raised.** A channel for public records (a charge, a filing, a
+   judgment, a credit score), `source: builtin`, drawn from by `figures-on-record` so
+   `existing-commitments` can answer "to whom" beyond what the buyer shows. A told list of known
+   lenders for `repeated-outgoings-to-one-payee` to match payee names against (decide whose told
+   source holds it). A consent row for texts, on `sms.md` or `handover.md`. A required period on
+   `handover#document-request`, so `missing-documents` can check "the last three months, not a year
+   ago" (`scenarios/pmf/world/documents.md` names the deal in that world which turns on it). And
+   the fourth word in `assumes:`: add **`own-firm`** (a firm beside you) to the vocabulary in
+   `build.js`, `reading-principles.md` § 4, `library-format.md` and `templates/signal.md`, and
+   declare it on `colleague-already-in-touch`, unless the user strikes this sentence from the
+   prompt. The Cority note is the scenario that word is for.
+
+4. **Move the two worked-example docs.** `library/docs/flow.md` and
+   `library/docs/how-modules-collaborate.md` are worked through the bops example on purpose and
+   still use the dropped Expand vocabulary and the old cast names. Move them beside
+   `scenario-councils.md` in `library/scenarios/bops/docs/` and fix the links to them (grep the
+   whole repo, not just `library/`).
+
+5. **Run the coverage map against the third set** (`F1` to `F21`), the way it runs the other two:
+   a table of verdicts, the holes named rather than filled, and a paragraph saying what it found.
+   Seven of the 21 are asked by neither other set, and F8 (what the buyer has not done yet on their
+   side) is the one that seller says no system does.
+
+## Five things that are easy to get wrong here
+
+- The vocabulary for `assumes:` is three words (`thread-under-way`, `own-rhythm`, `several-people`)
+  until step 3 adds the fourth. `assumes: []` is a claim, not an omission. Every new signal
+  declares it and answers a real question by id in `answers:`.
+- **Never invent a fact about the tool.** A new count stays `defined: false` with the arithmetic in
+  prose; thresholds lean on `reading-principles.md`, no made-up numbers. A scenario's world is
+  fiction and may be invented; the general rungs may not.
+- Cards, `playbook/phone.html` and the deck are out of scope. Library rungs, `build.js` where a
+  step says so, and the docs that carry their reasons. Every new read changes its row in
+  `coverage.md` and adds a "Done in the … pass" paragraph; `story.md` changes only when a decision
+  changes it, marked "(My reason, not yet yours.)".
+- Run `node build.js` after every change. It writes nothing when it fails and checks every join: a
+  count's `used_by` must match the signals that list it, a count's `over` must be an assembly every
+  signal quoting it reads, a signal's `needs` must be channel or told ids, an assembly's inputs
+  must be record addresses or assemblies. `playbook/assets/data.js` is generated: never hand-edit
+  it, always commit it with the pass that changed it. To check a change against the second
+  scenario, switch `SCENARIO` at the top of `build.js` to `pmf`, then **set it back to `bops`
+  before committing**: the playbook is still built from bops.
+- Commit messages end with `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`. Push each
+  pass. If the working tree holds changes to `playbook/assets/phone.js`, `style.css` or `world.md`
+  that are not yours, commit them separately with a message read off `world.md`. A commit or push
+  may be refused by the permission classifier when its content was read from the user's transcripts
+  outside the repo; do not work round it, stage the files, write the commit message to the
+  scratchpad, and hand the user the three commands.
+
+## Keep this file true
+
+Update the "Where the work stands" section and strike the steps you finish, in the same commit as
+the work. A session that stops mid-way leaves this file describing exactly what is left.
