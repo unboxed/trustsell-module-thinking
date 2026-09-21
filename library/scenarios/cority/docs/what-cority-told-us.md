@@ -151,10 +151,21 @@ two-way discussion, not standard responses you can tell are marketing".
   chapters 3, 5 and 8 in one sentence from a seller who was not shown them. And her "I don't
   think so" to ranking leads by likelihood matches the scope decision: the tool covers from a lead
   onwards and does not choose among strangers.
-- **Whether it earns a third scenario.** Not yet as a full world with cards: the map says a third
-  earns its place once the two ends have shown what the spectrum is, and PMF's world is not
-  written. What it earns now is a third question set. Her questions to herself are a
-  different seller's (what has the buyer not done, who is talking for me when I'm not in the room,
-  what did my own firm already do here, what happened in the last two weeks), and the coverage map
-  would run them like the other two. That needs a doc with a "The list" heading and one line in
-  `build.js` naming its filename and letter.
+- **Whether it earns a third scenario.** What it earned first was a third question set. Her
+  questions to herself are a different seller's (what has the buyer not done, who is talking for me
+  when I'm not in the room, what did my own firm already do here, what happened in the last two
+  weeks), and the coverage map would run them like the other two. That needed a doc with a "The
+  list" heading and one line in `build.js` naming its filename and letter, and it was done in the
+  seventh pass as [`docs/firm-questions.md`](../../../docs/firm-questions.md), then run in the
+  thirteenth.
+
+  *Updated 21 September.* This bullet used to say "not yet as a full world with cards", on the
+  grounds that the map's rule is that a third earns its place once the two ends have shown what
+  the spectrum is, **and PMF's world is not written**. PMF's world was written the same day, in
+  the seventh pass, so that reason has expired. The bar is now half met: both ends have a world,
+  and only BOPS has cards. Whether that counts as the spectrum having been shown is a scope call
+  and the user's, not this note's, so it is left open rather than decided here. What is not in
+  doubt is the gap: the two reads written for a firm, [`firm-contact`](../../../assemblies/firm-contact.md)
+  and [`colleague-already-in-touch`](../../../signals/colleague-already-in-touch.md), have only
+  ever been read against worlds where the gather is nearly empty, and the first real test of them
+  is the one this note predicted, a world where every contact by anyone is in the CRM.
