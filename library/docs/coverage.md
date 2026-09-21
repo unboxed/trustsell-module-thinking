@@ -294,7 +294,7 @@ three are out of scope. The assumptions count: 13 reads assume nothing, 8 `threa
 and 10 cannot.
 
 **Done in the seventh pass, 21 September.** The second scenario's world, and a third lens.
-[`scenarios/pmf/world/`](../scenarios/pmf/world/) is a broker placing merchant cash advances: ten
+[`scenarios/pmf/world/`](../../scenarios/pmf/world/) is a broker placing merchant cash advances: ten
 businesses with one owner each, two people on the seller's side (a rep and a processor, and nobody
 sure where the line between them falls), and four funders with a box each. Its `cards/` was empty on
 purpose until the fourteenth pass, and the build is clean with `SCENARIO` set to either world. Three things in it are the
@@ -309,9 +309,9 @@ ones the trade names: the signed application, three bank statements for the last
 stipulations on request. `documents.md` says the thing worth noticing, that "three statements for
 the last three months" is two facts and a handover request carries only one of them. *(The names,
 the businesses and the funders are fiction, as a scenario is by design; the shape of the trade is
-first-hand, from [`what-pmf-told-us.md`](../scenarios/pmf/docs/what-pmf-told-us.md).)* Beside it,
+first-hand, from [`what-pmf-told-us.md`](../../scenarios/pmf/docs/what-pmf-told-us.md).)* Beside it,
 the third question set, [`firm-questions.md`](firm-questions.md), `F1` to `F21`, read out of
-[`what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md); `build.js` parses it
+[`what-cority-told-us.md`](../../scenarios/cority/docs/what-cority-told-us.md); `build.js` parses it
 from the same "The list" heading as the other two, so a signal can claim an `F` id today. Seven of
 the twenty-one are questions neither other set asks. Running this map against them is the next
 thing on the list and has not been done.
@@ -472,9 +472,9 @@ V12 is no longer "short of public records". The assumptions count: 18 reads assu
 on a live thread with no history, and 11 cannot. *(My reasons, not yet yours.)*
 
 **Done in the twelfth pass, 21 September.** The two worked-example docs moved.
-[`flow.md`](../scenarios/bops/docs/flow.md) and
-[`how-modules-collaborate.md`](../scenarios/bops/docs/how-modules-collaborate.md) now live at
-`scenarios/bops/docs/`, beside [`scenario-councils.md`](../scenarios/bops/docs/scenario-councils.md),
+[`flow.md`](../../scenarios/bops/docs/flow.md) and
+[`how-modules-collaborate.md`](../../scenarios/bops/docs/how-modules-collaborate.md) now live at
+`scenarios/bops/docs/`, beside [`scenario-councils.md`](../../scenarios/bops/docs/scenario-councils.md),
 which went there in the sixth pass. All three are worked through the BOPS goal from end to end, so
 they were the last of the example sitting in the general layer. Moving them was the choice over
 rewriting them: prose written as a walkthrough of one goal does not become general by having the
@@ -514,7 +514,7 @@ test of the library from above rather than from the side. Every pass from the ei
 thirteenth added or audited entries against **question sets**, and no world had exercised any of
 them: `where-this-one-goes` needs a seller with several offerings and only PMF has one;
 `colleague-already-in-touch` needs a firm; the register, the period check and the after-the-sale
-reads had never produced a card. [`scenarios/pmf/cards/`](../scenarios/pmf/cards/) now holds ten,
+reads had never produced a card. [`scenarios/pmf/cards/`](../../scenarios/pmf/cards/) now holds ten,
 nine Acts and an Ask, one per business on the ladder, chosen so that between them they stand on
 `missing-documents` (with the period check), `where-this-one-goes` with `turned-down-before` and
 `delivered-before` supporting, `disclosure-still-owed`, `payments-faltering`,
@@ -529,7 +529,7 @@ nine Acts and an Ask, one per business on the ladder, chosen so that between the
   has felt until now. At this end **text is the conversation**, and Slack is not connected. So every
   read standing on those two gathers is blind here: `loose-end`, `buying-intent`,
   `disclosure-still-owed`, `pushing`, `blocker`, `warming`, `one-sided` and the rest.
-  [`act-errol-application`](../scenarios/pmf/cards/act-errol-application.md) is the proof: a
+  [`act-errol-application`](../../scenarios/pmf/cards/act-errol-application.md) is the proof: a
   merchant said yes by text on Friday, and the card can only be **a hunch** resting on a line the
   seller typed, because the conversation itself is unreadable. This is the largest single hole the
   library has, and no question set found it. A card did.
@@ -542,14 +542,14 @@ nine Acts and an Ask, one per business on the ladder, chosen so that between the
   holds the offers and declines against a deal, and only [`deal-outcomes`](../assemblies/deal-outcomes.md)
   reads it, for deals that have **ended**. So "an offer came back and nobody has told the rep",
   which the trade calls the moment to raise alarms, has no read at all.
-  [`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) can only say that a promise was
+  [`act-tony-offers`](../../scenarios/pmf/cards/act-tony-offers.md) can only say that a promise was
   made and not kept, and says outright that it cannot tell you what came back.
 - **No read says a deal has just completed.** Completion is fetched or told and never deduced,
   which is right, but nothing turns it into news. The `funded` rung in this world got no card for
   that reason, and News remains the one kind with no card in either scenario.
 - **A card that names what to send rests on the evidence shelf**, `proof-library`, which lives in
   Drive. At this end Drive is not connected and almost every document is the buyer's, so
-  [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) rests on a shelf that
+  [`act-paula-disclosure`](../../scenarios/pmf/cards/act-paula-disclosure.md) rests on a shelf that
   does not exist in its own world, and the build does not notice, because a gap row is added for a
   signal's `needs` and not for a trail that runs into an unconnected channel.
 - **The order of the day is a patient seller's.** Asked to place these ten, `build.js` put a
@@ -582,12 +582,12 @@ line on every patient-sale card for a channel that sale has no use for. *(My rea
 yours.)*
 
 **What it bought, measured rather than asserted.** Rebuilding the broker's ten cards:
-[`act-errol-application`](../scenarios/pmf/cards/act-errol-application.md) went from **a hunch** to
+[`act-errol-application`](../../scenarios/pmf/cards/act-errol-application.md) went from **a hunch** to
 **sure**, because the yes it rests on stopped being a line the seller typed and became the
 merchant's own words on record, and it moved up the day from seventh to sixth.
-[`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) now cites the text in which the
+[`act-tony-offers`](../../scenarios/pmf/cards/act-tony-offers.md) now cites the text in which the
 promise was actually made rather than a mail that never existed.
-[`act-curtis-funder`](../scenarios/pmf/cards/act-curtis-funder.md) can cite the enquiry he came
+[`act-curtis-funder`](../../scenarios/pmf/cards/act-curtis-funder.md) can cite the enquiry he came
 back through. The patient scenario is untouched, as it should be: it connects neither channel, the
 gathers simply find nothing there, and its cards' confidence is exactly what it was.
 
@@ -611,7 +611,7 @@ assembly both price counts say they count within, so the join holds without movi
 read should say so rather than go quiet. *(My reasons, not yet yours.)*
 
 **What it bought, measured rather than asserted.**
-[`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) stops saying it cannot
+[`act-paula-disclosure`](../../scenarios/pmf/cards/act-paula-disclosure.md) stops saying it cannot
 reach the price. It now states the shape of what an advance costs, a factor rate over a term taken
 as a daily debit, and the draft carries it. What is left in *Still unclear* is a different thing
 and a smaller one: not the shelf price, but **what Kestrel actually answered on this deal**. That
@@ -644,13 +644,13 @@ doing it. A question set records what a seller notices they do. It cannot record
 without noticing. *(My reasons, not yet yours.)*
 
 **What it bought, measured rather than asserted.**
-[`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) was a card about a promise you made
+[`act-tony-offers`](../../scenarios/pmf/cards/act-tony-offers.md) was a card about a promise you made
 and had not kept, which could not say what the promise was about. It now rests on
 `answer-came-back` with `loose-end` **supporting**, and it says what came back, from whom, when,
 and that nothing is still out. Its confidence went from **sure** about your own words to **sure**
 about four answers on the deal record: the same word, a better card under it. The world had the
 fact all along, in one line of
-[`scenarios/pmf/world/organisations.md`](../scenarios/pmf/world/organisations.md); for two days the
+[`scenarios/pmf/world/organisations.md`](../../scenarios/pmf/world/organisations.md); for two days the
 library could not reach a fact the fiction had already written down.
 
 **What it did not move, which is the useful part.** The card is still **third** in the broker's
@@ -672,7 +672,7 @@ with nothing to do carries no opinion, and a read invented to wrap one would dec
 News card names `rests` instead, the records that say the outcome happened, resolved by `build.js`
 and used as the card's reach when its *Sources* are checked. It rests on the record floor, lower
 than any other card, which is what it is.
-[`news-fenwick-funded`](../scenarios/pmf/cards/news-fenwick-funded.md) is the card, and what earns
+[`news-fenwick-funded`](../../scenarios/pmf/cards/news-fenwick-funded.md) is the card, and what earns
 it one is not that the news is good: it is that the tool's watching on that deal **stops**, and the
 seller is owed the list of what it will no longer raise. It lands in band 6, costs nothing to wait,
 second from last in the broker's day, which is where a fact with nothing to do belongs.
@@ -681,7 +681,7 @@ second from last in the broker's day, which is where a fact with nothing to do b
 **A card that names what to send must be able to fetch it.** The other half of the same finding.
 A card with `documents:` rests on the evidence shelf, whose files come from a channel; where the
 scenario has connected none of them, the build now writes the gap row itself. It fires on exactly
-one card today, [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md), whose
+one card today, [`act-paula-disclosure`](../../scenarios/pmf/cards/act-paula-disclosure.md), whose
 draft was promising an attachment it could not produce and no longer does.
 
 **The blanket version was tried and rejected, with the measurement.** The fourteenth pass asked
@@ -712,7 +712,7 @@ answer in a message whose whole purpose is to be exact. Where nothing has been a
 is honest and the read says that is what it is quoting. `crm` went into the read's `needs` with
 `offering-told`. *(My reason, not yet yours.)*
 
-**What it bought.** [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) went
+**What it bought.** [`act-paula-disclosure`](../../scenarios/pmf/cards/act-paula-disclosure.md) went
 from a card that could name the shape of a cost to one that states it: $80,000 advanced, $102,400
 back over twelve months, $400 every working day, off Kestrel's own recorded offer, in the draft
 that goes to her. Its *Still unclear* is down to two lines and both are real: what the firm
@@ -783,7 +783,7 @@ exactly the manufactured relevance [`pushing`](../signals/pushing.md) exists to 
 *(My reasons, not yet yours.)*
 
 **What it bought, measured rather than asserted.**
-[`act-lisa-strategy`](../scenarios/bops/cards/act-lisa-strategy.md) has been quoting page 12 of a
+[`act-lisa-strategy`](../../scenarios/bops/cards/act-lisa-strategy.md) has been quoting page 12 of a
 council's strategy since it was written, with nothing under it: it rested on `time-to-reconnect`
 and `one-sided`, neither of which reaches a published document, and the `web` row in its *Sources*
 passed the build only because `time-to-reconnect` happens to need the web for a fresh reason to
@@ -819,7 +819,7 @@ indistinguishable to the seller from one they described, and the whole worth of 
 it is theirs.
 
 **The card it produced is an Ask, and that is the point.** A told record nobody has filled cannot
-produce an Act. [`ask-buying-process`](../scenarios/bops/cards/ask-buying-process.md) is the tool
+produce an Act. [`ask-buying-process`](../../scenarios/bops/cards/ask-buying-process.md) is the tool
 asking for the list, and writing it made the read sharper than writing the read did: the card has
 to say what it has already caught the shadow of (a procurement window at one council, a committee
 somebody mentioned at another), admit it does not know whether that is two of four or two of nine,
@@ -860,7 +860,7 @@ every lead that did **not** arrive by introduction, the provenance would have be
 never read: the same shape as `sms.md` sitting undrawn-from for two days, caught this time before
 the commit rather than after. [`lead-with-this`](../signals/lead-with-this.md) takes the gather
 too, for the line a first message opens on, which is the read whose job that actually is.
-[`act-marisol-list`](../scenarios/pmf/cards/act-marisol-list.md) is the card: a name off a trade
+[`act-marisol-list`](../../scenarios/pmf/cards/act-marisol-list.md) is the card: a name off a trade
 show list in August that nobody has written to, opening on what she said at the stand, with the
 list's own clearance to say where it came from. The broker's world said a lead can come "from a
 list somebody else worked" from the day it was written, and until now nothing could hold one.
@@ -896,11 +896,11 @@ closes.
 
 **What it bought, measured rather than asserted.** Both cards that needed these reads were already
 written and standing on nothing.
-[`act-holbrook-window`](../scenarios/bops/cards/act-holbrook-window.md) has been saying "Holbrook
+[`act-holbrook-window`](../../scenarios/bops/cards/act-holbrook-window.md) has been saying "Holbrook
 told you in July that anything for this year has to be in by 16 October" with no read beneath it
 that could reach a date the buyer gave; it names `deadline-they-gave` now and says how many working
 days are left and how much of the run-up has gone.
-[`act-felton-director`](../scenarios/bops/cards/act-felton-director.md) rests on `they-owe-you` and
+[`act-felton-director`](../../scenarios/bops/cards/act-felton-director.md) rests on `they-owe-you` and
 its own line, "this is a hunch more than a read", turns out to be exactly what the new read
 predicts: her words were loose, so it grades down hard. That is the third card in four passes that
 was saying something the library could not reach, and all three were found the same way.
@@ -954,7 +954,7 @@ days nobody complained about.
 
 **Done in the twenty-seventh pass, 21 September.** The third scenario, and the first real test of
 the reads written for a seller with a firm around them.
-[`scenarios/cority/`](../scenarios/cority/) now holds a world and seven cards, built on the
+[`scenarios/cority/`](../../scenarios/cority/) now holds a world and seven cards, built on the
 interview note that has sat in its `docs/` since the seventh pass. It is the patient end again,
 eighteen to twenty-four months and several people to win, with the two things `bops` does not have:
 **a firm around the seller** and **a formal process on the other side**.
@@ -1106,25 +1106,67 @@ yet yours.)*
   - ~~**Where a lead came from** (F17, F20).~~ Done in the twenty-third pass. `lead-list` is the
     channel, `people-told#lead-source` the told twin for every other door, `where-it-came-from` the
     gather, and both `warm-path` and `lead-with-this` read it.
-- **Turn `assumes:` into a checked join.** Now that a second world exists, `goal.md` could say what
-  its sale has (a thread, a history, several people, a firm) and the build could refuse a card
-  whose reads assume more than that.
-- **Clear the BOPS names out of the general rungs.** Done 21 September, as far as the list went:
+- ~~**Turn `assumes:` into a checked join.**~~ Done in the twenty-fifth pass. `world/goal.md` carries
+  `has:` now, from the same four words a read declares in `assumes`, and `build.js` refuses a card
+  that rests on a read the sale cannot make. It refuses nothing today, which is the honest way to
+  report it: `bops` and `cority` have all four words and `pmf` has three, so it is a guard for the
+  next world rather than a fix for a present bug.
+- ~~**Clear the BOPS names out of the general rungs.**~~ Done 21 September, as far as the list went:
   `buying-intent` no longer turns on a procurement lead (the person who holds the budget, and who
   signs off); the council examples in `modules/00-spine.md`, `02-relationships.md` and
   `03-offerings.md` are generic; "a date in a tender" is "a date they put in writing" in
   `templates/card.md` and `reading-principles.md`; "procurement pattern" is "buying pattern" in
   `objection-list.md` and `offering-entry.md`; the stale `modes:` lines are gone from the five
   modules; and `scenario-councils.md` lives beside its scenario, at
-  `scenarios/bops/docs/`, with its two companions pointing there. Left as they were:
-  `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md`, which carry no scenario name I
-  could find, and whatever presumption was meant is not recorded. `docs/flow.md` and
+  `scenarios/bops/docs/`, with its two companions pointing there. `docs/flow.md` and
   `how-modules-collaborate.md` moved beside their scenario in the twelfth pass, at
-  [`scenarios/bops/docs/`](../scenarios/bops/docs/), which was the choice between moving them and
+  [`scenarios/bops/docs/`](../../scenarios/bops/docs/), which was the choice between moving them and
   rewriting them: they are worked through the example on purpose, so the honest fix is to put them
-  where the example lives rather than to generalise prose that was never meant to be general. They
-  still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
-  it does. `kind: deal-movement` stays: it is a family of read, not a council word.
+  where the example lives rather than to generalise prose that was never meant to be general.
+  `kind: deal-movement` stays: it is a family of read, not a council word. What it left behind is in
+  the open list below, where a crossed-out line cannot hide it.
+
+**Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
+passes left above this list. Nobody has done any of it, and the first line is the user's before it
+is anybody's.)*
+
+- **The bands do not grade distance.** A clarification window closing in eight working days and a
+  date six months off are the same band, because `ownBand` asks only whether a date exists and
+  whether it is tomorrow. The twenty-sixth pass found the tie-break at fault and the bands sound,
+  and that was true of the complaint it answered; this is a different one, from the other end of the
+  spectrum, and it is about the bands. Unlike the tie-break, no principle says which of the two
+  cards should win, so it is named rather than decided. Found in the twenty-seventh pass.
+- **A shared list has nowhere to record who has worked which name.**
+  [`lead-list`](../channels/lead-list.md) holds the list and the entries; when marketing sends the
+  same spreadsheet to six people, nothing says who has written to whom.
+  [`act-ian-vanbrugh`](../../scenarios/cority/cards/act-ian-vanbrugh.md) names it in its own *Still
+  unclear* because it cannot do better. Found in the twenty-seventh pass.
+- **The brief**, F14: a stage and a one-line next step for fifty reps, for a manager who is not
+  selling. [`library-format.md`](library-format.md) defers it as a floor above the cards, which
+  comes once the cards prove out. The twenty-seventh pass records it as asked for a third time, and
+  what that world adds is a concrete reader rather than a theoretical one.
+- **The names left in the general rungs**, what the BOPS clean-out above did not reach.
+  `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md` were left as they were because
+  they carry no scenario name I could find, and whatever presumption was meant is not recorded.
+  `scenarios/bops/docs/flow.md` and `how-modules-collaborate.md` still use the dropped Expand
+  vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
+  has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
+  rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
+- **The cards' joins upward are still provisional**, which is the last provisional thing in the
+  library now that every count is `defined: true` and every `over_status` is `decided`. Forty-four
+  of the forty-five cards carry `signal_status: provisional` and twenty-seven
+  `supporting_status: provisional`, because each was read off the card rather than decided; the
+  forty-fifth is the News card, which rests on records and names no read. All forty-two signals
+  carry `assumes_status: provisional` for the same reason.
+- **The holes that are holes on purpose.** Q25, what questions to ask them, which
+  [`sales-questions.md`](sales-questions.md) names as the fifth frontier and which would widen the
+  output from a message into a move plus talking points. V6's hour and V10's words on a form, both
+  answered in part. V22 short of the ledger, because no channel carries your bank, your firm's or a
+  funder's, so whether an agreed payment arrived is on no record at all. F2, F3 and F13 in part,
+  each naming in its read's body the fact nobody holds. And F19, which this map says is the Brain's.
+- **One move per person, and a day you can take in.** The first pass found it and the last paragraph
+  of this section carries it, unsolved since 20 September. The twenty-seventh pass's manager with
+  fifty reps is a third shape of the same question.
 
 **Deliberately not yet.** *(Written in the eleventh pass. All three were done on 21 September:
 the counts in the twenty-eighth pass, the third scenario in the twenty-seventh. Kept as written,
