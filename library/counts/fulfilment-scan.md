@@ -1,7 +1,7 @@
 ---
 id: fulfilment-scan
 label: "Anything that kept the promise"
-used_by: [loose-end]
+used_by: [loose-end, they-owe-you]
 over: []   # not written yet. One of: conversation-history, person-history, meeting-history
 defined: false   # nothing here is written yet. See the body.
 ---

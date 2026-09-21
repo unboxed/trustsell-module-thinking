@@ -4,9 +4,9 @@ order: 14
 kind: act
 signal: buying-intent
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [best-way-to-reach, time-to-reconnect]
+supporting: [best-way-to-reach, time-to-reconnect, deadline-they-gave]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm]
+counts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm, dated-facts-in-their-words, time-to-their-date]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [neil-chapman, holbrook]
 to: neil-chapman                # who the move reaches; one move per person at a time
@@ -70,7 +70,7 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 ## What happened
 
 - Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.
-- Holbrook told you in July that anything for this year has to be in by 16 October. Nothing since has changed that.
+- Holbrook told you in July that anything for this year has to be in by 16 October. Those are Neil's own words and the date is his, not mine. Twenty-two working days left, and two months of the run-up have already gone.
 - Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.
 - You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.
 

@@ -4,9 +4,9 @@ order: 10
 kind: act
 signal: missing-people
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [new-stakeholder, champion]
+supporting: [new-stakeholder, champion, they-owe-you]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions]
+counts: [decision-maker-reached, people-covered-vs-needed, head-of-signature-scan, internal-advocacy-mentions, their-promise-undelivered]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [shabana-akhtar, felton]
 to: shabana-akhtar                # who the move reaches; one move per person at a time
@@ -48,7 +48,7 @@ Stephen Walsh's objection is this year's budget, and budgets are set above him. 
 - Why next: the partial rollout offer answers the size of the number. Whether it fits this year is a priorities call, made above Stephen. Once the offer is with him, widen the room.
 - Shabana wrote "David will want to see this" in July and "I'll need David onside" in August. David Marshall, Director of Communities, is on no thread.
 - Two Felton voices on the thread: Shabana is for it, and Stephen, in finance, holds the objection. Adding the director changes the shape of the decision.
-- This is a hunch more than a read: Shabana's two mentions are the whole evidence.
+- This is a hunch more than a read: Shabana's two mentions are the whole evidence. "I'll need David onside" is a thing she means to do, not a thing she said she would do by a date, and I grade a buyer's loose words down hard. A month has passed since the second one and nobody new is on the thread.
 
 ## People
 

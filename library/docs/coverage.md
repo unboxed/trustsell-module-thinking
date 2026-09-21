@@ -68,10 +68,12 @@ holes.
 ## The firm seller's 21
 
 Run for the first time on 21 September, in the twelfth pass. Five of the twenty-one were answered
-by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-third pass it is
-**twelve by a read, one by asking, five in part, two elsewhere and one by nothing**. F1 and F16
-moved in the twenty-first, F6 and F8 in the twenty-second, F11, F17 and F20 in the twenty-third.
-The one left with nothing is F19, which this map already says is the Brain's. That is a far worse
+by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-fourth pass it is
+**fourteen by a read, one by asking, three in part, two elsewhere and one by nothing**. F1 and F16
+moved in the twenty-first, F6 and F8 in the twenty-second, F11, F17 and F20 in the twenty-third,
+F7 and F10 in the twenty-fourth. The three still answered in part are F2, F3 and F13, and each
+names in its read's body the fact nobody holds. The one left with nothing is F19, which this map
+already says is the Brain's. That is a far worse
 showing than either other set, and the reason is not that this seller is unusual: it is that her
 questions are mostly about **the buyer's own process** and **her own firm's effort**, and the
 library has barely touched either. The verdicts are mine, from reading every entry.
@@ -84,10 +86,10 @@ library has barely touched either. The verdicts are mine, from reading every ent
 | F4 Who will speak for me when I am not in the room? | [`champion`](../signals/champion.md), which claims F4 since this pass. | Answered | already assumes `own-rhythm` and `several-people` |
 | F5 Why is that person invested, and what would make them look good? | Nothing reads it, and nothing should: the reason someone is invested is a fact only they or you hold, kept as a told `relationship-note`. `champion` reads the behaviour that follows from it. | Answered by asking | nothing |
 | F6 Are they discovering the best fit with me, or running a process on paper? | [`steps-on-their-side`](../signals/steps-on-their-side.md), since the twenty-second pass: steps moving without you is a process being run, no steps moving while the talking goes on is a buyer still deciding. Both off the same arithmetic. | Answered | the told `buying-process`, which the seller fills |
-| F7 Have they put me in front of the people I asked to meet? | [`missing-people`](../signals/missing-people.md), which **claims F7 in part** since the twentieth pass: who you asked for and still have not reached. Reading the ask itself would mean reading a promise **they** made to you, which no read in the library does. | Partly, and claimed | a read of their promises, which is its own read |
+| F7 Have they put me in front of the people I asked to meet? | [`missing-people`](../signals/missing-people.md) for who is still unreached, and [`they-owe-you`](../signals/they-owe-you.md) since the twenty-fourth pass for the promise they made and have not kept. The two halves, in two reads. | Answered | nothing |
 | F8 What has the buyer not done yet on their side? | [`steps-on-their-side`](../signals/steps-on-their-side.md) over [`buying-process`](../assemblies/buying-process.md), since the twenty-second pass, and it says **no sign of** rather than **not done**, which is the only honest form the answer has. | Answered | the told `buying-process`, which the seller fills |
 | F9 What did I promise, or leave on the back burner? | [`loose-end`](../signals/loose-end.md), which claims F9 since this pass. | Answered | `thread-under-way` |
-| F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md), which **claims F10 in part** since the twentieth pass: the silence, against their own rhythm. The deadline half is nowhere, and its body says so: `dated-facts-in-their-words` exists to stop a date being **invented**, not to watch one arrive. | Partly, and claimed | a read that watches a buyer's own date come closer |
+| F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md) watches the silence and [`deadline-they-gave`](../signals/deadline-they-gave.md), since the twenty-fourth pass, watches the clock. A quiet fortnight before a committee sits is not a quiet fortnight in August. | Answered | nothing |
 | F11 How many times has anyone from my firm reached out? | [`enough-tries`](../signals/enough-tries.md), in full since the twenty-third pass: it reads `firm-contact` too and adds `colleague-touches-on-record` to `times-you-chase`. A person who has had four approaches has had four. | Answered | nothing |
 | F12 What has my firm already done here, and what was said? | [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md), which claims F12 since this pass. | Answered | `own-firm` |
 | F13 What did we do the last time we sold into one like this, and what did it save them? | [`delivered-before`](../signals/delivered-before.md), which **claims F13 in part** since the twentieth pass: the deals of this shape you really sold, and how recently. What a sale was worth to the buyer is on no record, and its body refuses to read a case study as a measurement. | Partly, and claimed | a told or fetched fact nobody has |
@@ -169,7 +171,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 132 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 134 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -863,6 +865,46 @@ show list in August that nobody has written to, opening on what she said at the 
 list's own clearance to say where it came from. The broker's world said a lead can come "from a
 list somebody else worked" from the day it was written, and until now nothing could hold one.
 
+**Done in the twenty-fourth pass, 21 September.** The two reads the twentieth pass turned up while
+writing its "which half" lines, which is the whole argument for having written them.
+
+**[`they-owe-you`](../signals/they-owe-you.md)**, the mirror of
+[`loose-end`](../signals/loose-end.md). Every promise read in the library ran one way, what you owe
+them, and a promise the **buyer** made to you had nowhere to live: "I'll get you in front of our
+head of service", "I'll take it to the board this month". It reuses three of the loose end's four
+counts unchanged, because it is the same arithmetic with the speaker swapped, and adds
+`their-promise-undelivered`. F7 closes.
+
+**Two things about it are not the mirror.** What closes a promise is usually not a message: a
+promised introduction closes when a new name appears on a thread, so the scan looks for the thing
+promised rather than for an acknowledgement. And the softening is much harder than the loose end's,
+because a buyer has no reason to be precise about their own side. "I'll see what I can do" is
+politeness and "I'll send it Friday" is a promise, and most of what a buyer says sits between them.
+The read also never suggests a chase on its own: a buyer who has not done a thing they said they
+would do is usually busy, occasionally stuck, and sometimes has been told no inside their own
+organisation, and none of those is improved by being reminded that they promised. *(My reasons, not
+yet yours.)*
+
+**[`deadline-they-gave`](../signals/deadline-they-gave.md)**, which watches a date the buyer stated
+come closer. It quotes `dated-facts-in-their-words`, the count that already existed on
+[`pushing`](../signals/pushing.md) pointed the other way, and adds `time-to-their-date`. The two
+reads use one count for opposite purposes, which is the plainest evidence the count is the right
+shape: `pushing` counts the buyer's own dates so you cannot invent one, and this counts them so you
+cannot miss one. What counts as "short" is the goal's tempo and never a number: at an hours tempo a
+week is a long way off, and on a multi-year sale six months is the last moment to start. F10
+closes.
+
+**What it bought, measured rather than asserted.** Both cards that needed these reads were already
+written and standing on nothing.
+[`act-holbrook-window`](../scenarios/bops/cards/act-holbrook-window.md) has been saying "Holbrook
+told you in July that anything for this year has to be in by 16 October" with no read beneath it
+that could reach a date the buyer gave; it names `deadline-they-gave` now and says how many working
+days are left and how much of the run-up has gone.
+[`act-felton-director`](../scenarios/bops/cards/act-felton-director.md) rests on `they-owe-you` and
+its own line, "this is a hunch more than a read", turns out to be exactly what the new read
+predicts: her words were loose, so it grades down hard. That is the third card in four passes that
+was saying something the library could not reach, and all three were found the same way.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -942,7 +984,7 @@ yet yours.)*
   still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
   it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 132 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 134 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.

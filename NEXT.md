@@ -9,16 +9,17 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `38ac329` on `main`, twenty-three passes on `library/docs/coverage.md` are done. The library
-holds 14 channels, 5 told sources, 25 assemblies, 132 counts (all `defined: false`), 40 signals,
+As of commit `5850b50` on `main`, twenty-four passes on `library/docs/coverage.md` are done. The library
+holds 14 channels, 5 told sources, 25 assemblies, 134 counts (all `defined: false`), 42 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
 `pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
 are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
-one in part, three are out of scope and none by nothing. Of the firm seller's 21, twelve are answered
-by a read, one by asking, five in part, two elsewhere and one by nothing. The one left is F19,
+one in part, three are out of scope and none by nothing. Of the firm seller's 21, fourteen are answered
+by a read, one by asking, three in part, two elsewhere and one by nothing. The three in part are
+F2, F3 and F13, and each names in its read's body the fact nobody holds. The one left is F19,
 which the map says is the Brain's.
 
 **The important recent turn.** Passes eight to thirteen added or audited entries against **question
@@ -54,25 +55,12 @@ open, with what I would do and why. The order is mine. *(My order, not yet yours
 which they want before starting anything in the second half of this list, because those are scope
 calls rather than work.
 
-**What I would do first, and it is small.** Two reads that the twentieth pass turned up while
-writing the "which half" lines, both now the only thing standing between the firm set and being
-fully answered by reads:
-
-1. **A read of the promises they made to you** (F7's missing half). Every promise read in the
-   library runs one way: `loose-end` is what **you** owe **them**. A buyer who said "I'll get you
-   in front of our head of service" and did not is invisible, and it is the commonest way a patient
-   sale stalls. It stands on `conversation-history` and needs no new floor. `missing-people` says
-   in its body that this is a read of its own rather than a widening of itself.
-2. **A read that watches a buyer's own date come closer** (F10's missing half). A date the buyer
-   gave you, running down while nobody writes. The count it would stand on,
-   `dated-facts-in-their-words`, already exists on `pushing`, pointed the other way: it is there to
-   stop a date being **invented**. Pointing a second read at it is cheap and the third seller named
-   the loss it prevents in her own words ("you haven't talked to this person in two weeks and there
-   was a deadline").
-
-Do both in one pass, then **write cards against them in `bops`**, which is where a broken promise
-and a slipping deadline both belong. That is the habit at the end of this file and it has earned
-its place twice over.
+~~**The two small reads.**~~ Done in the twenty-fourth pass.
+[`they-owe-you`](library/signals/they-owe-you.md) is the mirror of `loose-end`, a promise the buyer
+made to you, and [`deadline-they-gave`](library/signals/deadline-they-gave.md) watches a date they
+stated come closer, on the count `pushing` already had pointed the other way. F7 and F10 close, and
+two cards that had been standing on nothing (`act-holbrook-window`, `act-felton-director`) now name
+them.
 
 **Then, and these are the scope calls.** Ask before starting one.
 
@@ -93,7 +81,7 @@ its place twice over.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
   say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
   card whose reads assume more than that.
-- **Define the counts.** All 132 are `defined: false`, with the arithmetic said in prose. Some
+- **Define the counts.** All 134 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
