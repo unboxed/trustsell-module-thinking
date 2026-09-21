@@ -952,6 +952,57 @@ tuning would not, and it is the reason to prefer the tie-break fix over widening
 making them read the goal's tempo, which were the other two candidates and would both have moved
 days nobody complained about.
 
+**Done in the twenty-seventh pass, 21 September.** The third scenario, and the first real test of
+the reads written for a seller with a firm around them.
+[`scenarios/cority/`](../scenarios/cority/) now holds a world and seven cards, built on the
+interview note that has sat in its `docs/` since the seventh pass. It is the patient end again,
+eighteen to twenty-four months and several people to win, with the two things `bops` does not have:
+**a firm around the seller** and **a formal process on the other side**.
+
+**What it exercises that nothing had.** `firm-contact` is full here rather than nearly empty,
+because every contact by anyone is in the CRM, so
+[`colleague-already-in-touch`](../signals/colleague-already-in-touch.md) produces a card at last:
+your business development rep ran six touches at an account in June and nobody told you, and the
+move is to say so before the buyer does.
+[`enough-tries`](../signals/enough-tries.md) produces the card the twenty-third pass made possible
+and no world could show: nine touches at one account, seven of them your rep's and two yours,
+counted together, and the move is to ask him to stop. That card could not have existed three passes
+ago. `people-told#buying-process` is filled for the first time, so
+[`steps-on-their-side`](../signals/steps-on-their-side.md) makes a card rather than an Ask. And
+`lead-list` carries a real list: a name off a conference spreadsheet with his own words against it
+and the clearance to say where you got him.
+
+**It is also the first world with no data-gap rows at all.** Eleven of the fourteen channels are
+connected, including LinkedIn, which the patient scenario names as a gap on four cards. Every read
+that has been half blind in `bops` is whole here, and the cards show what the library looks like
+when nothing is missing. The three it does not connect are SMS, what the buyer hands over and
+public records, each for a stated reason: nobody texts at this end, and what a buyer sends you here
+is a tender, which is out of scope and which the trade already has tools for.
+
+**The build refused a card, as it should.** The tender card cited the CRM in its *Sources* and
+nothing it rested on reached one: `deadline-they-gave` reads the thread and the deal,
+`stated-priorities` reads what the buyer publishes, and neither goes near a deal system. The row
+became the bid channel in the workspace, which is where the fact actually lives. That is the check
+the whole library is built around, catching a plausible sentence written by somebody who knew the
+world and not the trail.
+
+**What writing it found, and nothing was fixed in the same breath.**
+
+- **A dated card is band 4 whatever the distance.** A clarification window closing in eight working
+  days and a date six months off are the same band, because `ownBand` asks only whether a date
+  exists and whether it is tomorrow. Nothing between "tomorrow" and "weeks away" is graded. The
+  twenty-sixth pass said the bands were sound and the tie-break was the fault, and that was true of
+  the complaint it answered; this is a different one, from the other end of the spectrum, and it is
+  about the bands. Unlike the tie-break there is no principle that says which card should win, so
+  it is named here rather than decided. *(My reading, not yet yours.)*
+- **A shared list has nowhere to record who has worked which name.**
+  [`lead-list`](../channels/lead-list.md) holds the list and the entries; when marketing sends the
+  same spreadsheet to six people, nothing says who has written to whom, which the card
+  `act-ian-vanbrugh` names in its own *Still unclear* because it cannot do better.
+- **The brief is asked for a third time.** The manager sees a stage and a one-line next step for
+  fifty reps and messages on a Friday asking where a deal is. That is F14, deferred as a floor
+  above the cards, and this world makes it concrete rather than theoretical.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one

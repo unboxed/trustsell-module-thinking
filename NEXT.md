@@ -9,10 +9,11 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `9614f2f` on `main`, twenty-six passes on `library/docs/coverage.md` are done. The library
+As of commit `5f7e763` on `main`, twenty-seven passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (all `defined: false`), 42 signals,
-7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
-`pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
+7 docs (all general) and **three** scenarios: `bops`, a patient sale to councils, with 26 cards;
+`pmf`, a merchant cash advance broker, with 12; and `cority`, an enterprise seller with a firm
+around her, with 7. It builds clean with `SCENARIO` set to any of them.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
@@ -62,17 +63,25 @@ stated come closer, on the count `pushing` already had pointed the other way. F7
 two cards that had been standing on nothing (`act-holbrook-window`, `act-felton-director`) now name
 them.
 
-**Then, and these are the scope calls.** Ask before starting one.
+~~**The scope calls.**~~ Three of the four are done: the `assumes:` join (twenty-fifth), the day's
+order (twenty-sixth) and the Cority world (twenty-seventh). What is left is below, and the two new
+findings above it.
 
 ## Still open, and bigger than a step
 
-- **The firm reads have never been exercised.** `firm-contact`, `colleague-already-in-touch` and
-  the `own-firm` assumption exist for a seller with a firm around them, and no world has one that
-  fills the gather. `scenarios/cority/` holds an interview note and no `world/`. Writing that world
-  would do to the firm reads what the fourteenth pass did to the fast-end ones. The old bar ("a
-  third earns its place once the two ends have shown what the spectrum is") rested on PMF's world
-  not being written, which expired; the scope call is the user's and is left open in
-  `scenarios/cority/docs/what-cority-told-us.md`.
+- ~~**The firm reads have never been exercised.**~~ Done in the twenty-seventh pass.
+  `scenarios/cority/` has a world and seven cards. `firm-contact` is full there, so
+  `colleague-already-in-touch` and the firm half of `enough-tries` both produce cards that could
+  not have existed in either other world. It is also the first scenario with no data-gap rows at
+  all, because eleven of the fourteen channels are connected.
+- **New, from writing it: a dated card is band 4 whatever the distance.** A window closing in eight
+  working days and a date six months off land in the same band, because `ownBand` asks only whether
+  a date exists and whether it is tomorrow. The twenty-sixth pass said the bands were sound, and
+  that was true of the complaint it answered; this is a different one and it is about the bands.
+  There is no principle that says which card should win, so it is named rather than decided.
+- **New: a shared list cannot record who has worked which name.** `lead-list` holds the list and
+  the entries; when marketing sends the same spreadsheet to six people, nothing says who wrote to
+  whom.
 - ~~**The day's order is a patient seller's.**~~ Done in the twenty-sixth pass, and it was not the
   bands: all three cards were in band 2. The fault was the first tie-break inside a band, the
   ladder, which asks what a deal is **worth** where the band asks what waiting a day **costs**.

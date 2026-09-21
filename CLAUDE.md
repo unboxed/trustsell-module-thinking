@@ -59,11 +59,15 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   `library/docs/volume-questions.md`, a third from a seller with a firm around her,
   `library/docs/firm-questions.md` (21 September, not yet run through the map), and the map of what
   is and is not answered, `library/docs/coverage.md`, exist to make that visible. **Read
-  `coverage.md` before adding to a rung.** A mass-selling scenario (PMF, a merchant cash advance
-  broker) is the second pressure test: `library/scenarios/pmf/` holds its world and, since 21
-  September, ten cards, and its ladder runs past the sale. Writing those cards is what found the
-  library's largest hole, that nothing gathers a text conversation
-  (`library/docs/coverage.md`, the fourteenth pass).
+  `coverage.md` before adding to a rung.** There are **three scenarios**. `bops` is the patient
+  sale and the one the playbook ships. `pmf` (a merchant cash advance broker) is the fast end:
+  `library/scenarios/pmf/` holds its world and twelve cards, and its ladder runs past the sale.
+  Writing those cards is what found the library's largest hole, that nothing gathers a text
+  conversation (`library/docs/coverage.md`, the fourteenth pass). `cority` (an enterprise seller
+  with a firm around her) is the third, written 21 September: the patient end again, with a
+  business development rep who does her outreach and a formal process on the buyer's side. It is
+  the only world where `firm-contact` is full, and the only one with no data-gap rows, because
+  eleven of the fourteen channels are connected.
   **Not every entry has to hold for both ends** (20 September): some reads belong to long
   relationships and some to volume. The library is general because the set covers the spectrum and
   each entry says what it needs in order to stand, not because every entry is universal. Each
