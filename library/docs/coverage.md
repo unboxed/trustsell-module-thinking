@@ -68,9 +68,10 @@ holes.
 ## The firm seller's 21
 
 Run for the first time on 21 September, in the twelfth pass. Five of the twenty-one were answered
-by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-second
-pass it is **nine by a read, one by asking, six in part, two elsewhere and three by nothing**: F1
-and F16 moved in the twenty-first, F6 and F8 in the twenty-second. That is a far worse
+by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-third pass it is
+**twelve by a read, one by asking, five in part, two elsewhere and one by nothing**. F1 and F16
+moved in the twenty-first, F6 and F8 in the twenty-second, F11, F17 and F20 in the twenty-third.
+The one left with nothing is F19, which this map already says is the Brain's. That is a far worse
 showing than either other set, and the reason is not that this seller is unusual: it is that her
 questions are mostly about **the buyer's own process** and **her own firm's effort**, and the
 library has barely touched either. The verdicts are mine, from reading every entry.
@@ -87,16 +88,16 @@ library has barely touched either. The verdicts are mine, from reading every ent
 | F8 What has the buyer not done yet on their side? | [`steps-on-their-side`](../signals/steps-on-their-side.md) over [`buying-process`](../assemblies/buying-process.md), since the twenty-second pass, and it says **no sign of** rather than **not done**, which is the only honest form the answer has. | Answered | the told `buying-process`, which the seller fills |
 | F9 What did I promise, or leave on the back burner? | [`loose-end`](../signals/loose-end.md), which claims F9 since this pass. | Answered | `thread-under-way` |
 | F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md), which **claims F10 in part** since the twentieth pass: the silence, against their own rhythm. The deadline half is nowhere, and its body says so: `dated-facts-in-their-words` exists to stop a date being **invented**, not to watch one arrive. | Partly, and claimed | a read that watches a buyer's own date come closer |
-| F11 How many times has anyone from my firm reached out? | [`enough-tries`](../signals/enough-tries.md), which **claims F11 in part** since the twentieth pass and names the blindness in its body: it counts yours, `colleague-already-in-touch` counts theirs, and nothing adds them. | Partly, and claimed | nothing new below; two counts that do not meet |
+| F11 How many times has anyone from my firm reached out? | [`enough-tries`](../signals/enough-tries.md), in full since the twenty-third pass: it reads `firm-contact` too and adds `colleague-touches-on-record` to `times-you-chase`. A person who has had four approaches has had four. | Answered | nothing |
 | F12 What has my firm already done here, and what was said? | [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md), which claims F12 since this pass. | Answered | `own-firm` |
 | F13 What did we do the last time we sold into one like this, and what did it save them? | [`delivered-before`](../signals/delivered-before.md), which **claims F13 in part** since the twentieth pass: the deals of this shape you really sold, and how recently. What a sale was worth to the buyer is on no record, and its body refuses to read a case study as a measurement. | Partly, and claimed | a told or fetched fact nobody has |
 | F14 What has happened on this deal in the last two weeks, in a paragraph? | The brief, which [`library-format.md`](library-format.md) defers as a floor above the cards. It is the same record the cards are built on, summarised for somebody who is not selling. | Answered elsewhere, deliberately deferred | nothing |
 | F15 Which of my fifteen live conversations needs me today? | The order of a day, the six bands by what waiting a day costs ([`modules/00-spine.md`](../modules/00-spine.md)). The same answer as Q21. | Answered elsewhere | nothing |
 | F16 Which of their own priorities should my next message speak to? | [`lead-with-this`](../signals/lead-with-this.md), in full since the twenty-first pass: it reads `published-picture` for their side, and `relevance-to-stated-factors` counts over it instead of over your own catalogue. | Answered | nothing |
-| F17 How did I come by this person, and can I say so out loud? | [`warm-path`](../signals/warm-path.md), which **claims F17 in part** since the twentieth pass: the one door it can see, a route through somebody you deal with. Every other door has no provenance, and its body says the read is silent there rather than wrong. | Partly, and claimed | provenance on a lead, which no channel carries |
+| F17 How did I come by this person, and can I say so out loud? | [`warm-path`](../signals/warm-path.md), in full since the twenty-third pass, over [`where-it-came-from`](../assemblies/where-it-came-from.md). Every door now, and the permission to say it travels with the provenance. | Answered | nothing |
 | F18 Am I pulling this deal into my quarter rather than theirs? | [`pushing`](../signals/pushing.md), first shape, which claims F18 since this pass and now says in its body that your own quarter is the commonest source of a manufactured date. It never needs to know your incentives: a date that is neither theirs nor a told price change is already manufactured however it got there. | Answered | `thread-under-way` |
 | F19 Should my firm bid on this at all? | Nothing. `fit-match` judges the lead against the fit-shape, which is whether it is worth selling to, not whether the effort is worth spending. What it costs your firm to chase something is intent, and it belongs where discount room does, with the Brain. | Hole, and it is the Brain's | the goal's own economics, which nothing holds |
-| F20 Who did I meet at that event, and what were they there for? | Nothing. Twenty-five names and their interests, handed over by marketing as a spreadsheet, are leads (they came to you), so in scope. The nearest record is `web-form#form-submission`, and `calendar#calendar-event` carries attendees of a meeting, which is a different thing. | Hole | a lead source no channel has |
+| F20 Who did I meet at that event, and what were they there for? | [`lead-list`](../channels/lead-list.md), since the twenty-third pass: the list, and one entry per name with what they were there for in their own words. `where-it-came-from` gathers it and `lead-with-this` reads it for the line a first message opens on. | Answered | nothing |
 | F21 Which of the people I spoke to years ago is ready now? | [`time-to-reconnect`](../signals/time-to-reconnect.md), which claims F21 since this pass, with `was-once-active` beside it on `champion-went-dark`. | Answered | `own-rhythm` |
 
 ### What running the third set found
@@ -168,7 +169,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 131 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 132 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -824,6 +825,44 @@ and promise in its own words never to say a council has not done something. Stor
 the tool mostly asks" is not a stage the tool passes through. It is what a new told rung looks like
 on its first day.
 
+**Done in the twenty-third pass, 21 September.** The two lead-shaped holes, and a fourth place the
+tool learns from.
+
+**The two try counts meet.** [`enough-tries`](../signals/enough-tries.md) reads
+[`firm-contact`](../assemblies/firm-contact.md) now and adds `colleague-touches-on-record` to
+`times-you-chase`. A person who has had four approaches has had four, and it makes no difference
+to them which desk each one came from. It still assumes nothing and still needs no new source:
+where there is no firm the second number is zero and the read is exactly what it was. A `needs`
+entry means a check drops out when the source is missing, and here nothing drops out, so `crm` and
+`slack` stayed off it. F11 closes.
+
+**A list handed to you is the fourth home.** [`lead-list`](../channels/lead-list.md), `source:
+firm`, the way [`handover`](../channels/handover.md) is `source: buyer`: names somebody at your
+firm hands you, from a stand, a campaign, a territory, a bought list. Two records, the list and the
+entries on it, and no opinion about whether a name is worth anything, because choosing among many
+candidates is outside the tool's scope and a list is a set of leads that have arrived rather than a
+pool to rank. Beside it `people-told#lead-source` for every other door, and
+[`where-it-came-from`](../assemblies/where-it-came-from.md) gathers them into one answer per
+person. F17 and F20 both close.
+
+**The permission is a field, never an assumption.** Knowing where a lead came from is not
+permission to say it. A person who handed over their badge at a stand expects to hear from you; a
+bought list is usually the opposite. The record carries it, the gather keeps the two together, and
+no read will put a provenance into a draft the list has not cleared. A first line that says where
+you got somebody, wrongly, is the most expensive sentence in a cold approach. *(My reason, not yet
+yours.)*
+
+**The card test found the hole in the pass itself.** Written as planned, `where-it-came-from` had
+exactly one reader, [`warm-path`](../signals/warm-path.md), whose trigger needs a bridge. So for
+every lead that did **not** arrive by introduction, the provenance would have been gathered and
+never read: the same shape as `sms.md` sitting undrawn-from for two days, caught this time before
+the commit rather than after. [`lead-with-this`](../signals/lead-with-this.md) takes the gather
+too, for the line a first message opens on, which is the read whose job that actually is.
+[`act-marisol-list`](../scenarios/pmf/cards/act-marisol-list.md) is the card: a name off a trade
+show list in August that nobody has written to, opening on what she said at the stand, with the
+list's own clearance to say where it came from. The broker's world said a lead can come "from a
+list somebody else worked" from the day it was written, and until now nothing could hold one.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -879,10 +918,10 @@ yet yours.)*
   - ~~**The shape of their process**, a told record nobody has.~~ Done in the twenty-second pass.
     `people-told#buying-process`, the `buying-process` gather and `steps-on-their-side`, which says
     "no sign of" and never "not done". F8 and F6 both close.
-  - **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
-    "enough tries" as your own messages do.
-  - **Where a lead came from** (F17, F20): provenance on a lead, and the event list a marketing
-    team hands over, which is a lead source no channel has.
+  - ~~**Add the two try counts together** (F11).~~ Done in the twenty-third pass.
+  - ~~**Where a lead came from** (F17, F20).~~ Done in the twenty-third pass. `lead-list` is the
+    channel, `people-told#lead-source` the told twin for every other door, `where-it-came-from` the
+    gather, and both `warm-path` and `lead-with-this` read it.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `goal.md` could say what
   its sale has (a thread, a history, several people, a firm) and the build could refuse a card
   whose reads assume more than that.
@@ -903,7 +942,7 @@ yet yours.)*
   still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
   it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 131 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 132 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.

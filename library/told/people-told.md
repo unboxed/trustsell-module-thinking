@@ -95,6 +95,10 @@ record.
 | Buying process | what the step looks like when it has happened (a document, a name, a date) | you, typed or asked |
 | Buying process | roughly where in the buy it falls | you, typed |
 | Buying process | whether you can help with it, and how | you, typed |
+| Lead source | the person it is about | you, typed or picked |
+| Lead source | how you came by them (an introduction, a list, an event, a search, they wrote first) | you, typed or asked |
+| Lead source | whether you may say so out loud | you, typed or asked |
+| Lead source | when | you, typed |
 
 ## In plain words
 
@@ -109,3 +113,4 @@ it, do not change.
 | Deal outcome | How a deal ended |
 | Answer received | What came back on a live deal |
 | Buying process | What a buy takes on their side |
+| Lead source | How you came by someone |

@@ -5,8 +5,8 @@ label: Someone who can introduce you
 blurb: A way to reach a target through someone you already know.
 kind: opening
 confidence: graded
-inputs: [person-history, stakeholder-map]
-counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
+inputs: [where-it-came-from, person-history, stakeholder-map]
+counts: [route-in-on-record, shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
 answers: [Q7, Q8, F17]
 needs: [linkedin]
 assumes: [own-rhythm]
@@ -48,10 +48,17 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   is cold to you by definition; it is the bridge whose two-way rhythm with you makes the path warm.
   With no contact you genuinely deal with, there is no bridge to read (an assumption gap, named not
   faked).
-- **Which half of F17 it reaches** (how did I come by this person, and can I say so out loud). It
-  reaches the one door it can see: where the route ran through somebody you deal with, it holds the
-  chain and can say it out loud, which is exactly what the question is for. Every other door is
-  invisible. A bought list, an event badge, a colleague handing a name over, a form filled in
-  months ago: nothing in the library records where a lead came from, so for those the read is
-  silent rather than wrong. Provenance on a lead is a record no channel carries, and it is listed
-  in [`docs/coverage.md`](../docs/coverage.md). *(My reason, not yet yours.)*
+- **All of F17, since 21 September** (how did I come by this person, and can I say so out loud).
+  It has always held the introduction door: where the route ran through somebody you deal with, it
+  has the chain and can say it out loud. Every other door was invisible until
+  [`where-it-came-from`](../assemblies/where-it-came-from.md) was written, and the read now takes
+  that gather too, so a name off a list a colleague handed over, a form filled in months ago or a
+  line you typed yourself all have the same answer in the same place. Where no record carries the
+  door, the read says it does not know rather than treating the person as cold, because a
+  conference two years ago you never logged looks exactly like a name from a search.
+- **The permission travels with the provenance and is never inferred.** Knowing where a lead came
+  from is not permission to say it. A person who handed over their badge expects to hear from you;
+  a bought list is usually the opposite. The record carries a field for it, the gather keeps the
+  two together, and this read will not put a provenance into a draft that has not been cleared. A
+  first line that says where you got somebody, wrongly, is the most expensive sentence in a cold
+  approach. *(My reasons, not yet yours.)*

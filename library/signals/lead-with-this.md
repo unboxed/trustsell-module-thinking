@@ -5,12 +5,13 @@ label: Lead with this
 blurb: For a buyer-type, the use-case and information to open with, and what to hold for later.
 kind: opening
 confidence: graded
-inputs: [offering-entry, objection-list, published-picture]
-counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]
+inputs: [offering-entry, objection-list, published-picture, where-it-came-from]
+counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors, route-in-on-record]
 answers: [Q10, Q11, Q12, Q24, F16]
 needs: []
 assumes: []
 assumes_status: provisional
+pull: People's published picture, for what the buyer said matters, and how you came by them, for the line a first message opens on
 ---
 
 # Lead with this
@@ -68,3 +69,13 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   over what usually works, because one is about them and the other is about a type.
   [`stated-priorities`](stated-priorities.md) is the read that holds their words; this one does the
   matching. *(My reason, not yet yours.)*
+- **The first line, from how you came by them.** It reads
+  [`where-it-came-from`](../assemblies/where-it-came-from.md) too, since 21 September, for the
+  sentence that opens a first message: the list a colleague handed over, the form they filled in,
+  the thing they said at the time. A message that can say why it is not a cold approach is a
+  different message from one that cannot. It uses the permission on the record and never assumes
+  it: where the door is not cleared to be said, the opening is written without it rather than with
+  a hedge. Where no record carries the door, the read leads on the use-case alone, which is what it
+  did for every lead before this. [`warm-path`](warm-path.md) reads the same gather for the
+  introduction door, and the two do not overlap: that read finds a way in, this one writes the
+  opening once there is one. *(My reasons, not yet yours.)*

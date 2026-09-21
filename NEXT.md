@@ -9,16 +9,17 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `00399ff` on `main`, twenty-two passes on `library/docs/coverage.md` are done. The library
-holds 13 channels, 5 told sources, 24 assemblies, 131 counts (all `defined: false`), 40 signals,
+As of commit `a0afe3e` on `main`, twenty-three passes on `library/docs/coverage.md` are done. The library
+holds 14 channels, 5 told sources, 25 assemblies, 132 counts (all `defined: false`), 40 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
-`pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
+`pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
 are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
-one in part, three are out of scope and none by nothing. Of the firm seller's 21, nine are answered
-by a read, one by asking, six in part, two elsewhere and three by nothing.
+one in part, three are out of scope and none by nothing. Of the firm seller's 21, twelve are answered
+by a read, one by asking, five in part, two elsewhere and one by nothing. The one left is F19,
+which the map says is the Brain's.
 
 **The important recent turn.** Passes eight to thirteen added or audited entries against **question
 sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, which
@@ -84,11 +85,11 @@ audit left. Do them in order.
    `ask-buying-process` is the card, an Ask, because a told record nobody has filled cannot make
    an Act.
 
-7. **Two lead-shaped holes.** Add the two try counts together (F11), so a cadence a colleague is
-   running counts towards "enough tries" as your own messages do: `enough-tries` counts only yours
-   and `colleague-already-in-touch` counts only theirs. And **where a lead came from** (F17, F20):
-   provenance on a lead, and the event list a marketing team hands over, which is a lead source no
-   channel has.
+7. ~~**Two lead-shaped holes.**~~ Done in the twenty-third pass. `enough-tries` reads
+   `firm-contact` and adds `colleague-touches-on-record` to `times-you-chase`, so a colleague's
+   cadence counts. `channels/lead-list.md` (`source: firm`, the fourth home) and
+   `people-told#lead-source` carry provenance, `assemblies/where-it-came-from.md` gathers it, and
+   both `warm-path` and `lead-with-this` read it. F11, F17 and F20 all close.
 
 ## Still open, and bigger than a step
 
@@ -107,7 +108,7 @@ audit left. Do them in order.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
   say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
   card whose reads assume more than that.
-- **Define the counts.** All 131 are `defined: false`, with the arithmetic said in prose. Some
+- **Define the counts.** All 132 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and

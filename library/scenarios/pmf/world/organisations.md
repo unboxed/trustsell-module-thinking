@@ -9,10 +9,11 @@ Two kinds of organisation, and only one of them stands on the ladder.
 
 ## The businesses
 
-Ten live, one owner each. Where a business stands is where its deal stands.
+Eleven live, one owner each. Where a business stands is where its deal stands.
 
 | Organisation | id | Stands at | Notes |
 |---|---|---|---|
+| Delgado Tile and Stone | delgado-tile | interested | Marisol Delgado's name came off the trade show list Marcus worked in August. She told the stand she needed a van and a second cutter. Nobody has written to her |
 | Mercer Dental | mercer-dental | interested | Errol Danning said yes by text on Friday at 16:40. No form, no application, nothing since |
 | Pinewood Cleaners | pinewood-cleaners | interested | Curtis Naylor came back through the form on Wednesday. Three funders declined him in May on his credit score |
 | Bluebird Childcare | bluebird-childcare | applied | Application signed Thursday. Two statements in of the three asked for, and the third is August |

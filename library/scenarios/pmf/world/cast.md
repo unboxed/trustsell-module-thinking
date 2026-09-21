@@ -20,6 +20,7 @@ is the scenario's own open question and not a gap in the library.
 | Tony Prieto | tony-prieto | owner | corner-tire | Three offers in since Friday. You have not passed them on yet |
 | Alma Vega | alma-vega | owner | vega-landscaping | Submitted this morning. Takings drop hard from November to February and she said so herself |
 | Renee Sackville | renee-sackville | owner | bluebird-childcare | Signed the application on Thursday. Sent two months of statements, not three |
+| Marisol Delgado | marisol-delgado | owner | delgado-tile | Off the trade show list Marcus worked in August. Told the stand she needed a van and a second cutter. You have never spoken |
 | Errol Danning | errol-danning | owner | mercer-dental | Said yes on a text on Friday afternoon. Nothing since |
 | Paula Larkin | paula-larkin | owner | larkin-print | Accepted Kestrel's offer on Friday. Waiting on the contract |
 | Wes Halloran | wes-halloran | owner | halsey-freight | Funded in June. Two debits returned unpaid this month |

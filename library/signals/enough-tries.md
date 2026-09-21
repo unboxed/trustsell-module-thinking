@@ -5,8 +5,8 @@ label: Enough tries
 blurb: You have reached out enough times with nothing back, and the next try costs more than it could win.
 kind: decay
 confidence: graded
-inputs: [person-history, conversation-history]
-counts: [times-you-chase, chases-since-their-last-reply, innocent-explanation-scan]
+inputs: [person-history, conversation-history, firm-contact]
+counts: [times-you-chase, chases-since-their-last-reply, innocent-explanation-scan, colleague-touches-on-record]
 answers: [V5, F11]
 needs: [calendar]
 assumes: []
@@ -63,11 +63,17 @@ pestering on another.
   cannot.
 - This read points away from a move. What the tool does with it, taking the person off the day
   and keeping them on record, is the Brain's, and what you do is yours.
-- **Which half of F11 it reaches** (how many times has anyone from my firm reached out). It counts
-  **yours**, and it counts them well. It does not count your firm's:
-  [`colleague-already-in-touch`](colleague-already-in-touch.md) counts a colleague's touches at the
-  same account and nothing adds the two together. So a cadence a business development rep is
-  running beside you is invisible to the read whose whole job is to say when it has gone too far,
-  which is the worst possible place for that blindness to sit. Adding them is a small change and a
-  real one, and it is listed in [`docs/coverage.md`](../docs/coverage.md) rather than done here.
+- **All of F11, since 21 September** (how many times has anyone from my firm reached out). It
+  counts yours and your firm's together: `times-you-chase` from your own sent messages, and
+  `colleague-touches-on-record` from [`firm-contact`](../assemblies/firm-contact.md), the same
+  number [`colleague-already-in-touch`](colleague-already-in-touch.md) reads. A person who has had
+  four approaches has had four, and it makes no difference to them which desk each one came from.
+  Before this the read counted only yours, so a cadence a business development rep was running
+  beside you was invisible to the one read whose whole job is to say when it has gone too far,
+  which was the worst possible place for that blindness to sit. *(My reason, not yet yours.)*
+- **It still assumes nothing.** Reading a firm's records does not make this a read that needs a
+  firm. Where there is none, `firm-contact` is empty, the second number is zero, and the read is
+  exactly what it was: your own tries, counted well. That is why `own-firm` is not in `assumes` and
+  why `crm` and `slack` are not in `needs`. A `needs` entry means a check drops out when the source
+  is missing, and here nothing drops out; the sum simply has one term instead of two.
   *(My reason, not yet yours.)*

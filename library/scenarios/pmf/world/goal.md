@@ -4,7 +4,7 @@ today: 2026-09-21
 seller: you
 offering: [advance-avondale, advance-kestrel, advance-northline, advance-bayard]   # what is sold: one product, four funders, one entry each
 ladder: [interested, applied, submitted, offers-in, accepted, funded, repaying, coming-round-again]
-connected: [sms, web-form, handover, crm, gmail, web]   # what you have plugged in; a channel left out is not connected
+connected: [sms, web-form, handover, crm, gmail, web, lead-list]   # what you have plugged in; a channel left out is not connected
 ---
 
 # The goal, in your words
@@ -51,15 +51,20 @@ signature today, so a ladder that stops there could never show the hole
 
 ## What is connected
 
-SMS, the web form, what the buyer hands over, the CRM, Gmail and the open web, listed as
-`connected:` above. Four of those are plugged in for the first time by this scenario: nothing in
-the patient sale used them.
+SMS, the web form, what the buyer hands over, the CRM, Gmail, the open web and the lists your firm
+hands you, listed as `connected:` above. Five of those are plugged in for the first time by this
+scenario: nothing in the patient sale used them.
 
 Text is the main way you talk to an owner, so **SMS** carries most of the conversation. The **web
 form** is where a lead says in their own words what they want and how soon. **What the buyer hands
 over** is the signed application, the bank statements and whatever stipulation a funder asks for
 later; it is how this sale is qualified at all. The **CRM** is where the deal, its stage and the
 funders' answers live, and it is the record your processor works in as much as you do.
+
+**A list somebody handed you** is the fifth, added 21 September. The goal above says a lead comes
+in "from a list somebody else worked", and for two days nothing in the library could hold one.
+Marcus works the trade shows and hands the names over as a spreadsheet, with what each one said at
+the stand and whether you may say where you got them.
 
 **Calendar, Meet, Drive and Contacts are not connected.** There are no meetings to read at this
 end: the deal happens on the phone, by text, and in the CRM, and the address book is the CRM's.
