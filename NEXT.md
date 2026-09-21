@@ -9,16 +9,16 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `d688ec8` on `main`, twenty-one passes on `library/docs/coverage.md` are done. The library
-holds 13 channels, 5 told sources, 23 assemblies, 127 counts (all `defined: false`), 39 signals,
-7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
+As of commit `00399ff` on `main`, twenty-two passes on `library/docs/coverage.md` are done. The library
+holds 13 channels, 5 told sources, 24 assemblies, 131 counts (all `defined: false`), 40 signals,
+7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
 `pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
 are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
-one in part, three are out of scope and none by nothing. Of the firm seller's 21, seven are answered
-by a read, one by asking, six in part, two elsewhere and five by nothing.
+one in part, three are out of scope and none by nothing. Of the firm seller's 21, nine are answered
+by a read, one by asking, six in part, two elsewhere and three by nothing.
 
 **The important recent turn.** Passes eight to thirteen added or audited entries against **question
 sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, which
@@ -77,10 +77,12 @@ audit left. Do them in order.
    `relevance-to-stated-factors` an `over` that means something: it had been counting "what they
    said matters to them" over your own catalogue.
 
-6. **The shape of their process**, a told record nobody has: what a buy at this kind of
-   organisation takes, so a read can say which of those steps the record shows no sign of. It
-   closes F8, which the third seller says no system does ("flag where the gaps are between where
-   you need to be and what the customer hasn't done"), and F6 with it.
+6. ~~**The shape of their process.**~~ Done in the twenty-second pass. `people-told#buying-process`
+   is the told record, `assemblies/buying-process.md` lays it against a deal, and
+   `signals/steps-on-their-side.md` reads it over four counts. F8 and F6 both close. The form is
+   the decision: it says "I have seen no sign of these three", never "they have not done them".
+   `ask-buying-process` is the card, an Ask, because a told record nobody has filled cannot make
+   an Act.
 
 7. **Two lead-shaped holes.** Add the two try counts together (F11), so a cadence a colleague is
    running counts towards "enough tries" as your own messages do: `enough-tries` counts only yours
@@ -105,7 +107,7 @@ audit left. Do them in order.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
   say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
   card whose reads assume more than that.
-- **Define the counts.** All 127 are `defined: false`, with the arithmetic said in prose. Some
+- **Define the counts.** All 131 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and

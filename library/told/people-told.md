@@ -43,6 +43,18 @@ anything. The same rule governs both. **An answer is told or fetched, never dedu
 that reads like good news is not an answer until you say it is or the deal record carries it.
 *(My reason, not yet yours.)*
 
+The `buying-process` record, added 21 September, is the first told record here that is about no
+particular person and no particular deal. It is what a buy at **this kind of buyer** takes on their
+side: the business case somebody has to write, the assessment their own rules require, the
+committee that has to sit, the signature at the end. It is keyed on the told `fit-shape`, because
+that is the library's only vocabulary for "buyers like this" and the pile of ended deals is already
+grouped by it. Two things about it are honest rather than tidy. The **size of a buy** shapes the
+process as much as the buyer does, and a fit-shape does not carry size, so a seller whose offerings
+differ wildly names the offering on the record where it differs. And the tool can only ever say
+which steps show **no sign** on the record; a step done quietly and never mentioned looks exactly
+like a step not done, which is why the read above it asks rather than asserts.
+*(My reasons, not yet yours.)*
+
 Each record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`
 becomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel
 record.
@@ -77,6 +89,12 @@ record.
 | Answer received | what they answered (an offer with its terms, a refusal, a request for more, or nothing decided yet) | you, typed or asked |
 | Answer received | when it came | you, typed |
 | Answer received | the reason they gave, in their words | you, typed or asked |
+| Buying process | the kind of buyer it applies to (the told fit-shape) | you, typed or picked |
+| Buying process | the offering, where the same buyer buys differently by size | you, typed |
+| Buying process | a step the buy needs on their side (a business case, an assessment, a committee date, a signature) | you, typed or asked |
+| Buying process | what the step looks like when it has happened (a document, a name, a date) | you, typed or asked |
+| Buying process | roughly where in the buy it falls | you, typed |
+| Buying process | whether you can help with it, and how | you, typed |
 
 ## In plain words
 
@@ -90,3 +108,4 @@ it, do not change.
 | Deal seed | Deals you name |
 | Deal outcome | How a deal ended |
 | Answer received | What came back on a live deal |
+| Buying process | What a buy takes on their side |

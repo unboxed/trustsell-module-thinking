@@ -68,9 +68,9 @@ holes.
 ## The firm seller's 21
 
 Run for the first time on 21 September, in the twelfth pass. Five of the twenty-one were answered
-by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-first
-pass it is **seven by a read, one by asking, six in part, two elsewhere and five by nothing**: F1
-and F16 moved. That is a far worse
+by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-second
+pass it is **nine by a read, one by asking, six in part, two elsewhere and three by nothing**: F1
+and F16 moved in the twenty-first, F6 and F8 in the twenty-second. That is a far worse
 showing than either other set, and the reason is not that this seller is unusual: it is that her
 questions are mostly about **the buyer's own process** and **her own firm's effort**, and the
 library has barely touched either. The verdicts are mine, from reading every entry.
@@ -82,9 +82,9 @@ library has barely touched either. The verdicts are mine, from reading every ent
 | F3 What do they already run, and what budget sits behind it? | [`competitive-standing`](../signals/competitive-standing.md), which **claims F3 in part** since the twentieth pass: it reads what they already run and whether the lock-in is live. The budget, as a figure somebody was given, is on no record. | Partly, and claimed | a told or handed-over fact nobody has |
 | F4 Who will speak for me when I am not in the room? | [`champion`](../signals/champion.md), which claims F4 since this pass. | Answered | already assumes `own-rhythm` and `several-people` |
 | F5 Why is that person invested, and what would make them look good? | Nothing reads it, and nothing should: the reason someone is invested is a fact only they or you hold, kept as a told `relationship-note`. `champion` reads the behaviour that follows from it. | Answered by asking | nothing |
-| F6 Are they discovering the best fit with me, or running a process on paper? | Nothing. `buying-intent` is closest and reads procurement entering a thread, which is the opposite end of the same fact. How a buyer is running their decision is not a thing any gather holds. | Hole | the same told shape F8 needs |
+| F6 Are they discovering the best fit with me, or running a process on paper? | [`steps-on-their-side`](../signals/steps-on-their-side.md), since the twenty-second pass: steps moving without you is a process being run, no steps moving while the talking goes on is a buyer still deciding. Both off the same arithmetic. | Answered | the told `buying-process`, which the seller fills |
 | F7 Have they put me in front of the people I asked to meet? | [`missing-people`](../signals/missing-people.md), which **claims F7 in part** since the twentieth pass: who you asked for and still have not reached. Reading the ask itself would mean reading a promise **they** made to you, which no read in the library does. | Partly, and claimed | a read of their promises, which is its own read |
-| F8 What has the buyer not done yet on their side? | Nothing, and this is the one she says no system does. It is `missing-people` widened from who to what: the steps a decision needs on their side that the record shows no sign of. | Hole | a told list of what a buy at this kind of organisation takes |
+| F8 What has the buyer not done yet on their side? | [`steps-on-their-side`](../signals/steps-on-their-side.md) over [`buying-process`](../assemblies/buying-process.md), since the twenty-second pass, and it says **no sign of** rather than **not done**, which is the only honest form the answer has. | Answered | the told `buying-process`, which the seller fills |
 | F9 What did I promise, or leave on the back burner? | [`loose-end`](../signals/loose-end.md), which claims F9 since this pass. | Answered | `thread-under-way` |
 | F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md), which **claims F10 in part** since the twentieth pass: the silence, against their own rhythm. The deadline half is nowhere, and its body says so: `dated-facts-in-their-words` exists to stop a date being **invented**, not to watch one arrive. | Partly, and claimed | a read that watches a buyer's own date come closer |
 | F11 How many times has anyone from my firm reached out? | [`enough-tries`](../signals/enough-tries.md), which **claims F11 in part** since the twentieth pass and names the blindness in its body: it counts yours, `colleague-already-in-touch` counts theirs, and nothing adds them. | Partly, and claimed | nothing new below; two counts that do not meet |
@@ -168,7 +168,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 124 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 131 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -789,6 +789,41 @@ line it is built on has a floor. This is the first pass whose card test landed o
 scenario, and it found the same shape the broker's cards did: a card saying something the library
 could not reach.
 
+**Done in the twenty-second pass, 21 September.** The buyer's own process, which is the question
+the third seller says no system answers. `people-told#buying-process` is the told record: what a
+buy at **this kind of buyer** takes on their side, keyed on the fit-shape.
+[`buying-process`](../assemblies/buying-process.md) lays those steps against one deal's record and
+[`steps-on-their-side`](../signals/steps-on-their-side.md) reads which of them nothing has been
+seen of, over four counts. F8 and F6 both close.
+
+**The form of the answer is the decision, and it is the whole pass.** The read says "I have seen no
+sign of these three", never "they have not done these three". Work inside a buyer's organisation is
+mostly invisible from outside: a case can be written, circulated and approved without one line of
+it reaching you. So a step with no sign and a step not taken look identical from here, and a read
+that announced the second off evidence that can only support the first would be wrong often and
+insulting when it was. It always suggests asking, and the answer is a told fact it keeps. Its
+confidence is never high, and for once that is a property of the question rather than of the
+evidence: the read grades on how **visible a step is by nature**, so a committee date somebody has
+to tell you is close to a fact and a business case nobody would ever send you is close to a guess,
+and it says which kind each one is instead of averaging them. *(My reasons, not yet yours.)*
+
+**Two smaller decisions.** The steps hang on the told `fit-shape`, because that is the library's
+only vocabulary for "buyers like this" and `deal-outcomes` already groups by it; the size of a buy
+shapes a process as much as the buyer does and a fit-shape does not carry size, so the record names
+the offering where the same buyer buys differently by size. And the tool supplies **no** buying
+process of its own, not even a sensible generic one, because a process it invented would be
+indistinguishable to the seller from one they described, and the whole worth of this rung is that
+it is theirs.
+
+**The card it produced is an Ask, and that is the point.** A told record nobody has filled cannot
+produce an Act. [`ask-buying-process`](../scenarios/bops/cards/ask-buying-process.md) is the tool
+asking for the list, and writing it made the read sharper than writing the read did: the card has
+to say what it has already caught the shadow of (a procurement window at one council, a committee
+somebody mentioned at another), admit it does not know whether that is two of four or two of nine,
+and promise in its own words never to say a council has not done something. Story ch. 1's "early on
+the tool mostly asks" is not a stage the tool passes through. It is what a new told rung looks like
+on its first day.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -841,9 +876,9 @@ yet yours.)*
   - ~~**Read the buyer's own published words.**~~ Done in the twenty-first pass. `published-picture`
     gathers them, `stated-priorities` reads them, and `lead-with-this` takes the gather for the
     buyer's half of F16. F1 and F16 are both answered.
-  - **The shape of their process**, a told record nobody has: what a buy at this kind of
-    organisation takes, so a read can say which of those steps the record shows no sign of. It
-    closes F8, which the third seller says no system does, and F6 with it.
+  - ~~**The shape of their process**, a told record nobody has.~~ Done in the twenty-second pass.
+    `people-told#buying-process`, the `buying-process` gather and `steps-on-their-side`, which says
+    "no sign of" and never "not done". F8 and F6 both close.
   - **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
     "enough tries" as your own messages do.
   - **Where a lead came from** (F17, F20): provenance on a lead, and the event list a marketing
@@ -868,7 +903,7 @@ yet yours.)*
   still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
   it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 124 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 131 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.
