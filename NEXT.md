@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `eea152b` on `main`, nineteen passes on `library/docs/coverage.md` are done. The library
+As of commit `9282528` on `main`, twenty passes on `library/docs/coverage.md` are done. The library
 holds 13 channels, 5 told sources, 22 assemblies, 124 counts (all `defined: false`), 38 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
 `pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
@@ -64,12 +64,11 @@ audit left. Do them in order.
    a card promises to send; the blanket version was measured and rejected, because it would have
    put a row on 22 of the 25 patient cards. `coverage.md` carries the measurement.
 
-4. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
-   the question it reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
-   `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,
-   F17 on `warm-path`. The thirteenth pass left these unclaimed on purpose, because a read that
-   answers half a question should say in its body which half, and that is a pass rather than an
-   audit.
+4. ~~**Claim the eight partial `F` ids.**~~ Done in the twentieth pass. All seven reads carry the
+   id and a body line saying which half they reach. Two sharpened while being written and are now
+   in `coverage.md`'s list: F7 needs a read of the promises **they** made to you, which nothing in
+   the library does, and F10 needs a read that watches a buyer's own date come closer, standing on
+   `dated-facts-in-their-words`, which already exists pointed the other way.
 
 5. **Read the buyer's own published words.** A gather over `web#research-report` and
    `web#enrichment` keyed on the **buyer organisation** rather than on the offering, and a read

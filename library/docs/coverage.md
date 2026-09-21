@@ -76,22 +76,22 @@ library has barely touched either. The verdicts are mine, from reading every ent
 | Question | What is there today | Verdict | Would need |
 |---|---|---|---|
 | F1 What does this organisation say about itself in public? | Nothing reads it. [`stakeholder-map`](../assemblies/stakeholder-map.md) draws `web#enrichment` for who is who at an account, and `web#research-report` is gathered only about the offering and its field. A buyer's own annual report, sustainability report or published metrics are the ground her first message stands on, and no gather reaches for them. | Hole | a gather of what a buyer publishes, and a read over it |
-| F2 Which way in is open, and at what level? | `missing-people` says who has never been reached, through `people-covered-vs-needed`. Nothing chooses between two doors into one organisation, and nothing sizes the level to the account. | Partly | nothing new below; a read over the stakeholder map |
-| F3 What do they already run, and what budget sits behind it? | `competitive-standing` reads the incumbent and whether lock-in is a live barrier, which is half of it. `can-they-carry-it` reads what a buyer can bear from what they showed or said. What an organisation's budget actually is, as a fact they state, is on no record. | Partly | a told or handed-over fact nobody has |
+| F2 Which way in is open, and at what level? | [`missing-people`](../signals/missing-people.md), which **claims F2 in part** since the twentieth pass and says in its body which half it reaches: who has never been reached, and at what level the holes sit. Choosing between two doors into one organisation is a judgement nothing below it holds. | Partly, and claimed | nothing new below; a read over the stakeholder map |
+| F3 What do they already run, and what budget sits behind it? | [`competitive-standing`](../signals/competitive-standing.md), which **claims F3 in part** since the twentieth pass: it reads what they already run and whether the lock-in is live. The budget, as a figure somebody was given, is on no record. | Partly, and claimed | a told or handed-over fact nobody has |
 | F4 Who will speak for me when I am not in the room? | [`champion`](../signals/champion.md), which claims F4 since this pass. | Answered | already assumes `own-rhythm` and `several-people` |
 | F5 Why is that person invested, and what would make them look good? | Nothing reads it, and nothing should: the reason someone is invested is a fact only they or you hold, kept as a told `relationship-note`. `champion` reads the behaviour that follows from it. | Answered by asking | nothing |
 | F6 Are they discovering the best fit with me, or running a process on paper? | Nothing. `buying-intent` is closest and reads procurement entering a thread, which is the opposite end of the same fact. How a buyer is running their decision is not a thing any gather holds. | Hole | the same told shape F8 needs |
-| F7 Have they put me in front of the people I asked to meet? | `missing-people` says who is unreached and `blocker` counts next steps that stall. Neither reads an ask of yours for a meeting against whether it happened; `loose-end` runs the other way, what you owe them. | Partly | nothing new below |
+| F7 Have they put me in front of the people I asked to meet? | [`missing-people`](../signals/missing-people.md), which **claims F7 in part** since the twentieth pass: who you asked for and still have not reached. Reading the ask itself would mean reading a promise **they** made to you, which no read in the library does. | Partly, and claimed | a read of their promises, which is its own read |
 | F8 What has the buyer not done yet on their side? | Nothing, and this is the one she says no system does. It is `missing-people` widened from who to what: the steps a decision needs on their side that the record shows no sign of. | Hole | a told list of what a buy at this kind of organisation takes |
 | F9 What did I promise, or leave on the back burner? | [`loose-end`](../signals/loose-end.md), which claims F9 since this pass. | Answered | `thread-under-way` |
-| F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md) reads the silence against their own rhythm and looks for a fresh reason to write. The deadline half is nowhere: `dated-facts-in-their-words` exists, on `pushing`, to stop a date being invented, and nothing reads a date the buyer gave as a clock running down while nobody writes. | Partly | nothing new below; the count exists |
-| F11 How many times has anyone from my firm reached out? | `enough-tries` counts **your** tries since they last wrote. `colleague-already-in-touch` counts a colleague's touches. Nothing adds them, so a cadence her own business development rep is running is invisible to the read that would tell her it has gone too far. | Partly | nothing new below; two counts that do not meet |
+| F10 How long since anyone spoke, and was there a deadline behind the silence? | [`time-to-reconnect`](../signals/time-to-reconnect.md), which **claims F10 in part** since the twentieth pass: the silence, against their own rhythm. The deadline half is nowhere, and its body says so: `dated-facts-in-their-words` exists to stop a date being **invented**, not to watch one arrive. | Partly, and claimed | a read that watches a buyer's own date come closer |
+| F11 How many times has anyone from my firm reached out? | [`enough-tries`](../signals/enough-tries.md), which **claims F11 in part** since the twentieth pass and names the blindness in its body: it counts yours, `colleague-already-in-touch` counts theirs, and nothing adds them. | Partly, and claimed | nothing new below; two counts that do not meet |
 | F12 What has my firm already done here, and what was said? | [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md), which claims F12 since this pass. | Answered | `own-firm` |
-| F13 What did we do the last time we sold into one like this, and what did it save them? | [`delivered-before`](../signals/delivered-before.md), since the ninth pass, answers the first half: the deals of this shape you really sold, and how recently. What a sale was **worth to the buyer** is on no record at all. `since-the-sale` gathers what happened after a sale and holds nothing about benefit; the nearest thing is a case study on the evidence shelf, which somebody had to write. | Partly | a told or fetched fact nobody has |
+| F13 What did we do the last time we sold into one like this, and what did it save them? | [`delivered-before`](../signals/delivered-before.md), which **claims F13 in part** since the twentieth pass: the deals of this shape you really sold, and how recently. What a sale was worth to the buyer is on no record, and its body refuses to read a case study as a measurement. | Partly, and claimed | a told or fetched fact nobody has |
 | F14 What has happened on this deal in the last two weeks, in a paragraph? | The brief, which [`library-format.md`](library-format.md) defers as a floor above the cards. It is the same record the cards are built on, summarised for somebody who is not selling. | Answered elsewhere, deliberately deferred | nothing |
 | F15 Which of my fifteen live conversations needs me today? | The order of a day, the six bands by what waiting a day costs ([`modules/00-spine.md`](../modules/00-spine.md)). The same answer as Q21. | Answered elsewhere | nothing |
-| F16 Which of their own priorities should my next message speak to? | `lead-with-this` says which use-case and information to lead with for a kind of buyer, which is your side of it. Their side, the priorities they have published themselves, is F1's ground and is missing with it. | Partly | what F1 needs |
-| F17 How did I come by this person, and can I say so out loud? | `warm-path` holds the route where it ran through someone you know, with the chain and the mutual contacts. Where a lead came in by any other door, a bought list, an event, a colleague's hand, nothing records where it came from, and that is what she has to be able to say. | Partly | provenance on a lead, which no channel carries |
+| F16 Which of their own priorities should my next message speak to? | [`lead-with-this`](../signals/lead-with-this.md), which **claims F16 in part** since the twentieth pass: your side of it, what to lead with for a buyer of this kind. Their own published priorities are F1's ground and missing with it. | Partly, and claimed | what F1 needs |
+| F17 How did I come by this person, and can I say so out loud? | [`warm-path`](../signals/warm-path.md), which **claims F17 in part** since the twentieth pass: the one door it can see, a route through somebody you deal with. Every other door has no provenance, and its body says the read is silent there rather than wrong. | Partly, and claimed | provenance on a lead, which no channel carries |
 | F18 Am I pulling this deal into my quarter rather than theirs? | [`pushing`](../signals/pushing.md), first shape, which claims F18 since this pass and now says in its body that your own quarter is the commonest source of a manufactured date. It never needs to know your incentives: a date that is neither theirs nor a told price change is already manufactured however it got there. | Answered | `thread-under-way` |
 | F19 Should my firm bid on this at all? | Nothing. `fit-match` judges the lead against the fit-shape, which is whether it is worth selling to, not whether the effort is worth spending. What it costs your firm to chase something is intent, and it belongs where discount room does, with the Brain. | Hole, and it is the Brain's | the goal's own economics, which nothing holds |
 | F20 Who did I meet at that event, and what were they there for? | Nothing. Twenty-five names and their interests, handed over by marketing as a spreadsheet, are leads (they came to you), so in scope. The nearest record is `web-form#form-submission`, and `calendar#calendar-event` carries attendees of a meeting, which is a different thing. | Hole | a lead source no channel has |
@@ -720,6 +720,31 @@ sixteenth gave the read a price and the seventeenth gave the library a live deal
 join between them only became visible because a card was sitting there saying what it still could
 not do. Six passes of adding entries against question sets produced nothing like it.
 
+**Done in the twentieth pass, 21 September.** The eight partial `F` ids claimed. The thirteenth
+pass left them unclaimed on purpose, on the grounds that a read answering half a question should
+say in its body **which half**, and that writing those lines is a pass rather than an audit. Seven
+reads now carry them: `F2` and `F7` on [`missing-people`](../signals/missing-people.md), `F3` on
+[`competitive-standing`](../signals/competitive-standing.md), `F10` on
+[`time-to-reconnect`](../signals/time-to-reconnect.md), `F11` on
+[`enough-tries`](../signals/enough-tries.md), `F13` on
+[`delivered-before`](../signals/delivered-before.md), `F16` on
+[`lead-with-this`](../signals/lead-with-this.md), `F17` on [`warm-path`](../signals/warm-path.md).
+
+The verdicts in the table above do not change: eight are still answered in part, and the count of
+the third set stands at five by a read, one by asking, eight in part, two elsewhere and five by
+nothing. What changes is that the partial half is now **claimed and described** rather than sitting
+in this document only. The library page shows a read's questions, so a seller browsing
+`enough-tries` now finds, under it, that it counts their own tries and not their firm's.
+
+**Two of the eight sharpened into something worth doing** while the lines were being written, and
+both are in the list below rather than done here. `F7` cannot be finished by widening
+`missing-people`: reading whether they put you in front of the people you asked for means reading a
+promise **they** made to **you**, and no read in the library does that; `loose-end` runs the other
+way. That is a read of its own and the table now says so. And `F10`'s missing half is not a count
+that does not exist, it is a read that does not: a buyer's own date, running down while nobody
+writes. The count it would stand on, `dated-facts-in-their-words`, exists already and is pointed
+the other way, at stopping a date being invented. *(My readings, not yet yours.)*
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -765,10 +790,10 @@ yet yours.)*
 
 - ~~**Run this map against the third set** (`F1` to `F21`).~~ Done in the thirteenth pass. What it
   left behind, after the above:
-  - **Claim the eight partial `F` ids**, each with a line in the read's body saying which half it
-    reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
-    `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,
-    F17 on `warm-path`.
+  - ~~**Claim the eight partial `F` ids**, each with a line in the read's body saying which half it
+    reaches.~~ Done in the twentieth pass. Two of them sharpened while being written: F7 needs a
+    read of the promises **they** made to you, which nothing does, and F10 needs a read that
+    watches a buyer's own date come closer, on a count that already exists.
   - **Read the buyer's own published words.** A gather over `web#research-report` and
     `web#enrichment` keyed on the buyer organisation rather than on the offering, and a read over
     it. It closes F1 and the missing half of F16, and it is the ground a first message stands on at

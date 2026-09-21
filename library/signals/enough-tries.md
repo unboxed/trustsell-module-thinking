@@ -7,7 +7,7 @@ kind: decay
 confidence: graded
 inputs: [person-history, conversation-history]
 counts: [times-you-chase, chases-since-their-last-reply, innocent-explanation-scan]
-answers: [V5]
+answers: [V5, F11]
 needs: [calendar]
 assumes: []
 assumes_status: provisional
@@ -63,3 +63,11 @@ pestering on another.
   cannot.
 - This read points away from a move. What the tool does with it, taking the person off the day
   and keeping them on record, is the Brain's, and what you do is yours.
+- **Which half of F11 it reaches** (how many times has anyone from my firm reached out). It counts
+  **yours**, and it counts them well. It does not count your firm's:
+  [`colleague-already-in-touch`](colleague-already-in-touch.md) counts a colleague's touches at the
+  same account and nothing adds the two together. So a cadence a business development rep is
+  running beside you is invisible to the read whose whole job is to say when it has gone too far,
+  which is the worst possible place for that blindness to sit. Adding them is a small change and a
+  real one, and it is listed in [`docs/coverage.md`](../docs/coverage.md) rather than done here.
+  *(My reason, not yet yours.)*

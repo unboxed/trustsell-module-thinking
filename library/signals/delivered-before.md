@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [deal-outcomes]
 counts: [past-deals-of-this-shape, how-they-ended, how-recently-one-completed]
-answers: [V17]
+answers: [V17, F13]
 needs: [crm]
 assumes: []
 assumes_status: provisional
@@ -67,3 +67,11 @@ Borrows People's pile of ended deals, which is where a deal's ending is recorded
   It is the half of "why should a stranger believe me" that [`pushing`](pushing.md) named as
   missing and could not reach: that read says what the thread cannot honestly carry, and this one
   says what it can. *(My reason, not yet yours.)*
+- **Which half of F13 it reaches** (what did we do the last time we sold into one like this, and
+  what did it save them). It reaches the first half: the deals of this shape you really sold, how
+  many, and how recently. What a sale was **worth to the buyer** is on no record at all.
+  [`since-the-sale`](../assemblies/since-the-sale.md) gathers what happened after a sale and holds
+  nothing about benefit, and the nearest thing in the library is a case study on the evidence
+  shelf, which somebody had to sit down and write. So the read can say you have done this before
+  and cannot say what it was worth, and it says which of the two it is rather than reaching for the
+  case study as though it were a measurement. *(My reason, not yet yours.)*

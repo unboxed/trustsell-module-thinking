@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [person-history]
 counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
-answers: [Q19, F21]
+answers: [Q19, F21, F10]
 needs: [web, linkedin]
 assumes: [own-rhythm]
 assumes_status: provisional
@@ -51,3 +51,11 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Assumes: enough history with this person to know their usual, and a real one: the read is only for
   a relationship that once was. A fresh reason against a name you barely knew is a cold approach,
   not this read (an assumption gap, named not faked).
+- **Which half of F10 it reaches** (how long since anyone spoke, and was there a deadline behind
+  the silence). It reads the silence, against their own rhythm rather than against a fixed number
+  of days, and looks for a fresh reason to write. It does not read the deadline. A date the buyer
+  gave you, running down while nobody writes, is a clock, and the only count in the library that
+  touches a date in their words is `dated-facts-in-their-words` on [`pushing`](pushing.md), which
+  exists to stop a date being **invented** rather than to watch one arrive. A read that watches a
+  buyer's own date come closer is not written, and it would be the more useful half of this
+  question. *(My reason, not yet yours.)*

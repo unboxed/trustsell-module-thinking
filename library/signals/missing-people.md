@@ -7,7 +7,7 @@ kind: risk
 confidence: graded
 inputs: [stakeholder-map, deal]
 counts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, people-reached-count]
-answers: [Q4, Q5, Q6]
+answers: [Q4, Q5, Q6, F2, F7]
 needs: [linkedin]
 assumes: [several-people]
 assumes_status: provisional
@@ -64,3 +64,14 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 - Assumes: several people to win at the buyer, because the read holds the map against the cast a
   decision needs. Where one person decides alone there is no hole to find, and the read does not
   apply (an assumption gap, named not faked).
+- **Which half of F2 it reaches** (which way in is open, and at what level). It says who at this
+  account has never been reached, and at what level the holes sit. It does not choose between two
+  doors into one organisation, the business side or the technical one, because that is a judgement
+  about where a sale is easiest to start rather than a hole in the map, and nothing below it holds
+  what makes one door easier than the other. The half it has is the half that is arithmetic.
+- **Which half of F7 it reaches** (have they put me in front of the people I asked to meet). It
+  says who you asked for and still have not reached, which is the answer where the ask was for a
+  person. It cannot read the ask itself: a request for a meeting made on a thread, and whether it
+  happened, is a promise running the other way, and nothing in the library reads a promise **they**
+  made to you. [`loose-end`](loose-end.md) reads the ones you made. That gap is named here rather
+  than filled, because filling it is a read of its own. *(My reasons, not yet yours.)*

@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [person-history, stakeholder-map]
 counts: [shared-contact-on-thread, intro-chain-length, mutual-contact-count, target-cold-to-you]
-answers: [Q7, Q8]
+answers: [Q7, Q8, F17]
 needs: [linkedin]
 assumes: [own-rhythm]
 assumes_status: provisional
@@ -48,3 +48,10 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   is cold to you by definition; it is the bridge whose two-way rhythm with you makes the path warm.
   With no contact you genuinely deal with, there is no bridge to read (an assumption gap, named not
   faked).
+- **Which half of F17 it reaches** (how did I come by this person, and can I say so out loud). It
+  reaches the one door it can see: where the route ran through somebody you deal with, it holds the
+  chain and can say it out loud, which is exactly what the question is for. Every other door is
+  invisible. A bought list, an event badge, a colleague handing a name over, a form filled in
+  months ago: nothing in the library records where a lead came from, so for those the read is
+  silent rather than wrong. Provenance on a lead is a record no channel carries, and it is listed
+  in [`docs/coverage.md`](../docs/coverage.md). *(My reason, not yet yours.)*

@@ -7,7 +7,7 @@ kind: risk
 confidence: graded
 inputs: [competitor-field, product-claims]
 counts: [claims-we-win-on, claims-rival-wins-on, incumbent-lock-in-present, incumbent-data-or-contract-lock]
-answers: [Q15]
+answers: [Q15, F3]
 needs: [web]
 assumes: []
 assumes_status: provisional
@@ -56,3 +56,11 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   the same whoever the buyer is.
 - Feeds the Brain's message play (Q12, which information is most relevant) without owning it: the
   standing is supplied, the move is the Brain's.
+- **Which half of F3 it reaches** (what do they already run, and what budget sits behind it). It
+  reads what they already run: the incumbent, and whether the lock-in around it is a live barrier
+  or a soft one. The budget behind it, as a figure the buyer states, is on no record in the
+  library. [`can-they-carry-it`](can-they-carry-it.md) reads what a buyer can bear from what they
+  showed or said, which is the nearest thing and is not the same: what they can bear is read off
+  their figures, and a budget is a number somebody was given. That is a told or handed-over fact
+  nobody has, and it is named rather than guessed at from the size of the organisation.
+  *(My reason, not yet yours.)*

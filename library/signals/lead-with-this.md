@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [offering-entry, objection-list]
 counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]
-answers: [Q10, Q11, Q12, Q24]
+answers: [Q10, Q11, Q12, Q24, F16]
 needs: []
 assumes: []
 assumes_status: provisional
@@ -57,3 +57,9 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   parked learning loop, named not faked.
 - Assumes: nothing about the shape of the sale. It reads a buyer-type against what you told it,
   before any contact is made.
+- **Which half of F16 it reaches** (which of their own priorities should my next message speak
+  to). It reaches your side: which use-case and which piece of information to lead with for a buyer
+  of this kind, from what you told it and the worries on record. Their side, the priorities this
+  organisation has published in its own words, has no floor in the library at all: nothing gathers
+  what a buyer says about itself. That is the same hole as F1, and until it is dug this read leads
+  with what has worked rather than with what they said mattered. *(My reason, not yet yours.)*
