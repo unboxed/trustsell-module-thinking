@@ -1,5 +1,5 @@
 ---
-# THE TOP RUNG. One doc per card, at library/scenarios/<scenario>/cards/<id>.md.
+# THE TOP RUNG. One doc per card, at scenarios/<scenario>/cards/<id>.md.
 # A card is ONE PREPARED NOUN with its reasoning on the back: what the tool would say to the
 # seller, written as if the tool already existed. Unlike every floor below it, a card is NOT
 # agnostic: it names real people, organisations and documents from its scenario's world/.
@@ -48,7 +48,7 @@ when:                         # omit entirely when the card is a "whenever"
                               #   otherwise only when the card's own words give it
   words: <the one small line shown on the front: the when only, never the hold>
 watch:                        # optional: what I watch for once you act, from What happens next
-  - for: <what comes back, e.g. Karen's reply>
+  - for: <what comes back, e.g. the buyer's reply>
     until: <YYYY-MM-DD>       #   optional: the last day I wait
     then: <card-id>           #   optional: the card that arrives if it comes
     next: <line>              #   optional: what I do when it comes
@@ -90,7 +90,7 @@ phone:                        # optional: the card on playbook/phone.html. Only 
   act_does: <send|tap|open>   #   send: sends the draft · tap: one tap · open: raises the reply.module sheet
   view: <Title Case Verb ...> #   optional: the outline action, which raises the draft
   said: <...>                 #   the line said back after the reply, with Undo
-  done: <...>                 #   the dark card's heavy line, e.g. Sent to Karen
+  done: <...>                 #   the dark card's heavy line, e.g. Sent to <the person>
   done_text: <...>            #   the dark card's receipt: what I did, what I updated, what I'll do next
   subject: <...>              #   optional: the draft's subject line
 ---
@@ -114,7 +114,7 @@ phone:                        # optional: the card on playbook/phone.html. Only 
 
 ## Sources
 <!-- ACT CARDS. One row per thing read, in the form `<source-ids> · <words>`, e.g.
-     `gmail · Your mail with Karen, March to today: 15 messages`. The source ids are channel or
+     `gmail · Your mail with <the person>, March to today: 15 messages`. The source ids are channel or
      told ids (gmail, calendar, drive, goal-told…); the card shows their names beside the words,
      so the words need not repeat them. build.js checks every source is reached by what the card
      rests on. The goal and the list of targets are `goal-told`, always reachable. A source that

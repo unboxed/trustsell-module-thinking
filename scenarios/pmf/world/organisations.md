@@ -33,7 +33,7 @@ deal stands, and a deal stands with one funder at a time or with several at once
 Each has a box: the industries it will take, the credit band it will go down to, and the size of
 advance it wants. Which funder a deal should be submitted to is exactly the read the library does
 not make yet, and the reason this scenario was written (V15 in
-[`docs/coverage.md`](../../../docs/coverage.md)).
+[`docs/coverage.md`](../../../library/docs/coverage.md)).
 
 | Organisation | id | What they take |
 |---|---|---|

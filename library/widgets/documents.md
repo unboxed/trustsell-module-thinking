@@ -17,7 +17,8 @@ points at. For each, what it proves and how recent it is, so you can judge wheth
 right thing to send.
 
 It is the widget for "what have I got to give". Every message the tool drafts names what the other person gets,
-and that is often a document, so it fits there first. Today one card carries it: Rachel's promise.
+and that is often a document, so it fits there first. A card that promises a document is the case it
+was written for.
 
 ## Row form
 

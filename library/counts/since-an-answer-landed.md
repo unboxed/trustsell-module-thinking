@@ -30,5 +30,5 @@ late rather than early, which is the safer way round for a read whose point is t
 waiting, and the read says which date it is counting from.
 
 At a tempo measured in hours, a number measured in days is too coarse to be the whole answer. That
-is flagged in [`scenarios/pmf/world/goal.md`](../scenarios/pmf/world/goal.md) and is a question
-about the shape of a day, not about this count.
+is a question about the shape of a day, not about this count, and a world whose tempo is hours says
+so in its own goal.

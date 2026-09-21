@@ -27,7 +27,7 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   records the sum is done over, and when the number stops meaning anything.
 - **The card model lives in `playbook/world.md`**, together with the design decisions and the table
   of which Apple component each part of a card is. The pretend world itself (goal, councils, cast,
-  documents, today's date) is data, in `library/scenarios/bops/world/`, because cards reference it by id. Read
+  documents, today's date) is data, in `scenarios/bops/world/`, because cards reference it by id. Read
   both before writing or editing a card. Add to the scenario's `world/` before using a name, a date or a
   document that is not already there.
 - **The phone is built from the library** (19 September). Every slide that shows a phone holds
@@ -35,7 +35,7 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   says on the phone, edit the card (its `phone:` block, or its body) and run `node build.js`. The
   design is still the user's: do only what they ask on the phone, one step at a time. See the
   phone paragraphs in `world.md` for what is decided.
-- **One markdown file per card** in `library/scenarios/bops/cards/`. `playbook/assets/data.js` is
+- **One markdown file per card** in `scenarios/bops/cards/`. `playbook/assets/data.js` is
   **generated: never hand-edit it.** Adding a card means adding its markdown and running
   `node build.js`; the library page picks it up from there.
 - **`build.js` fails loudly on an id that does not resolve**, and writes nothing when it does.
@@ -53,7 +53,7 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   frontmatter and let `build.js` work it out (the order of the day, who waits on whom); the
   phone follows. The tool decides the order, never the seller.
 - **The scenario is one example, and the library is known to be one seller's.** BOPS lives in
-  `library/scenarios/bops/` and can be rewritten to fit the signals. Everything else in `library/` is
+  `scenarios/bops/` and can be rewritten to fit the signals. Everything else in `library/` is
   meant to serve any kind of sale, but the signals and counts were derived from one seller's questions
   (`library/docs/sales-questions.md`, the patient end), so the library answers that seller well and is
   silent about what they never had to ask. A second question set from the opposite end,
@@ -62,7 +62,7 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   is and is not answered, `library/docs/coverage.md`, exist to make that visible. **Read
   `coverage.md` before adding to a rung.** There are **three scenarios**. `bops` is the patient
   sale and the one the playbook ships. `pmf` (a merchant cash advance broker) is the fast end:
-  `library/scenarios/pmf/` holds its world and twelve cards, and its ladder runs past the sale.
+  `scenarios/pmf/` holds its world and twelve cards, and its ladder runs past the sale.
   Writing those cards is what found the library's largest hole, that nothing gathers a text
   conversation (`library/docs/coverage.md`, the fourteenth pass). `cority` (an enterprise seller
   with a firm around her) is the third, written 21 September: the patient end again, with a
@@ -106,7 +106,17 @@ iPadOS desk was archived on 18 September). Take numbers from the two skills in `
 
 ## What is where
 
-**`library/`: the source of truth.** Markdown, brainstormed in prose. The two-layer format is the
+**`library/` is the blocks and `scenarios/` is what is built out of them.** Two folders beside
+each other since 21 September, on the user's instruction: the library is a set of tools, and every
+example assembles out of it, so that whatever a card says traces back through the blocks to a
+record. **The library names no example.** No person, organisation or document from any world, no
+scenario id, no path into `scenarios/`. `build.js` refuses the whole library when one appears in a
+rung, a widget, a module or a template, checking against every scenario rather than the one being
+built. Say the condition ("at a tempo measured in hours"), never the case ("the broker's world").
+Cards and worlds name people because that is their job, and `library/docs/` is exempt because the
+record of how a block was tested against a world belongs there.
+
+Markdown, brainstormed in prose. The two-layer format is the
 good thing here and is not up for redesign: **frontmatter is the machine layer** (flat facets, ids
 that must resolve), **the body is the human layer** (plain English, short sentences). The
 skeletons are in `library/templates/`; the contract is `library/docs/library-format.md`.
@@ -121,14 +131,14 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 | Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |
 | Counts | `library/counts/` | the arithmetic. All 134 written, 21 September: `counts`, `needs` and `breaks` on each |
 | Signals | `library/signals/` | the first opinion, the first thing you could argue with |
-| Cards | `library/scenarios/<name>/cards/` | the suggestion, question or outcome |
+| Cards | `scenarios/<name>/cards/` | the suggestion, question or outcome |
 
 Beside the ladder, `library/widgets/`: the catalogue a card picks from and fills, never arranges.
 Detail widgets (Timeline, What they said, People, Documents, Open items, Compared with usual; at most two
 per card, each fed by something the card rests on) and reply widgets (the reply modules and the
 draft). `build.js` checks every join. See `library/docs/library-format.md`.
 
-Also there: `library/scenarios/bops/world/` (the pretend world as data: goal, cast, organisations, documents),
+Also there: `scenarios/bops/world/` (the pretend world as data: goal, cast, organisations, documents),
 `library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
 including `tracing-back.md`, which this ladder is the executable form of; the three question sets the
 library is measured against, `sales-questions.md`, `volume-questions.md` and `firm-questions.md`;

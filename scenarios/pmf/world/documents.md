@@ -8,7 +8,7 @@ about: the documents in the fiction. Here they are mostly the buyer's, not yours
 In the patient sale this file is the evidence shelf: the case study, the one-pager, the note you
 attach to a message, all of it yours and all of it in Drive. **Here it is the other way round.**
 Almost every document in this scenario is the merchant's, and it arrives through
-[`channels/handover.md`](../../../channels/handover.md), not out of your own folder. A deal at this
+[`channels/handover.md`](../../../library/channels/handover.md), not out of your own folder. A deal at this
 end is not won by what you send. It is held up by what has not come back.
 
 Each row is still a noun a card can be about, and a card that names one in `documents:` is saying

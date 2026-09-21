@@ -46,9 +46,9 @@ All four, listed as `has:` above, and one of them for the first time in earnest.
 scenario claims `own-firm` because a colleague in partnerships exists and Slack is connected. Here
 the firm is the point: your outreach is run by somebody else, your calls are heard by fifty
 colleagues, marketing hands you names, and a solutions engineer does the demos. Every contact by
-anyone is in the CRM, so [`firm-contact`](../../../assemblies/firm-contact.md) is full rather than
+anyone is in the CRM, so [`firm-contact`](../../../library/assemblies/firm-contact.md) is full rather than
 nearly empty, which is the first real test of it and of
-[`colleague-already-in-touch`](../../../signals/colleague-already-in-touch.md).
+[`colleague-already-in-touch`](../../../library/signals/colleague-already-in-touch.md).
 
 ## Who is around you
 
@@ -58,8 +58,8 @@ Four people, and between them they make this world different from the other two.
 |---|---|---|
 | Your business development rep | Runs your outreach from your accounts, personas and talk track, as cadences: an email, a call two days later, a message, another email | His tries are tries. `enough-tries` counts yours and his together, and he will keep going after seven |
 | A solutions engineer | Demos, and records two-minute videos so "just show me the system" does not stall a deal | A thing to send, on the shelf, like a case study |
-| Marketing | Hands you a list after every conference: who came, and what they were interested in | [`lead-list`](../../../channels/lead-list.md), the channel written for exactly this |
-| Your manager | Sees a stage and a one-line next step for fifty reps, and messages you on a Friday asking where a deal is | Not the tool's job today. The paragraph they actually want is the brief, a floor above the cards, deferred in [`docs/library-format.md`](../../../docs/library-format.md) |
+| Marketing | Hands you a list after every conference: who came, and what they were interested in | [`lead-list`](../../../library/channels/lead-list.md), the channel written for exactly this |
+| Your manager | Sees a stage and a one-line next step for fifty reps, and messages you on a Friday asking where a deal is | Not the tool's job today. The paragraph they actually want is the brief, a floor above the cards, deferred in [`docs/library-format.md`](../../../library/docs/library-format.md) |
 
 ## What is connected
 
@@ -79,13 +79,13 @@ conference and the follow-up is yours, outside every system.
 **Not connected: SMS, what the buyer hands over, and public records.** Nobody texts at this end.
 What a buyer sends you here is a tender, hundreds of requirements to answer, and reading one is out
 of the library's scope and the trade already has tools for it
-([`docs/coverage.md`](../../../docs/coverage.md)). The documents that matter before a tender are
+([`docs/coverage.md`](../../../library/docs/coverage.md)). The documents that matter before a tender are
 the ones they publish themselves, which is the open web.
 
 ## What you are selling
 
 One offering, `ehs-platform`, on one set of terms: the platform, priced per site and per user, sold
-as an annual subscription with a floor. What [`told/offering-told.md`](../../../told/offering-told.md)
+as an annual subscription with a floor. What [`told/offering-told.md`](../../../library/told/offering-told.md)
 calls Pricing, filled in:
 
 | Told field | What you would say |

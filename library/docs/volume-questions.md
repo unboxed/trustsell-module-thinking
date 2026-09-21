@@ -54,7 +54,7 @@ follows from the trade but I have not found it stated, so it is mine until you a
 
 **A first-hand source, since 21 September.** A workflow interview on 21 November 2025 with two people
 who had worked with PMF for five years, read from its transcript and kept as
-[`scenarios/pmf/docs/what-pmf-told-us.md`](../scenarios/pmf/docs/what-pmf-told-us.md). It confirms
+[`scenarios/pmf/docs/what-pmf-told-us.md`](../../scenarios/pmf/docs/what-pmf-told-us.md). It confirms
 7, 9 to 14 and 18 in the trade's own words, moves 4 and 16 from inferred to first-hand, adds the
 numbers (a thousand calls to one opportunity, one in fifty funded, most deals closed within 24
 hours), and says where the tool's scope line falls at PMF: at "yes, I need money", where the trade
@@ -67,7 +67,7 @@ Sources: [MCA broker and ISO guide](https://mcaleadspro.com/merchant-cash-advanc
 [Premium Merchant Funding](https://www.pmfus.com/about-pmf/).
 
 **A third seller, since 21 September.** An interview on 17 December 2025 with an enterprise account
-executive at Cority, kept as [`scenarios/cority/docs/what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md),
+executive at Cority, kept as [`scenarios/cority/docs/what-cority-told-us.md`](../../scenarios/cority/docs/what-cority-told-us.md),
 is the patient end again with a firm around the seller and tenders on the buyer's side. It confirms
 the patient seller's questions in a second voice, and asks some neither set does. Those are now the
 third set, [`firm-questions.md`](firm-questions.md), `F1` to `F21`. It is not a third scenario:

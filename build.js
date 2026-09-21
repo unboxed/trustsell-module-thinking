@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Reads library/ and writes playbook/assets/data.js.
-// The library is general; the pretend world and its cards are one scenario of it, in
-// library/scenarios/<name>/. Change SCENARIO to build the playbook from another.
+// Reads library/ and scenarios/ and writes playbook/assets/data.js.
+// Two areas, and the separation is the point. library/ is the blocks: general, reusable,
+// and it names no example. scenarios/<name>/ is one seller's world and cards, assembled
+// out of those blocks. Change SCENARIO to build the playbook from another.
 // Node only, no packages, nothing to install. Run it after editing the library:
 //     node build.js
 // It fails loudly when an id does not resolve. That is the point of it: the joins
@@ -9,7 +10,8 @@
 
 const fs = require('fs'), path = require('path');
 const SCENARIO = 'bops';
-const ROOT = __dirname, LIB = path.join(ROOT, 'library'), SCN = `scenarios/${SCENARIO}`;
+const ROOT = __dirname, LIB = path.join(ROOT, 'library');
+const SCN = `scenarios/${SCENARIO}`, SCN_DIR = path.join(ROOT, 'scenarios', SCENARIO);
 const OUT = path.join(ROOT, 'playbook/assets/data.js');
 
 /* ---------- a small YAML subset: scalars, flow arrays, block lists, nested maps ---------- */
@@ -154,11 +156,13 @@ function sections(body) {
 /* ---------- read a rung ---------- */
 
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-function readDir(dir) {
-  const p = path.join(LIB, dir);
+// `base` is which of the two areas a rung lives in, and `prefix` is how the entry
+// names itself from the repo root, which is what data.js and the library page show.
+function readDir(dir, base = LIB, prefix = dir) {
+  const p = path.join(base, dir);
   if (!fs.existsSync(p)) return [];
   return fs.readdirSync(p).filter(f => f.endsWith('.md')).sort().map(f => {
-    const rel = `${dir}/${f}`;
+    const rel = `${prefix}/${f}`;
     const raw = fs.readFileSync(path.join(p, f), 'utf8');
     const {data, body} = parseFrontmatter(raw, rel);
     const id = data.id || f.replace(/\.md$/, '');
@@ -199,7 +203,7 @@ const L = {
   assemblies: readDir('assemblies'),
   counts:     readDir('counts'),
   signals:    readDir('signals'),
-  cards:      readDir(`${SCN}/cards`),
+  cards:      readDir('cards', SCN_DIR, `${SCN}/cards`),
   widgets:    readDir('widgets'),
   docs:       readDir('docs'),
   templates:  readDir('templates'),
@@ -207,7 +211,7 @@ const L = {
 L.records = recordsOf([...L.channels, ...L.told]);
 
 const world = {};
-for (const w of readDir(`${SCN}/world`)) world[w.id] = w;
+for (const w of readDir('world', SCN_DIR, `${SCN}/world`)) world[w.id] = w;
 
 const rowsOf = (entry, col = 1) => (entry.markdown.match(/^\|.*\|$/gm) || [])
   .map(r => r.split('|').slice(1, -1).map(c => c.trim()))
@@ -271,6 +275,44 @@ const S = {
 // still says `connected:` fails, and the general layer stays free of one seller's stack.
 if (!offeringIds.length) problems.push(`${SCN}/world/goal.md: no offering; name what this seller sells, as one id or a list of them`);
 if (new Set(offeringIds).size !== offeringIds.length) problems.push(`${SCN}/world/goal.md: offering names the same id twice`);
+/* ---------- the two areas stay apart ---------- */
+// The library is the blocks and it names no example. Every rung, widget, module and template is
+// checked against the cast and the organisations of EVERY scenario, not just the one being built,
+// because a block that knows one seller's world has already stopped being a block. A doc under
+// library/docs/ is exempt: those are the notes about the blocks, and the record of how they were
+// tested is the one place an example belongs. A card and a world are exempt for the plain reason
+// that naming people is their job.
+const fiction = [];                              // [what to look for, what it is, where it is from]
+for (const name of fs.readdirSync(path.join(ROOT, 'scenarios'))) {
+  const dir = path.join(ROOT, 'scenarios', name, 'world');
+  if (!fs.existsSync(dir)) continue;
+  fiction.push([new RegExp(`\\bscenarios/${name}\\b`), `the ${name} scenario's own files`, name]);
+  for (const f of ['cast.md', 'organisations.md']) {
+    const file = path.join(dir, f);
+    if (!fs.existsSync(file)) continue;
+    for (const row of fs.readFileSync(file, 'utf8').match(/^\|.*\|$/gm) || []) {
+      const cell = row.split('|').slice(1, -1).map(c => c.trim());
+      const [full, id] = cell;
+      if (!full || !id || /^-+$/.test(full) || !/^[a-z][a-z0-9-]*$/.test(id)) continue;
+      if (id === 'id' || !/^[A-Z]/.test(full)) continue;   // the table's own header row
+      if (id === 'you') continue;                         // the seller, who is in every world
+      const what = f === 'cast.md' ? 'a person' : 'an organisation';
+      fiction.push([new RegExp(`\\b${full.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`), `${what} from ${name}`, name]);
+      fiction.push([new RegExp(`\\b${id}\\b`), `${what} from ${name}`, name]);
+      // A first name alone is how the fiction usually leaks in: "Rachel's promise".
+      const first = full.split(/\s+/)[0];
+      if (f === 'cast.md' && first.length > 2) fiction.push([new RegExp(`\\b${first}\\b`), `${what} from ${name}`, name]);
+    }
+  }
+}
+for (const rung of ['modules', 'channels', 'told', 'assemblies', 'counts', 'signals', 'widgets', 'templates'])
+  for (const e of L[rung] || [])
+    for (const [re, what] of fiction)
+      if (re.test(e.markdown)) {
+        problems.push(`${e.file}: names ${what} ("${e.markdown.match(re)[0]}"); the library is the blocks and holds no example. Say the condition, not the case.`);
+        break;                                   // one line per file is enough to act on
+      }
+
 if (!world.goal || !('connected' in world.goal)) problems.push(`${SCN}/world/goal.md: no connected; list the channels this seller has plugged in, or connected: []`);
 else must(world.goal.file, 'connected', world.goal.connected, S.channels, 'channel');
 const plugged = new Set([].concat((world.goal && world.goal.connected) || []));

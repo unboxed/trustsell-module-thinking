@@ -48,7 +48,7 @@ The last two rungs are past the sale, and they are the point of this scenario. *
 customer with a live advance being debited daily or weekly. **Coming round again** is one whose
 advance is far enough through that the conversation starts over. The library's reads stop at the
 signature today, so a ladder that stops there could never show the hole
-([`docs/coverage.md`](../../../docs/coverage.md), the after-the-sale family).
+([`docs/coverage.md`](../../../library/docs/coverage.md), the after-the-sale family).
 
 ## What this sale has
 
@@ -93,7 +93,7 @@ One product, an advance against future takings, from any of several funders. The
 is four ids, one per funder, and that is the catalogue decision of 21 September working: a thing
 you sell is one thing on one set of terms, so the same advance from Avondale and from Kestrel is
 two entries, because they are what you actually choose between
-([`docs/library-format.md`](../../../docs/library-format.md), *The catalogue*).
+([`docs/library-format.md`](../../../library/docs/library-format.md), *The catalogue*).
 
 | Offering | id | Who supplies it | What their box takes |
 |---|---|---|---|
@@ -103,13 +103,13 @@ two entries, because they are what you actually choose between
 | Advance, Bayard | advance-bayard | bayard-funding | Under $25,000, almost anyone, the dearest money on the shelf |
 
 Each funder's box is that entry's told fit-shape, which is what
-[`signals/where-this-one-goes.md`](../../../signals/where-this-one-goes.md) reads to say which of
+[`signals/where-this-one-goes.md`](../../../library/signals/where-this-one-goes.md) reads to say which of
 the four a merchant should be submitted to.
 [`cards/act-curtis-funder.md`](../cards/act-curtis-funder.md) is that read as a card. The pitch is the same on all four, because the product
 is: that repetition is the price of this shape, and
-[`docs/library-format.md`](../../../docs/library-format.md) says so rather than hiding it.
+[`docs/library-format.md`](../../../library/docs/library-format.md) says so rather than hiding it.
 
-What [`told/offering-told.md`](../../../told/offering-told.md) calls Pricing, filled in for an
+What [`told/offering-told.md`](../../../library/told/offering-told.md) calls Pricing, filled in for an
 advance. The price band is the shelf's; each entry narrows it to its own funder's:
 
 | Told field | What you would say |
@@ -120,5 +120,5 @@ advance. The price band is the shelf's; each entry narrows it to its own funder'
 | how it is paid (once, or how often over the term) | A fixed debit from the business account every working day, or once a week for a longer term |
 
 The term and how it is paid are the two fields added on 21 September, and they are what
-[`signals/can-they-carry-it.md`](../../../signals/can-they-carry-it.md) waits on. At this end they
+[`signals/can-they-carry-it.md`](../../../library/signals/can-they-carry-it.md) waits on. At this end they
 are never empty: a rate with no term is not an offer anybody could accept.

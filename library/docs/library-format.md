@@ -39,9 +39,19 @@ A few rules, because a person reads these, not just a parser:
    Avoid fancy or business-fashion words for our own labels and field values. Keep the real API names
    (`internalDate`, `threadId`) and the established domain terms the user already uses (stakeholder,
    champion).
-3. **Keep it agnostic.** Signals and assemblies are reusable across any sales goal, so no named
-   customer, offering or person belongs in them. Examples use generic placeholders (a contact, a
-   prospect, the offering). The specific case study lives only in the scenario and demo docs.
+3. **Keep it agnostic, and the build now holds you to it.** `library/` is the blocks and
+   `scenarios/` is what is built out of them, in two folders beside each other rather than one
+   inside the other (21 September, the user: the library is a set of tools, the examples always
+   assemble out of it). So no named person, organisation or document from any world belongs in a
+   rung, a widget, a module or a template, and neither does a scenario's id or a path into its
+   folder. Examples use generic placeholders (a contact, a prospect, the offering). `build.js`
+   reads the cast and the organisations of **every** scenario, not just the one being built, and
+   refuses the whole library when one of those names appears where a block should be. The line is
+   between a **condition** and a **case**: "at a tempo measured in hours" is a condition and stays;
+   "the broker's world" is a case and goes. Two exemptions, both deliberate. A card and a world
+   name people because that is their job. `library/docs/` is exempt because those are the notes
+   about the blocks, and the record of how a block was tested against a world is the one place an
+   example earns its keep.
 4. **Go light on dashes.** Explain with commas, colons, parentheses, or a fresh sentence rather than
    em-dash asides. Keep ordinary hyphens only inside compound words (field-per-row) and code ids
    (email-message).
@@ -388,12 +398,14 @@ purpose, and the distinction is the one
 read standing with less to go on, so the card says so and carries on; a missing **condition**
 leaves the read not applying at all, so there is nothing for the card to rest on. `bops` has all
 four; `pmf` has three, because one owner per business means there is nobody else to win over.
-*(My reason, not yet yours.)* The world and cards are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
+*(My reason, not yet yours.)* The world and cards are one **scenario**, at `scenarios/<name>/` in
+the repo root since 21 September, with a `world/` (the goal,
 the cast, the organisations, the documents, since 20 September which channels this seller
-has plugged in, and since 21 September what the sale has) and a `cards/` (decided 19 September). Today there
-are two, `bops`, a patient sale to councils, and `pmf`, a broker placing merchant cash advances,
-standing on the same channels, assemblies, counts and signals. `build.js` reads the one named in
-`SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a
+has plugged in, and since 21 September what the sale has) and a `cards/` (decided 19 September). There
+are three: `bops`, a patient sale to councils; `pmf`, a broker placing merchant cash advances; and
+`cority`, an enterprise seller with a firm around her. All three stand on the same channels,
+assemblies, counts and signals, which is the whole claim the second and third are there to test.
+`build.js` reads the one named in `SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a
 general rule, the card changes, not the rule.
 
 ### A card's day: what it is about, who it reaches, when, and what it waits on

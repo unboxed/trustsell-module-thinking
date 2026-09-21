@@ -37,5 +37,5 @@ told record written in the twenty-second pass, and this is the first world that 
 | Signature | The contract back | Last | No |
 
 The middle three are the ones the record can be silent about for months, which is what
-[`steps-on-their-side`](../../../signals/steps-on-their-side.md) is built to say out loud without
+[`steps-on-their-side`](../../../library/signals/steps-on-their-side.md) is built to say out loud without
 claiming they have not happened.

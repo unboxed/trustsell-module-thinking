@@ -155,7 +155,7 @@ honestly as the knowns.
 (Here the deal and the coalition coincide, because everyone in this effort sits inside
 Council 14. In general the **deal** is the unit, and it can pull in people across
 organisations; this single-org coalition is just its simplest shape. See
-[`assemblies/deal.md`](../../../assemblies/deal.md).)
+[`assemblies/deal.md`](../../../library/assemblies/deal.md).)
 
 ## Layer 5: The routines that produced the reading
 

@@ -16,7 +16,7 @@ not have:
 
 It exists for the same reason the second set does: a question here that nothing in the library
 answers is a hole, not a quirk of one trade. Its source is
-[`scenarios/cority/docs/what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md),
+[`scenarios/cority/docs/what-cority-told-us.md`](../../scenarios/cority/docs/what-cority-told-us.md),
 an interview on 17 December 2025, kept with names out.
 
 **These are the seller's questions to herself**, the same as the other two sets, never the

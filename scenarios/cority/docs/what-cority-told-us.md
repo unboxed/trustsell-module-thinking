@@ -156,7 +156,7 @@ two-way discussion, not standard responses you can tell are marketing".
   when I'm not in the room, what did my own firm already do here, what happened in the last two
   weeks), and the coverage map would run them like the other two. That needed a doc with a "The
   list" heading and one line in `build.js` naming its filename and letter, and it was done in the
-  seventh pass as [`docs/firm-questions.md`](../../../docs/firm-questions.md), then run in the
+  seventh pass as [`docs/firm-questions.md`](../../../library/docs/firm-questions.md), then run in the
   thirteenth.
 
   *Updated 21 September.* This bullet used to say "not yet as a full world with cards", on the
@@ -165,7 +165,7 @@ two-way discussion, not standard responses you can tell are marketing".
   the seventh pass, so that reason has expired. The bar is now half met: both ends have a world,
   and only BOPS has cards. Whether that counts as the spectrum having been shown is a scope call
   and the user's, not this note's, so it is left open rather than decided here. What is not in
-  doubt is the gap: the two reads written for a firm, [`firm-contact`](../../../assemblies/firm-contact.md)
-  and [`colleague-already-in-touch`](../../../signals/colleague-already-in-touch.md), have only
+  doubt is the gap: the two reads written for a firm, [`firm-contact`](../../../library/assemblies/firm-contact.md)
+  and [`colleague-already-in-touch`](../../../library/signals/colleague-already-in-touch.md), have only
   ever been read against worlds where the gather is nearly empty, and the first real test of them
   is the one this note predicted, a world where every contact by anyone is in the CRM.

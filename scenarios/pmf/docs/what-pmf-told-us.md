@@ -8,7 +8,7 @@ on purpose. The transcript is in the user's research folder
 library and leaves the rest. Times are the transcript's. Everything under *What they said* is
 theirs; everything under *What it means for the library* is mine and not yet confirmed.
 
-[`docs/volume-questions.md`](../../../docs/volume-questions.md) was drawn from what brokers publish.
+[`docs/volume-questions.md`](../../../library/docs/volume-questions.md) was drawn from what brokers publish.
 This is the first account from inside the trade, and it changes some of that doc's "inferred" rows
 to first-hand.
 

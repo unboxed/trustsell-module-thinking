@@ -9,12 +9,21 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `4e1a3a9` on `main`, twenty-eight passes on `library/docs/coverage.md` are done. The library
+Twenty-eight passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
-7 docs (all general) and **three** scenarios: `bops`, a patient sale to councils, with 26 cards;
-`pmf`, a merchant cash advance broker, with 12; and `cority`, an enterprise seller with a firm
-around her, with 7. It builds clean with `SCENARIO` set to any of them.
+7 docs (all general). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.**
+
+**Two areas, since 21 September.** `library/` is the blocks and `scenarios/` sits beside it, no
+longer inside it: `bops`, a patient sale to councils, with 26 cards; `pmf`, a merchant cash advance
+broker, with 12; and `cority`, an enterprise seller with a firm around her, with 7. The user's
+words for it: the library is a set of lego blocks, the scenarios always assemble out of it, and
+whatever a card says has to trace back through the blocks to a record. **The library names no
+example**, and `build.js` now enforces that rather than trusting it: it reads the cast and the
+organisations of every scenario and refuses the whole library when one of those names, a scenario
+id or a path into `scenarios/` appears in a rung, a widget, a module or a template. Cards and
+worlds are exempt, because naming people is their job, and so is `library/docs/`, where the record
+of how a block was tested against a world belongs.
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
 are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
@@ -118,6 +127,10 @@ library. The order is mine. *(My order, not yet yours.)*
   `answers:`, from any of the three sets, but `answers: []` is allowed and `answer-came-back`
   carries it: no set asks whether something came back that nobody passed on, because at every desk
   a person is already doing it.
+- **The library names no example, and the build says so.** Write the condition, never the case:
+  "at a tempo measured in hours" belongs in a block, "the broker's world" does not. A leak is
+  usually a first name in a sentence that was easier to write with one. The check lives beside the
+  other joins in `build.js` and, like them, writes nothing when it fires.
 - **Never invent a fact about the tool.** A new count stays `defined: false` with the arithmetic in
   prose; thresholds lean on `reading-principles.md`, no made-up numbers. A scenario's world is
   fiction and may be invented; the general rungs may not.
@@ -129,8 +142,9 @@ library. The order is mine. *(My order, not yet yours.)*
   signal quoting it reads, a signal's `needs` must be channel or told ids, an assembly's inputs
   must be record addresses or assemblies, and a card's `about`, `to`, `documents` and Sources rows
   must all resolve. `playbook/assets/data.js` is generated: never hand-edit it, always commit it
-  with the pass that changed it. **Check every change against both scenarios**: switch `SCENARIO`
-  at the top of `build.js` to `pmf`, run it, then set it back to `bops` before committing. To look
+  with the pass that changed it. **Check every change against all three scenarios**: switch
+  `SCENARIO` at the top of `build.js` to `pmf` and then `cority`, run it each time, then set it
+  back to `bops` before committing. To look
   at the broker's cards in the playbook, flip it, build, open `playbook/index.html`, flip it back.
 - Commit messages end with a `Co-Authored-By:` line naming the model that wrote them, which the
   harness gives you; do not copy an earlier session's. Push each
