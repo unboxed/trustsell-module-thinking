@@ -2315,16 +2315,27 @@ window.LIBRARY = {
    "used_by": [
     "loose-end"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each question you put to them that nothing since has answered, with how long it has been open.",
+   "needs": [
+    "gmail#email-message",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#transcript"
+   ],
+   "breaks": "A question asked three times is one open question, not three, and the count says so.",
    "title": "Your unanswered questions",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each question <strong>you</strong> asked them, one row per question, that nothing on record answers: the words, the day you asked, and how long it has been open in working days. A question re-asked is still one open question, dated from the first asking, because how long they have had it is the thing that matters and the re-asking is a separate fact (<code>times-you-chase</code>).</p>\n<p>Answered means answered, not acknowledged. \"I'll find out\" closes nothing and becomes a promise of theirs instead (<code>their-promise-undelivered</code>).</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>An answer given on a call nobody captured, and an answer given to somebody else at your firm. It also cannot tell a question they are ignoring from one they could not answer, which is the read's job and not the count's.</p>"
     }
    },
    "sectionOrder": [
@@ -2332,7 +2343,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/ask-made-unanswered.md",
-   "markdown": "---\nid: ask-made-unanswered\nlabel: \"Your unanswered questions\"\nused_by: [loose-end]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your unanswered questions\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: ask-made-unanswered\nlabel: \"Your unanswered questions\"\nused_by: [loose-end]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each question you put to them that nothing since has answered, with how long it has been open.\nneeds: [gmail#email-message, slack#slack-message, sms#text-message, meet#transcript]\nbreaks: A question asked three times is one open question, not three, and the count says so.\n---\n\n# Your unanswered questions\n## What it counts\n\nEach question **you** asked them, one row per question, that nothing on record answers: the words,\nthe day you asked, and how long it has been open in working days. A question re-asked is still one\nopen question, dated from the first asking, because how long they have had it is the thing that\nmatters and the re-asking is a separate fact (`times-you-chase`).\n\nAnswered means answered, not acknowledged. \"I'll find out\" closes nothing and becomes a promise of\ntheirs instead (`their-promise-undelivered`).\n\n## What it cannot see\n\nAn answer given on a call nobody captured, and an answer given to somebody else at your firm. It\nalso cannot tell a question they are ignoring from one they could not answer, which is the read's\njob and not the count's.\n"
   },
   {
    "id": "auto-reply-no-longer-with",
@@ -2481,16 +2492,25 @@ window.LIBRARY = {
    "over": [
     "conversation-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many times you have written since they last wrote back, with the day of each.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It resets to zero on any reply, including a one-word one, because a reply is a reply.",
    "title": "Your messages since they last wrote",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/enough-tries.md\"><code>enough-tries</code></a> and <a href=\"../signals/pushing.md\"><code>pushing</code></a>. What it actually counts (your messages to them, across channels, since their last one; or since the first, where they have never replied), which records it needs and when the number stops meaning anything are all still to be decided. A message by text is not gathered by any assembly yet, so it would not be counted.</p>\n<p>It counts within <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The messages you have sent since the last message they sent, counted, with the day of each. It resets to zero the moment anything comes back, including \"thanks\" and including an out of office sent by a person rather than a machine, because the question it answers is whether you are talking into silence and a reply means you are not.</p>\n<p>It is the sharper half of <code>times-you-chase</code>: that one measures the whole thread, this one measures the current run.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A reply that went to somebody else at your firm, which makes the run look longer than it is. And a reply on a channel nobody has connected, which does the same.</p>"
     }
    },
    "sectionOrder": [
@@ -2498,7 +2518,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/chases-since-their-last-reply.md",
-   "markdown": "---\nid: chases-since-their-last-reply\nlabel: \"Your messages since they last wrote\"\nused_by: [enough-tries, pushing]\nover: [conversation-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your messages since they last wrote\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`enough-tries`](../signals/enough-tries.md) and [`pushing`](../signals/pushing.md). What it actually counts (your messages to them, across channels, since their last one; or since the first, where they have never replied), which records it needs and when the number stops meaning anything are all still to be decided. A message by text is not gathered by any assembly yet, so it would not be counted.\n\nIt counts within [`conversation-history`](../assemblies/conversation-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: chases-since-their-last-reply\nlabel: \"Your messages since they last wrote\"\nused_by: [enough-tries, pushing]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many times you have written since they last wrote back, with the day of each.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It resets to zero on any reply, including a one-word one, because a reply is a reply.\n---\n\n# Your messages since they last wrote\n## What it counts\n\nThe messages you have sent since the last message they sent, counted, with the day of each. It\nresets to zero the moment anything comes back, including \"thanks\" and including an out of office\nsent by a person rather than a machine, because the question it answers is whether you are talking\ninto silence and a reply means you are not.\n\nIt is the sharper half of `times-you-chase`: that one measures the whole thread, this one measures\nthe current run.\n\n## What it cannot see\n\nA reply that went to somebody else at your firm, which makes the run look longer than it is. And a\nreply on a channel nobody has connected, which does the same.\n"
   },
   {
    "id": "claim-source",
@@ -2727,16 +2747,26 @@ window.LIBRARY = {
     "loose-end",
     "they-owe-you"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "meeting-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each promise made on a captured call, by either side, lifted from the transcript with the passage it came from.",
+   "needs": [
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#recording"
+   ],
+   "breaks": "It stops the moment a call is not captured, and the read says so rather than reading silence as nothing promised.",
    "title": "Promises made on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each promise made aloud on a captured call, by either side, one row per promise: who said it, the passage it came from, and the day. It feeds the same two piles as the thread counts, so a commitment made in a meeting is a commitment, and the read does not have to know which room it happened in.</p>\n<p>It carries the passage rather than a summary, because a promise lifted from speech is the most likely of all of them to be wrong, and a reader who can see the sentence can overrule it in a second.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Every call nobody recorded, which at most firms is most of them. A meeting that was held but not captured shows only that you spoke, never what was said, and the reads above treat that as a data gap rather than as an empty meeting.</p>"
     }
    },
    "sectionOrder": [
@@ -2744,7 +2774,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/commitment-made-on-call.md",
-   "markdown": "---\nid: commitment-made-on-call\nlabel: \"Promises made on calls\"\nused_by: [loose-end, they-owe-you]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Promises made on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: commitment-made-on-call\nlabel: \"Promises made on calls\"\nused_by: [loose-end, they-owe-you]\nover: [meeting-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each promise made on a captured call, by either side, lifted from the transcript with the passage it came from.\nneeds: [meet#transcript, meet#smart-notes, meet#recording]\nbreaks: It stops the moment a call is not captured, and the read says so rather than reading silence as nothing promised.\n---\n\n# Promises made on calls\n## What it counts\n\nEach promise made aloud on a captured call, by either side, one row per promise: who said it, the\npassage it came from, and the day. It feeds the same two piles as the thread counts, so a\ncommitment made in a meeting is a commitment, and the read does not have to know which room it\nhappened in.\n\nIt carries the passage rather than a summary, because a promise lifted from speech is the most\nlikely of all of them to be wrong, and a reader who can see the sentence can overrule it in a\nsecond.\n\n## What it cannot see\n\nEvery call nobody recorded, which at most firms is most of them. A meeting that was held but not\ncaptured shows only that you spoke, never what was said, and the reads above treat that as a data\ngap rather than as an empty meeting.\n"
   },
   {
    "id": "competitor-price-band",
@@ -2917,16 +2947,27 @@ window.LIBRARY = {
     "loose-end",
     "they-owe-you"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How long a thing has been open in working days, against how long a turn on this thread usually takes.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "A thread with fewer than about five turns has no usual, so the number is an age and not a comparison, and it says which it is.",
    "title": "Time left hanging, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Two numbers per open item. How long it has been open, in working days. And this thread's own usual turn time: the median working time between one side writing and the other answering, across the turns on record.</p>\n<p>The second is the point of it. Eleven days is nothing on a thread that turns over a fortnight and a long time on one that turns over a day, and every read in the library that asks \"is this late\" asks it against their pace rather than against a number somebody chose.</p>\n<p>Where the thread has too few turns to have a usual, it says so and returns the age alone. A comparison against a median of two is not a comparison.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A pace that has changed for a reason nothing records: a holiday, a reorganisation, a death. The median treats a quiet August as the new normal if August is most of what it has.</p>"
     }
    },
    "sectionOrder": [
@@ -2934,7 +2975,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/days-open-vs-own-rhythm.md",
-   "markdown": "---\nid: days-open-vs-own-rhythm\nlabel: \"Time left hanging, against usual\"\nused_by: [loose-end, they-owe-you]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Time left hanging, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: days-open-vs-own-rhythm\nlabel: \"Time left hanging, against usual\"\nused_by: [loose-end, they-owe-you]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How long a thing has been open in working days, against how long a turn on this thread usually takes.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: A thread with fewer than about five turns has no usual, so the number is an age and not a comparison, and it says which it is.\n---\n\n# Time left hanging, against usual\n## What it counts\n\nTwo numbers per open item. How long it has been open, in working days. And this thread's own usual\nturn time: the median working time between one side writing and the other answering, across the\nturns on record.\n\nThe second is the point of it. Eleven days is nothing on a thread that turns over a fortnight and a\nlong time on one that turns over a day, and every read in the library that asks \"is this late\" asks\nit against their pace rather than against a number somebody chose.\n\nWhere the thread has too few turns to have a usual, it says so and returns the age alone. A\ncomparison against a median of two is not a comparison.\n\n## What it cannot see\n\nA pace that has changed for a reason nothing records: a holiday, a reorganisation, a death. The\nmedian treats a quiet August as the new normal if August is most of what it has.\n"
   },
   {
    "id": "decision-language-used",
@@ -3414,16 +3455,29 @@ window.LIBRARY = {
     "loose-end",
     "they-owe-you"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "For each open promise, whether anything later on record could have closed it: an attachment, a meeting, a file, a document, or a message naming the thing.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#attachment",
+    "calendar#calendar-event",
+    "meet#meeting",
+    "slack#slack-file",
+    "handover#handed-over-document"
+   ],
+   "breaks": "It is a scan, not a judgement: it reports what it found, and matching a thing to a promise is the read s call where the match is not exact.",
    "title": "Anything that kept the promise",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each row in <code>promise-made-undelivered</code> or <code>their-promise-undelivered</code>, everything later on record that could have closed it: an attachment sent after the promise, a calendar event or meeting with the person the promise named, a file shared, a document handed over, or a message that names the promised thing.</p>\n<p>It returns what it found and where, not a yes or no. An exact match (the named document, attached) is a close. Anything less is handed up to the read, because deciding that a meeting on Tuesday was the promised walkthrough is a judgement and judgements do not live on this floor.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A promise kept outside the connected channels: a document posted, a phone call, a conversation in a corridor. Those leave the promise looking open, which is the safer error for a count whose purpose is to stop the tool saying a thing was never done.</p>"
     }
    },
    "sectionOrder": [
@@ -3431,7 +3485,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fulfilment-scan.md",
-   "markdown": "---\nid: fulfilment-scan\nlabel: \"Anything that kept the promise\"\nused_by: [loose-end, they-owe-you]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Anything that kept the promise\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fulfilment-scan\nlabel: \"Anything that kept the promise\"\nused_by: [loose-end, they-owe-you]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: For each open promise, whether anything later on record could have closed it: an attachment, a meeting, a file, a document, or a message naming the thing.\nneeds: [gmail#email-message, gmail#attachment, calendar#calendar-event, meet#meeting, slack#slack-file, handover#handed-over-document]\nbreaks: It is a scan, not a judgement: it reports what it found, and matching a thing to a promise is the read s call where the match is not exact.\n---\n\n# Anything that kept the promise\n## What it counts\n\nFor each row in `promise-made-undelivered` or `their-promise-undelivered`, everything later on\nrecord that could have closed it: an attachment sent after the promise, a calendar event or meeting\nwith the person the promise named, a file shared, a document handed over, or a message that names\nthe promised thing.\n\nIt returns what it found and where, not a yes or no. An exact match (the named document, attached)\nis a close. Anything less is handed up to the read, because deciding that a meeting on Tuesday was\nthe promised walkthrough is a judgement and judgements do not live on this floor.\n\n## What it cannot see\n\nA promise kept outside the connected channels: a document posted, a phone call, a conversation in a\ncorridor. Those leave the promise looking open, which is the safer error for a count whose purpose\nis to stop the tool saying a thing was never done.\n"
   },
   {
    "id": "greeting-and-signoff-pattern",
@@ -3749,16 +3803,26 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Everything on record that would explain the silence without meaning anything: leave, a bounce, a job change, a status, a shut office.",
+   "needs": [
+    "calendar#calendar-event",
+    "calendar#free-busy",
+    "calendar#status-event",
+    "gmail#email-message",
+    "linkedin#job-change",
+    "slack#slack-user"
+   ],
+   "breaks": "An absent explanation is not evidence of a no. The scan returns what it found, and finding nothing is not a finding.",
    "title": "Reasons they may be away",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a> and, since 20 September, <a href=\"../signals/enough-tries.md\"><code>enough-tries</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Everything on record that would explain a silence innocently: an out of office or a status saying they are away, a bounce, a job change, a shared calendar showing leave, a workspace account deactivated, a public holiday in their country.</p>\n<p>It exists to stop the reads above it drawing a conclusion from silence that silence cannot carry. Every read in this library that counts quiet consults it first, and the honest form of its answer is \"here is what I found\", never \"there is nothing, so they are avoiding you\". Finding nothing is not a finding, and the read says so.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Almost every real reason people go quiet: illness, a reorganisation, a bereavement, a project that ate the month, a boss who said stop. The scan sees the handful of reasons that happen to leave a record, which is why an empty result changes nothing.</p>"
     }
    },
    "sectionOrder": [
@@ -3766,7 +3830,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/innocent-explanation-scan.md",
-   "markdown": "---\nid: innocent-explanation-scan\nlabel: \"Reasons they may be away\"\nused_by: [cooling-champion, enough-tries]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reasons they may be away\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`cooling-champion`](../signals/cooling-champion.md) and, since 20 September, [`enough-tries`](../signals/enough-tries.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: innocent-explanation-scan\nlabel: \"Reasons they may be away\"\nused_by: [cooling-champion, enough-tries]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Everything on record that would explain the silence without meaning anything: leave, a bounce, a job change, a status, a shut office.\nneeds: [calendar#calendar-event, calendar#free-busy, calendar#status-event, gmail#email-message, linkedin#job-change, slack#slack-user]\nbreaks: An absent explanation is not evidence of a no. The scan returns what it found, and finding nothing is not a finding.\n---\n\n# Reasons they may be away\n## What it counts\n\nEverything on record that would explain a silence innocently: an out of office or a status saying\nthey are away, a bounce, a job change, a shared calendar showing leave, a workspace account\ndeactivated, a public holiday in their country.\n\nIt exists to stop the reads above it drawing a conclusion from silence that silence cannot carry.\nEvery read in this library that counts quiet consults it first, and the honest form of its answer\nis \"here is what I found\", never \"there is nothing, so they are avoiding you\". Finding nothing is\nnot a finding, and the read says so.\n\n## What it cannot see\n\nAlmost every real reason people go quiet: illness, a reorganisation, a bereavement, a project that\nate the month, a boss who said stop. The scan sees the handful of reasons that happen to leave a\nrecord, which is why an empty result changes nothing.\n"
   },
   {
    "id": "internal-advocacy-mentions",
@@ -4338,16 +4402,27 @@ window.LIBRARY = {
     "loose-end",
     "pushing"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each concrete thing you said you would do, on a thread or a captured call, that nothing later closed.",
+   "needs": [
+    "gmail#email-message",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#transcript"
+   ],
+   "breaks": "A promise with no object (\"I will be in touch\") cannot be checked as kept, so it is not counted at all.",
    "title": "Promise not kept yet",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/loose-end.md\"><code>loose-end</code></a> and, since 20 September, <a href=\"../signals/pushing.md\"><code>pushing</code></a>, which reads the same unkept promise as the gift in hand. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).</p>"
+     "html": "<p>Each concrete commitment <strong>you</strong> made, one row per promise: the words, the day you said them, and how long ago that is in working days. Concrete means it names a thing that could arrive: a document, a number, an introduction, a date. \"I'll send the pricing sheet\" counts. \"I'll be in touch\" does not, because nothing could ever close it, and a number that can never fall is not a number.</p>\n<p>A promise leaves the count the moment <code>fulfilment-scan</code> finds what closed it, so this is always promises <strong>outstanding</strong> rather than promises made.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A promise kept by voice, or on a channel the seller has not connected. It also cannot see a promise made in words a parser does not catch, which is a told gap the user closes by correcting the read.</p>"
     }
    },
    "sectionOrder": [
@@ -4355,7 +4430,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/promise-made-undelivered.md",
-   "markdown": "---\nid: promise-made-undelivered\nlabel: \"Promise not kept yet\"\nused_by: [loose-end, pushing]\nover: []   # not written yet. One of: conversation-history, person-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Promise not kept yet\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`loose-end`](../signals/loose-end.md) and, since 20 September, [`pushing`](../signals/pushing.md), which reads the same unkept promise as the gift in hand. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`person-history`](../assemblies/person-history.md), the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: promise-made-undelivered\nlabel: \"Promise not kept yet\"\nused_by: [loose-end, pushing]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each concrete thing you said you would do, on a thread or a captured call, that nothing later closed.\nneeds: [gmail#email-message, slack#slack-message, sms#text-message, meet#transcript]\nbreaks: A promise with no object (\"I will be in touch\") cannot be checked as kept, so it is not counted at all.\n---\n\n# Promise not kept yet\n## What it counts\n\nEach concrete commitment **you** made, one row per promise: the words, the day you said them, and\nhow long ago that is in working days. Concrete means it names a thing that could arrive: a\ndocument, a number, an introduction, a date. \"I'll send the pricing sheet\" counts. \"I'll be in\ntouch\" does not, because nothing could ever close it, and a number that can never fall is not a\nnumber.\n\nA promise leaves the count the moment `fulfilment-scan` finds what closed it, so this is always\npromises **outstanding** rather than promises made.\n\n## What it cannot see\n\nA promise kept by voice, or on a channel the seller has not connected. It also cannot see a\npromise made in words a parser does not catch, which is a told gap the user closes by correcting\nthe read.\n"
   },
   {
    "id": "proof-on-file",
@@ -4665,16 +4740,25 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How long they have been quiet, against how long they usually leave it.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "Under about five replies there is no usual, and the number is an age rather than a comparison.",
    "title": "Wait for a reply, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>\n<p>Merged 18 September: <code>last-note-unanswered-days</code> meant the same thing and now points here.</p>"
+     "html": "<p>How long it has been since this person last replied, in working days, against the median gap between their replies across your whole history. Reported as both numbers, never as a ratio alone, because \"nine days against a usual of two\" says something a multiplier does not.</p>\n<p>Their own rhythm, never a fixed number of days, is the rule the whole library follows: eleven days is nothing from somebody who answers monthly and a klaxon from somebody who answers daily.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A rhythm that has changed for a reason nothing records. And a person whose median is built mostly from one busy period, which makes every quiet month afterwards look like a slide.</p>"
     }
    },
    "sectionOrder": [
@@ -4682,7 +4766,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-gap-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-gap-vs-own-rhythm\nlabel: \"Wait for a reply, against usual\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Wait for a reply, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\nMerged 18 September: `last-note-unanswered-days` meant the same thing and now points here.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-gap-vs-own-rhythm\nlabel: \"Wait for a reply, against usual\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How long they have been quiet, against how long they usually leave it.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: Under about five replies there is no usual, and the number is an age rather than a comparison.\n---\n\n# Wait for a reply, against usual\n## What it counts\n\nHow long it has been since this person last replied, in working days, against the median gap\nbetween their replies across your whole history. Reported as both numbers, never as a ratio alone,\nbecause \"nine days against a usual of two\" says something a multiplier does not.\n\nTheir own rhythm, never a fixed number of days, is the rule the whole library follows: eleven days\nis nothing from somebody who answers monthly and a klaxon from somebody who answers daily.\n\n## What it cannot see\n\nA rhythm that has changed for a reason nothing records. And a person whose median is built mostly\nfrom one busy period, which makes every quiet month afterwards look like a slide.\n"
   },
   {
    "id": "reply-length-vs-own-rhythm",
@@ -4693,16 +4777,28 @@ window.LIBRARY = {
     "warming",
     "warmth-fading"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How long their replies are now, against how long they used to be.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "Same as the speed number: five replies before a median means anything.",
    "title": "Reply length, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because 4 signals reference this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>, <a href=\"../signals/champion.md\"><code>champion</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>, <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>\n<p>Merged 18 September: <code>reply-length-vs-own-baseline</code> meant the same thing and now points here.</p>\n<p>Merged 18 September: <code>reply-length-trend</code> meant the same thing and now points here, and so, through it, does <code>warmth-trend-in-replies</code>.</p>"
+     "html": "<p>The median length of their replies over the last month, in words, against the median across the whole history, with the direction of travel. The companion to <code>reply-speed-vs-own-rhythm</code>, and the two move independently: somebody who answers as fast as ever in half the words has changed something.</p>\n<p>Words rather than characters, and the quoted trail of an earlier message is stripped before counting, because a reply that quotes the whole thread is not a long reply.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A person who has switched to writing from a phone, whose answers get shorter for a reason that has nothing to do with you. And warmth expressed in one perfect sentence, which this reads as disengagement.</p>"
     }
    },
    "sectionOrder": [
@@ -4710,7 +4806,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-length-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-length-vs-own-rhythm\nlabel: \"Reply length, against usual\"\nused_by: [blocker, champion, warming, warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, against usual\n\n## What it counts\n\nNot written yet.\n\nThis entry exists because 4 signals reference this id: [`blocker`](../signals/blocker.md), [`champion`](../signals/champion.md), [`warming`](../signals/warming.md), [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\nMerged 18 September: `reply-length-vs-own-baseline` meant the same thing and now points here.\n\nMerged 18 September: `reply-length-trend` meant the same thing and now points here, and so, through it, does `warmth-trend-in-replies`.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-length-vs-own-rhythm\nlabel: \"Reply length, against usual\"\nused_by: [blocker, champion, warming, warmth-fading]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How long their replies are now, against how long they used to be.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: Same as the speed number: five replies before a median means anything.\n---\n\n# Reply length, against usual\n## What it counts\n\nThe median length of their replies over the last month, in words, against the median across the\nwhole history, with the direction of travel. The companion to `reply-speed-vs-own-rhythm`, and the\ntwo move independently: somebody who answers as fast as ever in half the words has changed\nsomething.\n\nWords rather than characters, and the quoted trail of an earlier message is stripped before\ncounting, because a reply that quotes the whole thread is not a long reply.\n\n## What it cannot see\n\nA person who has switched to writing from a phone, whose answers get shorter for a reason that has\nnothing to do with you. And warmth expressed in one perfect sentence, which this reads as\ndisengagement.\n"
   },
   {
    "id": "reply-size-vs-yours",
@@ -4718,16 +4814,28 @@ window.LIBRARY = {
    "used_by": [
     "one-sided"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "The length of their replies against the length of the messages they are answering, over the thread.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "Length is not care. A short answer to a simple question is right, and the count does not know which questions were simple.",
    "title": "Reply length, theirs against yours",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each turn on the thread, how long their reply is against how long the message it answers was, in words, and the median of those ratios across the thread. Plus the trend: the ratio over the last month against the whole.</p>\n<p>It is one of the two numbers behind \"one-sided\": you writing paragraphs and getting lines back.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether a short reply is a brush-off or an efficient person. Some people answer everything in six words and mean nothing by it, which is why this is read against <strong>their</strong> own usual rather than against a standard, and why the read that uses it needs a second number beside it.</p>"
     }
    },
    "sectionOrder": [
@@ -4735,7 +4843,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-size-vs-yours.md",
-   "markdown": "---\nid: reply-size-vs-yours\nlabel: \"Reply length, theirs against yours\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply length, theirs against yours\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-size-vs-yours\nlabel: \"Reply length, theirs against yours\"\nused_by: [one-sided]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: The length of their replies against the length of the messages they are answering, over the thread.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: Length is not care. A short answer to a simple question is right, and the count does not know which questions were simple.\n---\n\n# Reply length, theirs against yours\n## What it counts\n\nFor each turn on the thread, how long their reply is against how long the message it answers was,\nin words, and the median of those ratios across the thread. Plus the trend: the ratio over the last\nmonth against the whole.\n\nIt is one of the two numbers behind \"one-sided\": you writing paragraphs and getting lines back.\n\n## What it cannot see\n\nWhether a short reply is a brush-off or an efficient person. Some people answer everything in six\nwords and mean nothing by it, which is why this is read against **their** own usual rather than\nagainst a standard, and why the read that uses it needs a second number beside it.\n"
   },
   {
    "id": "reply-speed-by-channel",
@@ -4772,16 +4880,28 @@ window.LIBRARY = {
     "champion",
     "warming"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How fast they answer now, against how fast they used to, with the direction of travel.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It needs about five replies before a median means anything, and it says so rather than comparing against two.",
    "title": "Reply speed, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because 2 signals reference this id: <a href=\"../signals/champion.md\"><code>champion</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>The median working time between your message and their reply over the last month, against the same median across the whole history, with the direction of travel. Speeding up and slowing down are both readings; the count supplies the two numbers and the gap between them.</p>\n<p>Speed is the earliest of the warmth signs and the least reliable on its own, which is why the reads that use it always pair it with something else.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A fast reply written by somebody else on their behalf, and a fast reply that says nothing. It also cannot see the reason: a week of speed before a deadline of theirs is not the same as a week of speed because they like you.</p>"
     }
    },
    "sectionOrder": [
@@ -4789,7 +4909,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/reply-speed-vs-own-rhythm.md",
-   "markdown": "---\nid: reply-speed-vs-own-rhythm\nlabel: \"Reply speed, against usual\"\nused_by: [champion, warming]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reply speed, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because 2 signals reference this id: [`champion`](../signals/champion.md), [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: reply-speed-vs-own-rhythm\nlabel: \"Reply speed, against usual\"\nused_by: [champion, warming]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How fast they answer now, against how fast they used to, with the direction of travel.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It needs about five replies before a median means anything, and it says so rather than comparing against two.\n---\n\n# Reply speed, against usual\n## What it counts\n\nThe median working time between your message and their reply over the last month, against the same\nmedian across the whole history, with the direction of travel. Speeding up and slowing down are\nboth readings; the count supplies the two numbers and the gap between them.\n\nSpeed is the earliest of the warmth signs and the least reliable on its own, which is why the reads\nthat use it always pair it with something else.\n\n## What it cannot see\n\nA fast reply written by somebody else on their behalf, and a fast reply that says nothing. It also\ncannot see the reason: a week of speed before a deadline of theirs is not the same as a week of\nspeed because they like you.\n"
   },
   {
    "id": "required-disclosures",
@@ -5288,16 +5408,27 @@ window.LIBRARY = {
    "used_by": [
     "they-owe-you"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each concrete thing the buyer said they would do that nothing on record shows happening.",
+   "needs": [
+    "gmail#email-message",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#transcript"
+   ],
+   "breaks": "Loose words (\"I will see what I can do\") are kept with the row, never graded here, because most of what a buyer says sits between a promise and a politeness.",
    "title": "What they said they would do, not done",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Each concrete commitment the <strong>buyer</strong> made, in their own words, on a thread or a captured call, that nothing on record has closed: what they said, when they said it, and how long ago. The mirror of <code>promise-made-undelivered</code> with the speaker swapped. Each one is kept with the words, because the words are what decide how firm it was, and how firm it was is the whole of the read's confidence. Which records it needs and when the number stops meaning anything are not written in the count's fields yet, like every other count.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the same three the sibling count <code>promise-made-undelivered</code> names.</p>"
+     "html": "<p>Each concrete commitment the <strong>buyer</strong> made, one row per promise: the words, the day, how long ago in working days, and what would close it. The mirror of <code>promise-made-undelivered</code> with the speaker swapped, and it keeps the words for the same reason that one drops vague promises: on a buyer's side vagueness is the normal case, so the read grades it and the count must hand over the evidence to grade.</p>\n<p>What closes one is usually not a message. A promised introduction closes when a new name appears on a thread or in a diary, a promised document closes when it arrives, a promised date closes when they name it.</p>"
     },
     "What it cannot see": {
-     "html": "<p>The difference between a promise and a politeness, which is far harder on a buyer's side than on a seller's. \"I'll see what I can do\" is not a commitment and \"I'll send it Friday\" is, and most of what a buyer says sits between them. The count keeps the words rather than grading them, and the read grades. It also cannot see a promise kept inside their own organisation and never mentioned, which is the same blindness <a href=\"../signals/steps-on-their-side.md\"><code>steps-on-their-side</code></a> is built around.</p>"
+     "html": "<p>Work done inside their organisation and never mentioned, which is most of it. It also cannot see a promise they made to somebody else at your firm, unless the firm shares its records.</p>"
     }
    },
    "sectionOrder": [
@@ -5305,7 +5436,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/their-promise-undelivered.md",
-   "markdown": "---\nid: their-promise-undelivered\nlabel: \"What they said they would do, not done\"\nused_by: [they-owe-you]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history\ndefined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.\n---\n\n# What they said they would do, not done\n## What it counts\n\nEach concrete commitment the **buyer** made, in their own words, on a thread or a captured call,\nthat nothing on record has closed: what they said, when they said it, and how long ago. The mirror\nof `promise-made-undelivered` with the speaker swapped. Each one is kept with the words, because\nthe words are what decide how firm it was, and how firm it was is the whole of the read's\nconfidence. Which records it needs and when the number stops meaning anything are not written in\nthe count's fields yet, like every other count.\n\nWhich assembly it counts within is not written yet. It is one of\n[`conversation-history`](../assemblies/conversation-history.md),\n[`person-history`](../assemblies/person-history.md) or\n[`meeting-history`](../assemblies/meeting-history.md), the same three the sibling count\n`promise-made-undelivered` names.\n\n## What it cannot see\n\nThe difference between a promise and a politeness, which is far harder on a buyer's side than on a\nseller's. \"I'll see what I can do\" is not a commitment and \"I'll send it Friday\" is, and most of\nwhat a buyer says sits between them. The count keeps the words rather than grading them, and the\nread grades. It also cannot see a promise kept inside their own organisation and never mentioned,\nwhich is the same blindness [`steps-on-their-side`](../signals/steps-on-their-side.md) is built\naround.\n"
+   "markdown": "---\nid: their-promise-undelivered\nlabel: \"What they said they would do, not done\"\nused_by: [they-owe-you]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each concrete thing the buyer said they would do that nothing on record shows happening.\nneeds: [gmail#email-message, slack#slack-message, sms#text-message, meet#transcript]\nbreaks: Loose words (\"I will see what I can do\") are kept with the row, never graded here, because most of what a buyer says sits between a promise and a politeness.\n---\n\n# What they said they would do, not done\n## What it counts\n\nEach concrete commitment the **buyer** made, one row per promise: the words, the day, how long ago\nin working days, and what would close it. The mirror of `promise-made-undelivered` with the speaker\nswapped, and it keeps the words for the same reason that one drops vague promises: on a buyer's\nside vagueness is the normal case, so the read grades it and the count must hand over the evidence\nto grade.\n\nWhat closes one is usually not a message. A promised introduction closes when a new name appears on\na thread or in a diary, a promised document closes when it arrives, a promised date closes when\nthey name it.\n\n## What it cannot see\n\nWork done inside their organisation and never mentioned, which is most of it. It also cannot see a\npromise they made to somebody else at your firm, unless the firm shares its records.\n"
   },
   {
    "id": "things-they-asked-you-for",
@@ -5451,16 +5582,28 @@ window.LIBRARY = {
     "enough-tries",
     "one-sided"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many messages you have sent them since their last reply, and how many in total on this thread.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "A message that is not a chase (an answer they asked for, a thing they are waiting on) is not counted as one, and the read says which it dropped.",
    "title": "Times you chased",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a> and, since 20 September, <a href=\"../signals/enough-tries.md\"><code>enough-tries</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).</p>"
+     "html": "<p>Two numbers. How many messages you have sent since the last one they answered, and how many you have sent on this thread altogether. One row per message, with its day, so the shape of the run is visible as well as its length: four in a week reads differently from four in four months.</p>\n<p>A message only counts as a chase if it is asking rather than giving. An answer they asked for, a document they are waiting on, or a reply to something of theirs is not a chase, and dropping those is the difference between a count that measures pestering and one that measures typing.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A chase by phone, and a chase made by somebody else at your firm, which <code>colleague-touches-on-record</code> counts separately. It also cannot tell a chase they welcomed from one they resented; nothing on record can.</p>"
     }
    },
    "sectionOrder": [
@@ -5468,7 +5611,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/times-you-chase.md",
-   "markdown": "---\nid: times-you-chase\nlabel: \"Times you chased\"\nused_by: [enough-tries, one-sided]\nover: []   # not written yet. One of: person-history, conversation-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Times you chased\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`one-sided`](../signals/one-sided.md) and, since 20 September, [`enough-tries`](../signals/enough-tries.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`conversation-history`](../assemblies/conversation-history.md), the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: times-you-chase\nlabel: \"Times you chased\"\nused_by: [enough-tries, one-sided]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many messages you have sent them since their last reply, and how many in total on this thread.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: A message that is not a chase (an answer they asked for, a thing they are waiting on) is not counted as one, and the read says which it dropped.\n---\n\n# Times you chased\n## What it counts\n\nTwo numbers. How many messages you have sent since the last one they answered, and how many you\nhave sent on this thread altogether. One row per message, with its day, so the shape of the run is\nvisible as well as its length: four in a week reads differently from four in four months.\n\nA message only counts as a chase if it is asking rather than giving. An answer they asked for, a\ndocument they are waiting on, or a reply to something of theirs is not a chase, and dropping those\nis the difference between a count that measures pestering and one that measures typing.\n\n## What it cannot see\n\nA chase by phone, and a chase made by somebody else at your firm, which `colleague-touches-on-record`\ncounts separately. It also cannot tell a chase they welcomed from one they resented; nothing on\nrecord can.\n"
   },
   {
    "id": "told-them-since",
@@ -5642,16 +5785,28 @@ window.LIBRARY = {
     "one-sided",
     "warming"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Of the threads between you, how many each of you opened, and how that has changed over time.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "Fewer than about six threads is not a pattern, and it says so rather than reporting a ratio of two to one.",
    "title": "Who writes first",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because 2 signals reference this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>\n<p>Merged 18 September: <code>threads-they-started-this-period</code> meant the same thing and now points here.</p>"
+     "html": "<p>Of all the threads between you and this person, how many each of you started, as a count and as a ratio, and the same split over the last three months against the whole history. Both halves matter: a relationship where you have always opened every thread is a different thing from one where they used to write first and stopped.</p>\n<p>A thread is started by whoever sent its first message, not by whoever the subject is about.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A conversation that began on a call or at an event and only reached mail afterwards, which reads as you starting it. And a person who replies to everything within the hour but never opens anything, who may be attentive rather than passive; that is the read's call.</p>"
     }
    },
    "sectionOrder": [
@@ -5659,7 +5814,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/who-starts-threads.md",
-   "markdown": "---\nid: who-starts-threads\nlabel: \"Who writes first\"\nused_by: [one-sided, warming]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Who writes first\n## What it counts\n\nNot written yet.\n\nThis entry exists because 2 signals reference this id: [`one-sided`](../signals/one-sided.md), [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\nMerged 18 September: `threads-they-started-this-period` meant the same thing and now points here.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: who-starts-threads\nlabel: \"Who writes first\"\nused_by: [one-sided, warming]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Of the threads between you, how many each of you opened, and how that has changed over time.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: Fewer than about six threads is not a pattern, and it says so rather than reporting a ratio of two to one.\n---\n\n# Who writes first\n## What it counts\n\nOf all the threads between you and this person, how many each of you started, as a count and as a\nratio, and the same split over the last three months against the whole history. Both halves\nmatter: a relationship where you have always opened every thread is a different thing from one\nwhere they used to write first and stopped.\n\nA thread is started by whoever sent its first message, not by whoever the subject is about.\n\n## What it cannot see\n\nA conversation that began on a call or at an event and only reached mail afterwards, which reads as\nyou starting it. And a person who replies to everything within the hour but never opens anything,\nwho may be attentive rather than passive; that is the read's call.\n"
   },
   {
    "id": "who-the-no-came-from",
@@ -5751,16 +5906,28 @@ window.LIBRARY = {
    "used_by": [
     "one-sided"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many things each side has given the other: documents, names, answers, time.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts things handed over, not effort. A single well-timed name can be worth more than four documents, and no number sees that.",
    "title": "Your effort, against theirs",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/one-sided.md\"><code>one-sided</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>A tally on each side of the things that actually passed between you: documents sent, names given, questions answered, meetings accepted, introductions made. One row per thing, with its day and direction, and a total each way.</p>\n<p>It is the second number behind \"one-sided\", and the more honest of the two: a thread can be short on both sides and perfectly even, or long on both sides and entirely one way.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Anything given off the record: a favour, a word in the right ear, a piece of advice on a call. The count is a floor under a read about balance, and the read is told plainly that the ledger it sees is the written part of a relationship, not the whole of it.</p>"
     }
    },
    "sectionOrder": [
@@ -5768,7 +5935,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/you-give-vs-they-give.md",
-   "markdown": "---\nid: you-give-vs-they-give\nlabel: \"Your effort, against theirs\"\nused_by: [one-sided]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your effort, against theirs\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`one-sided`](../signals/one-sided.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: you-give-vs-they-give\nlabel: \"Your effort, against theirs\"\nused_by: [one-sided]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many things each side has given the other: documents, names, answers, time.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts things handed over, not effort. A single well-timed name can be worth more than four documents, and no number sees that.\n---\n\n# Your effort, against theirs\n## What it counts\n\nA tally on each side of the things that actually passed between you: documents sent, names given,\nquestions answered, meetings accepted, introductions made. One row per thing, with its day and\ndirection, and a total each way.\n\nIt is the second number behind \"one-sided\", and the more honest of the two: a thread can be short\non both sides and perfectly even, or long on both sides and entirely one way.\n\n## What it cannot see\n\nAnything given off the record: a favour, a word in the right ear, a piece of advice on a call. The\ncount is a floor under a read about balance, and the read is told plainly that the ledger it sees\nis the written part of a relationship, not the whole of it.\n"
   },
   {
    "id": "your-price",
@@ -11653,11 +11820,13 @@ window.LIBRARY = {
     "people-told#correction",
     "people-told#offline-touch",
     "people-told#relationship-note",
+    "slack#slack-channel",
     "slack#slack-message",
     "slack#slack-user",
     "sms#text-conversation",
     "sms#text-message",
-    "web#enrichment"
+    "web#enrichment",
+    "web-form#form-submission"
    ]
   },
   {
@@ -11667,7 +11836,6 @@ window.LIBRARY = {
    "blurb": "What is owed and not yet done, and how long it has waited.",
    "shape": "an empty circle, what is owed and by whom, and its age on the right",
    "parts": "3",
-   "waits_on": "counts",
    "fed_by": [
     "promise-made-undelivered",
     "ask-made-unanswered",
@@ -11677,7 +11845,7 @@ window.LIBRARY = {
    "intro": "",
    "sections": {
     "What it shows": {
-     "html": "<p>Things left hanging: a promise you made and haven't kept, a question someone asked and got no answer to, a blocker standing in the way. Promises and blockers are one widget because they have one shape: something owed, by someone, for some time.</p>\n<p>It rests only on counts, and none of them can say yet which assembly it counts within (each has <code>over: []</code>). So the widget is wired in but reaches no record yet: the rows on a card are read off the card, not counted.</p>\n<p>It is also the one widget whose rows are a reading rather than a record. No channel carries a \"promise\" or a \"blocker\": both are drawn from words and a date (your line \"I'll send it this week\", and when you wrote it). Once the counts are written it may turn out to be What they said with an age, and fold into it.</p>"
+     "html": "<p>Things left hanging: a promise you made and haven't kept, a question someone asked and got no answer to, a blocker standing in the way. Promises and blockers are one widget because they have one shape: something owed, by someone, for some time.</p>\n<p>It rests only on counts, which is why it waited on them. Since 21 September all three are written and say which assembly they count within, so the widget reaches twenty-two records through the conversation and the thing it shows is countable rather than read off the card.</p>\n<p>It is still the one widget whose rows are a reading rather than a record. No channel carries a \"promise\" or a \"blocker\": both are drawn from words and a date (your line \"I'll send it this week\", and when you wrote it). What the counts settled is that the drawing happens once, on the counting floor, where it can be checked, rather than in each card's prose.</p>"
     },
     "Row form": {
      "html": "<p><code>&lt;what is owed&gt; · &lt;who owes it, and since when&gt; · &lt;how long&gt;</code></p>"
@@ -11688,8 +11856,31 @@ window.LIBRARY = {
     "Row form"
    ],
    "file": "widgets/open-items.md",
-   "markdown": "---\nid: open-items\nfamily: detail\nlabel: Open items\nblurb: What is owed and not yet done, and how long it has waited.\nshape: an empty circle, what is owed and by whom, and its age on the right\nparts: 3\nwaits_on: counts   # reaches no record until the counts it rests on are written\nfed_by: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm]\n---\n\n# Open items\n\n## What it shows\n\nThings left hanging: a promise you made and haven't kept, a question someone asked and got no\nanswer to, a blocker standing in the way. Promises and blockers are one widget because they\nhave one shape: something owed, by someone, for some time.\n\nIt rests only on counts, and none of them can say yet which assembly it counts within (each has\n`over: []`). So the widget is wired in but reaches no record yet: the rows on a card are read off\nthe card, not counted.\n\nIt is also the one widget whose rows are a reading rather than a record. No channel carries a\n\"promise\" or a \"blocker\": both are drawn from words and a date (your line \"I'll send it this\nweek\", and when you wrote it). Once the counts are written it may turn out to be What they said with\nan age, and fold into it.\n\n## Row form\n\n`<what is owed> · <who owes it, and since when> · <how long>`\n",
-   "reaches": []
+   "markdown": "---\nid: open-items\nfamily: detail\nlabel: Open items\nblurb: What is owed and not yet done, and how long it has waited.\nshape: an empty circle, what is owed and by whom, and its age on the right\nparts: 3\nfed_by: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm]\n---\n\n# Open items\n\n## What it shows\n\nThings left hanging: a promise you made and haven't kept, a question someone asked and got no\nanswer to, a blocker standing in the way. Promises and blockers are one widget because they\nhave one shape: something owed, by someone, for some time.\n\nIt rests only on counts, which is why it waited on them. Since 21 September all three are written\nand say which assembly they count within, so the widget reaches twenty-two records through the\nconversation and the thing it shows is countable rather than read off the card.\n\nIt is still the one widget whose rows are a reading rather than a record. No channel carries a\n\"promise\" or a \"blocker\": both are drawn from words and a date (your line \"I'll send it this\nweek\", and when you wrote it). What the counts settled is that the drawing happens once, on the\ncounting floor, where it can be checked, rather than in each card's prose.\n\n## Row form\n\n`<what is owed> · <who owes it, and since when> · <how long>`\n",
+   "reaches": [
+    "calendar#calendar-event",
+    "calendar#free-busy",
+    "calendar#status-event",
+    "gmail#email-message",
+    "gmail#email-thread",
+    "linkedin#job-change",
+    "linkedin#mutual-connections",
+    "linkedin#profile",
+    "meet#meeting",
+    "meet#participant",
+    "meet#transcript",
+    "people-told#contact-preference",
+    "people-told#correction",
+    "people-told#offline-touch",
+    "people-told#relationship-note",
+    "slack#slack-channel",
+    "slack#slack-message",
+    "slack#slack-user",
+    "sms#text-conversation",
+    "sms#text-message",
+    "web#enrichment",
+    "web-form#form-submission"
+   ]
   },
   {
    "id": "people",

@@ -2,24 +2,27 @@
 id: reply-length-vs-own-rhythm
 label: "Reply length, against usual"
 used_by: [blocker, champion, warming, warmth-fading]
-over: []   # not written yet. One of: person-history, meeting-history
-defined: false   # nothing here is written yet. See the body.
+over: [person-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How long their replies are now, against how long they used to be.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: Same as the speed number: five replies before a median means anything.
 ---
 
 # Reply length, against usual
-
 ## What it counts
 
-Not written yet.
+The median length of their replies over the last month, in words, against the median across the
+whole history, with the direction of travel. The companion to `reply-speed-vs-own-rhythm`, and the
+two move independently: somebody who answers as fast as ever in half the words has changed
+something.
 
-This entry exists because 4 signals reference this id: [`blocker`](../signals/blocker.md), [`champion`](../signals/champion.md), [`warming`](../signals/warming.md), [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.
-
-Merged 18 September: `reply-length-vs-own-baseline` meant the same thing and now points here.
-
-Merged 18 September: `reply-length-trend` meant the same thing and now points here, and so, through it, does `warmth-trend-in-replies`.
+Words rather than characters, and the quoted trail of an earlier message is stripped before
+counting, because a reply that quotes the whole thread is not a long reply.
 
 ## What it cannot see
 
-Not written yet.
+A person who has switched to writing from a phone, whose answers get shorter for a reason that has
+nothing to do with you. And warmth expressed in one perfect sentence, which this reads as
+disengagement.

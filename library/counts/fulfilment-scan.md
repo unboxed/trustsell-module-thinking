@@ -2,19 +2,28 @@
 id: fulfilment-scan
 label: "Anything that kept the promise"
 used_by: [loose-end, they-owe-you]
-over: []   # not written yet. One of: conversation-history, person-history, meeting-history
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: For each open promise, whether anything later on record could have closed it: an attachment, a meeting, a file, a document, or a message naming the thing.
+needs: [gmail#email-message, gmail#attachment, calendar#calendar-event, meet#meeting, slack#slack-file, handover#handed-over-document]
+breaks: It is a scan, not a judgement: it reports what it found, and matching a thing to a promise is the read s call where the match is not exact.
 ---
 
 # Anything that kept the promise
 ## What it counts
 
-Not written yet.
+For each row in `promise-made-undelivered` or `their-promise-undelivered`, everything later on
+record that could have closed it: an attachment sent after the promise, a calendar event or meeting
+with the person the promise named, a file shared, a document handed over, or a message that names
+the promised thing.
 
-This entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.
+It returns what it found and where, not a yes or no. An exact match (the named document, attached)
+is a close. Anything less is handed up to the read, because deciding that a meeting on Tuesday was
+the promised walkthrough is a judgement and judgements do not live on this floor.
 
 ## What it cannot see
 
-Not written yet.
+A promise kept outside the connected channels: a document posted, a phone call, a conversation in a
+corridor. Those leave the promise looking open, which is the safer error for a count whose purpose
+is to stop the tool saying a thing was never done.

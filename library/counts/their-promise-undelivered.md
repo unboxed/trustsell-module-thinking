@@ -2,31 +2,28 @@
 id: their-promise-undelivered
 label: "What they said they would do, not done"
 used_by: [they-owe-you]
-over: []   # not written yet. One of: conversation-history, person-history, meeting-history
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Each concrete thing the buyer said they would do that nothing on record shows happening.
+needs: [gmail#email-message, slack#slack-message, sms#text-message, meet#transcript]
+breaks: Loose words ("I will see what I can do") are kept with the row, never graded here, because most of what a buyer says sits between a promise and a politeness.
 ---
 
 # What they said they would do, not done
 ## What it counts
 
-Each concrete commitment the **buyer** made, in their own words, on a thread or a captured call,
-that nothing on record has closed: what they said, when they said it, and how long ago. The mirror
-of `promise-made-undelivered` with the speaker swapped. Each one is kept with the words, because
-the words are what decide how firm it was, and how firm it was is the whole of the read's
-confidence. Which records it needs and when the number stops meaning anything are not written in
-the count's fields yet, like every other count.
+Each concrete commitment the **buyer** made, one row per promise: the words, the day, how long ago
+in working days, and what would close it. The mirror of `promise-made-undelivered` with the speaker
+swapped, and it keeps the words for the same reason that one drops vague promises: on a buyer's
+side vagueness is the normal case, so the read grades it and the count must hand over the evidence
+to grade.
 
-Which assembly it counts within is not written yet. It is one of
-[`conversation-history`](../assemblies/conversation-history.md),
-[`person-history`](../assemblies/person-history.md) or
-[`meeting-history`](../assemblies/meeting-history.md), the same three the sibling count
-`promise-made-undelivered` names.
+What closes one is usually not a message. A promised introduction closes when a new name appears on
+a thread or in a diary, a promised document closes when it arrives, a promised date closes when
+they name it.
 
 ## What it cannot see
 
-The difference between a promise and a politeness, which is far harder on a buyer's side than on a
-seller's. "I'll see what I can do" is not a commitment and "I'll send it Friday" is, and most of
-what a buyer says sits between them. The count keeps the words rather than grading them, and the
-read grades. It also cannot see a promise kept inside their own organisation and never mentioned,
-which is the same blindness [`steps-on-their-side`](../signals/steps-on-their-side.md) is built
-around.
+Work done inside their organisation and never mentioned, which is most of it. It also cannot see a
+promise they made to somebody else at your firm, unless the firm shares its records.

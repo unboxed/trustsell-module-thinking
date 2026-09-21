@@ -2,19 +2,28 @@
 id: commitment-made-on-call
 label: "Promises made on calls"
 used_by: [loose-end, they-owe-you]
-over: []   # not written yet. One of: conversation-history, person-history, meeting-history
-defined: false   # nothing here is written yet. See the body.
+over: [meeting-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Each promise made on a captured call, by either side, lifted from the transcript with the passage it came from.
+needs: [meet#transcript, meet#smart-notes, meet#recording]
+breaks: It stops the moment a call is not captured, and the read says so rather than reading silence as nothing promised.
 ---
 
 # Promises made on calls
 ## What it counts
 
-Not written yet.
+Each promise made aloud on a captured call, by either side, one row per promise: who said it, the
+passage it came from, and the day. It feeds the same two piles as the thread counts, so a
+commitment made in a meeting is a commitment, and the read does not have to know which room it
+happened in.
 
-This entry exists because one signal references this id: [`loose-end`](../signals/loose-end.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.
+It carries the passage rather than a summary, because a promise lifted from speech is the most
+likely of all of them to be wrong, and a reader who can see the sentence can overrule it in a
+second.
 
 ## What it cannot see
 
-Not written yet.
+Every call nobody recorded, which at most firms is most of them. A meeting that was held but not
+captured shows only that you spoke, never what was said, and the reads above treat that as a data
+gap rather than as an empty meeting.

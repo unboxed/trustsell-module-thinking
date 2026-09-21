@@ -5,7 +5,6 @@ label: Open items
 blurb: What is owed and not yet done, and how long it has waited.
 shape: an empty circle, what is owed and by whom, and its age on the right
 parts: 3
-waits_on: counts   # reaches no record until the counts it rests on are written
 fed_by: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm]
 ---
 
@@ -17,14 +16,14 @@ Things left hanging: a promise you made and haven't kept, a question someone ask
 answer to, a blocker standing in the way. Promises and blockers are one widget because they
 have one shape: something owed, by someone, for some time.
 
-It rests only on counts, and none of them can say yet which assembly it counts within (each has
-`over: []`). So the widget is wired in but reaches no record yet: the rows on a card are read off
-the card, not counted.
+It rests only on counts, which is why it waited on them. Since 21 September all three are written
+and say which assembly they count within, so the widget reaches twenty-two records through the
+conversation and the thing it shows is countable rather than read off the card.
 
-It is also the one widget whose rows are a reading rather than a record. No channel carries a
+It is still the one widget whose rows are a reading rather than a record. No channel carries a
 "promise" or a "blocker": both are drawn from words and a date (your line "I'll send it this
-week", and when you wrote it). Once the counts are written it may turn out to be What they said with
-an age, and fold into it.
+week", and when you wrote it). What the counts settled is that the drawing happens once, on the
+counting floor, where it can be checked, rather than in each card's prose.
 
 ## Row form
 

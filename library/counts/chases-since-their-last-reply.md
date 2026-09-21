@@ -3,19 +3,25 @@ id: chases-since-their-last-reply
 label: "Your messages since they last wrote"
 used_by: [enough-tries, pushing]
 over: [conversation-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many times you have written since they last wrote back, with the day of each.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: It resets to zero on any reply, including a one-word one, because a reply is a reply.
 ---
 
 # Your messages since they last wrote
 ## What it counts
 
-Not written yet.
+The messages you have sent since the last message they sent, counted, with the day of each. It
+resets to zero the moment anything comes back, including "thanks" and including an out of office
+sent by a person rather than a machine, because the question it answers is whether you are talking
+into silence and a reply means you are not.
 
-This entry exists because two signals reference this id: [`enough-tries`](../signals/enough-tries.md) and [`pushing`](../signals/pushing.md). What it actually counts (your messages to them, across channels, since their last one; or since the first, where they have never replied), which records it needs and when the number stops meaning anything are all still to be decided. A message by text is not gathered by any assembly yet, so it would not be counted.
-
-It counts within [`conversation-history`](../assemblies/conversation-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is the sharper half of `times-you-chase`: that one measures the whole thread, this one measures
+the current run.
 
 ## What it cannot see
 
-Not written yet.
+A reply that went to somebody else at your firm, which makes the run look longer than it is. And a
+reply on a channel nobody has connected, which does the same.
