@@ -2,21 +2,24 @@
 id: colleagues-looped-in-count
 label: "Colleagues they copy in"
 used_by: [champion, warming]
-over: []   # not written yet. One of: person-history, meeting-history
-defined: false   # nothing here is written yet. See the body.
+over: [person-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many people at their organisation this person has brought into a thread or a meeting, and when.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]
+breaks: Somebody added and never heard from is still added; whether they engaged is a different number.
 ---
 
 # Colleagues they copy in
 ## What it counts
 
-Not written yet.
+How many colleagues this person has pulled in: added to a thread, copied for the first time,
+invited to a meeting. One row per name with the day they appeared and how they appeared.
 
-This entry exists because 2 signals reference this id: [`champion`](../signals/champion.md), [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.
-
-Merged 18 September: `new-people-from-their-side` meant the same thing and now points here.
+Pulling somebody in is the most reliable sign of a champion in the whole library, because it costs
+them something internally and nothing external makes them do it.
 
 ## What it cannot see
 
-Not written yet.
+Somebody brought in by a forward you never see, and somebody brought in verbally who turns up
+later with no trail. Both make a champion look quieter than they are.

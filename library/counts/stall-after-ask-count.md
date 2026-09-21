@@ -2,19 +2,25 @@
 id: stall-after-ask-count
 label: "Next steps that stall"
 used_by: [blocker]
-over: []   # not written yet. One of: conversation-history, person-history, meeting-history, objection-list, deal
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many times a next step was agreed and then nothing happened.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]
+breaks: A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.
 ---
 
 # Next steps that stall
 ## What it counts
 
-Not written yet.
+Each time something was agreed as the next step, and what happened after: the step, the day it was
+agreed, and whether anything on record shows it taken within the time it was meant to take. A tally
+of the ones that stalled.
 
-This entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md), [`objection-list`](../assemblies/objection-list.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.
+It is the behavioural half of a blocker. A worry nobody voices shows up here as a pattern of things
+agreed and not done.
 
 ## What it cannot see
 
-Not written yet.
+A step taken and never mentioned, and a step that stalled for a reason nothing to do with the deal.
+It also cannot see a next step agreed aloud and never written down, which is most of them.

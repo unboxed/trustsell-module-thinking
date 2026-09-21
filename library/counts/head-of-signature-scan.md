@@ -2,19 +2,26 @@
 id: head-of-signature-scan
 label: "Job titles in signatures"
 used_by: [new-stakeholder]
-over: []   # not written yet. One of: conversation-history, stakeholder-map
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: For a new name, what the record says about their role: their signature, their title, their place.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, linkedin#profile, web#enrichment, contacts#contact]
+breaks: A title is not authority. It says what they are called, and what that means differs at every organisation.
 ---
 
 # Job titles in signatures
 ## What it counts
 
-Not written yet.
+For each new name, what can be resolved about them: the job title in their own signature, their
+title on the open web or the address book, and where they sit relative to the people already on the
+thread.
 
-This entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.
+The signature first, because it is theirs. A title somebody wrote about themselves is worth more
+than one scraped from a directory that may be three years old.
 
 ## What it cannot see
 
-Not written yet.
+What a title means. A Director of Resources at one organisation signs things a Director of
+Resources at another has never heard of, and no count can carry that. It is also blind to the
+person with no title who decides everything.

@@ -3,19 +3,24 @@ id: dropped-recurring-meeting
 label: "Regular meeting dropped"
 used_by: [cooling-champion]
 over: [person-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: A standing meeting with them that has stopped, or that they have started declining.
+needs: [meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]
+breaks: A series ending at its natural end is not a drop, and the count checks the series had no end date before reporting one.
 ---
 
 # Regular meeting dropped
 ## What it counts
 
-Not written yet.
+A recurring meeting with this person that has stopped happening: cancelled, declined twice or more
+in a row, or simply not recurring any further. One row per series, with when it last happened and
+how it ended.
 
-This entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Of all the behavioural numbers in the library this is the loudest, because a standing meeting takes
+a deliberate act to end and nobody ends one by accident.
 
 ## What it cannot see
 
-Not written yet.
+A meeting moved rather than dropped, where the new series is a different event. And a series that
+ended because the project it belonged to ended, which is not about you at all.

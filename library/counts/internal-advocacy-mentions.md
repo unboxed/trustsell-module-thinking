@@ -2,19 +2,26 @@
 id: internal-advocacy-mentions
 label: "Speaks up for you to colleagues"
 used_by: [champion]
-over: []   # not written yet. One of: person-history, conversation-history, meeting-history
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Each time they mention having argued your case inside their own organisation, in writing.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: It counts what they say they did, never what they did.
 ---
 
 # Speaks up for you to colleagues
 ## What it counts
 
-Not written yet.
+Each written line where this person reports arguing your case internally: "I've put it to the
+board", "I talked Ade round", "I'm presenting it on Thursday". One row per mention, with the words
+and the day.
 
-This entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.
+It is deliberately a count of **claims**, not of deeds. What happened in a room inside their
+organisation is not on any record you will ever hold, and the honest floor for a read about a
+champion is what they told you they did.
 
 ## What it cannot see
 
-Not written yet.
+Whether any of it happened. Also a champion who does all of it and never mentions it, which is
+common in people who think of it as their own job rather than a favour to you.

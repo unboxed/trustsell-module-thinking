@@ -2,19 +2,25 @@
 id: new-attendee-on-event
 label: "New name on an invite"
 used_by: [new-stakeholder]
-over: []   # not written yet. One of: conversation-history, stakeholder-map
-defined: false   # nothing here is written yet. See the body.
+over: [stakeholder-map]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Each person attending a meeting with you for the first time.
+needs: [meet#participant, meet#meeting, calendar#calendar-event]
+breaks: An invitation is not an attendance, and the count separates the two where the record can tell them apart.
 ---
 
 # New name on an invite
 ## What it counts
 
-Not written yet.
+Each person who appears on a meeting with this organisation for the first time: who, which
+meeting, which day, and whether they accepted, attended or merely were invited. One row per person.
 
-This entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.
+A new face in a room is a stronger sign than a new address on a thread, because somebody chose to
+spend an hour. It counts within the account's standing map of people, not within the meetings, so a
+face new to the meeting but known at the account is not counted as new.
 
 ## What it cannot see
 
-Not written yet.
+Who was actually in the room, where the record only carries who was invited. And anybody who joined
+a call from somebody else's laptop.

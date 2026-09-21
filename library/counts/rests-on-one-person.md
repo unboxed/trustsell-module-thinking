@@ -3,19 +3,25 @@ id: rests-on-one-person
 label: "Depends on one person"
 used_by: [missing-people]
 over: [stakeholder-map]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How much of this relationship runs through a single person.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event]
+breaks: It measures concentration, not risk. A single excellent contact is not a problem until they leave.
 ---
 
 # Depends on one person
 ## What it counts
 
-Not written yet.
+What share of everything passing between you and this organisation involves one person: of all
+messages, meetings and things given, how many they are on. Reported as the share for the top
+person, and the share for the top two.
 
-This entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+A relationship where one name is on ninety per cent of everything is one resignation from nothing,
+and this is the number that says so before it happens.
 
 ## What it cannot see
 
-Not written yet.
+Somebody who is on nothing and decides everything. And an organisation where one person is
+genuinely the right and only door, which this reads the same as one where you have simply never
+tried anybody else.

@@ -2177,16 +2177,28 @@ window.LIBRARY = {
    "used_by": [
     "champion"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "meeting-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time they spoke for you on a captured call, with the passage.",
+   "needs": [
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "It stops where the recording stops. An uncaptured call is not a call with nothing said in it.",
    "title": "Speaks up for you on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each passage on a captured call where this person argued your case to somebody else in the room: answering a colleague's objection for you, restating why it matters, pushing back on a delay. One row per passage, with who else was present and the day.</p>\n<p>The passage travels with the count, because \"she spoke for you\" is a claim somebody should be able to check in one click.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Every call nobody recorded. It also cannot hear advocacy that happened in a meeting you were not in, which is where most of it happens and which is exactly what a champion is for.</p>"
     }
    },
    "sectionOrder": [
@@ -2194,7 +2206,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/advocacy-voiced-on-call.md",
-   "markdown": "---\nid: advocacy-voiced-on-call\nlabel: \"Speaks up for you on calls\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Speaks up for you on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: advocacy-voiced-on-call\nlabel: \"Speaks up for you on calls\"\nused_by: [champion]\nover: [meeting-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time they spoke for you on a captured call, with the passage.\nneeds: [meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: It stops where the recording stops. An uncaptured call is not a call with nothing said in it.\n---\n\n# Speaks up for you on calls\n## What it counts\n\nEach passage on a captured call where this person argued your case to somebody else in the room:\nanswering a colleague's objection for you, restating why it matters, pushing back on a delay. One\nrow per passage, with who else was present and the day.\n\nThe passage travels with the count, because \"she spoke for you\" is a claim somebody should be able\nto check in one click.\n\n## What it cannot see\n\nEvery call nobody recorded. It also cannot hear advocacy that happened in a meeting you were not\nin, which is where most of it happens and which is exactly what a champion is for.\n"
   },
   {
    "id": "agreed-payments-not-on-record",
@@ -2407,16 +2419,28 @@ window.LIBRARY = {
    "used_by": [
     "buying-intent"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether money or procurement has entered the conversation, and when.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.",
    "title": "Budget or buying team joins",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>The first time, and every time since, that the conversation turns to money or to a process: a budget named, a procurement or purchasing person on a thread, a purchase order, a framework, a tender. One row per occurrence, with the words and the day.</p>\n<p>It is the plainest sign in the library that a conversation has become a purchase, because nobody involves procurement out of curiosity.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A budget discussed on a call nobody captured, and a procurement process that starts inside their organisation and reaches you weeks later. It also cannot tell a procurement person brought in to buy from one brought in to say no.</p>"
     }
    },
    "sectionOrder": [
@@ -2424,7 +2448,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/budget-or-procurement-entered.md",
-   "markdown": "---\nid: budget-or-procurement-entered\nlabel: \"Budget or buying team joins\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Budget or buying team joins\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: budget-or-procurement-entered\nlabel: \"Budget or buying team joins\"\nused_by: [buying-intent]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether money or procurement has entered the conversation, and when.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.\n---\n\n# Budget or buying team joins\n## What it counts\n\nThe first time, and every time since, that the conversation turns to money or to a process: a\nbudget named, a procurement or purchasing person on a thread, a purchase order, a framework, a\ntender. One row per occurrence, with the words and the day.\n\nIt is the plainest sign in the library that a conversation has become a purchase, because nobody\ninvolves procurement out of curiosity.\n\n## What it cannot see\n\nA budget discussed on a call nobody captured, and a procurement process that starts inside their\norganisation and reaches you weeks later. It also cannot tell a procurement person brought in to\nbuy from one brought in to say no.\n"
   },
   {
    "id": "channel-register-shift",
@@ -2721,16 +2745,33 @@ window.LIBRARY = {
     "champion",
     "warming"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many people at their organisation this person has brought into a thread or a meeting, and when.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "Somebody added and never heard from is still added; whether they engaged is a different number.",
    "title": "Colleagues they copy in",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because 2 signals reference this id: <a href=\"../signals/champion.md\"><code>champion</code></a>, <a href=\"../signals/warming.md\"><code>warming</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>\n<p>Merged 18 September: <code>new-people-from-their-side</code> meant the same thing and now points here.</p>"
+     "html": "<p>How many colleagues this person has pulled in: added to a thread, copied for the first time, invited to a meeting. One row per name with the day they appeared and how they appeared.</p>\n<p>Pulling somebody in is the most reliable sign of a champion in the whole library, because it costs them something internally and nothing external makes them do it.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Somebody brought in by a forward you never see, and somebody brought in verbally who turns up later with no trail. Both make a champion look quieter than they are.</p>"
     }
    },
    "sectionOrder": [
@@ -2738,7 +2779,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/colleagues-looped-in-count.md",
-   "markdown": "---\nid: colleagues-looped-in-count\nlabel: \"Colleagues they copy in\"\nused_by: [champion, warming]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Colleagues they copy in\n## What it counts\n\nNot written yet.\n\nThis entry exists because 2 signals reference this id: [`champion`](../signals/champion.md), [`warming`](../signals/warming.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\nMerged 18 September: `new-people-from-their-side` meant the same thing and now points here.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: colleagues-looped-in-count\nlabel: \"Colleagues they copy in\"\nused_by: [champion, warming]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many people at their organisation this person has brought into a thread or a meeting, and when.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: Somebody added and never heard from is still added; whether they engaged is a different number.\n---\n\n# Colleagues they copy in\n## What it counts\n\nHow many colleagues this person has pulled in: added to a thread, copied for the first time,\ninvited to a meeting. One row per name with the day they appeared and how they appeared.\n\nPulling somebody in is the most reliable sign of a champion in the whole library, because it costs\nthem something internally and nothing external makes them do it.\n\n## What it cannot see\n\nSomebody brought in by a forward you never see, and somebody brought in verbally who turns up\nlater with no trail. Both make a champion look quieter than they are.\n"
   },
   {
    "id": "commitment-made-on-call",
@@ -2984,16 +3025,28 @@ window.LIBRARY = {
     "buying-intent",
     "disclosure-still-owed"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time their words turn from considering to deciding, with the passage.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.",
    "title": "They talk about deciding",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a> and, since 20 September, <a href=\"../signals/disclosure-still-owed.md\"><code>disclosure-still-owed</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).</p>"
+     "html": "<p>Each passage where their language moves from weighing to deciding: \"we want to go ahead\", \"send the paperwork\", \"we've chosen\", \"what do you need from us\". One row per passage, with the words, who said it and the day.</p>\n<p>The words are the whole of it. This is the one count in the library most likely to be wrong, because the same sentence means different things from different people, so it hands over the passage and never a verdict.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Somebody saying it who cannot decide, which is most of the people who say it. It also cannot see a decision taken internally and not yet said to you, which is the commonest place for a deal to be further on than it looks.</p>"
     }
    },
    "sectionOrder": [
@@ -3001,7 +3054,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/decision-language-used.md",
-   "markdown": "---\nid: decision-language-used\nlabel: \"They talk about deciding\"\nused_by: [buying-intent, disclosure-still-owed]\nover: []   # not written yet. One of: conversation-history, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# They talk about deciding\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`buying-intent`](../signals/buying-intent.md) and, since 20 September, [`disclosure-still-owed`](../signals/disclosure-still-owed.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads (narrowed 20 September, when a second signal took it).\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: decision-language-used\nlabel: \"They talk about deciding\"\nused_by: [buying-intent, disclosure-still-owed]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time their words turn from considering to deciding, with the passage.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.\n---\n\n# They talk about deciding\n## What it counts\n\nEach passage where their language moves from weighing to deciding: \"we want to go ahead\", \"send\nthe paperwork\", \"we've chosen\", \"what do you need from us\". One row per passage, with the words,\nwho said it and the day.\n\nThe words are the whole of it. This is the one count in the library most likely to be wrong,\nbecause the same sentence means different things from different people, so it hands over the\npassage and never a verdict.\n\n## What it cannot see\n\nSomebody saying it who cannot decide, which is most of the people who say it. It also cannot see a\ndecision taken internally and not yet said to you, which is the commonest place for a deal to be\nfurther on than it looks.\n"
   },
   {
    "id": "decision-maker-reached",
@@ -3012,16 +3065,30 @@ window.LIBRARY = {
    "over": [
     "stakeholder-map"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether anybody you have reached can actually decide, and what that rests on.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event",
+    "linkedin#profile",
+    "linkedin#mutual-connections",
+    "linkedin#job-change"
+   ],
+   "breaks": "It reports the evidence for authority, never authority itself. Nobody on a record ever says \"I decide\".",
    "title": "Reached the decision-maker",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Whether any person you have exchanged anything with is a decision-maker, with what that rests on: a title, something they said about signing, something a colleague said about them, or your own told note. One row per candidate with the evidence and its kind.</p>\n<p>Evidence kind is the point. A person who said \"I'll sign it\" is a different claim from a person whose title contains the word Director, and a read that cannot tell them apart will be confident about the wrong one.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Authority that is informal, which is most of it: the person everyone actually listens to, the technical veto, the one who has to be consulted. And a signature that is a formality where the real decision was taken elsewhere.</p>"
     }
    },
    "sectionOrder": [
@@ -3029,7 +3096,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/decision-maker-reached.md",
-   "markdown": "---\nid: decision-maker-reached\nlabel: \"Reached the decision-maker\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Reached the decision-maker\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: decision-maker-reached\nlabel: \"Reached the decision-maker\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether anybody you have reached can actually decide, and what that rests on.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event, linkedin#profile, linkedin#mutual-connections, linkedin#job-change]\nbreaks: It reports the evidence for authority, never authority itself. Nobody on a record ever says \"I decide\".\n---\n\n# Reached the decision-maker\n## What it counts\n\nWhether any person you have exchanged anything with is a decision-maker, with what that rests on:\na title, something they said about signing, something a colleague said about them, or your own told\nnote. One row per candidate with the evidence and its kind.\n\nEvidence kind is the point. A person who said \"I'll sign it\" is a different claim from a person\nwhose title contains the word Director, and a read that cannot tell them apart will be confident\nabout the wrong one.\n\n## What it cannot see\n\nAuthority that is informal, which is most of it: the person everyone actually listens to, the\ntechnical veto, the one who has to be consulted. And a signature that is a formality where the real\ndecision was taken elsewhere.\n"
   },
   {
    "id": "disclosures-on-record",
@@ -3205,16 +3272,25 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "A standing meeting with them that has stopped, or that they have started declining.",
+   "needs": [
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A series ending at its natural end is not a drop, and the count checks the series had no end date before reporting one.",
    "title": "Regular meeting dropped",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/cooling-champion.md\"><code>cooling-champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>A recurring meeting with this person that has stopped happening: cancelled, declined twice or more in a row, or simply not recurring any further. One row per series, with when it last happened and how it ended.</p>\n<p>Of all the behavioural numbers in the library this is the loudest, because a standing meeting takes a deliberate act to end and nobody ends one by accident.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A meeting moved rather than dropped, where the new series is a different event. And a series that ended because the project it belonged to ended, which is not about you at all.</p>"
     }
    },
    "sectionOrder": [
@@ -3222,7 +3298,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/dropped-recurring-meeting.md",
-   "markdown": "---\nid: dropped-recurring-meeting\nlabel: \"Regular meeting dropped\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Regular meeting dropped\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`cooling-champion`](../signals/cooling-champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: dropped-recurring-meeting\nlabel: \"Regular meeting dropped\"\nused_by: [cooling-champion]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: A standing meeting with them that has stopped, or that they have started declining.\nneeds: [meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A series ending at its natural end is not a drop, and the count checks the series had no end date before reporting one.\n---\n\n# Regular meeting dropped\n## What it counts\n\nA recurring meeting with this person that has stopped happening: cancelled, declined twice or more\nin a row, or simply not recurring any further. One row per series, with when it last happened and\nhow it ended.\n\nOf all the behavioural numbers in the library this is the loudest, because a standing meeting takes\na deliberate act to end and nobody ends one by accident.\n\n## What it cannot see\n\nA meeting moved rather than dropped, where the new series is a different event. And a series that\nended because the project it belonged to ended, which is not about you at all.\n"
   },
   {
    "id": "evidence-that-fits-them",
@@ -3404,16 +3480,26 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Something that has happened at their organisation or to them since you last spoke, that you could honestly open on.",
+   "needs": [
+    "web#web-result",
+    "web#research-report",
+    "web#enrichment",
+    "linkedin#job-change",
+    "linkedin#profile",
+    "web#page-content"
+   ],
+   "breaks": "It stops at what is published. A reason invented, or stretched from a sector trend, is not a reason and the read is silent without one.",
    "title": "A new reason to write",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Anything on the open record, dated after your last contact, that gives you something true to say: a report published, a role changed, an announcement, a piece of news, a commitment made. One row per thing, with the date and where it was found.</p>\n<p>The rule is that the reason has to be <strong>theirs</strong>. A product release of yours is not a reason to write to somebody who has gone quiet, and neither is a quarter ending. Where nothing is found, the read above it says there is no honest reason to write yet, which is a useful thing for a tool to say and the opposite of what a cadence does.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Anything that happened inside their organisation and was not published, which is nearly all of it. And the difference between news and noise: a press release about a sponsorship is dated and public and worth nothing, and the read has to tell that from a change of strategy.</p>"
     }
    },
    "sectionOrder": [
@@ -3421,7 +3507,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/fresh-reason-to-write.md",
-   "markdown": "---\nid: fresh-reason-to-write\nlabel: \"A new reason to write\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# A new reason to write\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: fresh-reason-to-write\nlabel: \"A new reason to write\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Something that has happened at their organisation or to them since you last spoke, that you could honestly open on.\nneeds: [web#web-result, web#research-report, web#enrichment, linkedin#job-change, linkedin#profile, web#page-content]\nbreaks: It stops at what is published. A reason invented, or stretched from a sector trend, is not a reason and the read is silent without one.\n---\n\n# A new reason to write\n## What it counts\n\nAnything on the open record, dated after your last contact, that gives you something true to say:\na report published, a role changed, an announcement, a piece of news, a commitment made. One row\nper thing, with the date and where it was found.\n\nThe rule is that the reason has to be **theirs**. A product release of yours is not a reason to\nwrite to somebody who has gone quiet, and neither is a quarter ending. Where nothing is found, the\nread above it says there is no honest reason to write yet, which is a useful thing for a tool to\nsay and the opposite of what a cadence does.\n\n## What it cannot see\n\nAnything that happened inside their organisation and was not published, which is nearly all of it.\nAnd the difference between news and noise: a press release about a sponsorship is dated and public\nand worth nothing, and the read has to tell that from a change of strategy.\n"
   },
   {
    "id": "friendly-words-trend",
@@ -3429,16 +3515,28 @@ window.LIBRARY = {
    "used_by": [
     "warmth-fading"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How the warm words in their messages have changed: greetings, thanks, first names, small talk.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It is the weakest number in the library and never stands alone. Formality is a person, a culture and a language before it is a feeling.",
    "title": "Warm words, over time",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>A tally per message of the things people do when they are comfortable: a first name, a greeting beyond \"Hi\", thanks, an aside about something not the deal, an exclamation mark. The median over the last month against the median over the whole history, with the direction.</p>\n<p>It is a trend and only a trend. The absolute number means nothing at all: some people write warmly to strangers and coolly to friends, and some languages and industries do one or the other as a matter of course.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Culture, language, mood and medium. A person who moves from mail to a workspace writes differently for reasons that have nothing to do with you, and this number will read it as cooling. Every read that uses it is told to pair it with something behavioural.</p>"
     }
    },
    "sectionOrder": [
@@ -3446,7 +3544,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/friendly-words-trend.md",
-   "markdown": "---\nid: friendly-words-trend\nlabel: \"Warm words, over time\"\nused_by: [warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Warm words, over time\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: friendly-words-trend\nlabel: \"Warm words, over time\"\nused_by: [warmth-fading]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How the warm words in their messages have changed: greetings, thanks, first names, small talk.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It is the weakest number in the library and never stands alone. Formality is a person, a culture and a language before it is a feeling.\n---\n\n# Warm words, over time\n## What it counts\n\nA tally per message of the things people do when they are comfortable: a first name, a greeting\nbeyond \"Hi\", thanks, an aside about something not the deal, an exclamation mark. The median over\nthe last month against the median over the whole history, with the direction.\n\nIt is a trend and only a trend. The absolute number means nothing at all: some people write warmly\nto strangers and coolly to friends, and some languages and industries do one or the other as a\nmatter of course.\n\n## What it cannot see\n\nCulture, language, mood and medium. A person who moves from mail to a workspace writes differently\nfor reasons that have nothing to do with you, and this number will read it as cooling. Every read\nthat uses it is told to pair it with something behavioural.\n"
   },
   {
    "id": "fulfilment-scan",
@@ -3549,16 +3647,30 @@ window.LIBRARY = {
    "used_by": [
     "new-stakeholder"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "For a new name, what the record says about their role: their signature, their title, their place.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "linkedin#profile",
+    "web#enrichment",
+    "contacts#contact"
+   ],
+   "breaks": "A title is not authority. It says what they are called, and what that means differs at every organisation.",
    "title": "Job titles in signatures",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each new name, what can be resolved about them: the job title in their own signature, their title on the open web or the address book, and where they sit relative to the people already on the thread.</p>\n<p>The signature first, because it is theirs. A title somebody wrote about themselves is worth more than one scraped from a directory that may be three years old.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>What a title means. A Director of Resources at one organisation signs things a Director of Resources at another has never heard of, and no count can carry that. It is also blind to the person with no title who decides everything.</p>"
     }
    },
    "sectionOrder": [
@@ -3566,7 +3678,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/head-of-signature-scan.md",
-   "markdown": "---\nid: head-of-signature-scan\nlabel: \"Job titles in signatures\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Job titles in signatures\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: head-of-signature-scan\nlabel: \"Job titles in signatures\"\nused_by: [new-stakeholder]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: For a new name, what the record says about their role: their signature, their title, their place.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, linkedin#profile, web#enrichment, contacts#contact]\nbreaks: A title is not authority. It says what they are called, and what that means differs at every organisation.\n---\n\n# Job titles in signatures\n## What it counts\n\nFor each new name, what can be resolved about them: the job title in their own signature, their\ntitle on the open web or the address book, and where they sit relative to the people already on the\nthread.\n\nThe signature first, because it is theirs. A title somebody wrote about themselves is worth more\nthan one scraped from a directory that may be three years old.\n\n## What it cannot see\n\nWhat a title means. A Director of Resources at one organisation signs things a Director of\nResources at another has never heard of, and no count can carry that. It is also blind to the\nperson with no title who decides everything.\n"
   },
   {
    "id": "how-close-you-were",
@@ -3577,16 +3689,30 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How much of a relationship there was, at its height: turns, meetings, how long it ran, how even it was.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "It describes the high-water mark, not today. Nothing here says the closeness survived.",
    "title": "How close you were",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>A picture of the relationship at its strongest: how many turns passed, over how long, how many meetings, and how even the giving was. One set of numbers for the whole history, and the period they belong to.</p>\n<p>It is what tells a reconnection from a cold approach. Writing to somebody you worked with for a year is a different act from writing to somebody who answered you twice in 2021, and the message that treats them the same is the one that lands worst.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Everything that made it close and left no record: the drink after the conference, the favour, the thing you sorted out for them. A warm relationship conducted mostly by phone reads here as a thin one.</p>"
     }
    },
    "sectionOrder": [
@@ -3594,7 +3720,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/how-close-you-were.md",
-   "markdown": "---\nid: how-close-you-were\nlabel: \"How close you were\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How close you were\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: how-close-you-were\nlabel: \"How close you were\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How much of a relationship there was, at its height: turns, meetings, how long it ran, how even it was.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: It describes the high-water mark, not today. Nothing here says the closeness survived.\n---\n\n# How close you were\n## What it counts\n\nA picture of the relationship at its strongest: how many turns passed, over how long, how many\nmeetings, and how even the giving was. One set of numbers for the whole history, and the period\nthey belong to.\n\nIt is what tells a reconnection from a cold approach. Writing to somebody you worked with for a\nyear is a different act from writing to somebody who answered you twice in 2021, and the message\nthat treats them the same is the one that lands worst.\n\n## What it cannot see\n\nEverything that made it close and left no record: the drink after the conference, the favour, the\nthing you sorted out for them. A warm relationship conducted mostly by phone reads here as a thin\none.\n"
   },
   {
    "id": "how-far-through-the-term",
@@ -3661,16 +3787,30 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How long since anything passed between you, against how long the two of you usually leave it.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "Under about five exchanges there is no usual, and it returns the age alone and says so.",
    "title": "Their silence, against usual",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/time-to-reconnect.md\"><code>time-to-reconnect</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>\n<p>Merged 18 September: <code>silence-vs-own-rhythm</code> meant the same thing and now points here.</p>"
+     "html": "<p>How long since anything passed in either direction, in working days, against the median gap across your whole history with them. Both numbers, never the ratio alone.</p>\n<p>It differs from <code>reply-gap-vs-own-rhythm</code> in what it measures: that one is a reply outstanding, this one is a relationship gone quiet, and a relationship can be quiet with nothing owed by anybody.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Contact off the connected channels, which makes a live relationship look dead. And a person whose median is built from a single intense fortnight two years ago.</p>"
     }
    },
    "sectionOrder": [
@@ -3678,7 +3818,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/how-long-quiet-vs-own-rhythm.md",
-   "markdown": "---\nid: how-long-quiet-vs-own-rhythm\nlabel: \"Their silence, against usual\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Their silence, against usual\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`time-to-reconnect`](../signals/time-to-reconnect.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\nMerged 18 September: `silence-vs-own-rhythm` meant the same thing and now points here.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: how-long-quiet-vs-own-rhythm\nlabel: \"Their silence, against usual\"\nused_by: [time-to-reconnect]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How long since anything passed between you, against how long the two of you usually leave it.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: Under about five exchanges there is no usual, and it returns the age alone and says so.\n---\n\n# Their silence, against usual\n## What it counts\n\nHow long since anything passed in either direction, in working days, against the median gap across\nyour whole history with them. Both numbers, never the ratio alone.\n\nIt differs from `reply-gap-vs-own-rhythm` in what it measures: that one is a reply outstanding,\nthis one is a relationship gone quiet, and a relationship can be quiet with nothing owed by\nanybody.\n\n## What it cannot see\n\nContact off the connected channels, which makes a live relationship look dead. And a person whose\nmedian is built from a single intense fortnight two years ago.\n"
   },
   {
    "id": "how-recently-one-completed",
@@ -3838,16 +3978,28 @@ window.LIBRARY = {
    "used_by": [
     "champion"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time they mention having argued your case inside their own organisation, in writing.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what they say they did, never what they did.",
    "title": "Speaks up for you to colleagues",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion.md\"><code>champion</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each written line where this person reports arguing your case internally: \"I've put it to the board\", \"I talked Ade round\", \"I'm presenting it on Thursday\". One row per mention, with the words and the day.</p>\n<p>It is deliberately a count of <strong>claims</strong>, not of deeds. What happened in a room inside their organisation is not on any record you will ever hold, and the honest floor for a read about a champion is what they told you they did.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether any of it happened. Also a champion who does all of it and never mentions it, which is common in people who think of it as their own job rather than a favour to you.</p>"
     }
    },
    "sectionOrder": [
@@ -3855,7 +4007,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/internal-advocacy-mentions.md",
-   "markdown": "---\nid: internal-advocacy-mentions\nlabel: \"Speaks up for you to colleagues\"\nused_by: [champion]\nover: []   # not written yet. One of: person-history, conversation-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Speaks up for you to colleagues\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion`](../signals/champion.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md), [`conversation-history`](../assemblies/conversation-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: internal-advocacy-mentions\nlabel: \"Speaks up for you to colleagues\"\nused_by: [champion]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time they mention having argued your case inside their own organisation, in writing.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what they say they did, never what they did.\n---\n\n# Speaks up for you to colleagues\n## What it counts\n\nEach written line where this person reports arguing your case internally: \"I've put it to the\nboard\", \"I talked Ade round\", \"I'm presenting it on Thursday\". One row per mention, with the words\nand the day.\n\nIt is deliberately a count of **claims**, not of deeds. What happened in a room inside their\norganisation is not on any record you will ever hold, and the honest floor for a read about a\nchampion is what they told you they did.\n\n## What it cannot see\n\nWhether any of it happened. Also a champion who does all of it and never mentions it, which is\ncommon in people who think of it as their own job rather than a favour to you.\n"
   },
   {
    "id": "intro-chain-length",
@@ -3863,16 +4015,29 @@ window.LIBRARY = {
    "used_by": [
     "warm-path"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many people stand between you and the target on the shortest path.",
+   "needs": [
+    "linkedin#profile",
+    "linkedin#mutual-connections",
+    "linkedin#job-change",
+    "contacts#contact",
+    "contacts#other-contact",
+    "contacts#contact-group"
+   ],
+   "breaks": "Beyond two steps it stops being a path and starts being a theory, and the count says so rather than reporting a number.",
    "title": "Steps to an introduction",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>The shortest route from you to the target through people you deal with: one step (you deal with somebody who knows them), two steps, or further. One row per route, shortest first.</p>\n<p>One step is an introduction. Two is a favour. More than two is not a path, and the count reports the length rather than pretending distance does not matter.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether anybody on the chain would actually make the introduction, which is the whole question and is on no record anywhere.</p>"
     }
    },
    "sectionOrder": [
@@ -3880,7 +4045,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/intro-chain-length.md",
-   "markdown": "---\nid: intro-chain-length\nlabel: \"Steps to an introduction\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Steps to an introduction\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: intro-chain-length\nlabel: \"Steps to an introduction\"\nused_by: [warm-path]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many people stand between you and the target on the shortest path.\nneeds: [linkedin#profile, linkedin#mutual-connections, linkedin#job-change, contacts#contact, contacts#other-contact, contacts#contact-group]\nbreaks: Beyond two steps it stops being a path and starts being a theory, and the count says so rather than reporting a number.\n---\n\n# Steps to an introduction\n## What it counts\n\nThe shortest route from you to the target through people you deal with: one step (you deal with\nsomebody who knows them), two steps, or further. One row per route, shortest first.\n\nOne step is an introduction. Two is a favour. More than two is not a path, and the count reports\nthe length rather than pretending distance does not matter.\n\n## What it cannot see\n\nWhether anybody on the chain would actually make the introduction, which is the whole question and\nis on no record anywhere.\n"
   },
   {
    "id": "money-in-by-period",
@@ -3945,16 +4110,33 @@ window.LIBRARY = {
    "used_by": [
     "warm-path"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many people you deal with are connected to this target, and how strongly you deal with each.",
+   "needs": [
+    "linkedin#profile",
+    "linkedin#mutual-connections",
+    "linkedin#job-change",
+    "contacts#contact",
+    "contacts#other-contact",
+    "contacts#contact-group",
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "A connection is not a relationship on either side. It counts links, and the read has to weigh both ends.",
    "title": "People you both know",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For one target you have never spoken to, how many people you genuinely deal with have a connection to them, and for each of those bridges, how strong your own dealing is: how recently, how often, how two-way.</p>\n<p>Both ends matter and only one of them is visible. Your end is countable from your own records; their end is a connection on a network, which may mean everything or nothing.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>How well the bridge actually knows the target. A connection made at a conference in 2018 looks identical to a decade of working together.</p>"
     }
    },
    "sectionOrder": [
@@ -3962,7 +4144,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/mutual-contact-count.md",
-   "markdown": "---\nid: mutual-contact-count\nlabel: \"People you both know\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People you both know\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: mutual-contact-count\nlabel: \"People you both know\"\nused_by: [warm-path]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many people you deal with are connected to this target, and how strongly you deal with each.\nneeds: [linkedin#profile, linkedin#mutual-connections, linkedin#job-change, contacts#contact, contacts#other-contact, contacts#contact-group, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: A connection is not a relationship on either side. It counts links, and the read has to weigh both ends.\n---\n\n# People you both know\n## What it counts\n\nFor one target you have never spoken to, how many people you genuinely deal with have a connection\nto them, and for each of those bridges, how strong your own dealing is: how recently, how often,\nhow two-way.\n\nBoth ends matter and only one of them is visible. Your end is countable from your own records;\ntheir end is a connection on a network, which may mean everything or nothing.\n\n## What it cannot see\n\nHow well the bridge actually knows the target. A connection made at a conference in 2018 looks\nidentical to a decade of working together.\n"
   },
   {
    "id": "named-vs-anonymous-reference",
@@ -4026,16 +4208,26 @@ window.LIBRARY = {
    "used_by": [
     "new-stakeholder"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each person attending a meeting with you for the first time.",
+   "needs": [
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "An invitation is not an attendance, and the count separates the two where the record can tell them apart.",
    "title": "New name on an invite",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each person who appears on a meeting with this organisation for the first time: who, which meeting, which day, and whether they accepted, attended or merely were invited. One row per person.</p>\n<p>A new face in a room is a stronger sign than a new address on a thread, because somebody chose to spend an hour. It counts within the account's standing map of people, not within the meetings, so a face new to the meeting but known at the account is not counted as new.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Who was actually in the room, where the record only carries who was invited. And anybody who joined a call from somebody else's laptop.</p>"
     }
    },
    "sectionOrder": [
@@ -4043,7 +4235,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/new-attendee-on-event.md",
-   "markdown": "---\nid: new-attendee-on-event\nlabel: \"New name on an invite\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New name on an invite\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: new-attendee-on-event\nlabel: \"New name on an invite\"\nused_by: [new-stakeholder]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each person attending a meeting with you for the first time.\nneeds: [meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: An invitation is not an attendance, and the count separates the two where the record can tell them apart.\n---\n\n# New name on an invite\n## What it counts\n\nEach person who appears on a meeting with this organisation for the first time: who, which\nmeeting, which day, and whether they accepted, attended or merely were invited. One row per person.\n\nA new face in a room is a stronger sign than a new address on a thread, because somebody chose to\nspend an hour. It counts within the account's standing map of people, not within the meetings, so a\nface new to the meeting but known at the account is not counted as new.\n\n## What it cannot see\n\nWho was actually in the room, where the record only carries who was invited. And anybody who joined\na call from somebody else's laptop.\n"
   },
   {
    "id": "new-name-on-thread",
@@ -4051,16 +4243,27 @@ window.LIBRARY = {
    "used_by": [
     "new-stakeholder"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each person appearing on a thread for the first time, and the day they appeared.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "Somebody copied once and never again is still new, and the read decides whether that mattered.",
    "title": "New name on a thread",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each address that appears on one of this deal's threads for the first time: who, on which thread, on which day, and whether they were added by you or by them. One row per person.</p>\n<p>Added by them is the fact that matters. A name you copied in is your move; a name they copied in is a change in who is involved, and it is the earliest thing on record that says so.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Somebody involved without being copied, which is how most decisions are actually taken. It also cannot tell a new decision-maker from an assistant managing a diary.</p>"
     }
    },
    "sectionOrder": [
@@ -4068,7 +4271,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/new-name-on-thread.md",
-   "markdown": "---\nid: new-name-on-thread\nlabel: \"New name on a thread\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# New name on a thread\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: new-name-on-thread\nlabel: \"New name on a thread\"\nused_by: [new-stakeholder]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each person appearing on a thread for the first time, and the day they appeared.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: Somebody copied once and never again is still new, and the read decides whether that mattered.\n---\n\n# New name on a thread\n## What it counts\n\nEach address that appears on one of this deal's threads for the first time: who, on which thread,\non which day, and whether they were added by you or by them. One row per person.\n\nAdded by them is the fact that matters. A name you copied in is your move; a name they copied in is\na change in who is involved, and it is the earliest thing on record that says so.\n\n## What it cannot see\n\nSomebody involved without being copied, which is how most decisions are actually taken. It also\ncannot tell a new decision-maker from an assistant managing a diary.\n"
   },
   {
    "id": "objection-entry-exists",
@@ -4104,16 +4307,33 @@ window.LIBRARY = {
    "used_by": [
     "blocker"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether a worry raised on the thread matches one you have already written an answer for.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.",
    "title": "Matches a known worry",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each worry on record in this conversation, whether it matches an entry in your told objection list, and which. Matching is on meaning rather than on wording, and where the match is not exact the count reports both the worry and the candidate entry rather than deciding.</p>\n<p>It is what lets the read above say \"this is the pricing objection again\" rather than \"they said something about money\".</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A worry expressed so obliquely that no entry looks like it, which is how the most serious ones usually arrive. It also cannot see a worry somebody has and does not say.</p>"
     }
    },
    "sectionOrder": [
@@ -4121,7 +4341,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-name-match.md",
-   "markdown": "---\nid: objection-name-match\nlabel: \"Matches a known worry\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, objection-list, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Matches a known worry\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md), [`objection-list`](../assemblies/objection-list.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-name-match\nlabel: \"Matches a known worry\"\nused_by: [blocker]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether a worry raised on the thread matches one you have already written an answer for.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.\n---\n\n# Matches a known worry\n## What it counts\n\nFor each worry on record in this conversation, whether it matches an entry in your told objection\nlist, and which. Matching is on meaning rather than on wording, and where the match is not exact\nthe count reports both the worry and the candidate entry rather than deciding.\n\nIt is what lets the read above say \"this is the pricing objection again\" rather than \"they said\nsomething about money\".\n\n## What it cannot see\n\nA worry expressed so obliquely that no entry looks like it, which is how the most serious ones\nusually arrive. It also cannot see a worry somebody has and does not say.\n"
   },
   {
    "id": "objection-raised-on-call",
@@ -4129,16 +4349,33 @@ window.LIBRARY = {
    "used_by": [
     "blocker"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each worry raised aloud on a captured call, with the passage.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.",
    "title": "Worries raised on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each worry raised on a captured call, one row per passage, with who said it and the day. It feeds the same pile as the worries raised in writing, so an objection made in a meeting is an objection.</p>\n<p>The passage travels with it, because a worry summarised is a worry changed.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Every uncaptured call, and every worry raised in a meeting you were not in, which is where a deal is usually lost.</p>"
     }
    },
    "sectionOrder": [
@@ -4146,7 +4383,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-raised-on-call.md",
-   "markdown": "---\nid: objection-raised-on-call\nlabel: \"Worries raised on calls\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, objection-list, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Worries raised on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md), [`objection-list`](../assemblies/objection-list.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-raised-on-call\nlabel: \"Worries raised on calls\"\nused_by: [blocker]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each worry raised aloud on a captured call, with the passage.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.\n---\n\n# Worries raised on calls\n## What it counts\n\nEach worry raised on a captured call, one row per passage, with who said it and the day. It feeds\nthe same pile as the worries raised in writing, so an objection made in a meeting is an objection.\n\nThe passage travels with it, because a worry summarised is a worry changed.\n\n## What it cannot see\n\nEvery uncaptured call, and every worry raised in a meeting you were not in, which is where a deal\nis usually lost.\n"
   },
   {
    "id": "offerings-in-play",
@@ -4214,16 +4451,33 @@ window.LIBRARY = {
    "over": [
     "stakeholder-map"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "The roles a decision here needs, against the roles you have actually reached.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event",
+    "linkedin#profile",
+    "linkedin#mutual-connections",
+    "linkedin#job-change",
+    "contacts#contact",
+    "contacts#other-contact",
+    "contacts#contact-group"
+   ],
+   "breaks": "The list of roles needed is told, not deduced. Where nobody has said what a decision takes, there is nothing to hold the map against and the number is absent rather than zero.",
    "title": "People reached, against needed",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The cast a decision at this kind of organisation needs, from what you told the tool, against the people you have reached, matched by role. One row per role needed, marked reached, copied or missing, with who fills it where that is known.</p>\n<p>It is the arithmetic under \"who is missing\", and it can only ever be as good as the told list of roles, which is why a told gap here is named loudly rather than filled with an invented org chart.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A role that exists at this organisation and not on your list, and a person who covers two roles. It also cannot see somebody influential with no role in the decision at all, which is what a champion often is.</p>"
     }
    },
    "sectionOrder": [
@@ -4231,7 +4485,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/people-covered-vs-needed.md",
-   "markdown": "---\nid: people-covered-vs-needed\nlabel: \"People reached, against needed\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People reached, against needed\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: people-covered-vs-needed\nlabel: \"People reached, against needed\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: The roles a decision here needs, against the roles you have actually reached.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event, linkedin#profile, linkedin#mutual-connections, linkedin#job-change, contacts#contact, contacts#other-contact, contacts#contact-group]\nbreaks: The list of roles needed is told, not deduced. Where nobody has said what a decision takes, there is nothing to hold the map against and the number is absent rather than zero.\n---\n\n# People reached, against needed\n## What it counts\n\nThe cast a decision at this kind of organisation needs, from what you told the tool, against the\npeople you have reached, matched by role. One row per role needed, marked reached, copied or\nmissing, with who fills it where that is known.\n\nIt is the arithmetic under \"who is missing\", and it can only ever be as good as the told list of\nroles, which is why a told gap here is named loudly rather than filled with an invented org chart.\n\n## What it cannot see\n\nA role that exists at this organisation and not on your list, and a person who covers two roles.\nIt also cannot see somebody influential with no role in the decision at all, which is what a\nchampion often is.\n"
   },
   {
    "id": "people-reached-count",
@@ -4242,16 +4496,27 @@ window.LIBRARY = {
    "over": [
     "stakeholder-map"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many people at this organisation you have actually exchanged anything with.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "Copied is not reached. Somebody on a thread who has never written is not counted as reached, and the count keeps both numbers.",
    "title": "People reached",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Two numbers. How many people at this organisation are on a thread or a meeting with you at all, and how many of those have ever said anything back. One row per person with which of the two they are.</p>\n<p>The gap between the two numbers is the useful part: eleven people copied and three who have ever written is a very different account from three and three.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Anybody reached by phone or in person with no trail. And anybody reading every thread from a distribution list, who is reached in every sense that matters and appears nowhere.</p>"
     }
    },
    "sectionOrder": [
@@ -4259,7 +4524,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/people-reached-count.md",
-   "markdown": "---\nid: people-reached-count\nlabel: \"People reached\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# People reached\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: people-reached-count\nlabel: \"People reached\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many people at this organisation you have actually exchanged anything with.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: Copied is not reached. Somebody on a thread who has never written is not counted as reached, and the count keeps both numbers.\n---\n\n# People reached\n## What it counts\n\nTwo numbers. How many people at this organisation are on a thread or a meeting with you at all,\nand how many of those have ever said anything back. One row per person with which of the two they\nare.\n\nThe gap between the two numbers is the useful part: eleven people copied and three who have ever\nwritten is a very different account from three and three.\n\n## What it cannot see\n\nAnybody reached by phone or in person with no trail. And anybody reading every thread from a\ndistribution list, who is reached in every sense that matters and appears nowhere.\n"
   },
   {
    "id": "periods-covered",
@@ -4323,16 +4588,28 @@ window.LIBRARY = {
    "used_by": [
     "buying-intent"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time they ask what it costs, with the words and the day.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.",
    "title": "Asked about price",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each question from them about price, in their own words: what it costs, how it is priced, what a group their size pays, whether there is a discount. One row per question, with the day and whether anything since answered it.</p>\n<p>The last part is what makes it more than a tally: an unanswered pricing question is the same fact as an open ask, and two reads want it for opposite reasons.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A price discussed aloud, and a price asked for by somebody else at their organisation who never wrote to you.</p>"
     }
    },
    "sectionOrder": [
@@ -4340,7 +4617,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/pricing-question-asked.md",
-   "markdown": "---\nid: pricing-question-asked\nlabel: \"Asked about price\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked about price\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: pricing-question-asked\nlabel: \"Asked about price\"\nused_by: [buying-intent]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time they ask what it costs, with the words and the day.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.\n---\n\n# Asked about price\n## What it counts\n\nEach question from them about price, in their own words: what it costs, how it is priced, what a\ngroup their size pays, whether there is a discount. One row per question, with the day and whether\nanything since answered it.\n\nThe last part is what makes it more than a tally: an unanswered pricing question is the same fact\nas an open ask, and two reads want it for opposite reasons.\n\n## What it cannot see\n\nA price discussed aloud, and a price asked for by somebody else at their organisation who never\nwrote to you.\n"
   },
   {
    "id": "prior-history-scan",
@@ -4348,16 +4625,33 @@ window.LIBRARY = {
    "used_by": [
     "new-stakeholder"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "For a new name, whether you have ever dealt with them before, anywhere.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event",
+    "linkedin#profile",
+    "linkedin#mutual-connections",
+    "linkedin#job-change"
+   ],
+   "breaks": "It matches a person, not an address. Where the identity work is unsure, it says so rather than claiming an old friend.",
    "title": "Spoken to before",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/new-stakeholder.md\"><code>new-stakeholder</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each new name, everything on record from before they appeared here: an earlier thread at a different organisation, a meeting years ago, a mutual connection, an entry in the address book. One row per find, with the date and where.</p>\n<p>It is the difference between \"a new person has joined the thread\" and \"a new person has joined the thread and you sold to them in 2022\", which are not the same card at all.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A person whose name or address has changed, where nothing links the two. The identity work is <code>person-history</code>'s and it is honest about being unsure, which this count passes on rather than hiding.</p>"
     }
    },
    "sectionOrder": [
@@ -4365,7 +4659,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/prior-history-scan.md",
-   "markdown": "---\nid: prior-history-scan\nlabel: \"Spoken to before\"\nused_by: [new-stakeholder]\nover: []   # not written yet. One of: conversation-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Spoken to before\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`new-stakeholder`](../signals/new-stakeholder.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: prior-history-scan\nlabel: \"Spoken to before\"\nused_by: [new-stakeholder]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: For a new name, whether you have ever dealt with them before, anywhere.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event, linkedin#profile, linkedin#mutual-connections, linkedin#job-change]\nbreaks: It matches a person, not an address. Where the identity work is unsure, it says so rather than claiming an old friend.\n---\n\n# Spoken to before\n## What it counts\n\nFor each new name, everything on record from before they appeared here: an earlier thread at a\ndifferent organisation, a meeting years ago, a mutual connection, an entry in the address book. One\nrow per find, with the date and where.\n\nIt is the difference between \"a new person has joined the thread\" and \"a new person has joined the\nthread and you sold to them in 2022\", which are not the same card at all.\n\n## What it cannot see\n\nA person whose name or address has changed, where nothing links the two. The identity work is\n`person-history`'s and it is honest about being unsure, which this count passes on rather than\nhiding.\n"
   },
   {
    "id": "priorities-they-state",
@@ -4550,16 +4844,28 @@ window.LIBRARY = {
    "used_by": [
     "buying-intent"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time they ask for a proposal, a pilot, a trial or the paperwork.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.",
    "title": "Asked for a proposal or trial",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each request from them for something formal: a proposal, a quote, a pilot, a trial, a security review, the paperwork. One row per request, with the words, the day, and whether it has been met.</p>\n<p>These are the requests that cost them something internally to make, which is why they carry more than enthusiasm does.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A request made on a call, and a request made to somebody else at your firm. It also cannot tell a proposal wanted in order to buy from one wanted in order to compare you with an incumbent.</p>"
     }
    },
    "sectionOrder": [
@@ -4567,7 +4873,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proposal-or-trial-requested.md",
-   "markdown": "---\nid: proposal-or-trial-requested\nlabel: \"Asked for a proposal or trial\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked for a proposal or trial\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proposal-or-trial-requested\nlabel: \"Asked for a proposal or trial\"\nused_by: [buying-intent]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time they ask for a proposal, a pilot, a trial or the paperwork.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.\n---\n\n# Asked for a proposal or trial\n## What it counts\n\nEach request from them for something formal: a proposal, a quote, a pilot, a trial, a\nsecurity review, the paperwork. One row per request, with the words, the day, and whether it has\nbeen met.\n\nThese are the requests that cost them something internally to make, which is why they carry more\nthan enthusiasm does.\n\n## What it cannot see\n\nA request made on a call, and a request made to somebody else at your firm. It also cannot tell a\nproposal wanted in order to buy from one wanted in order to compare you with an incumbent.\n"
   },
   {
    "id": "re-asked-questions",
@@ -4656,16 +4962,33 @@ window.LIBRARY = {
    "used_by": [
     "blocker"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many times the same worry has come back on this deal, and how far apart.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.",
    "title": "Same worry raised again",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>For each worry on this deal, how many times it has been raised and the gap between the raisings. A worry raised three times over three months is a different fact from one raised three times in a week, and both are different from one raised once.</p>\n<p>Repetition is the signal, not the count: a worry answered and dropped never comes back, so a worry that comes back was not answered, whatever was said at the time.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether the same words mean the same worry. Two mentions of price can be two different problems, one about the number and one about the shape of it.</p>"
     }
    },
    "sectionOrder": [
@@ -4673,7 +4996,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/repeated-objection-count.md",
-   "markdown": "---\nid: repeated-objection-count\nlabel: \"Same worry raised again\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, objection-list, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Same worry raised again\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md), [`objection-list`](../assemblies/objection-list.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: repeated-objection-count\nlabel: \"Same worry raised again\"\nused_by: [blocker]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many times the same worry has come back on this deal, and how far apart.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.\n---\n\n# Same worry raised again\n## What it counts\n\nFor each worry on this deal, how many times it has been raised and the gap between the raisings. A\nworry raised three times over three months is a different fact from one raised three times in a\nweek, and both are different from one raised once.\n\nRepetition is the signal, not the count: a worry answered and dropped never comes back, so a worry\nthat comes back was not answered, whatever was said at the time.\n\n## What it cannot see\n\nWhether the same words mean the same worry. Two mentions of price can be two different problems,\none about the number and one about the shape of it.\n"
   },
   {
    "id": "repeated-outgoings-to-one-payee",
@@ -4948,16 +5271,27 @@ window.LIBRARY = {
    "over": [
     "stakeholder-map"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How much of this relationship runs through a single person.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "It measures concentration, not risk. A single excellent contact is not a problem until they leave.",
    "title": "Depends on one person",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/missing-people.md\"><code>missing-people</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>What share of everything passing between you and this organisation involves one person: of all messages, meetings and things given, how many they are on. Reported as the share for the top person, and the share for the top two.</p>\n<p>A relationship where one name is on ninety per cent of everything is one resignation from nothing, and this is the number that says so before it happens.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Somebody who is on nothing and decides everything. And an organisation where one person is genuinely the right and only door, which this reads the same as one where you have simply never tried anybody else.</p>"
     }
    },
    "sectionOrder": [
@@ -4965,7 +5299,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/rests-on-one-person.md",
-   "markdown": "---\nid: rests-on-one-person\nlabel: \"Depends on one person\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Depends on one person\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`missing-people`](../signals/missing-people.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`stakeholder-map`](../assemblies/stakeholder-map.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: rests-on-one-person\nlabel: \"Depends on one person\"\nused_by: [missing-people]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How much of this relationship runs through a single person.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: It measures concentration, not risk. A single excellent contact is not a problem until they leave.\n---\n\n# Depends on one person\n## What it counts\n\nWhat share of everything passing between you and this organisation involves one person: of all\nmessages, meetings and things given, how many they are on. Reported as the share for the top\nperson, and the share for the top two.\n\nA relationship where one name is on ninety per cent of everything is one resignation from nothing,\nand this is the number that says so before it happens.\n\n## What it cannot see\n\nSomebody who is on nothing and decides everything. And an organisation where one person is\ngenuinely the right and only door, which this reads the same as one where you have simply never\ntried anybody else.\n"
   },
   {
    "id": "route-in-on-record",
@@ -5058,16 +5392,30 @@ window.LIBRARY = {
    "used_by": [
     "warm-path"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "person-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Somebody already on a thread with both you and the target.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "Being on one thread together is not knowing each other.",
    "title": "Someone you both know on a thread",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>People who appear on a thread or in a meeting with both you and the target, without an introduction ever having been made. One row per person, with the thread or meeting and the day.</p>\n<p>It is the warmest kind of bridge, because it needs no favour: the person is already in the room. It counts within your history with the bridge rather than within the thread, because what makes the bridge worth anything is your own dealing with them.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A shared thread where the two never interacted, which is most large distribution lists.</p>"
     }
    },
    "sectionOrder": [
@@ -5075,7 +5423,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/shared-contact-on-thread.md",
-   "markdown": "---\nid: shared-contact-on-thread\nlabel: \"Someone you both know on a thread\"\nused_by: [warm-path]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Someone you both know on a thread\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warm-path`](../signals/warm-path.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`stakeholder-map`](../assemblies/stakeholder-map.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: shared-contact-on-thread\nlabel: \"Someone you both know on a thread\"\nused_by: [warm-path]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Somebody already on a thread with both you and the target.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: Being on one thread together is not knowing each other.\n---\n\n# Someone you both know on a thread\n## What it counts\n\nPeople who appear on a thread or in a meeting with both you and the target, without an\nintroduction ever having been made. One row per person, with the thread or meeting and the day.\n\nIt is the warmest kind of bridge, because it needs no favour: the person is already in the room. It\ncounts within your history with the bridge rather than within the thread, because what makes the\nbridge worth anything is your own dealing with them.\n\n## What it cannot see\n\nA shared thread where the two never interacted, which is most large distribution lists.\n"
   },
   {
    "id": "since-an-answer-landed",
@@ -5139,16 +5487,33 @@ window.LIBRARY = {
    "used_by": [
     "blocker"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many times a next step was agreed and then nothing happened.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.",
    "title": "Next steps that stall",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/blocker.md\"><code>blocker</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each time something was agreed as the next step, and what happened after: the step, the day it was agreed, and whether anything on record shows it taken within the time it was meant to take. A tally of the ones that stalled.</p>\n<p>It is the behavioural half of a blocker. A worry nobody voices shows up here as a pattern of things agreed and not done.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A step taken and never mentioned, and a step that stalled for a reason nothing to do with the deal. It also cannot see a next step agreed aloud and never written down, which is most of them.</p>"
     }
    },
    "sectionOrder": [
@@ -5156,7 +5521,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/stall-after-ask-count.md",
-   "markdown": "---\nid: stall-after-ask-count\nlabel: \"Next steps that stall\"\nused_by: [blocker]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, objection-list, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Next steps that stall\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`blocker`](../signals/blocker.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md), [`objection-list`](../assemblies/objection-list.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: stall-after-ask-count\nlabel: \"Next steps that stall\"\nused_by: [blocker]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many times a next step was agreed and then nothing happened.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A stall is read against what was agreed, so where nothing was agreed there is nothing to count and the number is not zero, it is absent.\n---\n\n# Next steps that stall\n## What it counts\n\nEach time something was agreed as the next step, and what happened after: the step, the day it was\nagreed, and whether anything on record shows it taken within the time it was meant to take. A tally\nof the ones that stalled.\n\nIt is the behavioural half of a blocker. A worry nobody voices shows up here as a pattern of things\nagreed and not done.\n\n## What it cannot see\n\nA step taken and never mentioned, and a step that stalled for a reason nothing to do with the deal.\nIt also cannot see a next step agreed aloud and never written down, which is most of them.\n"
   },
   {
    "id": "steps-run-without-you",
@@ -5332,16 +5697,28 @@ window.LIBRARY = {
    "used_by": [
     "warmth-fading"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "meeting-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How much of a captured call each side spoke for, and how that has moved across calls.",
+   "needs": [
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "It needs three or more captured calls before a trend means anything.",
    "title": "Who does the talking on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/warmth-fading.md\"><code>warmth-fading</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/person-history.md\"><code>person-history</code></a> or <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>The share of speaking time on each captured call, by side, and the trend across calls in order. A buyer who used to talk for two thirds of a call and now talks for a fifth has changed something, and it is usually the first sign in the whole library that shows before the words do.</p>\n<p>Time, not turns: ten short interjections is not the same as ten minutes.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Every uncaptured call. It also cannot see who is in the room but silent, and it reads a call where you were presenting as a call where they disengaged. The reads above it are told to discount a demo.</p>"
     }
    },
    "sectionOrder": [
@@ -5349,7 +5726,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/talk-time-on-calls.md",
-   "markdown": "---\nid: talk-time-on-calls\nlabel: \"Who does the talking on calls\"\nused_by: [warmth-fading]\nover: []   # not written yet. One of: person-history, meeting-history\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Who does the talking on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`warmth-fading`](../signals/warmth-fading.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`person-history`](../assemblies/person-history.md) or [`meeting-history`](../assemblies/meeting-history.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: talk-time-on-calls\nlabel: \"Who does the talking on calls\"\nused_by: [warmth-fading]\nover: [meeting-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How much of a captured call each side spoke for, and how that has moved across calls.\nneeds: [meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: It needs three or more captured calls before a trend means anything.\n---\n\n# Who does the talking on calls\n## What it counts\n\nThe share of speaking time on each captured call, by side, and the trend across calls in order. A\nbuyer who used to talk for two thirds of a call and now talks for a fifth has changed something,\nand it is usually the first sign in the whole library that shows before the words do.\n\nTime, not turns: ten short interjections is not the same as ten minutes.\n\n## What it cannot see\n\nEvery uncaptured call. It also cannot see who is in the room but silent, and it reads a call where\nyou were presenting as a call where they disengaged. The reads above it are told to discount a\ndemo.\n"
   },
   {
    "id": "target-cold-to-you",
@@ -5358,16 +5735,33 @@ window.LIBRARY = {
     "warm-path",
     "customer-introduction"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "stakeholder-map"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether you have ever had any contact with this person at all.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event",
+    "contacts#contact",
+    "contacts#other-contact",
+    "contacts#contact-group"
+   ],
+   "breaks": "It is a gate, not a judgement: it says there is nothing on record, never that they do not know you.",
    "title": "You have never spoken to them",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because two signals reference this id: <a href=\"../signals/warm-path.md\"><code>warm-path</code></a>, which reads it before a sale, and <a href=\"../signals/customer-introduction.md\"><code>customer-introduction</code></a>, which reads it after one. Both ask the same plain thing of a name, whether you have ever spoken to them. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is <a href=\"../assemblies/stakeholder-map.md\"><code>stakeholder-map</code></a>, now the only assembly every signal using it reads, or <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, which only one of them does. Adding the second signal on 21 September narrowed the choice and did not settle it.</p>"
+     "html": "<p>Whether anything on record has ever passed between you and this person: a message, a meeting, an entry in the address book, a told offline touch. Yes or no, with what it found.</p>\n<p>It gates every read about a way in. A person you have dealt with does not need an introduction, and a read that offers one to somebody you know looks foolish in a way that costs trust.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A meeting at a conference nobody wrote down, which the told <code>offline-touch</code> record exists to close.</p>"
     }
    },
    "sectionOrder": [
@@ -5375,7 +5769,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/target-cold-to-you.md",
-   "markdown": "---\nid: target-cold-to-you\nlabel: \"You have never spoken to them\"\nused_by: [warm-path, customer-introduction]\nover: []   # not written yet. One of: person-history, stakeholder-map\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# You have never spoken to them\n## What it counts\n\nNot written yet.\n\nThis entry exists because two signals reference this id: [`warm-path`](../signals/warm-path.md), which reads it before a sale, and [`customer-introduction`](../signals/customer-introduction.md), which reads it after one. Both ask the same plain thing of a name, whether you have ever spoken to them. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is [`stakeholder-map`](../assemblies/stakeholder-map.md), now the only assembly every signal using it reads, or [`person-history`](../assemblies/person-history.md), which only one of them does. Adding the second signal on 21 September narrowed the choice and did not settle it.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: target-cold-to-you\nlabel: \"You have never spoken to them\"\nused_by: [warm-path, customer-introduction]\nover: [stakeholder-map]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether you have ever had any contact with this person at all.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#participant, meet#meeting, calendar#calendar-event, contacts#contact, contacts#other-contact, contacts#contact-group]\nbreaks: It is a gate, not a judgement: it says there is nothing on record, never that they do not know you.\n---\n\n# You have never spoken to them\n## What it counts\n\nWhether anything on record has ever passed between you and this person: a message, a meeting, an\nentry in the address book, a told offline touch. Yes or no, with what it found.\n\nIt gates every read about a way in. A person you have dealt with does not need an introduction, and\na read that offers one to somebody you know looks foolish in a way that costs trust.\n\n## What it cannot see\n\nA meeting at a conference nobody wrote down, which the told `offline-touch` record exists to\nclose.\n"
   },
   {
    "id": "terms-used-wrongly",
@@ -5528,16 +5922,28 @@ window.LIBRARY = {
    "used_by": [
     "buying-intent"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Each time they ask when it could start, how long it takes, or what happens next.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission"
+   ],
+   "breaks": "It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.",
    "title": "Asked when it could start",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/buying-intent.md\"><code>buying-intent</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/deal.md\"><code>deal</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each question from them about time: when could it start, how long does it take, what happens after we agree, could it be in before the year end. One row per question with the words and the day.</p>\n<p>A buyer asking how long something takes has already imagined having it, which is why this sits beside the money questions rather than with the curious ones.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>The same blindness as the rest: calls, and questions asked of colleagues. It also reads a procurement officer's timetable question, which is administration, the same as a buyer's, which is intent.</p>"
     }
    },
    "sectionOrder": [
@@ -5545,7 +5951,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/timeline-or-start-question.md",
-   "markdown": "---\nid: timeline-or-start-question\nlabel: \"Asked when it could start\"\nused_by: [buying-intent]\nover: []   # not written yet. One of: conversation-history, person-history, meeting-history, deal\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Asked when it could start\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`buying-intent`](../signals/buying-intent.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`person-history`](../assemblies/person-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`deal`](../assemblies/deal.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: timeline-or-start-question\nlabel: \"Asked when it could start\"\nused_by: [buying-intent]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Each time they ask when it could start, how long it takes, or what happens next.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]\nbreaks: It counts what was written. A conversation that moved on a call leaves this at zero, which is a data gap and not a quiet buyer.\n---\n\n# Asked when it could start\n## What it counts\n\nEach question from them about time: when could it start, how long does it take, what happens\nafter we agree, could it be in before the year end. One row per question with the words and the\nday.\n\nA buyer asking how long something takes has already imagined having it, which is why this sits\nbeside the money questions rather than with the curious ones.\n\n## What it cannot see\n\nThe same blindness as the rest: calls, and questions asked of colleagues. It also reads a\nprocurement officer's timetable question, which is administration, the same as a buyer's, which is\nintent.\n"
   },
   {
    "id": "times-they-have-bought",
@@ -5675,16 +6081,30 @@ window.LIBRARY = {
    "over": [
     "person-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether this person was ever really in a conversation with you, and when that was.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web-form#form-submission",
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#participant",
+    "meet#meeting",
+    "calendar#calendar-event"
+   ],
+   "breaks": "A single exchange is not a relationship, and the count says so rather than dating a friendship from one reply.",
    "title": "Was once in regular touch",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/champion-went-dark.md\"><code>champion-went-dark</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/person-history.md\"><code>person-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Whether there was ever a real two-way exchange with this person, and when it ran: how many turns, over what period, and how long ago it ended. Real means both sides wrote more than once.</p>\n<p>It is the gate on every read about somebody going quiet. A person who never engaged has not gone dark; they were never light, and the read that would chase them is a different read.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A relationship that lived on the phone and never in writing, which this reads as never having existed. That is the commonest way for this number to be wrong, and it is why it is a gate rather than a verdict.</p>"
     }
    },
    "sectionOrder": [
@@ -5692,7 +6112,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/was-once-active.md",
-   "markdown": "---\nid: was-once-active\nlabel: \"Was once in regular touch\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Was once in regular touch\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: was-once-active\nlabel: \"Was once in regular touch\"\nused_by: [champion-went-dark]\nover: [person-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether this person was ever really in a conversation with you, and when that was.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]\nbreaks: A single exchange is not a relationship, and the count says so rather than dating a friendship from one reply.\n---\n\n# Was once in regular touch\n## What it counts\n\nWhether there was ever a real two-way exchange with this person, and when it ran: how many turns,\nover what period, and how long ago it ended. Real means both sides wrote more than once.\n\nIt is the gate on every read about somebody going quiet. A person who never engaged has not gone\ndark; they were never light, and the read that would chase them is a different read.\n\n## What it cannot see\n\nA relationship that lived on the phone and never in writing, which this reads as never having\nexisted. That is the commonest way for this number to be wrong, and it is why it is a gate rather\nthan a verdict.\n"
   },
   {
    "id": "what-they-can-bear",
@@ -11816,6 +12236,8 @@ window.LIBRARY = {
     "linkedin#profile",
     "meet#meeting",
     "meet#participant",
+    "meet#smart-notes",
+    "meet#transcript",
     "people-told#contact-preference",
     "people-told#correction",
     "people-told#offline-touch",

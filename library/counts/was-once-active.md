@@ -3,19 +3,24 @@ id: was-once-active
 label: "Was once in regular touch"
 used_by: [champion-went-dark]
 over: [person-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Whether this person was ever really in a conversation with you, and when that was.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission, meet#transcript, meet#smart-notes, meet#participant, meet#meeting, calendar#calendar-event]
+breaks: A single exchange is not a relationship, and the count says so rather than dating a friendship from one reply.
 ---
 
 # Was once in regular touch
 ## What it counts
 
-Not written yet.
+Whether there was ever a real two-way exchange with this person, and when it ran: how many turns,
+over what period, and how long ago it ended. Real means both sides wrote more than once.
 
-This entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is the gate on every read about somebody going quiet. A person who never engaged has not gone
+dark; they were never light, and the read that would chase them is a different read.
 
 ## What it cannot see
 
-Not written yet.
+A relationship that lived on the phone and never in writing, which this reads as never having
+existed. That is the commonest way for this number to be wrong, and it is why it is a gate rather
+than a verdict.
