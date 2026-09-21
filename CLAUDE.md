@@ -56,9 +56,12 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   meant to serve any kind of sale, but the signals and counts were derived from one seller's questions
   (`library/docs/sales-questions.md`, the patient end), so the library answers that seller well and is
   silent about what they never had to ask. A second question set from the opposite end,
-  `library/docs/volume-questions.md`, and the map of what is and is not answered,
-  `library/docs/coverage.md`, exist to make that visible. **Read `coverage.md` before adding to a
-  rung.** A mass-selling scenario (PMF, a merchant cash advance broker) is the second pressure test.
+  `library/docs/volume-questions.md`, a third from a seller with a firm around her,
+  `library/docs/firm-questions.md` (21 September, not yet run through the map), and the map of what
+  is and is not answered, `library/docs/coverage.md`, exist to make that visible. **Read
+  `coverage.md` before adding to a rung.** A mass-selling scenario (PMF, a merchant cash advance
+  broker) is the second pressure test: its world is written, at
+  `library/scenarios/pmf/world/`, with no cards, and its ladder runs past the sale.
   **Not every entry has to hold for both ends** (20 September): some reads belong to long
   relationships and some to volume. The library is general because the set covers the spectrum and
   each entry says what it needs in order to stand, not because every entry is universal. Each
@@ -120,9 +123,10 @@ draft). `build.js` checks every join. See `library/docs/library-format.md`.
 
 Also there: `library/scenarios/bops/world/` (the pretend world as data: goal, cast, organisations, documents),
 `library/modules/` (who owns which reads) and `library/docs/` (the thinking behind the shape,
-including `tracing-back.md`, which this ladder is the executable form of; the two question sets the
-library is measured against, `sales-questions.md` and `volume-questions.md`; and `coverage.md`, the
-map of which of those questions nothing answers yet, with the work still to do at its end).
+including `tracing-back.md`, which this ladder is the executable form of; the three question sets the
+library is measured against, `sales-questions.md`, `volume-questions.md` and `firm-questions.md`;
+and `coverage.md`, the map of which of those questions nothing answers yet, with the work still to
+do at its end).
 
 **Two rungs are unfinished, on purpose.** No entry in `counts/` says yet what it counts;
 `defined: false` says so. Each names the assembly it counts within (`over:`) where only one is

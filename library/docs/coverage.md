@@ -7,7 +7,9 @@ read looks exactly like a read someone chose to leave out.
 
 This is the map that tells them apart. It runs both question sets, the patient seller's 26 and [the
 volume seller's 22](volume-questions.md), against what actually exists, and names the holes rather
-than filling them.
+than filling them. Since 21 September there is a third set, [the 21 questions of a seller with a
+firm around her](firm-questions.md), and this map **has not been run against it**. Every count
+below is a count against two sets.
 
 **How the verdicts work.** A question is *answered by a read* when a signal names it in `answers:`,
 which `build.js` checks. It is *answered elsewhere* when something that is not a read handles it: the
@@ -224,6 +226,29 @@ three are out of scope. The assumptions count: 13 reads assume nothing, 8 `threa
 `own-rhythm`, 2 `several-people`; so 21 of the 31 can be made on a live thread with no history,
 and 10 cannot.
 
+**Done in the seventh pass, 21 September.** The second scenario's world, and a third lens.
+[`scenarios/pmf/world/`](../scenarios/pmf/world/) is a broker placing merchant cash advances: ten
+businesses with one owner each, two people on the seller's side (a rep and a processor, and nobody
+sure where the line between them falls), and four funders with a box each. Its `cards/` is empty on
+purpose, and the build is clean with `SCENARIO` set to either world. Three things in it are the
+point. Its **ladder runs past the sale**, eight rungs, the trade's six (interested, applied,
+submitted, offers in, accepted, funded) and then repaying and coming round again, because a ladder
+that stops at the signature could never show the after-the-sale hole. Its `connected:` names
+**sms, web-form, handover and salesforce for the first time**, so the floors laid in the third and
+fifth passes are finally plugged in by a seller; Calendar, Meet, Drive, Contacts and LinkedIn are
+not, and `goal.md` says why for each. And its Pricing fills **the term and how it is paid**, the
+two told fields added in the sixth pass, which at this end are never empty. The documents are the
+ones the trade names: the signed application, three bank statements for the last three months, and
+stipulations on request. `documents.md` says the thing worth noticing, that "three statements for
+the last three months" is two facts and a handover request carries only one of them. *(The names,
+the businesses and the funders are fiction, as a scenario is by design; the shape of the trade is
+first-hand, from [`what-pmf-told-us.md`](../scenarios/pmf/docs/what-pmf-told-us.md).)* Beside it,
+the third question set, [`firm-questions.md`](firm-questions.md), `F1` to `F21`, read out of
+[`what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md); `build.js` parses it
+from the same "The list" heading as the other two, so a signal can claim an `F` id today. Seven of
+the twenty-one are questions neither other set asks. Running this map against them is the next
+thing on the list and has not been done.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
@@ -238,14 +263,12 @@ yet yours.)*
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.
-- **Write the second scenario's world**, `library/scenarios/pmf/world/`, with no `cards/`. A scenario
-  with a `world/` and no cards builds clean; `goal.md` must carry `offering`, `today`, `ladder` and
-  `connected` (which will name `sms`, `web-form` and `handover` for the first time), and the other
-  three world files must exist. It is built around live deals moving to a close, not a
-  list being worked. Its ladder continues past the sale, which is what makes the after-the-sale
-  family testable. Once it exists, `goal.md` could say what the sale has (a thread, a history,
-  several people) and the build could check that a card's reads assume no more than that, which
-  would turn `assumes:` from a label into a checked join.
+- **Run this map against the third set** (`F1` to `F21`), which the seventh pass wrote and did not
+  audit. Seven of its questions are asked by neither other set, and one of them, F8 (what the buyer
+  has not done yet on their side), is the one the third seller says no system does.
+- **Turn `assumes:` into a checked join.** Now that a second world exists, `goal.md` could say what
+  its sale has (a thread, a history, several people, a firm) and the build could refuse a card
+  whose reads assume more than that.
 - **Clear the BOPS names out of the general rungs.** Done 21 September, as far as the list went:
   `buying-intent` no longer turns on a procurement lead (the person who holds the budget, and who
   signs off); the council examples in `modules/00-spine.md`, `02-relationships.md` and

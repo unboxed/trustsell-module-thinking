@@ -69,15 +69,17 @@ Sources: [MCA broker and ISO guide](https://mcaleadspro.com/merchant-cash-advanc
 **A third seller, since 21 September.** An interview on 17 December 2025 with an enterprise account
 executive at Cority, kept as [`scenarios/cority/docs/what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md),
 is the patient end again with a firm around the seller and tenders on the buyer's side. It confirms
-the patient seller's questions in a second voice, and asks some neither set does. It is a candidate
-third question set, not a third scenario yet.
+the patient seller's questions in a second voice, and asks some neither set does. Those are now the
+third set, [`firm-questions.md`](firm-questions.md), `F1` to `F21`. It is not a third scenario:
+there is no world and no cards behind it.
 
 ## What this set is not
 
 It is not a second filing system. The 26 are used as a lens, not the backbone, and so is this set: a
 handle for showing how an answer traces down to plain facts, and where it cannot. A signal names the
-questions it answers in `answers:`, from either set, and `build.js` checks the id resolves. The ids
-are `V1` to `V22` here and `Q1` to `Q26` there.
+questions it answers in `answers:`, from any of the three sets, and `build.js` checks the id
+resolves. The ids are `V1` to `V22` here, `Q1` to `Q26` there, and `F1` to `F21` in
+[`firm-questions.md`](firm-questions.md).
 
 Nor is it the volume seller's whole job. It stops where the library stops: at what the tool could
 prepare. How a call is opened, and what is said on it, is the seller's. And it starts later than the

@@ -333,7 +333,8 @@ below record how the conversion was done and guide any **new** module added late
    tilt into `kind`, and the worked example plus threshold logic into the body. Declare what it
    `assumes` before it can stand, from the fixed vocabulary, and say in the body what it does when
    that is absent. A signal earns its place only by answering a real question in
-   [`sales-questions.md`](sales-questions.md) or [`volume-questions.md`](volume-questions.md).
+   [`sales-questions.md`](sales-questions.md), [`volume-questions.md`](volume-questions.md) or
+   [`firm-questions.md`](firm-questions.md).
 3. **Assemblies.** Name the deterministic gathers the signals stand on (a person history, a
    conversation history, a stakeholder map). Their `inputs` are the channel records they tidy
    together, plus any records from the module's own told source.

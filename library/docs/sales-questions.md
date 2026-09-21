@@ -11,7 +11,8 @@ the model holds; where it doesn't, that's the real work.
 each, years of contact. The library's signals and counts were derived from this list, so the library
 answers this seller well and is silent about anything they never had to ask. That is worth saying
 out loud, because a read nobody wrote looks exactly like a read someone chose to leave out. There is
-now a second set from the opposite end, [`volume-questions.md`](volume-questions.md), and a map of
+now a second set from the opposite end, [`volume-questions.md`](volume-questions.md), a third from a
+seller with a firm around her, [`firm-questions.md`](firm-questions.md), and a map of
 what both sets do and do not reach, [`coverage.md`](coverage.md). Ids here are `Q1` to `Q26`.
 
 **How we use them: settled.** The questions are a **lens, not the backbone**: handles for
