@@ -3,19 +3,22 @@ id: replies-by-channel
 label: "Replies by channel"
 used_by: [best-way-to-reach]
 over: [person-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # 21 September: it counts within your history with one person, which is the only gather every read using it shares
+defined: true
+counts: How often they answer on each channel you have tried, as a rate.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: Under about four messages on a channel there is no rate, only a result, and the count says which it has.
 ---
 
 # Replies by channel
 ## What it counts
 
-Not written yet.
+For each channel you have used with this person, how many messages you sent and how many were
+answered, as a count and a rate. One row per channel.
 
-This entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is half the answer to where to write to somebody. The other half is speed, counted beside it.
 
 ## What it cannot see
 
-Not written yet.
+A channel you have never tried, which looks identical to one that never works. The read is told
+that a rate of zero over two messages is not evidence.

@@ -3,19 +3,25 @@ id: required-disclosures
 label: "What must be said before they agree"
 used_by: [disclosure-still-owed]
 over: [compliance-fence]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: The must-always-say rules in your firm's fence that apply before a buyer agrees.
+needs: [organisation-told#rule, drive#file-content]
+breaks: Where the organisation has told it no rules there is nothing to check against, and the read is silent rather than lenient.
 ---
 
 # What must be said before they agree
 ## What it counts
 
-Not written yet.
+The rules of the must-always-say kind from your firm's compliance fence that bear on a buyer
+agreeing: what has to be put in front of them, in what form, and whether the rule is hard or soft.
+One row per rule.
 
-This entry exists because one signal references this id: [`disclosure-still-owed`](../signals/disclosure-still-owed.md). What it actually counts (the fence's `rule` records of the must-always-say kind that apply before a buyer agrees), which records it needs and when the number stops meaning anything are all still to be decided. What a jurisdiction requires a seller to disclose is not written yet, and is not the tool's to invent: it is a rule the organisation tells it.
-
-It counts within [`compliance-fence`](../assemblies/compliance-fence.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Every one of them is a told thing. What a jurisdiction actually requires a seller to disclose is
+not the tool's to know and never will be: it is a rule the organisation states, and where none is
+stated the count is empty and says so.
 
 ## What it cannot see
 
-Not written yet.
+A rule that exists and nobody wrote down. It also cannot see a rule that applies to this deal in
+particular rather than to every deal, which is the shape most real disclosure rules have.

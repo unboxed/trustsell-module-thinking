@@ -3,19 +3,24 @@ id: evidence-that-fits-them
 label: "Evidence on the shelf that fits this buyer"
 used_by: [pushing]
 over: [proof-library]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How much of the evidence on your shelf is actually about buyers like this one.
+needs: [drive#file, drive#file-content, organisation-told#proof-tag, web#web-result, web#page-content, web#research-report, web#enrichment]
+breaks: Fit is judged against the told fit-shape, so where the shape is thin this number is thin with it.
 ---
 
 # Evidence on the shelf that fits this buyer
 ## What it counts
 
-Not written yet.
+For one buyer, how many pieces of evidence on the shelf are about organisations of their kind,
+matched on the told fit-shape, with what each is. One row per piece.
 
-This entry exists because one signal references this id: [`pushing`](../signals/pushing.md). What it actually counts (the documents on the evidence shelf whose `proof-tag` names this buyer's type, and whether each is a named reference or your own word), which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`proof-library`](../assemblies/proof-library.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+A shelf of forty case studies, none of them about anybody like this buyer, is an empty shelf for
+this deal, and a read that counts the forty will tell a seller they are well armed when they are
+not.
 
 ## What it cannot see
 
-Not written yet.
+Relevance a buyer would see that the fit-shape does not encode, which is most of what makes a case
+study land.

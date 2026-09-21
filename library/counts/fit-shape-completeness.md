@@ -3,19 +3,23 @@ id: fit-shape-completeness
 label: "How complete the good-fit picture is"
 used_by: [fit-match]
 over: [offering-entry]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How much of the told fit-shape is actually filled in.
+needs: [offering-told#fit-shape]
+breaks: A fit-shape with two factors is not a shape, and the count says so rather than reporting a match against it.
 ---
 
 # How complete the good-fit picture is
 ## What it counts
 
-Not written yet.
+How many factors the told fit-shape names, how many of them are specific enough to check against a
+real organisation, and which are empty. One row per factor.
 
-This entry exists because one signal references this id: [`fit-match`](../signals/fit-match.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`offering-entry`](../assemblies/offering-entry.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is the gate on every read about fit. Judging a lead against a shape made of three vague words
+produces a confident answer to a question nobody asked, and this is the number that stops it.
 
 ## What it cannot see
 
-Not written yet.
+Whether the factors are the right ones. Completeness is not correctness, and a fully filled shape
+describing the wrong buyer will pass this and fail everywhere else.

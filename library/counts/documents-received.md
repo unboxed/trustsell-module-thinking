@@ -3,19 +3,24 @@ id: documents-received
 label: "Documents received"
 used_by: [missing-documents]
 over: [document-set]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Which documents have come in, against which were asked for, and what period each covers.
+needs: [handover#document-request, handover#handed-over-document]
+breaks: It reads the envelope, never the contents. What a document says is a different floor.
 ---
 
 # Documents received
 ## What it counts
 
-Not written yet.
+For one request, which documents have arrived: what each is, when it came, how it came, and what
+stretch of time it covers. One row per document, matched to the item on the request it answers.
 
-This entry exists because one signal references this id: [`missing-documents`](../signals/missing-documents.md). What it actually counts (each `handed-over-document`, whether it answers a request, and what came unasked), which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`document-set`](../assemblies/document-set.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+The period is the field that makes this worth having. Two documents against a three-month request
+is not the same fact as three months of documents, and the match is on both the thing and the
+stretch.
 
 ## What it cannot see
 
-Not written yet.
+Whether a document is the right one, whether it is complete, and whether it says what it should.
+The envelope only.

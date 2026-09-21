@@ -3,19 +3,26 @@ id: where-they-start
 label: "Which channel they write first on"
 used_by: [best-way-to-reach]
 over: [person-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # 21 September: it counts within your history with one person, which is the only gather every read using it shares
+defined: true
+counts: Which channel they choose when they start something themselves.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: It needs them to have started something. Where they never have, the count is absent rather than zero.
 ---
 
 # Which channel they write first on
 ## What it counts
 
-Not written yet.
+Of the conversations this person began, which channel each started on, tallied. One row per
+channel.
 
-This entry exists because one signal references this id: [`best-way-to-reach`](../signals/best-way-to-reach.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
+It is the strongest of the three channel numbers and the least used, because it is the only one
+that shows a choice. Answering where you wrote is a courtesy; opening somewhere is a preference.
 
-It counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+All three count within your history with one person rather than within a conversation, because the
+question they answer is about the person and not about a thread.
 
 ## What it cannot see
 
-Not written yet.
+A person who starts everywhere because their organisation does, and a person who starts on the
+channel their last message from you happened to arrive on.

@@ -3,19 +3,24 @@ id: bounce-back-detected
 label: "Emails bouncing"
 used_by: [champion-went-dark]
 over: [person-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: A message to them that came back undelivered, with the reason the server gave.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web-form#form-submission]
+breaks: A soft bounce is not a departure. The count keeps the reason so the two are not confused.
 ---
 
 # Emails bouncing
 ## What it counts
 
-Not written yet.
+Each undelivered message: when, and what the server said. Sorted into permanent (the address does
+not exist) and temporary (a full mailbox, a server refusing for a while).
 
-This entry exists because one signal references this id: [`champion-went-dark`](../signals/champion-went-dark.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`person-history`](../assemblies/person-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Permanent is a fact about a person who has gone. Temporary is a fact about a mail server, and
+treating one as the other is how a tool ends up telling somebody their champion has left because a
+mailbox was full on a Tuesday.
 
 ## What it cannot see
 
-Not written yet.
+A mailbox that silently discards, and an address that still accepts mail nobody reads, which is
+what most departed people leave behind.

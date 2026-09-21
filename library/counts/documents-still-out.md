@@ -3,19 +3,23 @@ id: documents-still-out
 label: "Documents asked for and not yet sent"
 used_by: [missing-documents]
 over: [document-set]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Which documents were asked for and have not come, and how long ago they were asked for.
+needs: [handover#document-request, handover#handed-over-document]
+breaks: It is the subtraction of the received from the requested, so it is exactly as good as the request being on record.
 ---
 
 # Documents asked for and not yet sent
 ## What it counts
 
-Not written yet.
+For one request, the items with nothing against them: what each is, when it was asked for, how long
+ago that is in working days, and whether it was asked for more than once.
 
-This entry exists because one signal references this id: [`missing-documents`](../signals/missing-documents.md). What it actually counts (each `document-request` with no `handed-over-document` answering it, and how long each has been open), which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`document-set`](../assemblies/document-set.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Where a document arrived but covers the wrong stretch, it appears here as still out, with the
+reason, because that is what it is.
 
 ## What it cannot see
 
-Not written yet.
+Anything asked for verbally and never written down, and anything sent to somebody else at your
+firm.
