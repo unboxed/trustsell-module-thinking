@@ -9,168 +9,133 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the fifteenth pass on `main`, fifteen passes on `library/docs/coverage.md` are done. The
-library holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37
-signals, 7 docs (all general now) and two scenarios (`bops`, with 25 cards; `pmf`, with 10). It
-builds clean, with `SCENARIO` set to either world. **The playbook still ships `bops`**: to look at
-the PMF cards, set `SCENARIO` to `pmf` at the top of `build.js`, run it, open the playbook, and set
-it back before committing.
+As of commit `59307ce` on `main`, fifteen passes on `library/docs/coverage.md` are done. The library
+holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37 signals,
+7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
+`pmf`, a merchant cash advance broker, with 10. It builds clean with `SCENARIO` set to either.
+**The playbook still ships `bops`.**
 
-**All three question sets have now been run against the library**, so the map in `coverage.md` is
-a map against three sets. Of the volume seller's 22, seventeen are answered by a read, one by
-asking, one in part (V10), three are out of scope and none by nothing. Of the firm seller's 21,
-five are answered by a read, one by asking, eight in part, two elsewhere and five by nothing: the
-worst of the three sets, and the surprise is that its holes are about **the buyer's side** rather
-than about her firm.
+All three question sets have been run against the library. Of the patient seller's 26, twenty-two
+are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
+one in part, three are out of scope and none by nothing. Of the firm seller's 21, five are answered
+by a read, one by asking, eight in part, two elsewhere and five by nothing.
 
-The most recent passes:
+**The important recent turn.** Passes eight to thirteen added or audited entries against **question
+sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, which
+was the first test of the library from **above**, and it found more in one pass than the three
+question sets found between them. The fifteenth fixed the largest of those findings. Read
+`coverage.md`'s "Done in the fourteenth pass" and "Done in the fifteenth pass" before anything
+else; the rest of this file assumes them.
 
-- **The seventh** wrote the second scenario's world, `library/scenarios/pmf/world/`, a broker
-  placing merchant cash advances, with an empty `cards/`. Its ladder runs past the sale, its
-  `connected:` names `sms`, `web-form`, `handover` and `crm` for the first time, and its pricing
-  fills the term and how it is paid. Beside it, the third question set.
-- **The eighth** wrote after the sale: `assemblies/since-the-sale.md` and three reads,
-  `coming-round-again` (V20), `payments-faltering` (V22) and `customer-introduction` (V21's other
-  half). The decision it rests on: **a sale's completion is fetched from the CRM or told by you,
-  never deduced** from a signature, a payment or a form of words.
-- **Then, on the user's asking**, the `salesforce` channel became `crm`, and its record
-  `crm#deal-record`. A rung of the general library should not carry one seller's stack.
-- **The ninth** wrote outcomes: a told `people-told#deal-outcome` and its fetched twin
-  `crm#deal-decision`, the `deal-outcomes` pile above them (the first gather keyed on no single
-  subject), and two reads in Offerings over it, `turned-down-before` (V16) and `delivered-before`
-  (V17's other half). The decision it rests on: **an ending is told or fetched, never deduced**,
-  the eighth pass's rule extended to the three ways a deal can finish without a sale. It is written
-  up in `library/docs/library-format.md` and story ch. 9.
-- **The tenth** made `offering:` a list. An offering is one thing on one set of terms, so the same
-  product from two suppliers is two entries; `offering-told#supplier` says who is behind one. Above
-  them the `catalogue` shelf and one read, `where-this-one-goes` (V15), which is `fit-match` run
-  across the shelf instead of once. It lives in Offerings, not the Brain: which of them would have
-  this buyer is qualification, which of them you most want to sell is still parked as intent.
-  Written up in `library/docs/library-format.md` and story ch. 3.
-- **The eleventh** cleared the five small decisions: a `public-records` channel (`source: builtin`,
-  drawn on by `figures-on-record`, so `existing-commitments` answers "to whom" past what the buyer
-  shows); a told `Names in the field` on `offering-told`; a `Consent` record on `sms.md`, used by
-  no read yet; a period on both sides of a handover, kept on the envelope so the fifth pass's
-  separation holds; and **`own-firm`**, the fourth word in `assumes:`, declared on
-  `colleague-already-in-touch`.
-- **The twelfth** moved `flow.md` and `how-modules-collaborate.md` to
-  `library/scenarios/bops/docs/`, beside `scenario-councils.md`. All three are walkthroughs of the
-  BOPS goal, so they were the last of the example left in the general layer. Moving beat
-  rewriting: a walkthrough with the example taken out is not worth reading.
-- **The thirteenth** ran the coverage map against the third set, `F1` to `F21`. Five reads claimed
-  an `F` id they plainly answered and did not hold; the eight partial verdicts claimed nothing on
-  purpose, because a read that answers half a question should say in its body which half.
-- **The fourteenth** wrote ten cards for PMF, the first test of the library from **above** rather
-  than from the side: six passes had added entries against question sets and no world had ever
-  exercised them. Nothing was fixed in the same pass, on purpose. What the cards exposed is in
-  `coverage.md` and is now the top of the work list, above everything the F-audit left.
-- **The fifteenth** fixed the biggest of those: `conversation-history` and `person-history` now
-  gather text, and the form submission is the conversation's first turn. Measured, not asserted:
-  `act-errol-application` went from **a hunch** to **sure** and moved up the day. The patient
-  scenario is untouched, because it connects neither channel.
+The lesson worth carrying: **a hole under a read that already exists is worth more than a read that
+does not exist yet.** Card-writing finds the first kind and question sets do not.
 
-Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
-asking" and "Where this goes next". **Do not re-derive the audit.**
-
-Two first-hand sources exist. Read them before anything else in step 1:
-`library/scenarios/pmf/docs/what-pmf-told-us.md` (the makers of the tool PMF sells on; the PMF
-world came from it) and `library/scenarios/cority/docs/what-cority-told-us.md` (an enterprise
-seller with a firm around her; the patient end again, with tenders). Both keep people's names out;
-keep it that way in anything you write from them. Also skim
-`library/docs/reading-principles.md` sections 4 and 7.
-
-## The user's standing instruction (21 September)
+## The user's standing instruction
 
 They are not a sales expert and do not know how the AI would work. They want the thinking
 structured accurately and expect you to make the sales and how-it-reads calls yourself, writing the
 reason into the entry marked "(My reason, not yet yours.)". Do not stop to ask about those. Ask
-only about scope, voice, the phone, or anything hard to reverse.
-
-## The last session's five steps, all done
-
-They are kept here struck through, because each one records a decision and where its reason is
-written. Your own task is the section after them.
-
-1. ~~**Outcomes, then V16.**~~ **Done in the ninth pass.** Outcomes live as raw data, told on
-   `people-told#deal-outcome` and fetched on `crm#deal-decision`, gathered by
-   `assemblies/deal-outcomes.md`. They do **not** hang on `since-the-sale`: that gather is keyed on
-   one deal that completed, and endings are read across deals and include the ones that never
-   completed. The told outcome is now a third route into `since-the-sale` all the same, because a
-   rung says where a deal stands and an outcome says that it finished and on what day.
-
-2. ~~**The catalogue, V15.**~~ **Done in the tenth pass.** `offering:` is a flat list that
-   `build.js` reads as one or several and refuses empty; `offering-entry` stays per entry, and an
-   entry is one thing on one set of terms, so a supplier's version is its own. The shape decision
-   and its cost (the pitch repeats across a broker's entries) are in `library-format.md`, *The
-   catalogue*.
-
-3. ~~**Small decisions the passes raised.**~~ **Done in the eleventh pass**, all five. The
-   `assumes:` vocabulary is four words now.
-
-4. ~~**Move the two worked-example docs.**~~ **Done in the twelfth pass.** Both are at
-   `library/scenarios/bops/docs/` now, each with a line saying it moved and that its paths read
-   from `library/`. One stale link in `scenario-councils.md` fixed on the way.
-
-5. ~~**Run the coverage map against the third set** (`F1` to `F21`).~~ **Done in the thirteenth
-   pass**, as *The firm seller's 21* in `coverage.md`.
+only about scope, voice, the phone, or anything hard to reverse. They cannot easily take in long
+text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
 Commit and push to `main` after each numbered step, with a message in the style of `git log`.
+Steps 1 to 3 are what the broker's cards exposed. Steps 4 to 7 are what the third question set's
+audit left. Do them in order.
 
-**Start with what the cards found, not with the F-audit list.** Those are holes under reads that
-already exist, which makes them worth more than reads that do not. The first of them, gathering a
-text conversation, was done in the fifteenth pass. What is left, in order:
+1. **Let `disclosure-still-owed` reach the pricing.** The read gathers the fence, the conversation
+   and the deal, and none of them reaches `offering-told#pricing`, so the one read whose job is
+   "they are about to agree and the cost is not on record" cannot state the cost. `build.js`
+   refused a card over it. `scenarios/pmf/cards/act-paula-disclosure.md` names the gap in *Still
+   unclear* today and should stop having to. Adding `price-position` to its `inputs` is the obvious
+   move; check it against the build's joins, and update the card.
 
-1. **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
-   the cost is and not only that it is unsaid. `act-paula-disclosure` names the gap today.
-2. **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
-   than on ended deals. `act-tony-offers` cannot tell the seller what came back.
-3. **Decide whether a completed sale is News**, which would give that kind its first card in
-   either scenario, and **make the build notice a trail running into an unconnected channel**, not
-   only a signal's `needs`.
+2. **A read for a funder's answer landing.** `crm#deal-decision` (written in the ninth pass) holds
+   the offers and declines against a deal, and only `assemblies/deal-outcomes.md` reads it, for
+   deals that have **ended**. So "an offer came back and nobody has told the rep", which the trade
+   calls the moment to raise alarms, has no read at all.
+   `scenarios/pmf/cards/act-tony-offers.md` can only say a promise was made and not kept, and says
+   outright it cannot tell the seller what came back. This needs a gather over the decisions on the
+   deal in hand, or `deal` widened, plus one signal. It answers no question in any of the three
+   sets, which is itself worth a line in `coverage.md`: the sets are a seller's questions to
+   herself, and this is one the trade never had to ask because a person always did it.
 
-Then the list the F-audit left, which is written out at the end of `coverage.md`'s **"Where this
-goes next"**:
+3. **Two smaller ones from the same pass.** Decide whether a completed sale is **News**: nothing
+   turns a completion into a card, and News is the one kind with no card in either scenario.
+   Completion is fetched or told and never deduced, which is right, so the question is only whether
+   it earns a card. And **make the build notice a trail running into an unconnected channel**: a
+   gap row is added for a signal's `needs` and not for a trail running into a channel the scenario
+   has not plugged in, so `act-paula-disclosure` rests on a Drive evidence shelf that does not
+   exist in its world and nothing complains.
 
 4. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
    the question it reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
    `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,
-   F17 on `warm-path`.
-5. **Read the buyer's own published words**: a gather over `web#research-report` and
-   `web#enrichment` keyed on the buyer organisation rather than on the offering, and a read over
-   it (F1, and the missing half of F16). It is the ground a first message stands on at the patient
-   end, and `web` is already connected in both worlds.
-6. **The shape of their process**, a told record nobody has: what a buy at this kind of
-   organisation takes, so a read can say which of those steps the record shows no sign of (F8,
-   which the third seller says no system does, and F6 with it).
-7. **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
-   "enough tries"; and **where a lead came from** (F17, F20), which is provenance on a lead and an
-   event list, a lead source no channel has.
+   F17 on `warm-path`. The thirteenth pass left these unclaimed on purpose, because a read that
+   answers half a question should say in its body which half, and that is a pass rather than an
+   audit.
 
-Longer-standing, and still open from earlier passes: turning `assumes:` into a checked join now
-that a second world exists; defining the counts, all 120 of which are still `defined: false`; and
-a third scenario, which earns its place once the two ends have shown what the spectrum is.
+5. **Read the buyer's own published words.** A gather over `web#research-report` and
+   `web#enrichment` keyed on the **buyer organisation** rather than on the offering, and a read
+   over it (F1, and the missing half of F16). Every gather above the raw data today is keyed on
+   something that passed between you and the buyer; what the buyer says to the world has no floor.
+   It is the ground a first message stands on at the patient end, and `web` is already connected in
+   both scenarios.
+
+6. **The shape of their process**, a told record nobody has: what a buy at this kind of
+   organisation takes, so a read can say which of those steps the record shows no sign of. It
+   closes F8, which the third seller says no system does ("flag where the gaps are between where
+   you need to be and what the customer hasn't done"), and F6 with it.
+
+7. **Two lead-shaped holes.** Add the two try counts together (F11), so a cadence a colleague is
+   running counts towards "enough tries" as your own messages do: `enough-tries` counts only yours
+   and `colleague-already-in-touch` counts only theirs. And **where a lead came from** (F17, F20):
+   provenance on a lead, and the event list a marketing team hands over, which is a lead source no
+   channel has.
+
+## Still open, and bigger than a step
+
+- **The firm reads have never been exercised.** `firm-contact`, `colleague-already-in-touch` and
+  the `own-firm` assumption exist for a seller with a firm around them, and no world has one that
+  fills the gather. `scenarios/cority/` holds an interview note and no `world/`. Writing that world
+  would do to the firm reads what the fourteenth pass did to the fast-end ones. The old bar ("a
+  third earns its place once the two ends have shown what the spectrum is") rested on PMF's world
+  not being written, which expired; the scope call is the user's and is left open in
+  `scenarios/cority/docs/what-cority-told-us.md`.
+- **The day's order is a patient seller's.** Asked to place the broker's ten cards, `build.js` put
+  a faltering repayment first and an unseen funder's offer third. At an hours tempo, an offer
+  nobody has passed on costs the most by waiting. The six bands are the Brain's
+  (`modules/00-spine.md`) and this is not a bug in them, but what waiting a day costs is not the
+  same question at both ends of the spectrum.
+- **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
+  say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
+  card whose reads assume more than that.
+- **Define the counts.** All 120 are `defined: false`, with the arithmetic said in prose. Some
+  should merge or go. Deliberately deferred until the set settles.
+- **The broker's tempo is hours and every `when` is a day.** Flagged in
+  `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
+  "you can take in the whole day". A card and phone question, not a library one.
 
 ## Five things that are easy to get wrong here
 
 - The vocabulary for `assumes:` is four words (`thread-under-way`, `own-rhythm`, `several-people`,
-  `own-firm`). `assumes: []` is a claim, not an omission. Every new signal
-  declares it and answers a real question by id in `answers:`.
+  `own-firm`). `assumes: []` is a claim, not an omission. Every new signal declares it and answers
+  a real question by id in `answers:`, from any of the three sets.
 - **Never invent a fact about the tool.** A new count stays `defined: false` with the arithmetic in
   prose; thresholds lean on `reading-principles.md`, no made-up numbers. A scenario's world is
   fiction and may be invented; the general rungs may not.
-- Cards, `playbook/phone.html` and the deck are out of scope. Library rungs, `build.js` where a
-  step says so, and the docs that carry their reasons. Every new read changes its row in
-  `coverage.md` and adds a "Done in the … pass" paragraph; `story.md` changes only when a decision
-  changes it, marked "(My reason, not yet yours.)".
+- Every new read changes its row in `coverage.md` and adds a "Done in the … pass" paragraph;
+  `story.md` changes only when a decision changes it, marked "(My reason, not yet yours.)".
+  `playbook/world.md` carries the card model and the design log.
 - Run `node build.js` after every change. It writes nothing when it fails and checks every join: a
   count's `used_by` must match the signals that list it, a count's `over` must be an assembly every
   signal quoting it reads, a signal's `needs` must be channel or told ids, an assembly's inputs
-  must be record addresses or assemblies. `playbook/assets/data.js` is generated: never hand-edit
-  it, always commit it with the pass that changed it. To check a change against the second
-  scenario, switch `SCENARIO` at the top of `build.js` to `pmf`, then **set it back to `bops`
-  before committing**: the playbook is still built from bops.
+  must be record addresses or assemblies, and a card's `about`, `to`, `documents` and Sources rows
+  must all resolve. `playbook/assets/data.js` is generated: never hand-edit it, always commit it
+  with the pass that changed it. **Check every change against both scenarios**: switch `SCENARIO`
+  at the top of `build.js` to `pmf`, run it, then set it back to `bops` before committing. To look
+  at the broker's cards in the playbook, flip it, build, open `playbook/index.html`, flip it back.
 - Commit messages end with `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`. Push each
   pass. If the working tree holds changes to `playbook/assets/phone.js`, `style.css` or `world.md`
   that are not yours, commit them separately with a message read off `world.md`. A commit or push
@@ -178,7 +143,14 @@ a third scenario, which earns its place once the two ends have shown what the sp
   outside the repo; do not work round it, stage the files, write the commit message to the
   scratchpad, and hand the user the three commands.
 
+## One habit worth keeping
+
+The fourteenth pass is the model. When you have added two or three entries, **stop and write cards
+against them in a world**, rather than adding a fourth. Writing cards is how you find out whether a
+read can actually reach what it claims, and the build refuses the card when it cannot. Adding rungs
+nobody stands on is the failure mode this workspace keeps rediscovering.
+
 ## Keep this file true
 
-Update the "Where the work stands" section and strike the steps you finish, in the same commit as
-the work. A session that stops mid-way leaves this file describing exactly what is left.
+Update "Where the work stands" and strike the steps you finish, in the same commit as the work. A
+session that stops mid-way leaves this file describing exactly what is left.
