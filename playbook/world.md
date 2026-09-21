@@ -6,7 +6,7 @@ This file is the card model, the world and the log of decisions.
 Every card in the playbook is written as if the tool already exists and is talking to **you**, the
 seller. To keep the cards consistent they all share one world and one card model. The card model
 and the decisions live here. The world itself (goal, cast, organisations, documents) is data in
-`library/scenarios/bops/world/`, because cards reference it by id; add there before using a name, a date or a
+`scenarios/bops/world/`, because cards reference it by id; add there before using a name, a date or a
 document that is not already there. The world sections at the end of this file mirror it.
 
 ## Today
@@ -133,7 +133,14 @@ follow the spine with the card's widgets in place. The words and rows come from 
 `library/`: each phone is `phone.html` on one card (see "The phone is built" below). Felton
 and Rachel's promise card also carry widgets (People, What they said, Open items, Documents) but
 are not on the slide: their replies are drafts too. Holbrook's window card carries a Timeline
-and is not on the slide either. The fifth, "How a card is built"
+and is not on the slide either. Second in the deck since 21 September, "The climb" shows the ladder itself: six
+rungs from what you connect up to Signals, where the tool first has an opinion, each with its size
+and one line saying what it does. It stops below the cards on purpose, because that is where the
+explanation ends and the cards are the slides after it. Like the pyramid it is **not typed**:
+`deck.js` fills it from `data.js`, so adding a count changes the slide and nobody has to remember
+to. The rungs' own words live in `deck.js` beside the pyramid's, the way `library.js` carries its
+own words for the same ladder. `data-sizes="off"` on the list hides the numbers, because they are
+true and they are not always what you are talking about. The fifth, "How a card is built"
 (18 September, by looking, after four rendered sheets: a full tree, one thread, rings, then
 https://claude.ai/artifact/U4dtpbqQJmpbFp5k5hdES6 where "B · Pyramid" was chosen), shows Karen's
 card at the peak of a pyramid. The channels are the ground, each with the records it gives;
@@ -492,7 +499,7 @@ rules are in `library/docs/library-format.md`, "A card's day".
   card says. Two moves to one person that nothing tells apart fail the build: write one card.
   The user first asked for this when the question was put to them ("the tool should know what
   should go first, or if it's merged").
-- **The scenario is separate.** The pretend world and its cards moved to `library/scenarios/bops/`.
+- **The scenario is separate.** The pretend world and its cards moved to `scenarios/bops/`.
   BOPS is one example. The user means to pressure-test the same library on the opposite kind of
   sale, a mass sale, and the scenarios can be rewritten to fit the signals.
 

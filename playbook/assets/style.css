@@ -967,3 +967,17 @@ iframe.screen{border:0;display:block;padding:0}
 .day-end{position:absolute;top:181px;left:var(--ios-gutter);right:var(--ios-gutter);padding:24px 24px 0;font-family:var(--phone-font)}
 .day-end h2{font:var(--ios-text-title1);font-weight:800;letter-spacing:var(--ios-track-title1);color:var(--ios-label-secondary);margin:0 0 18px}
 .day-end p{font:var(--ios-text-subhead);color:var(--ios-label-secondary);margin:0 0 6px}
+
+/* The climb (21 September): the ladder as one slide, drawn by deck.js from data.js. It is a
+   figures slide with no figure to scale, so it says no data-w and deck.js leaves --s alone.
+   The column widths and the 12% hairline are judgements, not Apple's. */
+.slide--climb .slide__body{align-items:center}
+.climb{list-style:none;margin:0;padding:0;width:100%;max-width:62rem}
+.climb__rung{display:grid;grid-template-columns:13rem 1fr;align-items:baseline;gap:0 24px;
+  padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ios-label) 12%,transparent)}
+.climb--sizes .climb__rung{grid-template-columns:5.5rem 11rem 1fr}
+.climb__rung:last-child{border-bottom:1px solid color-mix(in srgb,var(--ios-label) 12%,transparent)}
+.climb__n{font:var(--tv-text-caption1);font-weight:700;color:var(--ios-label);text-align:right;
+  font-variant-numeric:tabular-nums}
+.climb__name{font:var(--tv-text-caption1);font-weight:500;color:var(--ios-label)}
+.climb__line{font:var(--tv-text-caption2);color:var(--ios-label-secondary)}

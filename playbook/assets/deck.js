@@ -108,6 +108,35 @@
       svg.appendChild(path);
     });
   }
+  /* The climb: the ladder itself, drawn from data.js so it is never typed and never
+     goes stale. Add a count, run `node build.js`, and this slide says one more. The rungs
+     stop at Signals, where the tool first has an opinion, because that is where the
+     explanation ends; the cards are the slides after it. Each rung's line is here rather
+     than in the library because it is the deck's own way of saying it, the same way
+     library.js carries its own words for the same ladder. A slide can hide the sizes with
+     data-sizes="off": the numbers are true, and they are not always what you are talking
+     about. */
+  var CLIMB = [
+    ['signals',    'Signals',    'The first opinion, and the first thing you could argue with.'],
+    ['counts',     'Counts',     'The arithmetic. Sums, never verdicts.'],
+    ['assemblies', 'Assemblies', 'Records brought into one picture. Still no opinion.'],
+    ['records',    'Records',    'The rows themselves: an email, a meeting, a document, a payment.'],
+    ['told',       'Told',       'What only you can say. No channel can fetch it.'],
+    ['channels',   'Channels',   'What you connect, and what the buyer hands over. It carries, it never judges.']
+  ];
+  Array.prototype.slice.call(document.querySelectorAll('.climb[data-climb]')).forEach(function (el) {
+    if (!LIB) return;
+    var sizes = el.getAttribute('data-sizes') !== 'off';
+    el.innerHTML = CLIMB.map(function (r) {
+      var n = (LIB[r[0]] || []).length;
+      return '<li class="climb__rung">' +
+        (sizes ? '<span class="climb__n">' + n + '</span>' : '') +
+        '<span class="climb__name">' + esc(r[1]) + '</span>' +
+        '<span class="climb__line">' + esc(r[2]) + '</span></li>';
+    }).join('');
+    el.classList.toggle('climb--sizes', sizes);
+  });
+
   var pyramids = Array.prototype.slice.call(document.querySelectorAll('.py[data-card]'));
   pyramids.forEach(build);
   function drawShown() { pyramids.forEach(function (py) { if (!py.closest('.slide').hidden) draw(py); }); }
