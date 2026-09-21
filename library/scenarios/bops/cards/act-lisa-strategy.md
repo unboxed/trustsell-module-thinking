@@ -4,9 +4,9 @@ order: 5
 kind: act
 signal: time-to-reconnect
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [one-sided]
+supporting: [one-sided, stated-priorities]
 supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads]
+counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads, priorities-they-state, how-fresh-their-words-are]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [lisa-holmes, burnham]
 to: lisa-holmes                # who the move reaches; one move per person at a time
@@ -58,7 +58,7 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 ## What happened
 
 - Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
-- Page 12 commits Burnham to "replacing legacy case systems by 2028". That is where your goal ends up: partial now, full later.
+- Page 12 commits Burnham to "replacing legacy case systems by 2028". Those are the council's own words, published ten days ago, and it is the only thing they have put in writing that your goal ends up at.
 - Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.
 - Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.
 
@@ -70,7 +70,7 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 
 ## Still unclear
 
-- Whether she wrote page 12 herself or a consultant did. Either way she owns it now.
+- Whether she wrote page 12 herself or a consultant did. I sort a passage by who published it, not by who wrote it, because who published it is a fact and who wrote it usually is not. Burnham published it, so I am treating it as theirs. Either way she owns it now.
 
 ## What happens next
 

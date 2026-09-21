@@ -9,16 +9,16 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `9282528` on `main`, twenty passes on `library/docs/coverage.md` are done. The library
-holds 13 channels, 5 told sources, 22 assemblies, 124 counts (all `defined: false`), 38 signals,
+As of commit `d688ec8` on `main`, twenty-one passes on `library/docs/coverage.md` are done. The library
+holds 13 channels, 5 told sources, 23 assemblies, 127 counts (all `defined: false`), 39 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
 `pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
 are answered by a read. Of the volume seller's 22, seventeen are answered by a read, one by asking,
-one in part, three are out of scope and none by nothing. Of the firm seller's 21, five are answered
-by a read, one by asking, eight in part, two elsewhere and five by nothing.
+one in part, three are out of scope and none by nothing. Of the firm seller's 21, seven are answered
+by a read, one by asking, six in part, two elsewhere and five by nothing.
 
 **The important recent turn.** Passes eight to thirteen added or audited entries against **question
 sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, which
@@ -70,12 +70,12 @@ audit left. Do them in order.
    the library does, and F10 needs a read that watches a buyer's own date come closer, standing on
    `dated-facts-in-their-words`, which already exists pointed the other way.
 
-5. **Read the buyer's own published words.** A gather over `web#research-report` and
-   `web#enrichment` keyed on the **buyer organisation** rather than on the offering, and a read
-   over it (F1, and the missing half of F16). Every gather above the raw data today is keyed on
-   something that passed between you and the buyer; what the buyer says to the world has no floor.
-   It is the ground a first message stands on at the patient end, and `web` is already connected in
-   both scenarios.
+5. ~~**Read the buyer's own published words.**~~ Done in the twenty-first pass.
+   `assemblies/published-picture.md` gathers one organisation's own published words,
+   `signals/stated-priorities.md` reads them over three counts, and `lead-with-this` takes the same
+   gather for the buyer's half of F16. Both questions are answered. It also gave
+   `relevance-to-stated-factors` an `over` that means something: it had been counting "what they
+   said matters to them" over your own catalogue.
 
 6. **The shape of their process**, a told record nobody has: what a buy at this kind of
    organisation takes, so a read can say which of those steps the record shows no sign of. It
@@ -105,7 +105,7 @@ audit left. Do them in order.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
   say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
   card whose reads assume more than that.
-- **Define the counts.** All 124 are `defined: false`, with the arithmetic said in prose. Some
+- **Define the counts.** All 127 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and

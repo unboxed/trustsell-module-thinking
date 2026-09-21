@@ -67,15 +67,17 @@ holes.
 
 ## The firm seller's 21
 
-Run for the first time on 21 September, in the twelfth pass. Five of the twenty-one are answered by
-a read, one by asking, eight in part, two elsewhere, and five by nothing. That is a far worse
+Run for the first time on 21 September, in the twelfth pass. Five of the twenty-one were answered
+by a read, one by asking, eight in part, two elsewhere, and five by nothing. Since the twenty-first
+pass it is **seven by a read, one by asking, six in part, two elsewhere and five by nothing**: F1
+and F16 moved. That is a far worse
 showing than either other set, and the reason is not that this seller is unusual: it is that her
 questions are mostly about **the buyer's own process** and **her own firm's effort**, and the
 library has barely touched either. The verdicts are mine, from reading every entry.
 
 | Question | What is there today | Verdict | Would need |
 |---|---|---|---|
-| F1 What does this organisation say about itself in public? | Nothing reads it. [`stakeholder-map`](../assemblies/stakeholder-map.md) draws `web#enrichment` for who is who at an account, and `web#research-report` is gathered only about the offering and its field. A buyer's own annual report, sustainability report or published metrics are the ground her first message stands on, and no gather reaches for them. | Hole | a gather of what a buyer publishes, and a read over it |
+| F1 What does this organisation say about itself in public? | [`published-picture`](../assemblies/published-picture.md) gathers it and [`stated-priorities`](../signals/stated-priorities.md) reads it, both since the twenty-first pass: the passage, where it is, when it was published, and whether the words are theirs or somebody else's. | Answered | nothing; `web` is builtin |
 | F2 Which way in is open, and at what level? | [`missing-people`](../signals/missing-people.md), which **claims F2 in part** since the twentieth pass and says in its body which half it reaches: who has never been reached, and at what level the holes sit. Choosing between two doors into one organisation is a judgement nothing below it holds. | Partly, and claimed | nothing new below; a read over the stakeholder map |
 | F3 What do they already run, and what budget sits behind it? | [`competitive-standing`](../signals/competitive-standing.md), which **claims F3 in part** since the twentieth pass: it reads what they already run and whether the lock-in is live. The budget, as a figure somebody was given, is on no record. | Partly, and claimed | a told or handed-over fact nobody has |
 | F4 Who will speak for me when I am not in the room? | [`champion`](../signals/champion.md), which claims F4 since this pass. | Answered | already assumes `own-rhythm` and `several-people` |
@@ -90,7 +92,7 @@ library has barely touched either. The verdicts are mine, from reading every ent
 | F13 What did we do the last time we sold into one like this, and what did it save them? | [`delivered-before`](../signals/delivered-before.md), which **claims F13 in part** since the twentieth pass: the deals of this shape you really sold, and how recently. What a sale was worth to the buyer is on no record, and its body refuses to read a case study as a measurement. | Partly, and claimed | a told or fetched fact nobody has |
 | F14 What has happened on this deal in the last two weeks, in a paragraph? | The brief, which [`library-format.md`](library-format.md) defers as a floor above the cards. It is the same record the cards are built on, summarised for somebody who is not selling. | Answered elsewhere, deliberately deferred | nothing |
 | F15 Which of my fifteen live conversations needs me today? | The order of a day, the six bands by what waiting a day costs ([`modules/00-spine.md`](../modules/00-spine.md)). The same answer as Q21. | Answered elsewhere | nothing |
-| F16 Which of their own priorities should my next message speak to? | [`lead-with-this`](../signals/lead-with-this.md), which **claims F16 in part** since the twentieth pass: your side of it, what to lead with for a buyer of this kind. Their own published priorities are F1's ground and missing with it. | Partly, and claimed | what F1 needs |
+| F16 Which of their own priorities should my next message speak to? | [`lead-with-this`](../signals/lead-with-this.md), in full since the twenty-first pass: it reads `published-picture` for their side, and `relevance-to-stated-factors` counts over it instead of over your own catalogue. | Answered | nothing |
 | F17 How did I come by this person, and can I say so out loud? | [`warm-path`](../signals/warm-path.md), which **claims F17 in part** since the twentieth pass: the one door it can see, a route through somebody you deal with. Every other door has no provenance, and its body says the read is silent there rather than wrong. | Partly, and claimed | provenance on a lead, which no channel carries |
 | F18 Am I pulling this deal into my quarter rather than theirs? | [`pushing`](../signals/pushing.md), first shape, which claims F18 since this pass and now says in its body that your own quarter is the commonest source of a manufactured date. It never needs to know your incentives: a date that is neither theirs nor a told price change is already manufactured however it got there. | Answered | `thread-under-way` |
 | F19 Should my firm bid on this at all? | Nothing. `fit-match` judges the lead against the fit-shape, which is whether it is worth selling to, not whether the effort is worth spending. What it costs your firm to chase something is intent, and it belongs where discount room does, with the Brain. | Hole, and it is the Brain's | the goal's own economics, which nothing holds |
@@ -745,6 +747,48 @@ that does not exist, it is a read that does not: a buyer's own date, running dow
 writes. The count it would stand on, `dated-facts-in-their-words`, exists already and is pointed
 the other way, at stopping a date being invented. *(My readings, not yet yours.)*
 
+**Done in the twenty-first pass, 21 September.** What the buyer says about itself, which is the
+first gather in the library keyed on nothing of yours.
+[`published-picture`](../assemblies/published-picture.md) holds one organisation's own published
+words: the passage, where it is, when it was published, and whose words they are.
+[`stated-priorities`](../signals/stated-priorities.md) reads it, over three counts:
+`priorities-they-state`, `how-fresh-their-words-are` and `said-by-them-or-about-them`. F1 goes from
+a hole to answered.
+
+**The split is the decision.** The buyer's words live in the module that owns the buyer, and the
+matching against what you sell stays in Offerings. So `stated-priorities` names the passages and
+stops, and [`lead-with-this`](../signals/lead-with-this.md) reads the same gather for the buyer's
+half and its own told use-cases for yours. That closes F16 in full, one pass after the twentieth
+claimed half of it. *(My reason, not yet yours.)*
+
+**The sharpest thing it found was already in the library.** `relevance-to-stated-factors`, the
+count under `lead-with-this` labelled "fits what they said matters to them", had `over: []` with
+two candidates: `offering-entry` and `objection-list`. Both are yours. A count about what the
+**buyer** said, counting over your own catalogue, is not a count that could ever have meant
+anything, and it sat there for days as the plainest evidence that what a buyer publishes had
+nowhere to live. It now counts over `published-picture`, and its `over` is marked `decided` rather
+than `provisional`, the second count in the library to reach that state honestly.
+
+**The distinction that makes it usable** is whose words a passage is. A search tool's synthesised
+answer is the tool's sentence, not the organisation's, however well it reads, and a trade piece is
+a journalist's. Both are worth having and neither can be quoted back to a buyer as their own. The
+sorting is by who **published**, not by who wrote, because who published is a fact and who wrote
+usually is not; that under-claims what can be quoted rather than over-claiming it, which is the
+safer error. And where an organisation has published nothing the read is silent rather than falling
+back on what the sector generally wants, because a sector's priorities in a buyer's mouth is
+exactly the manufactured relevance [`pushing`](../signals/pushing.md) exists to stop.
+*(My reasons, not yet yours.)*
+
+**What it bought, measured rather than asserted.**
+[`act-lisa-strategy`](../scenarios/bops/cards/act-lisa-strategy.md) has been quoting page 12 of a
+council's strategy since it was written, with nothing under it: it rested on `time-to-reconnect`
+and `one-sided`, neither of which reaches a published document, and the `web` row in its *Sources*
+passed the build only because `time-to-reconnect` happens to need the web for a fresh reason to
+write. It now names `stated-priorities` as a supporting read and quotes two of its counts, so the
+line it is built on has a floor. This is the first pass whose card test landed on the **patient**
+scenario, and it found the same shape the broker's cards did: a card saying something the library
+could not reach.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -794,10 +838,9 @@ yet yours.)*
     reaches.~~ Done in the twentieth pass. Two of them sharpened while being written: F7 needs a
     read of the promises **they** made to you, which nothing does, and F10 needs a read that
     watches a buyer's own date come closer, on a count that already exists.
-  - **Read the buyer's own published words.** A gather over `web#research-report` and
-    `web#enrichment` keyed on the buyer organisation rather than on the offering, and a read over
-    it. It closes F1 and the missing half of F16, and it is the ground a first message stands on at
-    the patient end.
+  - ~~**Read the buyer's own published words.**~~ Done in the twenty-first pass. `published-picture`
+    gathers them, `stated-priorities` reads them, and `lead-with-this` takes the gather for the
+    buyer's half of F16. F1 and F16 are both answered.
   - **The shape of their process**, a told record nobody has: what a buy at this kind of
     organisation takes, so a read can say which of those steps the record shows no sign of. It
     closes F8, which the third seller says no system does, and F6 with it.

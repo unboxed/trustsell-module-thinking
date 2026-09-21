@@ -5,7 +5,7 @@ label: Lead with this
 blurb: For a buyer-type, the use-case and information to open with, and what to hold for later.
 kind: opening
 confidence: graded
-inputs: [offering-entry, objection-list]
+inputs: [offering-entry, objection-list, published-picture]
 counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-factors]
 answers: [Q10, Q11, Q12, Q24, F16]
 needs: []
@@ -57,9 +57,14 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   parked learning loop, named not faked.
 - Assumes: nothing about the shape of the sale. It reads a buyer-type against what you told it,
   before any contact is made.
-- **Which half of F16 it reaches** (which of their own priorities should my next message speak
-  to). It reaches your side: which use-case and which piece of information to lead with for a buyer
-  of this kind, from what you told it and the worries on record. Their side, the priorities this
-  organisation has published in its own words, has no floor in the library at all: nothing gathers
-  what a buyer says about itself. That is the same hole as F1, and until it is dug this read leads
-  with what has worked rather than with what they said mattered. *(My reason, not yet yours.)*
+- **Both halves of F16, since 21 September** (which of their own priorities should my next message
+  speak to). Your side has always been here: which use-case and which piece of information to lead
+  with for a buyer of this kind, from what you told it and the worries on record. Their side
+  arrived with [`published-picture`](../assemblies/published-picture.md), which gathers what this
+  organisation has said about itself, and `relevance-to-stated-factors` now counts over it rather
+  than over your own catalogue, which is what it was doing before and could never have meant. So
+  the read leads with the use-case that touches something they put in writing, and falls back to
+  what has worked for buyers of this kind where they have published nothing. What they said wins
+  over what usually works, because one is about them and the other is about a type.
+  [`stated-priorities`](stated-priorities.md) is the read that holds their words; this one does the
+  matching. *(My reason, not yet yours.)*
