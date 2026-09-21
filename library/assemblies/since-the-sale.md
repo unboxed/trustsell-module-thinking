@@ -8,6 +8,7 @@ deterministic: true
 inputs:
   - deal
   - crm#deal-record
+  - people-told#deal-outcome
   - goal-told#target-list
   - offering-told#pricing
   - figures-on-record
@@ -31,7 +32,11 @@ counts as the sale is the seller's to name, not the tool's to work out. Two plac
 stands, and they are the two that already say it for every other rung. Where the CRM is connected,
 the stage on the deal's own record, mapped onto the ladder. Where it is not, the line in your
 target list that says where each one stands, which is where the ladder's rungs come from today
-anyway. **Completion is fetched or told, never deduced.** The tool does not read a signature out of
+anyway. Since 21 September there is a third, plainer route: the told `deal-outcome`, where you say
+outright that a deal ended and how. A rung says where a deal stands; a told outcome says that it
+finished and on what day, which the rung does not carry.
+
+**Completion is fetched or told, never deduced.** The tool does not read a signature out of
 an attachment, a payment out of a mail, or a sale out of the words "thanks, we're going ahead":
 a contract in the handover is a document, and rule 5 of *What is never read* says a document is not
 proof of anything. A deal whose ladder has no rung past the sale simply never reaches this gather,
@@ -62,6 +67,9 @@ names.
 `deal` and `figures-on-record` are sibling assemblies: the selling effort with its conversations
 and people, and the figures the buyer's documents state. `deal-record` resolves to
 [`channels/crm.md`](../channels/crm.md), for the stage, the close date and the amount.
+`deal-outcome` resolves to [`told/people-told.md`](../told/people-told.md), where you say how a deal
+finished; a deal you sold is where this gather starts, and a deal that ended any other way belongs
+to [`deal-outcomes`](deal-outcomes.md) instead.
 `target-list` resolves to [`told/goal-told.md`](../told/goal-told.md), where you say where each
 organisation stands on the ladder, which is the answer when the CRM is not connected.
 `pricing` resolves to [`told/offering-told.md`](../told/offering-told.md), for the price, the term

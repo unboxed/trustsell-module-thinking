@@ -12,7 +12,7 @@ connects:
     provides: "reports what the brief flags ('Jane went quiet', 'found the DM'), answers follow-ups, and hands over the deal picture (a selling effort's people and conversations) for the Brain to stage"
   - to: "03-offerings"
     requests: "which offering a conversation relates to, the rebuttal to a worry on record, and what was agreed on an offering (its price, its term and how it is paid) for a deal that has completed"
-    provides: "the worry it has on record (for 03 to answer) and a lead's situation (for 03 to judge fit)"
+    provides: "the worry it has on record (for 03 to answer), a lead's situation (for 03 to judge fit), and the pile of ended deals with how each one ended"
   - to: "04-organization"
     requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
   - to: "05-persona-you"

@@ -9,16 +9,17 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `c1504e3` on `main`, eight passes on `library/docs/coverage.md` are done. The library
-holds 12 channels, 5 told sources, 19 assemblies, 111 counts (all `defined: false`), 34 signals,
-9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean.
+As of the ninth pass on `main`, nine passes on `library/docs/coverage.md` are done. The library
+holds 12 channels, 5 told sources, 20 assemblies, 116 counts (all `defined: false`), 36 signals,
+9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
+`SCENARIO` set to either world.
 
-Of the volume seller's 22 questions, fourteen are answered by a read, one by asking, two in part,
-two by nothing (**V15** and **V16**) and three are out of scope. A third question set exists,
+Of the volume seller's 22 questions, sixteen are answered by a read, one by asking, one in part,
+one by nothing (**V15**, the catalogue) and three are out of scope. A third question set exists,
 `library/docs/firm-questions.md` (`F1` to `F21`, from the Cority interview), and **the coverage map
 has not been run against it**.
 
-The three most recent passes:
+The four most recent passes:
 
 - **The seventh** wrote the second scenario's world, `library/scenarios/pmf/world/`, a broker
   placing merchant cash advances, with an empty `cards/`. Its ladder runs past the sale, its
@@ -30,9 +31,15 @@ The three most recent passes:
   never deduced** from a signature, a payment or a form of words.
 - **Then, on the user's asking**, the `salesforce` channel became `crm`, and its record
   `crm#deal-record`. A rung of the general library should not carry one seller's stack.
+- **The ninth** wrote outcomes: a told `people-told#deal-outcome` and its fetched twin
+  `crm#deal-decision`, the `deal-outcomes` pile above them (the first gather keyed on no single
+  subject), and two reads in Offerings over it, `turned-down-before` (V16) and `delivered-before`
+  (V17's other half). The decision it rests on: **an ending is told or fetched, never deduced**,
+  the eighth pass's rule extended to the three ways a deal can finish without a sale. It is written
+  up in `library/docs/library-format.md` and story ch. 9.
 
-Read `coverage.md` in full, especially "Done in the seventh pass", "Done in the eighth pass",
-"Renamed on the user's asking" and "Where this goes next". **Do not re-derive the audit.**
+Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
+asking" and "Where this goes next". **Do not re-derive the audit.**
 
 Two first-hand sources exist. Read them before anything else in step 1:
 `library/scenarios/pmf/docs/what-pmf-told-us.md` (the makers of the tool PMF sells on; the PMF
@@ -53,15 +60,12 @@ only about scope, voice, the phone, or anything hard to reverse.
 The rest of "Where this goes next", in this order, committing and pushing to `main` after each
 numbered step with a message in the style of `git log`.
 
-1. **Outcomes, then V16.** Nothing in the library holds what came of a card or a deal (story ch. 9:
-   nothing has come back yet). Decide where outcomes live: the likeliest shape is a told record on
-   `people-told.md` or `goal-told.md` (won, lost, what was turned down and why), with the funder's
-   offer or decline and its reason on `crm#deal-record` as the fetched twin, which is where PMF's
-   outcomes already are. Then signals for **V16** (what was turned down last time on one like this)
-   and **V17's other half** (the seller's own record of having delivered), over a gather of
-   outcomes. This is a shape decision: write the reason in `library-format.md` and story ch. 9,
-   marked mine. Note that `since-the-sale` already gathers a completed deal and may be the place
-   the outcome hangs, or may not; say which and why.
+1. ~~**Outcomes, then V16.**~~ **Done in the ninth pass.** Outcomes live as raw data, told on
+   `people-told#deal-outcome` and fetched on `crm#deal-decision`, gathered by
+   `assemblies/deal-outcomes.md`. They do **not** hang on `since-the-sale`: that gather is keyed on
+   one deal that completed, and endings are read across deals and include the ones that never
+   completed. The told outcome is now a third route into `since-the-sale` all the same, because a
+   rung says where a deal stands and an outcome says that it finished and on what day.
 
 2. **The catalogue, V15.** `world/goal.md` carries `offering:` as one id, `offering-entry.md` is
    written for one product, and `build.js` takes `world.goal.offering` as a single noun (in the

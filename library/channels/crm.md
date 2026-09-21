@@ -29,6 +29,15 @@ does. The single `Deal record` here is a placeholder shape, not yet broken into 
 account and contact objects a real provider exposes. Owned by Connections, fetched fresh and
 carried untouched once live; no opinion is formed here.
 
+**The second record is how a deal was decided** (added 21 September). Every CRM holds it in some
+shape: a closed-lost reason, a stage that means refused, a note saying who said no and why. Two
+things make it a record of its own rather than two more fields on the deal. A decision is not
+always the buyer's: where the sale needs a third party to agree (a lender, a credit committee, a
+manufacturer approving a discount), that party's answer is the one that ends the deal, and the
+buyer never made it. And there can be several on one deal: a broker's opportunity tool carries
+every funder's offer and decline against a single application. So it is one row per decision, with
+who made it, what it was, and the reason as it was written down, never as the tool would infer it.
+
 ## Records
 
 | Record | Field | Source |
@@ -40,6 +49,11 @@ carried untouched once live; no opinion is formed here.
 | Deal record | account | the buyer organisation it is against |
 | Deal record | contact | the people on it |
 | Deal record | activity | what has been logged against it, by whom and when |
+| Deal decision | the deal it is against | the deal the decision belongs to |
+| Deal decision | who decided | the buyer, or a third party whose agreement the sale needs |
+| Deal decision | what they decided | taken, refused, an offer with its terms, or no decision |
+| Deal decision | when | the day it was recorded |
+| Deal decision | the reason | why, as it was written down |
 
 ## In plain words
 
@@ -49,3 +63,4 @@ it, do not change.
 | Record | Plain name |
 |---|---|
 | Deal record | The deal, as your CRM holds it |
+| Deal decision | How a deal was decided |

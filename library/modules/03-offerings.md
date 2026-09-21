@@ -10,7 +10,7 @@ connects:
   - to: "00-spine"
     provides: "answers Brain's questions about the product, and gives it the fit-shape"
   - to: "02-relationships"
-    requests: "a customer's worry on record, and a lead's situation to judge against the fit-shape"
+    requests: "a customer's worry on record, a lead's situation to judge against the fit-shape, and how deals of this kind ended with the reasons given"
     provides: "the answer to that worry"
   - to: "04-organization"
     requests: "the actual evidence document"

@@ -250,6 +250,19 @@ Over time, this is how the tool gets better for you in particular. Once it has o
 from, even its how-sure words can move with its record: how often this kind of read turned out
 right for you. Nothing has come back yet, so that part is not written.
 
+**How a deal ended is a fact you give it, not one it works out.** A sale is won or lost, put off or
+withdrawn, and the tool only knows which because you tell it or because your deal system says so.
+It never decides a deal is dead because nobody replied, or decides you won because somebody sounded
+pleased. Silence is the commonest ending there is and the easiest to misread, so a quiet deal stays
+quiet until somebody says otherwise.
+
+Once it holds endings it can answer two questions it never could. What was turned down last time on
+a deal like this one, and the reason they gave: not a forecast, because a buyer is not the last
+buyer, but a known answer waiting at a known point. And what you have actually delivered: deals of
+this kind you really did sell, which is the third honest answer to a stranger who has no reason to
+believe you, beside giving them what they asked for and showing them what is on the shelf.
+*(My reason, not yet yours.)*
+
 ## 10. Not written yet
 
 Some of the story is still open, and it says so rather than filling the gaps.

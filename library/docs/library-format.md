@@ -180,6 +180,41 @@ gather to draw from [`web-form.md`](../channels/web-form.md), for a figure a buy
 enquiry form. [`sms.md`](../channels/sms.md) is still drawn from by nothing: the floor is there so
 the reads can be written on it.
 
+## How a deal ended: told, or fetched, never deduced
+
+Added 21 September. Until then nothing in the library held what came of anything. Every rung read
+a sale in progress, and a deal that finished looked exactly like a deal that had gone quiet. The
+questions that need endings (what was refused last time on one like this, and what you have
+actually delivered) had no ground at all.
+
+An ending is **raw data**, on the same floor as a fetched email, and it arrives by the two routes
+that floor already has. **Told**: `people-told#deal-outcome`, where you say which deal ended, how
+it ended, when, who decided, and the reason they gave. **Fetched**: `crm#deal-decision`, the same
+fact where a deal system holds it, one row per decision so a single deal can carry several answers
+from several parties. Above them, one gather,
+[`assemblies/deal-outcomes.md`](../assemblies/deal-outcomes.md), the pile of ended deals.
+
+Three decisions are worth arguing with, and all three are mine. *(My reasons, not yet yours.)*
+
+- **Never deduced.** The tool does not read a loss out of silence, a win out of a warm word, an
+  ending out of a card nobody acted on, or a decision out of "we have gone another way" in a mail.
+  It is the rule the completion of a sale already follows
+  ([`assemblies/since-the-sale.md`](../assemblies/since-the-sale.md)), extended to the other three
+  ways a deal can finish. Silence is the commonest ending in real selling and the least reliable to
+  read, so a quiet deal is held as quiet until somebody says otherwise.
+- **The ending is People's, the reads are Offerings'.** A deal is People's, gathered from the
+  conversations that make it up, so the pile of ended deals lives there. What a buyer refused and
+  what you have delivered are facts about the thing you sell, so both reads sit in Offerings and
+  ask for the pile through module 03's `connects`.
+- **It is a pile, not a thing.** `deal-outcomes` is the first gather keyed on no single subject.
+  That needs no new machinery: a count names it in `over:` exactly as a per-person count names
+  `person-history`, which is what [`coverage.md`](coverage.md) said counting over a group would
+  take.
+
+The endings are not the same as **feedback on a card**, which story ch. 9 covers and which the
+told `correction` record already carries in part. A card's outcome is about the tool's own bets; a
+deal's outcome is about the sale. Only the second is written.
+
 ## Whether a channel is connected is the scenario's to say
 
 Moved 20 September. A channel doc says what a service carries and nothing about whether this

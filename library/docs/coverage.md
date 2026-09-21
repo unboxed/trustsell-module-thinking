@@ -55,8 +55,8 @@ holes.
 | V13 Can they carry this on top of what they carry? | [`can-they-carry-it`](../signals/can-they-carry-it.md), since 20 September: the cost over the term against what they have shown or said they can bear. Since 21 September the inside of a document is written and the term and the way it is paid are told fields on the offering's pricing, so the read can be made wherever those are filled. | Answered | `[]` |
 | V14 What have they still not sent me? | [`missing-documents`](../signals/missing-documents.md), since 20 September, over the new [`document-set`](../assemblies/document-set.md) gather: what you asked for against what came, from `handover#document-request` and `handover#handed-over-document`. Which documents a sale needs is still a told gap, so it reads what you asked for, never what you should have. | Answered | `thread-under-way` |
 | V15 Which of the things I offer should this go to? | Nothing. `world/goal.md` carries `offering:` as a single id and `offering-entry` is written for one product. | Hole, structural | nothing; universal |
-| V16 What was turned down last time on one like this? | Nothing. The library holds no outcomes at all; story ch. 9 says nothing has come back yet. | Hole | outcomes on record, which no word names |
-| V17 Why should a stranger believe me? | [`pushing`](../signals/pushing.md), second shape, since 20 September: asking to be taken on your word, with nothing to show (the evidence shelf, by buyer type) and nothing to give (what they asked for, what you promised) after several unanswered notes. The seller's own record of having delivered is still nowhere: that is outcomes, V16's family. | Answered in part | `thread-under-way` |
+| V16 What was turned down last time on one like this? | [`turned-down-before`](../signals/turned-down-before.md), since 21 September, over the new [`deal-outcomes`](../assemblies/deal-outcomes.md) pile: the ended deals that match this one on the told fit-shape, how they ended, the reasons given in the words they were given in, and whether the no came from the buyer or from a third party the sale needed. Not a forecast, and it never says why they really refused. | Answered | `[]`: it stands on your own ended deals, so it holds on a stranger |
+| V17 Why should a stranger believe me? | Both halves now. [`pushing`](../signals/pushing.md), second shape, since 20 September, says what the thread cannot honestly carry: asking to be taken on your word, with nothing to show and nothing to give after several unanswered notes. [`delivered-before`](../signals/delivered-before.md), since 21 September, says what it can: deals of this shape you really did sell, and how recently. Sold is not the same as glad, and the read never implies the second. | Answered | `thread-under-way` on the first half, `[]` on the second, which is the point of it |
 | V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. | Answered | `thread-under-way` |
 | V19 Am I manufacturing urgency that is not real? | [`pushing`](../signals/pushing.md), first shape, since 20 September: the only real dates on a thread are the buyer's own words and a dated change in your told pricing; any other deadline is manufactured. | Answered | `thread-under-way` |
 | V20 When does someone I sold to come round again? | [`coming-round-again`](../signals/coming-round-again.md), since 21 September, over the new [`since-the-sale`](../assemblies/since-the-sale.md) gather: how far through the agreed term the deal is, what they took before, and their own interval between purchases. Where no term was told there is no clock, and the read is not made. | Answered | `[]`: it needs a completed deal, which is a rung on the ladder, not an assumption about the sale's shape |
@@ -67,18 +67,18 @@ holes.
 
 Eleven holes when this was written (fourteen until 20 September, when V1 to V3 were put outside the
 tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September, four
-since the sixth and **two since the eighth**, both the same day), but not eleven separate pieces of
-work. They gather into seven families, and the right-hand column is the thing worth arguing about: **none of
+since the sixth, two since the eighth and **one since the ninth**, all three the same day), but not
+eleven separate pieces of work. They gather into seven families, and the right-hand column is the thing worth arguing about: **none of
 them is about volume.** They were missed because one seller did not need
 them, and they would serve the patient end just as well.
 
 | Family | Questions | Is it about volume, or about any sale? |
 |---|---|---|
-| **Giving up, and what was turned down** | V5 (answered 20 September), V16 | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
+| **Giving up, and what was turned down** | V5 (answered 20 September), V16 (answered 21 September) | **Any sale.** Giving up is everyone's, and doing it honestly is what separates patience from pestering. Since the ninth pass the library holds endings as well as attempts, which is what "turned down before" had to stand on. The choosing among many (V1 to V3) that used to sit here is before a lead, outside the tool's scope. |
 | **Reading what the buyer gives you** | V11, V12, V14 (all answered by 21 September) | **Any sale.** Until 20 September every channel in the library was the seller's own account, and what a buyer hands over (accounts, budget papers, a brief, a specification) had nowhere to land. [`channels/handover.md`](../channels/handover.md) gathers it, as an envelope and, since 21 September, as the figures a document states, and no more. [`document-set`](../assemblies/document-set.md) reads the envelope, [`figures-on-record`](../assemblies/figures-on-record.md) the figures. What a document's own labels mean, by kind and by country, is the part still not written. |
 | **Whether they can bear it** | V13 (a read since 20 September; makeable since 21 September, when the term became a told field) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
-| **Being believed, and not pushing** | V17 in part, V19, V18 (all reads since 20 September) | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
+| **Being believed, and not pushing** | V17 (in part 20 September, in full 21 September), V19, V18 | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
 | **After the sale** | V20, V22, V21's other half (all three answered 21 September) | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and until the eighth pass the ladder ended at the signature. It no longer has to: a gather keyed on a deal past the sale rung stands on what already existed, and the three reads are honest about the one record nobody has, whether the money arrived. |
 | **Colleagues** | V4 (answered 21 September) | **Any sale**, wherever there is a firm. The library assumed a seller with nobody else in their firm; now a read says who at your firm was in touch before you, from the records a firm shares, and the vocabulary still has no word for "a firm beside you". |
 
@@ -104,7 +104,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 102 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 116 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -281,6 +281,45 @@ two in part, two by nothing, and three are out of scope. The assumptions count: 
 nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 24 of the 34 can be made on a
 live thread with no history, and 10 cannot.
 
+**Done in the ninth pass, 21 September.** Outcomes, the floor the library had never laid. Nothing
+in it held what came of anything: every rung read a sale in progress, and a deal that finished
+looked exactly like a deal that had gone quiet. **Where an ending lives was the decision**, and the
+answer is that it is raw data on the same floor as a fetched email, arriving by the two routes that
+floor already has. Told: a new record on [`told/people-told.md`](../told/people-told.md),
+`deal-outcome`, where you say which deal ended, how (you sold it, they went elsewhere, they did
+nothing, you withdrew), when, who decided and the reason they gave. Fetched: a new record on
+[`channels/crm.md`](../channels/crm.md), `deal-decision`, the same fact where a deal system holds
+it, and it is a record of its own rather than two more fields on the deal for two reasons: a
+decision is not always the buyer's, and one deal can carry several of them, which is how a broker's
+tool holds every funder's offer and decline against one application. **An ending is told or
+fetched, never deduced**, the rule the eighth pass set for the completion of a sale, extended to
+the other three ways a deal can finish: not a loss out of silence, not a win out of a warm word,
+not an ending out of a card nobody acted on. The told outcome is also a third, plainer route into
+[`since-the-sale`](../assemblies/since-the-sale.md), which had only a CRM stage and a rung on your
+target list; a rung says where a deal stands and an outcome says that it finished and on what day.
+Where the outcome does **not** hang is `since-the-sale` itself: that gather is keyed on one deal
+that completed, and endings are read across deals and include the ones that never completed, so
+they are their own pile. That pile is
+[`deal-outcomes`](../assemblies/deal-outcomes.md), the first gather in the library keyed on no
+single subject, which needs no new machinery: a count names it in `over:` exactly as a per-person
+count names `person-history`. What makes two deals alike is the told fit-shape and nothing else,
+because it is the only place a seller has said what kind of buyer this offering is for; where it is
+empty, "one like this" means nothing and the reads say so. Two reads stand on it, both in
+Offerings, both `assumes: []`, because what they need is a record that fills up rather than a shape
+of sale. [`turned-down-before`](../signals/turned-down-before.md) (V16) reads the refusals among
+deals of this shape and the reasons in the words they were given in; it is not a forecast, a buyer
+is not the last buyer, and it never corrects a stated reason with a truer one nobody recorded.
+[`delivered-before`](../signals/delivered-before.md) (V17's other half) is the plain fact that you
+have sold this before and how recently, which is the third honest answer to a stranger beside
+giving them what they asked for and showing them the shelf; it says nothing about how the delivery
+went, because sold is not the same as glad. The endings are **not** feedback on a card, which story
+ch. 9 covers and the told `correction` already carries in part: a card's outcome is about the
+tool's own bets, a deal's is about the sale, and only the second is written. Five new counts, all
+`defined: false`. Sixteen of the 22 are now answered by a read, one by asking, one in part, one by
+nothing (V15, the catalogue), and three are out of scope. The assumptions count: 18 reads assume
+nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 26 of the 36 can be made on a
+live thread with no history, and 10 cannot. *(My reasons, not yet yours.)*
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -296,13 +335,12 @@ for it.
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Write the remaining reads**, each declaring its `assumes:`. After the sale is done (V20 to V22,
-  eighth pass). What is left is what was turned down last time (V16, once outcomes exist, which is
-  also what V17's other half needs: the seller's own record of having delivered). Counting over a
-  group needs no new machinery: add an assembly that gathers the group and a count names it in
-  `over:` exactly as a per-person count does. Checked against the build's joins. Still open: a
-  channel for public records, which is what "to whom" needs beyond what the buyer shows; and
-  whether "a firm beside you" becomes the fourth word in `assumes:`, the user's call.
+- ~~**Write the remaining reads**, each declaring its `assumes:`.~~ Done. After the sale, in the
+  eighth pass (V20 to V22); outcomes and the two reads over them, in the ninth (V16, and V17's
+  other half). Counting over a group turned out to need no new machinery, as expected: an assembly
+  gathers the group and a count names it in `over:` exactly as a per-person count does. Still
+  open: a channel for public records, which is what "to whom" needs beyond what the buyer shows;
+  and whether "a firm beside you" becomes the fourth word in `assumes:`, the user's call.
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.
@@ -326,7 +364,7 @@ yet yours.)*
   dropped Expand vocabulary and the old cast names, the user's call whether they move or are
   rewritten. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 102 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 116 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.

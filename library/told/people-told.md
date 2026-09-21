@@ -24,7 +24,14 @@ One boundary: **who *you* are is not here.** Your name, email and "About you" ar
 Profile ([`05-persona-you`](../modules/05-persona-you.md)), which owns your identity. People leans on it
 but does not hold it. This source is about the *other* people, and about the **deals** you group them
 into: the `deal-seed` is where you name a selling effort and the people and threads it starts from, so
-People can gather it (see [`assemblies/deal.md`](../assemblies/deal.md)).
+People can gather it (see [`assemblies/deal.md`](../assemblies/deal.md)). The `deal-outcome` is the
+other end of the same thing, added 21 September: how a deal finished, when, and the reason they
+gave. **An ending is told or fetched, never deduced.** The tool does not read a loss out of silence,
+a win out of a warm word, or an ending out of a card nobody acted on: you say it, or it comes off
+the deal record in your CRM. That rule is the one the completion of a sale already follows (see
+[`assemblies/since-the-sale.md`](../assemblies/since-the-sale.md)), and an ending without a sale is
+the half of it no ladder carries, because no goal's ladder has a rung for "lost".
+*(My reason, not yet yours.)*
 
 Each record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`
 becomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel
@@ -49,6 +56,12 @@ record.
 | Deal seed | which offering it is about | you, typed (Offerings confirms relevance) |
 | Deal seed | the people or threads it starts from | you, typed or picked |
 | Deal seed | the buyer org(s) | you, typed |
+| Deal outcome | the deal it ended | you, typed or picked |
+| Deal outcome | how it ended (you sold it, they went elsewhere, they did nothing, you withdrew) | you, typed or asked |
+| Deal outcome | when it ended | you, typed |
+| Deal outcome | who decided, where it was not the buyer | you, typed |
+| Deal outcome | the reason they gave, in their words | you, typed or asked |
+| Deal outcome | what they went with instead, where you know | you, typed |
 
 ## In plain words
 
@@ -60,3 +73,4 @@ it, do not change.
 | Seed contact | People to start with |
 | Offline touch | Met offline |
 | Deal seed | Deals you name |
+| Deal outcome | How a deal ended |
