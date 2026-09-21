@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `59307ce` on `main`, fifteen passes on `library/docs/coverage.md` are done. The library
+As of commit `341c3ca` on `main`, sixteen passes on `library/docs/coverage.md` are done. The library
 holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
 `pmf`, a merchant cash advance broker, with 10. It builds clean with `SCENARIO` set to either.
@@ -44,12 +44,11 @@ Commit and push to `main` after each numbered step, with a message in the style 
 Steps 1 to 3 are what the broker's cards exposed. Steps 4 to 7 are what the third question set's
 audit left. Do them in order.
 
-1. **Let `disclosure-still-owed` reach the pricing.** The read gathers the fence, the conversation
-   and the deal, and none of them reaches `offering-told#pricing`, so the one read whose job is
-   "they are about to agree and the cost is not on record" cannot state the cost. `build.js`
-   refused a card over it. `scenarios/pmf/cards/act-paula-disclosure.md` names the gap in *Still
-   unclear* today and should stop having to. Adding `price-position` to its `inputs` is the obvious
-   move; check it against the build's joins, and update the card.
+1. ~~**Let `disclosure-still-owed` reach the pricing.**~~ Done in the sixteenth pass. The read
+   takes `price-position` and quotes `your-price` and `cost-to-them-over-the-term`, the two numbers
+   `can-they-carry-it` already worked, and `offering-told` went into its `needs`.
+   `act-paula-disclosure` states the shape of the cost now. What is left of the hole is step 2:
+   the shelf price is not what a funder answered on this deal.
 
 2. **A read for a funder's answer landing.** `crm#deal-decision` (written in the ninth pass) holds
    the offers and declines against a deal, and only `assemblies/deal-outcomes.md` reads it, for

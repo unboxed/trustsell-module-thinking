@@ -586,7 +586,37 @@ promise was actually made rather than a mail that never existed.
 back through. The patient scenario is untouched, as it should be: it connects neither channel, the
 gathers simply find nothing there, and its cards' confidence is exactly what it was.
 
-Four of the fourteenth pass's six findings remain, and they are the top of the list below.
+Four of the fourteenth pass's six findings remained after the fifteenth, three after the sixteenth, and they are the top of the list below.
+
+**Done in the sixteenth pass, 21 September.** The second thing the cards found, fixed.
+[`disclosure-still-owed`](../signals/disclosure-still-owed.md) reads
+[`price-position`](../assemblies/price-position.md) now, and quotes the two numbers
+[`can-they-carry-it`](../signals/can-they-carry-it.md) already worked: `your-price` and
+`cost-to-them-over-the-term`. The read that holds a close can state the cost instead of only
+saying it is unsaid.
+
+**The decision inside it**, mine. The read needed your told price and there were two ways to
+reach it: `offering-entry`, the whole product card, or `price-position`, which gathers that one
+price and lays it beside the field. `price-position` won, for the reason a precedent is worth
+more than taste here: `can-they-carry-it` already reaches the price that way, and it is the
+assembly both price counts say they count within, so the join holds without moving a count's
+`over`. The rivals' half of that gather is simply unread by this signal, which costs nothing.
+`offering-told` went into the read's `needs`, beside `handover` on `can-they-carry-it` and
+`offering-told` on `existing-commitments`: a price you have not told it is a told gap, and the
+read should say so rather than go quiet. *(My reasons, not yet yours.)*
+
+**What it bought, measured rather than asserted.**
+[`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) stops saying it cannot
+reach the price. It now states the shape of what an advance costs, a factor rate over a term taken
+as a daily debit, and the draft carries it. What is left in *Still unclear* is a different thing
+and a smaller one: not the shelf price, but **what Kestrel actually answered on this deal**. That
+is the next item on this list, and the card now points straight at it. Confidence is unchanged at
+**likely**, because what the firm requires to be said is still nobody's written rule.
+
+**What it did not fix.** A price band is not a figure. Where a supplier answers a live deal with
+terms of their own, those are the numbers owed and the shelf price is not them; the read says the
+shape and marks the rest as the seller's to fill. That is honest and it is not finished, and it
+finishes with the funder's-answer read below rather than here.
 
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
@@ -617,8 +647,9 @@ yet yours.)*
   holes under reads that already exist rather than reads that do not. *(My order, not yet yours.)*
   - ~~**Gather a text conversation.**~~ Done in the fifteenth pass, and it moved a card from a
     hunch to sure.
-  - **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
-    the cost is rather than only that it is unsaid.
+  - ~~**Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
+    the cost is rather than only that it is unsaid.~~ Done in the sixteenth pass. What is left of
+    it is the funder's answer, the next line.
   - **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
     than on ended deals. It is the trade's own alarm and nothing rings it.
   - **Decide whether a completed sale is News**, which would give the News kind its first card in

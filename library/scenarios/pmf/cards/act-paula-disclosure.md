@@ -4,7 +4,7 @@ order: 2
 kind: act
 signal: disclosure-still-owed
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [required-disclosures, disclosures-on-record, decision-language-used]
+counts: [required-disclosures, disclosures-on-record, decision-language-used, your-price, cost-to-them-over-the-term]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [paula-larkin, larkin-print, disclosure]
 to: paula-larkin
@@ -40,7 +40,7 @@ draft:
   title: "Draft"
   hand: "Send"
   sub: "in your voice · sends only when you say"
-  footer: "Attached: the disclosure. The numbers in it are yours."
+  footer: "Attached: the disclosure. The shape of the cost is filled in. Kestrel's own figures are yours."
 phone:
   when: "Today"
   act: "Send Disclosure"
@@ -61,7 +61,7 @@ She accepted Kestrel's offer on Friday and the contract is out for signature. Wh
 - Why now: she has accepted and the contract is out. This is the last moment the disclosure is a courtesy rather than a correction.
 - Her words on Friday were a decision, not a question: she named the offer she wanted and asked what happens next.
 - Nothing on the thread puts the total cost, the term and the daily debit in front of her in writing.
-- What the cost actually is I cannot see from here, which is the next point.
+- I can say what an advance costs: a factor rate between 1.25 and 1.49 of what is advanced, over three to twelve months, taken as a fixed debit every working day. That is the shape the disclosure has to fill.
 
 ## Timeline
 
@@ -74,11 +74,12 @@ She accepted Kestrel's offer on Friday and the contract is out for signature. Wh
 - gmail · Her message on Friday accepting the offer.
 - gmail · Nothing since that states the cost in writing.
 - organisation-told · What your firm says must be put in front of a buyer before they agree.
+- offering-told · What you told me an advance costs: the rate band, the term and how it is debited.
 
 ## Still unclear
 
 - **What your firm actually requires you to say.** The rules are yours to state and none are written down for me yet, so I am going on the shape of the product rather than on a rule. If your firm has a form of words, tell me and I will check every close against it instead of guessing.
-- **The price itself.** I can tell that a buyer is about to agree with nothing on record about the cost. I cannot tell you what the cost is: this read does not reach what you told me about the advance's pricing, so the four numbers in the draft are yours to fill, not mine to state.
+- **What Kestrel actually offered her.** I reach what you told me an advance costs, so the disclosure goes out with the right shape: amount, total repayable, term, daily debit. The four figures on this deal are Kestrel's answer on Friday, and no read of mine reaches what a funder answered on a live deal. Those four are yours to fill.
 
 ## What happens next
 
@@ -90,7 +91,7 @@ Hi Paula,
 
 Before the contract comes back, I want the numbers in front of you in writing rather than buried in the agreement.
 
-The attached sets out what you receive, what you repay in total, over how long, and what leaves the account each working day. If any of it is not what you understood on Friday, say so now and we will stop and go through it.
+The attached sets out what you receive, what you repay in total, over how long, and what leaves the account each working day. Those last two are a fixed debit every working day across the term, not a monthly bill. If any of it is not what you understood on Friday, say so now and we will stop and go through it.
 
 Nothing needs signing until you are happy with those four numbers.
 
