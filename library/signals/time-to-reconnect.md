@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [person-history]
 counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write]
-answers: [Q19]
+answers: [Q19, F21]
 needs: [web, linkedin]
 assumes: [own-rhythm]
 assumes_status: provisional

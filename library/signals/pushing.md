@@ -7,7 +7,7 @@ kind: risk
 confidence: graded
 inputs: [conversation-history, person-history, deal, proof-library]
 counts: [dated-facts-in-their-words, chases-since-their-last-reply, promise-made-undelivered, things-they-asked-you-for, evidence-that-fits-them]
-answers: [V17, V19]
+answers: [V17, V19, F18]
 needs: [drive]
 assumes: [thread-under-way]
 assumes_status: provisional
@@ -23,7 +23,8 @@ tool's own rule turned into a read: never push, and every message names the gift
 
 Pushing comes in two shapes. One is urgency that is not real: a deadline, a closing window or an
 offer that "ends today" that nothing on record supports, neither their own words nor a told fact
-about your price. The other is asking to be believed on your word: a message that asserts and
+about your price. Your own quarter is the usual reason a date like that appears, and it is not a
+reason the buyer's record knows anything about. The other is asking to be believed on your word: a message that asserts and
 shows nothing, to someone who has asked you for something you have not yet given, after several
 notes they have not answered.
 
@@ -49,7 +50,11 @@ Borrows Offerings' told pricing, so a real price change on a date is not mistake
 
 - Trigger, first shape: a deadline or closing window would go out with nothing behind it. The count
   is the dated facts in the buyer's own words plus any dated change in your told pricing; the
-  judgement is whether a date the draft would use is among them. Anything else is manufactured.
+  judgement is whether a date the draft would use is among them. Anything else is manufactured, and
+  **the commonest source of a manufactured date is your own quarter**: a target, a bonus for closing
+  early, a month your firm wants the number in. The read does not know about your incentives and
+  does not need to, because a date that is neither theirs nor a told price change is already
+  manufactured however it got there. *(My reason, not yet yours.)*
   Second shape: your messages since they last wrote have stacked up (counting) AND something they
   asked for or you promised is still to go (counting) AND the next message would carry no gift and
   name no evidence. The one judgement is what counts as a gift, and it leans on the story's own

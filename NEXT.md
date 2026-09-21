@@ -9,15 +9,17 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the twelfth pass on `main`, twelve passes on `library/docs/coverage.md` are done. The
+As of the thirteenth pass on `main`, thirteen passes on `library/docs/coverage.md` are done. The
 library holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37
-signals, 7 docs (all general now) and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
-`SCENARIO` set to either world.
+signals, 7 docs (all general now) and two scenarios (`bops`, with 25 cards; `pmf`, world only). It
+builds clean, with `SCENARIO` set to either world.
 
-**Every one of the volume seller's 22 questions now has an answer**: seventeen by a read, one by
-asking, one in part (V10), three out of scope, none by nothing. A third question set exists,
-`library/docs/firm-questions.md` (`F1` to `F21`, from the Cority interview), and **the coverage map
-has not been run against it**.
+**All three question sets have now been run against the library**, so the map in `coverage.md` is
+a map against three sets. Of the volume seller's 22, seventeen are answered by a read, one by
+asking, one in part (V10), three are out of scope and none by nothing. Of the firm seller's 21,
+five are answered by a read, one by asking, eight in part, two elsewhere and five by nothing: the
+worst of the three sets, and the surprise is that its holes are about **the buyer's side** rather
+than about her firm.
 
 The most recent passes:
 
@@ -53,6 +55,10 @@ The most recent passes:
   `library/scenarios/bops/docs/`, beside `scenario-councils.md`. All three are walkthroughs of the
   BOPS goal, so they were the last of the example left in the general layer. Moving beat
   rewriting: a walkthrough with the example taken out is not worth reading.
+- **The thirteenth** ran the coverage map against the third set, `F1` to `F21`. Five reads claimed
+  an `F` id they plainly answered and did not hold; the eight partial verdicts claimed nothing on
+  purpose, because a read that answers half a question should say in its body which half. What it
+  left behind is the list at the end of `coverage.md`'s "Where this goes next".
 
 Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
 asking" and "Where this goes next". **Do not re-derive the audit.**
@@ -71,10 +77,10 @@ structured accurately and expect you to make the sales and how-it-reads calls yo
 reason into the entry marked "(My reason, not yet yours.)". Do not stop to ask about those. Ask
 only about scope, voice, the phone, or anything hard to reverse.
 
-## Your task
+## The last session's five steps, all done
 
-The rest of "Where this goes next", in this order, committing and pushing to `main` after each
-numbered step with a message in the style of `git log`.
+They are kept here struck through, because each one records a decision and where its reason is
+written. Your own task is the section after them.
 
 1. ~~**Outcomes, then V16.**~~ **Done in the ninth pass.** Outcomes live as raw data, told on
    `people-told#deal-outcome` and fetched on `crm#deal-decision`, gathered by
@@ -96,10 +102,34 @@ numbered step with a message in the style of `git log`.
    `library/scenarios/bops/docs/` now, each with a line saying it moved and that its paths read
    from `library/`. One stale link in `scenario-councils.md` fixed on the way.
 
-5. **Run the coverage map against the third set** (`F1` to `F21`), the way it runs the other two:
-   a table of verdicts, the holes named rather than filled, and a paragraph saying what it found.
-   Seven of the 21 are asked by neither other set, and F8 (what the buyer has not done yet on their
-   side) is the one that seller says no system does.
+5. ~~**Run the coverage map against the third set** (`F1` to `F21`).~~ **Done in the thirteenth
+   pass**, as *The firm seller's 21* in `coverage.md`.
+
+## Your task
+
+Commit and push to `main` after each numbered step, with a message in the style of `git log`.
+
+What the thirteenth pass left behind is written out in order at the end of `coverage.md`'s
+**"Where this goes next"**, and that list is this session's work. In short:
+
+1. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
+   the question it reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
+   `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,
+   F17 on `warm-path`.
+2. **Read the buyer's own published words**: a gather over `web#research-report` and
+   `web#enrichment` keyed on the buyer organisation rather than on the offering, and a read over
+   it (F1, and the missing half of F16). It is the ground a first message stands on at the patient
+   end, and `web` is already connected in both worlds.
+3. **The shape of their process**, a told record nobody has: what a buy at this kind of
+   organisation takes, so a read can say which of those steps the record shows no sign of (F8,
+   which the third seller says no system does, and F6 with it).
+4. **Add the two try counts together** (F11), so a cadence a colleague is running counts towards
+   "enough tries"; and **where a lead came from** (F17, F20), which is provenance on a lead and an
+   event list, a lead source no channel has.
+
+Longer-standing, and still open from earlier passes: turning `assumes:` into a checked join now
+that a second world exists; defining the counts, all 120 of which are still `defined: false`; and
+a third scenario, which earns its place once the two ends have shown what the spectrum is.
 
 ## Five things that are easy to get wrong here
 

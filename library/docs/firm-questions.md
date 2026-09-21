@@ -82,6 +82,12 @@ is matched by its exact filename, and the numbered list under its **The list** h
 
 ## What it exposes
 
-Nothing yet. [`coverage.md`](coverage.md) runs the first two sets question by question and has not
-been run against this one. Doing that is the next thing on its list, and until it is, the count of
-holes in this library is a count against two sets, not three.
+Run on 21 September. [`coverage.md`](coverage.md) has a table of verdicts for all twenty-one, in
+*The firm seller's 21*. Five are answered by a read, one by asking, eight in part, two elsewhere
+and five by nothing, which is the worst showing of the three sets.
+
+**The holes are not about her firm**, which is what this set was written to expose. There is one
+colleague-shaped hole, F11, and it is two counts that do not meet. The cluster is the buyer's side:
+what they publish about themselves (F1, and the missing half of F16), and what their own decision
+takes (F6, F8). Of the rest, F19 is the Brain's, F20 is a lead source no channel has, and F14 is
+the brief, a floor the format doc already defers.

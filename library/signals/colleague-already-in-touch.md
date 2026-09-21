@@ -7,7 +7,7 @@ kind: risk
 confidence: graded
 inputs: [firm-contact, stakeholder-map]
 counts: [colleague-touches-on-record, since-last-colleague-touch]
-answers: [V4]
+answers: [V4, F12]
 needs: [crm, slack]
 assumes: [own-firm]
 assumes_status: provisional

@@ -7,7 +7,7 @@ kind: opening
 confidence: graded
 inputs: [person-history, conversation-history, meeting-history]
 counts: [reply-speed-vs-own-rhythm, reply-length-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions, advocacy-voiced-on-call]
-answers: [Q4, Q5, Q6, Q14]
+answers: [Q4, Q5, Q6, Q14, F4]
 needs: [meet]
 assumes: [own-rhythm, several-people]
 assumes_status: provisional

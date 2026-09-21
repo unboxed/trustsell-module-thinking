@@ -7,7 +7,7 @@ kind: risk
 confidence: graded
 inputs: [conversation-history, person-history, meeting-history]
 counts: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan, commitment-made-on-call]
-answers: [Q22]
+answers: [Q22, F9]
 needs: [calendar, meet]
 assumes: [thread-under-way]
 assumes_status: provisional
