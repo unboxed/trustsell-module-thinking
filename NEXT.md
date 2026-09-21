@@ -9,10 +9,10 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `ac909c6` on `main`, seventeen passes on `library/docs/coverage.md` are done. The library
+As of commit `4a86224` on `main`, eighteen passes on `library/docs/coverage.md` are done. The library
 holds 13 channels, 5 told sources, 22 assemblies, 124 counts (all `defined: false`), 38 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
-`pmf`, a merchant cash advance broker, with 10. It builds clean with `SCENARIO` set to either.
+`pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
 
 All three question sets have been run against the library. Of the patient seller's 26, twenty-two
@@ -56,13 +56,12 @@ audit left. Do them in order.
    `people-told#answer-received` is its told twin. `act-tony-offers` now says what came back.
    It carries `answers: []`, the only signal that does, and `coverage.md` says why.
 
-3. **Two smaller ones from the same pass.** Decide whether a completed sale is **News**: nothing
-   turns a completion into a card, and News is the one kind with no card in either scenario.
-   Completion is fetched or told and never deduced, which is right, so the question is only whether
-   it earns a card. And **make the build notice a trail running into an unconnected channel**: a
-   gap row is added for a signal's `needs` and not for a trail running into a channel the scenario
-   has not plugged in, so `act-paula-disclosure` rests on a Drive evidence shelf that does not
-   exist in its world and nothing complains.
+3. ~~**Two smaller ones from the same pass.**~~ Done in the eighteenth pass. A completed sale is
+   News, and News rests on a record rather than a read: `rests:` holds the records that say it
+   happened, `build.js` allows the swap for `kind: news` only, and `news-fenwick-funded` is the
+   first card of that kind in either scenario. The unconnected-channel check was narrowed to what
+   a card promises to send; the blanket version was measured and rejected, because it would have
+   put a row on 22 of the 25 patient cards. `coverage.md` carries the measurement.
 
 4. **Claim the eight partial `F` ids**, each with a line in the read's body saying which half of
    the question it reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on

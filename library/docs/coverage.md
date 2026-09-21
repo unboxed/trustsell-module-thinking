@@ -586,7 +586,7 @@ promise was actually made rather than a mail that never existed.
 back through. The patient scenario is untouched, as it should be: it connects neither channel, the
 gathers simply find nothing there, and its cards' confidence is exactly what it was.
 
-Four of the fourteenth pass's six findings remained after the fifteenth, three after the sixteenth and two after the seventeenth, and they are the top of the list below.
+Four of the fourteenth pass's six findings remained after the fifteenth, three after the sixteenth, two after the seventeenth and one after the eighteenth. The one left is the order of the day, which is not a hole in a rung.
 
 **Done in the sixteenth pass, 21 September.** The second thing the cards found, fixed.
 [`disclosure-still-owed`](../signals/disclosure-still-owed.md) reads
@@ -658,6 +658,41 @@ been **ageing**, and this is the one read in the library whose trigger is someth
 Fixing it is a change to the order of the day, not to this read, and the order of the day is the
 user's.
 
+**Done in the eighteenth pass, 21 September.** The last two things the cards found, and the News
+kind's first card in either scenario.
+
+**A completed sale is News, and News rests on a record.** Every other kind of card names the read
+it stands on, and that join is what stops a card floating. News has no read to name: an outcome
+with nothing to do carries no opinion, and a read invented to wrap one would decide nothing. So a
+News card names `rests` instead, the records that say the outcome happened, resolved by `build.js`
+and used as the card's reach when its *Sources* are checked. It rests on the record floor, lower
+than any other card, which is what it is.
+[`news-fenwick-funded`](../scenarios/pmf/cards/news-fenwick-funded.md) is the card, and what earns
+it one is not that the news is good: it is that the tool's watching on that deal **stops**, and the
+seller is owed the list of what it will no longer raise. It lands in band 6, costs nothing to wait,
+second from last in the broker's day, which is where a fact with nothing to do belongs.
+*(My reasons, not yet yours.)*
+
+**A card that names what to send must be able to fetch it.** The other half of the same finding.
+A card with `documents:` rests on the evidence shelf, whose files come from a channel; where the
+scenario has connected none of them, the build now writes the gap row itself. It fires on exactly
+one card today, [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md), whose
+draft was promising an attachment it could not produce and no longer does.
+
+**The blanket version was tried and rejected, with the measurement.** The fourteenth pass asked
+for a gap row on any trail running into an unconnected channel. Measured against the library as it
+stands, that rule would have put a row on **twenty-two of the patient scenario's twenty-five
+cards**: almost every one of them reaches `sms` and `web-form` through
+[`conversation-history`](../assemblies/conversation-history.md), which is a hole the fifteenth pass
+dug on purpose and whose reasoning explicitly refused this ("listing them would have put a
+data-gap line on every patient-sale card for a channel that sale has no use for"). A gather that
+touches an unconnected channel finds nothing there, which is fine. A **promise** to attach
+something is different in kind, because the card has claimed it. That is the line the check is
+drawn on. *(My reason, not yet yours.)*
+
+All six of the fourteenth pass's findings are now closed except the last, the order of the day,
+which is not a hole in a rung and is listed below as bigger than a step.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -693,10 +728,12 @@ yet yours.)*
   - ~~**A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
     than on ended deals. It is the trade's own alarm and nothing rings it.~~ Done in the
     seventeenth pass, and it answers no question in any of the three sets.
-  - **Decide whether a completed sale is News**, which would give the News kind its first card in
-    either scenario.
-  - **Make the build notice a trail that runs into an unconnected channel**, not only a signal's
-    `needs`.
+  - ~~**Decide whether a completed sale is News**, which would give the News kind its first card in
+    either scenario.~~ Done in the eighteenth pass. It is, and News rests on a record rather than
+    on a read.
+  - ~~**Make the build notice a trail that runs into an unconnected channel**, not only a signal's
+    `needs`.~~ Done in the eighteenth pass, narrowed to what a card promises to send. The blanket
+    version was measured and rejected: it would have put a row on 22 of the 25 patient cards.
 
 - ~~**Run this map against the third set** (`F1` to `F21`).~~ Done in the thirteenth pass. What it
   left behind, after the above:
