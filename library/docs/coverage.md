@@ -207,7 +207,7 @@ assumptions count: 12 reads assume nothing, 8 `thread-under-way`, 9 `own-rhythm`
 **Done in the sixth pass, 21 September.** Colleagues, and the term. [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md)
 (V4) reads a new gather, [`firm-contact`](../assemblies/firm-contact.md): every contact on record
 between someone at your firm other than you and one buyer organisation, from the records a firm
-shares. That is the CRM (the first gather to draw from [`channels/salesforce.md`](../channels/salesforce.md)),
+shares. That is the CRM (the first gather to draw from [`channels/crm.md`](../channels/crm.md)),
 the workspace, a thread you were copied on and a shared calendar; a colleague's own mailbox is
 never visible, and the gather says so. Who counts as a colleague is read from your own profile:
 anyone on your domain who is not you. The read points at a word with the colleague, never at a
@@ -234,7 +234,7 @@ purpose, and the build is clean with `SCENARIO` set to either world. Three thing
 point. Its **ladder runs past the sale**, eight rungs, the trade's six (interested, applied,
 submitted, offers in, accepted, funded) and then repaying and coming round again, because a ladder
 that stops at the signature could never show the after-the-sale hole. Its `connected:` names
-**sms, web-form, handover and salesforce for the first time**, so the floors laid in the third and
+**sms, web-form, handover and crm for the first time**, so the floors laid in the third and
 fifth passes are finally plugged in by a seller; Calendar, Meet, Drive, Contacts and LinkedIn are
 not, and `goal.md` says why for each. And its Pricing fills **the term and how it is paid**, the
 two told fields added in the sixth pass, which at this end are never empty. The documents are the
@@ -252,7 +252,7 @@ thing on the list and has not been done.
 **Done in the eighth pass, 21 September.** After the sale, the family the ladder itself was in the
 way of. One new gather, [`since-the-sale`](../assemblies/since-the-sale.md), keyed on a deal
 standing on a rung the ladder puts after the sale, drawing on what already existed: the deal, the
-CRM record for the stage and the close date, your target list for where a deal stands when there is
+deal record for the stage and the close date, your target list for where a deal stands when there is
 no CRM, the offering's told pricing for the term and how it is paid, the figures the buyer's
 documents show, and what they have handed over since. **Where the sale's completion comes from was
 the decision**, and the answer is that it is fetched from the CRM or told by you, the same two
@@ -280,6 +280,18 @@ one candidate without settling it. Fourteen of the 22 are now answered by a read
 two in part, two by nothing, and three are out of scope. The assumptions count: 16 reads assume
 nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 24 of the 34 can be made on a
 live thread with no history, and 10 cannot.
+
+**Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
+record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
+out of the channel docs on 20 September: a rung of the general library should not carry one
+seller's stack. Salesforce, HubSpot, Pipedrive and the opportunity tool a broker's own firm runs
+differ in what they call a field and agree on what a deal record holds, and the library needs the
+second. So the `Source` column is a plain note now rather than an API name, the way
+[`sms.md`](../channels/sms.md) and [`web-form.md`](../channels/web-form.md) were already written,
+and 01-integrations no longer lists "a CRM beyond Salesforce" as a provider that might join next.
+The same question stands unasked about Gmail, Calendar, Drive, Contacts and Meet, which are
+vendor-named for a seller who might be on Outlook; that is a bigger rename and nobody has asked
+for it.
 
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*

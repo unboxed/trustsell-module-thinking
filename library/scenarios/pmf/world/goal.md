@@ -4,7 +4,7 @@ today: 2026-09-21
 seller: you
 offering: advance       # the thing being sold; a card can be about it
 ladder: [interested, applied, submitted, offers-in, accepted, funded, repaying, coming-round-again]
-connected: [sms, web-form, handover, salesforce, gmail, web]   # what you have plugged in; a channel left out is not connected
+connected: [sms, web-form, handover, crm, gmail, web]   # what you have plugged in; a channel left out is not connected
 ---
 
 # The goal, in your words

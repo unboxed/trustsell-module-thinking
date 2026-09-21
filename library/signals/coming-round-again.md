@@ -8,7 +8,7 @@ confidence: graded
 inputs: [since-the-sale]
 counts: [how-far-through-the-term, what-was-bought-before, times-they-have-bought]
 answers: [V20]
-needs: [salesforce]
+needs: [crm]
 assumes: []
 assumes_status: provisional
 ---

@@ -8,7 +8,7 @@ confidence: graded
 inputs: [since-the-sale, figures-on-record]
 counts: [agreed-payments-not-on-record, words-about-paying, money-in-by-period]
 answers: [V22]
-needs: [salesforce, handover]
+needs: [crm, handover]
 assumes: []
 assumes_status: provisional
 ---

@@ -6,7 +6,7 @@ blurb: Every contact between someone at your firm other than you and one buyer o
 about: an organisation
 deterministic: true
 inputs:
-  - salesforce#crm-record
+  - crm#deal-record
   - slack#slack-message
   - slack#slack-user
   - gmail#email-thread
@@ -29,7 +29,7 @@ It keys on the organisation, through the map of who is who there. The work is id
 - who counts as a colleague: anyone on your own email domain who is not you, and anyone in your
   Slack workspace, with you read from your profile;
 - which organisation a record concerns: the buyer's domain on a thread or an event, the account on
-  a CRM record, a name in a Slack message matched to the map;
+  the deal record, a name in a Slack message matched to the map;
 - which contact was theirs and not yours: a thread you were copied on, an event you did not
   organise, a CRM activity logged by another owner.
 
@@ -44,7 +44,7 @@ not a gap; it is the fact of the matter, and the read above it does not arise.
 
 ## Where it comes from
 
-`crm-record` resolves to [`channels/salesforce.md`](../channels/salesforce.md), the one place a
+`deal-record` resolves to [`channels/crm.md`](../channels/crm.md), the one place a
 firm's contact with an account is on record across everyone in it, and this is the first gather to
 draw from it. `slack-message` and `slack-user` resolve to
 [`channels/slack.md`](../channels/slack.md); `email-thread` and `email-message` to

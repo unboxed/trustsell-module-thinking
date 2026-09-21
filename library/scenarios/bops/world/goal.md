@@ -29,7 +29,7 @@ Where a deal stands, in order: cold, engaged, coalition, partial, full.
 
 Gmail, Calendar, Drive, Contacts, Meet, Slack and the open web, listed as `connected:` above.
 **LinkedIn is not connected**, which is a data gap several cards name rather than work around.
-Nor are Salesforce, SMS, the web form or what a buyer hands over: this is a patient sale by mail
+Nor is a CRM, nor SMS, the web form or what a buyer hands over: this is a patient sale by mail
 and meeting, and nothing in it uses them. What is plugged in is this seller's, so it lives here and
 not on the channel docs (moved 20 September): a channel says what it carries, and the scenario
 says whether you have it.

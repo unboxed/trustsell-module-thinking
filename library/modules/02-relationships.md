@@ -17,7 +17,7 @@ connects:
     requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
   - to: "05-persona-you"
     provides: "relationship history (plain facts and personal colour) read at write time"
-draws_from: [gmail, calendar, slack, contacts, meet, web, handover, web-form, salesforce]
+draws_from: [gmail, calendar, slack, contacts, meet, web, handover, web-form, crm]
 ---
 
 # 02 · People + Organisations

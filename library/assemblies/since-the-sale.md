@@ -7,7 +7,7 @@ about: a deal
 deterministic: true
 inputs:
   - deal
-  - salesforce#crm-record
+  - crm#deal-record
   - goal-told#target-list
   - offering-told#pricing
   - figures-on-record
@@ -60,8 +60,8 @@ names.
 ## Where it comes from
 
 `deal` and `figures-on-record` are sibling assemblies: the selling effort with its conversations
-and people, and the figures the buyer's documents state. `crm-record` resolves to
-[`channels/salesforce.md`](../channels/salesforce.md), for the stage, the close date and the amount.
+and people, and the figures the buyer's documents state. `deal-record` resolves to
+[`channels/crm.md`](../channels/crm.md), for the stage, the close date and the amount.
 `target-list` resolves to [`told/goal-told.md`](../told/goal-told.md), where you say where each
 organisation stands on the ladder, which is the answer when the CRM is not connected.
 `pricing` resolves to [`told/offering-told.md`](../told/offering-told.md), for the price, the term

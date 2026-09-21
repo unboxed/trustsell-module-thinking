@@ -8,7 +8,7 @@ confidence: graded
 inputs: [firm-contact, stakeholder-map]
 counts: [colleague-touches-on-record, since-last-colleague-touch]
 answers: [V4]
-needs: [salesforce, slack]
+needs: [crm, slack]
 assumes: []
 assumes_status: provisional
 ---
