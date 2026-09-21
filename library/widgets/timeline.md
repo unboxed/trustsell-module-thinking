@@ -5,7 +5,7 @@ label: Timeline
 blurb: What happened, in order, with today marked.
 shape: a line of dots, oldest first; today's dot is filled
 parts: 2
-fed_by: [person-history, conversation-history, meeting-history, deal]
+fed_by: [person-history, conversation-history, meeting-history, deal, decisions-so-far]
 ---
 
 # Timeline

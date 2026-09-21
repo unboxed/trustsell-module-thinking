@@ -9,8 +9,8 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `341c3ca` on `main`, sixteen passes on `library/docs/coverage.md` are done. The library
-holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37 signals,
+As of commit `ac909c6` on `main`, seventeen passes on `library/docs/coverage.md` are done. The library
+holds 13 channels, 5 told sources, 22 assemblies, 124 counts (all `defined: false`), 38 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
 `pmf`, a merchant cash advance broker, with 10. It builds clean with `SCENARIO` set to either.
 **The playbook still ships `bops`.**
@@ -50,15 +50,11 @@ audit left. Do them in order.
    `act-paula-disclosure` states the shape of the cost now. What is left of the hole is step 2:
    the shelf price is not what a funder answered on this deal.
 
-2. **A read for a funder's answer landing.** `crm#deal-decision` (written in the ninth pass) holds
-   the offers and declines against a deal, and only `assemblies/deal-outcomes.md` reads it, for
-   deals that have **ended**. So "an offer came back and nobody has told the rep", which the trade
-   calls the moment to raise alarms, has no read at all.
-   `scenarios/pmf/cards/act-tony-offers.md` can only say a promise was made and not kept, and says
-   outright it cannot tell the seller what came back. This needs a gather over the decisions on the
-   deal in hand, or `deal` widened, plus one signal. It answers no question in any of the three
-   sets, which is itself worth a line in `coverage.md`: the sets are a seller's questions to
-   herself, and this is one the trade never had to ask because a person always did it.
+2. ~~**A read for a funder's answer landing.**~~ Done in the seventeenth pass.
+   `assemblies/decisions-so-far.md` gathers a live deal's answers, `signals/answer-came-back.md`
+   reads the gap between one landing and the buyer hearing it, four counts sit under it, and
+   `people-told#answer-received` is its told twin. `act-tony-offers` now says what came back.
+   It carries `answers: []`, the only signal that does, and `coverage.md` says why.
 
 3. **Two smaller ones from the same pass.** Decide whether a completed sale is **News**: nothing
    turns a completion into a card, and News is the one kind with no card in either scenario.
@@ -110,7 +106,7 @@ audit left. Do them in order.
 - **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
   say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
   card whose reads assume more than that.
-- **Define the counts.** All 120 are `defined: false`, with the arithmetic said in prose. Some
+- **Define the counts.** All 124 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and

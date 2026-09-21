@@ -166,7 +166,7 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 120 are still `defined: false`, and some of them should probably merge or
+- What each count counts. All 124 are still `defined: false`, and some of them should probably merge or
   go once this map is agreed, which is why defining them comes after.
 
 ## Where this goes next
@@ -586,7 +586,7 @@ promise was actually made rather than a mail that never existed.
 back through. The patient scenario is untouched, as it should be: it connects neither channel, the
 gathers simply find nothing there, and its cards' confidence is exactly what it was.
 
-Four of the fourteenth pass's six findings remained after the fifteenth, three after the sixteenth, and they are the top of the list below.
+Four of the fourteenth pass's six findings remained after the fifteenth, three after the sixteenth and two after the seventeenth, and they are the top of the list below.
 
 **Done in the sixteenth pass, 21 September.** The second thing the cards found, fixed.
 [`disclosure-still-owed`](../signals/disclosure-still-owed.md) reads
@@ -617,6 +617,46 @@ is the next item on this list, and the card now points straight at it. Confidenc
 terms of their own, those are the numbers owed and the shelf price is not them; the read says the
 shape and marks the rest as the seller's to fill. That is honest and it is not finished, and it
 finishes with the funder's-answer read below rather than here.
+
+**Done in the seventeenth pass, 21 September.** The third thing the cards found, fixed, and the
+first entry in the library written against a **job** rather than a question.
+[`decisions-so-far`](../assemblies/decisions-so-far.md) gathers every answer recorded against a
+deal that is still running, and [`answer-came-back`](../signals/answer-came-back.md) reads the gap
+between an answer landing and the buyer hearing it. Four counts under it: `answers-back`,
+`since-an-answer-landed`, `still-out-with-someone` and `told-them-since`.
+
+**Three decisions inside it**, all mine. A **new gather rather than a wider `deal`**: `deal` is the
+membrane a conversation makes, and an answer from a party who is not on the conversation does not
+belong inside it. The new one is the live twin of [`deal-outcomes`](../assemblies/deal-outcomes.md),
+keyed on one deal where that is keyed on none, and an answer that ends a deal is in both. A **told
+twin**, `people-told#answer-received`, because without one the read works only for a seller with a
+deal system connected, and the patient scenario has none; it is per answer, like the CRM's record,
+and deliberately not a widening of `deal-outcome`, which is about endings. And **`answers: []`**,
+which no other signal in the library carries. It answers no question in any of the three sets, and
+that is the finding rather than a defect: the sets are sellers' questions to themselves, and nobody
+asks "has something come back that I have not passed on" because at every desk a person is already
+doing it. A question set records what a seller notices they do. It cannot record what they do
+without noticing. *(My reasons, not yet yours.)*
+
+**What it bought, measured rather than asserted.**
+[`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) was a card about a promise you made
+and had not kept, which could not say what the promise was about. It now rests on
+`answer-came-back` with `loose-end` **supporting**, and it says what came back, from whom, when,
+and that nothing is still out. Its confidence went from **sure** about your own words to **sure**
+about four answers on the deal record: the same word, a better card under it. The world had the
+fact all along, in one line of
+[`scenarios/pmf/world/organisations.md`](../scenarios/pmf/world/organisations.md); for two days the
+library could not reach a fact the fiction had already written down.
+
+**What it did not move, which is the useful part.** The card is still **third** in the broker's
+day, behind a faltering repayment and a disclosure. It is not sureness and it is not the band: all
+three are in band 2, and the tie-break that puts it third is "the organisation further up the
+ladder first" ([`modules/00-spine.md`](../modules/00-spine.md)). So the day is ordered by how far
+along a deal is, and an answer that landed this morning loses to a deal that is simply further on.
+That is the sharpest evidence yet for the open item below: every band weighs how long something has
+been **ageing**, and this is the one read in the library whose trigger is something **arriving**.
+Fixing it is a change to the order of the day, not to this read, and the order of the day is the
+user's.
 
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
@@ -650,8 +690,9 @@ yet yours.)*
   - ~~**Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
     the cost is rather than only that it is unsaid.~~ Done in the sixteenth pass. What is left of
     it is the funder's answer, the next line.
-  - **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
-    than on ended deals. It is the trade's own alarm and nothing rings it.
+  - ~~**A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
+    than on ended deals. It is the trade's own alarm and nothing rings it.~~ Done in the
+    seventeenth pass, and it answers no question in any of the three sets.
   - **Decide whether a completed sale is News**, which would give the News kind its first card in
     either scenario.
   - **Make the build notice a trail that runs into an unconnected channel**, not only a signal's
@@ -694,7 +735,7 @@ yet yours.)*
   still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
   it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 120 are `defined: false`, and some should merge or
+**Deliberately not yet.** Defining the counts: all 124 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
 phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
 earns its place once the two ends have shown what the spectrum is.

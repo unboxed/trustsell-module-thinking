@@ -33,6 +33,16 @@ the deal record in your CRM. That rule is the one the completion of a sale alrea
 the half of it no ladder carries, because no goal's ladder has a rung for "lost".
 *(My reason, not yet yours.)*
 
+The `answer-received` record, added 21 September, is the **live** half of the same thing: an answer
+that has come back while the deal is still running. A funder's offer, a credit committee's
+approval, a procurement board saying "not this year, ask again in March". It is the told twin of
+the deal decision a CRM holds, one record per answer, because a deal can collect several and
+because the one who answers is often not the buyer. Keep it apart from `deal-outcome`: an outcome
+is how a deal *ended*, an answer received is what *came back*, and most answers do not end
+anything. The same rule governs both. **An answer is told or fetched, never deduced.** A message
+that reads like good news is not an answer until you say it is or the deal record carries it.
+*(My reason, not yet yours.)*
+
 Each record below is a lineage anchor; its id is the kebab-slug of its label (`Contact preference`
 becomes `contact-preference`), and that is what People's assemblies reference, exactly like a channel
 record.
@@ -62,6 +72,11 @@ record.
 | Deal outcome | who decided, where it was not the buyer | you, typed |
 | Deal outcome | the reason they gave, in their words | you, typed or asked |
 | Deal outcome | what they went with instead, where you know | you, typed |
+| Answer received | the deal it is on | you, typed or picked |
+| Answer received | who answered (the buyer, or a third party whose agreement the sale needs) | you, typed |
+| Answer received | what they answered (an offer with its terms, a refusal, a request for more, or nothing decided yet) | you, typed or asked |
+| Answer received | when it came | you, typed |
+| Answer received | the reason they gave, in their words | you, typed or asked |
 
 ## In plain words
 
@@ -74,3 +89,4 @@ it, do not change.
 | Offline touch | Met offline |
 | Deal seed | Deals you name |
 | Deal outcome | How a deal ended |
+| Answer received | What came back on a live deal |
