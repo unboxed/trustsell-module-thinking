@@ -46,26 +46,27 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-There is no numbered list left. Every step the last session was handed is done, and the three
-question sets are as answered as they are going to get without new thinking: the patient seller's
-26 have four unclaimed and all four are accounted for, the volume seller's 22 have none answered by
-nothing, and the firm seller's 21 have one, F19, which the map says belongs to the Brain.
+**Everything that was on a list is done.** Twenty-eight passes, the last eight of them in one
+session: the three findings the broker's cards left, the third question set's backlog, the
+`assumes:` join, the order of a day, a third scenario, and the counting floor that had been
+deliberately empty since 18 September. The three question sets are as answered as they get without
+new thinking, and every rung of the ladder is written.
 
-So this is the first session in a while that has to **choose**. What follows is what is known to be
-open, with what I would do and why. The order is mine. *(My order, not yet yours.)* Ask the user
-which they want before starting anything in the second half of this list, because those are scope
-calls rather than work.
+So there is no next step to take off a list. What is below is what writing all that turned up, and
+none of it is a defect: it is the shape of the next argument. Read it, then **ask the user which
+one**, because each is a judgement about how the tool should behave rather than a hole in the
+library. The order is mine. *(My order, not yet yours.)*
 
-~~**The two small reads.**~~ Done in the twenty-fourth pass.
-[`they-owe-you`](library/signals/they-owe-you.md) is the mirror of `loose-end`, a promise the buyer
-made to you, and [`deadline-they-gave`](library/signals/deadline-they-gave.md) watches a date they
-stated come closer, on the count `pushing` already had pointed the other way. F7 and F10 close, and
-two cards that had been standing on nothing (`act-holbrook-window`, `act-felton-director`) now name
-them.
-
-~~**The scope calls.**~~ Three of the four are done: the `assumes:` join (twenty-fifth), the day's
-order (twenty-sixth) and the Cority world (twenty-seventh). What is left is below, and the two new
-findings above it.
+1. **A dated card is band 4 whatever the distance**, and the first two items below sit under it.
+   This is the one I would raise first, because it is the last thing in the library that answers a
+   question other than the one it was asked.
+2. **Two findings from the third scenario**, both small and both real: a shared list cannot record
+   who has worked which name, and the two-week paragraph a manager actually wants is the brief,
+   asked for now by three of the three sellers interviewed.
+3. **The cards' own joins are still provisional.** Every card's `signal:` and `supporting:` were
+   read off the card rather than decided. It is now the only `provisional` left in the library, and
+   it is the last rung of the ladder to be settled the way the counts were in the twenty-eighth
+   pass. It is a large, dull pass and it is the honest next one.
 
 ## Still open, and bigger than a step
 
@@ -74,12 +75,12 @@ findings above it.
   `colleague-already-in-touch` and the firm half of `enough-tries` both produce cards that could
   not have existed in either other world. It is also the first scenario with no data-gap rows at
   all, because eleven of the fourteen channels are connected.
-- **New, from writing it: a dated card is band 4 whatever the distance.** A window closing in eight
+- **A dated card is band 4 whatever the distance** (found in the twenty-seventh pass). A window closing in eight
   working days and a date six months off land in the same band, because `ownBand` asks only whether
   a date exists and whether it is tomorrow. The twenty-sixth pass said the bands were sound, and
   that was true of the complaint it answered; this is a different one and it is about the bands.
   There is no principle that says which card should win, so it is named rather than decided.
-- **New: a shared list cannot record who has worked which name.** `lead-list` holds the list and
+- **A shared list cannot record who has worked which name** (found in the twenty-seventh pass). `lead-list` holds the list and
   the entries; when marketing sends the same spreadsheet to six people, nothing says who wrote to
   whom.
 - ~~**The day's order is a patient seller's.**~~ Done in the twenty-sixth pass, and it was not the
@@ -96,6 +97,14 @@ findings above it.
   `breaks`, every `over` is resolved and every `over_status` is `decided`. The build made six move
   to a different gather. The merge pass was considered and not done: the three closest pairs are
   genuinely two things each and each now says so in its body.
+- **The brief, asked for by all three sellers.** What happened on this deal in the last two weeks,
+  in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
+  floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
+  one-line next step for fifty reps, and messages on a Friday asking where a deal is.
+- **The cards' joins are the last provisional thing in the library.** Every card's `signal:` and
+  `supporting:` carry `_status: provisional`, because they were read off the card. Settling them is
+  the same shape of pass as the twenty-eighth: go read, decide, and let the build refuse what does
+  not hold.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
   "you can take in the whole day". A card and phone question, not a library one.
