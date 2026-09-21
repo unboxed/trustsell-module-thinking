@@ -1,8 +1,8 @@
 # Selling to councils: one scenario, reverse-engineered
 
-*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, "A card's day".*
+*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `docs/library-format.md`, "A card's day".*
 
-A worked walkthrough of a single real goal, run **backward**. Where `docs/flow.md`
+A worked walkthrough of a single real goal, run **backward**. Where `flow.md`
 walks the BOPS Expand goal forward in time, this one starts from a finished
 recommendation and peels each layer back, asking *"what had to be true for this?"*
 until we reach the raw data and the handful of things you told the tool once.
@@ -155,7 +155,7 @@ honestly as the knowns.
 (Here the deal and the coalition coincide, because everyone in this effort sits inside
 Council 14. In general the **deal** is the unit, and it can pull in people across
 organisations; this single-org coalition is just its simplest shape. See
-[`02-relationships/assemblies/deal.md`](../assemblies/deal.md).)
+[`assemblies/deal.md`](../../../assemblies/deal.md).)
 
 ## Layer 5: The routines that produced the reading
 
@@ -249,7 +249,7 @@ because… and here's the draft.
 
 Read from the bottom up, that's the picture: many raw facts at the wide base, narrowing
 through readings into a few insights, compounding into one brief, plated into one action
-at the point. Not a route you travel: an **assembly you build**. `docs/flow.md` shows
+at the point. Not a route you travel: an **assembly you build**. `flow.md` shows
 the same machine moving forward in time; this shows it standing still and taken apart,
 so you can see what every layer is made of.
 

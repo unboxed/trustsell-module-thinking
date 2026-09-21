@@ -1,10 +1,14 @@
 # How the modules collaborate: what each one needs, and how they combine
 
-The third companion piece. `scenarios/bops/docs/scenario-councils.md` (the walkthrough of the example scenario, moved beside it on 21 September) takes one finished
+The third companion piece, and the third to be worked through the BOPS example, so it sits beside
+that scenario. `scenario-councils.md`, next to it, takes one finished
 recommendation apart, bottom to top. `docs/tracing-back.md` starts from a salesperson's
 questions and traces each down to the plain facts (and names the gaps). This one turns to
 the **supply side** (Offerings, Profile, and Organisation), the modules with smaller jobs
 than People, and asks how they actually do them.
+
+*Moved here from `library/docs/` on 21 September, for the same reason as `flow.md`: it is worked
+through the example, and the general docs should not be. Paths in it are from `library/`.*
 
 For each of those modules, four questions:
 1. **What does it need to know** to do its job?

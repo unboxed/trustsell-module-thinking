@@ -405,6 +405,20 @@ V12 is no longer "short of public records". The assumptions count: 18 reads assu
 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`, 1 `own-firm`; so 26 of the 37 can be made
 on a live thread with no history, and 11 cannot. *(My reasons, not yet yours.)*
 
+**Done in the twelfth pass, 21 September.** The two worked-example docs moved.
+[`flow.md`](../scenarios/bops/docs/flow.md) and
+[`how-modules-collaborate.md`](../scenarios/bops/docs/how-modules-collaborate.md) now live at
+`scenarios/bops/docs/`, beside [`scenario-councils.md`](../scenarios/bops/docs/scenario-councils.md),
+which went there in the sixth pass. All three are worked through the BOPS goal from end to end, so
+they were the last of the example sitting in the general layer. Moving them was the choice over
+rewriting them: prose written as a walkthrough of one goal does not become general by having the
+names taken out, and a walkthrough with no example left is not worth reading. Each now carries a
+line at the top saying it moved and that its paths are read from `library/`. `library/docs/` holds
+seven docs now, all of them general. Nothing else changed: the two still use the dropped Expand
+vocabulary and the old cast names, and both already said so in their own first lines. One broken
+link fixed on the way, `scenario-councils.md`'s pointer at `assemblies/deal.md`, which the sixth
+pass's move had left one folder short. *(My reason, not yet yours.)*
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -445,10 +459,13 @@ yet yours.)*
   modules; and `scenario-councils.md` lives beside its scenario, at
   `scenarios/bops/docs/`, with its two companions pointing there. Left as they were:
   `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md`, which carry no scenario name I
-  could find, and whatever presumption was meant is not recorded; and `docs/flow.md` and
-  `how-modules-collaborate.md`, which are worked through the example on purpose and still use the
-  dropped Expand vocabulary and the old cast names, the user's call whether they move or are
-  rewritten. `kind: deal-movement` stays: it is a family of read, not a council word.
+  could find, and whatever presumption was meant is not recorded. `docs/flow.md` and
+  `how-modules-collaborate.md` moved beside their scenario in the twelfth pass, at
+  [`scenarios/bops/docs/`](../scenarios/bops/docs/), which was the choice between moving them and
+  rewriting them: they are worked through the example on purpose, so the honest fix is to put them
+  where the example lives rather than to generalise prose that was never meant to be general. They
+  still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
+  it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
 **Deliberately not yet.** Defining the counts: all 120 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the

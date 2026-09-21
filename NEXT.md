@@ -9,9 +9,9 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the eleventh pass on `main`, eleven passes on `library/docs/coverage.md` are done. The
+As of the twelfth pass on `main`, twelve passes on `library/docs/coverage.md` are done. The
 library holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37
-signals, 9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
+signals, 7 docs (all general now) and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
 `SCENARIO` set to either world.
 
 **Every one of the volume seller's 22 questions now has an answer**: seventeen by a read, one by
@@ -49,6 +49,10 @@ The most recent passes:
   no read yet; a period on both sides of a handover, kept on the envelope so the fifth pass's
   separation holds; and **`own-firm`**, the fourth word in `assumes:`, declared on
   `colleague-already-in-touch`.
+- **The twelfth** moved `flow.md` and `how-modules-collaborate.md` to
+  `library/scenarios/bops/docs/`, beside `scenario-councils.md`. All three are walkthroughs of the
+  BOPS goal, so they were the last of the example left in the general layer. Moving beat
+  rewriting: a walkthrough with the example taken out is not worth reading.
 
 Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
 asking" and "Where this goes next". **Do not re-derive the audit.**
@@ -88,11 +92,9 @@ numbered step with a message in the style of `git log`.
 3. ~~**Small decisions the passes raised.**~~ **Done in the eleventh pass**, all five. The
    `assumes:` vocabulary is four words now.
 
-4. **Move the two worked-example docs.** `library/docs/flow.md` and
-   `library/docs/how-modules-collaborate.md` are worked through the bops example on purpose and
-   still use the dropped Expand vocabulary and the old cast names. Move them beside
-   `scenario-councils.md` in `library/scenarios/bops/docs/` and fix the links to them (grep the
-   whole repo, not just `library/`).
+4. ~~**Move the two worked-example docs.**~~ **Done in the twelfth pass.** Both are at
+   `library/scenarios/bops/docs/` now, each with a line saying it moved and that its paths read
+   from `library/`. One stale link in `scenario-councils.md` fixed on the way.
 
 5. **Run the coverage map against the third set** (`F1` to `F21`), the way it runs the other two:
    a table of verdicts, the holes named rather than filled, and a paragraph saying what it found.

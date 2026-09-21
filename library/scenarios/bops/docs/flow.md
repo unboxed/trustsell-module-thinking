@@ -1,10 +1,12 @@
 # The flow, end to end
 
-*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `library-format.md`, "A card's day".*
+*Written before 19 September. Sustain, Advance and Expand have since been dropped: a card's only label is its kind (Act, Ask, Connect, News; Told was renamed News the same day). See `docs/library-format.md`, "A card's day".*
 
 How the pieces move from a **strategy** to a **surfaced action** (*"Reach out to Person P, because …"*), worked through the running example: an *Expand* goal, **BOPS → 30 councils**.
 
-This is the worked version of Brain's canonical **play** (`00-spine`); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the *shape*, not the gospel.
+This is the worked version of Brain's canonical **play** (`modules/00-spine.md`); it ties together the module roles and the routines-vs-plays distinction. The exact steps will shift with real use. This is the *shape*, not the gospel.
+
+*Moved here from `library/docs/` on 21 September. It is worked through the BOPS example throughout, so it belongs beside the scenario it is worked through, as `scenario-councils.md` already does. Paths in it are from `library/`.*
 
 ## Phase A: strategy becomes standing work
 *Happens when you set or change the strategy.*
