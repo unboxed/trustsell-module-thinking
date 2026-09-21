@@ -5,6 +5,7 @@ seller: you
 offering: [advance-avondale, advance-kestrel, advance-northline, advance-bayard]   # what is sold: one product, four funders, one entry each
 ladder: [interested, applied, submitted, offers-in, accepted, funded, repaying, coming-round-again]
 connected: [sms, web-form, handover, crm, gmail, web, lead-list]   # what you have plugged in; a channel left out is not connected
+has: [thread-under-way, own-rhythm, own-firm]   # what this sale has; no several-people, one owner per business
 ---
 
 # The goal, in your words
@@ -48,6 +49,19 @@ customer with a live advance being debited daily or weekly. **Coming round again
 advance is far enough through that the conversation starts over. The library's reads stop at the
 signature today, so a ladder that stops there could never show the hole
 ([`docs/coverage.md`](../../../docs/coverage.md), the after-the-sale family).
+
+## What this sale has
+
+Three of the four, listed as `has:` above. Conversations already under way, because a lead that has
+said yes is a conversation. Enough history to know somebody's usual, on the customers who are
+repaying and the ones coming round again, which is what the last two rungs of the ladder are for. A
+firm beside you: Marcus works the file once the documents are complete, and the CRM is shared.
+
+**Not `several-people`.** One owner per business, so there is nobody else to win over on their
+side, and every read that holds a map of a buying team against the cast a decision needs is silent
+here. That is the sharpest difference between this scenario and the patient one, and since 21
+September `build.js` enforces it: a card resting on a read that assumes several people is refused
+in this world.
 
 ## What is connected
 

@@ -5,6 +5,7 @@ seller: you
 offering: [bops]        # what is sold; a list since 21 September, and one entry is the common case
 ladder: [cold, engaged, coalition, partial, full]
 connected: [gmail, calendar, drive, contacts, meet, slack, web]   # what you have plugged in; a channel left out is not connected
+has: [thread-under-way, own-rhythm, several-people, own-firm]   # what this sale has; a read that assumes more cannot be made here
 ---
 
 # The goal, in your words
@@ -30,6 +31,14 @@ Wednesday 16 September 2026. Every `when` on a card is relative to this date.
 ## The ladder
 
 Where a deal stands, in order: cold, engaged, coalition, partial, full.
+
+## What this sale has
+
+All four of them, listed as `has:` above, which is why this scenario could exercise almost every
+read in the library. Conversations already under way, years of history with the people in them,
+several stakeholders to win at each council, and a firm beside you: Simon Ward in partnerships, and
+Slack connected so his contact is on record. A read that assumes something this list does not carry
+cannot be made here, and `build.js` refuses a card that rests on one.
 
 ## What is connected
 

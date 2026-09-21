@@ -274,6 +274,13 @@ if (new Set(offeringIds).size !== offeringIds.length) problems.push(`${SCN}/worl
 if (!world.goal || !('connected' in world.goal)) problems.push(`${SCN}/world/goal.md: no connected; list the channels this seller has plugged in, or connected: []`);
 else must(world.goal.file, 'connected', world.goal.connected, S.channels, 'channel');
 const plugged = new Set([].concat((world.goal && world.goal.connected) || []));
+// What this sale has, from the same four words a read's `assumes` draws on (added 21 September).
+// A read whose condition the sale does not have does not apply at all, which is not the same as a
+// read with a source missing: that one still stands with less to go on. So a card resting on a
+// read this sale cannot make is refused rather than given a gap row. The vocabulary is checked
+// below, once ASSUMES is defined.
+if (!world.goal || !('has' in world.goal)) problems.push(`${SCN}/world/goal.md: no has; say what this sale has, from the assumes vocabulary, or has: []`);
+const sale = new Set([].concat((world.goal && world.goal.has) || []));
 for (const ch of L.channels) {
   if ('connected' in ch) problems.push(`${ch.file}: connected belongs in ${SCN}/world/goal.md, not on the channel`);
   ch.connected = plugged.has(ch.id);
@@ -314,6 +321,11 @@ const ASSUMES = {
   'several-people':   'Several people to win at the buyer',
   'own-firm':         'A firm beside you, whose records you share',   // added 21 September
 };
+if (world.goal && 'has' in world.goal)
+  for (const h of [].concat(world.goal.has || []))
+    if (!ASSUMES[h]) problems.push(`${SCN}/world/goal.md: has "${h}" is not one of ${Object.keys(ASSUMES).join(', ')}`);
+const signalsOfEarly = c => [c.signal, ...[].concat(c.supporting || [])]
+  .map(id => L.signals.find(s => s.id === id)).filter(Boolean);
 for (const s of L.signals) {
   must(s.file, 'module', s.module, S.modules, 'module');
   if (!('assumes' in s)) problems.push(`${s.file}: no assumes; say what the read needs before it can stand, or assumes: []`);
@@ -339,6 +351,13 @@ for (const c of L.cards) {
     if (cnt && !reads.some(r => [].concat(cnt.used_by || []).includes(r)))
       problems.push(`${c.file}: count "${n}" belongs to [${[].concat(cnt.used_by || []).join(', ')}], which is neither the card's signal nor among its supporting`);
   }
+  // A card cannot rest on a read this sale cannot make. An assumption gap is not a data gap: a
+  // missing source leaves a read standing with less to go on, a missing condition leaves it not
+  // applying at all (docs/reading-principles.md, section 4).
+  for (const r of signalsOfEarly(c))
+    for (const a of [].concat(r.assumes || []))
+      if (!sale.has(a))
+        problems.push(`${c.file}: "${r.id}" assumes ${a} (${ASSUMES[a] || a}), which ${SCN} does not have`);
   if (!['act', 'ask', 'connect', 'news'].includes(c.kind))
     problems.push(`${c.file}: kind "${c.kind}" is not one of act, ask, connect, news`);
   // News is the one kind that rests on a record rather than a read (decided 21 September, see

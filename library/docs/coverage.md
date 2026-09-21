@@ -905,6 +905,28 @@ its own line, "this is a hunch more than a read", turns out to be exactly what t
 predicts: her words were loose, so it grades down hard. That is the third card in four passes that
 was saying something the library could not reach, and all three were found the same way.
 
+**Done in the twenty-fifth pass, 21 September.** `assumes:` became a checked join.
+`world/goal.md` carries `has:` now, what this sale has, from the same four words a read declares in
+`assumes`, and `build.js` refuses a card that rests on a read the sale cannot make. `bops` has all
+four; `pmf` has three, because one owner per business means there is nobody else to win over.
+
+**A refusal, not a gap row**, and that is the decision. The distinction is one
+[`reading-principles.md`](reading-principles.md) § 4 already draws and nothing had enforced: a
+missing **source** leaves a read standing with less to go on, so the card names it and carries on,
+which is what the data-gap rows do. A missing **condition** leaves the read not applying at all, so
+there is nothing for the card to rest on and the card should not exist. Two kinds of gap, two
+different consequences. *(My reason, not yet yours.)*
+
+**It refuses nothing today, and that was worth measuring before building it.** Run against the
+library as it stands, every card in both scenarios passes: the broker's cards only ever assume
+`thread-under-way`, and the patient scenario has all four words. So this is a guard for the next
+scenario rather than a fix for a present bug, and the honest way to report it is that it caught
+nothing. What it does change today is that each world now **declares** what its sale has, in one
+line, where before that fact lived only in the prose of a goal and in the heads of whoever wrote
+the cards. The third scenario is where it earns its keep: a seller with a firm around her and no
+coalition at the buyer is a different `has:` again, and the build will say so on the first card
+that forgets.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one

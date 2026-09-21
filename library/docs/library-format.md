@@ -380,11 +380,19 @@ not mean that every entry holds for every kind of sale (the rule until 20 Septem
 a false choice between universal and wrong). The library is general because the set covers the
 spectrum, from a lead onwards, and each entry states its ground in `assumes:`. Some reads belong
 to long relationships and some to a live thread with no history. A scenario may only rest on reads
-whose assumptions its sale meets; the build does not check that yet. The world and cards are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
-the cast, the organisations, the documents, and, since 20 September, which channels this seller
-has plugged in) and a `cards/` (decided 19 September). Today there
-is one, `bops`, a patient sale to councils. A second, a mass sale, is meant to follow, standing
-on the same channels, assemblies, counts and signals. `build.js` reads the one named in
+whose assumptions its sale meets, and since 21 September the build checks it: `world/goal.md`
+carries **`has:`**, what this sale has, from the same four words a read's `assumes` draws on, and a
+card resting on a read the sale cannot make is refused. It is a refusal rather than a gap row on
+purpose, and the distinction is the one
+[`reading-principles.md`](reading-principles.md) § 4 already makes: a missing **source** leaves a
+read standing with less to go on, so the card says so and carries on; a missing **condition**
+leaves the read not applying at all, so there is nothing for the card to rest on. `bops` has all
+four; `pmf` has three, because one owner per business means there is nobody else to win over.
+*(My reason, not yet yours.)* The world and cards are one **scenario**, in `scenarios/<name>/`, with a `world/` (the goal,
+the cast, the organisations, the documents, since 20 September which channels this seller
+has plugged in, and since 21 September what the sale has) and a `cards/` (decided 19 September). Today there
+are two, `bops`, a patient sale to councils, and `pmf`, a broker placing merchant cash advances,
+standing on the same channels, assemblies, counts and signals. `build.js` reads the one named in
 `SCENARIO` at its top. A scenario can be rewritten to fit the signals; when a card fights a
 general rule, the card changes, not the rule.
 

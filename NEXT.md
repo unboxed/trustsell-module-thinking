@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `5850b50` on `main`, twenty-four passes on `library/docs/coverage.md` are done. The library
+As of commit `b75e3e5` on `main`, twenty-five passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (all `defined: false`), 42 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
 `pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
@@ -78,9 +78,11 @@ them.
   nobody has passed on costs the most by waiting. The six bands are the Brain's
   (`modules/00-spine.md`) and this is not a bug in them, but what waiting a day costs is not the
   same question at both ends of the spectrum.
-- **Turn `assumes:` into a checked join.** Now that a second world exists, `world/goal.md` could
-  say what its sale has (a thread, a history, several people, a firm) and the build could refuse a
-  card whose reads assume more than that.
+- ~~**Turn `assumes:` into a checked join.**~~ Done in the twenty-fifth pass. `world/goal.md`
+  carries `has:` and the build refuses a card resting on a read the sale cannot make. A refusal
+  rather than a gap row: a missing source leaves a read standing with less to go on, a missing
+  condition leaves it not applying at all. It refuses nothing today, which was measured before it
+  was built; it is the guard the third scenario will need.
 - **Define the counts.** All 134 are `defined: false`, with the arithmetic said in prose. Some
   should merge or go. Deliberately deferred until the set settles.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
@@ -90,8 +92,12 @@ them.
 ## Five things that are easy to get wrong here
 
 - The vocabulary for `assumes:` is four words (`thread-under-way`, `own-rhythm`, `several-people`,
-  `own-firm`). `assumes: []` is a claim, not an omission. Every new signal declares it and answers
-  a real question by id in `answers:`, from any of the three sets.
+  `own-firm`). `assumes: []` is a claim, not an omission. Every new signal declares it, and a
+  world's `has:` in `world/goal.md` says which of the four its sale carries; a card resting on a
+  read the sale cannot make is refused. Most new signals also answer a real question by id in
+  `answers:`, from any of the three sets, but `answers: []` is allowed and `answer-came-back`
+  carries it: no set asks whether something came back that nobody passed on, because at every desk
+  a person is already doing it.
 - **Never invent a fact about the tool.** A new count stays `defined: false` with the arithmetic in
   prose; thresholds lean on `reading-principles.md`, no made-up numbers. A scenario's world is
   fiction and may be invented; the general rungs may not.
