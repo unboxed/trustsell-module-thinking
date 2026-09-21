@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `a0afe3e` on `main`, twenty-three passes on `library/docs/coverage.md` are done. The library
+As of commit `38ac329` on `main`, twenty-three passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 132 counts (all `defined: false`), 40 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
 `pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
@@ -22,14 +22,17 @@ by a read, one by asking, five in part, two elsewhere and one by nothing. The on
 which the map says is the Brain's.
 
 **The important recent turn.** Passes eight to thirteen added or audited entries against **question
-sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, which
-was the first test of the library from **above**, and it found more in one pass than the three
-question sets found between them. The fifteenth fixed the largest of those findings. Read
-`coverage.md`'s "Done in the fourteenth pass" and "Done in the fifteenth pass" before anything
-else; the rest of this file assumes them.
+sets**, and no world ever exercised them. The fourteenth pass wrote ten cards for the broker, the
+first test of the library from **above**, and it found more in one pass than the three question
+sets found between them. Passes fifteen to twenty-three closed every one of its findings but the
+last, and closed the third question set's backlog with them. Read `coverage.md` from "Done in the
+fourteenth pass" to the end before anything else; the rest of this file assumes it.
 
 The lesson worth carrying: **a hole under a read that already exists is worth more than a read that
-does not exist yet.** Card-writing finds the first kind and question sets do not.
+does not exist yet.** Card-writing finds the first kind and question sets do not. The
+twenty-third pass is the sharpest example: written as planned, its new gather would have had one
+reader whose trigger could never fire for the leads it was written for, and writing the card is
+what caught it, before the commit rather than two days after.
 
 ## The user's standing instruction
 
@@ -41,55 +44,37 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-Commit and push to `main` after each numbered step, with a message in the style of `git log`.
-Steps 1 to 3 are what the broker's cards exposed. Steps 4 to 7 are what the third question set's
-audit left. Do them in order.
+There is no numbered list left. Every step the last session was handed is done, and the three
+question sets are as answered as they are going to get without new thinking: the patient seller's
+26 have four unclaimed and all four are accounted for, the volume seller's 22 have none answered by
+nothing, and the firm seller's 21 have one, F19, which the map says belongs to the Brain.
 
-1. ~~**Let `disclosure-still-owed` reach the pricing.**~~ Done in the sixteenth pass. The read
-   takes `price-position` and quotes `your-price` and `cost-to-them-over-the-term`, the two numbers
-   `can-they-carry-it` already worked, and `offering-told` went into its `needs`.
-   Finished in the nineteenth pass, once step 2 existed: the read takes `decisions-so-far` too, so
-   it quotes the terms actually answered on the deal and falls back to the shelf price only where
-   none has been. `act-paula-disclosure` states Kestrel's own four numbers in its draft.
+So this is the first session in a while that has to **choose**. What follows is what is known to be
+open, with what I would do and why. The order is mine. *(My order, not yet yours.)* Ask the user
+which they want before starting anything in the second half of this list, because those are scope
+calls rather than work.
 
-2. ~~**A read for a funder's answer landing.**~~ Done in the seventeenth pass.
-   `assemblies/decisions-so-far.md` gathers a live deal's answers, `signals/answer-came-back.md`
-   reads the gap between one landing and the buyer hearing it, four counts sit under it, and
-   `people-told#answer-received` is its told twin. `act-tony-offers` now says what came back.
-   It carries `answers: []`, the only signal that does, and `coverage.md` says why.
+**What I would do first, and it is small.** Two reads that the twentieth pass turned up while
+writing the "which half" lines, both now the only thing standing between the firm set and being
+fully answered by reads:
 
-3. ~~**Two smaller ones from the same pass.**~~ Done in the eighteenth pass. A completed sale is
-   News, and News rests on a record rather than a read: `rests:` holds the records that say it
-   happened, `build.js` allows the swap for `kind: news` only, and `news-fenwick-funded` is the
-   first card of that kind in either scenario. The unconnected-channel check was narrowed to what
-   a card promises to send; the blanket version was measured and rejected, because it would have
-   put a row on 22 of the 25 patient cards. `coverage.md` carries the measurement.
+1. **A read of the promises they made to you** (F7's missing half). Every promise read in the
+   library runs one way: `loose-end` is what **you** owe **them**. A buyer who said "I'll get you
+   in front of our head of service" and did not is invisible, and it is the commonest way a patient
+   sale stalls. It stands on `conversation-history` and needs no new floor. `missing-people` says
+   in its body that this is a read of its own rather than a widening of itself.
+2. **A read that watches a buyer's own date come closer** (F10's missing half). A date the buyer
+   gave you, running down while nobody writes. The count it would stand on,
+   `dated-facts-in-their-words`, already exists on `pushing`, pointed the other way: it is there to
+   stop a date being **invented**. Pointing a second read at it is cheap and the third seller named
+   the loss it prevents in her own words ("you haven't talked to this person in two weeks and there
+   was a deadline").
 
-4. ~~**Claim the eight partial `F` ids.**~~ Done in the twentieth pass. All seven reads carry the
-   id and a body line saying which half they reach. Two sharpened while being written and are now
-   in `coverage.md`'s list: F7 needs a read of the promises **they** made to you, which nothing in
-   the library does, and F10 needs a read that watches a buyer's own date come closer, standing on
-   `dated-facts-in-their-words`, which already exists pointed the other way.
+Do both in one pass, then **write cards against them in `bops`**, which is where a broken promise
+and a slipping deadline both belong. That is the habit at the end of this file and it has earned
+its place twice over.
 
-5. ~~**Read the buyer's own published words.**~~ Done in the twenty-first pass.
-   `assemblies/published-picture.md` gathers one organisation's own published words,
-   `signals/stated-priorities.md` reads them over three counts, and `lead-with-this` takes the same
-   gather for the buyer's half of F16. Both questions are answered. It also gave
-   `relevance-to-stated-factors` an `over` that means something: it had been counting "what they
-   said matters to them" over your own catalogue.
-
-6. ~~**The shape of their process.**~~ Done in the twenty-second pass. `people-told#buying-process`
-   is the told record, `assemblies/buying-process.md` lays it against a deal, and
-   `signals/steps-on-their-side.md` reads it over four counts. F8 and F6 both close. The form is
-   the decision: it says "I have seen no sign of these three", never "they have not done them".
-   `ask-buying-process` is the card, an Ask, because a told record nobody has filled cannot make
-   an Act.
-
-7. ~~**Two lead-shaped holes.**~~ Done in the twenty-third pass. `enough-tries` reads
-   `firm-contact` and adds `colleague-touches-on-record` to `times-you-chase`, so a colleague's
-   cadence counts. `channels/lead-list.md` (`source: firm`, the fourth home) and
-   `people-told#lead-source` carry provenance, `assemblies/where-it-came-from.md` gathers it, and
-   both `warm-path` and `lead-with-this` read it. F11, F17 and F20 all close.
+**Then, and these are the scope calls.** Ask before starting one.
 
 ## Still open, and bigger than a step
 
@@ -133,7 +118,8 @@ audit left. Do them in order.
   with the pass that changed it. **Check every change against both scenarios**: switch `SCENARIO`
   at the top of `build.js` to `pmf`, run it, then set it back to `bops` before committing. To look
   at the broker's cards in the playbook, flip it, build, open `playbook/index.html`, flip it back.
-- Commit messages end with `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`. Push each
+- Commit messages end with a `Co-Authored-By:` line naming the model that wrote them, which the
+  harness gives you; do not copy an earlier session's. Push each
   pass. If the working tree holds changes to `playbook/assets/phone.js`, `style.css` or `world.md`
   that are not yours, commit them separately with a message read off `world.md`. A commit or push
   may be refused by the permission classifier when its content was read from the user's transcripts
@@ -146,6 +132,12 @@ The fourteenth pass is the model. When you have added two or three entries, **st
 against them in a world**, rather than adding a fourth. Writing cards is how you find out whether a
 read can actually reach what it claims, and the build refuses the card when it cannot. Adding rungs
 nobody stands on is the failure mode this workspace keeps rediscovering.
+
+Three passes since have paid for it. The twenty-first found a card that had been quoting page 12 of
+a council's strategy with nothing under it. The twenty-second found that a told record nobody has
+filled produces an **Ask**, not an Act, and the card sharpened the read more than writing the read
+did. The twenty-third found, before committing, that a new gather had exactly one reader whose
+trigger could never fire for the leads it was written for.
 
 ## Keep this file true
 
