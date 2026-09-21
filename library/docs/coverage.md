@@ -59,16 +59,16 @@ holes.
 | V17 Why should a stranger believe me? | [`pushing`](../signals/pushing.md), second shape, since 20 September: asking to be taken on your word, with nothing to show (the evidence shelf, by buyer type) and nothing to give (what they asked for, what you promised) after several unanswered notes. The seller's own record of having delivered is still nowhere: that is outcomes, V16's family. | Answered in part | `thread-under-way` |
 | V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. | Answered | `thread-under-way` |
 | V19 Am I manufacturing urgency that is not real? | [`pushing`](../signals/pushing.md), first shape, since 20 September: the only real dates on a thread are the buyer's own words and a dated change in your told pricing; any other deadline is manufactured. | Answered | `thread-under-way` |
-| V20 When does someone I sold to come round again? | Nothing. The ladder stops at the sale; `deal` mentions a renewal only as an identity edge case. | Hole, structural | nothing; universal |
-| V21 Who could this buyer introduce me to? | `warm-path` finds a way in through a mutual contact. A customer introducing you onward is the mirror of it, and is absent. | Partly | nothing |
-| V22 Which of the people I sold to is in trouble? | Nothing. Nothing exists after the sale. | Hole | nothing; universal |
+| V20 When does someone I sold to come round again? | [`coming-round-again`](../signals/coming-round-again.md), since 21 September, over the new [`since-the-sale`](../assemblies/since-the-sale.md) gather: how far through the agreed term the deal is, what they took before, and their own interval between purchases. Where no term was told there is no clock, and the read is not made. | Answered | `[]`: it needs a completed deal, which is a rung on the ladder, not an assumption about the sale's shape |
+| V21 Who could this buyer introduce me to? | Both halves now. `warm-path` finds a way in through a mutual contact before a sale. [`customer-introduction`](../signals/customer-introduction.md), since 21 September, is the half after one: a name the customer gave you, at an organisation you have never written to, and nothing outstanding either way. Never answered from a document they handed over for something else. | Answered | `[]` |
+| V22 Which of the people I sold to is in trouble? | [`payments-faltering`](../signals/payments-faltering.md), since 21 September: an agreed payment their own later documents do not show, a word from them about paying, or a note on the CRM. Never a verdict on the person. Whether the money actually arrived is on no record the library has, and the read names that rather than filling it. | Answered, short of the ledger | `[]` |
 
 ## The holes, in seven families
 
 Eleven holes when this was written (fourteen until 20 September, when V1 to V3 were put outside the
-tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September, and
-four since the sixth the same day), but not eleven separate pieces of work. They
-gather into seven families, and the right-hand column is the thing worth arguing about: **none of
+tool's scope; seven since the fourth pass the same day; five since the fifth, on 21 September, four
+since the sixth and **two since the eighth**, both the same day), but not eleven separate pieces of
+work. They gather into seven families, and the right-hand column is the thing worth arguing about: **none of
 them is about volume.** They were missed because one seller did not need
 them, and they would serve the patient end just as well.
 
@@ -79,7 +79,7 @@ them, and they would serve the patient end just as well.
 | **Whether they can bear it** | V13 (a read since 20 September; makeable since 21 September, when the term became a told field) | **Any sale.** A council whose budget cannot take it this year is the same read as a merchant who cannot carry a second repayment. |
 | **A catalogue rather than one product** | V15 | **Any sale.** The library supports a seller with exactly one thing to sell. |
 | **Being believed, and not pushing** | V17 in part, V19, V18 (all reads since 20 September) | **Any sale**, and this is where the tool's own rules live. It forbids pushing and insists every message names the gift; since 20 September a read says what a thread can honestly carry, and the draft is written inside it. |
-| **After the sale** | V20, V22, V21 in part | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and the ladder ends at the signature. |
+| **After the sale** | V20, V22, V21's other half (all three answered 21 September) | **Any sale.** Renewals, repeats and referrals are where a relationship pays off, and until the eighth pass the ladder ended at the signature. It no longer has to: a gather keyed on a deal past the sale rung stands on what already existed, and the three reads are honest about the one record nobody has, whether the money arrived. |
 | **Colleagues** | V4 (answered 21 September) | **Any sale**, wherever there is a firm. The library assumed a seller with nobody else in their firm; now a read says who at your firm was in touch before you, from the records a firm shares, and the vocabulary still has no word for "a firm beside you". |
 
 ## What falls out of this immediately
@@ -249,17 +249,48 @@ from the same "The list" heading as the other two, so a signal can claim an `F` 
 the twenty-one are questions neither other set asks. Running this map against them is the next
 thing on the list and has not been done.
 
+**Done in the eighth pass, 21 September.** After the sale, the family the ladder itself was in the
+way of. One new gather, [`since-the-sale`](../assemblies/since-the-sale.md), keyed on a deal
+standing on a rung the ladder puts after the sale, drawing on what already existed: the deal, the
+CRM record for the stage and the close date, your target list for where a deal stands when there is
+no CRM, the offering's told pricing for the term and how it is paid, the figures the buyer's
+documents show, and what they have handed over since. **Where the sale's completion comes from was
+the decision**, and the answer is that it is fetched from the CRM or told by you, the same two
+places every other rung comes from, and **never deduced**: not from a signature in an attachment,
+not from a payment, not from the words "we're going ahead". A contract that arrives through the
+handover is a document, and rule 5 of *What is never read* says a document is proof of nothing.
+*(My reason, not yet yours.)* Three reads stand on it, all in People, all `assumes: []`, because
+what they need is a rung on a ladder rather than a shape of sale.
+[`coming-round-again`](../signals/coming-round-again.md) (V20) reads how far through the term a
+deal is against the customer's own interval between purchases, and is not made at all where no term
+was told. [`payments-faltering`](../signals/payments-faltering.md) (V22) reads an agreed payment
+missing from the periods their later documents cover, what they have said about paying, and what
+the CRM was told; money in per period is context for a word they said and never a finding on its
+own, because a quiet month read as a missed payment would be a verdict on the person.
+[`customer-introduction`](../signals/customer-introduction.md) (V21's other half) is `warm-path`
+one rung later, and withholds itself entirely while anything is outstanding either way, however
+good the name. **The honest rule underneath all three**: nothing after the sale is on record for
+the patient example, whose ladder ends at full adoption, so for that seller the gather is empty and
+the reads are silent rather than invented. And no channel in the library carries your own bank,
+your firm's ledger or a funder's, so whether an agreed payment arrived is on no record at all. That
+is a missing channel, named not faked, and a different hole from the public register. Seven new
+counts, all `defined: false`; two existing ones gained a second reader
+(`money-in-by-period`, `target-cold-to-you`), which narrowed the second one's undecided `over` to
+one candidate without settling it. Fourteen of the 22 are now answered by a read, one by asking,
+two in part, two by nothing, and three are out of scope. The assumptions count: 16 reads assume
+nothing, 8 `thread-under-way`, 9 `own-rhythm`, 2 `several-people`; so 24 of the 34 can be made on a
+live thread with no history, and 10 cannot.
+
 **Then, in order.** The order of the reads is mine, from the scope decision above. *(My reason, not
 yet yours.)*
 
-- **Write the remaining reads**, each declaring its `assumes:`. After the sale (V20 to V22, once
-  the second scenario's ladder continues past it); and what was turned down last time (V16, once
-  outcomes exist, which is also what V17's other half needs: the seller's own record of having
-  delivered). Counting over a group needs no new machinery: add an assembly that gathers the group
-  and a count names it in `over:` exactly as a per-person count does. Checked against the build's
-  joins. Still open: a channel for public records, which is what "to whom" needs beyond what the
-  buyer shows; and whether "a firm beside you" becomes the fourth word in `assumes:`, the user's
-  call.
+- **Write the remaining reads**, each declaring its `assumes:`. After the sale is done (V20 to V22,
+  eighth pass). What is left is what was turned down last time (V16, once outcomes exist, which is
+  also what V17's other half needs: the seller's own record of having delivered). Counting over a
+  group needs no new machinery: add an assembly that gathers the group and a count names it in
+  `over:` exactly as a per-person count does. Checked against the build's joins. Still open: a
+  channel for public records, which is what "to whom" needs beyond what the buyer shows; and
+  whether "a firm beside you" becomes the fourth word in `assumes:`, the user's call.
 - **Decide about a catalogue** (V15). `world/goal.md` carries `offering:` as a single id and
   `offering-entry` is written for one product. This one changes a shape rather than adding an entry,
   so it is a conversation before it is a commit.

@@ -75,6 +75,16 @@ adds a figure the document does not give, never reads character into amounts, ne
 document for anything beyond what it was sent to show, never reads the buyer as a kind of
 business, and never judges whether a document is genuine. *(My reason, not yet yours.)*
 
+One thing it never works out for itself is whether a sale is done. A deal stands somewhere on the
+ladder your goal sets out, and where it stands is either on record in your firm's deal system or
+something you say. The tool does not read a sale out of a signed document, a payment or the words
+"we're going ahead": a contract they send you is a document, and it treats a document as proof of
+nothing. Where your ladder carries on past the sale, the tool keeps watching: how far through what
+they bought they are, whether what they agreed is being paid as far as their own later records
+show, and whom they have named who could hear about you next. Whether the money actually arrived it
+cannot see, because your bank is not one of the places it looks, and it says so instead of guessing
+from silence. *(My reason, not yet yours.)*
+
 The goal matters most, because it shapes everything else: who the tool looks for, what counts as
 progress, and how fast it is right to move.
 
@@ -247,9 +257,9 @@ Some of the story is still open, and it says so rather than filling the gaps.
 - Whether it holds for any kind of sale. It has been pressure-tested on one, a long, patient
   sell to organisations with several people to win, and measured on paper against its opposite, a
   fast sale to one owner. The aim is no longer that every part holds everywhere: the set should
-  cover the spectrum from a lead onwards, and each read says what it needs. Today 21 of the 31
-  reads can be made on a live thread with no history, and 10 cannot. The fast sale has not been
-  built as a scenario yet, and a sale to one person has not been tried.
+  cover the spectrum from a lead onwards, and each read says what it needs. Today 24 of the 34
+  reads can be made on a live thread with no history, and 10 cannot. The fast sale now has a world,
+  with a ladder that runs past the sale, and no cards in it yet.
 - What each count counts. They are named, but none is defined yet, and which read each suggestion
   rests on was taken from the suggestion rather than decided.
 - What a document's own words mean. The tool reads the figures a buyer's document states, but

@@ -11,7 +11,7 @@ connects:
     requests: "the standing brief drawn from the goal"
     provides: "reports what the brief flags ('Jane went quiet', 'found the DM'), answers follow-ups, and hands over the deal picture (a selling effort's people and conversations) for the Brain to stage"
   - to: "03-offerings"
-    requests: "which offering a conversation relates to, and the rebuttal to a worry on record"
+    requests: "which offering a conversation relates to, the rebuttal to a worry on record, and what was agreed on an offering (its price, its term and how it is paid) for a deal that has completed"
     provides: "the worry it has on record (for 03 to answer) and a lead's situation (for 03 to judge fit)"
   - to: "04-organization"
     requests: "what must always be said before a buyer agrees, from the compliance fence, and what is on the evidence shelf for this buyer's type"
@@ -128,6 +128,18 @@ what came of it, from the records a firm shares: the CRM, the workspace, a threa
 on, a shared calendar. It stands on a new gather, *who at your firm has been in touch*, the first
 to draw from the CRM. Used solo there is nothing to gather and the read does not arise. It points
 at a word with the colleague, never at a move over their thread. *(My reason, not yet yours.)*
+
+**Three of People's reads happen after the sale**, added 21 September, and until then nothing in
+the library did. They stand on a new gather, *the deal since the sale*, which is one completed deal
+and everything on record from the completion onwards. *Coming round again* says a customer is far
+enough through what they bought for the conversation to start over, from the term you told the
+tool and their own interval between purchases. *What they agreed is not being paid* says the
+arrangement is not holding, from what their own later documents fail to show and what they have
+said, never from a verdict on the person. *An introduction a customer could make* is the other half
+of *someone who can introduce you*: a name they gave you, at an organisation you have never
+written to, and nothing outstanding either way to make the asking awkward. **Whether a deal has
+completed at all is told or fetched, never deduced**, and where a goal's ladder has no rung past
+the sale none of the three arises. *(My reason, not yet yours.)*
 
 ## Output
 
