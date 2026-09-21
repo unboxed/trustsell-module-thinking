@@ -3,19 +3,21 @@ id: channel-register-shift
 label: "How your tone changes by channel"
 used_by: [voice]
 over: [writing-history]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How differently you write in each place: mail, the workspace, text.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]
+breaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.
 ---
 
 # How your tone changes by channel
 ## What it counts
 
-Not written yet.
-
-This entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Your own formality, length and greeting pattern, split by channel, with the differences between
+them. Most people write three different ways without noticing, and a draft written in the wrong
+one reads as somebody else.
 
 ## What it cannot see
 
-Not written yet.
+A channel the seller has not connected, and a channel used for one kind of conversation only,
+where the register belongs to the subject rather than to the medium.

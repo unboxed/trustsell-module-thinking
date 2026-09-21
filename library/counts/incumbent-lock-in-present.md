@@ -3,19 +3,24 @@ id: incumbent-lock-in-present
 label: "Tied to their current supplier"
 used_by: [competitive-standing]
 over: [competitor-field]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Whether the buyer already has somebody, and what is said about how tied in they are.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web#web-result, web#page-content, web#research-report, web#enrichment, handover#stated-commitment]
+breaks: Lock-in is a judgement about a contract nobody has shown you. The count reports what was said about it and never a term.
 ---
 
 # Tied to their current supplier
 ## What it counts
 
-Not written yet.
+Whether an incumbent has been named on this deal, who, and every line on record about how tied to
+them the buyer is: a renewal date, a notice period, a contract length, a migration nobody wants.
+One row per mention with the words and who said them.
 
-This entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+What the buyer says about their own lock-in is the only evidence there will ever be, so it is kept
+as their words.
 
 ## What it cannot see
 
-Not written yet.
+The contract itself, which nobody will send you. And lock-in nobody has mentioned, which is common
+early and is why an empty result means nothing this early in a deal.

@@ -2,19 +2,25 @@
 id: re-asked-questions
 label: "Same question asked again"
 used_by: [understanding-gap]
-over: []   # not written yet. One of: conversation-history, meeting-history, product-claims
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Questions they have asked more than once, with how far apart.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]
+breaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.
 ---
 
 # Same question asked again
 ## What it counts
 
-Not written yet.
+Questions asked again after being answered: the question, how many times, how far apart, and
+whether each asking followed an answer. One row per question.
 
-This entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.
+A question asked twice was answered badly, answered to the wrong person, or answered in a way that
+did not survive being repeated internally. All three are worth knowing and none of them is the
+buyer's fault.
 
 ## What it cannot see
 
-Not written yet.
+A question re-asked in different enough words that nothing matches it, which is the case where the
+answer landed worst of all.

@@ -3,19 +3,24 @@ id: claims-grounded-count
 label: "Claims with evidence"
 used_by: [unbacked-claim]
 over: [product-claims]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many of those claims have something on file behind them.
+needs: [drive#file, drive#file-content, offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, organisation-told#proof-tag]
+breaks: Grounded means a document exists that supports it, not that the document is good. Strength is the next three counts.
 ---
 
 # Claims with evidence
 ## What it counts
 
-Not written yet.
+Of the claims counted, how many have at least one piece of evidence on file that supports them,
+and how many have none. One row per claim with what backs it.
 
-This entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is deliberately a binary, and the three counts after it grade what was found. Separating
+existence from quality is what lets a read say "there is nothing at all" differently from "there is
+something thin".
 
 ## What it cannot see
 
-Not written yet.
+Evidence that exists and is not filed anywhere the tool can see, which at most firms is a great
+deal of it.

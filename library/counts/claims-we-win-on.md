@@ -3,19 +3,22 @@ id: claims-we-win-on
 label: "Where you beat competitors"
 used_by: [competitive-standing]
 over: [competitor-field]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: The things you say you do better, each with the rival it is said against.
+needs: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, web#web-result, web#page-content, web#research-report, web#enrichment]
+breaks: It is your claim, not a finding. Nothing here checks whether it is true; unbacked-claim does that.
 ---
 
 # Where you beat competitors
 ## What it counts
 
-Not written yet.
+Each capability or quality your told material says you beat somebody at, with the named rival and
+the words you use. One row per claim.
 
-This entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+It is a tally of your own position as you state it. The value is in laying it beside the other
+list, not in the number.
 
 ## What it cannot see
 
-Not written yet.
+Whether any of it is so. A claim you make is evidence about you, not about the market.

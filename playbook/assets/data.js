@@ -2245,16 +2245,28 @@ window.LIBRARY = {
    "over": [
     "objection-list"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether the answer to a worry has evidence behind it, and of the kind that worry needs.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "drive#file",
+    "drive#file-content",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "It asks two things at once and reports both: is there evidence, and is it the right kind.",
    "title": "Answer backed by evidence",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each worry with an answer, whether evidence exists for that answer and whether it is the kind the worry calls for. A security worry answered with a case study is answered with the wrong kind of thing, and the count says so rather than marking it backed.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A worry whose real answer is a conversation rather than a document, which this will always mark as ungrounded.</p>"
     }
    },
    "sectionOrder": [
@@ -2262,7 +2274,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/answer-grounded.md",
-   "markdown": "---\nid: answer-grounded\nlabel: \"Answer backed by evidence\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Answer backed by evidence\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: answer-grounded\nlabel: \"Answer backed by evidence\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether the answer to a worry has evidence behind it, and of the kind that worry needs.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, drive#file, drive#file-content, organisation-told#proof-tag]\nbreaks: It asks two things at once and reports both: is there evidence, and is it the right kind.\n---\n\n# Answer backed by evidence\n## What it counts\n\nFor each worry with an answer, whether evidence exists for that answer and whether it is the kind\nthe worry calls for. A security worry answered with a case study is answered with the wrong kind of\nthing, and the count says so rather than marking it backed.\n\n## What it cannot see\n\nA worry whose real answer is a conversation rather than a document, which this will always mark as\nungrounded.\n"
   },
   {
    "id": "answered-for-the-wrong-period",
@@ -2459,16 +2471,27 @@ window.LIBRARY = {
    "over": [
     "writing-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How differently you write in each place: mail, the workspace, text.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "gmail#draft",
+    "sms#draft",
+    "profile-told#voice-sample"
+   ],
+   "breaks": "It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.",
    "title": "How your tone changes by channel",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Your own formality, length and greeting pattern, split by channel, with the differences between them. Most people write three different ways without noticing, and a draft written in the wrong one reads as somebody else.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A channel the seller has not connected, and a channel used for one kind of conversation only, where the register belongs to the subject rather than to the medium.</p>"
     }
    },
    "sectionOrder": [
@@ -2476,7 +2499,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/channel-register-shift.md",
-   "markdown": "---\nid: channel-register-shift\nlabel: \"How your tone changes by channel\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How your tone changes by channel\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: channel-register-shift\nlabel: \"How your tone changes by channel\"\nused_by: [voice]\nover: [writing-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How differently you write in each place: mail, the workspace, text.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]\nbreaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.\n---\n\n# How your tone changes by channel\n## What it counts\n\nYour own formality, length and greeting pattern, split by channel, with the differences between\nthem. Most people write three different ways without noticing, and a draft written in the wrong\none reads as somebody else.\n\n## What it cannot see\n\nA channel the seller has not connected, and a channel used for one kind of conversation only,\nwhere the register belongs to the subject rather than to the medium.\n"
   },
   {
    "id": "charges-on-the-register",
@@ -2553,16 +2576,31 @@ window.LIBRARY = {
    "over": [
     "product-claims"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Where each claim came from: your own words, a customer, a third party, or nowhere.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment"
+   ],
+   "breaks": "It sorts by who published, not by who is right.",
    "title": "Where a claim comes from",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each claim, who is behind it: your own marketing, a named customer, an independent third party, or nothing identifiable. One row per claim.</p>\n<p>It is the first thing a sceptical buyer asks and the thing sellers are least used to being asked, which is why it sits under a read whose job is to stop a message making a claim it cannot stand behind.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A third-party report your own firm commissioned, which is independent in form and not in fact. The count records who published and the read is told to discount accordingly.</p>"
     }
    },
    "sectionOrder": [
@@ -2570,7 +2608,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claim-source.md",
-   "markdown": "---\nid: claim-source\nlabel: \"Where a claim comes from\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where a claim comes from\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claim-source\nlabel: \"Where a claim comes from\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Where each claim came from: your own words, a customer, a third party, or nowhere.\nneeds: [drive#file, drive#file-content, offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, web#web-result, web#page-content, web#research-report, web#enrichment]\nbreaks: It sorts by who published, not by who is right.\n---\n\n# Where a claim comes from\n## What it counts\n\nFor each claim, who is behind it: your own marketing, a named customer, an independent third party,\nor nothing identifiable. One row per claim.\n\nIt is the first thing a sceptical buyer asks and the thing sellers are least used to being asked,\nwhich is why it sits under a read whose job is to stop a message making a claim it cannot stand\nbehind.\n\n## What it cannot see\n\nA third-party report your own firm commissioned, which is independent in form and not in fact. The\ncount records who published and the read is told to discount accordingly.\n"
   },
   {
    "id": "claims-grounded-count",
@@ -2581,16 +2619,28 @@ window.LIBRARY = {
    "over": [
     "product-claims"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many of those claims have something on file behind them.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "Grounded means a document exists that supports it, not that the document is good. Strength is the next three counts.",
    "title": "Claims with evidence",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Of the claims counted, how many have at least one piece of evidence on file that supports them, and how many have none. One row per claim with what backs it.</p>\n<p>It is deliberately a binary, and the three counts after it grade what was found. Separating existence from quality is what lets a read say \"there is nothing at all\" differently from \"there is something thin\".</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Evidence that exists and is not filed anywhere the tool can see, which at most firms is a great deal of it.</p>"
     }
    },
    "sectionOrder": [
@@ -2598,7 +2648,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-grounded-count.md",
-   "markdown": "---\nid: claims-grounded-count\nlabel: \"Claims with evidence\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims with evidence\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-grounded-count\nlabel: \"Claims with evidence\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many of those claims have something on file behind them.\nneeds: [drive#file, drive#file-content, offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, organisation-told#proof-tag]\nbreaks: Grounded means a document exists that supports it, not that the document is good. Strength is the next three counts.\n---\n\n# Claims with evidence\n## What it counts\n\nOf the claims counted, how many have at least one piece of evidence on file that supports them,\nand how many have none. One row per claim with what backs it.\n\nIt is deliberately a binary, and the three counts after it grade what was found. Separating\nexistence from quality is what lets a read say \"there is nothing at all\" differently from \"there is\nsomething thin\".\n\n## What it cannot see\n\nEvidence that exists and is not filed anywhere the tool can see, which at most firms is a great\ndeal of it.\n"
   },
   {
    "id": "claims-restated-back",
@@ -2606,16 +2656,27 @@ window.LIBRARY = {
    "used_by": [
     "understanding-gap"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How much of what you said they repeat back, and how accurately.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.",
    "title": "Your points said back to you",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Where they restate something you told them: the passage, what it restates, and whether it is faithful, partial or wrong. One row per restatement.</p>\n<p>A buyer restating your case accurately is the single best evidence that it landed, and a buyer restating it wrongly is the earliest warning that it did not, which makes this the one count that carries both directions.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A restatement made in a room you were not in, which is the one that decides the deal.</p>"
     }
    },
    "sectionOrder": [
@@ -2623,7 +2684,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-restated-back.md",
-   "markdown": "---\nid: claims-restated-back\nlabel: \"Your points said back to you\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history, product-claims\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your points said back to you\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-restated-back\nlabel: \"Your points said back to you\"\nused_by: [understanding-gap]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How much of what you said they repeat back, and how accurately.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.\n---\n\n# Your points said back to you\n## What it counts\n\nWhere they restate something you told them: the passage, what it restates, and whether it is\nfaithful, partial or wrong. One row per restatement.\n\nA buyer restating your case accurately is the single best evidence that it landed, and a buyer\nrestating it wrongly is the earliest warning that it did not, which makes this the one count that\ncarries both directions.\n\n## What it cannot see\n\nA restatement made in a room you were not in, which is the one that decides the deal.\n"
   },
   {
    "id": "claims-rival-wins-on",
@@ -2634,16 +2695,29 @@ window.LIBRARY = {
    "over": [
     "competitor-field"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "The things a rival is publicly better at, from what they and others publish.",
+   "needs": [
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment",
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field"
+   ],
+   "breaks": "It reads what is published. A rival who says little looks weak here and may not be.",
    "title": "Where a competitor beats you",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Each thing a named rival publicly claims or is credited with that you do not match: from their own pages, from comparison write-ups, from what the field says about them. One row per claim, with where it came from and whether it is their claim or somebody else's.</p>\n<p>The honest half of a competitive picture, and the half a seller's own material never contains.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Everything a rival does well and does not advertise, and everything said about them behind closed doors. Also a claim of theirs that is simply false, which this records as their claim and not as a fact.</p>"
     }
    },
    "sectionOrder": [
@@ -2651,7 +2725,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-rival-wins-on.md",
-   "markdown": "---\nid: claims-rival-wins-on\nlabel: \"Where a competitor beats you\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where a competitor beats you\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-rival-wins-on\nlabel: \"Where a competitor beats you\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: The things a rival is publicly better at, from what they and others publish.\nneeds: [web#web-result, web#page-content, web#research-report, web#enrichment, offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field]\nbreaks: It reads what is published. A rival who says little looks weak here and may not be.\n---\n\n# Where a competitor beats you\n## What it counts\n\nEach thing a named rival publicly claims or is credited with that you do not match: from their own\npages, from comparison write-ups, from what the field says about them. One row per claim, with\nwhere it came from and whether it is their claim or somebody else's.\n\nThe honest half of a competitive picture, and the half a seller's own material never contains.\n\n## What it cannot see\n\nEverything a rival does well and does not advertise, and everything said about them behind closed\ndoors. Also a claim of theirs that is simply false, which this records as their claim and not as a\nfact.\n"
   },
   {
    "id": "claims-stated-count",
@@ -2662,16 +2736,31 @@ window.LIBRARY = {
    "over": [
     "product-claims"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many claims your material and your drafts actually make.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "drive#file",
+    "drive#file-content",
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "A claim is a statement of fact about outcomes. An opinion, a question and a description are not claims.",
    "title": "Claims in your pitch",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Each factual claim in your told material and in a draft about to go out: what it asserts, where it appears, and whether it is about a capability, an outcome or a track record. One row per claim.</p>\n<p>Outcome and track-record claims are the ones that need backing. A capability claim is checkable by looking at the product.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A claim made verbally, which is where the boldest ones are made. And an implication that is not a sentence, which is how most overclaiming actually happens.</p>"
     }
    },
    "sectionOrder": [
@@ -2679,7 +2768,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-stated-count.md",
-   "markdown": "---\nid: claims-stated-count\nlabel: \"Claims in your pitch\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Claims in your pitch\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-stated-count\nlabel: \"Claims in your pitch\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many claims your material and your drafts actually make.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, drive#file, drive#file-content, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: A claim is a statement of fact about outcomes. An opinion, a question and a description are not claims.\n---\n\n# Claims in your pitch\n## What it counts\n\nEach factual claim in your told material and in a draft about to go out: what it asserts, where it\nappears, and whether it is about a capability, an outcome or a track record. One row per claim.\n\nOutcome and track-record claims are the ones that need backing. A capability claim is checkable by\nlooking at the product.\n\n## What it cannot see\n\nA claim made verbally, which is where the boldest ones are made. And an implication that is not a\nsentence, which is how most overclaiming actually happens.\n"
   },
   {
    "id": "claims-we-win-on",
@@ -2690,16 +2779,29 @@ window.LIBRARY = {
    "over": [
     "competitor-field"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "The things you say you do better, each with the rival it is said against.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment"
+   ],
+   "breaks": "It is your claim, not a finding. Nothing here checks whether it is true; unbacked-claim does that.",
    "title": "Where you beat competitors",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Each capability or quality your told material says you beat somebody at, with the named rival and the words you use. One row per claim.</p>\n<p>It is a tally of your own position as you state it. The value is in laying it beside the other list, not in the number.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether any of it is so. A claim you make is evidence about you, not about the market.</p>"
     }
    },
    "sectionOrder": [
@@ -2707,7 +2809,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/claims-we-win-on.md",
-   "markdown": "---\nid: claims-we-win-on\nlabel: \"Where you beat competitors\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Where you beat competitors\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: claims-we-win-on\nlabel: \"Where you beat competitors\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: The things you say you do better, each with the rival it is said against.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, web#web-result, web#page-content, web#research-report, web#enrichment]\nbreaks: It is your claim, not a finding. Nothing here checks whether it is true; unbacked-claim does that.\n---\n\n# Where you beat competitors\n## What it counts\n\nEach capability or quality your told material says you beat somebody at, with the named rival and\nthe words you use. One row per claim.\n\nIt is a tally of your own position as you state it. The value is in laying it beside the other\nlist, not in the number.\n\n## What it cannot see\n\nWhether any of it is so. A claim you make is evidence about you, not about the market.\n"
   },
   {
    "id": "colleague-touches-on-record",
@@ -2826,16 +2928,24 @@ window.LIBRARY = {
    "over": [
     "price-position"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "What named rivals charge, from what they publish, as a band.",
+   "needs": [
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment"
+   ],
+   "breaks": "Where a rival publishes no price there is a hole, and the band says so rather than closing over it.",
    "title": "What competitors charge",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/price-position.md\"><code>price-position</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The published prices of the named rivals in this field, as a band with each rival's figure and its source page and date. Where a rival publishes nothing, that is a row saying so, not an absence.</p>\n<p>A band rather than an average, because an average of three published prices and two holes is a number that looks solid and is not.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Everything negotiated. Published prices are the list, and in most markets the list is where a conversation starts. It also cannot see what a rival actually charged a buyer like this one.</p>"
     }
    },
    "sectionOrder": [
@@ -2843,7 +2953,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/competitor-price-band.md",
-   "markdown": "---\nid: competitor-price-band\nlabel: \"What competitors charge\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# What competitors charge\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`price-position`](../assemblies/price-position.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: competitor-price-band\nlabel: \"What competitors charge\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: What named rivals charge, from what they publish, as a band.\nneeds: [web#web-result, web#page-content, web#research-report, web#enrichment]\nbreaks: Where a rival publishes no price there is a hole, and the band says so rather than closing over it.\n---\n\n# What competitors charge\n## What it counts\n\nThe published prices of the named rivals in this field, as a band with each rival's figure and its\nsource page and date. Where a rival publishes nothing, that is a row saying so, not an absence.\n\nA band rather than an average, because an average of three published prices and two holes is a\nnumber that looks solid and is not.\n\n## What it cannot see\n\nEverything negotiated. Published prices are the list, and in most markets the list is where a\nconversation starts. It also cannot see what a rival actually charged a buyer like this one.\n"
   },
   {
    "id": "confused-questions",
@@ -2851,16 +2961,27 @@ window.LIBRARY = {
    "used_by": [
     "understanding-gap"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Questions from them that show they have the wrong picture of what you sell.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.",
    "title": "Questions that show confusion",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Questions whose premise is wrong: asking whether it does a thing it plainly does, asking about a part of it that does not exist, asking a question its answer has already been given to. One row per question, with the words and what the premise gets wrong.</p>\n<p>The premise is the whole of it. A hard question is not confusion; a question that could only be asked by somebody holding a wrong model is.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A person who understands perfectly and is asking on somebody else's behalf. And confusion nobody voices, which is most of it, and which usually shows up later as a stall.</p>"
     }
    },
    "sectionOrder": [
@@ -2868,7 +2989,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/confused-questions.md",
-   "markdown": "---\nid: confused-questions\nlabel: \"Questions that show confusion\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history, product-claims\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Questions that show confusion\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: confused-questions\nlabel: \"Questions that show confusion\"\nused_by: [understanding-gap]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Questions from them that show they have the wrong picture of what you sell.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.\n---\n\n# Questions that show confusion\n## What it counts\n\nQuestions whose premise is wrong: asking whether it does a thing it plainly does, asking about a\npart of it that does not exist, asking a question its answer has already been given to. One row per\nquestion, with the words and what the premise gets wrong.\n\nThe premise is the whole of it. A hard question is not confusion; a question that could only be\nasked by somebody holding a wrong model is.\n\n## What it cannot see\n\nA person who understands perfectly and is asking on somebody else's behalf. And confusion nobody\nvoices, which is most of it, and which usually shows up later as a stall.\n"
   },
   {
    "id": "confusion-voiced-on-call",
@@ -2876,16 +2997,26 @@ window.LIBRARY = {
    "used_by": [
     "understanding-gap"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "meeting-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Confusion expressed aloud on a captured call, with the passage.",
+   "needs": [
+    "meet#transcript",
+    "meet#smart-notes",
+    "meet#meeting"
+   ],
+   "breaks": "It stops where the recording stops.",
    "title": "Confusion said on calls",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each passage on a captured call where somebody shows they have the wrong picture: a question with a wrong premise, a restatement that misses, a term used to mean something else. One row per passage, with who said it.</p>\n<p>The same four things the written counts look for, heard rather than read, and kept as the passage so it can be checked.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Every uncaptured call. Also the confusion of the person who says nothing, which on a call is easier to have and harder to see than in writing.</p>"
     }
    },
    "sectionOrder": [
@@ -2893,7 +3024,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/confusion-voiced-on-call.md",
-   "markdown": "---\nid: confusion-voiced-on-call\nlabel: \"Confusion said on calls\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history, product-claims\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Confusion said on calls\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: confusion-voiced-on-call\nlabel: \"Confusion said on calls\"\nused_by: [understanding-gap]\nover: [meeting-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Confusion expressed aloud on a captured call, with the passage.\nneeds: [meet#transcript, meet#smart-notes, meet#meeting]\nbreaks: It stops where the recording stops.\n---\n\n# Confusion said on calls\n## What it counts\n\nEach passage on a captured call where somebody shows they have the wrong picture: a question with a\nwrong premise, a restatement that misses, a term used to mean something else. One row per passage,\nwith who said it.\n\nThe same four things the written counts look for, heard rather than read, and kept as the passage\nso it can be checked.\n\n## What it cannot see\n\nEvery uncaptured call. Also the confusion of the person who says nothing, which on a call is easier\nto have and harder to see than in writing.\n"
   },
   {
    "id": "cost-of-each-to-them",
@@ -3244,16 +3375,27 @@ window.LIBRARY = {
    "over": [
     "writing-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How much you change a draft before you send it, and what you change.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "gmail#draft",
+    "sms#draft",
+    "profile-told#voice-sample"
+   ],
+   "breaks": "It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.",
    "title": "How much you change my drafts",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For every draft the tool offered that was sent, how much of it survived: the edit distance between what was offered and what went, and what kind of thing was changed, by section.</p>\n<p>It is the only count in the library that measures the tool rather than the sale, and it is the one that tells it whether it has learned a voice or is being tolerated. A draft sent untouched is the highest mark there is.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Why an edit was made. A sentence cut for length and one cut because it was wrong look the same, and the tool has to ask rather than assume.</p>"
     }
    },
    "sectionOrder": [
@@ -3261,7 +3403,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/draft-to-sent-edit-distance.md",
-   "markdown": "---\nid: draft-to-sent-edit-distance\nlabel: \"How much you change my drafts\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How much you change my drafts\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: draft-to-sent-edit-distance\nlabel: \"How much you change my drafts\"\nused_by: [voice]\nover: [writing-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How much you change a draft before you send it, and what you change.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]\nbreaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.\n---\n\n# How much you change my drafts\n## What it counts\n\nFor every draft the tool offered that was sent, how much of it survived: the edit distance between\nwhat was offered and what went, and what kind of thing was changed, by section.\n\nIt is the only count in the library that measures the tool rather than the sale, and it is the one\nthat tells it whether it has learned a voice or is being tolerated. A draft sent untouched is the\nhighest mark there is.\n\n## What it cannot see\n\nWhy an edit was made. A sentence cut for length and one cut because it was wrong look the same, and\nthe tool has to ask rather than assume.\n"
   },
   {
    "id": "dropped-recurring-meeting",
@@ -3452,16 +3594,27 @@ window.LIBRARY = {
    "over": [
     "writing-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How formally each of you writes, and how that has moved as the relationship went on.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "gmail#draft",
+    "sms#draft",
+    "profile-told#voice-sample"
+   ],
+   "breaks": "It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.",
    "title": "Formality as you get closer",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>A formality score per message on both sides, from the things that carry it: greeting and sign-off, contractions, sentence length, first names, hedging. Plotted against how long you had been talking when each was sent.</p>\n<p>Both sides, because the useful fact is the distance between them. A seller writing formally to somebody who writes casually is making a mistake in one direction, and the reverse is worse.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Culture and language, which set the baseline and are not on any record. This is always read as a trend within one relationship, never as a judgement about a person.</p>"
     }
    },
    "sectionOrder": [
@@ -3469,7 +3622,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/formality-by-relationship-stage.md",
-   "markdown": "---\nid: formality-by-relationship-stage\nlabel: \"Formality as you get closer\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Formality as you get closer\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: formality-by-relationship-stage\nlabel: \"Formality as you get closer\"\nused_by: [voice]\nover: [writing-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How formally each of you writes, and how that has moved as the relationship went on.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]\nbreaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.\n---\n\n# Formality as you get closer\n## What it counts\n\nA formality score per message on both sides, from the things that carry it: greeting and sign-off,\ncontractions, sentence length, first names, hedging. Plotted against how long you had been talking\nwhen each was sent.\n\nBoth sides, because the useful fact is the distance between them. A seller writing formally to\nsomebody who writes casually is making a mistake in one direction, and the reverse is worse.\n\n## What it cannot see\n\nCulture and language, which set the baseline and are not on any record. This is always read as a\ntrend within one relationship, never as a judgement about a person.\n"
   },
   {
    "id": "fresh-reason-to-write",
@@ -3594,16 +3747,27 @@ window.LIBRARY = {
    "over": [
     "writing-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How each of you opens and closes a message, and what you each do consistently.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "gmail#draft",
+    "sms#draft",
+    "profile-told#voice-sample"
+   ],
+   "breaks": "It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.",
    "title": "How you open and sign off",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The opening and closing line of every message on both sides, tallied: which greeting, which sign-off, whether a name is used, how often each appears. Enough to say what this person's normal is, and what yours is with them.</p>\n<p>It is the most mechanical thing in the library and the most immediately useful, because getting somebody's greeting wrong is the first thing a reader notices and the easiest thing to get right.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A greeting set by a mail client's template, and an organisation with a house style that everybody follows.</p>"
     }
    },
    "sectionOrder": [
@@ -3611,7 +3775,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/greeting-and-signoff-pattern.md",
-   "markdown": "---\nid: greeting-and-signoff-pattern\nlabel: \"How you open and sign off\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How you open and sign off\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: greeting-and-signoff-pattern\nlabel: \"How you open and sign off\"\nused_by: [voice]\nover: [writing-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How each of you opens and closes a message, and what you each do consistently.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]\nbreaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.\n---\n\n# How you open and sign off\n## What it counts\n\nThe opening and closing line of every message on both sides, tallied: which greeting, which\nsign-off, whether a name is used, how often each appears. Enough to say what this person's normal\nis, and what yours is with them.\n\nIt is the most mechanical thing in the library and the most immediately useful, because getting\nsomebody's greeting wrong is the first thing a reader notices and the easiest thing to get right.\n\n## What it cannot see\n\nA greeting set by a mail client's template, and an organisation with a house style that everybody\nfollows.\n"
   },
   {
    "id": "grounding-kind-required",
@@ -3622,16 +3786,26 @@ window.LIBRARY = {
    "over": [
     "product-claims"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "What kind of evidence each claim needs before it can be made.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "The kinds are told, not deduced. Where nobody has said what a claim of this sort needs, the count is absent rather than lenient.",
    "title": "Kind of evidence a claim needs",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/unbacked-claim.md\"><code>unbacked-claim</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each claim, the kind of evidence it needs to stand: a number needs a measurement, a track record needs a named customer, a compliance claim needs a certificate. From your told proof tags, one row per claim.</p>\n<p>It is what stops \"we have a case study\" counting as backing for \"we cut incidents by forty per cent\".</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A buyer whose bar is higher than yours. What an industry will accept is not on your record and differs by sector.</p>"
     }
    },
    "sectionOrder": [
@@ -3639,7 +3813,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/grounding-kind-required.md",
-   "markdown": "---\nid: grounding-kind-required\nlabel: \"Kind of evidence a claim needs\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Kind of evidence a claim needs\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: grounding-kind-required\nlabel: \"Kind of evidence a claim needs\"\nused_by: [unbacked-claim]\nover: [product-claims]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: What kind of evidence each claim needs before it can be made.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, organisation-told#proof-tag]\nbreaks: The kinds are told, not deduced. Where nobody has said what a claim of this sort needs, the count is absent rather than lenient.\n---\n\n# Kind of evidence a claim needs\n## What it counts\n\nFor each claim, the kind of evidence it needs to stand: a number needs a measurement, a track\nrecord needs a named customer, a compliance claim needs a certificate. From your told proof tags,\none row per claim.\n\nIt is what stops \"we have a case study\" counting as backing for \"we cut incidents by forty per\ncent\".\n\n## What it cannot see\n\nA buyer whose bar is higher than yours. What an industry will accept is not on your record and\ndiffers by sector.\n"
   },
   {
    "id": "head-of-signature-scan",
@@ -3886,16 +4060,28 @@ window.LIBRARY = {
    "over": [
     "competitor-field"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Which kind of lock-in it is: the data, the contract, or the habit.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment"
+   ],
+   "breaks": "The three are not exclusive and the count does not force a choice.",
    "title": "What locks them in: data or contract",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each lock-in mentioned, which kind it is: the contract (a term or a notice period), the data (a migration, an integration, years of records), or the habit (training, process, a team that knows it). One row per mention, sorted, with the words.</p>\n<p>They matter differently. A contract has a date and will end. Data and habit have no date and are the ones that keep a buyer where they are for a decade.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Which kind actually binds them, as against which kind they mention. People quote the contract because it is concrete and stay because of the habit.</p>"
     }
    },
    "sectionOrder": [
@@ -3903,7 +4089,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/incumbent-data-or-contract-lock.md",
-   "markdown": "---\nid: incumbent-data-or-contract-lock\nlabel: \"What locks them in: data or contract\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# What locks them in: data or contract\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: incumbent-data-or-contract-lock\nlabel: \"What locks them in: data or contract\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Which kind of lock-in it is: the data, the contract, or the habit.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web#web-result, web#page-content, web#research-report, web#enrichment]\nbreaks: The three are not exclusive and the count does not force a choice.\n---\n\n# What locks them in: data or contract\n## What it counts\n\nFor each lock-in mentioned, which kind it is: the contract (a term or a notice period), the data (a\nmigration, an integration, years of records), or the habit (training, process, a team that knows\nit). One row per mention, sorted, with the words.\n\nThey matter differently. A contract has a date and will end. Data and habit have no date and are\nthe ones that keep a buyer where they are for a decade.\n\n## What it cannot see\n\nWhich kind actually binds them, as against which kind they mention. People quote the contract\nbecause it is concrete and stay because of the habit.\n"
   },
   {
    "id": "incumbent-lock-in-present",
@@ -3914,16 +4100,29 @@ window.LIBRARY = {
    "over": [
     "competitor-field"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether the buyer already has somebody, and what is said about how tied in they are.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment",
+    "handover#stated-commitment"
+   ],
+   "breaks": "Lock-in is a judgement about a contract nobody has shown you. The count reports what was said about it and never a term.",
    "title": "Tied to their current supplier",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/competitive-standing.md\"><code>competitive-standing</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/competitor-field.md\"><code>competitor-field</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Whether an incumbent has been named on this deal, who, and every line on record about how tied to them the buyer is: a renewal date, a notice period, a contract length, a migration nobody wants. One row per mention with the words and who said them.</p>\n<p>What the buyer says about their own lock-in is the only evidence there will ever be, so it is kept as their words.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>The contract itself, which nobody will send you. And lock-in nobody has mentioned, which is common early and is why an empty result means nothing this early in a deal.</p>"
     }
    },
    "sectionOrder": [
@@ -3931,7 +4130,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/incumbent-lock-in-present.md",
-   "markdown": "---\nid: incumbent-lock-in-present\nlabel: \"Tied to their current supplier\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Tied to their current supplier\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`competitive-standing`](../signals/competitive-standing.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`competitor-field`](../assemblies/competitor-field.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: incumbent-lock-in-present\nlabel: \"Tied to their current supplier\"\nused_by: [competitive-standing]\nover: [competitor-field]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether the buyer already has somebody, and what is said about how tied in they are.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, web#web-result, web#page-content, web#research-report, web#enrichment, handover#stated-commitment]\nbreaks: Lock-in is a judgement about a contract nobody has shown you. The count reports what was said about it and never a term.\n---\n\n# Tied to their current supplier\n## What it counts\n\nWhether an incumbent has been named on this deal, who, and every line on record about how tied to\nthem the buyer is: a renewal date, a notice period, a contract length, a migration nobody wants.\nOne row per mention with the words and who said them.\n\nWhat the buyer says about their own lock-in is the only evidence there will ever be, so it is kept\nas their words.\n\n## What it cannot see\n\nThe contract itself, which nobody will send you. And lock-in nobody has mentioned, which is common\nearly and is why an empty result means nothing this early in a deal.\n"
   },
   {
    "id": "innocent-explanation-scan",
@@ -4153,18 +4352,25 @@ window.LIBRARY = {
     "answer-gap"
    ],
    "over": [
-    "objection-list"
+    "proof-library"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether a reference names the customer or hides them.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "Anonymous is not worthless, it is weaker. The count sorts; the read weighs.",
    "title": "Named or anonymous reference",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each reference or case study, whether the customer is named or anonymised, one row each.</p>\n<p>A named customer a buyer can look up is evidence. \"A leading operator in the sector\" is a sentence. The difference is the single biggest thing separating proof that works from proof that does not, and nothing else in the library measures it.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether the named customer would say the same thing today.</p>"
     }
    },
    "sectionOrder": [
@@ -4172,7 +4378,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/named-vs-anonymous-reference.md",
-   "markdown": "---\nid: named-vs-anonymous-reference\nlabel: \"Named or anonymous reference\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Named or anonymous reference\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: named-vs-anonymous-reference\nlabel: \"Named or anonymous reference\"\nused_by: [answer-gap]\nover: [proof-library]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether a reference names the customer or hides them.\nneeds: [drive#file, drive#file-content, organisation-told#proof-tag]\nbreaks: Anonymous is not worthless, it is weaker. The count sorts; the read weighs.\n---\n\n# Named or anonymous reference\n## What it counts\n\nFor each reference or case study, whether the customer is named or anonymised, one row each.\n\nA named customer a buyer can look up is evidence. \"A leading operator in the sector\" is a sentence.\nThe difference is the single biggest thing separating proof that works from proof that does not,\nand nothing else in the library measures it.\n\n## What it cannot see\n\nWhether the named customer would say the same thing today.\n"
   },
   {
    "id": "names-they-have-given-you",
@@ -4282,16 +4488,29 @@ window.LIBRARY = {
    "over": [
     "objection-list"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether a worry on record has an entry with an answer written for it.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "An entry with no answer in it is not an entry, and the count keeps the two apart.",
    "title": "Answer on file for this worry",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each worry on record, whether your told material holds an entry for it, and whether that entry actually carries an answer. Three states per worry: no entry, an entry with no answer, an entry with an answer.</p>\n<p>The middle state is the one worth having. It is the difference between a worry nobody has thought about and one somebody catalogued and never answered.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A worry answered brilliantly by a person, every time, and never written down.</p>"
     }
    },
    "sectionOrder": [
@@ -4299,7 +4518,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/objection-entry-exists.md",
-   "markdown": "---\nid: objection-entry-exists\nlabel: \"Answer on file for this worry\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Answer on file for this worry\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: objection-entry-exists\nlabel: \"Answer on file for this worry\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether a worry on record has an entry with an answer written for it.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: An entry with no answer in it is not an entry, and the count keeps the two apart.\n---\n\n# Answer on file for this worry\n## What it counts\n\nFor each worry on record, whether your told material holds an entry for it, and whether that entry\nactually carries an answer. Three states per worry: no entry, an entry with no answer, an entry\nwith an answer.\n\nThe middle state is the one worth having. It is the difference between a worry nobody has thought\nabout and one somebody catalogued and never answered.\n\n## What it cannot see\n\nA worry answered brilliantly by a person, every time, and never written down.\n"
   },
   {
    "id": "objection-name-match",
@@ -4563,16 +4782,25 @@ window.LIBRARY = {
    "over": [
     "price-position"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Where your price sits against the named rival the field treats as the leader.",
+   "needs": [
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment",
+    "offering-told#pricing"
+   ],
+   "breaks": "It needs a leader somebody has named. The tool does not decide who leads a market.",
    "title": "Your price against the market leader",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/price-barrier.md\"><code>price-barrier</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/price-position.md\"><code>price-position</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Your told price against the price of the rival named as the field's leader, as a difference and as a percentage, with both figures and their sources.</p>\n<p>Against the leader specifically, not against the average, because a buyer comparing you is comparing you with one name they already have in mind.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Who the leader is, at this buyer. It is often not the one the market would name, and where nobody has said, the count reports that it used the field's and is unsure.</p>"
     }
    },
    "sectionOrder": [
@@ -4580,7 +4808,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/price-delta-vs-leader.md",
-   "markdown": "---\nid: price-delta-vs-leader\nlabel: \"Your price against the market leader\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your price against the market leader\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`price-barrier`](../signals/price-barrier.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`price-position`](../assemblies/price-position.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: price-delta-vs-leader\nlabel: \"Your price against the market leader\"\nused_by: [price-barrier]\nover: [price-position]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Where your price sits against the named rival the field treats as the leader.\nneeds: [web#web-result, web#page-content, web#research-report, web#enrichment, offering-told#pricing]\nbreaks: It needs a leader somebody has named. The tool does not decide who leads a market.\n---\n\n# Your price against the market leader\n## What it counts\n\nYour told price against the price of the rival named as the field's leader, as a difference and as\na percentage, with both figures and their sources.\n\nAgainst the leader specifically, not against the average, because a buyer comparing you is\ncomparing you with one name they already have in mind.\n\n## What it cannot see\n\nWho the leader is, at this buyer. It is often not the one the market would name, and where nobody\nhas said, the count reports that it used the field's and is unsure.\n"
   },
   {
    "id": "pricing-question-asked",
@@ -4733,18 +4961,25 @@ window.LIBRARY = {
     "answer-gap"
    ],
    "over": [
-    "objection-list"
+    "proof-library"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Which evidence is actually on the shelf, by what it proves.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "It lists what is filed. A document filed in the wrong place is not on the shelf as far as anything here can tell.",
    "title": "Evidence on file",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>Everything on the evidence shelf, one row per document, with what it is meant to prove, when it was made, who it is about and what kind of proof it is.</p>\n<p>It is the shelf itself, tallied, and it is the floor under every read that asks whether there is anything to send.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Evidence nobody filed, and evidence filed without a tag saying what it proves, which the shelf cannot use even though it holds it.</p>"
     }
    },
    "sectionOrder": [
@@ -4752,7 +4987,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-on-file.md",
-   "markdown": "---\nid: proof-on-file\nlabel: \"Evidence on file\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Evidence on file\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-on-file\nlabel: \"Evidence on file\"\nused_by: [answer-gap]\nover: [proof-library]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Which evidence is actually on the shelf, by what it proves.\nneeds: [drive#file, drive#file-content, organisation-told#proof-tag]\nbreaks: It lists what is filed. A document filed in the wrong place is not on the shelf as far as anything here can tell.\n---\n\n# Evidence on file\n## What it counts\n\nEverything on the evidence shelf, one row per document, with what it is meant to prove, when it was\nmade, who it is about and what kind of proof it is.\n\nIt is the shelf itself, tallied, and it is the floor under every read that asks whether there is\nanything to send.\n\n## What it cannot see\n\nEvidence nobody filed, and evidence filed without a tag saying what it proves, which the shelf\ncannot use even though it holds it.\n"
   },
   {
    "id": "proof-recency",
@@ -4761,18 +4996,25 @@ window.LIBRARY = {
     "answer-gap"
    ],
    "over": [
-    "objection-list"
+    "proof-library"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How old each piece of evidence is.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "What counts as old differs by kind: a certificate expires, a case study ages, a measurement dates.",
    "title": "How recent the evidence is",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The age of each piece of evidence in months, from the date on the document rather than the date it was filed, with the kind of document beside it so age can be read properly.</p>\n<p>A four-year-old case study is a different problem from a four-year-old certificate. One is stale and one may be void.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A document quietly kept up to date with no new date on it, which reads as old, and an undated one, which reads as unknown rather than as new.</p>"
     }
    },
    "sectionOrder": [
@@ -4780,7 +5022,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-recency.md",
-   "markdown": "---\nid: proof-recency\nlabel: \"How recent the evidence is\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# How recent the evidence is\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-recency\nlabel: \"How recent the evidence is\"\nused_by: [answer-gap]\nover: [proof-library]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How old each piece of evidence is.\nneeds: [drive#file, drive#file-content, organisation-told#proof-tag]\nbreaks: What counts as old differs by kind: a certificate expires, a case study ages, a measurement dates.\n---\n\n# How recent the evidence is\n## What it counts\n\nThe age of each piece of evidence in months, from the date on the document rather than the date it\nwas filed, with the kind of document beside it so age can be read properly.\n\nA four-year-old case study is a different problem from a four-year-old certificate. One is stale\nand one may be void.\n\n## What it cannot see\n\nA document quietly kept up to date with no new date on it, which reads as old, and an undated one,\nwhich reads as unknown rather than as new.\n"
   },
   {
    "id": "proof-required-kind",
@@ -4791,16 +5033,26 @@ window.LIBRARY = {
    "over": [
     "objection-list"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "What kind of evidence a given worry calls for.",
+   "needs": [
+    "offering-told#pitch",
+    "offering-told#use-case",
+    "offering-told#fit-shape",
+    "offering-told#worry-answer",
+    "offering-told#names-in-the-field",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "Told, not deduced, and absent rather than guessed where nobody has said.",
    "title": "Kind of evidence an answer needs",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each worry, the kind of evidence that would answer it: a certificate, a reference, a measurement, a demonstration. From your told proof tags.</p>\n<p>It is the sibling of <code>grounding-kind-required</code>: that one is about a claim you make, this one is about a worry they raise.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A buyer who would accept something else entirely, and one who would accept nothing.</p>"
     }
    },
    "sectionOrder": [
@@ -4808,7 +5060,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proof-required-kind.md",
-   "markdown": "---\nid: proof-required-kind\nlabel: \"Kind of evidence an answer needs\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Kind of evidence an answer needs\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proof-required-kind\nlabel: \"Kind of evidence an answer needs\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: What kind of evidence a given worry calls for.\nneeds: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, organisation-told#proof-tag]\nbreaks: Told, not deduced, and absent rather than guessed where nobody has said.\n---\n\n# Kind of evidence an answer needs\n## What it counts\n\nFor each worry, the kind of evidence that would answer it: a certificate, a reference, a\nmeasurement, a demonstration. From your told proof tags.\n\nIt is the sibling of `grounding-kind-required`: that one is about a claim you make, this one is\nabout a worry they raise.\n\n## What it cannot see\n\nA buyer who would accept something else entirely, and one who would accept nothing.\n"
   },
   {
    "id": "proofs-per-claim",
@@ -4817,18 +5069,25 @@ window.LIBRARY = {
     "answer-gap"
    ],
    "over": [
-    "objection-list"
+    "proof-library"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How many pieces of evidence back each claim.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "More is not better past about two. A claim with six pieces of thin evidence is still thin.",
    "title": "Pieces of evidence per claim",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each claim, how many separate pieces of evidence on the shelf support it, with what each is. One row per claim.</p>\n<p>One is enough for most claims and none is the number that matters. The reads above it care about the difference between none and one far more than between one and four.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Whether two pieces of evidence are really two. Three case studies drawn from the same programme are one piece of evidence wearing three covers.</p>"
     }
    },
    "sectionOrder": [
@@ -4836,7 +5095,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/proofs-per-claim.md",
-   "markdown": "---\nid: proofs-per-claim\nlabel: \"Pieces of evidence per claim\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Pieces of evidence per claim\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: proofs-per-claim\nlabel: \"Pieces of evidence per claim\"\nused_by: [answer-gap]\nover: [proof-library]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How many pieces of evidence back each claim.\nneeds: [drive#file, drive#file-content, organisation-told#proof-tag]\nbreaks: More is not better past about two. A claim with six pieces of thin evidence is still thin.\n---\n\n# Pieces of evidence per claim\n## What it counts\n\nFor each claim, how many separate pieces of evidence on the shelf support it, with what each is.\nOne row per claim.\n\nOne is enough for most claims and none is the number that matters. The reads above it care about\nthe difference between none and one far more than between one and four.\n\n## What it cannot see\n\nWhether two pieces of evidence are really two. Three case studies drawn from the same programme\nare one piece of evidence wearing three covers.\n"
   },
   {
    "id": "proposal-or-trial-requested",
@@ -4881,16 +5140,27 @@ window.LIBRARY = {
    "used_by": [
     "understanding-gap"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Questions they have asked more than once, with how far apart.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.",
    "title": "Same question asked again",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Questions asked again after being answered: the question, how many times, how far apart, and whether each asking followed an answer. One row per question.</p>\n<p>A question asked twice was answered badly, answered to the wrong person, or answered in a way that did not survive being repeated internally. All three are worth knowing and none of them is the buyer's fault.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A question re-asked in different enough words that nothing matches it, which is the case where the answer landed worst of all.</p>"
     }
    },
    "sectionOrder": [
@@ -4898,7 +5168,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/re-asked-questions.md",
-   "markdown": "---\nid: re-asked-questions\nlabel: \"Same question asked again\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history, product-claims\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Same question asked again\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: re-asked-questions\nlabel: \"Same question asked again\"\nused_by: [understanding-gap]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Questions they have asked more than once, with how far apart.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.\n---\n\n# Same question asked again\n## What it counts\n\nQuestions asked again after being answered: the question, how many times, how far apart, and\nwhether each asking followed an answer. One row per question.\n\nA question asked twice was answered badly, answered to the wrong person, or answered in a way that\ndid not survive being repeated internally. All three are worth knowing and none of them is the\nbuyer's fault.\n\n## What it cannot see\n\nA question re-asked in different enough words that nothing matches it, which is the case where the\nanswer landed worst of all.\n"
   },
   {
    "id": "reasons-given-for-a-no",
@@ -5367,16 +5637,27 @@ window.LIBRARY = {
    "over": [
     "writing-history"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "How long your sentences are here, against how long you usually write.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message",
+    "gmail#draft",
+    "sms#draft",
+    "profile-told#voice-sample"
+   ],
+   "breaks": "It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.",
    "title": "Your sentence length",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/voice.md\"><code>voice</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/writing-history.md\"><code>writing-history</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>The median sentence length in your own messages to this person, against your median across everybody, and the same for them. Words per sentence, measured on sent messages only.</p>\n<p>It is one of the numbers behind writing in somebody's voice: the point is not short sentences, it is your sentences.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>Length is not tone. A long sentence can be warm and a short one cold, and this number cannot tell the difference.</p>"
     }
    },
    "sectionOrder": [
@@ -5384,7 +5665,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/sentence-length-vs-baseline.md",
-   "markdown": "---\nid: sentence-length-vs-baseline\nlabel: \"Your sentence length\"\nused_by: [voice]\nover: [writing-history]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Your sentence length\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`voice`](../signals/voice.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`writing-history`](../assemblies/writing-history.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: sentence-length-vs-baseline\nlabel: \"Your sentence length\"\nused_by: [voice]\nover: [writing-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: How long your sentences are here, against how long you usually write.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]\nbreaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.\n---\n\n# Your sentence length\n## What it counts\n\nThe median sentence length in your own messages to this person, against your median across\neverybody, and the same for them. Words per sentence, measured on sent messages only.\n\nIt is one of the numbers behind writing in somebody's voice: the point is not short sentences, it\nis your sentences.\n\n## What it cannot see\n\nLength is not tone. A long sentence can be warm and a short one cold, and this number cannot tell\nthe difference.\n"
   },
   {
    "id": "shared-contact-on-thread",
@@ -5777,16 +6058,27 @@ window.LIBRARY = {
    "used_by": [
     "understanding-gap"
    ],
-   "over": [],
-   "defined": false,
+   "over": [
+    "conversation-history"
+   ],
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Your own words used by them to mean something else.",
+   "needs": [
+    "gmail#email-message",
+    "gmail#email-thread",
+    "slack#slack-message",
+    "sms#text-message"
+   ],
+   "breaks": "It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.",
    "title": "They use your terms wrongly",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/understanding-gap.md\"><code>understanding-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>Which assembly it counts within is not written yet. It is one of <a href=\"../assemblies/conversation-history.md\"><code>conversation-history</code></a>, <a href=\"../assemblies/meeting-history.md\"><code>meeting-history</code></a> or <a href=\"../assemblies/product-claims.md\"><code>product-claims</code></a>, the assemblies every signal using it reads.</p>"
+     "html": "<p>Each time they use a term from your world in a way that does not match what it means: the term, their sentence, and the meaning your told material gives it. One row per use.</p>\n<p>It is the quietest sign of a gap in understanding and the most useful, because a buyer using your word wrongly will carry that meaning into a room you are not in.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A term they use loosely on purpose, and a term whose meaning is genuinely contested in the industry. The count reports the mismatch; whether it matters is the read's.</p>"
     }
    },
    "sectionOrder": [
@@ -5794,7 +6086,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/terms-used-wrongly.md",
-   "markdown": "---\nid: terms-used-wrongly\nlabel: \"They use your terms wrongly\"\nused_by: [understanding-gap]\nover: []   # not written yet. One of: conversation-history, meeting-history, product-claims\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# They use your terms wrongly\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nWhich assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: terms-used-wrongly\nlabel: \"They use your terms wrongly\"\nused_by: [understanding-gap]\nover: [conversation-history]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Your own words used by them to mean something else.\nneeds: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]\nbreaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.\n---\n\n# They use your terms wrongly\n## What it counts\n\nEach time they use a term from your world in a way that does not match what it means: the term,\ntheir sentence, and the meaning your told material gives it. One row per use.\n\nIt is the quietest sign of a gap in understanding and the most useful, because a buyer using your\nword wrongly will carry that meaning into a room you are not in.\n\n## What it cannot see\n\nA term they use loosely on purpose, and a term whose meaning is genuinely contested in the\nindustry. The count reports the mismatch; whether it matters is the read's.\n"
   },
   {
    "id": "their-promise-undelivered",
@@ -5867,18 +6159,29 @@ window.LIBRARY = {
     "answer-gap"
    ],
    "over": [
-    "objection-list"
+    "proof-library"
    ],
-   "over_status": "provisional",
-   "defined": false,
+   "over_status": "decided",
+   "defined": true,
+   "counts": "Whether each piece of evidence was written by you or by somebody else.",
+   "needs": [
+    "drive#file",
+    "drive#file-content",
+    "web#web-result",
+    "web#page-content",
+    "web#research-report",
+    "web#enrichment",
+    "organisation-told#proof-tag"
+   ],
+   "breaks": "Same rule as the reference count: it sorts by who wrote it, and the read weighs what that is worth.",
    "title": "Evidence from others, or from you",
    "intro": "",
    "sections": {
     "What it counts": {
-     "html": "<p>Not written yet.</p>\n<p>This entry exists because one signal references this id: <a href=\"../signals/answer-gap.md\"><code>answer-gap</code></a>. What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.</p>\n<p>It counts within <a href=\"../assemblies/objection-list.md\"><code>objection-list</code></a>. That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.</p>"
+     "html": "<p>For each piece of evidence, who produced it: you, the customer, or an independent party. One row each, with which.</p>\n<p>Your own word about your own outcomes is the weakest form of evidence there is, and most evidence shelves are made almost entirely of it. A read that cannot see that will tell a seller they are well backed when they are not.</p>"
     },
     "What it cannot see": {
-     "html": "<p>Not written yet.</p>"
+     "html": "<p>A third party paid by you, which the count records as third party because that is who published it. The read is told this is the commonest way the number flatters.</p>"
     }
    },
    "sectionOrder": [
@@ -5886,7 +6189,7 @@ window.LIBRARY = {
     "What it cannot see"
    ],
    "file": "counts/third-party-vs-self-asserted.md",
-   "markdown": "---\nid: third-party-vs-self-asserted\nlabel: \"Evidence from others, or from you\"\nused_by: [answer-gap]\nover: [objection-list]\nover_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.\ndefined: false   # nothing here is written yet. See the body.\n---\n\n# Evidence from others, or from you\n## What it counts\n\nNot written yet.\n\nThis entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.\n\nIt counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.\n\n## What it cannot see\n\nNot written yet.\n"
+   "markdown": "---\nid: third-party-vs-self-asserted\nlabel: \"Evidence from others, or from you\"\nused_by: [answer-gap]\nover: [proof-library]\nover_status: decided   # decided 21 September, when the counts were written\ndefined: true\ncounts: Whether each piece of evidence was written by you or by somebody else.\nneeds: [drive#file, drive#file-content, web#web-result, web#page-content, web#research-report, web#enrichment, organisation-told#proof-tag]\nbreaks: Same rule as the reference count: it sorts by who wrote it, and the read weighs what that is worth.\n---\n\n# Evidence from others, or from you\n## What it counts\n\nFor each piece of evidence, who produced it: you, the customer, or an independent party. One row\neach, with which.\n\nYour own word about your own outcomes is the weakest form of evidence there is, and most evidence\nshelves are made almost entirely of it. A read that cannot see that will tell a seller they are\nwell backed when they are not.\n\n## What it cannot see\n\nA third party paid by you, which the count records as third party because that is who published\nit. The read is told this is the commonest way the number flatters.\n"
   },
   {
    "id": "time-to-their-date",

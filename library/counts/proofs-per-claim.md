@@ -2,20 +2,24 @@
 id: proofs-per-claim
 label: "Pieces of evidence per claim"
 used_by: [answer-gap]
-over: [objection-list]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over: [proof-library]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many pieces of evidence back each claim.
+needs: [drive#file, drive#file-content, organisation-told#proof-tag]
+breaks: More is not better past about two. A claim with six pieces of thin evidence is still thin.
 ---
 
 # Pieces of evidence per claim
 ## What it counts
 
-Not written yet.
+For each claim, how many separate pieces of evidence on the shelf support it, with what each is.
+One row per claim.
 
-This entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+One is enough for most claims and none is the number that matters. The reads above it care about
+the difference between none and one far more than between one and four.
 
 ## What it cannot see
 
-Not written yet.
+Whether two pieces of evidence are really two. Three case studies drawn from the same programme
+are one piece of evidence wearing three covers.

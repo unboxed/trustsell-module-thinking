@@ -2,20 +2,23 @@
 id: named-vs-anonymous-reference
 label: "Named or anonymous reference"
 used_by: [answer-gap]
-over: [objection-list]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over: [proof-library]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Whether a reference names the customer or hides them.
+needs: [drive#file, drive#file-content, organisation-told#proof-tag]
+breaks: Anonymous is not worthless, it is weaker. The count sorts; the read weighs.
 ---
 
 # Named or anonymous reference
 ## What it counts
 
-Not written yet.
+For each reference or case study, whether the customer is named or anonymised, one row each.
 
-This entry exists because one signal references this id: [`answer-gap`](../signals/answer-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`objection-list`](../assemblies/objection-list.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+A named customer a buyer can look up is evidence. "A leading operator in the sector" is a sentence.
+The difference is the single biggest thing separating proof that works from proof that does not,
+and nothing else in the library measures it.
 
 ## What it cannot see
 
-Not written yet.
+Whether the named customer would say the same thing today.

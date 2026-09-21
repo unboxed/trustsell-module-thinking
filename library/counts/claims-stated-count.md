@@ -3,19 +3,23 @@ id: claims-stated-count
 label: "Claims in your pitch"
 used_by: [unbacked-claim]
 over: [product-claims]
-over_status: provisional   # the only assembly every signal using it reads. Not yet confirmed.
-defined: false   # nothing here is written yet. See the body.
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: How many claims your material and your drafts actually make.
+needs: [offering-told#pitch, offering-told#use-case, offering-told#fit-shape, offering-told#worry-answer, offering-told#names-in-the-field, drive#file, drive#file-content, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]
+breaks: A claim is a statement of fact about outcomes. An opinion, a question and a description are not claims.
 ---
 
 # Claims in your pitch
 ## What it counts
 
-Not written yet.
+Each factual claim in your told material and in a draft about to go out: what it asserts, where it
+appears, and whether it is about a capability, an outcome or a track record. One row per claim.
 
-This entry exists because one signal references this id: [`unbacked-claim`](../signals/unbacked-claim.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-It counts within [`product-claims`](../assemblies/product-claims.md). That is provisional: it is the only assembly every signal using this count reads, so it was derived, not decided.
+Outcome and track-record claims are the ones that need backing. A capability claim is checkable by
+looking at the product.
 
 ## What it cannot see
 
-Not written yet.
+A claim made verbally, which is where the boldest ones are made. And an implication that is not a
+sentence, which is how most overclaiming actually happens.

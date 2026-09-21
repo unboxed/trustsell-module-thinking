@@ -2,19 +2,25 @@
 id: confused-questions
 label: "Questions that show confusion"
 used_by: [understanding-gap]
-over: []   # not written yet. One of: conversation-history, meeting-history, product-claims
-defined: false   # nothing here is written yet. See the body.
+over: [conversation-history]
+over_status: decided   # decided 21 September, when the counts were written
+defined: true
+counts: Questions from them that show they have the wrong picture of what you sell.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]
+breaks: It reads what was written. Where the conversation happens on calls this is thin, and the companion count on captured calls carries the rest.
 ---
 
 # Questions that show confusion
 ## What it counts
 
-Not written yet.
+Questions whose premise is wrong: asking whether it does a thing it plainly does, asking about a
+part of it that does not exist, asking a question its answer has already been given to. One row per
+question, with the words and what the premise gets wrong.
 
-This entry exists because one signal references this id: [`understanding-gap`](../signals/understanding-gap.md). What it actually counts, which records it needs and when the number stops meaning anything are all still to be decided.
-
-Which assembly it counts within is not written yet. It is one of [`conversation-history`](../assemblies/conversation-history.md), [`meeting-history`](../assemblies/meeting-history.md) or [`product-claims`](../assemblies/product-claims.md), the assemblies every signal using it reads.
+The premise is the whole of it. A hard question is not confusion; a question that could only be
+asked by somebody holding a wrong model is.
 
 ## What it cannot see
 
-Not written yet.
+A person who understands perfectly and is asking on somebody else's behalf. And confusion nobody
+voices, which is most of it, and which usually shows up later as a stall.
