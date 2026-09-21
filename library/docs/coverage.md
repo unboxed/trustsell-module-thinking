@@ -291,8 +291,8 @@ and 10 cannot.
 **Done in the seventh pass, 21 September.** The second scenario's world, and a third lens.
 [`scenarios/pmf/world/`](../scenarios/pmf/world/) is a broker placing merchant cash advances: ten
 businesses with one owner each, two people on the seller's side (a rep and a processor, and nobody
-sure where the line between them falls), and four funders with a box each. Its `cards/` is empty on
-purpose, and the build is clean with `SCENARIO` set to either world. Three things in it are the
+sure where the line between them falls), and four funders with a box each. Its `cards/` was empty on
+purpose until the fourteenth pass, and the build is clean with `SCENARIO` set to either world. Three things in it are the
 point. Its **ladder runs past the sale**, eight rungs, the trade's six (interested, applied,
 submitted, offers in, accepted, funded) and then repaying and coming round again, because a ladder
 that stops at the signature could never show the after-the-sale hole. Its `connected:` names
@@ -504,6 +504,59 @@ nothing: a read that answers half a question should say in its body which half, 
 rather than an audit. **The count of holes in this library is a count against three sets now.**
 *(My reasons, not yet yours.)*
 
+**Done in the fourteenth pass, 21 September.** Ten cards for the second scenario, and the first
+test of the library from above rather than from the side. Every pass from the eighth to the
+thirteenth added or audited entries against **question sets**, and no world had exercised any of
+them: `where-this-one-goes` needs a seller with several offerings and only PMF has one;
+`colleague-already-in-touch` needs a firm; the register, the period check and the after-the-sale
+reads had never produced a card. [`scenarios/pmf/cards/`](../scenarios/pmf/cards/) now holds ten,
+nine Acts and an Ask, one per business on the ladder, chosen so that between them they stand on
+`missing-documents` (with the period check), `where-this-one-goes` with `turned-down-before` and
+`delivered-before` supporting, `disclosure-still-owed`, `payments-faltering`,
+`coming-round-again`, `customer-introduction`, `can-they-carry-it` with `uneven-income`,
+`buying-intent`, `loose-end` and `existing-commitments`. They build clean.
+
+**What writing them exposed**, which is the point of the pass and is worth more than the cards:
+
+- **Nothing gathers a text conversation.** [`conversation-history`](../assemblies/conversation-history.md)
+  and [`person-history`](../assemblies/person-history.md) draw from `gmail` and `slack`, and
+  [`sms`](../channels/sms.md) is still drawn from by nothing, which the third pass said and nobody
+  has felt until now. At this end **text is the conversation**, and Slack is not connected. So every
+  read standing on those two gathers is blind here: `loose-end`, `buying-intent`,
+  `disclosure-still-owed`, `pushing`, `blocker`, `warming`, `one-sided` and the rest.
+  [`act-errol-application`](../scenarios/pmf/cards/act-errol-application.md) is the proof: a
+  merchant said yes by text on Friday, and the card can only be **a hunch** resting on a line the
+  seller typed, because the conversation itself is unreadable. This is the largest single hole the
+  library has, and no question set found it. A card did.
+- **`disclosure-still-owed` cannot reach the price it is about.** The build refused the card until
+  the claim came out: the read gathers the fence, the conversation and the deal, and none of them
+  reaches `offering-told#pricing`. So the one read whose job is to say "they are about to agree and
+  the cost is not on record" cannot state the cost. The card names it in *Still unclear* rather than
+  pretending.
+- **No read reaches a live deal's funder answers.** `crm#deal-decision`, written in the ninth pass,
+  holds the offers and declines against a deal, and only [`deal-outcomes`](../assemblies/deal-outcomes.md)
+  reads it, for deals that have **ended**. So "an offer came back and nobody has told the rep",
+  which the trade calls the moment to raise alarms, has no read at all.
+  [`act-tony-offers`](../scenarios/pmf/cards/act-tony-offers.md) can only say that a promise was
+  made and not kept, and says outright that it cannot tell you what came back.
+- **No read says a deal has just completed.** Completion is fetched or told and never deduced,
+  which is right, but nothing turns it into news. The `funded` rung in this world got no card for
+  that reason, and News remains the one kind with no card in either scenario.
+- **A card that names what to send rests on the evidence shelf**, `proof-library`, which lives in
+  Drive. At this end Drive is not connected and almost every document is the buyer's, so
+  [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) rests on a shelf that
+  does not exist in its own world, and the build does not notice, because a gap row is added for a
+  signal's `needs` and not for a trail that runs into an unconnected channel.
+- **The order of the day is a patient seller's.** Asked to place these ten, `build.js` put a
+  faltering repayment first and an unseen funder's offer third. At an hours tempo, an offer nobody
+  has passed on is the thing that costs most by waiting. The bands are the Brain's and this is not
+  a bug in them, but it is the first evidence that what waiting a day costs is not the same
+  question at both ends of the spectrum.
+
+Nothing was fixed in this pass on purpose: the cards were written to find out, and changing the
+rungs in the same breath would have hidden what they found. Every item above is work, and the order
+is mine. *(My reasons, not yet yours.)*
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -529,8 +582,23 @@ yet yours.)*
   offering is one thing on one set of terms, and the read that places a lead across the shelf is
   Offerings'. It changed a shape rather than adding an entry, so it is the pass most worth the
   user's disagreement.
+- **What the fourteenth pass found, in order.** These come before the list below, because they are
+  holes under reads that already exist rather than reads that do not. *(My order, not yet yours.)*
+  - **Gather a text conversation.** Add `sms` (and `web-form`, for the first thing a lead says) to
+    [`conversation-history`](../assemblies/conversation-history.md), and `sms` to
+    [`person-history`](../assemblies/person-history.md). Roughly a dozen reads stop being blind at
+    the fast end. Nothing else in this list is worth as much.
+  - **Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
+    the cost is rather than only that it is unsaid.
+  - **A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
+    than on ended deals. It is the trade's own alarm and nothing rings it.
+  - **Decide whether a completed sale is News**, which would give the News kind its first card in
+    either scenario.
+  - **Make the build notice a trail that runs into an unconnected channel**, not only a signal's
+    `needs`.
+
 - ~~**Run this map against the third set** (`F1` to `F21`).~~ Done in the thirteenth pass. What it
-  left behind, in order:
+  left behind, after the above:
   - **Claim the eight partial `F` ids**, each with a line in the read's body saying which half it
     reaches: F2 and F7 on `missing-people`, F3 on `competitive-standing`, F10 on
     `time-to-reconnect`, F11 on `enough-tries`, F13 on `delivered-before`, F16 on `lead-with-this`,

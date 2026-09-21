@@ -24,9 +24,13 @@ what to send. Only the last two are yours to send.
 | The disclosure | disclosure | What you are obliged to put in front of them about the cost before they agree. What it must contain is the firm's to say, and is not written yet | per offer |
 
 **The required period is the thing to notice.** "Three bank statements for the last three months"
-is not one fact but two: the documents, and the stretch of time they have to cover. A handover
-request carries what you asked for and when you asked, and nothing that says how far back it has to
-reach, so nothing can tell two months and August apart from three months to date. That is the
-missing field named in [`docs/coverage.md`](../../../docs/coverage.md) and in
-[`docs/what-pmf-told-us.md`](../docs/what-pmf-told-us.md), and Bluebird Childcare is the deal in
-this world that turns on it.
+is not one fact but two: the documents, and the stretch of time they have to cover. Until 21
+September a handover request carried what you asked for and when you asked, and nothing that said
+how far back it had to reach, so nothing could tell two months and August apart from three months
+to date. The eleventh pass added it: `handover#document-request` carries the period it asks for and
+`handover#handed-over-document` carries the stretch it covers, both on the envelope.
+
+Bluebird Childcare is the deal in this world that turns on it, and
+[`cards/act-renee-statements.md`](../cards/act-renee-statements.md) is what the field buys. Without
+it the card could only say "two of three are in". With it, it says the one still out is August, and
+asks for that by name rather than asking her to send everything again.

@@ -60,8 +60,10 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   `library/docs/firm-questions.md` (21 September, not yet run through the map), and the map of what
   is and is not answered, `library/docs/coverage.md`, exist to make that visible. **Read
   `coverage.md` before adding to a rung.** A mass-selling scenario (PMF, a merchant cash advance
-  broker) is the second pressure test: its world is written, at
-  `library/scenarios/pmf/world/`, with no cards, and its ladder runs past the sale.
+  broker) is the second pressure test: `library/scenarios/pmf/` holds its world and, since 21
+  September, ten cards, and its ladder runs past the sale. Writing those cards is what found the
+  library's largest hole, that nothing gathers a text conversation
+  (`library/docs/coverage.md`, the fourteenth pass).
   **Not every entry has to hold for both ends** (20 September): some reads belong to long
   relationships and some to volume. The library is general because the set covers the spectrum and
   each entry says what it needs in order to stand, not because every entry is universal. Each

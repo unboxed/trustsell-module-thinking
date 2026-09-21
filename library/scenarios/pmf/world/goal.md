@@ -85,7 +85,8 @@ two entries, because they are what you actually choose between
 
 Each funder's box is that entry's told fit-shape, which is what
 [`signals/where-this-one-goes.md`](../../../signals/where-this-one-goes.md) reads to say which of
-the four a merchant should be submitted to. The pitch is the same on all four, because the product
+the four a merchant should be submitted to.
+[`cards/act-curtis-funder.md`](../cards/act-curtis-funder.md) is that read as a card. The pitch is the same on all four, because the product
 is: that repetition is the price of this shape, and
 [`docs/library-format.md`](../../../docs/library-format.md) says so rather than hiding it.
 
