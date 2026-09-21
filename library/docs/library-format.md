@@ -96,7 +96,7 @@ The **granularity matches the floor**, so we write docs only where there is reas
 | **Raw data** (channels, records, fields) | reference structure, no opinion | **one doc per channel service** in `channels/` | [`templates/channel.md`](../templates/channel.md) |
 | **Told** | what only you can say | **one doc per module that has one**, in `told/` | [`templates/channel.md`](../templates/channel.md) |
 | **Assemblies** | deterministic gather (a person, a conversation, an organisation) | **thin doc per entry** | [`templates/assembly.md`](../templates/assembly.md) |
-| **Counts** | the arithmetic. Every entry is `defined: false` for now | **thin doc per entry** | [`templates/count.md`](../templates/count.md) |
+| **Counts** | the arithmetic. Every entry is written and `defined: true` since 21 September | **one doc per entry** | [`templates/count.md`](../templates/count.md) |
 | **Signals** | the read, the first opinion | **rich doc per entry** | [`templates/signal.md`](../templates/signal.md) |
 | **Cards** | the suggestion, question or outcome | **one doc per card**, in the scenario's `cards/` | [`templates/card.md`](../templates/card.md) |
 
@@ -466,7 +466,9 @@ retired (they are in `_archive/`), and `build.js` reads the library into the pla
 
 ## Deliberately deferred
 
-- **What each count counts.** Counts became their own floor on 18 September, joined by `over`. Every
-  entry is still `defined: false`: what it counts, which records it needs and when the number stops
-  meaning anything are not written yet.
+- ~~**What each count counts.**~~ Done 21 September. Every entry is `defined: true` and carries
+  `counts` (the arithmetic in one line), `needs` (the records the sum is done over, which the build
+  walks) and `breaks` (when the number stops meaning anything). What is deferred now is a merge
+  pass: the three closest pairs were looked at and kept apart, and the reasons are in each count's
+  body.
 - **Floors above the cards** (insights, briefs) come once the cards prove out.

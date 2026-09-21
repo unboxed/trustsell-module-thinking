@@ -3,8 +3,11 @@ id: periods-covered
 label: "How much of a year the documents cover"
 used_by: [uneven-income]
 over: [figures-on-record]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Which stretches of time the documents on record actually cover, and which are missing from the run.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request]
+breaks: Coverage is not completeness: a month present but unreadable counts as covered.
 ---
 
 # How much of a year the documents cover

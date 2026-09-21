@@ -3,8 +3,11 @@ id: past-deals-of-this-shape
 label: "Past deals of this shape"
 used_by: [delivered-before, turned-down-before]
 over: [deal-outcomes]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Of the ended deals, how many were with buyers matching this one's told fit-shape.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, offering-told#fit-shape]
+breaks: Where the fit-shape is empty, "one like this" means nothing and the count is absent.
 ---
 
 # Past deals of this shape

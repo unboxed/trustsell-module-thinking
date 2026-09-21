@@ -3,8 +3,11 @@ id: reasons-given-for-a-no
 label: "Reasons given for a no"
 used_by: [turned-down-before]
 over: [deal-outcomes]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: The reason recorded for each deal that did not close, in the words it was given in.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record]
+breaks: The reason as given is often not the reason. It keeps the words and never a diagnosis.
 ---
 
 # Reasons given for a no

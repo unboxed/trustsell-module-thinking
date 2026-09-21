@@ -3,8 +3,11 @@ id: told-them-since
 label: "Anything sent since it landed"
 used_by: [answer-came-back]
 over: [conversation-history]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Messages from you to the buyer on this deal since the day the answer was recorded.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message]
+breaks: A zero means nothing I can see: a call leaves nothing to count.
 ---
 
 # Anything sent since it landed
@@ -16,7 +19,7 @@ it. Which records it needs and when the number stops meaning anything are not wr
 fields yet, like every other count.
 
 It counts within [`conversation-history`](../assemblies/conversation-history.md), which since 21
-September gathers text as well as mail, decided when the count was written rather than derived.
+September gathers text as well as mail.
 
 ## What it cannot see
 

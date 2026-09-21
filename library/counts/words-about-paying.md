@@ -3,8 +3,11 @@ id: words-about-paying
 label: "What they have said about paying"
 used_by: [payments-faltering]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What the buyer has said in their own words about paying: affordability, timing, what they can manage.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: Their words, kept as words. Nothing here converts a sentence into a number.
 ---
 
 # What they have said about paying

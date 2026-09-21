@@ -3,8 +3,11 @@ id: names-they-have-given-you
 label: "Names they have given you"
 used_by: [customer-introduction]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: People this customer has named to you who could be worth reaching.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: A name mentioned is not a name offered, and the count keeps the sentence so the read can tell.
 ---
 
 # Names they have given you

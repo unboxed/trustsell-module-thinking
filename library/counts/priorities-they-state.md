@@ -3,8 +3,11 @@ id: priorities-they-state
 label: "Things they say they are doing"
 used_by: [stated-priorities]
 over: [published-picture]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: The distinct intentions this organisation has stated in what it published, one per passage.
+needs: [web#research-report, web#enrichment, web#web-result, web#page-content, web#site-map]
+breaks: It cannot tell an intention from an aspiration; it keeps the passage and the read grades it.
 ---
 
 # Things they say they are doing

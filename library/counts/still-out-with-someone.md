@@ -3,8 +3,11 @@ id: still-out-with-someone
 label: "Still out, and with whom"
 used_by: [answer-came-back]
 over: [decisions-so-far]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Whoever the deal was put in front of, minus whoever has answered, by name.
+needs: [crm#deal-decision, people-told#answer-received, crm#deal-record]
+breaks: Where no record carries who it went to, it cannot subtract, and says so rather than presenting a short list as a full one.
 ---
 
 # Still out, and with whom

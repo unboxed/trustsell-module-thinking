@@ -3,8 +3,11 @@ id: what-they-can-bear
 label: "What they have said or shown they can bear"
 used_by: [can-they-carry-it]
 over: [figures-on-record]
-over_status: provisional   # re-pointed 21 September, when the figures inside a document were written. Not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What the buyer has said or shown they can carry, from their own figures and their own words.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: Their words and their documents, never a judgement about their business. Where neither exists the count is absent, not zero.
 ---
 
 # What they have said or shown they can bear

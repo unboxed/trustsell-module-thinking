@@ -3,8 +3,11 @@ id: offerings-in-play
 label: "Offerings in play"
 used_by: [where-this-one-goes]
 over: [catalogue]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: How many of the offerings on your shelf this buyer could take, and which.
+needs: [offering-told#pricing, offering-told#fit-shape, offering-told#use-case, offering-told#supplier, crm#deal-record]
+breaks: Could take is measured against the told fit-shape, so a thin shape makes a generous number.
 ---
 
 # Offerings in play

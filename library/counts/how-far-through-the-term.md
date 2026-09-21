@@ -3,8 +3,11 @@ id: how-far-through-the-term
 label: "How far through the term"
 used_by: [coming-round-again]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: How much of an agreed term has run, and how much is left.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, offering-told#pricing, crm#deal-record]
+breaks: It needs a start and a term on record. A deal with neither cannot be placed on its own timeline.
 ---
 
 # How far through the term

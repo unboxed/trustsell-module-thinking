@@ -3,8 +3,11 @@ id: route-in-on-record
 label: "How you came by them, on record"
 used_by: [lead-with-this, warm-path]
 over: [where-it-came-from]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Whether any record carries the door this person came through, which one, when, and whether you may say so.
+needs: [lead-list#lead-entry, lead-list#lead-list, people-told#lead-source, web-form#form-submission]
+breaks: No record means no record, never a cold approach.
 ---
 
 # How you came by them, on record

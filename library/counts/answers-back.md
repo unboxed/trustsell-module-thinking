@@ -3,8 +3,11 @@ id: answers-back
 label: "What has come back"
 used_by: [answer-came-back, disclosure-still-owed]
 over: [decisions-so-far]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: One row per answer recorded against this deal, sorted by what each was: an offer with its terms, a refusal, a request for more, or nothing decided yet.
+needs: [crm#deal-decision, people-told#answer-received]
+breaks: An answer that reached you and nowhere else has not come back until you say so.
 ---
 
 # What has come back

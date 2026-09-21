@@ -3,8 +3,11 @@ id: colleague-touches-on-record
 label: "Contact by others at your firm, on record"
 used_by: [colleague-already-in-touch, enough-tries]
 over: [firm-contact]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Each contact on record between someone at your firm other than you and anyone at one buyer organisation.
+needs: [crm#deal-record, slack#slack-message, gmail#email-thread, calendar#calendar-event, profile-told#about-you]
+breaks: A colleague's own mailbox never reaches the tool, so without the CRM the number under-reports.
 ---
 
 # Contact by others at your firm, on record

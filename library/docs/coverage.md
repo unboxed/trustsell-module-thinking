@@ -171,8 +171,8 @@ them, and they would serve the patient end just as well.
 - Which of the remaining holes are worth filling, and in what order. That is the user's call, and the
   point of writing the map before writing a single new entry. An order is proposed at the end, marked
   as mine.
-- What each count counts. All 134 are still `defined: false`, and some of them should probably merge or
-  go once this map is agreed, which is why defining them comes after.
+- ~~What each count counts.~~ Done in the twenty-eighth pass. All 134 are written. The merge pass
+  was considered and not done: the three closest pairs are two things each, and each says so.
 
 ## Where this goes next
 
@@ -1003,6 +1003,50 @@ world and not the trail.
   fifty reps and messages on a Friday asking where a deal is. That is F14, deferred as a floor
   above the cards, and this world makes it concrete rather than theoretical.
 
+**Done in the twenty-eighth pass, 21 September.** The counting floor, which had been deliberately
+empty since 18 September. All **134** counts are written: `defined: true`, with `counts` (the
+arithmetic in one line), `needs` (the records the sum is done over, which the build walks) and
+`breaks` (when the number stops meaning anything). Every `over: []` is resolved and every
+`over_status: provisional` is now `decided`, because writing what a count counts is what made the
+question "which gather does it count within" answerable at all.
+
+**Three rules did most of the work**, and they are worth more than the 134 entries.
+
+- **Unknown is its own column.** A fit factor with no evidence either way is not a factor missed.
+  Folding unknown into missed is how every scoring tool ever built turns "we have not looked" into
+  "they are wrong for us", and `fit-factors-met` and `fit-factors-missed` hold three columns each
+  for that reason.
+- **Where a number could be read two ways, the count hands over the evidence and the read grades
+  it.** The passage from a call, the words of a promise, the kind of proof behind a claim of
+  authority. A count that returned a verdict would be a signal wearing a number's clothes.
+- **Existence and quality are different questions, so they are different counts.**
+  `claims-grounded-count` says whether anything backs a claim; `proofs-per-claim`, `proof-recency`,
+  `named-vs-anonymous-reference` and `third-party-vs-self-asserted` say what it is worth. A read
+  can then say "there is nothing at all" differently from "there is something thin", which are
+  different cards.
+
+**The build made six counts move.** A count must count within an assembly **every** signal quoting
+it reads, and six had been given the obvious gather rather than the true one. The four channel
+counts (`accepts-meetings`, `replies-by-channel`, `reply-speed-by-channel`, `where-they-start`)
+moved onto your history with a **person**, because the question they answer is about the person and
+not about a thread. `new-attendee-on-event` and `prior-history-scan` moved onto the account's
+standing map, and `shared-contact-on-thread` onto your history with the bridge, which is where what
+makes a bridge worth anything actually lives.
+
+**The merge pass was considered and not done.** The deferral note said some counts should probably
+merge or go. Written out, the three closest pairs turned out to be genuinely two things each, and
+each now says so in its own body: `times-you-chase` is the whole thread and
+`chases-since-their-last-reply` is the current run; `reply-gap-vs-own-rhythm` is a reply
+outstanding and `how-long-quiet-vs-own-rhythm` is a relationship gone quiet;
+`grounding-kind-required` is about a claim you make and `proof-required-kind` about a worry they
+raise. No count is quoted by nothing. *(My readings, not yet yours.)*
+
+**One thing it closed that nobody had counted on.** The `open-items` widget carried
+`waits_on: counts`, because none of the three counts under it could say which assembly it counted
+within, so it reached no record and its rows were read off each card's prose. All three can now, so
+it reaches twenty-two records, and the build refused the whole library until the `waits_on` line
+came out. That is the ladder working in the direction it was built for.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -1082,10 +1126,13 @@ yet yours.)*
   still use the dropped Expand vocabulary and the old cast names, and each now says at the top that
   it does. `kind: deal-movement` stays: it is a family of read, not a council word.
 
-**Deliberately not yet.** Defining the counts: all 134 are `defined: false`, and some should merge or
-go once this map is agreed, so defining them before the set settles is wasted work. Cards and the
-phone, which are out of scope for this pass. A third scenario in the middle of the spectrum, which
-earns its place once the two ends have shown what the spectrum is.
+**Deliberately not yet.** *(Written in the eleventh pass. All three were done on 21 September:
+the counts in the twenty-eighth pass, the third scenario in the twenty-seventh. Kept as written,
+because what a pass thought was deferred is part of its record.)* Defining the counts: every one is
+`defined: false`, and some should merge or go once this map is agreed, so defining them before the
+set settles is wasted work. Cards and the phone, which are out of scope for this pass. A third
+scenario in the middle of the spectrum, which earns its place once the two ends have shown what the
+spectrum is.
 
 **One thing the first pass found and did not solve.** Story ch. 7 says "one move per person at a
 time" and "you can take in the whole day". Both are a low-volume seller's week, and neither survives

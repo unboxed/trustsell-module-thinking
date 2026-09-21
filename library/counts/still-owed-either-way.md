@@ -3,8 +3,11 @@ id: still-owed-either-way
 label: "Still owed, either way"
 used_by: [customer-introduction]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: On a completed deal, what either side still owes the other.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: It reads what was promised and what arrived. A thing delivered without a trace looks owed.
 ---
 
 # Still owed, either way

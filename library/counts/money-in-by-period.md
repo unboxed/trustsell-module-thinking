@@ -3,8 +3,11 @@ id: money-in-by-period
 label: "Money in, by period"
 used_by: [uneven-income, payments-faltering]
 over: [figures-on-record]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What came into the business in each period the documents cover, in the documents' own words.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request]
+breaks: It reads figures as stated. It does not add, adjust or annualise them.
 ---
 
 # Money in, by period

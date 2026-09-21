@@ -3,8 +3,11 @@ id: how-they-ended
 label: "How they ended"
 used_by: [delivered-before, turned-down-before]
 over: [deal-outcomes]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: For each ended deal, which of the four ways it ended, and when.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record]
+breaks: An ending is told or fetched, never deduced. A quiet deal is quiet, not lost.
 ---
 
 # How they ended

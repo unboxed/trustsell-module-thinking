@@ -3,8 +3,11 @@ id: what-was-bought-before
 label: "What they bought before"
 used_by: [coming-round-again]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What each of those earlier purchases was: the offering, the amount, the term.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, crm#deal-record, offering-told#pricing]
+breaks: It carries what the record holds, which for an old deal is usually a name and a number and nothing about how it went.
 ---
 
 # What they bought before

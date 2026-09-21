@@ -3,8 +3,11 @@ id: who-the-no-came-from
 label: "Who the no came from"
 used_by: [turned-down-before]
 over: [deal-outcomes]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Who made the decision on each ended deal, where it was not the buyer.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record]
+breaks: Where nobody recorded who decided, it says so rather than assuming the buyer did.
 ---
 
 # Who the no came from

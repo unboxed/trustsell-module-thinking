@@ -1,15 +1,14 @@
 ---
 # COUNTING FLOOR. One doc per entry, at library/counts/<id>.md.
-# THE SHAPE OF THIS RUNG IS NOT SETTLED YET. Every entry in counts/ today holds its id, a label,
-# which signals reference it, and the assembly it counts within where that could be derived.
-# Nothing has been written about what any of them actually counts. That is deliberate, and it
-# is the next piece of thinking to do.
+# THE SHAPE OF THIS RUNG WAS SETTLED ON 21 SEPTEMBER. Every entry now holds its id, a label, which
+# signals reference it, the assembly it counts within, and the three fields below: `counts`,
+# `needs` and `breaks`. A new count is written the same way; `defined: false` is for a count whose
+# arithmetic genuinely has not been decided yet, and there are none today.
 #
 # What a count is meant to be: PLAIN ARITHMETIC over records, checkable, holding no opinion.
 # It is floor 2 in ../docs/tracing-back.md, the floor that makes track-back worth trusting.
 # The moment a number needs judging, that judgement belongs one floor up, in a signal.
 #
-# Fields below marked OPEN are a suggestion, not a decision. Settle them before filling them in.
 id: <kebab-slug>              # unique across the library
 label: <Display name>         # plain English
 used_by: [<signal-id>, ...]   # which signals reference it. Derived; build.js checks it matches.
@@ -17,13 +16,11 @@ over: [<assembly-id>]         # the assembly it counts within: the join down to 
                               # Every signal in used_by MUST read it. Where more than one is
                               # possible, leave it empty and name the candidates:
                               #   over: []   # not written yet. One of: person-history, meeting-history
-over_status: provisional      # with a filled `over` that was derived, not decided
-defined: <true|false>         # false until someone has actually written what it counts
-# OPEN, once the shape is agreed:
-#   counts:  one line, the arithmetic said plainly
-#   needs:   the records the sum is done over, addressed as <source-id>#<record-id>
-#            (build.js already checks and walks this field if it is present)
-#   breaks:  when the number stops meaning anything
+over_status: decided          # `provisional` only where a filled `over` was derived, not decided
+defined: true                 # false only while the arithmetic genuinely has not been decided
+counts: <one line, the arithmetic said plainly>
+needs: [<source-id>#<record-id>, ...]   # the records the sum is done over; build.js checks and walks it
+breaks: <one line: when the number stops meaning anything>
 ---
 
 # <label>

@@ -3,8 +3,11 @@ id: steps-you-can-help-with
 label: "Steps you said you could help with"
 used_by: [steps-on-their-side]
 over: [buying-process]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Of the steps with no sign, the ones your told list marks as ones you can help with.
+needs: [people-told#buying-process]
+breaks: It cannot know whether help would be welcome.
 ---
 
 # Steps you said you could help with
@@ -12,7 +15,7 @@ defined: false   # the arithmetic is said in prose below; the fields the shape n
 
 Of the steps with no sign, the ones your told list marks as ones you can help with. The subtraction that turns a list of holes into a list of moves. Which records it needs and when the number stops meaning anything are not written in the count's fields yet, like every other count.
 
-It counts within [`buying-process`](../assemblies/buying-process.md), decided when the count was written rather than derived.
+It counts within [`buying-process`](../assemblies/buying-process.md).
 
 ## What it cannot see
 

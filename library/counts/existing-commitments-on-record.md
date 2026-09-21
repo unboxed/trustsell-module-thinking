@@ -3,8 +3,11 @@ id: existing-commitments-on-record
 label: "What they already owe, on record"
 used_by: [can-they-carry-it, existing-commitments]
 over: [figures-on-record]
-over_status: provisional   # re-pointed 21 September, when the figures inside a document were written. Not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What this buyer already owes, and to whom, from what they handed over and what is publicly filed.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request, public-records#registered-charge, public-records#public-filing, public-records#credit-standing, public-records#court-judgment]
+breaks: It sees what is filed and what was handed over. A commitment that is neither is invisible, and most are.
 ---
 
 # What they already owe, on record

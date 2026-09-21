@@ -3,8 +3,11 @@ id: how-recently-one-completed
 label: "How recently one completed"
 used_by: [delivered-before]
 over: [deal-outcomes]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: How long since the most recent deal of this shape completed.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record]
+breaks: It dates from the completion on record, which is told or fetched and never inferred.
 ---
 
 # How recently one completed

@@ -3,8 +3,11 @@ id: cost-of-each-to-them
 label: "What each would cost them"
 used_by: [where-this-one-goes]
 over: [catalogue]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: For each offering on the shelf that this buyer could take, what it would cost them over its own term.
+needs: [offering-told#pricing, offering-told#fit-shape]
+breaks: It is the shelf price per offering, not what any of them was quoted at.
 ---
 
 # What each would cost them

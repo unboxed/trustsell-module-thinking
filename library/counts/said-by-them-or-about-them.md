@@ -3,8 +3,11 @@ id: said-by-them-or-about-them
 label: "Their words, or somebody else's"
 used_by: [stated-priorities]
 over: [published-picture]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Each passage sorted by who published it: the organisation itself, or somebody else.
+needs: [web#research-report, web#enrichment, web#web-result, web#page-content, web#site-map]
+breaks: It sorts by who published, not by who wrote, which under-claims what can be quoted rather than over-claiming it.
 ---
 
 # Their words, or somebody else's

@@ -3,8 +3,11 @@ id: charges-on-the-register
 label: "Money secured against them, on the register"
 used_by: [existing-commitments]
 over: [figures-on-record]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Charges and filings registered against this business publicly.
+needs: [public-records#registered-charge, public-records#public-filing, public-records#credit-standing, public-records#court-judgment]
+breaks: It is the public register, which lags and which does not carry everything a business owes.
 ---
 
 # Money secured against them, on the register

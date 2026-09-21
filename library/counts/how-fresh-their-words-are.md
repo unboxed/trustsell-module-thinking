@@ -3,8 +3,11 @@ id: how-fresh-their-words-are
 label: "How old their words are"
 used_by: [stated-priorities]
 over: [published-picture]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: The time between the day a passage was published and today, per passage.
+needs: [web#research-report, web#enrichment, web#web-result, web#page-content, web#site-map]
+breaks: A page with no publication date is dated by its crawl, and the count says which date it used.
 ---
 
 # How old their words are

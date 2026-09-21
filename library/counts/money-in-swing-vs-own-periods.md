@@ -3,8 +3,11 @@ id: money-in-swing-vs-own-periods
 label: "Money in, each period against their usual"
 used_by: [uneven-income]
 over: [figures-on-record]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: How much the money coming in moves between periods, against this business's own usual swing.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request]
+breaks: It needs enough periods to have a usual: under about six the swing is a fact about the sample.
 ---
 
 # Money in, each period against their usual

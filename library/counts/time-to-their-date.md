@@ -3,8 +3,11 @@ id: time-to-their-date
 label: "How long until their date"
 used_by: [deadline-they-gave]
 over: [conversation-history]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: The working time between today and each date the buyer stated that is still ahead, nearest first, with how much of the run-up has gone.
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: A date that has already passed drops out of the forward half, which it probably should not, and that is a read nobody has written.
 ---
 
 # How long until their date

@@ -3,8 +3,11 @@ id: agreed-payments-not-on-record
 label: "Agreed payments their records do not show"
 used_by: [payments-faltering]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: What was agreed they would pay, against what the record shows arriving.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request, gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, meet#transcript]
+breaks: Whether money actually arrived is on no record the tool holds, which is the gap the reads above it name rather than fill.
 ---
 
 # Agreed payments their records do not show

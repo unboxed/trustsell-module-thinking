@@ -3,8 +3,11 @@ id: times-they-have-bought
 label: "How often they come back"
 used_by: [coming-round-again]
 over: [since-the-sale]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: How many times this buyer has bought from you before, and when.
+needs: [people-told#deal-outcome, crm#deal-decision, crm#deal-record, crm#deal-record]
+breaks: It counts completed deals on record. Anything bought before the tool existed is invisible unless you said so.
 ---
 
 # How often they come back

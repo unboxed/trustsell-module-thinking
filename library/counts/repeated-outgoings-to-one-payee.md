@@ -3,8 +3,11 @@ id: repeated-outgoings-to-one-payee
 label: "The same payment to the same name, period after period"
 used_by: [existing-commitments]
 over: [figures-on-record]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Regular payments out to the same payee, as they appear on the documents.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request]
+breaks: A payee name is a name. It cannot tell a lender from a landlord unless the name says so.
 ---
 
 # The same payment to the same name, period after period

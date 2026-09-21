@@ -9,8 +9,8 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `5f7e763` on `main`, twenty-seven passes on `library/docs/coverage.md` are done. The library
-holds 14 channels, 5 told sources, 25 assemblies, 134 counts (all `defined: false`), 42 signals,
+As of commit `4e1a3a9` on `main`, twenty-eight passes on `library/docs/coverage.md` are done. The library
+holds 14 channels, 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
 7 docs (all general) and **three** scenarios: `bops`, a patient sale to councils, with 26 cards;
 `pmf`, a merchant cash advance broker, with 12; and `cority`, an enterprise seller with a firm
 around her, with 7. It builds clean with `SCENARIO` set to any of them.
@@ -92,8 +92,10 @@ findings above it.
   rather than a gap row: a missing source leaves a read standing with less to go on, a missing
   condition leaves it not applying at all. It refuses nothing today, which was measured before it
   was built; it is the guard the third scenario will need.
-- **Define the counts.** All 134 are `defined: false`, with the arithmetic said in prose. Some
-  should merge or go. Deliberately deferred until the set settles.
+- ~~**Define the counts.**~~ Done in the twenty-eighth pass. All 134 carry `counts`, `needs` and
+  `breaks`, every `over` is resolved and every `over_status` is `decided`. The build made six move
+  to a different gather. The merge pass was considered and not done: the three closest pairs are
+  genuinely two things each and each now says so in its body.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
   "you can take in the whole day". A card and phone question, not a library one.

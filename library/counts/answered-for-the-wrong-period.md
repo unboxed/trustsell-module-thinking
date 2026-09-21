@@ -3,8 +3,11 @@ id: answered-for-the-wrong-period
 label: "Answered, but for the wrong stretch"
 used_by: [missing-documents]
 over: [document-set]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: Documents that arrived and cover a different stretch of time from the one asked for.
+needs: [handover#handed-over-document, handover#stated-figure, handover#stated-commitment, handover#document-request]
+breaks: It compares the stretch asked for with the stretch covered, both of which have to be on the envelope.
 ---
 
 # Answered, but for the wrong stretch

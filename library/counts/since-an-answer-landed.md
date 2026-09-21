@@ -3,8 +3,11 @@ id: since-an-answer-landed
 label: "How long since it landed"
 used_by: [answer-came-back]
 over: [decisions-so-far]
-over_status: provisional   # decided when the count was written, 21 September; not yet confirmed.
-defined: false   # the arithmetic is said in prose below; the fields the shape needs are not settled.
+over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
+defined: true
+counts: The working time between the day the newest answer was recorded and now.
+needs: [crm#deal-decision, people-told#answer-received]
+breaks: It counts from the day it was recorded, not the day it was made, and says which.
 ---
 
 # How long since it landed

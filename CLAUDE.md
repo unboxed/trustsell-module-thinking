@@ -21,9 +21,10 @@ playbook. Editing the library and running `node build.js` is how the playbook ch
   story tells. If it is missing, ask for it or add it marked "(My reason, not yet yours.)". The
   story can change: a better reason or approach rewrites the chapter it belongs to.
 - **Do not make things up.** The facts are what matter. Where something is not known, the entry
-  says "not written yet" rather than being filled with a plausible invention. Every count in
-  `library/counts/` is in that state on purpose, and the `signal:` on each card is marked
-  `provisional` because it was read off the card rather than decided.
+  says "not written yet" rather than being filled with a plausible invention. The `signal:` on each
+  card is marked `provisional` because it was read off the card rather than decided. The counts were
+  in that state until 21 September and are not any more: all 134 now say what they count, what
+  records the sum is done over, and when the number stops meaning anything.
 - **The card model lives in `playbook/world.md`**, together with the design decisions and the table
   of which Apple component each part of a card is. The pretend world itself (goal, councils, cast,
   documents, today's date) is data, in `library/scenarios/bops/world/`, because cards reference it by id. Read
@@ -118,7 +119,7 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 | Told | `library/told/` | what only you can say. No channel can fetch it |
 | Records | rows inside a channel or told file | the ingredients, addressed as `gmail#email-message` |
 | Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |
-| Counts | `library/counts/` | the arithmetic. **Nothing written yet** |
+| Counts | `library/counts/` | the arithmetic. All 134 written, 21 September: `counts`, `needs` and `breaks` on each |
 | Signals | `library/signals/` | the first opinion, the first thing you could argue with |
 | Cards | `library/scenarios/<name>/cards/` | the suggestion, question or outcome |
 
@@ -134,13 +135,13 @@ library is measured against, `sales-questions.md`, `volume-questions.md` and `fi
 and `coverage.md`, the map of which of those questions nothing answers yet, with the work still to
 do at its end).
 
-**Two rungs are unfinished, on purpose.** No entry in `counts/` says yet what it counts;
-`defined: false` says so. Each names the assembly it counts within (`over:`) where only one is
-possible, marked `provisional`, and leaves `over: []` where it could be one of several. Each card's
-`signal:` (the main read) and `supporting:` (other reads whose counts it quotes) are marked
-`provisional` because they were read off the card rather than decided. A card's *Sources*
-rows are `source · words`, and the build checks each source against the trail. All of this is a
-later pass, not an oversight.
+**One rung is still unfinished, on purpose.** The counts were finished on 21 September: every entry
+is `defined: true`, names the assembly it counts within, and says the arithmetic, the records it
+needs and when the number stops meaning anything. What is still provisional is the **cards'** joins
+upward: each card's `signal:` (the main read) and `supporting:` (other reads whose counts it quotes)
+are marked `provisional` because they were read off the card rather than decided. A card's *Sources*
+rows are `source · words`, and the build checks each source against the trail. That is a later pass,
+not an oversight.
 
 **A third thing is missing rather than unfinished.** Seven of the volume seller's twenty-two
 questions still have no read at all, and none of the holes is really about volume. Since later on 20
