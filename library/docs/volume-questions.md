@@ -50,13 +50,27 @@ follows from the trade but I have not found it stated, so it is mine until you a
 | 13 | **Published.** Stacking, funding a second advance onto a merchant who cannot carry two repayments, is named in the trade's own writing as its worst practice. |
 | 17, 19 | **Published.** The industry's own published red flags are repeated cold calls and "this offer expires today". So both the credibility problem and the not-pushing rule are the trade's own, not imported. |
 | 18 | **Published that the duty exists**, not written yet what it covers. Commercial financing disclosure is law in some places and not others. What exactly must be said, and where, is not written yet. |
-| 3, 4, 5, 6, 16, 21, 22 | **Inferred.** They follow from working a list rather than a shortlist, but I have not found them stated. *(My reading, not yet yours.)* |
+| 3, 4, 5, 6, 16, 21, 22 | **Inferred.** They follow from working a list rather than a shortlist, but I have not found them stated. *(My reading, not yet yours.)* Since 21 September two of them are first-hand (see below): 4, because a rep and a processor split one deal and nobody is sure where; 16, because a funder's decline comes with its reason and sits on the deal. |
+
+**A first-hand source, since 21 September.** A workflow interview on 21 November 2025 with two people
+who had worked with PMF for five years, read from its transcript and kept as
+[`scenarios/pmf/docs/what-pmf-told-us.md`](../scenarios/pmf/docs/what-pmf-told-us.md). It confirms
+7, 9 to 14 and 18 in the trade's own words, moves 4 and 16 from inferred to first-hand, adds the
+numbers (a thousand calls to one opportunity, one in fifty funded, most deals closed within 24
+hours), and says where the tool's scope line falls at PMF: at "yes, I need money", where the trade
+itself says the work gets hard.
 
 Sources: [MCA broker and ISO guide](https://mcaleadspro.com/merchant-cash-advance/),
 [how to sell merchant cash advances](https://mcaleadspro.com/how-to-sell-merchant-cash-advances),
 [MCA 101](https://grantphillipslaw.com/merchant-cash-advance-101-explained/),
 [how to become an MCA broker](https://sendstrike.ai/blog/how-to-become-mca-broker),
 [Premium Merchant Funding](https://www.pmfus.com/about-pmf/).
+
+**A third seller, since 21 September.** An interview on 17 December 2025 with an enterprise account
+executive at Cority, kept as [`scenarios/cority/docs/what-cority-told-us.md`](../scenarios/cority/docs/what-cority-told-us.md),
+is the patient end again with a firm around the seller and tenders on the buyer's side. It confirms
+the patient seller's questions in a second voice, and asks some neither set does. It is a candidate
+third question set, not a third scenario yet.
 
 ## What this set is not
 
