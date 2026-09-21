@@ -32,7 +32,7 @@ widgets: [<widget-id>, ...]   # optional. At most two DETAIL widgets from ../wid
                               # section headed with the widget's label, its rows in the widget's
                               # row form, and must be fed by something this card rests on.
 sure: <sure|likely|a hunch>   # how sure, earned from the WEAKEST evidence the card stands on:
-                              # sure = a fact on record (a bounce, a date in a tender),
+                              # sure = a fact on record (a bounce, a date they put in writing),
                               # likely = a pattern against their own usual (silence),
                               # a hunch = a reading of someone's words. One step down for a
                               # source not connected, too little history, or one sign alone.

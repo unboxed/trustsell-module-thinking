@@ -6,7 +6,6 @@ blurb: "Holds your goals and keeps your week: what to focus on next, paced to yo
 icon: brain
 optional: false
 tier: brain
-modes: [sustain, advance, expand]
 connects:
   - to: "02-relationships"
     requests: "watch these accounts, find the decision-makers, flag when a champion goes quiet, and hand over the deal picture (a selling effort's people and conversations)"
@@ -69,13 +68,13 @@ expert who should learn it.
 
 The **told** pile, the heavyweight input the whole system turns on:
 
-- **The goal.** What you want, pinned to an offering, with its finish line: *"BOPS to 30 councils,
-  partial adoption now, full later."* This is the one input nothing else can supply; everything
+- **The goal.** What you want, pinned to an offering, with its finish line: *"the offering into
+  thirty organisations on a shortlist: a first foothold now, the whole thing later."* This is the one input nothing else can supply; everything
   downstream is shaped from it.
 - **The tempo.** How patiently or aggressively to pursue it. "Tough, multi-year, low urgency" is
   itself an instruction: nurture, don't push.
 - **The target shape.** Who counts as worth chasing. Often this starts fuzzy ("people who feel the
-  legacy-tech pain") and the Brain has to sharpen it with you.
+  pain the offering solves") and the Brain has to sharpen it with you.
 
 These live as records in [`told/goal-told.md`](../told/goal-told.md).
 
@@ -83,7 +82,7 @@ These live as records in [`told/goal-told.md`](../told/goal-told.md).
 changes from seller to seller fills the goal and profile records from the seller's own answers, by
 one rule. A fact that does not shift (the goal, the tempo, how much time you have) is told once and
 kept. Your judgement, anything that shifts, or anything the tool would otherwise guess (which
-councils matter most this month, your tone, what a good fit looks like, what is new about the
+organisations matter most this month, your tone, what a good fit looks like, what is new about the
 product) comes as an **Ask**, raised only when the answer would change something, and written into
 the right record so it is never asked twice. An Ask is the general way the tool learns what it
 cannot observe.

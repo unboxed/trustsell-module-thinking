@@ -30,7 +30,7 @@ rather than guessing the product.
 ## In practice
 
 A conversation that had been all about features turns, over a week, to price, a start date and a
-request for a proposal, and the buyer's procurement lead joins the thread. The read: "this has gone
+request for a proposal, and the person who holds the budget joins the thread. The read: "this has gone
 from interested to buying."
 
 ## How it is worked out
@@ -39,9 +39,9 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
 Borrows Offerings' offering relevance to name the offering.
 
 - Trigger: several intent cues stack on one conversation, measured against that conversation's own
-  progression (a feature-led thread turning to price, timing and procurement). One stray cue, or a
+  progression (a feature-led thread turning to price, timing and who signs off). One stray cue, or a
   hypothetical ("if we ever did this"), does not count; concrete present-tense buying questions do.
-- Confidence: high when price, timeline and procurement stack together; softer ("showing interest")
+- Confidence: high when price, timeline and sign-off stack together; softer ("showing interest")
   when only one cue shows.
 - Needs: Meet (captured-call content) to catch intent voiced aloud; without it, call-only intent is a
   data gap. If Offerings cannot confirm the offering, the read still sees the intent but cannot name

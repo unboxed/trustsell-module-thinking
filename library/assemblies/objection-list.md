@@ -19,7 +19,7 @@ Gathers one offering's worries into a single catalogue. Each is a named objectio
 incumbent lock-in, price), with the answer you give it and the kind of evidence that answer needs.
 
 It stands on the Offering entry, spined by the told `worry-answer` records. Web research can add
-worries you did not list yourself: the procurement patterns a cautious buyer-type raises, and the
+worries you did not list yourself: the buying patterns a cautious buyer-type raises, and the
 worries that recur in public reviews of comparable products. Every worry this product meets, and how
 you meet it.
 

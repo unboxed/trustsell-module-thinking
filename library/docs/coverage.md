@@ -246,13 +246,19 @@ yet yours.)*
   family testable. Once it exists, `goal.md` could say what the sale has (a thread, a history,
   several people) and the build could check that a card's reads assume no more than that, which
   would turn `assumes:` from a label into a checked join.
-- **Clear the BOPS names out of the general rungs.** `signals/buying-intent.md` ("the buyer's
-  procurement lead joins the thread", and `kind: deal-movement`); the council examples in
-  `modules/00-spine.md`, `02-relationships.md` and `03-offerings.md`; "a date in a tender" as the
-  example of a hard fact in `templates/card.md` and `reading-principles.md`; "procurement patterns" in
-  `assemblies/objection-list.md` and `offering-entry.md`; the stale `modes: [sustain, advance, expand]`
-  on all five `modules/*.md`; `docs/scenario-councils.md`, which belongs in the scenario; and the
-  presumptions in `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md`.
+- **Clear the BOPS names out of the general rungs.** Done 21 September, as far as the list went:
+  `buying-intent` no longer turns on a procurement lead (the person who holds the budget, and who
+  signs off); the council examples in `modules/00-spine.md`, `02-relationships.md` and
+  `03-offerings.md` are generic; "a date in a tender" is "a date they put in writing" in
+  `templates/card.md` and `reading-principles.md`; "procurement pattern" is "buying pattern" in
+  `objection-list.md` and `offering-entry.md`; the stale `modes:` lines are gone from the five
+  modules; and `scenario-councils.md` lives beside its scenario, at
+  `scenarios/bops/docs/`, with its two companions pointing there. Left as they were:
+  `assemblies/deal.md`, `meeting-history.md` and `pricing-fence.md`, which carry no scenario name I
+  could find, and whatever presumption was meant is not recorded; and `docs/flow.md` and
+  `how-modules-collaborate.md`, which are worked through the example on purpose and still use the
+  dropped Expand vocabulary and the old cast names, the user's call whether they move or are
+  rewritten. `kind: deal-movement` stays: it is a family of read, not a council word.
 
 **Deliberately not yet.** Defining the counts: all 102 are `defined: false`, and some should merge or
 go once this map is agreed, so defining them before the set settles is wasted work. Cards and the

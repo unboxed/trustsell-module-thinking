@@ -6,7 +6,6 @@ blurb: "Your evidence, your guardrails, your house voice."
 icon: building
 optional: true
 tier: assistant
-modes: [advance, expand]
 connects:
   - to: "00-spine"
     provides: "the matching case study, the compliance fence, and the pricing fence, on request"

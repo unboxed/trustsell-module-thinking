@@ -1,6 +1,6 @@
 # How the modules collaborate: what each one needs, and how they combine
 
-The third companion piece. `docs/scenario-councils.md` takes one finished
+The third companion piece. `scenarios/bops/docs/scenario-councils.md` (the walkthrough of the example scenario, moved beside it on 21 September) takes one finished
 recommendation apart, bottom to top. `docs/tracing-back.md` starts from a salesperson's
 questions and traces each down to the plain facts (and names the gaps). This one turns to
 the **supply side** (Offerings, Profile, and Organisation), the modules with smaller jobs

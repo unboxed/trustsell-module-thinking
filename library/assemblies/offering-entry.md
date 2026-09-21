@@ -45,6 +45,6 @@ there an answer gap, where do we sit on price.
 offering's own told source. `file` and `file-content` resolve to
 [`channels/drive.md`](../channels/drive.md). `research-report`, `enrichment` and
 `web-result` resolve to [`channels/web.md`](../channels/web.md). The five web
-framings once written up in Offerings' prose (competitor pricing, market report, procurement pattern,
+framings once written up in Offerings' prose (competitor pricing, market report, buying pattern,
 product comparison, customer review) are *search framings* over `web-result` and `research-report`, not
 separate records.

@@ -6,7 +6,6 @@ blurb: "Each product, who it suits, and the answers to the usual worries."
 icon: package
 optional: false
 tier: assistant
-modes: [advance, expand]
 connects:
   - to: "00-spine"
     provides: "answers Brain's questions about the product, and gives it the fit-shape"
@@ -96,7 +95,7 @@ hands over), Offerings checks it against the fit-shape and says how well it matc
 falls short. **How do we answer this worry?** Given a worry People has on record, Offerings finds
 or writes the answer, and judges whether the evidence behind it is strong or thin. If the answer needs
 **evidence**, where that evidence lives depends on *what it proves*. A case study about **this offering**
-("Council X rolled out this product and saw Y") is Offerings' own, and it keeps it. A case study
+("Customer X rolled out this product and saw Y") is Offerings' own, and it keeps it. A case study
 about the **organisation in general** (its track record, who it's trusted by) belongs to
 Organisation, and Offerings asks for it. Either way the files sit in Drive, which both can read; the
 split isn't about who *can* open a file, it's about who's **responsible** for it. (When it asks

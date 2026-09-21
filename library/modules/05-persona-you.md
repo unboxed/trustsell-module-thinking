@@ -6,7 +6,6 @@ blurb: "Everything personal to you, your voice and your preferences, so every me
 icon: pen
 optional: false
 tier: assistant
-modes: [sustain, advance, expand]
 connects:
   - to: "00-spine"
     provides: "the brief rendered into words in the user's voice"

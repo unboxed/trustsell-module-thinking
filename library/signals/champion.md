@@ -26,7 +26,7 @@ Bringing colleagues in is the real sign. Quick replies on their own are just war
 
 A contact who normally replies in a day, in a paragraph or two, is now replying at the same speed or
 faster and just as long, and over a couple of weeks has added three of their own colleagues to the
-thread, including their procurement lead, with lines like "looping in the person who owns this". The
+thread, including the person who holds the budget, with lines like "looping in the person who owns this". The
 read: this contact is championing the work.
 
 ## How it is worked out

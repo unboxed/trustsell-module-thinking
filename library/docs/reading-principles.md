@@ -62,7 +62,7 @@ Rule 3 grades a read. A card carries the result to the seller as one of three wo
 (decided 18 September). A number would claim a precision nothing here can back; a word says what
 kind of ground the card stands on.
 
-- **Sure**: it stands on a fact on record. A bounce, a date in a tender, your own words in a sent
+- **Sure**: it stands on a fact on record. A bounce, a date they put in writing, your own words in a sent
   message.
 - **Likely**: it stands on a pattern against the person's own usual. Silence far longer than their
   normal gap.

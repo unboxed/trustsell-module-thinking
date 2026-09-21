@@ -9,7 +9,6 @@ blurb: <one line on what it does>
 icon: <lucide name>           # e.g. users, package, building, pen, brain, cable
 optional: <true|false>        # true only for a module a solo user can skip (today: 04)
 tier: <brain|assistant|connector>
-modes: [<expand|advance|sustain>] # the categories of work it serves
 connects:                     # two-way links to other modules (request out, provide back)
   - to: <module-id>           #   e.g. 00-spine
     requests: <what this module asks the other to do or hand over>   # omit if it only answers

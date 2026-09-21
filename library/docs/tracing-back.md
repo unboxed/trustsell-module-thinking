@@ -1,6 +1,6 @@
 # Tracing it back: questions down to the plain facts
 
-The companion to `docs/scenario-councils.md`. That one runs the machine **forward and
+The companion to `scenarios/bops/docs/scenario-councils.md` (the walkthrough of the example scenario, moved beside it on 21 September). That one runs the machine **forward and
 down**: it starts from a finished recommendation and peels each layer back until it
 reaches the raw material. This one starts somewhere different: from **the questions a
 salesperson actually wants answered**, and walks each one *down* to the facts it rests

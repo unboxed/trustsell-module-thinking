@@ -6,7 +6,6 @@ blurb: "Keeps every person and organisation you deal with, their conversations a
 icon: users
 optional: false
 tier: assistant
-modes: [sustain, expand, advance]
 connects:
   - to: "00-spine"
     requests: "the standing brief drawn from the goal"
@@ -144,7 +143,7 @@ What People hands up, all as suggestions, nothing acting on its own:
   also **proposes new deals it detects**, clustering live conversations for you to confirm, split or
   reject.
 - **Direct answers.** To a specific question from the Brain or another module ("what's our history
-  with Council 14?", "what worry is on record here?").
+  with this organisation?", "what worry is on record here?").
 
 ## Memory
 
