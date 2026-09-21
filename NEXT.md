@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `b75e3e5` on `main`, twenty-five passes on `library/docs/coverage.md` are done. The library
+As of commit `9614f2f` on `main`, twenty-six passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (all `defined: false`), 42 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 26 cards, and
 `pmf`, a merchant cash advance broker, with 12. It builds clean with `SCENARIO` set to either.
@@ -73,11 +73,11 @@ them.
   third earns its place once the two ends have shown what the spectrum is") rested on PMF's world
   not being written, which expired; the scope call is the user's and is left open in
   `scenarios/cority/docs/what-cority-told-us.md`.
-- **The day's order is a patient seller's.** Asked to place the broker's ten cards, `build.js` put
-  a faltering repayment first and an unseen funder's offer third. At an hours tempo, an offer
-  nobody has passed on costs the most by waiting. The six bands are the Brain's
-  (`modules/00-spine.md`) and this is not a bug in them, but what waiting a day costs is not the
-  same question at both ends of the spectrum.
+- ~~**The day's order is a patient seller's.**~~ Done in the twenty-sixth pass, and it was not the
+  bands: all three cards were in band 2. The fault was the first tie-break inside a band, the
+  ladder, which asks what a deal is **worth** where the band asks what waiting a day **costs**.
+  What somebody is waiting on you for now comes first. The broker's offer moved third to first and
+  the patient day came out identical, card for card.
 - ~~**Turn `assumes:` into a checked join.**~~ Done in the twenty-fifth pass. `world/goal.md`
   carries `has:` and the build refuses a card resting on a read the sale cannot make. A refusal
   rather than a gap row: a missing source leaves a read standing with less to go on, a missing

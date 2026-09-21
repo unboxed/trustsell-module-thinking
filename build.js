@@ -606,7 +606,11 @@ for (const c of L.cards) {
 const BANDS = ['Gone tomorrow', 'Worse every day', 'Holding something up', 'A date further off',
                'Due by its rhythm', 'Costs nothing to wait'];
 const DAY = 86400000;
-const OWED = ['promise-made-undelivered', 'ask-made-unanswered'];
+// What somebody is waiting on you for. `told-them-since` joined on 21 September: an answer has
+// landed on the deal and nothing has gone to the buyer since, which is the same shape as a promise
+// you have not kept. `their-promise-undelivered` is deliberately not here: that is them owing you,
+// and waiting a day on it costs a day of someone else's lateness, not of yours.
+const OWED = ['promise-made-undelivered', 'ask-made-unanswered', 'told-them-since'];
 const owes = c => [].concat(c.counts || []).some(n => OWED.includes(n));
 const gives = c => [].concat(c.documents || []).length > 0;
 // The band a card would have on its own, on the day it arrives, before anything waits on it.
@@ -662,12 +666,16 @@ for (const c of L.cards) for (const id of c.waits_on) {
 const heldOn = new Set(L.cards.flatMap(c => c.waits_on));
 function bandOf(c) { const b = ownBand(c); return b > 3 && heldOn.has(c.id) ? 3 : b; }
 
-// Ties: the organisation further up the ladder first, then the surer card, then `order`.
+// Ties: what somebody is waiting on you for first, then the organisation further up the ladder,
+// then the surer card, then `order`. The waiting test went in front of the ladder on 21 September,
+// after the broker's day put an offer nobody had passed on third. A band asks what waiting a day
+// costs; the ladder asks what a deal is worth. That is a different question, and asking it first
+// inside a band was the one place the order stopped answering its own. (My reason, not yet yours.)
 const ladder = [].concat((world.goal && world.goal.ladder) || []);
 const stands = new Map(rowsOf(world.organisations).map(r => [r[1], r[2]]));
 const ladderRank = c => orgOf(c) ? ladder.indexOf(stands.get(orgOf(c)) || ladder[0]) : -1;
 const sureRank = c => c.sure ? SURE.length - SURE.indexOf(c.sure) : 0;
-const byPlace = (a, b) => a.band - b.band || ladderRank(b) - ladderRank(a) || sureRank(b) - sureRank(a) || (a.order || 0) - (b.order || 0);
+const byPlace = (a, b) => a.band - b.band || owes(b) - owes(a) || ladderRank(b) - ladderRank(a) || sureRank(b) - sureRank(a) || (a.order || 0) - (b.order || 0);
 for (const c of L.cards) if (!c.waits_on.length) { c.band = bandOf(c); c.bandWords = BANDS[c.band - 1]; }
 const sorted = [];
 (function place(list) {

@@ -112,15 +112,23 @@ its `when`, what it owes and what waits on it, so `build.js` works out the place
 typing it. Six bands, in order:
 
 1. **Gone tomorrow.** Its last day (`until`) is today or tomorrow.
-2. **Worse every day.** Something owed (a promise, an unanswered question), or a fresh moment going
-   stale.
+2. **Worse every day.** Something owed (a promise, an unanswered question, or an answer that has
+   landed on the deal and not been passed on), or a fresh moment going stale.
 3. **Holding something up.** A card another card waits on. Asks land here often: ten seconds that
    free a card.
 4. **A date further off.** Set by the world, weeks away.
 5. **Due by its rhythm.** Right this week, no worse next week.
 6. **Costs nothing to wait.**
 
-Within a band, the organisation further up the ladder comes first, then the surer card. One guard
+Within a band, **what somebody is waiting on you for comes first**, then the organisation further
+up the ladder, then the surer card. The waiting test went in front of the ladder on 21 September,
+after the broker's day put an offer nobody had passed on third, behind a faltering repayment and a
+disclosure. Nothing was wrong with the bands: all three were in band 2. What was wrong is that the
+first tie-break asked a different question from the band. A band asks what waiting a day costs; the
+ladder asks what a deal is worth. Both are worth asking and only one of them is this list's
+question, and the fix is to finish answering the first before starting the second. It moved the
+offer to the front of the broker's day and left the patient seller's day identical, card for card,
+which is what a rule rather than a tuning should do. (My reason, not yet yours.) One guard
 runs across every band: **one move per person at a time**. A second Act to the same person (its
 `to`) waits for the first and sits right under it. The Brain decides which goes first, not the
 seller (19 September): what is owed first, then what gives before what asks, then what waiting a

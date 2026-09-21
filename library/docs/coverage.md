@@ -927,6 +927,31 @@ the cards. The third scenario is where it earns its keep: a seller with a firm a
 coalition at the buyer is a different `has:` again, and the build will say so on the first card
 that forgets.
 
+**Done in the twenty-sixth pass, 21 September.** The last of the fourteenth pass's six findings:
+the order of the day was a patient seller's.
+
+**What was actually wrong was not the bands.** Asked to place the broker's cards, `build.js` put a
+faltering repayment first and an offer nobody had passed on third, and the easy reading is that the
+six bands are tuned for a patient sale. They are not: all three cards were in **band 2**. The fault
+was one line below, in the first tie-break inside a band, which is "the organisation further up the
+ladder first". A band asks **what waiting a day costs**. The ladder asks **what a deal is worth**.
+Both are worth asking and only the first is this list's question, so asking the second before the
+first had finished was the one place the order stopped answering its own question. *(My reading,
+not yet yours.)*
+
+**The fix is a principle, not a knob.** Inside a band, what somebody is **waiting on you for** now
+comes before the ladder: the same question the band asks, one level down. The test for it is what
+the card already carries, the `OWED` counts, which gained `told-them-since` in the same breath,
+because an answer that has landed and not been passed on is the same shape as a promise you have
+not kept. `their-promise-undelivered` was deliberately left out of that list: that is them owing
+you, and waiting a day on it costs a day of somebody else's lateness rather than of yours.
+
+**Measured both ways.** The broker's offer moved from third to **first**. The patient seller's day
+came out **identical, card for card, all twenty-six**. That is the result a rule should give and a
+tuning would not, and it is the reason to prefer the tie-break fix over widening the bands or
+making them read the goal's tempo, which were the other two candidates and would both have moved
+days nobody complained about.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
