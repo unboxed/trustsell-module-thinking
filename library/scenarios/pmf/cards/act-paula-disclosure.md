@@ -4,7 +4,7 @@ order: 2
 kind: act
 signal: disclosure-still-owed
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [required-disclosures, disclosures-on-record, decision-language-used, your-price, cost-to-them-over-the-term]
+counts: [required-disclosures, disclosures-on-record, decision-language-used, your-price, cost-to-them-over-the-term, answers-back]
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [paula-larkin, larkin-print, disclosure]
 to: paula-larkin
@@ -12,7 +12,7 @@ arrives: 2026-09-21
 documents: [disclosure]
 widgets: [timeline]
 sure: "likely"
-sure_because: "Her words on Friday are on record. What must be said is not written down anywhere I can read."
+sure_because: "Her words on Friday are on record, and so are Kestrel's terms. What must be said is not written down anywhere I can read."
 when:
   mode: fresh
   words: "Before the contract comes back signed, not after."
@@ -40,7 +40,7 @@ draft:
   title: "Draft"
   hand: "Send"
   sub: "in your voice · sends only when you say"
-  footer: "The numbers go in the message. Your firm's form is on Drive, which I cannot reach."
+  footer: "Kestrel's own numbers, in the message. Your firm's form is on Drive, which I cannot reach."
 phone:
   when: "Today"
   act: "Send Disclosure"
@@ -61,7 +61,7 @@ She accepted Kestrel's offer on Friday and the contract is out for signature. Wh
 - Why now: she has accepted and the contract is out. This is the last moment the disclosure is a courtesy rather than a correction.
 - Her words on Friday were a decision, not a question: she named the offer she wanted and asked what happens next.
 - Nothing on the thread puts the total cost, the term and the daily debit in front of her in writing.
-- I can say what an advance costs: a factor rate between 1.25 and 1.49 of what is advanced, over three to twelve months, taken as a fixed debit every working day. That is the shape the disclosure has to fill.
+- I have the numbers she is agreeing to, from Kestrel's own answer: $80,000 advanced, $102,400 back over twelve months, $400 every working day. They are in the draft.
 
 ## Timeline
 
@@ -74,12 +74,13 @@ She accepted Kestrel's offer on Friday and the contract is out for signature. Wh
 - gmail · Her message on Friday accepting the offer.
 - gmail · Nothing since that states the cost in writing.
 - organisation-told · What your firm says must be put in front of a buyer before they agree.
-- offering-told · What you told me an advance costs: the rate band, the term and how it is debited.
+- crm · Kestrel's offer against this deal, the one she accepted on Friday, with its terms.
+- offering-told · What you told me an advance costs, which is what I would fall back on.
 
 ## Still unclear
 
 - **What your firm actually requires you to say.** The rules are yours to state and none are written down for me yet, so I am going on the shape of the product rather than on a rule. If your firm has a form of words, tell me and I will check every close against it instead of guessing.
-- **What Kestrel actually offered her.** I reach what you told me an advance costs, so the disclosure goes out with the right shape: amount, total repayable, term, daily debit. The four figures on this deal are Kestrel's answer on Friday, and no read of mine reaches what a funder answered on a live deal. Those four are yours to fill.
+- **Whether Kestrel's recorded terms are the final ones.** The four numbers come off the offer she accepted on Friday. If anything moved between the offer and the contract that went out, the contract is right and I am wrong, and I would not see it. Check them against the paperwork before this goes.
 
 ## What happens next
 
@@ -91,7 +92,9 @@ Hi Paula,
 
 Before the contract comes back, I want the numbers in front of you in writing rather than buried in the agreement.
 
-Here it is in full: what you receive, what you repay in total, over how long, and what leaves the account each working day. That last one is a fixed debit every working day across the term, not a monthly bill. If any of it is not what you understood on Friday, say so now and we will stop and go through it.
+Here it is in full. You receive $80,000. You repay $102,400 in total, over twelve months, as $400 taken from the business account every working day. That is a daily debit, not a monthly bill.
+
+If any of that is not what you understood on Friday, say so now and we will stop and go through it.
 
 Nothing needs signing until you are happy with those four numbers.
 

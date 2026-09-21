@@ -5,10 +5,10 @@ label: Something you must tell them first
 blurb: A buyer is close to agreeing and something you are obliged to tell them is not yet on record.
 kind: risk
 confidence: graded
-inputs: [compliance-fence, conversation-history, deal, price-position]
-counts: [required-disclosures, disclosures-on-record, decision-language-used, your-price, cost-to-them-over-the-term]
+inputs: [compliance-fence, conversation-history, deal, price-position, decisions-so-far]
+counts: [required-disclosures, disclosures-on-record, decision-language-used, your-price, cost-to-them-over-the-term, answers-back]
 answers: [V18]
-needs: [offering-told]
+needs: [offering-told, crm]
 assumes: [thread-under-way]
 assumes_status: provisional
 pull: Organisation's compliance fence, for what must always be said before a buyer agrees, and Offerings' price position, for the numbers the disclosure has to carry
@@ -50,12 +50,16 @@ Borrows Organisation's compliance fence for the must-say rules.
   match in your sent messages or sent documents on the deal (counting). The one judgement is whether
   a message meets a rule in different words, and it is made by naming the passage rather than
   assuming it.
-- What it fills the disclosure with: the offering's own price, and what it costs them across the
-  term, from [`price-position`](../assemblies/price-position.md) (counting, the same two numbers
-  [`can-they-carry-it`](can-they-carry-it.md) works). The rule says which numbers are owed; the
-  price says what they are. Where the price is a band rather than one figure, or where the deal
-  turns on terms a supplier set for this buyer rather than on the shelf price, the read carries the
-  shape and not the figures, and says which is which.
+- What it fills the disclosure with, in this order. The terms actually answered on this deal,
+  where a party who had to agree has come back with them
+  ([`decisions-so-far`](../assemblies/decisions-so-far.md), counting). Failing that, the offering's
+  own price and what it costs them across the term
+  ([`price-position`](../assemblies/price-position.md), counting, the same two numbers
+  [`can-they-carry-it`](can-they-carry-it.md) works). The rule says which numbers are owed; these
+  say what they are. The order matters and is not a preference: a buyer is owed the cost of the
+  thing they are agreeing to, and where a supplier has set terms for them, the shelf price is a
+  description of the product and not the cost of their deal. Where neither reaches a figure, the
+  read carries the shape and says plainly which part is missing.
 - Confidence: high when the rule is a hard one in the fence and the thread carries the buyer's own
   words about agreeing; softens when the rule is marked soft, or when the buyer's readiness is one
   passing cue.
@@ -63,10 +67,10 @@ Borrows Organisation's compliance fence for the must-say rules.
   organisation has told the tool no rules, there is nothing to check against and the read is silent
   (a told gap, named not faked). What a jurisdiction actually requires a seller to disclose, and
   where, is not written yet and is not the tool's to invent: it is a rule the organisation tells it.
-  A disclosure made on an uncaptured call is invisible until you say so. Where a supplier has
-  answered with terms of their own for this buyer, those are the numbers owed and the shelf price is
-  not them; a read over what a supplier answered is not written yet, so the read says the shelf's
-  shape and marks the rest as yours to fill (a data gap, named not faked).
+  A disclosure made on an uncaptured call is invisible until you say so. Where the answers on this
+  deal are in a system nobody has connected, the read falls back to the shelf price and says that
+  is what it is quoting (a data gap, named not faked): the right numbers to a wrong deal are worse
+  than an honest band.
 - Assumes: a conversation already under way, because a disclosure is owed on a thread that is
   heading somewhere, and "already said" can only be read off what has been sent. On a first contact
   there is nothing to have said yet (an assumption gap, named not faked).

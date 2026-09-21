@@ -693,6 +693,33 @@ drawn on. *(My reason, not yet yours.)*
 All six of the fourteenth pass's findings are now closed except the last, the order of the day,
 which is not a hole in a rung and is listed below as bigger than a step.
 
+**Done in the nineteenth pass, 21 September.** The join the sixteenth and seventeenth passes made
+possible between them, and neither could make alone.
+[`disclosure-still-owed`](../signals/disclosure-still-owed.md) now reads
+[`decisions-so-far`](../assemblies/decisions-so-far.md) as well, and quotes `answers-back`. So the
+read fills the disclosure from **the terms actually answered on this deal** where a party who had
+to agree has come back with them, and falls back to the shelf price where none has.
+
+The order is the decision, and it is not a preference. A buyer is owed the cost of the thing they
+are agreeing to. Where a supplier has set terms for them, the shelf price is a description of the
+product and not the cost of their deal, so quoting it as though it were would be a confident wrong
+answer in a message whose whole purpose is to be exact. Where nothing has been answered, the band
+is honest and the read says that is what it is quoting. `crm` went into the read's `needs` with
+`offering-told`. *(My reason, not yet yours.)*
+
+**What it bought.** [`act-paula-disclosure`](../scenarios/pmf/cards/act-paula-disclosure.md) went
+from a card that could name the shape of a cost to one that states it: $80,000 advanced, $102,400
+back over twelve months, $400 every working day, off Kestrel's own recorded offer, in the draft
+that goes to her. Its *Still unclear* is down to two lines and both are real: what the firm
+requires to be said, which nobody has written down, and whether anything moved between the offer
+and the contract, which the tool would not see. Its confidence stays **likely**, correctly, because
+sureness is earned from the weakest thing a card stands on and the firm's rules are still unwritten.
+
+**It is also the argument for the habit.** Neither pass could have done this on its own: the
+sixteenth gave the read a price and the seventeenth gave the library a live deal's answers, and the
+join between them only became visible because a card was sitting there saying what it still could
+not do. Six passes of adding entries against question sets produced nothing like it.
+
 **Renamed on the user's asking, 21 September.** The `salesforce` channel is now `crm`, and its
 record is `crm#deal-record`. The reason is the user's and is the same one that moved `connected:`
 out of the channel docs on 20 September: a rung of the general library should not carry one
@@ -723,8 +750,9 @@ yet yours.)*
   - ~~**Gather a text conversation.**~~ Done in the fifteenth pass, and it moved a card from a
     hunch to sure.
   - ~~**Let `disclosure-still-owed` reach the pricing**, so the read that holds a close can say what
-    the cost is rather than only that it is unsaid.~~ Done in the sixteenth pass. What is left of
-    it is the funder's answer, the next line.
+    the cost is rather than only that it is unsaid.~~ Done in the sixteenth pass, and finished in
+    the nineteenth, when the read took the terms actually answered on the deal in front of the
+    shelf's band.
   - ~~**A read for a funder's answer landing**, over `crm#deal-decision` on the deal in hand rather
     than on ended deals. It is the trade's own alarm and nothing rings it.~~ Done in the
     seventeenth pass, and it answers no question in any of the three sets.

@@ -18,7 +18,7 @@ Ten live, one owner each. Where a business stands is where its deal stands.
 | Bluebird Childcare | bluebird-childcare | applied | Application signed Thursday. Two statements in of the three asked for, and the third is August |
 | Vega Landscaping | vega-landscaping | submitted | With Avondale and two others since this morning. Takings fall away from November |
 | Corner Tire and Auto | corner-tire | offers-in | Out to three funders on Friday for $22,000. Avondale came back with two offers, Bayard with one, Northline declined on the industry. Nothing still out, and Tony Prieto has not seen any of it |
-| Larkin Print Shop | larkin-print | accepted | Kestrel's offer accepted Friday. Contract out for signature |
+| Larkin Print Shop | larkin-print | accepted | Kestrel's offer accepted Friday: $80,000 advanced at 1.28, $102,400 back over twelve months, $400 every working day. Contract out for signature |
 | Halsey Freight | halsey-freight | repaying | Funded in June over nine months. Two debits returned unpaid this month |
 | Sandhill Diner | sandhill-diner | repaying | Funded in February over six months, paying daily without a miss |
 | Oak Row Bakery | oak-row-bakery | coming-round-again | Funded in January, four fifths through. Went to somebody else the time before |

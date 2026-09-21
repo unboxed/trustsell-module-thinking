@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of commit `4a86224` on `main`, eighteen passes on `library/docs/coverage.md` are done. The library
+As of commit `eea152b` on `main`, nineteen passes on `library/docs/coverage.md` are done. The library
 holds 13 channels, 5 told sources, 22 assemblies, 124 counts (all `defined: false`), 38 signals,
 7 docs (all general) and two scenarios: `bops`, a patient sale to councils, with 25 cards, and
 `pmf`, a merchant cash advance broker, with 11. It builds clean with `SCENARIO` set to either.
@@ -47,8 +47,9 @@ audit left. Do them in order.
 1. ~~**Let `disclosure-still-owed` reach the pricing.**~~ Done in the sixteenth pass. The read
    takes `price-position` and quotes `your-price` and `cost-to-them-over-the-term`, the two numbers
    `can-they-carry-it` already worked, and `offering-told` went into its `needs`.
-   `act-paula-disclosure` states the shape of the cost now. What is left of the hole is step 2:
-   the shelf price is not what a funder answered on this deal.
+   Finished in the nineteenth pass, once step 2 existed: the read takes `decisions-so-far` too, so
+   it quotes the terms actually answered on the deal and falls back to the shelf price only where
+   none has been. `act-paula-disclosure` states Kestrel's own four numbers in its draft.
 
 2. ~~**A read for a funder's answer landing.**~~ Done in the seventeenth pass.
    `assemblies/decisions-so-far.md` gathers a live deal's answers, `signals/answer-came-back.md`
