@@ -312,6 +312,7 @@ const ASSUMES = {
   'thread-under-way': 'A conversation already under way with them',
   'own-rhythm':       'Enough history with them to know their usual',
   'several-people':   'Several people to win at the buyer',
+  'own-firm':         'A firm beside you, whose records you share',   // added 21 September
 };
 for (const s of L.signals) {
   must(s.file, 'module', s.module, S.modules, 'module');

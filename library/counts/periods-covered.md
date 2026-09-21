@@ -16,4 +16,4 @@ It counts within [`figures-on-record`](../assemblies/figures-on-record.md), what
 
 ## What it cannot see
 
-Cash that never reaches a statement, a period no document covers, and anything on a public register, which no channel carries. A figure the buyer said rather than showed is kept apart by the gather and is not summed here.
+Cash that never reaches a statement, and a period no document covers. A figure the buyer said rather than showed is kept apart by the gather and is not summed here.

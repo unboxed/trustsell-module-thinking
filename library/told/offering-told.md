@@ -25,6 +25,15 @@ left empty, the thing is yours and there is nobody behind it. The pitch and the 
 across such entries, and that repetition is the price of the shape
 ([`docs/library-format.md`](../docs/library-format.md), *The catalogue*).
 
+**Names in the field** (21 September) is the list of who else operates in the market this offering
+sells into, and what each of them is. It is here rather than with People or the Organisation for
+two reasons. It is knowledge about the field the offering sells into, which Offerings already owns
+through [`assemblies/competitor-field.md`](../assemblies/competitor-field.md), and it changes per
+offering rather than per buyer. And it must hold for a seller with no organisation behind them, so
+it cannot live in the optional module. What it is for: a payment leaving a buyer's account to a
+name nobody recognises is arithmetic, and the same payment leaving to a name you told the tool is a
+lender is a read. *(My reason, not yet yours.)*
+
 Each record below is a lineage anchor; its id is the kebab-slug of its
 label (`Worry + answer` becomes `worry-answer`), and that is what the assemblies reference.
 
@@ -45,6 +54,8 @@ label (`Worry + answer` becomes `worry-answer`), and that is what the assemblies
 | Pricing | discount room | you, typed or asked |
 | Pricing | term (how long it runs for) | you, typed or asked; empty for a thing sold once |
 | Pricing | how it is paid (once, or how often over the term) | you, typed or asked |
+| Names in the field | the name, and the ways it is written | you, typed or asked; Offerings can research a first list |
+| Names in the field | what they are (a rival, the incumbent, a lender, a supplier) | you, typed or asked |
 | Worry + answer | the worry | you, or seen in a buyer's mail (via People) |
 | Worry + answer | your answer | you, typed or asked |
 | Worry + answer | the kind of evidence it needs | you, typed or asked |
@@ -60,3 +71,4 @@ it, do not change.
 | Use-case | Use case |
 | Worry + answer | Worries and answers |
 | Supplier | Who it comes from |
+| Names in the field | Names you would recognise |

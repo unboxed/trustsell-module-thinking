@@ -9,9 +9,9 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-As of the tenth pass on `main`, ten passes on `library/docs/coverage.md` are done. The library
-holds 12 channels, 5 told sources, 21 assemblies, 118 counts (all `defined: false`), 37 signals,
-9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
+As of the eleventh pass on `main`, eleven passes on `library/docs/coverage.md` are done. The
+library holds 13 channels, 5 told sources, 21 assemblies, 120 counts (all `defined: false`), 37
+signals, 9 docs and two scenarios (`bops`, with 25 cards; `pmf`, world only). It builds clean, with
 `SCENARIO` set to either world.
 
 **Every one of the volume seller's 22 questions now has an answer**: seventeen by a read, one by
@@ -19,7 +19,7 @@ asking, one in part (V10), three out of scope, none by nothing. A third question
 `library/docs/firm-questions.md` (`F1` to `F21`, from the Cority interview), and **the coverage map
 has not been run against it**.
 
-The five most recent passes:
+The most recent passes:
 
 - **The seventh** wrote the second scenario's world, `library/scenarios/pmf/world/`, a broker
   placing merchant cash advances, with an empty `cards/`. Its ladder runs past the sale, its
@@ -43,6 +43,12 @@ The five most recent passes:
   across the shelf instead of once. It lives in Offerings, not the Brain: which of them would have
   this buyer is qualification, which of them you most want to sell is still parked as intent.
   Written up in `library/docs/library-format.md` and story ch. 3.
+- **The eleventh** cleared the five small decisions: a `public-records` channel (`source: builtin`,
+  drawn on by `figures-on-record`, so `existing-commitments` answers "to whom" past what the buyer
+  shows); a told `Names in the field` on `offering-told`; a `Consent` record on `sms.md`, used by
+  no read yet; a period on both sides of a handover, kept on the envelope so the fifth pass's
+  separation holds; and **`own-firm`**, the fourth word in `assumes:`, declared on
+  `colleague-already-in-touch`.
 
 Read `coverage.md` in full, especially "Done in the seventh pass" onwards, "Renamed on the user's
 asking" and "Where this goes next". **Do not re-derive the audit.**
@@ -79,17 +85,8 @@ numbered step with a message in the style of `git log`.
    and its cost (the pitch repeats across a broker's entries) are in `library-format.md`, *The
    catalogue*.
 
-3. **Small decisions the passes raised.** A channel for public records (a charge, a filing, a
-   judgment, a credit score), `source: builtin`, drawn from by `figures-on-record` so
-   `existing-commitments` can answer "to whom" beyond what the buyer shows. A told list of known
-   lenders for `repeated-outgoings-to-one-payee` to match payee names against (decide whose told
-   source holds it). A consent row for texts, on `sms.md` or `handover.md`. A required period on
-   `handover#document-request`, so `missing-documents` can check "the last three months, not a year
-   ago" (`scenarios/pmf/world/documents.md` names the deal in that world which turns on it). And
-   the fourth word in `assumes:`: add **`own-firm`** (a firm beside you) to the vocabulary in
-   `build.js`, `reading-principles.md` § 4, `library-format.md` and `templates/signal.md`, and
-   declare it on `colleague-already-in-touch`, unless the user strikes this sentence from the
-   prompt. The Cority note is the scenario that word is for.
+3. ~~**Small decisions the passes raised.**~~ **Done in the eleventh pass**, all five. The
+   `assumes:` vocabulary is four words now.
 
 4. **Move the two worked-example docs.** `library/docs/flow.md` and
    `library/docs/how-modules-collaborate.md` are worked through the bops example on purpose and
@@ -104,8 +101,8 @@ numbered step with a message in the style of `git log`.
 
 ## Five things that are easy to get wrong here
 
-- The vocabulary for `assumes:` is three words (`thread-under-way`, `own-rhythm`, `several-people`)
-  until step 3 adds the fourth. `assumes: []` is a claim, not an omission. Every new signal
+- The vocabulary for `assumes:` is four words (`thread-under-way`, `own-rhythm`, `several-people`,
+  `own-firm`). `assumes: []` is a claim, not an omission. Every new signal
   declares it and answers a real question by id in `answers:`.
 - **Never invent a fact about the tool.** A new count stays `defined: false` with the arithmetic in
   prose; thresholds lean on `reading-principles.md`, no made-up numbers. A scenario's world is

@@ -78,8 +78,9 @@ practice for its reader:
 A signal's **`needs`** is a flat list of the sources a read leans on (e.g. `needs: [calendar]`); when
 one is not connected, the checks resting on it drop out and confidence falls, which is how a **data
 gap** is named honestly. A signal's **`assumes`** is a flat list from a fixed vocabulary
-(`thread-under-way`, `own-rhythm`, `several-people`; `build.js` checks the words) saying what the read
-needs to exist before it can stand, and `[]` means it stands on what it reads alone. Where a sale does
+(`thread-under-way`, `own-rhythm`, `several-people`, and `own-firm` since 21 September; `build.js`
+checks the words) saying what the read needs to exist before it can stand, and `[]` means it stands
+on what it reads alone. Where a sale does
 not have it, that is an **assumption gap**, the third kind, added 20 September. The shared reading rules every signal applies (own-rhythm thresholds,
 count-first, confidence grading, name-the-gap, answer a real question) live once in
 [`reading-principles.md`](reading-principles.md), so no signal re-teaches them.

@@ -21,13 +21,24 @@ in by. That is why `source:` is neither `account` nor `builtin` but `buyer`: not
 the same way nothing fetches what you tell the tool. *(My reason, not yet yours.)*
 
 **Two layers are written here.** The envelope, which every handover has: what it is, who sent it,
-when, by which way, and what you had asked for. And, since 21 September, the figures a document
+when, by which way, the stretch of time it is for, and what you had asked for. And, since 21 September, the figures a document
 states: one row per figure, in the document's own words, and one row per thing the document names
 as owed. That is the whole of what the tool reads inside a document. It reads what is stated, as
 stated, and the section *What is never read* below says what it must not do with it. Which
 documents a sale asks for, what a document's own labels mean by type and jurisdiction, and how a
 figure is read out of a page are still not written, and the entries above say so where they lean on
 them. *(My reason, not yet yours.)*
+
+**A request can ask for a period, and a document can be for one** (added 21 September). "Three
+months of statements, the last three months, not a year ago" is two facts, and until now the
+envelope carried only the first. It carries both now: `for which period` on the request, and
+`covers` on the document. They are envelope facts and not figures, because which months a statement
+is for is written on the front of it, so
+[`missing-documents`](../signals/missing-documents.md) can tell "not sent" from "sent, for the
+wrong stretch" without the inside layer being read at all. That keeps the separation the fifth pass
+made: the envelope read does not change when the inside is read. Where you asked for no period, the
+field is empty and nothing is checked; the tool does not decide for itself how far back a sale
+should look. *(My reason, not yet yours.)*
 
 Owned by Connections and carried untouched. No opinion is formed here. The envelope rows are
 lineage anchors like any other: the id is the kebab-slug of the label (`Handed-over document`
@@ -42,6 +53,7 @@ becomes `handed-over-document`), and that is what an assembly would reference.
 | Handed-over document | from | the person who sent it |
 | Handed-over document | received | when it arrived |
 | Handed-over document | arrived by | the door it came in: a mail or text attachment, a link, an upload, the post |
+| Handed-over document | covers | the stretch of time it is for, where the document says so on its face |
 | Handed-over document | in answer to | derived: the request of yours it answers, where there was one |
 | Handed-over document | content | (content) the file itself, read only as the two records below |
 | Stated figure | document | the handed-over document it was read from |
@@ -57,6 +69,7 @@ becomes `handed-over-document`), and that is what an assembly would reference.
 | Stated commitment | until when | as stated, where the document says; empty otherwise |
 | Stated commitment | where | the page and line it was read from |
 | Document request | asked for | what you asked them to send, in your words |
+| Document request | for which period | the stretch of time it must cover, where you said one |
 | Document request | asked on | when you asked |
 | Document request | asked by | derived: the message or call you asked in |
 | Document request | answered by | the handed-over document that answers it, where one has |

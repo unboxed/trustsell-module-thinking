@@ -10,6 +10,8 @@ inputs:
   - handover#stated-commitment
   - handover#handed-over-document
   - web-form#form-submission
+  - public-records#registered-charge
+  - offering-told#names-in-the-field
   - document-set
   - deal
 ---
@@ -31,7 +33,11 @@ from, and the document to the deal of the person who sent it. The work is identi
 - the same payee across periods, so that one name spelt two ways is one name;
 - the same commitment named in two documents (a loan on the accounts and its repayment on the
   statements), counted once;
-- a figure the buyer said against one they showed, kept as a pair rather than merged.
+- a figure the buyer said against one they showed, kept as a pair rather than merged;
+- **the same party under two names**: a payee on a statement, a lender a document names as owed,
+  and a party a charge is registered to, matched against each other and against the names you have
+  told the tool belong to this field. A match is named as a match, with how sure it is, and never
+  quietly merged.
 
 Where a document states a figure under a label the tool cannot place, the figure is kept as
 unplaced. Where a period has no document covering it, the gap stays a gap. It does not average
@@ -54,5 +60,11 @@ resolves to [`channels/web-form.md`](../channels/web-form.md): where your form a
 (takings, the amount wanted), the answer is a figure the buyer said, the earliest one the tool
 has, and this is the first gather to draw from that channel. `document-set` and `deal` are the
 sibling assemblies that say which documents, and whose. What the buyer said on the thread comes
-through the deal's conversations. A figure on a public register is covered by no channel, and a
-figure the buyer said on an uncaptured call is a told gap until you say so.
+through the deal's conversations. `registered-charge` resolves to
+[`channels/public-records.md`](../channels/public-records.md), added 21 September: money secured
+against the buyer, and the party it is secured to, which is a name their own documents need never
+mention. It is carried beside what they showed and what they said, as a third kind of ground, and
+it is never treated as current without its date. `names-in-the-field` resolves to
+[`told/offering-told.md`](../told/offering-told.md), the names you would recognise in this market,
+which is what turns a payee on a statement into a name that means something. A figure the buyer
+said on an uncaptured call is a told gap until you say so.

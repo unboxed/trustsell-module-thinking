@@ -30,11 +30,16 @@ The only real work is identity and matching: deciding which deal a request and a
 to, and which request a document answers. Where a document answers no request, it is kept as
 unasked-for, not dropped.
 
+Since 21 September both sides can carry a stretch of time: the period a request asks for, and the
+period a document says on its face it is for. They are lined up against each other here, so a
+request can be answered, unanswered, or answered for the wrong months. Both are envelope facts, so
+this gather can say it without the inside of any document being read.
+
 It does not say which documents this sale needs. Which set a sale asks for is a fact only you hold,
 and there is no told record for it yet: what the gather can show is what you asked for against what
 came, never what you never asked for (a told gap, named not faked). And it does not read inside a
-document: the envelope is all `handover` carries, and what the tool reads in a set of accounts is
-not written yet.
+document: whether the figures within really cover the months the cover claims is the other layer's,
+[`figures-on-record`](figures-on-record.md), and not this gather's to check.
 
 ## Where it comes from
 

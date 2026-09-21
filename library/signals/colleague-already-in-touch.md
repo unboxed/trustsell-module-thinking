@@ -9,7 +9,7 @@ inputs: [firm-contact, stakeholder-map]
 counts: [colleague-touches-on-record, since-last-colleague-touch]
 answers: [V4]
 needs: [crm, slack]
-assumes: []
+assumes: [own-firm]
 assumes_status: provisional
 ---
 
@@ -51,10 +51,13 @@ Applies the shared reading rules in [`docs/reading-principles.md`](../docs/readi
   under-reports (a data gap, named not faked). The workspace, for a colleague's mention of the
   organisation; without it that trace drops out. A colleague's own mailbox is never visible, and
   a contact they made on a call from their own phone is a told gap until someone says so.
-- Assumes: nothing about the shape of the sale. It stands on your firm's shared records alone. It
-  does assume a firm beside you, which the vocabulary has no word for: used solo every record it
-  reads is empty and the read does not arise, which is the fact of the matter and not a gap. If
-  that word is ever added, this read is the one that would declare it.
+- Assumes: a firm beside you, whose records you share. It is the first read to declare `own-firm`,
+  the fourth word in the vocabulary, added 21 September for exactly this: `several-people` is about
+  the buyer's side and nothing said anything about yours. Used solo, every record it reads is
+  empty, and the honest output is that there is nobody else here to have been in touch, not that
+  nobody has (an assumption gap, named not faked). It assumes nothing about the shape of the sale
+  itself: a firm of two selling in a day meets it as squarely as a firm of fifty selling over two
+  years.
 - This read points at a word with a colleague before a move, or at handing the organisation over.
   It sits in People because it is a read about who has been in touch with the buyer, whichever side
   of your firm they are on. *(My reason, not yet yours.)*

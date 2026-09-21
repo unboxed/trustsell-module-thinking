@@ -18,10 +18,11 @@ inputs: [<assembly-id>, ...]     # the assembly(ies) it reads. Each MUST resolve
 counts: [<count-id>, ...]        # the counting floor beneath the read. Each MUST resolve to ../counts/*
 answers: [Q##, ...]              # which sales questions (../docs/sales-questions.md) it answers
 needs: [<source-id>, ...]        # sources the read leans on; if one is missing, its checks drop out (a data gap)
-assumes: [<thread-under-way|own-rhythm|several-people>]   # what the read needs to exist before it can stand
+assumes: [<thread-under-way|own-rhythm|several-people|own-firm>]   # what the read needs to exist before it can stand
                                  #   thread-under-way = a conversation already under way with them
                                  #   own-rhythm       = enough history with them to know their usual
                                  #   several-people   = several people to win at the buyer
+                                 #   own-firm         = a firm beside you, whose records you share
                                  # `[]` is a claim too: it stands on what it reads alone. build.js checks the words.
 assumes_status: provisional      # read off the prose, not yet decided
 pull: <optional: a fact it borrows from a supplier module, e.g. "Offerings' objection list">

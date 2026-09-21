@@ -43,8 +43,11 @@ kinds, all set out in [`tracing-back.md`](tracing-back.md):
 - An **assumption gap** (added 20 September): the condition a read needs is not there in this sale.
   A signal's `assumes` field says what it needs before it can stand, from a fixed vocabulary: a
   conversation already under way (`thread-under-way`), enough history with the person to know their
-  usual (`own-rhythm`), several people to win at the buyer (`several-people`). An empty list is a
-  claim too: the read stands on what it reads alone. Where a sale does not have what a read assumes,
+  usual (`own-rhythm`), several people to win at the buyer (`several-people`), and, since 21
+  September, a firm beside you whose records you share (`own-firm`). The last of those is about
+  your side rather than the buyer's, which is what `several-people` never covered: a solo seller
+  has no colleague's contact to find, and a read that looks for one is silent rather than wrong.
+  An empty list is a claim too: the read stands on what it reads alone. Where a sale does not have what a read assumes,
   the read does not apply, and the honest output is "this read needs a history with them, and there
   is none yet", never a judgement on a comparison it cannot make. Not every read holds for every kind
   of sale. Some belong to long relationships and some to a live thread with no history, and the
