@@ -922,11 +922,12 @@ summary::-webkit-details-marker{display:none}
 .py__row:not(.py__row--ground){flex-wrap:wrap;row-gap:12px}
 .py__pill.is-main{background:var(--ios-label);color:var(--ios-bg)}
 /* Hover a pill and its whole trail lights while the rest recedes; a click holds it (the user's
-   ask, 22 September, for demos). The dimming is a judgement. */
+   ask, 22 September, for demos). The lit lines take the kit's accent and stay the same weight:
+   colour, not thickness (the user). The dimming is a judgement. */
 .py.is-tracing .py__pill,.py.is-tracing .py__col,.py.is-tracing .py__card{opacity:.28;transition:opacity .15s}
 .py.is-tracing .is-on{opacity:1}
 .py.is-tracing .py__svg path{opacity:.12;transition:opacity .15s}
-.py.is-tracing .py__svg path.is-on{opacity:1;stroke:var(--ios-label);stroke-width:1.75}
+.py.is-tracing .py__svg path.is-on{opacity:1;stroke:var(--ios-accent)}
 .py [data-id]{cursor:default}
 .py__card{position:relative;z-index:1;width:440px;--p:0}
 .py__card .card{padding:14px 18px;border-radius:20px;background:var(--card-glaze);box-shadow:var(--card-edge),var(--card-lift)}
