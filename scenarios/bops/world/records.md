@@ -9,7 +9,8 @@ What the connected channels hold about each person, written as fiction on 22 Sep
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
 Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole,
-Nicola Shaw, Simon Ward and Andrew Doyle are written; every other section says so.
+Nicola Shaw, Simon Ward, Andrew Doyle, Martin Hodgson, Louise Kemp, Ravi Chandran and Jonathan Reid
+are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -135,7 +136,7 @@ The budget meeting was in a room, so Meet holds nothing for it.
 |---|---|---|
 | Karen Hughes | Head of Customer Services | Bramley District Council |
 | Louise Kemp | Customer Services Team Leader | Bramley District Council |
-| Ravi Chandran | Customer Services Team Leader | Bramley District Council |
+| Ravi Chandran | Customer Services Team Leader (from Karen's message of 12 March; he has never written, so there is no signature) | Bramley District Council |
 | Jonathan Reid | Performance Analyst, Customer Services | Bramley District Council |
 
 ### Web
@@ -1672,10 +1673,116 @@ completes at `partial` (`goal.md`), so his deal is past the sale and the counts 
 | Current situation, on the offering | "One council live, East Marston, fourteen months in; case admin down by about a third, and its Head of IT will take reference calls." The offer is in your profile as prose, and on the mail record as his words; the count reads the record |
 | Proof tags, on the organisation | none: nothing says what any document on the shelf proves |
 
+## Martin Hodgson
+
+Director of Resources, Bramley District Council, by the council's own committee papers. No
+address on record: he has never written to you and you have never written to him. Nothing between
+you: no message either way, no event, no call, not in your Slack, not in Contacts. The one record
+that holds him is in Karen Hughes's section above, under Web: Bramley's Resources committee
+papers, dated February 2026, which put the Customer Services budget in the Resources directorate
+and name him as its director. Karen has never named him. Her words of 13 July were that she takes
+figures "to Finance", and the budget meeting of 20 August was hers, with her team leaders in the
+room and nobody from Resources on the invite.
+
+### What the counts give
+
+Figures the counts compute from Karen's rows, run by hand on 22 September
+(`../docs/bramley-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 0 | messages, events or calls with him, ever, and nothing earlier anywhere under his name | prior-history-scan |
+| 1 | role on record: Director of Resources, from the committee papers of February 2026. No signature, because he has never written | head-of-signature-scan |
+| cold | to you: nothing on record between you | target-cold-to-you |
+| 0 | people on a thread or an event with both you and him. Karen, who could introduce you, has never named him | shared-contact-on-thread |
+| 0 | people you deal with who say they know him: nothing in the workspace names him or Bramley | mutual-contact-count |
+| nobody | a person you have reached who can decide. He is the one candidate with spend authority on any record, and the record is a web page, not a thread of yours | decision-maker-reached |
+| 1 split, 0, 2 copied | the roles the profile says a decision needs, at Bramley: a head of service with the budget, which Bramley splits between Karen, the head of service, and him, who holds the budget; a digital or IT lead for assurance, nobody reached or named; one or two senior officers for adoption, Louise Kemp and Ravi Chandran, copied in, one of whom has written | people-covered-vs-needed |
+| none | a record of how you came by his name that the origin gather reads: it came off a web page | route-in-on-record |
+
+### What you told the tool
+
+Nothing. He is on no told record. The profile's Customer field, which is where the roles above
+come from, puts the budget with the head of service, and at Bramley that is not where it is.
+
+## Louise Kemp
+
+Customer Services Team Leader, Bramley District Council. `louise.kemp@bramley.gov.uk`, from her
+signature. Everything on record about her is on Karen Hughes's threads and events, in Karen's
+section above: copied in by Karen on "Questions from my team leads" on 12 March, one message of
+her own on 13 March, a follow-up on case notes, which you answered on 16 March; at the demo of 15
+April and the budget meeting of 20 August. Nothing addressed to her alone, ever. Not in your Slack.
+
+### What the counts give
+
+Figures the counts compute from Karen's rows, run by hand on 22 September
+(`../docs/bramley-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | message from her, 13 March, 40 words, on 1 thread; 2 meetings with her in the room | how-close-you-were |
+| 0 | questions of hers open: her one point was answered three days later | their-question-unanswered |
+| 1 | role on record: Customer Services Team Leader, from her signature | head-of-signature-scan |
+| 12 March | the day she became a new name, added by Karen; the last new name at Bramley was Jonathan Reid, 16 April | new-name-on-thread |
+| reached | she has written, so she counts as reached and not only copied | people-reached-count |
+
+### What you told the tool
+
+Nothing. She is on no told record.
+
+## Ravi Chandran
+
+Customer Services Team Leader, Bramley District Council. `ravi.chandran@bramley.gov.uk`. Copied in
+by Karen on "Questions from my team leads" on 12 March, at the demo of 15 April and the budget
+meeting of 20 August, and he has never written a word. His title is from Karen's message of 12
+March, which introduced him and Louise Kemp; there is no signature of his to take it from. Nothing
+addressed to him alone, ever. Not in your Slack.
+
+### What the counts give
+
+Figures the counts compute from Karen's rows, run by hand on 22 September
+(`../docs/bramley-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 0 | messages from him; 1 thread he is on; 2 meetings with him in the room | how-close-you-were |
+| copied, not reached | on a thread and at two meetings, and never written: the count keeps the two apart | people-reached-count |
+| 1 | role on record: Customer Services Team Leader, from Karen's words, not his | head-of-signature-scan |
+
+### What you told the tool
+
+Nothing. He is on no told record.
+
+## Jonathan Reid
+
+Performance Analyst, Customer Services, Bramley District Council. `jonathan.reid@bramley.gov.uk`,
+from his signature. Copied in by Karen on "Thanks for yesterday, and some follow-ups" on 16 April
+and on "Case volumes for a business case" on 10 June; at the demo of 15 April. One message of his
+own, 12 June: Bramley's case volumes, a spreadsheet attached, sent the day after you listed the
+figures a business case would need. You thanked him on 15 June and noted two things in the
+figures. Nothing since from him. Not in your Slack.
+
+### What the counts give
+
+Figures the counts compute from Karen's rows, run by hand on 22 September
+(`../docs/bramley-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | message from him, 12 June, 60 words, with an attachment; 2 threads he is on; 1 meeting | how-close-you-were |
+| reached | he has written, and sent something | people-reached-count |
+| 1 | role on record: Performance Analyst, Customer Services, from his signature | head-of-signature-scan |
+| 16 April | the day he became a new name, added by Karen | new-name-on-thread |
+| not counted | the case volumes: a document the buyer sent against a request of yours, one day after you asked. The gather that holds what you asked for and what came takes a mail attachment, and both counts over it need the buyer's handover, which the tool cannot connect, so the one document a buyer has sent in this world is on the shelf and counted by nothing | documents-received |
+
+### What you told the tool
+
+Nothing. He is on no told record.
+
 ## Everyone else
 
-Not written yet. Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao, Graham Pollard and the seven
-others at North Ridley have one line each in `cast.md` and nothing here. Graham
+Not written yet. Priya Nair, Tom Bradley, Anita Rao, Graham Pollard and the seven others at North
+Ridley have one line each in `cast.md` and nothing here. Graham
 Pollard appears in Nicola Shaw's section, because the one note he was on is hers. Tom Bradley and Anita Rao appear in Shabana Akhtar's
 section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in
 Michelle Turner's, because everything on record about them is on her threads and her invite.

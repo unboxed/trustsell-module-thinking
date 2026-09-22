@@ -1576,6 +1576,28 @@ introduce you to, so the customer whose name carries eight cards is somebody the
 suggest a word to. The first card to a customer is the one the peer-call watch turns up, if Rachel
 says yes. Named, not built.
 
+**Done in the forty-third pass, 22 September.** The sixteenth to nineteenth people worked from
+both ends, the four around Karen Hughes at Bramley: Martin Hodgson, who holds the budget and is on
+no record of yours but a committee paper, and Louise Kemp, Ravi Chandran and Jonathan Reid, whom
+Karen brought to her threads. The record is `scenarios/bops/docs/bramley-pass.md`. One card touches
+them, the Ask to Karen about who signs, and it is the first card re-tested from a second end with
+no change to its reads: `missing-people` fires harder from the budget holder's side, the card holds
+his name back and `decision-maker-reached` agrees, because its evidence is a web page and never a
+person on a record of yours. Neither end reaches a card to him, and the read that fires says ask
+the person you have.
+
+**What the counts said about themselves.** The told roles list cannot say a role is split:
+"a head of service with the budget" is two people at Bramley, one reached and one not, and
+`people-covered-vs-needed` has to call the row covered or missing when it is both. With Felton's
+finance, that is twice the profile's cast has failed to describe a council. A buyer's document
+sent as a mail attachment is gathered by `document-set`, which takes `gmail#attachment`, and
+counted by nothing, because `documents-received` and `documents-still-out` need the handover
+only; `missing-documents` is silent in this world and the one document a buyer has ever sent,
+Bramley's case volumes, is invisible to it, as are the figures inside it. Named, not fixed,
+because no card here would quote the count: nothing at Bramley is still out. And a title can come
+from a colleague's introduction, which `head-of-signature-scan` reads as a message; the fiction
+had Ravi Chandran's in a signature he never wrote, and the count was right.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1606,10 +1628,12 @@ is anybody's.)*
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
-  up, and one re-tested from the customer's end in the forty-second; the method is in
+  up, one re-tested from the customer's end in the forty-second and one from the budget
+  holder's in the forty-third; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
-  `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md` and `east-marston-pass.md`. The rest
+  `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md` and
+  `bramley-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
   records and names no read. Twenty-six signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,

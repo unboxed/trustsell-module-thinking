@@ -3,12 +3,12 @@ id: act-karen-budget-holder
 order: 8
 kind: act
 signal: missing-people
-signal_status: decided   # 22 September: worked from the records up, see ../docs/karen-hughes-pass.md
+signal_status: decided   # 22 September: worked from the records up, see ../docs/karen-hughes-pass.md; re-tested the same day from the budget holder's end, ../docs/bramley-pass.md
 supporting: []   # new-stakeholder came off 22 September: no new name at Bramley since April
 supporting_status: decided
 counts: [decision-maker-reached, rests-on-one-person, people-reached-count]
 counts_status: decided
-about: [karen-hughes, bramley]
+about: [karen-hughes, bramley, martin-hodgson]   # Martin Hodgson since 22 September: the card holds his name back, and his section is what it is checked against, see ../docs/bramley-pass.md
 to: karen-hughes                # who the move reaches; one move per person at a time
 documents: []
 sure: "likely"
@@ -52,7 +52,7 @@ Nobody on the Bramley thread can sign. When Karen is back in rhythm, she is the 
 
 ## Sources
 
-- gmail · Your Bramley threads since March: four people on them, three who have written, roles from their signatures.
+- gmail · Your Bramley threads since March: four people on them, three who have written, roles from their signatures, or from Karen's introduction where they have never written.
 - web · Bramley's committee papers, Director of Resources: Martin Hodgson.
 - people-told · What you tell me about the budget meeting, and Karen's reply to this week's note.
 - goal-told · Your goal: partial adoption needs a signature.

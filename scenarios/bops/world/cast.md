@@ -32,9 +32,9 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |
 | Graham Pollard | graham-pollard | Head of Customer Services | ashworth | On your third note, 14 July, with Nicola. Never replied |
 | Andrew Doyle | andrew-doyle | Head of IT | east-marston | Offered reference calls on 4 March. Nobody has taken him up on it, and nothing has passed between you since |
-| Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget. Not on any thread |
+| Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget, by the committee papers. On no record of yours, and Karen has never named him |
 | Louise Kemp | louise-kemp | Customer Services Team Leader | bramley | On Karen's threads since March. Wrote once |
-| Ravi Chandran | ravi-chandran | Customer Services Team Leader | bramley | On Karen's threads since March. Has never written |
+| Ravi Chandran | ravi-chandran | Customer Services Team Leader | bramley | On Karen's threads since March. Has never written; his title is from Karen's introduction |
 | Jonathan Reid | jonathan-reid | Performance Analyst | bramley | Copied in by Karen in April. Sent you their case volumes in June |
 | Priya Nair | priya-nair | Customer Services Manager | westmoor | Gary brought her to the demo in March. Wrote once |
 | Simon Ward | simon-ward | your colleague in partnerships | — | Well connected across the sector |
