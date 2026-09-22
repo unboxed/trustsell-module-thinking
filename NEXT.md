@@ -533,8 +533,8 @@ reach what it claims.
 - ~~**A card may not state a figure the world does not carry** (proposed 22 September, not built).~~
   Built the same day, on the user's word, for people with a records section. Seven cards checked,
   eighteen skipped, a planted figure fails.
-- **The cards' joins are provisional on twenty of forty-five cards, all in `pmf` and `cority`.**
-  Twenty-five, the whole of `bops`, were decided on 22 September from the records up, and the wrong joins they hid were the kind predicted: a
+- ~~**The cards' joins are provisional.**~~ Done on 23 September: every card in all three worlds is
+  decided from the records up. Twenty-five, the whole of `bops`, were decided on 22 September, and the wrong joins they hid were the kind predicted: a
   supporting read that does not fire, kept so the card could quote one of its counts, and once a
   card resting on the mirror of the count it needed, and once a read that failed both halves of
   its own trigger while the card was right about the move, twice a read joined for a reason to
