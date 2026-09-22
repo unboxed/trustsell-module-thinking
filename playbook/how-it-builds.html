@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>How it builds · Signal cards</title>
+<link rel="stylesheet" href="assets/fonts/inter.css">
+<link rel="stylesheet" href="assets/fonts/jakarta.css">
+<link rel="stylesheet" href="assets/ios-tokens.css">
+<link rel="stylesheet" href="assets/ios-components.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page page--slide">
+
+<!-- The second deck: how the library builds up. deck.html shows the tool; this one tells where
+     the tool's reading came from. It starts on the questions a seller asks himself, walks one of
+     them down to the records and the connections it takes to answer, names the ladder that walk
+     turned out to be, and ends on the phone, where it arrives. Same machinery as deck.html: one
+     file, one slide shown at a time by hash, arrow keys and space to move, deck.js doing the
+     fitting and drawing every figure from assets/data.js. -->
+<main class="page-body">
+
+<a class="ios-btn deck__exit" href="library.html">Library</a>
+
+<!-- Where it started: the twenty-six questions a real seller asks himself through a sale.
+     Nothing is typed: deck.js fills it from data.js, which build.js reads off the library's doc. -->
+<section id="questions" class="slide slide--figures slide--qs" data-w="1776" data-h="537" aria-label="Martyn's questions">
+  <header class="slide__head">
+    <h1>Martyn&rsquo;s twenty-six questions</h1>
+  </header>
+  <div class="slide__body">
+    <div class="qs-stage"><div class="qs-stage__in"><ol class="qs" data-questions="Q"></ol></div></div>
+  </div>
+</section>
+
+<!-- The descent: one question walked down, a rung to a slide. Every slide is the same question
+     and the same trail, one row further on, and all five are drawn at the same size, so a row
+     that has arrived never moves again. Nothing here is typed either: deck.js walks data.js from
+     the question to the reads that answer it, then follows one of them down through its counts,
+     what they are counted within, the records they need and what you have to connect. -->
+<section id="walk-1" class="slide slide--figures slide--trail" data-w="1600" data-h="473" aria-label="One question, walked down">
+  <header class="slide__head">
+    <h1>19 &middot; When is the right time to chase?</h1>
+  </header>
+  <div class="slide__body">
+    <div class="trail-stage"><div class="trail-stage__in">
+      <ol class="trail" data-question="Q19" data-read="cooling-champion" data-upto="1"></ol>
+    </div></div>
+  </div>
+</section>
+
+<section id="walk-2" class="slide slide--figures slide--trail" data-w="1600" data-h="473" aria-label="One question, walked down">
+  <header class="slide__head">
+    <h1>19 &middot; When is the right time to chase?</h1>
+  </header>
+  <div class="slide__body">
+    <div class="trail-stage"><div class="trail-stage__in">
+      <ol class="trail" data-question="Q19" data-read="cooling-champion" data-upto="2"></ol>
+    </div></div>
+  </div>
+</section>
+
+<section id="walk-3" class="slide slide--figures slide--trail" data-w="1600" data-h="473" aria-label="One question, walked down">
+  <header class="slide__head">
+    <h1>19 &middot; When is the right time to chase?</h1>
+  </header>
+  <div class="slide__body">
+    <div class="trail-stage"><div class="trail-stage__in">
+      <ol class="trail" data-question="Q19" data-read="cooling-champion" data-upto="3"></ol>
+    </div></div>
+  </div>
+</section>
+
+<section id="walk-4" class="slide slide--figures slide--trail" data-w="1600" data-h="473" aria-label="One question, walked down">
+  <header class="slide__head">
+    <h1>19 &middot; When is the right time to chase?</h1>
+  </header>
+  <div class="slide__body">
+    <div class="trail-stage"><div class="trail-stage__in">
+      <ol class="trail" data-question="Q19" data-read="cooling-champion" data-upto="4"></ol>
+    </div></div>
+  </div>
+</section>
+
+<section id="walk-5" class="slide slide--figures slide--trail" data-w="1600" data-h="473" aria-label="One question, walked down">
+  <header class="slide__head">
+    <h1>19 &middot; When is the right time to chase?</h1>
+  </header>
+  <div class="slide__body">
+    <div class="trail-stage"><div class="trail-stage__in">
+      <ol class="trail" data-question="Q19" data-read="cooling-champion" data-upto="5"></ol>
+    </div></div>
+  </div>
+</section>
+
+<!-- What the walk turned out to be: the ladder itself, with its sizes on, because by now every
+     rung has been met once and how much of it there is is the point. Drawn from data.js. -->
+<section id="climb" class="slide slide--figures slide--climb" aria-label="The climb">
+  <header class="slide__head">
+    <h1>The climb</h1>
+  </header>
+  <div class="slide__body">
+    <ol class="climb" data-climb></ol>
+  </div>
+</section>
+
+<!-- The only typed slide, and even its number is filled from data.js. -->
+<section id="answered" class="slide slide--words" aria-label="Every question, the same way">
+  <header class="slide__head">
+    <h1>Every question, the same way</h1>
+    <p>All twenty-six were walked down like that. <span data-answered="Q">some</span> now have a read behind them. Two of the rest the tool just does. One is still a hole: what questions to ask them.</p>
+  </header>
+</section>
+
+<!-- The same trail, climbing, all at once: one card and everything under it. Drawn from data.js. -->
+<section id="built" class="slide slide--figures slide--built" data-w="1136" data-h="620" data-max="2" aria-label="How a card is built">
+  <header class="slide__head">
+    <h1>How a card is built</h1>
+  </header>
+  <div class="slide__body">
+    <div class="py-stage"><div class="py" data-card="act-karen-slowing"></div></div>
+  </div>
+</section>
+
+<!-- Where it arrives. The screen is phone.html, drawn from the library; fresh, so it starts clean. -->
+<section id="phone" class="slide slide--side" data-w="393" data-h="852" aria-label="Where it arrives">
+  <header class="slide__head">
+    <h1>Where it arrives</h1>
+    <p>One card, one reply asked of you, and the whole climb standing behind it. Nothing goes out without you.</p>
+  </header>
+  <div class="slide__body">
+    <div class="phone-stage"><div class="phone"><iframe class="screen" src="phone.html?fresh" title="The phone: your day"></iframe></div></div>
+  </div>
+</section>
+
+<button class="ios-btn deck__prev" type="button" aria-label="Previous slide"><span class="chevron" aria-hidden="true"></span></button>
+<button class="ios-btn deck__next" type="button" aria-label="Next slide"><span class="chevron chevron--next" aria-hidden="true"></span></button>
+<span class="deck-count" id="count" aria-live="polite"></span>
+
+</main>
+
+<script src="assets/data.js"></script>
+<script src="assets/phone.js"></script>
+<script src="assets/deck.js"></script>
+</body>
+</html>

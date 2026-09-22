@@ -35,9 +35,14 @@
      written), the gathers those reads take, and the channels behind them. */
   var LIB = window.LIBRARY;
   function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  /* The library, addressed the same way wherever a figure is drawn from it. */
+  function find(k, id) { return ((LIB || {})[k] || []).filter(function (e) { return e.id === id; })[0]; }
+  function label(e) { return esc(String(e.label).replace(/^"|"$/g, '')); }
+  function recLabel(i) { var r = ((LIB || {}).records || []).filter(function (x) { return x.address === i; })[0]; return esc(r ? r.plain || r.label : i); }
+  function colName(c) { var ch = find('channels', c); return c === 'told' ? 'You told me' : esc(ch ? ch.name.replace(/ \/.*/, '') : c); }
+  function pill(id, text, main) { return '<span class="py__pill' + (main ? ' is-main' : '') + '" data-id="' + id + '">' + text + '</span>'; }
   function build(py) {
     if (!LIB) return;
-    var find = function (k, id) { return (LIB[k] || []).filter(function (e) { return e.id === id; })[0]; };
     var card = find('cards', py.getAttribute('data-card')); if (!card) return;
     var reads = [card.signal].concat(card.supporting || []).map(function (id) { return find('signals', id); }).filter(Boolean);
     var counts = [].concat(card.counts || []).map(function (id) { return find('counts', id); }).filter(Boolean);
@@ -71,10 +76,6 @@
     });
     reads.forEach(function (r) { edges.push(['g:' + r.id, 'card']); });
     if ((card.documents || []).length) edges.push(['a:proof-library', 'card']);
-    var label = function (e) { return esc(String(e.label).replace(/^"|"$/g, '')); };
-    var recLabel = function (i) { var r = (LIB.records || []).filter(function (x) { return x.address === i; })[0]; return esc(r ? r.plain || r.label : i); };
-    var colName = function (c) { var ch = find('channels', c); return c === 'told' ? 'You told me' : esc(ch ? ch.name.replace(/ \/.*/, '') : c); };
-    var pill = function (id, text, main) { return '<span class="py__pill' + (main ? ' is-main' : '') + '" data-id="' + id + '">' + text + '</span>'; };
     var kind = card.kind;
     py.innerHTML = '<svg class="py__svg" aria-hidden="true"></svg>' +
       '<div class="py__row"><div class="py__card" data-id="card"><article class="card"><span class="kind kind--' + kind + '">' + esc(kind[0].toUpperCase() + kind.slice(1)) + '</span>' +
@@ -135,6 +136,77 @@
         '<span class="climb__line">' + esc(r[2]) + '</span></li>';
     }).join('');
     el.classList.toggle('climb--sizes', sizes);
+  });
+
+  /* The questions: a seller's own list, drawn from data.js the way the climb is, so the
+     slide says exactly what the library's doc says and nobody has to keep the two in step.
+     data-questions names the set: Q is the patient seller's twenty-six, V and F the other
+     two, should a later slide want them. The number is the id without its letter, so Q18 is
+     the eighteenth line. */
+  Array.prototype.slice.call(document.querySelectorAll('.qs[data-questions]')).forEach(function (el) {
+    if (!LIB) return;
+    var set = el.getAttribute('data-questions');
+    el.innerHTML = (LIB.questions || []).filter(function (q) { return q.set === set; })
+      .map(function (q) {
+        return '<li class="qs__q">' +
+          '<span class="qs__n">' + esc(q.id.slice(1)) + '</span>' +
+          '<span class="qs__t">' + esc(q.text) + '</span></li>';
+      }).join('');
+  });
+
+  /* The trail: one question walked down, a rung to a slide. Drawn from data.js the way the
+     climb and the questions are, so nothing on the slide is typed and nothing goes stale. A
+     slide names the question (data-question), the one read the descent follows (data-read) and
+     how far down it has got (data-upto). Every slide of the descent is drawn at the same size,
+     so a row that has arrived never moves again and the next slide only adds under it. The rung
+     names are the pyramid's own four, in the present tense, plus what you connect, so that the
+     pyramid four slides later is a recognition rather than a fifth vocabulary (the user's call,
+     22 September: the library's words, reads and counted within, are jargon on a slide).
+     No read is filled. The question is abstract, and it is only about a person that a read
+     fires, so nothing on this slide picks one of the five; the descent follows one and the row
+     under it shows whose counts they are. */
+  var TRAIL = ['What I think', 'What I count', 'What I gather', 'What I fetch', 'What you connect'];
+  function trail(el) {
+    if (!LIB) return;
+    var qid = el.getAttribute('data-question'), readId = el.getAttribute('data-read');
+    var upto = +el.getAttribute('data-upto') || TRAIL.length;
+    var reads = (LIB.signals || []).filter(function (s) { return (s.answers || []).indexOf(qid) > -1; });
+    var read = find('signals', readId);
+    var counts = read ? (read.counts || []).map(function (c) { return find('counts', c); }).filter(Boolean) : [];
+    /* A count says what it is counted within (over) and which records it needs, so the last
+       three rows are the counts' own words, gathered and de-duplicated in the order they come. */
+    var asms = [], needs = [], chans = [];
+    counts.forEach(function (c) {
+      [].concat(c.over || []).forEach(function (a) { if (asms.indexOf(a) < 0) asms.push(a); });
+      (c.needs || []).forEach(function (n) {
+        if (needs.indexOf(n) < 0) needs.push(n);
+        var src = n.split('#')[0], ch = /-told$/.test(src) ? 'told' : src;
+        if (chans.indexOf(ch) < 0) chans.push(ch);
+      });
+    });
+    var rows = [
+      reads.length ? reads.map(function (s) { return pill('g:' + s.id, label(s)); })
+                   : ['<span class="trail__none">Not written yet</span>'],
+      counts.map(function (c) { return pill('c:' + c.id, label(c)); }),
+      asms.map(function (a) { var e = find('assemblies', a); return pill('a:' + a, e ? label(e) : esc(a)); }),
+      needs.map(function (n) { return pill('r:' + n, recLabel(n)); }),
+      chans.map(function (c) { return pill('ch:' + c, colName(c)); })
+    ];
+    el.innerHTML = rows.slice(0, upto).map(function (of, j) {
+      return '<li class="trail__step"><span class="trail__rung">' + esc(TRAIL[j]) + '</span>' +
+        '<span class="trail__of">' + of.join('') + '</span></li>';
+    }).join('');
+  }
+  Array.prototype.slice.call(document.querySelectorAll('.trail[data-question]')).forEach(trail);
+
+  /* How many of a question set a read now claims. Filled from data.js so the number on a
+     slide is the library's own and cannot be typed once and left to go stale. */
+  Array.prototype.slice.call(document.querySelectorAll('[data-answered]')).forEach(function (el) {
+    if (!LIB) return;
+    var set = el.getAttribute('data-answered'), claimed = {};
+    (LIB.signals || []).forEach(function (s) { (s.answers || []).forEach(function (a) { claimed[a] = 1; }); });
+    var qs = (LIB.questions || []).filter(function (q) { return q.set === set; });
+    el.textContent = qs.filter(function (q) { return claimed[q.id]; }).length + ' of ' + qs.length;
   });
 
   var pyramids = Array.prototype.slice.call(document.querySelectorAll('.py[data-card]'));

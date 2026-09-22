@@ -981,3 +981,55 @@ iframe.screen{border:0;display:block;padding:0}
   font-variant-numeric:tabular-nums}
 .climb__name{font:var(--tv-text-caption1);font-weight:500;color:var(--ios-label)}
 .climb__line{font:var(--tv-text-caption2);color:var(--ios-label-secondary)}
+
+/* The questions (21 September): a seller's own list, all of it, on one slide. Drawn by deck.js
+   from data.js, the way the climb is.
+
+   It is a slide, not a page: it never scrolls (the user, 21 September, after a scrolling version
+   was tried and dropped). So the wall is drawn at one size and scaled to the room, the way a bare
+   sheet is, with deck.js doing the fitting from the slide's data-w and data-h. The composition
+   never changes, only how big it is: three columns at 1920 x 1080, the same three columns smaller
+   on a laptop, and nothing is ever cut or hidden below a fold.
+
+   1776 is the room's width less the slide's margins; 537 is the list's own height there, measured.
+   The 40 pt between columns is tvOS's own; the three columns and the row padding are judgements,
+   the padding being the kit's list-row 11. The gap under the title is 48, twice the deck's usual
+   24 and three times the 16 a figures slide cuts it to, because the list starts on a hairline and
+   the title has to stand clear of it. */
+.qs-stage{flex:none;width:calc(1776px*var(--s));height:calc(537px*var(--s))}
+.qs-stage__in{width:1776px;height:537px;transform:scale(var(--s));transform-origin:top left}
+.qs{list-style:none;margin:0;padding:0;width:100%;columns:3;column-gap:40px}
+.qs__q{display:grid;grid-template-columns:1.75rem 1fr;gap:0 12px;align-items:baseline;
+  padding:11px 0;break-inside:avoid;
+  border-top:1px solid color-mix(in srgb,var(--ios-label) 12%,transparent)}
+.qs__n{font:var(--tv-text-caption2);font-weight:700;color:var(--ios-label-tertiary);
+  text-align:right;font-variant-numeric:tabular-nums}
+.qs__t{font:var(--tv-text-caption2);color:var(--ios-label)}
+/* The wall hangs from the top of the body, not the middle of it, so the gap under the title is
+   the same 48 at every size rather than growing as the slide scales down. */
+.slide--qs .slide__body{align-items:flex-start;margin-top:48px}
+
+/* ---------- The trail ---------- */
+/* The descent on the second deck: one question walked down, a rung to a slide. Decided 22
+   September, by looking, on one sheet of three ways to tell it: "A · One question, walked
+   down". Passed over: the question set beside a list of what it takes, which states the blocks
+   rather than building them, and the wall of questions kept on screen with a shelf filling
+   under it, where the wall is a texture rather than words.
+   Like the wall and the pyramid, the trail is drawn at one size and scaled to the room, so the
+   five slides of one descent place their rows identically and a row that has arrived never
+   moves again. 1600 is the room's width less the margins and 473 is the whole trail's height
+   there, measured at the last of the five; both are judgements. The list starts on a hairline, so the gap under the
+   title is the wall's 48 rather than the deck's usual 24. */
+.trail-stage{flex:none;width:calc(1600px*var(--s));height:calc(473px*var(--s))}
+.trail-stage__in{width:1600px;height:473px;transform:scale(var(--s));transform-origin:top left}
+.trail{list-style:none;margin:0;padding:0;width:100%}
+.trail__step{display:grid;grid-template-columns:16rem 1fr;gap:0 32px;align-items:baseline;
+  padding:14px 0;border-top:1px solid color-mix(in srgb,var(--ios-label) 12%,transparent)}
+.trail__step:last-child{border-bottom:1px solid color-mix(in srgb,var(--ios-label) 12%,transparent)}
+.trail__rung{font:var(--tv-text-caption2);color:var(--ios-label-secondary)}
+.trail__of{display:flex;flex-wrap:wrap;gap:10px}
+.trail__none{font:var(--tv-text-caption2);color:var(--ios-label-tertiary)}
+/* The pyramid's pill at the slide's own type: one drawn for a 1136 pt figure is too small to
+   read across a room. */
+.trail .py__pill{font:var(--tv-text-caption2);font-weight:600;padding:6px 16px;border-width:1px}
+.slide--trail .slide__body{align-items:flex-start;margin-top:48px}

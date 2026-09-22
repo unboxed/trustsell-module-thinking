@@ -21,6 +21,22 @@
 
 <a class="ios-btn deck__exit" href="library.html">Library</a>
 
+<!-- Where it started: the twenty-six questions a real seller asks himself through a sale.
+     First in the deck, because the story starts where the thinking did. Nothing here is typed:
+     deck.js fills it from assets/data.js, which build.js reads off the library's own doc, so a
+     reworded question is reworded on the slide at the next build. data-questions is the set. -->
+<section id="questions" class="slide slide--figures slide--qs" data-w="1776" data-h="537" aria-label="Martyn's questions">
+
+  <header class="slide__head">
+    <h1>Martyn&rsquo;s twenty-six questions</h1>
+  </header>
+
+  <div class="slide__body">
+    <!-- The wall is drawn at one size and scaled to the room, the way a bare sheet is. -->
+    <div class="qs-stage"><div class="qs-stage__in"><ol class="qs" data-questions="Q"></ol></div></div>
+  </div>
+</section>
+
 <!-- The opener: the argument, before anything is demonstrated. Words only, so
      it says no size and deck.js leaves its scale alone. -->
 <section id="idea" class="slide slide--words" aria-label="The idea">

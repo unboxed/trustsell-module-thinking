@@ -116,9 +116,24 @@ one rung as a table.
 desktop platform and a phone app both; the phone is where the thinking is done because one card
 on a small screen is easier to think through than a full desktop platform (the user, 18
 September). All of them
-live in `deck.html`, one shown at a time. The first, "The idea", is words only: it states the
-argument before anything is demonstrated, that people work the verbs and the tool works the
-nouns. The second, "Your day on mobile" (called "The phone" until 18 September), is the prototype: the title
+live in `deck.html`, one shown at a time. First in the deck since 21 September, "Martyn's
+twenty-six questions" is where the whole thing started: the questions a real seller of a SaaS to
+local authorities asks himself through a sale, all of them, in his own words, unedited. The library
+was derived from that list, so the deck now opens where the thinking did rather than on the claim.
+He is named on the slide, the user's call. Like the climb it is **not typed**: `deck.js` fills it
+from `data.js`, which `build.js` reads off `library/docs/sales-questions.md`, so rewording a
+question rewords the slide at the next build. **It never scrolls.** A scrolling version was built
+first, three columns narrowing to one you go down on a phone, and dropped the same day: a slide is
+not a page (the user). So the wall is drawn at one size and scaled to the room, the way a bare sheet
+is, `deck.js` doing the fitting from the slide's `data-w` and `data-h`. The composition never
+changes, only how big it is, and nothing is ever cut or hidden below a fold. 1776 is the room's
+width less the slide's margins and 537 is the list's own height there, measured. Its rows take the
+kit's own list-row padding, 11 pt, and the gap under the title is 48, twice the deck's usual 24 and
+three times the 16 a figures slide cuts it to, because the list starts on a hairline and the title
+has to stand clear of it (the user, on both). The wall hangs from the top of the body rather than
+its middle, so that gap stays 48 at every size instead of opening up as the slide scales down. "The idea", which opened the deck until then, is words
+only: it states the argument before anything is demonstrated, that people work the verbs and the
+tool works the nouns. The second, "Your day on mobile" (called "The phone" until 18 September), is the prototype: the title
 and a line about the idea on the left, one iPhone on the right at almost the room's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
 close button lowers it). The third, "Reply sheets", shows the reply modules as bare
@@ -161,6 +176,40 @@ everything rather than using the sides. Then the five longest count names were s
 ("Wait for a reply, against usual" and its kin, ids unchanged), and every pill, the counts too,
 now sits on one line, as wide as its words. The key (main read, supporting read, the two
 kinds of line) was taken off the slide the same day, the user's call.
+
+**A second deck** (22 September, the user's call), `how-it-builds.html`, beside `deck.html` and
+not replacing it. `deck.html` shows the tool; this one tells where the tool's reading came from,
+casually, for people who were not there: it starts on the questions a seller asks himself, walks
+one of them down to the records and the connections it takes to answer it, names the ladder that
+walk turns out to be, says how far that got across all twenty-six, and ends on the phone, where it
+arrives. Ten slides: the wall, five of the descent, the climb, one of words, the pyramid, the
+phone. Chosen by looking, on one sheet of three ways to tell the middle of it
+(https://claude.ai/artifact/Fx3uz44D4pbUVV6U56QA1T): "A · One question, walked down". Passed over:
+the question set beside a list of what it takes, which states the blocks rather than building
+them, and the wall kept on screen with a shelf filling under it, where the wall is a texture
+rather than words. The descent is **not typed**: a slide names the question, the one read the
+descent follows and how far down it has got (`data-question`, `data-read`, `data-upto`), and
+`deck.js` walks `data.js` for the rest. Like the wall and the pyramid it is drawn at one size,
+1600 x 473, and scaled to the room, so all five slides place their rows identically and a row that
+has arrived never moves again. The five names down the left are the pyramid's own four in the
+present tense, plus what you connect (chosen by looking, on one sheet of three ways of saying it,
+https://claude.ai/artifact/CjBHMCBZuhS8qYksH3FF15: "A · The words the pyramid uses"). The first
+try used the library's words, reads and counted within, and the user's call was that they are
+jargon on a slide. Passed over: everyday words for each rung, which teach a vocabulary the rest of
+the playbook never uses again, and a chain, each row saying why the row under it exists.
+Question 19 is answered by five reads, not one, so the first row shows all five and the descent
+follows one of them: the fan is true, and the whole fan would not fit. **No read on that row is
+filled** (22 September). It was, and the user asked what the fill meant: on the pyramid a filled
+pill is the read the card rests on, a fact from the card, but here it was only the one I chose to
+walk down, which made the slide claim a decision nobody had made. A read is not picked by
+preference at all. Each fires on its own written trigger, and which of the fired reads becomes a
+card is the Brain's (`library/modules/00-spine.md`). What the library genuinely has not decided is
+which read a card rests on, `signal_status: provisional` on 44 of the 45 cards, and that is what
+the fill was quietly papering over. *(My reason, not yet yours.)* The climb shows its sizes here,
+unlike in `deck.html`, because by then every rung has been met once and how much of it there is is
+the point; and the rung names arrive after the walk, as the names for five steps already taken. One slide is typed, "Every question, the same way", and
+even its number is filled from `data.js`, so it cannot go stale. The cost, noted: the two decks
+share `deck.js` and `style.css`, so a change to either script or stylesheet is a change to both.
 
 **Proof is now evidence** (19 September, the user's call). "Proof" named what a document does, not
 what it is, and read as unclear. Everywhere it meant the case studies, references and results you
