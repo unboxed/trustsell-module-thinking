@@ -10,7 +10,7 @@ counts: [their-promise-undelivered, fulfilment-scan, days-open-vs-own-rhythm, co
 answers: [F7]
 needs: [calendar, meet]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested in the firm's world on threads of months; each read a date, a promise or a step off a conversation under way and needed exactly that
 ---
 
 # Something they said they would do

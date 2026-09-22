@@ -36,7 +36,9 @@ Monday 21 September 2026. Every `when` on a card is relative to this date.
 
 Where a deal stands, in order: interested, discovering, championed, in the bid, redlines, signed.
 
-**Interested** is a first conversation and nothing more. **Discovering** is them working out what
+**The sale completes at signed**, the last rung, so nothing here is past the sale and the reads over a
+deal since it completed never arise in this world (named 22 September, because
+`since-the-sale` says the seller names the rung). **Interested** is a first conversation and nothing more. **Discovering** is them working out what
 they need with you rather than on paper. **Championed** is somebody inside who will speak for you
 when you are not in the room. **In the bid** is a formal process with requirements to answer.
 **Redlines** is commercial negotiation. **Signed** is the sale.

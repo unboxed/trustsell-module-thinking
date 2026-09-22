@@ -11,7 +11,7 @@ answers: [F10]
 needs: []
 assumes: [thread-under-way]
 pull: The Brain's tempo from the goal, for what counts as short. Named in the body since 21 September and joined here on 22 September
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested in the firm's world on threads of months; each read a date, a promise or a step off a conversation under way and needed exactly that
 ---
 
 # A deadline they gave you

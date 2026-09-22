@@ -3,15 +3,15 @@ id: act-marta-steps
 order: 6
 kind: act
 signal: steps-on-their-side
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [missing-people]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/cority-pass.md. Five told steps, one sign, two you can help with; the read says no sign of and never not done, and the card is an offer
+supporting: [missing-people]   # Colin Hurst holds the money by his title and is on no thread; the budget step has nobody attached
+supporting_status: decided
 counts: [steps-the-buy-needs, steps-with-a-sign, steps-you-can-help-with, decision-maker-reached]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [marta-olsen, calderbank, colin-hurst]
 to: marta-olsen
 arrives: 2026-09-22
-documents: [security-answers]
+documents: [security-answers, consultation-note]
 held_by: act-marta-pricing
 held_words: "After her question about price is answered. Two things in one week is one thing too many."
 widgets: [people]
@@ -72,14 +72,14 @@ A buy here takes five steps on their side. One shows a sign. You can help with t
 
 - Marta Olsen · VP Safety · Your champion. Building the case, on the evidence of 2 September
 - Colin Hurst · Chief Financial Officer · Holds the money. On no thread
-- Alan Beck · Head of IT · Not at Calderbank. Their IT lead has not appeared at all
+- Calderbank's IT lead · Group IT Director, by LinkedIn · Named by nobody, on nothing of yours
 
 ## Sources
 
 - gmail · Marta, 2 September, quoting your lost-time figures back at you.
 - gmail, calendar · Every Calderbank thread and meeting. Nobody from IT or finance on any of them.
 - people-told · What you told me a buy at this kind of group takes: five steps, and what each looks like when it has happened.
-- drive · The standing security answers and the works council note, both on the shelf.
+- drive · The standing security answers and the consultation note, both on the shelf, neither sent to Calderbank.
 
 ## Still unclear
 
@@ -90,6 +90,13 @@ A buy here takes five steps on their side. One shows a sign. You can help with t
 
 - Whatever she tells you about where they are, I'll write it down against Calderbank so nobody asks her twice.
 - If she names Colin, I'll stop counting budget as a step with nobody attached to it.
+
+## The message
+
+- opens with · The step her side has shown: the case she is building, on her own message of 2 September. The one thing you both already know · steps-with-a-sign
+- points at · The two things on your shelf for the two steps you can help with: the security answers, and the consultation note · steps-you-can-help-with, security-answers, consultation-note
+- asks · One thing: would either help, and what else is in the way. A question about their process, never a list of what they have not done · steps-you-can-help-with, goal-told
+- holds back · Any claim a step has not happened, because no sign is not the same as not done; and Colin Hurst's name, which LinkedIn gives and she has not · steps-with-a-sign, decision-maker-reached
 
 ## The draft
 

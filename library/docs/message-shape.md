@@ -112,7 +112,10 @@ what their account did (`how-far-through-the-term` and `agreed-payments-not-on-r
 September from the broker's customers: the list had nothing written for a note to a customer,
 because no card to one had met it; a note to somebody near the end of the term they agreed opens
 on that term, which is a date of theirs agreed rather than said, and a note about two returned
-debits opens on the debits, which they know better than you do), or, on
+debits opens on the debits, which they know better than you do), or the step their side has
+shown (`steps-with-a-sign`, added 22 September from the firm's world: a note that offers help
+with a buyer's own process opens on the step they have visibly taken, which is theirs and on
+record, and never on the steps they have not, which the read says it cannot see), or, on
 a card a watch turns up, on what came back.
 
 - **Not a new rung.** A message's shape is not a read. Nothing is read off it; it is a projection
@@ -154,6 +157,8 @@ not listed makes no card that writes to anyone.
 | coming-round-again | their own clock: the term they agreed, near its end | what they could have now, and the promise to say if it is not worth it | whether it is worth a look | any figure; anyone they went to before, whom they named and you did not |
 | payments-faltering | what their account did, plainly, as a question | nothing of yours: the daily amount and when it lands, which are theirs | one fact: what is going on | any reading of it as a verdict; the funder's next step |
 | loose-end, at hours | their question, and its answer | the thing that answers it, and what follows | the same thing, in the same text | any figure or day not on record |
+| steps-on-their-side | the step their side has shown, on record | what you hold for the steps you can help with | whether it would help, and what else is in the way | any claim a step has not happened; a name the record gives and they have not |
+| they-owe-you | never their promise: what they published, or the gift | the thing that makes the promise easy to keep | nothing, or the forward | the promise and its age |
 
 *(The table is mine, not yet yours. Each row is a claim that a card will test. The last six
 rows were written at the fast end, 22 September, on the broker's cards.)*

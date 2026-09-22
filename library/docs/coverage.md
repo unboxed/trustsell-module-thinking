@@ -1720,6 +1720,35 @@ to text, what the money is for, how urgent, and whether the money arrived are th
 read says at this end, and only the last is a missing channel; the other four are records the tool
 already holds and does not read as answers.
 
+**Done in the forty-eighth pass, 22 and 23 September.** Job 3 reaches the firm's world: Gordon
+Ellery, Marta Olsen and Yvonne Pryce, with the four people named and never reached beside them.
+The record is `scenarios/cority/docs/cority-pass.md`, which grows a section per group;
+`scenarios/cority/world/records.md` is the fullest of the three worlds' records, because eleven
+channels are connected and a promise made on a call is on a transcript. Four cards are `decided`
+with their message rows, and three reads no other world had run from the records up fired on them:
+`deadline-they-gave` on a date in the buyer's own mail with eight working days left,
+`steps-on-their-side` on a filled process with one sign and two steps the seller can help with, and
+`they-owe-you` on a promise in her mail and on the transcript of the day before. Three reads'
+`assumes:` are decided.
+
+**What the two ends found at the cards.** Two notes had no sanctioned opening. Yvonne Pryce's,
+because `they-owe-you` says never chase on what they owe and the video is yours; what it could open
+on was on the open web all along, Stanmore's own plan for the asset register, so `stated-priorities`
+is supporting and the first line is theirs. Marta Olsen's offer of help with her own process,
+because nothing was owed, nothing published touched it and there was no angle; it opens on the
+step her side has shown, and `steps-with-a-sign` is a sanctioned opening now, with the argument
+that a read which says "no sign of" and never "not done" writes a note that opens on the sign it
+has. Marta's pricing card gained your own promise of 25 August, which the count's rule about
+acknowledgements had predicted; her steps card offered a document the world did not hold and
+listed another organisation's Head of IT as Calderbank's missing one, and both are mended. The
+firm decided to bid on 3 September, on the records, so F19 is a line in the workspace rather than a
+question, and nothing gathers a firm's decision about a deal.
+
+**What the counts said about themselves.** A read that forbids its own count as an opening writes
+no note on its own and has to be paired by hand. Why a champion is invested, F5, is a told
+relationship note that neither champion here has. The budget as a figure, F3, is on no record at
+any of the three, and the seller says she asks IT for it.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1746,7 +1775,7 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on seven of forty-three cards, all in the
+- **The cards' joins upward are still provisional on three of forty-three cards, all in the
   firm's world.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
@@ -1754,21 +1783,22 @@ is anybody's.)*
   up, one re-tested from the customer's end in the forty-second, one from the budget
   holder's in the forty-third, the four about no person in the forty-fourth, which finished
   the shipped world, four at the top of the broker's ladder in the forty-fifth, three at its
-  front in the forty-sixth and the rest of it in the forty-seventh, with one card retired; the
-  method is in
+  front in the forty-sixth and the rest of it in the forty-seventh, with one card retired, and
+  four in the firm's world in the forty-eighth; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
   `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
-  `bramley-pass.md` and `no-person-pass.md`, and for the broker's world in
-  `scenarios/pmf/docs/pmf-pass.md`. The rest
+  `bramley-pass.md` and `no-person-pass.md`, for the broker's world in
+  `scenarios/pmf/docs/pmf-pass.md`, and for the firm's in `scenarios/cority/docs/cority-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Sixteen signals still carry `assumes_status: provisional`;
+  records and names no read. Thirteen signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
   `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
   `delivered-before`, `voice`, `answer-came-back`, `missing-documents`, `uneven-income`,
   `lead-with-this`, `turned-down-before`, `where-this-one-goes`, `coming-round-again`,
-  `payments-faltering` and `existing-commitments` were tested
+  `payments-faltering`, `existing-commitments`, `deadline-they-gave`, `they-owe-you` and
+  `steps-on-their-side` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

@@ -10,7 +10,7 @@ counts: [steps-the-buy-needs, steps-with-a-sign, steps-you-can-help-with, steps-
 answers: [F6, F8]
 needs: []
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested in the firm's world on threads of months; each read a date, a promise or a step off a conversation under way and needed exactly that
 pull: Offerings' told fit-shape, for which kind of buyer's process applies
 ---
 

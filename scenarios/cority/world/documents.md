@@ -16,3 +16,4 @@ they are published rather than handed over, so they live on the open web and not
 | The rail case study | rail-case-study | What a comparable group did and what it saved them, written up with their name on it | 2025, and it shows |
 | The security answers | security-answers | Your standing answers to the questions an IT department always asks, out of the bid repository | kept current |
 | The lost-time note | lost-time-note | One page on what other groups did to halve lost-time injuries, and how long it took them | 2026 |
+| The consultation note | consultation-note | One page on what other groups did about works council consultation, and how long it took. The step your buying process says you can partly help with | January 2026 |

@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-seven passes on `library/docs/coverage.md` are done. The library
+Forty-eight passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,7 +67,7 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 1 is done in `bops` and Job 3 is done in `pmf`; what is left of Job 3 is `cority`, then its ledger, then Job 4 with the user.** Job 4 is parked and
+**If you are reading this cold: Job 1 is done in `bops`, Job 3 is done in `pmf` and half done in `cority`; what is left is the firm's other three cards (Dorothy Nwosu, Ian Faulds, and Owen Clark at Thornley), then that world's ledger, then Job 4 with the user.** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
 (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `scenarios/pmf/docs/pmf-pass.md` the latest
 and the one Job 3 grows), then Job 1's six steps, which Job 3 runs per person in the other two
@@ -145,7 +145,10 @@ silent until a rule is told. **The forty-sixth did the front of that ladder**: t
 with no consent on record went by mail because nothing reads consent. **The forty-seventh
 finished that world**: every card decided, one retired (a favour asked of a customer, whose read
 never fired), two openers for a note after the sale, and a ledger of what the world says
-(`pmf-pass.md`, last section). **The figure rule is built**: `build.js` refuses a card that states
+(`pmf-pass.md`, last section). **The forty-eighth began `cority`**: the bid and the two
+champions, four cards decided, and two notes that had nothing sanctioned to open on until the
+buyer's own published plan and the step their side has shown were let in (`cority-pass.md`).
+**The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -236,7 +239,7 @@ buying-process Ask had two shadows where the records hold six. Job 1 in `bops` i
 Job 3, below.
 
 The cards' joins upward are the last `provisional` thing in the library: 43 of the 44 cards name
-their read, and seven were read off the card rather than decided, all in `cority`. Sixteen of the 42 signals carry `assumes_status: provisional` too.
+their read, and three were read off the card rather than decided, all in `cority`. Thirteen of the 42 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -370,8 +373,11 @@ list, and goes by mail because `sms#consent` is read by nothing. **The forty-sev
 `pmf`**: Dee Whitlock's introduction card is retired (its read never fired: she named nobody, and a
 favour asked with nothing owed opens on nothing), Wes Halloran's and Joyce Amadi's stand with rows,
 two openers were added for a note after the sale, and the pass file ends with the world's ledger.
-**Next:** `cority`, the same six steps per person, then its ledger. One pass file section and one
-commit per group.
+**The forty-eighth began `cority`** (`scenarios/cority/docs/cority-pass.md`): Gordon Ellery,
+Marta Olsen and Yvonne Pryce, four cards decided, `steps-with-a-sign` an opener, `stated-priorities`
+supporting the champion note because `they-owe-you` forbids opening on the promise. **Next:** the
+firm's other three (Dorothy Nwosu at Pelham, Ian Faulds at Vanbrugh, Owen Clark at Thornley) with
+the four colleagues' sections, then that world's ledger. One pass file section and one commit.
 
 Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
 signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
@@ -651,6 +657,11 @@ reach what it claims.
 - **What a customer took from somebody else is on no count** (found in the forty-seventh pass).
   A lender's name in their own words on a thread is read by nothing; the lenders Ask is the only
   place it could go.
+- **A read that forbids its own count as an opening writes no note alone** (found in the
+  forty-eighth pass). `they-owe-you` says never chase on what they owe, so a card on it needs a
+  second read to open the note, and the pairing is made by hand on the card.
+- **Why a champion is invested is a told note nobody has typed** (found in the forty-eighth
+  pass). F5 is answered by a relationship note, and neither champion in the firm's world has one.
 - **The rung at which a sale completes is in prose** (found in the forty-second pass).
   `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
   it now, in a paragraph the build does not read.

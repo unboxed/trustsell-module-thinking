@@ -3,11 +3,11 @@ id: act-gordon-harrowgate
 order: 1
 kind: act
 signal: deadline-they-gave
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [stated-priorities]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/cority-pass.md. His date, in his own mail, with a reason; eight working days left of a five-week window
+supporting: [stated-priorities]   # page 9, published by the group in June: what the questions are built on
+supporting_status: decided
 counts: [dated-facts-in-their-words, time-to-their-date, priorities-they-state, how-fresh-their-words-are]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [gordon-ellery, harrowgate]
 to: gordon-ellery
 arrives: 2026-09-21
@@ -64,7 +64,7 @@ Gordon gave you the date himself: clarifications close on 2 October. Eight worki
 - Why now: eight working days to 2 October, and a month of the five-week window has already gone. This is their date, not mine and not your quarter's.
 - Gordon's words on 25 August: "get anything you want asked in before the 2nd, after that we cannot answer".
 - Their sustainability report, published in June, commits the group to halving lost-time injuries by 2029. That is their own commitment in their own words, on page 9, and it is what a clarification question should be built on rather than on your features.
-- Nothing has been lodged. The requirements went to your bid channel on 11 September and nothing since mentions a question going back.
+- Nothing has been lodged. Your firm decided to bid on 3 September, the requirements went to your bid channel on 11 September, and nothing since mentions a question going back. The notice says formal questions go through the portal, which is why the draft offers to.
 
 ## Timeline
 
@@ -89,6 +89,13 @@ Gordon gave you the date himself: clarifications close on 2 October. Eight worki
 
 - Once your questions are lodged I'll stop counting to the 2nd and start counting to the tender close.
 - If 2 October passes with nothing lodged I'll say so plainly rather than let it go quiet, and the answer from then on is that you are bidding without having asked anything.
+
+## The message
+
+- opens with · His date, in his words: before the 2nd. Their clock, not yours · dated-facts-in-their-words
+- points at · Page 9 of their own report, and the note on what other groups did about the same number · priorities-they-state, lost-time-note
+- asks · Two clarification questions, which is the one thing a clarification window is for, with the formal route offered · dated-facts-in-their-words, goal-told
+- holds back · Your features, any date but theirs, and any hint that a question is a pitch · time-to-their-date, web
 
 ## The draft
 
