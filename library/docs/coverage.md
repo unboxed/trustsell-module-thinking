@@ -59,7 +59,7 @@ holes.
 | V15 Which of the things I offer should this go to? | [`where-this-one-goes`](../signals/where-this-one-goes.md), since 21 September, over the new [`catalogue`](../assemblies/catalogue.md) shelf: `fit-match` run across every entry in play instead of once, saying which would take this buyer, which would turn them away and what each would cost them. `offering:` is a list now, and one entry stays valid. It never ranks on what you earn. | Answered | `[]`: it needs a shelf with more than one thing on it, which is a fact about the seller and not about the sale |
 | V16 What was turned down last time on one like this? | [`turned-down-before`](../signals/turned-down-before.md), since 21 September, over the new [`deal-outcomes`](../assemblies/deal-outcomes.md) pile: the ended deals that match this one on the told fit-shape, how they ended, the reasons given in the words they were given in, and whether the no came from the buyer or from a third party the sale needed. Not a forecast, and it never says why they really refused. | Answered | `[]`: it stands on your own ended deals, so it holds on a stranger |
 | V17 Why should a stranger believe me? | Both halves now. [`pushing`](../signals/pushing.md), second shape, since 20 September, says what the thread cannot honestly carry: asking to be taken on your word, with nothing to show and nothing to give after several unanswered notes. [`delivered-before`](../signals/delivered-before.md), since 21 September, says what it can: deals of this shape you really did sell, and how recently. Sold is not the same as glad, and the read never implies the second. | Answered | `thread-under-way` on the first half, `[]` on the second, which is the point of it |
-| V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. | Answered | `thread-under-way` |
+| V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. Run on the broker's records in the forty-fifth pass: with no rule told the read is silent by its own rule, so the card it produces is an Ask for the rule, on the live case. | Answered once a rule is told; an Ask until then | `thread-under-way` |
 | V19 Am I manufacturing urgency that is not real? | [`pushing`](../signals/pushing.md), first shape, since 20 September: the only real dates on a thread are the buyer's own words and a dated change in your told pricing; any other deadline is manufactured. | Answered | `thread-under-way` |
 | V20 When does someone I sold to come round again? | [`coming-round-again`](../signals/coming-round-again.md), since 21 September, over the new [`since-the-sale`](../assemblies/since-the-sale.md) gather: how far through the agreed term the deal is, what they took before, and their own interval between purchases. Where no term was told there is no clock, and the read is not made. | Answered | `[]`: it needs a completed deal, which is a rung on the ladder, not an assumption about the sale's shape |
 | V21 Who could this buyer introduce me to? | Both halves now. `warm-path` finds a way in through a mutual contact before a sale. [`customer-introduction`](../signals/customer-introduction.md), since 21 September, is the half after one: a name the customer gave you, at an organisation you have never written to, and nothing outstanding either way. Never answered from a document they handed over for something else. | Answered | `[]` |
@@ -1629,6 +1629,43 @@ to start rests on it anyway. And the fit-shape is told and thin at once: the pro
 field gives `fit-shape-completeness` three factors in a sentence, none marked, and the things the
 thirty visibly share are not among them.
 
+**Done in the forty-fifth pass, 22 September.** Job 3 begins: the same six steps on the world the
+library was not derived from, the broker's, starting at the top of its ladder with Tony Prieto,
+Paula Larkin, Alma Vega and Renee Sackville, and Marcus Bell and Hannah Beck beside them. The
+record is `scenarios/pmf/docs/pmf-pass.md`, which grows a section per group. The world has its
+first records, `scenarios/pmf/world/records.md`, with a clock on every row because the tempo is
+hours; four cards are checked against them and three are `decided` with their message rows. The
+fourth, the disclosure to Paula Larkin, rested on a read that is silent by its own rule:
+`required-disclosures` is zero because nobody has told the tool a rule, so nothing is missing and
+`disclosure-still-owed` cannot fire. The card admitted the rules were unwritten and rested on the
+read anyway. It is an Ask now, [`ask-disclosure-rules`](../../scenarios/pmf/cards/ask-disclosure-rules.md),
+asked on the live case with her numbers drafted and waiting, which is the twenty-second pass's
+lesson arriving at the fast end. Alma Vega's card swapped its reads: the carrying read cannot be
+summed before an offer and says a shape, and what fires high is `uneven-income` on twelve months of
+her own statements, which the fiction gave her because three summer months cannot show a winter.
+Tony Prieto's timeline had three of four answers on the wrong day. Three reads' `assumes:` are
+decided.
+
+**The message rows at the fast end.** Three cards carry them and they say something different
+from what they say to a council officer, decided by the counts: at hours the *asks* row asks in the
+same text that gives (June and July came, send August; the offers are in, Marcus today), where at
+a patient tempo it says "no need to reply". Renee Sackville's note had no sanctioned opening,
+nothing owed, nothing published, no angle, and opens on the two statements that came, so what they
+sent, by name, is an eighth kind of opening (`documents-received`, in `build.js` and
+[`message-shape.md`](message-shape.md)), and the table there has three rows from this end.
+
+**What the counts said about themselves.** `since-an-answer-landed` speaks in days and the newest
+answer was forty minutes old. A season cannot be read off the three statements the trade asks for:
+`money-in-swing-vs-own-periods` wants about six periods, so `uneven-income` at this end depends on
+the merchant sending more than was asked or on a bank connection nobody offers. `where-this-one-goes`
+fired on Vega Landscaping after Marcus had already submitted to a funder it misses, and nothing
+says a read should arrive before the step it would have changed. And the question `NEXT.md` set,
+whether a read that cannot apply here leaves its question answered by anything else: V7, who
+decides, is answered at the patient end by `missing-people`, which assumes several people; here the
+owner signs the application and nothing reads that signature as the answer. V10, how urgent in their
+words, is on every form ("this month if possible", "not desperate") and no read takes it. Both are
+holes the volume set already named and this pass met on the records.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1655,24 +1692,25 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on twenty of forty-five cards, all in the two
-  worlds the library did not come from.** Three
+- **The cards' joins upward are still provisional on fourteen of forty-four cards, seven in the
+  broker's world and seven in the firm's.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
   up, one re-tested from the customer's end in the forty-second, one from the budget
-  holder's in the forty-third, and the four about no person in the forty-fourth, which finished
-  the shipped world; the method is in
+  holder's in the forty-third, the four about no person in the forty-fourth, which finished
+  the shipped world, and four at the top of the broker's ladder in the forty-fifth; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
   `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
-  `bramley-pass.md` and `no-person-pass.md`. The rest
+  `bramley-pass.md` and `no-person-pass.md`, and for the broker's world in
+  `scenarios/pmf/docs/pmf-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Twenty-five signals still carry `assumes_status: provisional`;
+  records and names no read. Twenty-two signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
   `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
-  `delivered-before` and `voice` were tested
+  `delivered-before`, `voice`, `answer-came-back`, `missing-documents` and `uneven-income` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

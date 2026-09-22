@@ -2,12 +2,12 @@
 id: act-alma-winter
 order: 5
 kind: act
-signal: can-they-carry-it
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [uneven-income]
-supporting_status: provisional
-counts: [cost-to-them-over-the-term, what-they-can-bear, money-in-swing-vs-own-periods, periods-covered]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: uneven-income
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. Was can-they-carry-it, which cannot be summed until an offer is back and only says a shape. What fires is uneven-income, high: twelve months of her own statements without a gap, the winter at a quarter to a third of her usual, and her own words on the form saying so
+supporting: [can-they-carry-it]   # the reason the swing matters: a fixed daily debit against a seasonal in-flow. On the shelf's band it is a shape, not a number, and the card says so
+supporting_status: decided
+counts: [money-in-by-period, money-in-swing-vs-own-periods, periods-covered, cost-to-them-over-the-term, what-they-can-bear]
+counts_status: decided
 about: [alma-vega, vega-landscaping]
 to: alma-vega
 arrives: 2026-09-21
@@ -61,14 +61,14 @@ Her takings fall away from November and she told you so herself. A daily debit d
 ## What happened
 
 - Why now: the file went to the funders this morning. The moment to ask this is before an offer comes back, not after she has accepted one.
-- Her statements cover enough periods to show the swing, and the swing is large: the lean months are a long way below her own usual.
+- She sent a year of statements rather than three months, so the swing is on her own figures: twelve months without a gap, and November to February at a quarter to a third of her usual month.
 - She said it out loud on the way in, so this is not something I have read into her figures.
 - What leaves the account on an advance is the same amount every working day, in the good months and the lean ones.
 
 ## Timeline
 
 - On the way in · She says takings drop from November to February
-- Her statements · The same swing, on her own figures
+- Her statements · Twelve months, the same swing, on her own figures
 - This morning · The file goes out to the funders
 
 ## Sources
@@ -87,6 +87,13 @@ Her takings fall away from November and she told you so herself. A daily debit d
 ## What happens next
 
 - Once she answers I'll keep it as her own words. When an offer comes back I'll weigh its daily amount against what she told me, and say plainly if the two do not sit together.
+
+## The message
+
+- opens with · Her own words on the form, "quiet from November to February": a date of theirs, in their words · dated-facts-in-their-words
+- points at · Her own twelve months, and what a daily debit is: the same amount every working day. Nothing she has not shown · money-in-swing-vs-own-periods, periods-covered
+- asks · One thing, a fact: what she does to get through those months · what-they-can-bear, goal-told
+- holds back · Any daily amount, because no offer is back and the shelf's band is a range; and any verdict on whether she can carry it, which is the funder's and hers · cost-to-them-over-the-term
 
 ## The draft
 

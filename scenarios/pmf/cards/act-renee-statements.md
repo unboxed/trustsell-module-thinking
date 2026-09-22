@@ -3,9 +3,9 @@ id: act-renee-statements
 order: 3
 kind: act
 signal: missing-documents
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. One request with its months named, two documents in, one out, and nobody has told her
 counts: [documents-still-out, documents-received, answered-for-the-wrong-period]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [renee-sackville, bluebird-childcare]
 to: renee-sackville
 arrives: 2026-09-21
@@ -62,7 +62,7 @@ Two of the three statements are in. Ask for the one that is missing rather than 
 - Why now: she signed on Thursday and the file has been one document short since. Marcus will not put a short file to a funder, so nothing moves until August lands.
 - You asked for three statements covering the last three months. Two came the same day, June and July.
 - The one still out is August. I can say which because your request said which months it had to cover, not just how many documents.
-- Nothing has come since Thursday and nothing has been asked of her since.
+- Nothing has come since Thursday and nothing has been asked of her since. Marcus marked the file short on Thursday evening, and nobody has told her.
 
 ## Timeline
 
@@ -84,6 +84,13 @@ Two of the three statements are in. Ask for the one that is missing rather than 
 ## What happens next
 
 - I'll watch for a document covering August. When it lands the file is complete and I'll say so. If nothing comes by Wednesday I'll raise it once more, and then leave it rather than ask a third time.
+
+## The message
+
+- opens with · What came, by name: June and July, both through. The one thing you both already know · documents-received
+- points at · The one still out, August, and what it unlocks: a complete file that can go out the same day · documents-still-out
+- asks · One thing: August. The thanks and the ask share one text, which is the tempo · documents-still-out, goal-told
+- holds back · Asking for all three again, and any hint the delay is hers: the file went short on Thursday evening and nobody told her · documents-received, chases-since-their-last-reply
 
 ## The draft
 

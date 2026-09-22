@@ -10,7 +10,7 @@ counts: [answers-back, since-an-answer-landed, still-out-with-someone, told-them
 answers: []
 needs: [crm]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at a tempo of hours, on a text conversation of days and the buyer's own documents; each stood on exactly what it claims and no more
 pull: None. Both floors are People's own
 ---
 

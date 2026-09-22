@@ -10,7 +10,7 @@ counts: [money-in-by-period, money-in-swing-vs-own-periods, periods-covered]
 answers: [V11]
 needs: [handover]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at a tempo of hours, on a text conversation of days and the buyer's own documents; each stood on exactly what it claims and no more
 ---
 
 # Uneven income

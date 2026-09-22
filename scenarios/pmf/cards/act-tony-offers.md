@@ -3,10 +3,11 @@ id: act-tony-offers
 order: 1
 kind: act
 signal: answer-came-back
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [loose-end]
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. Four answers on the deal record, three of them on Friday and one at 08:20 today, and nothing from you to him since Friday 10:45
+supporting: [loose-end]   # your promise of Friday 10:45, one working day open on a conversation that turned in minutes
+supporting_status: decided
 counts: [answers-back, since-an-answer-landed, still-out-with-someone, told-them-since, promise-made-undelivered]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [tony-prieto, corner-tire]
 to: tony-prieto
 arrives: 2026-09-21
@@ -60,7 +61,7 @@ Four answers came back on Corner Tire since Friday and he has heard none of them
 ## What happened
 
 - Why now: the news already exists. He is not waiting on a funder, he is waiting on you, and that is the worst kind of wait to leave running.
-- Avondale came back with two offers, Bayard with one. Northline declined on the industry.
+- Northline declined on Friday afternoon, on the industry. Avondale came back with two offers on Friday evening, after you had stopped. Bayard's one offer landed at 08:20 this morning.
 - Nothing is still out. All three funders you went to on Friday have answered.
 - You also told him on Friday you would come back with what the funders said, and nothing has gone since.
 - The terms are Marcus's to present. What you owe Tony today is that they are in, and when he will see them.
@@ -70,8 +71,9 @@ Four answers came back on Corner Tire since Friday and he has heard none of them
 - Friday 18 September · Out to three funders for $22,000
 - Friday 18 September · You tell Tony you will come back with the offers
 - Friday 18 September · Northline declines, the industry is not theirs
-- Monday 21 September · Avondale answers with two offers, Bayard with one
-- Since Friday · Nothing from you to Tony
+- Friday 18 September, evening · Avondale answers with two offers
+- Monday 21 September, 08:20 · Bayard answers with one
+- Since Friday 10:45 · Nothing from you to Tony
 
 ## Sources
 
@@ -88,6 +90,13 @@ Four answers came back on Corner Tire since Friday and he has heard none of them
 ## What happens next
 
 - Once it has gone I'll mark the answers passed on and the promise kept, and stop raising both. If Tony replies picking one before Marcus has been through them with him, I'll tell you rather than let it run on.
+
+## The message
+
+- opens with · The news itself, and the promise it keeps: you said on Friday you would come back with the offers, and this is that · promise-made-undelivered, answers-back
+- points at · What came back and from whom: three offers and one pass, nothing still out · answers-back, still-out-with-someone
+- asks · Nothing of him. It gives him a time instead: Marcus today. At this tempo the gift and the next step share one text · since-an-answer-landed, goal-told
+- holds back · The terms, which are Marcus's to walk him through, and any steer towards one of the three · answers-back
 
 ## The draft
 

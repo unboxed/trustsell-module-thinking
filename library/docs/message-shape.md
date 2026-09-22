@@ -104,7 +104,10 @@ handed you (`auto-reply-no-longer-with`, added 22 September from Moreton: a note
 opens on the automatic reply that named them, the one thing the two of you already share), the
 contact a colleague has on record, in their own words (`colleague-touches-on-record`, added 22
 September from a cold council: a note asking a colleague for an introduction opens on what they
-said about the target, which is the one thing the two of you already share), or, on
+said about the target, which is the one thing the two of you already share), what they sent, by
+name (`documents-received`, added 22 September from the fast end: a text asking for the one
+document still out opens on the two that came, which is the one thing you both already know, and
+a chase that opens anywhere else reads as a form letter), or, on
 a card a watch turns up, on what came back.
 
 - **Not a new rung.** A message's shape is not a read. Nothing is read off it; it is a projection
@@ -140,8 +143,12 @@ not listed makes no card that writes to anyone.
 | understanding-gap | the thing they have misread, said plainly | the claim, from your own catalogue | nothing | the correction dressed as their fault |
 | price-barrier | the reframe: value, or a partial step | the partial rollout and its sheet | one question about scope | a discount not in the told authority |
 | lead-with-this | the use-case that touches what they said | the evidence for it | one question | what usually works, when they have said otherwise |
+| answer-came-back | the news itself, and the promise it keeps | what came back and from whom, and what is still out | nothing: a time | the terms, where a colleague presents them |
+| missing-documents | what came, by name | the one still out, and what it unlocks | that one document | asking again for what came; any hint the delay is theirs |
+| uneven-income, with can-they-carry-it | their own dates or figures, in their words | their own figures, and what a fixed repayment is | one fact: what they do about it | any repayment amount not on an offer; any verdict on whether they can carry it |
 
-*(The table is mine, not yet yours. Each row is a claim that a card will test.)*
+*(The table is mine, not yet yours. Each row is a claim that a card will test. The last three
+rows were written at the fast end, 22 September, on the broker's cards.)*
 
 ## Tested on seven cards
 
@@ -160,5 +167,12 @@ provisional have no rows and the build names them without refusing them.
 - It does not derive a message from the rows. The rows are the trail of a draft, checked; the
   draft is still written by hand in the cards, and by the tool in the product. Whether the rows
   could become the input rather than the check is the next question, and it is not asked here.
-- It has not met the fast end. On a three-day deal the gift and the ask share one text, and the
-  rows have to say so or they are not deciding anything. That is Job 3.
+- ~~It has not met the fast end.~~ It met it on 22 September, on three of the broker's cards
+  (`scenarios/pmf/docs/pmf-pass.md`). What the rows say there is different from what they say to
+  a council officer, and the difference is decided by the counts and not by taste: the *asks* row
+  rests on the goal's tempo and on what is owed, and at hours it asks in the same text that
+  gives (the two statements that came, then the one still out; the news that the offers are in,
+  then a time), where at a patient tempo the same rows say "nothing, no need to reply". One card
+  had no sanctioned opening and got one: what they sent, by name. One card that should have
+  carried rows carried none, because its read was silent by its own rule and the card became an
+  Ask.

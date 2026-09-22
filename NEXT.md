@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-four passes on `library/docs/coverage.md` are done. The library
+Forty-five passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,10 +67,11 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 1 is done in `bops`; start at Job 3 with `pmf`.** Job 4 is parked and
+**If you are reading this cold: Job 1 is done in `bops` and Job 3 has begun in `pmf`; carry on there with the front of its ladder (Errol Danning, Curtis Naylor, Marisol Delgado), then after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval) and the lenders Ask, then `cority`.** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
-(`scenarios/bops/docs/westmoor-pass.md` is the fullest, `no-person-pass.md` the latest), then
-Job 1's six steps, which Job 3 runs per person in the other two worlds, and begin. Jobs 0 and 2 are done; Job 3 comes after Job 1; Job 4 was
+(`scenarios/bops/docs/westmoor-pass.md` is the fullest, `scenarios/pmf/docs/pmf-pass.md` the latest
+and the one Job 3 grows), then Job 1's six steps, which Job 3 runs per person in the other two
+worlds, and begin. Jobs 0 and 2 are done; Job 3 comes after Job 1; Job 4 was
 taken to a sheet on 22 September (https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM) and is left
 for last, to iterate on with the user.
 
@@ -135,7 +136,11 @@ people Karen brought in; the Ask about who signs is the first card re-tested fro
 with no change to its reads. **The forty-fourth did the four Asks about no person**
 (`no-person-pass.md`): the seller has a records section of their own, one Ask that asked for a
 verdict now asks for the fact it lacked, and with them **every card in `bops` is decided and every
-card is figure-checked**. Job 1 is done on the world the library came from. **The figure rule is built**: `build.js` refuses a card that states
+card is figure-checked**. Job 1 is done on the world the library came from. **The forty-fifth
+began Job 3 in `pmf`** (`scenarios/pmf/docs/pmf-pass.md`): the four people at the top of the
+broker's ladder have records with a clock on every row, three cards are decided with message rows
+that ask in the same text that gives, and the disclosure Act became an Ask because its read is
+silent until a rule is told. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -225,8 +230,9 @@ for a verdict and asks for the fact now, who you know, with `warm-path` as its r
 buying-process Ask had two shadows where the records hold six. Job 1 in `bops` is done. Next is
 Job 3, below.
 
-The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and twenty were read off the card rather than decided, all of them in `pmf` and `cority`. Twenty-five of the 42 signals carry `assumes_status: provisional` too.
+The cards' joins upward are the last `provisional` thing in the library: 43 of the 44 cards name
+their read, and fourteen were read off the card rather than decided, seven in `pmf` and seven in
+`cority`. Twenty-two of the 42 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -345,6 +351,17 @@ has to open with. What the seller told the tool decides how it sounds. A message
 be traced to those is a message the tool made up.
 
 ### Job 3: the same, on the two worlds the library did not come from
+
+**Begun on 22 September, forty-fifth pass.** `scenarios/pmf/world/records.md` holds Tony Prieto,
+Paula Larkin, Alma Vega, Renee Sackville, Marcus Bell and Hannah Beck; `scenarios/pmf/docs/pmf-pass.md`
+is the record and grows a section per group. Done there: three cards decided with message rows,
+the disclosure Act turned into `ask-disclosure-rules` (its read is silent with no rule told), Alma
+Vega's reads swapped, `documents-received` an eighth opener. Found: V7 has no answer at this end
+because the owner's signature is read by nothing; V10's form words are read by nothing; a season
+cannot be read off three statements. **Next:** the front of the ladder (Errol Danning, Curtis
+Naylor, Marisol Delgado), then after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy
+Sandoval), then `ask-known-lenders`, then the suggestions for this world, then `cority`. One pass
+file section and one commit per group.
 
 Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
 signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
@@ -599,6 +616,17 @@ reach what it claims.
   `draft-to-sent-edit-distance` wants about thirty sent messages and a new seller's first month
   has fifteen; the honest card under the floor is an Ask, and nothing in the library says a read
   below its floor should ask rather than stay silent.
+- **At the fast end, who decides is answered by nothing** (found in the forty-fifth pass).
+  `missing-people` assumes several people and cannot be made on a one-owner business; the owner's
+  signature on the application answers V7 and no read reads it as an answer. The form's own words
+  about urgency answer V10 the same way, and no read takes them.
+- **A season cannot be read off three statements** (found in the forty-fifth pass). The trade
+  asks for three months and `money-in-swing-vs-own-periods` wants about six periods, so
+  `uneven-income` at this end depends on a merchant sending more than was asked, or on a bank
+  connection nobody offers.
+- **Nothing says a read should arrive before the step it would have changed** (found in the
+  forty-fifth pass). `where-this-one-goes` fired on a landscaping firm after the processor had
+  submitted to a funder it misses on industry.
 - **The rung at which a sale completes is in prose** (found in the forty-second pass).
   `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
   it now, in a paragraph the build does not read.

@@ -10,7 +10,7 @@ counts: [documents-still-out, documents-received, answered-for-the-wrong-period]
 answers: [V14]
 needs: [handover]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at a tempo of hours, on a text conversation of days and the buyer's own documents; each stood on exactly what it claims and no more
 ---
 
 # What they still have not sent
