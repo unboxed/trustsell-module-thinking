@@ -67,12 +67,12 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 4 is on a sheet waiting for the user's verdict; start at Job 1
-with Moreton or Tarlton unless the user has answered.** Read `CLAUDE.md`, then one pass file
+**If you are reading this cold: start at Job 1 with Moreton or Tarlton.** Job 4 is parked and
+comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
 (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `north-ridley-pass.md` the latest), then
-Job 1's six steps, and begin. Jobs 0 and 2 are done; Job 4's four steps were done on 22 September
-up to the sheet (https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM) and the phone changes only
-once the user has looked; Job 3 comes after Job 1, or when the user says so.
+Job 1's six steps, and begin. Jobs 0 and 2 are done; Job 3 comes after Job 1; Job 4 was
+taken to a sheet on 22 September (https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM) and is left
+for last, to iterate on with the user.
 
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
@@ -336,7 +336,7 @@ real.
 
 Record it as a pass per world in `coverage.md`, in the existing style.
 
-### Job 4: one card, two sellers (the user, 22 September; on the sheet since the thirty-eighth pass, awaiting the user)
+### Job 4: one card, two sellers (the user, 22 September; on a sheet since the thirty-eighth pass, parked, and last in the order)
 
 **Done to the sheet, 22 September, thirty-eighth pass.** Steps 1 to 4 below were done in order:
 the card model in `playbook/world.md` ("One card, two sellers") says what coaching, fluency and
