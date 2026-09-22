@@ -37,7 +37,7 @@ Tempo: patient. Never push. A clumsy chase costs a relationship built over years
   "told" is also the library's word for what you tell the tool, the opposite direction. Update
   was tried the same day and dropped: it reads as an instruction to update something, or as a
   software update. FYI and Heads-up were passed over. The user's call): the *What happens next* of an earlier card coming back ("Julie's
-  email bounced this morning"). The button is Got It.
+  auto-reply says she has left"). The button is Got It.
 
 **News rests on a record, not a read** (21 September). Every other kind of card names a `signal`,
 the read it stands on, and the build refuses a card whose read does not reach what it claims. News
@@ -778,7 +778,7 @@ Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 - **Shabana Akhtar**, Digital Lead, Felton. For it. Has mentioned her director twice.
 - **David Marshall**, Director of Communities, Felton. On no thread yet.
 - **Michelle Turner**, Programme Manager, North Ridley. Running Thursday's demo.
-- **Julie Barker**, formerly Service Improvement Lead, Moreton. Left; her email bounced this morning.
+- **Julie Barker**, formerly Service Improvement Lead, Moreton. Left; her automatic reply says so.
 - **Sanjay Mistry**, Digital Programme Manager, Moreton. Named in Julie's auto-reply. Never spoken.
 - **Darren Cole**, procurement contact, Tarlton. Named in the tender. Never spoken.
 - **Nicola Shaw**, Head of Digital, Ashworth. Your colleague Simon knows her.

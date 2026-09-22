@@ -1454,6 +1454,34 @@ spreading, redone across sittings; nothing in the frontmatter says which, and a 
 in hours is before the demo: an Ask about a meeting should arrive when the meeting ends, by the
 calendar, and no rule says so yet.
 
+**Done in the thirty-ninth pass, 22 September.** The tenth and eleventh people worked from both
+ends, Julie Barker and Sanjay Mistry at Moreton, the first run of `champion-went-dark` from the
+records up and the first card written to somebody with no record at all. The record is
+`scenarios/bops/docs/moreton-pass.md`. Seventeen of forty-five cards are `decided`.
+
+**What the two ends found at the card.** The card leaned on a bounce and an automatic reply from
+one address, which cannot both happen: a bounce is the server refusing, an automatic reply is the
+mailbox answering, and the two counts under the read keep them apart on purpose. Settled as the
+automatic reply, so `bounce-back-detected` came off, and the cast, the design log and the story
+say auto-reply. `missing-people` was reached through no read the card named: "your only door
+there just changed hands" is `rests-on-one-person` at nine of nine. The message had no
+sanctioned opening: `message-shape.md` says a note after this read opens on the name the
+auto-reply gave, and the build's list did not hold the count that keeps it, so
+[`auto-reply-no-longer-with`](../counts/auto-reply-no-longer-with.md) is now a sixth kind of
+opening, the name a departure notice handed you. The read's `assumes:` is decided: it fired
+because `was-once-active` held on nine messages and a call.
+
+**What the counts said about themselves.** A buyer's promise does not die with the buyer:
+[`their-promise-undelivered`](../counts/their-promise-undelivered.md) keeps "I'll come back
+once it has met" open past the notice that says she has left. The name a departure notice hands
+on reaches no placing count: `prior-history-scan` and `head-of-signature-scan` sit under
+`new-stakeholder`, which needs the name on a thread or an event, and a name inside the text of
+an automatic reply is on neither, so the card reaches them through gmail and the web directly.
+The origin gather does not read that door either, so `warm-path` has nothing to weigh and F17
+is answered by hand. And a month in their words, "pushed to September", is kept by
+`dated-facts-in-their-words` and counted down to by nothing, though it was the reason for the
+note that came back.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1515,6 +1543,17 @@ is anybody's.)*
 - **One move per person, and a day you can take in.** The first pass found it and the last paragraph
   of this section carries it, unsolved since 20 September. The twenty-seventh pass's manager with
   fifty reps is a third shape of the same question.
+- **A buyer's promise does not die with the buyer.** `their-promise-undelivered` keeps a
+  promise open past the automatic reply that says its maker has left, because nothing tells it
+  a person's word goes with them. Harmless on a two-turn thread; on a longer one it would chase
+  a successor for a predecessor's promise. Found in the thirty-ninth pass.
+- **The name a departure notice hands on reaches no placing count.** The two counts that place a
+  new person sit under `new-stakeholder`, which needs the name on a thread or an event; a name
+  in the text of an automatic reply is on neither, and the origin gather does not read it, so
+  `warm-path` has no bridge and F17 is answered by hand. Found in the thirty-ninth pass.
+- **A month in their words is a date nothing counts down to.** "Pushed to September" is kept by
+  `dated-facts-in-their-words` and `time-to-their-date` has no day to reach; it was the reason
+  for the note that came back from Julie Barker's mailbox. Found in the thirty-ninth pass.
 
 **Deliberately not yet.** *(Written in the eleventh pass. All three were done on 21 September:
 the counts in the twenty-eighth pass, the third scenario in the twenty-seventh. Kept as written,

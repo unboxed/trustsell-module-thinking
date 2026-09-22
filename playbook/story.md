@@ -147,7 +147,7 @@ room."
 **News.** Something happened that you should know, and there is nothing to do.
 
 *In the example:* LinkedIn is not connected, and several suggestions would be better if it were
-(Connect). "Julie's email bounced this morning" (News).
+(Connect). "Julie's auto-reply says she has left" (News).
 
 Those are the only four, and the kind is the only label a card wears. A small vocabulary is one you
 learn once and then stop noticing. *(My reason, not yet yours.)* There used to be three labels

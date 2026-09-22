@@ -10,7 +10,7 @@ counts: [bounce-back-detected, auto-reply-no-longer-with, was-once-active]
 answers: [Q6, Q18]
 needs: [calendar, meet]
 assumes: [own-rhythm]
-assumes_status: provisional
+assumes_status: decided   # 22 September: the read fired only because was-once-active held on nine messages and a call; without that history the notice would have been news about a stranger
 ---
 
 # Champion went dark

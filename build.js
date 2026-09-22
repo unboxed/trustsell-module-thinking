@@ -764,8 +764,10 @@ const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {
 // or published by them: the counts under stated-priorities), their own date, the angle (the
 // counts under lead-with-this), or a worry in their own words (the two counts that keep the
 // passages: added 22 September, when Felton's price card had no sanctioned opening for a message
-// that answers a worry the buyer raised four times; docs/message-shape.md).
-const openers = new Set(['promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
+// that answers a worry the buyer raised four times; docs/message-shape.md), or the name a departure
+// notice handed you (added the same day, from Moreton: the note to a successor opens on the
+// automatic reply that named them, which is the one thing the two of you already share).
+const openers = new Set(['auto-reply-no-longer-with', 'promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
   'fresh-reason-to-write', 'dated-facts-in-their-words', 'repeated-objection-count', 'objection-raised-on-call',
   ...['lead-with-this', 'stated-priorities'].flatMap(id => [].concat((L.signals.find(s => s.id === id) || {}).counts || []))]);
 const toldSources = new Set(L.told.map(t => t.id));

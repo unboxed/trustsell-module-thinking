@@ -99,7 +99,10 @@ part, the words, and what it rests on. `build.js` checks each row's ground the w
 Sources row: a count the card quotes, a count of the envelope (the counts under `pushing`, which
 hold for every draft whether or not the card names that read), a document the card sends, a told
 source, or a channel the card's trail reaches. The opening row must rest on what is owed, a
-fresh reason, their date or the angle, or, on a card a watch turns up, on what came back.
+fresh reason, their date or the angle, a worry in their own words, the name a departure notice
+handed you (`auto-reply-no-longer-with`, added 22 September from Moreton: a note to a successor
+opens on the automatic reply that named them, the one thing the two of you already share), or, on
+a card a watch turns up, on what came back.
 
 - **Not a new rung.** A message's shape is not a read. Nothing is read off it; it is a projection
   of reads that have already fired, the way the day's order is a projection of the cards. A rung

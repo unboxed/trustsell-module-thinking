@@ -8,7 +8,8 @@ about: what the connected channels would actually hold, person by person
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
-Walsh, Shabana Akhtar, David Marshall and Michelle Turner are written; every other section says so.
+Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker and Sanjay Mistry are written; every other
+section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -1130,9 +1131,173 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | Worries and answers, on the offering | none, so "we are not in a position to replace it" matches nothing and has no typed answer |
 | Use-cases, on the offering | none, so nothing says what to lead with for a council with a case system it will keep |
 
+## Julie Barker
+
+Formerly Service Improvement Lead, Moreton Borough Council. `julie.barker@moreton.gov.uk`.
+Everything between you and her is by mail and in one call. She is not in your Slack, you have
+never texted, and LinkedIn is not connected. Since the morning of Thursday 17 September her
+address answers with an automatic reply saying she has left.
+
+### Gmail: the threads
+
+Four threads, April to today. Julie opened two. Nine messages between you and her, 13 April to 30
+June: five from her, four from you. Then your note of 17 September and the automatic reply to it,
+eleven in all. Nobody else at Moreton has ever been copied in.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS: a conversation? | Mon 13 Apr | you | — | 2 |
+| A call on the 28th? | Thu 16 Apr | Julie | — | 2 |
+| What would it cost us? | Tue 12 May | Julie | — | 3 |
+| Where things stand | Mon 22 Jun | you | — | 4 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and her reply, on the rows that are replies from her.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Mon 13 Apr | BOPS: a conversation? | you | 120 | | Introduces BOPS and asks whether the case system is a pain for officers |
+| Wed 15 Apr | BOPS: a conversation? | Julie | 70 | 2 | "Yes. This is exactly what we have been circling for a year." Asks for a call |
+| Thu 16 Apr | A call on the 28th? | Julie | 50 | | Proposes Tuesday 28 April at 11:00 |
+| Thu 16 Apr | A call on the 28th? | you | 30 | | "Perfect. Invite on its way." |
+| Tue 12 May | What would it cost us? | Julie | 80 | | "Before I take this any further, roughly what would it cost a borough our size? And is there any way to start smaller than the whole thing?" |
+| Wed 13 May | What would it cost us? | you | 150 | | Gives the first band, £45,000 a year, and says starting with one service is possible |
+| Thu 14 May | What would it cost us? | Julie | 45 | 1 | "Thanks, that's helpful. I'll need to take this to our programme board. Back to you in a few weeks." |
+| Mon 22 Jun | Where things stand | you | 70 | | Asks whether the board has met and offers a short catch-up |
+| Tue 30 Jun | Where things stand | Julie | 55 | 6 | "Sorry, slow here. The programme board has been pushed to September. Nothing has changed on our side; I'll come back once it has met." |
+| Thu 17 Sep, 08:10 | Where things stand | you | 60 | | "September's here. Has the board met, and is there anything I can send ahead of it?" |
+| Thu 17 Sep, 08:12 | Where things stand | Julie's mailbox | 35 | | Automatic reply: "I have left Moreton Borough Council. For BOPS matters please contact Sanjay Mistry, sanjay.mistry@moreton.gov.uk. This mailbox is not monitored." |
+
+Nothing from Julie herself since 30 June. Your note of 17 September was delivered; it did not
+bounce. The automatic reply is the only record of her leaving, and the only record of Sanjay
+Mistry's name in your mail.
+
+Attachments: none, ever. The price on 13 May was in the body of the message. Nothing has been
+sent to Moreton as a file.
+
+### Calendar
+
+| Event | When | Organiser | Attendees | Notes |
+|---|---|---|---|---|
+| BOPS and Moreton: a call | Tue 28 Apr, 11:00 to 11:30 | you | Julie Barker, accepted | Meet link. Held on Meet, not recorded. The slot was hers |
+
+One call, at her suggestion, on your invite. No recurring series. Nothing in the calendar with
+Moreton after 28 April, and nothing scheduled. Her status events and free/busy were never visible
+to you, because she was outside your organisation. Monday 31 August was a bank holiday.
+
+### Meet
+
+| Meeting | Participants | Recording | Transcript |
+|---|---|---|---|
+| A call, 28 Apr | you, Julie Barker | none | none |
+
+Not recorded, so Meet holds who was there and nothing of what was said.
+
+### Drive
+
+Nothing shared with anyone at Moreton, ever. Julie asked on 12 May whether there was a way to
+start smaller; you answered in prose the next day. The partial rollout price sheet in Stephen
+Walsh's section did not exist until 6 July and has never been sent here.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Julie Barker | Service Improvement Lead | Moreton Borough Council |
+
+Nobody else at Moreton is on record. Sanjay Mistry is not in Contacts, because he has never
+written to you.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| The digital programme team | moreton.gov.uk, checked Thu 17 Sep | undated | Lists Sanjay Mistry as Digital Programme Manager. Julie Barker is not on the page |
+| — | moreton.gov.uk | — | Nothing published since April that mentions the case system, a procurement, a programme board date or anyone leaving |
+
+### Slack
+
+Nobody from Moreton is in your workspace. Nothing in Slack mentions Moreton.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/moreton-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 9 messages, 4 threads, 1 call | the exchange with her, 13 April to 30 June, 11 weeks; 5 messages hers, 4 yours; both of you wrote more than once, so it was real | was-once-active |
+| 11 weeks | since she last wrote, 30 June, to 17 September: as long as the whole exchange ran | was-once-active |
+| 1 | automatic reply saying she has left, 17 September, 08:12, and the name it hands on: Sanjay Mistry | auto-reply-no-longer-with |
+| 0 | messages to her that came back undelivered. The note of 17 September was delivered and answered by the mailbox, not refused by the server | bounce-back-detected |
+| 2 of 4 | threads she opened; under six, so no pattern | who-starts-threads |
+| 3 replies, in 2, 1 and 6 working days | fewer than five, so no usual and nothing to compare the last against | reply-speed-vs-own-rhythm |
+| 45 to 80 words | her five messages; fewer than five replies, so no usual | reply-length-vs-own-rhythm |
+| 6 working days | her last reply took, 22 to 30 June, against 2 and 1 before it; three replies is not a usual, so this is an age and not a comparison | reply-gap-vs-own-rhythm |
+| 1 | explanation on record for the silence since June: the automatic reply | innocent-explanation-scan |
+| 0 | standing meetings with her, so none dropped; 0 meetings ahead with anyone at Moreton | dropped-recurring-meeting |
+| 9 of 9 | messages from Moreton that were hers. Nobody else at Moreton has been on a thread, an invite or a call | rests-on-one-person |
+| 1 and 0 | people at Moreton you have exchanged anything with, and people at Moreton you can still reach that way | people-reached-count |
+| nobody | reached who can decide. The only sign of where a decision goes is her programme board, in her words on 14 May and 30 June | decision-maker-reached |
+| absent | the roles a decision needs, held against who you have reached: the profile's Customer field names a head of service with the budget, a digital or IT lead, and senior officers, and none of them is Julie's role or Sanjay's | people-covered-vs-needed |
+| 1 | price question, 12 May, "roughly what would it cost a borough our size?", answered 13 May with the first band, £45,000 a year | pricing-question-asked |
+| 1 | question about starting smaller, 12 May, in the same message, answered in prose the next day | pricing-question-asked |
+| 0, 0 | timing or start questions; proposals or trials asked for | timeline-or-start-question |
+| 2 | passages about the programme board, 14 May and 30 June: carrying it there, not deciding | decision-language-used |
+| 1 | thing she said she would do: "I'll come back once it has met", 30 June. Nothing since, and she has left; the count keeps it open, because nothing tells it a promise dies with the person who made it | their-promise-undelivered |
+| 0 | questions of hers you have not answered; 0 promises of yours open | their-question-unanswered |
+| 1 | chase since she last wrote: 17 September, answered by the mailbox and not by her | chases-since-their-last-reply |
+| 1 | date in her words: "September", the programme board, 30 June. A month, not a day, so nothing to count down to | dated-facts-in-their-words |
+| 0 | published about Moreton since she last wrote. The team page names Sanjay and says nothing of her leaving | fresh-reason-to-write |
+| 0 | colleagues she brought in | colleagues-looped-in-count |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Julie Barker, "Moreton, service improvement, keen", typed at setup |
+| Target list | Moreton is one of the thirty, standing at engaged |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+| Who a decision needs, on the offering | the profile's Customer field (`offering.md`): a head of service with the budget, a digital or IT lead, senior officers. Neither a service improvement lead nor a digital programme manager is named on it |
+
+Nothing about Sanjay Mistry. Nothing about how much Julie told him, which is what the card
+leaves unclear.
+
+## Sanjay Mistry
+
+Digital Programme Manager, Moreton Borough Council, by the council's own digital programme page.
+`sanjay.mistry@moreton.gov.uk`, from Julie Barker's automatic reply of 17 September and from
+nowhere else. Nothing between you and him: no message either way, no event, no call, not in your
+Slack, not in Contacts. The two records that hold him are in Julie's section above: the automatic
+reply, and the web page checked the same morning.
+
+### What the counts give
+
+Figures the counts compute from Julie's rows, run by hand on 22 September
+(`../docs/moreton-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 0 | messages, events or calls with him, ever, and nothing earlier anywhere under his name | prior-history-scan |
+| 1 | role on record: Digital Programme Manager, from moreton.gov.uk, checked 17 September. No signature, because he has never written | head-of-signature-scan |
+| 1 | record that hands his name on: the automatic reply, "for BOPS matters please contact Sanjay Mistry" | auto-reply-no-longer-with |
+| cold | to you: nothing on record between you | target-cold-to-you |
+| 0 | people on a thread or an event with both you and him. The one person who could have introduced you has left | shared-contact-on-thread |
+| none | record of how you came by him that the origin gather reads: he came through an automatic reply, which is a message on a thread and not a lead entry, a form or a told source | route-in-on-record |
+
+### What you told the tool
+
+Nothing. He is on no told record.
+
 ## Everyone else
 
-Not written yet. Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw, Andrew Doyle, Martin
+Not written yet. Darren Cole, Nicola Shaw, Andrew Doyle, Martin
 Hodgson, Priya Nair, Tom Bradley, Anita Rao, Simon Ward and the seven others at North Ridley have
 one line each in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's
 section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in

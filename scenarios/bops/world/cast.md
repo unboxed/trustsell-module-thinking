@@ -26,7 +26,7 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Paul Denning | paul-denning | Housing Options Team Leader | north-ridley | Michelle brought him to the thread in July. Asked twice about officer time; wrote "when BOPS replaces the case system" on 4 September |
 | Claire Sutton | claire-sutton | Revenues and Benefits Team Leader | north-ridley | Michelle brought her to the thread in July. Asked once, about time on the phones |
 | Rob Fielding | rob-fielding | ICT Infrastructure Manager | north-ridley | On the demo invite, "from ICT" in Michelle's words; has never written |
-| Julie Barker | julie-barker | formerly Service Improvement Lead | moreton | Left; her email bounced this morning |
+| Julie Barker | julie-barker | formerly Service Improvement Lead | moreton | Left; her automatic reply on Thursday morning says so and names Sanjay |
 | Sanjay Mistry | sanjay-mistry | Digital Programme Manager | moreton | Named in Julie's auto-reply. Never spoken |
 | Darren Cole | darren-cole | procurement contact | tarlton | Named in the tender. Never spoken |
 | Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |
