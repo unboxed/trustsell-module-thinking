@@ -348,7 +348,12 @@ over is the seller's sitting), run over the real cards and not built; and both f
 and both weeks are on one sheet, https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM, with the
 slide that would carry it four ways on a second, https://claude.ai/artifact/Aptjg96sfTZnTadXV8vPYZ
 (the dialler-like one is my pick). The user also asked, the same evening, for a more typical sale
-than councils for the demo; a fourth world was proposed and not started. **What waits
+than councils for the demo; a fourth world was proposed and not started. **Parked by the user
+late on 22 September ("just leave it there, but I would like to iterate on this later"): do not
+carry Job 4 further without them.** What to bring when they come back: the two sheets; the
+straight version's voice, which was rewritten twice that evening (shorthand and read names are
+out; whole sentences a seller would say, fewer of them, nothing explained); the slide direction;
+and the fourth world. The example is Michelle Turner's note before the demo, not Karen. **What waits
 on the user:** whether the straight card reads right, whether the coached phone should show the
 four message rows as *What the note does*, and whether the sitting rule is the right shape. Only
 then: the phone draws the straight version (a setting, or a switch on the sheet's model), and
