@@ -95,3 +95,36 @@ Looking forward to Thursday. One thing worth clearing up beforehand, because it 
 The one-pager is attached. If it's useful, I'll open with that on Thursday so Nadia's team can relax and ask the real questions.
 
 Fede
+
+## Said straight
+
+The same card for a seller who sells for a living: coaching off, sales shorthand on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September, proposed, to be decided by looking.
+
+### Under the title
+
+Three of their messages this month say migrate or replace. Your July answer said neither. One page to Michelle tonight, before the demo at 10:00.
+
+### When
+
+By tonight.
+
+### What happened
+
+- Why now: demo tomorrow, 10:00. A wrong word fixed by email costs a paragraph; fixed in the room, it costs the demo.
+- Understanding gap, sure. New stakeholder and champion behind it.
+- "Migrating off" 2 September, "replaces" 4 September, "the migration plan" 10 September. Your replies of 3, 7 and 10 September corrected none of them.
+- Asked and answered once already: her question 10 July, your answer 13 July, alongside. To her alone. The case-system team came in with the invite, and the word came with them.
+- 8 on the invite, 5 never on anything before. Michelle carries it: 7 colleagues brought in since July, the programme board twice.
+- Send the alongside one-pager to her, not to Nadia Frost. Offer to open with it.
+
+### Still unclear
+
+- Whether Michelle believes it or is quoting Nadia's team. The note reads the same either way.
+
+### Said back
+
+Sent. Demo brief next.
+
+### Done
+
+One-pager sent to Michelle. Brief next: who is in the room, what each asked, the alongside diagram first.

@@ -152,7 +152,13 @@ sub-heads naming the part each line replaces (*Under the title*, *When*, *What h
 unclear*, *Said back*, *Done*). `build.js` lifts it off the sections, so neither the phone nor the
 library page shows it as a part of the back, and checks its figures like the rest of the body.
 Nothing in the frontmatter changes, so the joins, the day and the message rows are checked once.
-Written on Karen's main card first, 22 September. Every other card is written the one way, and
+Written on Karen's main card first, 22 September, and then on Michelle Turner's note before the
+demo, which is the one on the sheet: the user was tired of Karen as the example, and that card
+tells this feature better, because it is the one card the tool interrupts an off day for. The
+slide that would carry it is on a second sheet, https://claude.ai/artifact/Aptjg96sfTZnTadXV8vPYZ,
+four ways: front and back with one switch, one card that turns over, two sellers side by side,
+and like a dialler (the card as what is up now, the queue beside it with the clock on it; the
+product owner's word for the tool, the user said). Every other card is written the one way, and
 that way is close to the coached seller's: plain English, the why on the front, no clock in hours.
 
 **The week, cut two ways** (22 September, proposed, not built; the sheet shows both weeks). Today

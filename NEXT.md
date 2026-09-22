@@ -340,11 +340,15 @@ Record it as a pass per world in `coverage.md`, in the existing style.
 
 **Done to the sheet, 22 September, thirty-eighth pass.** Steps 1 to 4 below were done in order:
 the card model in `playbook/world.md` ("One card, two sellers") says what coaching, fluency and
-cadence change and what stays; Karen's main card carries `## Said straight`, the same card for a
-seller who sells for a living, lifted off the card's sections by `build.js` and figure-checked;
+cadence change and what stays; Karen's main card and Michelle Turner's note before the demo carry `## Said straight`, the same
+card for a seller who sells for a living, lifted off the card's sections by `build.js` and
+figure-checked (Michelle's is the one on the sheets: the user is tired of Karen as the example);
 the week is cut two ways by a proposed rule ("The week, cut two ways", the unit the tool spreads
 over is the seller's sitting), run over the real cards and not built; and both fronts, both backs
-and both weeks are on one sheet, https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM. **What waits
+and both weeks are on one sheet, https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM, with the
+slide that would carry it four ways on a second, https://claude.ai/artifact/Aptjg96sfTZnTadXV8vPYZ
+(the dialler-like one is my pick). The user also asked, the same evening, for a more typical sale
+than councils for the demo; a fourth world was proposed and not started. **What waits
 on the user:** whether the straight card reads right, whether the coached phone should show the
 four message rows as *What the note does*, and whether the sitting rule is the right shape. Only
 then: the phone draws the straight version (a setting, or a switch on the sheet's model), and

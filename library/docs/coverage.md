@@ -1436,7 +1436,7 @@ under the title, *What happened*, whether *The message* rows show on the phone, 
 back), fluency changes the words and never the content, and cadence changes the clock; the kind,
 the title, the how-sure word, the reads, counts, records, Sources, the draft and its four parts,
 the buttons and the order within a day are the same for everyone. A setting about how the tool
-talks to you never touches what goes to the buyer. Second, Karen Hughes's main card said straight,
+talks to you never touches what goes to the buyer. Second, Karen Hughes's main card, and then Michelle Turner's note before the demo, said straight,
 as a marked section of the same file, `## Said straight`, with sub-heads naming the part each line
 replaces; `build.js` lifts it off the card's sections and checks its figures against her records
 like the rest of the body, so one card is checked once. Third, the week cut two ways by one
