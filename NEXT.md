@@ -62,6 +62,11 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
+**If you are reading this cold: start at Job 1, with Felton.** Read `CLAUDE.md`, then one pass
+file (`scenarios/bops/docs/westmoor-pass.md` is the fullest), then the six steps under Job 1, and
+begin. Jobs 0 and 2 are done; Job 3 comes after `bops` has more people worked, or when the user
+says so.
+
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
 are the outcomes the whole thing exists to produce. The card is where the two meet. The first job
@@ -210,12 +215,16 @@ Two things this will keep turning up, and both are worth more than the status fl
   `cooling-champion` does not count it, so a card that wants to say it has to borrow a read that
   does not hold.
 - **A number in a card the world cannot produce.** Every one of those is a claim the tool could not
-  actually make. Propose the rule as you go: a card may not state a figure the world does not
-  carry, checked in `build.js` the way the Sources rows already are. Do not build the check until
-  the user has agreed it, because it will fail cards that are otherwise fine.
+  actually make. ~~Propose the rule as you go.~~ The rule is built (22 September, the user's
+  word): `build.js` refuses a card whose figures its people's records do not carry, for the people
+  who have a records section. So the moment you write a person's section, their cards are checked;
+  put the figures the counts compute in that section's "What the counts give" table, and fix the
+  card rather than the table when they disagree.
 
-Start with one person in `bops`, end to end, and bring that to the user before doing the other
-twenty-five. The method is the thing being agreed, not the person.
+~~Start with one person in `bops`, end to end, and bring that to the user before doing the other
+twenty-five.~~ The method was agreed on 22 September and five people are done. Take the next
+organisation without asking (Felton, then North Ridley), one pass and one commit each, and keep
+the pass files in the same shape as the four that exist.
 
 ### ~~Job 2: the shape of the message, which nothing in the library reaches~~
 
