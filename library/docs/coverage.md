@@ -1126,6 +1126,58 @@ yet yours.)*
   `kind: deal-movement` stays: it is a family of read, not a council word. What it left behind is in
   the open list below, where a crossed-out line cannot hide it.
 
+**Done in the twenty-ninth pass, 22 September.** The first person worked from both ends, and the
+first time a world held records rather than one line of prose. `scenarios/bops/world/records.md`
+holds what the seven connected channels would carry about Karen Hughes: forty-seven messages on
+twelve threads with dates, senders, lengths and reply delays, two calendar events, one Meet
+record, three Drive files, four contacts, one web find, and what the seller has and has not told
+the tool. Every count under the reads her cards rest on was then run by hand, every read's trigger
+tested against the numbers, the seller's live questions written down in his terms, and only then
+were the three cards opened. The record is `scenarios/bops/docs/karen-hughes-pass.md`.
+
+**What the two ends found at the card.** Three of the six reads the cards named do not fire on her
+records and came off: `one-sided` (she opened nine of twelve threads and you have never chased
+her), `warmth-fading` (reply length down on two replies, friendly words flat, no call to hear) and
+`new-stakeholder` (no new name at Bramley since April). Two reads the cards never named do fire
+and one is now on: `champion`, on her history through August, which is the ground "cooling
+champion" presupposes and never checks. Three figures on the main card were numbers the world could
+not produce: fifteen messages, copied from the template's worked example and impossible beside nine
+of twelve threads; twenty-eight days, which landed the day before the meeting she is said to have
+gone quiet after; and "about a day" as her usual, which is reply speed, a count under `champion`,
+where the read she rests on lists the reply gap, a different number with a different answer
+(fifteen working days against a usual of four or five). All three cards now say what the counts
+give, and their `signal_status`, `supporting_status` and `counts_status` are `decided`.
+
+**The count doing two jobs is wired.** `who-starts-threads` counts who opens the threads and
+whether that has changed, and only the balance reads used it. `cooling-champion` lists it now, for
+the second half. What running it showed is that its summary window, three months, dilutes a change
+of four weeks to three of five against nine of twelve, while its rows carry the fact plainly: the
+only thread since the meeting is yours. *(My reason, not yet yours.)*
+
+**Six things the counts said about themselves**, recorded and not fixed: `reply-gap-vs-own-rhythm`
+says "gap between their replies" where a card will always want the reply delay too, and the two
+are different counts under different reads; `innocent-explanation-scan` names calendar status
+events and free/busy, which are not visible for a contact outside your organisation, and an
+auto-reply only comes back if you have written; `promise-made-undelivered` has no rule for a
+promise re-made, so one promise is two rows; `days-open-vs-own-rhythm` measures a thread's pace
+and a three-message thread has none, when the person's pace, one working day, was in a different
+count; `cooling-champion` never establishes the champion; and `reply-length-vs-own-rhythm`'s last
+month can rest on two replies, which its own `breaks` line says is nothing.
+
+**Proposed and not built.** A card may not state a figure the world does not carry, checked by
+`build.js` the way Sources rows are. It would have caught three figures on one card. It needs a
+records section per person and only one person has one, so building it today would fail
+twenty-five cards for a reason that is not theirs. The user's call.
+
+**The cold account.** Before any of this, `purpose-read.md` was written without reading this
+map, the story or `tracing-back.md`, and then compared. Three things it needs that the library has
+no rung for: who is who (every count stands on it, nothing holds how sure a match is), the tool's
+own history (what it suggested and what you did with it, which "not the same reason twice" needs),
+and the step from a read firing to a card existing, which the design log gives to the Brain and
+nothing writes down. On Karen every read that fires makes a card, so that step cost nothing here.
+Two things the library has that the account cannot justify: Connect as a kind of card, and rule 5
+of the reading principles as the gate on whether a read may exist. Those are for the user.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1152,12 +1204,17 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional**, which is the last provisional thing in the
-  library now that every count is `defined: true` and every `over_status` is `decided`. Forty-four
-  of the forty-five cards carry `signal_status: provisional` and twenty-seven
-  `supporting_status: provisional`, because each was read off the card rather than decided; the
-  forty-fifth is the News card, which rests on records and names no read. All forty-two signals
-  carry `assumes_status: provisional` for the same reason.
+- **The cards' joins upward are still provisional on forty-one of forty-five cards.** Three were
+  decided in the twenty-ninth pass, from the records up, and the method is in
+  `scenarios/bops/docs/karen-hughes-pass.md`. The rest were read off the card rather than decided;
+  the forty-fifth is the News card, which rests on records and names no read. Thirty-nine signals
+  still carry `assumes_status: provisional`; `cooling-champion`, `loose-end` and `missing-people`
+  were tested against the word they claim and are `decided`. Every other person needs a records
+  section first, because until a world carries what its channels would hold, a card can only be
+  checked against itself.
+- **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
+  was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
+  see for a buyer, and a rule for a promise re-made. Named here rather than done.
 - **The holes that are holes on purpose.** Q25, what questions to ask them, which
   [`sales-questions.md`](sales-questions.md) names as the fifth frontier and which would widen the
   output from a message into a move plus talking points. V6's hour and V10's words on a form, both

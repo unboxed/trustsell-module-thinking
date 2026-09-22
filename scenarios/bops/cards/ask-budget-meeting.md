@@ -3,11 +3,11 @@ id: ask-budget-meeting
 order: 6
 kind: ask
 signal: cooling-champion
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [warmth-fading]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [innocent-explanation-scan, reply-gap-vs-own-rhythm, reply-length-vs-own-rhythm]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 22 September: a told gap under cooling-champion, see ../docs/karen-hughes-pass.md
+supporting: []   # warmth-fading came off 22 September: it does not fire on her records
+supporting_status: decided
+counts: [innocent-explanation-scan, reply-gap-vs-own-rhythm]
+counts_status: decided
 about: [karen-hughes, bramley]
 arrives: 2026-09-16             # the day the tool puts it on the home
 changes: [act-karen-slowing]   # cards the answer changes; build.js holds them behind this Ask
@@ -42,8 +42,8 @@ You were there. Karen has gone quiet since then, and I can't see what was said. 
 
 ## Known so far
 
-- The meeting was on Thursday 20 August and you attended. Karen has replied once since, in two lines.
-- Nothing in your mail or Slack mentions how it went.
+- The meeting was on Thursday 20 August and you sat in. Karen has written once since, on 26 August, to say she would come back to you. Fifteen working days on, she has not, when she normally wrote every four or five.
+- Nothing on record explains it: no bounce, no auto-reply, one bank holiday. Nothing in your mail or Slack mentions how the meeting went.
 
 ## What's missing
 

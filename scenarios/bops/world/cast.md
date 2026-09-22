@@ -24,5 +24,8 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |
 | Andrew Doyle | andrew-doyle | Head of IT | east-marston | Happy to do reference calls |
 | Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget. Not on any thread |
+| Louise Kemp | louise-kemp | Customer Services Team Leader | bramley | On Karen's threads since March. Wrote once |
+| Ravi Chandran | ravi-chandran | Customer Services Team Leader | bramley | On Karen's threads since March. Has never written |
+| Jonathan Reid | jonathan-reid | Performance Analyst | bramley | Copied in by Karen in April. Sent you their case volumes in June |
 | Simon Ward | simon-ward | your colleague in partnerships | — | Well connected across the sector |
 | You | you | the seller | — | Fede. Warm, plain-spoken, allergic to "just checking in" emails. You delete the tool's pleasantries |

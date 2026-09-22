@@ -9,9 +9,10 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Twenty-eight passes on `library/docs/coverage.md` are done. The library
+Twenty-nine passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
-7 docs (all general). It builds clean with `SCENARIO` set to any of the three scenarios.
+8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
+September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
 shows the tool, and `how-it-builds.html`, which tells how the library was arrived at, walking one
 of the seller's questions down to the records and connections it takes to answer it. Both are drawn
@@ -67,12 +68,25 @@ from, which is the only place its generality is actually tested. The user's fram
 against: **how raw data can lead to AI providing suggestions based on evidence and, most
 importantly, reasoning.**
 
+**The twenty-ninth pass, 22 September, did Job 0 and Job 1 on one person.** Karen Hughes is worked
+end to end: `scenarios/bops/world/records.md` holds what her channels would carry (the first
+records any world has held), `scenarios/bops/docs/karen-hughes-pass.md` is the record of the six
+steps, her three cards are `decided`, three wrong joins came off them, `cooling-champion` reads
+`who-starts-threads` now, and three figures on her main card that the world could not produce
+were rewritten to what the counts give. Read the pass file before doing the next person: the
+method is what was being agreed, and the user has not yet said whether it is. The other
+twenty-five people in `bops` have no records section yet.
+
 The three things that were on a list when this file was last rewritten are done or moved: the
 counting floor, the third scenario and the `assumes:` join. Two judgement calls are still open and
 are in "Still open" below, where the user picks them up when they want to: a dated card sitting in
 band 4 whatever the distance, and the two findings from the third scenario.
 
-### Job 0: form your own account of the purpose, before reading the accumulated thinking
+### ~~Job 0: form your own account of the purpose, before reading the accumulated thinking~~
+
+Done on 22 September: `library/docs/purpose-read.md`. Its disagreements are listed at the end of
+the twenty-ninth pass in `coverage.md` and are the user's to settle; nothing was changed on their
+strength.
 
 Do this first, and before opening `library/docs/coverage.md`, `playbook/story.md` or
 `library/docs/tracing-back.md`. The risk in this repo is not that the thinking is thin; it is that
@@ -91,6 +105,11 @@ needed that the library has no rung for, and something the library has that your
 justify. Do not quietly adopt theirs. Bring the disagreements to the user before acting on them.
 
 ### Job 1: work it from both ends, and let the card be where they meet
+
+**One person done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`.
+The six steps below were followed as written and held up. Two things to carry into the next
+person: the counts say a lot about themselves when run by hand (six findings on one person, in
+the pass file), and the figure rule at the end of this job is proposed and waits on the user.
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
 their read, and every one was read off the card rather than decided. All 42 signals carry
@@ -288,14 +307,17 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds no records** (found 22 September, and the reason Job 1 starts where it does).
-  `scenarios/*/world/` holds a line of prose per person, while the figures the reads stand on live
-  in the card bodies that were written to need them. Nothing can be derived, only checked against
-  itself. Until a world carries what its channels would hold, the whole ladder is only testable
-  from the top, which is the direction that put the wrong read on a card in the first place.
-- **The cards' joins are the last provisional thing in the library.** Now Job 1 of the task above.
-  The 22 September finding is why it is not a status flip: a wrong join was hiding a count doing
-  two jobs with only one of them wired to a read.
+- **A world holds records for one person** (found 22 September; one person done the same day).
+  `scenarios/bops/world/records.md` holds Karen Hughes. Every other person in every world still
+  has a line of prose, and the figures their cards quote live only in the cards. Until a person has
+  a records section, their cards can only be checked against themselves.
+- **A card may not state a figure the world does not carry** (proposed 22 September, not built).
+  On Karen it would have failed three figures on one card. It needs a records section per person
+  to check against, so it waits on the user and on the records. `build.js` is unchanged.
+- **The cards' joins are provisional on forty-one of forty-five cards.** Three were decided on 22
+  September from the records up, and the wrong joins they hid were exactly the kind predicted: a
+  supporting read that does not fire, kept so the card could quote one of its counts. Job 1 of the
+  task above, for the other twenty-five people in `bops` first.
 - **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
   to a suggestion and the suggestion is to write to someone, nothing decides what the message has
   to contain or in what order. Now Job 2 of the task above.

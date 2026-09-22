@@ -3,11 +3,11 @@ id: act-karen-budget-holder
 order: 8
 kind: act
 signal: missing-people
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [new-stakeholder]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [decision-maker-reached, rests-on-one-person, head-of-signature-scan]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/karen-hughes-pass.md
+supporting: []   # new-stakeholder came off 22 September: no new name at Bramley since April
+supporting_status: decided
+counts: [decision-maker-reached, rests-on-one-person, people-reached-count]
+counts_status: decided
 about: [karen-hughes, bramley]
 to: karen-hughes                # who the move reaches; one move per person at a time
 documents: []
@@ -45,13 +45,14 @@ Nobody on the Bramley thread can sign. When Karen is back in rhythm, she is the 
 ## What happened
 
 - Why not yet: this is the move after Karen's note, not beside it. Asking her for a name while she is cooling would read as pressure.
-- Six months on the thread and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority.
+- Six months at Bramley and every name is service-side: Karen, two team leads, an analyst. Nobody with spend authority on record, and Karen's own words in July were that she takes figures "to Finance".
+- All 47 messages and both meetings have Karen on them. Four people have been on a thread, three have ever written.
 - For a partial adoption someone has to sign, and your goal needs that someone found.
 - Bramley's committee pages put the Customer Services budget with the Director of Resources. Karen will know whether that is really where the yes comes from.
 
 ## Sources
 
-- gmail · The Bramley thread: participants since March, four people, roles from their signatures.
+- gmail · Your Bramley threads since March: four people on them, three who have written, roles from their signatures.
 - web · Bramley's committee papers, Director of Resources: Martin Hodgson.
 - people-told · What you tell me about the budget meeting, and Karen's reply to this week's note.
 - goal-told · Your goal: partial adoption needs a signature.

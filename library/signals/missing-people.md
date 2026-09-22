@@ -10,7 +10,7 @@ counts: [people-covered-vs-needed, decision-maker-reached, rests-on-one-person, 
 answers: [Q4, Q5, Q6, F2, F7]
 needs: [linkedin]
 assumes: [several-people]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on a person, a council with one door and nobody who signs
 ---
 
 # Stakeholders you have not reached

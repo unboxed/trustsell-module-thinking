@@ -1,7 +1,7 @@
 ---
 id: who-starts-threads
 label: "Who writes first"
-used_by: [one-sided, warming]
+used_by: [cooling-champion, one-sided, warming]
 over: [person-history]
 over_status: decided   # decided 21 September, when the counts were written
 defined: true

@@ -10,7 +10,7 @@ counts: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm,
 answers: [Q22, F9]
 needs: [calendar, meet]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on a person, a promise sat on a thread and was read against it
 ---
 
 # Loose end
