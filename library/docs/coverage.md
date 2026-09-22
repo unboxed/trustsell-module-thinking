@@ -1354,6 +1354,40 @@ contact preference, correction) are gathered by thirty-five reads and summed by 
 either three counts to wire or three fields to stop asking for. The tempo, named in two reads'
 prose, is now pulled by both. The document ends with what this says about what to capture.
 
+**Done in the thirty-sixth pass, 22 September.** The sixth, seventh and eighth people worked
+from both ends, Stephen Walsh, Shabana Akhtar and David Marshall at Felton, the first price
+objection and the first test of the Offerings reads from the records up. The record is
+`scenarios/bops/docs/felton-pass.md`. Thirteen of forty-five cards are `decided`.
+
+**What the two ends found at the card.** `price-barrier` came off the price card: it reads your
+price against named rivals' published prices and your discount room, and this world has none of
+the three, because the profile says the competition is "do nothing for another year". Stephen
+never compared you with anybody; he compared you with this year's budget. The read that says so
+is [`can-they-carry-it`](../signals/can-they-carry-it.md), written for the volume seller's V13,
+and it fires softly at a council on two sentences of his and the told price: the first read from
+the second set to fire in the world the library came from. `blocker` fires on all three of its
+parts and cannot name the worry, because no worry has ever been told, the same told gap Westmoor
+found under `answer-gap`. `new-stakeholder` came off the director card, because nobody has
+arrived and the director is the opposite of an arrival; `they-owe-you` fires there on a promise
+the card had never mentioned, a call Shabana said in July she would set up, and the card now
+says it once and holds it back from the draft. **The message shape grew by one opener**: a
+message that answers a worry had no sanctioned opening, since nothing was owed, nothing was
+published and the angle was not the point, so a worry in their own words, the two counts that
+keep the passages, is now the fifth thing a message may open on, in `build.js` and
+[`message-shape.md`](message-shape.md).
+
+**What the counts said about themselves.** [`people-covered-vs-needed`](../counts/people-covered-vs-needed.md)
+says the roles a decision needs are told and gathers no told record that holds them: in this
+world they are in the profile's Customer field, `offering-told#fit-shape`, and the build refused
+the card's source row that said so. The same map has no slot for a role off the told list, and
+at Felton that is finance, the person the deal is stuck on.
+[`repeated-objection-count`](../counts/repeated-objection-count.md) cannot tell one worry from
+two, and Stephen's is two: the size of the number, then this year's budget. And the Pricing told
+record has no place for a smaller first step's price: the partial rollout sheet is settled as a
+quote the profile was never told about (`scenarios/bops/world/offering.md`), so `your-price`
+gives the band and nothing smaller, and whether the partial rollout is a second entry on the
+offering list, which "one entry is one thing on one set of terms" would say, is undecided.
+
 **Done in the thirty-sixth pass, 22 September.** A sixth told source, the tool's own history:
 [`told/history-told.md`](../told/history-told.md). Every card raised with the reason it gave, what
 the seller did with it, the reason they gave when they said no, the edit between a draft and what
@@ -1392,15 +1426,15 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on thirty-four of forty-five cards.** Three
-  were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second and
-  two in the thirty-fourth, from the records up, and the method is in
-  `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`, `holbrook-pass.md` and
-  `burnham-pass.md`. The rest were
+- **The cards' joins upward are still provisional on thirty-two of forty-five cards.** Three
+  were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
+  in the thirty-fourth and two in the thirty-sixth, from the records up, and the method is in
+  `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`, `holbrook-pass.md`,
+  `burnham-pass.md` and `felton-pass.md`. The rest were
   read off the card rather than decided; the forty-fifth is the News card, which rests on records
-  and names no read. Thirty-nine signals still carry `assumes_status: provisional`;
-  `cooling-champion`, `loose-end` and `missing-people` were tested against the word they claim and
-  are `decided`. Every other person needs a records section first, because until a world carries
+  and names no read. Thirty-seven signals still carry `assumes_status: provisional`;
+  `cooling-champion`, `loose-end`, `missing-people`, `blocker` and `can-they-carry-it` were
+  tested against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot

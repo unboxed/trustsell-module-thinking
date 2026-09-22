@@ -67,10 +67,10 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: start at Job 1, with Felton.** Read `CLAUDE.md`, then one pass
-file (`scenarios/bops/docs/westmoor-pass.md` is the fullest), then the six steps under Job 1, and
-begin. Jobs 0 and 2 are done; Job 4 (one card, two sellers) comes after the next two people; Job 3
-comes after that, or when the user says so.
+**If you are reading this cold: start at Job 1, with North Ridley.** Read `CLAUDE.md`, then one
+pass file (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `felton-pass.md` the latest),
+then the six steps under Job 1, and begin. Jobs 0 and 2 are done; Job 4 (one card, two sellers)
+comes after North Ridley; Job 3 comes after that, or when the user says so.
 
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
@@ -99,9 +99,14 @@ made by hand because the tool holds no use-case by buyer type. **The tool's own 
 read the same day** (`scenarios/bops/world/offering.md`): eight fields of prose per offering,
 interviewed out of the seller; no use-cases by buyer type, no answers to worries, no evidence tied
 to a claim. Two contradictions in the fiction are flagged there: the tool's demo BOPS is a
-planning system, and its price list has no partial rollout, which three cards offer. Felton's
-pass meets the second first. Eleven cards are decided; twenty-one people in
-`bops` have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
+planning system, and its price list has no partial rollout, which three cards offer. **The thirty-sixth pass did Felton** (`felton-pass.md`): Stephen Walsh, Shabana
+Akhtar and David Marshall, the first price objection from the records up. `price-barrier` came
+off the price card, because the profile names no rival and Stephen compared the figure with this
+year's budget, not with anybody; the read that says so is `can-they-carry-it`, from the volume
+seller's set, firing softly at a council. The price sheet against the price list is settled as a
+quote the profile was never told about. A worry in the buyer's own words is now a fifth thing a
+message may open on. Thirteen cards are decided; eighteen people in `bops` have no records
+section yet. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -146,20 +151,22 @@ justify. Do not quietly adopt theirs. Bring the disagreements to the user before
 
 ### Job 1: work it from both ends, and let the card be where they meet
 
-**Five people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
+**Eight people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
 Gary Pearson and Rachel Gill together, in `westmoor-pass.md`, Neil Chapman, in
-`holbrook-pass.md`, and Lisa Holmes, in `burnham-pass.md`. The six steps below were followed as
-written and held up on all four runs.
+`holbrook-pass.md`, Lisa Holmes, in `burnham-pass.md`, and Stephen Walsh, Shabana Akhtar and
+David Marshall together, in `felton-pass.md`. The six steps below were followed as written and
+held up on all five runs.
 Two things to carry into the next person: the counts say a lot about themselves when run by hand
 (the findings are at the end of each pass file), and the figure rule at the end of this job is
 built, so a card's figures fail the build the moment its person has a records section, and every
-decided card with a draft carries its message rows (Job 2). Next: Felton, three people and two
-cards (`act-felton-price` on `blocker` and `price-barrier`, `act-felton-director` on
-`missing-people`), the first test of the Offerings reads and of a price objection from the
-records up; then North Ridley (`understanding-gap`, `lead-with-this`, a demo on Thursday).
+decided card with a draft carries its message rows (Job 2). Next: North Ridley, Michelle Turner
+and three cards (`ask-north-ridley-demo`, `act-north-ridley-demo-brief`,
+`act-north-ridley-alongside`, on `understanding-gap` and `lead-with-this`, a demo on Thursday 17
+September), the first test of the understanding reads from the records up, and of a card whose
+day is fixed by an event in the calendar.
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and thirty-four were read off the card rather than decided. Thirty-nine of the 42
+their read, and thirty-two were read off the card rather than decided. Thirty-seven of the 42
 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
@@ -232,9 +239,9 @@ Two things this will keep turning up, and both are worth more than the status fl
   card rather than the table when they disagree.
 
 ~~Start with one person in `bops`, end to end, and bring that to the user before doing the other
-twenty-five.~~ The method was agreed on 22 September and five people are done. Take the next
-organisation without asking (Felton, then North Ridley), one pass and one commit each, and keep
-the pass files in the same shape as the four that exist.
+twenty-five.~~ The method was agreed on 22 September and eight people are done. Take the next
+organisation without asking (North Ridley, then Moreton or Tarlton), one pass and one commit
+each, and keep the pass files in the same shape as the five that exist.
 
 ### ~~Job 2: the shape of the message, which nothing in the library reaches~~
 
@@ -393,22 +400,30 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds records for five people** (found 22 September; five done the same day).
-  `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman
-  and Lisa Holmes. Every other
+- **A world holds records for eight people** (found 22 September; eight done the same day).
+  `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman,
+  Lisa Holmes, Stephen Walsh, Shabana Akhtar and David Marshall. Every other
   person in every world still has a line of prose, and the figures their cards quote live only in
   the cards. Until a person has a records section, their cards can only be checked against
   themselves, and the figure rule skips them.
 - ~~**A card may not state a figure the world does not carry** (proposed 22 September, not built).~~
   Built the same day, on the user's word, for people with a records section. Seven cards checked,
   eighteen skipped, a planted figure fails.
-- **The cards' joins are provisional on thirty-four of forty-five cards.** Eleven were decided on
+- **The cards' joins are provisional on thirty-two of forty-five cards.** Thirteen were decided on
   22 September from the records up, and the wrong joins they hid were the kind predicted: a
   supporting read that does not fire, kept so the card could quote one of its counts, and once a
   card resting on the mirror of the count it needed, and once a read that failed both halves of
-  its own trigger while the card was right about the move, and twice a read joined for a reason to
-  write when the reason was what the buyer published. Job 1 of the task above, for the other
-  twenty-one people in `bops` first.
+  its own trigger while the card was right about the move, twice a read joined for a reason to
+  write when the reason was what the buyer published, and once a price read with nothing to
+  compare against, on a card about affordability. Job 1 of the task above, for the other
+  eighteen people in `bops` first.
+- **The told cast of roles reaches no told record** (found in the thirty-sixth pass).
+  `people-covered-vs-needed` says the roles a decision needs are told, and the map it is done
+  over gathers nothing from the offering, where this world holds them. The same map has no slot
+  for a role off the list, and at Felton that is finance, the person the deal is stuck on.
+- **A smaller first step has no told price** (found in the thirty-sixth pass). The Pricing
+  record is price, discount room, term and how it is paid; the partial rollout is none of those,
+  and whether it is a second entry on the offering list is undecided. Three cards offer it.
 - ~~**The shape of a message is reached by nothing** (found 22 September).~~ Done the same day,
   thirty-third pass: four traced rows on every decided card with a draft, an argued account in
   `library/docs/message-shape.md`, and a build check. What is not done: the rows are a check on a
