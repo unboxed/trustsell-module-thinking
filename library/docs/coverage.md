@@ -995,7 +995,9 @@ world and not the trail.
   the complaint it answered; this is a different one, from the other end of the spectrum, and it is
   about the bands. Unlike the tie-break there is no principle that says which card should win, so
   it is named here rather than decided. *(My reading, not yet yours.)*
-- **A shared list has nowhere to record who has worked which name.**
+- **A shared list has nowhere to record who has worked which name** (since the forty-ninth pass
+  an Ask asks for it, `ask-conference-list`, and the answer becomes a contact by the firm with a
+  date against each name; the record itself is still missing).
   [`lead-list`](../channels/lead-list.md) holds the list and the entries; when marketing sends the
   same spreadsheet to six people, nothing says who has written to whom, which the card
   `act-ian-vanbrugh` names in its own *Still unclear* because it cannot do better.
@@ -1749,6 +1751,40 @@ no note on its own and has to be paired by hand. Why a champion is invested, F5,
 relationship note that neither champion here has. The budget as a figure, F3, is on no record at
 any of the three, and the seller says she asks IT for it.
 
+**Done in the forty-ninth pass, 23 September.** The firm's world is done, and with it Job 3:
+Dorothy Nwosu, Ian Faulds, and Owen Clark's nine touches at Thornley, with Priya Raman, Nadia Frost
+and Dale Rutherford beside them. The record is the second and third sections of
+`scenarios/cority/docs/cority-pass.md`, and the third is the world's ledger. Every person in every
+cast now has a records section, and **every card in all three worlds is `decided`** and
+figure-checked. Three cards were decided here and two written: `ask-conference-list`, because a
+shared list cannot say who has worked which name and the read that counts the firm's contact is
+blind on exactly the names it is most needed for, which the twenty-seventh pass found and nothing
+asked; and `act-marta-who-signs`, the Karen Hughes pattern at Calderbank, held behind the offer of
+help and turned up by its watch. `time-to-reconnect` came off Ian Faulds's card and is `decided`:
+it assumes a rhythm and needs a published reason, and in three worlds nobody has had both, so it
+has fired nowhere.
+
+**What the two ends found at the cards.** Dorothy Nwosu's card assumed nobody had mentioned June,
+and the transcript of 8 September backs it; its claim about "the rules you work under" rested on
+nothing told and says so. Ian Faulds's 2021 thread answers F21 by hand, off the record directly,
+because the read that claims the question cannot apply without a rhythm. Owen Clark's card gained
+the one thing the cold council's could not have: a scan that can see a job move, because LinkedIn
+is connected here, and both people at Thornley are still in post.
+
+**What the counts said about themselves.** A handed list attributes the seller's own stand
+conversation to the colleague who typed it, because the list carries what was said and not who
+heard it, and `firm-contact` reads the list since the forty-sixth pass. The brief, F14, is on the
+record for the first time: the manager's Friday question, one working day old, which `loose-end`
+sees and nothing answers. And the world's ledger: nothing is missing here, and the holes are all
+records the tool holds and does not read, or things only the seller could type.
+
+**Job 3, closed.** Three worlds, forty-five cards, one retired and three written; every read that
+made a card was run from the records up; thirteen kinds of opening a message may have, five of
+them found at the two ends the council world never reached. The question `NEXT.md` set, whether a
+read that cannot apply in a world leaves its question answered by anything else, has the same
+answer in both: usually not, and the fact that would answer it is already on a record the tool
+holds. That list is in each world's ledger.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1759,7 +1795,9 @@ is anybody's.)*
   and that was true of the complaint it answered; this is a different one, from the other end of the
   spectrum, and it is about the bands. Unlike the tie-break, no principle says which of the two
   cards should win, so it is named rather than decided. Found in the twenty-seventh pass.
-- **A shared list has nowhere to record who has worked which name.**
+- **A shared list has nowhere to record who has worked which name** (since the forty-ninth pass
+  an Ask asks for it, `ask-conference-list`, and the answer becomes a contact by the firm with a
+  date against each name; the record itself is still missing).
   [`lead-list`](../channels/lead-list.md) holds the list and the entries; when marketing sends the
   same spreadsheet to six people, nothing says who has written to whom.
   [`act-ian-vanbrugh`](../../scenarios/cority/cards/act-ian-vanbrugh.md) names it in its own *Still
@@ -1775,8 +1813,8 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on three of forty-three cards, all in the
-  firm's world.** Three
+- ~~**The cards' joins upward are still provisional.**~~ Done on 23 September, forty-ninth pass:
+  every card in all three worlds is `decided`. Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
@@ -1784,21 +1822,22 @@ is anybody's.)*
   holder's in the forty-third, the four about no person in the forty-fourth, which finished
   the shipped world, four at the top of the broker's ladder in the forty-fifth, three at its
   front in the forty-sixth and the rest of it in the forty-seventh, with one card retired, and
-  four in the firm's world in the forty-eighth; the method is in
+  four in the firm's world in the forty-eighth and the last three in the forty-ninth, with two
+  written; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
   `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
   `bramley-pass.md` and `no-person-pass.md`, for the broker's world in
   `scenarios/pmf/docs/pmf-pass.md`, and for the firm's in `scenarios/cority/docs/cority-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Thirteen signals still carry `assumes_status: provisional`;
+  records and names no read. Twelve signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
   `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
   `delivered-before`, `voice`, `answer-came-back`, `missing-documents`, `uneven-income`,
   `lead-with-this`, `turned-down-before`, `where-this-one-goes`, `coming-round-again`,
-  `payments-faltering`, `existing-commitments`, `deadline-they-gave`, `they-owe-you` and
-  `steps-on-their-side` were tested
+  `payments-faltering`, `existing-commitments`, `deadline-they-gave`, `they-owe-you`,
+  `steps-on-their-side` and `time-to-reconnect` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

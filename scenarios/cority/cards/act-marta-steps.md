@@ -22,7 +22,9 @@ when:
   words: "This week, once the numbers have gone."
 watch:
   - for: "Marta's answer about where they are"
-    next: "Whatever she says, I'll write it down against Calderbank so nobody asks her twice."
+    until: 2026-10-06
+    then: act-marta-who-signs
+    next: "Whatever she says, I'll write it down against Calderbank so nobody asks her twice. Then, a fortnight on, the one question left: who signs."
 reply:
   module: buttons
 actions:

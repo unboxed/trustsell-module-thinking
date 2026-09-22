@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-eight passes on `library/docs/coverage.md` are done. The library
+Forty-nine passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,7 +67,7 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 1 is done in `bops`, Job 3 is done in `pmf` and half done in `cority`; what is left is the firm's other three cards (Dorothy Nwosu, Ian Faulds, and Owen Clark at Thornley), then that world's ledger, then Job 4 with the user.** Job 4 is parked and
+**If you are reading this cold: Jobs 0 to 3 are done. Every card in all three worlds is decided and figure-checked. What is left is Job 4, which the user parked to iterate on with them, and the list under "Still open".** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
 (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `scenarios/pmf/docs/pmf-pass.md` the latest
 and the one Job 3 grows), then Job 1's six steps, which Job 3 runs per person in the other two
@@ -147,8 +147,10 @@ finished that world**: every card decided, one retired (a favour asked of a cust
 never fired), two openers for a note after the sale, and a ledger of what the world says
 (`pmf-pass.md`, last section). **The forty-eighth began `cority`**: the bid and the two
 champions, four cards decided, and two notes that had nothing sanctioned to open on until the
-buyer's own published plan and the step their side has shown were let in (`cority-pass.md`).
-**The figure rule is built**: `build.js` refuses a card that states
+buyer's own published plan and the step their side has shown were let in (`cority-pass.md`). **The
+forty-ninth finished it, and Job 3 with it**: three more decided, two cards written (an Ask about who
+has worked the conference list, and the held question to Marta about who signs), and a ledger for
+the firm's world. **Every card in every world is decided.** **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -239,7 +241,9 @@ buying-process Ask had two shadows where the records hold six. Job 1 in `bops` i
 Job 3, below.
 
 The cards' joins upward are the last `provisional` thing in the library: 43 of the 44 cards name
-their read, and three were read off the card rather than decided, all in `cority`. Thirteen of the 42 signals carry `assumes_status: provisional` too.
+their read, and none is read off the card rather than decided: all forty-five are decided from
+the records up, 22 and 23 September. Twelve of the 42 signals carry `assumes_status: provisional` still; each was left because no
+card in any world has run it from the records up.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -375,9 +379,9 @@ favour asked with nothing owed opens on nothing), Wes Halloran's and Joyce Amadi
 two openers were added for a note after the sale, and the pass file ends with the world's ledger.
 **The forty-eighth began `cority`** (`scenarios/cority/docs/cority-pass.md`): Gordon Ellery,
 Marta Olsen and Yvonne Pryce, four cards decided, `steps-with-a-sign` an opener, `stated-priorities`
-supporting the champion note because `they-owe-you` forbids opening on the promise. **Next:** the
-firm's other three (Dorothy Nwosu at Pelham, Ian Faulds at Vanbrugh, Owen Clark at Thornley) with
-the four colleagues' sections, then that world's ledger. One pass file section and one commit.
+supporting the champion note because `they-owe-you` forbids opening on the promise. **The forty-ninth finished it**: Dorothy Nwosu, Ian Faulds and Owen Clark at Thornley decided,
+`time-to-reconnect` off Ian's card and decided (it has fired in no world), `ask-conference-list`
+and `act-marta-who-signs` written, and the ledger at the end of `cority-pass.md`. **Job 3 is done.**
 
 Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
 signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
@@ -662,6 +666,16 @@ reach what it claims.
   second read to open the note, and the pairing is made by hand on the card.
 - **Why a champion is invested is a told note nobody has typed** (found in the forty-eighth
   pass). F5 is answered by a relationship note, and neither champion in the firm's world has one.
+- **A handed list attributes the seller's own conversation to the colleague who typed it** (found
+  in the forty-ninth pass). `firm-contact` reads the list since the forty-sixth pass, and the list
+  carries what was said and not who heard it; at Vanbrugh the person at the stand was the seller.
+- **The brief is on the record and answered by nothing** (found in the forty-ninth pass). The
+  manager's Friday question, "where are we with Calderbank", one working day old, which
+  `loose-end` sees; F14 is asked for a fourth time and this time it is a record.
+- **`time-to-reconnect` has fired in no world** (found across the thirty-second, thirty-fourth
+  and forty-ninth passes). It needs a rhythm and a published reason together; nobody in three
+  worlds has had both. Whether the read is right to want both, or F21 needs a different read, is
+  named rather than decided.
 - **The rung at which a sale completes is in prose** (found in the forty-second pass).
   `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
   it now, in a paragraph the build does not read.

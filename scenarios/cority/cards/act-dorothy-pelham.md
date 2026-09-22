@@ -3,9 +3,9 @@ id: act-dorothy-pelham
 order: 4
 kind: act
 signal: colleague-already-in-touch
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 23 September: worked from the records up, see ../docs/cority-pass.md. Six touches of Owen's on the deal record, none answered, and neither the thread nor the transcript of 8 September mentions them
 counts: [colleague-touches-on-record, since-last-colleague-touch]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [dorothy-nwosu, pelham, owen-clark]
 to: dorothy-nwosu
 arrives: 2026-09-21
@@ -60,8 +60,8 @@ Owen ran a cadence at Pelham in June. Six touches, no reply to any of them. Your
 
 - Why now: you have had one good conversation and there will be a second. This is worth saying before she says it, because said first it is a large firm doing its job, and said second it is a firm that does not know what it is doing.
 - Owen's six touches ran from 2 June to 24 June, against Pelham, on the deal record. Four emails, a call and a message.
-- Nothing came back to any of them. She may never have seen them.
-- The rules you work under say you must be able to say how you came by someone. This is that, and it costs nothing when you say it yourself.
+- Nothing came back to any of them. She may never have seen them. Neither your thread nor the transcript of your call on 8 September mentions June, on either side.
+- You have said the rule you work under is being able to say how you came by someone. It is not written down for me as a rule; if it were, I would check every first note against it. This is that rule kept, and it costs nothing when you say it yourself.
 
 ## People
 
@@ -74,6 +74,7 @@ Owen ran a cadence at Pelham in June. Six touches, no reply to any of them. Your
 - crm · Six activities against Pelham between 2 and 24 June, all Owen's.
 - gmail · Your own thread with Dorothy, opened 8 September. No mention of June on either side.
 - slack · Owen's note in the account channel on 24 June: moving on from Pelham.
+- meet · The transcript of 8 September: no mention of June by either of you.
 
 ## Still unclear
 
@@ -84,6 +85,13 @@ Owen ran a cadence at Pelham in June. Six touches, no reply to any of them. Your
 
 - Once it has gone I'll keep Owen's cadences off Pelham while you are in the conversation, and tell you if one starts anyway.
 - If she says she remembers the emails I'll mark the account as worked by Owen, so nothing like this comes up twice.
+
+## The message
+
+- opens with · What a colleague did, on record: six touches in June, said plainly and first · colleague-touches-on-record
+- points at · Nothing to send. The fact and its dates are the whole of it · since-last-colleague-touch
+- asks · One thing: half an hour the week after next. Her own "let's talk again" makes it hers to place · goal-told, gmail
+- holds back · An apology for a thing that is not wrong, and what Owen's emails said, which she can read for herself · colleague-touches-on-record
 
 ## The draft
 

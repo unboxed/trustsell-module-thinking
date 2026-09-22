@@ -10,7 +10,7 @@ counts: [how-long-quiet-vs-own-rhythm, how-close-you-were, fresh-reason-to-write
 answers: [Q19, F21, F10]
 needs: [web, linkedin]
 assumes: [own-rhythm]
-assumes_status: provisional
+assumes_status: decided   # 23 September: ruled out for the third time on a person with no rhythm, four messages five years ago, which is what own-rhythm claims; it has fired in no world yet
 ---
 
 # Time to reconnect

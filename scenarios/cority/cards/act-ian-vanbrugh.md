@@ -3,11 +3,11 @@ id: act-ian-vanbrugh
 order: 8
 kind: act
 signal: lead-with-this
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [time-to-reconnect]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [route-in-on-record, use-cases-on-file, how-long-quiet-vs-own-rhythm, fresh-reason-to-write]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 23 September: worked from the records up, see ../docs/cority-pass.md. The first-line half fires: how you came by him, cleared, in his own words on the list. The angle half is silent, no use-case told
+supporting: []   # time-to-reconnect came off 23 September: it assumes a rhythm and four messages five years ago are none, and it needs a published reason and Vanbrugh has published nothing; the rebuild is his word at the stand. 2021 is a fact the card states off the thread directly, and no read carries it
+supporting_status: decided
+counts: [route-in-on-record, use-cases-on-file]
+counts_status: decided
 about: [ian-faulds, vanbrugh]
 to: ian-faulds
 arrives: 2026-09-21
@@ -63,7 +63,7 @@ He came past on 3 September and said Vanbrugh is rebuilding its safety programme
 - Why now: eighteen days. A conference conversation keeps for about a month and then becomes a name on a spreadsheet like any other.
 - How you came by him, twice over: Nadia's list from the safety conference on 3 September, with his own words against his name, and before that a thread of yours from 2021. The list says you may say where the names came from, so the first line can be honest rather than vague.
 - What he said at the stand: the programme is being rebuilt. That is what to open on, not the platform.
-- 2021 is not a relationship, it is a fact. You spoke five years ago and there was no need then. Saying so is better than pretending to a closeness that is not there.
+- 2021 is not a relationship, it is a fact. You spoke five years ago, four messages, and there was no need then. Saying so is better than pretending to a closeness that is not there. No read carries that fact: the reconnect read needs a rhythm and a published reason, and there is neither.
 
 ## Sources
 
@@ -74,13 +74,20 @@ He came past on 3 September and said Vanbrugh is rebuilding its safety programme
 
 ## Still unclear
 
-- **What "rebuilding" means to him.** It is eight words on a spreadsheet written by somebody else. It could be a new system, a new team or a new chief executive, and each of those is a different conversation.
+- **What "rebuilding" means to him.** It is a line on a spreadsheet typed up by somebody else. It could be a new system, a new team or a new chief executive, and each of those is a different conversation.
 - **Whether anybody else from your firm has written to him already.** He is on a list that went to several people. Nothing on the record says who has worked which names, which is the thing a shared list needs and does not have.
 
 ## What happens next
 
 - If he answers I'll start his rhythm again from today rather than from 2021, so nothing reads five years of silence as him going quiet on you.
 - If nothing comes back I'll raise him once more next week and then let the list entry go cold rather than work it into a cadence.
+
+## The message
+
+- opens with · How you came by him, which the list clears you to say, and his own words at the stand · route-in-on-record
+- points at · The rebuild, his, and 2021 as a fact rather than a follow-up. Nothing of yours: no use-case is on file to lead with · route-in-on-record, use-cases-on-file
+- asks · One question: what is driving it, and what he is least sure of · route-in-on-record, goal-told
+- holds back · The platform, and any pretence that four messages five years ago were a relationship · use-cases-on-file, gmail
 
 ## The draft
 

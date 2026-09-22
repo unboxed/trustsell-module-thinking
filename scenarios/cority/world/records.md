@@ -7,8 +7,7 @@ about: what the connected channels would actually hold, person by person, with a
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Gordon Ellery, Marta Olsen, Yvonne Pryce, Colin Hurst, Alan Beck,
-Tessa Bright and Raj Kapadia are written; every other section says so.
+itself. One section per person. Every person in the cast is written.
 
 Working days are counted as Monday to Friday. Today is Monday 21 September 2026. Eleven channels
 are connected here, so the records are fuller than either other world's: every call is recorded
@@ -334,7 +333,245 @@ sponsor on the IT side. Never spoken to, by you or anyone at your firm.
 | 0 | messages, events or calls with him | prior-history-scan |
 | named, unreached | the IT door at Harrowgate, on the tender and nowhere in your records | people-covered-vs-needed |
 
+## Dorothy Nwosu
+
+Chief Medical Officer, Pelham Chemicals. `dorothy.nwosu@pelhamchemicals.com`, from her signature.
+She wrote to you on 4 September, after Owen Clark's cadence at Pelham in June had gone unanswered.
+The deal is in the CRM as Pelham Chemicals, yours, at interested.
+
+### Gmail: the thread
+
+One thread, "Your post on safety data", opened by her on Friday 4 September. Four messages: two
+hers, two yours.
+
+| Date | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|
+| Fri 4 Sep | Dorothy | 90 | | Read your post on the medical officer's role in safety data; "worth a conversation?" |
+| Fri 4 Sep | you | 50 | | Yes; offers Tuesday |
+| Wed 9 Sep | you | 110 | | Thanks for yesterday; what you took from it; offers a second conversation |
+| Fri 11 Sep | Dorothy | 45 | 2 | "Thank you, that was useful. Let's talk again once I've spoken to our head of HSE." |
+
+Nothing since 11 September. Neither side has mentioned June.
+
+### Calendar and Meet
+
+| Event | When | Notes |
+|---|---|---|
+| Call with Dorothy Nwosu | Tue 8 Sep, 14:00 to 14:40 | Meet, recorded and transcribed. She talked about why Pelham would change, not about features. The word "June" and the words "reached out" do not occur in the transcript |
+
+### CRM: the account
+
+Six activities against Pelham Chemicals before yours, all Owen Clark's:
+
+| When | What | To |
+|---|---|---|
+| Tue 2 Jun | email | Dorothy Nwosu |
+| Tue 9 Jun | email | Dorothy Nwosu |
+| Thu 11 Jun | call, no answer, voicemail left | Dorothy Nwosu |
+| Thu 16 Jun | email | Dorothy Nwosu |
+| Thu 18 Jun | LinkedIn message | Dorothy Nwosu |
+| Wed 24 Jun | email, the last of the cadence | Dorothy Nwosu |
+
+Nothing inbound on any of them. Your own activities begin 4 September.
+
+### Slack
+
+| Channel | Date | From | What it said |
+|---|---|---|---|
+| #accounts | Wed 24 Jun, 16:10 | Owen Clark | "Moving on from Pelham, nothing back after six." |
+
+### LinkedIn
+
+Dorothy Nwosu, Chief Medical Officer at Pelham Chemicals since 2020. Owen's message of 18 June is
+on his account, not yours.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 23 September
+(`../docs/cority-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 6 | contacts between someone at your firm other than you and Pelham: Owen, 2 to 24 June, four emails, a call and a message, all to her, none answered | colleague-touches-on-record |
+| 63 working days | since the last of them, 24 June | since-last-colleague-touch |
+| 0 | messages, events or calls between you and her before 4 September | prior-history-scan |
+| 4 messages, 1 call | the whole of your history with her; she opened the thread | how-close-you-were |
+| loose | "Let's talk again once I've spoken to our head of HSE": a thing she means, no date | their-promise-undelivered |
+| 0 | mentions of June, by either side, on the thread or the transcript | fulfilment-scan |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Pelham Chemicals, named 4 September, standing at interested |
+| Rule, on the organisation | none. You have said the rule you work under is being able to say how you came by someone; it is not written down for the tool as a rule |
+| Relationship note, Offline touch | none |
+
+## Ian Faulds
+
+Group Safety Manager, Vanbrugh Mining. `ian.faulds@vanbrughmining.com`, from a thread of 2021.
+Two records hold him: a thread five years old, and Nadia Frost's list from the safety conference of
+3 September, where he came past the stand and spoke to you. The deal is in the CRM as Vanbrugh
+Mining, yours, at interested.
+
+### Gmail: the thread
+
+| Date | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|
+| Mon 22 Feb 2021 | you | 120 | | Introduces the platform; asks whether safety reporting at Vanbrugh is a pain |
+| Thu 25 Feb 2021 | Ian | 60 | 3 | "Not right now. We put a system in two years ago and it is fine for what we need." |
+| Fri 26 Feb 2021 | you | 40 | | Understood; a one-pager attached, in case |
+| Tue 9 Mar 2021 | Ian | 20 | 7 | "Thanks. Will keep it." |
+
+Four messages, one thread, and nothing since 9 March 2021 in either direction. Two exchanges is
+not a rhythm.
+
+### A list handed to you
+
+| List | What it is | Handed over by, and when | May you say where the names came from |
+|---|---|---|---|
+| Safety conference, 3 September | the stand's sign-in sheet, 25 names, typed up by marketing | Nadia Frost, Tue 8 Sep, a spreadsheet by mail | yes: everyone signed in at the stand |
+
+His entry: Ian Faulds, Group Safety Manager, Vanbrugh Mining; "Came to the stand. Said the safety
+programme is being rebuilt." The sheet does not say who at the stand he spoke to. It was you.
+
+### LinkedIn, Web, CRM
+
+Ian Faulds, Group Safety Manager at Vanbrugh Mining since 2019; no job change. Nothing published by
+Vanbrugh in the last year mentions a safety programme, a system or a procurement. The CRM holds the
+list's import on 8 September and nothing else against Vanbrugh since 2021.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 23 September
+(`../docs/cority-pass.md`). The card arrives Monday 21 September, 18 days after the stand.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1, cleared | how you came by him this time: the conference list, which says you may say so; and before it, a thread of 2021 that the origin gather does not read | route-in-on-record |
+| 0 | use-cases on file for a buyer of his kind | use-cases-on-file |
+| 4 messages, 2 exchanges, 2021 | the high-water mark of the relationship: one thread, five years ago, no meeting | how-close-you-were |
+| five years, no usual | since anything passed, against a rhythm that never existed | how-long-quiet-vs-own-rhythm |
+| 0 | reasons to write that Vanbrugh has published: the rebuild is his word at the stand, on the list, and nowhere on the web | fresh-reason-to-write |
+| 1 | contact by your firm on record: the stand, 3 September, on Nadia's list. The conversation was yours, and the list cannot say so | colleague-touches-on-record |
+| 12 working days, 18 days | since the stand | since-last-colleague-touch |
+| 0 | messages from you since 2021; 0 since the stand | times-you-chase |
+| 4 | messages, events or calls under his name before the list: the thread of 2021 | prior-history-scan |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Vanbrugh Mining, named 8 September, standing at interested |
+| Lead source | none typed: the list is the record |
+| Offline touch | none typed: your conversation with him at the stand is on Nadia's sheet and on no told record of yours |
+| Use-case, on the offering | none |
+
+## Owen Clark
+
+Business development rep at your firm, `owen.clark@` your own domain, in the CRM as the owner of
+his own activities and in the workspace. He runs cadences from your accounts and talk track: an
+email, a call two days later, a message, another email, and on past seven. His work reaches the
+tool through the CRM, where every touch is logged, and through the workspace. His mailbox does not.
+
+### CRM: his cadences on your accounts this year
+
+| Account | Touches | When | What came of it |
+|---|---|---|---|
+| Stanmore Rail | 3 | Feb to Mar | Yvonne Pryce answered the third, 12 March; handed to you |
+| Calderbank Foods | 1 | 12 Jun | qualified the form; handed to you on the 15th |
+| Pelham Chemicals | 6 | 2 to 24 Jun | nothing back; moved on (his section is Dorothy Nwosu's) |
+| Thornley Steel | 7 | 9 Jul to 3 Sep | nothing back; a tenth touch scheduled for Thursday 24 September |
+
+### Thornley Steel, in full
+
+Two people, by LinkedIn: the Head of Safety and the Group CIO. Nobody at Thornley is in the cast by
+name because nobody there has ever written a word. Nine touches on the deal record since 9 July:
+
+| When | Who at your firm | What | To |
+|---|---|---|---|
+| Thu 9 Jul | Owen | email | the Head of Safety |
+| Mon 13 Jul | Owen | call, no answer | the Head of Safety |
+| Thu 16 Jul | Owen | LinkedIn message | the Head of Safety |
+| Thu 23 Jul | Owen | email | the Head of Safety |
+| Tue 28 Jul | you | email, the business case built from their annual report | the Head of Safety |
+| Thu 6 Aug | Owen | email | the Group CIO |
+| Thu 20 Aug | Owen | call, no answer | the Group CIO |
+| Thu 3 Sep | Owen | email | the Group CIO |
+| Thu 10 Sep | you | email | the Group CIO |
+| Thu 24 Sep | Owen | email, scheduled | the Head of Safety |
+
+Nothing inbound from anybody at Thornley, ever. No bounce and no automatic reply on any of the
+seven emails, so the addresses are live. LinkedIn shows both still in post, with no change since
+2022. Nothing on any calendar.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 23 September
+(`../docs/cority-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 2, and 9 in all | messages you have sent Thornley since anyone there last wrote, which is never; nine approaches in all across both desks | times-you-chase |
+| 7 | touches by Owen against Thornley, 9 July to 3 September | colleague-touches-on-record |
+| 9 | chases since their last reply, there having been none | chases-since-their-last-reply |
+| empty, and not blind | the scan: no bounce, no automatic reply, no job change on LinkedIn for either person, nothing on a calendar. Here the scan can see a job move, which it could not at the cold council | innocent-explanation-scan |
+| ten weeks | the stretch the nine cover | times-you-chase |
+| 7 | the number you have said means no interest | told, by you, and on no record as a rule |
+| Thursday 24 September | the tenth, scheduled | crm |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| About you, on the profile | that a business development rep runs your outreach; his cadences are the firm's |
+| Deal seed | Thornley Steel, named 9 July, standing at interested |
+| Correction | none: "seven means no interest" is a thing you have said and not a rule the tool holds |
+
+## Priya Raman
+
+Solutions engineer at your firm, `priya.raman@` your own domain. On record where she demos and
+where she records: the Calderbank demo of 19 August, on the transcript; the two-minute video on
+sitting alongside an asset register, 11 September, in Drive, sent to nobody; the Harrowgate bid
+intake of 3 September, on the invite.
+
+### What the counts give
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | thing of hers on the shelf that fits a question a buyer's IT will ask: the video of 11 September | evidence-that-fits-them |
+| 1 | demo on a transcript: Calderbank, 19 August | meeting-history |
+
+## Nadia Frost
+
+Marketing at your firm, `nadia.frost@` your own domain. On record as the one who hands over the
+conference list: 25 names from the safety conference of 3 September, typed up from the stand's
+sign-in sheet and mailed on 8 September, with the clearance to say where the names came from. The
+sheet says what each person said at the stand and not who at the stand they said it to. Nothing
+says who has since written to whom.
+
+### What the counts give
+
+| Figure | What it is | Count |
+|---|---|---|
+| 25 | names on the list she handed over, 8 September, all cleared to be told where they came from | route-in-on-record |
+| 1 | of the 25 with a thread of yours before the list: Ian Faulds, 2021 | prior-history-scan |
+| unknown | which of the 25 you or Owen have written to since: the list does not carry it and the CRM logs a touch against an account, not against a list | colleague-touches-on-record |
+
+## Dale Rutherford
+
+Your manager, `dale.rutherford@` your own domain. On record in the workspace and on the intake
+invite: he created the Harrowgate bid channel on 26 August and wrote "We're in" on 3 September. On
+Friday 18 September at 17:05 he messaged you directly: "Where are we with Calderbank? Need a line
+for Monday." Nothing answered it over the weekend.
+
+### What the counts give
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | question of his open: where Calderbank is, Friday 17:05, one working day | their-question-unanswered |
+| "We're in" | the firm's decision to bid on Harrowgate, 3 September, in the workspace, read by nothing | slack |
+
 ## Everyone else
 
-Not written yet. Dorothy Nwosu, Ian Faulds, Owen Clark, Priya Raman, Nadia Frost and Dale
-Rutherford have one line each in `cast.md` and nothing here.
+Nobody. Every person in `cast.md` has a section above.
