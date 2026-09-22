@@ -17,8 +17,13 @@ Three degrees, and they matter:
 - **In the gather only.** A read's gather carries the record, so a read can see it, but no count
   does a sum over it. The record is context, and nothing in the library today turns it into a
   number. Either a count should, or it is captured for a reason the library has not written.
-- **Read by nothing.** Typed and unused by any read. Some are used elsewhere (the Brain's pacing,
-  the render) and the doc says where; some are just unused.
+- **Used to adjust to you, not to read a prospect.** Typed and used by no read, because it changes
+  how the tool speaks to you, how much it brings you, and how far ahead it works, or how a message
+  sounds when it writes as you. This is a need of a different kind, not a lesser one: the whole
+  point of the tool is to fit the seller rather than the seller fit the tool (the user, 22
+  September). What is captured here is worth as much as what a count sums, and the doc says for
+  each record what it adjusts.
+- **Read by nothing and used by nothing.** Typed and unused. The doc names these plainly.
 
 ## The offering
 
@@ -49,26 +54,48 @@ to describe an offering; the reads need an offering described by what a buyer wi
 
 ## You, the seller
 
+The seller is the thing the reads need least to be told about, and the thing the tool has to
+adjust to most. Those are two different needs and the second is the larger.
+
+**What the reads need**, the observation side:
+
 | Record | Reads whose sums use it | The questions |
 |---|---|---|
 | Voice sample (a piece of your writing, and its context) | 1: voice | Q23, Q26 |
 | About you (name, email, how you want to come across) | 2: colleague-already-in-touch, enough-tries, to tell your touches from a colleague's | V4, F12, V5, F11 |
-| Setup archetype, the five dials (fluency, cadence, style, autonomy, coaching) | none | used by the Brain for pacing and by the render, never by a read |
 
-The seller is the thing the reads need least to be told about, because the voice is read off
-sent mail and the rest is configuration. What the library does not have, and the cold account
-(`purpose-read.md`) asked for, is a record of what the tool suggested and what the seller did
-with it: the corrections, the drafts changed before sending, the cards skipped. That is the
-feedback the story's chapter 9 describes and no told record holds.
+**What the adjustment needs**, which is most of it. The Profile module
+([`modules/05-persona-you.md`](../modules/05-persona-you.md)) holds it and every other module
+reaches for it rather than keeping its own copy:
+
+| Record | What it adjusts | How it is learned |
+|---|---|---|
+| How you write: a voice sample, then every edit you make to a draft before sending | how a message sounds when the tool writes as you: greeting, length, formality, sign-off | seeded by a sample if you give one, else read off sent mail; your edits are the strongest teacher, and the voice read counts them (`draft-to-sent-edit-distance`) |
+| Fluency (sales shorthand or plain English with coaching) | the words the tool uses when it speaks to you | told as a starting stance, refined from what you ask it to explain |
+| Cadence (all day, or a few minutes now and then) | how many cards a day, how hard to push | told, refined from how often you act and what you leave |
+| Style (sustain a few, or work many) | the tilt between keeping relationships and opening new ones | told, refined from behaviour |
+| Autonomy (how far it drafts or acts before you step in) | how far ahead it works; it always suggests | told, refined from what you send unchanged |
+| Coaching (just hand me the noun, or tell me why and what to say) | how much a card explains; the lever that most separates a seller by trade from one by circumstance | told, refined from what you read and what you skip |
+| A starting stance (sell for a living, or sell as part of my role) | the seed for all five dials, so setup asks one question rather than five | told once |
+
+The library keeps these as configuration rather than reads on purpose: a read, when it changes,
+points at a move on a prospect, and a dial changes how the tool works with you. But the loop
+that refines a dial from behaviour is named in the module and not written anywhere, and it
+stands on the same record the cold account asked for: what the tool suggested and what you did
+with it. That record is the missing thing on this side too.
 
 **Today the tool captures**: a name, your email addresses, one free-text bio ("a bit about you
 and what you sell"), and one free-text block of standing instructions, which you type and which
 the tool also adds to when you say "from now on" or "please don't" in chat. Every agent is given
-both blocks on every call. There is no interview of the seller, no voice sample, no dials. Read
-against the table: the voice read has no sample to seed from and learns from sent mail alone,
-which the library allows; the "about you" the two firm reads need is there. The instructions
-block is the nearest thing to the dials, and it is prose the tool cannot tell apart from what it
-appended itself.
+both blocks on every call. There is no interview of the seller, no starting stance, no sample,
+no dials. Read against the tables: the "about you" the two firm reads need is there; the voice
+read has no sample and learns from sent mail alone, which the library allows, and it cannot learn
+from your edits because there is no drafting yet; and the instructions block is the five dials
+collapsed into prose, learned the right way (from what you say in passing) and held the wrong
+way, because the tool cannot tell a line you typed from one it appended, and no dial can be read
+off it as a setting the Brain paces by. *(My reading, not yet yours: the instructions block is
+the right instinct and the wrong shape. The tool adjusts to you through five named things, and a
+count over your behaviour can refine each of them; a blob of sentences can only be re-read.)*
 
 ## Your organisation
 
@@ -156,7 +183,11 @@ feedback the cold account asked for, and it exists on the tool's side and not on
 
 ## What this says about what to capture
 
-- **Capture what a count sums, first.** For the offering that is the fit-shape, the pricing with
+- **Capture what the tool adjusts to you by, and keep it as settings, not sentences.** How you
+  write (a sample, then your edits) and how you work (the five dials, seeded by one question about
+  who you are). The tool exists to fit the seller; this is the context that does it, and a count
+  over your behaviour can refine a setting where it cannot refine a paragraph.
+- **Capture what a count sums, next.** For the offering that is the fit-shape, the pricing with
   its term and how it is paid, and the use-case by kind of buyer; then a worry with its answer and
   the evidence it needs. For the organisation it is the proof tag. For people it is how a deal
   ended and how you came by them. Each of these is a field a number runs over, and a read goes
