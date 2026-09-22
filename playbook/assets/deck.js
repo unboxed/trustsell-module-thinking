@@ -87,6 +87,37 @@
         return '<div class="py__col" data-id="ch:' + c + '"><ul>' + recs[c].map(function (i) { return '<li><span>' + recLabel(i) + '</span></li>'; }).join('') + '</ul><b>' + colName(c) + '</b></div>';
       }).join('') + '</div>';
     py.__edges = edges;
+    trace(py);
+  }
+  /* Hover a pill and its whole trail lights, up to the card and down to the records, while the
+     rest recedes; a click holds it, so a demo can leave one lit (the user's ask, 22 September).
+     The trail is walked on the same edges the lines are drawn from, so it cannot disagree. */
+  function trace(py) {
+    if (py.__traced) return; py.__traced = 1;
+    var held = null;
+    function reach(id) {
+      var on = {}; on[id] = 1; var used = [];
+      var walk = function (from, up) {
+        py.__edges.forEach(function (e) {
+          var a = up ? e[0] : e[1], b = up ? e[1] : e[0];
+          if (a !== from || used.indexOf(e) > -1) return;
+          used.push(e); on[b] = 1; walk(b, up);
+        });
+      };
+      walk(id, true); walk(id, false);
+      return {on: on, used: used};
+    }
+    function light(id) {
+      py.classList.toggle('is-tracing', !!id);
+      var r = id ? reach(id) : {on: {}, used: []};
+      py.querySelectorAll('[data-id]').forEach(function (n) { n.classList.toggle('is-on', !!r.on[n.getAttribute('data-id')]); });
+      py.querySelectorAll('.py__svg path').forEach(function (p) { p.classList.toggle('is-on', r.used.indexOf(p.__edge) > -1); });
+    }
+    var node = function (e) { var n = e.target.closest('[data-id]'); return n && py.contains(n) ? n.getAttribute('data-id') : null; };
+    py.addEventListener('mouseover', function (e) { var id = node(e); if (id && !held) light(id); });
+    py.addEventListener('mouseout', function (e) { if (!held && node(e)) light(held); });
+    py.addEventListener('click', function (e) { var id = node(e); if (!id) return; held = held === id ? null : id; light(held || id); });
+    py.__light = light;
   }
   /* The drawing is as wide as its ground needs, never narrower than the slide says (22
      September, after a card quoting eight counts ran off both edges). A row of pills wraps
@@ -124,6 +155,7 @@
       var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', 'M' + x1 + ' ' + y1 + ' C' + x1 + ' ' + m + ' ' + x2 + ' ' + m + ' ' + x2 + ' ' + y2);
       if (e[2]) path.setAttribute('class', e[2]);
+      path.__edge = e;
       svg.appendChild(path);
     });
   }
