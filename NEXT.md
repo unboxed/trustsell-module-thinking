@@ -69,8 +69,8 @@ text, so when you report, lead with the verdict and keep it short.
 
 **If you are reading this cold: start at Job 1, with Felton.** Read `CLAUDE.md`, then one pass
 file (`scenarios/bops/docs/westmoor-pass.md` is the fullest), then the six steps under Job 1, and
-begin. Jobs 0 and 2 are done; Job 3 comes after `bops` has more people worked, or when the user
-says so.
+begin. Jobs 0 and 2 are done; Job 4 (one card, two sellers) comes after the next two people; Job 3
+comes after that, or when the user says so.
 
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
@@ -321,6 +321,34 @@ real.
 
 Record it as a pass per world in `coverage.md`, in the existing style.
 
+### Job 4: one card, two sellers (the user, 22 September)
+
+The tool adjusts to who is selling. Some people sell because it landed on them and do it on the
+afternoons they can spare; some sell for a living, every day. The first wants the why and what to
+say, and a tool that holds things until they next sit down; the second wants the next move, said
+straight, with the clock on it, and a tool that works in hours. Story ch. 5 now says so in the
+user's words. The Profile module holds the settings (coaching, fluency, cadence, seeded by one
+question about who you are). Nothing shows the difference: every card and the whole week are
+written for one seller, and the day's order in `build.js` knows one cadence.
+
+Do it after the next two people in Job 1, and in this order:
+
+1. **Say what each setting changes on a card.** In `playbook/world.md`, the card model: which
+   parts of the front and the back the coaching and fluency settings change, and which stay the
+   same for everyone (the reasoning underneath, the sources, the draft's four parts). Argue it
+   before writing a card.
+2. **Write one decided card two ways.** Gary's, or Karen's main card. The same reads, counts and
+   records; two fronts and two sets of the tool's own lines. Keep the card's markdown as one file
+   with the second version as a marked section, so the build still checks one card. Say which
+   lines changed and why.
+3. **Cut one week two ways.** The seller who sells on two afternoons: what the tool holds until
+   Thursday, and what it brings on Wednesday because it would be gone. The seller who sells all
+   day: the same cards by the hour. Propose the rule for `build.js` (what "gone by then" means
+   against the cadence), do not build it until the user has seen the two weeks.
+4. **Show, do not tell.** Render the two fronts and the two weeks on a sheet before asking; the
+   user decides by looking. It touches the phone and the voice, so the sheet comes first and the
+   phone changes only after.
+
 ### How to work
 
 Take the user's standing instruction above seriously: make the sales and how-it-reads calls
@@ -360,14 +388,7 @@ reach what it claims.
   `breaks`, every `over` is resolved and every `over_status` is `decided`. The build made six move
   to a different gather. The merge pass was considered and not done: the three closest pairs are
   genuinely two things each and each now says so in its body.
-- **One card, two sellers** (the user, 22 September). The tool adjusts to who you are: more
-  explanation for a seller by circumstance, more directness and more of the clock for a seller by
-  trade, and a different day: one sells on the afternoons he can spare and the other every day,
-  so for the first the tool holds what can wait until he next sits down and brings only what
-  would be gone by then. The Profile module holds the settings (coaching, fluency, cadence) and
-  the story now says why; nothing shows it, and the day's order in `build.js` knows one cadence.
-  The test is one decided card written two ways, the front and the tool's own lines, and one week
-  cut two ways; it touches the phone and the voice, so it is the user's to ask for. Not started.
+- ~~**One card, two sellers**~~ Now Job 4 of the task above (the user, 22 September).
 - **The brief, asked for by all three sellers.** What happened on this deal in the last two weeks,
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
