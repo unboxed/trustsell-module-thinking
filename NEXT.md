@@ -12,7 +12,10 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 Twenty-eight passes on `library/docs/coverage.md` are done. The library
 holds 14 channels, 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
 7 docs (all general). It builds clean with `SCENARIO` set to any of the three scenarios.
-**The playbook still ships `bops`.**
+**The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
+shows the tool, and `how-it-builds.html`, which tells how the library was arrived at, walking one
+of the seller's questions down to the records and connections it takes to answer it. Both are drawn
+from `data.js` by `deck.js`, so a change to a rung changes the slides.
 
 **Two areas, since 21 September.** `library/` is the blocks and `scenarios/` sits beside it, no
 longer inside it: `bops`, a patient sale to councils, with 26 cards; `pmf`, a merchant cash advance
@@ -55,27 +58,202 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**Everything that was on a list is done.** Twenty-eight passes, the last eight of them in one
-session: the three findings the broker's cards left, the third question set's backlog, the
-`assumes:` join, the order of a day, a third scenario, and the counting floor that had been
-deliberately empty since 18 September. The three question sets are as answered as they get without
-new thinking, and every rung of the ladder is written.
+Three jobs, in this order. All of them are worked from both ends: up from the records through the
+counting to what can be read off it, and down from the questions the seller actually asks, which
+are the outcomes the whole thing exists to produce. The card is where the two meet. The first job
+settles the last unfinished rung, on the world the library came from. The second opens the frontier
+nobody has touched. The third runs the same test on the two worlds the library was **not** derived
+from, which is the only place its generality is actually tested. The user's framing of the whole thing, in their words, is what to measure
+against: **how raw data can lead to AI providing suggestions based on evidence and, most
+importantly, reasoning.**
 
-So there is no next step to take off a list. What is below is what writing all that turned up, and
-none of it is a defect: it is the shape of the next argument. Read it, then **ask the user which
-one**, because each is a judgement about how the tool should behave rather than a hole in the
-library. The order is mine. *(My order, not yet yours.)*
+The three things that were on a list when this file was last rewritten are done or moved: the
+counting floor, the third scenario and the `assumes:` join. Two judgement calls are still open and
+are in "Still open" below, where the user picks them up when they want to: a dated card sitting in
+band 4 whatever the distance, and the two findings from the third scenario.
 
-1. **A dated card is band 4 whatever the distance**, and the first two items below sit under it.
-   This is the one I would raise first, because it is the last thing in the library that answers a
-   question other than the one it was asked.
-2. **Two findings from the third scenario**, both small and both real: a shared list cannot record
-   who has worked which name, and the two-week paragraph a manager actually wants is the brief,
-   asked for now by three of the three sellers interviewed.
-3. **The cards' own joins are still provisional.** Every card's `signal:` and `supporting:` were
-   read off the card rather than decided. It is now the only `provisional` left in the library, and
-   it is the last rung of the ladder to be settled the way the counts were in the twenty-eighth
-   pass. It is a large, dull pass and it is the honest next one.
+### Job 0: form your own account of the purpose, before reading the accumulated thinking
+
+Do this first, and before opening `library/docs/coverage.md`, `playbook/story.md` or
+`library/docs/tracing-back.md`. The risk in this repo is not that the thinking is thin; it is that
+it is thick, and a fresh reader inherits its conclusions instead of testing them.
+
+Write, in your own words, what a system has to be able to do to take raw records and arrive at a
+suggestion a person can act on: what it has to hold, what steps it has to take between a record and
+a suggestion, what it must be able to show when the person asks "why are you telling me this", and
+which of those steps are arithmetic rather than judgement. Say what you think the hard parts are.
+Put it in `library/docs/purpose-read.md`, with a first line saying it was written cold and on what
+date.
+
+**Then** read `story.md`, `coverage.md` and `tracing-back.md`, and write underneath where your
+account and theirs agree and where they do not. Both directions are findings: something you say is
+needed that the library has no rung for, and something the library has that your account cannot
+justify. Do not quietly adopt theirs. Bring the disagreements to the user before acting on them.
+
+### Job 1: work it from both ends, and let the card be where they meet
+
+The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
+their read, and every one was read off the card rather than decided. All 42 signals carry
+`assumes_status: provisional` too.
+
+**It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
+original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
+side**, what the tool must be able to answer, and the reads are the **supply side**, what it can
+produce. Where supply meets demand the model holds; where it does not is the real work. A card is
+the meeting point, and a card is right when both ends reach it.
+
+So climb from the records and walk down from the questions, and compare in the middle. What you may
+**not** do is start at the card, because the card is the thing under test. There is a structural
+reason as well: a world holds one line per person. `scenarios/bops/world/cast.md` says of the
+seller's main contact only that she used to reply within a day and has slowed. The figures the
+reads stand on, the twenty-eight days, the fifteen messages, the nine of twelve threads, exist
+**only inside the card bodies**, written alongside the card to justify it. Until the world carries
+them, the bottom end has nothing to climb from and the card can only be checked against itself.
+
+Work in this order, on one person at a time.
+
+1. **Give the world its records.** For the person in hand, write what the connected channels would
+   actually hold: each thread with its date and who opened it, reply lengths, meetings held,
+   declined or dropped, documents asked for and sent, out-of-office and status events, and anything
+   the seller told the tool. It goes in the scenario's `world/`, not in a card and not in the
+   library. A scenario is fiction and may be invented; the general rungs may not. Prefer the facts
+   the existing cards already imply, so the world absorbs what the cards were carrying rather than
+   contradicting them, and note every place where two cards implied facts that cannot both be true.
+2. **Run the counts.** Every count says what it counts, which records it needs and when it breaks.
+   Compute each one the records now support, write the number down, and where `breaks` applies say
+   so instead of reporting a figure. A count with nothing under it is a finding about the world,
+   not about the count.
+3. **See which reads fire.** Take each signal's `## How it is worked out` trigger and test it
+   against the numbers. Three outcomes, all worth recording: it fires, it does not fire, or it
+   cannot apply at all because the sale lacks what `assumes:` needs or a channel in `needs:` is not
+   connected. Confidence grades with how many counts lean the same way, per
+   `library/docs/reading-principles.md`.
+4. **Now come down from the other end.** For this person, which of the seller's questions are live
+   right now? Use the three sets by id (`Q`, `V`, `F`) and each signal's `answers:`. Write down
+   what would count as answering each one for this person, in the seller's terms, before looking at
+   any card.
+5. **Meet in the middle, and open the card last.** Four outcomes, all worth recording:
+   - **Both ends reach it.** A read fires and it answers a question the seller is actually asking.
+     That is a card, and the card should exist.
+   - **Demand with no supply.** A live question that nothing fires for. Say which of the three kinds
+     of gap it is, in `library/docs/tracing-back.md`'s words: a data gap (a source is not
+     connected), a told gap (the seller has not said something), or an assumption gap (this sale is
+     not the shape the read needs). A fourth possibility is that the read simply does not exist yet,
+     and that is the most valuable thing this pass can find.
+   - **Supply with no demand.** A read fires and no question wants it. Sometimes right, because
+     story ch. 7 says if the seller has to ask "who's going cold?" the tool should already have
+     told them. But it has to be argued, not assumed.
+   - **Both ends reach it through the wrong join.** The Karen case: `act-karen-slowing` lists
+     `one-sided` ("You are doing all the work") although the same card says *she* opened 9 of the
+     12 threads, the opposite lean from the one that read needs. The card is right and the
+     reasoning under it is not, which is the hardest kind to see and the whole reason for this pass.
+6. **Then decide the join**, from what fired and what it answers, rather than from the card's
+   prose, and flip `signal_status` and `supporting_status` to `decided` on the ones you have
+   argued. Leave the rest marked and say why in `coverage.md`.
+
+Two things this will keep turning up, and both are worth more than the status flips.
+
+- **A count doing two jobs with only one of them wired.** `who-starts-threads` explicitly counts
+  who has always opened the threads **and** whether they used to write first and have stopped. Only
+  the first half is read by anything. The second half is a cooling-champion fact and
+  `cooling-champion` does not count it, so a card that wants to say it has to borrow a read that
+  does not hold.
+- **A number in a card the world cannot produce.** Every one of those is a claim the tool could not
+  actually make. Propose the rule as you go: a card may not state a figure the world does not
+  carry, checked in `build.js` the way the Sources rows already are. Do not build the check until
+  the user has agreed it, because it will fail cards that are otherwise fine.
+
+Start with one person in `bops`, end to end, and bring that to the user before doing the other
+twenty-five. The method is the thing being agreed, not the person.
+
+### Job 2: the shape of the message, which nothing in the library reaches
+
+The part the user says has never been tackled, and the natural next thing after reasoning: once the
+tool has reasoned its way to a suggestion, and the suggestion is to get in touch with someone,
+**how is the message structured so that it actually meets the suggestion?**
+
+What exists, so you do not rebuild it: four reply modules told apart by shape (`buttons`,
+`choices`, `several choices`, `a field`) and a draft sheet, all in `library/widgets/`; a card's
+`draft:` block; the guardrail in story ch. 8 that every message the tool drafts names what the
+other person gets; and the rule that an Ask asks for facts, never for verdicts.
+
+What does not exist: anything that derives the **structure** of a message from the read that caused
+it. `coverage.md` records Q20, "what should my next message say", as answered because "the draft
+does it", which is hand-waving: it says a draft appears, not what has to be in it. Q25, "what
+questions should I ask them", is named there as the fifth frontier and is the same family.
+
+The questions, in this repo's usual discipline:
+
+- Given a read, what must the message contain, in what order, and what must it not do? A note that
+  follows `cooling-champion` is not shaped like one that follows `price-barrier` or `they-owe-you`.
+- Where does the shape come from: the read, the kind of card, what is owed, the person's profile,
+  or the goal's tempo? Probably more than one. Say which decides what.
+- Which part of it is arithmetic and which is judgement, the same split the ladder already makes.
+- Where does it live: a new rung above signals, a family of widgets, a facet on the signal, or
+  something in the Brain (`library/modules/00-spine.md`)? Argue it before writing it.
+
+**Do not start by writing drafts.** A good-sounding message proves nothing. Whatever decides a
+message's shape has to rest on something on record or something the seller told the tool, and trace
+down the same way every other claim here does. If it cannot, the honest output is a written account
+of why, not an invented rung.
+
+Do this after Job 1 has been through at least one person, and build it the same way, from the
+records up. What is on record decides what the message can point at. What is owed decides what it
+has to open with. What the seller told the tool decides how it sounds. A message whose shape cannot
+be traced to those is a message the tool made up.
+
+### Job 3: the same, on the two worlds the library did not come from
+
+Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
+signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
+is home ground: the library answers it well and is silent about whatever that seller never had to
+ask. `library/docs/sales-questions.md` says so in its own second paragraph. The other two worlds
+are where that silence shows.
+
+`pmf` is a merchant cash advance broker, the fast end, 12 cards, measured against the volume
+seller's 22 questions (`V`). `cority` is an enterprise seller with a firm around her, 7 cards,
+against the firm seller's 21 (`F`). Against `bops`'s 26 cards that thinness is itself a finding:
+run the six steps of Job 1 per person in each world and most verdicts will land on **demand with no
+supply** and on reads that fire with no card carrying them.
+
+Switch `SCENARIO` at the top of `build.js`, run it, and set it back to `bops` before committing.
+
+What is different in each, so you do not mistake a design for a defect:
+
+- **`pmf`.** V1 to V3 are out of scope, before a lead. The tempo is hours while every `when` in the
+  library is a day, already flagged in `scenarios/pmf/world/goal.md` and in story ch. 7. Its ladder
+  runs past the sale. Expect `assumes:` to rule reads out wholesale: on a three-day deal there is no
+  `own-rhythm` and often no `thread-under-way`, and an assumption gap is a **refusal**, not a gap
+  row, so the build will simply not let a card rest on such a read. A read that carries a V question
+  in theory but can never apply in this world is the sharpest finding available here.
+- **`cority`.** A business development rep does the outreach, so `firm-contact` is full and the
+  colleague reads fire there and nowhere else. The buyer's side runs a formal process. Eleven of
+  the fourteen channels are connected, so there are no data-gap rows at all, which means anything
+  missing there is missing for a reason other than a connection. F19, "should my firm bid at all",
+  is already declared the Brain's.
+
+The question to hold throughout: when a read that fires in `bops` cannot apply here, **does the
+question it answered there have any other answer in this world?** If not, the library is silent
+exactly where nobody asked it anything, and that is the thing worth writing down.
+
+Then produce the suggestions. For each world, say which cards should exist and do not, and write
+two or three of them. Writing the card is how this repo finds out whether a read can reach what it
+claims, and the build refuses it when it cannot. Job 2's message shapes get their real test here
+too: whatever decides the shape of a patient note to a council officer should not produce the same
+shape for a broker's text at hour three, and if it does, the shape is not being decided by anything
+real.
+
+Record it as a pass per world in `coverage.md`, in the existing style.
+
+### How to work
+
+Take the user's standing instruction above seriously: make the sales and how-it-reads calls
+yourself, and write the reason into the entry marked "(My reason, not yet yours.)". Ask about
+scope, voice, the phone, and anything hard to reverse. Report short, verdict first.
+
+Follow the habit at the end of this file: when you have changed two or three entries, stop and
+write or rewrite a card against them in a world. That is how this repo finds out whether a read can
+reach what it claims.
 
 ## Still open, and bigger than a step
 
@@ -110,10 +288,17 @@ library. The order is mine. *(My order, not yet yours.)*
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **The cards' joins are the last provisional thing in the library.** Every card's `signal:` and
-  `supporting:` carry `_status: provisional`, because they were read off the card. Settling them is
-  the same shape of pass as the twenty-eighth: go read, decide, and let the build refuse what does
-  not hold.
+- **A world holds no records** (found 22 September, and the reason Job 1 starts where it does).
+  `scenarios/*/world/` holds a line of prose per person, while the figures the reads stand on live
+  in the card bodies that were written to need them. Nothing can be derived, only checked against
+  itself. Until a world carries what its channels would hold, the whole ladder is only testable
+  from the top, which is the direction that put the wrong read on a card in the first place.
+- **The cards' joins are the last provisional thing in the library.** Now Job 1 of the task above.
+  The 22 September finding is why it is not a status flip: a wrong join was hiding a count doing
+  two jobs with only one of them wired to a read.
+- **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
+  to a suggestion and the suggestion is to write to someone, nothing decides what the message has
+  to contain or in what order. Now Job 2 of the task above.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
   "you can take in the whole day". A card and phone question, not a library one.
