@@ -43,7 +43,10 @@ The first six are the trade's own stages. **Interested** is an owner who has sai
 and nothing more. **Applied** is the signed application and the documents that go with it.
 **Submitted** is the processor sending it to the funders who would take this one. **Offers in** is
 what came back, offers and declines with their reasons. **Accepted** is the one they chose.
-**Funded** is money on their account, which at this end is usually the same day.
+**Funded** is money on their account, which at this end is usually the same day. **The sale
+completes at funded** (named 22 September, because `since-the-sale` says the seller names the rung
+and no world had): repaying and coming round again are the same customer further on. *(My reason,
+not yet yours.)*
 
 The last two rungs are past the sale, and they are the point of this scenario. **Repaying** is a
 customer with a live advance being debited daily or weekly. **Coming round again** is one whose

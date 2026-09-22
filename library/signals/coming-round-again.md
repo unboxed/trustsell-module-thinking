@@ -10,7 +10,7 @@ counts: [how-far-through-the-term, what-was-bought-before, times-they-have-bough
 answers: [V20]
 needs: [crm]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on the broker's customers and their own documents; each stood on a completed deal or a handed-over statement and needed nothing of the sale's shape
 ---
 
 # Coming round again

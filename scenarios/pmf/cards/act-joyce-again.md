@@ -3,9 +3,9 @@ id: act-joyce-again
 order: 8
 kind: act
 signal: coming-round-again
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. The term is a told fact and the funding date is on the CRM, so four fifths is arithmetic; she has bought once, so "near the end" is the term itself and the read is soft for it
 counts: [how-far-through-the-term, what-was-bought-before, times-they-have-bought]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [joyce-amadi, oak-row-bakery]
 to: joyce-amadi
 arrives: 2026-09-22
@@ -60,7 +60,7 @@ She is four fifths of the way through what she took in January. Last time she re
 
 - Why now: she is near the end of the term, and this is the stretch where asking "and then what" is a normal question rather than a push.
 - She was funded in January and has been repaying since, without anything on record going wrong.
-- The time before this one, she took an advance from somebody else. She came back to you after, which means she is willing to, and it also means she shops.
+- The time before this one, she took an advance from somebody else: "a firm called Rapid Merchant, they were quick but I'm still not sure what it cost me", in her own text in January. She came to you after, which means she is willing to, and it also means she shops. No count holds that: it is her words on the thread, and the one thing she asked for was to be told the cost clearly.
 - Nobody has spoken to her about what comes next.
 
 ## Timeline
@@ -72,6 +72,7 @@ She is four fifths of the way through what she took in January. Last time she re
 ## Sources
 
 - crm · The deal record: funded in January, and where it stands now.
+- sms · Her text of 9 January, naming the firm she went to last time and asking you to be clearer about the cost than they were.
 - offering-told · The advance's term and how it is paid, which is what "four fifths through" is measured against.
 - people-told · Oak Row Bakery, the deal you named, standing at coming round again.
 - handover · What she has sent since the sale.
@@ -83,6 +84,13 @@ She is four fifths of the way through what she took in January. Last time she re
 ## What happens next
 
 - If she comes back interested I'll open it as a new deal rather than reopen this one, because a second advance on the same account is a new deal and not a change to the old one. If she says not now, I'll leave it until the term actually ends.
+
+## The message
+
+- opens with · Her own clock: the advance she took in January is near its end. A date of hers, from the term and the funding day · how-far-through-the-term
+- points at · What she would qualify for now, given how this one has run, and the promise to say plainly if it is not worth doing, which is what she asked for in January · what-was-bought-before, sms
+- asks · One thing: worth a look. A question she can say no to · how-far-through-the-term, goal-told
+- holds back · Any figure, because no funder has been asked; any mention of the firm she went to before, which she named and you did not · times-they-have-bought, dated-facts-in-their-words
 
 ## The draft
 

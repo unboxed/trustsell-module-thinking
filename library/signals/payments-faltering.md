@@ -10,7 +10,7 @@ counts: [agreed-payments-not-on-record, words-about-paying, money-in-by-period]
 answers: [V22]
 needs: [crm, handover]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on the broker's customers and their own documents; each stood on a completed deal or a handed-over statement and needed nothing of the sale's shape
 ---
 
 # What they agreed is not being paid

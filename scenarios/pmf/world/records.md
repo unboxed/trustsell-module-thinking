@@ -7,8 +7,8 @@ about: what the connected channels would actually hold, person by person, at a t
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Tony Prieto, Paula Larkin, Alma Vega, Renee Sackville, Marcus Bell,
-Hannah Beck, Errol Danning, Curtis Naylor and Marisol Delgado are written; every other section says so.
+itself. One section per person. Every person in the cast is written, and so is a section for you,
+the rep.
 
 The tempo here is hours, so the rows carry a clock. Working days are counted as Monday to Friday.
 Today is Monday 21 September 2026, and the day begins at 08:00. Text is the conversation: almost
@@ -594,7 +594,251 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | Use-case, on the offering | none |
 | Relationship note, Offline touch, Contact preference, Correction | none |
 
+## Dee Whitlock
+
+Owner, Sandhill Diner. A mobile and `dee@sandhilldiner.com`. A customer: funded on Friday 27
+February through Avondale Capital, $18,000 at 1.31 over eight months, $23,580 back, $137 every
+working day. The deal is in the CRM as Sandhill Diner, yours, at repaying. Everything between you
+since is a handful of texts.
+
+### SMS: the conversation since the sale
+
+| When | From | What it said, in short |
+|---|---|---|
+| Mon 2 Mar, 09:10 | you | Checks the first debit went through cleanly |
+| Mon 2 Mar, 09:25 | Dee | "Went fine. Thanks for the speed on this." |
+| Thu 4 Jun, 14:00 | you | Checks in at the halfway point |
+| Thu 4 Jun, 14:40 | Dee | "All good here. Summer's picking up." |
+
+Nothing since June in either direction. She has answered both texts within the hour. Nothing she
+has written names another person or another business.
+
+### CRM: the deal
+
+| Field | What it holds |
+|---|---|
+| Stage | repaying, since Fri 27 Feb |
+| Amount | $18,000; $23,580 back over eight months; $137 every working day |
+| Activity | Fri 27 Feb, Marcus: funded, Avondale. Nothing logged since: no returned debit, no stipulation, no note |
+
+Decisions: Avondale's offer, Wed 25 Feb; her acceptance, Thu 26 Feb.
+
+### Handover
+
+The application and three statements, February. Nothing since the sale.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 0 | people she has named to you since the sale, at her business or any other | names-they-have-given-you |
+| nothing | owed either way: no document of hers outstanding, no question unanswered, no promise of yours, no returned debit logged | still-owed-either-way |
+| 146 of about 172 working days | how far through the term: funded 27 February over eight months, ending around 27 October | how-far-through-the-term |
+| 1 | times she has bought from you; nothing before | times-they-have-bought |
+| 0 | returned debits logged; words from her about paying: none | agreed-payments-not-on-record |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Sandhill Diner, named in February, standing at repaying |
+| Deal outcome | none typed: the rung says sold, and the CRM says funded on 27 February |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## Wes Halloran
+
+Owner, Halsey Freight. A mobile and `wes@halseyfreight.com`. A customer: funded on Friday 5 June
+through Northline Advance, $45,000 at 1.36 over nine months, $61,200 back, $315 every working day.
+The deal is in the CRM as Halsey Freight, yours, at repaying.
+
+### SMS: the conversation since the sale
+
+| When | From | What it said, in short |
+|---|---|---|
+| Mon 8 Jun, 09:00 | you | Checks the first debit went through |
+| Mon 8 Jun, 11:15 | Wes | "Yep, all through. Cheers." |
+
+Nothing since June in either direction. Nothing he has written mentions money, a bad month, or
+the debits.
+
+### CRM: the deal
+
+| Field | What it holds |
+|---|---|
+| Stage | repaying, since Fri 5 Jun |
+| Amount | $45,000; $61,200 back over nine months; $315 every working day |
+| Activity | Fri 5 Jun, Marcus: funded, Northline. Thu 3 Sep, Marcus: "Northline report a debit returned unpaid, 2 Sep." Tue 15 Sep, Marcus: "Second returned debit, 14 Sep. Northline asking whether we know anything." |
+
+### Handover
+
+The application and three statements, covering March, April and May, in June. Nothing since: his
+later months are on no document you hold.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 2 | agreed debits recorded as not arriving: 2 and 14 September, both logged from the funder's word on the CRM. Whether anything arrived after either is on the funder's ledger, not on any record here | agreed-payments-not-on-record |
+| 0 | words from him about paying, affordability or timing | words-about-paying |
+| March to May only | money in by period: his documents stop in May, so this month is on none of them | money-in-by-period |
+| 76 of about 194 working days | how far through the term | how-far-through-the-term |
+| 1 | times he has bought from you | times-they-have-bought |
+| 0 | messages from you since 8 June; 0 from him | chases-since-their-last-reply |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Halsey Freight, named in May, standing at repaying |
+| Deal outcome | none typed |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## Joyce Amadi
+
+Owner, Oak Row Bakery. A mobile and `joyce@oakrowbakery.com`. A customer: funded on Thursday 15
+January through Avondale Capital, $30,000 at 1.33 over ten months, $39,900 back, $185 every
+working day. The deal is in the CRM as Oak Row Bakery, yours, at coming round again.
+
+### SMS: the conversation
+
+| When | From | What it said, in short |
+|---|---|---|
+| Fri 9 Jan, 10:20 | Joyce | On the form's thread, after a call: "Last time I went with a firm called Rapid Merchant, they were quick but I'm still not sure what it cost me. Can you be clearer than that?" |
+| Fri 9 Jan, 10:35 | you | Yes: the total and the daily amount in writing before she agrees |
+| Tue 13 Jan, 16:00 | you | Avondale's offer, the total and the daily debit, in writing |
+| Wed 14 Jan, 08:05 | Joyce | "That's clear. Let's do it." |
+| Fri 16 Jan, 09:00 | you | Checks the first debit |
+| Fri 16 Jan, 09:30 | Joyce | "All fine, thank you." |
+
+Nothing since January in either direction. Nobody has spoken to her about what comes next.
+
+### CRM: the deals
+
+One deal on record: this one. What she took before it was not from you and is on no record but
+her own words above.
+
+| Field | What it holds |
+|---|---|
+| Stage | coming round again, since Mon 14 Sep, when the term passed four fifths |
+| Amount | $30,000; $39,900 back over ten months; $185 every working day |
+| Activity | Thu 15 Jan, Marcus: funded, Avondale. Nothing logged since: no returned debit |
+
+### Handover
+
+The application and three statements, in January. Nothing since.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 177 of about 216 working days, four fifths | how far through the term: funded 15 January over ten months, ending around 15 November | how-far-through-the-term |
+| 1, in January | times she has bought from you. What she took before that was from somebody else, in her own words, and is not a purchase this count can see | times-they-have-bought |
+| an advance, $30,000 over ten months, Avondale | what was bought before, from you | what-was-bought-before |
+| 0 | returned debits logged; words about paying since January | agreed-payments-not-on-record |
+| 1 | passage in her words naming the firm she went to last time, 9 January | conversation-history |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Oak Row Bakery, named in January, standing at coming round again |
+| Deal outcome | none typed |
+| Names in the field, on the offering | none: "Rapid Merchant" is in her text and on no told list |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## Ivy Sandoval
+
+Owner, Fenwick Auto Body. A mobile and `ivy@fenwickautobody.com`, from her form. Funded on Friday
+18 September through Bayard Funding, $20,000 at 1.44 over six months, $28,800 back, $225 every
+working day; the money reached her account the same afternoon. The deal is in the CRM as Fenwick
+Auto Body, yours, at funded.
+
+### The week, in short
+
+| When | What |
+|---|---|
+| Mon 14 Sep, 08:40 | Form: "$20k, paint booth repair, this week if possible." |
+| Mon 14 Sep | Texts; application and three statements uploaded by 15:00 |
+| Tue 15 Sep, 09:30 | Marcus submits to Bayard and Avondale |
+| Tue 15 Sep, 16:10 | Bayard's offer; Avondale declines on Wednesday, "amount and industry" |
+| Thu 17 Sep, 10:00 | Her acceptance by text: "Take Bayard's." |
+| Fri 18 Sep, 11:30 | Contract back signed, by e-signature |
+| Fri 18 Sep, 15:45 | Funded; Marcus logs it and you mark the deal sold |
+
+Nothing since Friday in either direction. No stipulation was asked for, nothing of hers is
+outstanding, and nothing of yours is owed.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| funded, Fri 18 Sep 15:45 | the deal record's stage and the day it moved, which is what the News card rests on | crm, deal record |
+| sold, 18 September | the outcome you typed the same afternoon | deal outcome |
+| nothing | owed either way | still-owed-either-way |
+| 1 of about 128 working days | how far through: the first debit is today | how-far-through-the-term |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Fenwick Auto Body, named Mon 14 Sep |
+| Deal outcome | sold, Friday 18 September, funded by Bayard |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## You
+
+Fede, the rep. Your own records in this world are thin: the profile says you work a deal from the
+first yes until the offers are in, and Marcus from there; the goal says the tempo is hours. One
+card is about you and nobody else, the Ask about which lenders to recognise on a statement, and
+its facts are the patterns on the files in front of you.
+
+### Repeated outgoings on the files in front of you
+
+Every payment that leaves a merchant's account to the same payee period after period, on the
+statements they handed over, as the documents write the payee. None is named by a document as a
+commitment, and no told list says which of these is a lender.
+
+| Merchant | Payee, as the statement writes it | Amount, how often | Months seen |
+|---|---|---|---|
+| Vega Landscaping | Ford Credit | $612, monthly, the 3rd | twelve |
+| Halsey Freight | NCF Servicing | $410, every Friday | March to May |
+| Corner Tire and Auto | Sunbelt Rentals | $1,250, monthly, the 1st | June to August |
+
+Three patterns on three files. One reads like a vehicle loan, one like a lender, one like an
+equipment rental, and the tool can say none of that: a payee name is a name.
+
+### What the counts give
+
+| Figure | What it is | Count |
+|---|---|---|
+| 3 | repeated outgoings to one payee across the files on hand, one per merchant, none named | repeated-outgoings-to-one-payee |
+| 0 | commitments a document names as owed, on any file on hand; 0 charges on the register, which is held back | existing-commitments-on-record |
+| 0 | names in the field told: no lender, no funder other than your four, no rival | names-in-the-field |
+| 10 | what the tool proposed: ten names is plenty to start | history-told, card raised |
+| 5, 6 | the trade's own phrase, quoted on the card: whether they already take money from five other people before they take it from a sixth | card raised |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| About you, on the profile | the rep, until the offers are in |
+| Tempo, on the goal | hours |
+| Names in the field, on the offering | none |
+| Pricing, on each offering | the band, the term range, the daily or weekly debit; no discount room of yours |
+| Rule, on the organisation | none |
+
 ## Everyone else
 
-Not written yet. Dee Whitlock, Wes Halloran, Joyce Amadi and Ivy Sandoval have one line each in
-`cast.md` and nothing here.
+Nobody. Every person in `cast.md` has a section above.

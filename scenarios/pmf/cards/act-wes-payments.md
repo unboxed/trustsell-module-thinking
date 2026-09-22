@@ -3,16 +3,16 @@ id: act-wes-payments
 order: 6
 kind: act
 signal: payments-faltering
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. One of the read's three grounds shows, two returned debits logged on the CRM from the funder's word; the other two are silent, so the read raises a question and not a finding, which is what the card is
 counts: [agreed-payments-not-on-record, words-about-paying, money-in-by-period]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [wes-halloran, halsey-freight]
 to: wes-halloran
 arrives: 2026-09-21
 documents: []
 widgets: [timeline]
 sure: "likely"
-sure_because: "Two debits are recorded as returned. Why, nobody has said."
+sure_because: "Two returned debits are on the CRM, in the funder's words. That they mean anything about him is not on any record."
 when:
   mode: fresh
   words: "This week, and as a question rather than a chase."
@@ -58,20 +58,21 @@ Two payments came back unpaid this month. That is a fact about an account, not a
 
 ## What happened
 
-- Why now: two of this month's agreed debits are recorded as returned. A third would change the conversation from a question to a problem, and it is better to ask before that.
+- Why now: two of this month's agreed debits are recorded as returned, on 2 and 14 September, logged from what Northline told Marcus. A third would change the conversation from a question to a problem, and it is better to ask before that.
 - He was funded in June over nine months, paid by a fixed debit every working day.
 - Nothing he has said mentions money, late payment or a bad month. There is no word from him either way.
-- His own later documents do not cover this month yet, so what actually went in and out is not on record anywhere I can see.
+- His own documents stop in May, so what actually went in and out this month is not on record anywhere I can see. You have not written to him since June, and he has not written to you.
 
 ## Timeline
 
 - June · Funded over nine months, daily debit
-- This month · Two debits recorded as returned
+- 2 September · A debit returned, in the funder's word
+- 14 September · A second
 - Since · Nothing said either way
 
 ## Sources
 
-- crm · The deal record: funded in June, and two returned debits logged this month.
+- crm · The deal record: funded in June, and two returned debits logged this month from Northline's word, on 3 and 15 September.
 - offering-told · The advance's term and how it is paid: a fixed debit each working day.
 - handover · No document from him covering this month.
 - people-told · Halsey Freight, the deal you named, standing at repaying.
@@ -83,6 +84,13 @@ Two payments came back unpaid this month. That is a fact about an account, not a
 ## What happens next
 
 - Once you have asked I'll keep his answer as his own words, and stop treating the gap as meaning anything by itself. If a third comes back before he replies, I'll raise it once more and say plainly that I still do not know why.
+
+## The message
+
+- opens with · The two returned debits, plainly, and that it is a question: the one thing on record about him since June, in the funder's word · agreed-payments-not-on-record
+- points at · Nothing of yours. The daily amount and when it lands, which are his to say something about · words-about-paying
+- asks · One thing, a fact: what is going on, a bank matter or the timing. At this tempo the question and the offer to work with it share one text · words-about-paying, goal-told
+- holds back · Any reading of the two returns as a verdict on him or his business, and anything about the funder's next step, which is the funder's · agreed-payments-not-on-record, money-in-by-period
 
 ## The draft
 

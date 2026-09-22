@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-six passes on `library/docs/coverage.md` are done. The library
+Forty-seven passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,7 +67,7 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 1 is done in `bops` and Job 3 has begun in `pmf`; carry on there after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval) and the lenders Ask, then the suggestions for that world, then `cority`.** Job 4 is parked and
+**If you are reading this cold: Job 1 is done in `bops` and Job 3 is done in `pmf`; what is left of Job 3 is `cority`, then its ledger, then Job 4 with the user.** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
 (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `scenarios/pmf/docs/pmf-pass.md` the latest
 and the one Job 3 grows), then Job 1's six steps, which Job 3 runs per person in the other two
@@ -142,7 +142,10 @@ broker's ladder have records with a clock on every row, three cards are decided 
 that ask in the same text that gives, and the disclosure Act became an Ask because its read is
 silent until a rule is told. **The forty-sixth did the front of that ladder**: three more decided,
 `firm-contact` reads a handed list so a colleague's stand contact counts, and a text to a stranger
-with no consent on record went by mail because nothing reads consent. **The figure rule is built**: `build.js` refuses a card that states
+with no consent on record went by mail because nothing reads consent. **The forty-seventh
+finished that world**: every card decided, one retired (a favour asked of a customer, whose read
+never fired), two openers for a note after the sale, and a ledger of what the world says
+(`pmf-pass.md`, last section). **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -233,8 +236,7 @@ buying-process Ask had two shadows where the records hold six. Job 1 in `bops` i
 Job 3, below.
 
 The cards' joins upward are the last `provisional` thing in the library: 43 of the 44 cards name
-their read, and eleven were read off the card rather than decided, four in `pmf` and seven in
-`cority`. Nineteen of the 42 signals carry `assumes_status: provisional` too.
+their read, and seven were read off the card rather than decided, all in `cority`. Sixteen of the 42 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -364,9 +366,12 @@ cannot be read off three statements. **The forty-sixth did the front of the ladd
 Danning, Curtis Naylor, Marisol Delgado): `buying-intent` is the first rung here and not a read,
 so Errol's card rests on `loose-end` (his question, one working day open); `delivered-before` came
 off Curtis's; Marisol's gained `colleague-already-in-touch` once `firm-contact` could see a handed
-list, and goes by mail because `sms#consent` is read by nothing. **Next:** after the sale (Dee
-Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval), then `ask-known-lenders`, then the suggestions
-for this world, then `cority`. One pass file section and one commit per group.
+list, and goes by mail because `sms#consent` is read by nothing. **The forty-seventh finished
+`pmf`**: Dee Whitlock's introduction card is retired (its read never fired: she named nobody, and a
+favour asked with nothing owed opens on nothing), Wes Halloran's and Joyce Amadi's stand with rows,
+two openers were added for a note after the sale, and the pass file ends with the world's ledger.
+**Next:** `cority`, the same six steps per person, then its ledger. One pass file section and one
+commit per group.
 
 Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
 signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
@@ -639,6 +644,13 @@ reach what it claims.
 - **What they want the money for is said unasked and read by nothing** (found in the forty-sixth
   pass). All three leads at the front of the broker's ladder said it, on a text, a form and a
   list; V9 is "answered by asking" on the map and the answer is already on the records.
+- **`customer-introduction` has no card in any world** (found in the forty-seventh pass). No
+  customer in the broker's world has named anyone, and the one card written for the read had to
+  ask for the name the read needs. Soliciting a referral is a different move from introducing to
+  a name given; it has no read, and a note that does it opens on nothing the envelope sanctions.
+- **What a customer took from somebody else is on no count** (found in the forty-seventh pass).
+  A lender's name in their own words on a thread is read by nothing; the lenders Ask is the only
+  place it could go.
 - **The rung at which a sale completes is in prose** (found in the forty-second pass).
   `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
   it now, in a paragraph the build does not read.

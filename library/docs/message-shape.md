@@ -107,7 +107,12 @@ September from a cold council: a note asking a colleague for an introduction ope
 said about the target, which is the one thing the two of you already share), what they sent, by
 name (`documents-received`, added 22 September from the fast end: a text asking for the one
 document still out opens on the two that came, which is the one thing you both already know, and
-a chase that opens anywhere else reads as a form letter), or, on
+a chase that opens anywhere else reads as a form letter), or, after the sale, their own clock or
+what their account did (`how-far-through-the-term` and `agreed-payments-not-on-record`, added 22
+September from the broker's customers: the list had nothing written for a note to a customer,
+because no card to one had met it; a note to somebody near the end of the term they agreed opens
+on that term, which is a date of theirs agreed rather than said, and a note about two returned
+debits opens on the debits, which they know better than you do), or, on
 a card a watch turns up, on what came back.
 
 - **Not a new rung.** A message's shape is not a read. Nothing is read off it; it is a projection
@@ -146,8 +151,11 @@ not listed makes no card that writes to anyone.
 | answer-came-back | the news itself, and the promise it keeps | what came back and from whom, and what is still out | nothing: a time | the terms, where a colleague presents them |
 | missing-documents | what came, by name | the one still out, and what it unlocks | that one document | asking again for what came; any hint the delay is theirs |
 | uneven-income, with can-they-carry-it | their own dates or figures, in their words | their own figures, and what a fixed repayment is | one fact: what they do about it | any repayment amount not on an offer; any verdict on whether they can carry it |
+| coming-round-again | their own clock: the term they agreed, near its end | what they could have now, and the promise to say if it is not worth it | whether it is worth a look | any figure; anyone they went to before, whom they named and you did not |
+| payments-faltering | what their account did, plainly, as a question | nothing of yours: the daily amount and when it lands, which are theirs | one fact: what is going on | any reading of it as a verdict; the funder's next step |
+| loose-end, at hours | their question, and its answer | the thing that answers it, and what follows | the same thing, in the same text | any figure or day not on record |
 
-*(The table is mine, not yet yours. Each row is a claim that a card will test. The last three
+*(The table is mine, not yet yours. Each row is a claim that a card will test. The last six
 rows were written at the fast end, 22 September, on the broker's cards.)*
 
 ## Tested on seven cards
@@ -167,7 +175,7 @@ provisional have no rows and the build names them without refusing them.
 - It does not derive a message from the rows. The rows are the trail of a draft, checked; the
   draft is still written by hand in the cards, and by the tool in the product. Whether the rows
   could become the input rather than the check is the next question, and it is not asked here.
-- ~~It has not met the fast end.~~ It met it on 22 September, on three of the broker's cards
+- ~~It has not met the fast end.~~ It met it on 22 September, on seven of the broker's cards
   (`scenarios/pmf/docs/pmf-pass.md`). What the rows say there is different from what they say to
   a council officer, and the difference is decided by the counts and not by taste: the *asks* row
   rests on the goal's tempo and on what is owed, and at hours it asks in the same text that
@@ -175,4 +183,6 @@ provisional have no rows and the build names them without refusing them.
   then a time), where at a patient tempo the same rows say "nothing, no need to reply". One card
   had no sanctioned opening and got one: what they sent, by name. One card that should have
   carried rows carried none, because its read was silent by its own rule and the card became an
-  Ask.
+  Ask. The two notes to customers had no sanctioned opening either, because the list was written
+  before any card to a customer existed; after the sale a note opens on their own clock or on
+  what their account did, and those are openers now.

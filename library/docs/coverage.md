@@ -62,7 +62,7 @@ holes.
 | V18 What must I disclose about the cost? | [`disclosure-still-owed`](../signals/disclosure-still-owed.md), since 20 September: the buyer is turning to agree and a must-say rule in the fence has no match on the thread. What a jurisdiction requires is not written yet and is the organisation's to tell, never the tool's to invent. Run on the broker's records in the forty-fifth pass: with no rule told the read is silent by its own rule, so the card it produces is an Ask for the rule, on the live case. | Answered once a rule is told; an Ask until then | `thread-under-way` |
 | V19 Am I manufacturing urgency that is not real? | [`pushing`](../signals/pushing.md), first shape, since 20 September: the only real dates on a thread are the buyer's own words and a dated change in your told pricing; any other deadline is manufactured. | Answered | `thread-under-way` |
 | V20 When does someone I sold to come round again? | [`coming-round-again`](../signals/coming-round-again.md), since 21 September, over the new [`since-the-sale`](../assemblies/since-the-sale.md) gather: how far through the agreed term the deal is, what they took before, and their own interval between purchases. Where no term was told there is no clock, and the read is not made. | Answered | `[]`: it needs a completed deal, which is a rung on the ladder, not an assumption about the sale's shape |
-| V21 Who could this buyer introduce me to? | Both halves now. `warm-path` finds a way in through a mutual contact before a sale. [`customer-introduction`](../signals/customer-introduction.md), since 21 September, is the half after one: a name the customer gave you, at an organisation you have never written to, and nothing outstanding either way. Never answered from a document they handed over for something else. | Answered | `[]` |
+| V21 Who could this buyer introduce me to? | Both halves now. `warm-path` finds a way in through a mutual contact before a sale. [`customer-introduction`](../signals/customer-introduction.md), since 21 September, is the half after one: a name the customer gave you, at an organisation you have never written to, and nothing outstanding either way. Never answered from a document they handed over for something else. Run on the broker's customers in the forty-seventh pass: none has named anyone, the read fires on nobody, and the one card written for it was retired because it asked for the name the read needs. | Answered where a name is given; the soliciting half has no read | `[]` |
 | V22 Which of the people I sold to is in trouble? | [`payments-faltering`](../signals/payments-faltering.md), since 21 September: an agreed payment their own later documents do not show, a word from them about paying, or a note on the CRM. Never a verdict on the person. Whether the money actually arrived is on no record the library has, and the read names that rather than filling it. | Answered, short of the ledger | `[]` |
 
 ## The firm seller's 21
@@ -1688,6 +1688,38 @@ said unasked on the text, the form and the list by all three, and read by nothin
 `missing-documents` fires on Curtis two working days after the application was sent and no card
 carries it, argued right for today: the funder card is the move before the file.
 
+**Done in the forty-seventh pass, 22 September.** The broker's world is done: the four people past
+the sale, Dee Whitlock, Wes Halloran, Joyce Amadi and Ivy Sandoval, and the lenders Ask. The record
+is the third and fourth sections of `scenarios/pmf/docs/pmf-pass.md`, and the fourth is the world's
+ledger: which cards should exist and do, which should and did not, which should not. Every person
+in the cast has a records section, every card is `decided`, and all eleven are figure-checked. One
+card is retired, the first in any world removed rather than rewritten:
+`act-dee-introduction` rested on `customer-introduction`, whose trigger is a name the customer
+gave, and the card said itself that no name had come; a favour asked with nothing owed and nothing
+to give is the message the envelope refuses, and no other read fires on a customer paying without a
+miss. The read has no card in any world now, and the soliciting half of V21 has no read and should
+not until somebody says what makes it a gift. Wes Halloran's card stands as the question the read
+says one ground makes; Joyce Amadi's stands on a told term and a funding day, and the firm she
+went to before is her own text now rather than a claim under nothing. Sandhill Diner's term is
+eight months, because six from February had ended in August. The world names the rung at which its
+sale completes: funded. Three reads' `assumes:` are decided.
+
+**The message rows after the sale.** The two notes to customers had no sanctioned opening,
+because the list was written before any card to a customer met it. After the sale a note opens on
+their own clock, the term they agreed near its end, or on what their account did, and both are
+the one thing the two of you already share; `how-far-through-the-term` and
+`agreed-payments-not-on-record` are openers now, and the table in
+[`message-shape.md`](message-shape.md) has six rows from the fast end. Seven drafts carry rows in
+this world, and on every one the *asks* row asks in the same text that gives.
+
+**What the counts said about themselves.** What a customer took from somebody else is on no
+count: a lender's name in their own words is read by nothing, and the lenders Ask is the only place
+it could go. Whether the money arrived is still on no record: two returned debits are the funder's
+word, logged by a colleague. And the world's ledger, in the seller's order: who decides, consent
+to text, what the money is for, how urgent, and whether the money arrived are the five things no
+read says at this end, and only the last is a missing channel; the other four are records the tool
+already holds and does not read as answers.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1714,27 +1746,29 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on eleven of forty-four cards, four in the
-  broker's world and seven in the firm's.** Three
+- **The cards' joins upward are still provisional on seven of forty-three cards, all in the
+  firm's world.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
   up, one re-tested from the customer's end in the forty-second, one from the budget
   holder's in the forty-third, the four about no person in the forty-fourth, which finished
-  the shipped world, four at the top of the broker's ladder in the forty-fifth and three at its
-  front in the forty-sixth; the method is in
+  the shipped world, four at the top of the broker's ladder in the forty-fifth, three at its
+  front in the forty-sixth and the rest of it in the forty-seventh, with one card retired; the
+  method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
   `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
   `bramley-pass.md` and `no-person-pass.md`, and for the broker's world in
   `scenarios/pmf/docs/pmf-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Nineteen signals still carry `assumes_status: provisional`;
+  records and names no read. Sixteen signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
   `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
   `delivered-before`, `voice`, `answer-came-back`, `missing-documents`, `uneven-income`,
-  `lead-with-this`, `turned-down-before` and `where-this-one-goes` were tested
+  `lead-with-this`, `turned-down-before`, `where-this-one-goes`, `coming-round-again`,
+  `payments-faltering` and `existing-commitments` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

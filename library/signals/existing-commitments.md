@@ -10,7 +10,7 @@ counts: [existing-commitments-on-record, repeated-outgoings-to-one-payee, charge
 answers: [V12]
 needs: [handover, public-records, offering-told]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on the broker's customers and their own documents; each stood on a completed deal or a handed-over statement and needed nothing of the sale's shape
 ---
 
 # What they already owe

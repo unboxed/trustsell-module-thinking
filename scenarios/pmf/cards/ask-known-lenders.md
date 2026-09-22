@@ -3,9 +3,9 @@ id: ask-known-lenders
 order: 10
 kind: ask
 signal: existing-commitments
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. Three repeated outgoings on three files and no told name to match any of them: a told record nobody has filled produces an Ask
 counts: [repeated-outgoings-to-one-payee, existing-commitments-on-record]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [you]
 arrives: 2026-09-22
 documents: []
@@ -33,7 +33,7 @@ I can see the same amount leaving an account to the same name every month. I can
 
 ## Known so far
 
-- On the files in front of me I can already pick out repeated outgoings: the same amount, to the same payee, period after period. That much is arithmetic and I do it now.
+- On the files in front of me I can already pick out repeated outgoings: the same amount, to the same payee, period after period. That much is arithmetic and I do it now. Three so far, one on each of three merchants' statements: $612 a month to Ford Credit, $410 every Friday to NCF Servicing, $1,250 a month to Sunbelt Rentals. One reads like a vehicle loan, one like a lender, one like an equipment rental, and I can say none of that.
 - What their own documents name as owed I also have, where a document names it.
 - What is secured against them I can look up on the public register, and that gives me a party's name where there is a charge.
 

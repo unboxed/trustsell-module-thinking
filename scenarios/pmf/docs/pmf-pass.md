@@ -340,3 +340,205 @@ Findings for the library, recorded in `coverage.md` and not fixed here:
   read by nothing as an answer; the Asks that would collect it already have it.
 - At the fast end `buying-intent` is the first rung and not a read; the reads that make cards at
   `interested` are what is owed (`loose-end`) and where they came from (`lead-with-this`).
+
+## After the sale: Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval, and the lenders Ask
+
+Worked on 22 September 2026. The four people past the sale, which is the point of this world: the
+council ladder ends at the signature and this one runs on. Four cards and an Ask about you: a
+favour asked of a customer, two returned debits, a term near its end, a deal funded on Friday, and
+which lenders to recognise on a statement. With them every person in the cast has a records
+section and every card in the world is decided.
+
+### 1. The records
+
+- **The sale's rung.** `since-the-sale` says the seller names it and no world had; `goal.md` says
+  the sale completes at funded, and repaying and coming round again are the same customer further
+  on. Every card in this group stands on that sentence.
+- **Dee's six months from February were over.** The organisations table said "funded in February
+  over six months", the card said "near the end of the term, and still paying", and six months
+  from 27 February ended in August. She is funded over eight months now, 146 of about 172 working
+  days through, which is the fact the card wanted. Two texts of hers since the sale, both answered
+  within the hour, and neither names anyone.
+- **Wes's two returned debits are the funder's word, logged.** Northline told Marcus on 3 and 15
+  September and he wrote it on the deal. Wes has said nothing since June; his statements stop in
+  May. That is exactly one of the read's three grounds.
+- **Joyce named the firm she went to before, in January.** "Rapid Merchant, they were quick but
+  I'm still not sure what it cost me." The card quoted the fact and nothing under it held it; it
+  is her text now, and the one thing she asked for was to be told the cost plainly. Four fifths
+  through: 177 of about 216 working days, funded 15 January over ten months.
+- **Ivy's week is seven rows**, form to funded in five days, and her deal outcome was typed the
+  afternoon it funded, which is what the News card rests on beside the deal record.
+- **Three repeated outgoings on three files**, one per merchant, none named by a document or by
+  any told list: $612 a month to Ford Credit, $410 a week to NCF Servicing, $1,250 a month to
+  Sunbelt Rentals. The lenders Ask quotes them now instead of an example.
+
+### 2. The counts, run by hand
+
+| Count | Result | Standing |
+|---|---|---|
+| names-they-have-given-you, on Dee | nobody, at her business or another | **0** |
+| still-owed-either-way, on Dee | nothing | nothing |
+| how-far-through-the-term, on Dee | 146 of about 172 working days | 85 per cent |
+| agreed-payments-not-on-record, on Wes | two, 2 and 14 September, from the funder's word on the CRM | 2 |
+| words-about-paying, money-in-by-period, on Wes | none; his documents stop in May | 0; silent for this month |
+| how-far-through-the-term, on Joyce | 177 of about 216, four fifths | holds |
+| times-they-have-bought, what-was-bought-before, on Joyce | once, January, $30,000 over ten months; what she took elsewhere before is her words, not a purchase this count sees | 1 |
+| crm deal record, deal outcome, on Ivy | funded Friday 15:45; sold, typed the same day | the News card's two records |
+| repeated-outgoings-to-one-payee, across the files | three, one per merchant | 3 |
+| existing-commitments-on-record | none named; the register is held back | 0 |
+| names-in-the-field, told | none | 0: a told gap |
+
+Four things the counts said about themselves while being run:
+
+- **`customer-introduction` cannot fire on a customer who has named nobody, and the card knew.**
+  The read's trigger is a name the customer gave; the card said "no name has come from her so
+  far, so this is a first ask". A first ask for names is a different thing from an introduction to
+  a name given, and the read is right to want the name first. What the card was is a referral
+  fished for with nothing owed and nothing to give, which is the message the envelope refuses.
+- **`agreed-payments-not-on-record` is one of three, and the read says one alone is a question.**
+  The card is a question, so the read and the card agree, and the sure word stays "likely" on the
+  fact that two returns are the funder's word and not the bank's.
+- **`how-far-through-the-term` is the customer's own clock and nothing in the message rules knew
+  it.** The sanctioned openings were all written before any card to a customer met them: owed,
+  published, their date said on a thread, the angle, a worry, a handover, a colleague's word. A
+  term they agreed is a date of theirs agreed rather than said, and two returned debits are a
+  fact they know better than you. Both are openers now, and the table has rows for the two reads.
+- **What a customer took from somebody else is on no count.** Joyce's "Rapid Merchant" is her
+  words on a thread; `what-was-bought-before` counts your deals and `names-in-the-field` is told by
+  nobody. The card leans on her sentence directly, and the lenders Ask is where the name would go.
+
+### 3. Which reads fire
+
+| Read | Verdict | Grade, by what stacks |
+|---|---|---|
+| customer-introduction, on Dee | **Does not fire.** Nothing owed, which is the half that permits the asking, and no name given, which is the half that gives it somewhere to go. The card rested on it anyway | |
+| payments-faltering, on Wes | **Fires as a question**, one of three grounds: the CRM note. No word from him, no document for the month | Likely on the fact; a question on the meaning |
+| coming-round-again, on Joyce | **Fires, soft.** The term is told, the funding day is on the CRM, four fifths is arithmetic; she has bought once, so the end of the term is the clock and there is no interval of her own | Likely |
+| coming-round-again, on Dee | Fires too, at 85 per cent of eight months, and no card carries it: argued below | |
+| existing-commitments, across the files | Fires as patterns on three files, none nameable: the Ask | |
+| customer-introduction, on Ivy, Joyce, Wes | Does not fire: nobody has named anyone | |
+| Every read that assumes several people | Cannot apply, by the world's `has:` | |
+
+Three reads' `assumes: []` were tested against the word and are `decided`: `coming-round-again`
+and `payments-faltering` on completed deals with no thread of note, `existing-commitments` on
+handed-over statements alone. *(My reasons, not yet yours.)*
+
+### 4. Down from the questions
+
+| Question | What would answer it, in the seller's terms |
+|---|---|
+| V20 When does someone I sold to come round again? | Joyce: now, four fifths through ten months. Dee: soon, 85 per cent through eight. Wes: not for months |
+| V21 Who could this customer introduce me to? | Nobody on record. Nobody has named anyone since any sale |
+| V22 Which of the people I sold to is in trouble? | Wes, perhaps: two returned debits in the funder's word, and nothing from him. Nobody else has a mark against them |
+| V12 What do they already owe, and to whom? | Three patterns on three files and no name for any: that is the Ask |
+| V16 What was turned down last time on one like this? | Nothing among the customers; Curtis, at the front |
+| V18 What must I disclose? | Joyce asked for it in January in her own words, and it is still nobody's rule |
+
+### 5. Where the two ends meet
+
+**`act-dee-introduction`, retired**
+
+- customer-introduction, V21: **neither end reaches it.** The read does not fire, because she has
+  named nobody; the question's answer is "nobody on record"; and the message had no sanctioned
+  opening, because nothing was owed, nothing published, no angle, no worry, and a favour asked
+  with nothing to give is what `pushing`'s second shape describes. The card was written to
+  exercise the read and could only do so by asking for the thing the read needs. It is the first
+  card in any world removed rather than rewritten: no read fires on Dee, and the honest result is
+  that a customer paying without a miss with nothing owed gets left alone. `coming-round-again`
+  will reach her in a few weeks, and that card is hers. *(My reason, not yet yours.)*
+
+**`act-wes-payments`**
+
+- payments-faltering, V22: **both ends reach it, as a question.** The card was already a question
+  and rests on the one ground that shows. The rows open on the two returns, point at nothing of
+  yours, ask one fact in the same text that offers to work with it, and hold back any verdict and
+  the funder's next step.
+
+**`act-joyce-again`**
+
+- coming-round-again, V20: **both ends reach it, softly**, as the read says of a customer who has
+  bought once. The card's "went to somebody else last time" rested on nothing and rests on her own
+  text now; the rows open on her own clock, point at what she asked for in January (to be told
+  plainly), ask whether it is worth a look, and hold back any figure and the name she gave.
+
+**`news-fenwick-funded`**
+
+- **Rests on two records and names no read**, as News does; both are in her section. Nothing to
+  decide. It is still the only News card in any world.
+
+**`ask-known-lenders`**
+
+- existing-commitments, V12: **both ends reach it, as an Ask**, and it quotes three real patterns
+  now instead of an example. A told record nobody has filled produces an Ask.
+
+**Supply with no demand**: `coming-round-again` fires on Dee at 85 per cent and no card carries
+it. Argued right for today: the read's "near the end" with one purchase behind her is the term
+itself, hers ends around 27 October, and one card per person means the retired card's slot is
+this one's in a few weeks. `payments-faltering`'s other two grounds are silent, which is not
+supply at all.
+
+**Demand with no supply**: V21 for every customer, because none has named anyone, and the
+soliciting half of the question, asking a customer for names, has no read and should not have one
+until somebody says what makes it a gift. V22's largest hole stands: whether the money arrived is
+on the funder's ledger and on no record here. And Joyce's January request, to be told the cost
+plainly, was met by hand and is nobody's rule.
+
+### 6. Decided
+
+- `act-wes-payments`, `act-joyce-again` and `ask-known-lenders` are `decided`; the two with drafts
+  carry their message rows. `act-dee-introduction` is retired. `news-fenwick-funded` rests on its
+  two records as before. **Every card in this world is decided**, and every person in the cast has
+  a records section.
+- `how-far-through-the-term` and `agreed-payments-not-on-record` are sanctioned openings for a
+  note after the sale (`build.js`, `docs/message-shape.md`); the table there has rows for
+  `coming-round-again`, `payments-faltering` and `loose-end` at hours.
+- `coming-round-again`, `payments-faltering` and `existing-commitments` carry
+  `assumes_status: decided`.
+- `goal.md` names the rung at which the sale completes; Sandhill Diner's term is eight months.
+
+Findings for the library, recorded in `coverage.md` and not fixed here:
+
+- `customer-introduction` has no card in any world, and the one written for it had to ask for the
+  thing the read needs. Soliciting a referral is a different move from introducing to a name
+  given, has no read, and a note that does it opens on nothing the envelope sanctions.
+- What a customer took from somebody else is on no count: a firm's name in their own words is
+  read by nothing, and the lenders Ask is the only place it could go.
+- Whether the money arrived is still on no record; two returned debits are the funder's word,
+  logged by a colleague, and the read is right to ask rather than find.
+
+## What this world says, after the six steps
+
+Twelve cards were written for this world on 21 September to find out whether the reads written
+against the volume seller's questions could reach anything. Run from the records up a day later,
+eleven stand and one does not, and the honest ledger is this.
+
+**Which cards should exist and do.** Nine Acts and Asks rest on a read that fires on the records:
+the offers Tony has not heard (`answer-came-back`), the statement Renee has not sent
+(`missing-documents`), Alma's winter (`uneven-income`), Errol's question (`loose-end`), Curtis's
+funder (`where-this-one-goes` and `turned-down-before`), Marisol's list (`lead-with-this` and
+`colleague-already-in-touch`), Wes's debits (`payments-faltering`), Joyce's term
+(`coming-round-again`), and the lenders Ask (`existing-commitments`). The News card rests on two
+records. Four of the eleven changed their main read on the way, and none changed its move.
+
+**Which should exist and did not.** One, written: the Ask for the disclosure rule, which is what
+the disclosure Act was once its read's silence was noticed. One that should have arrived and
+could not be written for this week: `where-this-one-goes` on Vega Landscaping, on Thursday, before
+Marcus submitted to a funder she misses on industry; its day is past and the phone's week begins
+today, which is the finding rather than a card. One a watch turns up: `coming-round-again` on Dee
+Whitlock in a few weeks, in the slot the retired card held.
+
+**Which should not exist.** The favour asked of Dee. Its read does not fire, no question's answer
+is served by it, and its message had nothing to open on.
+
+**What the message rows say here that they do not say to a council.** On every Act with a draft
+the *asks* row asks in the same text that gives, and says the tempo decides it. Three kinds of
+opening had to be added, and every one of them is the same argument the council world had already
+made twice: the note opens on the one thing the two of you already share, which at this end is
+what they sent, their own clock, or what their account did.
+
+**What no read says at this end**, in the order it would matter to the seller: who decides (V7),
+which every application answers by its signature and nothing reads; consent to text, which the
+channel holds and nothing checks; what the money is for (V9) and how urgent (V10), which every
+lead says unasked and nothing takes; and whether the money arrived (V22), which is on the funder's
+ledger and nowhere here. Only the last is a missing channel. The other four are records the tool
+already holds and does not read as answers.

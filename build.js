@@ -772,8 +772,12 @@ const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {
 // introduction opens on what he said, which is the one thing the two of you already share), or
 // what they sent, by name (added 22 September, from the fast end: a text that asks for the one
 // document still out opens on the two that came, which is the one thing you both already know,
-// and a chase that opens anywhere else reads as a form letter).
-const openers = new Set(['auto-reply-no-longer-with', 'colleague-touches-on-record', 'documents-received', 'promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
+// and a chase that opens anywhere else reads as a form letter), or, after the sale, their own
+// clock or what their account did (added 22 September, from the broker's customers: a note to
+// somebody near the end of the term they agreed opens on that term, a date of theirs agreed rather
+// than said, and a note about two returned debits opens on the debits, which they know better than
+// you; the list had nothing written for a customer, because no card to one had met it).
+const openers = new Set(['auto-reply-no-longer-with', 'colleague-touches-on-record', 'documents-received', 'how-far-through-the-term', 'agreed-payments-not-on-record', 'promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
   'fresh-reason-to-write', 'dated-facts-in-their-words', 'repeated-objection-count', 'objection-raised-on-call',
   ...['lead-with-this', 'stated-priorities'].flatMap(id => [].concat((L.signals.find(s => s.id === id) || {}).counts || []))]);
 const toldSources = new Set(L.told.map(t => t.id));
@@ -799,7 +803,7 @@ for (const c of L.cards) {
       if (!mine.has(id) && !docs.has(id) && !toldSources.has(id) && !reach.has(id))
         problems.push(`${c.file}: "## The message" rests "${r[0]}" on "${id}", which is not a count the card quotes, a count of the envelope, a document it sends, a told source, or a channel it reaches`);
     if (r[0] === 'opens with' && !rests.some(id => openers.has(id) || (!c.arrives && reach.has(id))))
-      problems.push(`${c.file}: the message opens on ${rests.join(', ') || 'nothing'}. It has to open on what is owed, a fresh reason, their own date, the angle, a worry in their own words or what they sent (${[...openers].join(', ')}), or on what came back when a watch turned the card up`);
+      problems.push(`${c.file}: the message opens on ${rests.join(', ') || 'nothing'}. It has to open on what is owed, a fresh reason, their own date, the angle, a worry in their own words, what they sent, or, after the sale, their own clock or what their account did (${[...openers].join(', ')}), or on what came back when a watch turned the card up`);
     c.messageRows.push({part: r[0], words: r[1], rests});
   }
 }
