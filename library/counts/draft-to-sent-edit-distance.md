@@ -6,7 +6,7 @@ over: [writing-history]
 over_status: decided   # decided 21 September, when the counts were written
 defined: true
 counts: How much you change a draft before you send it, and what you change.
-needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample]
+needs: [gmail#email-message, gmail#email-thread, slack#slack-message, sms#text-message, gmail#draft, sms#draft, profile-told#voice-sample, history-told#edit]
 breaks: It needs a body of your own writing before any of it means anything: under about thirty sent messages the medians move with every new one.
 ---
 

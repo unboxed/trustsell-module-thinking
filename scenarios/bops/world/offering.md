@@ -59,4 +59,12 @@ Two things, flagged rather than fixed:
   partial rollout price sheet, "one service, live cases, about a third of the price", and three
   cards lean on it (Karen's, Gary's, and the Felton price card). Either the world's sheet is a
   quote outside the list, which the Pricing told record's "discount room" would have to carry, or
-  the cards are offering something the price list does not. Felton's pass will meet this first.
+  the cards are offering something the price list does not. **Felton's pass met it on 22
+  September and settled it as fiction**: the sheet is your own one-page quote, written on 6 July
+  after Bramley asked whether they could start with one service (`records.md`, Stephen Walsh's
+  Drive), and the profile has never been told about it. So `your-price` gives the band and
+  nothing smaller, the card's "about a third" rests on the document in Drive and not on a count,
+  and the card says so. What that leaves for the library is in `felton-pass.md`: the Pricing told
+  record has no place for a smaller first step's price, and "one entry is one thing on one set
+  of terms" would make the partial rollout a second entry on the offering list, which nobody
+  has decided.

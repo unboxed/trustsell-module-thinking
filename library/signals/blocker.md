@@ -10,7 +10,7 @@ counts: [repeated-objection-count, reply-length-vs-own-rhythm, stall-after-ask-c
 answers: [Q15, Q16]
 needs: [meet]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on a person whose worry came back four times on one thread, and could only have on a thread
 pull: Offerings' objection list, to name the objection
 ---
 

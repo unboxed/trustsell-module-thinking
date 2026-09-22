@@ -732,16 +732,19 @@ for (const c of L.cards) {
 // what it rests on is checked the way Sources rows are: a count the card quotes, a count of the
 // envelope (the counts under `pushing`, which say what a thread can honestly carry and hold for
 // every draft), a document the card sends, a told source, or a channel the card's trail reaches.
-// The opening has to rest on what is owed, a fresh reason, their own date, or the angle; or, on a
+// The opening has to rest on what is owed, a fresh reason, their own date, the angle, or a worry in
+// their own words; or, on a
 // card a watch turns up, on what came back. A decided card must carry the rows; a card still
 // provisional is counted and named, because its message cannot be traced before its reads are.
 const MESSAGE_HEADS = ['opens with', 'points at', 'asks', 'holds back'];
 const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {}).counts || []));
 // What a message may open on: what is owed (three counts), a fresh reason (published about them,
-// or published by them: the counts under stated-priorities), their own date, or the angle (the
-// counts under lead-with-this).
+// or published by them: the counts under stated-priorities), their own date, the angle (the
+// counts under lead-with-this), or a worry in their own words (the two counts that keep the
+// passages: added 22 September, when Felton's price card had no sanctioned opening for a message
+// that answers a worry the buyer raised four times; docs/message-shape.md).
 const openers = new Set(['promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
-  'fresh-reason-to-write', 'dated-facts-in-their-words',
+  'fresh-reason-to-write', 'dated-facts-in-their-words', 'repeated-objection-count', 'objection-raised-on-call',
   ...['lead-with-this', 'stated-priorities'].flatMap(id => [].concat((L.signals.find(s => s.id === id) || {}).counts || []))]);
 const toldSources = new Set(L.told.map(t => t.id));
 let shaped = 0; const unshaped = [];
@@ -766,7 +769,7 @@ for (const c of L.cards) {
       if (!mine.has(id) && !docs.has(id) && !toldSources.has(id) && !reach.has(id))
         problems.push(`${c.file}: "## The message" rests "${r[0]}" on "${id}", which is not a count the card quotes, a count of the envelope, a document it sends, a told source, or a channel it reaches`);
     if (r[0] === 'opens with' && !rests.some(id => openers.has(id) || (!c.arrives && reach.has(id))))
-      problems.push(`${c.file}: the message opens on ${rests.join(', ') || 'nothing'}. It has to open on what is owed, a fresh reason, their own date or the angle (${[...openers].join(', ')}), or on what came back when a watch turned the card up`);
+      problems.push(`${c.file}: the message opens on ${rests.join(', ') || 'nothing'}. It has to open on what is owed, a fresh reason, their own date, the angle or a worry in their own words (${[...openers].join(', ')}), or on what came back when a watch turned the card up`);
     c.messageRows.push({part: r[0], words: r[1], rests});
   }
 }

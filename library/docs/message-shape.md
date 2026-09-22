@@ -42,7 +42,14 @@ can I look at, what do you want from me, and what did you not say.
    (`fresh-reason-to-write`), something published by them (the counts under `stated-priorities`),
    or a date of their own coming closer (`dated-facts-in-their-words`). Where there is neither, the
    angle: the use-case that touches something they have said, or the line that says how you came
-   by them (the counts under `lead-with-this`). Where there is none of those, there is no
+   by them (the counts under `lead-with-this`). Or a worry in their own words: the passage the
+   buyer wrote when they raised it, kept by `repeated-objection-count` and
+   `objection-raised-on-call`. A message that answers a worry opens on the worry, in their
+   words, because an answer that opens anywhere else reads as a pitch that happens to mention
+   their problem. Added 22 September, when the council world's price card, which answers a
+   worry raised four times, had no sanctioned opening at all: nothing was owed, nothing was
+   published, and the seller's angle was not the point. *(My reason, not yet yours.)* Where
+   there is none of those, there is no
    message, and the tool says so. That is `pushing`'s refusal, and it is not a gap.
 2. **It points only at what exists.** A document on your shelf that fits them (the card's
    `documents`, and `evidence-that-fits-them`, `proof-on-file`), or a date in their own words.

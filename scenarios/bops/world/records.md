@@ -7,7 +7,8 @@ about: what the connected channels would actually hold, person by person
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman and Lisa Holmes are written; every other section says so.
+itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
+Walsh, Shabana Akhtar and David Marshall are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -678,8 +679,274 @@ The profile says what BOPS is, who it is for and why teams switch, in prose (`of
 holds no use-case tied to a kind of council. That is why the match between page 12 and East
 Marston is made in the card and by no read.
 
+## Stephen Walsh
+
+Finance Business Partner, Felton District Council. `stephen.walsh@felton.gov.uk`. Everything
+between you and him is by mail, on two threads Shabana Akhtar copied him into. You have never
+spoken: the call she said she would set up did not happen. He is not in your Slack, you have never
+texted, and LinkedIn is not connected. Felton's threads are shared with Shabana, so her section
+below holds the thread table and the full message table; this one holds his four messages and what
+they add up to.
+
+### Gmail: the threads
+
+He is on two of Felton's four threads, both opened by Shabana or continued by her: "Costs, and next
+steps" (from 15 July) and "Where things stand" (from 21 August, when she copied him in). He has
+opened none. Ten of Felton's eighteen messages have him on them; four are his.
+
+### Gmail: the messages
+
+His four, in order. "Delay" is the working days between your message and his reply.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Thu 16 Jul | Costs, and next steps | Stephen | 90 | 1, to Shabana's | "Thanks Shabana. Fede, before I take this anywhere: is the £45,000 an annual figure, what does it cover, and what would implementation cost for a council our size?" |
+| Wed 22 Jul | Costs, and next steps | Stephen | 60 | 4 | "That is rather more than we had assumed for the year. Is the annual figure fixed, or is there room on it?" |
+| Mon 24 Aug | Where things stand | Stephen | 45 | 1, to Shabana's | "As Shabana says, I can't see where the annual figure sits this year. Happy to look again at the next budget round." |
+| Wed 9 Sep | Where things stand | Stephen | 30 | 10 | "Thanks, both. We have looked again and we can't find that in this year's budget." Ends there |
+
+Every one of the four names the annual figure or this year's budget. None asks what BOPS does or
+how it would work at Felton. Each is shorter than the one before: ninety words, then sixty, then
+forty-five, then thirty. Nothing from him since 9 September, and nothing from you on the thread
+since 25 August. No bounce and no auto-reply from his address at any point.
+
+### Calendar
+
+Nothing in the calendar with Stephen, ever. You proposed a call on 22 July; Shabana said on 24
+July she would set one up for early August; no invite was ever sent by anybody. His status events
+and free/busy are not visible to you, because he is outside your organisation.
+
+### Meet
+
+Nothing. He was not at the June demo and you have never spoken.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The partial rollout price sheet | Doc | Mon 6 Jul | Mon 6 Jul | nobody at Felton |
+
+The sheet is yours: one page, written after Bramley asked in June whether they could start with one
+service. One service, live cases only, £15,000 a year against the £45,000 band, implementation
+£8,000, and a line that the rest is priced at the band when they take it. It has never been sent to
+Felton. Nothing else in Drive mentions Stephen Walsh.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Stephen Walsh | Finance Business Partner | Felton District Council |
+
+### Web
+
+Nothing on felton.gov.uk names Stephen Walsh. The senior team page is in Shabana's section.
+
+### Slack
+
+Nobody from Felton is in your workspace. Nothing in Slack mentions Felton.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/felton-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 4 | times the same worry has come back, the annual figure against this year's budget: 16 July, 22 July, 24 August, 9 September, at 4, 23 and 12 working days apart. The first two are about the number, the last two about this year | repeated-objection-count |
+| 90, 60, 45, 30 | words in his four messages, in order; the fourth a third of the first | reply-length-vs-own-rhythm |
+| 2 of 2 | next steps proposed that stalled: the call of 22 July, which Shabana said she would set up and nobody did; the walk-through of 25 August, answered by the worry and no step | stall-after-ask-count |
+| absent | a worry on record that matches a typed answer of yours: nothing about the offering's worries has been told, so there is no list to match | objection-name-match |
+| 0 | worries raised on a captured call: he was on none | objection-raised-on-call |
+| 5 working days | since his message of 9 September, from today; 7 on Friday 18 September, when the card arrives | how-long-quiet-vs-own-rhythm |
+| 1, 4, 1, 10 working days | his four delays; the thread usually turns in 1 to 4 | reply-speed-vs-own-rhythm |
+| 0 | questions of his you have not answered: "is the annual figure fixed" was answered the same day | their-question-unanswered |
+| 0 | times you have written since he last did | chases-since-their-last-reply |
+| £45,000 a year, £22,000 once | your price for Felton, from the profile's band for a district under 150,000 people and the implementation figure you gave on 16 July; discount room not told; the partial rollout is on no told record | your-price |
+| £67,000, then £45,000 each year | what it costs them: the first year and each year after; the term is "per year" with no length, so nothing longer can be summed | cost-to-them-over-the-term |
+| absent, and 2 | a figure for what Felton can bear: none; statements in his words that this year's budget cannot: 24 August and 9 September | what-they-can-bear |
+| silent | what Felton already owes: nothing handed over, public records not connected | existing-commitments-on-record |
+| absent | named rivals' published prices: no rival is named on the profile, and the field is "do nothing for another year" | competitor-price-band |
+| breaks | your price against the leader: nobody has named one | price-delta-vs-leader |
+| absent | a typed answer to the price worry: no worries have been told at all | objection-entry-exists |
+| 1 | thing on file that answers it: the partial rollout price sheet, yours, 6 July, never sent to Felton | proof-on-file |
+| about 10 weeks | the sheet's age, on 18 September | proof-recency |
+| self-asserted | the sheet is your own document | third-party-vs-self-asserted |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | none: Stephen arrived on a thread, copied in by Shabana |
+| Target list | Felton is one of the thirty, standing at coalition |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Pricing, on the offering | the band, £45,000 a year up to 150,000 people; implementation quoted separately; per year. No discount room. No smaller scope: the partial rollout price sheet is in Drive and on no told record |
+| Worries and answers, on the offering | none, so the worry on his four messages matches nothing and has no typed answer |
+| Names in the field | none: the profile says the competition is "do nothing for another year" |
+
+## Shabana Akhtar
+
+Digital Lead, Felton District Council. `shabana.akhtar@felton.gov.uk`. Everything between you and
+her is by mail and in one demo, held on Meet and recorded. She is not in your Slack, you have never
+texted, and LinkedIn is not connected. She is on every one of Felton's eighteen messages.
+
+### Gmail: the threads
+
+Four threads, June to today. Shabana opened two. Eighteen messages in all: seven from her, seven
+from you, four from Stephen Walsh.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS, and Felton's case handling | Tue 2 Jun | you | — | 4 |
+| Thanks for Tuesday | Wed 17 Jun | Shabana | — | 3 |
+| Costs, and next steps | Wed 15 Jul | Shabana | Stephen Walsh | 6 |
+| Where things stand | Tue 18 Aug | you | Stephen Walsh, from 21 Aug | 5 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and her reply, on the rows that are replies from her.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Tue 2 Jun | BOPS, and Felton's case handling | you | 120 | | Introduces BOPS and asks whether Felton's case handling is a pain for its officers |
+| Wed 3 Jun | BOPS, and Felton's case handling | Shabana | 95 | 1 | "Hi Fede, yes. This is exactly what our service leads keep asking me for." Describes the current system and the workarounds |
+| Wed 3 Jun | BOPS, and Felton's case handling | you | 90 | | Answers, offers a demo for her and whoever she wants there |
+| Thu 4 Jun | BOPS, and Felton's case handling | Shabana | 40 | 1 | Picks Tuesday 16 June, 14:00. "I'll bring two of our team leaders, Tom and Anita." |
+| Wed 17 Jun | Thanks for Tuesday | Shabana | 110 | | Thanks for the demo. "Tom and Anita were impressed, and so was I. I'd like to take this further. What would it cost us?" |
+| Thu 18 Jun | Thanks for Tuesday | you | 140 | | The band for a district of Felton's size, £45,000 a year, implementation quoted separately; the East Marston case study attached |
+| Fri 19 Jun | Thanks for Tuesday | Shabana | 55 | 1 | "Thanks. I'll need to bring finance in before I can say anything sensible about that." |
+| Wed 15 Jul | Costs, and next steps | Shabana | 100 | | Copies in Stephen Walsh, "our finance business partner". "David will want to see this once we have the numbers straight. Stephen, could you look at the figures?" |
+| Thu 16 Jul | Costs, and next steps | Stephen | 90 | | Asks whether £45,000 is annual, what it covers, and what implementation would cost for Felton |
+| Thu 16 Jul | Costs, and next steps | you | 160 | | Answers: annual, unlimited officer accounts, implementation about £22,000 for their case load. Offers a call |
+| Wed 22 Jul | Costs, and next steps | Stephen | 60 | 4 | "Rather more than we had assumed for the year. Is the annual figure fixed?" |
+| Wed 22 Jul | Costs, and next steps | you | 120 | | The figure is the band, set by population; explains what is in it. Offers a call with Stephen and Shabana together |
+| Fri 24 Jul | Costs, and next steps | Shabana | 50 | 2 | "Leave the call with me. I'll set something up with Stephen for early August." |
+| Tue 18 Aug | Where things stand | you | 70 | | Asks how things stand, and offers to walk Stephen through the figures |
+| Fri 21 Aug | Where things stand | Shabana | 85 | 3 | Copies Stephen back in. "Sorry, August. Stephen's view is that the annual figure doesn't sit in this year's budget. I'll need David onside to move it. Still very much for it." |
+| Mon 24 Aug | Where things stand | Stephen | 45 | | "I can't see where the annual figure sits this year. Happy to look again at the next budget round." |
+| Tue 25 Aug | Where things stand | you | 130 | | Proposes a walk-through of the figures with both of them, with the East Marston saving beside the cost |
+| Wed 9 Sep | Where things stand | Stephen | 30 | 10 | "We have looked again and we can't find that in this year's budget." |
+
+Nothing since 9 September, in either direction. No bounce and no auto-reply from her address at
+any point. The call she said on 24 July she would set up has no invite, no event and no message
+saying it happened. David Marshall is on no thread and has never been copied in.
+
+Attachments: the East Marston case study, 18 June, to Shabana.
+
+### Calendar
+
+| Event | When | Organiser | Attendees | Notes |
+|---|---|---|---|---|
+| BOPS demo for Felton | Tue 16 Jun, 14:00 to 15:00 | you | Shabana Akhtar, Tom Bradley, Anita Rao, all accepted | Meet link. Held on Meet, recorded |
+
+No recurring series with anyone at Felton. Nothing in the calendar with Felton after 16 June, and
+nothing scheduled. Her status events and free/busy are not visible to you, because she is outside
+your organisation. Monday 31 August was a bank holiday.
+
+### Meet
+
+| Meeting | Participants | Recording | Transcript |
+|---|---|---|---|
+| BOPS demo for Felton, 16 Jun | you, Shabana Akhtar, Tom Bradley, Anita Rao | yes | yes, with smart notes |
+
+The one captured call in this world. Shabana, in the first five minutes: "this is the thing I have
+been trying to get us for two years." Anita Rao asked how cases would move over from the current
+system; you answered. Nobody mentioned price, budget or David Marshall on the call.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The East Marston case study | PDF | February | February | sent as an attachment, 18 Jun |
+| The partial rollout price sheet | Doc | Mon 6 Jul | Mon 6 Jul | nobody at Felton |
+| The East Marston phasing note | Doc | Wed 2 Sep | Fri 11 Sep | nobody |
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Shabana Akhtar | Digital Lead | Felton District Council |
+| Stephen Walsh | Finance Business Partner | Felton District Council |
+| Tom Bradley | Housing Options Team Leader | Felton District Council |
+| Anita Rao | Environmental Health Team Leader | Felton District Council |
+
+Four people at Felton on record. Two have written: Shabana and Stephen. Tom and Anita were at the
+demo and have never written.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| Felton's senior team page | felton.gov.uk | undated, fetched in June | David Marshall, Director of Communities: customer services, housing, environmental health and digital. Shabana's service and both team leaders' services sit under him |
+| Felton at a glance | felton.gov.uk | undated | A district of about 110,000 people, which puts it in the lowest band on your price list |
+
+Nothing published by Felton since June that mentions its case system, a procurement, a budget
+decision or any of the four people.
+
+### Slack
+
+Nobody from Felton is in your workspace. Nothing in Slack mentions Felton.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/felton-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 working day | her usual reply time, the median of 1, 1, 1, 2 and 3 on five replies; her last month holds one reply, 3 days, too few to compare | reply-speed-vs-own-rhythm |
+| 55 words | her usual reply length, the median of 95, 40, 55, 50 and 85; her last month holds one reply, 85 | reply-length-vs-own-rhythm |
+| 3 | colleagues she has brought in: Tom Bradley and Anita Rao to the demo, 4 and 16 June; Stephen Walsh to the thread, 15 July | colleagues-looped-in-count |
+| 2 | passages where she says she is arguing the case inside Felton, both naming David: 15 July and 21 August | internal-advocacy-mentions |
+| 1 | passage of advocacy on the captured call, 16 June: "the thing I have been trying to get us for two years" | advocacy-voiced-on-call |
+| 2 of 4 | threads she opened; under six threads, no pattern | who-starts-threads |
+| 1 | concrete thing she said she would do and nothing shows done: a call with Stephen, "early August", said 24 July, 37 working days ago. Stephen wrote instead, twice | their-promise-undelivered |
+| loose | "I'll need David onside", 21 August, 17 working days ago; kept with the row and not graded as a promise | their-promise-undelivered |
+| empty | the scan for the call: no invite, no event, no message saying it happened | fulfilment-scan |
+| 1 to 4 working days | this thread's usual turn; 37 is past it by any measure | days-open-vs-own-rhythm |
+| 3 | price questions on the threads: hers of 17 June, Stephen's of 16 and 22 July | pricing-question-asked |
+| 4 | passages naming a budget or finance as a step: 19 June, 21 August, 24 August, 9 September | budget-or-procurement-entered |
+| 0 | questions about timing or a start date | timeline-or-start-question |
+| 1 | decision-language passage, "I'd like to take this further", 17 June, conditional | decision-language-used |
+| 0 | proposals or trials asked for | proposal-or-trial-requested |
+| 18 of 18 | messages she is on; the top two people, her and Stephen, cover every message too | rests-on-one-person |
+| 4 and 2 | people at Felton on a thread or a meeting with you, and how many of them have ever written | people-reached-count |
+| 1 reached, 2 copied, 1 missing | the roles the profile says a decision needs: a digital or IT lead for assurance (her), one or two senior officers for adoption (Tom and Anita, at the demo, never written), a head of service with the budget (nobody). Stephen's role is on no told list | people-covered-vs-needed |
+| nobody | a person you have reached who can decide. The one candidate, David Marshall, rests on a title from Felton's site and two mentions by a colleague | decision-maker-reached |
+| 0 | new names on a thread or an event since 15 July | new-name-on-thread |
+| empty | David Marshall's history with you: no message, no event, no contact | prior-history-scan |
+| 5 working days | since anything passed, Stephen's message of 9 September | how-long-quiet-vs-own-rhythm |
+| 0 | promises of yours undelivered, questions of hers unanswered, dates she has given | promise-made-undelivered |
+| 0 | times you have written since Felton last did | chases-since-their-last-reply |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Shabana Akhtar, "digital lead at Felton, keen", typed at setup |
+| Target list | Felton is one of the thirty, standing at coalition |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+| Who a decision needs, on the offering | the profile's Customer field: a head of service with the budget, a digital or IT lead for assurance, one or two senior officers for adoption (`offering.md`). Finance is not on it |
+| Worries and answers, on the offering | none |
+
+## David Marshall
+
+Director of Communities, Felton District Council. On no thread, on no event, in no contact list.
+Everything the tool holds about him is one line on Felton's senior team page and two mentions by
+Shabana Akhtar, 15 July and 21 August, both in her section above. Nothing else is written because
+nothing else is on record: the tool has never exchanged anything with him, and his section is empty
+by the world's own arithmetic, not by omission.
+
 ## Everyone else
 
-Not written yet. Stephen Walsh, Shabana
-Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
-Andrew Doyle, Martin Hodgson, Priya Nair and Simon Ward have one line each in `cast.md` and nothing here.
+Not written yet. Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
+Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao and Simon Ward have one line each
+in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's section, because
+everything on record about them is on her threads and her demo.

@@ -1354,6 +1354,18 @@ contact preference, correction) are gathered by thirty-five reads and summed by 
 either three counts to wire or three fields to stop asking for. The tempo, named in two reads'
 prose, is now pulled by both. The document ends with what this says about what to capture.
 
+**Done in the thirty-sixth pass, 22 September.** A sixth told source, the tool's own history:
+[`told/history-told.md`](../told/history-told.md). Every card raised with the reason it gave, what
+the seller did with it, the reason they gave when they said no, the edit between a draft and what
+went out, and which Asks were answered. It is told in the one sense that matters, it comes from
+the seller's side and no channel fetches it, and nobody types it. The cold account had named it
+as the second thing the library had no rung for. Four things stand on it: "not the same reason
+twice", asking once, the voice read, and the refining of the seller's settings from behaviour.
+One count reads it today, the draft-to-sent edit distance under `voice`; the other three joins
+are named in the file and left for a card to need them, per the habit at the end of `NEXT.md`.
+The current tool holds half of it, the rejection with a reason. *(My reason, not yet yours: the
+user asked whether it was a good addition and said to add it if I believed so.)*
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*

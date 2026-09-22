@@ -10,7 +10,7 @@ counts: [your-price, cost-to-them-over-the-term, what-they-can-bear, existing-co
 answers: [V13]
 needs: [handover]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on a person; it stood on two sentences of his and your told price, and needed no history
 pull: People's deal, for what the buyer has said on the thread about what they can bear
 ---
 

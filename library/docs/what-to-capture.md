@@ -181,6 +181,20 @@ offering that once existed is written to by nothing. The rejection with a reason
 first-class correction in the product, and the library has no told record for it: it is the
 feedback the cold account asked for, and it exists on the tool's side and not on the library's.
 
+## The tool's own history, the sixth thing
+
+Added on 22 September as a told source of its own, [`told/history-told.md`](../told/history-told.md),
+because four things stood on it and nothing held it: every card the tool raised and the reason it
+gave, what you did with it (sent as it was, sent changed, not now, not relevant and why, an Ask
+answered), and the edit between a draft and what went out. Nobody types it; the tool writes half
+and your taps and edits write the rest. It is what "not the same reason twice", asking once, the
+voice read and the refining of your settings all need. One count reads it today
+(`draft-to-sent-edit-distance`); the other three joins are named in the file and not made.
+
+**Today the tool captures** half of it: a suggestion rejected with a reason in your own words,
+kept and turned into memory, and reversible if you restore the suggestion. Accepting stores no
+reason, un-ticking a proposed change stores nothing, and there is no draft yet to edit.
+
 ## What this says about what to capture
 
 - **Capture what the tool adjusts to you by, and keep it as settings, not sentences.** How you

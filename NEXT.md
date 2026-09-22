@@ -10,7 +10,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 ## Where the work stands
 
 Twenty-nine passes on `library/docs/coverage.md` are done. The library
-holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 5 told sources, 25 assemblies, 135 counts (**all written**, 21 September; the 135th on 22 September), 42 signals,
+holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 135 counts (**all written**, 21 September; the 135th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
