@@ -1259,6 +1259,33 @@ running; `internal-advocacy-mentions` was being read off future intent, and held
 three real claims were on the records; and a read can fire nine days before its card arrives,
 because a card's `arrives` is the world's week and nothing says how the two relate.
 
+**Done in the thirty-second pass, 22 September.** The fourth person worked from both ends, Neil
+Chapman at Holbrook, whose two cards arrived on the same day. The record is
+`scenarios/bops/docs/holbrook-pass.md`. The world now holds eleven messages on five threads and
+four calls for him, and nine of forty-five cards are `decided`.
+
+**What the two ends found at the card.** `time-to-reconnect` came off both cards, and it failed
+both halves of its own trigger at once: he is inside his usual quiet (four weeks, against a
+stretch that runs from two to six), and the fresh reason the card named was a file in your own
+Drive, where the count that finds a reason looks only at what is published. The card was right
+about the move anyway, because the move was a debt: he asked on 19 August how a customer did it
+in stages, you promised a write-up the next day, and the note has been finished since the 11th.
+The reconnect card is now a loose-end card, `sure` rather than `likely`, arriving on the 16th
+rather than the 18th, and asking nothing. The window card moved from `buying-intent`, which only
+softens to "showing interest" on one money cue and one timing question, to `deadline-they-gave`,
+which is what its `sure` was always about: his date, in his words, with his reason. The two cards
+stay two, the note on the 16th and the invite on the 18th, which is the spacing the card's own
+prose asked for and its front matter could not express; the reasoning is in the pass file, and
+the one-message alternative is recorded for Job 3.
+
+**Three things the counts said about themselves**, recorded and not fixed: `time-to-reconnect`
+needs the web and in the council world the web has nothing to say, so the two remaining cards on
+it (Lisa Holmes's) are the next test; `time-to-their-date` is a figure true on a day, and a card
+shows on a day that is not the world's today, which the figure table now carries and the build
+does not know; and a promise concrete in its object and loose in its date ("let me write it up")
+is counted and softened consistently by the count and the read, which is right and worth
+saying.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1285,9 +1312,10 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on thirty-eight of forty-five cards.** Three
-  were decided in the twenty-ninth pass and four in the thirty-first, from the records up, and the
-  method is in `scenarios/bops/docs/karen-hughes-pass.md` and `westmoor-pass.md`. The rest were
+- **The cards' joins upward are still provisional on thirty-six of forty-five cards.** Three
+  were decided in the twenty-ninth pass, four in the thirty-first and two in the thirty-second,
+  from the records up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`,
+  `westmoor-pass.md` and `holbrook-pass.md`. The rest were
   read off the card rather than decided; the forty-fifth is the News card, which rests on records
   and names no read. Thirty-nine signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end` and `missing-people` were tested against the word they claim and

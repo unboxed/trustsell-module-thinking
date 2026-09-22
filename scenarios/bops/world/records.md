@@ -7,7 +7,7 @@ about: what the connected channels would actually hold, person by person
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Karen Hughes, Gary Pearson and Rachel Gill are written; every other section says so.
+itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill and Neil Chapman are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -432,8 +432,142 @@ run by hand on 22 September (`../docs/westmoor-pass.md`).
 
 Nothing about how the intro call went. That is the gap `ask-rachel-meeting` asks about.
 
+## Neil Chapman
+
+Digital Transformation Lead, Holbrook Metropolitan Borough. `neil.chapman@holbrook.gov.uk`.
+Everything between you and him is by mail and in four calls, each one proposed by you. He is not
+in your Slack, you have never texted, and LinkedIn is not connected.
+
+### Gmail: the threads
+
+Five threads, March to today. Neil opened one. Eleven messages in all: five from him, six from
+you. Nobody else has ever been copied in.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS: a conversation? | Mon 9 Mar | you | — | 2 |
+| A demo for Holbrook? | Tue 28 Apr | you | — | 2 |
+| Where Holbrook stands | Mon 8 Jun | you | — | 2 |
+| Timing for this year | Mon 13 Jul | you | — | 3 |
+| In stages | Wed 19 Aug | Neil | — | 2 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and his reply, on the rows that are replies from him.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Mon 9 Mar | BOPS: a conversation? | you | 120 | | Introduces BOPS and asks whether a call would help |
+| Wed 11 Mar | BOPS: a conversation? | Neil | 60 | 2 | "Happy to talk. Thursday the 19th at two works; send me an invite." |
+| Tue 28 Apr | A demo for Holbrook? | you | 80 | | Offers a demo |
+| Thu 30 Apr | A demo for Holbrook? | Neil | 40 | 2 | "Yes please. The 7th of May, if that works." |
+| Mon 8 Jun | Where Holbrook stands | you | 90 | | Asks where things stand and offers a short catch-up |
+| Wed 10 Jun | Where Holbrook stands | Neil | 70 | 2 | "Slow here, but real. The 17th for a catch-up." Describes the summer ahead |
+| Mon 13 Jul | Timing for this year | you | 60 | | Asks whether there is a date to work to |
+| Tue 14 Jul | Timing for this year | Neil | 80 | 1 | "The window for this year closes 16 October. Anything not in by then is next year's money." |
+| Wed 15 Jul | Timing for this year | you | 50 | | Proposes a session on the partial rollout in early August; the invite for 3 August follows |
+| Wed 19 Aug | In stages | Neil | 70 | | "One thing from our call I keep coming back to: how did East Marston actually do it in stages? What went first?" |
+| Thu 20 Aug | In stages | you | 45 | | "Good question. Let me write up how East Marston did it and send it over." |
+
+Nothing since 20 August, in either direction. No bounce and no auto-reply from his address at
+any point.
+
+Attachments: none, ever. Nothing has been sent to Holbrook as a file.
+
+### Calendar
+
+| Event | When | Organiser | Attendees | Notes |
+|---|---|---|---|---|
+| Intro call, Holbrook | Thu 19 Mar, 14:00 to 14:30 | you | Neil Chapman, accepted | Meet link. Held on Meet, not recorded |
+| BOPS demo for Holbrook | Thu 7 May, 11:00 to 11:45 | you | Neil Chapman, accepted | Meet link. Held on Meet, not recorded |
+| Catch-up, Holbrook | Wed 17 Jun, 15:00 to 15:30 | you | Neil Chapman, accepted | Meet link. Held on Meet, not recorded |
+| Holbrook: the partial rollout | Mon 3 Aug, 10:00 to 10:30 | you | Neil Chapman, accepted | Meet link. Held on Meet, not recorded |
+
+Four calls, six or seven weeks apart, every one proposed by you and accepted by him. No
+recurring series. Nothing in the calendar with Holbrook after 3 August, and nothing scheduled.
+His status events and free/busy are not visible to you, because he is outside your organisation.
+Monday 31 August was a bank holiday.
+
+### Meet
+
+| Meeting | Participants | Recording | Transcript |
+|---|---|---|---|
+| Intro call, 19 Mar | you, Neil Chapman | none | none |
+| Demo, 7 May | you, Neil Chapman | none | none |
+| Catch-up, 17 Jun | you, Neil Chapman | none | none |
+| The partial rollout, 3 Aug | you, Neil Chapman | none | none |
+
+None of the four was recorded, so Meet holds who was there and nothing of what was said.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The East Marston phasing note | Doc | Wed 2 Sep | Fri 11 Sep | nobody |
+
+The note answers his question of 19 August and has never left Drive.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Neil Chapman | Digital Transformation Lead | Holbrook Metropolitan Borough |
+
+Nobody else at Holbrook is on record.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| — | holbrook.gov.uk | — | Nothing published since March that mentions the case system, a procurement, a digital strategy or Neil Chapman |
+
+### Slack
+
+Nobody from Holbrook is in your workspace. Nothing in Slack mentions Holbrook.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/holbrook-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 19 working days | his question of 19 August open, asked once; your reply acknowledged it and promised a write-up | their-question-unanswered |
+| 18 working days | your promise of 20 August open, "write up how East Marston did it and send it over" | promise-made-undelivered |
+| 1 | thing that could have closed it: the phasing note, in Drive since 2 September, sent to nobody | fulfilment-scan |
+| 2 working days | his usual reply time, on 4 replies; every one within two | reply-speed-by-channel |
+| 4 of 4 | meetings you proposed that he accepted; 0 proposed by him | accepts-meetings |
+| 6 or 7 weeks | between one call and the next | how-long-quiet-vs-own-rhythm |
+| 18 working days, about 4 weeks | since anything passed between you, your reply of 20 August; his usual quiet stretch runs from 2 to 6 weeks | how-long-quiet-vs-own-rhythm |
+| 11 messages, 5 threads, 4 calls | the whole history, March to today; 1 thread opened by him | how-close-you-were |
+| 1 | date he gave: 16 October, "the window for this year", with its reason, "next year's money" | dated-facts-in-their-words |
+| 22 working days | from today, 16 September, to 16 October; 20 from Friday 18 September | time-to-their-date |
+| 9 of 13 weeks | of the run-up gone since he named the date on 14 July; 2 months gone, 1 to go | time-to-their-date |
+| 1 | time money or a window entered the conversation, 14 July | budget-or-procurement-entered |
+| 1 | question about stages or timing, 19 August | timeline-or-start-question |
+| 0 | price questions, proposals or trials asked for | pricing-question-asked |
+| 1 | message of yours since he last wrote, and it was a reply | chases-since-their-last-reply |
+| 0 | fresh reasons on the web to write | fresh-reason-to-write |
+| 0 | colleagues he has brought in | colleagues-looped-in-count |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Neil Chapman, "warm, slow, real", typed at setup |
+| Target list | Holbrook is one of the thirty, standing at engaged |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+
+Nothing about whether the window is for a decision or for a signed order. That is what the
+invite card asks him.
+
 ## Everyone else
 
-Not written yet. Neil Chapman, Lisa Holmes, Stephen Walsh, Shabana
+Not written yet. Lisa Holmes, Stephen Walsh, Shabana
 Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
 Andrew Doyle, Martin Hodgson, Priya Nair and Simon Ward have one line each in `cast.md` and nothing here.

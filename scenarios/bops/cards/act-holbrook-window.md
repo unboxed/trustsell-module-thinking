@@ -2,12 +2,12 @@
 id: act-holbrook-window
 order: 14
 kind: act
-signal: buying-intent
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [best-way-to-reach, time-to-reconnect, deadline-they-gave]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [budget-or-procurement-entered, accepts-meetings, where-they-start, how-long-quiet-vs-own-rhythm, dated-facts-in-their-words, time-to-their-date]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: deadline-they-gave
+signal_status: decided   # 22 September: worked from the records up, see ../docs/holbrook-pass.md. Was buying-intent, which only softens to "showing interest" here: one money cue and one timing question. The date is his, and that is the read
+supporting: [buying-intent, best-way-to-reach]   # time-to-reconnect came off 22 September: he is inside his usual quiet and nothing fresh is on the web
+supporting_status: decided
+counts: [dated-facts-in-their-words, time-to-their-date, budget-or-procurement-entered, timeline-or-start-question, accepts-meetings]
+counts_status: decided
 about: [neil-chapman, holbrook]
 to: neil-chapman                # who the move reaches; one move per person at a time
 arrives: 2026-09-18             # the day the tool puts it on the home
@@ -15,7 +15,7 @@ held_words: "Once the phasing note is with Neil."
 documents: []
 widgets: [timeline]   # detail widgets, at most two. Each MUST resolve to ../../../widgets/*
 sure: "sure"
-sure_because: "A fact on record: Neil wrote that the window closes 16 October."
+sure_because: "A fact on record: Neil wrote on 14 July that the window closes 16 October, and why."
 when:
   mode: dated
   until: 2026-10-16
@@ -69,24 +69,26 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 ## What happened
 
-- Why now: a month to the window, and no meeting in either calendar. This week is the last comfortable one.
-- Holbrook told you in July that anything for this year has to be in by 16 October. Those are Neil's own words and the date is his, not mine. Twenty-two working days left, and two months of the run-up have already gone.
-- Neil's pattern: he books calls when you propose them, and rarely proposes himself. Waiting for him is waiting.
-- You are also sending him the phasing note this week. Send that first; propose the meeting in the same breath or two days later.
+- Why now: twenty working days to the window from Friday, and no meeting in either calendar. This week is the last comfortable one.
+- Neil wrote on 14 July that "the window for this year closes 16 October. Anything not in by then is next year's money." The date is his, with his reason, and two months of the run-up have gone with one to go.
+- Money and timing have both entered the conversation, once each: the window in July, and how a staged rollout works in August. That is interest, not yet a purchase; the date is what makes it urgent.
+- Neil takes every meeting you propose, four of four, and has never proposed one. Waiting for him is waiting.
+- The phasing note comes first and asks nothing. This is the ask, two days behind it, and it rests on his own date.
 
 ## Timeline
 
 - 14 July · Neil: the window for this year closes 16 October
-- 3 August · Your last meeting with Holbrook
+- 3 August · Your last call with Neil, the fourth
+- 19 August · He asks how East Marston did it in stages; the phasing note answers it
 - Today · No meeting scheduled
-- 16 October · The procurement window closes
+- 16 October · The window closes
 
 ## Sources
 
-- gmail · Neil, 14 July: "the window for this year closes 16 October".
-- calendar · No meeting with Holbrook since 3 August, none scheduled.
-- gmail, calendar · Your mail with Neil: who proposed each meeting. You, four of four.
-- goal-told · Your goal: partial adoption this year means inside that window.
+- gmail · Neil, 14 July: "the window for this year closes 16 October. Anything not in by then is next year's money."
+- gmail · Neil, 19 August: how East Marston did it in stages. The one time timing or stages has come up from his side.
+- calendar · Four calls since March, all proposed by you and accepted by him. None since 3 August, none scheduled.
+- goal-told · Your goal: partial adoption this year means inside that window, and a patient tempo means one ask, on his date, not a chase.
 
 ## Still unclear
 
@@ -100,7 +102,7 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 Hi Neil,
 
-You mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork?
+You mentioned in July that anything for this year needs to be in before 16 October. With that in mind, would a 45-minute session in the last week of September work, to go through the partial rollout and what Holbrook would need from us for the paperwork? If the window is for a decision rather than a signed order, say so and I will pace it to that.
 
 Two or three slots that suit you and I'll book it.
 

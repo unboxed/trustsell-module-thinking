@@ -12,7 +12,7 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Karen Hughes | karen-hughes | Head of Customer Services | bramley | Used to reply within a day; slowed since the budget meeting |
 | Gary Pearson | gary-pearson | Service Design Lead | westmoor | Your champion. Asked on 10 September whether BOPS can import their case records, and has had no answer |
 | Rachel Gill | rachel-gill | Head of IT | westmoor | Met you Tuesday 8 September, joined Gary's thread the same day. Asked on 9 and 11 September whether officers will actually use it. You owe her the data-residency note |
-| Neil Chapman | neil-chapman | Digital Transformation Lead | holbrook | Warm, slow rhythm, roughly every six weeks. Books calls when you propose them |
+| Neil Chapman | neil-chapman | Digital Transformation Lead | holbrook | Warm and slow: a call every six or seven weeks, always at your proposing. Asked on 19 August how East Marston did it in stages; you promised a write-up and it has not gone |
 | Lisa Holmes | lisa-holmes | Director of Digital | burnham | Quiet but friendly. Led the digital strategy |
 | Stephen Walsh | stephen-walsh | Finance Business Partner | felton | The price objection is his |
 | Shabana Akhtar | shabana-akhtar | Digital Lead | felton | For it. Has mentioned her director twice |

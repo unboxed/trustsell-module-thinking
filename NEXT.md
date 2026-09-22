@@ -77,8 +77,10 @@ were rewritten to what the counts give. **The user agreed the method on 22 Septe
 thirty-first pass ran it on Westmoor the same day: Gary Pearson and Rachel Gill, who share a
 thread, four cards decided, one count that did not exist (`their-question-unanswered`, a question
 the buyer asked you) found because two cards in two worlds had quoted its mirror. The record is
-`scenarios/bops/docs/westmoor-pass.md`. Seven cards are decided; twenty-three people in `bops`
-have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
+`scenarios/bops/docs/westmoor-pass.md`. **The thirty-second pass did Neil Chapman at Holbrook**
+(`holbrook-pass.md`): his reconnect card was a debt card and could not rest on the read it named,
+and his window card belongs under the deadline he gave, not under buying intent. Nine cards are
+decided; twenty-two people in `bops` have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -123,16 +125,17 @@ justify. Do not quietly adopt theirs. Bring the disagreements to the user before
 
 ### Job 1: work it from both ends, and let the card be where they meet
 
-**Three people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
-then Gary Pearson and Rachel Gill together, in `westmoor-pass.md`. The six steps below were
-followed as written and held up on both. Two things to carry into the next person: the counts say
-a lot about themselves when run by hand (six findings on one person, five on the next two, in the
-pass files), and the figure rule at the end of this job is built, so a card's figures fail the
-build the moment its person has a records section. Next: Neil Chapman at Holbrook, whose two cards
-arrive the same day and one of which rests on a read that cannot fire on its own evidence.
+**Four people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
+Gary Pearson and Rachel Gill together, in `westmoor-pass.md`, and Neil Chapman, in
+`holbrook-pass.md`. The six steps below were followed as written and held up on all three runs.
+Two things to carry into the next person: the counts say a lot about themselves when run by hand
+(the findings are at the end of each pass file), and the figure rule at the end of this job is
+built, so a card's figures fail the build the moment its person has a records section. Next: Lisa
+Holmes at Burnham, whose two cards both rest on `time-to-reconnect` with a published reason (a
+digital strategy, 11 September), which is that read's proper case and the contrast with Neil's.
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and thirty-eight were read off the card rather than decided. Thirty-nine of the 42
+their read, and thirty-six were read off the card rather than decided. Thirty-nine of the 42
 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
@@ -327,19 +330,21 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds records for three people** (found 22 September; three done the same day).
-  `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson and Rachel Gill. Every other
+- **A world holds records for four people** (found 22 September; four done the same day).
+  `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson, Rachel Gill and Neil
+  Chapman. Every other
   person in every world still has a line of prose, and the figures their cards quote live only in
   the cards. Until a person has a records section, their cards can only be checked against
   themselves, and the figure rule skips them.
 - ~~**A card may not state a figure the world does not carry** (proposed 22 September, not built).~~
   Built the same day, on the user's word, for people with a records section. Seven cards checked,
   eighteen skipped, a planted figure fails.
-- **The cards' joins are provisional on thirty-eight of forty-five cards.** Seven were decided on
+- **The cards' joins are provisional on thirty-six of forty-five cards.** Nine were decided on
   22 September from the records up, and the wrong joins they hid were the kind predicted: a
   supporting read that does not fire, kept so the card could quote one of its counts, and once a
-  card resting on the mirror of the count it needed. Job 1 of the task above, for the other
-  twenty-three people in `bops` first.
+  card resting on the mirror of the count it needed, and once a read that failed both halves of
+  its own trigger while the card was right about the move. Job 1 of the task above, for the other
+  twenty-two people in `bops` first.
 - **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
   to a suggestion and the suggestion is to write to someone, nothing decides what the message has
   to contain or in what order. Now Job 2 of the task above.
