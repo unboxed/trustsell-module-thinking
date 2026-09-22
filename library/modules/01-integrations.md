@@ -30,11 +30,13 @@ Set on 22 September, in the user's words: the offering and the deal, the Google 
 the user's own profile and the organisation they work in, web search, and a CRM. The told sources
 carry the first, the fourth and the fifth; the rest are the channels in `can:` above. LinkedIn,
 texts, a form on your site, public registers, what a buyer hands over and a list your firm hands
-you are written up as channels because a read has to be able to name them, and none is on offer
-yet. That is a fact about the tool and not about any seller, which is why it lives here and not
-in a scenario's `connected:`. `build.js` reads it: a card may not ask a seller to connect what the
-tool cannot offer, and every read is marked whole, thinner or silent by whether its counts can be
-computed from what is on offer.
+you are written up as channels for the day they can be offered, and none is on offer yet. That is
+a fact about the tool and not about any seller, which is why it lives here and not in a scenario's
+`connected:`. `build.js` reads it and **the built library reasons only over what is on offer**: the
+records of a held-back channel leave every gather, every count and every read; a count left with
+nothing to count is silent, a read whose every count is silent is silent, and no card may rest on
+either, quote the count, or ask a seller to connect the channel. A world may pretend a held-back
+channel in `explores:`, to find out what it would allow, and the build names the pretence.
 
 > **The catalogue floor lives as a library.** This module has no assemblies and no signals: it is
 > the connector, so it does no reasoning. Its raw data is the channels, written up one doc per

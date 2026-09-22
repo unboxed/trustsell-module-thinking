@@ -340,9 +340,35 @@ const cap = L.modules.find(m => m.id === '01-integrations');
 const CAN = new Set([].concat((cap && cap.can) || []));
 if (!cap || !('can' in cap)) problems.push(`library/modules/01-integrations.md: no can; list the channels the tool can connect today, or can: []`);
 else must(cap.file, 'can', cap.can, S.channels, 'channel');
+// A world may pretend, in `explores:`, that a channel the tool cannot offer is there, to find out
+// what it would allow; it says so, and the build says so back. The shipping world pretends nothing.
+const explores = [].concat((world.goal && world.goal.explores) || []);
+if (world.goal) must(world.goal.file, 'explores', explores, S.channels, 'channel');
+for (const x of explores) if (CAN.has(x)) problems.push(`${SCN}/world/goal.md: explores ${x}, which the tool already offers`);
+const OFFER = new Set([...CAN, ...explores]);
+for (const id of plugged) if (S.channels.has(id) && !OFFER.has(id))
+  problems.push(`${SCN}/world/goal.md: connects ${id}, which the tool cannot offer today (modules/01-integrations.md, can:). Leave it out, or name it in explores: to pretend.`);
+// The built library reasons only over what is on offer (the user, 22 September: "the library for
+// now shouldn't reason based on those"). The channel docs stay in the folder for the day they
+// can be offered; here their records leave every gather, every count and every read. A count
+// left with nothing to count is silent, a read whose every count is silent is silent, and no
+// card may rest on either. What a scenario explores counts as offered for that scenario only.
+const toldIds = new Set(L.told.map(t => t.id));
+const offered = r => { const s = String(r).split('#')[0]; return toldIds.has(s) || OFFER.has(s); };
+const heldBack = L.channels.filter(ch => !OFFER.has(ch.id)).map(ch => ch.id);
+L.channels = L.channels.filter(ch => OFFER.has(ch.id));
 for (const ch of L.channels) ch.available = CAN.has(ch.id);
-const beyond = [...plugged].filter(id => S.channels.has(id) && !CAN.has(id));
-if (world.goal) world.goal.beyond = beyond;
+L.records = L.records.filter(r => offered(r.address));
+for (const a of L.assemblies) a.inputs = [].concat(a.inputs || []).filter(i => !String(i).includes('#') || offered(i));
+const countById = new Map(L.counts.map(c => [c.id, c]));
+for (const c of L.counts) { c.needs = [].concat(c.needs || []).filter(offered); c.silent = c.needs.length === 0; }
+for (const s of L.signals) {
+  s.needs = [].concat(s.needs || []).filter(n => toldIds.has(n) || OFFER.has(n));
+  const cs = [].concat(s.counts || []).map(id => countById.get(id)).filter(Boolean);
+  const lost = cs.filter(c => c.silent).map(c => c.id);
+  s.standing = cs.length && lost.length === cs.length ? 'silent' : lost.length ? 'thinner' : 'whole';
+  s.standing_lost = lost;
+}
 
 for (const m of L.modules) {
   must(m.file, 'draws_from', m.draws_from, S.channels, 'channel');
@@ -417,6 +443,12 @@ for (const c of L.cards) {
         problems.push(`${c.file}: "${r.id}" assumes ${a} (${ASSUMES[a] || a}), which ${SCN} does not have`);
   if (!['act', 'ask', 'connect', 'news'].includes(c.kind))
     problems.push(`${c.file}: kind "${c.kind}" is not one of act, ask, connect, news`);
+  // A card may not rest on a read the tool cannot make today, nor quote a count it cannot count.
+  for (const id of [c.signal, ...[].concat(c.supporting || [])].filter(Boolean)) {
+    const s = L.signals.find(x => x.id === id);
+    if (s && s.standing === 'silent') problems.push(`${c.file}: rests on ${id}, which the tool cannot make today: every count under it needs a source it cannot connect`);
+  }
+  for (const id of [].concat(c.counts || [])) { const k = countById.get(id); if (k && k.silent) problems.push(`${c.file}: quotes ${id}, which cannot be counted from anything the tool can connect today`); }
   // A Connect card asks for one channel, and only one the tool can offer (22 September).
   if (c.kind === 'connect') {
     if (!c.channel) problems.push(`${c.file}: a connect card names the channel it asks for, as channel:`);
@@ -768,21 +800,6 @@ if (problems.length) {
   process.exit(1);
 }
 
-/* ---------- how each read stands under what the tool can connect today ---------- */
-// Whole: every count under it can be computed from something on offer. Thinner: some cannot.
-// Silent: none can, so the read never fires today and says nothing rather than guessing. A told
-// source is always on offer, because it is typed. Recorded, never refused: the read stays in the
-// library so the gap keeps its name.
-const countById = new Map(L.counts.map(c => [c.id, c]));
-const toldIds = new Set(L.told.map(t => t.id));
-const seeable = r => { const s = String(r).split('#')[0]; return toldIds.has(s) || CAN.has(s); };
-for (const s of L.signals) {
-  const cs = [].concat(s.counts || []).map(id => countById.get(id)).filter(Boolean);
-  const lost = cs.filter(c => ![].concat(c.needs || []).some(seeable)).map(c => c.id);
-  s.standing = cs.length && lost.length === cs.length ? 'silent' : lost.length ? 'thinner' : 'whole';
-  s.standing_lost = lost;
-}
-
 /* ---------- write ---------- */
 
 const payload = Object.assign({
@@ -793,6 +810,8 @@ const payload = Object.assign({
   assumptions: ASSUMES,         // the vocabulary a signal's `assumes` draws on, with its plain words
   scenario: SCENARIO,
   capabilities: [...CAN],       // what the tool can connect today, from modules/01-integrations.md
+  heldBack,                     // channels written up and not offered: out of the reasoning until they are
+  explores,                     // channels this world pretends are offered, to explore
   day: sorted.map(c => c.id),   // the home's order, first to last
   days,                         // date -> the ids whose moment is open that day, in the home's order
 }, L);
@@ -809,5 +828,6 @@ for (const k of ['modules','channels','told','records','assemblies','counts','si
 console.log(`\n  wrote playbook/assets/data.js (${kb} KB)`);
 const standing = k => L.signals.filter(s => s.standing === k).length;
 console.log(`  under what the tool can connect today: ${standing('whole')} reads whole, ${standing('thinner')} thinner, ${standing('silent')} silent`);
-if (beyond.length) console.log(`  note: ${SCENARIO} connects ${beyond.join(', ')}, which the tool cannot offer today. Its cards on those explore what a later connection would allow.`);
+if (heldBack.length) console.log(`  held back, out of the reasoning: ${heldBack.join(', ')}`);
+if (explores.length) console.log(`  note: ${SCENARIO} pretends ${explores.join(', ')}, which the tool cannot offer today, to explore what they would allow.`);
 

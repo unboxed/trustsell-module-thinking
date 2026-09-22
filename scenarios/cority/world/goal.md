@@ -5,6 +5,7 @@ seller: you
 offering: [ehs-platform]
 ladder: [interested, discovering, championed, in-the-bid, redlines, signed]
 connected: [gmail, calendar, meet, drive, contacts, slack, crm, web, linkedin, web-form, lead-list]
+explores: [linkedin, web-form, lead-list]   # pretended here, to explore: the tool cannot offer them yet (22 September)
 has: [thread-under-way, own-rhythm, several-people, own-firm]   # all four, and this is the first world where own-firm is full rather than claimed
 ---
 
@@ -66,8 +67,9 @@ Four people, and between them they make this world different from the other two.
 Eleven of the fourteen, listed as `connected:` above, which is more than either other world and is
 what an enterprise seller inside a large firm actually has. Three of them, LinkedIn, the web form
 and a handed list, are beyond what the tool can connect today (`modules/01-integrations.md`,
-`can:`, 22 September). This world keeps them on purpose: it explores what those connections would
-allow, and the build says so when it runs.
+`can:`, 22 September). This world pretends them, in `explores:` above, on purpose: it explores what those connections
+would allow, and the build names the pretence when it runs. Outside this world the library does not
+reason on them at all.
 
 **LinkedIn is connected here**, for the first time in any scenario. The patient sale names it as a
 gap on four cards; here it is the map: who is at an account, what they post, who they follow, who

@@ -13,7 +13,7 @@ to: simon-ward                # who the move reaches; one move per person at a t
 arrives: 2026-09-18             # the day the tool puts it on the home
 documents: []
 sure: "likely"
-sure_because: "Simon's word is on record, but how well he knows Nicola I can't see. LinkedIn isn't connected."
+sure_because: "Simon's word is on record, but how well he knows Nicola is on no record I can read."
 when:
   mode: rhythm
   until: 2026-09-18
@@ -75,7 +75,6 @@ He knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone
 - slack · #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
 - gmail · Your four notes to Ashworth.
 - web · Ashworth's leadership page.
-- linkedin · LinkedIn is not something I can see yet, so I can't see how well Simon knows her. I'm going on his word.
 
 ## Still unclear
 

@@ -66,10 +66,10 @@ What it can see for itself is bounded by what it is able to connect at all, whic
 the tool and not about you. Today that is your Google accounts (mail, calendar, files, contacts,
 calls), your Slack, your firm's deal system and the open web, together with everything you tell
 it: your goal, what you sell, who you are, the firm you work in. LinkedIn, texts, a form on your
-site, public registers and what a buyer hands over are not there yet. Where a reading leans on one
-of those, the tool says it cannot see it yet, and where every number under a reading would come
-from one, the reading stays silent rather than guessing. It never asks you to connect something it
-cannot offer.
+site, public registers and what a buyer hands over are not there yet, and the tool does not look
+where it cannot see: nothing it reads rests on them, and a reading whose every number would come
+from one stays silent rather than guessing. It never asks you to connect something it cannot
+offer.
 
 Some only you hold: your goal, how a meeting went, how you read a person, what matters most to
 you, how you like to sound. No connection can fetch those.

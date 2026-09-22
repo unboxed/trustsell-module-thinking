@@ -125,7 +125,7 @@ The ladder, bottom to top. Each rung rests on the one below and every id is chec
 
 | Rung | Where | What it is |
 |---|---|---|
-| Channels | `library/channels/` | what you connect, and what the buyer hands over (`handover.md`, `source: buyer`, 20 September). Carries records, forms no opinion. Whether a channel is connected is the scenario's to say, in `world/goal.md`; whether the tool can offer it at all is the Connections module's, `can:` on `library/modules/01-integrations.md` (22 September), and the build marks each read whole, thinner or silent under it |
+| Channels | `library/channels/` | what you connect, and what the buyer hands over (`handover.md`, `source: buyer`, 20 September). Carries records, forms no opinion. Whether a channel is connected is the scenario's to say, in `world/goal.md`; whether the tool can offer it at all is the Connections module's, `can:` on `library/modules/01-integrations.md` (22 September), and the built library reasons only over what it lists: a held-back channel's records leave every gather, count and read, and the build marks each read whole, thinner or silent and refuses a card on a silent one. A world may pretend a held-back channel in `explores:` |
 | Told | `library/told/` | what only you can say. No channel can fetch it |
 | Records | rows inside a channel or told file | the ingredients, addressed as `gmail#email-message` |
 | Assemblies | `library/assemblies/` | ingredients gathered into one picture. Still no opinion |

@@ -10,7 +10,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 ## Where the work stands
 
 Twenty-nine passes on `library/docs/coverage.md` are done. The library
-holds 14 channels, 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
+holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
@@ -79,10 +79,12 @@ twenty-five people in `bops` have no records section yet.
 
 **The thirtieth pass, the same day, added what the tool can connect at all.** The user's list
 (the Google accounts, Slack, the web, a CRM, and everything told) is `can:` on
-`library/modules/01-integrations.md`. The build marks every read whole, thinner or silent under
-it (37, 2 and 3 today), refuses a Connect card for a channel outside it, and names a scenario that
-connects beyond it. `connect-linkedin` is gone; the broker's world rests on four connections the
-tool does not offer, and Cority's on three, both kept as explorations.
+`library/modules/01-integrations.md`. The built library reasons only over what is on offer: the
+records of the six held-back channels (LinkedIn, SMS, the web form, public records, the buyer's
+handover, a handed list) leave every gather, count and read, three reads are silent, and the build
+refuses a card resting on a silent read or a Connect card for a held-back channel.
+`connect-linkedin` is gone and no council card mentions LinkedIn. The broker's world pretends four
+held-back channels in `explores:` and Cority's three, for those worlds only, and the build names it.
 
 The three things that were on a list when this file was last rewritten are done or moved: the
 counting floor, the third scenario and the `assumes:` join. Two judgement calls are still open and
@@ -328,9 +330,9 @@ reach what it claims.
 - **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
   to a suggestion and the suggestion is to write to someone, nothing decides what the message has
   to contain or in what order. Now Job 2 of the task above.
-- **The broker's world rests on connections the tool does not offer** (22 September). SMS, the
-  web form, the buyer's handover and a handed list are beyond `can:`, and three of its reads are
-  silent today. Job 3 should say which of its twelve cards the tool as it stands could actually
+- **The broker's world pretends connections the tool does not offer** (22 September). SMS, the
+  web form, the buyer's handover and a handed list are in its `explores:`, and outside that
+  pretence three of its reads are silent. Job 3 should say which of its twelve cards the tool as it stands could actually
   make.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and

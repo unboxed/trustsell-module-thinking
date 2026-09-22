@@ -1197,9 +1197,18 @@ in any world now, which is the cold account's doubt about it made concrete. The 
 connects four channels beyond the list and Cority's three; neither is refused, because a scenario
 is an exploration, and the build names them when it runs.
 
-**The wording changed with it.** A gap row for a channel outside the list says "is not something I
-can see yet" rather than "is not connected", because the difference is whose fact it is.
-Story ch. 3 carries the list in the user's words.
+**Then silence, the same day, on the user's word** ("the library for now shouldn't reason based on
+those"). Naming a held-back channel as a gap was not enough: it still sat in every gather, count
+and read, and the pyramid still drew it. So the built library now reasons only over what is on
+offer. The records of a held-back channel leave every gather, every count and every read; a count
+with nothing left to count is silent, a read whose counts are all silent is silent, and the build
+refuses a card that rests on either or quotes the count. Six channels are held back today:
+LinkedIn, SMS, the web form, public records, what the buyer hands over and a handed list. The
+four council cards that named LinkedIn as a gap no longer mention it. The broker's and Cority's
+worlds say in `explores:` which held-back channels they pretend, for that world only, and the
+build names the pretence; a `connected:` beyond `can:` without it is refused. The channel docs
+stay in the folder for the day they can be offered. Story ch. 3 carries the list in the user's
+words.
 
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it

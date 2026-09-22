@@ -5,6 +5,7 @@ seller: you
 offering: [advance-avondale, advance-kestrel, advance-northline, advance-bayard]   # what is sold: one product, four funders, one entry each
 ladder: [interested, applied, submitted, offers-in, accepted, funded, repaying, coming-round-again]
 connected: [sms, web-form, handover, crm, gmail, web, lead-list]   # what you have plugged in; a channel left out is not connected
+explores: [sms, web-form, handover, lead-list]   # pretended here, to explore: the tool cannot offer them yet (22 September)
 has: [thread-under-way, own-rhythm, own-firm]   # what this sale has; no several-people, one owner per business
 ---
 
@@ -67,8 +68,9 @@ in this world.
 
 Four of the seven below, SMS, the web form, what the buyer hands over and a handed list, are beyond
 what the tool can connect today (`modules/01-integrations.md`, `can:`, 22 September). This world
-keeps them on purpose: the fast end is where the tool's silence shows, and the build says so when
-it runs.
+pretends them, in `explores:` above, on purpose: the fast end is where the tool's silence would
+show, and the build names the pretence when it runs. Outside this world the library does not reason
+on them at all.
 
 SMS, the web form, what the buyer hands over, the CRM, Gmail, the open web and the lists your firm
 hands you, listed as `connected:` above. Five of those are plugged in for the first time by this

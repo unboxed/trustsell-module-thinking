@@ -401,11 +401,12 @@ four; `pmf` has three, because one owner per business means there is nobody else
 *(My reason, not yet yours.)* A second fact sits beside `connected:` since 22 September, and it is
 the tool's rather than the seller's: **`can:`** on [`modules/01-integrations.md`](../modules/01-integrations.md),
 the channels the tool is able to offer at all (the user's list: the Google accounts, Slack, the
-web, a CRM, and everything told). A channel outside it stays in the library so a read can name
-the gap, but no Connect card may ask for it, and `build.js` marks every read whole, thinner or
-silent by whether its counts can be computed from what is on offer. A scenario that connects a
-channel beyond the list is not refused, only named: it explores what a later connection would
-allow. The world and cards are one **scenario**, at `scenarios/<name>/` in
+web, a CRM, and everything told). A channel outside it stays in the folder for the day it can
+be offered, and the built library does not reason on it: its records leave every gather, count and
+read; a count with nothing left to count is silent, a read whose counts are all silent is silent,
+and no card may rest on either or ask a seller to connect the channel. A scenario may name such a
+channel in **`explores:`** to pretend it is offered, for that scenario only; the build names the
+pretence, and refuses a `connected:` that goes beyond `can:` without it. The world and cards are one **scenario**, at `scenarios/<name>/` in
 the repo root since 21 September, with a `world/` (the goal,
 the cast, the organisations, the documents, since 20 September which channels this seller
 has plugged in, and since 21 September what the sale has) and a `cards/` (decided 19 September). There

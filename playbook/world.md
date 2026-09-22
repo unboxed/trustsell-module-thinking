@@ -667,4 +667,8 @@ Gmail, Calendar, Drive, Meet, Slack, and the open web. **LinkedIn is not somethi
 connect yet** (the user, 22 September: what it can offer today is the Google accounts, Slack, the
 web and a CRM, beside everything told), and several cards say so where it would have helped. The
 Connect LinkedIn card went with it: a card must not ask for what the tool cannot do, so the
-Connect kind has no card in any world now, and the week's Monday is one card shorter.
+Connect kind has no card in any world now, and the week's Monday is one card shorter. Later the
+same day the user asked for silence rather than a named gap ("the library for now shouldn't reason
+based on those"), so the built library now leaves LinkedIn, SMS and the other held-back channels
+out of every gather, count and read: the pyramid and the descent no longer draw them, and the
+four cards that named LinkedIn as a gap no longer mention it.

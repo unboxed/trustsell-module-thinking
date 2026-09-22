@@ -64,7 +64,7 @@ Twelve councils have no named person. I can look for people at all twelve, but s
 
 ## What's missing
 
-- LinkedIn is not something I can see yet, so I can't see who you or Simon already know at any of them. That would change the order.
+- Who you or Simon already know at any of them is on no record I can read. That would change the order.
 
 ## What your answer changes
 
