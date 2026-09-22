@@ -18,6 +18,11 @@ shows the tool, and `how-it-builds.html`, which tells how the library was arrive
 of the seller's questions down to the records and connections it takes to answer it. Both are drawn
 from `data.js` by `deck.js`, so a change to a rung changes the slides.
 
+**What the tool needs to be told, 22 September** (`library/docs/what-to-capture.md`): for each
+of the five things context can be captured for, which told records the reads' arithmetic uses,
+which are only gathered, and which nothing reads, beside what the current tool captures. Read it
+before changing any told source or any capture screen.
+
 **Job 2 is done, 22 September**: `library/docs/message-shape.md`, four *The message* rows on each
 decided card with a draft, checked by the build (see the thirty-third pass in `coverage.md`).
 

@@ -1340,6 +1340,20 @@ makes the match by hand and says so. The build and
 `message-shape.md` now let a message open on a priority the buyer published, beside a reason
 published about them.
 
+**Done in the thirty-fifth pass, 22 September.** What the tool needs to be told, for each of
+the five things context can be captured for: the offering, the seller, the seller's organisation,
+people and organisations, and deals. The user's point was that the current tool captures
+something for each and could be wrong about what; the library can answer with what the reads
+actually stand on. [`what-to-capture.md`](what-to-capture.md) walks every count's `needs` and
+every read's gathers and sorts each told record into three degrees: in the arithmetic, in the
+gather only, or read by nothing. For the offering the fit-shape carries ten reads and the
+pricing seven, and three things the tool does not hold at all carry six, five and three: a
+use-case by kind of buyer, a worry with its answer and the evidence it needs, and a proof tag.
+For people, the four notes a seller most naturally types (relationship note, offline touch,
+contact preference, correction) are gathered by thirty-five reads and summed by none, which is
+either three counts to wire or three fields to stop asking for. The tempo, named in two reads'
+prose, is now pulled by both. The document ends with what this says about what to capture.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1388,6 +1402,10 @@ is anybody's.)*
   pass). Nothing to fix in the library: they wait on the buyer's handover becoming a capability.
   The broker's world rests on four connections the tool does not offer, so its twelve cards are an
   exploration rather than a demo until it does.
+- **Three told records a count should sum and none does** (thirty-fifth pass): an offline touch
+  belongs in `innocent-explanation-scan`, a contact preference in `best-way-to-reach`'s counts,
+  and a correction needs a rule for what a corrected read does next. Named in
+  `what-to-capture.md`, not wired.
 - **The holes that are holes on purpose.** Q25, what questions to ask them, which
   [`sales-questions.md`](sales-questions.md) names as the fifth frontier and which would widen the
   output from a message into a move plus talking points. V6's hour and V10's words on a form, both

@@ -10,6 +10,7 @@ counts: [dated-facts-in-their-words, time-to-their-date]
 answers: [F10]
 needs: []
 assumes: [thread-under-way]
+pull: The Brain's tempo from the goal, for what counts as short. Named in the body since 21 September and joined here on 22 September
 assumes_status: provisional
 ---
 
