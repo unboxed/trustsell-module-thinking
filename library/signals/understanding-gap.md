@@ -5,12 +5,12 @@ label: They have misunderstood you
 blurb: They keep asking the same things, so the product has not landed.
 kind: risk
 confidence: graded
-inputs: [conversation-history, meeting-history, product-claims]
+inputs: [conversation-history, person-history, meeting-history, product-claims]
 counts: [confused-questions, re-asked-questions, terms-used-wrongly, claims-restated-back, confusion-voiced-on-call]
 answers: [Q13]
 needs: [meet]
 assumes: [thread-under-way]
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested on a person. It fired because a July thread held the answer; without one the September words would have been a first question
 pull: Offerings' product claims, to judge the confusion
 ---
 
@@ -39,8 +39,11 @@ audit log, so the restatements do not match. The read: "they haven't got it, thr
 Applies the shared reading rules in [`docs/reading-principles.md`](../docs/reading-principles.md).
 Borrows Offerings' product claims to judge whether wording contradicts the product.
 
-- Trigger: an already-answered question repeats in this thread AND their words for the product drift
-  from a claim Offerings confirms, measured against this conversation's own normal (not a fixed count).
+- Trigger: an already-answered question repeats, in this thread or on a later one with the same
+  person, AND their words for the product drift from a claim Offerings confirms, measured against
+  this conversation's own normal (not a fixed count). The repeat is counted over the person since
+  22 September, because the answer that does not survive being passed on comes back on the thread
+  where the people it was passed to arrive. *(My reason, not yet yours.)*
 - Confidence: graded. High when several answered questions repeat and a term plainly clashes with a
   claim; softens to "may not have fully landed" near the line or on one stray phrase.
 - Needs: Meet (captured-call content) so confusion voiced aloud counts; an uncaptured call hides it

@@ -3,17 +3,17 @@ id: act-north-ridley-alongside
 order: 1
 kind: act
 signal: understanding-gap
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [new-stakeholder]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [terms-used-wrongly, claims-restated-back, new-attendee-on-event, head-of-signature-scan]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/north-ridley-pass.md. Fires on both halves: the question you answered in July came back in September with its premise reversed, and three messages use your terms to mean the opposite
+supporting: [new-stakeholder, champion]   # new-stakeholder: the word "replace" arrived with the five names on the invite who were never on the July thread. champion: she is the one who carries things into the room, which is why the note goes to her
+supporting_status: decided
+counts: [re-asked-questions, confused-questions, terms-used-wrongly, claims-restated-back, new-attendee-on-event, prior-history-scan, colleagues-looped-in-count]
+counts_status: decided
 about: [michelle-turner, north-ridley]
 to: michelle-turner                # who the move reaches; one move per person at a time
 arrives: 2026-09-16             # the day the tool puts it on the home
 documents: [alongside-one-pager]
 sure: "sure"
-sure_because: "A fact on record: three of their messages say replace or migrate off."
+sure_because: "A fact on record: three of their messages this month say migrating off or replaces, and your answer of 13 July says neither."
 when:
   mode: dated
   until: 2026-09-16
@@ -53,29 +53,38 @@ phone:
 
 # Clear up North Ridley's misunderstanding before Thursday
 
-Michelle Turner's team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.
+North Ridley's case-system team think BOPS replaces their case system. It sits alongside it. If they find out in the demo, the demo is about that.
 
 ## What happened
 
 - Why now: the demo is tomorrow. A misunderstanding fixed by email costs a paragraph; fixed live, it costs the room.
-- Three messages from North Ridley in the last fortnight say "replace" or "migrate off". Your replies never corrected it.
-- Michelle is running the demo and has invited the case-system team. If they arrive expecting a replacement, they arrive defensive.
-- North Ridley is engaged and moving. This is the last cheap moment to reset what they expect.
+- Three messages from North Ridley since 2 September say "migrating off", "replaces" or "the migration plan". Your three replies on that thread answered the question asked, and none of them corrected the word.
+- Michelle asked the right question on 10 July, whether BOPS sits with the case system they already have, and you answered it on 13 July: alongside, nothing migrated off. That answer went to her alone. The case-system team were on nothing until the invite, and the word "replace" arrived with them.
+- She has brought seven colleagues in since July, two to the thread and five to the invite, and has taken this to her programme board twice. What she carries into the room is what the room believes, which is why the note goes to her and not to Nadia Frost.
 
 ## Sources
 
-- gmail · The North Ridley thread: messages of 2, 5 and 10 September, with the words "replace" and "migrate".
-- calendar · "BOPS demo, North Ridley", Thursday 17 September, 10:00, eight invitees.
-- drive · The one-page "How BOPS sits alongside your case system".
-- gmail · Nothing from you corrects the word "replace".
+- gmail · The demo thread: Michelle's messages of 2 and 10 September and Paul Denning's of 4 September, with the words "migrating off", "replaces" and "the migration plan".
+- gmail · Your reply of 13 July, the one message of yours that says "alongside", to Michelle alone.
+- gmail · Your replies of 3, 7 and 10 September, which answer what was asked and correct nothing.
+- calendar · "BOPS demo, North Ridley", Thursday 17 September, 10:00, eight invitees, five of them on no message or contact before.
+- drive · The one-page "How BOPS sits alongside your case system", yours, never sent to North Ridley.
+- offering-told · The product profile, which says what BOPS is and says nothing about what it sits beside. The claim I am correcting against is on your one-pager, not on the profile.
 
 ## Still unclear
 
-- Whether Michelle herself believes it or is quoting colleagues. The note is written to her either way.
+- Whether Michelle herself believes it or is quoting colleagues. Her July message says she was told; both her September messages say "Nadia's team" and "Nadia would like". The note is written to her either way.
 
 ## What happens next
 
 - Once sent I'll finish the demo brief: who is in the room, what each of them asked before, and the alongside diagram as the opening slide.
+
+## The message
+
+- opens with · Thursday, in her words, and then the one thing worth clearing up before it · dated-facts-in-their-words, terms-used-wrongly
+- points at · The alongside one-pager, attached; and an offer to open the demo with it, so the case-system team can ask the questions they came with · alongside-one-pager, drive
+- asks · Nothing. She wrote last, the note is a gift ahead of her own meeting, and a patient sale gives before it asks · chases-since-their-last-reply, goal-told
+- holds back · That you answered this in July, which reached her and not the room; any suggestion the word was their mistake; and any claim about what migration would involve, which you have not been asked to plan · re-asked-questions, claims-restated-back
 
 ## The draft
 
@@ -83,6 +92,6 @@ Hi Michelle,
 
 Looking forward to Thursday. One thing worth clearing up beforehand, because it changes what the room expects: BOPS doesn't replace your case system. It sits alongside it and takes the officer-facing work off it. Nothing gets migrated off on day one, or necessarily ever.
 
-The one-pager is attached. If it's useful, I'll open with that on Thursday so the case-system team can relax and ask the real questions.
+The one-pager is attached. If it's useful, I'll open with that on Thursday so Nadia's team can relax and ask the real questions.
 
 Fede

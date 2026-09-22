@@ -19,7 +19,13 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | David Marshall | david-marshall | Director of Communities | felton | On no thread yet |
 | Tom Bradley | tom-bradley | Housing Options Team Leader | felton | Shabana brought him to the June demo. Has never written |
 | Anita Rao | anita-rao | Environmental Health Team Leader | felton | Shabana brought her to the June demo. Asked one question on the call. Has never written |
-| Michelle Turner | michelle-turner | Programme Manager | north-ridley | Running Thursday's demo |
+| Michelle Turner | michelle-turner | Programme Manager | north-ridley | Running Thursday's demo. Asked in July how BOPS sits with their case system, and was told; since 2 September her messages say "migrating off" |
+| Nadia Frost | nadia-frost | Case Management Lead | north-ridley | Leads on their case system. On the demo invite; has never written |
+| Ben Okafor | ben-okafor | Case Management Analyst | north-ridley | One of Nadia's team. On the demo invite; has never written |
+| Hannah Price | hannah-price | Case Management Analyst | north-ridley | One of Nadia's team. On the demo invite; has never written |
+| Paul Denning | paul-denning | Housing Options Team Leader | north-ridley | Michelle brought him to the thread in July. Asked twice about officer time; wrote "when BOPS replaces the case system" on 4 September |
+| Claire Sutton | claire-sutton | Revenues and Benefits Team Leader | north-ridley | Michelle brought her to the thread in July. Asked once, about time on the phones |
+| Rob Fielding | rob-fielding | ICT Infrastructure Manager | north-ridley | On the demo invite, "from ICT" in Michelle's words; has never written |
 | Julie Barker | julie-barker | formerly Service Improvement Lead | moreton | Left; her email bounced this morning |
 | Sanjay Mistry | sanjay-mistry | Digital Programme Manager | moreton | Named in Julie's auto-reply. Never spoken |
 | Darren Cole | darren-cole | procurement contact | tarlton | Named in the tender. Never spoken |

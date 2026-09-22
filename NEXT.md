@@ -67,10 +67,11 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: start at Job 1, with North Ridley.** Read `CLAUDE.md`, then one
-pass file (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `felton-pass.md` the latest),
-then the six steps under Job 1, and begin. Jobs 0 and 2 are done; Job 4 (one card, two sellers)
-comes after North Ridley; Job 3 comes after that, or when the user says so.
+**If you are reading this cold: start at Job 4, one card, two sellers.** Read `CLAUDE.md`, then
+one pass file (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `north-ridley-pass.md` the
+latest), then Job 4's four steps, and begin: it touches the phone and the voice, so the sheet comes
+before any code. Jobs 0 and 2 are done; Job 1 has nine people done and continues after Job 4 with
+Moreton or Tarlton; Job 3 comes after that, or when the user says so.
 
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
@@ -105,8 +106,10 @@ off the price card, because the profile names no rival and Stephen compared the 
 year's budget, not with anybody; the read that says so is `can-they-carry-it`, from the volume
 seller's set, firing softly at a council. The price sheet against the price list is settled as a
 quote the profile was never told about. A worry in the buyer's own words is now a fifth thing a
-message may open on. Thirteen cards are decided; eighteen people in `bops` have no records
-section yet. **The figure rule is built**: `build.js` refuses a card that states
+message may open on. **The thirty-seventh pass did North Ridley** (`north-ridley-pass.md`), the
+first run of the understanding reads from the records up; what it found is under Job 1 below.
+Sixteen cards are decided; the people at Moreton, Tarlton, Ashworth and East Marston, Bramley's
+budget holder and Simon Ward have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -151,22 +154,26 @@ justify. Do not quietly adopt theirs. Bring the disagreements to the user before
 
 ### Job 1: work it from both ends, and let the card be where they meet
 
-**Eight people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
+**Nine people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
 Gary Pearson and Rachel Gill together, in `westmoor-pass.md`, Neil Chapman, in
 `holbrook-pass.md`, Lisa Holmes, in `burnham-pass.md`, and Stephen Walsh, Shabana Akhtar and
-David Marshall together, in `felton-pass.md`. The six steps below were followed as written and
-held up on all five runs.
+David Marshall together, in `felton-pass.md`, and Michelle Turner, in `north-ridley-pass.md`. The six
+steps below were followed as written and held up on all six runs.
 Two things to carry into the next person: the counts say a lot about themselves when run by hand
 (the findings are at the end of each pass file), and the figure rule at the end of this job is
 built, so a card's figures fail the build the moment its person has a records section, and every
-decided card with a draft carries its message rows (Job 2). Next: North Ridley, Michelle Turner
-and three cards (`ask-north-ridley-demo`, `act-north-ridley-demo-brief`,
-`act-north-ridley-alongside`, on `understanding-gap` and `lead-with-this`, a demo on Thursday 17
-September), the first test of the understanding reads from the records up, and of a card whose
-day is fixed by an event in the calendar.
+decided card with a draft carries its message rows (Job 2). **The thirty-seventh pass did North
+Ridley** (`north-ridley-pass.md`): Michelle Turner and three cards. `understanding-gap` fired on
+both halves once the world held the July answer the September words reversed, and the repeat
+crossed two threads, so `re-asked-questions` now counts over the person. `lead-with-this` came off
+both cards it was on, for the third time in this world: no use-case by kind of council is told, so
+it has nothing to rank. Nothing reads a meeting ahead: the two Act cards take their when from the
+invite and their what from a read. Next: Moreton (Julie Barker, who left, and Sanjay Mistry, named
+in her auto-reply: `act-sanjay-mistry`, the first test of `champion-went-dark` from the records
+up) or Tarlton (Darren Cole and the tender: `act-tarlton-tender`, `ask-tarlton-bid`).
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and thirty-two were read off the card rather than decided. Thirty-seven of the 42
+their read, and twenty-nine were read off the card rather than decided. Thirty-six of the 42
 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
@@ -239,9 +246,9 @@ Two things this will keep turning up, and both are worth more than the status fl
   card rather than the table when they disagree.
 
 ~~Start with one person in `bops`, end to end, and bring that to the user before doing the other
-twenty-five.~~ The method was agreed on 22 September and eight people are done. Take the next
-organisation without asking (North Ridley, then Moreton or Tarlton), one pass and one commit
-each, and keep the pass files in the same shape as the five that exist.
+twenty-five.~~ The method was agreed on 22 September and nine people are done. Take the next
+organisation without asking (Moreton or Tarlton), one pass and one commit each, and keep the pass
+files in the same shape as the six that exist.
 
 ### ~~Job 2: the shape of the message, which nothing in the library reaches~~
 
@@ -338,7 +345,7 @@ user's words. The Profile module holds the settings (coaching, fluency, cadence,
 question about who you are). Nothing shows the difference: every card and the whole week are
 written for one seller, and the day's order in `build.js` knows one cadence.
 
-Do it after the next two people in Job 1, and in this order:
+Felton and North Ridley were the two people; do it now, in this order:
 
 1. **Say what each setting changes on a card.** In `playbook/world.md`, the card model: which
    parts of the front and the back the coaching and fluency settings change, and which stay the
@@ -400,27 +407,43 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds records for eight people** (found 22 September; eight done the same day).
+- **A world holds records for nine people** (found 22 September; nine done the same day).
   `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman,
-  Lisa Holmes, Stephen Walsh, Shabana Akhtar and David Marshall. Every other
+  Lisa Holmes, Stephen Walsh, Shabana Akhtar, David Marshall and Michelle Turner, whose section
+  also carries the seven others on North Ridley's invite. Every other
   person in every world still has a line of prose, and the figures their cards quote live only in
   the cards. Until a person has a records section, their cards can only be checked against
   themselves, and the figure rule skips them.
 - ~~**A card may not state a figure the world does not carry** (proposed 22 September, not built).~~
   Built the same day, on the user's word, for people with a records section. Seven cards checked,
   eighteen skipped, a planted figure fails.
-- **The cards' joins are provisional on thirty-two of forty-five cards.** Thirteen were decided on
+- **The cards' joins are provisional on twenty-nine of forty-five cards.** Sixteen were decided on
   22 September from the records up, and the wrong joins they hid were the kind predicted: a
   supporting read that does not fire, kept so the card could quote one of its counts, and once a
   card resting on the mirror of the count it needed, and once a read that failed both halves of
   its own trigger while the card was right about the move, twice a read joined for a reason to
-  write when the reason was what the buyer published, and once a price read with nothing to
-  compare against, on a card about affordability. Job 1 of the task above, for the other
-  eighteen people in `bops` first.
+  write when the reason was what the buyer published, once a price read with nothing to
+  compare against, on a card about affordability, and twice an angle read with nothing told to
+  lead with. Job 1 of the task above, for the rest of `bops` first.
 - **The told cast of roles reaches no told record** (found in the thirty-sixth pass).
   `people-covered-vs-needed` says the roles a decision needs are told, and the map it is done
   over gathers nothing from the offering, where this world holds them. The same map has no slot
   for a role off the list, and at Felton that is finance, the person the deal is stuck on.
+- **Nothing reads a meeting ahead** (found in the thirty-seventh pass). A card whose day is
+  fixed by an invite takes its when from the calendar record and its what from a read. That is
+  how `when: dated` was defined, the world sets it, and it is the first time a card's two halves
+  have come from different floors. Whether a demo tomorrow deserves a read of its own, or stays
+  a record the cards quote, is undecided.
+- **A colleague naming who is coming is read by no count** (found in the thirty-seventh pass).
+  Michelle's message of 1 September placed four of eight invitees; `head-of-signature-scan` reads
+  signatures, contacts and the web, and the card rests those four on gmail directly.
+- **What a thread keeps asking about is counted only under `pushing`** (found in the
+  thirty-seventh pass). `things-they-asked-you-for` is the envelope. No opening read has a count
+  of the thread's subject, so a brief's angle can rest on what they published and not on what
+  they asked, five times in fourteen messages.
+- **How your own demos went is read by nothing** (found in the thirty-seventh pass). The brief
+  holds compliance back because one recorded demo's compliance section drew no question, and
+  that rests on the transcript directly.
 - **A smaller first step has no told price** (found in the thirty-sixth pass). The Pricing
   record is price, discount room, term and how it is paid; the partial rollout is none of those,
   and whether it is a second entry on the offering list is undecided. Three cards offer it.

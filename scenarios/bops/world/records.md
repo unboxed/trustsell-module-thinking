@@ -8,7 +8,7 @@ about: what the connected channels would actually hold, person by person
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
-Walsh, Shabana Akhtar and David Marshall are written; every other section says so.
+Walsh, Shabana Akhtar, David Marshall and Michelle Turner are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -944,9 +944,196 @@ Shabana Akhtar, 15 July and 21 August, both in her section above. Nothing else i
 nothing else is on record: the tool has never exchanged anything with him, and his section is empty
 by the world's own arithmetic, not by omission.
 
+## Michelle Turner
+
+Programme Manager, North Ridley Council. `michelle.turner@northridley.gov.uk`. Everything between
+you and her is by mail: no call has ever been held, and the demo on Thursday is the first time you
+will be in a room. She is not in your Slack, you have never texted, and LinkedIn is not connected.
+North Ridley's threads are hers, so this section holds every message from the council, including
+the four from Paul Denning and Claire Sutton, and the invite with all eight names on it. Nadia
+Frost, Ben Okafor, Hannah Price and Rob Fielding appear only here, because everything on record
+about them is one invite and Michelle's message naming them.
+
+### Gmail: the threads
+
+Three threads, July to today. Michelle opened two. Twenty-five messages in all: ten from her,
+three from Paul Denning, one from Claire Sutton, eleven from you. Fourteen from North Ridley.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS, and North Ridley's officers | Mon 6 Jul | you | — | 6 |
+| Questions from the team leaders | Tue 21 Jul | Michelle | Paul Denning, Claire Sutton | 10 |
+| BOPS demo, Thursday 17 September | Tue 1 Sep | Michelle | — | 9 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and the reply, on the rows that are replies to you.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Mon 6 Jul | BOPS, and North Ridley's officers | you | 120 | | Introduces BOPS and asks whether the case system is where officers' time goes |
+| Wed 8 Jul | BOPS, and North Ridley's officers | Michelle | 90 | 2 | "Hi Fede, it is. We have a programme to give officers time back and the case system is where most of it goes. What does BOPS actually give back per officer?" |
+| Wed 8 Jul | BOPS, and North Ridley's officers | you | 110 | | East Marston's case admin down by about a third; offers the case study |
+| Fri 10 Jul | BOPS, and North Ridley's officers | Michelle | 65 | 2 | "Please do. One thing before I take it further: how does it sit with the case system we already have? We are not in a position to replace it." |
+| Mon 13 Jul | BOPS, and North Ridley's officers | you | 140 | | "It doesn't need replacing. BOPS sits alongside it and takes the officer-facing work off it. Nothing is migrated off on day one." The East Marston case study, attached |
+| Tue 14 Jul | BOPS, and North Ridley's officers | Michelle | 30 | 1 | "That's reassuring, thank you. I'll share the study with two of our team leaders." |
+| Tue 21 Jul | Questions from the team leaders | Michelle | 80 | | Introduces Paul Denning and Claire Sutton, both copied in. "Their question is the same as mine: how much officer time it gives back, and where." |
+| Wed 22 Jul | Questions from the team leaders | Paul Denning | 70 | | "How many hours a week does an officer at East Marston actually get back?" |
+| Thu 23 Jul | Questions from the team leaders | you | 150 | | Answers both: the case-admin third, and what it comes to per officer |
+| Fri 24 Jul | Questions from the team leaders | Claire Sutton | 50 | | "For my team it is time on the phones. Is any of the saving in chase calls rather than admin?" |
+| Mon 27 Jul | Questions from the team leaders | you | 90 | | The public status page removes most chase calls; the East Marston figure for it |
+| Wed 29 Jul | Questions from the team leaders | Paul Denning | 40 | | "Thanks. Did the officer-time saving hold after the first six months, or was it a launch effect?" |
+| Thu 30 Jul | Questions from the team leaders | you | 80 | | Fourteen months in and holding |
+| Thu 30 Jul | Questions from the team leaders | Michelle | 35 | 0 | "Thanks both. I'll take this to our programme board in August." |
+| Tue 18 Aug | Questions from the team leaders | Michelle | 60 | | "The board would like a demo, in person if you can, with the case-system team there. September?" |
+| Wed 19 Aug | Questions from the team leaders | you | 50 | | Yes; offers three dates in September |
+| Tue 1 Sep | BOPS demo, Thursday 17 September | Michelle | 95 | | "Thursday 17 September at 10:00, in person, committee room 1. I've invited Nadia Frost, who leads on our case system, and two of her team; Paul and Claire; Rob Fielding from ICT; and someone from Finance, to be confirmed. Eight of us." |
+| Tue 1 Sep | BOPS demo, Thursday 17 September | you | 60 | | Accepts |
+| Wed 2 Sep | BOPS demo, Thursday 17 September | Michelle | 70 | 1 | "Nadia's team have asked what migrating off our case system would involve in the first year. Could you cover that on Thursday?" |
+| Thu 3 Sep | BOPS demo, Thursday 17 September | you | 80 | | "Yes, I'll cover the first year on Thursday." Says nothing about alongside |
+| Fri 4 Sep | BOPS demo, Thursday 17 September | Paul Denning | 45 | | "When BOPS replaces the case system, will officers still be able to see closed cases from the old one?" |
+| Mon 7 Sep | BOPS demo, Thursday 17 September | you | 70 | | Yes, closed cases stay visible. Answers the question as asked |
+| Thu 10 Sep | BOPS demo, Thursday 17 September | Michelle | 55 | 3 | "Nadia would like the migration plan on Thursday's agenda. Finance confirmed: one of their business partners will join, name to follow." |
+| Thu 10 Sep | BOPS demo, Thursday 17 September | you | 40 | | "Noted. See you Thursday." |
+| Tue 15 Sep | BOPS demo, Thursday 17 September | Michelle | 40 | | "Directions for Thursday: council offices, committee room 1, ask for me at reception. Looking forward to it." |
+
+Officer time is asked about in five of North Ridley's fourteen messages, by three people: Michelle
+on 8 and 21 July, Paul on 22 and 29 July, Claire on 24 July. Compliance, data protection and audit
+are mentioned in none. Three messages, on 2, 4 and 10 September, say "migrating off", "replaces"
+or "the migration plan"; your three replies on that thread answer the question asked and none of
+them says "alongside". The one message of yours that does is 13 July, to Michelle alone, before
+Paul, Claire or anybody from the case-system team was on anything. Nothing since 15 September, in
+either direction. No bounce and no auto-reply from any North Ridley address at any point.
+
+Attachments: the East Marston case study, from you, 13 July. Nothing else.
+
+### Calendar
+
+| Event | When | Organiser | Attendees | Notes |
+|---|---|---|---|---|
+| BOPS demo, North Ridley | Thu 17 Sep, 10:00 to 11:30 | Michelle Turner | you (accepted), Michelle Turner, Nadia Frost, Paul Denning, Claire Sutton, Rob Fielding (all accepted), Ben Okafor, Hannah Price, `j.mcallister@northridley.gov.uk` (no reply) | North Ridley council offices, committee room 1. In person, no Meet link |
+
+Eight invitees besides you, and none of the eight has been on an event with you before. Five of
+them, Nadia Frost, Ben Okafor, Hannah Price, Rob Fielding and the Finance address, have never been
+on a message either. The Finance address carries no display name; who it is comes from Michelle's
+message of 10 September, "one of their business partners", and nothing else. Nothing in the
+calendar with North Ridley before Thursday. Her status events and free/busy are not visible to
+you, because she is outside your organisation. Monday 31 August was a bank holiday.
+
+### Meet
+
+Nothing. No call with anyone at North Ridley has ever been held, and Thursday's demo is in a room
+with no Meet link, so nothing said there will be captured. The one recorded demo you have given is
+Felton's, on 16 June (Shabana Akhtar's section): its transcript shows the compliance slides ran
+from the third minute to the twenty-first and drew no question; the first question, from Anita Rao,
+was about how cases would move over. Holbrook's demo, on 7 May, was on Meet and not recorded, and
+there are no notes from it in Drive.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The East Marston case study | PDF | February | February | sent as an attachment, 13 Jul |
+| How BOPS sits alongside your case system | Doc | Tue 21 Apr | Tue 21 Apr | nobody at North Ridley |
+| Your demo deck, June version | Slides | Jun | Mon 15 Jun | nobody at North Ridley. First slide "Compliance by design"; the deck you showed Felton |
+| Your demo deck, July version | Slides | Jul | Tue 28 Jul | nobody at North Ridley. First slide "Compliance by design" still |
+| The data-residency note | Doc | Jun | Wed 2 Sep | nobody at North Ridley |
+
+The alongside one-pager is yours, written in April after Bramley's DPO questions, and has never
+been sent to North Ridley or to anyone else. Nothing else in Drive mentions North Ridley.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Michelle Turner | Programme Manager, Better for Officers programme | North Ridley Council |
+| Paul Denning | Housing Options Team Leader | North Ridley Council |
+| Claire Sutton | Revenues and Benefits Team Leader | North Ridley Council |
+
+Three people at North Ridley on record, and all three have written. Nadia Frost, Ben Okafor,
+Hannah Price, Rob Fielding and the Finance address are on the invite and in no contact list,
+because a contact is made from a signature and none of them has ever signed anything to you.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| Our council plan 2026 to 2030 | northridley.gov.uk, page 9 | Wed 4 Mar 2026 | "Give our frontline officers time back: cut the time they spend on administration by a quarter by 2028." The council's own words, in its own plan |
+| Digital and customer: the team | northridley.gov.uk | undated, fetched in September | Nadia Frost, Case Management Lead. Michelle Turner, Programme Manager. Nobody else from the invite is named |
+| North Ridley at a glance | northridley.gov.uk | undated | A district of about 95,000 people, which puts it in the lowest band on your price list |
+
+Nothing published by North Ridley since March that mentions its case system, a procurement, a
+budget decision, or Rob Fielding, Ben Okafor, Hannah Price or anyone in Finance.
+
+### Slack
+
+Nobody from North Ridley is in your workspace. Nothing in Slack mentions North Ridley.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/north-ridley-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | question answered once and asked again: "how does it sit with the case system we already have", 10 July, answered 13 July, back on 2 September as "what migrating off our case system would involve", seven weeks later and on a later thread | re-asked-questions |
+| 2 | questions whose premise is wrong: 2 September, "migrating off our case system"; 4 September, "when BOPS replaces the case system" | confused-questions |
+| 3 | messages using your terms to mean the opposite: "migrating off", 2 September; "replaces", 4 September; "the migration plan", 10 September | terms-used-wrongly |
+| 1, wrong | restatement of what you said: your answer of 13 July, that nothing is migrated off, comes back on 2 September as a migration to plan | claims-restated-back |
+| absent | confusion said on a call: no call has been held | confusion-voiced-on-call |
+| 8 | people on an event with you for the first time, all on Thursday's invite; 5 of the 8 accepted, 3 have not replied | new-attendee-on-event |
+| 5 | of the 8 who have never been on a message, an event or a contact: Nadia Frost, Ben Okafor, Hannah Price, Rob Fielding, and an address in Finance with no name on it | prior-history-scan |
+| 3 signed, 1 on the web, 4 nothing | roles the count can resolve: Michelle, Paul and Claire from their signatures; Nadia Frost from the council's team page; Ben, Hannah, Rob and the Finance address from nothing it reads. Michelle's message of 1 September names what each of them does, and the count does not read a colleague's message for that | head-of-signature-scan |
+| 2, then 0 | names new to a thread: Paul and Claire on 21 July; nobody since | new-name-on-thread |
+| 1 | intention North Ridley has published: give frontline officers time back, page 9 of the council plan, 4 March 2026 | priorities-they-state |
+| six months | the age of those words | how-fresh-their-words-are |
+| theirs | whose words: the council's own plan on its own site | said-by-them-or-about-them |
+| absent | of your use-cases, which touch what they published: no use-case by kind of council has been told, so there is nothing to match | relevance-to-stated-factors |
+| 0 | use-cases on file | use-cases-on-file |
+| absent | the top worry for councils: no worry has been told, so there is no list | dominant-worry-for-buyer-type |
+| 5 of 14 | North Ridley's messages that ask about officer time, by three people; 0 mention compliance | things-they-asked-you-for, under pushing: no count under an opening read gives this |
+| 0 | questions of theirs with no reply: every one was answered, three of them as asked and not as meant | their-question-unanswered |
+| 1, due Thursday | promise of yours: "I'll cover the first year on Thursday", 3 September | promise-made-undelivered |
+| 1 | date in their words: Thursday 17 September at 10:00, Michelle, 1 September | dated-facts-in-their-words |
+| 1 working day | from today to their date | time-to-their-date |
+| 0 | times you have written since North Ridley last did; Michelle wrote last, 15 September | chases-since-their-last-reply |
+| 1 working day | since anything passed | how-long-quiet-vs-own-rhythm |
+| 1 or 2 working days | her usual reply time, from six replies of 2, 2, 1, 0, 1 and 3; her last two, 1 and 3, sit inside it | reply-speed-vs-own-rhythm |
+| 60 words | her usual reply length, the median of 90, 65, 30, 35, 70 and 55; her last two, 70 and 55, sit at it | reply-length-vs-own-rhythm |
+| 2 of 3 | threads she opened; under six threads, no pattern | who-starts-threads |
+| 7 | colleagues she has brought in: Paul and Claire to the thread on 21 July; Nadia, two of Nadia's team, Rob and someone from Finance to the invite on 1 September | colleagues-looped-in-count |
+| 2, soft | passages where she carries it inside North Ridley: "I'll take this to our programme board", 30 July; "the board would like a demo", 18 August | internal-advocacy-mentions |
+| absent | advocacy on a call: no call | advocacy-voiced-on-call |
+| 25 of 25 | messages Michelle is on; the top two, her and Paul, cover every message too | rests-on-one-person |
+| 8 and 3 | people at North Ridley on a thread or an event with you, and how many have ever written | people-reached-count |
+| 1 reached, 1 invited, 1 missing | the roles the profile says a decision needs: senior officers for adoption (Paul and Claire, reached); a digital or IT lead for assurance (Rob Fielding, on the invite, never written); a head of service with the budget (nobody). The case-system lead is a role on no told list | people-covered-vs-needed |
+| nobody | a person you have reached who can decide. Michelle's title is programme manager; the only sign of where a decision goes is her programme board, twice in her words | decision-maker-reached |
+| 0, 0, 0 | price questions, timing or start questions, proposals or trials asked for | pricing-question-asked |
+| 1 | passage naming finance as a step: "Finance confirmed: one of their business partners will join", 10 September | budget-or-procurement-entered |
+| 2 | decision-language passages, both about the programme board, 30 July and 18 August | decision-language-used |
+| 1, self-asserted | thing on file that answers "how does it sit with our case system": the alongside one-pager, yours, April, never sent | proof-on-file |
+| 0 | published about North Ridley since you last wrote | fresh-reason-to-write |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Michelle Turner, "programme manager at North Ridley, on the list", typed at setup |
+| Target list | North Ridley is one of the thirty, standing at engaged |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+| Who a decision needs, on the offering | the profile's Customer field: a head of service with the budget, a digital or IT lead for assurance, one or two senior officers for adoption (`offering.md`). A case-system lead is not on it |
+| Worries and answers, on the offering | none, so "we are not in a position to replace it" matches nothing and has no typed answer |
+| Use-cases, on the offering | none, so nothing says what to lead with for a council with a case system it will keep |
+
 ## Everyone else
 
-Not written yet. Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
-Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao and Simon Ward have one line each
-in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's section, because
-everything on record about them is on her threads and her demo.
+Not written yet. Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw, Andrew Doyle, Martin
+Hodgson, Priya Nair, Tom Bradley, Anita Rao, Simon Ward and the seven others at North Ridley have
+one line each in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's
+section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in
+Michelle Turner's, because everything on record about them is on her threads and her invite.

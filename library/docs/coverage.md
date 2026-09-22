@@ -1400,6 +1400,33 @@ are named in the file and left for a card to need them, per the habit at the end
 The current tool holds half of it, the rejection with a reason. *(My reason, not yet yours: the
 user asked whether it was a good addition and said to add it if I believed so.)*
 
+**Done in the thirty-seventh pass, 22 September.** The ninth person worked from both ends,
+Michelle Turner at North Ridley, the first run of the understanding reads from the records up and
+the first cards whose day is fixed by an event in the calendar. The record is
+`scenarios/bops/docs/north-ridley-pass.md`. Sixteen of forty-five cards are `decided`.
+
+**What the two ends found at the card.** `understanding-gap` fires on both halves once the world
+holds what the card had left out: Michelle asked in July how BOPS sits with the case system they
+already have, was told, and the answer never reached the case-system team, who arrived on the
+demo invite in September saying "migrating off". The repeat crossed two threads, and
+[`re-asked-questions`](../counts/re-asked-questions.md) counted over one, so it now counts over
+the person and the read reads the person's history for it. `lead-with-this` came off both cards
+it was on: no use-case by kind of council has been told, so it has nothing to rank, and neither
+of its counts could produce the brief's figures; the angle rests on `stated-priorities`, which
+fires high on the council's own plan, and the opening slide on the misunderstanding. The
+post-demo Ask rests on `new-stakeholder` and the data gap, as Rachel Gill's did, with
+`missing-people` supporting because the two things to leave with are the map's two holes. The
+message rows fit a brief as well as a note.
+
+**What the counts said about themselves.** Nothing reads a meeting ahead: both Act cards take
+their when from the invite, a record, and their what from a read, the first time the two have
+come from different floors. A colleague's message naming who is coming and what they do placed
+four of eight people and is read by no count; [`head-of-signature-scan`](../counts/head-of-signature-scan.md)
+reads signatures, contacts and the web. What a thread keeps asking about, five of fourteen
+messages on officer time, is counted only by [`things-they-asked-you-for`](../counts/things-they-asked-you-for.md)
+under `pushing`, so no opening read can quote it. How your own demos went is read by nothing.
+And a role off the told list again, the case-system lead, as finance was at Felton.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1426,15 +1453,15 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on thirty-two of forty-five cards.** Three
+- **The cards' joins upward are still provisional on twenty-nine of forty-five cards.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
-  in the thirty-fourth and two in the thirty-sixth, from the records up, and the method is in
-  `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`, `holbrook-pass.md`,
-  `burnham-pass.md` and `felton-pass.md`. The rest were
-  read off the card rather than decided; the forty-fifth is the News card, which rests on records
-  and names no read. Thirty-seven signals still carry `assumes_status: provisional`;
-  `cooling-champion`, `loose-end`, `missing-people`, `blocker` and `can-they-carry-it` were
-  tested against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
+  in the thirty-fourth, two in the thirty-sixth and three in the thirty-seventh, from the records
+  up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
+  `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md` and `north-ridley-pass.md`. The rest
+  were read off the card rather than decided; the forty-fifth is the News card, which rests on
+  records and names no read. Thirty-six signals still carry `assumes_status: provisional`;
+  `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it` and
+  `understanding-gap` were tested against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
