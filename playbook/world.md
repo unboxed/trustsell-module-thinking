@@ -136,11 +136,14 @@ What coaching changes is how much is said before you act:
   straight says done, and what it watches.
 
 What fluency changes is the words, not the content:
-- Plain English never names a read. The fluent seller gets the library's own names ("cooling
-  champion", "loose end", "the debt"), and the figures bare ("15 working days, usual 4 or 5")
-  where the plain version puts them in a sentence or leaves them to the widget.
-- Shorthand is shorter, not looser. Nothing is said in one register that is untrue in the other,
-  and every figure is still one the counts give.
+- Neither version names a read. A first try gave the fluent seller the library's own names
+  ("understanding gap, sure") and figures without sentences, and the user's verdict was that it
+  was not English and not how a seller thinks. The fluent seller gets whole sentences, fewer of
+  them, with the figures in them and nothing explained: "Karen has gone quiet: 15 working days,
+  when she usually writes every 4 or 5." The plain version explains what the figure means and why
+  it matters; the fluent one assumes you know.
+- Shorter is not looser. Nothing is said in one register that is untrue in the other, and every
+  figure is still one the counts give.
 
 What cadence changes is the clock. The moment is the world's: Karen's note goes stale on Friday
 for both sellers. How it is told depends on when you next sit down: "Any day this week" for one,

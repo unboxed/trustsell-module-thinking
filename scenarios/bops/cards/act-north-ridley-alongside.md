@@ -98,33 +98,32 @@ Fede
 
 ## Said straight
 
-The same card for a seller who sells for a living: coaching off, sales shorthand on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September, cut to the bone the same evening (the user: still wordy), proposed, to be decided by looking.
+The same card for a seller who sells for a living: coaching off, sales fluency on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September; rewritten twice the same evening (the user: wordy, then not English), proposed, to be decided by looking.
 
 ### Under the title
 
-They think BOPS replaces their case system. One page to Michelle tonight.
+North Ridley think BOPS replaces their case system. It doesn't. Send Michelle the one-pager tonight, before tomorrow's demo.
 
 ### When
 
-Tonight. Demo 10:00.
+Tonight, before the 10:00 demo.
 
 ### What happened
 
-- Why now: demo 10:00 tomorrow.
-- Understanding gap, sure.
-- "Migrating off", "replaces", "migration plan": 2, 4 and 10 September. Uncorrected.
-- Answered 13 July, to her alone. The room never saw it.
-- 8 in the room, 5 new. Michelle carries it.
-- Send the one-pager. Offer to open with it.
+- Why now: the demo is at 10:00 tomorrow. If they walk in thinking BOPS replaces their system, that is what the demo becomes.
+- Three of their messages this month talk about "migrating off" or BOPS "replacing" the case system. You answered each one without correcting the word.
+- Michelle asked this exact question in July and you gave her the right answer then. Her colleagues never saw it: they came in with the invite.
+- Eight people are on the invite and you have never spoken to five of them. Michelle is the one they listen to, so the note goes to her.
+- Send the one-pager and offer to open the demo with it.
 
 ### Still unclear
 
-- Believes it, or quoting Nadia's team. Same note either way.
+- Whether Michelle believes this herself or is passing on what Nadia's team say. The note works either way.
 
 ### Said back
 
-Sent. Brief next.
+Sent. I'll get the demo brief ready next.
 
 ### Done
 
-Sent. Brief next: the room, their questions, the diagram first.
+Sent to Michelle. Next up: the demo brief.

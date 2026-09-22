@@ -129,11 +129,11 @@ Fede
 
 ## Said straight
 
-The same card for a seller who sells for a living: coaching off, sales shorthand on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September, proposed, to be decided by looking.
+The same card for a seller who sells for a living: coaching off, sales fluency on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September, rewritten the same evening in a seller's English rather than the library's, proposed, to be decided by looking.
 
 ### Under the title
 
-Quiet 15 working days against her usual 4 or 5. You owe her the officer-time figures from July. Send them, ask nothing.
+Karen has gone quiet: 15 working days, when she usually writes every 4 or 5. You still owe her the July figures. Send them and ask for nothing back.
 
 ### When
 
@@ -141,21 +141,20 @@ By Friday.
 
 ### What happened
 
-- Why now: 15 working days silent, usual 4 or 5. The debt is the officer-time figures, promised 14 July and 24 August, still unsent.
-- Cooling champion, likely. Loose end and champion behind it.
-- Her history: 9 of 12 threads hers, 3 colleagues brought in, 3 times she said she was arguing the case inside Bramley. Since 20 August: one reply, 22 words, "I'll come back to you".
-- Nothing innocent on record: no bounce, no auto-reply, one bank holiday.
-- Gift in hand: the one-pager, finished 9 September, shared with nobody.
-- Bramley: one door, engaged. Give, no ask.
+- Why now: 15 working days of silence against her usual 4 or 5, and the figures you promised her in July are ready to send.
+- She has been your best contact at Bramley. She opened 9 of your 12 threads, brought 3 colleagues in, and told you 3 times she was making the case internally.
+- Since the budget meeting on 20 August she has sent one short reply saying she would come back to you. No bounce, no out-of-office, one bank holiday.
+- You promised the officer-time figures on 14 July and again on 24 August. The one-pager has been finished since 9 September.
+- Send the figures and don't ask her for anything. Bramley is one door and she is it.
 
 ### Still unclear
 
-- What the budget meeting decided. Your answer to the Ask settles it.
+- What the budget meeting decided. Answer the question about it and I'll know.
 
 ### Said back
 
-Sent. Watching for her reply.
+Sent. I'll watch for her reply.
 
 ### Done
 
-Figures marked sent. Reply watched for two weeks, then a new reason to write, not this one.
+Sent to Karen. If nothing comes back in two weeks I'll find you a different reason to write.
