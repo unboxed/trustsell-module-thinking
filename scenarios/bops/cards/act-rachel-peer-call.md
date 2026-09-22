@@ -89,6 +89,13 @@ She has asked whether officers will actually use it twice since you met, and had
 
 - If she takes the call I'll ask Andrew first and brief you on what he is likely to say. If she doesn't reply, I'll leave it and let Gary carry the thread.
 
+## The message
+
+- opens with · Her question, asked twice, and the admission that you have not answered it and cannot answer it yourself · their-question-unanswered
+- points at · Andrew Doyle's offer of March, a peer in her own job, and the page of officer feedback, attached · gmail, east-marston-case-study, third-party-vs-self-asserted
+- asks · One thing: whether a call would help. An offer she can decline, with the page as the quieter path · objection-entry-exists, goal-told
+- holds back · Your own assurance that officers use it, which is the claim she doubts and only a peer can carry; and any figure the case study does not state · third-party-vs-self-asserted, proof-recency
+
 ## The draft
 
 Hi Rachel,

@@ -79,6 +79,13 @@ He asked on Thursday whether BOPS can import their existing case records, on the
 
 - Once sent, I'll watch for Gary's reply and tell you when it comes.
 
+## The message
+
+- opens with · The answer to his question of 10 September: yes, in stages · their-question-unanswered
+- points at · The records import note and the East Marston case study, attached, and what East Marston did: open cases first, the archive later · records-import-note, east-marston-case-study
+- asks · Nothing beyond an offer to walk it through. He wrote last, and the answer is the whole message · chases-since-their-last-reply, goal-told
+- holds back · Any claim about what "most councils" do: one council is on record. And any date, because he has given none · evidence-that-fits-them, dated-facts-in-their-words
+
 ## The draft
 
 Hi Gary,

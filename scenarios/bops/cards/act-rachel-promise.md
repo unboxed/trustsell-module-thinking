@@ -6,7 +6,7 @@ signal: loose-end
 signal_status: decided   # 22 September: worked from the records up, see ../docs/westmoor-pass.md
 supporting: []   # nothing else needed: a promise, a date, and nothing that closed it
 supporting_status: decided
-counts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]
+counts: [promise-made-undelivered, their-question-unanswered, days-open-vs-own-rhythm, fulfilment-scan]   # her data question of 8 September, which the note answers, joined 22 September
 counts_status: decided
 about: [rachel-gill, westmoor]
 to: rachel-gill                # who the move reaches; one move per person at a time
@@ -87,6 +87,13 @@ You promised her the data-residency note on 8 September. It hasn't gone, and it 
 ## What happens next
 
 - Once sent I'll mark the promise kept and stop raising it. If she replies with more questions I'll draft answers from the note.
+
+## The message
+
+- opens with · The data-residency note you promised on 8 September, with the apology the delay has earned · promise-made-undelivered
+- points at · The note itself, attached: where the data lives and who can see it · data-residency-note
+- asks · Nothing. Her question about adoption has a card of its own; this one pays a debt · their-question-unanswered, goal-told
+- holds back · The adoption question, which this note does not answer, and any assurance beyond what the note says · their-question-unanswered
 
 ## The draft
 

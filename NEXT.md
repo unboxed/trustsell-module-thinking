@@ -18,6 +18,9 @@ shows the tool, and `how-it-builds.html`, which tells how the library was arrive
 of the seller's questions down to the records and connections it takes to answer it. Both are drawn
 from `data.js` by `deck.js`, so a change to a rung changes the slides.
 
+**Job 2 is done, 22 September**: `library/docs/message-shape.md`, four *The message* rows on each
+decided card with a draft, checked by the build (see the thirty-third pass in `coverage.md`).
+
 **Two areas, since 21 September.** `library/` is the blocks and `scenarios/` sits beside it, no
 longer inside it: `bops`, a patient sale to councils, with 26 cards; `pmf`, a merchant cash advance
 broker, with 12; and `cority`, an enterprise seller with a firm around her, with 7. The user's
@@ -208,7 +211,13 @@ Two things this will keep turning up, and both are worth more than the status fl
 Start with one person in `bops`, end to end, and bring that to the user before doing the other
 twenty-five. The method is the thing being agreed, not the person.
 
-### Job 2: the shape of the message, which nothing in the library reaches
+### ~~Job 2: the shape of the message, which nothing in the library reaches~~
+
+Done on 22 September, thirty-third pass, to the scope the user set (the parts of a message, not
+talking points): `library/docs/message-shape.md` is the argument, every decided card with a draft
+carries four *The message* rows checked by `build.js`, and the phone does not show them. Twenty-six
+drafts on provisional cards have no rows and get them as their people are worked. Job 3 tests the
+rows at the fast end. The section below is kept as it was written.
 
 The part the user says has never been tackled, and the natural next thing after reasoning: once the
 tool has reasoned its way to a suggestion, and the suggestion is to get in touch with someone,
@@ -345,9 +354,11 @@ reach what it claims.
   card resting on the mirror of the count it needed, and once a read that failed both halves of
   its own trigger while the card was right about the move. Job 1 of the task above, for the other
   twenty-two people in `bops` first.
-- **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
-  to a suggestion and the suggestion is to write to someone, nothing decides what the message has
-  to contain or in what order. Now Job 2 of the task above.
+- ~~**The shape of a message is reached by nothing** (found 22 September).~~ Done the same day,
+  thirty-third pass: four traced rows on every decided card with a draft, an argued account in
+  `library/docs/message-shape.md`, and a build check. What is not done: the rows are a check on a
+  draft written by hand, not the input a draft is written from; the table of what each writing read
+  contributes is mine and untested beyond seven cards; and the fast end has not been met.
 - **The broker's world pretends connections the tool does not offer** (22 September). SMS, the
   web form, the buyer's handover and a handed list are in its `explores:`, and outside that
   pretence three of its reads are silent. Job 3 should say which of its twelve cards the tool as it stands could actually

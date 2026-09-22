@@ -62,7 +62,11 @@ not written yet. So far only the cards are designed.
 the *when* if earned, one button. **The back** is the thinking: for Act cards, *What happened*
 (first bullet is the why-now), *Sources* (the actual records), *Still unclear* (a sentence, or a
 one-tap question when you hold the answer) and *What happens next* (what happens after you act). For Ask cards,
-*Known so far*, *What's missing*, *What your answer changes*, *Where your answer is saved*.
+*Known so far*, *What's missing*, *What your answer changes*, *Where your answer is saved*. Since
+22 September a card with a draft also carries *The message*: four rows saying what the draft opens
+with, points at, asks and holds back, each traced to a count, a document or a told record, checked
+by the build like the Sources rows. It is the draft's trail and stays on the back; the phone shows
+the draft itself. The argument is `library/docs/message-shape.md`.
 
 **A card may not state a figure the world does not carry** (proposed 22 September when one
 person's records showed three numbers on her main card that nothing could have produced; built the

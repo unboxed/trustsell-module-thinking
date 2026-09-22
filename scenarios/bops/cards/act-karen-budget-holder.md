@@ -65,6 +65,13 @@ Nobody on the Bramley thread can sign. When Karen is back in rhythm, she is the 
 
 - Once Karen replies, this ripens. If she names someone, I'll start a page on them and draft the introduction.
 
+## The message
+
+- opens with · Her reply to the note, which is what turns this card up, and thanks for it · gmail
+- points at · Nothing to send. Nobody on record at Bramley can sign, and the question is the whole message · decision-maker-reached
+- asks · One fact: who would need to say yes to the spend. A fact, never a verdict, and asked only once she has written back · decision-maker-reached, goal-told
+- holds back · Martin Hodgson's name, which the committee papers give and she has not. Asking "is it Martin?" would put a name in her mouth · web, decision-maker-reached
+
 ## The draft
 
 Hi Karen,

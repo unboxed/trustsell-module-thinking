@@ -112,7 +112,7 @@
   function details(card) {
     var heads = {};
     [].concat(card.widgets || []).forEach(function (id) { heads[widgetHead(card, id)] = id; });
-    var order = card.sectionOrder.filter(function (s) { return !/draft$/.test(s) && s !== 'Sources'; });
+    var order = card.sectionOrder.filter(function (s) { return !/draft$/.test(s) && s !== 'Sources' && s !== 'The message'; });   // The message is the draft's trail, the card's back; the phone shows the draft itself (22 September)
     if (card.sections.Sources) order.push('Sources');
     var part = function (h, body) { return '<div class="details__part"><h3>' + esc(h) + '</h3>' + body + '</div>'; };
     return '<section class="details snap">' + order.map(function (s) {

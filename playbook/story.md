@@ -234,6 +234,15 @@ Every message the tool drafts names what the other person gets. Keeping a relati
 means giving, not nudging, so there is always a gift: something they asked for, something you
 promised. *(My reason, not yet yours: the rule used to cover only Sustain, which has gone.)*
 
+A message has four parts, in this order, and each comes from something on record. It opens with
+the gift, or, where nothing is owed, with a fresh reason or their own date. It points only at
+things that exist: a document you can attach, a date they gave. It asks at most one thing, and
+often nothing: when they have gone quiet, or you have written since they last did, "no need to
+reply" is the ask. And it holds back what your rules forbid and what nobody has told you. Your
+voice decides how it sounds, never what is in it. *(My reason, not yet yours, 22 September: until
+then nothing said what a draft had to contain, and a message whose parts cannot be traced is a
+message the tool made up.)*
+
 The tool can also say no. Until 20 September everything it noticed pointed toward a move; now
 some of what it notices points against one. It can say you have tried someone enough and should
 stop. It can say the next message would press with a deadline nobody gave, or ask to be believed

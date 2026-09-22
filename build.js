@@ -725,6 +725,48 @@ for (const c of L.cards) {
   if (missing.length) problems.push(`${c.file}: states ${missing.join(', ')}, which the records of ${people.join(' and ')} do not carry. A card may not state a figure the world does not carry (world/records.md).`);
 }
 
+/* ---------- the message: what a draft rests on ---------- */
+// A card with a draft says what its message rests on, in four rows under "## The message", in
+// this order: what it opens with, what it points at, what it asks, and what it holds back (decided
+// 22 September; the argument is docs/message-shape.md). Each row is `part · words · rests`, and
+// what it rests on is checked the way Sources rows are: a count the card quotes, a count of the
+// envelope (the counts under `pushing`, which say what a thread can honestly carry and hold for
+// every draft), a document the card sends, a told source, or a channel the card's trail reaches.
+// The opening has to rest on what is owed, a fresh reason, their own date, or the angle; or, on a
+// card a watch turns up, on what came back. A decided card must carry the rows; a card still
+// provisional is counted and named, because its message cannot be traced before its reads are.
+const MESSAGE_HEADS = ['opens with', 'points at', 'asks', 'holds back'];
+const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {}).counts || []));
+const openers = new Set(['promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
+  'fresh-reason-to-write', 'dated-facts-in-their-words', ...[].concat((L.signals.find(s => s.id === 'lead-with-this') || {}).counts || [])]);
+const toldSources = new Set(L.told.map(t => t.id));
+let shaped = 0; const unshaped = [];
+for (const c of L.cards) {
+  if (!c.sections['The draft']) continue;
+  const rows = rowsUnder(c.markdown, 'The message');
+  if (!rows) {
+    if (c.signal_status === 'decided') problems.push(`${c.file}: has a draft and no "## The message"; a decided card says what its message opens with, points at, asks and holds back`);
+    else unshaped.push(c.id);
+    continue;
+  }
+  shaped++;
+  const heads = rows.map(r => r[0]);
+  if (heads.join('|') !== MESSAGE_HEADS.join('|'))
+    problems.push(`${c.file}: "## The message" needs four rows, in order: ${MESSAGE_HEADS.join(', ')} (has: ${heads.join(', ')})`);
+  const reach = sourcesOf(c), mine = new Set([...[].concat(c.counts || []), ...envelope]), docs = new Set([].concat(c.documents || []));
+  c.messageRows = [];
+  for (const r of rows) {
+    if (r.length !== 3) { problems.push(`${c.file}: "## The message" row "${r[0]}" needs three parts split by " · ": the part, the words, what it rests on`); continue; }
+    const rests = r[2].split(',').map(x => x.trim()).filter(Boolean);
+    for (const id of rests)
+      if (!mine.has(id) && !docs.has(id) && !toldSources.has(id) && !reach.has(id))
+        problems.push(`${c.file}: "## The message" rests "${r[0]}" on "${id}", which is not a count the card quotes, a count of the envelope, a document it sends, a told source, or a channel it reaches`);
+    if (r[0] === 'opens with' && !rests.some(id => openers.has(id) || (!c.arrives && reach.has(id))))
+      problems.push(`${c.file}: the message opens on ${rests.join(', ') || 'nothing'}. It has to open on what is owed, a fresh reason, their own date or the angle (${[...openers].join(', ')}), or on what came back when a watch turned the card up`);
+    c.messageRows.push({part: r[0], words: r[1], rests});
+  }
+}
+
 /* ---------- the phone: what a card says on playbook/phone.html ---------- */
 // A card the phone shows carries a `phone:` block with the words that differ from the card's
 // own (decided 19 September: the phone is built from the library, not typed into the deck).
@@ -893,6 +935,7 @@ console.log(`\n  wrote playbook/assets/data.js (${kb} KB)`);
 const standing = k => L.signals.filter(s => s.standing === k).length;
 console.log(`  under what the tool can connect today: ${standing('whole')} reads whole, ${standing('thinner')} thinner, ${standing('silent')} silent`);
 if (heldBack.length) console.log(`  held back, out of the reasoning: ${heldBack.join(', ')}`);
+console.log(`  message rows on ${shaped} draft${shaped === 1 ? '' : 's'}; ${unshaped.length} draft${unshaped.length === 1 ? '' : 's'} without, on cards not yet decided`);
 console.log(`  figures checked on ${figured} card${figured === 1 ? '' : 's'} whose people have records; ${unfigured} skipped, their people have none yet`);
 if (explores.length) console.log(`  note: ${SCENARIO} pretends ${explores.join(', ')}, which the tool cannot offer today, to explore what they would allow.`);
 

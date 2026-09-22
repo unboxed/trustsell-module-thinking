@@ -313,6 +313,11 @@ it quotes numbers from other reads, those reads as `supporting`; every count a c
 belong to one of them. A card's *Sources* rows name their sources, and `build.js` checks each
 is reached by the trail. The Brain's own told pile, [`told/goal-told.md`](../told/goal-told.md),
 is always reachable: the goal is what every card is weighed against.
+A card with a draft carries *The message* rows too, since 22 September: what the draft opens
+with, points at, asks and holds back, each resting on a count the card quotes, a count of the
+envelope (the counts under `pushing`), a document it sends, a told source or a channel it
+reaches, checked the same way. The opening must rest on what is owed, a fresh reason, their own
+date or the angle. The argument is [`message-shape.md`](message-shape.md).
 This is the *track-back*: nothing the tool says should float. Two iron rules:
 
 1. **Every id must resolve.** A dangling `inputs` or `counts` id is a bug, not a stub.

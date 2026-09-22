@@ -24,7 +24,7 @@ on the library page, so it is not repeated here. The four that no read claims:
 
 | Question | What actually handles it | Verdict |
 |---|---|---|
-| Q20 What should my next message say? | The draft itself, written from the voice, the closeness and the fence. Not a read, and correctly so. | Answered elsewhere |
+| Q20 What should my next message say? | Since 22 September, four rows on every decided card with a draft: what the message opens with, points at, asks and holds back, each traced to a count, a document or a told record and checked by the build ([`message-shape.md`](message-shape.md)). Until then the answer was "the draft does it", which said a draft appears and not what has to be in it. Not a read, and correctly so: a message's shape is a projection of reads that have fired. | Answered, by the message rows |
 | Q21 Who should I contact most urgently? | The order of a day, settled on 18 September as six bands by what waiting a day costs ([`modules/00-spine.md`](../modules/00-spine.md)). | Answered elsewhere |
 | Q26 Do they respond better to formal or informal communication? | [`signals/voice.md`](../signals/voice.md) counts `formality-by-relationship-stage` and reads exactly this, but claims only Q23. | **An omission to fix**, not a hole |
 | Q25 What questions should I ask them? | Nothing. [`sales-questions.md`](sales-questions.md) already names it as the fifth frontier: it would widen the output from a message to send into a move plus talking points. | Hole, already known |
@@ -1285,6 +1285,31 @@ shows on a day that is not the world's today, which the figure table now carries
 does not know; and a promise concrete in its object and loose in its date ("let me write it up")
 is counted and softened consistently by the count and the read, which is right and worth
 saying.
+
+**Done in the thirty-third pass, 22 September.** The shape of a message, which nothing in the
+library reached. The account is [`message-shape.md`](message-shape.md). A message the tool drafts
+has four parts in a fixed order, and each is filled from something the card already rests on: it
+opens with the gift (what is owed; failing that a fresh reason or their own date; failing that the
+angle; failing that there is no message, which is `pushing`'s refusal), it points only at what
+exists, it asks at most one thing and often nothing, and it holds back what the rules forbid and
+what nobody has said. The read that made the card decides what it points at; what is owed decides
+the opening; the chase count, the kind of read and the goal's tempo decide whether it asks; the
+told rules decide what it must and must not say; the voice decides only how it sounds. Which
+count fills which part is arithmetic; the words are judgement.
+
+**Where it lives.** On the card, as four rows under *The message*, in the Sources form: the part,
+the words, and what it rests on. `build.js` checks each row's ground like a Sources row, with the
+counts under `pushing` allowed on every draft as the envelope, and refuses a decided card with a
+draft and no rows; a provisional card is counted and named. Not a rung (nothing is read off a
+message), not a widget (the draft widget shows the draft), not a facet on every signal yet (the
+account carries a table of what each writing read contributes, and a facet can follow once cards
+have proved it). The phone does not show the rows: they are the draft's trail, the card's back.
+
+**Tested on seven cards**, the ones decided from the records up. All pass. Writing the rows changed
+three drafts: Gary's stopped claiming what "most councils" do; Neil's says the write-up was
+promised and took too long, and asks nothing; Rachel's peer-call note says you have not answered
+her. Twenty-six drafts on provisional cards have no rows yet. Q20's row above changed from
+"answered elsewhere" to answered by the rows. Q25 stays a hole on the user's word.
 
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it

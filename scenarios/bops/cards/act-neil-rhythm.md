@@ -79,6 +79,13 @@ He asked on 19 August how East Marston did it in stages, and you said you would 
 
 - I'll mark the promise kept. Then the invite for the October window comes up, two days behind this. If he replies with questions I'll prepare the phasing answers from the note.
 
+## The message
+
+- opens with · The write-up he asked for on 19 August and you promised on the 20th, with the admission that it took too long · their-question-unanswered, promise-made-undelivered
+- points at · The phasing note, attached: what East Marston switched on first, what they left for later, how long each step took · east-marston-phasing-note
+- asks · Nothing. "No need to reply." The ask for a meeting rests on his date and is a separate card, two days behind · chases-since-their-last-reply, goal-told
+- holds back · The October window, which is the invite's to raise and not this note's, and any date of your own · dated-facts-in-their-words
+
 ## The draft
 
 Hi Neil,

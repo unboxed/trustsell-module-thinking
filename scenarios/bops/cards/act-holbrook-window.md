@@ -98,6 +98,13 @@ Their procurement window closes on 16 October. Neil Chapman is warm, and there i
 
 - Once he accepts I'll prepare the meeting: what Holbrook has asked so far, where they stand, and the two things to leave the room with.
 
+## The message
+
+- opens with · His own date, 16 October, in his words from 14 July. The reason to write is his · dated-facts-in-their-words
+- points at · The partial rollout, which is what your goal asks for first, and the paperwork Holbrook would need · goal-told, timeline-or-start-question
+- asks · One thing: a session in the last week of September, with two or three slots. He takes every meeting you propose and has proposed none · accepts-meetings, time-to-their-date
+- holds back · Any deadline but his, and any claim that the window is for a signed order: you do not know, so the draft asks which · dated-facts-in-their-words, people-told
+
 ## The draft
 
 Hi Neil,

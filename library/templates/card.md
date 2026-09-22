@@ -145,3 +145,12 @@ phone:                        # optional: the card on playbook/phone.html. Only 
 ## The draft
 <!-- Optional, for a card whose action opens a prepared message. The note itself, in the
      seller's voice, as plain paragraphs. Nothing sends without the seller's say-so. -->
+
+## The message
+<!-- Required once the card's reads are decided, on a card with a draft (22 September). Four rows,
+     in this order, each `part · words · what it rests on`: what the draft opens with (what is
+     owed, a fresh reason, their own date, or the angle), what it points at (only what exists),
+     what it asks (at most one thing, sometimes nothing, never a verdict), and what it holds back.
+     What a row rests on is checked like a Sources row: a count the card quotes, a count of the
+     envelope (the counts under pushing), a document it sends, a told source, or a channel it
+     reaches. The argument is ../docs/message-shape.md. -->

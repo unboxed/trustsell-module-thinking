@@ -100,6 +100,13 @@ Her replies have slowed since the budget meeting. She never got the officer-time
 
 - Once you send it I'll watch for her reply. If nothing comes in two weeks I'll come back with a different reason to write, not the same one twice.
 
+## The message
+
+- opens with · The officer-time figures she asked for in July, which you promised twice and never sent. The debt first, in your own words · promise-made-undelivered, things-they-asked-you-for
+- points at · The one-pager, attached, and its one figure: case admin down by about a third · officer-time-one-pager
+- asks · Nothing. She is quieter than her usual and you have never chased her; "no need to reply" is the ask, and the offer to talk phasing is hers to take · reply-gap-vs-own-rhythm, chases-since-their-last-reply, goal-told
+- holds back · Any date or deadline, because she has given none, and the budget meeting's outcome, which you have not told me · dated-facts-in-their-words, people-told
+
 ## The draft
 
 Hi Karen,
