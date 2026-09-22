@@ -7,7 +7,7 @@ about: what the connected channels would actually hold, person by person
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill and Neil Chapman are written; every other section says so.
+itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman and Lisa Holmes are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -566,8 +566,119 @@ Figures the counts compute from the rows above, run by hand on 22 September
 Nothing about whether the window is for a decision or for a signed order. That is what the
 invite card asks him.
 
+## Lisa Holmes
+
+Director of Digital, Burnham City Council. `lisa.holmes@burnham.gov.uk`. Everything between you
+and her is by mail: three threads, every one opened by you, and no call has ever been proposed by
+either side. She is not in your Slack, you have never texted, and LinkedIn is not connected.
+
+### Gmail: the threads
+
+Three threads, April to today. Lisa opened none. Seven messages in all: three from her, four
+from you. Nobody else has ever been copied in.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS, and Burnham's digital plans | Tue 14 Apr | you | — | 3 |
+| A demo, when it suits | Tue 2 Jun | you | — | 2 |
+| How is the strategy going? | Tue 18 Aug | you | — | 2 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and her reply, on the rows that are replies from her.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Tue 14 Apr | BOPS, and Burnham's digital plans | you | 120 | | Introduces BOPS and asks about Burnham's plans for its case systems |
+| Fri 17 Apr | BOPS, and Burnham's digital plans | Lisa | 70 | 3 | "Hi Fede, thanks for this. We are writing a digital strategy this year and the case systems are in scope. Let's talk properly once it is out." |
+| Fri 17 Apr | BOPS, and Burnham's digital plans | you | 60 | | Of course; happy to help with anything before then |
+| Tue 2 Jun | A demo, when it suits | you | 70 | | Offers a demo whenever it suits |
+| Thu 4 Jun | A demo, when it suits | Lisa | 40 | 2 | "Not yet, strategy first. Autumn, I think." |
+| Tue 18 Aug | How is the strategy going? | you | 60 | | Asks how the strategy is going |
+| Thu 20 Aug | How is the strategy going? | Lisa | 50 | 2 | "Nearly there. We publish in September. I'll be in touch after." |
+
+Nothing since 20 August, in either direction. No bounce and no auto-reply from her address at
+any point.
+
+Attachments: none, ever. Nothing has been sent to Burnham as a file.
+
+### Calendar
+
+Nothing in the calendar with Burnham, ever. No call has been proposed by either side. Her status
+events and free/busy are not visible to you, because she is outside your organisation. Monday 31
+August was a bank holiday.
+
+### Meet
+
+Nothing. You have never spoken.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The East Marston case study | PDF | February | February | sent to other councils as an attachment; never to Burnham |
+
+Nothing in Drive mentions Burnham or Lisa Holmes.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Lisa Holmes | Director of Digital | Burnham City Council |
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| "Burnham publishes its Digital Strategy 2026 to 2030" | burnham.gov.uk, news | Fri 11 Sep | A news item from the council itself, quoting Lisa Holmes as the director who led it. Links to the PDF |
+| Digital Strategy 2026 to 2030, the PDF | burnham.gov.uk | Fri 11 Sep | 30 pages, 5 headline commitments. Page 12: "replacing legacy case systems by 2028". The only one of the 5 that touches what you sell |
+
+Both were published by Burnham itself, on its own site, with the date on the page. Nothing
+published by anybody else about the strategy, and nothing earlier from Burnham about its case
+systems.
+
+### Slack
+
+Nobody from Burnham is in your workspace. Nothing in Slack mentions Burnham.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/burnham-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | passage in Burnham's own published words that touches what you sell: page 12, of 5 commitments | priorities-they-state |
+| 3 working days | since the strategy was published, from today; 4 on Thursday 17 September, when the card arrives | how-fresh-their-words-are |
+| 2 | passages, both published by Burnham itself | said-by-them-or-about-them |
+| 0 | use-cases you have told the tool, so nothing of yours can be matched to page 12 | use-cases-on-file |
+| 7 messages, 3 threads, 0 calls | the whole history, April to today; 0 threads opened by her | how-close-you-were |
+| 2 working days | her usual reply time, on 3 replies: 3, 2 and 2 | reply-speed-vs-own-rhythm |
+| 18 working days, about 4 weeks | since anything passed between you, her reply of 20 August; her usual quiet stretch runs from 6 to 10 weeks | how-long-quiet-vs-own-rhythm |
+| 1 | loose promise of hers, "I'll be in touch after", 20 August; published on 11 September, 3 working days ago | their-promise-undelivered |
+| 0 | times you have written since she last did | chases-since-their-last-reply |
+| 0 | things either side has given the other: no document, no name, no meeting | you-give-vs-they-give |
+| 0 | promises of yours, questions of hers unanswered, dates she has given | promise-made-undelivered |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Lisa Holmes, "the digital director at Burnham, friendly, no hurry", typed at setup |
+| Target list | Burnham is one of the thirty, standing at engaged |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+| Use-cases, on the offering | none typed |
+
+Nothing typed about what BOPS is for, use-case by use-case. That is why the match between page
+12 and East Marston is made in the card and by no read.
+
 ## Everyone else
 
-Not written yet. Lisa Holmes, Stephen Walsh, Shabana
+Not written yet. Stephen Walsh, Shabana
 Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
 Andrew Doyle, Martin Hodgson, Priya Nair and Simon Ward have one line each in `cast.md` and nothing here.

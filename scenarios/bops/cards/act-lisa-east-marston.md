@@ -2,20 +2,20 @@
 id: act-lisa-east-marston
 order: 25
 kind: act
-signal: time-to-reconnect
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: []
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: stated-priorities
+signal_status: decided   # 22 September: worked from the records up, see ../docs/burnham-pass.md. Was time-to-reconnect. The why is page 12, still hers; the fortnight is the pacing the card before this one set, not a read. lead-with-this would be the read that matches page 12 to what you sell, and it has no use-cases to match with, because none were told
+supporting: [they-owe-you]   # her promise of 20 August, "I'll be in touch after": by now well past her two-day pace, and that read says never chase on it, give before you ask
+supporting_status: decided
+counts: [priorities-they-state, how-fresh-their-words-are, their-promise-undelivered]
+counts_status: decided
 about: [lisa-holmes, burnham, east-marston-case-study]
 to: lisa-holmes
 arrives: 2026-09-30             # a fortnight after the congratulations, as that card said
 held_by: act-lisa-strategy
 held_words: "A fortnight after your congratulations, if they went."
 documents: [east-marston-case-study]
-sure: "likely"
-sure_because: "A pattern: a fortnight of quiet after a warm note, on her own slow rhythm."
+sure: "sure"
+sure_because: "A fact on record: page 12, in Burnham's own words, and a customer fourteen months into doing it."
 when:
   mode: rhythm
   until: 2026-10-02
@@ -59,16 +59,16 @@ A fortnight since your congratulations. Page 12 of her strategy commits Burnham 
 
 ## What happened
 
-- Why now: two weeks since your note about the strategy, as planned. Long enough not to look like a follow-up, soon enough that the strategy is still hers to talk about.
-- Page 12 commits Burnham to "replacing legacy case systems by 2028".
-- East Marston has been live for fourteen months, and case admin is down by about a third.
-- Lisa rarely writes first. This gives her something she can use, and asks for nothing.
+- Why now: a fortnight since your note about the strategy, as that card said. Long enough not to look like a follow-up, soon enough that the strategy is still hers to talk about.
+- Page 12 commits Burnham to "replacing legacy case systems by 2028", in the council's own words.
+- East Marston has been live for fourteen months, and its case study says case admin is down by about a third. The match between page 12 and East Marston is mine: you have never told me what BOPS is for, use-case by use-case, so no read makes it.
+- Lisa never writes first, and said in August she would be in touch after publishing. A fortnight on she has not, well past her two-day pace. That is a word she owes you, and the answer to it is not a reminder: it is something she can use, asked for nothing.
 
 ## Sources
 
-- web · Burnham's "Digital Strategy 2026 to 2030", page 12.
-- gmail · Your note to Lisa about the strategy, and nothing since.
-- goal-told · East Marston, the customer, live fourteen months.
+- web · Burnham's "Digital Strategy 2026 to 2030", page 12, on Burnham's own site.
+- gmail · Your note to Lisa about the strategy, and nothing since. Her "I'll be in touch after" of 20 August, still open.
+- goal-told · East Marston, the customer, live fourteen months. And no use-case typed, which is why the match is mine.
 
 ## Still unclear
 
@@ -77,6 +77,13 @@ A fortnight since your congratulations. Page 12 of her strategy commits Burnham 
 ## What happens next
 
 - I'll watch for her reply. If she asks how East Marston started, the phasing note is the answer.
+
+## The message
+
+- opens with · Page 12, still hers a fortnight on. The reason to write is theirs · priorities-they-state
+- points at · The East Marston case study, attached: fourteen months live, case admin down by about a third. What the case study says, and no more · east-marston-case-study, evidence-that-fits-them
+- asks · Nothing. "No agenda." She said strategy first, and you have not written since she last did · gmail, chases-since-their-last-reply, goal-told
+- holds back · A demo, a price, a meeting, which she has said are for after the strategy, and any claim that East Marston did exactly what page 12 says: a version of it · gmail, evidence-that-fits-them
 
 ## The draft
 

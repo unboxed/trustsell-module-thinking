@@ -13,7 +13,7 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Gary Pearson | gary-pearson | Service Design Lead | westmoor | Your champion. Asked on 10 September whether BOPS can import their case records, and has had no answer |
 | Rachel Gill | rachel-gill | Head of IT | westmoor | Met you Tuesday 8 September, joined Gary's thread the same day. Asked on 9 and 11 September whether officers will actually use it. You owe her the data-residency note |
 | Neil Chapman | neil-chapman | Digital Transformation Lead | holbrook | Warm and slow: a call every six or seven weeks, always at your proposing. Asked on 19 August how East Marston did it in stages; you promised a write-up and it has not gone |
-| Lisa Holmes | lisa-holmes | Director of Digital | burnham | Quiet but friendly. Led the digital strategy |
+| Lisa Holmes | lisa-holmes | Director of Digital | burnham | Friendly, never writes first, replies in two or three days. Led Burnham's digital strategy, published 11 September; said in August she would be in touch after it |
 | Stephen Walsh | stephen-walsh | Finance Business Partner | felton | The price objection is his |
 | Shabana Akhtar | shabana-akhtar | Digital Lead | felton | For it. Has mentioned her director twice |
 | David Marshall | david-marshall | Director of Communities | felton | On no thread yet |

@@ -2,18 +2,18 @@
 id: act-lisa-strategy
 order: 5
 kind: act
-signal: time-to-reconnect
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [one-sided, stated-priorities]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [fresh-reason-to-write, how-long-quiet-vs-own-rhythm, who-starts-threads, priorities-they-state, how-fresh-their-words-are]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: stated-priorities
+signal_status: decided   # 22 September: worked from the records up, see ../docs/burnham-pass.md. Was time-to-reconnect, which cannot fire: she is inside her usual quiet. The reason to write is what Burnham published, and that is this read
+supporting: [they-owe-you]   # one-sided came off 22 September: three threads is no pattern, and a quiet senior who replies in two days is not one-sided. they-owe-you is on for her promise of 20 August, "I'll be in touch after": not yet past her pace, and the note must not read as a reminder of it
+supporting_status: decided
+counts: [priorities-they-state, how-fresh-their-words-are, said-by-them-or-about-them, their-promise-undelivered]
+counts_status: decided
 about: [lisa-holmes, burnham]
 to: lisa-holmes                # who the move reaches; one move per person at a time
 arrives: 2026-09-17             # Thursday: still a day before it goes stale
 documents: []
 sure: "sure"
-sure_because: "A fact on record: the strategy was published on 11 September."
+sure_because: "A fact on record: Burnham published the strategy on 11 September, on its own site, and page 12 is in its own words."
 when:
   mode: fresh
   until: 2026-09-18
@@ -57,15 +57,16 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 
 ## What happened
 
-- Why now: the strategy went out last Friday and the sector is still talking about it. A note this week is warm; a note next week is late.
-- Page 12 commits Burnham to "replacing legacy case systems by 2028". Those are the council's own words, published ten days ago, and it is the only thing they have put in writing that your goal ends up at.
-- Lisa is friendly but quiet; she rarely writes first. A congratulation asks nothing and gives her something: being noticed.
+- Why now: the strategy went out last Friday, three working days ago. A note this week is warm; a note next week is late.
+- Page 12 commits Burnham to "replacing legacy case systems by 2028". Those are the council's own words, on its own site, and of the five commitments in the document it is the only one that touches what you sell.
+- Lisa is friendly and never writes first: three threads since April, all yours, and she has answered every one within three working days. She said in August she would be in touch after publishing; three working days on, that is not a promise broken. A congratulation asks nothing and is not a reminder of it.
 - Burnham is engaged, not moving. This is not the moment to sell. It is the moment to be the person who read it.
 
 ## Sources
 
-- web · Burnham City Council news, "Digital Strategy 2026 to 2030", published 11 September, and the PDF, page 12.
-- gmail · Your mail with Lisa since April: 7 messages, last on 20 August.
+- web · Burnham City Council news, "Digital Strategy 2026 to 2030", published 11 September, and the PDF, page 12. Both on Burnham's own site.
+- gmail · Your mail with Lisa since April: 7 messages on 3 threads, every one opened by you; her last on 20 August, "I'll be in touch after".
+- goal-told · Your goal: patient. Give, and ask nothing.
 
 ## Still unclear
 
@@ -73,7 +74,14 @@ Burnham published its digital strategy last Friday. She led it, and it says the 
 
 ## What happens next
 
-- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes.
+- After you send it I'll leave Burnham alone for a fortnight, then look for the right moment to mention that East Marston did what page 12 describes. If she writes first, as she said she would, that comes sooner.
+
+## The message
+
+- opens with · The strategy she led, published on Friday, and page 12 in Burnham's own words: the reason to write is theirs · priorities-they-state, said-by-them-or-about-them
+- points at · Page 12 itself, quoted, not paraphrased. Nothing attached · priorities-they-state
+- asks · Nothing. "No agenda." You have not written since she last did, and she said she would be in touch · chases-since-their-last-reply, goal-told
+- holds back · East Marston and anything that sells: that is a separate card, a fortnight off. And any reminder that she said she would be in touch · evidence-that-fits-them, gmail
 
 ## The draft
 

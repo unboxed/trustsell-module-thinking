@@ -1311,6 +1311,30 @@ promised and took too long, and asks nothing; Rachel's peer-call note says you h
 her. Twenty-six drafts on provisional cards have no rows yet. Q20's row above changed from
 "answered elsewhere" to answered by the rows. Q25 stays a hole on the user's word.
 
+**Done in the thirty-fourth pass, 22 September.** The fifth person worked from both ends, Lisa
+Holmes at Burnham, chosen because both her cards rested on `time-to-reconnect` and her world, unlike
+Neil Chapman's, holds a real published reason. The record is `scenarios/bops/docs/burnham-pass.md`.
+Eleven of forty-five cards are `decided`, and every decided card with a draft carries its message
+rows.
+
+**What the two ends found at the card.** `time-to-reconnect` came off both cards, and it failed
+on her the opposite way from Neil: he had the quiet and no reason, she has the reason and no
+quiet (four weeks, against a usual stretch of six to ten). The read needs both and is right to;
+it is written for a relationship that drifted for months, and nobody in the shipped world has.
+After this pass it is on no council card. The reason to write on a live contact is
+`stated-priorities`, which fires high on a dated intention in Burnham's own words on Burnham's
+own site, and both cards now rest on it. `one-sided` came off too: three threads is no pattern,
+and a quiet senior who answers everything within three days is not one-sided by any count.
+
+**The match nobody makes.** The second card shows her what page 12 looks like in practice, a
+customer fourteen months into doing it. The read that should make that match is `lead-with-this`,
+whose count `relevance-to-stated-factors` matches your use-cases against their published words,
+and this seller has never typed a use-case. Q10 and Q12 are live and the read is silent on your
+side: a told gap, and no Ask fills it, because `ask-good-fit` asks for the target shape and not for
+what the offering is for. The card makes the match by hand and says so. The build and
+`message-shape.md` now let a message open on a priority the buyer published, beside a reason
+published about them.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1337,10 +1361,11 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on thirty-six of forty-five cards.** Three
-  were decided in the twenty-ninth pass, four in the thirty-first and two in the thirty-second,
-  from the records up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`,
-  `westmoor-pass.md` and `holbrook-pass.md`. The rest were
+- **The cards' joins upward are still provisional on thirty-four of forty-five cards.** Three
+  were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second and
+  two in the thirty-fourth, from the records up, and the method is in
+  `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`, `holbrook-pass.md` and
+  `burnham-pass.md`. The rest were
   read off the card rather than decided; the forty-fifth is the News card, which rests on records
   and names no read. Thirty-nine signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end` and `missing-people` were tested against the word they claim and
@@ -1350,7 +1375,9 @@ is anybody's.)*
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
   see for a buyer, and a rule for a promise re-made. Named here rather than done. The thirty-first
   pass added two of the same weight: `who-starts-threads` needs its summary to carry the change
-  its rows show, and a customer's offer to vouch for you needs a count.
+  its rows show, and a customer's offer to vouch for you needs a count. The thirty-fourth added
+  one: no Ask asks the seller what the offering is for, use-case by use-case, and `lead-with-this`
+  is silent on your side without it.
 - **Three reads are silent today and two thinner**, under what the tool can connect (thirtieth
   pass). Nothing to fix in the library: they wait on the buyer's handover becoming a capability.
   The broker's world rests on four connections the tool does not offer, so its twelve cards are an

@@ -38,8 +38,9 @@ can I look at, what do you want from me, and what did you not say.
 1. **It opens with the gift.** What you owe them, if anything is owed: a promise of yours
    (`promise-made-undelivered`), a question of theirs you have not answered
    (`their-question-unanswered`), a thing they asked you for (`things-they-asked-you-for`). Where
-   nothing is owed, a fresh reason to write: something published (`fresh-reason-to-write`) or a
-   date of their own coming closer (`dated-facts-in-their-words`). Where there is neither, the
+   nothing is owed, a fresh reason to write: something published about them
+   (`fresh-reason-to-write`), something published by them (the counts under `stated-priorities`),
+   or a date of their own coming closer (`dated-facts-in-their-words`). Where there is neither, the
    angle: the use-case that touches something they have said, or the line that says how you came
    by them (the counts under `lead-with-this`). Where there is none of those, there is no
    message, and the tool says so. That is `pushing`'s refusal, and it is not a gap.

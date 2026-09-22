@@ -737,8 +737,12 @@ for (const c of L.cards) {
 // provisional is counted and named, because its message cannot be traced before its reads are.
 const MESSAGE_HEADS = ['opens with', 'points at', 'asks', 'holds back'];
 const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {}).counts || []));
+// What a message may open on: what is owed (three counts), a fresh reason (published about them,
+// or published by them: the counts under stated-priorities), their own date, or the angle (the
+// counts under lead-with-this).
 const openers = new Set(['promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
-  'fresh-reason-to-write', 'dated-facts-in-their-words', ...[].concat((L.signals.find(s => s.id === 'lead-with-this') || {}).counts || [])]);
+  'fresh-reason-to-write', 'dated-facts-in-their-words',
+  ...['lead-with-this', 'stated-priorities'].flatMap(id => [].concat((L.signals.find(s => s.id === id) || {}).counts || []))]);
 const toldSources = new Set(L.told.map(t => t.id));
 let shaped = 0; const unshaped = [];
 for (const c of L.cards) {
