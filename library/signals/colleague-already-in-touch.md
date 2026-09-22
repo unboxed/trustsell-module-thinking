@@ -10,7 +10,7 @@ counts: [colleague-touches-on-record, since-last-colleague-touch]
 answers: [V4, F12]
 needs: [crm, slack]
 assumes: [own-firm]
-assumes_status: provisional
+assumes_status: decided   # 22 September: fired on a colleague's mention in the workspace of a contact at an event; without a firm there is no workspace to mention it in
 ---
 
 # A colleague already in touch

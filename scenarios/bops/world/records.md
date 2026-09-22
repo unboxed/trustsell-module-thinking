@@ -8,8 +8,8 @@ about: what the connected channels would actually hold, person by person
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
-Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry and Darren Cole
-are written; every other section says so.
+Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole,
+Nicola Shaw and Simon Ward are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -1399,9 +1399,157 @@ asks again on Monday 5 October, the first working day after the window closes.
 | Use-case, on the offering | none |
 | Pricing, on the offering | the band, £45,000 a year up to 150,000 people; implementation quoted separately; per year. No discount room |
 
+## Nicola Shaw
+
+Head of Digital, Ashworth Borough Council, by the council's own leadership page.
+`nicola.shaw@ashworth.gov.uk`. Everything between you and Ashworth is four notes of yours by
+mail, and nothing back. She is not in your Slack, you have never texted, and LinkedIn is not
+connected. The one other thing on record about her is your colleague Simon Ward's line in Slack
+on 2 September, which is in his section below and in the Slack rows here.
+
+### Gmail: the threads
+
+Four threads, May to August, every one opened by you and every one a single message. Four
+messages in all, 6 May to 18 August, to 2 people: all four to Nicola, and the third also to
+Graham Pollard, Head of Customer Services, whose name came off the same page. Nothing has ever
+come back from anyone at ashworth.gov.uk.
+
+| Thread | Opened | By | To | Messages |
+|---|---|---|---|---|
+| BOPS, for Ashworth's officers | Wed 6 May | you | Nicola Shaw | 1 |
+| A short conversation? | Tue 9 Jun | you | Nicola Shaw | 1 |
+| Case administration at Ashworth | Tue 14 Jul | you | Nicola Shaw, Graham Pollard | 1 |
+| One more try | Tue 18 Aug | you | Nicola Shaw | 1 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own. There is no "Delay" column, because nothing
+was ever replied to.
+
+| Date | Thread | From | Words | What it said, in short |
+|---|---|---|---|---|
+| Wed 6 May | BOPS, for Ashworth's officers | you | 110 | Introduces BOPS as a case-work tool for officers and asks whether the case system is a pain at Ashworth |
+| Tue 9 Jun | A short conversation? | you | 90 | Asks for twenty minutes, and offers the East Marston figures in outline |
+| Tue 14 Jul | Case administration at Ashworth | you | 80 | To Nicola and Graham: asks which of them owns the case-system question, and whether either would take a call |
+| Tue 18 Aug | One more try | you | 60 | Says it is the last unprompted note, and asks for a name if the question sits elsewhere |
+
+Every one of the four asks; none was an answer to anything of theirs, because there is nothing of
+theirs. Each came about five weeks after the one before. Nothing since 18 August, which on 16
+September is 20 working days, four weeks, with the bank holiday of 31 August in between. No
+bounce and no automatic reply from either address at any point, so the notes were delivered.
+
+Attachments: none. The East Marston figures on 9 June were in the body of the note.
+
+### Calendar
+
+Nothing with anyone at Ashworth, ever. Nicola's status events and free/busy are not visible to
+you, because she is outside your organisation, so leave or a shut office would not show.
+
+### Meet
+
+Nothing.
+
+### Drive
+
+Nothing shared with anyone at Ashworth. The three things on your shelf that fit a council are in
+Darren Cole's section above; none has been sent here.
+
+### Contacts
+
+Nobody at Ashworth is in Contacts. Neither Nicola Shaw nor Graham Pollard has ever written to you,
+so there is no signature to take a title from; the titles are the leadership page's.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| The leadership page | ashworth.gov.uk | undated | Lists Nicola Shaw as Head of Digital and Graham Pollard as Head of Customer Services, among the council's senior officers. This is where both names came from, in May |
+| — | ashworth.gov.uk and the open web | — | Nothing published by Ashworth in the last year mentions the case system, a procurement, a digital strategy, or anyone leaving or arriving. Nothing published about Ashworth by anybody else touches any of it |
+
+### Slack
+
+Nobody from Ashworth is in your workspace. One message in the workspace names the council:
+
+| Channel | Date | From | What it said |
+|---|---|---|---|
+| #partnerships | Wed 2 Sep, 11:40 | Simon Ward | In a thread about the LGA event write-up: "I know Nicola at Ashworth from the LGA event, if that's ever useful." |
+
+He did not say when the event was or how well he knows her, and nobody asked. Nothing else in
+Slack mentions Ashworth, Nicola Shaw or Graham Pollard.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/ashworth-pass.md`). The rest card arrives on Wednesday 16 September and the
+introduction card on Friday 18 September; working days are counted from the 16th unless the row
+says otherwise.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 4, and 4 | messages you have sent Nicola since the last one she answered, which is all of them, and on Ashworth in all: 6 May, 9 June, 14 July, 18 August, about five weeks apart, over 15 weeks. Every one asked, so every one is a chase | times-you-chase |
+| 4 | chases since she last wrote, which she never has | chases-since-their-last-reply |
+| empty | explanations on record for the silence: no bounce, no automatic reply, no status, no leave on a calendar you can see. Two places it cannot look: her calendar, which is outside your organisation, and LinkedIn, which is held back, so a job change would not show | innocent-explanation-scan |
+| 1 | contact between someone at your firm other than you and Ashworth, on record: Simon Ward and Nicola Shaw, at the LGA event, on no date he gave, known only from his line in #partnerships on 2 September. The CRM is not connected, so this is what reached the workspace and nothing more | colleague-touches-on-record |
+| 10 working days | since Simon's line, 2 September, on the 16th; 12 on the 18th. The event itself is undated | since-last-colleague-touch |
+| cold | to you: nothing on record from her, or from anyone at Ashworth | target-cold-to-you |
+| 1 | person you deal with who says they are connected to her: Simon Ward, by his own word in the workspace. Your dealing with him is daily and two-way, in Slack and on your own domain. Nothing on LinkedIn, because it is held back | mutual-contact-count |
+| 0 | people on a thread or an event with both you and her | shared-contact-on-thread |
+| none seen | steps to an introduction, from what this count reads: Contacts and LinkedIn hold no path. The one-step path through Simon exists only as his line in Slack, which this count does not read | intro-chain-length |
+| none | a record of how you came by her that the origin gather reads: her name came off a web page in May and nothing has been typed about it | route-in-on-record |
+| 4 of 4 | threads you opened; there is no other side to the ratio | who-starts-threads |
+| absent | the balance of what passed between you: nothing has passed from her side, so there is no pair to read | you-give-vs-they-give |
+| 0 of 4 | replies on email, the only route tried: a result, not a rate | replies-by-channel |
+| never | active: no message from her, no meeting, no call | was-once-active |
+| 0, 0 | bounces; automatic replies saying she has left | bounce-back-detected |
+| 0 | people at Ashworth you have exchanged anything with; 2 written to | people-reached-count |
+| 2 of 3, and 0 reached | the roles the profile's Customer field names, held against the leadership page: a digital or IT lead (Nicola Shaw) and a head of service (Graham Pollard) are named; the senior officers are not; none has been reached | people-covered-vs-needed |
+| 0 | things published by or about Ashworth since you last wrote, or at all, that you could open on | fresh-reason-to-write |
+| 0 | intentions Ashworth has stated in what it published: the leadership page states none | priorities-they-state |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | none: both names came off the leadership page in May, before the tool |
+| Target list | Ashworth is one of the thirty, standing at cold |
+| Lead source | none: nothing typed about how you came by either name |
+| Deal seed | none |
+| Relationship note | none |
+| Offline touch | none of yours. Simon's, at the LGA event, is his line in Slack and on no told record |
+| Contact preference | none |
+| Correction | none |
+| Tempo, on the goal | patient: never push |
+
+## Simon Ward
+
+Your colleague in partnerships, `simon.ward@` your own domain, in your Slack workspace as
+Partnerships Lead. You deal with him daily. Nothing between him and Ashworth is on any record
+except his own line in #partnerships on 2 September, which is in Nicola Shaw's section above: he
+is on no thread with anyone there, no event, and the CRM is not connected. What he knows of
+Nicola Shaw, and how well, is on no record you can read.
+
+### What the counts give
+
+Figures the counts compute from Nicola Shaw's rows, run by hand on 22 September
+(`../docs/ashworth-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | contact between him and Ashworth on record: Nicola Shaw, at the LGA event, undated, known from his line of 2 September | colleague-touches-on-record |
+| 10 working days | since that line, on 16 September; 12 on the 18th | since-last-colleague-touch |
+| 1 | target he is a bridge to, by his own word: Nicola Shaw. The link is a line in the workspace; how strong it is at his end is not on record | mutual-contact-count |
+| 4 | notes of yours to Ashworth that his introduction would follow | times-you-chase |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| About you, on the profile | that you sell alone, with a colleague in partnerships beside you |
+
 ## Everyone else
 
-Not written yet. Nicola Shaw, Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao,
-Simon Ward and the seven others at North Ridley have one line each in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's
+Not written yet. Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao, Graham Pollard
+and the seven others at North Ridley have one line each in `cast.md` and nothing here. Graham
+Pollard appears in Nicola Shaw's section, because the one note he was on is hers. Tom Bradley and Anita Rao appear in Shabana Akhtar's
 section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in
 Michelle Turner's, because everything on record about them is on her threads and her invite.

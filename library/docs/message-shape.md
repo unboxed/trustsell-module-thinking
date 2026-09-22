@@ -101,7 +101,10 @@ hold for every draft whether or not the card names that read), a document the ca
 source, or a channel the card's trail reaches. The opening row must rest on what is owed, a
 fresh reason, their date or the angle, a worry in their own words, the name a departure notice
 handed you (`auto-reply-no-longer-with`, added 22 September from Moreton: a note to a successor
-opens on the automatic reply that named them, the one thing the two of you already share), or, on
+opens on the automatic reply that named them, the one thing the two of you already share), the
+contact a colleague has on record, in their own words (`colleague-touches-on-record`, added 22
+September from a cold council: a note asking a colleague for an introduction opens on what they
+said about the target, which is the one thing the two of you already share), or, on
 a card a watch turns up, on what came back.
 
 - **Not a new rung.** A message's shape is not a read. Nothing is read off it; it is a projection
@@ -131,6 +134,7 @@ not listed makes no card that writes to anyone.
 | new-stakeholder | the thing owed to the new person, or the angle | what fits their role | nothing on a first note | anything said to their colleague as if to them |
 | time-to-reconnect | the published reason, dated | the reason itself | nothing, or a call | anything that pretends the quiet did not happen |
 | warm-path | how you came by them | the person who can introduce | the introduction | the introduction's words: those are the introducer's |
+| warm-path, to the bridge | what they said about the target, on record | what you have tried without them | how well they know them; the introduction only on the answer | the note to the target, until they say yes |
 | champion-went-dark | the name the auto-reply gave | what their predecessor had | nothing on a first note | the predecessor's promises as if they carried |
 | fit-match | what of theirs the fit rests on | the two or three things that fit | one clarification | the parts that do not fit |
 | understanding-gap | the thing they have misread, said plainly | the claim, from your own catalogue | nothing | the correction dressed as their fault |

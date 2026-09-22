@@ -766,8 +766,11 @@ const envelope = new Set([].concat((L.signals.find(s => s.id === 'pushing') || {
 // passages: added 22 September, when Felton's price card had no sanctioned opening for a message
 // that answers a worry the buyer raised four times; docs/message-shape.md), or the name a departure
 // notice handed you (added the same day, from Moreton: the note to a successor opens on the
-// automatic reply that named them, which is the one thing the two of you already share).
-const openers = new Set(['auto-reply-no-longer-with', 'promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
+// automatic reply that named them, which is the one thing the two of you already share), or, on a
+// note to a colleague, the contact of theirs the record holds, in their own words (added 22 September,
+// from a colleague who said in the workspace that he knew the target: the note that asks him for the
+// introduction opens on what he said, which is the one thing the two of you already share).
+const openers = new Set(['auto-reply-no-longer-with', 'colleague-touches-on-record', 'promise-made-undelivered', 'their-question-unanswered', 'things-they-asked-you-for',
   'fresh-reason-to-write', 'dated-facts-in-their-words', 'repeated-objection-count', 'objection-raised-on-call',
   ...['lead-with-this', 'stated-priorities'].flatMap(id => [].concat((L.signals.find(s => s.id === id) || {}).counts || []))]);
 const toldSources = new Set(L.told.map(t => t.id));

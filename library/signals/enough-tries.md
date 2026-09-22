@@ -10,7 +10,7 @@ counts: [times-you-chase, chases-since-their-last-reply, innocent-explanation-sc
 answers: [V5, F11]
 needs: [calendar]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: fired on a person who never replied once, four tries over fifteen weeks with an empty scan; it needed no usual
 pull: The Brain's tempo from the goal, for how hard this sale is meant to be pursued
 ---
 

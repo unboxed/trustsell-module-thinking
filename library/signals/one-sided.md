@@ -10,7 +10,7 @@ counts: [who-starts-threads, reply-size-vs-yours, you-give-vs-they-give, times-y
 answers: [Q18, Q19]
 needs: [meet]
 assumes: [own-rhythm]
-assumes_status: provisional
+assumes_status: decided   # 22 September: ruled out on a person who never replied, which is what own-rhythm claims: on a first contact every relationship looks one-sided
 ---
 
 # You are doing all the work

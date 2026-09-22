@@ -277,7 +277,9 @@ sheet differs. The last of them, "A draft", shows what the sheet does when the t
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now. The fourth, "The details" (18 September), shows three phones
 side by side, one card each, chosen so the three replies differ: Karen's Send Message (a
-draft), Ashworth's Rest It (one tap, with One More Try raising the last note) and the Ask
+draft), Ashworth's Rest It (one tap; until 22 September a second button, One More Try, raised a last note,
+and it came off when the card was worked from the records up: a fifth note to somebody who has
+never replied has nothing sanctioned to open on, and the read the card rests on says stop) and the Ask
 about Rachel's meeting (Answer raises the Choices sheet). Scroll each into its details, which
 follow the spine with the card's widgets in place. The words and rows come from the cards in
 `library/`: each phone is `phone.html` on one card (see "The phone is built" below). Felton
@@ -782,6 +784,7 @@ Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 - **Sanjay Mistry**, Digital Programme Manager, Moreton. Named in Julie's auto-reply. Never spoken.
 - **Darren Cole**, procurement contact, Tarlton. Named in the tender. Never spoken.
 - **Nicola Shaw**, Head of Digital, Ashworth. Your colleague Simon knows her.
+- **Graham Pollard**, Head of Customer Services, Ashworth. On your third note with Nicola. Never replied.
 - **Andrew Doyle**, Head of IT, East Marston. Happy to do reference calls.
 - **Simon Ward**, your colleague in partnerships. Well connected across the sector.
 - **You.** Fede, the seller. Warm, plain-spoken, allergic to "just checking in" emails. You delete the tool's pleasantries.

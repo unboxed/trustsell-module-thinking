@@ -1508,6 +1508,36 @@ because there the buyer said the date on a thread. The fit's unknown column is w
 clarification questions ask, and nothing in the library says a clarification is an unknown asked
 as a fact. And the notice's rule of contact, portal only, answers Q9 and is read by no count.
 
+**Done in the forty-first pass, 22 September.** The thirteenth and fourteenth people worked
+from both ends, Nicola Shaw and Simon Ward at Ashworth, the first run of `enough-tries`,
+`warm-path` and `colleague-already-in-touch` from the records up, the first card whose person
+has never written a word, and the first note to a colleague. The record is
+`scenarios/bops/docs/ashworth-pass.md`. Twenty-one of forty-five cards are `decided`.
+
+**What the two ends found at the card.** The rest card rested on `one-sided`, "you are doing all
+the work", which is true and cannot apply: that read needs a history to read balance across, and
+Nicola Shaw has never replied once. The card was never about balance; it was about stopping,
+which is `enough-tries`' whole job, and that read fired on four notes over fifteen weeks with an
+empty scan at a patient tempo. `champion-went-dark` came off as a read kept for two zero counts,
+and `warm-path` moved to the card it belongs to. That card's "one step" came off because
+`intro-chain-length` cannot see a link stated in the workspace, `colleague-already-in-touch` was
+reached through no read the card named, and the sure word dropped from "likely" to "a hunch",
+because one line of Simon's is a reading of someone's words. The rest card's last-note draft
+came off: it opened on the silence itself, which no opener sanctions, which `pushing` describes
+and `enough-tries` says not to send, so the card is the one tap the design log called it. A note
+to a colleague had no sanctioned opening either, so
+[`colleague-touches-on-record`](../counts/colleague-touches-on-record.md) is a seventh kind of
+opening: the contact a colleague has on record, in their own words. Four reads' `assumes:` are
+decided.
+
+**What the counts said about themselves.** Two counts under one read disagree about what a
+link is: `mutual-contact-count` reads Slack and `intro-chain-length` reads Contacts and
+LinkedIn, so a bridge can exist with no chain length. A colleague's offline contact reaches no
+told record and is on record only if they happen to mention it somewhere shared, and then
+without a date. The innocent-explanation scan is blind in two places on anyone outside your
+organisation, their calendar and their job moves, which are the two commonest innocent
+explanations, and the card says where it could not look.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1534,17 +1564,18 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on twenty-six of forty-five cards.** Three
+- **The cards' joins upward are still provisional on twenty-four of forty-five cards.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
-  thirty-ninth and two in the fortieth, from the records
+  thirty-ninth, two in the fortieth and two in the forty-first, from the records
   up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
-  `moreton-pass.md` and `tarlton-pass.md`. The rest
+  `moreton-pass.md`, `tarlton-pass.md` and `ashworth-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Thirty-three signals still carry `assumes_status: provisional`;
+  records and names no read. Twenty-nine signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
-  `understanding-gap`, `champion-went-dark`, `fit-match` and `stated-priorities` were tested
+  `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
+  `warm-path`, `colleague-already-in-touch` and `one-sided` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

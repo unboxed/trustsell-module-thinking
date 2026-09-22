@@ -10,7 +10,7 @@ counts: [route-in-on-record, shared-contact-on-thread, intro-chain-length, mutua
 answers: [Q7, Q8, F17]
 needs: [linkedin]
 assumes: [own-rhythm]
-assumes_status: provisional
+assumes_status: decided   # 22 September: fired on a bridge you deal with daily and a target with no history; the rhythm it assumes is the bridge's
 ---
 
 # Someone who can introduce you
