@@ -10,7 +10,7 @@ counts have something to be done over and a card can be checked against somethin
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
 Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole,
 Nicola Shaw, Simon Ward, Andrew Doyle, Martin Hodgson, Louise Kemp, Ravi Chandran and Jonathan Reid
-are written; every other section says so.
+are written, and so is a section for you, the seller; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -1778,6 +1778,132 @@ Figures the counts compute from Karen's rows, run by hand on 22 September
 ### What you told the tool
 
 Nothing. He is on no told record.
+
+## You
+
+Fede, the seller. Your own records: what you have written since the tool began drafting, what the
+tool has found on the web about the councils nobody at has been named, the shadows of buying
+steps in other people's threads, and what you have told it about yourself, the goal and the
+offering. The tool was set up on Monday 17 August 2026; the rows elsewhere that say "typed at
+setup" mean that day. Nothing in this section is about one buyer. The rows are gathered here
+because four cards are about you and nobody else, and until now their figures lived only in the
+cards.
+
+### The tool's own history: drafts, and what you did with them
+
+The tool has drafted every note you have sent since it was set up: 15, from Tuesday 18 August to
+Thursday 10 September. On 11 of them it put a line before the point ("I hope you're well", "Hope
+the week is going well"); on the 4 shortest it did not. Of the 11, you deleted the line before
+sending in 9. The 2 you kept were to Nicola Shaw and Michelle Turner, neither of whom you had met.
+Every one of the 15 opens "Hi" and a first name and signs off "Fede", as did everything you sent
+before the tool.
+
+| Date | To | Words sent | A line before the point? | What you did with it |
+|---|---|---|---|---|
+| Tue 18 Aug | Lisa Holmes | 60 | yes | deleted it |
+| Tue 18 Aug | Shabana Akhtar | 70 | yes | deleted it |
+| Tue 18 Aug | Nicola Shaw | 60 | yes | kept it. You had never met |
+| Wed 19 Aug | Karen Hughes | 40 | no | sent as drafted |
+| Wed 19 Aug | Michelle Turner | 50 | yes | kept it. You had not met; the demo is the 17th |
+| Thu 20 Aug | Neil Chapman | 45 | no | sent as drafted |
+| Mon 24 Aug | Karen Hughes | 70 | yes | deleted it |
+| Tue 25 Aug | Gary Pearson | 90 | yes | deleted it |
+| Tue 25 Aug | Shabana Akhtar, Stephen Walsh | 130 | yes | deleted it |
+| Wed 26 Aug | Gary Pearson | 40 | no | sent as drafted |
+| Tue 1 Sep | Michelle Turner | 60 | yes | deleted it |
+| Thu 3 Sep | Michelle Turner | 80 | yes | deleted it |
+| Mon 7 Sep | Michelle Turner | 70 | yes | deleted it |
+| Tue 8 Sep | Rachel Gill | 60 | yes | deleted it |
+| Thu 10 Sep | Michelle Turner | 40 | no | sent as drafted |
+
+Nothing else was changed on any of the 15 beyond the opening line. The tool's own record of each
+card it raised, and what you did with it, is what this table is: the sixth told source, which no
+channel fetches.
+
+### Web: the twelve councils with nobody named
+
+What the open web holds on each, checked on 16 September. The twelve are on your list of thirty
+and nobody at any of them has ever been on a message, an event or a contact of yours.
+
+| Council | What is published | Dated |
+|---|---|---|
+| Ashby | a tender, "customer contact modernisation", on the council's procurement portal | published 26 August |
+| Brinsley | nothing that touches the case system, a strategy, a procurement or a change of lead | |
+| Carlton | a news item: a new Digital Services Lead in post | 12 May |
+| Denby | nothing | |
+| Fulford | nothing | |
+| Glenfield | a digital strategy, 2026 to 2029, which names "case management" among its programmes | 3 June |
+| Hatton | nothing | |
+| Kirby | a digital strategy, and a news item naming a new Head of Digital | the strategy 14 July; the appointment 20 April |
+| Linton | a digital strategy, which does not mention the case system | 18 March |
+| Newby | nothing | |
+| Orton | a digital strategy, which does not mention the case system | 22 July |
+| Rowley | nothing | |
+
+Across the thirty on your list: a contracts register or a past tender on the council's own site
+dates the case system at 19 of them, and at every one of the 19 the contract began more than ten
+years ago; at the other 11 nothing published dates it. A news item or a leadership page shows a
+digital or IT lead appointed within the last two years at 14 of the thirty. Most of the thirty
+are district or borough councils. Among the twelve, the case system is dated, and old, at 6.
+
+### Shadows of a buying step, in other people's threads
+
+Every place somebody at a council named a step a buy would take on their side. The rows are in
+their own sections; they are gathered here because the Ask about the buying process quotes them.
+
+| Council | What was said | By | When |
+|---|---|---|---|
+| Bramley | "Our budget round starts in August" | Karen Hughes | 13 Jul |
+| Bramley | a budget prioritisation meeting with BOPS on the agenda; you sat in | Karen Hughes | 20 Aug |
+| Westmoor | "I'll put it to procurement when we're ready"; "bring IT in before anything goes to procurement" | Gary Pearson | 29 Apr, 26 Aug |
+| Holbrook | "The window for this year closes 16 October. Anything not in by then is next year's money" | Neil Chapman | 14 Jul |
+| Felton | "I'll need to bring finance in"; "the next budget round" | Shabana Akhtar, Stephen Walsh | 19 Jun, 24 Aug |
+| North Ridley | "I'll take this to our programme board in August" | Michelle Turner | 30 Jul |
+| Tarlton | a tender, clarifications by 2 October, closing 9 October | published | 9 Sep |
+
+Six councils. Nothing on any thread names a business case being written, an assessment, or a
+signature, and nothing you have told the tool says what a buy at a council takes.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/no-person-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 15 | notes you have sent since the tool was set up on 17 August, every one drafted by it, 18 August to 10 September | draft-to-sent-edit-distance |
+| 11, 9, 2 | drafts that opened with a line before the point; the ones you deleted it from; the ones you kept it in, both to people you had not met | draft-to-sent-edit-distance |
+| under 30 | the count's own floor: its medians move with every message until about thirty have been sent, and you have sent fifteen, so 9 of 11 is a fact and not yet a pattern | draft-to-sent-edit-distance |
+| "Hi" and a first name; "Fede" | how you open and sign off, on all fifteen and on everything before | greeting-and-signoff-pattern |
+| 0 | people at each of the twelve councils you have exchanged anything with | people-reached-count |
+| cold | to you, all twelve | target-cold-to-you |
+| 0 | people you deal with who are on record as knowing anyone at any of the twelve. Simon Ward has named none of them | mutual-contact-count |
+| none | a record of how you came by any of the twelve: nothing typed, no list, no form | route-in-on-record |
+| 4 of 12 | councils with a digital strategy published this year: Glenfield, Kirby, Linton, Orton. One of the four, Glenfield's, names case management; the others do not | priorities-they-state |
+| 1 | tender out among the twelve, Ashby's. A published procurement at a council you have never contacted enters no count, which the fortieth pass found at Tarlton | counted by nothing |
+| 2 | new digital leads in post since spring among the twelve: Kirby, Carlton. A new person in post at a council you have never contacted is counted by nothing: `fresh-reason-to-write` sits under a read that assumes a rhythm with them | counted by nothing |
+| 3 readable, 0 marked | the fit-shape as told: three factors readable from the profile's prose (a council in the UK; a service lead with ten to forty officers; a legacy case system), none marked essential, and nothing about the size of council, the age of the system or how long the lead has been in post, which is what your thirty visibly share | fit-shape-completeness |
+| 19 of 30, 14 of 30 | councils where the case system is dated and more than ten years old; councils with a digital or IT lead in post under two years. Neither is a factor you have told, so neither is met or missed: both are unknown columns | fit-factors-met |
+| 1 of 3 at six, 2 of 3 at six | of the three readable factors, at each of the twelve: a council at all twelve; a legacy case system at the 6 where it is dated; a service lead with ten to forty officers unknown at all twelve. Nothing missed anywhere | fit-factors-met |
+| 0 | steps a buy at a council takes, as told: nothing typed | steps-the-buy-needs |
+| absent | steps with a sign on the record: with no told list there is nothing to match a sign to. What the threads hold anyway is a step named at six councils | steps-with-a-sign |
+| 5, 3 | what the tool proposed on its own cards: the first five matches shown before any council is added; three councils at a time, with a likely name at each by the Monday after | history-told, card raised |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| About you, on the profile | that you sell alone, with a colleague in partnerships beside you. Set up 17 August |
+| Goal | sell BOPS to councils; find the early adopters; land a partial adoption now, full later (`goal.md`) |
+| Tempo | patient: never push |
+| Target shape | "individuals inside councils who feel the pain of legacy tech and want better tools for their officers", the goal's words. A mindset, not a factor the web can show |
+| Target list | 30 councils; 18 with a name; where each stands |
+| Fit-shape, on the offering | the profile's Customer field, as prose: councils in the UK; a service lead responsible for ten to forty officers; a buying group of a head of service, a digital or IT lead, and one or two senior officers |
+| Buying process for a council | not filled |
+| Voice sample | none; the tool reads what you send |
+| Voice rules | none set |
+| Lead source | none typed, for anyone |
+| Relationship note, Offline touch | none |
 
 ## Everyone else
 

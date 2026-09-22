@@ -10,7 +10,7 @@ counts: [greeting-and-signoff-pattern, sentence-length-vs-baseline, formality-by
 answers: [Q23, Q26]
 needs: [gmail, slack]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: read fifteen notes to eight people with no thread in common and needed nothing of any sale
 ---
 
 # Your voice

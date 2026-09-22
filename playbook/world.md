@@ -568,7 +568,12 @@ between them, fading at the foot while more are below. The draft sheet was alrea
 Several choices can carry a limit ("Pick up to three", the same day): at the limit the rows not
 ticked grey out until one is unticked, and the card's own header says the number. Only an Ask
 about what you intend or prefer takes one (the twelve councils); an Ask about what happened
-never does (the demo), because a limit would make the tool record something untrue.
+never does (the demo), because a limit would make the tool record something untrue. On 22
+September the twelve-councils Ask turned round: it had asked which three to start with, which is a
+verdict the tool should reach itself, and it asks who you know at the twelve now, which is a fact
+only you hold (`scenarios/bops/docs/no-person-pass.md`). So it lost its limit by this rule, and no
+card in the shipped world carries one today; the rule stands for the next Ask about what you
+intend. *(My call, not yet yours.)*
 
 A draft fills the same sheet, and its anatomy is copied from the email card Claude's phone
 app shows when it drafts a message: a head with a mail glyph and "Email"; a row of version

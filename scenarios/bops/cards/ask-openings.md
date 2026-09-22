@@ -3,9 +3,9 @@ id: ask-openings
 order: 19
 kind: ask
 signal: voice
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the seller's own records, see ../docs/no-person-pass.md. Fifteen sent notes is under the count's own floor of about thirty, so the fact is asked rather than read
 counts: [draft-to-sent-edit-distance, greeting-and-signoff-pattern]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [you]
 arrives: 2026-09-21             # the day the tool puts it on the home
 documents: []
@@ -35,12 +35,13 @@ phone:
 
 # Should I leave the greetings out of my drafts?
 
-In 9 of the last 11 drafts you deleted the first sentence before sending. I'd rather learn than keep guessing.
+In 9 of the 11 drafts that opened with a line before the point, you deleted it before sending. I'd rather learn than keep guessing.
 
 ## Known so far
 
-- 11 drafts since August. In 9, the first sentence was deleted before sending: "I hope you're well", "Hope the week is going well".
+- 15 notes sent since I was set up on 17 August, all drafted by me. 11 opened with a line before the point; in 9 you deleted it before sending: "I hope you're well", "Hope the week is going well".
 - The 2 you kept were both to people you had not met.
+- Fifteen is under the thirty I want before I trust a pattern in how you write, which is why I ask rather than decide.
 
 ## What's missing
 

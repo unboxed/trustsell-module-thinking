@@ -3,9 +3,9 @@ id: ask-buying-process
 order: 23
 kind: ask
 signal: steps-on-their-side
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the seller's own records, see ../docs/no-person-pass.md. A told record nobody has filled produces an Ask (the twenty-second pass); the shadows it quotes are now the records' six councils, not the two the card had
 counts: [steps-the-buy-needs, steps-with-a-sign]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [you]
 arrives: 2026-09-17
 documents: []
@@ -33,8 +33,8 @@ I can see everything that passes between you and them. I can see nothing that ha
 
 ## Known so far
 
-- The steps I have caught the shadow of, because somebody mentioned them: Holbrook's procurement window, which closes on 16 October. A committee at Felton that Stephen Walsh referred to in August. Nothing else.
-- Two of them, out of a list I do not have. I do not know whether that is two of four or two of nine.
+- The steps I have caught the shadow of, because somebody mentioned them: a budget round at Bramley, and a budget prioritisation meeting you sat in; procurement at Westmoor, named twice; a window at Holbrook that closes on 16 October; finance, and then the next budget round, at Felton; a programme board at North Ridley; and a tender at Tarlton.
+- Six councils, out of a list I do not have. I do not know whether that is most of the list or the start of it, and nobody has mentioned a business case being written, an assessment, or a signature.
 
 ## What's missing
 

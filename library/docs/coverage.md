@@ -1598,6 +1598,37 @@ because no card here would quote the count: nothing at Bramley is still out. And
 from a colleague's introduction, which `head-of-signature-scan` reads as a message; the fiction
 had Ravi Chandran's in a signature he never wrote, and the count was right.
 
+**Done in the forty-fourth pass, 22 September.** The last four provisional cards in the shipped
+world, the Asks about no person: who you know at the twelve councils with no name, what a good
+fit looks like, whether to drop the greetings, and what a buy at a council takes. The record is
+`scenarios/bops/docs/no-person-pass.md`. Every one rests on something the seller has not told the
+tool, so the records to write were the seller's own: `world/records.md` has a section for `you`,
+the tool's fifteen drafts and what you did to each, the twelve councils on the web, and the shadows
+of a buying step in six councils' threads. The build matches it to the cast like any person, so
+all twenty-five cards in `bops` are figure-checked and every one is `decided`. Job 1 is done on
+the world the library came from.
+
+**What the two ends found at the cards.** One Ask asked for a verdict: "which three councils
+should I start with" is a priority call the tool could make from two facts it lacks, and the one
+with no card of its own, who you know, is what the card asks now; the order is the tool's again
+once it is answered, and the limit of three went by the phone's own rule. `missing-people` came
+off it, met by absence at councils nobody has contacted, and `warm-path` is its read, as an Ask,
+with `fit-match` and `stated-priorities` tracing the tool's own pick. The buying-process Ask had
+two shadows of a step where the records hold six councils' worth, one of them a committee that
+does not exist and none of them the budget meeting the seller sat in; rewritten to the records.
+The drafts card's figures survive with one word changed, because the records hold fifteen notes
+and eleven with an opening line, not eleven drafts. Nothing else came off.
+
+**What the counts said about themselves.** `draft-to-sent-edit-distance` has a floor of about
+thirty sent messages and a new seller's first month is under it; the honest card under the floor
+is an Ask, and nothing in the library says a read below its count's floor should ask rather than
+stay silent. A new person in post at a cold council is counted by nothing, because
+`fresh-reason-to-write` sits under `time-to-reconnect`, which assumes a rhythm. A published tender
+at a cold council enters no count, found for the second time, and the tool's own ranking of where
+to start rests on it anyway. And the fit-shape is told and thin at once: the profile's Customer
+field gives `fit-shape-completeness` three factors in a sentence, none marked, and the things the
+thirty visibly share are not among them.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1624,22 +1655,24 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on twenty-four of forty-five cards.** Three
+- **The cards' joins upward are still provisional on twenty of forty-five cards, all in the two
+  worlds the library did not come from.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
-  up, one re-tested from the customer's end in the forty-second and one from the budget
-  holder's in the forty-third; the method is in
+  up, one re-tested from the customer's end in the forty-second, one from the budget
+  holder's in the forty-third, and the four about no person in the forty-fourth, which finished
+  the shipped world; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
-  `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md` and
-  `bramley-pass.md`. The rest
+  `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
+  `bramley-pass.md` and `no-person-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Twenty-six signals still carry `assumes_status: provisional`;
+  records and names no read. Twenty-five signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
-  `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`
-  and `delivered-before` were tested
+  `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
+  `delivered-before` and `voice` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
