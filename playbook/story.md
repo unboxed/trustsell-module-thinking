@@ -169,10 +169,12 @@ does. Every answer is kept, so nothing is asked twice.
 It also learns who you are, and adjusts. Some people sell because it landed on them, and want
 the tool to explain why this person and what to say. Some sell for a living, and want the next
 move, said straight, with the time it has to be done by, and nothing more. The tool asks once
-which you are and then watches: what you rewrite, what you skip, how often you come back. More
-hand-holding for one, more directness and more of the clock for the other, and the same
-reasoning underneath both. *(The user's reason, 22 September. What the two versions of a card
-look like is not written yet.)*
+which you are and then watches: what you rewrite, what you skip, how often you come back. More hand-holding for one, more directness and more of the clock for the other, and the same
+reasoning underneath both. And they do not sell on the same days: one does this on the afternoons
+he can spare, the other every day, all day. So a day is not the same length for both. For the
+first, the tool holds what can wait until the next time he sits down to it, and brings only what
+would be gone by then; for the second it works in hours. *(The user's reason, 22 September. What
+the two versions of a card look like, and how the week is cut for each, is not written yet.)*
 
 The tool asks when it needs to know, at the moment the answer matters. The cards are also where
 you see that it keeps learning: the world moves, and the tool keeps up with it. What it holds

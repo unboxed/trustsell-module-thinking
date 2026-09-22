@@ -362,9 +362,12 @@ reach what it claims.
   genuinely two things each and each now says so in its body.
 - **One card, two sellers** (the user, 22 September). The tool adjusts to who you are: more
   explanation for a seller by circumstance, more directness and more of the clock for a seller by
-  trade. The Profile module holds the setting and the story now says why; nothing shows it. The
-  test is one decided card written two ways, the front and the tool's own lines, and it touches
-  the phone and the voice, so it is the user's to ask for. Not started.
+  trade, and a different day: one sells on the afternoons he can spare and the other every day,
+  so for the first the tool holds what can wait until he next sits down and brings only what
+  would be gone by then. The Profile module holds the settings (coaching, fluency, cadence) and
+  the story now says why; nothing shows it, and the day's order in `build.js` knows one cadence.
+  The test is one decided card written two ways, the front and the tool's own lines, and one week
+  cut two ways; it touches the phone and the voice, so it is the user's to ask for. Not started.
 - **The brief, asked for by all three sellers.** What happened on this deal in the last two weeks,
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
