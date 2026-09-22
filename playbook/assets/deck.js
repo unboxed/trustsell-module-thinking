@@ -88,6 +88,24 @@
       }).join('') + '</div>';
     py.__edges = edges;
   }
+  /* The drawing is as wide as its ground needs, never narrower than the slide says (22
+     September, after a card quoting eight counts ran off both edges). A row of pills wraps
+     (style.css); the ground cannot, because its columns hang their records, so it sets the
+     width and the room scales the whole. Measured when the slide shows, from the base width. */
+  function size(py) {
+    var sl = py.closest('.slide'), stage = py.parentElement;
+    var base = +(py.getAttribute('data-w0') || sl.getAttribute('data-w')) || 1136;
+    py.setAttribute('data-w0', base);
+    py.style.width = base + 'px';
+    var pad = parseFloat(getComputedStyle(py).paddingLeft) || 0, need = base;
+    py.querySelectorAll('.py__row--ground').forEach(function (row) {
+      var w = 0; Array.prototype.forEach.call(row.children, function (c) { w += c.offsetWidth; });
+      need = Math.max(need, Math.ceil(w + pad + 16));
+    });
+    py.style.width = need + 'px';
+    stage.style.width = 'calc(' + need + 'px * var(--s))';
+    sl.setAttribute('data-w', need);
+  }
   function draw(py) {
     var svg = py.querySelector('.py__svg'); if (!svg) return;
     var box = py.getBoundingClientRect(), s = box.width / py.offsetWidth || 1;
@@ -220,6 +238,7 @@
     if (count) count.textContent = (i + 1) + ' of ' + slides.length;
     document.title = slides[i].getAttribute('aria-label') + ' · Signal cards';
     if (push) history.replaceState(null, '', '#' + slides[i].id);
+    pyramids.forEach(function (py) { if (!py.closest('.slide').hidden) size(py); });
     fit();
     drawShown();
   }

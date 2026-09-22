@@ -174,7 +174,7 @@ records Caption 1), the pyramid kept at the same size, so the stacks are shorter
 two steps down, too small to read across a room, and drawing the figure wider, which shrank
 everything rather than using the sides. Then the five longest count names were shortened
 ("Wait for a reply, against usual" and its kin, ids unchanged), and every pill, the counts too,
-now sits on one line, as wide as its words. The key (main read, supporting read, the two
+now sits on one line, as wide as its words. **Since 22 September a row of pills wraps**, because Karen's card came to quote eight counts and ran off both edges of the drawing. And the ground row, which had been wider than the drawing since the names went on the ground line, no longer is: `deck.js` measures what the ground needs when the slide shows and widens the drawing to it, so the room scales the whole a little smaller rather than cutting a channel off. Drawing the figure wider was passed over on 19 September because it shrank everything; this widens only as far as the ground forces, and only the ground, because its columns hang their records and cannot wrap. The pills stay one line each, as wide as their words. *(My call, not yet yours: the alternative is shorter record names.)* The key (main read, supporting read, the two
 kinds of line) was taken off the slide the same day, the user's call.
 
 **A second deck** (22 September, the user's call), `how-it-builds.html`, beside `deck.html` and
