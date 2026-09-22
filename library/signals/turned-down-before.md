@@ -10,7 +10,7 @@ counts: [past-deals-of-this-shape, how-they-ended, reasons-given-for-a-no, who-t
 answers: [V16]
 needs: [crm]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at the fast end on people never contacted or refused before; each stood on told shapes and records alone and needed nothing of the sale
 pull: People's pile of ended deals, gathered from what you told it and what the deal record holds
 ---
 

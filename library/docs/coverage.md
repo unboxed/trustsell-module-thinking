@@ -1666,6 +1666,28 @@ owner signs the application and nothing reads that signature as the answer. V10,
 words, is on every form ("this month if possible", "not desperate") and no read takes it. Both are
 holes the volume set already named and this pass met on the records.
 
+**Done in the forty-sixth pass, 22 September.** The front of the broker's ladder: Errol Danning,
+a text that finally got an answer; Curtis Naylor, back on the form after three funders refused him
+in May; Marisol Delgado, a name off the list a colleague handed over. The record is the second
+section of `scenarios/pmf/docs/pmf-pass.md`. Three cards `decided`, two with message rows. Errol's
+swapped its reads: at this end `buying-intent` is the ladder's first rung and not a finding, and
+what is owed on his conversation is his question, "how fast", one working day open on a
+conversation that turned in a minute, so `loose-end` is the read and the form is the answer.
+Curtis's lost `delivered-before`, a read kept for nothing. Marisol's gained
+`colleague-already-in-touch`, and the gather under it had to change to see why:
+[`firm-contact`](../assemblies/firm-contact.md) reads the CRM, the workspace, threads and events,
+and the one approach a list lead had had was on the list itself, in the origin gather two floors
+away; it takes `lead-list` now and both counts under it read it. Three reads' `assumes:` are
+decided.
+
+**What the counts said about themselves.** `sms#consent` has been on the channel since 21
+September because the trade said a text without written consent is the thing it gets fined for,
+and nothing reads it: the card that texted a stranger off a list passed the build. It goes by mail
+now, and the finding is that the check was never built. What a merchant wants the money for, V9, is
+said unasked on the text, the form and the list by all three, and read by nothing as an answer.
+`missing-documents` fires on Curtis two working days after the application was sent and no card
+carries it, argued right for today: the funder card is the move before the file.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1692,25 +1714,27 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on fourteen of forty-four cards, seven in the
+- **The cards' joins upward are still provisional on eleven of forty-four cards, four in the
   broker's world and seven in the firm's.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
   up, one re-tested from the customer's end in the forty-second, one from the budget
   holder's in the forty-third, the four about no person in the forty-fourth, which finished
-  the shipped world, and four at the top of the broker's ladder in the forty-fifth; the method is in
+  the shipped world, four at the top of the broker's ladder in the forty-fifth and three at its
+  front in the forty-sixth; the method is in
   `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
   `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md`, `east-marston-pass.md`,
   `bramley-pass.md` and `no-person-pass.md`, and for the broker's world in
   `scenarios/pmf/docs/pmf-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Twenty-two signals still carry `assumes_status: provisional`;
+  records and names no read. Nineteen signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
   `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`,
-  `delivered-before`, `voice`, `answer-came-back`, `missing-documents` and `uneven-income` were tested
+  `delivered-before`, `voice`, `answer-came-back`, `missing-documents`, `uneven-income`,
+  `lead-with-this`, `turned-down-before` and `where-this-one-goes` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none

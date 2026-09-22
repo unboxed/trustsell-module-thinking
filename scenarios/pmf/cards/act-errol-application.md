@@ -2,16 +2,18 @@
 id: act-errol-application
 order: 4
 kind: act
-signal: buying-intent
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [decision-language-used, timeline-or-start-question]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: loose-end
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. Was buying-intent, which at this end is the ladder's first rung and not a finding: a yes is what makes him a lead. What is owed is his question, "How fast can this happen?", one working day open on a conversation that turned in a minute, and the form is its answer
+supporting: [buying-intent]   # his yes and his question, in his own words, which is why the answer is a form and not a call
+supporting_status: decided
+counts: [their-question-unanswered, decision-language-used, timeline-or-start-question]
+counts_status: decided
 about: [errol-danning, mercer-dental]
 to: errol-danning
 arrives: 2026-09-21
 documents: []
 sure: "sure"
-sure_because: "A fact on record: his own words, by text on Friday at 16:40."
+sure_because: "A fact on record: his own words, by text on Friday at 16:40, and a question of his nothing has answered since."
 when:
   mode: fresh
   words: "Today. A yes on Friday is cold by Wednesday."
@@ -60,7 +62,7 @@ He said yes on Friday afternoon and nothing has happened since. At this tempo a 
 ## What happened
 
 - Why now: it is the first working morning since he said yes, and nothing has been sent, filled in or signed. Every day from here the yes is worth less.
-- His words on Friday at 16:40 were a decision, not a question: he said he needed the money and asked how fast it could happen.
+- His words on Friday at 16:40 were a decision and a question: he said he needed the money and asked how fast it could happen. Nothing has answered the question, and the form is the answer.
 - He has not been sent the form. There is no application against this deal and no request for one.
 - Nothing has come back from him since Friday either.
 - The deal stands at interested, which is the rung that means a yes and nothing more.
@@ -80,11 +82,18 @@ He said yes on Friday afternoon and nothing has happened since. At this tempo a 
 
 - I'll watch for a signed application until Wednesday. If it comes I'll start asking for the statements that go with it. If nothing is signed by Wednesday I'll say so once, and then leave it rather than chase a yes that has gone cold.
 
+## The message
+
+- opens with · His own question, "how fast", and the answer to it. What is owed goes first · their-question-unanswered
+- points at · The form, and the two things that follow it: statements, then out to funders. Nothing about what they will offer · timeline-or-start-question, goal-told
+- asks · One thing: the form. At this tempo the answer and the ask are the same text · their-question-unanswered, goal-told
+- holds back · Any figure, because "about 40k" is his and no funder has been asked; and any promise of a day, because none is on record · decision-language-used, dated-facts-in-their-words
+
 ## The draft
 
 Hi Errol,
 
-Good to get your yes on Friday.
+Good to get your yes on Friday. You asked how fast: it is as fast as the paperwork.
 
 Here is the form. It takes about a minute and it is the thing that lets me actually go and get you numbers rather than talk about them. Once it is in, I will need three months of business bank statements and then it goes straight out.
 

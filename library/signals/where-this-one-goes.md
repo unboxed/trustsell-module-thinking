@@ -10,7 +10,7 @@ counts: [offerings-in-play, fit-factors-met, fit-factors-missed, cost-of-each-to
 answers: [V15]
 needs: []
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at the fast end on people never contacted or refused before; each stood on told shapes and records alone and needed nothing of the sale
 pull: People's lead situation, to match against each entry's fit-shape
 ---
 

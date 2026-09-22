@@ -10,7 +10,7 @@ counts: [dominant-worry-for-buyer-type, use-cases-on-file, relevance-to-stated-f
 answers: [Q10, Q11, Q12, Q24, F16]
 needs: []
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: tested at the fast end on people never contacted or refused before; each stood on told shapes and records alone and needed nothing of the sale
 pull: People's published picture, for what the buyer said matters, and how you came by them, for the line a first message opens on
 ---
 

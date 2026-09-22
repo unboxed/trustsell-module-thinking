@@ -12,6 +12,8 @@ inputs:
   - gmail#email-thread
   - gmail#email-message
   - calendar#calendar-event
+  - lead-list#lead-list
+  - lead-list#lead-entry
   - profile-told#about-you
   - stakeholder-map
 ---
@@ -31,7 +33,9 @@ It keys on the organisation, through the map of who is who there. The work is id
 - which organisation a record concerns: the buyer's domain on a thread or an event, the account on
   the deal record, a name in a Slack message matched to the map;
 - which contact was theirs and not yours: a thread you were copied on, an event you did not
-  organise, a CRM activity logged by another owner.
+  organise, a CRM activity logged by another owner, a name on a list a colleague handed you
+  (added 22 September: the colleague who worked a stand and handed over the sheet met every
+  person on it, and until then the gather could not see the one approach a list lead had had).
 
 It sees only what reaches a shared place. A colleague's own mailbox is never visible. What is on
 record is what reached yours (a thread you were copied on or forwarded), what your firm logged in
@@ -49,7 +53,9 @@ firm's contact with an account is on record across everyone in it, and this is t
 draw from it. `slack-message` and `slack-user` resolve to
 [`channels/slack.md`](../channels/slack.md); `email-thread` and `email-message` to
 [`channels/gmail.md`](../channels/gmail.md); `calendar-event` to
-[`channels/calendar.md`](../channels/calendar.md). `about-you` resolves to
+[`channels/calendar.md`](../channels/calendar.md); `lead-list` and `lead-entry` to
+[`channels/lead-list.md`](../channels/lead-list.md), where the list says who handed it over and
+when, which is the colleague's contact with everyone on it. `about-you` resolves to
 [`profile-told.md`](../told/profile-told.md), for your own name and email, which is how a colleague
 is told from you. `stakeholder-map` is the sibling assembly that says who is at the buyer. Where
 the CRM is not connected, the only trace of a colleague's contact is what happened to reach your

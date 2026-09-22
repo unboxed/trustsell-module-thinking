@@ -7,8 +7,8 @@ about: what the connected channels would actually hold, person by person, at a t
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Tony Prieto, Paula Larkin, Alma Vega, Renee Sackville, Marcus Bell
-and Hannah Beck are written; every other section says so.
+itself. One section per person. Tony Prieto, Paula Larkin, Alma Vega, Renee Sackville, Marcus Bell,
+Hannah Beck, Errol Danning, Curtis Naylor and Marisol Delgado are written; every other section says so.
 
 The tempo here is hours, so the rows carry a clock. Working days are counted as Monday to Friday.
 Today is Monday 21 September 2026, and the day begins at 08:00. Text is the conversation: almost
@@ -407,7 +407,194 @@ Nothing counts a funder as a person. Her answers are counted against the deals t
 |---|---|
 | Supplier, on the offering | Avondale Capital supplies the advance under `advance-avondale`; its box is that entry's fit-shape |
 
+## Errol Danning
+
+Owner, Mercer Dental. A mobile number and nothing else: no form, no mail, no upload. Everything
+between you and him is one text conversation of three messages, two of them yours. He is the lead
+that came "from a text that finally got an answer". The deal is in the CRM as Mercer Dental,
+yours, at interested, no amount yet.
+
+### SMS: the conversation
+
+| When | From | What it said, in short |
+|---|---|---|
+| Tue 8 Sep, 10:15 | you | A first text: who you are, the firm, that you help owners with working capital, and STOP to opt out |
+| Thu 17 Sep, 11:00 | you | A second: the same, shorter, and "reply if it is worth a conversation" |
+| Fri 18 Sep, 16:40 | Errol | "Yes. I need about 40k for a new chair and the x-ray unit. How fast can this happen?" |
+
+Nothing from you since Friday 16:40, and nothing more from him. Consent to text is on record from
+his reply, dated Friday 16:40, and from nothing before it. No form, no application, no request for
+one, no document.
+
+### CRM: the deal
+
+| Field | What it holds |
+|---|---|
+| Stage | interested, since Fri 18 Sep, 16:50 |
+| Owner | you |
+| Amount | none recorded; "about 40k" in his text |
+| Activity | Fri 18 Sep, 16:50, you: "Said yes by text. Form to go Monday." |
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`). The card arrives Monday 21 September, first thing.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | question of his unanswered: "How fast can this happen?", Friday 16:40, 1 working day open when the day begins, on a conversation whose only turn of his came in a minute | their-question-unanswered |
+| 1 | passage where his words turn to deciding: "Yes. I need about 40k" | decision-language-used |
+| 1 | time he asked when it could happen | timeline-or-start-question |
+| 0 | price questions, proposals asked for, budget named | pricing-question-asked |
+| 0 | documents asked of him; 0 received. Nothing is requested, so nothing is still out | documents-still-out |
+| Friday 16:40 | consent to be texted, by his reply. Nothing before it | sms, consent |
+| 2 of 3 | messages on the conversation that are yours; his one reply answered the second | who-starts-threads |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Mercer Dental, named Fri 18 Sep at 16:50, standing at interested |
+| Lead source | none typed. He answered a text; the conversation is the record |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## Curtis Naylor
+
+Owner, Pinewood Cleaners. A mobile and `curtis@pinewoodcleaners.com`, from his May application
+and again from his form last week. Two deals: one in May, ended, and one since Wednesday. The CRM
+holds both.
+
+### Web form: the enquiry
+
+| Submitted | Form | What he said, in his own words | How he found the page |
+|---|---|---|---|
+| Wed 16 Sep, 19:40 | Working capital enquiry | "$20k for a second van and a floor machine. Same business you looked at in May, Pinewood Cleaners." | typed the address |
+
+### SMS: the conversation
+
+Two conversations on one number: May's, and this one.
+
+| When | From | What it said, in short |
+|---|---|---|
+| Thu 17 Sep, 09:00 | you | Good to hear from him again; the application link and three months of statements |
+| Thu 17 Sep, 18:30 | Curtis | "Will do this weekend." |
+
+Nothing since. No application and no statements have come yet: the file is not ready.
+
+### CRM: the deals
+
+The May deal:
+
+| Field | What it holds |
+|---|---|
+| Stage | declined, since Fri 15 May |
+| Amount | $20,000 |
+| Activity | Mon 11 May, Marcus: submitted to Avondale Capital, Kestrel Funding, Northline Advance |
+
+| When recorded | Who | What they decided | The reason, as written |
+|---|---|---|---|
+| Wed 13 May | Kestrel Funding | declined | "Credit score below our floor." |
+| Thu 14 May | Northline Advance | declined | "Credit, and the industry is outside ours." |
+| Fri 15 May | Avondale Capital | declined | "Score below where we can go." |
+
+The deal was closed as declined on Friday 15 May, with the three funders' words as the reason.
+Bayard Funding was not tried in May; the activity log does not say why.
+
+The new deal:
+
+| Field | What it holds |
+|---|---|
+| Stage | interested, since Wed 16 Sep, 19:45 |
+| Owner | you |
+| Amount | $20,000 |
+| Activity | Thu 17 Sep, 09:05, you: "Back through the form. Application sent." |
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 4 on the shelf; 1 he fits clean, 1 tried and refused, 2 he misses | offerings in play: Bayard Funding takes under $25,000 and almost anyone; Avondale Capital looked in May and said no on his score; Kestrel Funding takes good credit only; Northline Advance takes trucking, freight and plant | offerings-in-play |
+| 2 | factors he demonstrably misses, on the funders' own words in May: Kestrel's credit floor, Northline's industry | fit-factors-missed |
+| up to $29,800 | what Bayard's money would cost him over the term at the top of the band, $20,000 at up to 1.49, against Avondale's cheaper band he was refused on | cost-of-each-to-them |
+| 1 | deal of this shape that ended before: his own, in May | past-deals-of-this-shape |
+| declined, three times | how it ended | how-they-ended |
+| 3, the same one | reasons given for a no: his credit score, in three funders' words | reasons-given-for-a-no |
+| the funders, all three | who the no came from; he has never said no to you | who-the-no-came-from |
+| 0 | documents received against the two asked for on Thursday; 2 still out, 2 working days | documents-still-out |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Pinewood Cleaners, named Wed 16 Sep from the form, standing at interested |
+| Deal outcome | the May deal, declined, 15 May, by the funders, "credit score" |
+| Fit-shape, on each offering | each funder's box, as `goal.md` states it |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
+## Marisol Delgado
+
+Owner, Delgado Tile and Stone. A mobile and `marisol@delgadotile.com`, both from the list.
+Nothing between you and her: no text, no mail, no form, no call. The one record that holds her is
+the list Marcus handed over after the trade show. The deal is in the CRM as Delgado Tile and Stone,
+yours, at interested.
+
+### A list handed to you
+
+| List | What it is | Handed over by, and when | May you say where the names came from |
+|---|---|---|---|
+| Regional Contractors Expo, August | the sign-in sheet from your firm's stand, 19 and 20 August, 31 names | Marcus Bell, Mon 24 Aug, a spreadsheet by mail | yes: everyone on it left their details at the stand and ticked "happy to hear from you" |
+
+Her entry:
+
+| Field | What it holds |
+|---|---|
+| The person | Marisol Delgado, owner, mobile and email |
+| The organisation | Delgado Tile and Stone |
+| What she was there for, in her own words | "Needs a van and a second cutter. Asked what an advance costs." |
+| The list it came from | Regional Contractors Expo, August |
+
+The sheet's tick says she is happy to hear from you. It does not say by which way: consent to be
+texted, as `sms.md` records it, is a number, a yes and how it was given, and the sheet did not
+ask.
+
+### CRM: the deal
+
+| Field | What it holds |
+|---|---|
+| Stage | interested, since Mon 24 Aug, 10:00 |
+| Owner | you |
+| Amount | none |
+| Activity | Mon 24 Aug, 10:00, Marcus: "Expo list imported. 31 leads. Marisol Delgado spoke to me at the stand on the 20th, wants a van and a second cutter." |
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/pmf-pass.md`). The card arrives Monday 21 September, a month after the stand.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1, cleared | a record of how you came by her: the expo list, handed over 24 August, which says you may say so | route-in-on-record |
+| 0 | use-cases on file: the advance's pitch is the same on all four entries and none is tied to a kind of buyer | use-cases-on-file |
+| none | dominant worry for buyers of her kind: under five deals of a kind there is none | dominant-worry-for-buyer-type |
+| 1 | contact between someone at your firm and her: Marcus, at the stand, 20 August, on the list he handed over and in his CRM note | colleague-touches-on-record |
+| 22 working days | since that contact, on 21 September | since-last-colleague-touch |
+| 0 | tries by you; 1 approach in all, Marcus's at the stand | times-you-chase |
+| none | consent to be texted on record for her number | sms, consent |
+| cold | to you | target-cold-to-you |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Deal seed | Delgado Tile and Stone, named Mon 24 Aug, standing at interested |
+| Lead source | none typed: the list is the record |
+| Use-case, on the offering | none |
+| Relationship note, Offline touch, Contact preference, Correction | none |
+
 ## Everyone else
 
-Not written yet. Dee Whitlock, Marisol Delgado, Errol Danning, Wes Halloran, Joyce Amadi, Curtis
-Naylor and Ivy Sandoval have one line each in `cast.md` and nothing here.
+Not written yet. Dee Whitlock, Wes Halloran, Joyce Amadi and Ivy Sandoval have one line each in
+`cast.md` and nothing here.

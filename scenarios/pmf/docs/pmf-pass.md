@@ -191,3 +191,152 @@ Findings for the library, recorded in `coverage.md` and not fixed here:
   depends on the merchant sending more than was asked, or on a bank connection nobody offers.
 - Nothing says a read should arrive before the step it would have changed: `where-this-one-goes`
   fired on Vega after the file had gone out.
+
+## The front of the ladder: Errol Danning, Curtis Naylor, Marisol Delgado
+
+Worked on 22 September 2026. Three people at `interested`, three cards, and three different ways
+a lead arrives: a text that finally got an answer, a merchant back on the form after a refusal,
+and a name off a list a colleague handed over. None of the three has sent a document, so the
+document reads are quiet and the reads that fire are about what was said and where it came from.
+
+### 1. The records
+
+- **Errol is three texts.** Two of yours, a week apart, the compliant kind: who you are, the firm,
+  STOP. His one reply on Friday at 16:40 is the lead, and it is two things at once: a yes and a
+  question, "How fast can this happen?". Consent to text him is on record from that reply and from
+  nothing before it. No form, no application, no request for one.
+- **Curtis is two deals on one number.** May's, submitted by Marcus to Avondale, Kestrel and
+  Northline and declined by all three within a week, each with its reason in its own words, and
+  closed as declined on 15 May. Bayard was not tried and the log does not say why. This month's,
+  from the form on Wednesday evening, with the application sent to him on Thursday and nothing
+  back yet: the file is not ready, which is the card's "before it goes out".
+- **Marisol is one list and one CRM note.** The expo sign-in sheet, 31 names, handed over by
+  Marcus on 24 August with the clearance to say where they came from; her entry with her own words
+  at the stand; and Marcus's note on import that he spoke to her on the 20th. The sheet says she is
+  happy to hear from you and does not say by which way. **No consent to text her is on record**,
+  and the card was a text.
+- **The sale's rung.** Nothing new to settle here; the cards at the front are before it.
+
+### 2. The counts, run by hand
+
+| Count | Result | Standing |
+|---|---|---|
+| their-question-unanswered, on Errol | "How fast can this happen?", Friday 16:40, one working day open on a conversation that turned in a minute | 1, past pace |
+| decision-language-used, timeline-or-start-question, on Errol | one passage each, in one text | 1, 1 |
+| offerings-in-play, on Curtis | four told; Bayard clean; Avondale tried and refused; Kestrel and Northline missed | 1 clean of 4 |
+| fit-factors-missed, on Curtis | credit at Kestrel, industry at Northline, in the funders' May words | 2 |
+| cost-of-each-to-them | Bayard at up to 1.49 on $20,000: up to $29,800 | the dearest, as the card says |
+| past-deals-of-this-shape, how-they-ended, reasons-given-for-a-no, who-the-no-came-from | his own May deal; declined; "credit score" three ways; the funders every time | 1, declined, 3, funders |
+| documents-still-out, on Curtis | two asked Thursday, none in | 2, two working days |
+| route-in-on-record, on Marisol | the expo list, cleared | 1 |
+| use-cases-on-file, dominant-worry-for-buyer-type | none told; under five deals of a kind | 0, none |
+| colleague-touches-on-record, since-last-colleague-touch, on Marisol | Marcus at the stand, 20 August; 22 working days | **1, once the gather reads the list** |
+| sms consent, on Marisol | none | **read by nothing** |
+
+Four things the counts said about themselves while being run:
+
+- **`colleague-touches-on-record` could not see the one approach a list lead had had.** Marcus
+  met her at the stand and handed over the sheet that says so, and the count reads the CRM, the
+  workspace, threads and events, not the list. So a lead's only prior contact was in the origin
+  gather and invisible to the firm-contact gather, two floors apart. `firm-contact` takes the
+  list now and both counts under it read it; `enough-tries` gets the same touch through the same
+  count, so a list lead has had one approach before you write. *(My reason, not yet yours.)*
+- **`sms#consent` exists and nothing reads it.** The channel has carried a consent row since 21
+  September because the trade said a text without written consent is the thing it gets fined for,
+  and no count, gather or read looks at it. The card that texts a stranger off a list passed the
+  build. It goes by mail now, and the finding is that the check was never built.
+- **At this end `buying-intent` is the rung, not a read.** A yes with a "how fast" behind it is
+  what makes somebody a lead; reading it as intent stacking on a conversation's progression is
+  reading the first turn as a trend. What is owed on Errol's conversation is the question, and
+  the read for that is `loose-end`, which fires on one working day because the conversation's
+  own pace is a minute.
+- **`turned-down-before` at its tightest match is the same merchant.** The read's "one like
+  this" is usually a shape; here the closest deal of this shape is his own, and the count keeps
+  the funders' words, which is what lets the card say the two boxes he still misses are the
+  funders' own reasons and not a guess.
+
+### 3. Which reads fire
+
+| Read | Verdict | Grade, by what stacks |
+|---|---|---|
+| loose-end, on Errol | **Fires, sure.** A question of his, one working day open, on a conversation that turns in a minute, and nothing closed it | Sure: his words and the empty thread |
+| buying-intent, on Errol | Fires as the rung: a yes and a timing question in one text. Why the answer is a form, not what the move is | Supporting |
+| where-this-one-goes, on Curtis | **Fires, likely.** Four boxes told; one he fits clean, two he misses in the funders' own words, one that refused him. That Bayard says yes is not on record | Likely |
+| turned-down-before, on Curtis | **Fires, high.** The same merchant, three declines, one reason in three voices, all from funders | High |
+| delivered-before | Came off: nothing on the card and nothing on the records says what you have sold before | |
+| lead-with-this, on Marisol | **Fires on one half.** The first line, how you came by her, cleared and in her own words; the angle half is silent, no use-case told | Sure on the line, silent on the angle |
+| colleague-already-in-touch, on Delgado Tile | **Fires**, once the gather reads the list: Marcus, at the stand, 22 working days ago, and nothing from his mailbox since that the tool could see | High on the CRM note and the list |
+| enough-tries, on Marisol | Does not fire: one approach in all, none of it yours | |
+| pushing, on all three drafts | Does not fire: each opens on something of theirs and asks one thing | |
+| missing-documents, on Curtis | Fires on two documents two working days out, and no card carries it: the file is not ready and the funder card is the move before it | Supply with no demand, argued below |
+
+Three reads' `assumes: []` were tested against the word and are `decided`: `lead-with-this` on a
+person never contacted, `turned-down-before` on a merchant refused before, `where-this-one-goes`
+on a first enquiry. *(My reasons, not yet yours.)*
+
+### 4. Down from the questions
+
+| Question | What would answer it, in the seller's terms |
+|---|---|
+| V4 Has anyone at my firm been in touch? | With Marisol, yes: Marcus at the stand. With Errol and Curtis, no |
+| V5 How many times have I tried, and when do I stop? | Errol: twice before he answered; now he has. Marisol: never; one approach in all |
+| V9 What do they want it for? | Errol: a chair and an x-ray unit, in his text. Curtis: a van and a floor machine, on the form. Marisol: a van and a second cutter, at the stand. All three said it unasked |
+| V10 How urgent, in their words? | Errol: "how fast can this happen". Curtis and Marisol: nothing said |
+| V15 Which of the things I offer should this go to? | Curtis: Bayard, clean; Avondale has already said no |
+| V16 What was turned down last time, and why? | Curtis: himself, in May, three times, on his score |
+| V17 Why should a stranger believe me? | Marisol: because the list clears you to say where you met, and you open on her own words. Nothing on the shelf to show |
+| V18 What must I disclose? | Nothing yet: nobody is agreeing |
+| V19 Am I manufacturing urgency? | Errol's draft says "as fast as the paperwork" and names no day |
+
+### 5. Where the two ends meet
+
+**`act-errol-application`**
+
+- loose-end and buying-intent, V9 and V10: **both ends reach it through the wrong order.** The
+  card rested on intent, which at this end is the first rung; what is owed is his question, and
+  the form is the answer to it. Swapped. The rows open on his question, point at the form and what
+  follows it, ask for the form in the same text, and hold back any figure and any day. The draft
+  answers "how fast" in its first line now.
+
+**`act-curtis-funder`**
+
+- where-this-one-goes and turned-down-before, V15 and V16: **both ends reach it.** The card was
+  right about the funder and right that the two misses are the funders' own reasons; it says so
+  in their words now. `delivered-before` came off, a read kept for nothing.
+
+**`act-marisol-list`**
+
+- lead-with-this, V17: **both ends reach it on one half.** The line is sure and the angle is
+  silent, which the card admitted. colleague-already-in-touch: **reached through no read the
+  card named**, and through a gather that could not see it until today; supporting now, and the
+  card's "whether Marcus has worked her" narrows to whether he wrote after the stand. **The card
+  texted a stranger with no consent on record.** It goes by mail, the phone's button says so, the
+  card says why, and the rows carry it. *(My reasons, not yet yours.)*
+
+**Supply with no demand**: `missing-documents` fires on Curtis and no card carries it. Argued: two
+working days after the application was sent, on a merchant who said "this weekend", the file being
+short is not yet a fact worth a card, and the funder card is the move before it; when it is, the
+Renee card is the shape. Named, not written.
+
+**Demand with no supply**: V9 is answered on all three by their own words and read by nothing as
+an answer, which is the twenty-second pass's "asked, never read" again: what they want it for is
+on the text, the form and the list, and the card that would ask it (Marisol's watch) already has
+it. And consent, which is a record the channel holds and no read checks.
+
+### 6. Decided
+
+- `act-errol-application`, `act-curtis-funder` and `act-marisol-list` are `decided`; the two with
+  drafts carry their message rows.
+- `firm-contact` gathers the handed list; `colleague-touches-on-record` and
+  `since-last-colleague-touch` read it.
+- `lead-with-this`, `turned-down-before` and `where-this-one-goes` carry `assumes_status: decided`.
+- Marisol's note goes by mail.
+
+Findings for the library, recorded in `coverage.md` and not fixed here:
+
+- `sms#consent` is read by nothing. A first text to a name off a list passed the build with no
+  consent on record; the check the trade gets fined for is not built.
+- What a merchant wants the money for (V9) is said unasked on the text, the form and the list, and
+  read by nothing as an answer; the Asks that would collect it already have it.
+- At the fast end `buying-intent` is the first rung and not a read; the reads that make cards at
+  `interested` are what is owed (`loose-end`) and where they came from (`lead-with-this`).

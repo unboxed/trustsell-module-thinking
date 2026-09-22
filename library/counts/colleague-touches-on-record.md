@@ -6,14 +6,14 @@ over: [firm-contact]
 over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
 defined: true
 counts: Each contact on record between someone at your firm other than you and anyone at one buyer organisation.
-needs: [crm#deal-record, slack#slack-message, gmail#email-thread, calendar#calendar-event, profile-told#about-you]
+needs: [crm#deal-record, slack#slack-message, gmail#email-thread, calendar#calendar-event, lead-list#lead-list, lead-list#lead-entry, profile-told#about-you]
 breaks: A colleague's own mailbox never reaches the tool, so without the CRM the number under-reports.
 ---
 
 # Contact by others at your firm, on record
 ## What it counts
 
-Each contact on record between someone at your firm other than you and anyone at one buyer organisation: who at your firm, whom at theirs, when, and by which way (a thread, an event, a CRM activity, a message in the workspace). A plain list, most recent first.
+Each contact on record between someone at your firm other than you and anyone at one buyer organisation: who at your firm, whom at theirs, when, and by which way (a thread, an event, a CRM activity, a message in the workspace, or a list they handed you, since 22 September: the colleague who worked a stand met everyone on the sheet, and the sheet says when). A plain list, most recent first.
 
 Two signals quote it. [`colleague-already-in-touch`](../signals/colleague-already-in-touch.md) reads it to say who got there before you and how it went. [`enough-tries`](../signals/enough-tries.md), since 21 September, adds it to `times-you-chase`, because a person who has had four approaches has had four and it makes no difference to them which desk each one came from.
 

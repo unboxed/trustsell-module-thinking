@@ -6,7 +6,7 @@ over: [firm-contact]
 over_status: decided   # 21 September: confirmed when the arithmetic was written, which is what made it answerable
 defined: true
 counts: The working time since the most recent contact by anyone at your firm other than you.
-needs: [crm#deal-record, slack#slack-message, gmail#email-thread, calendar#calendar-event]
+needs: [crm#deal-record, slack#slack-message, gmail#email-thread, calendar#calendar-event, lead-list#lead-list]
 breaks: It is as recent as the records your firm shares, and no more.
 ---
 

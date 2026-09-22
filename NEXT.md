@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-five passes on `library/docs/coverage.md` are done. The library
+Forty-six passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,7 +67,7 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: Job 1 is done in `bops` and Job 3 has begun in `pmf`; carry on there with the front of its ladder (Errol Danning, Curtis Naylor, Marisol Delgado), then after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval) and the lenders Ask, then `cority`.** Job 4 is parked and
+**If you are reading this cold: Job 1 is done in `bops` and Job 3 has begun in `pmf`; carry on there after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval) and the lenders Ask, then the suggestions for that world, then `cority`.** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
 (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `scenarios/pmf/docs/pmf-pass.md` the latest
 and the one Job 3 grows), then Job 1's six steps, which Job 3 runs per person in the other two
@@ -140,7 +140,9 @@ card is figure-checked**. Job 1 is done on the world the library came from. **Th
 began Job 3 in `pmf`** (`scenarios/pmf/docs/pmf-pass.md`): the four people at the top of the
 broker's ladder have records with a clock on every row, three cards are decided with message rows
 that ask in the same text that gives, and the disclosure Act became an Ask because its read is
-silent until a rule is told. **The figure rule is built**: `build.js` refuses a card that states
+silent until a rule is told. **The forty-sixth did the front of that ladder**: three more decided,
+`firm-contact` reads a handed list so a colleague's stand contact counts, and a text to a stranger
+with no consent on record went by mail because nothing reads consent. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -231,8 +233,8 @@ buying-process Ask had two shadows where the records hold six. Job 1 in `bops` i
 Job 3, below.
 
 The cards' joins upward are the last `provisional` thing in the library: 43 of the 44 cards name
-their read, and fourteen were read off the card rather than decided, seven in `pmf` and seven in
-`cority`. Twenty-two of the 42 signals carry `assumes_status: provisional` too.
+their read, and eleven were read off the card rather than decided, four in `pmf` and seven in
+`cority`. Nineteen of the 42 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -358,10 +360,13 @@ is the record and grows a section per group. Done there: three cards decided wit
 the disclosure Act turned into `ask-disclosure-rules` (its read is silent with no rule told), Alma
 Vega's reads swapped, `documents-received` an eighth opener. Found: V7 has no answer at this end
 because the owner's signature is read by nothing; V10's form words are read by nothing; a season
-cannot be read off three statements. **Next:** the front of the ladder (Errol Danning, Curtis
-Naylor, Marisol Delgado), then after the sale (Dee Whitlock, Wes Halloran, Joyce Amadi, Ivy
-Sandoval), then `ask-known-lenders`, then the suggestions for this world, then `cority`. One pass
-file section and one commit per group.
+cannot be read off three statements. **The forty-sixth did the front of the ladder** (Errol
+Danning, Curtis Naylor, Marisol Delgado): `buying-intent` is the first rung here and not a read,
+so Errol's card rests on `loose-end` (his question, one working day open); `delivered-before` came
+off Curtis's; Marisol's gained `colleague-already-in-touch` once `firm-contact` could see a handed
+list, and goes by mail because `sms#consent` is read by nothing. **Next:** after the sale (Dee
+Whitlock, Wes Halloran, Joyce Amadi, Ivy Sandoval), then `ask-known-lenders`, then the suggestions
+for this world, then `cority`. One pass file section and one commit per group.
 
 Do this after Jobs 1 and 2, and treat it as the real test rather than a repeat. The library's
 signals and counts were derived from one seller's twenty-six questions, the patient end, so `bops`
@@ -627,6 +632,13 @@ reach what it claims.
 - **Nothing says a read should arrive before the step it would have changed** (found in the
   forty-fifth pass). `where-this-one-goes` fired on a landscaping firm after the processor had
   submitted to a funder it misses on industry.
+- **Consent to text is a record nothing reads** (found in the forty-sixth pass). `sms#consent`
+  has been on the channel since 21 September; no count, gather or read looks at it, and a first
+  text to a name off a list passed the build with none on record. The check the trade gets fined
+  for is not built.
+- **What they want the money for is said unasked and read by nothing** (found in the forty-sixth
+  pass). All three leads at the front of the broker's ladder said it, on a text, a form and a
+  list; V9 is "answered by asking" on the map and the answer is already on the records.
 - **The rung at which a sale completes is in prose** (found in the forty-second pass).
   `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
   it now, in a paragraph the build does not read.

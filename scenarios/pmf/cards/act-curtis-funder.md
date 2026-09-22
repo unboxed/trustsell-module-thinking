@@ -3,11 +3,11 @@ id: act-curtis-funder
 order: 7
 kind: act
 signal: where-this-one-goes
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [turned-down-before, delivered-before]
-supporting_status: provisional
+signal_status: decided   # 22 September: worked from the records up, see ../docs/pmf-pass.md. Four boxes told, his facts from May's declines and his form, one funder he fits clean
+supporting: [turned-down-before]   # the same merchant, declined three times in May, the same reason in three funders' words. delivered-before came off 22 September: nothing on the card and nothing in the records says what you have sold before
+supporting_status: decided
 counts: [offerings-in-play, fit-factors-missed, cost-of-each-to-them, reasons-given-for-a-no, who-the-no-came-from]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [curtis-naylor, pinewood-cleaners, advance-bayard]
 arrives: 2026-09-21
 documents: []
@@ -53,7 +53,7 @@ Three funders declined him in May on his credit score. Two of them are still the
 ## What happened
 
 - Why now: he is back on the form and the file will go out soon. Which funder it goes to is decided once, and a fourth decline on the same ground costs him and teaches you nothing.
-- Four funders are on the shelf. Curtis misses the box on two of them outright: one takes good credit only, one takes trucking and plant.
+- Four funders are on the shelf. Curtis misses the box on two of them outright, in the funders' own words from May: one takes good credit only, one takes trucking and plant. The third looked and said no on his score.
 - The reason given the last three times was the same one, his credit score, and all three times it came from a funder rather than from him. He has never said no to you.
 - Bayard is the one whose box he fits. It is also the dearest money on the shelf, which is the trade-off and not a detail.
 
