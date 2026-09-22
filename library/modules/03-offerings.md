@@ -23,6 +23,11 @@ draws_from: [web, drive]
 The expert on the things you sell: what each is, who it suits, how it's priced, and how to
 answer the usual objections.
 
+> **What the tool holds about an offering today** (22 September): eight fields of prose per
+> offering, interviewed out of the seller. No use-case by kind of buyer, no answer to a worry, no
+> evidence tied to a claim. [`told/offering-told.md`](../told/offering-told.md) says which of
+> its records that fills, and the reads that need the rest say so when they cannot.
+
 > Its catalogue floors live as libraries: raw data in
 > [`channels/`](../channels/), assemblies in
 > [`assemblies/`](../assemblies/), signals in [`signals/`](../signals/). This file holds only the

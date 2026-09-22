@@ -72,3 +72,19 @@ it, do not change.
 | Worry + answer | Worries and answers |
 | Supplier | Who it comes from |
 | Names in the field | Names you would recognise |
+
+## What the tool holds today
+
+*(Added 22 September, from the tool's own design.)* The tool holds one profile per offering, in
+eight fields of plain prose: what it is, who it is for, the value it delivers, how it is priced,
+who else the buyer weighs, where it stands today, the goal for the next quarter, and anything
+else. It builds the profile by interviewing the seller one question at a time, or from a document
+they paste, and lets them edit it by hand. Against the records above: the pitch, the fit-shape,
+the pricing and the names in the field are held, as prose rather than as fields, and the term and
+the discount room only if the seller wrote them. **A use-case tied to a kind of buyer is not
+held**, so a read that leads with one has only the buyer's half. **A worry with its answer and
+the evidence it needs is not held**: there is a place for snippets under an "objections" label
+and nothing reads it. **Evidence is not tied to a claim**: a case study lives as a sentence in
+"where it stands". The records above stay as written, because they say what the reads need; this
+note says what the tool can supply, the way `can:` on the Connections module says which channels
+it can connect.

@@ -90,7 +90,12 @@ the buyer asked you) found because two cards in two worlds had quoted its mirror
 and his window card belongs under the deadline he gave, not under buying intent. **The
 thirty-fourth did Lisa Holmes at Burnham** (`burnham-pass.md`): the reconnect read failed on her
 the opposite way, and both her cards rest on what Burnham published; the match to a customer is
-made by hand because no use-case was ever told. Eleven cards are decided; twenty-one people in
+made by hand because the tool holds no use-case by buyer type. **The tool's own product model was
+read the same day** (`scenarios/bops/world/offering.md`): eight fields of prose per offering,
+interviewed out of the seller; no use-cases by buyer type, no answers to worries, no evidence tied
+to a claim. Two contradictions in the fiction are flagged there: the tool's demo BOPS is a
+planning system, and its price list has no partial rollout, which three cards offer. Felton's
+pass meets the second first. Eleven cards are decided; twenty-one people in
 `bops` have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.

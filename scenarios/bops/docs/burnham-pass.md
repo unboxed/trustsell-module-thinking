@@ -21,9 +21,11 @@ facts could all be true, and settling the places where they could not.
   words: "nearly there, we publish in September, I'll be in touch after", because a congratulation
   that lands three working days after she published is a different note from one that lands
   after she has broken a promise, and the read that watches her promise needed the sentence.
-- **No use-cases told.** The world has a goal and a target shape and not one use-case typed for
-  the offering, and nothing before this pass said so. The told table now does, because the match
-  between page 12 and East Marston depends on it.
+- **No use-cases told.** The world has a goal, a target shape and, since later the same day, the
+  offering's profile as the tool holds it (`world/offering.md`: eight fields of prose, drawn from
+  the tool's own demo documents). It says what BOPS is and who it is for, and ties no use-case to
+  a kind of council. The told table says so, because the match between page 12 and East Marston
+  depends on it.
 
 ## 2. The counts, run by hand
 
@@ -119,7 +121,9 @@ Opened last. Four verdicts from `NEXT.md`.
   fortnight on. Now the main read, and `sure` rather than `likely`: it stands on facts, not on a
   pattern of quiet.
 - lead-with-this: **demand with no supply, a told gap.** Q10 and Q12 are live and the read that
-  answers them has nothing of yours to match. The card says the match is mine.
+  answers them has nothing of yours to match. The card says the match is mine, and rests on the
+  read anyway, for the one count that says why: `use-cases-on-file`, none. The build asked for
+  it: the card names the offering profile as a source, and only that read reaches it.
 - they-owe-you: **both ends reach it, a fortnight on.** Her promise is thirteen working days old
   by the 30th, past her pace, and the read's own rule is the card's shape: never chase on it, give
   before you ask. The case study is the gift and nothing is asked. Now supporting.
@@ -142,8 +146,10 @@ Findings for the library, recorded in `coverage.md` and not fixed here:
 - `time-to-reconnect` is on no card in the shipped world after this pass. Two people were joined
   to it for a reason to write; the read is for a relationship that drifted, and the reason to
   write on a live contact is `stated-priorities` (theirs) or `lead-with-this` (yours).
-- No Ask asks the seller for the offering's use-cases, and `lead-with-this` is silent on your
-  side without them. `ask-good-fit` asks for the target shape, which is a different told record.
+- The tool asks the seller about the offering (it interviews them into an eight-field profile,
+  `world/offering.md`), and holds no use-case tied to a kind of buyer and no answer to a worry.
+  `lead-with-this` is silent on your side without the first and `answer-gap` over-reports without
+  the second. That is a gap in what the tool can hold, not only in what this seller typed.
 - `their-promise-undelivered` holds a loose promise ("I'll be in touch after") without grading
   it, as its `breaks` line says; a card that writes to her the week she published has to know it
   is there so as not to read as a reminder. The message rows carry that in "holds back".

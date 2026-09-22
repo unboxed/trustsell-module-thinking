@@ -3,10 +3,10 @@ id: act-lisa-east-marston
 order: 25
 kind: act
 signal: stated-priorities
-signal_status: decided   # 22 September: worked from the records up, see ../docs/burnham-pass.md. Was time-to-reconnect. The why is page 12, still hers; the fortnight is the pacing the card before this one set, not a read. lead-with-this would be the read that matches page 12 to what you sell, and it has no use-cases to match with, because none were told
-supporting: [they-owe-you]   # her promise of 20 August, "I'll be in touch after": by now well past her two-day pace, and that read says never chase on it, give before you ask
+signal_status: decided   # 22 September: worked from the records up, see ../docs/burnham-pass.md. Was time-to-reconnect. The why is page 12, still hers; the fortnight is the pacing the card before this one set, not a read. lead-with-this would be the read that matches page 12 to what you sell, and it has no use-cases to match with: the offering profile is prose, and ties none to a kind of buyer
+supporting: [they-owe-you, lead-with-this]   # they-owe-you for her promise of 20 August, "I'll be in touch after": by now well past her two-day pace, and that read says never chase on it, give before you ask. lead-with-this for the count that says why it cannot make the match: no use-case on file
 supporting_status: decided
-counts: [priorities-they-state, how-fresh-their-words-are, their-promise-undelivered]
+counts: [priorities-they-state, how-fresh-their-words-are, their-promise-undelivered, use-cases-on-file]
 counts_status: decided
 about: [lisa-holmes, burnham, east-marston-case-study]
 to: lisa-holmes
@@ -61,14 +61,14 @@ A fortnight since your congratulations. Page 12 of her strategy commits Burnham 
 
 - Why now: a fortnight since your note about the strategy, as that card said. Long enough not to look like a follow-up, soon enough that the strategy is still hers to talk about.
 - Page 12 commits Burnham to "replacing legacy case systems by 2028", in the council's own words.
-- East Marston has been live for fourteen months, and its case study says case admin is down by about a third. The match between page 12 and East Marston is mine: you have never told me what BOPS is for, use-case by use-case, so no read makes it.
+- East Marston has been live for fourteen months, and its case study says case admin is down by about a third. The match between page 12 and East Marston is mine: your offering profile says what BOPS is and who it is for, in a paragraph, and ties no use-case to a kind of council, so no read makes it.
 - Lisa never writes first, and said in August she would be in touch after publishing. A fortnight on she has not, well past her two-day pace. That is a word she owes you, and the answer to it is not a reminder: it is something she can use, asked for nothing.
 
 ## Sources
 
 - web · Burnham's "Digital Strategy 2026 to 2030", page 12, on Burnham's own site.
 - gmail · Your note to Lisa about the strategy, and nothing since. Her "I'll be in touch after" of 20 August, still open.
-- goal-told · East Marston, the customer, live fourteen months. And no use-case typed, which is why the match is mine.
+- goal-told, offering-told · East Marston, the customer, live fourteen months. Your offering profile, in prose, with no use-case tied to a kind of council, which is why the match is mine.
 
 ## Still unclear
 

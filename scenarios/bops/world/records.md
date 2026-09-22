@@ -338,7 +338,7 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | Contact preference | none |
 | Correction | none |
 | Buying process for a council | not filled |
-| Worry answers, on the offering | none typed for any worry |
+| Worry answers, on the offering | none. The tool has no place for them (`offering.md`) |
 
 ## Rachel Gill
 
@@ -428,7 +428,7 @@ run by hand on 22 September (`../docs/westmoor-pass.md`).
 | Offline touch | none. Nothing about the call of 8 September |
 | Contact preference | none |
 | Correction | none |
-| Worry answers, on the offering | none typed for any worry |
+| Worry answers, on the offering | none. The tool has no place for them (`offering.md`) |
 
 Nothing about how the intro call went. That is the gap `ask-rachel-meeting` asks about.
 
@@ -672,10 +672,11 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | Contact preference | none |
 | Correction | none |
 | Buying process for a council | not filled |
-| Use-cases, on the offering | none typed |
+| Use-cases, on the offering | none tied to a kind of council. The profile says what BOPS is and who it is for, in a paragraph (`offering.md`) |
 
-Nothing typed about what BOPS is for, use-case by use-case. That is why the match between page
-12 and East Marston is made in the card and by no read.
+The profile says what BOPS is, who it is for and why teams switch, in prose (`offering.md`), and
+holds no use-case tied to a kind of council. That is why the match between page 12 and East
+Marston is made in the card and by no read.
 
 ## Everyone else
 

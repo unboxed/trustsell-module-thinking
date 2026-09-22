@@ -1329,9 +1329,14 @@ and a quiet senior who answers everything within three days is not one-sided by 
 **The match nobody makes.** The second card shows her what page 12 looks like in practice, a
 customer fourteen months into doing it. The read that should make that match is `lead-with-this`,
 whose count `relevance-to-stated-factors` matches your use-cases against their published words,
-and this seller has never typed a use-case. Q10 and Q12 are live and the read is silent on your
-side: a told gap, and no Ask fills it, because `ask-good-fit` asks for the target shape and not for
-what the offering is for. The card makes the match by hand and says so. The build and
+and this seller has no use-case tied to a kind of council. Q10 and Q12 are live and the read is
+silent on your side. Read against the tool's own design later the same day, that is a gap in what
+the tool can hold, not only in what one seller typed: the tool interviews the seller into an
+eight-field profile of the offering (what it is, who it is for, the value, the price, the
+competition, where it stands, the goal, other), all prose, and has no place for a use-case by
+buyer type or an answer to a worry. `scenarios/bops/world/offering.md` holds that profile for
+BOPS, drawn from the tool's own demo documents, and says which told records it fills. The card
+makes the match by hand and says so. The build and
 `message-shape.md` now let a message open on a priority the buyer published, beside a reason
 published about them.
 
@@ -1376,8 +1381,9 @@ is anybody's.)*
   see for a buyer, and a rule for a promise re-made. Named here rather than done. The thirty-first
   pass added two of the same weight: `who-starts-threads` needs its summary to carry the change
   its rows show, and a customer's offer to vouch for you needs a count. The thirty-fourth added
-  one: no Ask asks the seller what the offering is for, use-case by use-case, and `lead-with-this`
-  is silent on your side without it.
+  one: the tool holds the offering as eight fields of prose and no use-case by buyer type, so
+  `lead-with-this` is silent on your side, and no answer to a worry, so `answer-gap` over-reports.
+  Both are gaps in what the tool can hold (`library/told/offering-told.md`, the note at the end).
 - **Three reads are silent today and two thinner**, under what the tool can connect (thirtieth
   pass). Nothing to fix in the library: they wait on the buyer's handover becoming a capability.
   The broker's world rests on four connections the tool does not offer, so its twelve cards are an
