@@ -28,6 +28,8 @@ about: [<noun-id>, ...]       # what it is about, of any type: a person, an orga
 to: <person-id>               # act only, optional: who the move reaches. One move per person at
                               # a time: build.js makes a second Act to the same person wait
 changes: [<card-id>, ...]     # ask only, optional: the cards the answer changes. They wait for it
+channel: <channel-id>         # connect only, required: the one channel it asks for. MUST be one the
+                              # tool can offer (modules/01-integrations.md, can:) and not already connected
 arrives: <YYYY-MM-DD>         # the working day the tool puts it on the home. Left out only when a
                               # watch turns it up (another card's watch.then names it)
 documents: [<document-id>, ...]   # what it offers or attaches. Each MUST resolve to ../world/documents.md
@@ -136,7 +138,8 @@ phone:                        # optional: the card on playbook/phone.html. Only 
        ## What's missing              the precise point it could go no further, having looked first
        ## What your answer changes    each answer's consequence, said back after the pick
        ## Where your answer is saved  which told record the answer becomes, so it is asked once
-     CONNECT CARDS name the source that is not connected and what would become answerable.
+     CONNECT CARDS name the source that is not connected (`channel:`) and what would become
+       answerable. Only a source the tool can offer: it never asks for what it cannot do.
      TOLD CARDS are an outcome with nothing to do; the button is Got It. -->
 
 ## The draft

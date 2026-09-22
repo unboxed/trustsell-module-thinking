@@ -65,6 +65,11 @@ in this world.
 
 ## What is connected
 
+Four of the seven below, SMS, the web form, what the buyer hands over and a handed list, are beyond
+what the tool can connect today (`modules/01-integrations.md`, `can:`, 22 September). This world
+keeps them on purpose: the fast end is where the tool's silence shows, and the build says so when
+it runs.
+
 SMS, the web form, what the buyer hands over, the CRM, Gmail, the open web and the lists your firm
 hands you, listed as `connected:` above. Five of those are plugged in for the first time by this
 scenario: nothing in the patient sale used them.

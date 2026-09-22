@@ -75,7 +75,7 @@ He knows Nicola Shaw, Head of Digital at Ashworth. Four notes from you have gone
 - slack · #partnerships, 2 September: Simon, "I know Nicola at Ashworth from the LGA event".
 - gmail · Your four notes to Ashworth.
 - web · Ashworth's leadership page.
-- linkedin · LinkedIn is not connected, so I can't see how well Simon knows her. I'm going on his word.
+- linkedin · LinkedIn is not something I can see yet, so I can't see how well Simon knows her. I'm going on his word.
 
 ## Still unclear
 

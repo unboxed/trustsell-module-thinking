@@ -663,5 +663,8 @@ Glenfield, Hatton, Kirby, Linton, Newby, Orton, Rowley.
 
 ## What is connected
 
-Gmail, Calendar, Drive, Meet, Slack, and the open web. **LinkedIn is not connected**, and several
-cards say so where it would have helped.
+Gmail, Calendar, Drive, Meet, Slack, and the open web. **LinkedIn is not something the tool can
+connect yet** (the user, 22 September: what it can offer today is the Google accounts, Slack, the
+web and a CRM, beside everything told), and several cards say so where it would have helped. The
+Connect LinkedIn card went with it: a card must not ask for what the tool cannot do, so the
+Connect kind has no card in any world now, and the week's Monday is one card shorter.

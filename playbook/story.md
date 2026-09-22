@@ -62,6 +62,15 @@ behind you, it is also where it notices that a colleague was in touch with a buy
 the record your firm keeps and the workspace you share, so you can ask them before you write. What
 a colleague's own mailbox holds it never sees. *(My reason, not yet yours.)*
 
+What it can see for itself is bounded by what it is able to connect at all, which is a fact about
+the tool and not about you. Today that is your Google accounts (mail, calendar, files, contacts,
+calls), your Slack, your firm's deal system and the open web, together with everything you tell
+it: your goal, what you sell, who you are, the firm you work in. LinkedIn, texts, a form on your
+site, public registers and what a buyer hands over are not there yet. Where a reading leans on one
+of those, the tool says it cannot see it yet, and where every number under a reading would come
+from one, the reading stays silent rather than guessing. It never asks you to connect something it
+cannot offer.
+
 Some only you hold: your goal, how a meeting went, how you read a person, what matters most to
 you, how you like to sound. No connection can fetch those.
 

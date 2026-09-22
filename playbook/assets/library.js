@@ -119,14 +119,16 @@
     cards: function (e) {
       return [kindWord(e), [].concat(e.about || []).map(who).join(', ')].filter(Boolean).join(' · ');
     },
-    signals: function (e) { var n = cardsOn(e.id).length; return n ? 'Used in ' + plural(n, 'card') : 'Not used in a card yet'; },
+    signals: function (e) { var n = cardsOn(e.id).length, u = n ? 'Used in ' + plural(n, 'card') : 'Not used in a card yet';
+      /* Whole, thinner or silent under what the tool can connect today (22 September). */
+      return e.standing === 'silent' ? u + ' · silent today' : e.standing === 'thinner' ? u + ' · thinner today' : u; },
     /* A count has nothing written yet, so no line: its name is drawn quiet instead (the
        user: that line was only temporary). */
     counts: function () { return ''; },
     assemblies: function (e) { return 'About ' + e.about; },
     records: function (e) { return e.label + ' · ' + plural((e.fields || []).length, 'field'); },
     told: function (e) { return plural(recordsIn(e.id), 'record'); },
-    channels: function (e) { return (plugged(e.id) ? 'Connected' : 'Not connected') + ' · ' + plural(recordsIn(e.id), 'record'); },
+    channels: function (e) { return (e.available === false ? 'Not on offer yet' : plugged(e.id) ? 'Connected' : 'Not connected') + ' · ' + plural(recordsIn(e.id), 'record'); },
     widgets: function (e) { return e.family === 'detail' ? 'A detail' : 'A reply'; },
     modules: function (e) { return e.blurb; },
     docs: function (e) { return firstLine(e.intro); },
@@ -141,7 +143,7 @@
     assemblies: function (e) { return 'Assembly · about ' + e.about; },
     records: function (e) { var s = find('channels', e.source) || find('told', e.source); return 'Record · in ' + (s ? s.name : e.source); },
     told: function () { return 'Told · what only you can say'; },
-    channels: function (e) { return ['Channel', e.brand, plugged(e.id) ? 'connected' : 'not connected'].filter(Boolean).join(' · '); },
+    channels: function (e) { return ['Channel', e.brand, e.available === false ? 'not on offer yet' : plugged(e.id) ? 'connected' : 'not connected'].filter(Boolean).join(' · '); },
     widgets: function (e) { return 'Widget · ' + (e.family === 'detail' ? 'a detail' : 'a reply'); },
     modules: function () { return 'Module'; },
     docs: function () { return 'Note'; },

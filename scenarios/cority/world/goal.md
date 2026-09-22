@@ -64,7 +64,10 @@ Four people, and between them they make this world different from the other two.
 ## What is connected
 
 Eleven of the fourteen, listed as `connected:` above, which is more than either other world and is
-what an enterprise seller inside a large firm actually has.
+what an enterprise seller inside a large firm actually has. Three of them, LinkedIn, the web form
+and a handed list, are beyond what the tool can connect today (`modules/01-integrations.md`,
+`can:`, 22 September). This world keeps them on purpose: it explores what those connections would
+allow, and the build says so when it runs.
 
 **LinkedIn is connected here**, for the first time in any scenario. The patient sale names it as a
 gap on four cards; here it is the map: who is at an account, what they post, who they follow, who

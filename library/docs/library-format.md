@@ -398,7 +398,14 @@ purpose, and the distinction is the one
 read standing with less to go on, so the card says so and carries on; a missing **condition**
 leaves the read not applying at all, so there is nothing for the card to rest on. `bops` has all
 four; `pmf` has three, because one owner per business means there is nobody else to win over.
-*(My reason, not yet yours.)* The world and cards are one **scenario**, at `scenarios/<name>/` in
+*(My reason, not yet yours.)* A second fact sits beside `connected:` since 22 September, and it is
+the tool's rather than the seller's: **`can:`** on [`modules/01-integrations.md`](../modules/01-integrations.md),
+the channels the tool is able to offer at all (the user's list: the Google accounts, Slack, the
+web, a CRM, and everything told). A channel outside it stays in the library so a read can name
+the gap, but no Connect card may ask for it, and `build.js` marks every read whole, thinner or
+silent by whether its counts can be computed from what is on offer. A scenario that connects a
+channel beyond the list is not refused, only named: it explores what a later connection would
+allow. The world and cards are one **scenario**, at `scenarios/<name>/` in
 the repo root since 21 September, with a `world/` (the goal,
 the cast, the organisations, the documents, since 20 September which channels this seller
 has plugged in, and since 21 September what the sale has) and a `cards/` (decided 19 September). There

@@ -68,7 +68,7 @@ Their tender went out last Wednesday and reads like your pitch. Darren Cole is t
 - web · Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October.
 - web · The tender PDF, sections 2 and 4.
 - goal-told · Your list of thirty, Tarlton marked cold.
-- linkedin · LinkedIn is not connected, so I can't see whether you know anyone there.
+- linkedin · LinkedIn is not something I can see yet, so I can't see whether you know anyone there.
 
 ## Still unclear
 

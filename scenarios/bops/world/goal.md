@@ -43,7 +43,9 @@ cannot be made here, and `build.js` refuses a card that rests on one.
 ## What is connected
 
 Gmail, Calendar, Drive, Contacts, Meet, Slack and the open web, listed as `connected:` above.
-**LinkedIn is not connected**, which is a data gap several cards name rather than work around.
+**LinkedIn is not something the tool can connect yet** (the user, 22 September), which is a data gap
+several cards name rather than work around. Until then there was a card asking you to connect it;
+it went, because a card must not ask for what the tool cannot do.
 Nor is a CRM, nor SMS, the web form or what a buyer hands over: this is a patient sale by mail
 and meeting, and nothing in it uses them. What is plugged in is this seller's, so it lives here and
 not on the channel docs (moved 20 September): a channel says what it carries, and the scenario

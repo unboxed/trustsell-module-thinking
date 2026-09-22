@@ -77,6 +77,13 @@ were rewritten to what the counts give. Read the pass file before doing the next
 method is what was being agreed, and the user has not yet said whether it is. The other
 twenty-five people in `bops` have no records section yet.
 
+**The thirtieth pass, the same day, added what the tool can connect at all.** The user's list
+(the Google accounts, Slack, the web, a CRM, and everything told) is `can:` on
+`library/modules/01-integrations.md`. The build marks every read whole, thinner or silent under
+it (37, 2 and 3 today), refuses a Connect card for a channel outside it, and names a scenario that
+connects beyond it. `connect-linkedin` is gone; the broker's world rests on four connections the
+tool does not offer, and Cority's on three, both kept as explorations.
+
 The three things that were on a list when this file was last rewritten are done or moved: the
 counting floor, the third scenario and the `assumes:` join. Two judgement calls are still open and
 are in "Still open" below, where the user picks them up when they want to: a dated card sitting in
@@ -321,6 +328,10 @@ reach what it claims.
 - **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
   to a suggestion and the suggestion is to write to someone, nothing decides what the message has
   to contain or in what order. Now Job 2 of the task above.
+- **The broker's world rests on connections the tool does not offer** (22 September). SMS, the
+  web form, the buyer's handover and a handed list are beyond `can:`, and three of its reads are
+  silent today. Job 3 should say which of its twelve cards the tool as it stands could actually
+  make.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
   "you can take in the whole day". A card and phone question, not a library one.

@@ -6,6 +6,7 @@ blurb: "Plug in your accounts once; it carries messages in and out."
 icon: cable
 optional: false
 tier: connector
+can: [gmail, calendar, drive, contacts, meet, slack, web, crm]   # what the tool can connect today (the user, 22 September); a channel left out is not on offer yet
 # No modes or connects: 01 has no initiative and no reasoning. Every module
 # reaches *through* it, so its links are drawn from the others, not declared here.
 ---
@@ -22,6 +23,18 @@ ones you never connect. Today that is web search and enrichment. And, since 20 S
 buyer hands over** ([`channels/handover.md`](../channels/handover.md)): the accounts, brief or
 specification a lead gives you on the way to a close. Nobody authorises it and nothing fetches it; it
 arrives when they send it, and this module carries it in like anything else.
+
+## What the tool can connect today
+
+Set on 22 September, in the user's words: the offering and the deal, the Google ecosystem, Slack,
+the user's own profile and the organisation they work in, web search, and a CRM. The told sources
+carry the first, the fourth and the fifth; the rest are the channels in `can:` above. LinkedIn,
+texts, a form on your site, public registers, what a buyer hands over and a list your firm hands
+you are written up as channels because a read has to be able to name them, and none is on offer
+yet. That is a fact about the tool and not about any seller, which is why it lives here and not
+in a scenario's `connected:`. `build.js` reads it: a card may not ask a seller to connect what the
+tool cannot offer, and every read is marked whole, thinner or silent by whether its counts can be
+computed from what is on offer.
 
 > **The catalogue floor lives as a library.** This module has no assemblies and no signals: it is
 > the connector, so it does no reasoning. Its raw data is the channels, written up one doc per

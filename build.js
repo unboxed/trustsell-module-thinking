@@ -329,6 +329,21 @@ for (const ch of L.channels) {
 }
 for (const t of L.told) if ('connected' in t) problems.push(`${t.file}: connected; a told source is said, never connected`);
 
+/* ---------- what the tool can connect at all ---------- */
+// A second fact beside `connected`, added 22 September on the user's word: what the tool is able
+// to offer, whoever the seller is. It lives on the Connections module, whose job that is, as
+// `can:`. A channel outside it stays in the library, because a read has to be able to name the
+// gap in the story's words, but no card may ask a seller to connect it, and a read whose every
+// count needs one is marked silent rather than pretending. A scenario that connects one anyway is
+// not refused: it is an exploration of what a later connection would allow, and the build says so.
+const cap = L.modules.find(m => m.id === '01-integrations');
+const CAN = new Set([].concat((cap && cap.can) || []));
+if (!cap || !('can' in cap)) problems.push(`library/modules/01-integrations.md: no can; list the channels the tool can connect today, or can: []`);
+else must(cap.file, 'can', cap.can, S.channels, 'channel');
+for (const ch of L.channels) ch.available = CAN.has(ch.id);
+const beyond = [...plugged].filter(id => S.channels.has(id) && !CAN.has(id));
+if (world.goal) world.goal.beyond = beyond;
+
 for (const m of L.modules) {
   must(m.file, 'draws_from', m.draws_from, S.channels, 'channel');
   for (const c of m.connects || []) must(m.file, 'connects.to', c.to, S.modules, 'module');
@@ -402,6 +417,13 @@ for (const c of L.cards) {
         problems.push(`${c.file}: "${r.id}" assumes ${a} (${ASSUMES[a] || a}), which ${SCN} does not have`);
   if (!['act', 'ask', 'connect', 'news'].includes(c.kind))
     problems.push(`${c.file}: kind "${c.kind}" is not one of act, ask, connect, news`);
+  // A Connect card asks for one channel, and only one the tool can offer (22 September).
+  if (c.kind === 'connect') {
+    if (!c.channel) problems.push(`${c.file}: a connect card names the channel it asks for, as channel:`);
+    else if (!S.channels.has(c.channel)) problems.push(`${c.file}: channel "${c.channel}" is not a channel`);
+    else if (!CAN.has(c.channel)) problems.push(`${c.file}: asks to connect ${c.channel}, which the tool cannot offer yet (modules/01-integrations.md, can:). A card must not ask for what the tool cannot do.`);
+    else if (plugged.has(c.channel)) problems.push(`${c.file}: asks to connect ${c.channel}, which this seller already has`);
+  }
   // News is the one kind that rests on a record rather than a read (decided 21 September, see
   // playbook/world.md). An outcome with nothing to do carries no opinion, so there is nothing for
   // a signal to say; what it must carry instead is the records that say it happened, named in
@@ -590,7 +612,8 @@ for (const c of L.cards) {
     const src = sourceById(s);
     if (!src || src.connected !== false || c.readRows.some(r => r.sources.includes(s))) continue;
     const who = signalsOf(c).filter(x => (x.needs || []).includes(s)).map(x => x.label.toLowerCase());
-    c.readRows.push({sources: [s], words: `${src.name} is not connected. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, from: sourceName(s), gap: true});
+    const how = src.available === false ? `${src.name} is not something I can see yet` : `${src.name} is not connected`;
+    c.readRows.push({sources: [s], words: `${how}. The ${who.join(' and ')} ${who.length > 1 ? 'reads lean' : 'read leans'} on it, so I have less to go on here.`, from: sourceName(s), gap: true});
   }
   // A card that names what to send has to be able to fetch it (added 21 September, after a card
   // at the fast end offered a document off a shelf its world does not have). The evidence shelf's
@@ -605,7 +628,7 @@ for (const c of L.cards) {
       for (const x of shelf) {
         if (c.readRows.some(r => r.sources.includes(x))) continue;
         const src = sourceById(x);
-        c.readRows.push({sources: [x], words: `${src.name} is not connected, and the evidence shelf lives there. I can tell you what to send; I cannot fetch it for you.`, from: sourceName(x), gap: true});
+        c.readRows.push({sources: [x], words: `${src.name} is ${src.available === false ? 'not something I can see yet' : 'not connected'}, and the evidence shelf lives there. I can tell you what to send; I cannot fetch it for you.`, from: sourceName(x), gap: true});
       }
     }
   }
@@ -745,6 +768,21 @@ if (problems.length) {
   process.exit(1);
 }
 
+/* ---------- how each read stands under what the tool can connect today ---------- */
+// Whole: every count under it can be computed from something on offer. Thinner: some cannot.
+// Silent: none can, so the read never fires today and says nothing rather than guessing. A told
+// source is always on offer, because it is typed. Recorded, never refused: the read stays in the
+// library so the gap keeps its name.
+const countById = new Map(L.counts.map(c => [c.id, c]));
+const toldIds = new Set(L.told.map(t => t.id));
+const seeable = r => { const s = String(r).split('#')[0]; return toldIds.has(s) || CAN.has(s); };
+for (const s of L.signals) {
+  const cs = [].concat(s.counts || []).map(id => countById.get(id)).filter(Boolean);
+  const lost = cs.filter(c => ![].concat(c.needs || []).some(seeable)).map(c => c.id);
+  s.standing = cs.length && lost.length === cs.length ? 'silent' : lost.length ? 'thinner' : 'whole';
+  s.standing_lost = lost;
+}
+
 /* ---------- write ---------- */
 
 const payload = Object.assign({
@@ -754,6 +792,7 @@ const payload = Object.assign({
   questions,
   assumptions: ASSUMES,         // the vocabulary a signal's `assumes` draws on, with its plain words
   scenario: SCENARIO,
+  capabilities: [...CAN],       // what the tool can connect today, from modules/01-integrations.md
   day: sorted.map(c => c.id),   // the home's order, first to last
   days,                         // date -> the ids whose moment is open that day, in the home's order
 }, L);
@@ -768,4 +807,7 @@ console.log('library builds clean. every id resolves.\n');
 for (const k of ['modules','channels','told','records','assemblies','counts','signals','cards','widgets','docs','templates'])
   console.log(`  ${String((L[k] || []).length).padStart(3)}  ${k}`);
 console.log(`\n  wrote playbook/assets/data.js (${kb} KB)`);
+const standing = k => L.signals.filter(s => s.standing === k).length;
+console.log(`  under what the tool can connect today: ${standing('whole')} reads whole, ${standing('thinner')} thinner, ${standing('silent')} silent`);
+if (beyond.length) console.log(`  note: ${SCENARIO} connects ${beyond.join(', ')}, which the tool cannot offer today. Its cards on those explore what a later connection would allow.`);
 

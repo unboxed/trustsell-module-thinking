@@ -1178,6 +1178,29 @@ nothing writes down. On Karen every read that fires makes a card, so that step c
 Two things the library has that the account cannot justify: Connect as a kind of card, and rule 5
 of the reading principles as the gate on whether a read may exist. Those are for the user.
 
+**Done in the thirtieth pass, 22 September.** What the tool can connect at all, which the library
+had never held. Every fact about connections was the seller's (`connected:` in a world's
+`goal.md`); the user's list of what the tool can actually offer today is a different fact with
+different consequences, and it now lives on the Connections module as `can:`: the Google accounts
+(Gmail, Calendar, Drive, Contacts, Meet), Slack, the open web and a CRM, beside everything told.
+LinkedIn, SMS, the web form, public records, what the buyer hands over and a handed list stay in
+the library as channels, because a read has to be able to name the gap, and none is on offer.
+
+**Three consequences, measured before building.** With everything told always available, three
+reads are silent today, because every count under them needs what a buyer hands over:
+`uneven-income`, `existing-commitments` and `missing-documents`, all written for the fast end and
+never used in the patient world. Two run thinner: `can-they-carry-it` and `payments-faltering`.
+Thirty-seven are whole. The build now marks each read's standing and prints the three numbers.
+The council world's `connect-linkedin` card went, because a card must not ask a seller for what
+the tool cannot do, and the build refuses any Connect card that does; the Connect kind has no card
+in any world now, which is the cold account's doubt about it made concrete. The broker's world
+connects four channels beyond the list and Cority's three; neither is refused, because a scenario
+is an exploration, and the build names them when it runs.
+
+**The wording changed with it.** A gap row for a channel outside the list says "is not something I
+can see yet" rather than "is not connected", because the difference is whose fact it is.
+Story ch. 3 carries the list in the user's words.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1215,6 +1238,10 @@ is anybody's.)*
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
   see for a buyer, and a rule for a promise re-made. Named here rather than done.
+- **Three reads are silent today and two thinner**, under what the tool can connect (thirtieth
+  pass). Nothing to fix in the library: they wait on the buyer's handover becoming a capability.
+  The broker's world rests on four connections the tool does not offer, so its twelve cards are an
+  exploration rather than a demo until it does.
 - **The holes that are holes on purpose.** Q25, what questions to ask them, which
   [`sales-questions.md`](sales-questions.md) names as the fifth frontier and which would widen the
   output from a message into a move plus talking points. V6's hour and V10's words on a form, both
