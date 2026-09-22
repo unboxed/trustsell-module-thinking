@@ -302,6 +302,11 @@ this kind you really did sell, which is the third honest answer to a stranger wh
 believe you, beside giving them what they asked for and showing them what is on the shelf.
 *(My reason, not yet yours.)*
 
+The shelf holds people as well as pages. A customer who has said they will speak to buyers is
+evidence too, and for the one worry a page cannot carry, whether to believe the person selling, it
+is the strongest kind there is. An offer is not a booking: the tool says a customer has offered,
+never that they will, and asks them before it promises anyone. *(My reason, not yet yours.)*
+
 ## 10. Not written yet
 
 Some of the story is still open, and it says so rather than filling the gaps.

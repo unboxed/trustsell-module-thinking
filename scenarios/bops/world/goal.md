@@ -32,6 +32,13 @@ Wednesday 16 September 2026. Every `when` on a card is relative to this date.
 
 Where a deal stands, in order: cold, engaged, coalition, partial, full.
 
+**The sale completes at partial.** That is what "land a partial adoption now" means: the first
+signature is the sale, and full is the same customer further on. So a council at partial or full is
+past the sale, and the reads that look at a deal since it completed apply to it; today that is East
+Marston alone, at full. Which rung is the sale is the seller's to name, not the tool's to work out
+(`library/assemblies/since-the-sale.md`), and it was not named until 22 September. *(My reason,
+not yet yours.)*
+
 ## What this sale has
 
 All four of them, listed as `has:` above, which is why this scenario could exercise almost every

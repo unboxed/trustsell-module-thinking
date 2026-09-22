@@ -1538,6 +1538,44 @@ without a date. The innocent-explanation scan is blind in two places on anyone o
 organisation, their calendar and their job moves, which are the two commonest innocent
 explanations, and the card says where it could not look.
 
+**Done in the forty-second pass, 22 September.** The fifteenth person worked from both ends, and
+the first who is not a buyer: Andrew Doyle, Head of IT at East Marston, the customer. The record is
+`scenarios/bops/docs/east-marston-pass.md`. No card is about him or to him, which is the thing the
+pass tested, and one card quotes him: the offer of a call to Rachel Gill rests on his words of 4
+March.
+
+**What the records said.** His offer to take reference calls has sat on a thread for six months,
+never taken up and never asked after, while five people at four councils asked, in five wordings,
+what a live council's experience is, and every answer they got was yours: the case study four
+times, your own words twice, two promises not kept. That offer reached no count, which the
+thirty-first pass had named and not fixed; run from the customer's end it is the whole of what his
+records say, so [`offers-to-vouch`](../counts/offers-to-vouch.md) exists now, over
+`since-the-sale`, and [`answer-gap`](../signals/answer-gap.md) reads it beside `proof-on-file`: a
+worry only a peer can carry has an answer on file when a customer has offered, graded like a case
+study, third-party by who speaks and aged from the day it was made. An offer is not a booking, and
+that sentence is the count's `breaks`: the peer-call card was promising the call ("I'll set it
+up") on an offer six months unasked, and its draft says "I'll ask him" now, with the promise
+named in what it holds back and the note to Andrew as the watch's next step. Three reads' `assumes:`
+are decided. The world names the rung at which its sale completes, which `since-the-sale` says the
+seller must and no world had.
+
+**What the counts said about themselves.** The shelf has no proof tags, seen now from the
+evidence's side: three documents about one customer and every match to a worry made by hand.
+`third-party-vs-self-asserted` cannot hold a customer's sign-off on your own document, because it
+sorts by who wrote it. How recently the one deal completed stands on the goal's prose, because no
+ending is told and the CRM is not connected. And the same request for a customer's word from five
+people at four councils is counted by nothing across deals: `their-question-unanswered` is per
+person, and whether "does it work at a real council" is a worry for `worry-occurrences-across-deals`
+or a request for proof is a reading nobody has made. `delivered-before` fires softly on every cold
+council here and no card carries it, argued right: with one customer, the case study says the same
+thing with a figure in it.
+
+**What no read says.** The tool never writes to a customer. Nothing fires on a person past the
+sale in a patient world and no question in the three sets asks about one beyond whom they could
+introduce you to, so the customer whose name carries eight cards is somebody the tool would never
+suggest a word to. The first card to a customer is the one the peer-call watch turns up, if Rachel
+says yes. Named, not built.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1568,21 +1606,24 @@ is anybody's.)*
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
   in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
   thirty-ninth, two in the fortieth and two in the forty-first, from the records
-  up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
+  up, and one re-tested from the customer's end in the forty-second; the method is in
+  `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
   `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
-  `moreton-pass.md`, `tarlton-pass.md` and `ashworth-pass.md`. The rest
+  `moreton-pass.md`, `tarlton-pass.md`, `ashworth-pass.md` and `east-marston-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Twenty-nine signals still carry `assumes_status: provisional`;
+  records and names no read. Twenty-six signals still carry `assumes_status: provisional`;
   `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
   `understanding-gap`, `champion-went-dark`, `fit-match`, `stated-priorities`, `enough-tries`,
-  `warm-path`, `colleague-already-in-touch` and `one-sided` were tested
+  `warm-path`, `colleague-already-in-touch`, `one-sided`, `answer-gap`, `customer-introduction`
+  and `delivered-before` were tested
   against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
   see for a buyer, and a rule for a promise re-made. Named here rather than done. The thirty-first
   pass added two of the same weight: `who-starts-threads` needs its summary to carry the change
-  its rows show, and a customer's offer to vouch for you needs a count. The thirty-fourth added
+  its rows show, and a customer's offer to vouch for you needs a count (done in the forty-second:
+  `offers-to-vouch`). The thirty-fourth added
   one: the tool holds the offering as eight fields of prose and no use-case by buyer type, so
   `lead-with-this` is silent on your side, and no answer to a worry, so `answer-gap` over-reports.
   Both are gaps in what the tool can hold (`library/told/offering-told.md`, the note at the end).

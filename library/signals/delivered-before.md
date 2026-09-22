@@ -10,7 +10,7 @@ counts: [past-deals-of-this-shape, how-they-ended, how-recently-one-completed]
 answers: [V17, F13]
 needs: [crm]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: made on one sale fourteen months old, matched at the loosest level, for councils never contacted; it needed nothing of the sale
 pull: People's pile of ended deals, gathered from what you told it and what the deal record holds
 ---
 

@@ -9,7 +9,7 @@ What the connected channels hold about each person, written as fiction on 22 Sep
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
 Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole,
-Nicola Shaw and Simon Ward are written; every other section says so.
+Nicola Shaw, Simon Ward and Andrew Doyle are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -366,7 +366,7 @@ week". The week ended on Friday 11 September and nothing has gone. No bounce and
 
 Elsewhere in your mail, not with her: Andrew Doyle at East Marston, Wednesday 4 March, on a
 thread of yours called "Reference calls": "happy to do reference calls for councils considering
-it". Nothing since has taken him up on it.
+it". Nothing since has taken him up on it. His section is below.
 
 ### Calendar
 
@@ -1546,10 +1546,136 @@ Figures the counts compute from Nicola Shaw's rows, run by hand on 22 September
 |---|---|
 | About you, on the profile | that you sell alone, with a colleague in partnerships beside you |
 
+## Andrew Doyle
+
+Head of IT, East Marston County Council. `andrew.doyle@eastmarston.gov.uk`. The customer: East
+Marston has run BOPS since July 2025, fourteen months on the world's today. He is the one person in
+this world you are not selling to, and the records show it. He is not in your Slack, you have never
+texted, and LinkedIn is not connected. The rollout mail of last year is in your mailbox and outside
+every card: it belongs to the delivery, not to a sale, and nothing in this world reads it. What the
+running of BOPS at East Marston needs day to day goes to your firm's support address, which is not
+your mailbox.
+
+### Gmail: the threads
+
+Two threads this year, both opened by you, five messages in all. Nothing since 4 March in either
+direction.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| A look at the case study before it goes out? | Mon 9 Feb | you | — | 3 |
+| Reference calls | Mon 2 Mar | you | — | 2 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own. "Delay" is the working days between your
+message and his reply.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Mon 9 Feb | A look at the case study before it goes out? | you | 90 | | Sends the draft case study, a page of officer feedback, and asks whether East Marston is happy to be named in it |
+| Wed 11 Feb | A look at the case study before it goes out? | Andrew | 55 | 2 | "Happy to be named. Two small corrections to the officer quotes, marked up." The draft attached, marked |
+| Thu 12 Feb | A look at the case study before it goes out? | you | 30 | | Thanks; the corrections made |
+| Mon 2 Mar | Reference calls | you | 80 | | Asks whether he would take the occasional call from a council considering BOPS |
+| Wed 4 Mar | Reference calls | Andrew | 40 | 2 | "Happy to do reference calls for councils considering it. Just give me some notice." |
+
+The offer of 4 March has never been taken up. No thread of yours since copies him in, no invite
+names him, nothing you sent a buyer mentions the call, and nothing since has asked him whether the
+offer still stands. No bounce and no automatic reply from his address at any point.
+
+Attachments: the draft case study, 9 February, from you; the marked-up draft, 11 February, from
+him.
+
+**Elsewhere in your mail, what other councils have asked about his.** Every one was answered in
+your words or with the case study, and none by him.
+
+| Date | Who | What they asked | What they got |
+|---|---|---|---|
+| Tue 5 May | Karen Hughes, Bramley | whether any council has BOPS live | the case study, attached |
+| Wed 8 Jul | Michelle Turner, North Ridley | what BOPS actually gives back per officer | the case-admin third, then the case study |
+| Mon 13 Jul | Karen Hughes, Bramley | the officer-time numbers from East Marston, per officer | promised; not sent |
+| Wed 22 Jul, Wed 29 Jul | Paul Denning, North Ridley | hours a week an officer gets back; whether the saving held after the first six months | your answers, in your words |
+| Wed 19 Aug | Neil Chapman, Holbrook | how East Marston did it in stages | promised; not sent |
+| Fri 11 Sep | Rachel Gill, Westmoor | how East Marston got their officers onto it | nothing yet |
+
+Five people at four councils, 5 May to 11 September. The rows are in their own sections; they are
+gathered here because they are the demand for the thing his offer supplies.
+
+### Calendar
+
+Nothing with him in 2026. The rollout meetings of last year are the last events with anyone at
+East Marston. His calendar's status events and free/busy are not visible to you, because he is
+outside your organisation.
+
+### Meet
+
+Nothing in 2026.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The East Marston case study | PDF | February | February | sent as an attachment to Gary Pearson, 21 April; Karen Hughes, 5 May; Shabana Akhtar, 18 June; Michelle Turner, 13 July. Andrew read the draft, 11 February |
+| The officer-time one-pager | Doc | Thu 3 Sep | Wed 9 Sep | nobody. Written from the case study's figures; he has not seen it |
+| The East Marston phasing note | Doc | Wed 2 Sep | Fri 11 Sep | nobody. Written from your own notes of the rollout; he has not seen it |
+
+Everything on the shelf about East Marston was written by you. Nothing has a proof tag: nothing
+told says which worry any of the three answers, so the match is made by hand in every card that
+sends one.
+
+### Contacts
+
+Andrew Doyle, Head of IT, East Marston County Council, from his signature.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| — | eastmarston.gov.uk and the open web | — | Nothing on the council's site names BOPS or its case system, and nothing published about East Marston by anybody else does. What is on record about the rollout is yours: the case study and the phasing note |
+
+### Slack
+
+He is not in your workspace. Nothing in Slack names him or East Marston.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/east-marston-pass.md`). East Marston stands at `full` on your list, and the sale
+completes at `partial` (`goal.md`), so his deal is past the sale and the counts over it apply.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 1 | offer from a customer to speak to buyers for you, on record: Andrew Doyle, 4 March, "happy to do reference calls for councils considering it", by mail, in reply to your asking | offers-to-vouch |
+| 139 working days, six months | since the offer, on 16 September; 140 on the 17th | offers-to-vouch |
+| 0 | times it has been taken up: no buyer has been put in front of him, and nobody has asked him since whether it still stands | offers-to-vouch |
+| 0 | names he has given you outside East Marston: nothing since the sale names anyone at another council | names-they-have-given-you |
+| nothing | owed either way: no question of his open, no promise of yours to him, no document of his outstanding | still-owed-either-way |
+| 1 | deal of this shape you have sold: East Marston, at the loosest match the told fit-shape allows, a council in the UK. It is the only ending on record | past-deals-of-this-shape |
+| 14 months | since it completed, by the go-live of July 2025. No deal outcome is typed and the CRM is not connected; the rung on your target list is what says it was sold | how-recently-one-completed |
+| sold | how it ended, by its rung: full | how-they-ended |
+| 3 | pieces of evidence on the shelf about East Marston: the case study, the officer-time one-pager, the phasing note. No proof tag on any | proof-on-file |
+| 7 months, 0, 0 | the age of each: the case study dated February; the two notes finished this month | proof-recency |
+| named | the case study names East Marston | named-vs-anonymous-reference |
+| you, all three | who produced each. Andrew read the case study's draft and corrected two quotes, which the count cannot hold: it sorts by who wrote it | third-party-vs-self-asserted |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | none: he predates the tool |
+| Target list | East Marston is one of the thirty, standing at full |
+| Deal outcome | none typed. That East Marston was sold is known from its rung, not from an ending you told |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Current situation, on the offering | "One council live, East Marston, fourteen months in; case admin down by about a third, and its Head of IT will take reference calls." The offer is in your profile as prose, and on the mail record as his words; the count reads the record |
+| Proof tags, on the organisation | none: nothing says what any document on the shelf proves |
+
 ## Everyone else
 
-Not written yet. Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao, Graham Pollard
-and the seven others at North Ridley have one line each in `cast.md` and nothing here. Graham
+Not written yet. Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao, Graham Pollard and the seven
+others at North Ridley have one line each in `cast.md` and nothing here. Graham
 Pollard appears in Nicola Shaw's section, because the one note he was on is hers. Tom Bradley and Anita Rao appear in Shabana Akhtar's
 section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in
 Michelle Turner's, because everything on record about them is on her threads and her invite.

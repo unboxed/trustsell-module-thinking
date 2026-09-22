@@ -31,7 +31,7 @@ Everyone a card can be about. `you` is the seller the tool is speaking to.
 | Darren Cole | darren-cole | procurement contact | tarlton | Named in the tender. Never spoken |
 | Nicola Shaw | nicola-shaw | Head of Digital | ashworth | Your colleague Simon knows her |
 | Graham Pollard | graham-pollard | Head of Customer Services | ashworth | On your third note, 14 July, with Nicola. Never replied |
-| Andrew Doyle | andrew-doyle | Head of IT | east-marston | Happy to do reference calls |
+| Andrew Doyle | andrew-doyle | Head of IT | east-marston | Offered reference calls on 4 March. Nobody has taken him up on it, and nothing has passed between you since |
 | Martin Hodgson | martin-hodgson | Director of Resources | bramley | Holds the budget. Not on any thread |
 | Louise Kemp | louise-kemp | Customer Services Team Leader | bramley | On Karen's threads since March. Wrote once |
 | Ravi Chandran | ravi-chandran | Customer Services Team Leader | bramley | On Karen's threads since March. Has never written |

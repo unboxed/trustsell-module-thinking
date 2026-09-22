@@ -9,8 +9,8 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Forty-one passes on `library/docs/coverage.md` are done. The library
-holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 135 counts (**all written**, 21 September; the 135th on 22 September), 42 signals,
+Forty-two passes on `library/docs/coverage.md` are done. The library
+holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 136 counts (**all written**, 21 September; the 135th and 136th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
@@ -67,9 +67,9 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: start at Job 1 with East Marston.** Job 4 is parked and
+**If you are reading this cold: start at Job 1 with Martin Hodgson, Bramley's budget holder.** Job 4 is parked and
 comes last, after Jobs 1 and 3 (the user, late on 22 September). Read `CLAUDE.md`, then one pass file
-(`scenarios/bops/docs/westmoor-pass.md` is the fullest, `ashworth-pass.md` the latest), then
+(`scenarios/bops/docs/westmoor-pass.md` is the fullest, `east-marston-pass.md` the latest), then
 Job 1's six steps, and begin. Jobs 0 and 2 are done; Job 3 comes after Job 1; Job 4 was
 taken to a sheet on 22 September (https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM) and is left
 for last, to iterate on with the user.
@@ -125,8 +125,12 @@ which cannot apply to somebody with no history, and rests on `enough-tries` now;
 draft came off, because a note that opens on the silence itself has no sanctioned ground, so
 the card is the one tap the design log called it. The introduction card's sure word is "a
 hunch", and a note to a colleague opens on what the colleague said, a seventh sanctioned
-opening. Twenty-one cards are decided; the people at East Marston, Bramley's budget holder and
-the rest of Bramley's cast have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
+opening. **The forty-second pass did East Marston** (`east-marston-pass.md`): Andrew Doyle, the
+customer, the first person worked who is not a buyer and the first with no card. His offer to take
+reference calls had sat six months on a thread, never used, while five people at four councils
+asked for exactly what it supplies; it reached no count, so `offers-to-vouch` exists now under
+`answer-gap`, and the peer-call card asks him rather than promising him. Twenty-one cards are
+decided; Bramley's budget holder and the rest of Bramley's cast have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
 a figure its people's records do not carry, for the people who have records, and each written
 section of `records.md` ends with a "What the counts give" table.
 
@@ -171,13 +175,14 @@ justify. Do not quietly adopt theirs. Bring the disagreements to the user before
 
 ### Job 1: work it from both ends, and let the card be where they meet
 
-**Fourteen people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
+**Fifteen people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
 Gary Pearson and Rachel Gill together, in `westmoor-pass.md`, Neil Chapman, in
 `holbrook-pass.md`, Lisa Holmes, in `burnham-pass.md`, and Stephen Walsh, Shabana Akhtar and
 David Marshall together, in `felton-pass.md`, Michelle Turner, in `north-ridley-pass.md`, and Julie
 Barker and Sanjay Mistry together, in `moreton-pass.md`, Darren Cole, in `tarlton-pass.md`, and
-Nicola Shaw and Simon Ward together, in `ashworth-pass.md`. The six steps below were followed as
-written and held up on all nine runs.
+Nicola Shaw and Simon Ward together, in `ashworth-pass.md`, and Andrew Doyle, the customer, in
+`east-marston-pass.md`. The six steps below were followed as written and held up on all ten runs,
+including the one on a person with no card.
 Two things to carry into the next person: the counts say a lot about themselves when run by hand
 (the findings are at the end of each pass file), and the figure rule at the end of this job is
 built, so a card's figures fail the build the moment its person has a records section, and every
@@ -197,13 +202,18 @@ published, and both declare `assumes: []`, now decided on an organisation nobody
 **The forty-first pass did Ashworth** (`ashworth-pass.md`): Nicola Shaw and Simon Ward, two
 cards, the first run of `enough-tries`, `warm-path` and `colleague-already-in-touch` from the
 records up. One draft came off a decided card for the first time, because nothing sanctioned
-its opening. Next: East Marston (Andrew Doyle: `act-lisa-east-marston` quotes him and he has no
-section), then Bramley's budget holder (Martin Hodgson: `act-karen-budget-holder`), then the
+its opening. **The forty-second pass did East Marston** (`east-marston-pass.md`): Andrew Doyle,
+the customer, with no card of his own. Nothing fires on him and no question asks about him, so
+the honest result is that the tool never writes to a customer; what his records did produce was
+a count, `offers-to-vouch`, and a re-test of `act-rachel-peer-call`, whose draft was promising a
+call on an offer six months unasked. Next: Bramley's budget holder (Martin Hodgson:
+`act-karen-budget-holder` names him and he has no section; the pass is Bramley's remaining cast,
+Louise Kemp, Ravi Chandran and Jonathan Reid, who appear on Karen's threads), then the
 cards about no person at all (`ask-twelve-councils`, `ask-good-fit`, `ask-openings`,
 `ask-buying-process`), which the figure rule skips and the method has not met.
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and twenty-four were read off the card rather than decided. Twenty-nine of the 42
+their read, and twenty-four were read off the card rather than decided. Twenty-six of the 42
 signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
@@ -276,9 +286,9 @@ Two things this will keep turning up, and both are worth more than the status fl
   card rather than the table when they disagree.
 
 ~~Start with one person in `bops`, end to end, and bring that to the user before doing the other
-twenty-five.~~ The method was agreed on 22 September and fourteen people are done. Take the next
-organisation without asking (East Marston, then Bramley's budget holder), one pass and one commit each, and keep the pass
-files in the same shape as the nine that exist.
+twenty-five.~~ The method was agreed on 22 September and fifteen people are done. Take the next
+organisation without asking (Bramley's budget holder, then the four cards about no person), one pass and one commit each, and keep the pass
+files in the same shape as the ten that exist.
 
 ### ~~Job 2: the shape of the message, which nothing in the library reaches~~
 
@@ -462,11 +472,11 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds records for fourteen people** (found 22 September; fourteen done the same day).
+- **A world holds records for fifteen people** (found 22 September; fifteen done the same day).
   `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman,
   Lisa Holmes, Stephen Walsh, Shabana Akhtar, David Marshall, Michelle Turner, whose section
   also carries the seven others on North Ridley's invite, Julie Barker, Sanjay Mistry, Darren
-  Cole, Nicola Shaw and Simon Ward. Every other
+  Cole, Nicola Shaw, Simon Ward and Andrew Doyle. Every other
   person in every world still has a line of prose, and the figures their cards quote live only in
   the cards. Until a person has a records section, their cards can only be checked against
   themselves, and the figure rule skips them.
@@ -546,6 +556,21 @@ reach what it claims.
 - **The "one more try" after resting somebody is a card a watch turns up, not a draft** (found
   in the forty-first pass). A note that opens on the silence itself has no sanctioned opening,
   and the library is right to refuse it; the rest card lost its draft and its second button.
+- **The tool never writes to a customer** (found in the forty-second pass). Nothing fires on a
+  person past the sale in a patient world, and no question in the three sets asks about one
+  beyond whom they could introduce you to, so the customer whose name carries eight cards is
+  somebody the tool would never suggest a word to. The first card to a customer is the one the
+  peer-call watch turns up.
+- **The same request from five people at four councils is counted by nothing across deals**
+  (found in the forty-second pass). `their-question-unanswered` is per person; whether "does it
+  work at a real council" is a worry for `worry-occurrences-across-deals` or a request for proof
+  is a reading nobody has made.
+- **A customer's sign-off on your own document is invisible** (found in the forty-second pass).
+  `third-party-vs-self-asserted` sorts by who wrote it; a case study the named customer read and
+  corrected in draft is "yours" and nothing more.
+- **The rung at which a sale completes is in prose** (found in the forty-second pass).
+  `since-the-sale` says the seller names it and no world had; `scenarios/bops/world/goal.md` says
+  it now, in a paragraph the build does not read.
 - **The broker's world pretends connections the tool does not offer** (22 September). SMS, the
   web form, the buyer's handover and a handed list are in its `explores:`, and outside that
   pretence three of its reads are silent. Job 3 should say which of its twelve cards the tool as it stands could actually

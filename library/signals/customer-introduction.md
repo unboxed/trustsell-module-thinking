@@ -10,7 +10,7 @@ counts: [names-they-have-given-you, still-owed-either-way, target-cold-to-you]
 answers: [V21]
 needs: [linkedin]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: judged on a customer with no thread under way and no rhythm, and rightly not made: nothing owed and no name given; it needed nothing of the sale
 ---
 
 # An introduction a customer could make
