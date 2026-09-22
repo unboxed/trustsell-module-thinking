@@ -927,7 +927,7 @@ summary::-webkit-details-marker{display:none}
 .py.is-tracing .py__pill,.py.is-tracing .py__col,.py.is-tracing .py__card{opacity:.28;transition:opacity .15s}
 .py.is-tracing .is-on{opacity:1}
 .py.is-tracing .py__svg path{opacity:.12;transition:opacity .15s}
-.py.is-tracing .py__svg path.is-on{opacity:1;stroke:var(--ios-accent)}
+.py.is-tracing .py__svg path.is-on{opacity:1;stroke:var(--ios-blue)}   /* the kit's blue itself: the phone's look turns the accent to ink on a slide, and the trail is the one thing here that is meant to be a colour */
 .py [data-id]{cursor:default}
 .py__card{position:relative;z-index:1;width:440px;--p:0}
 .py__card .card{padding:14px 18px;border-radius:20px;background:var(--card-glaze);box-shadow:var(--card-edge),var(--card-lift)}
