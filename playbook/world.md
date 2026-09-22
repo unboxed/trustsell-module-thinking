@@ -101,6 +101,118 @@ opens in Mail and you send it yourself. (Until 17 September this read "Nothing s
 human does". In the library the mail drafts' button is Send; the tender portal and the Slack
 message to Simon still hand over, because neither is mail.)
 
+**One card, two sellers** (22 September, the user's ask; proposed here and on one sheet,
+https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM, to be decided by looking). The tool adjusts to who is selling, in story chapter 5, in the user's words:
+some people sell because it landed on them, on the afternoons they can spare, and want the why and
+what to say; some sell for a living, every day, and want the next move said straight with the
+clock on it. The Profile module holds the settings that carry that, seeded by one question at
+setup: **coaching** (how much it explains), **fluency** (the words it speaks to you in) and
+**cadence** (when you sit down to it). The first two change the card. The third changes the week,
+and is the next paragraph.
+
+What stays the same for everyone, because the reasoning is one:
+- The kind, and the title. The title is the move and the person, and the read decides it, not the
+  seller. If the move were different for the two, it would be two cards, not one card two ways.
+- The how-sure word. It is earned from the weakest evidence, and the evidence is the same.
+- Everything underneath. The read, the counts and the records; the *Sources* rows word for word;
+  the figures. The figure rule checks both versions against the same records.
+- The draft, and the four parts of the message. The draft is in your voice to the buyer. Coaching
+  and fluency are the tool's voice to you, and a setting about how the tool talks to you never
+  touches what goes to the buyer. *(My reason, not yet yours.)*
+- The buttons, the watch, and what happens next.
+- The order within a day. What waiting a day costs is the world's, not the seller's.
+
+What coaching changes is how much is said before you act:
+- The lines under the title. Coached: why this person, and what the note gives her. Straight: the
+  move and the clock, in one line.
+- *What happened* on the back. Coached: the pattern explained, the counts inside sentences, the
+  goal's tempo said out loud ("give, don't nudge"). Straight: the facts as a list, figures first,
+  and the read named.
+- Whether *The message* rows show on the phone. For the coached seller they are the "what to say"
+  he asked for, already on the card and traced, so the phone shows them under the draft as *What the
+  note does*. For the straight seller they stay on the back. *(My reason, not yet yours: on 22
+  September the rows were kept off the phone; this is the case for showing them to one seller.)*
+- *Still unclear*, and the lines said back after acting. Coached says what it will do and why;
+  straight says done, and what it watches.
+
+What fluency changes is the words, not the content:
+- Plain English never names a read. The fluent seller gets the library's own names ("cooling
+  champion", "loose end", "the debt"), and the figures bare ("15 working days, usual 4 or 5")
+  where the plain version puts them in a sentence or leaves them to the widget.
+- Shorthand is shorter, not looser. Nothing is said in one register that is untrue in the other,
+  and every figure is still one the counts give.
+
+What cadence changes is the clock. The moment is the world's: Karen's note goes stale on Friday
+for both sellers. How it is told depends on when you next sit down: "Any day this week" for one,
+"By Friday" for the other, and, for a seller who sits down on Thursday afternoon and not again
+until Monday, "Gone by Monday".
+
+Where it lives: one file, the second version as a marked section, `## Said straight`, with
+sub-heads naming the part each line replaces (*Under the title*, *When*, *What happened*, *Still
+unclear*, *Said back*, *Done*). `build.js` lifts it off the sections, so neither the phone nor the
+library page shows it as a part of the back, and checks its figures like the rest of the body.
+Nothing in the frontmatter changes, so the joins, the day and the message rows are checked once.
+Written on Karen's main card first, 22 September. Every other card is written the one way, and
+that way is close to the coached seller's: plain English, the why on the front, no clock in hours.
+
+**The week, cut two ways** (22 September, proposed, not built; the sheet shows both weeks). Today
+the day's order in `build.js` knows one cadence: a seller who sits down every working day, with the
+week spread across days and a card's when told in days. The proposal is one rule with the cadence
+as its unit. **The unit the tool spreads over is the seller's sitting**, told by the cadence dial:
+an hour for the seller who sells all day, a working day for one who sits down daily (the week as
+built), an afternoon for one who sells on two. Three parts:
+1. A card is brought at the first sitting at or after the day it is ready. For a "this week" card
+   the ready day is the start of the week, because spreading it across days was the tool's own
+   doing and is redone across sittings; for a dated card, its `arrives`; for a card a watch turns
+   up, the moment the reply lands.
+2. "Gone by then" means the card's moment closes (`until`) before the next sitting. Such a card is
+   brought at the sitting before, and, if it turns up between sittings, on the day, off-sitting: an
+   interruption, and the only thing that interrupts. Worse every day is not gone: an owed answer
+   waits for the sitting, and the cost is said on the card.
+3. Within a sitting the order is today's, by band. Across sittings the spread is today's with
+   sittings for days: quiet sittings take what costs nothing to wait.
+*(My reason, not yet yours.)* For the seller who sits down every day nothing changes, which is the
+test that the rule generalises the week rather than replacing it.
+
+Played out on the same twenty-five cards. **The seller who sells on two afternoons** (Monday and
+Thursday; today, Wednesday, is an off day):
+- Wednesday 16, off. Brought anyway, because the demo is Thursday morning, before he sits down: the
+  note to Michelle Turner, then the demo brief.
+- Thursday 17, his afternoon. Everything else open: held since Wednesday, Rachel's promise, Gary's
+  answer, Neil's note, the budget Ask and then Karen's note, the twelve councils; Thursday's own,
+  the Ask about Rachel's meeting and then her peer call, the Ask after the demo, Lisa's
+  congratulations, Sanjay; and pulled forward from Friday because gone before Monday, Felton's
+  price and Simon's introduction. Thirteen cards, and every one of them either gone by Monday or
+  waited for since Wednesday, which the card's when line now says.
+- Friday 18, off. Nothing brought.
+- Monday 21. Holbrook's follow-up, Tarlton's two questions, and the three that cost nothing to wait
+  and so left Thursday for the quieter sitting: Ashworth, the good fit, the buying process.
+- Thursday 24. The greetings Ask, which was Monday's and moved on for the same reason.
+- Thursday 1 October. The Tarlton bid Ask (ready 29 September) and Lisa's East Marston note (ready
+  30 September).
+Thirteen on one afternoon is the finding. Story chapter 10 says a day can be too full for the time
+you have and nothing asks about your time; this is the seller it bites. The bands still put what
+goes first first, and what he does not reach that is not gone by Monday rolls to Monday. Whether
+the tool should say so on the day, and how, is not decided.
+
+**The seller who sells all day**: the same days as built, by the hour. Bands 1 and 2, gone or
+worse, at the start of the day; 3 and 4 late morning; 5 after lunch; 6 late afternoon. A held card
+arrives the moment what it waited on is done, and a card a watch turns up at the hour the reply
+lands. The clock words say the hour where the world gives one and the day where it does not.
+- Wednesday. 09:00: the note to Michelle and then the brief (the demo is at 10:00 tomorrow),
+  Rachel's promise, Gary's answer, Neil's note, the budget Ask and then Karen's note (by Friday).
+  14:00: the twelve councils. 16:00: Ashworth, the good fit.
+- Thursday. 09:00: the Ask about Rachel's meeting and then her peer call, Lisa, Sanjay. 11:30, when
+  the demo ends: the Ask about it. 16:00: the buying process.
+- Friday. 09:00: Felton's price, Simon's introduction, Holbrook's follow-up. 11:00: Tarlton's
+  questions.
+- Monday 21, 14:00: the greetings Ask.
+The hours are placed by me in the pretend world, by the rule above, with one exception the rule
+did not have: an Ask about a meeting arrives when the meeting ends, by the calendar, not at the
+band's hour. As built, the demo Ask is free the moment the brief is sent, which on a phone that
+works in hours would be before the demo. *(My reason, not yet yours.)* The sheet draws both
+weeks from the rule run over the real cards, not by hand, so a changed card changes the week.
+
 ## Where the cards live
 
 **The desk** was archived on 18 September 2026 (the user: outdated, and it had no meaning for

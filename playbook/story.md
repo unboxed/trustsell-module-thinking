@@ -174,7 +174,10 @@ reasoning underneath both. And they do not sell on the same days: one does this 
 he can spare, the other every day, all day. So a day is not the same length for both. For the
 first, the tool holds what can wait until the next time he sits down to it, and brings only what
 would be gone by then; for the second it works in hours. *(The user's reason, 22 September. What
-the two versions of a card look like, and how the week is cut for each, is not written yet.)*
+the two versions of a card look like, and how the week is cut for each, was proposed the same day
+and is not decided: one card written both ways, and one rule, that the unit the tool spreads over
+is the seller's sitting, an hour, a day or an afternoon. It is in `world.md`, "One card, two
+sellers", and on a sheet.)*
 
 The tool asks when it needs to know, at the moment the answer matters. The cards are also where
 you see that it keeps learning: the world moves, and the tool keeps up with it. What it holds

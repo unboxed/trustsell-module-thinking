@@ -1427,6 +1427,33 @@ messages on officer time, is counted only by [`things-they-asked-you-for`](../co
 under `pushing`, so no opening read can quote it. How your own demos went is read by nothing.
 And a role off the told list again, the case-system lead, as finance was at Felton.
 
+**Done in the thirty-eighth pass, 22 September.** Job 4 of `NEXT.md`, one card, two sellers,
+taken to the sheet and no further: the phone is unchanged until the user has looked. The argument
+is in `playbook/world.md`, "One card, two sellers" and "The week, cut two ways"; the sheet is
+https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM. Three things were written. First, what the
+Profile's settings change on a card: coaching changes how much is said before you act (the lines
+under the title, *What happened*, whether *The message* rows show on the phone, the lines said
+back), fluency changes the words and never the content, and cadence changes the clock; the kind,
+the title, the how-sure word, the reads, counts, records, Sources, the draft and its four parts,
+the buttons and the order within a day are the same for everyone. A setting about how the tool
+talks to you never touches what goes to the buyer. Second, Karen Hughes's main card said straight,
+as a marked section of the same file, `## Said straight`, with sub-heads naming the part each line
+replaces; `build.js` lifts it off the card's sections and checks its figures against her records
+like the rest of the body, so one card is checked once. Third, the week cut two ways by one
+proposed rule, not built: **the unit the tool spreads over is the seller's sitting**, an hour, a
+day or an afternoon; a card comes at the first sitting it is ready for, and only what would be
+gone before the next sitting interrupts an off day. Run over the real cards for a seller who sits
+down on Monday and Thursday afternoons, Wednesday brings two interruptions and Thursday thirteen
+cards, which is where "a day can be too full for the time you have" (story chapter 10) bites.
+
+**What running the rule found.** A card's `arrives` mixes two things: the day it became true and
+the day the tool chose to show it, and only the first survives a change of cadence. The pass
+read a fresh or dated card's day as real and a "this week" or whenever card's as the tool's own
+spreading, redone across sittings; nothing in the frontmatter says which, and a `from` beside
+`until` would. And the demo Ask is free the moment the brief is sent, which on a phone that works
+in hours is before the demo: an Ask about a meeting should arrive when the meeting ends, by the
+calendar, and no rule says so yet.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*

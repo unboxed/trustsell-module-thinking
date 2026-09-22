@@ -126,3 +126,36 @@ The officer-time numbers you asked for in July are attached, one page. I am sorr
 No need to reply.
 
 Fede
+
+## Said straight
+
+The same card for a seller who sells for a living: coaching off, sales shorthand on (`playbook/world.md`, "One card, two sellers"). The same reads, counts, records, draft and buttons; only the tool's own lines change. Each head names the part it replaces. Written 22 September, proposed, to be decided by looking.
+
+### Under the title
+
+Quiet 15 working days against her usual 4 or 5. You owe her the officer-time figures from July. Send them, ask nothing.
+
+### When
+
+By Friday.
+
+### What happened
+
+- Why now: 15 working days silent, usual 4 or 5. The debt is the officer-time figures, promised 14 July and 24 August, still unsent.
+- Cooling champion, likely. Loose end and champion behind it.
+- Her history: 9 of 12 threads hers, 3 colleagues brought in, 3 times she said she was arguing the case inside Bramley. Since 20 August: one reply, 22 words, "I'll come back to you".
+- Nothing innocent on record: no bounce, no auto-reply, one bank holiday.
+- Gift in hand: the one-pager, finished 9 September, shared with nobody.
+- Bramley: one door, engaged. Give, no ask.
+
+### Still unclear
+
+- What the budget meeting decided. Your answer to the Ask settles it.
+
+### Said back
+
+Sent. Watching for her reply.
+
+### Done
+
+Figures marked sent. Reply watched for two weeks, then a new reason to write, not this one.

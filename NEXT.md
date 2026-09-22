@@ -9,7 +9,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 
 ## Where the work stands
 
-Twenty-nine passes on `library/docs/coverage.md` are done. The library
+Thirty-eight passes on `library/docs/coverage.md` are done. The library
 holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 6 told sources (the sixth, the tool's own history, added 22 September), 25 assemblies, 135 counts (**all written**, 21 September; the 135th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
@@ -67,11 +67,12 @@ text, so when you report, lead with the verdict and keep it short.
 
 ## Your task
 
-**If you are reading this cold: start at Job 4, one card, two sellers.** Read `CLAUDE.md`, then
-one pass file (`scenarios/bops/docs/westmoor-pass.md` is the fullest, `north-ridley-pass.md` the
-latest), then Job 4's four steps, and begin: it touches the phone and the voice, so the sheet comes
-before any code. Jobs 0 and 2 are done; Job 1 has nine people done and continues after Job 4 with
-Moreton or Tarlton; Job 3 comes after that, or when the user says so.
+**If you are reading this cold: Job 4 is on a sheet waiting for the user's verdict; start at Job 1
+with Moreton or Tarlton unless the user has answered.** Read `CLAUDE.md`, then one pass file
+(`scenarios/bops/docs/westmoor-pass.md` is the fullest, `north-ridley-pass.md` the latest), then
+Job 1's six steps, and begin. Jobs 0 and 2 are done; Job 4's four steps were done on 22 September
+up to the sheet (https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM) and the phone changes only
+once the user has looked; Job 3 comes after Job 1, or when the user says so.
 
 Three jobs, in this order. All of them are worked from both ends: up from the records through the
 counting to what can be read off it, and down from the questions the seller actually asks, which
@@ -335,7 +336,22 @@ real.
 
 Record it as a pass per world in `coverage.md`, in the existing style.
 
-### Job 4: one card, two sellers (the user, 22 September)
+### Job 4: one card, two sellers (the user, 22 September; on the sheet since the thirty-eighth pass, awaiting the user)
+
+**Done to the sheet, 22 September, thirty-eighth pass.** Steps 1 to 4 below were done in order:
+the card model in `playbook/world.md` ("One card, two sellers") says what coaching, fluency and
+cadence change and what stays; Karen's main card carries `## Said straight`, the same card for a
+seller who sells for a living, lifted off the card's sections by `build.js` and figure-checked;
+the week is cut two ways by a proposed rule ("The week, cut two ways", the unit the tool spreads
+over is the seller's sitting), run over the real cards and not built; and both fronts, both backs
+and both weeks are on one sheet, https://claude.ai/artifact/FmGVacehhSfDTJqxhLEsPM. **What waits
+on the user:** whether the straight card reads right, whether the coached phone should show the
+four message rows as *What the note does*, and whether the sitting rule is the right shape. Only
+then: the phone draws the straight version (a setting, or a switch on the sheet's model), and
+`build.js` takes the sittings from the told cadence. Two findings for the library are in
+`coverage.md` under the thirty-eighth pass: `arrives` mixes when a card became true with when
+the tool chose to show it, and an Ask about a meeting has no rule saying it arrives when the
+meeting ends.
 
 The tool adjusts to who is selling. Some people sell because it landed on them and do it on the
 afternoons they can spare; some sell for a living, every day. The first wants the why and what to
@@ -402,7 +418,8 @@ reach what it claims.
   `breaks`, every `over` is resolved and every `over_status` is `decided`. The build made six move
   to a different gather. The merge pass was considered and not done: the three closest pairs are
   genuinely two things each and each now says so in its body.
-- ~~**One card, two sellers**~~ Now Job 4 of the task above (the user, 22 September).
+- ~~**One card, two sellers**~~ Job 4 of the task above; on a sheet since 22 September, awaiting the
+  user's verdict.
 - **The brief, asked for by all three sellers.** What happened on this deal in the last two weeks,
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a

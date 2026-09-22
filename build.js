@@ -250,6 +250,28 @@ const questionIds = questions.map(q => q.id);
 const ids = k => new Set(L[k].map(e => e.id));
 const has = (set, v) => set.has(v);
 const problems = [];
+
+/* ---------- one card, two sellers ---------- */
+// Proposed 22 September (playbook/world.md, "One card, two sellers"): a card may carry
+// "## Said straight", the same card's own lines for a seller who sells for a living, under heads
+// naming the part each replaces. The reads, counts, records, draft and buttons are the card's
+// once; only the tool's voice to the seller changes. The section is lifted off the card's
+// sections here, so neither the phone nor the library page shows it as a part of the back, and it
+// stays in the body, so the figure rule reads it like the rest. The phone does not draw it yet:
+// the two versions are on a sheet first, and the phone changes only after the user has looked.
+const STRAIGHT = ['Under the title', 'When', 'What happened', 'Still unclear', 'Said back', 'Done'];
+for (const c of L.cards) {
+  if (!c.sections['Said straight']) continue;
+  const part = c.markdown.split(/^## /m).find(p => p.split('\n')[0].trim() === 'Said straight');
+  c.straight = {};
+  for (const sub of part.split(/^### /m).slice(1)) {
+    const nl = sub.indexOf('\n'), head = (nl === -1 ? sub : sub.slice(0, nl)).trim(), text = nl === -1 ? '' : sub.slice(nl + 1).trim();
+    if (!STRAIGHT.includes(head)) problems.push(`${c.file}: "## Said straight" has a head "${head}", which is not a part of the card (${STRAIGHT.join(', ')})`);
+    c.straight[slug(head)] = markdown(text);
+  }
+  delete c.sections['Said straight'];
+  c.sectionOrder = c.sectionOrder.filter(x => x !== 'Said straight');
+}
 function must(where, field, values, set, what) {
   for (const v of [].concat(values || [])) {
     if (!v) continue;
