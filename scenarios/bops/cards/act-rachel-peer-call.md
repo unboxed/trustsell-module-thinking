@@ -3,17 +3,17 @@ id: act-rachel-peer-call
 order: 12
 kind: act
 signal: answer-gap
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [understanding-gap]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [re-asked-questions, objection-entry-exists, named-vs-anonymous-reference, third-party-vs-self-asserted]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/westmoor-pass.md. Fires softly: an answer exists on file and it is thin
+supporting: [loose-end]   # understanding-gap came off 22 September: her question was never answered, so it cannot have been misunderstood. What holds is that you owe her an answer, asked twice
+supporting_status: decided
+counts: [their-question-unanswered, objection-entry-exists, proof-on-file, proof-recency, named-vs-anonymous-reference, third-party-vs-self-asserted]
+counts_status: decided
 about: [rachel-gill, westmoor]
 to: rachel-gill                # who the move reaches; one move per person at a time
 arrives: 2026-09-17             # the day the tool puts it on the home
 documents: [east-marston-case-study]
 sure: "likely"
-sure_because: "A pattern: the same worry, twice in four days."
+sure_because: "A fact on record twice: her question of Wednesday 9 September, asked again on Friday, and no answer from you to either. Whether a peer is the answer she wants is my reading."
 held_words: "Once the data-residency note is with her, and you have told me how you read her."
 when:
   mode: rhythm
@@ -64,20 +64,21 @@ phone:
 
 # Offer Rachel Gill a call with East Marston's IT lead
 
-She has asked "will officers actually use it" twice since you met. The best answer is not from you. It is from someone in her job who has done it.
+She has asked whether officers will actually use it twice since you met, and had no answer. The best answer is not from you. It is from someone in her job who has done it.
 
 ## What happened
 
-- Why now: the same worry twice in four days is a pattern, not a passing remark. Answer it before it hardens.
+- Why now: the same worry on Wednesday and again on Friday is a question she needs answered, not a passing remark, and it has sat five working days on a thread where every turn so far came the same day or the next.
 - Rachel joined the Westmoor thread on 8 September and has written three times. Her first asked about data residency; the next two ask, in different words, whether officers will adopt it.
-- A peer beats a vendor on this question every time. Andrew Doyle at East Marston offered reference calls in March.
+- What you have on file for that worry is thin: one case study, naming East Marston, written by you, seven months old. Nobody has typed an answer to the worry itself. A peer beats a vendor on this question every time, and Andrew Doyle at East Marston offered reference calls in March.
 - Westmoor is at the coalition stage. Rachel is the newest voice in it and the one most likely to slow it if unconvinced.
 
 ## Sources
 
-- gmail · The Westmoor thread: Rachel's messages of 9 and 12 September.
+- gmail · The Westmoor thread: Rachel's messages of 9 and 11 September, and nothing from you since 8 September.
 - gmail · Andrew Doyle, East Marston, 4 March: "happy to do reference calls for councils considering it".
-- drive · The officer-feedback page of the East Marston case study.
+- drive · The East Marston case study, the page of officer feedback: named, written by you, dated February.
+- offering-told · No answer typed for the worry that officers will not use it. I have only what is on the shelf.
 - goal-told · Your list: Westmoor at coalition.
 
 ## Still unclear
@@ -92,7 +93,7 @@ She has asked "will officers actually use it" twice since you met. The best answ
 
 Hi Rachel,
 
-You've asked twice whether officers actually use BOPS, which is the right question and the one I can't answer for you: I sell it.
+You've asked twice whether officers actually use BOPS, and I have not answered. It is the right question and the one I can't answer for you: I sell it.
 
 Andrew Doyle, Head of IT at East Marston, can. They have been live for fourteen months and he has offered to talk to councils considering it. If a twenty-minute call would help, I'll set it up and stay out of it.
 

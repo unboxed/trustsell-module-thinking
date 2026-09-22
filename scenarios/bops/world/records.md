@@ -7,7 +7,7 @@ about: what the connected channels would actually hold, person by person
 
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
-itself. One section per person. Only Karen Hughes is written; every other section says so.
+itself. One section per person. Karen Hughes, Gary Pearson and Rachel Gill are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -149,6 +149,27 @@ the budget round.
 
 Karen is not in your workspace. Nothing in Slack mentions Bramley.
 
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/karen-hughes-pass.md`). A card may state a figure only if it is in this section.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 15 working days | since her last message, 26 August | reply-gap-vs-own-rhythm |
+| 4 or 5 working days | her usual gap between messages (median 4.5, on 24 gaps) | reply-gap-vs-own-rhythm |
+| 1 working day | her usual reply speed (median, on 16 replies) | reply-speed-vs-own-rhythm |
+| 9 of 12 | threads she opened; the only thread since the meeting is yours | who-starts-threads |
+| 47 messages, 12 threads, 2 meetings | the whole history, February to today | how-close-you-were |
+| 3 | colleagues she brought in: Louise Kemp, Ravi Chandran, Jonathan Reid | colleagues-looped-in-count |
+| 3 | times she wrote that she was arguing the case inside Bramley | internal-advocacy-mentions |
+| 46 and 17 working days | the officer-time promise open, from 14 July and from 24 August | promise-made-undelivered |
+| 0 | times you have chased her | times-you-chase |
+| 1 | innocent explanation found: the bank holiday | innocent-explanation-scan |
+| 0 | people at Bramley on record with spend authority | decision-maker-reached |
+| 100 per cent | of messages and meetings at Bramley that go through her | rests-on-one-person |
+| 4 | people at Bramley reached on a thread or a meeting; 3 have written | people-reached-count |
+
 ### What you told the tool
 
 | Told record | What it holds |
@@ -163,8 +184,256 @@ Karen is not in your workspace. Nothing in Slack mentions Bramley.
 
 Nothing about the budget meeting on 20 August. That is the gap `ask-budget-meeting` asks about.
 
+## Gary Pearson
+
+Service Design Lead, Westmoor County Council. `gary.pearson@westmoor.gov.uk`. Everything between
+you and him is by mail and in one demo. He is not in your Slack, you have never texted, and
+LinkedIn is not connected. Rachel Gill's section below points at his last thread, because the
+two of them share it.
+
+### Gmail: the threads
+
+Eight threads, February to today. Gary opened five. Thirty-two messages in all: fifteen from
+him, thirteen from you, one from Priya Nair, three from Rachel Gill.
+
+| Thread | Opened | By | Copied in | Messages |
+|---|---|---|---|---|
+| BOPS and Westmoor's case handling | Tue 10 Feb | you | — | 4 |
+| Could you show the team? | Mon 2 Mar | Gary | — | 3 |
+| Follow-ups from Thursday | Fri 13 Mar | Gary | Priya Nair | 5 |
+| Case study? | Tue 21 Apr | Gary | — | 3 |
+| Pricing for a first service | Tue 28 Apr | you | — | 4 |
+| Rollout in stages | Tue 9 Jun | Gary | — | 4 |
+| Where we are | Tue 25 Aug | you | — | 3 |
+| Westmoor: BOPS and IT | Tue 8 Sep | Gary | Rachel Gill | 6 |
+
+### Gmail: the messages
+
+One row per message. Words are the message's own, with any quoted trail stripped. "Delay" is
+the working days between your message and his reply, on the rows that are replies from him.
+
+| Date | Thread | From | Words | Delay | What it said, in short |
+|---|---|---|---|---|---|
+| Tue 10 Feb | BOPS and Westmoor's case handling | you | 140 | | Introduces BOPS and asks whether case handling is a pain |
+| Wed 11 Feb | BOPS and Westmoor's case handling | Gary | 95 | 1 | "Hi Fede, it is, and it's mine to fix." Describes the legacy system and the workarounds |
+| Wed 11 Feb | BOPS and Westmoor's case handling | you | 100 | | Answers, offers to show it |
+| Thu 12 Feb | BOPS and Westmoor's case handling | Gary | 40 | 1 | "Let me get the right people in a room. Back to you in a couple of weeks." |
+| Mon 2 Mar | Could you show the team? | Gary | 60 | | Asks for a demo for him and Priya Nair, the service manager |
+| Mon 2 Mar | Could you show the team? | you | 70 | | Offers three slots |
+| Tue 3 Mar | Could you show the team? | Gary | 25 | 1 | Picks Thursday 12 March, 14:00 |
+| Fri 13 Mar | Follow-ups from Thursday | Gary | 130 | | Five questions from him and Priya, Priya copied in |
+| Mon 16 Mar | Follow-ups from Thursday | you | 220 | | Answers all five |
+| Mon 16 Mar | Follow-ups from Thursday | Priya Nair | 45 | | One follow-up on migrating case notes |
+| Tue 17 Mar | Follow-ups from Thursday | you | 80 | | Answers Priya |
+| Tue 17 Mar | Follow-ups from Thursday | Gary | 50 | 1 | "Thanks both. That's most of what we needed." |
+| Tue 21 Apr | Case study? | Gary | 45 | | Asks whether any council has BOPS live |
+| Tue 21 Apr | Case study? | you | 60 | | Sends the East Marston case study, attached |
+| Thu 23 Apr | Case study? | Gary | 40 | 2 | "Took this to my director yesterday. She wants to know what a first service would cost." |
+| Tue 28 Apr | Pricing for a first service | you | 120 | | A rough price for one service, live cases only |
+| Wed 29 Apr | Pricing for a first service | Gary | 70 | 1 | "Thanks. I'll put it to procurement when we're ready; for now it's me and Priya making the case internally." |
+| Wed 29 Apr | Pricing for a first service | you | 40 | | Happy to help with the case |
+| Thu 30 Apr | Pricing for a first service | Gary | 20 | 1 | "Will do." |
+| Tue 9 Jun | Rollout in stages | Gary | 85 | | Asks how a staged rollout works. "Once we've rolled this out I'd want the team leads on it from day one." |
+| Wed 10 Jun | Rollout in stages | you | 160 | | Explains phasing, and how East Marston did it |
+| Thu 11 Jun | Rollout in stages | Gary | 55 | 1 | Two questions on migration timing |
+| Thu 11 Jun | Rollout in stages | you | 90 | | Answers |
+| Tue 25 Aug | Where we are | you | 90 | | Asks where things stand after the summer |
+| Wed 26 Aug | Where we are | Gary | 110 | 1 | "Making progress. I've been making the case to our director and she's asked me to bring IT in before anything goes to procurement. I've asked Rachel Gill, our Head of IT, to meet you; she'll have questions on data. I'll set something up." |
+| Wed 26 Aug | Where we are | you | 40 | | Great, any time |
+| Tue 8 Sep | Westmoor: BOPS and IT | Gary | 50 | | "Thanks both for this morning. Rachel, over to you for the data questions. Fede, Rachel will need to be comfortable before anything moves." |
+| Tue 8 Sep | Westmoor: BOPS and IT | Rachel Gill | 90 | | Introduces herself. Asks where the data lives, who can see it, and whether any of it leaves the UK |
+| Tue 8 Sep | Westmoor: BOPS and IT | you | 60 | | "Good to meet you this morning. I'll send the data-residency note this week; it covers all three." |
+| Wed 9 Sep | Westmoor: BOPS and IT | Rachel Gill | 60 | | "Thanks. The thing I keep coming back to is whether officers will actually use it. We have bought systems here that nobody logged into." |
+| Thu 10 Sep | Westmoor: BOPS and IT | Gary | 45 | | "Separate question from me: can BOPS import our existing case records, or do we start from empty?" |
+| Fri 11 Sep | Westmoor: BOPS and IT | Rachel Gill | 70 | | "Sorry to labour it, but how did East Marston get their officers onto it? Was there a mandate, or did they choose to?" |
+
+Nothing from you on any Westmoor thread since Tuesday 8 September. Three messages have come in
+since, two from Rachel and one from Gary, and none has an answer. No bounce and no auto-reply
+from either address at any point.
+
+Attachments: the East Marston case study, from you, 21 April. Nothing else.
+
+### Calendar
+
+| Event | When | Organiser | Attendees | Notes |
+|---|---|---|---|---|
+| BOPS demo for Westmoor | Thu 12 Mar, 14:00 to 15:00 | you | Gary Pearson, Priya Nair, both accepted | Meet link. Held on Meet, not recorded |
+| Westmoor: intro with Rachel Gill | Tue 8 Sep, 10:00 to 10:30 | Gary Pearson | you (accepted), Rachel Gill, Gary Pearson | Meet link. Held on Meet, not recorded |
+
+No recurring series with anyone at Westmoor. Nothing in the calendar with Westmoor after 8
+September. Their status events and free/busy are not visible to you, because they are outside
+your organisation. Monday 31 August was a bank holiday.
+
+### Meet
+
+| Meeting | Participants | Recording | Transcript |
+|---|---|---|---|
+| BOPS demo for Westmoor, 12 Mar | you, Gary Pearson, Priya Nair | none | none |
+| Westmoor: intro with Rachel Gill, 8 Sep | you, Rachel Gill, Gary Pearson | none | none |
+
+Neither call was recorded, so Meet holds who was there and nothing of what was said.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The records import note | Doc | Tue 12 May | Tue 12 May | nobody |
+| The East Marston case study | PDF | February | February | sent as an attachment, 21 April |
+| The East Marston phasing note | Doc | Wed 2 Sep | Fri 11 Sep | nobody |
+
+No notes from either Westmoor call, and nothing in Drive mentions Rachel Gill.
+
+### Contacts
+
+| Contact | Title, from their signature | Organisation |
+|---|---|---|
+| Gary Pearson | Service Design Lead | Westmoor County Council |
+| Priya Nair | Customer Services Manager | Westmoor County Council |
+| Rachel Gill | Head of IT | Westmoor County Council |
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| Westmoor's senior structure | westmoor.gov.uk, "Who we are" | 2026 | Customer Services and IT are separate directorates. The page names the directors of each; neither is on any thread of yours |
+
+Nothing published by Westmoor since 26 August that mentions the case system, a procurement or
+a digital strategy.
+
+### Slack
+
+Nobody from Westmoor is in your workspace. Nothing in Slack mentions Westmoor.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/westmoor-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 4 working days | his import question open, from Thursday 10 September | their-question-unanswered |
+| 0 or 1 working day | a turn on the September thread so far; every reply came the same day or the next | days-open-vs-own-rhythm |
+| 1 working day | his usual reply speed (median, on 9 replies since February) | reply-speed-vs-own-rhythm |
+| 50 words | his usual reply length (median, on 9 replies) | reply-length-vs-own-rhythm |
+| 5 of 8 | threads he opened; 4 of the last 6 | who-starts-threads |
+| 32 messages, 8 threads, 1 demo | the whole history, February to today | how-close-you-were |
+| 2 | colleagues he brought in: Priya Nair in March, Rachel Gill in September | colleagues-looped-in-count |
+| 3 | times he wrote that he was making the case inside Westmoor: 23 April, 29 April, 26 August | internal-advocacy-mentions |
+| 0 | questions of yours he has not answered | ask-made-unanswered |
+| 0 | promises of yours to him | promise-made-undelivered |
+| 0 | times you have written since he last did | chases-since-their-last-reply |
+| 1 | time price was asked, 23 April, relayed from his director | pricing-question-asked |
+| 2 | times procurement was named as a step ahead: 29 April, 26 August | budget-or-procurement-entered |
+| 2 | questions about timing or stages: 9 and 11 June | timeline-or-start-question |
+| 0 | dates he has given | dated-facts-in-their-words |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | Gary Pearson, "the door into Westmoor, and the one who wants it", typed at setup |
+| Target list | Westmoor is one of the thirty, standing at coalition |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Buying process for a council | not filled |
+| Worry answers, on the offering | none typed for any worry |
+
+## Rachel Gill
+
+Head of IT, Westmoor County Council. `rachel.gill@westmoor.gov.uk`. Everything between you and
+her is on one thread of Gary Pearson's and in one half-hour call. She is not in your Slack, you
+have never texted, and LinkedIn is not connected.
+
+### Gmail: the threads
+
+One thread, the one Gary opened on Tuesday 8 September and copied her into, "Westmoor: BOPS and
+IT". Its rows are in Gary's section above. She has written three times on it, never opened a
+thread of her own, and is on no other thread of yours. Before 8 September her address appears on
+no message, no event and no contact you hold.
+
+| Date | From | Words | What it said, in short |
+|---|---|---|---|
+| Tue 8 Sep | Rachel | 90 | Where the data lives, who can see it, whether any of it leaves the UK |
+| Wed 9 Sep | Rachel | 60 | Whether officers will actually use it. "We have bought systems here that nobody logged into." |
+| Fri 11 Sep | Rachel | 70 | The same question, in different words: how East Marston got their officers onto it |
+
+Your one message to her is the reply of 8 September, promising the data-residency note "this
+week". The week ended on Friday 11 September and nothing has gone. No bounce and no auto-reply.
+
+Elsewhere in your mail, not with her: Andrew Doyle at East Marston, Wednesday 4 March, on a
+thread of yours called "Reference calls": "happy to do reference calls for councils considering
+it". Nothing since has taken him up on it.
+
+### Calendar
+
+The intro call of Tuesday 8 September, 10:00 to 10:30, 30 minutes, in Gary's section above: Gary
+organised it, all three of you accepted, held on Meet, not recorded. Nothing before it and nothing since
+with her on it.
+
+### Meet
+
+One meeting, 8 September, no recording and no transcript. What was said in the half hour is on
+no record.
+
+### Drive
+
+| File | Type | Created | Modified | Shared with |
+|---|---|---|---|---|
+| The data-residency note | Doc | Thu 4 Jun | Wed 2 Sep | nobody |
+| The East Marston case study | PDF | February | February | sent to Gary as an attachment, 21 April |
+
+The data-residency note has never been sent to anybody as an attachment. The case study's page
+of officer feedback is the case study itself: there is no separate file for it.
+
+### Contacts
+
+Rachel Gill, Head of IT, Westmoor County Council, from her signature. Nothing else on record
+about her role.
+
+### Web
+
+Nothing on the open web mentions her by name. Westmoor's "Who we are" page, in Gary's section,
+puts IT in its own directorate.
+
+### Slack
+
+Not in your workspace. Nothing in Slack mentions her.
+
+### What the counts give
+
+Figures the counts compute from the rows above and from the September thread in Gary's section,
+run by hand on 22 September (`../docs/westmoor-pass.md`).
+
+| Figure | What it is | Count |
+|---|---|---|
+| 6 working days | the data-residency note owed, promised Tuesday 8 September for that week | promise-made-undelivered |
+| 6 working days | her data question open, from 8 September; your reply acknowledged it and promised the note | their-question-unanswered |
+| 5 working days | her adoption question open, from Wednesday 9 September, asked 2 times, the second on Friday 11 September | their-question-unanswered |
+| 0 or 1 working day | a turn on the September thread so far | days-open-vs-own-rhythm |
+| 3 | messages from her; 2 of them ask the same question | conversation-history |
+| 0 | messages from you to the thread since 8 September | chases-since-their-last-reply |
+| 1 | thread she is on; 0 opened by her; 1 meeting, 30 minutes | how-close-you-were |
+| 0 | earlier messages, events or contacts with her name, anywhere | prior-history-scan |
+| 1 | new name on the thread on 8 September, and 1 new attendee the same day | new-name-on-thread |
+| 0 | worries with a typed answer; 1 piece of evidence on file for adoption, named, written by you, 7 months old | objection-entry-exists |
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | none: she arrived through Gary |
+| Relationship note | none |
+| Offline touch | none. Nothing about the call of 8 September |
+| Contact preference | none |
+| Correction | none |
+| Worry answers, on the offering | none typed for any worry |
+
+Nothing about how the intro call went. That is the gap `ask-rachel-meeting` asks about.
+
 ## Everyone else
 
-Not written yet. Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen Walsh, Shabana
+Not written yet. Neil Chapman, Lisa Holmes, Stephen Walsh, Shabana
 Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry, Darren Cole, Nicola Shaw,
-Andrew Doyle, Martin Hodgson and Simon Ward have one line each in `cast.md` and nothing here.
+Andrew Doyle, Martin Hodgson, Priya Nair and Simon Ward have one line each in `cast.md` and nothing here.

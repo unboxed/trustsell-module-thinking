@@ -64,6 +64,16 @@ the *when* if earned, one button. **The back** is the thinking: for Act cards, *
 one-tap question when you hold the answer) and *What happens next* (what happens after you act). For Ask cards,
 *Known so far*, *What's missing*, *What your answer changes*, *Where your answer is saved*.
 
+**A card may not state a figure the world does not carry** (proposed 22 September when one
+person's records showed three numbers on her main card that nothing could have produced; built the
+same day on the user's word). Every number and every day of the month in a card's prose, front
+matter lines included, has to appear in the records of the people the card is about, in the
+world's organisations, documents or goal. Each written section of `scenarios/<name>/world/records.md`
+ends with a "What the counts give" table, so the figures the counts compute are on record beside the
+count that gives them. The build checks only people who have a records section and says how many
+cards it skipped. Spans of seconds, minutes and hours are left alone: they are the tool's estimate
+of the seller's effort or a proposal, never a claim about the world.
+
 **The when**, shown only when earned, as one small line:
 - fresh: "Worth doing today. Stale by Friday."
 - dated by the world: "By 16 October: procurement window closes."

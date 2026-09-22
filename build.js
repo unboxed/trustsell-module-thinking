@@ -666,6 +666,65 @@ for (const c of L.cards) {
   }
 }
 
+/* ---------- a card may not state a figure the world does not carry ---------- */
+// Proposed on 22 September, after one person's records showed three numbers on one card that
+// nothing could have produced, and built the same day on the user's word: for the people who have
+// a section in world/records.md, and nobody else, so it fails nothing for a person nobody has
+// reached yet. Every figure in a card's prose, a number or a day of the month, has to appear in
+// that person's section: in a record's row, or in the section's own "What the counts give" table,
+// where the figures the counts compute are written down beside the count that gives them. A date
+// is matched as "day month". A number is matched only against numbers that are not dates, so a
+// fifteen cannot hide behind the fifteenth of a month. Years and clock times are left alone, and
+// a word is a number too ("fifteen" is 15). Weak on small numbers, which is known; strong on the
+// ones that matter, which is what it is for.
+const MONTHS = {jan: 'Jan', january: 'Jan', feb: 'Feb', february: 'Feb', mar: 'Mar', march: 'Mar', apr: 'Apr', april: 'Apr', may: 'May', jun: 'Jun', june: 'Jun', jul: 'Jul', july: 'Jul', aug: 'Aug', august: 'Aug', sep: 'Sep', sept: 'Sep', september: 'Sep', oct: 'Oct', october: 'Oct', nov: 'Nov', november: 'Nov', dec: 'Dec', december: 'Dec'};
+const WORDS = {one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90, hundred: 100, once: 1, twice: 2};
+const monthRe = Object.keys(MONTHS).join('|');
+function figuresIn(text) {
+  const dates = new Set(), numbers = new Set();
+  // Clock times, years, and spans of seconds, minutes or hours are left alone: the last are the
+  // tool's own estimate of your effort ("ten seconds") or a proposal ("a twenty-minute call"),
+  // not a claim about the world. Days, weeks and months are claims, and are checked.
+  let t = text.replace(/\b\d{1,2}:\d{2}\b/g, ' ').replace(/\b(19|20)\d{2}\b/g, ' ')
+    .replace(/\b[\w.]+[- ](second|minute|hour)s?\b/gi, ' ');
+  t = t.replace(new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)? (${monthRe})\\b`, 'gi'), (_, d, m) => { dates.add(`${+d} ${MONTHS[m.toLowerCase()]}`); return ' '; });
+  for (const m of t.match(/\b\d+(?:\.\d+)?\b/g) || []) numbers.add(String(+m));
+  t = t.replace(/\b(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)-(one|two|three|four|five|six|seven|eight|nine)\b/gi,
+    (_, a, b) => { numbers.add(String(WORDS[a.toLowerCase()] + WORDS[b.toLowerCase()])); return ' '; });
+  for (const m of t.match(new RegExp(`\\b(${Object.keys(WORDS).join('|')})\\b`, 'gi')) || []) numbers.add(String(WORDS[m.toLowerCase()]));
+  return {dates, numbers};
+}
+// A card's prose: its body, and every string in its front matter that reads as words rather than
+// as an id or a date (the phone's lines, the sure_because, the watch, the answers).
+function proseOf(c) {
+  const out = [c.markdown.replace(/^---\n[\s\S]*?\n---\n?/, '')];   // the body; the front matter's prose is walked below
+  (function walk(v) {
+    if (typeof v === 'string') { if (/\s/.test(v.trim()) && !isDate(v)) out.push(v); }
+    else if (Array.isArray(v)) v.forEach(walk);
+    else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) if (!['markdown', 'file', 'sections', 'widgetRows', 'readRows'].includes(k)) walk(x);
+  })(c);
+  return out.join('\n');
+}
+const recordSections = new Map();
+if (world.records) for (const part of world.records.markdown.split(/^## /m).slice(1)) {
+  const row = rowsOf(world.cast).find(r => r[0] === part.split('\n')[0].trim());
+  if (row) recordSections.set(row[1], part);
+}
+// The rest of the world is in the pool too: the organisations, the documents and the goal are
+// small tables any card may quote from ("live fourteen months", "one of your thirty").
+const worldFigures = figuresIn(['organisations', 'documents', 'goal'].map(k => (world[k] || {}).markdown || '').join('\n'));
+let figured = 0, unfigured = 0;
+for (const c of L.cards) {
+  const people = [...new Set([c.to, ...[].concat(c.about || [])].filter(p => p && recordSections.has(p)))];
+  if (!people.length) { unfigured++; continue; }
+  figured++;
+  const have = {dates: new Set(worldFigures.dates), numbers: new Set(worldFigures.numbers)};
+  for (const p of people) { const f = figuresIn(recordSections.get(p)); f.dates.forEach(x => have.dates.add(x)); f.numbers.forEach(x => have.numbers.add(x)); }
+  const said = figuresIn(proseOf(c));
+  const missing = [...[...said.dates].filter(d => !have.dates.has(d)), ...[...said.numbers].filter(n => !have.numbers.has(n))];
+  if (missing.length) problems.push(`${c.file}: states ${missing.join(', ')}, which the records of ${people.join(' and ')} do not carry. A card may not state a figure the world does not carry (world/records.md).`);
+}
+
 /* ---------- the phone: what a card says on playbook/phone.html ---------- */
 // A card the phone shows carries a `phone:` block with the words that differ from the card's
 // own (decided 19 September: the phone is built from the library, not typed into the deck).
@@ -705,9 +764,14 @@ const BANDS = ['Gone tomorrow', 'Worse every day', 'Holding something up', 'A da
 const DAY = 86400000;
 // What somebody is waiting on you for. `told-them-since` joined on 21 September: an answer has
 // landed on the deal and nothing has gone to the buyer since, which is the same shape as a promise
-// you have not kept. `their-promise-undelivered` is deliberately not here: that is them owing you,
-// and waiting a day on it costs a day of someone else's lateness, not of yours.
-const OWED = ['promise-made-undelivered', 'ask-made-unanswered', 'told-them-since'];
+// you have not kept. `their-question-unanswered` joined on 22 September, when a card was found
+// quoting `ask-made-unanswered` (your question to them) for a question of theirs: the day's order
+// was right for the wrong reason. `their-promise-undelivered` is deliberately not here: that is
+// them owing you, and waiting a day on it costs a day of someone else's lateness, not of yours.
+// `ask-made-unanswered` came off the same day: a question of yours they have not answered is them
+// owing you, the same shape as their promise, and the two cards that quoted it were both describing
+// a question of theirs. (My reason, not yet yours.)
+const OWED = ['promise-made-undelivered', 'their-question-unanswered', 'told-them-since'];
 const owes = c => [].concat(c.counts || []).some(n => OWED.includes(n));
 const gives = c => [].concat(c.documents || []).length > 0;
 // The band a card would have on its own, on the day it arrives, before anything waits on it.
@@ -829,5 +893,6 @@ console.log(`\n  wrote playbook/assets/data.js (${kb} KB)`);
 const standing = k => L.signals.filter(s => s.standing === k).length;
 console.log(`  under what the tool can connect today: ${standing('whole')} reads whole, ${standing('thinner')} thinner, ${standing('silent')} silent`);
 if (heldBack.length) console.log(`  held back, out of the reasoning: ${heldBack.join(', ')}`);
+console.log(`  figures checked on ${figured} card${figured === 1 ? '' : 's'} whose people have records; ${unfigured} skipped, their people have none yet`);
 if (explores.length) console.log(`  note: ${SCENARIO} pretends ${explores.join(', ')}, which the tool cannot offer today, to explore what they would allow.`);
 

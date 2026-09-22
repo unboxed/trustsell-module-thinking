@@ -4,7 +4,7 @@ order: 2
 kind: act
 signal: loose-end
 signal_status: provisional   # mapped by reading the card, not yet confirmed
-counts: [ask-made-unanswered, days-open-vs-own-rhythm, fulfilment-scan]
+counts: [their-question-unanswered, days-open-vs-own-rhythm, fulfilment-scan]   # was ask-made-unanswered until 22 September, which counts your questions to them; hers to you is the mirror count
 counts_status: provisional   # which numbers this quotes, not yet confirmed
 about: [marta-olsen, calderbank]
 to: marta-olsen

@@ -10,7 +10,7 @@ This is the sales-amplifier-thinking design workspace. Read `CLAUDE.md` first; i
 ## Where the work stands
 
 Twenty-nine passes on `library/docs/coverage.md` are done. The library
-holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 5 told sources, 25 assemblies, 134 counts (**all written**, 21 September), 42 signals,
+holds 14 channels written (8 on offer today, and only those are reasoned on in the build), 5 told sources, 25 assemblies, 135 counts (**all written**, 21 September; the 135th on 22 September), 42 signals,
 8 docs (all general; the eighth, `purpose-read.md`, is a cold account of the purpose written on 22
 September before reading the others, with where it agrees and disagrees underneath). It builds clean with `SCENARIO` set to any of the three scenarios.
 **The playbook still ships `bops`.** Since 22 September it holds two decks: `deck.html`, which
@@ -73,9 +73,14 @@ end to end: `scenarios/bops/world/records.md` holds what her channels would carr
 records any world has held), `scenarios/bops/docs/karen-hughes-pass.md` is the record of the six
 steps, her three cards are `decided`, three wrong joins came off them, `cooling-champion` reads
 `who-starts-threads` now, and three figures on her main card that the world could not produce
-were rewritten to what the counts give. Read the pass file before doing the next person: the
-method is what was being agreed, and the user has not yet said whether it is. The other
-twenty-five people in `bops` have no records section yet.
+were rewritten to what the counts give. **The user agreed the method on 22 September**, and the
+thirty-first pass ran it on Westmoor the same day: Gary Pearson and Rachel Gill, who share a
+thread, four cards decided, one count that did not exist (`their-question-unanswered`, a question
+the buyer asked you) found because two cards in two worlds had quoted its mirror. The record is
+`scenarios/bops/docs/westmoor-pass.md`. Seven cards are decided; twenty-three people in `bops`
+have no records section yet. **The figure rule is built**: `build.js` refuses a card that states
+a figure its people's records do not carry, for the people who have records, and each written
+section of `records.md` ends with a "What the counts give" table.
 
 **The thirtieth pass, the same day, added what the tool can connect at all.** The user's list
 (the Google accounts, Slack, the web, a CRM, and everything told) is `can:` on
@@ -89,7 +94,10 @@ held-back channels in `explores:` and Cority's three, for those worlds only, and
 The three things that were on a list when this file was last rewritten are done or moved: the
 counting floor, the third scenario and the `assumes:` join. Two judgement calls are still open and
 are in "Still open" below, where the user picks them up when they want to: a dated card sitting in
-band 4 whatever the distance, and the two findings from the third scenario.
+band 4 whatever the distance, and the two findings from the third scenario. **Three decisions the
+user made on 22 September**: the Karen method is agreed, so the other people follow without asking;
+the figure rule is built, scoped to people with records; and Job 2 is the parts of a message only,
+not talking points for a call (Q25 stays a named hole).
 
 ### ~~Job 0: form your own account of the purpose, before reading the accumulated thinking~~
 
@@ -115,14 +123,17 @@ justify. Do not quietly adopt theirs. Bring the disagreements to the user before
 
 ### Job 1: work it from both ends, and let the card be where they meet
 
-**One person done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`.
-The six steps below were followed as written and held up. Two things to carry into the next
-person: the counts say a lot about themselves when run by hand (six findings on one person, in
-the pass file), and the figure rule at the end of this job is proposed and waits on the user.
+**Three people done, 22 September**: Karen Hughes, in `scenarios/bops/docs/karen-hughes-pass.md`,
+then Gary Pearson and Rachel Gill together, in `westmoor-pass.md`. The six steps below were
+followed as written and held up on both. Two things to carry into the next person: the counts say
+a lot about themselves when run by hand (six findings on one person, five on the next two, in the
+pass files), and the figure rule at the end of this job is built, so a card's figures fail the
+build the moment its person has a records section. Next: Neil Chapman at Holbrook, whose two cards
+arrive the same day and one of which rests on a read that cannot fire on its own evidence.
 
 The cards' joins upward are the last `provisional` thing in the library: 44 of the 45 cards name
-their read, and every one was read off the card rather than decided. All 42 signals carry
-`assumes_status: provisional` too.
+their read, and thirty-eight were read off the card rather than decided. Thirty-nine of the 42
+signals carry `assumes_status: provisional` too.
 
 **It goes both ways, and that is the point** (the user, 22 September). This is the workspace's
 original thesis, in `library/docs/sales-questions.md`: the seller's questions are the **demand
@@ -316,17 +327,19 @@ reach what it claims.
   in a paragraph, for somebody who is not selling. F14, deferred in `docs/library-format.md` as a
   floor above the cards, and the Cority world makes it concrete: a manager who sees a stage and a
   one-line next step for fifty reps, and messages on a Friday asking where a deal is.
-- **A world holds records for one person** (found 22 September; one person done the same day).
-  `scenarios/bops/world/records.md` holds Karen Hughes. Every other person in every world still
-  has a line of prose, and the figures their cards quote live only in the cards. Until a person has
-  a records section, their cards can only be checked against themselves.
-- **A card may not state a figure the world does not carry** (proposed 22 September, not built).
-  On Karen it would have failed three figures on one card. It needs a records section per person
-  to check against, so it waits on the user and on the records. `build.js` is unchanged.
-- **The cards' joins are provisional on forty-one of forty-five cards.** Three were decided on 22
-  September from the records up, and the wrong joins they hid were exactly the kind predicted: a
-  supporting read that does not fire, kept so the card could quote one of its counts. Job 1 of the
-  task above, for the other twenty-five people in `bops` first.
+- **A world holds records for three people** (found 22 September; three done the same day).
+  `scenarios/bops/world/records.md` holds Karen Hughes, Gary Pearson and Rachel Gill. Every other
+  person in every world still has a line of prose, and the figures their cards quote live only in
+  the cards. Until a person has a records section, their cards can only be checked against
+  themselves, and the figure rule skips them.
+- ~~**A card may not state a figure the world does not carry** (proposed 22 September, not built).~~
+  Built the same day, on the user's word, for people with a records section. Seven cards checked,
+  eighteen skipped, a planted figure fails.
+- **The cards' joins are provisional on thirty-eight of forty-five cards.** Seven were decided on
+  22 September from the records up, and the wrong joins they hid were the kind predicted: a
+  supporting read that does not fire, kept so the card could quote one of its counts, and once a
+  card resting on the mirror of the count it needed. Job 1 of the task above, for the other
+  twenty-three people in `bops` first.
 - **The shape of a message is reached by nothing** (found 22 September). Once the tool has reasoned
   to a suggestion and the suggestion is to write to someone, nothing decides what the message has
   to contain or in what order. Now Job 2 of the task above.

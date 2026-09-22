@@ -1210,6 +1210,55 @@ build names the pretence; a `connected:` beyond `can:` without it is refused. Th
 stay in the folder for the day they can be offered. Story ch. 3 carries the list in the user's
 words.
 
+**Done in the thirty-first pass, 22 September.** The second and third people worked from both ends,
+Gary Pearson and Rachel Gill, who share one thread at the council furthest along. The record is
+`scenarios/bops/docs/westmoor-pass.md`. The world now holds thirty-two messages on eight threads
+for Gary, one call and three messages for Rachel, and one more name in the cast, because a read
+that needs colleagues brought in cannot fire on a world that shows one. Their four cards are
+`decided`, which makes seven of forty-five.
+
+**What the two ends found at the card.** Three reads came off: `warming` on Gary (one count
+moves, and the read needs more than one) and `understanding-gap` on both of Rachel's cards (her
+question was never answered, so it cannot have been misunderstood). Two reads the cards never
+named do fire and are on: `loose-end` under Gary's card, which is what the move actually is, and
+under Rachel's peer-call card, where her question five working days old and asked twice is the
+why-now. Champion moved from main read to supporting on Gary's card: it says why the answer
+matters, not what the move is. Every day count on the four cards was calendar days where the
+library counts working days, and one of Rachel's dates was a Saturday. And a draft claimed that
+"most councils" do something one council did.
+
+**A count that did not exist, found twice.** Gary's card quoted `ask-made-unanswered`, which
+counts questions **you** put to **them**, for a question he put to you, and the enterprise world's
+price card had done the same for a buyer's question about price. Nothing counted a question the
+buyer asked that you have not answered, and the day's order rested on the wrong count because it
+was on the owed list. `their-question-unanswered` now exists under `loose-end`, which has a third
+shape; it is on the owed list; `ask-made-unanswered` is off it, because a question of yours they
+have not answered is them owing you, the same shape as their promise. *(My reason, not yet
+yours.)* This is the "read does not exist yet" outcome `NEXT.md` said would be the most valuable
+thing the pass could find, and it was found by a card, not by a question set: the question it
+answers, F9, was already claimed.
+
+**Built: a card may not state a figure the world does not carry.** Proposed in the twenty-ninth
+pass, agreed by the user and built here. `build.js` checks every card whose people have a section
+in `world/records.md`: each number and each day-of-month in the card's prose, front matter lines
+included, must appear in those sections, in the organisations, the documents or the goal. A date
+is matched as a date and a number only against numbers that are not dates, so a fifteen cannot
+hide behind the fifteenth. Each written section ends with a "What the counts give" table, where
+the figures the counts compute are written beside the count, so that a computed figure is on
+record as well as a raw one. Spans of seconds, minutes and hours are left alone: they are the
+tool's estimate of your effort or a proposal, not a claim. Seven cards are checked today and
+eighteen skipped, and a planted figure fails the build. The check is weak on small numbers and
+says so in its comment.
+
+**Five things the counts said about themselves**, recorded and not fixed: a customer's standing
+offer to be a reference (on record since March) is on no count, because `customer-introduction`
+counts names a customer gave you and needs LinkedIn; `objection-entry-exists` cannot tell "no
+entry for this worry" from "nobody has told me any worries", and no Ask asks for them;
+`who-starts-threads` lost the fact in its three-month summary window for the second person
+running; `internal-advocacy-mentions` was being read off future intent, and held only because
+three real claims were on the records; and a read can fire nine days before its card arrives,
+because a card's `arrives` is the world's week and nothing says how the two relate.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1236,17 +1285,19 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on forty-one of forty-five cards.** Three were
-  decided in the twenty-ninth pass, from the records up, and the method is in
-  `scenarios/bops/docs/karen-hughes-pass.md`. The rest were read off the card rather than decided;
-  the forty-fifth is the News card, which rests on records and names no read. Thirty-nine signals
-  still carry `assumes_status: provisional`; `cooling-champion`, `loose-end` and `missing-people`
-  were tested against the word they claim and are `decided`. Every other person needs a records
-  section first, because until a world carries what its channels would hold, a card can only be
-  checked against itself.
+- **The cards' joins upward are still provisional on thirty-eight of forty-five cards.** Three
+  were decided in the twenty-ninth pass and four in the thirty-first, from the records up, and the
+  method is in `scenarios/bops/docs/karen-hughes-pass.md` and `westmoor-pass.md`. The rest were
+  read off the card rather than decided; the forty-fifth is the News card, which rests on records
+  and names no read. Thirty-nine signals still carry `assumes_status: provisional`;
+  `cooling-champion`, `loose-end` and `missing-people` were tested against the word they claim and
+  are `decided`. Every other person needs a records section first, because until a world carries
+  what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
-  see for a buyer, and a rule for a promise re-made. Named here rather than done.
+  see for a buyer, and a rule for a promise re-made. Named here rather than done. The thirty-first
+  pass added two of the same weight: `who-starts-threads` needs its summary to carry the change
+  its rows show, and a customer's offer to vouch for you needs a count.
 - **Three reads are silent today and two thinner**, under what the tool can connect (thirtieth
   pass). Nothing to fix in the library: they wait on the buyer's handover becoming a capability.
   The broker's world rests on four connections the tool does not offer, so its twelve cards are an

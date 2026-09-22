@@ -5,7 +5,7 @@ label: Open items
 blurb: What is owed and not yet done, and how long it has waited.
 shape: an empty circle, what is owed and by whom, and its age on the right
 parts: 3
-fed_by: [promise-made-undelivered, ask-made-unanswered, days-open-vs-own-rhythm]
+fed_by: [promise-made-undelivered, ask-made-unanswered, their-question-unanswered, days-open-vs-own-rhythm]
 ---
 
 # Open items

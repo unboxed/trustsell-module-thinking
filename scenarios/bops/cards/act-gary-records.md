@@ -2,12 +2,12 @@
 id: act-gary-records
 order: 4
 kind: act
-signal: champion
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [loose-end, warming]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [ask-made-unanswered, who-starts-threads, reply-speed-vs-own-rhythm, internal-advocacy-mentions, colleagues-looped-in-count]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal: loose-end
+signal_status: decided   # 22 September: worked from the records up, see ../docs/westmoor-pass.md. Was champion; the move is the answer he is owed, and champion is why it matters
+supporting: [champion]   # warming came off 22 September: one count moves, and it needs more than one
+supporting_status: decided
+counts: [their-question-unanswered, days-open-vs-own-rhythm, fulfilment-scan, reply-speed-vs-own-rhythm, colleagues-looped-in-count, internal-advocacy-mentions]
+counts_status: decided
 about: [gary-pearson, westmoor]
 to: gary-pearson                # who the move reaches; one move per person at a time
 arrives: 2026-09-16             # the day the tool puts it on the home
@@ -55,20 +55,20 @@ phone:
 
 # Answer Gary Pearson today
 
-He asked last Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his head of IT, joined on 8 September. That is a door opening.
+He asked on Thursday whether BOPS can import their existing case records, on the thread Rachel Gill, his Head of IT, joined on 8 September. That is a door opening, and it has had no answer.
 
 ## What happened
 
-- Why now: his question has sat six days. The longer it waits, the smaller the door.
-- Gary started 4 of your last 6 threads, replies within a day, and writes like an owner: "once we've rolled this out", "I'll put it to procurement".
-- Rachel joined his thread on 8 September, the day you met her. Nobody from Westmoor IT had been on a thread before. He is building his coalition for you.
+- Why now: his question has sat four working days on a thread where every turn so far came the same day or the next. The longer it waits, the smaller the door.
+- Gary answers you in a working day, on nine replies since February, and writes like an owner: "once we've rolled this out", "I'll put it to procurement".
+- He has brought two colleagues in himself: Priya Nair to the demo in March, and Rachel Gill, his Head of IT, on 8 September. Three times he has written that he is making the case inside Westmoor. Nobody from Westmoor IT had been on a thread before.
 - Records import has a real answer: yes, in stages, and East Marston did exactly that. Lead with the answer, then the case study, then the partial rollout as the easy first step.
 
 ## Sources
 
-- gmail · The Westmoor thread: Gary's message of 10 September, and Rachel on it since 8 September.
-- gmail · Your mail with Gary since February: 31 messages, reply times, and who started what.
-- drive · "Records import: how it works" and the East Marston case study.
+- gmail · The Westmoor thread: Gary's question of 10 September, and nothing from you on the thread since 8 September.
+- gmail · Your mail with Gary since February: 32 messages on 8 threads, how fast he replies, who he has copied in, and what he says he has argued inside Westmoor.
+- drive · The records import note and the East Marston case study.
 - goal-told · Your goal: partial adoption first, which makes an implementation question from a champion read as progress.
 
 ## Still unclear
@@ -83,7 +83,7 @@ He asked last Thursday whether BOPS can import their existing case records, on t
 
 Hi Gary,
 
-Short answer: yes. BOPS imports existing case records, and most councils do it in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.
+Short answer: yes. BOPS imports existing case records, and it is usually done in stages rather than in one go. East Marston moved their open cases first and the archive later. The case study is attached and has the detail.
 
 The import note is attached too, in case the how matters more than the story.
 

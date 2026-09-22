@@ -3,11 +3,11 @@ id: ask-rachel-meeting
 order: 11
 kind: ask
 signal: new-stakeholder
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [understanding-gap]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [new-name-on-thread, prior-history-scan, re-asked-questions]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/westmoor-pass.md
+supporting: []   # understanding-gap came off 22 September: her question was never answered, so it cannot have been misunderstood
+supporting_status: decided
+counts: [new-name-on-thread, new-attendee-on-event, prior-history-scan, head-of-signature-scan]
+counts_status: decided
 about: [rachel-gill, westmoor]
 arrives: 2026-09-17             # the day the tool puts it on the home
 changes: [act-rachel-peer-call]   # cards the answer changes; build.js holds them behind this Ask
@@ -47,7 +47,8 @@ You met her on 8 September, and she joined the Westmoor thread the same day. I c
 
 ## Known so far
 
-- Your calendar: "Westmoor: intro with Rachel Gill", Tuesday 8 September, 30 minutes.
+- Your calendar: "Westmoor: intro with Rachel Gill", Tuesday 8 September, 30 minutes, set up by Gary.
+- Before that day her name was on no message, no event and no contact of yours. Her signature says Head of IT, and Westmoor's own site puts IT in its own directorate: a senior name where the map had nobody.
 - Three emails from her since. Two ask, in different words, whether officers will use it.
 - My own read from the emails is cautious. That is a reading, and I'd like to check it against yours.
 
@@ -58,9 +59,9 @@ You met her on 8 September, and she joined the Westmoor thread the same day. I c
 
 ## Timeline
 
-- 8 September · Your intro call with Rachel, 30 minutes
+- 8 September · Your intro call with Rachel, 30 minutes, set up by Gary
 - 8 September · She joins Gary's thread the same day
-- Since then · Three emails from her. Two ask whether officers will use it
+- 9 and 11 September · She asks whether officers will use it, then asks it again
 - Today · No recording and no notes from the call
 
 ## What's missing

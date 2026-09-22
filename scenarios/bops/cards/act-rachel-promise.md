@@ -3,9 +3,11 @@ id: act-rachel-promise
 order: 3
 kind: act
 signal: loose-end
-signal_status: provisional   # mapped by reading the card, not yet confirmed
+signal_status: decided   # 22 September: worked from the records up, see ../docs/westmoor-pass.md
+supporting: []   # nothing else needed: a promise, a date, and nothing that closed it
+supporting_status: decided
 counts: [promise-made-undelivered, days-open-vs-own-rhythm, fulfilment-scan]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+counts_status: decided
 about: [rachel-gill, westmoor]
 to: rachel-gill                # who the move reaches; one move per person at a time
 arrives: 2026-09-16             # the day the tool puts it on the home
@@ -58,14 +60,14 @@ You promised her the data-residency note on 8 September. It hasn't gone, and it 
 
 ## What happened
 
-- Why now: it is eight days since you wrote "I'll send the data-residency note this week", and the week is over. Every day makes the next email harder.
-- Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread.
-- The note exists and is current. Nothing is stopping this except that it slipped.
-- Westmoor is at coalition, one of your two furthest-along councils. An unkept promise to the newest person in it costs more than anywhere else.
+- Why now: six working days since you wrote "I'll send the data-residency note this week", and that week ended on Friday. On this thread every turn so far came the same day or the next.
+- Rachel is Head of IT at Westmoor, and data residency was her first question, the day she joined the thread. Nothing from you has reached the thread since that reply.
+- The note exists and is current: last edited on 2 September, shared with nobody. Nothing is stopping this except that it slipped.
+- Westmoor is at coalition, one of your two furthest-along councils with Felton. An unkept promise to the newest person in it costs more than anywhere else.
 
 ## Open items
 
-- The data-residency note · You owe Rachel, promised 8 September · 8 days
+- The data-residency note · You owe Rachel, promised 8 September · 6 working days
 
 ## Documents
 
@@ -74,9 +76,9 @@ You promised her the data-residency note on 8 September. It hasn't gone, and it 
 ## Sources
 
 - gmail · Your reply to Rachel, 8 September: "I'll send the data-residency note this week".
-- gmail · No message from you to Rachel since.
-- drive · The data-residency note, updated 2 September.
-- gmail · The Westmoor thread: Rachel's question of 8 September.
+- gmail · The Westmoor thread since: three messages in, two from her, none from you.
+- drive · The data-residency note, last edited 2 September, shared with nobody.
+- gmail · The Westmoor thread: Rachel's question of 8 September, where the data lives and who can see it.
 
 ## Still unclear
 
