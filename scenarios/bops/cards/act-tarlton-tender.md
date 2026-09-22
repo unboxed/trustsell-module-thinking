@@ -3,17 +3,17 @@ id: act-tarlton-tender
 order: 15
 kind: act
 signal: fit-match
-signal_status: provisional   # mapped by reading the card, not yet confirmed
-supporting: [buying-intent, warm-path]
-supporting_status: provisional   # the reads its other counts belong to, not yet confirmed
-counts: [fit-factors-met, budget-or-procurement-entered, target-cold-to-you]
-counts_status: provisional   # which numbers this quotes, not yet confirmed
+signal_status: decided   # decided 22 September, from the records up (docs/tarlton-pass.md)
+supporting: [stated-priorities]
+supporting_status: decided   # stated-priorities for the passages, their date and whose words they are. buying-intent and warm-path came off: neither fires on an organisation with no thread and no bridge
+counts: [fit-factors-met, fit-shape-completeness, priorities-they-state, how-fresh-their-words-are, said-by-them-or-about-them]
+counts_status: decided   # run by hand on 22 September; the figures are in world/records.md
 about: [darren-cole, tarlton]
 to: darren-cole                # who the move reaches; one move per person at a time
 arrives: 2026-09-18             # the day the tool puts it on the home
 documents: []
 sure: "sure"
-sure_because: "A fact on record: the tender's own dates."
+sure_because: "Their own words on their own portal, with their own dates."
 when:
   mode: dated
   until: 2026-10-02
@@ -54,28 +54,38 @@ phone:
 
 # Send Tarlton two clarification questions
 
-Their tender went out last Wednesday and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
+Their tender went out on 9 September and reads like your pitch. Darren Cole is the named contact. You have never spoken to anyone there.
 
 ## What happened
 
-- Why now: clarification questions close 2 October. A good question is the one legitimate way to talk to them during a tender.
-- Section 2.3 asks to "reduce officer time on case administration" and section 4 wants a solution that "works alongside existing systems". Those are your two sentences.
-- Tarlton is on your thirty and cold: no names, no threads. Darren Cole is procurement-facing; the service lead is unknown.
-- Tender rules limit contact. The questions are the contact.
+- Why now: clarification questions close on 2 October, and 7 of the window's 17 working days have gone. A good question is the one legitimate way to talk to them during a tender.
+- Section 2.3 asks to "reduce officer time on case administration" and section 4 wants a solution that "works alongside existing systems". Those are Tarlton's own words, published on 9 September, and they are your two sentences.
+- Two of the three things you told me a good fit looks like are met, in their words: the problem, and a council at the point of buying. The third, how many officers, the tender does not say. Nothing on record says Tarlton is the wrong shape.
+- Tarlton is on your thirty and cold: no names, no threads, nobody who could introduce you. Darren Cole is the procurement contact; you told me a buy at a council needs a head of service, a digital lead and senior officers, and none of them is named.
+- Tender rules limit contact to the portal. The questions are the contact.
 
 ## Sources
 
-- web · Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October.
-- web · The tender PDF, sections 2 and 4.
+- web · Tarlton's procurement portal, "Case management modernisation", published 9 September, closes 9 October, clarifications by 2 October through the portal only.
+- web · The tender PDF, sections 2 and 4, in Tarlton's own words.
+- offering-told · What you told me a good fit looks like, and who a buy at a council needs.
 - goal-told · Your list of thirty, Tarlton marked cold.
 
 ## Still unclear
 
-- Whether a tender this size can be won cold. I have nothing to go on either way.
+- Whether a tender this size can be won cold. I have nothing to go on either way, and the notice gives no value.
+- How many officers the service has. The tender counts cases, not people.
 
 ## What happens next
 
-- Once sent I'll watch the portal for their answers and published Q&A, and I'll raise the bid or no-bid decision with you before 2 October.
+- Once sent I'll watch the portal for their answers and published Q&A, and I'll ask you whether to bid before 2 October.
+
+## The message
+
+- opens with · The tender's own words: its title, and the section each question is about, quoted back · priorities-they-state, said-by-them-or-about-them
+- points at · Only the tender's own sections, 2.3 and 4. Answers to clarifications are published to every bidder, so nothing of yours goes in · priorities-they-state, web
+- asks · Two facts the document does not state: whether a baseline figure for officer time exists, and whether replacing the current system is in scope. Each is the unknown in the fit, asked as a fact · fit-factors-met
+- holds back · Everything about BOPS: no pitch, no document, no price. Three things on your shelf fit their two sentences, and none can go through a portal's Q&A · evidence-that-fits-them, web
 
 ## The draft
 

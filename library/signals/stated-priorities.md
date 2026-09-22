@@ -10,7 +10,7 @@ counts: [priorities-they-state, how-fresh-their-words-are, said-by-them-or-about
 answers: [F1]
 needs: [web]
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: made on an organisation never contacted, and it was the only read that could be
 pull: None. It reads what the buyer published and nothing of yours
 ---
 

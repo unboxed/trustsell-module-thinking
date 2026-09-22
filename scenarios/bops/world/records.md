@@ -8,8 +8,8 @@ about: what the connected channels would actually hold, person by person
 What the connected channels hold about each person, written as fiction on 22 September so that the
 counts have something to be done over and a card can be checked against something other than
 itself. One section per person. Karen Hughes, Gary Pearson, Rachel Gill, Neil Chapman, Lisa Holmes, Stephen
-Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker and Sanjay Mistry are written; every other
-section says so.
+Walsh, Shabana Akhtar, David Marshall, Michelle Turner, Julie Barker, Sanjay Mistry and Darren Cole
+are written; every other section says so.
 
 Working days are counted as Monday to Friday. Monday 31 August 2026 is a bank holiday in England
 and is marked where it falls. Today is Wednesday 16 September 2026.
@@ -1295,10 +1295,113 @@ Figures the counts compute from Julie's rows, run by hand on 22 September
 
 Nothing. He is on no told record.
 
+## Darren Cole
+
+Procurement contact, Tarlton Borough Council, by the council's own tender notice. The notice gives
+`procurement@tarlton.gov.uk`, a team's address and not his. Nothing between you and him, and
+nothing between you and anyone at Tarlton: no message either way, no event, no call, nobody in
+your Slack, nobody in Contacts. Everything on record about Tarlton is on the open web, and all of
+it was published by Tarlton. LinkedIn is not connected.
+
+### Gmail: the threads
+
+None. Nothing has ever been sent to or received from an address at tarlton.gov.uk, and no message
+in your mailbox mentions Tarlton or Darren Cole. There is no thread to table.
+
+### Calendar
+
+Nothing with anyone at Tarlton, ever, and nothing scheduled.
+
+### Meet
+
+Nothing.
+
+### Drive
+
+Nothing has been shared with anyone at Tarlton. Three things on your shelf speak to what the
+tender asks for, and none has left it:
+
+| File | Type | What it speaks to |
+|---|---|---|
+| The officer-time one-pager | Doc | Section 2.3, officer time on case administration |
+| The alongside one-pager | Doc | Section 4, working alongside existing systems |
+| The East Marston case study | Doc | Both: fourteen months live, case admin down by about a third |
+
+### Contacts
+
+Nobody at Tarlton is in Contacts. Darren Cole has never written to you, so there is no signature
+to take a title from; "procurement contact" is how the notice describes him.
+
+### Web
+
+| Found | Where | Dated | What it says |
+|---|---|---|---|
+| The tender notice, "Case management modernisation" | Tarlton's procurement portal, tarlton.gov.uk | published Wed 9 Sep | Open to tender. Closes Fri 9 Oct at noon. Clarification questions through the portal's messaging by Fri 2 Oct at 17:00; answers are published to every bidder. Contact for the procurement: Darren Cole. "All communication during this procurement must go through the portal. Bidders must not approach council officers directly." No estimated value is given |
+| The tender document, sections 1 to 6 | the same portal, a PDF attached to the notice | Wed 9 Sep | Section 2.3: the council wants to "reduce officer time on case administration". Section 4: the solution must "work alongside existing systems"; it does not say whether replacing the current case system is in scope. Section 3 gives the scale as around 40,000 cases a year across customer services, revenues and benefits, and environmental health. No count of officers. The current system is referred to and not named |
+| About the council | tarlton.gov.uk | undated | A borough of about 120,000 people |
+| — | tarlton.gov.uk and the open web | — | Nothing else published by Tarlton in the last year mentions the case system, the tender, or anyone leaving or arriving. Nothing published about Tarlton by anybody else mentions the tender |
+
+### Slack
+
+Nobody from Tarlton is in your workspace. Nothing in Slack mentions Tarlton or Darren Cole;
+Simon Ward has never named the council.
+
+### What the counts give
+
+Figures the counts compute from the rows above, run by hand on 22 September
+(`../docs/tarlton-pass.md`). The tender card arrives on Friday 18 September, and working days are
+counted from the 18th unless the row says otherwise.
+
+| Figure | What it is | Count |
+|---|---|---|
+| 3 of 3 | factors the told fit-shape names, all filled, all as prose: a service lead with ten to forty officers (size), a council inside the twelve months before a break in its current system's contract (situation), officer time lost to case administration and chase calls (the problem). Only the size carries a number | fit-shape-completeness |
+| 2 met, 1 unknown, 0 missed | the situation, met: an open procurement for a case system is the window the profile names. The problem, met, in their own words: section 2.3. The size, unknown: the tender gives cases a year and no count of officers. Nothing is missed, because nothing on record says Tarlton is the wrong shape | fit-factors-met |
+| 0 | factors demonstrably failed | fit-factors-missed |
+| 3 | intentions Tarlton has stated in what it published: to modernise case management (the notice's title), to reduce officer time on case administration (section 2.3), to have the solution work alongside existing systems (section 4) | priorities-they-state |
+| 7 working days | the age of those words on 18 September: published 9 September | how-fresh-their-words-are |
+| 3 of 3 | passages that are Tarlton's own, on its own portal. Nothing about the tender has been written by anybody else | said-by-them-or-about-them |
+| absent | your use-cases matched against their stated priorities: no use-case has been told, so there is nothing of yours to match. Read by hand, the profile's value proposition touches section 2.3 and says nothing that touches section 4 | relevance-to-stated-factors |
+| 0 | use-cases on file | use-cases-on-file |
+| none | a record of how you came by Darren Cole that the origin gather reads: he is a name on a notice you found on the web, and nothing has been typed about it | route-in-on-record |
+| cold | to you: nothing on record between you and him, or between you and anyone at Tarlton | target-cold-to-you |
+| 0, 0 | people on a thread or an event with both you and anyone at Tarlton; people you deal with connected to anyone there, with LinkedIn held back | shared-contact-on-thread |
+| 0 | contact between anyone at your firm and Tarlton, on any record the tool can see | colleague-touches-on-record |
+| 0 | names at Tarlton that East Marston has ever given you | names-they-have-given-you |
+| 0 | times money or procurement has entered a conversation with Tarlton: there is no conversation. The tender is procurement, and it is on the web, which this count does not read | budget-or-procurement-entered |
+| 0 | dates Tarlton has stated to you on a thread. Two dates in its published words, 2 October and 9 October, which this count does not read | dated-facts-in-their-words |
+| nothing to count | the working time to their date, because the count has no date from a thread. By hand, from the notice: 10 working days to 2 October and 15 to 9 October on the 18th; 7 of the window's 17 already gone | time-to-their-date |
+| 0, 0 | messages you have sent Tarlton since it last wrote, and in all | chases-since-their-last-reply |
+| 3 | things on your shelf that fit a buyer of this shape: the officer-time one-pager, the alongside one-pager, the East Marston case study, matched against a fit-shape held as prose | evidence-that-fits-them |
+| £45,000 a year | your price for Tarlton, from the profile's band for a population up to 150,000 against a borough of about 120,000; implementation quoted separately at £18,000 to £35,000. Discount room not told | your-price |
+| absent | what Tarlton can bear: the notice states no value, and nothing has been said | what-they-can-bear |
+| 0 | people at Tarlton you have exchanged anything with | people-reached-count |
+| nobody | reached who can decide. The one name on record is the procurement contact, whom the notice forbids you to approach except through the portal | decision-maker-reached |
+| absent, and 1 off the list | the roles the profile's Customer field names, a head of service with the budget, a digital or IT lead, senior officers, held against who is on record: nobody. The one person named, a procurement contact, is no role on the list | people-covered-vs-needed |
+| 0 | tries since they last wrote; there is nothing to stop | times-you-chase |
+
+The bid Ask's own dates are the tool's and not Tarlton's: it arrives on Tuesday 29 September,
+once the questions are in; put off, it asks again on Thursday 1 October; answered "not sure", it
+asks again on Monday 5 October, the first working day after the window closes.
+
+### What you told the tool
+
+| Told record | What it holds |
+|---|---|
+| Seed contact | none |
+| Target list | Tarlton is one of the thirty, standing at cold |
+| Lead source | none: nothing typed about how you came by Darren Cole |
+| Deal seed | none: no deal has been named on Tarlton. The bid Ask's answer is what would name one |
+| Relationship note | none |
+| Offline touch | none |
+| Contact preference | none |
+| Correction | none |
+| Fit-shape, on the offering | the profile's Customer and Value proposition fields, as prose |
+| Use-case, on the offering | none |
+| Pricing, on the offering | the band, £45,000 a year up to 150,000 people; implementation quoted separately; per year. No discount room |
+
 ## Everyone else
 
-Not written yet. Darren Cole, Nicola Shaw, Andrew Doyle, Martin
-Hodgson, Priya Nair, Tom Bradley, Anita Rao, Simon Ward and the seven others at North Ridley have
-one line each in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's
+Not written yet. Nicola Shaw, Andrew Doyle, Martin Hodgson, Priya Nair, Tom Bradley, Anita Rao,
+Simon Ward and the seven others at North Ridley have one line each in `cast.md` and nothing here. Tom Bradley and Anita Rao appear in Shabana Akhtar's
 section, and Paul Denning, Claire Sutton, Nadia Frost, Ben Okafor, Hannah Price and Rob Fielding in
 Michelle Turner's, because everything on record about them is on her threads and her invite.

@@ -10,7 +10,7 @@ counts: [fit-factors-met, fit-factors-missed, fit-shape-completeness]
 answers: [Q1, Q2, Q3]
 needs: []
 assumes: []
-assumes_status: provisional
+assumes_status: decided   # 22 September: made on an organisation never contacted, from one published document and the told shape; it needed nothing of the sale
 pull: People's lead situation, to judge the match against the fit-shape
 ---
 

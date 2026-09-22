@@ -1482,6 +1482,32 @@ is answered by hand. And a month in their words, "pushed to September", is kept 
 `dated-facts-in-their-words` and counted down to by nothing, though it was the reason for the
 note that came back.
 
+**Done in the fortieth pass, 22 September.** The twelfth person worked from both ends, Darren
+Cole at Tarlton, the first in this world you have never exchanged anything with and the first
+run of `fit-match` and `stated-priorities` from the records up. The record is
+`scenarios/bops/docs/tarlton-pass.md`. Nineteen of forty-five cards are `decided`.
+
+**What the two ends found at the card.** Everything on record about Tarlton is a notice and a
+PDF on its own portal, and both reads that fire read exactly that: the fit, two of three factors
+met in their own words and one unknown, and the passages, dated and theirs. `buying-intent` came
+off: the card was right that a tender is a buying signal and wrong about the count, because
+`budget-or-procurement-entered` reads a conversation and there is none. `warm-path` came off with
+it, a read that does not fire kept for its gate count, the Karen case again, so "cold" rests on
+the told list now. `stated-priorities` was reached through no read the card named and is
+supporting. The Ask about bidding is demand with no supply, and correctly so: F19 is the Brain's
+and nothing holds the goal's economics, so the fit is what the card knows and a deal seed is what
+the answer becomes, which the card now says. Both reads' `assumes: []` is decided, on an
+organisation nobody has contacted.
+
+**What the counts said about themselves.** A date the buyer published is counted by nothing:
+[`dated-facts-in-their-words`](../counts/dated-facts-in-their-words.md) reads threads only, so
+the two most consequential dates in this world, the clarification close and the tender close,
+reach `deadline-they-gave` through no count, and the card's *when* rests on the web record
+directly, as North Ridley's rested on the invite. The firm world's tender card did not meet this
+because there the buyer said the date on a thread. The fit's unknown column is what the
+clarification questions ask, and nothing in the library says a clarification is an unknown asked
+as a fact. And the notice's rule of contact, portal only, answers Q9 and is read by no count.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*
@@ -1508,15 +1534,18 @@ is anybody's.)*
   vocabulary and the old cast names, and each says at the top that it does. And the rename nobody
   has asked for: `gmail`, `calendar`, `drive`, `contacts` and `meet` are vendor names in a general
   rung, which is the same objection that turned `salesforce` into `crm` on the user's asking.
-- **The cards' joins upward are still provisional on twenty-nine of forty-five cards.** Three
+- **The cards' joins upward are still provisional on twenty-six of forty-five cards.** Three
   were decided in the twenty-ninth pass, four in the thirty-first, two in the thirty-second, two
-  in the thirty-fourth, two in the thirty-sixth and three in the thirty-seventh, from the records
+  in the thirty-fourth, two in the thirty-sixth, three in the thirty-seventh, one in the
+  thirty-ninth and two in the fortieth, from the records
   up, and the method is in `scenarios/bops/docs/karen-hughes-pass.md`, `westmoor-pass.md`,
-  `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md` and `north-ridley-pass.md`. The rest
+  `holbrook-pass.md`, `burnham-pass.md`, `felton-pass.md`, `north-ridley-pass.md`,
+  `moreton-pass.md` and `tarlton-pass.md`. The rest
   were read off the card rather than decided; the forty-fifth is the News card, which rests on
-  records and names no read. Thirty-six signals still carry `assumes_status: provisional`;
-  `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it` and
-  `understanding-gap` were tested against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
+  records and names no read. Thirty-three signals still carry `assumes_status: provisional`;
+  `cooling-champion`, `loose-end`, `missing-people`, `blocker`, `can-they-carry-it`,
+  `understanding-gap`, `champion-went-dark`, `fit-match` and `stated-priorities` were tested
+  against the word they claim and are `decided`. Every other person needs a records section first, because until a world carries
   what its channels would hold, a card can only be checked against itself.
 - **Three of the six findings about counts in the twenty-ninth pass are worth fixing**, and none
   was fixed in the same breath: the reply-gap count's words, the scan's list of records it cannot
