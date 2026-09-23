@@ -204,6 +204,17 @@
       }).join('');
   });
 
+  /* The learning loop (23 September): three Asks as bare cards of one height, drawn and worked
+     by phone.js, which the deck loads for the reply sheets. A figure names its card; the front,
+     the buttons and the reply sheet are the phone's own, so tapping a button opens the slot inside
+     the card. No details behind them (the user, 23 September). */
+  Array.prototype.slice.call(document.querySelectorAll('.loop-card[data-card]')).forEach(function (el) {
+    var card = find('cards', el.getAttribute('data-card'));
+    if (!card || !window.PHONE) return;
+    el.classList.add('screen');
+    el.innerHTML = PHONE.front(card) + '<div class="screen__overin">' + PHONE.actions(card) + PHONE.said(card) + '</div>' + PHONE.sheet(card);
+  });
+
   /* The trail: one question walked down, a rung to a slide. Drawn from data.js the way the
      climb and the questions are, so nothing on the slide is typed and nothing goes stale. A
      slide names the question (data-question), the one read the descent follows (data-read) and

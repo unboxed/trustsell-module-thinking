@@ -176,6 +176,8 @@
   /* The reply sheet: the draft, or the card's answers to choose from. */
   function sheet(card) {
     var p = card.phone, module = card.reply && card.reply.module;
+    /* A tap with nothing to send (a News card, a rest) has no sheet to raise. */
+    if (p.act_does === 'tap' && !(card.sections && card.sections['The draft'])) return '';
     if (p.act_does === 'open') {
       var several = module === 'several', rows = module === 'field' ? '' : (card.answers || card.picks || []).map(function (a) {
         return '<li role="' + (several ? 'checkbox' : 'radio') + '" aria-checked="false" tabindex="0">' + esc(a.label || a) + '</li>';
@@ -648,7 +650,7 @@
     var sent = e.target.closest('.screen [data-send-message]'), undo = e.target.closest('[data-undo]');
     if (sent) {
       var sc = scope(sent);
-      sc.querySelector('.reply-sheet').classList.remove('is-open');
+      var rs = sc.querySelector('.reply-sheet'); if (rs) rs.classList.remove('is-open');
       sc.classList.add('is-sent');
       remember(sc);
       freed(sc);
@@ -702,6 +704,9 @@
   }
 
   /* A list of answers taller than the sheet fades at its foot while there are more rows below. */
+  /* What the deck draws with (23 September): the learning-loop slide shows a card's front, its
+     buttons and its reply sheet as a bare card, and phone.js's own click handling works them. */
+  window.PHONE = {front: front, actions: actions, said: said, sheet: sheet};
   function more(rows) {
     if (rows) rows.classList.toggle('is-more', rows.scrollTop + rows.clientHeight < rows.scrollHeight - 2);
   }

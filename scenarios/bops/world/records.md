@@ -1888,6 +1888,9 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | 0 | steps a buy at a council takes, as told: nothing typed | steps-the-buy-needs |
 | absent | steps with a sign on the record: with no told list there is nothing to match a sign to. What the threads hold anyway is a step named at six councils | steps-with-a-sign |
 | 5, 3 | what the tool proposed on its own cards: the first five matches shown before any council is added; three councils at a time, with a likely name at each by the Monday after | history-told, card raised |
+| 20 | cards raised in the week of 14 September, spread as if you sold every working day: ten on Wednesday the 16th, six on Thursday the 17th, four on Friday the 18th. When you opened them is on the same record; how much of your week is selling is on none (23 September) | history-told, card raised |
+| 0 | use-cases on the offering tied to a team or a kind of council: none told. The profile's value proposition is one paragraph for every council (23 September) | use-cases-on-file |
+| absent | your use-cases matched against what a council stated: nothing of yours to match (23 September) | relevance-to-stated-factors |
 
 ### What you told the tool
 
@@ -1901,6 +1904,8 @@ Figures the counts compute from the rows above, run by hand on 22 September
 | Fit-shape, on the offering | the profile's Customer field, as prose: councils in the UK; a service lead responsible for ten to forty officers; a buying group of a head of service, a digital or IT lead, and one or two senior officers |
 | Buying process for a council | not filled |
 | Voice sample | none; the tool reads what you send |
+| Time and cadence, on the profile | not filled: nothing says how much of your week is selling. Asked on 21 September (`ask-sales-week`) |
+| Use-case, on the offering | none: no team or kind of council has a use-case of its own. Asked on 18 September (`ask-teams`) |
 | Voice rules | none set |
 | Lead source | none typed, for anyone |
 | Relationship note, Offline touch | none |

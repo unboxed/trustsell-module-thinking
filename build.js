@@ -485,10 +485,21 @@ for (const c of L.cards) {
   must(c.file, 'rests', c.rests, S.records, 'record address');
   if (c.kind === 'news' && !c.signal && ![].concat(c.rests || []).length)
     problems.push(`${c.file}: a News card rests on a record; name it in rests, as "crm#deal-record"`);
-  if (c.kind !== 'news' && [].concat(c.rests || []).length)
-    problems.push(`${c.file}: rests is News only; every other kind rests on a read, in signal`);
-  if (c.kind !== 'news' && !c.signal)
-    problems.push(`${c.file}: no signal; only a News card may rest on a record instead of a read`);
+  // An Ask may rest on a told record instead of a read, when the record it fills is read by no
+  // count: what kind of seller you are, how much of your week is selling. No read can fire on a
+  // setting nobody has typed, and the tool still has to ask (23 September, the learning loop;
+  // playbook/world.md, "An Ask may rest on a told record"). Every other kind still rests on a read.
+  const askRests = c.kind === 'ask' ? [].concat(c.rests || []) : [];
+  for (const r of askRests) {
+    const src = r.split('#')[0];
+    if (!L.told.some(t => t.id === src)) problems.push(`${c.file}: an Ask may rest only on a told record, as "profile-told#operator-dial"; "${r}" is not one`);
+    else if (L.counts.some(x => [].concat(x.needs || []).includes(r)))
+      problems.push(`${c.file}: "${r}" is read by a count, so an Ask about it rests on that count's read, in signal`);
+  }
+  if (c.kind !== 'news' && c.kind !== 'ask' && [].concat(c.rests || []).length)
+    problems.push(`${c.file}: rests is for News, or an Ask that fills a told record; every other kind rests on a read, in signal`);
+  if (c.kind !== 'news' && !c.signal && !askRests.length)
+    problems.push(`${c.file}: no signal; only a News card, or an Ask that fills a told record, may rest on a record instead of a read`);
   if (![].concat(c.about || []).length) problems.push(`${c.file}: about names nothing; a card is about at least one noun`);
   must(c.file, 'about', c.about, S.nouns, 'person, organisation, document or offering in world/');
   must(c.file, 'to', c.to, new Set(castIds.filter(x => x !== 'you')), 'person in world/cast.md other than you');

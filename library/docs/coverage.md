@@ -1785,6 +1785,22 @@ read that cannot apply in a world leaves its question answered by anything else,
 answer in both: usually not, and the fact that would answer it is already on a record the tool
 holds. That list is in each world's ledger.
 
+**Done in the fiftieth pass, 23 September.** The learning loop, for the demo, on the user's ask:
+a slide in the deck, "Learning loop", three Asks as bare cards of one height that open their slot
+when tapped, drawn and worked by `phone.js`. Two Asks were written for it in the council world,
+and each is a hole the passes had already named: `ask-teams`, on `lead-with-this`, which the
+North Ridley and Tarlton passes found silent on your side because no use-case is told for any team
+or kind of council; and `ask-sales-week`, on the time-and-cadence dial, which story chapter 10 and
+the thirty-eighth pass found nothing asks about. The second could not build: an Ask must rest on a
+read, and the dial is read by no count. The rule is now that an Ask filling a told record no count
+reads may rest on that record, the way News rests on one; the build refuses any other `rests` on
+an Ask. What the answer paces is still not built: the day's order knows one cadence
+(`playbook/world.md`, "The week, cut two ways"). Two things came out sideways. A card with a tap
+and nothing to send crashed the phone, so the Ashworth rest card had been blank on "The details"
+since 22 September; two guards fix it. And the seller's records now say what the tool's own
+history holds about the week, twenty cards on three days, which is the first time a card has
+asked because of what the tool itself did.
+
 **Still open.** *(Gathered on 21 September, after the twenty-eighth pass, from the prose the later
 passes left above this list. Nobody has done any of it, and the first line is the user's before it
 is anybody's.)*

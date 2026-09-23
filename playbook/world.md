@@ -50,6 +50,15 @@ for the completion of a sale. What earns it a card is not that the news is good,
 tool's watching on that deal stops, and the seller should be told which promises it will stop
 raising. *(My reason, not yet yours.)*
 
+**An Ask may rest on a told record** (23 September). Two things the tool adjusts to you by, how
+much of your week is selling and which teams have used what you sell, are told records no count
+reads: nothing can fire on a setting nobody has typed, so no read could carry the Ask that fills
+it, and the tool still has to ask. So an Ask, like News, may name `rests` instead of a read, but
+only a told record, and only one no count needs; a record a count reads stays an Ask on that
+count's read, the way the good-fit question rests on the fit read. The build checks both. The
+first, `ask-sales-week`, arrives because of what the tool's own history shows (twenty cards on
+three days), which is why it rests on that record too. *(My reason, not yet yours.)*
+
 Early on the home is mostly Ask. Later it is mostly Act. That ratio is the learning curve. An Ask
 is the general way the tool learns what it cannot observe, not only about a person: your tone, which
 councils matter most, what is new about the product. A fact that does not shift is told once; what
@@ -272,7 +281,19 @@ tool works the nouns. The second, "Your day on mobile" (called "The phone" until
 and a line about the idea on the left, one iPhone on the right at almost the room's full
 height, and it works (the card's action raises the reply sheet, a row can be chosen, the
 close button lowers it). The third, "Reply sheets", shows the reply modules as bare
-sheets in a row, no phone around them, each captioned by its module. Only the middle of the
+sheets in a row, no phone around them, each captioned by its module. **"Learning loop"** (23
+September, the user's ask) sits after "The details": three Asks as bare cards of one height, no
+phone, each taking a different kind of answer (a field, choices, several choices), and each
+opening its slot inside the card when its button is tapped, because phone.js draws and works
+them. The user's brief: for the demo, say that the tool keeps getting to know you as you go and
+fills its gaps by asking; a card is fine, no phone on every page, a little abstraction so people
+know it is inside a product; three cards to keep it simple; no details behind them. The three:
+what a good-fit council looks like, how much of your week goes on selling, which teams have used
+the product. Two sheets came first, https://claude.ai/artifact/91pF9hrtjfTzFn2b3sM9N8 (nine things
+the tool can fit to the seller, on the phone) and https://claude.ai/artifact/7WhvbkZ12Rspc4kfj4Rx6G
+(the bare cards, first as three framings, then as five working cards). The card is bare because
+the glaze and the deep shadow already belong to the card alone, so it reads as inside the product
+without drawing a desktop nobody has designed. *(My reason, not yet yours.)* Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now. The fourth, "The details" (18 September), shows three phones

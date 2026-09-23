@@ -270,7 +270,11 @@ way every other join is (`crm#deal-record`), resolved by `build.js` like every o
 as the card's reach when its *Sources* rows are checked. It rests on the record floor rather than
 the signal floor, which is lower than any other card and is exactly right for what it is.
 `build.js` allows the swap for `kind: news` only: any other kind without a signal fails, and
-`rests` on any other kind fails too, so this is not a way round the join.
+`rests` on any other kind fails too, so this is not a way round the join. One exception since 23
+September: an Ask that fills a told record no count reads (how much of your week is selling, which
+teams have used what you sell) may name that record in `rests` instead of a read, because nothing
+can fire on a setting nobody has typed and the tool still has to ask. The build refuses a `rests`
+on an Ask that is not a told record, or that a count does read.
 
 What earns a completion a card is not that the news is good. It is that the tool's watching on that
 deal **stops**, and the seller is owed the list of what it will no longer raise. The guard is the

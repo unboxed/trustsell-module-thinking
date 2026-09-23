@@ -26,6 +26,16 @@ before changing any told source or any capture screen.
 **Job 2 is done, 22 September**: `library/docs/message-shape.md`, four *The message* rows on each
 decided card with a draft, checked by the build (see the thirty-third pass in `coverage.md`).
 
+**The learning loop, 23 September.** The deck has a slide, "Learning loop", after "The details":
+three Asks as bare cards of one height (no phone), each opening a different slot when tapped,
+drawn by `deck.js` with `phone.js`'s own drawing, which is exported as `window.PHONE`. Two cards
+were written for it, `ask-sales-week` (how much of your week is selling; rests on a told record,
+which an Ask may now do when no count reads the record) and `ask-teams` (which teams have used
+the product; on `lead-with-this`). The user's brief and the two sheets that led to it are in
+`playbook/world.md` ("Learning loop"). Before it, the same day, the user reopened Job 4 as "the
+You": what the tool can be fitted to about the seller, on a sheet
+(https://claude.ai/artifact/91pF9hrtjfTzFn2b3sM9N8); nothing from that sheet is built.
+
 **Two areas, since 21 September.** `library/` is the blocks and `scenarios/` sits beside it, no
 longer inside it: `bops`, a patient sale to councils, with 26 cards; `pmf`, a merchant cash advance
 broker, with 12; and `cority`, an enterprise seller with a firm around her, with 7. The user's
@@ -683,6 +693,10 @@ reach what it claims.
   web form, the buyer's handover and a handed list are in its `explores:`, and outside that
   pretence three of its reads are silent. Job 3 should say which of its twelve cards the tool as it stands could actually
   make.
+- **The cadence answer paces nothing yet** (23 September). `ask-sales-week` saves how much of
+  your week is selling, and the day's order in `build.js` still knows one cadence; the sitting
+  rule in `playbook/world.md` ("The week, cut two ways") is the proposal, not built, and waits on
+  the user.
 - **The broker's tempo is hours and every `when` is a day.** Flagged in
   `scenarios/pmf/world/goal.md` and in story ch. 7, which says "one move per person at a time" and
   "you can take in the whole day". A card and phone question, not a library one.

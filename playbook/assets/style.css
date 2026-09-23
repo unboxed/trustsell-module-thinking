@@ -1045,3 +1045,15 @@ iframe.screen{border:0;display:block;padding:0}
    read across a room. */
 .trail .py__pill{font:var(--tv-text-caption2);font-weight:600;padding:6px 16px;border-width:1px}
 .slide--trail .slide__body{align-items:flex-start;margin-top:48px}
+
+/* The learning loop (23 September): a bare card, no phone, at the phone's own card measurements
+   (361 wide, 24 inside, 36 corners), and one height for every card so the buttons sit where the
+   phone puts them and the reply sheet rises inside the card. The stage scales like the sheets'.
+   640 is a judgement, tall enough for the widest reply sheet on the slide. */
+.loop-stage{flex:none;width:calc(361px*var(--s));height:calc(640px*var(--s))}
+.loop-stage__in{width:361px;height:640px;transform:scale(var(--s));transform-origin:top left}
+.loop-card.screen{display:block;position:relative;width:361px;height:640px;--screen-w:361px;--screen-h:640px;--p:0;border-radius:36px;overflow:hidden;background:var(--card-glaze);box-shadow:var(--card-edge),var(--card-lift)}
+.loop-card .deck__card{padding:24px 24px 0;margin:0;min-height:0;background:transparent;box-shadow:none;transform:none}
+.loop-card .snap{scroll-snap-align:none}
+.loop-card .deck__card.deck__card--front h2{font:var(--ios-text-title1);font-weight:800;letter-spacing:var(--ios-track-title1);margin-bottom:18px}
+.loop-card .reply-sheet{bottom:16px}
