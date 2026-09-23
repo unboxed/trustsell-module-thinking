@@ -296,7 +296,12 @@ the glaze and the deep shadow already belong to the card alone, so it reads as i
 without drawing a desktop nobody has designed. *(My reason, not yet yours.)* The slide was then
 shown four ways on a sheet, https://claude.ai/artifact/CfcECNTUnujSiBFhwBcBbm (as built; the
 middle card's slot open at rest; the head beside the cards; no captions), and the user chose no
-captions: the cards say what they are, and the head line names the three. Only the middle of the
+captions: the cards say what they are, and the head line names the three. **"Feedback loop"** (23
+September, the user's ask) follows it: story chapter 9 on a slide, three cards at rest on the same
+bare card (the budget-meeting Ask, Karen's note, Simon's introduction), and Answer, Send Message
+or Skip darkens the card as the phone does, with the receipt, the thumbs or the reason, and Undo.
+Shown three ways on a sheet, https://claude.ai/artifact/Q8axhaSf6qNAn2Dtyendo4 (already dark;
+tap to see it; each card beside its after-state), and the user chose tap to see it. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now. The fourth, "The details" (18 September), shows three phones

@@ -706,7 +706,7 @@
   /* A list of answers taller than the sheet fades at its foot while there are more rows below. */
   /* What the deck draws with (23 September): the learning-loop slide shows a card's front, its
      buttons and its reply sheet as a bare card, and phone.js's own click handling works them. */
-  window.PHONE = {front: front, actions: actions, said: said, sheet: sheet};
+  window.PHONE = {front: front, actions: actions, said: said, sheet: sheet, done: done};
   function more(rows) {
     if (rows) rows.classList.toggle('is-more', rows.scrollTop + rows.clientHeight < rows.scrollHeight - 2);
   }

@@ -204,15 +204,16 @@
       }).join('');
   });
 
-  /* The learning loop (23 September): three Asks as bare cards of one height, drawn and worked
-     by phone.js, which the deck loads for the reply sheets. A figure names its card; the front,
-     the buttons and the reply sheet are the phone's own, so tapping a button opens the slot inside
-     the card. No details behind them (the user, 23 September). */
+  /* The learning loop and the feedback loop (23 September): cards as bare cards of one height,
+     drawn and worked by phone.js, which the deck loads for the reply sheets. A figure names its
+     card; the front, the buttons, the reply sheet and the dark card after a move are the phone's
+     own, so tapping a button opens the slot inside the card, and Answer, Send Message or Skip
+     darkens it. No details behind them (the user, 23 September). */
   Array.prototype.slice.call(document.querySelectorAll('.loop-card[data-card]')).forEach(function (el) {
     var card = find('cards', el.getAttribute('data-card'));
     if (!card || !window.PHONE) return;
     el.classList.add('screen');
-    el.innerHTML = PHONE.front(card) + '<div class="screen__overin">' + PHONE.actions(card) + PHONE.said(card) + '</div>' + PHONE.sheet(card);
+    el.innerHTML = PHONE.front(card) + '<div class="screen__overin">' + PHONE.actions(card) + PHONE.said(card) + PHONE.done(card, true) + '</div>' + PHONE.sheet(card);
   });
 
   /* The trail: one question walked down, a rung to a slide. Drawn from data.js the way the

@@ -32,7 +32,9 @@ drawn by `deck.js` with `phone.js`'s own drawing, which is exported as `window.P
 were written for it, `ask-sales-week` (how much of your week is selling; rests on a told record,
 which an Ask may now do when no count reads the record) and `ask-teams` (which teams have used
 the product; on `lead-with-this`). The user's brief and the two sheets that led to it are in
-`playbook/world.md` ("Learning loop"). Before it, the same day, the user reopened Job 4 as "the
+`playbook/world.md` ("Learning loop"). A second slide, "Feedback loop", follows it the same day:
+the same bare cards at rest, and a tap darkens them with the phone's own after-state (story
+chapter 9 on a slide). Before it, the same day, the user reopened Job 4 as "the
 You": what the tool can be fitted to about the seller, on a sheet
 (https://claude.ai/artifact/91pF9hrtjfTzFn2b3sM9N8); nothing from that sheet is built.
 

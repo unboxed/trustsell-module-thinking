@@ -1057,3 +1057,7 @@ iframe.screen{border:0;display:block;padding:0}
 .loop-card .snap{scroll-snap-align:none}
 .loop-card .deck__card.deck__card--front h2{font:var(--ios-text-title1);font-weight:800;letter-spacing:var(--ios-track-title1);margin-bottom:18px}
 .loop-card .reply-sheet{bottom:16px}
+/* After a move the bare card darkens whole, the way the card does on the phone (the feedback loop slide). */
+.loop-card .done{top:0;left:0;right:0;bottom:0;border-radius:36px}
+.loop-card.is-sent .done--sent,.loop-card.is-skipped .done--skipped{display:flex}
+.loop-card.is-sent .said--card,.loop-card.is-skipped .act{display:none}
