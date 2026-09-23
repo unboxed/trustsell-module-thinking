@@ -301,7 +301,9 @@ September, the user's ask) follows it: story chapter 9 on a slide, three cards a
 bare card (the budget-meeting Ask, Karen's note, Simon's introduction), and Answer, Send Message
 or Skip darkens the card as the phone does, with the receipt, the thumbs or the reason, and Undo.
 Shown three ways on a sheet, https://claude.ai/artifact/Q8axhaSf6qNAn2Dtyendo4 (already dark;
-tap to see it; each card beside its after-state), and the user chose tap to see it. Only the middle of the
+tap to see it; each card beside its after-state), and the user chose tap to see it. Both slides are in both decks: `deck.html`, after "The details", and
+`how-it-builds.html`, after "Where it arrives" (the user, 23 September), copied as they are so the
+two stay the same. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now. The fourth, "The details" (18 September), shows three phones
