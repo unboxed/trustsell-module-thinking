@@ -293,7 +293,10 @@ the product. Two sheets came first, https://claude.ai/artifact/91pF9hrtjfTzFn2b3
 the tool can fit to the seller, on the phone) and https://claude.ai/artifact/7WhvbkZ12Rspc4kfj4Rx6G
 (the bare cards, first as three framings, then as five working cards). The card is bare because
 the glaze and the deep shadow already belong to the card alone, so it reads as inside the product
-without drawing a desktop nobody has designed. *(My reason, not yet yours.)* Only the middle of the
+without drawing a desktop nobody has designed. *(My reason, not yet yours.)* The slide was then
+shown four ways on a sheet, https://claude.ai/artifact/CfcECNTUnujSiBFhwBcBbm (as built; the
+middle card's slot open at rest; the head beside the cards; no captions), and the user chose no
+captions: the cards say what they are, and the head line names the three. Only the middle of the
 sheet differs. The last of them, "A draft", shows what the sheet does when the tool has
 written something for you. Claude's card also has version pills (A and B) and a copy button;
 both are left off the slide for now. The fourth, "The details" (18 September), shows three phones
